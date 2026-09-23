@@ -21,6 +21,561 @@ So focus on:
 
 Only after the application exists, continue with monitoring, logging, backups, and optional microservices.
 
+
+# Infrastructure diagrams
+
+These diagrams are not the final implementation. They are the DevOps mental model for how Horizon can be deployed and observed.
+
+## A. Minimal application architecture
+
+This is the first architecture to understand.
+
+```text
+                                 INTERNET
+                                    │
+                                    │ HTTPS :443
+                                    ▼
+                         ┌─────────────────────┐
+                         │   Reverse Proxy     │
+                         │   Nginx / Caddy     │
+                         └──────────┬──────────┘
+                                    │
+                     ┌──────────────┴──────────────┐
+                     │                             │
+                     ▼                             ▼
+          ┌────────────────────┐        ┌────────────────────┐
+          │ Frontend Container │        │ Backend Container  │
+          │ React / static app │        │ API / WebSockets   │
+          └────────────────────┘        └──────────┬─────────┘
+                                                   │
+                                                   │ internal Docker network
+                                                   ▼
+                                        ┌────────────────────┐
+                                        │ PostgreSQL         │
+                                        │ Database Container │
+                                        └────────────────────┘
+```
+
+Main idea:
+
+- the browser should not connect directly to PostgreSQL
+- the reverse proxy is the main public entry point
+- the frontend and backend can stay behind the proxy
+- PostgreSQL should normally stay private
+- the backend talks to PostgreSQL through Docker's internal network
+
+---
+
+## B. Request flow
+
+Example: a user opens Horizon and then calls an API route.
+
+```text
+1. Browser
+      │
+      │ GET https://horizon.local/
+      ▼
+2. Reverse Proxy
+      │
+      │ route "/"
+      ▼
+3. Frontend
+      │
+      │ HTML / JS / CSS returned
+      ▼
+4. Browser renders the application
+
+
+Then an API request:
+
+
+1. Browser
+      │
+      │ GET https://horizon.local/api/projects
+      ▼
+2. Reverse Proxy
+      │
+      │ route "/api/*"
+      ▼
+3. Backend
+      │
+      │ query
+      ▼
+4. PostgreSQL
+      │
+      │ result
+      ▼
+5. Backend
+      │
+      │ JSON response
+      ▼
+6. Reverse Proxy
+      │
+      ▼
+7. Browser
+```
+
+DevOps responsibility:
+
+- make sure the traffic reaches the correct service
+- keep internal services isolated
+- expose only required ports
+- make HTTPS work
+- make failures visible through logs and health checks
+
+---
+
+## C. Docker network layout
+
+A cleaner deployment usually separates public-facing traffic from internal service traffic.
+
+```text
+                         HOST MACHINE
+┌───────────────────────────────────────────────────────────────┐
+│                                                               │
+│  PUBLIC / EDGE NETWORK                                        │
+│                                                               │
+│  Internet                                                     │
+│     │                                                         │
+│     │ :443                                                    │
+│     ▼                                                         │
+│  ┌───────────────┐                                            │
+│  │ Reverse Proxy │                                            │
+│  │ Nginx / Caddy │                                            │
+│  └───────┬───────┘                                            │
+│          │                                                     │
+│          └─────────────────────────────────────────────┐       │
+│                                                        │       │
+│  INTERNAL APPLICATION NETWORK                         │       │
+│                                                        │       │
+│     ┌──────────────┐        ┌──────────────┐           │       │
+│     │   Frontend   │        │   Backend    │◄──────────┘       │
+│     └──────────────┘        └──────┬───────┘                   │
+│                                     │                           │
+│                                     ▼                           │
+│                              ┌──────────────┐                    │
+│                              │ PostgreSQL   │                    │
+│                              └──────────────┘                    │
+│                                                               │
+└───────────────────────────────────────────────────────────────┘
+```
+
+Important:
+
+```text
+Internet → Reverse Proxy     ✅
+Internet → Backend directly  usually unnecessary
+Internet → PostgreSQL        ❌
+```
+
+The exact network design depends on the final implementation, but the principle is:
+
+> Public only where necessary. Internal by default.
+
+---
+
+## D. Container ports vs host ports
+
+This is a common source of confusion.
+
+Example:
+
+```text
+HOST                                DOCKER NETWORK
+
+localhost:443
+     │
+     ▼
+┌─────────┐
+│ nginx   │ container port 443
+└────┬────┘
+     │
+     ├──────────────► frontend:5173
+     │
+     └──────────────► backend:3000
+                           │
+                           └────────► postgres:5432
+```
+
+The frontend, backend, and PostgreSQL do not necessarily need their ports published to the host.
+
+Possible Compose idea:
+
+```text
+nginx:
+  host 443 → container 443
+
+frontend:
+  internal 5173 only
+
+backend:
+  internal 3000 only
+
+postgres:
+  internal 5432 only
+```
+
+Then:
+
+```text
+Browser → https://localhost:443
+```
+
+but internally:
+
+```text
+nginx → frontend:5173
+nginx → backend:3000
+backend → postgres:5432
+```
+
+---
+
+## E. Volumes and persistent data
+
+Containers are replaceable. Important data must survive container recreation.
+
+```text
+┌───────────────────┐
+│ PostgreSQL        │
+│ container         │
+└─────────┬─────────┘
+          │
+          ▼
+┌───────────────────┐
+│ Docker Volume     │
+│ postgres_data     │
+└───────────────────┘
+```
+
+If the PostgreSQL container is deleted:
+
+```text
+container deleted
+      │
+      ▼
+volume remains
+      │
+      ▼
+new PostgreSQL container
+      │
+      ▼
+same stored database data
+```
+
+Possible persistent resources later:
+
+- PostgreSQL data
+- uploaded media
+- Elasticsearch data
+- Grafana configuration/data
+- backups
+
+Important:
+
+> A volume is persistent storage, but it is not automatically a backup.
+
+---
+
+## F. Health-check architecture
+
+A container being "running" does not mean the service is healthy.
+
+```text
+Docker / Monitoring
+       │
+       │ check
+       ▼
+┌──────────────────┐
+│ Backend          │
+│ GET /health      │
+└────────┬─────────┘
+         │
+         ├───────── check database
+         │
+         ├───────── check required storage
+         │
+         └───────── verify application state
+```
+
+Possible response:
+
+```json
+{
+  "status": "ok",
+  "database": "ok"
+}
+```
+
+Later a status view can summarize:
+
+```text
+Reverse Proxy   ✅
+Frontend        ✅
+Backend         ✅
+PostgreSQL      ✅
+Storage         ✅
+```
+
+---
+
+## G. Monitoring architecture — Prometheus + Grafana
+
+Prometheus asks services for metrics.
+
+```text
+                         ┌──────────────────┐
+                         │ Backend          │
+                         │ /metrics         │
+                         └────────┬─────────┘
+                                  │
+                                  │ scrape
+                                  ▼
+                         ┌──────────────────┐
+                         │ Prometheus       │
+                         │ metrics database │
+                         └────────┬─────────┘
+                                  │
+                                  │ query
+                                  ▼
+                         ┌──────────────────┐
+                         │ Grafana          │
+                         │ dashboards       │
+                         └──────────────────┘
+```
+
+Infrastructure metrics can also come from exporters.
+
+```text
+Backend metrics ───────────────┐
+PostgreSQL exporter ───────────┤
+Host/container metrics ────────┤
+                               ▼
+                         Prometheus
+                               │
+                               ▼
+                            Grafana
+```
+
+Possible dashboards:
+
+```text
+HTTP requests/sec
+HTTP 4xx/5xx
+response latency
+CPU usage
+memory usage
+database connections
+container health
+active WebSocket connections
+```
+
+Prometheus answers:
+
+> What is happening numerically over time?
+
+Grafana answers:
+
+> How can I visualize it and alert on it?
+
+---
+
+## H. Logging architecture — ELK
+
+Logs answer different questions from metrics.
+
+```text
+Frontend / Proxy logs ───────┐
+Backend logs ────────────────┤
+Database-related logs ───────┤
+                             ▼
+                        ┌──────────┐
+                        │ Logstash │
+                        └────┬─────┘
+                             │ parse / transform
+                             ▼
+                    ┌─────────────────┐
+                    │ Elasticsearch   │
+                    │ store / index   │
+                    └────────┬────────┘
+                             │
+                             ▼
+                        ┌──────────┐
+                        │ Kibana   │
+                        │ search   │
+                        │ dashboard│
+                        └──────────┘
+```
+
+Example difference:
+
+```text
+Prometheus:
+  "HTTP 500 errors increased to 20/minute"
+
+ELK:
+  "These exact requests failed, at these times,
+   with these backend error messages"
+```
+
+---
+
+## I. Full DevOps architecture
+
+This is a possible later-state architecture for the project.
+
+```text
+                                      INTERNET
+                                         │
+                                         │ HTTPS / WSS
+                                         ▼
+                              ┌─────────────────────┐
+                              │ Reverse Proxy       │
+                              │ Nginx / Caddy       │
+                              └──────────┬──────────┘
+                                         │
+                         ┌───────────────┴────────────────┐
+                         │                                │
+                         ▼                                ▼
+               ┌─────────────────┐             ┌─────────────────┐
+               │ Frontend        │             │ Backend         │
+               │ Container       │             │ Container       │
+               └─────────────────┘             └───────┬─────────┘
+                                                       │
+                                     ┌─────────────────┼─────────────────┐
+                                     │                 │                 │
+                                     ▼                 ▼                 ▼
+                             ┌──────────────┐   ┌──────────────┐  ┌──────────────┐
+                             │ PostgreSQL   │   │ File Storage │  │ External APIs│
+                             └──────┬───────┘   └──────────────┘  └──────────────┘
+                                    │
+                                    ▼
+                             ┌──────────────┐
+                             │ Backup       │
+                             │ / Restore    │
+                             └──────────────┘
+
+
+                         OBSERVABILITY / OPERATIONS
+
+        Backend metrics ───────────────► Prometheus ─────────► Grafana
+
+        Proxy logs ───────┐
+        Backend logs ─────┼────────────► Logstash
+        Other logs ───────┘                  │
+                                             ▼
+                                      Elasticsearch
+                                             │
+                                             ▼
+                                           Kibana
+
+
+                              HEALTH / STATUS
+
+        Reverse Proxy ──┐
+        Frontend ───────┤
+        Backend ────────┼────────────► Health checks / status page
+        PostgreSQL ─────┘
+```
+
+The full system should still follow one rule:
+
+```text
+public entry point
+       │
+       ▼
+reverse proxy
+       │
+       ▼
+private internal services
+```
+
+---
+
+## J. Failure examples to understand
+
+A DevOps engineer should understand what happens when each component fails.
+
+### Reverse proxy fails
+
+```text
+Internet
+   │
+   X
+Reverse Proxy
+   │
+Frontend / Backend may still run,
+but users cannot reach them normally.
+```
+
+### Backend fails
+
+```text
+Frontend may load
+      │
+      ▼
+API calls fail
+      │
+      ▼
+Nginx may return 502 / 503
+```
+
+### PostgreSQL fails
+
+```text
+Backend remains running
+      │
+      ▼
+database operations fail
+      │
+      ▼
+health check should report unhealthy/degraded
+```
+
+### Prometheus fails
+
+```text
+Application may continue working
+      │
+      ▼
+metrics collection stops
+      │
+      ▼
+Grafana loses fresh monitoring data
+```
+
+### Elasticsearch fails
+
+```text
+Application may continue working
+      │
+      ▼
+centralized log storage/search is unavailable
+```
+
+This distinction is important:
+
+> Observability services should help you operate the application, but the application should not depend on Grafana or Kibana to serve normal users.
+
+---
+
+## K. What you should be able to explain from these diagrams
+
+Before moving to the advanced tools, you should be able to answer:
+
+1. Why do we need a reverse proxy?
+2. Why should PostgreSQL not be exposed to the Internet?
+3. What is the difference between a host port and a container port?
+4. Why does `backend:3000` work inside Docker networking?
+5. Why is `localhost` different inside a container?
+6. What is a Docker volume?
+7. Why is a volume not the same thing as a backup?
+8. What does a health check prove?
+9. What is the difference between Prometheus and Grafana?
+10. What is the difference between Prometheus and ELK?
+11. What happens when the backend fails?
+12. Which components should be publicly reachable?
+
 ---
 
 # 1. Minimum Linux knowledge
