@@ -1,55 +1,33 @@
-# 42 Horizon — Learning Tools and Study Roadmap
+# 42 Horizon — DevOps Learning Roadmap
 
-> Personal learning reference for the Security / DevOps part of ft_transcendence.
+> Personal learning reference for the DevOps part of ft_transcendence.
 >
-> Assumption: start from zero knowledge and learn in the order the concepts become useful.
-> Do not try to master every topic before working on the project. Learn the current phase,
-> apply it to Horizon, then continue.
+> Goal: learn only what is useful for the DevOps modules and infrastructure work.
+> Start simple. Do not study advanced tools before the application exists.
 
-## How to use this file
+## Current priority
 
-The roadmap is ordered intentionally.
+Right now there is no production frontend or backend yet.
 
-For now, focus on:
+So focus on:
 
-1. Linux and terminal
-2. Networking basics
-3. HTTP
-4. Git and GitHub
-5. Web application architecture
-6. JavaScript / TypeScript basics
-7. SQL / PostgreSQL
-8. Docker
-9. Docker networking
-10. Reverse proxy
-11. HTTPS / TLS
-12. Authentication vs authorization
+1. Docker basics
+2. Docker Compose
+3. Docker networking
+4. Reverse proxy
+5. HTTPS / TLS
+6. Health checks
+7. CI with GitHub Actions
 
-After the application exists, continue with web security, CI/CD, monitoring, logging,
-backups, Vault, ModSecurity, and the other advanced topics.
+Only after the application exists, continue with monitoring, logging, backups, and optional microservices.
 
 ---
 
-# Phase 1 — Foundations
+# 1. Minimum Linux knowledge
 
-## 1. Linux and the terminal
+You do not need a full Linux course.
 
-### Learn these concepts
-
-- filesystem
-- directory and file
-- absolute vs relative path
-- process and PID
-- environment variable
-- user and root
-- permissions
-- service
-- port
-- package
-- shell
-- stdin / stdout / stderr
-
-### Commands to know
+Know these commands:
 
 ```bash
 pwd
@@ -60,16 +38,10 @@ touch
 cp
 mv
 rm
-
 cat
 less
-head
-tail
 grep
 find
-
-which
-whereis
 
 ps
 top
@@ -80,9 +52,7 @@ chown
 
 curl
 wget
-
 ss
-ping
 
 env
 export
@@ -91,429 +61,56 @@ sudo
 apt
 ```
 
-### Resource
+Understand:
 
-- Ubuntu — Linux command line for beginners:
+- files and directories
+- processes
+- permissions
+- environment variables
+- ports
+- services
+
+Resource:
+
+- Ubuntu command line tutorial:
   https://ubuntu.com/tutorials/command-line-for-beginners
 
-### Goal
-
-Be comfortable moving around Linux, reading files, inspecting processes, checking ports,
-using environment variables, and running commands without depending on a GUI.
-
 ---
 
-## 2. Networking fundamentals
+# 2. Docker
 
-### Learn these concepts
+This is the first main topic to learn.
 
-- IP address
-- IPv4
-- localhost
-- `127.0.0.1`
-- `0.0.0.0`
-- DNS
-- domain name
-- port
-- TCP
-- UDP
-- socket
-- client
-- server
-- firewall
-- private network
-- public network
-
-### Mental model
-
-```text
-Computer
-   ↓
-IP address
-   ↓
-Network
-   ↓
-DNS
-   ↓
-Server IP
-   ↓
-Port
-   ↓
-TCP connection
-   ↓
-Application protocol
-```
-
-### Goal
-
-Be able to explain how one program connects to another program over a network and why
-ports and IP addresses matter.
-
----
-
-## 3. HTTP
-
-HTTP is the main protocol used between the browser and backend.
-
-### Learn
-
-- URL
-- request
-- response
-- headers
-- body
-- JSON
-- cookies
-- HTTP methods
-- status codes
-
-### Methods
-
-```text
-GET
-POST
-PUT
-PATCH
-DELETE
-```
-
-### Important status codes
-
-```text
-200 OK
-201 Created
-204 No Content
-
-400 Bad Request
-401 Unauthorized
-403 Forbidden
-404 Not Found
-409 Conflict
-422 Unprocessable Content
-429 Too Many Requests
-
-500 Internal Server Error
-502 Bad Gateway
-503 Service Unavailable
-```
-
-### Important headers
-
-```text
-Content-Type
-Authorization
-Cookie
-Set-Cookie
-Origin
-Host
-```
-
-### Example request
-
-```http
-POST /api/v1/login HTTP/1.1
-Host: horizon.example
-Content-Type: application/json
-
-{
-  "email": "user@example.com",
-  "password": "secret"
-}
-```
-
-### Resource
-
-- MDN HTTP:
-  https://developer.mozilla.org/en-US/docs/Web/HTTP
-
-### Goal
-
-Be able to look at an HTTP request and understand what the browser is sending to the
-backend.
-
----
-
-## 4. Git and GitHub
-
-### Learn these concepts
-
-- working directory
-- staging area
-- commit
-- branch
-- remote
-- origin
-- fetch
-- pull
-- push
-- merge
-- conflict
-- pull request
-- review
-- tag
-- release
-
-### Commands
-
-```bash
-git status
-git diff
-git diff --cached
-
-git add
-git commit
-
-git log
-
-git branch
-git switch
-
-git fetch
-git pull
-git push
-
-git merge
-
-git remote -v
-```
-
-### Resources
-
-- Official Git learning resources:
-  https://git-scm.com/learn
-- Pro Git book:
-  https://git-scm.com/book/en/v2
-
-Also read the project's own `VERSIONING.md`, because it defines the team's actual workflow.
-
-### Goal
-
-Understand what Git is doing instead of only memorizing commands.
-
----
-
-## 5. Web application architecture
-
-Understand this before learning frameworks deeply.
-
-```text
-User
- ↓
-Browser / Frontend
- ↓
-HTTP or HTTPS request
- ↓
-Backend
- ↓
-Validation
- ↓
-Business logic
- ↓
-Database
- ↓
-Backend response
- ↓
-Frontend updates
-```
-
-For Horizon, the expected architecture may eventually resemble:
-
-```text
-                       Internet
-                          │
-                       HTTPS/WSS
-                          │
-                          ▼
-                  Reverse Proxy
-                    /        \
-                   /          \
-                  ▼            ▼
-             Frontend       Backend
-                               │
-                 ┌─────────────┼─────────────┐
-                 │             │             │
-                 ▼             ▼             ▼
-            PostgreSQL    File Storage   External APIs
-```
-
-### Goal
-
-Be able to trace one user action from the browser all the way to the database and back.
-
----
-
-## 6. JavaScript and TypeScript basics
-
-You do not need to become a frontend expert.
-
-### JavaScript basics
-
-Learn:
-
-- `const` and `let`
-- strings
-- numbers
-- booleans
-- objects
-- arrays
-- functions
-- classes
-- modules
-- `import` / `export`
-- JSON
-- exceptions
-- `try/catch`
-- Promise
-- `async/await`
-
-### TypeScript basics
-
-Learn:
-
-- types
-- interfaces
-- type aliases
-- enums
-- generics
-- optional properties
-
-### Resources
-
-- MDN JavaScript Guide:
-  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
-- TypeScript Handbook:
-  https://www.typescriptlang.org/docs/handbook/intro.html
-
-### Goal
-
-Be able to open your teammates' React/NestJS code and understand its general flow.
-
----
-
-## 7. SQL and PostgreSQL
-
-### Learn these concepts
-
-- relational database
-- table
-- row
-- column
-- primary key
-- foreign key
-- unique constraint
-- NOT NULL
-- one-to-one
-- one-to-many
-- many-to-many
-- index
-- transaction
-- constraint
-
-### SQL commands
-
-```sql
-SELECT
-INSERT
-UPDATE
-DELETE
-JOIN
-```
-
-### Example relationship
-
-```text
-User
-----
-id
-email
-password_hash
-
-Project
--------
-id
-title
-author_id ─────→ User.id
-```
-
-### Resource
-
-- PostgreSQL official tutorial:
-  https://www.postgresql.org/docs/current/tutorial.html
-
-### Goal
-
-Understand how application data is structured and why database constraints and
-transactions matter.
-
----
-
-## 8. ORM / Prisma
-
-Learn this only after basic SQL.
-
-### Mental model
-
-Without ORM:
-
-```sql
-SELECT *
-FROM users
-WHERE id = 42;
-```
-
-With Prisma:
-
-```ts
-prisma.user.findUnique({
-  where: { id: 42 }
-})
-```
-
-### Resource
-
-- Prisma getting started:
-  https://www.prisma.io/docs/getting-started
-
-### Goal
-
-Understand that an ORM is a layer over the database, not the database itself.
-
----
-
-# Phase 2 — DevOps foundations
-
-## 9. Docker
-
-### Learn the difference
+## Understand
 
 ```text
 IMAGE
 =
-template / packaged filesystem
+template used to create containers
 
 CONTAINER
 =
 running instance of an image
 ```
 
-### Learn
+Learn:
 
 - Dockerfile
 - image
 - container
-- registry
 - build
 - run
 - stop
 - remove
-- volume
-- network
-- port mapping
-- environment variable
-- health check
-- Docker Compose
+- logs
+- exec
+- environment variables
+- ports
+- volumes
+- networks
+- health checks
 
-### Commands
+Important commands:
 
 ```bash
 docker ps
@@ -533,74 +130,133 @@ docker inspect
 
 docker network ls
 docker volume ls
-
-docker compose up
-docker compose down
-docker compose logs
-docker compose ps
 ```
 
-### Resources
+Resources:
 
 - Docker Get Started:
   https://docs.docker.com/get-started/
-- Docker Compose Quickstart:
-  https://docs.docker.com/compose/gettingstarted/
 - Play with Docker:
   https://labs.play-with-docker.com/
 
-### Goal
+Goal:
 
-Be able to run multiple application services reproducibly with containers.
+Be able to start a container, inspect it, read its logs, enter it, stop it, and understand how it connects to the host.
 
 ---
 
-## 10. Docker networking
+# 3. Docker Compose
 
-### Learn
+Horizon will have multiple services.
 
-- bridge network
-- service discovery
+Example future structure:
+
+```text
+frontend
+backend
+postgres
+reverse-proxy
+```
+
+Docker Compose lets us define and start them together.
+
+Learn:
+
+- `services`
+- `build`
+- `image`
+- `ports`
+- `environment`
+- `env_file`
+- `volumes`
+- `networks`
+- `depends_on`
+- health checks
+
+Commands:
+
+```bash
+docker compose up
+docker compose up --build
+docker compose down
+docker compose ps
+docker compose logs
+docker compose logs -f
+```
+
+Resource:
+
+- Docker Compose Quickstart:
+  https://docs.docker.com/compose/gettingstarted/
+
+Goal:
+
+Eventually another teammate should be able to clone Horizon and start the whole stack with one documented command.
+
+---
+
+# 4. Docker networking
+
+This is very important for Horizon.
+
+Learn:
+
 - service names
-- container port
-- host port
-- published port
-- private/internal communication
+- container ports
+- host ports
+- private networks
+- published ports
+- Docker DNS
 
-### Important example
-
-Inside Docker Compose:
+Important example:
 
 ```text
 backend → postgres:5432
 ```
 
-is normally correct when `postgres` is the service name.
+If `postgres` is the Compose service name, Docker can resolve it internally.
 
-This:
+This is usually wrong from another container:
 
 ```text
 backend → localhost:5432
 ```
 
-usually means "connect to the backend container itself", not the PostgreSQL container.
+because `localhost` refers to the backend container itself.
 
-### Resource
+Future architecture:
+
+```text
+Internet
+   │
+   ▼
+Reverse Proxy
+   │
+   ├── frontend
+   └── backend
+          │
+          ▼
+      PostgreSQL
+
+PostgreSQL stays on an internal Docker network.
+```
+
+Resource:
 
 - Docker networking:
   https://docs.docker.com/engine/network/
 
-### Goal
+Goal:
 
-Understand which services should be publicly exposed and which should remain internal.
+Know which services need public ports and which should stay private.
 
 ---
 
-## 11. Reverse proxy
+# 5. Reverse proxy
 
-Possible choices include Nginx or Caddy.
+Likely choices are Nginx or Caddy.
 
-### Mental model
+Mental model:
 
 ```text
                   ┌── frontend
@@ -608,16 +264,16 @@ Browser → :443 ───┤
                   └── backend
 ```
 
-Users may see:
+The user may visit:
 
 ```text
 https://horizon.local/
 https://horizon.local/api/
 ```
 
-while internally the reverse proxy sends traffic to different containers.
+while internally the proxy routes traffic to different containers.
 
-### Learn
+Learn:
 
 - reverse proxy
 - upstream
@@ -626,406 +282,67 @@ while internally the reverse proxy sends traffic to different containers.
 - TLS termination
 - `proxy_pass` if using Nginx
 
-### Resource
+Resource:
 
 - Nginx beginner guide:
   https://nginx.org/en/docs/beginners_guide.html
 
-### Goal
+Goal:
 
-Understand why the browser can communicate through one public HTTPS entry point while
-internal services use private addresses.
+Understand why only the reverse proxy needs to be the main public entry point.
 
 ---
 
-## 12. HTTPS, TLS, and certificates
+# 6. HTTPS / TLS
 
-### Learn
+Learn only the infrastructure side.
 
-- HTTP
-- HTTPS
+Understand:
+
+- HTTP vs HTTPS
 - TLS
 - certificate
-- private key
 - public key
+- private key
 - certificate authority
-- encryption
-- integrity
-- authentication
-- TLS handshake
+- TLS termination
 
-### Mental model
+Mental model:
 
 ```text
-HTTP:
-Browser ---------- Server
-
-HTTPS:
-Browser ══════════ Server
-          TLS
+Browser
+   │
+   │ HTTPS
+   ▼
+Reverse Proxy
+   │
+   │ internal Docker traffic
+   ▼
+Backend
 ```
 
-### Resource
+Resource:
 
 - MDN TLS:
   https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Transport_Layer_Security
 
-### Goal
+Goal:
 
-Understand what HTTPS protects and why private keys must stay secret.
-
----
-
-# Phase 3 — Application security
-
-## 13. Authentication vs authorization
-
-### Authentication
-
-```text
-Who are you?
-```
-
-Example:
-
-```text
-email + password
-       ↓
-identity verified
-```
-
-### Authorization
-
-```text
-What are you allowed to do?
-```
-
-Example:
-
-```text
-normal user
-    ↓
-DELETE /admin/users/123
-    ↓
-403 Forbidden
-```
-
-### Resources
-
-- OWASP Security Terminology:
-  https://cheatsheetseries.owasp.org/cheatsheets/Security_Terminology_Cheat_Sheet.html
-- NestJS Authorization:
-  https://docs.nestjs.com/security/authorization
-
-### Goal
-
-Never confuse identity verification with permission checks.
+Be able to configure HTTPS at the reverse proxy and explain what the certificate and private key do.
 
 ---
 
-## 14. Password security
+# 7. Health checks
 
-### Main rule
+A running process is not always a healthy application.
 
-Never store plaintext passwords.
-
-Learn:
-
-- hashing
-- salt
-- password hashing algorithm
-- why normal fast hashes such as raw SHA-256 are not sufficient for password storage
-- Argon2id / bcrypt concepts
-
-### Resource
-
-- OWASP Password Storage Cheat Sheet:
-  https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html
-
-### Goal
-
-Understand what is stored in the database and how passwords are verified.
-
----
-
-## 15. Cookies and sessions
-
-### Mental model
-
-```text
-login
- ↓
-server verifies credentials
- ↓
-session created
- ↓
-session ID stored in cookie
- ↓
-browser sends cookie automatically
- ↓
-server recognizes the session
-```
-
-### Learn
-
-- session
-- cookie
-- HttpOnly
-- Secure
-- SameSite
-- session expiration
-- logout
-- invalidation
-- CSRF
-
-### Resource
-
-- OWASP Session Management Cheat Sheet:
-  https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html
-
-### Goal
-
-Understand how a user stays logged in and how sessions can be stolen or abused.
-
----
-
-## 16. OWASP Top 10
-
-Start with:
-
-- Broken Access Control
-- Authentication Failures
-- Injection
-- Security Misconfiguration
-- Cryptographic Failures
-- Security Logging and Alerting Failures
-
-### Resource
-
-- OWASP Top 10:
-  https://owasp.org/Top10/
-
-### Goal
-
-Understand real classes of application vulnerabilities, not just their names.
-
----
-
-## 17. Practical web security
-
-Use PortSwigger Web Security Academy.
-
-Recommended order:
-
-1. SQL injection
-2. Authentication
-3. Access control
-4. File upload vulnerabilities
-5. Path traversal
-6. Cross-site scripting (XSS)
-7. CSRF
-8. WebSockets
-9. API testing
-10. Race conditions
-
-### Resource
-
-- PortSwigger Web Security Academy:
-  https://portswigger.net/web-security
-
-Only test systems you own, training labs, or systems where you have explicit permission.
-
-### Goal
-
-Learn by seeing how vulnerable applications actually fail.
-
----
-
-## 18. Burp Suite
-
-Start with only:
-
-- Proxy
-- HTTP history
-- Repeater
-
-### Mental model
-
-```text
-Browser
-   ↓
- Burp
-   ↓
-Backend
-```
-
-### Resource
-
-- PortSwigger Getting Started:
-  https://portswigger.net/web-security/getting-started
-
-### Goal
-
-Inspect and modify HTTP requests so you can test Horizon's authorization and validation.
-
----
-
-## 19. OWASP Juice Shop
-
-An intentionally vulnerable web application for training.
-
-### Resource
-
-- OWASP Juice Shop:
-  https://owasp.org/www-project-juice-shop/
-
-### Goal
-
-Combine Docker, HTTP, browser tools, APIs, and practical web security in one safe lab.
-
----
-
-## 20. Input validation and file uploads
-
-Horizon may use avatars and project media, so this matters directly.
-
-### Learn
-
-- server-side validation
-- allowlists
-- MIME checking
-- extension checking
-- file size limits
-- generated filenames
-- access control
-- storage isolation
-- cleanup
-
-### Resource
-
-- OWASP File Upload Cheat Sheet:
-  https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html
-
-### Goal
-
-Understand why checking only a filename extension is not enough.
-
----
-
-## 21. Secret management
-
-### Secrets include
-
-- database passwords
-- session secrets
-- OAuth secrets
-- API keys
-- private keys
-- TLS private keys
-- Vault tokens
-
-### Rules
-
-```text
-.env.example with fake values ✅
-.env with real secrets in Git ❌
-frontend bundle containing secrets ❌
-secrets written to logs ❌
-```
-
-### Resource
-
-- OWASP Secrets Management Cheat Sheet:
-  https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html
-
-### Goal
-
-Understand why configuration and secrets must be handled separately.
-
----
-
-## 22. Docker security
-
-### Learn
-
-- least privilege
-- non-root containers
-- unnecessary capabilities
-- read-only filesystems where practical
-- avoid unnecessary published ports
-- do not expose Docker socket
-- image updates
-- secret handling
-
-### Resource
-
-- OWASP Docker Security Cheat Sheet:
-  https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html
-
-### Goal
-
-Know how a normal working container can still be insecure.
-
----
-
-# Phase 4 — CI/CD and operations
-
-## 23. GitHub Actions / CI
-
-### Mental model
-
-```text
-git push
-   ↓
-GitHub Actions
-   ↓
-install
-   ↓
-lint
-   ↓
-typecheck
-   ↓
-tests
-   ↓
-build
-   ↓
-PASS / FAIL
-```
-
-### Learn
-
-- workflow
-- event
-- job
-- step
-- runner
-- artifact
-- secret
-
-### Resource
-
-- GitHub Actions Quickstart:
-  https://docs.github.com/en/actions/get-started/quickstart
-
-### Goal
-
-The first CI pipeline should answer:
-
-> Does this commit build and do its tests pass?
-
-Do not start with complicated deployment pipelines.
-
----
-
-## 24. Health checks
-
-Example:
+Future example:
 
 ```http
 GET /health
 ```
 
-Possible response:
+Response:
 
 ```json
 {
@@ -1033,87 +350,126 @@ Possible response:
 }
 ```
 
-Later:
+Later it may check:
 
 ```text
-API       ✅
-Database  ✅
-Storage   ✅
+backend   ✅
+database  ✅
+storage   ✅
 ```
 
-### Goal
+Learn:
 
-Understand the difference between a process that is running and a service that is healthy.
+- Docker health checks
+- readiness
+- liveness
+- dependency startup
+- failure detection
+
+Goal:
+
+Docker and monitoring tools should be able to tell whether a service is actually usable.
+
+This also supports the DevOps minor module for health/status/backup/disaster recovery.
 
 ---
 
-## 25. Metrics, logs, and traces
+# 8. GitHub Actions / CI
 
-### Metric
+Learn this once the team has code that can build and test.
 
-```text
-requests_total = 19391
-```
-
-### Log
+Mental model:
 
 ```text
-ERROR login failure request_id=123
+git push / pull request
+        ↓
+GitHub Actions
+        ↓
+install dependencies
+        ↓
+lint
+        ↓
+typecheck
+        ↓
+tests
+        ↓
+build
+        ↓
+PASS / FAIL
 ```
 
-### Trace
+Learn:
 
-```text
-request
- ↓
-backend
- ↓
-database
- ↓
-storage
-```
+- workflow
+- event
+- job
+- step
+- runner
+- artifact
+- repository secrets
 
-### Goal
+Resource:
 
-Understand which kind of observability data answers which question.
+- GitHub Actions Quickstart:
+  https://docs.github.com/en/actions/get-started/quickstart
+
+Goal:
+
+The first CI should simply answer:
+
+> Does this change build and do its tests pass?
+
+Do not start with complicated deployment automation.
 
 ---
 
-## 26. Prometheus
+# 9. Prometheus
+
+Learn Prometheus only after the backend exists.
 
 Prometheus collects metrics.
 
 ```text
-Application /metrics
-        ↑
-        │ scrape
-        │
-   Prometheus
+Backend /metrics
+       ↑
+       │ scrape
+       │
+  Prometheus
 ```
 
-### Learn
+Learn:
 
 - metric
 - counter
 - gauge
 - histogram
-- labels
+- label
 - target
 - scraping
 - basic PromQL
 
-### Resource
+Useful future Horizon metrics:
+
+- request count
+- response latency
+- HTTP errors
+- active WebSocket connections
+- CPU
+- memory
+- database connections
+
+Resource:
 
 - Prometheus First Steps:
   https://prometheus.io/docs/introduction/first_steps/
 
-### Goal
+Goal:
 
-Collect useful application and infrastructure metrics.
+Collect useful metrics from the running system.
 
 ---
 
-## 27. Grafana
+# 10. Grafana
 
 Grafana visualizes metrics.
 
@@ -1127,29 +483,28 @@ Grafana
 Dashboard
 ```
 
-Potential Horizon metrics:
+Learn:
 
-- requests per second
-- response latency
-- HTTP 5xx count
-- active WebSocket connections
-- login failures
-- CPU
-- memory
-- database connections
+- data source
+- dashboard
+- panel
+- query
+- alert
 
-### Resource
+Resource:
 
 - Grafana Getting Started:
   https://grafana.com/docs/grafana/latest/fundamentals/getting-started/
 
-### Goal
+Goal:
 
-Build dashboards that actually help diagnose the system.
+Build custom dashboards and alerts for the Prometheus/Grafana Major module.
 
 ---
 
-## 28. Logging
+# 11. Logging
+
+Before ELK, understand good logs.
 
 Bad:
 
@@ -1162,35 +517,32 @@ Better:
 ```json
 {
   "level": "error",
-  "event": "login_failure",
+  "event": "database_connection_failed",
   "requestId": "123",
-  "timestamp": "...",
-  "reason": "invalid_credentials"
+  "timestamp": "..."
 }
 ```
 
-Never log:
+Learn:
 
-- passwords
-- session tokens
-- authentication cookies
-- API secrets
-- private keys
+- structured logs
+- log levels
+- timestamps
+- request IDs
+- log rotation
+- retention
 
-### Resource
+Goal:
 
-- OWASP Logging Cheat Sheet:
-  https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html
+The logs should help answer:
 
-### Goal
-
-Create useful structured logs without leaking sensitive information.
+> What failed, when did it fail, and where did it fail?
 
 ---
 
-## 29. ELK
+# 12. ELK
 
-### Components
+ELK is one of the DevOps Major modules.
 
 ```text
 Application logs
@@ -1202,372 +554,182 @@ Elasticsearch
     Kibana
 ```
 
-Think of them as:
+Understand:
 
-- Logstash = collect / transform
-- Elasticsearch = store / index / search
-- Kibana = visualize / search / dashboards
+- Logstash = collect / transform logs
+- Elasticsearch = store / index / search logs
+- Kibana = search / visualize logs
 
-### Resource
+Resource:
 
 - Elastic Stack fundamentals:
   https://www.elastic.co/docs/get-started/the-stack
 
-### Goal
+Goal:
 
-Centralize logs and make them searchable and useful.
+Centralize logs, create useful Kibana dashboards, configure retention/archiving, and secure access.
 
 ---
 
-## 30. Backups and disaster recovery
+# 13. Backups and disaster recovery
 
-A backup is only useful if it can be restored.
+A backup is useless if restore does not work.
 
-### Learn
+Learn:
 
 - PostgreSQL dump
 - restore
 - volume backup
 - retention
+- scheduled backups
 - recovery procedure
 - RPO
 - RTO
 
-### Practical goal
-
-Be able to demonstrate:
+Practical demonstration:
 
 ```text
-create data
-   ↓
-backup
-   ↓
+create test data
+      ↓
+backup database
+      ↓
 remove test data
-   ↓
-restore
-   ↓
+      ↓
+restore backup
+      ↓
 verify data returned
 ```
 
----
+Goal:
 
-# Phase 5 — Advanced security modules
-
-## 31. HashiCorp Vault
-
-Learn Vault only after understanding normal secret handling.
-
-### Problem
-
-```text
-Backend needs database password.
-
-Where should that password live?
-```
-
-### Vault model
-
-```text
-Vault
-  ↓
-authenticated application
-  ↓
-secret
-  ↓
-backend
-```
-
-### Learn
-
-- Vault server
-- client
-- token
-- secret
-- secrets engine
-- policy
-- authentication method
-- lease
-- rotation
-
-### Resource
-
-- HashiCorp Vault tutorials:
-  https://developer.hashicorp.com/vault/tutorials/get-started
-
-### Goal
-
-Understand how applications obtain secrets without hardcoding them.
+Be able to prove that backup and restore actually work.
 
 ---
 
-## 32. WAF / ModSecurity
-
-### Mental model
-
-```text
-Internet
-   ↓
-WAF / ModSecurity
-   ↓
-Reverse Proxy
-   ↓
-Application
-```
-
-A WAF is additional protection.
-
-It does **not** replace:
-
-- authentication
-- authorization
-- input validation
-- secure sessions
-- database security
-
-### Resources
-
-- ModSecurity:
-  https://github.com/owasp-modsecurity/ModSecurity
-- OWASP Core Rule Set:
-  https://coreruleset.org/
-
-### Goal
-
-Understand how suspicious HTTP traffic can be detected or blocked before reaching the
-application.
-
----
-
-## 33. NestJS security
-
-Learn this alongside the real backend once it exists.
-
-### Important concepts
-
-- Module
-- Controller
-- Service
-- DTO
-- Pipe
-- Guard
-- Middleware
-- Interceptor
-- authentication
-- authorization
-
-### Resources
-
-- Authentication:
-  https://docs.nestjs.com/security/authentication
-- Authorization:
-  https://docs.nestjs.com/security/authorization
-- Encryption and hashing:
-  https://docs.nestjs.com/security/encryption-and-hashing
-
-### Goal
-
-Be able to follow how Horizon's backend enforces authentication and permissions.
-
----
-
-## 34. WebSockets
-
-### Difference from HTTP
-
-HTTP:
-
-```text
-request
- ↓
-response
- ↓
-connection can finish
-```
-
-WebSocket:
-
-```text
-Client ═════════ Server
-      persistent
-      connection
-```
-
-### Security questions
-
-- Who authenticated this socket?
-- Which rooms may this user join?
-- Can User A subscribe to User B's private conversation?
-- Are incoming messages validated?
-- What happens after reconnect?
-- Can events be duplicated?
-
-### Resource
-
-- MDN WebSocket API:
-  https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API
-
-### Goal
-
-Understand both real-time communication and its authorization risks.
-
----
-
-## 35. Microservices
+# 14. Microservices — optional and last
 
 Do not prioritize this now.
 
-A modular monolith is currently the simpler Horizon direction.
+The DevOps category includes a Major module for a microservices backend, but Horizon currently plans a modular monolith first.
 
-Microservices introduce additional concerns:
+Microservices add:
 
+- multiple backend services
 - service boundaries
-- service discovery
-- inter-service authentication
+- inter-service communication
+- independent containers
 - distributed failures
-- message queues
-- distributed transactions
-- observability
-- independent deployment
+- service-to-service APIs
+- much harder debugging and monitoring
 
-Study this only if the team later decides to claim the microservices module.
+Only study this if the team later decides that the extra 2 points are worth the added complexity.
 
 ---
 
-# Recommended learning order for Horizon
+# DevOps learning order
 
-## Start now
+## Right now
 
 ```text
-Linux
-  ↓
-Networking
-  ↓
-HTTP
-  ↓
-Git
-  ↓
-Web application architecture
-  ↓
-JavaScript / TypeScript basics
-  ↓
-SQL / PostgreSQL
-  ↓
 Docker
   ↓
-Docker networking
+Docker Compose
   ↓
-Reverse proxy
+Docker Networking
   ↓
-HTTPS / TLS
+Reverse Proxy
   ↓
-Authentication vs Authorization
+HTTPS
+  ↓
+Health Checks
 ```
 
-## Then, when the backend exists
+## When frontend/backend code exists
 
 ```text
-Passwords
+Containerize the real application
   ↓
-Sessions / cookies
+One-command startup
   ↓
-OWASP Top 10
+GitHub Actions / CI
   ↓
-PortSwigger labs
-  ↓
-Burp Suite
-  ↓
-File upload security
-  ↓
-Secret management
-  ↓
-Docker security
+Health checks on real services
 ```
 
-## Then, when the application can run
+## When the application runs reliably
 
 ```text
-GitHub Actions
-  ↓
-Health checks
-  ↓
 Prometheus
   ↓
 Grafana
   ↓
-Structured logging
+Structured Logging
   ↓
 ELK
   ↓
-Backups / restore
+Backups + Restore
 ```
 
-## Finally
+## Optional later
 
 ```text
-Vault
-  ↓
-ModSecurity / WAF
-  ↓
-Advanced hardening
+Microservices
 ```
 
 ---
 
-# Core bookmark list
+# DevOps modules from the subject
+
+Your possible DevOps module points are:
+
+| Module | Type | Points |
+| --- | --- | ---: |
+| ELK log management | Major | 2 |
+| Prometheus + Grafana monitoring | Major | 2 |
+| Backend as microservices | Major | 2 |
+| Health checks + status page + backups/disaster recovery | Minor | 1 |
+
+Total possible DevOps points: **7**.
+
+A realistic Horizon target without microservices is:
+
+```text
+ELK                      2
+Prometheus + Grafana     2
+Health / backup          1
+                        ──
+                         5 points
+```
+
+---
+
+# Core bookmarks
 
 | Topic | Resource |
 | --- | --- |
-| Linux | https://ubuntu.com/tutorials/command-line-for-beginners |
-| Git | https://git-scm.com/learn |
-| HTTP | https://developer.mozilla.org/en-US/docs/Web/HTTP |
-| JavaScript | https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide |
-| TypeScript | https://www.typescriptlang.org/docs/handbook/intro.html |
-| PostgreSQL | https://www.postgresql.org/docs/current/tutorial.html |
-| Prisma | https://www.prisma.io/docs/getting-started |
+| Linux basics | https://ubuntu.com/tutorials/command-line-for-beginners |
 | Docker | https://docs.docker.com/get-started/ |
 | Docker Compose | https://docs.docker.com/compose/gettingstarted/ |
-| Docker Networking | https://docs.docker.com/engine/network/ |
+| Docker networking | https://docs.docker.com/engine/network/ |
 | Nginx | https://nginx.org/en/docs/beginners_guide.html |
-| TLS / HTTPS | https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Transport_Layer_Security |
-| OWASP Top 10 | https://owasp.org/Top10/ |
-| OWASP Cheat Sheets | https://cheatsheetseries.owasp.org/ |
-| PortSwigger Academy | https://portswigger.net/web-security |
-| OWASP Juice Shop | https://owasp.org/www-project-juice-shop/ |
+| HTTPS / TLS | https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Transport_Layer_Security |
 | GitHub Actions | https://docs.github.com/en/actions/get-started/quickstart |
 | Prometheus | https://prometheus.io/docs/introduction/first_steps/ |
 | Grafana | https://grafana.com/docs/grafana/latest/fundamentals/getting-started/ |
 | Elastic Stack | https://www.elastic.co/docs/get-started/the-stack |
-| Vault | https://developer.hashicorp.com/vault/tutorials/get-started |
-| ModSecurity | https://github.com/owasp-modsecurity/ModSecurity |
-| OWASP CRS | https://coreruleset.org/ |
-| NestJS Auth | https://docs.nestjs.com/security/authentication |
-| NestJS Authorization | https://docs.nestjs.com/security/authorization |
-| WebSockets | https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API |
 
 ---
 
-# Project-specific rule
+# Main rule
 
-Do not learn tools only for the sake of learning tools.
+Do not install tools just to say they exist.
 
-For every topic, connect it to Horizon:
+For every DevOps component, be able to explain:
 
-- networking → how containers communicate
-- HTTP → how React talks to NestJS
-- SQL → how Horizon stores users/projects/messages
-- Docker → reproducible one-command startup
-- HTTPS → encrypted browser/backend traffic
-- authentication → identifying users
-- authorization → protecting private/admin resources
-- Prometheus → measuring the system
-- Grafana → visualizing metrics
-- ELK → investigating logs
-- Vault → protecting secrets
-- ModSecurity → filtering malicious HTTP traffic
+1. What problem does it solve?
+2. Where does it sit in Horizon's architecture?
+3. How is it configured?
+4. How do we test that it works?
+5. What happens when it fails?
 
-The final goal is not to say "I used these technologies."
-
-The goal is to be able to explain:
-
-> what problem each technology solves, how Horizon uses it, what would happen without it,
-> how it is configured, and how we verified that it works.
+That is the level of understanding needed for the evaluation.
