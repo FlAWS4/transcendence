@@ -15,6 +15,6 @@ jobs:
       - name: Test CI
         run: |
           echo "CI is working"
-          test -f test.txt
+          test -f README.md
           pwd
           ls -la
