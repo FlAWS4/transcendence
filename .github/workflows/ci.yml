@@ -15,5 +15,6 @@ jobs:
       - name: Test CI
         run: |
           echo "CI is working"
+          test -f test.txt
           pwd
           ls -la
