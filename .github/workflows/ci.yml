@@ -1,0 +1,19 @@
+name: Transcendence CI
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  basic-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Test CI
+        run: |
+          echo "CI is working"
+          pwd
+          ls -la
