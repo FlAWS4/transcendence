@@ -1,0 +1,976 @@
+{
+  "date": "2026-10-15",
+  "mode": "avant",
+  "scope": "Read-only HTTP/source and cache check of the two entries before the integration of the design-review selection; writes only this evidence file.",
+  "filesVisited": 95,
+  "referenceCount": 159,
+  "missing": [],
+  "entryCaches": {
+    "index.html": true,
+    "content-preview.html": true
+  },
+  "expectedCacheUses": [
+    "account-menu.mjs?v=5",
+    "comments.css?v=9",
+    "comments.mjs?v=17",
+    "content-controls.mjs?v=17",
+    "content-report.css?v=3",
+    "dock-navigation.css?v=world-icon-8",
+    "entrance.css?v=audit-fixes-24",
+    "entrance.mjs?v=audit-fixes-15",
+    "globe-framing.css?v=recentered-15",
+    "journal-ui.mjs?v=40",
+    "project-ui.mjs?v=41"
+  ],
+  "cacheUsesMissing": [],
+  "packageReferences": [],
+  "entryOrder": {
+    "index.html": {
+      "lastStylesheet": "<link rel=\"stylesheet\" href=\"content-report.css?v=3\">",
+      "stylesheets": 37,
+      "scripts": [
+        "<script src=\"theme-bootstrap.js?v=1\"></script>",
+        "<script src=\"welcome.mjs?v=audit-fixes-146\" type=\"module\"></script>"
+      ],
+      "packageSheetAfterContentReport": true,
+      "packageModuleAfterMain": true
+    },
+    "content-preview.html": {
+      "lastStylesheet": "<link rel=\"stylesheet\" href=\"content-report.css?v=3\">",
+      "stylesheets": 37,
+      "scripts": [
+        "<script src=\"theme-bootstrap.js?v=1\"></script>",
+        "<script src=\"content-preview.mjs?v=113\" type=\"module\"></script>"
+      ],
+      "packageSheetAfterContentReport": true,
+      "packageModuleAfterMain": true
+    }
+  },
+  "welcomePanelsLoadsPackage": false,
+  "http": [
+    {
+      "url": "index.html",
+      "status": 200,
+      "bytes": 15388,
+      "sha256": "6c8776d6e72876a1483c2d39ab52dbefeef9f7df583913c0c17d5a6d394e5343",
+      "identical": true
+    },
+    {
+      "url": "content-preview.html",
+      "status": 200,
+      "bytes": 15396,
+      "sha256": "4ae91c5ca5251f1734c03d3ed0daf0bc5713bdc6ccc44bbab137b29bf03aaf03",
+      "identical": true
+    },
+    {
+      "url": "welcome.mjs?v=audit-fixes-146",
+      "status": 200,
+      "bytes": 76196,
+      "sha256": "58f5b152e47f70407205c7094e5a29a4368c2ca24fca0aed8450e25841c214c2",
+      "identical": true
+    },
+    {
+      "url": "content-preview.mjs?v=113",
+      "status": 200,
+      "bytes": 649,
+      "sha256": "92e9daa82910e2186f2516daf99cf35842fe8658f27fec579b62e0e67d206757",
+      "identical": true
+    },
+    {
+      "url": "entrance.mjs?v=audit-fixes-15",
+      "status": 200,
+      "bytes": 21273,
+      "sha256": "d2426b872e48813fba3df998d3512d2c32acdbbc013c2a33a13f461bc61c82e8",
+      "identical": true
+    },
+    {
+      "url": "entrance.css?v=audit-fixes-24",
+      "status": 200,
+      "bytes": 6990,
+      "sha256": "e5f9b6205d7a5fd0cba85e666eee48539fcbaf74944f94f4f25637cc369bd312",
+      "identical": true
+    },
+    {
+      "url": "globe-framing.css?v=recentered-15",
+      "status": 200,
+      "bytes": 6726,
+      "sha256": "a544a2e08a7697a44aa3c0cd5334a976a04fd9797934d27bb13c4d3ec7177ae6",
+      "identical": true
+    },
+    {
+      "url": "comments.mjs?v=17",
+      "status": 200,
+      "bytes": 39320,
+      "sha256": "24dd71a770b072f6aeade8ba16addb4e3023fb3b5d9a8713fe0cd8869423854b",
+      "identical": true
+    },
+    {
+      "url": "comments.css?v=9",
+      "status": 200,
+      "bytes": 8906,
+      "sha256": "9f93b003d8e2cc5d33da7324525f30a6353e05c95a371b5b2b9d6031f7aae84a",
+      "identical": true
+    },
+    {
+      "url": "project-ui.mjs?v=41",
+      "status": 200,
+      "bytes": 21963,
+      "sha256": "8cb26fbdadbc6c74994fdfc4e047abc61a8b15e593c81478be38f372d778e97c",
+      "identical": true
+    },
+    {
+      "url": "journal-ui.mjs?v=40",
+      "status": 200,
+      "bytes": 2139,
+      "sha256": "69b587c55633d47c9f2b5d0404fa6e39f98090508bc1853b06b5df58f11c673f",
+      "identical": true
+    },
+    {
+      "url": "dock-navigation.css?v=world-icon-8",
+      "status": 200,
+      "bytes": 3381,
+      "sha256": "174ea265d6a863f906a945747e8b3056e071056a0f84832f4f695711547b998c",
+      "identical": true
+    },
+    {
+      "url": "account-menu.mjs?v=5",
+      "status": 200,
+      "bytes": 13168,
+      "sha256": "b839d5c2c1c44e19d75d6d84fc89ff9cb5b91909b53cb093f7bbea338e9ef105",
+      "identical": true
+    },
+    {
+      "url": "content-controls.mjs?v=17",
+      "status": 200,
+      "bytes": 23933,
+      "sha256": "58ac9a724ba2168a3109cf13b3c77e06d457068827074370ec8c5aff1625e2eb",
+      "identical": true
+    },
+    {
+      "url": "content-controls.css?v=14",
+      "status": 200,
+      "bytes": 10306,
+      "sha256": "cc14237d5d978a625c8481701d82a6c49300cbde33fedcd8a9fa99d52f8b03e0",
+      "identical": true
+    },
+    {
+      "url": "content-report.css?v=3",
+      "status": 200,
+      "bytes": 3937,
+      "sha256": "98ced8e773ef4d80fbf2a4b7364a923812dcb3b4ab130951873c16329ea14500",
+      "identical": true
+    },
+    {
+      "url": "welcome-panels.html",
+      "status": 200,
+      "bytes": 9743,
+      "sha256": "8ea7fed7eb308dbd12e8c8222f8359536905c549bda63e98f1e89fc4856a1f0e",
+      "identical": true
+    },
+    {
+      "url": "welcome-panels.mjs",
+      "status": 200,
+      "bytes": 32825,
+      "sha256": "325263f40009464e8ef3e950a6e81ec124412c3d5b4f5c5e7f9e0787bb602074",
+      "identical": true
+    }
+  ],
+  "httpAllIdentical": true,
+  "references": [
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "theme-bootstrap.js?v=1",
+      "file": "work/visualizations/horizon-welcome/theme-bootstrap.js"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "../assets/jost-1.ttf",
+      "file": "work/visualizations/assets/jost-1.ttf"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "../../figma/tokens.css",
+      "file": "work/figma/tokens.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "../assets/jost.css",
+      "file": "work/visualizations/assets/jost.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "vendor/maplibre-gl.css",
+      "file": "work/visualizations/horizon-welcome/vendor/maplibre-gl.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "welcome.css?v=theme-metrics-24",
+      "file": "work/visualizations/horizon-welcome/welcome.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "integrated-globe.css?v=3",
+      "file": "work/visualizations/horizon-welcome/integrated-globe.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "campus-details.css?v=12",
+      "file": "work/visualizations/horizon-welcome/campus-details.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "campus-map-dialog.css?v=1",
+      "file": "work/visualizations/horizon-welcome/campus-map-dialog.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "entrance.css?v=audit-fixes-24",
+      "file": "work/visualizations/horizon-welcome/entrance.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "content-preview.css?v=dock-5",
+      "file": "work/visualizations/horizon-welcome/content-preview.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "dock-navigation.css?v=world-icon-8",
+      "file": "work/visualizations/horizon-welcome/dock-navigation.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "content-layout.css?v=4",
+      "file": "work/visualizations/horizon-welcome/content-layout.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "content-pagination.css?v=3",
+      "file": "work/visualizations/horizon-welcome/content-pagination.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "back-to-top.css?v=2",
+      "file": "work/visualizations/horizon-welcome/back-to-top.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "account-menu.css?v=2",
+      "file": "work/visualizations/horizon-welcome/account-menu.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "scope-popover.css?v=1",
+      "file": "work/visualizations/horizon-welcome/scope-popover.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "dock-search.css?v=uniform-dock-20",
+      "file": "work/visualizations/horizon-welcome/dock-search.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "globe-framing.css?v=recentered-15",
+      "file": "work/visualizations/horizon-welcome/globe-framing.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "floating-search.css?v=four-stage-dock-8",
+      "file": "work/visualizations/horizon-welcome/floating-search.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "control-glass.css?v=2",
+      "file": "work/visualizations/horizon-welcome/control-glass.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "scrollbars.css?v=1",
+      "file": "work/visualizations/horizon-welcome/scrollbars.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "readable-glass.css?v=2",
+      "file": "work/visualizations/horizon-welcome/readable-glass.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "sticky-header.css?v=5",
+      "file": "work/visualizations/horizon-welcome/sticky-header.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "content-controls.css?v=14",
+      "file": "work/visualizations/horizon-welcome/content-controls.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "project-filter-dialog.css?v=3",
+      "file": "work/visualizations/horizon-welcome/project-filter-dialog.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "profiles.css?v=24",
+      "file": "work/visualizations/horizon-welcome/profiles.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "projects.css?v=11",
+      "file": "work/visualizations/horizon-welcome/projects.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "journal.css?v=1",
+      "file": "work/visualizations/horizon-welcome/journal.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "comments.css?v=9",
+      "file": "work/visualizations/horizon-welcome/comments.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "contextual-discovery.css?v=2",
+      "file": "work/visualizations/horizon-welcome/contextual-discovery.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "responsive-content.css?v=9",
+      "file": "work/visualizations/horizon-welcome/responsive-content.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "detail-scroll.css?v=6",
+      "file": "work/visualizations/horizon-welcome/detail-scroll.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "brand-wordmark.css?v=2",
+      "file": "work/visualizations/horizon-welcome/brand-wordmark.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "awards.css?v=2",
+      "file": "work/visualizations/horizon-welcome/awards.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "responsive-dock.css?v=6",
+      "file": "work/visualizations/horizon-welcome/responsive-dock.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "media-viewer.css?v=1",
+      "file": "work/visualizations/horizon-welcome/media-viewer.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "theme-menu.css?v=1",
+      "file": "work/visualizations/horizon-welcome/theme-menu.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "content-report.css?v=3",
+      "file": "work/visualizations/horizon-welcome/content-report.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "content-preview.mjs?v=113",
+      "file": "work/visualizations/horizon-welcome/content-preview.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "../../figma/logo-42.svg",
+      "file": "work/figma/logo-42.svg"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.html",
+      "url": "../../figma/logo-42.svg",
+      "file": "work/figma/logo-42.svg"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview.mjs",
+      "url": "./welcome.mjs?v=audit-fixes-146",
+      "file": "work/visualizations/horizon-welcome/welcome.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./theme-preferences.mjs?v=1",
+      "file": "work/visualizations/horizon-welcome/theme-preferences.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./account-menu.mjs?v=5",
+      "file": "work/visualizations/horizon-welcome/account-menu.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./content-pagination.mjs?v=2",
+      "file": "work/visualizations/horizon-welcome/content-pagination.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./content-pagination-ui.mjs?v=3",
+      "file": "work/visualizations/horizon-welcome/content-pagination-ui.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./back-to-top.mjs?v=2",
+      "file": "work/visualizations/horizon-welcome/back-to-top.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./content-geography.mjs?v=1",
+      "file": "work/visualizations/horizon-welcome/content-geography.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./theme-menu.mjs?v=1",
+      "file": "work/visualizations/horizon-welcome/theme-menu.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./media-viewer.mjs?v=1",
+      "file": "work/visualizations/horizon-welcome/media-viewer.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./author-preview-fit.mjs?v=1",
+      "file": "work/visualizations/horizon-welcome/author-preview-fit.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./detail-scroll.mjs?v=4",
+      "file": "work/visualizations/horizon-welcome/detail-scroll.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./brand-wordmark.mjs?v=3",
+      "file": "work/visualizations/horizon-welcome/brand-wordmark.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./random-discovery.mjs?v=2",
+      "file": "work/visualizations/horizon-welcome/random-discovery.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./content-filters.mjs?v=12",
+      "file": "work/visualizations/horizon-welcome/content-filters.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./content-preferences.mjs?v=13",
+      "file": "work/visualizations/horizon-welcome/content-preferences.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./content-controls.mjs?v=17",
+      "file": "work/visualizations/horizon-welcome/content-controls.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./reading-scope.mjs?v=1",
+      "file": "work/visualizations/horizon-welcome/reading-scope.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./scope-popover.mjs?v=2",
+      "file": "work/visualizations/horizon-welcome/scope-popover.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./dock-search.mjs?v=members-16",
+      "file": "work/visualizations/horizon-welcome/dock-search.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./dock-search-data.mjs?v=8",
+      "file": "work/visualizations/horizon-welcome/dock-search-data.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./content-transitions.mjs?v=3",
+      "file": "work/visualizations/horizon-welcome/content-transitions.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./dock-navigation.mjs?v=progressive-center-6",
+      "file": "work/visualizations/horizon-welcome/dock-navigation.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./campus-map-dialog.mjs?v=1",
+      "file": "work/visualizations/horizon-welcome/campus-map-dialog.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./entrance.mjs?v=audit-fixes-15",
+      "file": "work/visualizations/horizon-welcome/entrance.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./campus-details.mjs?v=10",
+      "file": "work/visualizations/horizon-welcome/campus-details.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./content-preview-data.mjs?v=11",
+      "file": "work/visualizations/horizon-welcome/content-preview-data.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./profile-data.mjs?v=11",
+      "file": "work/visualizations/horizon-welcome/profile-data.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./profile-ui.mjs?v=34",
+      "file": "work/visualizations/horizon-welcome/profile-ui.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./profile-sections.mjs?v=6",
+      "file": "work/visualizations/horizon-welcome/profile-sections.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./content-preview-art.mjs?v=1",
+      "file": "work/visualizations/horizon-welcome/content-preview-art.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./project-ui.mjs?v=41",
+      "file": "work/visualizations/horizon-welcome/project-ui.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./journal-ui.mjs?v=40",
+      "file": "work/visualizations/horizon-welcome/journal-ui.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./scope-selectors.mjs?v=1",
+      "file": "work/visualizations/horizon-welcome/scope-selectors.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/welcome.mjs",
+      "url": "./geography-loader.mjs",
+      "file": "work/visualizations/horizon-welcome/geography-loader.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/journal-ui.mjs",
+      "url": "./project-ui.mjs?v=41",
+      "file": "work/visualizations/horizon-welcome/project-ui.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/journal-ui.mjs",
+      "url": "./profile-sections.mjs?v=6",
+      "file": "work/visualizations/horizon-welcome/profile-sections.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/profile-sections.mjs",
+      "url": "./content-filters.mjs?v=11",
+      "file": "work/visualizations/horizon-welcome/content-filters.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/project-ui.mjs",
+      "url": "./content-report.mjs?v=4",
+      "file": "work/visualizations/horizon-welcome/content-report.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/project-ui.mjs",
+      "url": "./comments.mjs?v=17",
+      "file": "work/visualizations/horizon-welcome/comments.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/project-ui.mjs",
+      "url": "./content-preview-art.mjs?v=1",
+      "file": "work/visualizations/horizon-welcome/content-preview-art.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/project-ui.mjs",
+      "url": "./profile-ui.mjs?v=34",
+      "file": "work/visualizations/horizon-welcome/profile-ui.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/project-ui.mjs",
+      "url": "./profile-sections.mjs?v=6",
+      "file": "work/visualizations/horizon-welcome/profile-sections.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/project-ui.mjs",
+      "url": "./media-viewer.mjs?v=1",
+      "file": "work/visualizations/horizon-welcome/media-viewer.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/project-ui.mjs",
+      "url": "./project-trial.mjs?v=4",
+      "file": "work/visualizations/horizon-welcome/project-trial.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/project-ui.mjs",
+      "url": "./content-geography.mjs?v=1",
+      "file": "work/visualizations/horizon-welcome/content-geography.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/profile-ui.mjs",
+      "url": "./content-report.mjs?v=4",
+      "file": "work/visualizations/horizon-welcome/content-report.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/profile-ui.mjs",
+      "url": "./content-preview-art.mjs?v=1",
+      "file": "work/visualizations/horizon-welcome/content-preview-art.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/profile-ui.mjs",
+      "url": "./profile-sections.mjs?v=6",
+      "file": "work/visualizations/horizon-welcome/profile-sections.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/profile-ui.mjs",
+      "url": "./profile-data.mjs?v=11",
+      "file": "work/visualizations/horizon-welcome/profile-data.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/profile-ui.mjs",
+      "url": "./media-viewer.mjs?v=1",
+      "file": "work/visualizations/horizon-welcome/media-viewer.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/profile-ui.mjs",
+      "url": "./content-geography.mjs?v=1",
+      "file": "work/visualizations/horizon-welcome/content-geography.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/profile-data.mjs",
+      "url": "./demo-content-expanded.mjs?v=1",
+      "file": "work/visualizations/horizon-welcome/demo-content-expanded.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/profile-data.mjs",
+      "url": "./demo-content-seed.mjs?v=1",
+      "file": "work/visualizations/horizon-welcome/demo-content-seed.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/comments.mjs",
+      "url": "./comment-mentions.mjs?v=2",
+      "file": "work/visualizations/horizon-welcome/comment-mentions.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/comments.mjs",
+      "url": "./comment-mention-picker.mjs?v=3",
+      "file": "work/visualizations/horizon-welcome/comment-mention-picker.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/comment-mention-picker.mjs",
+      "url": "./comment-mentions.mjs?v=2",
+      "file": "work/visualizations/horizon-welcome/comment-mentions.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview-data.mjs",
+      "url": "./demo-content-expanded.mjs?v=1",
+      "file": "work/visualizations/horizon-welcome/demo-content-expanded.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preview-data.mjs",
+      "url": "./demo-content-seed.mjs?v=1",
+      "file": "work/visualizations/horizon-welcome/demo-content-seed.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/campus-details.mjs",
+      "url": "./campus-website.mjs?v=1",
+      "file": "work/visualizations/horizon-welcome/campus-website.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/campus-details.mjs",
+      "url": "./campus-sheet.mjs?v=2",
+      "file": "work/visualizations/horizon-welcome/campus-sheet.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/campus-details.mjs",
+      "url": "./media-viewer.mjs?v=1",
+      "file": "work/visualizations/horizon-welcome/media-viewer.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/entrance.mjs",
+      "url": "../decryption-examples/scanner-return-random.mjs",
+      "file": "work/visualizations/decryption-examples/scanner-return-random.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/entrance.mjs",
+      "url": "../decryption-examples/shared.mjs",
+      "file": "work/visualizations/decryption-examples/shared.mjs"
+    },
+    {
+      "from": "work/visualizations/decryption-examples/shared.mjs",
+      "url": "../horizon-decryption-engine.mjs",
+      "file": "work/visualizations/horizon-decryption-engine.mjs"
+    },
+    {
+      "from": "work/visualizations/decryption-examples/scanner-return-random.mjs",
+      "url": "./scanner-return-together.mjs",
+      "file": "work/visualizations/decryption-examples/scanner-return-together.mjs"
+    },
+    {
+      "from": "work/visualizations/decryption-examples/scanner-return-together.mjs",
+      "url": "../horizon-decryption-engine.mjs",
+      "file": "work/visualizations/horizon-decryption-engine.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/dock-navigation.mjs",
+      "url": "./globe-layout.mjs?v=2",
+      "file": "work/visualizations/horizon-welcome/globe-layout.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/dock-search-data.mjs",
+      "url": "./content-geography.mjs?v=1",
+      "file": "work/visualizations/horizon-welcome/content-geography.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-controls.mjs",
+      "url": "./project-filter-dialog.mjs?v=3",
+      "file": "work/visualizations/horizon-welcome/project-filter-dialog.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-preferences.mjs",
+      "url": "./content-filters.mjs?v=11",
+      "file": "work/visualizations/horizon-welcome/content-filters.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/content-pagination-ui.mjs",
+      "url": "./content-pagination.mjs?v=2",
+      "file": "work/visualizations/horizon-welcome/content-pagination.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/comments.css",
+      "url": "./comment-mention-picker.css?v=1",
+      "file": "work/visualizations/horizon-welcome/comment-mention-picker.css"
+    },
+    {
+      "from": "work/visualizations/assets/jost.css",
+      "url": "./jost-0.ttf",
+      "file": "work/visualizations/assets/jost-0.ttf"
+    },
+    {
+      "from": "work/visualizations/assets/jost.css",
+      "url": "./jost-1.ttf",
+      "file": "work/visualizations/assets/jost-1.ttf"
+    },
+    {
+      "from": "work/visualizations/assets/jost.css",
+      "url": "./jost-2.ttf",
+      "file": "work/visualizations/assets/jost-2.ttf"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "theme-bootstrap.js?v=1",
+      "file": "work/visualizations/horizon-welcome/theme-bootstrap.js"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "../assets/jost-1.ttf",
+      "file": "work/visualizations/assets/jost-1.ttf"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "../../figma/tokens.css",
+      "file": "work/figma/tokens.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "../assets/jost.css",
+      "file": "work/visualizations/assets/jost.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "vendor/maplibre-gl.css",
+      "file": "work/visualizations/horizon-welcome/vendor/maplibre-gl.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "welcome.css?v=theme-metrics-24",
+      "file": "work/visualizations/horizon-welcome/welcome.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "integrated-globe.css?v=3",
+      "file": "work/visualizations/horizon-welcome/integrated-globe.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "campus-details.css?v=12",
+      "file": "work/visualizations/horizon-welcome/campus-details.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "campus-map-dialog.css?v=1",
+      "file": "work/visualizations/horizon-welcome/campus-map-dialog.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "entrance.css?v=audit-fixes-24",
+      "file": "work/visualizations/horizon-welcome/entrance.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "content-preview.css?v=dock-5",
+      "file": "work/visualizations/horizon-welcome/content-preview.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "dock-navigation.css?v=world-icon-8",
+      "file": "work/visualizations/horizon-welcome/dock-navigation.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "content-layout.css?v=4",
+      "file": "work/visualizations/horizon-welcome/content-layout.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "content-pagination.css?v=3",
+      "file": "work/visualizations/horizon-welcome/content-pagination.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "back-to-top.css?v=2",
+      "file": "work/visualizations/horizon-welcome/back-to-top.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "account-menu.css?v=2",
+      "file": "work/visualizations/horizon-welcome/account-menu.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "scope-popover.css?v=1",
+      "file": "work/visualizations/horizon-welcome/scope-popover.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "dock-search.css?v=uniform-dock-20",
+      "file": "work/visualizations/horizon-welcome/dock-search.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "globe-framing.css?v=recentered-15",
+      "file": "work/visualizations/horizon-welcome/globe-framing.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "floating-search.css?v=four-stage-dock-8",
+      "file": "work/visualizations/horizon-welcome/floating-search.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "control-glass.css?v=2",
+      "file": "work/visualizations/horizon-welcome/control-glass.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "scrollbars.css?v=1",
+      "file": "work/visualizations/horizon-welcome/scrollbars.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "readable-glass.css?v=2",
+      "file": "work/visualizations/horizon-welcome/readable-glass.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "sticky-header.css?v=5",
+      "file": "work/visualizations/horizon-welcome/sticky-header.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "content-controls.css?v=14",
+      "file": "work/visualizations/horizon-welcome/content-controls.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "project-filter-dialog.css?v=3",
+      "file": "work/visualizations/horizon-welcome/project-filter-dialog.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "profiles.css?v=24",
+      "file": "work/visualizations/horizon-welcome/profiles.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "projects.css?v=11",
+      "file": "work/visualizations/horizon-welcome/projects.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "journal.css?v=1",
+      "file": "work/visualizations/horizon-welcome/journal.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "comments.css?v=9",
+      "file": "work/visualizations/horizon-welcome/comments.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "contextual-discovery.css?v=2",
+      "file": "work/visualizations/horizon-welcome/contextual-discovery.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "responsive-content.css?v=9",
+      "file": "work/visualizations/horizon-welcome/responsive-content.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "detail-scroll.css?v=6",
+      "file": "work/visualizations/horizon-welcome/detail-scroll.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "brand-wordmark.css?v=2",
+      "file": "work/visualizations/horizon-welcome/brand-wordmark.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "awards.css?v=2",
+      "file": "work/visualizations/horizon-welcome/awards.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "responsive-dock.css?v=6",
+      "file": "work/visualizations/horizon-welcome/responsive-dock.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "media-viewer.css?v=1",
+      "file": "work/visualizations/horizon-welcome/media-viewer.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "theme-menu.css?v=1",
+      "file": "work/visualizations/horizon-welcome/theme-menu.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "content-report.css?v=3",
+      "file": "work/visualizations/horizon-welcome/content-report.css"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "welcome.mjs?v=audit-fixes-146",
+      "file": "work/visualizations/horizon-welcome/welcome.mjs"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "../../figma/logo-42.svg",
+      "file": "work/figma/logo-42.svg"
+    },
+    {
+      "from": "work/visualizations/horizon-welcome/index.html",
+      "url": "../../figma/logo-42.svg",
+      "file": "work/figma/logo-42.svg"
+    }
+  ]
+}

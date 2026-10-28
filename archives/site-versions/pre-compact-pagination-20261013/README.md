@@ -1,0 +1,3 @@
+# Pagination avant la correction compacte —13 octobre2026
+
+Sources exactes avant la demande de compactage et le choix explicite de24 profils/page. [Lecteur du composant antérieur](preview.html) : sept ou100 pages, navigation fonctionnelle. Les trois fichiers du composant sont autonomes ; styles de page neutres uniquement pour la consultation. Les sources de raccord et tests sont conservées pour audit ; le lecteur ne prétend pas reproduire tout le site. Le rendu complet précédent à sept pages est également conservé dans les captures `../../checks/20261013-seven-page-content-*.png`. Les fichiers `manifest.json` enregistrent leurs empreintes. Aucune ancienne étude supprimée.

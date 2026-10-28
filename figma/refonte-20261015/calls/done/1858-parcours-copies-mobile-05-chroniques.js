@@ -1,0 +1,49 @@
+// 42 Horizon — parcours cliquables : copies de cadres vérifiés des pages 01 à 08 dans « 10 · Parcours · mobile », à la hauteur de l'écran avec la page qui défile ; les calques fixes du site deviennent des enfants fixes du cadre ; le thème suit le mode du prototype (refonte Figma, 19 oct. 2026) ; les cadres d'origine ne changent pas
+const dest = await figma.getNodeByIdAsync('760:65');
+await figma.setCurrentPageAsync(dest);
+const src = await figma.getNodeByIdAsync('1:12');
+if (src.id !== dest.id) await src.loadAsync();
+const colors = await figma.variables.getVariableCollectionByIdAsync('VariableCollectionId:3:2');
+const J = [{"key": "mobile|fr|v|article-comments", "src": "633:332610", "name": "Commentaires — Mobile · Clair", "section": "760:78", "at": [1730, 260], "full": true, "vh": 844, "fixed": [{"path": ["Application", "Globe · Globe interactif. Glisse pour to…"], "x": 147.1, "y": 67.6, "w": 32.7, "h": 70.7, "dy": 0, "bbox": [147.1, 67.6, 32.7, 70.7]}, {"path": ["Application", "Barre de périmètre"], "x": 140.4, "y": 84.0, "w": 109.1, "h": 38, "dy": 0, "bbox": [140.4, 84.0, 109.1, 38.0]}, {"path": ["Application", "En-tête"], "x": 0, "y": 0, "w": 390, "h": 92, "dy": 0, "bbox": [0, 0, 390, 92]}, {"path": ["Application", "Menu du bas"], "x": 16.0, "y": 1216.0, "w": 358, "h": 60, "dy": -449, "bbox": [16.0, 710.0, 358.0, 117.0]}]}];
+const out = { ids: {}, missing: [], fixed: {}, notFound: {} };
+// a layer of the scene found again in the frame: the path of names from the frame, the last step by its position
+function locate(c, path, x, y) {
+  let cur = c;
+  const T0 = c.absoluteTransform;
+  for (let i = 0; i < path.length; i++) {
+    const kids = ('children' in cur ? cur.children : []).filter(n => n.name === path[i]);
+    if (!kids.length) return null;
+    if (i < path.length - 1) { cur = kids[0]; continue; }
+    let best = null, bd = 1e9;
+    for (const k of kids) { const t = k.absoluteTransform, d = Math.abs(t[0][2] - T0[0][2] - x) + Math.abs(t[1][2] - T0[1][2] - y); if (d < bd) { bd = d; best = k; } }
+    return bd < 2 ? best : null;
+  }
+  return null;
+}
+function convert(c, j) {
+  c.clearExplicitVariableModeForCollection(colors);
+  if (!j.full) return;
+  const T0 = c.absoluteTransform;
+  let moved = 0;
+  const lost = [];
+  for (const f of j.fixed) {
+    const n = locate(c, f.path, f.x, f.y);
+    if (!n) { lost.push(f.path.join(' > ')); continue; }
+    const t = n.absoluteTransform, ax = t[0][2] - T0[0][2], ay = t[1][2] - T0[1][2];
+    c.appendChild(n); n.x = ax; n.y = ay + f.dy; moved++;
+  }
+  c.resizeWithoutConstraints(c.width, j.vh); c.clipsContent = true; c.overflowDirection = 'VERTICAL';
+  c.numberOfFixedChildren = moved;
+  out.fixed[j.key] = moved;
+  if (lost.length) out.notFound[j.key] = lost;
+}
+for (const j of J) {
+  const s = await figma.getNodeByIdAsync(j.src);
+  const sec = await figma.getNodeByIdAsync(j.section);
+  if (!s || !sec) { out.missing.push(j.key); continue; }
+  for (const old of sec.children.filter(n => n.name === j.name)) old.remove();
+  const c = s.clone(); sec.appendChild(c); c.name = j.name; c.x = j.at[0]; c.y = j.at[1];
+  convert(c, j);
+  out.ids[j.key] = c.id;
+}
+return out;

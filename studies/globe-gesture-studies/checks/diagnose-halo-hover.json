@@ -1,0 +1,489 @@
+[
+  {
+    "case": "mobile-open",
+    "result": {
+      "t": 8713.90000000596,
+      "state": {
+        "variant": "2",
+        "open": true,
+        "pinned": false,
+        "available": true,
+        "reason": "hover",
+        "hold": false
+      },
+      "active": "study-trigger",
+      "hit": "<canvas class=\"maplibregl-canvas\" tabindex=\"-1\" aria-label=\"Map\" role=\"region\" width=\"390\" height=\"844\" style=\"width: 390px; height: 844px;\" aria-hidden=\"true\"></canvas>",
+      "pointer": {
+        "x": 0,
+        "y": 0
+      },
+      "trigger": {
+        "x": 330,
+        "y": 398.640625,
+        "w": 48,
+        "h": 70,
+        "hover": false
+      },
+      "palette": {
+        "x": 74,
+        "y": 236.640625,
+        "w": 248,
+        "h": 372,
+        "hover": false,
+        "hidden": false
+      }
+    }
+  },
+  {
+    "case": "mobile-escape",
+    "result": {
+      "t": 8869.40000000596,
+      "state": {
+        "variant": "2",
+        "open": false,
+        "pinned": false,
+        "available": true,
+        "reason": "hover",
+        "hold": false
+      },
+      "active": "study-trigger",
+      "hit": "<canvas class=\"maplibregl-canvas\" tabindex=\"-1\" aria-label=\"Map\" role=\"region\" width=\"390\" height=\"844\" style=\"width: 390px; height: 844px;\" aria-hidden=\"true\"></canvas>",
+      "pointer": {
+        "x": 0,
+        "y": 0
+      },
+      "trigger": {
+        "x": 330,
+        "y": 398.640625,
+        "w": 48,
+        "h": 70,
+        "hover": false
+      },
+      "palette": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "hover": false,
+        "hidden": true
+      }
+    }
+  },
+  {
+    "case": "resized",
+    "result": {
+      "t": 9278.70000000298,
+      "state": {
+        "variant": "2",
+        "open": false,
+        "pinned": false,
+        "available": true,
+        "reason": "hover",
+        "hold": false
+      },
+      "active": "study-trigger",
+      "hit": "<canvas class=\"maplibregl-canvas\" tabindex=\"-1\" aria-label=\"Map\" role=\"region\" width=\"1280\" height=\"900\" style=\"width: 1280px; height: 900px;\" aria-hidden=\"true\"></canvas>",
+      "pointer": {
+        "x": 0,
+        "y": 0
+      },
+      "trigger": {
+        "x": 352.828125,
+        "y": 398.640625,
+        "w": 48,
+        "h": 70,
+        "hover": false
+      },
+      "palette": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "hover": false,
+        "hidden": true
+      }
+    }
+  },
+  {
+    "case": "left",
+    "result": {
+      "t": 10482.79999999702,
+      "state": {
+        "variant": "2",
+        "open": false,
+        "pinned": false,
+        "available": true,
+        "reason": "hover",
+        "hold": false
+      },
+      "active": "study-trigger",
+      "hit": "<canvas class=\"maplibregl-canvas\" tabindex=\"-1\" aria-label=\"Map\" role=\"region\" width=\"1280\" height=\"900\" style=\"width: 1280px; height: 900px;\" aria-hidden=\"true\"></canvas>",
+      "pointer": {
+        "x": 0,
+        "y": 0
+      },
+      "trigger": {
+        "x": 952.453125,
+        "y": 542.0625,
+        "w": 48,
+        "h": 70,
+        "hover": false
+      },
+      "palette": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "hover": false,
+        "hidden": true
+      }
+    }
+  },
+  {
+    "case": "hover-250",
+    "result": {
+      "t": 10797.70000000298,
+      "state": {
+        "variant": "2",
+        "open": true,
+        "pinned": false,
+        "available": true,
+        "reason": "hover",
+        "hold": false
+      },
+      "active": "study-trigger",
+      "hit": "<span class=\"study-trigger-mark\">⋮</span>",
+      "pointer": {
+        "x": 976.453125,
+        "y": 577.0625
+      },
+      "trigger": {
+        "x": 952.453125,
+        "y": 542.0625,
+        "w": 48,
+        "h": 70,
+        "hover": true
+      },
+      "palette": {
+        "x": 696.453125,
+        "y": 374,
+        "w": 248,
+        "h": 372,
+        "hover": false,
+        "hidden": false
+      }
+    }
+  },
+  {
+    "case": "hover-1050",
+    "result": {
+      "t": 11598.70000000298,
+      "state": {
+        "variant": "2",
+        "open": true,
+        "pinned": false,
+        "available": true,
+        "reason": "hover",
+        "hold": false
+      },
+      "active": "study-trigger",
+      "hit": "<span class=\"study-trigger-mark\">⋮</span>",
+      "pointer": {
+        "x": 976.453125,
+        "y": 577.0625
+      },
+      "trigger": {
+        "x": 952.453125,
+        "y": 542.0625,
+        "w": 48,
+        "h": 70,
+        "hover": true
+      },
+      "palette": {
+        "x": 696.453125,
+        "y": 374,
+        "w": 248,
+        "h": 372,
+        "hover": false,
+        "hidden": false
+      }
+    }
+  },
+  {
+    "case": "timeline",
+    "result": [
+      {
+        "event": "open-mutation",
+        "t": 7659,
+        "state": {
+          "variant": "2",
+          "open": true,
+          "pinned": false,
+          "available": true,
+          "reason": "hover",
+          "hold": false
+        },
+        "active": "",
+        "hit": "<canvas class=\"maplibregl-canvas\" tabindex=\"-1\" aria-label=\"Map\" role=\"region\" width=\"390\" height=\"844\" style=\"width: 390px; height: 844px;\" aria-hidden=\"true\"></canvas>",
+        "pointer": {
+          "x": 0,
+          "y": 0
+        },
+        "trigger": {
+          "x": 330,
+          "y": 398.640625,
+          "w": 48,
+          "h": 70,
+          "hover": true
+        },
+        "palette": {
+          "x": 74,
+          "y": 236.640625,
+          "w": 248,
+          "h": 372,
+          "hover": false,
+          "hidden": false
+        }
+      },
+      {
+        "event": "pointerenter",
+        "id": "study-trigger",
+        "t": 7659.5,
+        "state": {
+          "variant": "2",
+          "open": true,
+          "pinned": false,
+          "available": true,
+          "reason": "hover",
+          "hold": false
+        },
+        "active": "",
+        "hit": "<canvas class=\"maplibregl-canvas\" tabindex=\"-1\" aria-label=\"Map\" role=\"region\" width=\"390\" height=\"844\" style=\"width: 390px; height: 844px;\" aria-hidden=\"true\"></canvas>",
+        "pointer": {
+          "x": 0,
+          "y": 0
+        },
+        "trigger": {
+          "x": 330,
+          "y": 398.640625,
+          "w": 48,
+          "h": 70,
+          "hover": true
+        },
+        "palette": {
+          "x": 74,
+          "y": 236.640625,
+          "w": 248,
+          "h": 372,
+          "hover": false,
+          "hidden": false
+        }
+      },
+      {
+        "event": "focus",
+        "id": "study-trigger",
+        "t": 7660,
+        "state": {
+          "variant": "2",
+          "open": true,
+          "pinned": false,
+          "available": true,
+          "reason": "hover",
+          "hold": false
+        },
+        "active": "study-trigger",
+        "hit": "<canvas class=\"maplibregl-canvas\" tabindex=\"-1\" aria-label=\"Map\" role=\"region\" width=\"390\" height=\"844\" style=\"width: 390px; height: 844px;\" aria-hidden=\"true\"></canvas>",
+        "pointer": {
+          "x": 0,
+          "y": 0
+        },
+        "trigger": {
+          "x": 330,
+          "y": 398.640625,
+          "w": 48,
+          "h": 70,
+          "hover": true
+        },
+        "palette": {
+          "x": 74,
+          "y": 236.640625,
+          "w": 248,
+          "h": 372,
+          "hover": false,
+          "hidden": false
+        }
+      },
+      {
+        "event": "pointerleave",
+        "id": "study-trigger",
+        "related": "",
+        "t": 7660.5,
+        "state": {
+          "variant": "2",
+          "open": true,
+          "pinned": false,
+          "available": true,
+          "reason": "hover",
+          "hold": false
+        },
+        "active": "study-trigger",
+        "hit": "<canvas class=\"maplibregl-canvas\" tabindex=\"-1\" aria-label=\"Map\" role=\"region\" width=\"390\" height=\"844\" style=\"width: 390px; height: 844px;\" aria-hidden=\"true\"></canvas>",
+        "pointer": {
+          "x": 0,
+          "y": 0
+        },
+        "trigger": {
+          "x": 330,
+          "y": 398.640625,
+          "w": 48,
+          "h": 70,
+          "hover": false
+        },
+        "palette": {
+          "x": 74,
+          "y": 236.640625,
+          "w": 248,
+          "h": 372,
+          "hover": false,
+          "hidden": false
+        }
+      },
+      {
+        "event": "open-mutation",
+        "t": 8715.20000000298,
+        "state": {
+          "variant": "2",
+          "open": false,
+          "pinned": false,
+          "available": true,
+          "reason": "hover",
+          "hold": false
+        },
+        "active": "study-trigger",
+        "hit": "<canvas class=\"maplibregl-canvas\" tabindex=\"-1\" aria-label=\"Map\" role=\"region\" width=\"390\" height=\"844\" style=\"width: 390px; height: 844px;\" aria-hidden=\"true\"></canvas>",
+        "pointer": {
+          "x": 0,
+          "y": 0
+        },
+        "trigger": {
+          "x": 330,
+          "y": 398.640625,
+          "w": 48,
+          "h": 70,
+          "hover": false
+        },
+        "palette": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "hover": false,
+          "hidden": true
+        }
+      },
+      {
+        "event": "open-mutation",
+        "t": 10546.20000000298,
+        "state": {
+          "variant": "2",
+          "open": true,
+          "pinned": false,
+          "available": true,
+          "reason": "hover",
+          "hold": false
+        },
+        "active": "study-trigger",
+        "hit": "<canvas class=\"maplibregl-canvas\" tabindex=\"-1\" aria-label=\"Map\" role=\"region\" width=\"1280\" height=\"900\" style=\"width: 1280px; height: 900px;\" aria-hidden=\"true\"></canvas>",
+        "pointer": {
+          "x": 0,
+          "y": 0
+        },
+        "trigger": {
+          "x": 952.453125,
+          "y": 542.0625,
+          "w": 48,
+          "h": 70,
+          "hover": true
+        },
+        "palette": {
+          "x": 696.453125,
+          "y": 374,
+          "w": 248,
+          "h": 372,
+          "hover": false,
+          "hidden": false
+        }
+      },
+      {
+        "event": "pointerenter",
+        "id": "study-trigger",
+        "related": "",
+        "t": 10546.60000000894,
+        "state": {
+          "variant": "2",
+          "open": true,
+          "pinned": false,
+          "available": true,
+          "reason": "hover",
+          "hold": false
+        },
+        "active": "study-trigger",
+        "hit": "<canvas class=\"maplibregl-canvas\" tabindex=\"-1\" aria-label=\"Map\" role=\"region\" width=\"1280\" height=\"900\" style=\"width: 1280px; height: 900px;\" aria-hidden=\"true\"></canvas>",
+        "pointer": {
+          "x": 0,
+          "y": 0
+        },
+        "trigger": {
+          "x": 952.453125,
+          "y": 542.0625,
+          "w": 48,
+          "h": 70,
+          "hover": true
+        },
+        "palette": {
+          "x": 696.453125,
+          "y": 374,
+          "w": 248,
+          "h": 372,
+          "hover": false,
+          "hidden": false
+        }
+      }
+    ]
+  },
+  {
+    "case": "second-entry",
+    "result": {
+      "t": 12321.10000000894,
+      "state": {
+        "variant": "2",
+        "open": true,
+        "pinned": false,
+        "available": true,
+        "reason": "hover",
+        "hold": false
+      },
+      "active": "study-trigger",
+      "hit": "<span class=\"study-trigger-mark\">⋮</span>",
+      "pointer": {
+        "x": 976.453125,
+        "y": 577.0625
+      },
+      "trigger": {
+        "x": 952.453125,
+        "y": 542.0625,
+        "w": 48,
+        "h": 70,
+        "hover": true
+      },
+      "palette": {
+        "x": 696.453125,
+        "y": 374,
+        "w": 248,
+        "h": 372,
+        "hover": false,
+        "hidden": false
+      }
+    }
+  }
+]

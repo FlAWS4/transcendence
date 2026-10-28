@@ -1,0 +1,8 @@
+/* Essai visiter-contour-sombre (14 Oct 2026): dark theme only.
+   "Visiter" on the arrival (#entry-guest) and "Créer un compte" in the account
+   menu keep their Royal Pink text but get a visible 1 px boundary, the dark
+   counterpart of the outlined light container. The border already exists
+   (transparent), so dimensions do not change. Colour: Cadet Gray #95B0B0 70 % +
+   noir #1B1B1B 30 % = #708383, 4.3:1 on the #1B1B1B arrival (WCAG 1.4.11 asks 3:1).
+   Light theme, labels, focus ring and the other secondary actions are untouched. */
+:root[data-theme=dark] :is(#entry-guest,[data-account-action=signup]){border-color:#708383}

@@ -1,0 +1,59 @@
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+:root { font-family: var(--h42-font-family), sans-serif; color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; }
+body { margin: 0; min-height: 100svh; color: var(--h42-color-text); background: var(--h42-color-bg); }
+button, select { font: 500 14px/20px var(--h42-font-family), sans-serif; color: inherit; }
+button { cursor: pointer; border: 0; }
+button:focus-visible, select:focus-visible { outline: 2px solid var(--h42-color-focus); outline-offset: 4px; }
+button:disabled { cursor: default; }
+.utilities { position: absolute; z-index: 3; top: 40px; inset-inline-end: 48px; display: flex; gap: 16px; }
+.utilities select, .icon-button { width: 44px; height: 44px; padding: 0; border: 0; border-radius: var(--h42-radius-button); background: transparent; color: var(--h42-color-action-quiet); text-align: center; }
+.utilities select { appearance: none; cursor: pointer; }
+.icon-button { display: grid; place-items: center; }
+.moon { display: block; width: 20px; height: 20px; background: currentColor; mask: url('../../../shared/assets/moon.svg') center/contain no-repeat; }
+.message, .guest-scene { position: absolute; top: 50svh; left: 50%; transform: translate(-50%, -50%); }
+.message { width: calc(100% - 96px); text-align: center; }
+.phrase { --bit-size: 14px; --bit-line: 16px; --hex-size: 26px; display: inline-flex; position: relative; align-items: center; font: 500 clamp(48px, 6.39vw, 92px)/110px var(--h42-font-family), sans-serif; letter-spacing: .02em; direction: ltr; unicode-bidi: isolate; }
+.phrase-group { display: inline-flex; position: relative; }
+.cell { display: inline-block; position: relative; flex: none; }
+.measure { display: block; visibility: hidden; }
+.glyph, .binary, .hex { display: none; }
+.morph { position: absolute; top: -6px; left: 50%; transform: translateX(-50%); pointer-events: none; }
+.access { position: absolute; top: calc(50svh + 182px); left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 16px; }
+.primary, .quiet { min-height: 44px; padding: 12px 24px; border-radius: var(--h42-radius-button); white-space: nowrap; }
+.primary { background: var(--h42-color-action-primary); color: var(--h42-color-action-on-primary); }
+.primary:hover { background: var(--h42-color-action-hover); color: var(--h42-color-action-on-hover); }
+.quiet { background: transparent; color: var(--h42-color-action-quiet); }
+.quiet:hover, .icon-button:hover, .utilities select:hover { background: var(--h42-color-action-secondary); }
+#login { width: 180px; }
+#guest { width: 244px; }
+.guest-scene img { display: block; object-fit: contain; }
+[data-theme="dark"] .guest-scene img { filter: invert(1); }
+dialog { width: min(496px, calc(100% - 48px)); padding: 32px; border: 0; border-radius: var(--h42-radius-dialog); color: var(--h42-color-text); background: var(--h42-color-surface); }
+dialog::backdrop { background: rgb(0 0 0 / .34); }
+.wordmark { display: inline-flex; flex-direction: column; align-items: center; font-size: 28px; line-height: 34px; font-weight: 500; }
+.wordmark [lang="ar"] { font: 500 14px/24px 'Noto Sans Arabic', sans-serif; }
+dialog h1 { font-size: 28px; line-height: 34px; margin: 24px 0; font-weight: 500; }
+dialog p { color: var(--h42-color-muted); font-size: 16px; line-height: 24px; margin: 0 0 24px; }
+dialog button { display: block; width: 100%; }
+dialog .quiet { margin-top: 16px; }
+html[lang="ar"] button, html[lang="ar"] select, html[lang="ar"] dialog h1, html[lang="ar"] dialog p { font-family: 'Noto Sans Arabic', sans-serif; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+@media (max-width: 700px) {
+  .utilities { top: 24px; inset-inline-end: 24px; gap: 8px; }
+  .message { width: calc(100% - 48px); }
+  .phrase { --bit-size: 10px; --bit-line: 12px; --hex-size: 14px; flex-direction: column; font-size: clamp(32px, 12.31vw, 48px); line-height: 58px; }
+  .phrase-group:first-child .separator { position: absolute; left: calc(100% + 5px); width: .3em; }
+  .access { top: calc(50svh + 130px); flex-direction: column; width: calc(100% - 48px); gap: 16px; }
+  #login, #guest { width: 100%; }
+  dialog { padding: 24px; }
+  .wordmark { font-size: 20px; line-height: 28px; }
+  dialog h1 { font-size: 24px; line-height: 30px; }
+}
+@media (max-height: 650px) {
+  .access { top: calc(50svh + 96px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}

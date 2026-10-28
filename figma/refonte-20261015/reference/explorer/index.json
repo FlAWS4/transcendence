@@ -1,0 +1,6700 @@
+{
+ "area": "explorer",
+ "states": [
+  {
+   "name": "explore--desktop--fr-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore--desktop--fr-light.png",
+   "dom": "dom/explorer/explore--desktop--fr-light.json.gz",
+   "nodes": 127,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore",
+   "siteMapNodes": [
+    "explore"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (1440x960, vrai globe), stockage vidé",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre l’indication du Monde « 58 campus · 30 pays » (globe au repos, mouvements réduits)"
+   ],
+   "checks": {
+    "hint": "58 campus · 30 pays",
+    "visibleMarkers": "Albanie | Angola | Arménie (point) | Autriche (point) | Belgique (point) | Brésil | Canada | Tchéquie (point) | France (point) | Allemagne (point) | Italie (point) | Jordanie (point) | Liban (point) | Luxembourg (point) | Madagascar | Maroc | Palestine (point) | Pologne (point) | Portugal (point) | Espagne (point) | Suisse (point) | Pays-Bas (point) | Turquie (point) | Émirats arabes unis | Royaume-Uni (point)",
+    "scope": {
+     "level": "world",
+     "name": "Monde",
+     "back": false,
+     "die": false,
+     "dieTitle": "Visiter un campus"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 09:45:58"
+  },
+  {
+   "name": "explore--desktop--fr-dark",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore--desktop--fr-dark.png",
+   "dom": "dom/explorer/explore--desktop--fr-dark.json.gz",
+   "nodes": 127,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore",
+   "siteMapNodes": [
+    "explore"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre l’indication du Monde « 58 campus · 30 pays » (globe au repos, mouvements réduits)"
+   ],
+   "checks": {
+    "hint": "58 campus · 30 pays",
+    "visibleMarkers": "Albanie | Angola | Arménie (point) | Autriche (point) | Belgique (point) | Brésil | Canada | Tchéquie (point) | France (point) | Allemagne (point) | Italie (point) | Jordanie (point) | Liban (point) | Luxembourg (point) | Madagascar | Maroc | Palestine (point) | Pologne (point) | Portugal (point) | Espagne (point) | Suisse (point) | Pays-Bas (point) | Turquie (point) | Émirats arabes unis | Royaume-Uni (point)",
+    "scope": {
+     "level": "world",
+     "name": "Monde",
+     "back": false,
+     "die": false,
+     "dieTitle": "Visiter un campus"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 09:47:03"
+  },
+  {
+   "name": "explore--desktop--en-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore--desktop--en-light.png",
+   "dom": "dom/explorer/explore--desktop--en-light.json.gz",
+   "nodes": 127,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore",
+   "siteMapNodes": [
+    "explore"
+   ],
+   "format": "desktop",
+   "lang": "en",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre l’indication du Monde « 58 campuses · 30 countries » (globe au repos, mouvements réduits)"
+   ],
+   "checks": {
+    "hint": "58 campuses · 30 countries",
+    "visibleMarkers": "Albania | Angola | Armenia (point) | Austria (point) | Belgium (point) | Brazil | Canada | Czechia (point) | France (point) | Germany (point) | Italy (point) | Jordan (point) | Lebanon (point) | Luxembourg (point) | Madagascar | Morocco | Palestine (point) | Poland (point) | Portugal (point) | Spain (point) | Switzerland (point) | Netherlands (point) | Türkiye (point) | United Arab Emirates | United Kingdom (point)",
+    "scope": {
+     "level": "world",
+     "name": "World",
+     "back": false,
+     "die": false,
+     "dieTitle": "Visit a campus"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 09:48:07"
+  },
+  {
+   "name": "explore--desktop--ar-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore--desktop--ar-light.png",
+   "dom": "dom/explorer/explore--desktop--ar-light.json.gz",
+   "nodes": 128,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore",
+   "siteMapNodes": [
+    "explore"
+   ],
+   "format": "desktop",
+   "lang": "ar",
+   "theme": "light",
+   "dir": "rtl",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre l’indication du Monde « 58 فرعًا · 30 دولة » (globe au repos, mouvements réduits)"
+   ],
+   "checks": {
+    "hint": "58 فرعًا · 30 دولة",
+    "visibleMarkers": "ألبانيا | أنغولا | أرمينيا (point) | النمسا (point) | بلجيكا (point) | البرازيل | كندا | التشيك (point) | فرنسا (point) | ألمانيا (point) | إيطاليا (point) | الأردن (point) | لبنان (point) | لوكسمبورغ (point) | مدغشقر | المغرب | فلسطين (point) | بولندا (point) | البرتغال (point) | إسبانيا (point) | سويسرا (point) | هولندا (point) | تركيا (point) | الإمارات العربية المتحدة | المملكة المتحدة (point)",
+    "scope": {
+     "level": "world",
+     "name": "العالم",
+     "back": false,
+     "die": false,
+     "dieTitle": "زيارة فرع"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 09:49:12"
+  },
+  {
+   "name": "explore--desktop--ar-dark",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore--desktop--ar-dark.png",
+   "dom": "dom/explorer/explore--desktop--ar-dark.json.gz",
+   "nodes": 128,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore",
+   "siteMapNodes": [
+    "explore"
+   ],
+   "format": "desktop",
+   "lang": "ar",
+   "theme": "dark",
+   "dir": "rtl",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue ar, thème dark",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre l’indication du Monde « 58 فرعًا · 30 دولة » (globe au repos, mouvements réduits)"
+   ],
+   "checks": {
+    "hint": "58 فرعًا · 30 دولة",
+    "visibleMarkers": "ألبانيا | أنغولا | أرمينيا (point) | النمسا (point) | بلجيكا (point) | البرازيل | كندا | التشيك (point) | فرنسا (point) | ألمانيا (point) | إيطاليا (point) | الأردن (point) | لبنان (point) | لوكسمبورغ (point) | مدغشقر | المغرب | فلسطين (point) | بولندا (point) | البرتغال (point) | إسبانيا (point) | سويسرا (point) | هولندا (point) | تركيا (point) | الإمارات العربية المتحدة | المملكة المتحدة (point)",
+    "scope": {
+     "level": "world",
+     "name": "العالم",
+     "back": false,
+     "die": false,
+     "dieTitle": "زيارة فرع"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 09:50:16"
+  },
+  {
+   "name": "explore--mobile--fr-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore--mobile--fr-light.png",
+   "dom": "dom/explorer/explore--mobile--fr-light.json.gz",
+   "nodes": 124,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore",
+   "siteMapNodes": [
+    "explore"
+   ],
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (390x844 DPR2, vrai globe), stockage vidé",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre l’indication du Monde « 58 campus · 30 pays » (globe au repos, mouvements réduits)"
+   ],
+   "checks": {
+    "hint": "58 campus · 30 pays",
+    "visibleMarkers": "Albanie (point) | Angola | Arménie (point) | Autriche (point) | Belgique (point) | Brésil (point) | Canada (point) | Tchéquie (point) | France (point) | Allemagne (point) | Italie (point) | Jordanie (point) | Liban (point) | Luxembourg | Madagascar (point) | Maroc | Palestine | Pologne (point) | Portugal (point) | Espagne (point) | Suisse (point) | Pays-Bas (point) | Turquie (point) | Émirats arabes unis (point) | Royaume-Uni (point)",
+    "scope": {
+     "level": "world",
+     "name": "Monde",
+     "back": false,
+     "die": false,
+     "dieTitle": "Visiter un campus"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 09:51:13"
+  },
+  {
+   "name": "explore--mobile--fr-dark",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore--mobile--fr-dark.png",
+   "dom": "dom/explorer/explore--mobile--fr-dark.json.gz",
+   "nodes": 124,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore",
+   "siteMapNodes": [
+    "explore"
+   ],
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre l’indication du Monde « 58 campus · 30 pays » (globe au repos, mouvements réduits)"
+   ],
+   "checks": {
+    "hint": "58 campus · 30 pays",
+    "visibleMarkers": "Albanie (point) | Angola | Arménie (point) | Autriche (point) | Belgique (point) | Brésil (point) | Canada (point) | Tchéquie (point) | France (point) | Allemagne (point) | Italie (point) | Jordanie (point) | Liban (point) | Luxembourg | Madagascar (point) | Maroc | Palestine | Pologne (point) | Portugal (point) | Espagne (point) | Suisse (point) | Pays-Bas (point) | Turquie (point) | Émirats arabes unis (point) | Royaume-Uni (point)",
+    "scope": {
+     "level": "world",
+     "name": "Monde",
+     "back": false,
+     "die": false,
+     "dieTitle": "Visiter un campus"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 09:52:13"
+  },
+  {
+   "name": "explore-noglobe--desktop--fr-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore-noglobe--desktop--fr-light.png",
+   "dom": "dom/explorer/explore-noglobe--desktop--fr-light.json.gz",
+   "nodes": 64,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore-noglobe",
+   "siteMapNodes": [
+    "explore-noglobe"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (1440x960, module du globe bloqué), stockage vidé",
+    "integrated-globe.mjs bloqué : attendre « Le globe n’a pas pu se charger. Recharge la page pour réessayer. » et le filtre Pays / Campus actif"
+   ],
+   "checks": {
+    "state": {
+     "loading": "Le globe n’a pas pu se charger. Recharge la page pour réessayer.",
+     "canvas": false,
+     "die": true,
+     "dieTitle": "Visiter un campus",
+     "picker": true
+    },
+    "scope": {
+     "level": "world",
+     "name": "Monde",
+     "back": false,
+     "die": true,
+     "dieTitle": "Visiter un campus"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 09:53:26",
+   "note": "Aperçu direct avec le module du globe bloqué : même message et même état que « Continuer sans le globe » depuis l’arrivée."
+  },
+  {
+   "name": "explore--mobile--en-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore--mobile--en-light.png",
+   "dom": "dom/explorer/explore--mobile--en-light.json.gz",
+   "nodes": 124,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore",
+   "siteMapNodes": [
+    "explore"
+   ],
+   "format": "mobile",
+   "lang": "en",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre l’indication du Monde « 58 campuses · 30 countries » (globe au repos, mouvements réduits)"
+   ],
+   "checks": {
+    "hint": "58 campuses · 30 countries",
+    "visibleMarkers": "Albania (point) | Angola | Armenia (point) | Austria (point) | Belgium (point) | Brazil (point) | Canada (point) | Czechia (point) | France (point) | Germany (point) | Italy (point) | Jordan (point) | Lebanon (point) | Luxembourg | Madagascar (point) | Morocco | Palestine | Poland (point) | Portugal (point) | Spain (point) | Switzerland (point) | Netherlands (point) | Türkiye (point) | United Arab Emirates (point) | United Kingdom (point)",
+    "scope": {
+     "level": "world",
+     "name": "World",
+     "back": false,
+     "die": false,
+     "dieTitle": "Visit a campus"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 09:54:33"
+  },
+  {
+   "name": "explore--mobile--ar-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore--mobile--ar-light.png",
+   "dom": "dom/explorer/explore--mobile--ar-light.json.gz",
+   "nodes": 125,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore",
+   "siteMapNodes": [
+    "explore"
+   ],
+   "format": "mobile",
+   "lang": "ar",
+   "theme": "light",
+   "dir": "rtl",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre l’indication du Monde « 58 فرعًا · 30 دولة » (globe au repos, mouvements réduits)"
+   ],
+   "checks": {
+    "hint": "58 فرعًا · 30 دولة",
+    "visibleMarkers": "ألبانيا (point) | أنغولا | أرمينيا (point) | النمسا (point) | بلجيكا (point) | البرازيل (point) | كندا (point) | التشيك (point) | فرنسا (point) | ألمانيا (point) | إيطاليا (point) | الأردن (point) | لبنان (point) | لوكسمبورغ | مدغشقر (point) | المغرب | فلسطين | بولندا (point) | البرتغال (point) | إسبانيا (point) | سويسرا (point) | هولندا (point) | تركيا (point) | الإمارات العربية المتحدة (point) | المملكة المتحدة (point)",
+    "scope": {
+     "level": "world",
+     "name": "العالم",
+     "back": false,
+     "die": false,
+     "dieTitle": "زيارة فرع"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 09:55:12"
+  },
+  {
+   "name": "explore--mobile--ar-dark",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore--mobile--ar-dark.png",
+   "dom": "dom/explorer/explore--mobile--ar-dark.json.gz",
+   "nodes": 125,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore",
+   "siteMapNodes": [
+    "explore"
+   ],
+   "format": "mobile",
+   "lang": "ar",
+   "theme": "dark",
+   "dir": "rtl",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue ar, thème dark",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre l’indication du Monde « 58 فرعًا · 30 دولة » (globe au repos, mouvements réduits)"
+   ],
+   "checks": {
+    "hint": "58 فرعًا · 30 دولة",
+    "visibleMarkers": "ألبانيا (point) | أنغولا | أرمينيا (point) | النمسا (point) | بلجيكا (point) | البرازيل (point) | كندا (point) | التشيك (point) | فرنسا (point) | ألمانيا (point) | إيطاليا (point) | الأردن (point) | لبنان (point) | لوكسمبورغ | مدغشقر (point) | المغرب | فلسطين | بولندا (point) | البرتغال (point) | إسبانيا (point) | سويسرا (point) | هولندا (point) | تركيا (point) | الإمارات العربية المتحدة (point) | المملكة المتحدة (point)",
+    "scope": {
+     "level": "world",
+     "name": "العالم",
+     "back": false,
+     "die": false,
+     "dieTitle": "زيارة فرع"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 09:55:37"
+  },
+  {
+   "name": "explore-country--desktop--fr-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore-country--desktop--fr-light.png",
+   "dom": "dom/explorer/explore-country--desktop--fr-light.json.gz",
+   "nodes": 94,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore-country",
+   "siteMapNodes": [
+    "explore-country"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA",
+   "route": "#explore?country=FRA",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA (1440x960, vrai globe), stockage vidé",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre la fin du vol vers la France et l’indication du niveau Pays"
+   ],
+   "checks": {
+    "hint": "Choisis un campus pour t’en approcher.",
+    "visibleMarkers": "42 Angoulême | 42 Le Havre (point) | 42 Lyon | 42 Marseille | 42 Mulhouse | 42 Nice (point) | 42 Paris | 42 Perpignan (point)",
+    "scope": {
+     "level": "country",
+     "name": "France",
+     "back": true,
+     "die": false,
+     "dieTitle": "Visiter un campus"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 09:56:08"
+  },
+  {
+   "name": "explore-country--desktop--fr-dark",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore-country--desktop--fr-dark.png",
+   "dom": "dom/explorer/explore-country--desktop--fr-dark.json.gz",
+   "nodes": 94,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore-country",
+   "siteMapNodes": [
+    "explore-country"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA",
+   "route": "#explore?country=FRA",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre la fin du vol vers la France et l’indication du niveau Pays"
+   ],
+   "checks": {
+    "hint": "Choisis un campus pour t’en approcher.",
+    "visibleMarkers": "42 Angoulême | 42 Le Havre (point) | 42 Lyon | 42 Marseille | 42 Mulhouse | 42 Nice (point) | 42 Paris | 42 Perpignan (point)",
+    "scope": {
+     "level": "country",
+     "name": "France",
+     "back": true,
+     "die": false,
+     "dieTitle": "Visiter un campus"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 09:56:35"
+  },
+  {
+   "name": "explore-country--desktop--en-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore-country--desktop--en-light.png",
+   "dom": "dom/explorer/explore-country--desktop--en-light.json.gz",
+   "nodes": 94,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore-country",
+   "siteMapNodes": [
+    "explore-country"
+   ],
+   "format": "desktop",
+   "lang": "en",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA",
+   "route": "#explore?country=FRA",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre la fin du vol vers la France et l’indication du niveau Pays"
+   ],
+   "checks": {
+    "hint": "Choose a campus to explore up close.",
+    "visibleMarkers": "42 Angoulême | 42 Le Havre (point) | 42 Lyon | 42 Marseille | 42 Mulhouse | 42 Nice (point) | 42 Paris | 42 Perpignan (point)",
+    "scope": {
+     "level": "country",
+     "name": "France",
+     "back": true,
+     "die": false,
+     "dieTitle": "Visit a campus"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 09:57:00"
+  },
+  {
+   "name": "explore-country--desktop--ar-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore-country--desktop--ar-light.png",
+   "dom": "dom/explorer/explore-country--desktop--ar-light.json.gz",
+   "nodes": 95,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore-country",
+   "siteMapNodes": [
+    "explore-country"
+   ],
+   "format": "desktop",
+   "lang": "ar",
+   "theme": "light",
+   "dir": "rtl",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA",
+   "route": "#explore?country=FRA",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre la fin du vol vers la France et l’indication du niveau Pays"
+   ],
+   "checks": {
+    "hint": "اختر فرعًا لاستكشافه عن قرب.",
+    "visibleMarkers": "42 Angoulême | 42 Le Havre (point) | 42 Lyon | 42 Marseille | 42 Mulhouse | 42 Nice (point) | 42 Paris | 42 Perpignan (point)",
+    "scope": {
+     "level": "country",
+     "name": "فرنسا",
+     "back": true,
+     "die": false,
+     "dieTitle": "زيارة فرع"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 09:57:28"
+  },
+  {
+   "name": "explore-country--desktop--ar-dark",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore-country--desktop--ar-dark.png",
+   "dom": "dom/explorer/explore-country--desktop--ar-dark.json.gz",
+   "nodes": 95,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore-country",
+   "siteMapNodes": [
+    "explore-country"
+   ],
+   "format": "desktop",
+   "lang": "ar",
+   "theme": "dark",
+   "dir": "rtl",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA",
+   "route": "#explore?country=FRA",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue ar, thème dark",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre la fin du vol vers la France et l’indication du niveau Pays"
+   ],
+   "checks": {
+    "hint": "اختر فرعًا لاستكشافه عن قرب.",
+    "visibleMarkers": "42 Angoulême | 42 Le Havre (point) | 42 Lyon | 42 Marseille | 42 Mulhouse | 42 Nice (point) | 42 Paris | 42 Perpignan (point)",
+    "scope": {
+     "level": "country",
+     "name": "فرنسا",
+     "back": true,
+     "die": false,
+     "dieTitle": "زيارة فرع"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 09:57:55"
+  },
+  {
+   "name": "explore-country--mobile--fr-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore-country--mobile--fr-light.png",
+   "dom": "dom/explorer/explore-country--mobile--fr-light.json.gz",
+   "nodes": 93,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore-country",
+   "siteMapNodes": [
+    "explore-country"
+   ],
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA",
+   "route": "#explore?country=FRA",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA (390x844 DPR2, vrai globe), stockage vidé",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre la fin du vol vers la France et l’indication du niveau Pays"
+   ],
+   "checks": {
+    "hint": "Choisis un campus pour t’en approcher.",
+    "visibleMarkers": "42 Angoulême (point) | 42 Le Havre | 42 Lyon | 42 Marseille | 42 Mulhouse | 42 Nice (point) | 42 Paris (point) | 42 Perpignan (point)",
+    "scope": {
+     "level": "country",
+     "name": "France",
+     "back": true,
+     "die": false,
+     "dieTitle": "Visiter un campus"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 09:58:25"
+  },
+  {
+   "name": "explore-country--mobile--fr-dark",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore-country--mobile--fr-dark.png",
+   "dom": "dom/explorer/explore-country--mobile--fr-dark.json.gz",
+   "nodes": 93,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore-country",
+   "siteMapNodes": [
+    "explore-country"
+   ],
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA",
+   "route": "#explore?country=FRA",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre la fin du vol vers la France et l’indication du niveau Pays"
+   ],
+   "checks": {
+    "hint": "Choisis un campus pour t’en approcher.",
+    "visibleMarkers": "42 Angoulême (point) | 42 Le Havre | 42 Lyon | 42 Marseille | 42 Mulhouse | 42 Nice (point) | 42 Paris (point) | 42 Perpignan (point)",
+    "scope": {
+     "level": "country",
+     "name": "France",
+     "back": true,
+     "die": false,
+     "dieTitle": "Visiter un campus"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 09:58:52"
+  },
+  {
+   "name": "explore-country--mobile--en-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore-country--mobile--en-light.png",
+   "dom": "dom/explorer/explore-country--mobile--en-light.json.gz",
+   "nodes": 93,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore-country",
+   "siteMapNodes": [
+    "explore-country"
+   ],
+   "format": "mobile",
+   "lang": "en",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA",
+   "route": "#explore?country=FRA",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre la fin du vol vers la France et l’indication du niveau Pays"
+   ],
+   "checks": {
+    "hint": "Choose a campus to explore up close.",
+    "visibleMarkers": "42 Angoulême (point) | 42 Le Havre | 42 Lyon | 42 Marseille | 42 Mulhouse | 42 Nice (point) | 42 Paris (point) | 42 Perpignan (point)",
+    "scope": {
+     "level": "country",
+     "name": "France",
+     "back": true,
+     "die": false,
+     "dieTitle": "Visit a campus"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 09:59:19"
+  },
+  {
+   "name": "explore-country--mobile--ar-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore-country--mobile--ar-light.png",
+   "dom": "dom/explorer/explore-country--mobile--ar-light.json.gz",
+   "nodes": 94,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore-country",
+   "siteMapNodes": [
+    "explore-country"
+   ],
+   "format": "mobile",
+   "lang": "ar",
+   "theme": "light",
+   "dir": "rtl",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA",
+   "route": "#explore?country=FRA",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre la fin du vol vers la France et l’indication du niveau Pays"
+   ],
+   "checks": {
+    "hint": "اختر فرعًا لاستكشافه عن قرب.",
+    "visibleMarkers": "42 Angoulême (point) | 42 Le Havre | 42 Lyon | 42 Marseille | 42 Mulhouse | 42 Nice (point) | 42 Paris (point) | 42 Perpignan (point)",
+    "scope": {
+     "level": "country",
+     "name": "فرنسا",
+     "back": true,
+     "die": false,
+     "dieTitle": "زيارة فرع"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:29:59"
+  },
+  {
+   "name": "explore-country--mobile--ar-dark",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore-country--mobile--ar-dark.png",
+   "dom": "dom/explorer/explore-country--mobile--ar-dark.json.gz",
+   "nodes": 94,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore-country",
+   "siteMapNodes": [
+    "explore-country"
+   ],
+   "format": "mobile",
+   "lang": "ar",
+   "theme": "dark",
+   "dir": "rtl",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA",
+   "route": "#explore?country=FRA",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue ar, thème dark",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre la fin du vol vers la France et l’indication du niveau Pays"
+   ],
+   "checks": {
+    "hint": "اختر فرعًا لاستكشافه عن قرب.",
+    "visibleMarkers": "42 Angoulême (point) | 42 Le Havre | 42 Lyon | 42 Marseille | 42 Mulhouse | 42 Nice (point) | 42 Paris (point) | 42 Perpignan (point)",
+    "scope": {
+     "level": "country",
+     "name": "فرنسا",
+     "back": true,
+     "die": false,
+     "dieTitle": "زيارة فرع"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:30:13"
+  },
+  {
+   "name": "explore-campus--desktop--fr-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore-campus--desktop--fr-light.png",
+   "dom": "dom/explorer/explore-campus--desktop--fr-light.json.gz",
+   "nodes": 81,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore-campus",
+   "siteMapNodes": [
+    "explore-campus"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA&campus=paris",
+   "route": "#explore?country=FRA&campus=paris",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA&campus=paris (1440x960, vrai globe), stockage vidé",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre les rues autour du campus (paris) : indication « Explore les alentours du campus. » stable 2,5 s"
+   ],
+   "checks": {
+    "hint": "Explore les alentours du campus.",
+    "target": {
+     "cls": "hg-marker hg-selected hg-target",
+     "label": "Explorer · 42 Paris",
+     "dir": "reticle"
+    },
+    "scope": {
+     "level": "campus",
+     "name": "42 Paris",
+     "back": true,
+     "die": false,
+     "dieTitle": "Visiter un campus"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:30:40"
+  },
+  {
+   "name": "explore-campus--desktop--fr-dark",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore-campus--desktop--fr-dark.png",
+   "dom": "dom/explorer/explore-campus--desktop--fr-dark.json.gz",
+   "nodes": 81,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore-campus",
+   "siteMapNodes": [
+    "explore-campus"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA&campus=paris",
+   "route": "#explore?country=FRA&campus=paris",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA&campus=paris (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre les rues autour du campus (paris) : indication « Explore les alentours du campus. » stable 2,5 s"
+   ],
+   "checks": {
+    "hint": "Explore les alentours du campus.",
+    "target": {
+     "cls": "hg-marker hg-selected hg-target",
+     "label": "Explorer · 42 Paris",
+     "dir": "reticle"
+    },
+    "scope": {
+     "level": "campus",
+     "name": "42 Paris",
+     "back": true,
+     "die": false,
+     "dieTitle": "Visiter un campus"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:31:02"
+  },
+  {
+   "name": "explore-campus--desktop--en-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore-campus--desktop--en-light.png",
+   "dom": "dom/explorer/explore-campus--desktop--en-light.json.gz",
+   "nodes": 81,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore-campus",
+   "siteMapNodes": [
+    "explore-campus"
+   ],
+   "format": "desktop",
+   "lang": "en",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA&campus=paris",
+   "route": "#explore?country=FRA&campus=paris",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA&campus=paris (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre les rues autour du campus (paris) : indication « Explore around the campus. » stable 2,5 s"
+   ],
+   "checks": {
+    "hint": "Explore around the campus.",
+    "target": {
+     "cls": "hg-marker hg-selected hg-target",
+     "label": "Explore · 42 Paris",
+     "dir": "reticle"
+    },
+    "scope": {
+     "level": "campus",
+     "name": "42 Paris",
+     "back": true,
+     "die": false,
+     "dieTitle": "Visit a campus"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:31:21"
+  },
+  {
+   "name": "explore-campus--desktop--ar-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore-campus--desktop--ar-light.png",
+   "dom": "dom/explorer/explore-campus--desktop--ar-light.json.gz",
+   "nodes": 82,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore-campus",
+   "siteMapNodes": [
+    "explore-campus"
+   ],
+   "format": "desktop",
+   "lang": "ar",
+   "theme": "light",
+   "dir": "rtl",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA&campus=paris",
+   "route": "#explore?country=FRA&campus=paris",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA&campus=paris (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre les rues autour du campus (paris) : indication « استكشف محيط الفرع. » stable 2,5 s"
+   ],
+   "checks": {
+    "hint": "استكشف محيط الفرع.",
+    "target": {
+     "cls": "hg-marker hg-selected hg-target",
+     "label": "استكشف · 42 Paris",
+     "dir": "reticle"
+    },
+    "scope": {
+     "level": "campus",
+     "name": "42 Paris",
+     "back": true,
+     "die": false,
+     "dieTitle": "زيارة فرع"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:31:50"
+  },
+  {
+   "name": "explore-campus--desktop--ar-dark",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore-campus--desktop--ar-dark.png",
+   "dom": "dom/explorer/explore-campus--desktop--ar-dark.json.gz",
+   "nodes": 82,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore-campus",
+   "siteMapNodes": [
+    "explore-campus"
+   ],
+   "format": "desktop",
+   "lang": "ar",
+   "theme": "dark",
+   "dir": "rtl",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA&campus=paris",
+   "route": "#explore?country=FRA&campus=paris",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA&campus=paris (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue ar, thème dark",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre les rues autour du campus (paris) : indication « استكشف محيط الفرع. » stable 2,5 s"
+   ],
+   "checks": {
+    "hint": "استكشف محيط الفرع.",
+    "target": {
+     "cls": "hg-marker hg-selected hg-target",
+     "label": "استكشف · 42 Paris",
+     "dir": "reticle"
+    },
+    "scope": {
+     "level": "campus",
+     "name": "42 Paris",
+     "back": true,
+     "die": false,
+     "dieTitle": "زيارة فرع"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:32:11"
+  },
+  {
+   "name": "explore-campus--mobile--fr-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore-campus--mobile--fr-light.png",
+   "dom": "dom/explorer/explore-campus--mobile--fr-light.json.gz",
+   "nodes": 81,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore-campus",
+   "siteMapNodes": [
+    "explore-campus"
+   ],
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA&campus=paris",
+   "route": "#explore?country=FRA&campus=paris",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA&campus=paris (390x844 DPR2, vrai globe), stockage vidé",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre les rues autour du campus (paris) : indication « Explore les alentours du campus. » stable 2,5 s"
+   ],
+   "checks": {
+    "hint": "Explore les alentours du campus.",
+    "target": {
+     "cls": "hg-marker hg-selected hg-target",
+     "label": "Explorer · 42 Paris",
+     "dir": "reticle"
+    },
+    "scope": {
+     "level": "campus",
+     "name": "42 Paris",
+     "back": true,
+     "die": false,
+     "dieTitle": "Visiter un campus"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:32:31"
+  },
+  {
+   "name": "explore-campus--mobile--fr-dark",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore-campus--mobile--fr-dark.png",
+   "dom": "dom/explorer/explore-campus--mobile--fr-dark.json.gz",
+   "nodes": 81,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore-campus",
+   "siteMapNodes": [
+    "explore-campus"
+   ],
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA&campus=paris",
+   "route": "#explore?country=FRA&campus=paris",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA&campus=paris (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre les rues autour du campus (paris) : indication « Explore les alentours du campus. » stable 2,5 s"
+   ],
+   "checks": {
+    "hint": "Explore les alentours du campus.",
+    "target": {
+     "cls": "hg-marker hg-selected hg-target",
+     "label": "Explorer · 42 Paris",
+     "dir": "reticle"
+    },
+    "scope": {
+     "level": "campus",
+     "name": "42 Paris",
+     "back": true,
+     "die": false,
+     "dieTitle": "Visiter un campus"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:32:49"
+  },
+  {
+   "name": "explore-campus--mobile--en-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore-campus--mobile--en-light.png",
+   "dom": "dom/explorer/explore-campus--mobile--en-light.json.gz",
+   "nodes": 81,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore-campus",
+   "siteMapNodes": [
+    "explore-campus"
+   ],
+   "format": "mobile",
+   "lang": "en",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA&campus=paris",
+   "route": "#explore?country=FRA&campus=paris",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA&campus=paris (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre les rues autour du campus (paris) : indication « Explore around the campus. » stable 2,5 s"
+   ],
+   "checks": {
+    "hint": "Explore around the campus.",
+    "target": {
+     "cls": "hg-marker hg-selected hg-target",
+     "label": "Explore · 42 Paris",
+     "dir": "reticle"
+    },
+    "scope": {
+     "level": "campus",
+     "name": "42 Paris",
+     "back": true,
+     "die": false,
+     "dieTitle": "Visit a campus"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:33:06"
+  },
+  {
+   "name": "explore-campus--mobile--ar-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore-campus--mobile--ar-light.png",
+   "dom": "dom/explorer/explore-campus--mobile--ar-light.json.gz",
+   "nodes": 82,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore-campus",
+   "siteMapNodes": [
+    "explore-campus"
+   ],
+   "format": "mobile",
+   "lang": "ar",
+   "theme": "light",
+   "dir": "rtl",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA&campus=paris",
+   "route": "#explore?country=FRA&campus=paris",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA&campus=paris (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre les rues autour du campus (paris) : indication « استكشف محيط الفرع. » stable 2,5 s"
+   ],
+   "checks": {
+    "hint": "استكشف محيط الفرع.",
+    "target": {
+     "cls": "hg-marker hg-selected hg-target",
+     "label": "استكشف · 42 Paris",
+     "dir": "reticle"
+    },
+    "scope": {
+     "level": "campus",
+     "name": "42 Paris",
+     "back": true,
+     "die": false,
+     "dieTitle": "زيارة فرع"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:33:27"
+  },
+  {
+   "name": "explore-campus--mobile--ar-dark",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore-campus--mobile--ar-dark.png",
+   "dom": "dom/explorer/explore-campus--mobile--ar-dark.json.gz",
+   "nodes": 82,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore-campus",
+   "siteMapNodes": [
+    "explore-campus"
+   ],
+   "format": "mobile",
+   "lang": "ar",
+   "theme": "dark",
+   "dir": "rtl",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA&campus=paris",
+   "route": "#explore?country=FRA&campus=paris",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA&campus=paris (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue ar, thème dark",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre les rues autour du campus (paris) : indication « استكشف محيط الفرع. » stable 2,5 s"
+   ],
+   "checks": {
+    "hint": "استكشف محيط الفرع.",
+    "target": {
+     "cls": "hg-marker hg-selected hg-target",
+     "label": "استكشف · 42 Paris",
+     "dir": "reticle"
+    },
+    "scope": {
+     "level": "campus",
+     "name": "42 Paris",
+     "back": true,
+     "die": false,
+     "dieTitle": "زيارة فرع"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:33:45"
+  },
+  {
+   "name": "campus-sheet--desktop--fr-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/campus-sheet--desktop--fr-light.png",
+   "dom": "dom/explorer/campus-sheet--desktop--fr-light.json.gz",
+   "nodes": 171,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "full": "reference/explorer/campus-sheet--desktop--fr-light--full.png",
+   "state": "campus-sheet",
+   "siteMapNodes": [
+    "campus-sheet"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA&campus=paris",
+   "route": "#explore?country=FRA&campus=paris",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA&campus=paris (1440x960, vrai globe), stockage vidé",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre les rues autour du campus (paris) : indication « Explore les alentours du campus. » stable 2,5 s",
+    "cliquer le repère du campus (viseur) : la fiche s’ouvre ; attendre le logo et la première photo"
+   ],
+   "checks": {
+    "hint": "Explore les alentours du campus.",
+    "sheet": {
+     "open": true,
+     "kind": "campus",
+     "expanded": "false",
+     "title": "42 Paris",
+     "logo": true,
+     "photos": 2,
+     "scrollHeight": 2115,
+     "clientHeight": 910,
+     "scrollTop": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:34:09"
+  },
+  {
+   "name": "campus-sheet--desktop--fr-dark",
+   "area": "explorer",
+   "viewport": "reference/explorer/campus-sheet--desktop--fr-dark.png",
+   "dom": "dom/explorer/campus-sheet--desktop--fr-dark.json.gz",
+   "nodes": 171,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "full": "reference/explorer/campus-sheet--desktop--fr-dark--full.png",
+   "state": "campus-sheet",
+   "siteMapNodes": [
+    "campus-sheet"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA&campus=paris",
+   "route": "#explore?country=FRA&campus=paris",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA&campus=paris (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre les rues autour du campus (paris) : indication « Explore les alentours du campus. » stable 2,5 s",
+    "cliquer le repère du campus (viseur) : la fiche s’ouvre ; attendre le logo et la première photo"
+   ],
+   "checks": {
+    "hint": "Explore les alentours du campus.",
+    "sheet": {
+     "open": true,
+     "kind": "campus",
+     "expanded": "false",
+     "title": "42 Paris",
+     "logo": true,
+     "photos": 2,
+     "scrollHeight": 2115,
+     "clientHeight": 910,
+     "scrollTop": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:34:34"
+  },
+  {
+   "name": "campus-sheet--desktop--en-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/campus-sheet--desktop--en-light.png",
+   "dom": "dom/explorer/campus-sheet--desktop--en-light.json.gz",
+   "nodes": 171,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "full": "reference/explorer/campus-sheet--desktop--en-light--full.png",
+   "state": "campus-sheet",
+   "siteMapNodes": [
+    "campus-sheet"
+   ],
+   "format": "desktop",
+   "lang": "en",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA&campus=paris",
+   "route": "#explore?country=FRA&campus=paris",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA&campus=paris (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre les rues autour du campus (paris) : indication « Explore around the campus. » stable 2,5 s",
+    "cliquer le repère du campus (viseur) : la fiche s’ouvre ; attendre le logo et la première photo"
+   ],
+   "checks": {
+    "hint": "Explore around the campus.",
+    "sheet": {
+     "open": true,
+     "kind": "campus",
+     "expanded": "false",
+     "title": "42 Paris",
+     "logo": true,
+     "photos": 2,
+     "scrollHeight": 2115,
+     "clientHeight": 910,
+     "scrollTop": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:34:59"
+  },
+  {
+   "name": "campus-sheet--desktop--ar-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/campus-sheet--desktop--ar-light.png",
+   "dom": "dom/explorer/campus-sheet--desktop--ar-light.json.gz",
+   "nodes": 173,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "full": "reference/explorer/campus-sheet--desktop--ar-light--full.png",
+   "state": "campus-sheet",
+   "siteMapNodes": [
+    "campus-sheet"
+   ],
+   "format": "desktop",
+   "lang": "ar",
+   "theme": "light",
+   "dir": "rtl",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA&campus=paris",
+   "route": "#explore?country=FRA&campus=paris",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA&campus=paris (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre les rues autour du campus (paris) : indication « استكشف محيط الفرع. » stable 2,5 s",
+    "cliquer le repère du campus (viseur) : la fiche s’ouvre ; attendre le logo et la première photo"
+   ],
+   "checks": {
+    "hint": "استكشف محيط الفرع.",
+    "sheet": {
+     "open": true,
+     "kind": "campus",
+     "expanded": "false",
+     "title": "42 Paris",
+     "logo": true,
+     "photos": 2,
+     "scrollHeight": 2199,
+     "clientHeight": 910,
+     "scrollTop": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:35:26"
+  },
+  {
+   "name": "campus-sheet--mobile--fr-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/campus-sheet--mobile--fr-light.png",
+   "dom": "dom/explorer/campus-sheet--mobile--fr-light.json.gz",
+   "nodes": 172,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "campus-sheet",
+   "siteMapNodes": [
+    "campus-sheet"
+   ],
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA&campus=paris",
+   "route": "#explore?country=FRA&campus=paris",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA&campus=paris (390x844 DPR2, vrai globe), stockage vidé",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre les rues autour du campus (paris) : indication « Explore les alentours du campus. » stable 2,5 s",
+    "cliquer le repère du campus (viseur) : la fiche s’ouvre ; attendre le logo et la première photo"
+   ],
+   "checks": {
+    "hint": "Explore les alentours du campus.",
+    "sheet": {
+     "open": true,
+     "kind": "campus",
+     "expanded": "false",
+     "title": "42 Paris",
+     "logo": true,
+     "photos": 2,
+     "scrollHeight": 2050,
+     "clientHeight": 623,
+     "scrollTop": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:35:44",
+   "note": "Feuille mobile repliée (hauteur de repos)."
+  },
+  {
+   "name": "campus-sheet-expanded--mobile--fr-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/campus-sheet-expanded--mobile--fr-light.png",
+   "dom": "dom/explorer/campus-sheet-expanded--mobile--fr-light.json.gz",
+   "nodes": 172,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "full": "reference/explorer/campus-sheet-expanded--mobile--fr-light--full.png",
+   "state": "campus-sheet-expanded",
+   "siteMapNodes": [
+    "campus-sheet"
+   ],
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA&campus=paris",
+   "route": "#explore?country=FRA&campus=paris",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA&campus=paris (390x844 DPR2, vrai globe), stockage vidé",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre les rues autour du campus (paris) : indication « Explore les alentours du campus. » stable 2,5 s",
+    "cliquer le repère du campus (viseur) : la fiche s’ouvre ; attendre le logo et la première photo",
+    "molette de 600 px vers le bas sur la feuille : elle se déploie"
+   ],
+   "checks": {
+    "hint": "Explore les alentours du campus.",
+    "sheet": {
+     "open": true,
+     "kind": "campus",
+     "expanded": "true",
+     "title": "42 Paris",
+     "logo": true,
+     "photos": 2,
+     "scrollHeight": 2050,
+     "clientHeight": 822,
+     "scrollTop": 0
+    },
+    "expandedBy": "molette de 600 px vers le bas sur la feuille : elle se déploie"
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:35:52",
+   "note": "Feuille mobile déployée (geste réel, sans attribut posé par script)."
+  },
+  {
+   "name": "campus-sheet--mobile--fr-dark",
+   "area": "explorer",
+   "viewport": "reference/explorer/campus-sheet--mobile--fr-dark.png",
+   "dom": "dom/explorer/campus-sheet--mobile--fr-dark.json.gz",
+   "nodes": 172,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "campus-sheet",
+   "siteMapNodes": [
+    "campus-sheet"
+   ],
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA&campus=paris",
+   "route": "#explore?country=FRA&campus=paris",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA&campus=paris (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre les rues autour du campus (paris) : indication « Explore les alentours du campus. » stable 2,5 s",
+    "cliquer le repère du campus (viseur) : la fiche s’ouvre ; attendre le logo et la première photo"
+   ],
+   "checks": {
+    "hint": "Explore les alentours du campus.",
+    "sheet": {
+     "open": true,
+     "kind": "campus",
+     "expanded": "false",
+     "title": "42 Paris",
+     "logo": true,
+     "photos": 2,
+     "scrollHeight": 2050,
+     "clientHeight": 623,
+     "scrollTop": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:36:12",
+   "note": "Feuille mobile repliée (hauteur de repos)."
+  },
+  {
+   "name": "campus-sheet-expanded--mobile--fr-dark",
+   "area": "explorer",
+   "viewport": "reference/explorer/campus-sheet-expanded--mobile--fr-dark.png",
+   "dom": "dom/explorer/campus-sheet-expanded--mobile--fr-dark.json.gz",
+   "nodes": 172,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "full": "reference/explorer/campus-sheet-expanded--mobile--fr-dark--full.png",
+   "state": "campus-sheet-expanded",
+   "siteMapNodes": [
+    "campus-sheet"
+   ],
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA&campus=paris",
+   "route": "#explore?country=FRA&campus=paris",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA&campus=paris (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre les rues autour du campus (paris) : indication « Explore les alentours du campus. » stable 2,5 s",
+    "cliquer le repère du campus (viseur) : la fiche s’ouvre ; attendre le logo et la première photo",
+    "molette de 600 px vers le bas sur la feuille : elle se déploie"
+   ],
+   "checks": {
+    "hint": "Explore les alentours du campus.",
+    "sheet": {
+     "open": true,
+     "kind": "campus",
+     "expanded": "true",
+     "title": "42 Paris",
+     "logo": true,
+     "photos": 2,
+     "scrollHeight": 2050,
+     "clientHeight": 822,
+     "scrollTop": 0
+    },
+    "expandedBy": "molette de 600 px vers le bas sur la feuille : elle se déploie"
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:36:20",
+   "note": "Feuille mobile déployée (geste réel, sans attribut posé par script)."
+  },
+  {
+   "name": "campus-sheet--mobile--en-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/campus-sheet--mobile--en-light.png",
+   "dom": "dom/explorer/campus-sheet--mobile--en-light.json.gz",
+   "nodes": 172,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "campus-sheet",
+   "siteMapNodes": [
+    "campus-sheet"
+   ],
+   "format": "mobile",
+   "lang": "en",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA&campus=paris",
+   "route": "#explore?country=FRA&campus=paris",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA&campus=paris (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre les rues autour du campus (paris) : indication « Explore around the campus. » stable 2,5 s",
+    "cliquer le repère du campus (viseur) : la fiche s’ouvre ; attendre le logo et la première photo"
+   ],
+   "checks": {
+    "hint": "Explore around the campus.",
+    "sheet": {
+     "open": true,
+     "kind": "campus",
+     "expanded": "false",
+     "title": "42 Paris",
+     "logo": true,
+     "photos": 2,
+     "scrollHeight": 2050,
+     "clientHeight": 623,
+     "scrollTop": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:36:45",
+   "note": "Feuille mobile repliée (hauteur de repos)."
+  },
+  {
+   "name": "campus-sheet-expanded--mobile--en-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/campus-sheet-expanded--mobile--en-light.png",
+   "dom": "dom/explorer/campus-sheet-expanded--mobile--en-light.json.gz",
+   "nodes": 172,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "full": "reference/explorer/campus-sheet-expanded--mobile--en-light--full.png",
+   "state": "campus-sheet-expanded",
+   "siteMapNodes": [
+    "campus-sheet"
+   ],
+   "format": "mobile",
+   "lang": "en",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA&campus=paris",
+   "route": "#explore?country=FRA&campus=paris",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA&campus=paris (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre les rues autour du campus (paris) : indication « Explore around the campus. » stable 2,5 s",
+    "cliquer le repère du campus (viseur) : la fiche s’ouvre ; attendre le logo et la première photo",
+    "molette de 600 px vers le bas sur la feuille : elle se déploie"
+   ],
+   "checks": {
+    "hint": "Explore around the campus.",
+    "sheet": {
+     "open": true,
+     "kind": "campus",
+     "expanded": "true",
+     "title": "42 Paris",
+     "logo": true,
+     "photos": 2,
+     "scrollHeight": 2050,
+     "clientHeight": 822,
+     "scrollTop": 0
+    },
+    "expandedBy": "molette de 600 px vers le bas sur la feuille : elle se déploie"
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:36:53",
+   "note": "Feuille mobile déployée (geste réel, sans attribut posé par script)."
+  },
+  {
+   "name": "scope-popover--desktop--fr-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/scope-popover--desktop--fr-light.png",
+   "dom": "dom/explorer/scope-popover--desktop--fr-light.json.gz",
+   "nodes": 141,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "scope-popover",
+   "siteMapNodes": [
+    "scope-popover"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (1440x960, vrai globe), stockage vidé",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "cliquer la pastille « Monde ▾ » de l’en-tête : la fenêtre « Où veux-tu aller ? » s’ouvre"
+   ],
+   "checks": {
+    "popover": {
+     "open": true,
+     "side": "below",
+     "title": "Où veux-tu aller ?",
+     "values": [
+      "",
+      ""
+     ],
+     "options": [
+      [
+       "Tous les pays",
+       "Albanie",
+       "Allemagne",
+       "Angola",
+       "Arménie",
+       "Autriche",
+       "Belgique",
+       "Brésil",
+       "Canada",
+       "Corée du Sud",
+       "Émirats arabes unis",
+       "Espagne",
+       "France",
+       "Italie",
+       "Japon",
+       "Jordanie",
+       "Liban",
+       "Luxembourg",
+       "Madagascar",
+       "Malaisie",
+       "Maroc",
+       "Palestine",
+       "Pays-Bas",
+       "Pologne",
+       "Portugal",
+       "Royaume-Uni",
+       "Singapour",
+       "Suisse",
+       "Tchéquie",
+       "Thaïlande",
+       "Turquie"
+      ],
+      [
+       "Tous les campus",
+       "1337 – Rabat — Maroc",
+       "1337 Ben Guérir — Maroc",
+       "1337 Khouribga — Maroc",
+       "1337 Med — Maroc",
+       "42 Abu Dhabi — Émirats arabes unis",
+       "42 Amman — Jordanie",
+       "42 Angoulême — France",
+       "42 Antananarivo — Madagascar",
+       "42 Antwerp — Belgique",
+       "42 Bangkok — Thaïlande",
+       "42 Barcelona — Espagne",
+       "42 Beirut — Liban",
+       "42 Belo Horizonte — Brésil",
+       "42 Berlin — Allemagne",
+       "42 Brussels — Belgique",
+       "42 Firenze — Italie",
+       "42 Gyeongsan — Corée du Sud",
+       "42 Heilbronn — Allemagne",
+       "42 Irbid — Jordanie",
+       "42 Iskandar Puteri — Malaisie",
+       "42 Istanbul — Turquie",
+       "42 Kocaeli — Turquie",
+       "42 Kuala Lumpur — Malaisie",
+       "42 Lausanne — Suisse",
+       "42 Le Havre — France",
+       "42 Lisboa — Portugal",
+       "42 London — Royaume-Uni",
+       "42 Luanda — Angola",
+       "42 Luxembourg — Luxembourg",
+       "42 Lyon — France",
+       "42 Madrid — Espagne",
+       "42 Málaga — Espagne",
+       "42 Marseille — France",
+       "42 Milano — Italie",
+       "42 Mulhouse — France",
+       "42 Nablus — Palestine",
+       "42 Nice — France",
+       "42 Paris — France",
+       "42 Penang — Malaisie",
+       "42 Perpignan — France",
+       "42 Porto — Portugal",
+       "42 Prague — Tchéquie",
+       "42 Québec — Canada",
+       "42 Rio — Brésil",
+       "42 Roma — Italie",
+       "42 São Paulo — Brésil",
+       "42 Seoul — Corée du Sud",
+       "42 Singapore — Singapour",
+       "42 Tirana — Albanie",
+       "42 Tokyo — Japon",
+       "42 Urduliz — Espagne",
+       "42 Vienna — Autriche",
+       "42 Warsaw — Pologne",
+       "42 Wels — Autriche",
+       "42 Wolfsburg — Allemagne",
+       "42 Yerevan — Arménie",
+       "42 Zürich — Suisse",
+       "Codam — Pays-Bas"
+      ]
+     ],
+     "disabled": [
+      false,
+      false
+     ]
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": true,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:37:06"
+  },
+  {
+   "name": "scope-popover-list--desktop--fr-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/scope-popover-list--desktop--fr-light.png",
+   "overflow": false,
+   "errors": [],
+   "state": "scope-popover-list",
+   "siteMapNodes": [
+    "scope-popover"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (1440x960, vrai globe), stockage vidé",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "cliquer la pastille « Monde ▾ » de l’en-tête : la fenêtre « Où veux-tu aller ? » s’ouvre",
+    "cliquer le champ Pays : Chrome ouvre sa liste native"
+   ],
+   "checks": {
+    "popover": {
+     "open": true,
+     "side": "below",
+     "title": "Où veux-tu aller ?",
+     "values": [
+      "",
+      ""
+     ],
+     "options": [
+      [
+       "Tous les pays",
+       "Albanie",
+       "Allemagne",
+       "Angola",
+       "Arménie",
+       "Autriche",
+       "Belgique",
+       "Brésil",
+       "Canada",
+       "Corée du Sud",
+       "Émirats arabes unis",
+       "Espagne",
+       "France",
+       "Italie",
+       "Japon",
+       "Jordanie",
+       "Liban",
+       "Luxembourg",
+       "Madagascar",
+       "Malaisie",
+       "Maroc",
+       "Palestine",
+       "Pays-Bas",
+       "Pologne",
+       "Portugal",
+       "Royaume-Uni",
+       "Singapour",
+       "Suisse",
+       "Tchéquie",
+       "Thaïlande",
+       "Turquie"
+      ],
+      [
+       "Tous les campus",
+       "1337 – Rabat — Maroc",
+       "1337 Ben Guérir — Maroc",
+       "1337 Khouribga — Maroc",
+       "1337 Med — Maroc",
+       "42 Abu Dhabi — Émirats arabes unis",
+       "42 Amman — Jordanie",
+       "42 Angoulême — France",
+       "42 Antananarivo — Madagascar",
+       "42 Antwerp — Belgique",
+       "42 Bangkok — Thaïlande",
+       "42 Barcelona — Espagne",
+       "42 Beirut — Liban",
+       "42 Belo Horizonte — Brésil",
+       "42 Berlin — Allemagne",
+       "42 Brussels — Belgique",
+       "42 Firenze — Italie",
+       "42 Gyeongsan — Corée du Sud",
+       "42 Heilbronn — Allemagne",
+       "42 Irbid — Jordanie",
+       "42 Iskandar Puteri — Malaisie",
+       "42 Istanbul — Turquie",
+       "42 Kocaeli — Turquie",
+       "42 Kuala Lumpur — Malaisie",
+       "42 Lausanne — Suisse",
+       "42 Le Havre — France",
+       "42 Lisboa — Portugal",
+       "42 London — Royaume-Uni",
+       "42 Luanda — Angola",
+       "42 Luxembourg — Luxembourg",
+       "42 Lyon — France",
+       "42 Madrid — Espagne",
+       "42 Málaga — Espagne",
+       "42 Marseille — France",
+       "42 Milano — Italie",
+       "42 Mulhouse — France",
+       "42 Nablus — Palestine",
+       "42 Nice — France",
+       "42 Paris — France",
+       "42 Penang — Malaisie",
+       "42 Perpignan — France",
+       "42 Porto — Portugal",
+       "42 Prague — Tchéquie",
+       "42 Québec — Canada",
+       "42 Rio — Brésil",
+       "42 Roma — Italie",
+       "42 São Paulo — Brésil",
+       "42 Seoul — Corée du Sud",
+       "42 Singapore — Singapour",
+       "42 Tirana — Albanie",
+       "42 Tokyo — Japon",
+       "42 Urduliz — Espagne",
+       "42 Vienna — Autriche",
+       "42 Warsaw — Pologne",
+       "42 Wels — Autriche",
+       "42 Wolfsburg — Allemagne",
+       "42 Yerevan — Arménie",
+       "42 Zürich — Suisse",
+       "Codam — Pays-Bas"
+      ]
+     ],
+     "disabled": [
+      false,
+      false
+     ]
+    },
+    "countryOptions": [
+     "Tous les pays",
+     "Albanie",
+     "Allemagne",
+     "Angola",
+     "Arménie",
+     "Autriche",
+     "Belgique",
+     "Brésil",
+     "Canada",
+     "Corée du Sud",
+     "Émirats arabes unis",
+     "Espagne",
+     "France",
+     "Italie",
+     "Japon",
+     "Jordanie",
+     "Liban",
+     "Luxembourg",
+     "Madagascar",
+     "Malaisie",
+     "Maroc",
+     "Palestine",
+     "Pays-Bas",
+     "Pologne",
+     "Portugal",
+     "Royaume-Uni",
+     "Singapour",
+     "Suisse",
+     "Tchéquie",
+     "Thaïlande",
+     "Turquie"
+    ]
+   },
+   "note": "Capture d’écran seule : la liste déroulante native est dessinée par Chrome hors du DOM (pas de relevé). Contenu et ordre réels (voir checks.countryOptions) ; position et aspect dépendent du mode sans interface.",
+   "dom": null,
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "capturedAt": "2026-10-18 12:37:08"
+  },
+  {
+   "name": "scope-popover--desktop--fr-dark",
+   "area": "explorer",
+   "viewport": "reference/explorer/scope-popover--desktop--fr-dark.png",
+   "dom": "dom/explorer/scope-popover--desktop--fr-dark.json.gz",
+   "nodes": 141,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "scope-popover",
+   "siteMapNodes": [
+    "scope-popover"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "cliquer la pastille « Monde ▾ » de l’en-tête : la fenêtre « Où veux-tu aller ? » s’ouvre"
+   ],
+   "checks": {
+    "popover": {
+     "open": true,
+     "side": "below",
+     "title": "Où veux-tu aller ?",
+     "values": [
+      "",
+      ""
+     ],
+     "options": [
+      [
+       "Tous les pays",
+       "Albanie",
+       "Allemagne",
+       "Angola",
+       "Arménie",
+       "Autriche",
+       "Belgique",
+       "Brésil",
+       "Canada",
+       "Corée du Sud",
+       "Émirats arabes unis",
+       "Espagne",
+       "France",
+       "Italie",
+       "Japon",
+       "Jordanie",
+       "Liban",
+       "Luxembourg",
+       "Madagascar",
+       "Malaisie",
+       "Maroc",
+       "Palestine",
+       "Pays-Bas",
+       "Pologne",
+       "Portugal",
+       "Royaume-Uni",
+       "Singapour",
+       "Suisse",
+       "Tchéquie",
+       "Thaïlande",
+       "Turquie"
+      ],
+      [
+       "Tous les campus",
+       "1337 – Rabat — Maroc",
+       "1337 Ben Guérir — Maroc",
+       "1337 Khouribga — Maroc",
+       "1337 Med — Maroc",
+       "42 Abu Dhabi — Émirats arabes unis",
+       "42 Amman — Jordanie",
+       "42 Angoulême — France",
+       "42 Antananarivo — Madagascar",
+       "42 Antwerp — Belgique",
+       "42 Bangkok — Thaïlande",
+       "42 Barcelona — Espagne",
+       "42 Beirut — Liban",
+       "42 Belo Horizonte — Brésil",
+       "42 Berlin — Allemagne",
+       "42 Brussels — Belgique",
+       "42 Firenze — Italie",
+       "42 Gyeongsan — Corée du Sud",
+       "42 Heilbronn — Allemagne",
+       "42 Irbid — Jordanie",
+       "42 Iskandar Puteri — Malaisie",
+       "42 Istanbul — Turquie",
+       "42 Kocaeli — Turquie",
+       "42 Kuala Lumpur — Malaisie",
+       "42 Lausanne — Suisse",
+       "42 Le Havre — France",
+       "42 Lisboa — Portugal",
+       "42 London — Royaume-Uni",
+       "42 Luanda — Angola",
+       "42 Luxembourg — Luxembourg",
+       "42 Lyon — France",
+       "42 Madrid — Espagne",
+       "42 Málaga — Espagne",
+       "42 Marseille — France",
+       "42 Milano — Italie",
+       "42 Mulhouse — France",
+       "42 Nablus — Palestine",
+       "42 Nice — France",
+       "42 Paris — France",
+       "42 Penang — Malaisie",
+       "42 Perpignan — France",
+       "42 Porto — Portugal",
+       "42 Prague — Tchéquie",
+       "42 Québec — Canada",
+       "42 Rio — Brésil",
+       "42 Roma — Italie",
+       "42 São Paulo — Brésil",
+       "42 Seoul — Corée du Sud",
+       "42 Singapore — Singapour",
+       "42 Tirana — Albanie",
+       "42 Tokyo — Japon",
+       "42 Urduliz — Espagne",
+       "42 Vienna — Autriche",
+       "42 Warsaw — Pologne",
+       "42 Wels — Autriche",
+       "42 Wolfsburg — Allemagne",
+       "42 Yerevan — Arménie",
+       "42 Zürich — Suisse",
+       "Codam — Pays-Bas"
+      ]
+     ],
+     "disabled": [
+      false,
+      false
+     ]
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": true,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:37:22"
+  },
+  {
+   "name": "scope-popover-list--desktop--fr-dark",
+   "area": "explorer",
+   "viewport": "reference/explorer/scope-popover-list--desktop--fr-dark.png",
+   "overflow": false,
+   "errors": [],
+   "state": "scope-popover-list",
+   "siteMapNodes": [
+    "scope-popover"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "cliquer la pastille « Monde ▾ » de l’en-tête : la fenêtre « Où veux-tu aller ? » s’ouvre",
+    "cliquer le champ Pays : Chrome ouvre sa liste native"
+   ],
+   "checks": {
+    "popover": {
+     "open": true,
+     "side": "below",
+     "title": "Où veux-tu aller ?",
+     "values": [
+      "",
+      ""
+     ],
+     "options": [
+      [
+       "Tous les pays",
+       "Albanie",
+       "Allemagne",
+       "Angola",
+       "Arménie",
+       "Autriche",
+       "Belgique",
+       "Brésil",
+       "Canada",
+       "Corée du Sud",
+       "Émirats arabes unis",
+       "Espagne",
+       "France",
+       "Italie",
+       "Japon",
+       "Jordanie",
+       "Liban",
+       "Luxembourg",
+       "Madagascar",
+       "Malaisie",
+       "Maroc",
+       "Palestine",
+       "Pays-Bas",
+       "Pologne",
+       "Portugal",
+       "Royaume-Uni",
+       "Singapour",
+       "Suisse",
+       "Tchéquie",
+       "Thaïlande",
+       "Turquie"
+      ],
+      [
+       "Tous les campus",
+       "1337 – Rabat — Maroc",
+       "1337 Ben Guérir — Maroc",
+       "1337 Khouribga — Maroc",
+       "1337 Med — Maroc",
+       "42 Abu Dhabi — Émirats arabes unis",
+       "42 Amman — Jordanie",
+       "42 Angoulême — France",
+       "42 Antananarivo — Madagascar",
+       "42 Antwerp — Belgique",
+       "42 Bangkok — Thaïlande",
+       "42 Barcelona — Espagne",
+       "42 Beirut — Liban",
+       "42 Belo Horizonte — Brésil",
+       "42 Berlin — Allemagne",
+       "42 Brussels — Belgique",
+       "42 Firenze — Italie",
+       "42 Gyeongsan — Corée du Sud",
+       "42 Heilbronn — Allemagne",
+       "42 Irbid — Jordanie",
+       "42 Iskandar Puteri — Malaisie",
+       "42 Istanbul — Turquie",
+       "42 Kocaeli — Turquie",
+       "42 Kuala Lumpur — Malaisie",
+       "42 Lausanne — Suisse",
+       "42 Le Havre — France",
+       "42 Lisboa — Portugal",
+       "42 London — Royaume-Uni",
+       "42 Luanda — Angola",
+       "42 Luxembourg — Luxembourg",
+       "42 Lyon — France",
+       "42 Madrid — Espagne",
+       "42 Málaga — Espagne",
+       "42 Marseille — France",
+       "42 Milano — Italie",
+       "42 Mulhouse — France",
+       "42 Nablus — Palestine",
+       "42 Nice — France",
+       "42 Paris — France",
+       "42 Penang — Malaisie",
+       "42 Perpignan — France",
+       "42 Porto — Portugal",
+       "42 Prague — Tchéquie",
+       "42 Québec — Canada",
+       "42 Rio — Brésil",
+       "42 Roma — Italie",
+       "42 São Paulo — Brésil",
+       "42 Seoul — Corée du Sud",
+       "42 Singapore — Singapour",
+       "42 Tirana — Albanie",
+       "42 Tokyo — Japon",
+       "42 Urduliz — Espagne",
+       "42 Vienna — Autriche",
+       "42 Warsaw — Pologne",
+       "42 Wels — Autriche",
+       "42 Wolfsburg — Allemagne",
+       "42 Yerevan — Arménie",
+       "42 Zürich — Suisse",
+       "Codam — Pays-Bas"
+      ]
+     ],
+     "disabled": [
+      false,
+      false
+     ]
+    },
+    "countryOptions": [
+     "Tous les pays",
+     "Albanie",
+     "Allemagne",
+     "Angola",
+     "Arménie",
+     "Autriche",
+     "Belgique",
+     "Brésil",
+     "Canada",
+     "Corée du Sud",
+     "Émirats arabes unis",
+     "Espagne",
+     "France",
+     "Italie",
+     "Japon",
+     "Jordanie",
+     "Liban",
+     "Luxembourg",
+     "Madagascar",
+     "Malaisie",
+     "Maroc",
+     "Palestine",
+     "Pays-Bas",
+     "Pologne",
+     "Portugal",
+     "Royaume-Uni",
+     "Singapour",
+     "Suisse",
+     "Tchéquie",
+     "Thaïlande",
+     "Turquie"
+    ]
+   },
+   "note": "Capture d’écran seule : la liste déroulante native est dessinée par Chrome hors du DOM (pas de relevé). Contenu et ordre réels (voir checks.countryOptions) ; position et aspect dépendent du mode sans interface.",
+   "dom": null,
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "capturedAt": "2026-10-18 12:37:23"
+  },
+  {
+   "name": "scope-popover--desktop--en-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/scope-popover--desktop--en-light.png",
+   "dom": "dom/explorer/scope-popover--desktop--en-light.json.gz",
+   "nodes": 141,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "scope-popover",
+   "siteMapNodes": [
+    "scope-popover"
+   ],
+   "format": "desktop",
+   "lang": "en",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "cliquer la pastille « Monde ▾ » de l’en-tête : la fenêtre « Où veux-tu aller ? » s’ouvre"
+   ],
+   "checks": {
+    "popover": {
+     "open": true,
+     "side": "below",
+     "title": "Where would you like to go?",
+     "values": [
+      "",
+      ""
+     ],
+     "options": [
+      [
+       "All countries",
+       "Albania",
+       "Angola",
+       "Armenia",
+       "Austria",
+       "Belgium",
+       "Brazil",
+       "Canada",
+       "Czechia",
+       "France",
+       "Germany",
+       "Italy",
+       "Japan",
+       "Jordan",
+       "Lebanon",
+       "Luxembourg",
+       "Madagascar",
+       "Malaysia",
+       "Morocco",
+       "Netherlands",
+       "Palestine",
+       "Poland",
+       "Portugal",
+       "Singapore",
+       "South Korea",
+       "Spain",
+       "Switzerland",
+       "Thailand",
+       "Türkiye",
+       "United Arab Emirates",
+       "United Kingdom"
+      ],
+      [
+       "All campuses",
+       "1337 – Rabat — Morocco",
+       "1337 Ben Guérir — Morocco",
+       "1337 Khouribga — Morocco",
+       "1337 Med — Morocco",
+       "42 Abu Dhabi — United Arab Emirates",
+       "42 Amman — Jordan",
+       "42 Angoulême — France",
+       "42 Antananarivo — Madagascar",
+       "42 Antwerp — Belgium",
+       "42 Bangkok — Thailand",
+       "42 Barcelona — Spain",
+       "42 Beirut — Lebanon",
+       "42 Belo Horizonte — Brazil",
+       "42 Berlin — Germany",
+       "42 Brussels — Belgium",
+       "42 Firenze — Italy",
+       "42 Gyeongsan — South Korea",
+       "42 Heilbronn — Germany",
+       "42 Irbid — Jordan",
+       "42 Iskandar Puteri — Malaysia",
+       "42 Istanbul — Türkiye",
+       "42 Kocaeli — Türkiye",
+       "42 Kuala Lumpur — Malaysia",
+       "42 Lausanne — Switzerland",
+       "42 Le Havre — France",
+       "42 Lisboa — Portugal",
+       "42 London — United Kingdom",
+       "42 Luanda — Angola",
+       "42 Luxembourg — Luxembourg",
+       "42 Lyon — France",
+       "42 Madrid — Spain",
+       "42 Málaga — Spain",
+       "42 Marseille — France",
+       "42 Milano — Italy",
+       "42 Mulhouse — France",
+       "42 Nablus — Palestine",
+       "42 Nice — France",
+       "42 Paris — France",
+       "42 Penang — Malaysia",
+       "42 Perpignan — France",
+       "42 Porto — Portugal",
+       "42 Prague — Czechia",
+       "42 Québec — Canada",
+       "42 Rio — Brazil",
+       "42 Roma — Italy",
+       "42 São Paulo — Brazil",
+       "42 Seoul — South Korea",
+       "42 Singapore — Singapore",
+       "42 Tirana — Albania",
+       "42 Tokyo — Japan",
+       "42 Urduliz — Spain",
+       "42 Vienna — Austria",
+       "42 Warsaw — Poland",
+       "42 Wels — Austria",
+       "42 Wolfsburg — Germany",
+       "42 Yerevan — Armenia",
+       "42 Zürich — Switzerland",
+       "Codam — Netherlands"
+      ]
+     ],
+     "disabled": [
+      false,
+      false
+     ]
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": true,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:37:37"
+  },
+  {
+   "name": "scope-popover-list--desktop--en-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/scope-popover-list--desktop--en-light.png",
+   "overflow": false,
+   "errors": [],
+   "state": "scope-popover-list",
+   "siteMapNodes": [
+    "scope-popover"
+   ],
+   "format": "desktop",
+   "lang": "en",
+   "theme": "light",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "cliquer la pastille « Monde ▾ » de l’en-tête : la fenêtre « Où veux-tu aller ? » s’ouvre",
+    "cliquer le champ Pays : Chrome ouvre sa liste native"
+   ],
+   "checks": {
+    "popover": {
+     "open": true,
+     "side": "below",
+     "title": "Where would you like to go?",
+     "values": [
+      "",
+      ""
+     ],
+     "options": [
+      [
+       "All countries",
+       "Albania",
+       "Angola",
+       "Armenia",
+       "Austria",
+       "Belgium",
+       "Brazil",
+       "Canada",
+       "Czechia",
+       "France",
+       "Germany",
+       "Italy",
+       "Japan",
+       "Jordan",
+       "Lebanon",
+       "Luxembourg",
+       "Madagascar",
+       "Malaysia",
+       "Morocco",
+       "Netherlands",
+       "Palestine",
+       "Poland",
+       "Portugal",
+       "Singapore",
+       "South Korea",
+       "Spain",
+       "Switzerland",
+       "Thailand",
+       "Türkiye",
+       "United Arab Emirates",
+       "United Kingdom"
+      ],
+      [
+       "All campuses",
+       "1337 – Rabat — Morocco",
+       "1337 Ben Guérir — Morocco",
+       "1337 Khouribga — Morocco",
+       "1337 Med — Morocco",
+       "42 Abu Dhabi — United Arab Emirates",
+       "42 Amman — Jordan",
+       "42 Angoulême — France",
+       "42 Antananarivo — Madagascar",
+       "42 Antwerp — Belgium",
+       "42 Bangkok — Thailand",
+       "42 Barcelona — Spain",
+       "42 Beirut — Lebanon",
+       "42 Belo Horizonte — Brazil",
+       "42 Berlin — Germany",
+       "42 Brussels — Belgium",
+       "42 Firenze — Italy",
+       "42 Gyeongsan — South Korea",
+       "42 Heilbronn — Germany",
+       "42 Irbid — Jordan",
+       "42 Iskandar Puteri — Malaysia",
+       "42 Istanbul — Türkiye",
+       "42 Kocaeli — Türkiye",
+       "42 Kuala Lumpur — Malaysia",
+       "42 Lausanne — Switzerland",
+       "42 Le Havre — France",
+       "42 Lisboa — Portugal",
+       "42 London — United Kingdom",
+       "42 Luanda — Angola",
+       "42 Luxembourg — Luxembourg",
+       "42 Lyon — France",
+       "42 Madrid — Spain",
+       "42 Málaga — Spain",
+       "42 Marseille — France",
+       "42 Milano — Italy",
+       "42 Mulhouse — France",
+       "42 Nablus — Palestine",
+       "42 Nice — France",
+       "42 Paris — France",
+       "42 Penang — Malaysia",
+       "42 Perpignan — France",
+       "42 Porto — Portugal",
+       "42 Prague — Czechia",
+       "42 Québec — Canada",
+       "42 Rio — Brazil",
+       "42 Roma — Italy",
+       "42 São Paulo — Brazil",
+       "42 Seoul — South Korea",
+       "42 Singapore — Singapore",
+       "42 Tirana — Albania",
+       "42 Tokyo — Japan",
+       "42 Urduliz — Spain",
+       "42 Vienna — Austria",
+       "42 Warsaw — Poland",
+       "42 Wels — Austria",
+       "42 Wolfsburg — Germany",
+       "42 Yerevan — Armenia",
+       "42 Zürich — Switzerland",
+       "Codam — Netherlands"
+      ]
+     ],
+     "disabled": [
+      false,
+      false
+     ]
+    },
+    "countryOptions": [
+     "All countries",
+     "Albania",
+     "Angola",
+     "Armenia",
+     "Austria",
+     "Belgium",
+     "Brazil",
+     "Canada",
+     "Czechia",
+     "France",
+     "Germany",
+     "Italy",
+     "Japan",
+     "Jordan",
+     "Lebanon",
+     "Luxembourg",
+     "Madagascar",
+     "Malaysia",
+     "Morocco",
+     "Netherlands",
+     "Palestine",
+     "Poland",
+     "Portugal",
+     "Singapore",
+     "South Korea",
+     "Spain",
+     "Switzerland",
+     "Thailand",
+     "Türkiye",
+     "United Arab Emirates",
+     "United Kingdom"
+    ]
+   },
+   "note": "Capture d’écran seule : la liste déroulante native est dessinée par Chrome hors du DOM (pas de relevé). Contenu et ordre réels (voir checks.countryOptions) ; position et aspect dépendent du mode sans interface.",
+   "dom": null,
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "capturedAt": "2026-10-18 12:37:38"
+  },
+  {
+   "name": "explore-noglobe--desktop--fr-dark",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore-noglobe--desktop--fr-dark.png",
+   "dom": "dom/explorer/explore-noglobe--desktop--fr-dark.json.gz",
+   "nodes": 64,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore-noglobe",
+   "siteMapNodes": [
+    "explore-noglobe"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (1440x960, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "integrated-globe.mjs bloqué : attendre « Le globe n’a pas pu se charger. Recharge la page pour réessayer. » et le filtre Pays / Campus actif"
+   ],
+   "checks": {
+    "state": {
+     "loading": "Le globe n’a pas pu se charger. Recharge la page pour réessayer.",
+     "canvas": false,
+     "die": true,
+     "dieTitle": "Visiter un campus",
+     "picker": true
+    },
+    "scope": {
+     "level": "world",
+     "name": "Monde",
+     "back": false,
+     "die": true,
+     "dieTitle": "Visiter un campus"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:37:46",
+   "note": "Aperçu direct avec le module du globe bloqué : même message et même état que « Continuer sans le globe » depuis l’arrivée."
+  },
+  {
+   "name": "explore-noglobe--desktop--en-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore-noglobe--desktop--en-light.png",
+   "dom": "dom/explorer/explore-noglobe--desktop--en-light.json.gz",
+   "nodes": 64,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore-noglobe",
+   "siteMapNodes": [
+    "explore-noglobe"
+   ],
+   "format": "desktop",
+   "lang": "en",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (1440x960, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "integrated-globe.mjs bloqué : attendre « The globe could not load. Refresh the page to try again. » et le filtre Pays / Campus actif"
+   ],
+   "checks": {
+    "state": {
+     "loading": "The globe could not load. Refresh the page to try again.",
+     "canvas": false,
+     "die": true,
+     "dieTitle": "Visit a campus",
+     "picker": true
+    },
+    "scope": {
+     "level": "world",
+     "name": "World",
+     "back": false,
+     "die": true,
+     "dieTitle": "Visit a campus"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:37:52",
+   "note": "Aperçu direct avec le module du globe bloqué : même message et même état que « Continuer sans le globe » depuis l’arrivée."
+  },
+  {
+   "name": "explore-noglobe--desktop--ar-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore-noglobe--desktop--ar-light.png",
+   "dom": "dom/explorer/explore-noglobe--desktop--ar-light.json.gz",
+   "nodes": 65,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore-noglobe",
+   "siteMapNodes": [
+    "explore-noglobe"
+   ],
+   "format": "desktop",
+   "lang": "ar",
+   "theme": "light",
+   "dir": "rtl",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (1440x960, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "integrated-globe.mjs bloqué : attendre « تعذّر تحميل الكرة الأرضية. أعد تحميل الصفحة للمحاولة مجددًا. » et le filtre Pays / Campus actif"
+   ],
+   "checks": {
+    "state": {
+     "loading": "تعذّر تحميل الكرة الأرضية. أعد تحميل الصفحة للمحاولة مجددًا.",
+     "canvas": false,
+     "die": true,
+     "dieTitle": "زيارة فرع",
+     "picker": true
+    },
+    "scope": {
+     "level": "world",
+     "name": "العالم",
+     "back": false,
+     "die": true,
+     "dieTitle": "زيارة فرع"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:37:59",
+   "note": "Aperçu direct avec le module du globe bloqué : même message et même état que « Continuer sans le globe » depuis l’arrivée."
+  },
+  {
+   "name": "explore-noglobe--desktop--ar-dark",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore-noglobe--desktop--ar-dark.png",
+   "dom": "dom/explorer/explore-noglobe--desktop--ar-dark.json.gz",
+   "nodes": 65,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore-noglobe",
+   "siteMapNodes": [
+    "explore-noglobe"
+   ],
+   "format": "desktop",
+   "lang": "ar",
+   "theme": "dark",
+   "dir": "rtl",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (1440x960, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue ar, thème dark",
+    "integrated-globe.mjs bloqué : attendre « تعذّر تحميل الكرة الأرضية. أعد تحميل الصفحة للمحاولة مجددًا. » et le filtre Pays / Campus actif"
+   ],
+   "checks": {
+    "state": {
+     "loading": "تعذّر تحميل الكرة الأرضية. أعد تحميل الصفحة للمحاولة مجددًا.",
+     "canvas": false,
+     "die": true,
+     "dieTitle": "زيارة فرع",
+     "picker": true
+    },
+    "scope": {
+     "level": "world",
+     "name": "العالم",
+     "back": false,
+     "die": true,
+     "dieTitle": "زيارة فرع"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:38:05",
+   "note": "Aperçu direct avec le module du globe bloqué : même message et même état que « Continuer sans le globe » depuis l’arrivée."
+  },
+  {
+   "name": "explore-noglobe--mobile--fr-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore-noglobe--mobile--fr-light.png",
+   "dom": "dom/explorer/explore-noglobe--mobile--fr-light.json.gz",
+   "nodes": 64,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore-noglobe",
+   "siteMapNodes": [
+    "explore-noglobe"
+   ],
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (390x844 DPR2, module du globe bloqué), stockage vidé",
+    "integrated-globe.mjs bloqué : attendre « Le globe n’a pas pu se charger. Recharge la page pour réessayer. » et le filtre Pays / Campus actif"
+   ],
+   "checks": {
+    "state": {
+     "loading": "Le globe n’a pas pu se charger. Recharge la page pour réessayer.",
+     "canvas": false,
+     "die": true,
+     "dieTitle": "Visiter un campus",
+     "picker": true
+    },
+    "scope": {
+     "level": "world",
+     "name": "Monde",
+     "back": false,
+     "die": true,
+     "dieTitle": "Visiter un campus"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:38:09",
+   "note": "Aperçu direct avec le module du globe bloqué : même message et même état que « Continuer sans le globe » depuis l’arrivée."
+  },
+  {
+   "name": "explore-noglobe--mobile--fr-dark",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore-noglobe--mobile--fr-dark.png",
+   "dom": "dom/explorer/explore-noglobe--mobile--fr-dark.json.gz",
+   "nodes": 64,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore-noglobe",
+   "siteMapNodes": [
+    "explore-noglobe"
+   ],
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (390x844 DPR2, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "integrated-globe.mjs bloqué : attendre « Le globe n’a pas pu se charger. Recharge la page pour réessayer. » et le filtre Pays / Campus actif"
+   ],
+   "checks": {
+    "state": {
+     "loading": "Le globe n’a pas pu se charger. Recharge la page pour réessayer.",
+     "canvas": false,
+     "die": true,
+     "dieTitle": "Visiter un campus",
+     "picker": true
+    },
+    "scope": {
+     "level": "world",
+     "name": "Monde",
+     "back": false,
+     "die": true,
+     "dieTitle": "Visiter un campus"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:38:16",
+   "note": "Aperçu direct avec le module du globe bloqué : même message et même état que « Continuer sans le globe » depuis l’arrivée."
+  },
+  {
+   "name": "explore-noglobe--mobile--en-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore-noglobe--mobile--en-light.png",
+   "dom": "dom/explorer/explore-noglobe--mobile--en-light.json.gz",
+   "nodes": 64,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore-noglobe",
+   "siteMapNodes": [
+    "explore-noglobe"
+   ],
+   "format": "mobile",
+   "lang": "en",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (390x844 DPR2, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "integrated-globe.mjs bloqué : attendre « The globe could not load. Refresh the page to try again. » et le filtre Pays / Campus actif"
+   ],
+   "checks": {
+    "state": {
+     "loading": "The globe could not load. Refresh the page to try again.",
+     "canvas": false,
+     "die": true,
+     "dieTitle": "Visit a campus",
+     "picker": true
+    },
+    "scope": {
+     "level": "world",
+     "name": "World",
+     "back": false,
+     "die": true,
+     "dieTitle": "Visit a campus"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:38:23",
+   "note": "Aperçu direct avec le module du globe bloqué : même message et même état que « Continuer sans le globe » depuis l’arrivée."
+  },
+  {
+   "name": "campus-sheet--mobile--ar-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/campus-sheet--mobile--ar-light.png",
+   "dom": "dom/explorer/campus-sheet--mobile--ar-light.json.gz",
+   "nodes": 174,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "campus-sheet",
+   "siteMapNodes": [
+    "campus-sheet"
+   ],
+   "format": "mobile",
+   "lang": "ar",
+   "theme": "light",
+   "dir": "rtl",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA&campus=paris",
+   "route": "#explore?country=FRA&campus=paris",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA&campus=paris (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre les rues autour du campus (paris) : indication « استكشف محيط الفرع. » stable 2,5 s",
+    "cliquer le repère du campus (viseur) : la fiche s’ouvre ; attendre le logo et la première photo"
+   ],
+   "checks": {
+    "hint": "استكشف محيط الفرع.",
+    "sheet": {
+     "open": true,
+     "kind": "campus",
+     "expanded": "false",
+     "title": "42 Paris",
+     "logo": true,
+     "photos": 2,
+     "scrollHeight": 2134,
+     "clientHeight": 623,
+     "scrollTop": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:38:47",
+   "note": "Feuille mobile repliée (hauteur de repos)."
+  },
+  {
+   "name": "campus-sheet-expanded--mobile--ar-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/campus-sheet-expanded--mobile--ar-light.png",
+   "dom": "dom/explorer/campus-sheet-expanded--mobile--ar-light.json.gz",
+   "nodes": 174,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "full": "reference/explorer/campus-sheet-expanded--mobile--ar-light--full.png",
+   "state": "campus-sheet-expanded",
+   "siteMapNodes": [
+    "campus-sheet"
+   ],
+   "format": "mobile",
+   "lang": "ar",
+   "theme": "light",
+   "dir": "rtl",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA&campus=paris",
+   "route": "#explore?country=FRA&campus=paris",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA&campus=paris (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre les rues autour du campus (paris) : indication « استكشف محيط الفرع. » stable 2,5 s",
+    "cliquer le repère du campus (viseur) : la fiche s’ouvre ; attendre le logo et la première photo",
+    "molette de 600 px vers le bas sur la feuille : elle se déploie"
+   ],
+   "checks": {
+    "hint": "استكشف محيط الفرع.",
+    "sheet": {
+     "open": true,
+     "kind": "campus",
+     "expanded": "true",
+     "title": "42 Paris",
+     "logo": true,
+     "photos": 2,
+     "scrollHeight": 2134,
+     "clientHeight": 822,
+     "scrollTop": 0
+    },
+    "expandedBy": "molette de 600 px vers le bas sur la feuille : elle se déploie"
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:38:55",
+   "note": "Feuille mobile déployée (geste réel, sans attribut posé par script)."
+  },
+  {
+   "name": "campus-sheet-mulhouse--desktop--fr-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/campus-sheet-mulhouse--desktop--fr-light.png",
+   "dom": "dom/explorer/campus-sheet-mulhouse--desktop--fr-light.json.gz",
+   "nodes": 160,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "full": "reference/explorer/campus-sheet-mulhouse--desktop--fr-light--full.png",
+   "state": "campus-sheet-mulhouse",
+   "siteMapNodes": [
+    "campus-sheet"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA&campus=mulhouse",
+   "route": "#explore?country=FRA&campus=mulhouse",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA&campus=mulhouse (1440x960, vrai globe), stockage vidé",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre les rues autour du campus (mulhouse) : indication « Explore les alentours du campus. » stable 2,5 s",
+    "cliquer le repère du campus (viseur) : la fiche s’ouvre ; attendre le logo et la première photo"
+   ],
+   "checks": {
+    "hint": "Explore les alentours du campus.",
+    "sheet": {
+     "open": true,
+     "kind": "campus",
+     "expanded": "false",
+     "title": "42 Mulhouse",
+     "logo": true,
+     "photos": 4,
+     "scrollHeight": 2019,
+     "clientHeight": 910,
+     "scrollTop": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:39:18"
+  },
+  {
+   "name": "campus-sheet-mulhouse--desktop--fr-dark",
+   "area": "explorer",
+   "viewport": "reference/explorer/campus-sheet-mulhouse--desktop--fr-dark.png",
+   "dom": "dom/explorer/campus-sheet-mulhouse--desktop--fr-dark.json.gz",
+   "nodes": 160,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "full": "reference/explorer/campus-sheet-mulhouse--desktop--fr-dark--full.png",
+   "state": "campus-sheet-mulhouse",
+   "siteMapNodes": [
+    "campus-sheet"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA&campus=mulhouse",
+   "route": "#explore?country=FRA&campus=mulhouse",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA&campus=mulhouse (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre les rues autour du campus (mulhouse) : indication « Explore les alentours du campus. » stable 2,5 s",
+    "cliquer le repère du campus (viseur) : la fiche s’ouvre ; attendre le logo et la première photo"
+   ],
+   "checks": {
+    "hint": "Explore les alentours du campus.",
+    "sheet": {
+     "open": true,
+     "kind": "campus",
+     "expanded": "false",
+     "title": "42 Mulhouse",
+     "logo": true,
+     "photos": 4,
+     "scrollHeight": 2019,
+     "clientHeight": 910,
+     "scrollTop": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:39:40"
+  },
+  {
+   "name": "campus-sheet-mulhouse--desktop--en-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/campus-sheet-mulhouse--desktop--en-light.png",
+   "dom": "dom/explorer/campus-sheet-mulhouse--desktop--en-light.json.gz",
+   "nodes": 160,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "full": "reference/explorer/campus-sheet-mulhouse--desktop--en-light--full.png",
+   "state": "campus-sheet-mulhouse",
+   "siteMapNodes": [
+    "campus-sheet"
+   ],
+   "format": "desktop",
+   "lang": "en",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA&campus=mulhouse",
+   "route": "#explore?country=FRA&campus=mulhouse",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA&campus=mulhouse (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre les rues autour du campus (mulhouse) : indication « Explore around the campus. » stable 2,5 s",
+    "cliquer le repère du campus (viseur) : la fiche s’ouvre ; attendre le logo et la première photo"
+   ],
+   "checks": {
+    "hint": "Explore around the campus.",
+    "sheet": {
+     "open": true,
+     "kind": "campus",
+     "expanded": "false",
+     "title": "42 Mulhouse",
+     "logo": true,
+     "photos": 4,
+     "scrollHeight": 1997,
+     "clientHeight": 910,
+     "scrollTop": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:40:03"
+  },
+  {
+   "name": "campus-sheet-mulhouse--desktop--ar-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/campus-sheet-mulhouse--desktop--ar-light.png",
+   "dom": "dom/explorer/campus-sheet-mulhouse--desktop--ar-light.json.gz",
+   "nodes": 162,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "full": "reference/explorer/campus-sheet-mulhouse--desktop--ar-light--full.png",
+   "state": "campus-sheet-mulhouse",
+   "siteMapNodes": [
+    "campus-sheet"
+   ],
+   "format": "desktop",
+   "lang": "ar",
+   "theme": "light",
+   "dir": "rtl",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore?country=FRA&campus=mulhouse",
+   "route": "#explore?country=FRA&campus=mulhouse",
+   "actions": [
+    "ouvrir content-preview.html#explore?country=FRA&campus=mulhouse (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "attendre les rues autour du campus (mulhouse) : indication « استكشف محيط الفرع. » stable 2,5 s",
+    "cliquer le repère du campus (viseur) : la fiche s’ouvre ; attendre le logo et la première photo"
+   ],
+   "checks": {
+    "hint": "استكشف محيط الفرع.",
+    "sheet": {
+     "open": true,
+     "kind": "campus",
+     "expanded": "false",
+     "title": "42 Mulhouse",
+     "logo": true,
+     "photos": 4,
+     "scrollHeight": 2089,
+     "clientHeight": 910,
+     "scrollTop": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:40:25"
+  },
+  {
+   "name": "scope-popover--desktop--ar-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/scope-popover--desktop--ar-light.png",
+   "dom": "dom/explorer/scope-popover--desktop--ar-light.json.gz",
+   "nodes": 142,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "scope-popover",
+   "siteMapNodes": [
+    "scope-popover"
+   ],
+   "format": "desktop",
+   "lang": "ar",
+   "theme": "light",
+   "dir": "rtl",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "cliquer la pastille « Monde ▾ » de l’en-tête : la fenêtre « Où veux-tu aller ? » s’ouvre"
+   ],
+   "checks": {
+    "popover": {
+     "open": true,
+     "side": "below",
+     "title": "إلى أين تريد الذهاب؟",
+     "values": [
+      "",
+      ""
+     ],
+     "options": [
+      [
+       "جميع الدول",
+       "أرمينيا",
+       "إسبانيا",
+       "الأردن",
+       "الإمارات العربية المتحدة",
+       "ألبانيا",
+       "البرازيل",
+       "البرتغال",
+       "التشيك",
+       "ألمانيا",
+       "المغرب",
+       "المملكة المتحدة",
+       "النمسا",
+       "اليابان",
+       "أنغولا",
+       "إيطاليا",
+       "بلجيكا",
+       "بولندا",
+       "تايلاند",
+       "تركيا",
+       "سنغافورة",
+       "سويسرا",
+       "فرنسا",
+       "فلسطين",
+       "كندا",
+       "كوريا الجنوبية",
+       "لبنان",
+       "لوكسمبورغ",
+       "ماليزيا",
+       "مدغشقر",
+       "هولندا"
+      ],
+      [
+       "جميع الفروع",
+       "1337 – Rabat — المغرب",
+       "1337 Ben Guérir — المغرب",
+       "1337 Khouribga — المغرب",
+       "1337 Med — المغرب",
+       "42 Abu Dhabi — الإمارات العربية المتحدة",
+       "42 Amman — الأردن",
+       "42 Angoulême — فرنسا",
+       "42 Antananarivo — مدغشقر",
+       "42 Antwerp — بلجيكا",
+       "42 Bangkok — تايلاند",
+       "42 Barcelona — إسبانيا",
+       "42 Beirut — لبنان",
+       "42 Belo Horizonte — البرازيل",
+       "42 Berlin — ألمانيا",
+       "42 Brussels — بلجيكا",
+       "42 Firenze — إيطاليا",
+       "42 Gyeongsan — كوريا الجنوبية",
+       "42 Heilbronn — ألمانيا",
+       "42 Irbid — الأردن",
+       "42 Iskandar Puteri — ماليزيا",
+       "42 Istanbul — تركيا",
+       "42 Kocaeli — تركيا",
+       "42 Kuala Lumpur — ماليزيا",
+       "42 Lausanne — سويسرا",
+       "42 Le Havre — فرنسا",
+       "42 Lisboa — البرتغال",
+       "42 London — المملكة المتحدة",
+       "42 Luanda — أنغولا",
+       "42 Luxembourg — لوكسمبورغ",
+       "42 Lyon — فرنسا",
+       "42 Madrid — إسبانيا",
+       "42 Málaga — إسبانيا",
+       "42 Marseille — فرنسا",
+       "42 Milano — إيطاليا",
+       "42 Mulhouse — فرنسا",
+       "42 Nablus — فلسطين",
+       "42 Nice — فرنسا",
+       "42 Paris — فرنسا",
+       "42 Penang — ماليزيا",
+       "42 Perpignan — فرنسا",
+       "42 Porto — البرتغال",
+       "42 Prague — التشيك",
+       "42 Québec — كندا",
+       "42 Rio — البرازيل",
+       "42 Roma — إيطاليا",
+       "42 São Paulo — البرازيل",
+       "42 Seoul — كوريا الجنوبية",
+       "42 Singapore — سنغافورة",
+       "42 Tirana — ألبانيا",
+       "42 Tokyo — اليابان",
+       "42 Urduliz — إسبانيا",
+       "42 Vienna — النمسا",
+       "42 Warsaw — بولندا",
+       "42 Wels — النمسا",
+       "42 Wolfsburg — ألمانيا",
+       "42 Yerevan — أرمينيا",
+       "42 Zürich — سويسرا",
+       "Codam — هولندا"
+      ]
+     ],
+     "disabled": [
+      false,
+      false
+     ]
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": true,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:40:38"
+  },
+  {
+   "name": "scope-popover-list--desktop--ar-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/scope-popover-list--desktop--ar-light.png",
+   "overflow": false,
+   "errors": [],
+   "state": "scope-popover-list",
+   "siteMapNodes": [
+    "scope-popover"
+   ],
+   "format": "desktop",
+   "lang": "ar",
+   "theme": "light",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "cliquer la pastille « Monde ▾ » de l’en-tête : la fenêtre « Où veux-tu aller ? » s’ouvre",
+    "cliquer le champ Pays : Chrome ouvre sa liste native"
+   ],
+   "checks": {
+    "popover": {
+     "open": true,
+     "side": "below",
+     "title": "إلى أين تريد الذهاب؟",
+     "values": [
+      "",
+      ""
+     ],
+     "options": [
+      [
+       "جميع الدول",
+       "أرمينيا",
+       "إسبانيا",
+       "الأردن",
+       "الإمارات العربية المتحدة",
+       "ألبانيا",
+       "البرازيل",
+       "البرتغال",
+       "التشيك",
+       "ألمانيا",
+       "المغرب",
+       "المملكة المتحدة",
+       "النمسا",
+       "اليابان",
+       "أنغولا",
+       "إيطاليا",
+       "بلجيكا",
+       "بولندا",
+       "تايلاند",
+       "تركيا",
+       "سنغافورة",
+       "سويسرا",
+       "فرنسا",
+       "فلسطين",
+       "كندا",
+       "كوريا الجنوبية",
+       "لبنان",
+       "لوكسمبورغ",
+       "ماليزيا",
+       "مدغشقر",
+       "هولندا"
+      ],
+      [
+       "جميع الفروع",
+       "1337 – Rabat — المغرب",
+       "1337 Ben Guérir — المغرب",
+       "1337 Khouribga — المغرب",
+       "1337 Med — المغرب",
+       "42 Abu Dhabi — الإمارات العربية المتحدة",
+       "42 Amman — الأردن",
+       "42 Angoulême — فرنسا",
+       "42 Antananarivo — مدغشقر",
+       "42 Antwerp — بلجيكا",
+       "42 Bangkok — تايلاند",
+       "42 Barcelona — إسبانيا",
+       "42 Beirut — لبنان",
+       "42 Belo Horizonte — البرازيل",
+       "42 Berlin — ألمانيا",
+       "42 Brussels — بلجيكا",
+       "42 Firenze — إيطاليا",
+       "42 Gyeongsan — كوريا الجنوبية",
+       "42 Heilbronn — ألمانيا",
+       "42 Irbid — الأردن",
+       "42 Iskandar Puteri — ماليزيا",
+       "42 Istanbul — تركيا",
+       "42 Kocaeli — تركيا",
+       "42 Kuala Lumpur — ماليزيا",
+       "42 Lausanne — سويسرا",
+       "42 Le Havre — فرنسا",
+       "42 Lisboa — البرتغال",
+       "42 London — المملكة المتحدة",
+       "42 Luanda — أنغولا",
+       "42 Luxembourg — لوكسمبورغ",
+       "42 Lyon — فرنسا",
+       "42 Madrid — إسبانيا",
+       "42 Málaga — إسبانيا",
+       "42 Marseille — فرنسا",
+       "42 Milano — إيطاليا",
+       "42 Mulhouse — فرنسا",
+       "42 Nablus — فلسطين",
+       "42 Nice — فرنسا",
+       "42 Paris — فرنسا",
+       "42 Penang — ماليزيا",
+       "42 Perpignan — فرنسا",
+       "42 Porto — البرتغال",
+       "42 Prague — التشيك",
+       "42 Québec — كندا",
+       "42 Rio — البرازيل",
+       "42 Roma — إيطاليا",
+       "42 São Paulo — البرازيل",
+       "42 Seoul — كوريا الجنوبية",
+       "42 Singapore — سنغافورة",
+       "42 Tirana — ألبانيا",
+       "42 Tokyo — اليابان",
+       "42 Urduliz — إسبانيا",
+       "42 Vienna — النمسا",
+       "42 Warsaw — بولندا",
+       "42 Wels — النمسا",
+       "42 Wolfsburg — ألمانيا",
+       "42 Yerevan — أرمينيا",
+       "42 Zürich — سويسرا",
+       "Codam — هولندا"
+      ]
+     ],
+     "disabled": [
+      false,
+      false
+     ]
+    },
+    "countryOptions": [
+     "جميع الدول",
+     "أرمينيا",
+     "إسبانيا",
+     "الأردن",
+     "الإمارات العربية المتحدة",
+     "ألبانيا",
+     "البرازيل",
+     "البرتغال",
+     "التشيك",
+     "ألمانيا",
+     "المغرب",
+     "المملكة المتحدة",
+     "النمسا",
+     "اليابان",
+     "أنغولا",
+     "إيطاليا",
+     "بلجيكا",
+     "بولندا",
+     "تايلاند",
+     "تركيا",
+     "سنغافورة",
+     "سويسرا",
+     "فرنسا",
+     "فلسطين",
+     "كندا",
+     "كوريا الجنوبية",
+     "لبنان",
+     "لوكسمبورغ",
+     "ماليزيا",
+     "مدغشقر",
+     "هولندا"
+    ]
+   },
+   "note": "Capture d’écran seule : la liste déroulante native est dessinée par Chrome hors du DOM (pas de relevé). Contenu et ordre réels (voir checks.countryOptions) ; position et aspect dépendent du mode sans interface.",
+   "dom": null,
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "capturedAt": "2026-10-18 12:40:39"
+  },
+  {
+   "name": "scope-popover--mobile--fr-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/scope-popover--mobile--fr-light.png",
+   "dom": "dom/explorer/scope-popover--mobile--fr-light.json.gz",
+   "nodes": 138,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "scope-popover",
+   "siteMapNodes": [
+    "scope-popover"
+   ],
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (390x844 DPR2, vrai globe), stockage vidé",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "cliquer la pastille « Monde ▾ » de l’en-tête : la fenêtre « Où veux-tu aller ? » s’ouvre"
+   ],
+   "checks": {
+    "popover": {
+     "open": true,
+     "side": "below",
+     "title": "Où veux-tu aller ?",
+     "values": [
+      "",
+      ""
+     ],
+     "options": [
+      [
+       "Tous les pays",
+       "Albanie",
+       "Allemagne",
+       "Angola",
+       "Arménie",
+       "Autriche",
+       "Belgique",
+       "Brésil",
+       "Canada",
+       "Corée du Sud",
+       "Émirats arabes unis",
+       "Espagne",
+       "France",
+       "Italie",
+       "Japon",
+       "Jordanie",
+       "Liban",
+       "Luxembourg",
+       "Madagascar",
+       "Malaisie",
+       "Maroc",
+       "Palestine",
+       "Pays-Bas",
+       "Pologne",
+       "Portugal",
+       "Royaume-Uni",
+       "Singapour",
+       "Suisse",
+       "Tchéquie",
+       "Thaïlande",
+       "Turquie"
+      ],
+      [
+       "Tous les campus",
+       "1337 – Rabat — Maroc",
+       "1337 Ben Guérir — Maroc",
+       "1337 Khouribga — Maroc",
+       "1337 Med — Maroc",
+       "42 Abu Dhabi — Émirats arabes unis",
+       "42 Amman — Jordanie",
+       "42 Angoulême — France",
+       "42 Antananarivo — Madagascar",
+       "42 Antwerp — Belgique",
+       "42 Bangkok — Thaïlande",
+       "42 Barcelona — Espagne",
+       "42 Beirut — Liban",
+       "42 Belo Horizonte — Brésil",
+       "42 Berlin — Allemagne",
+       "42 Brussels — Belgique",
+       "42 Firenze — Italie",
+       "42 Gyeongsan — Corée du Sud",
+       "42 Heilbronn — Allemagne",
+       "42 Irbid — Jordanie",
+       "42 Iskandar Puteri — Malaisie",
+       "42 Istanbul — Turquie",
+       "42 Kocaeli — Turquie",
+       "42 Kuala Lumpur — Malaisie",
+       "42 Lausanne — Suisse",
+       "42 Le Havre — France",
+       "42 Lisboa — Portugal",
+       "42 London — Royaume-Uni",
+       "42 Luanda — Angola",
+       "42 Luxembourg — Luxembourg",
+       "42 Lyon — France",
+       "42 Madrid — Espagne",
+       "42 Málaga — Espagne",
+       "42 Marseille — France",
+       "42 Milano — Italie",
+       "42 Mulhouse — France",
+       "42 Nablus — Palestine",
+       "42 Nice — France",
+       "42 Paris — France",
+       "42 Penang — Malaisie",
+       "42 Perpignan — France",
+       "42 Porto — Portugal",
+       "42 Prague — Tchéquie",
+       "42 Québec — Canada",
+       "42 Rio — Brésil",
+       "42 Roma — Italie",
+       "42 São Paulo — Brésil",
+       "42 Seoul — Corée du Sud",
+       "42 Singapore — Singapour",
+       "42 Tirana — Albanie",
+       "42 Tokyo — Japon",
+       "42 Urduliz — Espagne",
+       "42 Vienna — Autriche",
+       "42 Warsaw — Pologne",
+       "42 Wels — Autriche",
+       "42 Wolfsburg — Allemagne",
+       "42 Yerevan — Arménie",
+       "42 Zürich — Suisse",
+       "Codam — Pays-Bas"
+      ]
+     ],
+     "disabled": [
+      false,
+      false
+     ]
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": true,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:40:54"
+  },
+  {
+   "name": "scope-popover--mobile--fr-dark",
+   "area": "explorer",
+   "viewport": "reference/explorer/scope-popover--mobile--fr-dark.png",
+   "dom": "dom/explorer/scope-popover--mobile--fr-dark.json.gz",
+   "nodes": 138,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "scope-popover",
+   "siteMapNodes": [
+    "scope-popover"
+   ],
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "cliquer la pastille « Monde ▾ » de l’en-tête : la fenêtre « Où veux-tu aller ? » s’ouvre"
+   ],
+   "checks": {
+    "popover": {
+     "open": true,
+     "side": "below",
+     "title": "Où veux-tu aller ?",
+     "values": [
+      "",
+      ""
+     ],
+     "options": [
+      [
+       "Tous les pays",
+       "Albanie",
+       "Allemagne",
+       "Angola",
+       "Arménie",
+       "Autriche",
+       "Belgique",
+       "Brésil",
+       "Canada",
+       "Corée du Sud",
+       "Émirats arabes unis",
+       "Espagne",
+       "France",
+       "Italie",
+       "Japon",
+       "Jordanie",
+       "Liban",
+       "Luxembourg",
+       "Madagascar",
+       "Malaisie",
+       "Maroc",
+       "Palestine",
+       "Pays-Bas",
+       "Pologne",
+       "Portugal",
+       "Royaume-Uni",
+       "Singapour",
+       "Suisse",
+       "Tchéquie",
+       "Thaïlande",
+       "Turquie"
+      ],
+      [
+       "Tous les campus",
+       "1337 – Rabat — Maroc",
+       "1337 Ben Guérir — Maroc",
+       "1337 Khouribga — Maroc",
+       "1337 Med — Maroc",
+       "42 Abu Dhabi — Émirats arabes unis",
+       "42 Amman — Jordanie",
+       "42 Angoulême — France",
+       "42 Antananarivo — Madagascar",
+       "42 Antwerp — Belgique",
+       "42 Bangkok — Thaïlande",
+       "42 Barcelona — Espagne",
+       "42 Beirut — Liban",
+       "42 Belo Horizonte — Brésil",
+       "42 Berlin — Allemagne",
+       "42 Brussels — Belgique",
+       "42 Firenze — Italie",
+       "42 Gyeongsan — Corée du Sud",
+       "42 Heilbronn — Allemagne",
+       "42 Irbid — Jordanie",
+       "42 Iskandar Puteri — Malaisie",
+       "42 Istanbul — Turquie",
+       "42 Kocaeli — Turquie",
+       "42 Kuala Lumpur — Malaisie",
+       "42 Lausanne — Suisse",
+       "42 Le Havre — France",
+       "42 Lisboa — Portugal",
+       "42 London — Royaume-Uni",
+       "42 Luanda — Angola",
+       "42 Luxembourg — Luxembourg",
+       "42 Lyon — France",
+       "42 Madrid — Espagne",
+       "42 Málaga — Espagne",
+       "42 Marseille — France",
+       "42 Milano — Italie",
+       "42 Mulhouse — France",
+       "42 Nablus — Palestine",
+       "42 Nice — France",
+       "42 Paris — France",
+       "42 Penang — Malaisie",
+       "42 Perpignan — France",
+       "42 Porto — Portugal",
+       "42 Prague — Tchéquie",
+       "42 Québec — Canada",
+       "42 Rio — Brésil",
+       "42 Roma — Italie",
+       "42 São Paulo — Brésil",
+       "42 Seoul — Corée du Sud",
+       "42 Singapore — Singapour",
+       "42 Tirana — Albanie",
+       "42 Tokyo — Japon",
+       "42 Urduliz — Espagne",
+       "42 Vienna — Autriche",
+       "42 Warsaw — Pologne",
+       "42 Wels — Autriche",
+       "42 Wolfsburg — Allemagne",
+       "42 Yerevan — Arménie",
+       "42 Zürich — Suisse",
+       "Codam — Pays-Bas"
+      ]
+     ],
+     "disabled": [
+      false,
+      false
+     ]
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": true,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:41:08"
+  },
+  {
+   "name": "scope-popover--mobile--en-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/scope-popover--mobile--en-light.png",
+   "dom": "dom/explorer/scope-popover--mobile--en-light.json.gz",
+   "nodes": 138,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "scope-popover",
+   "siteMapNodes": [
+    "scope-popover"
+   ],
+   "format": "mobile",
+   "lang": "en",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "cliquer la pastille « Monde ▾ » de l’en-tête : la fenêtre « Où veux-tu aller ? » s’ouvre"
+   ],
+   "checks": {
+    "popover": {
+     "open": true,
+     "side": "below",
+     "title": "Where would you like to go?",
+     "values": [
+      "",
+      ""
+     ],
+     "options": [
+      [
+       "All countries",
+       "Albania",
+       "Angola",
+       "Armenia",
+       "Austria",
+       "Belgium",
+       "Brazil",
+       "Canada",
+       "Czechia",
+       "France",
+       "Germany",
+       "Italy",
+       "Japan",
+       "Jordan",
+       "Lebanon",
+       "Luxembourg",
+       "Madagascar",
+       "Malaysia",
+       "Morocco",
+       "Netherlands",
+       "Palestine",
+       "Poland",
+       "Portugal",
+       "Singapore",
+       "South Korea",
+       "Spain",
+       "Switzerland",
+       "Thailand",
+       "Türkiye",
+       "United Arab Emirates",
+       "United Kingdom"
+      ],
+      [
+       "All campuses",
+       "1337 – Rabat — Morocco",
+       "1337 Ben Guérir — Morocco",
+       "1337 Khouribga — Morocco",
+       "1337 Med — Morocco",
+       "42 Abu Dhabi — United Arab Emirates",
+       "42 Amman — Jordan",
+       "42 Angoulême — France",
+       "42 Antananarivo — Madagascar",
+       "42 Antwerp — Belgium",
+       "42 Bangkok — Thailand",
+       "42 Barcelona — Spain",
+       "42 Beirut — Lebanon",
+       "42 Belo Horizonte — Brazil",
+       "42 Berlin — Germany",
+       "42 Brussels — Belgium",
+       "42 Firenze — Italy",
+       "42 Gyeongsan — South Korea",
+       "42 Heilbronn — Germany",
+       "42 Irbid — Jordan",
+       "42 Iskandar Puteri — Malaysia",
+       "42 Istanbul — Türkiye",
+       "42 Kocaeli — Türkiye",
+       "42 Kuala Lumpur — Malaysia",
+       "42 Lausanne — Switzerland",
+       "42 Le Havre — France",
+       "42 Lisboa — Portugal",
+       "42 London — United Kingdom",
+       "42 Luanda — Angola",
+       "42 Luxembourg — Luxembourg",
+       "42 Lyon — France",
+       "42 Madrid — Spain",
+       "42 Málaga — Spain",
+       "42 Marseille — France",
+       "42 Milano — Italy",
+       "42 Mulhouse — France",
+       "42 Nablus — Palestine",
+       "42 Nice — France",
+       "42 Paris — France",
+       "42 Penang — Malaysia",
+       "42 Perpignan — France",
+       "42 Porto — Portugal",
+       "42 Prague — Czechia",
+       "42 Québec — Canada",
+       "42 Rio — Brazil",
+       "42 Roma — Italy",
+       "42 São Paulo — Brazil",
+       "42 Seoul — South Korea",
+       "42 Singapore — Singapore",
+       "42 Tirana — Albania",
+       "42 Tokyo — Japan",
+       "42 Urduliz — Spain",
+       "42 Vienna — Austria",
+       "42 Warsaw — Poland",
+       "42 Wels — Austria",
+       "42 Wolfsburg — Germany",
+       "42 Yerevan — Armenia",
+       "42 Zürich — Switzerland",
+       "Codam — Netherlands"
+      ]
+     ],
+     "disabled": [
+      false,
+      false
+     ]
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": true,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:41:23"
+  },
+  {
+   "name": "scope-popover--mobile--ar-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/scope-popover--mobile--ar-light.png",
+   "dom": "dom/explorer/scope-popover--mobile--ar-light.json.gz",
+   "nodes": 139,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "scope-popover",
+   "siteMapNodes": [
+    "scope-popover"
+   ],
+   "format": "mobile",
+   "lang": "ar",
+   "theme": "light",
+   "dir": "rtl",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "cliquer la pastille « Monde ▾ » de l’en-tête : la fenêtre « Où veux-tu aller ? » s’ouvre"
+   ],
+   "checks": {
+    "popover": {
+     "open": true,
+     "side": "below",
+     "title": "إلى أين تريد الذهاب؟",
+     "values": [
+      "",
+      ""
+     ],
+     "options": [
+      [
+       "جميع الدول",
+       "أرمينيا",
+       "إسبانيا",
+       "الأردن",
+       "الإمارات العربية المتحدة",
+       "ألبانيا",
+       "البرازيل",
+       "البرتغال",
+       "التشيك",
+       "ألمانيا",
+       "المغرب",
+       "المملكة المتحدة",
+       "النمسا",
+       "اليابان",
+       "أنغولا",
+       "إيطاليا",
+       "بلجيكا",
+       "بولندا",
+       "تايلاند",
+       "تركيا",
+       "سنغافورة",
+       "سويسرا",
+       "فرنسا",
+       "فلسطين",
+       "كندا",
+       "كوريا الجنوبية",
+       "لبنان",
+       "لوكسمبورغ",
+       "ماليزيا",
+       "مدغشقر",
+       "هولندا"
+      ],
+      [
+       "جميع الفروع",
+       "1337 – Rabat — المغرب",
+       "1337 Ben Guérir — المغرب",
+       "1337 Khouribga — المغرب",
+       "1337 Med — المغرب",
+       "42 Abu Dhabi — الإمارات العربية المتحدة",
+       "42 Amman — الأردن",
+       "42 Angoulême — فرنسا",
+       "42 Antananarivo — مدغشقر",
+       "42 Antwerp — بلجيكا",
+       "42 Bangkok — تايلاند",
+       "42 Barcelona — إسبانيا",
+       "42 Beirut — لبنان",
+       "42 Belo Horizonte — البرازيل",
+       "42 Berlin — ألمانيا",
+       "42 Brussels — بلجيكا",
+       "42 Firenze — إيطاليا",
+       "42 Gyeongsan — كوريا الجنوبية",
+       "42 Heilbronn — ألمانيا",
+       "42 Irbid — الأردن",
+       "42 Iskandar Puteri — ماليزيا",
+       "42 Istanbul — تركيا",
+       "42 Kocaeli — تركيا",
+       "42 Kuala Lumpur — ماليزيا",
+       "42 Lausanne — سويسرا",
+       "42 Le Havre — فرنسا",
+       "42 Lisboa — البرتغال",
+       "42 London — المملكة المتحدة",
+       "42 Luanda — أنغولا",
+       "42 Luxembourg — لوكسمبورغ",
+       "42 Lyon — فرنسا",
+       "42 Madrid — إسبانيا",
+       "42 Málaga — إسبانيا",
+       "42 Marseille — فرنسا",
+       "42 Milano — إيطاليا",
+       "42 Mulhouse — فرنسا",
+       "42 Nablus — فلسطين",
+       "42 Nice — فرنسا",
+       "42 Paris — فرنسا",
+       "42 Penang — ماليزيا",
+       "42 Perpignan — فرنسا",
+       "42 Porto — البرتغال",
+       "42 Prague — التشيك",
+       "42 Québec — كندا",
+       "42 Rio — البرازيل",
+       "42 Roma — إيطاليا",
+       "42 São Paulo — البرازيل",
+       "42 Seoul — كوريا الجنوبية",
+       "42 Singapore — سنغافورة",
+       "42 Tirana — ألبانيا",
+       "42 Tokyo — اليابان",
+       "42 Urduliz — إسبانيا",
+       "42 Vienna — النمسا",
+       "42 Warsaw — بولندا",
+       "42 Wels — النمسا",
+       "42 Wolfsburg — ألمانيا",
+       "42 Yerevan — أرمينيا",
+       "42 Zürich — سويسرا",
+       "Codam — هولندا"
+      ]
+     ],
+     "disabled": [
+      false,
+      false
+     ]
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": true,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:41:36"
+  },
+  {
+   "name": "about-dialog--desktop--fr-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/about-dialog--desktop--fr-light.png",
+   "dom": "dom/explorer/about-dialog--desktop--fr-light.json.gz",
+   "nodes": 138,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "about-dialog",
+   "siteMapNodes": [
+    "about-dialog"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (1440x960, vrai globe), stockage vidé",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "cliquer « Exploration · 42 Horizon » : la fenêtre « Une nouvelle façon d’explorer » s’ouvre"
+   ],
+   "checks": {
+    "dialog": {
+     "kind": "",
+     "title": "Une nouvelle façon d’explorer",
+     "paragraphs": [
+      "58 campus référencés dans 30 pays, d’après la source officielle consultée le 27 septembre 2026. Cet instantané n’indique pas si les admissions sont ouvertes.",
+      "Les repères viennent du réseau 42, avec des positions corrigées à partir de sources cartographiques et des adresses officielles. La précision des autres positions reste à vérifier. Carte continue : OpenStreetMap / OpenFreeMap ; rendu Horizon.",
+      "Les rubriques présentent des contenus fictifs répartis dans le réseau, pour explorer les projets, profils et chroniques."
+     ],
+     "link": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:41:50"
+  },
+  {
+   "name": "about-dialog--desktop--fr-dark",
+   "area": "explorer",
+   "viewport": "reference/explorer/about-dialog--desktop--fr-dark.png",
+   "dom": "dom/explorer/about-dialog--desktop--fr-dark.json.gz",
+   "nodes": 138,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "about-dialog",
+   "siteMapNodes": [
+    "about-dialog"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "cliquer « Exploration · 42 Horizon » : la fenêtre « Une nouvelle façon d’explorer » s’ouvre"
+   ],
+   "checks": {
+    "dialog": {
+     "kind": "",
+     "title": "Une nouvelle façon d’explorer",
+     "paragraphs": [
+      "58 campus référencés dans 30 pays, d’après la source officielle consultée le 27 septembre 2026. Cet instantané n’indique pas si les admissions sont ouvertes.",
+      "Les repères viennent du réseau 42, avec des positions corrigées à partir de sources cartographiques et des adresses officielles. La précision des autres positions reste à vérifier. Carte continue : OpenStreetMap / OpenFreeMap ; rendu Horizon.",
+      "Les rubriques présentent des contenus fictifs répartis dans le réseau, pour explorer les projets, profils et chroniques."
+     ],
+     "link": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:42:03"
+  },
+  {
+   "name": "about-dialog--desktop--en-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/about-dialog--desktop--en-light.png",
+   "dom": "dom/explorer/about-dialog--desktop--en-light.json.gz",
+   "nodes": 138,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "about-dialog",
+   "siteMapNodes": [
+    "about-dialog"
+   ],
+   "format": "desktop",
+   "lang": "en",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "cliquer « Exploration · 42 Horizon » : la fenêtre « Une nouvelle façon d’explorer » s’ouvre"
+   ],
+   "checks": {
+    "dialog": {
+     "kind": "",
+     "title": "A new way to explore",
+     "paragraphs": [
+      "58 campuses listed in 30 countries, based on the official source retrieved on September 27, 2026. This snapshot does not indicate whether admissions are open.",
+      "Markers come from the 42 network, with positions corrected using maps and official addresses. The accuracy of the other positions has yet to be checked. Continuous map: OpenStreetMap / OpenFreeMap; Horizon styling.",
+      "The sections present fictional content across the network, for exploring projects, profiles and chronicles."
+     ],
+     "link": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:42:16"
+  },
+  {
+   "name": "about-dialog--desktop--ar-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/about-dialog--desktop--ar-light.png",
+   "dom": "dom/explorer/about-dialog--desktop--ar-light.json.gz",
+   "nodes": 139,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "about-dialog",
+   "siteMapNodes": [
+    "about-dialog"
+   ],
+   "format": "desktop",
+   "lang": "ar",
+   "theme": "light",
+   "dir": "rtl",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "cliquer « Exploration · 42 Horizon » : la fenêtre « Une nouvelle façon d’explorer » s’ouvre"
+   ],
+   "checks": {
+    "dialog": {
+     "kind": "",
+     "title": "طريقة جديدة للاستكشاف",
+     "paragraphs": [
+      "58 فرعًا مُدرجًا في 30 دولة، وفق المصدر الرسمي الذي جرت مراجعته في 27 سبتمبر 2026. لا يبيّن هذا السجل ما إذا كان التسجيل مفتوحًا.",
+      "مصدر العلامات هو شبكة 42، مع تصحيح بعض المواقع باستخدام الخرائط والعناوين الرسمية. لم تُتحقق دقة المواقع الأخرى بعد. خريطة متصلة: OpenStreetMap / OpenFreeMap؛ بأسلوب Horizon.",
+      "تضم الأقسام محتوى خياليًا من فروع الشبكة لاستكشاف المشاريع والملفات الشخصية والحكايات."
+     ],
+     "link": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:42:30"
+  },
+  {
+   "name": "about-dialog--mobile--fr-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/about-dialog--mobile--fr-light.png",
+   "dom": "dom/explorer/about-dialog--mobile--fr-light.json.gz",
+   "nodes": 135,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "about-dialog",
+   "siteMapNodes": [
+    "about-dialog"
+   ],
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (390x844 DPR2, vrai globe), stockage vidé",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "cliquer « Exploration · 42 Horizon » : la fenêtre « Une nouvelle façon d’explorer » s’ouvre"
+   ],
+   "checks": {
+    "dialog": {
+     "kind": "",
+     "title": "Une nouvelle façon d’explorer",
+     "paragraphs": [
+      "58 campus référencés dans 30 pays, d’après la source officielle consultée le 27 septembre 2026. Cet instantané n’indique pas si les admissions sont ouvertes.",
+      "Les repères viennent du réseau 42, avec des positions corrigées à partir de sources cartographiques et des adresses officielles. La précision des autres positions reste à vérifier. Carte continue : OpenStreetMap / OpenFreeMap ; rendu Horizon.",
+      "Les rubriques présentent des contenus fictifs répartis dans le réseau, pour explorer les projets, profils et chroniques."
+     ],
+     "link": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:42:43"
+  },
+  {
+   "name": "about-dialog--mobile--fr-dark",
+   "area": "explorer",
+   "viewport": "reference/explorer/about-dialog--mobile--fr-dark.png",
+   "dom": "dom/explorer/about-dialog--mobile--fr-dark.json.gz",
+   "nodes": 135,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "about-dialog",
+   "siteMapNodes": [
+    "about-dialog"
+   ],
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "cliquer « Exploration · 42 Horizon » : la fenêtre « Une nouvelle façon d’explorer » s’ouvre"
+   ],
+   "checks": {
+    "dialog": {
+     "kind": "",
+     "title": "Une nouvelle façon d’explorer",
+     "paragraphs": [
+      "58 campus référencés dans 30 pays, d’après la source officielle consultée le 27 septembre 2026. Cet instantané n’indique pas si les admissions sont ouvertes.",
+      "Les repères viennent du réseau 42, avec des positions corrigées à partir de sources cartographiques et des adresses officielles. La précision des autres positions reste à vérifier. Carte continue : OpenStreetMap / OpenFreeMap ; rendu Horizon.",
+      "Les rubriques présentent des contenus fictifs répartis dans le réseau, pour explorer les projets, profils et chroniques."
+     ],
+     "link": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:42:57"
+  },
+  {
+   "name": "about-dialog--mobile--en-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/about-dialog--mobile--en-light.png",
+   "dom": "dom/explorer/about-dialog--mobile--en-light.json.gz",
+   "nodes": 135,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "about-dialog",
+   "siteMapNodes": [
+    "about-dialog"
+   ],
+   "format": "mobile",
+   "lang": "en",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "cliquer « Exploration · 42 Horizon » : la fenêtre « Une nouvelle façon d’explorer » s’ouvre"
+   ],
+   "checks": {
+    "dialog": {
+     "kind": "",
+     "title": "A new way to explore",
+     "paragraphs": [
+      "58 campuses listed in 30 countries, based on the official source retrieved on September 27, 2026. This snapshot does not indicate whether admissions are open.",
+      "Markers come from the 42 network, with positions corrected using maps and official addresses. The accuracy of the other positions has yet to be checked. Continuous map: OpenStreetMap / OpenFreeMap; Horizon styling.",
+      "The sections present fictional content across the network, for exploring projects, profiles and chronicles."
+     ],
+     "link": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:43:11"
+  },
+  {
+   "name": "about-dialog--mobile--ar-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/about-dialog--mobile--ar-light.png",
+   "dom": "dom/explorer/about-dialog--mobile--ar-light.json.gz",
+   "nodes": 136,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "about-dialog",
+   "siteMapNodes": [
+    "about-dialog"
+   ],
+   "format": "mobile",
+   "lang": "ar",
+   "theme": "light",
+   "dir": "rtl",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+    "cliquer « Exploration · 42 Horizon » : la fenêtre « Une nouvelle façon d’explorer » s’ouvre"
+   ],
+   "checks": {
+    "dialog": {
+     "kind": "",
+     "title": "طريقة جديدة للاستكشاف",
+     "paragraphs": [
+      "58 فرعًا مُدرجًا في 30 دولة، وفق المصدر الرسمي الذي جرت مراجعته في 27 سبتمبر 2026. لا يبيّن هذا السجل ما إذا كان التسجيل مفتوحًا.",
+      "مصدر العلامات هو شبكة 42، مع تصحيح بعض المواقع باستخدام الخرائط والعناوين الرسمية. لم تُتحقق دقة المواقع الأخرى بعد. خريطة متصلة: OpenStreetMap / OpenFreeMap؛ بأسلوب Horizon.",
+      "تضم الأقسام محتوى خياليًا من فروع الشبكة لاستكشاف المشاريع والملفات الشخصية والحكايات."
+     ],
+     "link": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:43:25"
+  },
+  {
+   "name": "explore-noglobe--mobile--ar-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore-noglobe--mobile--ar-light.png",
+   "dom": "dom/explorer/explore-noglobe--mobile--ar-light.json.gz",
+   "nodes": 65,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore-noglobe",
+   "siteMapNodes": [
+    "explore-noglobe"
+   ],
+   "format": "mobile",
+   "lang": "ar",
+   "theme": "light",
+   "dir": "rtl",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (390x844 DPR2, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "integrated-globe.mjs bloqué : attendre « تعذّر تحميل الكرة الأرضية. أعد تحميل الصفحة للمحاولة مجددًا. » et le filtre Pays / Campus actif"
+   ],
+   "checks": {
+    "state": {
+     "loading": "تعذّر تحميل الكرة الأرضية. أعد تحميل الصفحة للمحاولة مجددًا.",
+     "canvas": false,
+     "die": true,
+     "dieTitle": "زيارة فرع",
+     "picker": true
+    },
+    "scope": {
+     "level": "world",
+     "name": "العالم",
+     "back": false,
+     "die": true,
+     "dieTitle": "زيارة فرع"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:43:32",
+   "note": "Aperçu direct avec le module du globe bloqué : même message et même état que « Continuer sans le globe » depuis l’arrivée."
+  },
+  {
+   "name": "explore-noglobe--mobile--ar-dark",
+   "area": "explorer",
+   "viewport": "reference/explorer/explore-noglobe--mobile--ar-dark.png",
+   "dom": "dom/explorer/explore-noglobe--mobile--ar-dark.json.gz",
+   "nodes": 65,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "explore-noglobe",
+   "siteMapNodes": [
+    "explore-noglobe"
+   ],
+   "format": "mobile",
+   "lang": "ar",
+   "theme": "dark",
+   "dir": "rtl",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#explore",
+   "route": "#explore",
+   "actions": [
+    "ouvrir content-preview.html#explore (390x844 DPR2, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue ar, thème dark",
+    "integrated-globe.mjs bloqué : attendre « تعذّر تحميل الكرة الأرضية. أعد تحميل الصفحة للمحاولة مجددًا. » et le filtre Pays / Campus actif"
+   ],
+   "checks": {
+    "state": {
+     "loading": "تعذّر تحميل الكرة الأرضية. أعد تحميل الصفحة للمحاولة مجددًا.",
+     "canvas": false,
+     "die": true,
+     "dieTitle": "زيارة فرع",
+     "picker": true
+    },
+    "scope": {
+     "level": "world",
+     "name": "العالم",
+     "back": false,
+     "die": true,
+     "dieTitle": "زيارة فرع"
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:43:38",
+   "note": "Aperçu direct avec le module du globe bloqué : même message et même état que « Continuer sans le globe » depuis l’arrivée."
+  },
+  {
+   "name": "campus-window--desktop--fr-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/campus-window--desktop--fr-light.png",
+   "dom": "dom/explorer/campus-window--desktop--fr-light.json.gz",
+   "nodes": 170,
+   "doc": [
+    1440,
+    1467
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "campus-window",
+   "siteMapNodes": [
+    "campus-window",
+    "project"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#projects/minishell-under-the-prompt",
+   "route": "#projects/minishell-under-the-prompt",
+   "actions": [
+    "ouvrir content-preview.html#projects/minishell-under-the-prompt (1440x960, vrai globe), stockage vidé",
+    "attendre le globe prêt, cliquer « Explorer 42 Paris » dans la barre de la fiche ; attendre les alentours chargés"
+   ],
+   "checks": {
+    "trigger": "Explorer 42 Paris",
+    "dialog": {
+     "kicker": "Autour du campus · France",
+     "name": "42 Paris",
+     "hint": "Explore le quartier, jusqu’à 3 km autour du campus.",
+     "buttons": [
+      "Fermer la carte",
+      "Explorer · 42 Paris",
+      "Dézoomer",
+      "Recentrer sur le campus",
+      "Zoomer",
+      "Réessayer"
+     ]
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "campus-map-dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:43:55"
+  },
+  {
+   "name": "campus-window--desktop--fr-dark",
+   "area": "explorer",
+   "viewport": "reference/explorer/campus-window--desktop--fr-dark.png",
+   "dom": "dom/explorer/campus-window--desktop--fr-dark.json.gz",
+   "nodes": 170,
+   "doc": [
+    1440,
+    1467
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "campus-window",
+   "siteMapNodes": [
+    "campus-window",
+    "project"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#projects/minishell-under-the-prompt",
+   "route": "#projects/minishell-under-the-prompt",
+   "actions": [
+    "ouvrir content-preview.html#projects/minishell-under-the-prompt (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "attendre le globe prêt, cliquer « Explorer 42 Paris » dans la barre de la fiche ; attendre les alentours chargés"
+   ],
+   "checks": {
+    "trigger": "Explorer 42 Paris",
+    "dialog": {
+     "kicker": "Autour du campus · France",
+     "name": "42 Paris",
+     "hint": "Explore le quartier, jusqu’à 3 km autour du campus.",
+     "buttons": [
+      "Fermer la carte",
+      "Explorer · 42 Paris",
+      "Dézoomer",
+      "Recentrer sur le campus",
+      "Zoomer",
+      "Réessayer"
+     ]
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "campus-map-dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:44:09"
+  },
+  {
+   "name": "campus-window--desktop--en-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/campus-window--desktop--en-light.png",
+   "dom": "dom/explorer/campus-window--desktop--en-light.json.gz",
+   "nodes": 170,
+   "doc": [
+    1440,
+    1466
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "campus-window",
+   "siteMapNodes": [
+    "campus-window",
+    "project"
+   ],
+   "format": "desktop",
+   "lang": "en",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#projects/minishell-under-the-prompt",
+   "route": "#projects/minishell-under-the-prompt",
+   "actions": [
+    "ouvrir content-preview.html#projects/minishell-under-the-prompt (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "attendre le globe prêt, cliquer « Explore 42 Paris » dans la barre de la fiche ; attendre les alentours chargés"
+   ],
+   "checks": {
+    "trigger": "Explore 42 Paris",
+    "dialog": {
+     "kicker": "Around the campus · France",
+     "name": "42 Paris",
+     "hint": "Explore the neighbourhood, within 3 km of the campus.",
+     "buttons": [
+      "Close the map",
+      "Explore · 42 Paris",
+      "Zoom out",
+      "Recenter on the campus",
+      "Zoom in",
+      "Try again"
+     ]
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "campus-map-dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:44:27"
+  },
+  {
+   "name": "campus-window--desktop--ar-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/campus-window--desktop--ar-light.png",
+   "dom": "dom/explorer/campus-window--desktop--ar-light.json.gz",
+   "nodes": 171,
+   "doc": [
+    1440,
+    1478
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "campus-window",
+   "siteMapNodes": [
+    "campus-window",
+    "project"
+   ],
+   "format": "desktop",
+   "lang": "ar",
+   "theme": "light",
+   "dir": "rtl",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#projects/minishell-under-the-prompt",
+   "route": "#projects/minishell-under-the-prompt",
+   "actions": [
+    "ouvrir content-preview.html#projects/minishell-under-the-prompt (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "attendre le globe prêt, cliquer « استكشف 42 Paris » dans la barre de la fiche ; attendre les alentours chargés"
+   ],
+   "checks": {
+    "trigger": "استكشف 42 Paris",
+    "dialog": {
+     "kicker": "حول الفرع · فرنسا",
+     "name": "42 Paris",
+     "hint": "استكشف الحي ضمن نطاق 3 كم حول الفرع.",
+     "buttons": [
+      "إغلاق الخريطة",
+      "استكشف · 42 Paris",
+      "تصغير",
+      "العودة إلى موقع الفرع",
+      "تكبير",
+      "إعادة المحاولة"
+     ]
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "campus-map-dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:44:40"
+  },
+  {
+   "name": "campus-window--mobile--fr-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/campus-window--mobile--fr-light.png",
+   "dom": "dom/explorer/campus-window--mobile--fr-light.json.gz",
+   "nodes": 175,
+   "doc": [
+    390,
+    1586
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "campus-window",
+   "siteMapNodes": [
+    "campus-window",
+    "project"
+   ],
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#projects/minishell-under-the-prompt",
+   "route": "#projects/minishell-under-the-prompt",
+   "actions": [
+    "ouvrir content-preview.html#projects/minishell-under-the-prompt (390x844 DPR2, vrai globe), stockage vidé",
+    "attendre le globe prêt, cliquer « Explorer 42 Paris » dans la barre de la fiche ; attendre les alentours chargés"
+   ],
+   "checks": {
+    "trigger": "Explorer 42 Paris",
+    "dialog": {
+     "kicker": "Autour du campus · France",
+     "name": "42 Paris",
+     "hint": "Explore le quartier, jusqu’à 3 km autour du campus.",
+     "buttons": [
+      "Fermer la carte",
+      "Explorer · 42 Paris",
+      "Dézoomer",
+      "Recentrer sur le campus",
+      "Zoomer",
+      "Réessayer"
+     ]
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "campus-map-dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:44:55"
+  },
+  {
+   "name": "campus-window--mobile--fr-dark",
+   "area": "explorer",
+   "viewport": "reference/explorer/campus-window--mobile--fr-dark.png",
+   "dom": "dom/explorer/campus-window--mobile--fr-dark.json.gz",
+   "nodes": 175,
+   "doc": [
+    390,
+    1586
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "campus-window",
+   "siteMapNodes": [
+    "campus-window",
+    "project"
+   ],
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#projects/minishell-under-the-prompt",
+   "route": "#projects/minishell-under-the-prompt",
+   "actions": [
+    "ouvrir content-preview.html#projects/minishell-under-the-prompt (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "attendre le globe prêt, cliquer « Explorer 42 Paris » dans la barre de la fiche ; attendre les alentours chargés"
+   ],
+   "checks": {
+    "trigger": "Explorer 42 Paris",
+    "dialog": {
+     "kicker": "Autour du campus · France",
+     "name": "42 Paris",
+     "hint": "Explore le quartier, jusqu’à 3 km autour du campus.",
+     "buttons": [
+      "Fermer la carte",
+      "Explorer · 42 Paris",
+      "Dézoomer",
+      "Recentrer sur le campus",
+      "Zoomer",
+      "Réessayer"
+     ]
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "campus-map-dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:45:10"
+  },
+  {
+   "name": "campus-window--mobile--en-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/campus-window--mobile--en-light.png",
+   "dom": "dom/explorer/campus-window--mobile--en-light.json.gz",
+   "nodes": 175,
+   "doc": [
+    390,
+    1629
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "campus-window",
+   "siteMapNodes": [
+    "campus-window",
+    "project"
+   ],
+   "format": "mobile",
+   "lang": "en",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#projects/minishell-under-the-prompt",
+   "route": "#projects/minishell-under-the-prompt",
+   "actions": [
+    "ouvrir content-preview.html#projects/minishell-under-the-prompt (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "attendre le globe prêt, cliquer « Explore 42 Paris » dans la barre de la fiche ; attendre les alentours chargés"
+   ],
+   "checks": {
+    "trigger": "Explore 42 Paris",
+    "dialog": {
+     "kicker": "Around the campus · France",
+     "name": "42 Paris",
+     "hint": "Explore the neighbourhood, within 3 km of the campus.",
+     "buttons": [
+      "Close the map",
+      "Explore · 42 Paris",
+      "Zoom out",
+      "Recenter on the campus",
+      "Zoom in",
+      "Try again"
+     ]
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "campus-map-dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:45:24"
+  },
+  {
+   "name": "campus-window--mobile--ar-light",
+   "area": "explorer",
+   "viewport": "reference/explorer/campus-window--mobile--ar-light.png",
+   "dom": "dom/explorer/campus-window--mobile--ar-light.json.gz",
+   "nodes": 176,
+   "doc": [
+    390,
+    1633
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "campus-window",
+   "siteMapNodes": [
+    "campus-window",
+    "project"
+   ],
+   "format": "mobile",
+   "lang": "ar",
+   "theme": "light",
+   "dir": "rtl",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#projects/minishell-under-the-prompt",
+   "route": "#projects/minishell-under-the-prompt",
+   "actions": [
+    "ouvrir content-preview.html#projects/minishell-under-the-prompt (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "attendre le globe prêt, cliquer « استكشف 42 Paris » dans la barre de la fiche ; attendre les alentours chargés"
+   ],
+   "checks": {
+    "trigger": "استكشف 42 Paris",
+    "dialog": {
+     "kicker": "حول الفرع · فرنسا",
+     "name": "42 Paris",
+     "hint": "استكشف الحي ضمن نطاق 3 كم حول الفرع.",
+     "buttons": [
+      "إغلاق الخريطة",
+      "استكشف · 42 Paris",
+      "تصغير",
+      "العودة إلى موقع الفرع",
+      "تكبير",
+      "إعادة المحاولة"
+     ]
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [
+     "campus-map-dialog"
+    ],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "dd0d3bd40ebd",
+   "capturedAt": "2026-10-18 12:45:39"
+  }
+ ],
+ "zone": "Explorer",
+ "pass": "variants-20261015",
+ "naming": "<state>--<desktop|mobile>--<fr|en|ar>-<light|dark>",
+ "script": "scripts/capture_explorer.py (runner scripts/variants.py)",
+ "failures": []
+}

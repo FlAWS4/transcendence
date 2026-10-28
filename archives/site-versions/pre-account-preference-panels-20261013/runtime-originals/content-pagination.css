@@ -1,0 +1,18 @@
+/* One compact row at every width, with stable arrow columns and natural RTL order. */
+.cp-pagination { margin-block: 36px 8px; padding-block-start: 20px; border-block-start: 1px solid var(--cp-line); }
+.cp-pagination[hidden] { display: none; }
+.cp-pagination-summary { margin: 0 0 12px; text-align: center; color: var(--h42-color-muted); font-size: 13px; line-height: 1.5; }
+.cp-pagination-controls { display: grid; grid-template-columns: 32px minmax(0,1fr) 32px; align-items: center; gap: 4px; inline-size: 264px; max-inline-size: 100%; margin-inline: auto; }
+.cp-pagination-pages { display: flex; flex-wrap: nowrap; align-items: center; justify-content: center; gap: 4px; min-width: 0; }
+.cp-pagination-link { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; min-width: 28px; min-height: 36px; padding: 4px 2px; box-sizing: border-box; border: 1px solid transparent; border-radius: 8px; background: transparent; color: var(--h42-color-muted); text-decoration: none; font: inherit; font-size: 13px; line-height: 1.3; }
+.cp-pagination-previous,.cp-pagination-next { width: 32px; }
+.cp-pagination-link:hover:not(:disabled),.cp-pagination-link[aria-current=page] { color: var(--cp-accent); background: var(--warm-soft); }
+.cp-pagination-link[aria-current=page] { border-color: var(--cp-line); font-weight: 500; }
+.cp-pagination-link:disabled { opacity: .4; cursor: default; }
+.cp-pagination-link:focus-visible { outline: 2px solid var(--h42-color-focus); outline-offset: 1px; }
+.cp-pagination-link > svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+[dir=rtl] .cp-pagination-link > svg { transform: scaleX(-1); }
+.cp-pagination-ellipsis { flex-shrink: 0; width: 10px; text-align: center; color: var(--h42-color-muted); }
+@media (max-width: 600px) {
+ .cp-pagination { margin-block-start: 28px; }
+}

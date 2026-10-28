@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr" data-theme="light">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <title>Contrôle navigateur — photos et vidéos</title>
+ <link rel="stylesheet" href="../../shared/brand/tokens.css">
+ <link rel="stylesheet" href="../../shared/assets/jost.css">
+ <link rel="stylesheet" href="../welcome.css?v=b7">
+ <link rel="stylesheet" href="../media-viewer.css?v=2">
+ <style>
+  body{display:block;min-height:100svh;height:auto;margin:0;padding:24px;overflow:auto;font:16px/1.5 Jost,sans-serif;background:var(--h42-color-bg,#f4f8f8);color:var(--h42-color-text,#17252a)}main{max-width:900px;margin:auto}h1{font-size:28px}p{max-width:65ch}.controls{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}.controls button,.controls select{font:inherit;padding:10px 14px;border:1px solid #829899;border-radius:12px;background:var(--h42-color-surface,#fff);color:inherit;cursor:pointer}.preview{display:block;max-width:100%;width:300px;height:180px;object-fit:cover;border-radius:12px}#result{white-space:pre-wrap;border:1px solid #829899;border-radius:12px;padding:16px;overflow-wrap:anywhere}button:focus-visible,select:focus-visible{outline:3px solid #008c91;outline-offset:3px}
+ </style>
+</head>
+<body>
+ <main>
+  <h1>Photos et vidéos — contrôle navigateur</h1>
+  <p>Ce banc de contrôle ouvre le lecteur partagé du site. La photo est issue de la fiche Paris ; la vidéo est une capture Figma archivée du 27 septembre, utilisée uniquement pour vérifier le lecteur.</p>
+  <img class="preview" src="../assets/campuses/paris-campus.jpg" alt="Bâtiment du campus de 42 Paris">
+  <div class="controls">
+   <label>Langue <select id="locale"><option value="fr">Français</option><option value="en">English</option><option value="ar">العربية</option></select></label>
+   <button id="theme" type="button">Changer le thème</button>
+  </div>
+  <div class="controls">
+   <button id="photo" type="button">Ouvrir la photo</button>
+   <button id="video" type="button">Ouvrir la vidéo</button>
+   <button id="broken" type="button">Ouvrir une image indisponible</button>
+   <button id="inspect" type="button">Relever l’état de la vidéo</button>
+  </div>
+  <pre id="result" role="status">Aucun relevé.</pre>
+ </main>
+ <script type="module">
+  import {openMediaViewer} from '../media-viewer.mjs?v=1';
+  const items=[
+   {type:'image',src:'../assets/campuses/paris-campus.jpg',alt:'Le bâtiment de 42 Paris',caption:'Campus de Paris',credit:'42 Paris'},
+   {type:'video',src:'../../figma/explorations-2026-09/entrance-proof/holdMobile.mp4',alt:'Capture archivée du slogan BEYOND THE CODE',caption:'Capture Figma du 27 septembre — démonstration du lecteur vidéo'},
+  ];
+  let lastVideo;
+  const rememberVideo=()=>{const video=document.querySelector('dialog video');if(video)lastVideo=video;};
+  new MutationObserver(rememberVideo).observe(document.body,{subtree:true,childList:true});
+  const open=(index,trigger,list=items)=>openMediaViewer({items:list,index,locale:document.querySelector('#locale').value,trigger});
+  document.querySelector('#photo').addEventListener('click',event=>open(0,event.currentTarget));
+  document.querySelector('#video').addEventListener('click',event=>open(1,event.currentTarget));
+  document.querySelector('#broken').addEventListener('click',event=>open(0,event.currentTarget,[{type:'image',src:'./missing-media-fixture.jpg',alt:'Image de contrôle indisponible'}]));
+  document.querySelector('#theme').addEventListener('click',()=>{document.documentElement.dataset.theme=document.documentElement.dataset.theme==='dark'?'light':'dark';});
+  document.querySelector('#inspect').addEventListener('click',()=>{
+   const video=lastVideo;
+   document.querySelector('#result').textContent=video?JSON.stringify({connected:video.isConnected,paused:video.paused,currentTime:video.currentTime,src:video.getAttribute('src'),controls:video.controls,autoplay:video.autoplay,playsInline:video.playsInline},null,2):'Aucune vidéo ouverte.';
+  });
+ </script>
+</body>
+</html>

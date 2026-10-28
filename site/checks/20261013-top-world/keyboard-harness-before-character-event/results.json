@@ -1,0 +1,169 @@
+{
+  "passed": false,
+  "cases": [
+    {
+      "case": "desktop-world",
+      "result": {
+        "reset": {
+          "x": 567.8984375,
+          "y": 86,
+          "w": 44,
+          "h": 44,
+          "right": 611.8984375,
+          "bottom": 130,
+          "cx": 589.8984375,
+          "cy": 108
+        },
+        "anchor": {
+          "x": 573.8984375,
+          "y": 92,
+          "w": 32,
+          "h": 32,
+          "right": 605.8984375,
+          "bottom": 124,
+          "cx": 589.8984375,
+          "cy": 108
+        },
+        "filter": {
+          "x": 566.8984375,
+          "y": 84,
+          "w": 146.203125,
+          "h": 48,
+          "right": 713.1015625,
+          "bottom": 132,
+          "cx": 640,
+          "cy": 108
+        },
+        "hint": {
+          "x": 577.8125,
+          "y": 142,
+          "w": 124.359375,
+          "h": 20.296875,
+          "right": 702.171875,
+          "bottom": 162.296875,
+          "cx": 639.9921875,
+          "cy": 152.1484375
+        },
+        "picker": {
+          "x": 616.8984375,
+          "y": 87,
+          "w": 90.203125,
+          "h": 42,
+          "right": 707.1015625,
+          "bottom": 129,
+          "cx": 662,
+          "cy": 108
+        },
+        "hidden": false,
+        "statusHidden": false,
+        "canvas": 1,
+        "overflow": false
+      }
+    },
+    {
+      "case": "zoom-position-independent-of-text",
+      "result": true
+    },
+    {
+      "case": "hidden-and-unfocusable-projects",
+      "result": true
+    },
+    {
+      "case": "mini-globe-aligned",
+      "result": {
+        "errorX": 3.749999996216502e-05,
+        "errorY": 0
+      }
+    },
+    {
+      "case": "hidden-and-unfocusable-people",
+      "result": true
+    },
+    {
+      "case": "hidden-and-unfocusable-journal",
+      "result": true
+    },
+    {
+      "case": "hidden-and-unfocusable-awards",
+      "result": true
+    },
+    {
+      "case": "restored-explorer",
+      "result": {
+        "reset": {
+          "x": 567.8984375,
+          "y": 86,
+          "w": 44,
+          "h": 44,
+          "right": 611.8984375,
+          "bottom": 130,
+          "cx": 589.8984375,
+          "cy": 108
+        },
+        "anchor": {
+          "x": 573.8984375,
+          "y": 92,
+          "w": 32,
+          "h": 32,
+          "right": 605.8984375,
+          "bottom": 124,
+          "cx": 589.8984375,
+          "cy": 108
+        },
+        "filter": {
+          "x": 566.8984375,
+          "y": 84,
+          "w": 146.203125,
+          "h": 48,
+          "right": 713.1015625,
+          "bottom": 132,
+          "cx": 640,
+          "cy": 108
+        },
+        "hint": {
+          "x": 577.8125,
+          "y": 142,
+          "w": 124.359375,
+          "h": 20.296875,
+          "right": 702.171875,
+          "bottom": 162.296875,
+          "cx": 639.9921875,
+          "cy": 152.1484375
+        },
+        "picker": {
+          "x": 616.8984375,
+          "y": 87,
+          "w": 90.203125,
+          "h": 42,
+          "right": 707.1015625,
+          "bottom": 129,
+          "cx": 662,
+          "cy": 108
+        },
+        "hidden": false,
+        "statusHidden": false,
+        "canvas": 1,
+        "overflow": false
+      }
+    },
+    {
+      "case": "click-returns-world",
+      "result": true
+    },
+    {
+      "case": "failure",
+      "result": {
+        "errors": [],
+        "body": "H\nO\nR\nI\nZ\nO\nN\nExplorer\nProjets\nProfils\nChroniques\n42 Awards\nChercher dans Horizon\nFrance\n\nChoisis un campus pour t’en approcher.\n\n42 Angoulême\n42 Lyon\n42 Marseille\n42 Mulhouse\n42 Paris\nNatural Earth\n·\nOpenFreeMap\n· ©\nOpenMapTiles\n·\nOpenStreetMap\nExploration · 42 Horizon\n\nExplorer · France"
+      }
+    }
+  ],
+  "sources": {
+    "index.html": "7c092115bb2fbc5880ba97015fbf0d80b19f5dc01c65752b28543fd13e7d89a8",
+    "content-preview.html": "506f34cbd733f546c763e4e6768eab657dc977174b61a94c02427d2e83c81f07",
+    "content-preview.mjs": "9f7ad919f852ffbc9d7946c35e08c7b8656562c7598ecded8bb3d9f412ece745",
+    "welcome.mjs": "3637aa6c6f2f7c245b9d913e20749631bcbf98d5c97cf872b876f11915018549",
+    "dock-navigation.css": "0a88ce081a1a257ca715a1e33081154a9a7d75e192200b7b833808bae7f65886",
+    "globe-framing.css": "c5124c6c43c776d66ba608077b84d2dfb491718ec2c8181551e8551d5d73335e"
+  }
+}

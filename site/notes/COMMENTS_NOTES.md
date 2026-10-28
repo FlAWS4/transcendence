@@ -1,0 +1,153 @@
+# Commentaires des projets et Chroniques — 10–11 octobre 2026
+
+Les deux premières sections conservent l’état et les preuves de la première intégration du 10 octobre. Les ajouts réalisés ensuite et leurs vérifications distinctes sont décrits dans la suite datée.
+
+## 10 octobre — première intégration
+
+L’utilisateur demande une section commentaire dans le menu des projets et des Chroniques. **Commentaires** est ajouté après Équipe dans les projets, et après Auteurs dans les articles. Traductions : Comments / التعليقات. Le sommaire ordinateur et le sélecteur mobile partagent ce nouvel accès ; liens directs `?tab=comments`, historique, retour à la liste et autres rubriques conservés.
+
+Le composant commun propose un état vide, une saisie multiligne limitée à2 000 caractères, l’ajout et la suppression d’un commentaire de démonstration. Aucun témoignage prérempli ni auteur fictivement attribué à un profil. « Vous » désigne la personne utilisant l’essai. Le texte reste du texte, y compris les balises saisies ; les longues chaînes se replient et la direction du texte est automatique.
+
+Commentaires et brouillons sont séparés par type et identifiant de contenu, dans la session du navigateur. Un changement de langue, de favori ou de rubrique ne perd pas le brouillon. Si sessionStorage est indisponible ou plein, le repli mémoire garde l’interaction pendant la page, sans garantir la conservation après rechargement. Aucune publication, authentification, permission serveur, discussion partagée, réponse imbriquée ou modération n’est réalisée. Les droits réels des visiteurs restent à préciser.
+
+Sources : comments.mjs / comments.css, rendu partagé project-ui.mjs, configuration journal-ui.mjs et raccord des deux entrées. Les écouteurs suivent le signal de nettoyage existant ; ajouter/supprimer ne modifie pas l’historique. Caches de cette première intégration : Projet UI14, Journal UI13, Commentaires1, contrôleur comments-display-103, aperçu71. La même intervention rend [Affichage indépendant par rubrique](CONTENT_CONTROLS_NOTES.md#10-octobre--affichage-indépendant-par-rubrique).
+
+## 10 octobre — conservation et vérifications initiales
+
+L’[état précédent reste consultable](../../archives/site-versions/pre-comments-20261010/preview.html#projects) : sources, tests, dépendances applicatives figées et manifeste. Les anciennes études restent présentes. Le lecteur conserve l’ancien affichage global avec des clés de stockage isolées des préférences actives.
+
+Sept fichiers de tests ciblés passent : sections Projets/Chroniques, défilement, médias, auteurs, préférences et groupes de filtres. Revue indépendante du raccord et du composant ; correction de la validation des dates chargées pour éviter une date hors plage. Pas de nouvelle suite globale revendiquée.
+
+Chrome : vue Commentaires examinée sur ordinateur ; brouillon conservé après favori, langue anglaise et rechargement ; ajout avec sauts de ligne et balises affichées littéralement, puis suppression. Chroniques ouvert par lien direct avec son propre état vide ; ajout arabe multiligne avec longue URL, suppression et refus d’un message composé seulement d’espaces. À320×640, dernier lien Commentaires atteint au clavier dans le sélecteur Projet (bas à486,59px, dock à563px), sélecteur Chroniques joué, rendus français clair/arabe sombre examinés ; document310px pour viewport320px, sans débordement horizontal. Actions et brouillons de test nettoyés ; format habituel et français clair rétablis.
+
+Pas de téléphone physique, clavier virtuel, lecteur d’écran exhaustif, préférence système de mouvement réduit forcée, nouveau report Figma ou publication. Réalisation locale du prototype, pas acceptation esthétique de l’utilisateur. Version du projet maintenue à0.0.1 pré-alpha.
+
+
+## Suite du 10 octobre — réponses, réactions, emojis et édition
+
+Les demandes successives ajoutent la possibilité de répondre, d’aimer ou de ne pas aimer un message, d’insérer des emojis et de modifier ses commentaires. Le composant partagé les réalise pour les projets et les Chroniques, en français, anglais et arabe, dans les deux thèmes. La demande suivante retire aussi un parent déjà supprimé lorsque sa dernière réponse disparaît.
+
+- **Réponses :** chaque réponse reste dans le fil du commentaire initial, sur un seul niveau visuel. Répondre à une réponse garde une indication du message ciblé, sans créer une profondeur illimitée. L’ouverture conduit au formulaire placé en fin de fil ; Annuler ferme ce formulaire et conserve son brouillon.
+- **J’aime / Je n’aime pas :** une seule réaction locale par message. Choisir l’autre remplace la première ; cliquer de nouveau la réaction active la retire. Chaque commentaire et chaque réponse a son propre état. Les compteurs 0 ou 1 décrivent seulement ce choix local, jamais une popularité collective ; `aria-pressed` expose la sélection.
+- **Emojis :** une palette de douze choix localisés accompagne les commentaires, les réponses et l’édition. Le choix remplace la sélection ou s’insère au curseur, puis rend le focus au champ. Il est refusé en entier s’il dépasse la limite du champ, sans tronquer le texte ni l’emoji. Échap ferme la palette et revient à son bouton ; reprendre le focus dans le champ la ferme aussi pour éviter de réutiliser une ancienne sélection.
+- **Édition :** Modifier ouvre le texte dans un formulaire distinct ; seul Enregistrer confirme la modification. Annuler laisse le texte enregistré intact et retire la saisie d’édition correspondante. Une sauvegarde conserve l’identifiant, la date initiale, les réponses et la réaction ; un changement effectif ajoute la mention « modifié » et sa date en infobulle. Texte vide, espaces seuls et dépassement de limite sont refusés ; un message supprimé ne peut pas être rétabli par l’édition.
+- **Suppression :** supprimer un commentaire parent remplace son texte par une indication de suppression tant qu’il reste des réponses. Supprimer une réponse conserve les autres messages du fil. Lorsque la dernière réponse disparaît, le parent déjà supprimé est retiré à son tour ; les autres fils restent présents. Le focus revient à une action disponible, à l’éditeur du parent s’il est ouvert, ou au champ principal.
+
+Les messages restent rendus avec `textContent`, y compris les aperçus de la cible d’une réponse. Une URL ou une balise saisie reste du texte ; aucun appel réseau, lien automatique ou publication n’est déclenché. Le compteur et la limite de 2 000 suivent la longueur native du champ HTML ; certains emojis occupent plusieurs unités dans ce compteur. Les listes utilisent une indentation bornée et des propriétés logiques compatibles avec le RTL ; les textes longs se replient.
+
+### Stockage et limites de la démonstration
+
+Commentaires, réponses, réactions, modifications enregistrées et brouillons de nouveaux messages restent séparés par type et identifiant de contenu dans `sessionStorage`, avec repli mémoire. La clé demeure `horizon-comments-demo-v1:{type}:{id}` pour relire les premiers essais ; le contenu normalisé passe au format 2 sans perdre le texte, l’identifiant ni la date des commentaires existants. Un brouillon de réponse est attaché à son fil et mémorise sa cible. Envoyer une réponse efface uniquement le brouillon de ce fil. La disparition complète d’un fil retire son brouillon devenu sans cible.
+
+**Les modifications non enregistrées ont une conservation différente :** elles restent seulement dans la mémoire du composant courant. Passer d’une édition à une réponse ne les enregistre pas ; revenir à Modifier dans le même composant peut retrouver la saisie. Elles ne sont pas garanties après un changement de langue, de rubrique, de favori ou un rechargement, qui peut recréer le composant. Les brouillons de nouveaux commentaires et de réponses, eux, bénéficient du stockage de session décrit plus haut. Un stockage refusé ou plein limite toute conservation au repli mémoire disponible pendant la page.
+
+Tous les messages de cet essai portent « Vous » et sont manipulables localement. Aucune identité, règle de propriété, permission serveur, discussion entre comptes, modération, synchronisation ou publication réelle n’est implémentée. Le sens de visiteur et ses droits futurs restent ouverts. L’édition et les réactions de démonstration ne fixent pas ces règles. L’état reste un prototype local 0.0.1 pré-alpha, sans report Figma ni publication.
+
+Sources actives : [comments.mjs](../comments.mjs), [comments.css](../comments.css), [tests/comments.test.mjs](../tests/comments.test.mjs), raccord partagé [project-ui.mjs](../project-ui.mjs) / [journal-ui.mjs](../journal-ui.mjs). Les écouteurs restent liés au signal de nettoyage du détail. Les actions de commentaire ne créent pas d’étape dans l’historique. Caches observés avant la correction visuelle des réactions du 11 octobre : module Commentaires 5, CSS 4, Projet UI18, Journal UI17, contrôleur `unified-filters-107`, aperçu75.
+
+### Conservation des états intermédiaires
+
+Les sources avant réponses, réactions et emojis sont conservées dans [pre-comment-replies-20261010](../../archives/site-versions/pre-comment-replies-20261010/README.md), avec manifeste. Un [lecteur intermédiaire incluant les commentaires simples et l’affichage indépendant](../../archives/site-versions/pre-inline-article-media-20261010/preview.html#projects) reste consultable avec ses dépendances figées et son stockage isolé. Il représente aussi l’état antérieur aux médias placés dans l’article ; il ne reproduit pas toutes les finitions ultérieures.
+
+Les sources et tests avec réponses, réactions et emojis, avant édition et retrait du parent devenu vide, restent dans [pre-comment-editing-20261010](../../archives/site-versions/pre-comment-editing-20261010/README.md), avec empreintes. Cette archive est une conservation de sources, sans lecteur autonome. Le [lecteur antérieur à l’ajout même des commentaires](../../archives/site-versions/pre-comments-20261010/preview.html#projects) et toutes les recherches précédentes sont conservés.
+
+### Vérifications techniques du 10 octobre
+
+Les **11 tests** de [comments.test.mjs](../tests/comments.test.mjs) passent. Ils couvrent la migration et la restauration JSON, les réponses aux réponses, l’indépendance des brouillons, la conservation des réponses après suppression, les réactions exclusives, l’édition avec conservation des attributs du message, le refus des éditions invalides, le retrait du parent après sa dernière réponse, l’insertion et le remplacement par emoji à la limite, ainsi que les données malformées, parents absents et cycles. La syntaxe du module a aussi été contrôlée.
+
+La revue source indépendante a vérifié le rendu littéral, l’absence de requête réseau, l’isolation des clés par projet/article, les transitions de formulaire et le CSS mobile/RTL. Elle a fait corriger trois cas : Annuler après suppression de la réponse ciblée, curseur déplacé après ouverture de la palette, et suppression d’une réponse pendant l’édition de son parent alors que son bouton Répondre est masqué. Le focus natif à l’ouverture d’une réponse permet également d’atteindre le formulaire d’un fil long.
+
+Des contrôles avec un **DOM simulé indépendant**, sans navigateur, passent après correction : repli du focus et brouillon conservé après suppression de la cible ; retour dans le champ puis insertion au nouveau curseur ; séparation projet/article ; Annuler une édition sans modifier l’état enregistré ni les autres brouillons ; édition → réponse sans sauvegarde implicite ; reprise de la saisie d’édition dans le composant ; refus des espaces seuls ; enregistrement explicite comme texte et retour au bouton Modifier. Le focus reste sur un élément présent lorsqu’une réponse est supprimée pendant l’édition du parent. Ces contrôles ne constituent ni un examen visuel du rendu final ni un essai de lecteur d’écran.
+
+### Parcours Chrome complémentaires du 10 octobre
+
+Les preuves complémentaires du 10 octobre confirment l’insertion d’un emoji au curseur, la bascule exclusive J’aime → Je n’aime pas puis le retrait de la réaction, l’annulation et la reprise d’un brouillon de réponse, l’ajout d’une réponse et sa conservation après rechargement. L’annulation d’une édition conserve le texte initial et rend le focus au bouton Modifier.
+
+Le clic sur Enregistrer a été effectué, mais son résultat n’a pas été lu avant l’interruption de la session : **la réussite de l’enregistrement d’une édition n’est donc pas validée dans Chrome**. Les contrôles du modèle et du DOM simulé décrits plus haut restent distincts de cette limite. Le retrait du parent après sa dernière réponse n’est pas revendiqué comme parcours Chrome final.
+
+## 11 octobre — pouces colorés sans libellés visibles, contrôle visuel restant
+
+L’utilisateur demande explicitement de remplacer le cœur de J’aime par un **pouce levé bleu**, et de rendre **Je n’aime pas rouge**, avec des couleurs constantes en clair et en sombre. Le module et les styles sont ajustés en ce sens : bleu `#2563eb` et rouge `#e53935`, indépendants du thème. Les deux réactions utilisent des pouces, avec remplissage de l’icône sélectionnée. Leur exclusivité et leurs compteurs locaux restent identiques. L’état précédent est conservé avec manifeste dans [pre-comment-thumb-reactions-20261011](../../archives/site-versions/pre-comment-thumb-reactions-20261011/README.md).
+
+À sa précision suivante, les libellés visibles **J’aime / Je n’aime pas** sont retirés : seuls le pouce et son compteur restent affichés. Le libellé traduit apparaît au survol via `title`. Chaque bouton conserve un `aria-label` traduit incluant le compteur et son état `aria-pressed` ; l’icône et le compteur visuel sont masqués séparément à l’arbre accessible pour éviter une annonce doublée. La zone cliquable mesure au moins 44 × 44 px. L’état avec pouces colorés et libellés visibles est conservé dans [pre-icon-only-comment-reactions-20261011](../../archives/site-versions/pre-icon-only-comment-reactions-20261011/README.md), avec manifeste.
+
+Après ce raccord, les 11 tests du modèle des commentaires passent ; le contrôle d’intégration ciblé porte sur 96 cas répartis dans 10 fichiers. La revue indépendante finale du raccord et du DOM simulé est terminée, sans défaut concret. Caches finaux de cette étape : contrôleur109, aperçu77, module Commentaires7 / CSS6, Projet UI20 / Journal UI19. Ces contrôles techniques ne prouvent pas le rendu des nouveaux boutons.
+
+L’accès au contrôle du navigateur est indisponible lors de cette reprise : **aucun nouveau test Chrome final n’a pu être réalisé le 11 octobre**. Le rendu des pouces sans libellé visible, leurs couleurs et leurs informations au survol restent à examiner, ainsi que la confirmation visuelle de l’enregistrement d’une édition et le parcours de suppression de la dernière réponse. Les nouveaux filtres et favoris travaillés en parallèle ne sont pas non plus revendiqués comme vérifiés visuellement. Les preuves Chrome du 10 octobre restent limitées aux parcours précisément décrits ci-dessus.
+
+
+### Suite du 11 octobre — Orientation des pouces comme YouTube
+
+L’utilisateur demande l’orientation de YouTube. Les deux icônes visibles dans [l’aide officielle YouTube](https://support.google.com/youtube/answer/6083270?hl=en-GB), consultées le11 octobre, montrent le poignet à gauche pour le pouce levé et à droite pour le pouce baissé. Les tracés existants reçoivent un miroir horizontal par rapport à l’état précédent : transformation verticale du tracé de base pour J’aime, horizontale pour Je n’aime pas. Couleurs bleu/rouge, contours/remplissage sélectionné, compteurs et libellés au survol conservés ; pas d’inversion supplémentaire en RTL.
+
+[Source avant correction](../../archives/site-versions/pre-youtube-thumb-orientation-20261011/README.md) conservée avec empreinte. Orientation vérifiée par calcul indépendant, puis [rendu isolé du SVG](../checks/comment-thumb-orientation-20261011.png) examiné en contour et rempli sur fonds clair/sombre. Syntaxe et diff vérifiés ; aucun nouveau parcours navigateur revendiqué. Caches de cette correction : contrôleur110, aperçu78, Commentaires8, ProjetUI21/JournalUI20 ; CSS Commentaires6 inchangé.
+
+
+## Suite du 11 octobre — Auteurs, mentions et confirmations discrètes
+
+L’utilisateur demande de rendre les profils des commentaires cliquables, puis de mentionner une personne avec `@`. La liste se précise avec le pseudo ou le nom composé avec des tirets, sans distinction de casse ou d’accent : `@imorel`, `@ines-morel` et `@inès-morel` proposent **Inès Morel**. Il corrige explicitement son exemple pour conserver l’accent : après sélection, le texte devient **@Inès Morel**.
+
+Le nom et l’avatar de chaque auteur ouvrent sa fiche par un vrai lien, avec les mécanismes de navigation et de retour existants. Le prototype n’ayant pas de compte identifié, l’assistant choisit **Leïla Mansour comme persona de démonstration**, annoncée dans le formulaire ; ce n’est pas l’identité réelle de l’utilisateur. Les nouveaux messages mémorisent `authorId`. Les anciens messages « Vous » sans auteur utilisent seulement ce profil au rendu, sans modifier leur texte/date. Un auteur inconnu n’acquiert ni faux lien ni identité de remplacement. Les commandes d’édition/suppression sont limitées à la propriété locale simulée ; cela ne constitue pas une permission serveur.
+
+La sélection de mentions est présente dans les commentaires, réponses et éditions. Elle recherche les six profils fictifs par pseudo, noms localisés et variantes renseignées ; ↑/↓ choisissent, Entrée insère, Échap ou Tab ferment. La composition IME et Maj+Entrée conservent leur usage de saisie. Tout sélectionner ferme aussi les suggestions ; un token devenu obsolète ne doit pas intercepter Entrée. Le panneau reste dans le flux sous le champ avec une hauteur bornée, avatar, nom et pseudo ; aucune notification distante n’est envoyée.
+
+Une mention sélectionnée conserve l’identifiant du profil, son libellé exact et ses positions dans le texte. Les accents et espaces du nom sont rétablis. Les plages suivent les insertions avant la mention, les emojis, les brouillons et l’enregistrement avec retrait des espaces externes ; modifier l’intérieur d’une mention la rend textuelle. Le texte homonyme n’est jamais relié automatiquement à une personne. Après envoi, seuls les profils résolus avec une URL web valide deviennent des liens ; texte ordinaire, balises saisies et profils absents restent du texte. La limite de 2 000 caractères refuse une insertion trop longue en entier. La clé et le format 2 du stockage restent compatibles ; `draftMentions` et les tableaux `mentions` complètent les données existantes. Les libellés déjà écrits ne sont pas retraduits lors d’un changement de langue.
+
+L’utilisateur demande d’abord le retrait des confirmations de like/dislike, puis précise de retirer aussi **« Commentaire supprimé »**. Les trois gestes mettent à jour les boutons ou la discussion et effacent le statut précédent, sans message de confirmation. Les confirmations d’ajout et d’édition restent présentes. Le texte d’un parent supprimé qui possède encore des réponses reste un repère de discussion distinct ; le parent disparaît avec sa dernière réponse, conformément à la demande précédente.
+
+Autre correction explicite : ouvrir un profil depuis un projet doit conserver le filtre Pays/Campus. Le routage commun vers un profil conserve maintenant ce contexte, y compris depuis les auteurs, commentaires et mentions. Le lien vers un projet/article et la recherche globale conservent leurs règles antérieures. [Détails du correctif](PROFILES_NOTES.md#11-octobre--liens-de-profils-et-contexte-géographique).
+
+**Vérifications :** 18 tests du modèle des commentaires, 12 des fonctions de mentions, 7 du sélecteur et 3 du routage passent. Des interactions au DOM simulé vérifient nom/avatar, auteur indisponible, transmission des clics modifiés, `@imorel` sélectionné puis emoji avant le nom, envoi/trim et lien, édition annulée/enregistrée, réponse avec brouillon conservé et réactions silencieuses. Le cas Tout sélectionner puis Entrée découvert en revue a été corrigé et son test passe. La suppression silencieuse du parent puis de sa dernière réponse conserve les repères nécessaires et rend le focus au champ principal, vérifiée aussi au DOM simulé. Syntaxe et raccords contrôlés. **Aucun rendu ni parcours navigateur final revendiqué**, notamment pour la liste mobile/RTL et un clavier IME réel : CUA reste indisponible.
+
+Sources supplémentaires : [fonctions pures](../comment-mentions.mjs), [sélecteur](../comment-mention-picker.mjs), [styles](../comment-mention-picker.css), [tests du modèle](../tests/comment-mentions.test.mjs), [tests du sélecteur](../tests/comment-mention-picker.test.mjs). Caches finaux : contrôleur `mentions-system-theme-113`, aperçu81, Commentaires JS11/CSS7, fonctions de mentions2, sélecteur JS3/CSS1, ProjetUI24/JournalUI23.
+
+États conservés avec manifestes : [avant réactions silencieuses](../../archives/site-versions/pre-silent-comment-reactions-20261011/README.md), [avant profils d’auteurs](../../archives/site-versions/pre-comment-author-profiles-20261011/README.md), [raccord auteur antérieur](../../archives/site-versions/pre-comment-author-routing-20261011/README.md), [avant mentions](../../archives/site-versions/pre-comment-mentions-20261011/README.md), [raccord mentions antérieur](../../archives/site-versions/pre-mention-routing-20261011/README.md), [avant correction de sélection](../../archives/site-versions/pre-mention-selection-fix-20261011/README.md), [avant suppression silencieuse](../../archives/site-versions/pre-silent-comment-deletion-20261011/README.md). Conservations ciblées de sources ; les anciens lecteurs complets restent accessibles plus haut. Pas de publication, authentification, notification, modération ou nouveau Figma ; 0.0.1 pré-alpha inchangé.
+
+
+## Suite du 11 octobre — Menu vertical, signalement et tri
+
+À la demande de l’utilisateur, les boutons Modifier/Supprimer visibles sont remplacés par un menu ouvert par **trois points verticaux ⋮**, précision explicite qui remplace la première proposition horizontale. Le bouton mesure44×44px et conserve un nom accessible. Chaque commentaire et réponse non supprimé propose **Signaler** ; l’auteur local dispose aussi de Modifier et Supprimer. Enregistrer/Annuler restent dans le formulaire d’édition. Un seul menu est ouvert à la fois ; Échap, Tab, clic extérieur, défilement ou redimensionnement le ferment. Flèches, Début et Fin parcourent les actions ; si le panneau est borné, il défile pour rendre l’option active visible. Le focus revient à une action présente après édition/suppression.
+
+Le signalement rejoint le [dialogue commun aux projets, articles et profils](CONTENT_REPORT_NOTES.md), avec l’identifiant du message **et** celui de son contenu parent. Il n’est pas proposé sur le repère d’un commentaire déjà supprimé. Les commentaires, brouillons, mentions, réponses, pouces bleus/rouges et suppressions silencieuses restent conservés. Les anciens consommateurs sans raccord de signalement reçoivent une action désactivée, sans envoi fictif.
+
+Le sélecteur **Trier les commentaires** propose Du plus récent au plus ancien, Du plus ancien au plus récent et Les plus populaires. Le choix est propre à chaque contenu et mémorisé dans sa session, sans dépendre du tri de la rubrique principale. L’assistant retient le nombre de likes comme définition de la popularité ; une égalité est départagée par la date la plus récente. Le prototype ne possède que la réaction locale0/1 annoncée dans le formulaire, pas de score communautaire. Les réponses restent chronologiques à l’intérieur de leur fil et les brouillons/éditions ouverts survivent au changement de tri.
+
+[État antérieur conservé](../../archives/site-versions/pre-comment-actions-menu-20261011/README.md), avec sources et empreintes. Caches : Commentaires JS12/CSS8, ProjetUI27/JournalUI26, contrôleur `community-actions-116`/aperçu84. Les20 cas du modèle,8 des menus/tri au DOM simulé,12 des fonctions de mentions et7 du sélecteur passent. Ils couvrent aussi le signalement des messages, les menus uniques, le retour du focus, la persistance du tri et les brouillons ouverts. La revue indépendante a fait corriger le défilement clavier interne du panneau borné, puis n’a relevé aucun défaut concret restant. Syntaxe et diff contrôlés ; **aucun rendu navigateur disponible ni publication réelle**.
+
+
+## Suite du 13 octobre — Présentation du tri alignée sur Projets
+
+L’utilisateur demande que le tri des commentaires reprenne la présentation du tri déjà utilisé dans Projets. Le sélecteur natif est remplacé par le même bouton et le même panneau de choix (`cp-control-trigger` / `cp-control-panel`), avec leur comportement compact. Les trois choix restent **Du plus récent au plus ancien**, **Du plus ancien au plus récent** et **Les plus populaires**. Aucune règle de tri, clé de stockage, réaction, action ou conservation des brouillons n’est changée.
+
+Les contrôles directs comptent **29 cas passants** : 20 pour le modèle et 9 pour les interactions de commentaires, dont un parcours clavier du nouveau panneau. Le contrôle Chrome du rendu et des interactions, en cours à l’arrêt de la session du 13 octobre, est terminé le 14 octobre (suite ci-dessous) ; ses résultats sont dans [le dossier de preuves](../checks/20261013-comment-sort-style/). La réussite du modèle ne vaut pas validation visuelle. L’[état précédent autonome143](../../archives/site-versions/pre-animated-button-labels-20261013/README.md) conserve les anciennes sources ; le [test d’interactions antérieur](../checks/20261013-comment-sort-style/comments-actions-before.test.mjs) reste également disponible.
+
+Caches de cette correction : Commentaires JS15/CSS9, ProjetUI39 et JournalUI38, raccord au contrôleur144/aperçu111. Le prototype reste local en 0.0.1 pré-alpha ; aucun commentaire partagé, tri serveur, nouveau Figma ou publication n’est créé.
+
+### Suite du 14 octobre — Contrôle Chrome du tri terminé
+
+Le banc lancé le 13 octobre à 17 h 24 avait échoué sur son propre sélecteur : `button[role=menuitemradio]:last-of-type` visait le dernier bouton du panneau Projets, la case « Mes favoris uniquement », et ne retournait rien. Deux autres attentes du script sont corrigées le 14 : un brouillon de réponse normalisé contient `mentions: []`, et le texte « Trier les commentaires » est un `<label for>` du bouton, de sorte que le cliquer active le bouton au lieu de constituer un clic extérieur. Les trois tentatives sont conservées (`browser-attempt-1.py`, `browser-results-attempt-1/2/3.json`, `failure-attempt-1/2/3.png`) ; aucune ne révélait un défaut de l’application, dont les sources sont inchangées.
+
+[14 relevés](../checks/20261013-comment-sort-style/browser-results.json) passent ([script corrigé](../checks/20261013-comment-sort-style/browser.py)), en FR 1280 × 900, FR 390 × 844 et AR 320 × 640 : styles calculés du bouton, du panneau et des options identiques à ceux du tri de Projets dans le même format et le même thème ; trois options dans l’ordre récent / ancien / populaire avec une seule cochée ; panneau dans la fenêtre, sous le bouton, pour la position choisie par le banc (barre centrée) ; à 320 px, bouton icône seule de 44 × 44 px — le panneau y était en réalité coupé (troisième option visible sur 22,9 px sur 50), contrairement à celui des Projets, et le bouton « remonter en haut » en recouvrait un coin : défaut corrigé le 15 octobre (suite ci-dessous) ; tri au clavier (Fin, Entrée, flèches) avec retour du focus sur le bouton, brouillon et réponse en cours conservés, Échap et clic extérieur, titre du bouton et ordre conservés au rechargement ; aucune erreur ni débordement. Captures Projets / Commentaires examinées pour les trois formats. Empreintes des sources identiques avant et après ; carte bloquée, mouvements réduits, pas de téléphone physique ni de lecteur d’écran.
+
+### Suite du 15 octobre — Panneau de tri entier et dégagé
+
+L’audit du 15 octobre relève que le panneau de tri des commentaires s’ouvrait toujours vers le bas, à l’image de celui des Projets. Or la barre des commentaires se trouve au milieu de la page :
+- le panneau était coupé quand son bouton se trouvait bas dans l’écran : en FR 390 × 844, troisième option visible sur 19 px sur 42 à 120 px de la limite, une seule option à 60 px ; même effet à 1280 px et sur une chronique ;
+- sur mobile, le bouton « remonter en haut » en recouvrait un coin (40 × 44 px en AR 320 × 640).
+
+L’utilisateur demande de corriger ce qui est faux. Le panneau de tri suit désormais la règle des menus « ⋮ » des commentaires : il s’ouvre vers le haut quand il ne tient pas dessous. Le bouton « remonter » visible fait partie de sa limite basse. Quand le bouton de tri est lui-même sous ce bouton ou sous la capsule de recherche, le bas du panneau s’arrête au-dessus d’eux. Le style reste identique à celui des Projets, comme le comportement au clavier, la mémorisation et les brouillons ; les menus « ⋮ » ne changent pas.
+
+**Vérification.** La première version (état 145) a été vérifiée dans Chrome :
+- 660 propriétés calculées identiques à celles des Projets, que le panneau s’ouvre vers le bas ou vers le haut ;
+- menus « ⋮ » identiques sur 15 positions ;
+- clavier et brouillons conservés ;
+- [preuves](../checks/20261015-audit-fixes/tri-commentaires/).
+
+Ce contrôle a trouvé les cas où le bouton est sous les commandes flottantes, corrigés dans l’état 146. [Balayage 146 contre 145](../checks/20261015-audit-fixes/146/tri-commentaires/) :
+- en AR 320 sombre, 31 ouvertures sur 31 sans recouvrement, contre 20 en 145 ;
+- en FR 390 clair, 20 sur 20, contre 13 ;
+- ouvertures identiques partout où le panneau tenait déjà.
+
+Il reste un compromis : en AR 320 × 640, quand le bouton est placé pour qu’aucun côté n’ait la place, le panneau est borné et défile, et sa troisième option est en partie coupée. En s’ouvrant vers le haut, le panneau passe parfois par-dessus le sélecteur de section, sans masquer d’option.
+
+Tests unitaires ajoutés : ouverture vers le haut, limite du bouton « remonter », bouton sous les commandes flottantes. Les versions précédentes sont conservées dans les archives [144](../../archives/site-versions/pre-codex-audit-fixes-20261015/README.md) et [145](../../archives/site-versions/pre-audit-fixes-refinement-20261015/README.md). Caches : Commentaires 17, ProjetUI 41, JournalUI 40.

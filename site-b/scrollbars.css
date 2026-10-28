@@ -1,0 +1,73 @@
+/* Horizon scrollbars: native scrolling, with the existing theme palette.
+   No overflow, gutter, direction or positioning rules belong in this file. */
+:root {
+  --horizon-scroll-thumb: color-mix(in srgb, var(--h42-color-muted) 76%, transparent);
+  --horizon-scroll-hover: color-mix(in srgb, var(--h42-teal) 75%, var(--h42-ink));
+  --horizon-scroll-active: color-mix(in srgb, var(--h42-teal) 66%, var(--h42-ink));
+}
+:root[data-theme=dark] {
+  --horizon-scroll-hover: color-mix(in srgb, var(--h42-pink) 88%, var(--h42-white));
+  --horizon-scroll-active: var(--h42-pink);
+}
+
+/* Touch devices retain their native overlay bars and automatic visibility.
+   These colours also cover nested result lists and dialogs when scrollable. */
+@media (any-pointer: fine) and (forced-colors: none) {
+  :root,
+  body,
+  .app *,
+  dialog,
+  dialog * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--horizon-scroll-thumb) transparent;
+  }
+
+  /* Firefox uses the standard thin bar above. In Blink/WebKit, a non-auto
+     standard scrollbar style takes precedence over the rounded pseudo-elements.
+     The reset also overrides the existing thin rules on individual panels. */
+  @supports selector(::-webkit-scrollbar) {
+    :root,
+    body,
+    .app *,
+    dialog,
+    dialog * {
+      scrollbar-width: auto !important;
+      scrollbar-color: auto !important;
+    }
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+      background: transparent;
+    }
+    ::-webkit-scrollbar-track,
+    ::-webkit-scrollbar-corner {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      min-height: 36px;
+      min-width: 36px;
+      border: 2px solid transparent;
+      border-radius: 999px;
+      background: var(--horizon-scroll-thumb);
+      background-clip: padding-box;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: var(--horizon-scroll-hover);
+    }
+    ::-webkit-scrollbar-thumb:active {
+      background-color: var(--horizon-scroll-active);
+    }
+  }
+}
+
+/* Give high-contrast users the platform colours and its full native width. */
+@media (forced-colors: active) {
+  :root,
+  body,
+  .app *,
+  dialog,
+  dialog * {
+    scrollbar-width: auto !important;
+    scrollbar-color: auto !important;
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-08",
+  "purpose": "Emplacement du logo proposé",
+  "preview": "preview.html",
+  "sources": {
+    "campus-details.mjs": "1d1193ca475f7c4ad2cf3527fe9a53b0a8e9e9af616b2a6f9061d181da505feb",
+    "campus-details.css": "44b508ba233fce1a31272721e6ce1ab327c252fa05ee934d196d28d393aabdab"
+  },
+  "runtime": [
+    {
+      "file": "runtime/campus-website.mjs",
+      "source": "campus-website.mjs",
+      "sourceSha256": "79edb1a8461605b471b8e307a50c65ca4251a9dc8666d503ceedcaca8f374e04",
+      "sha256": "79edb1a8461605b471b8e307a50c65ca4251a9dc8666d503ceedcaca8f374e04",
+      "adapted": false
+    },
+    {
+      "file": "runtime/campus-sheet.mjs",
+      "source": "campus-sheet.mjs",
+      "sourceSha256": "433187f48dacdf1641cda6bc27bc198e67c4c5edbace110a4d69c2752f2b55b4",
+      "sha256": "433187f48dacdf1641cda6bc27bc198e67c4c5edbace110a4d69c2752f2b55b4",
+      "adapted": false
+    },
+    {
+      "file": "runtime/campuses.json",
+      "source": "campuses.json",
+      "sourceSha256": "0e6a49a0867443efd80ab1f0831e56c3a061beb136d6dc8642a462db6e41c850",
+      "sha256": "0e6a49a0867443efd80ab1f0831e56c3a061beb136d6dc8642a462db6e41c850",
+      "adapted": false
+    },
+    {
+      "file": "runtime/campus-location-overrides.json",
+      "source": "campus-location-overrides.json",
+      "sourceSha256": "13d3e1afac34bc0c5fe0ca7eafc21f917b4af8f0c524a642d525bf3e303f2b76",
+      "sha256": "13d3e1afac34bc0c5fe0ca7eafc21f917b4af8f0c524a642d525bf3e303f2b76",
+      "adapted": false
+    },
+    {
+      "file": "runtime/campus-websites.json",
+      "source": "campus-websites.json",
+      "sourceSha256": "cbb2f7193fe404b7b57e5c5b7dadee7163e54cb90743583b4c2347f4882aa512",
+      "sha256": "cbb2f7193fe404b7b57e5c5b7dadee7163e54cb90743583b4c2347f4882aa512",
+      "adapted": false
+    },
+    {
+      "file": "runtime/campus-website-locales.json",
+      "source": "campus-website-locales.json",
+      "sourceSha256": "2f3079b16cd05291a8387023ef2ed80855219ac0f61cbf7919ec6311c9572159",
+      "sha256": "2f3079b16cd05291a8387023ef2ed80855219ac0f61cbf7919ec6311c9572159",
+      "adapted": false
+    },
+    {
+      "file": "runtime/campus-profiles.json",
+      "source": "archive/pre-campus-logo-sheet-20261008/campus-profiles.json",
+      "sourceSha256": "f1ab8960be4d2709c25b6d7f792b4f1577bdf2f024045f47a96cf0ed24e5c9f4",
+      "sha256": "f1ab8960be4d2709c25b6d7f792b4f1577bdf2f024045f47a96cf0ed24e5c9f4",
+      "adapted": false
+    },
+    {
+      "file": "runtime/campus-details.mjs",
+      "source": "archive/campus-logo-placeholder-20261008/campus-details.mjs",
+      "sourceSha256": "1d1193ca475f7c4ad2cf3527fe9a53b0a8e9e9af616b2a6f9061d181da505feb",
+      "sha256": "1d1193ca475f7c4ad2cf3527fe9a53b0a8e9e9af616b2a6f9061d181da505feb",
+      "adapted": false
+    },
+    {
+      "file": "runtime/campus-details.css",
+      "source": "archive/campus-logo-placeholder-20261008/campus-details.css",
+      "sourceSha256": "44b508ba233fce1a31272721e6ce1ab327c252fa05ee934d196d28d393aabdab",
+      "sha256": "44b508ba233fce1a31272721e6ce1ab327c252fa05ee934d196d28d393aabdab",
+      "adapted": false
+    }
+  ],
+  "dataScope": "Paris-only original data from the pre-campus snapshot.",
+  "sharedAssets": "Fonts, photos and logos remain in the parent prototype. No live map is included in this component reader.",
+  "verification": "Static imports, asset paths and data checked; no browser replay in this maintenance task."
+}

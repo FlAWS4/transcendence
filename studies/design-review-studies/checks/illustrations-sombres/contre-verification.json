@@ -1,0 +1,91 @@
+{
+ "essai": "illustrations-sombres",
+ "petit": {
+  "avant": {
+   "meanCoverLuminance": 0.4204,
+   "overflow": false,
+   "grounds": {
+    "grounds": 11,
+    "unmapped": 11
+   }
+  },
+  "apres": {
+   "meanCoverLuminance": 0.0393,
+   "overflow": false,
+   "grounds": {
+    "grounds": 11,
+    "unmapped": 0
+   }
+  }
+ },
+ "langue": {
+  "avant": {
+   "grounds": 11,
+   "unmapped": 0
+  },
+  "apres": {
+   "grounds": 11,
+   "unmapped": 0
+  },
+  "lang": "ar rtl",
+  "noReload": true,
+  "meanCoverLuminance": 0.0594
+ },
+ "theme": {
+  "sombre": {
+   "grounds": 1,
+   "unmapped": 0
+  },
+  "clair": {
+   "checked": 20,
+   "different": [],
+   "differentCount": 0,
+   "coverBackgrounds": [
+    "rgba(0, 0, 0, 0)"
+   ]
+  },
+  "sombreAgain": {
+   "grounds": 1,
+   "unmapped": 0
+  },
+  "theme": "dark",
+  "noReload": true
+ },
+ "combinaison": {
+  "active": "illustrations-sombres roles-couleur visiter-contour-sombre illustrations-variees",
+  "grounds": {
+   "grounds": 11,
+   "unmapped": 0
+  },
+  "meanCoverLuminance": 0.0598,
+  "overflow": false
+ },
+ "exclusif": {
+  "active": "illustrations-sombres",
+  "ignored": [
+   "illustrations-attenuees"
+  ],
+  "svgFilter": "none",
+  "grounds": {
+   "grounds": 11,
+   "unmapped": 0
+  }
+ },
+ "errors": {
+  "petit-avant": [],
+  "petit-apres": [],
+  "langue": [],
+  "theme": [],
+  "combinaison": [],
+  "exclusif": []
+ },
+ "passed": true,
+ "checks": {
+  "smallScreenDarker": true,
+  "liveLanguage": true,
+  "liveTheme": true,
+  "groupCombined": true,
+  "exclusivePair": true,
+  "noErrors": true
+ }
+}

@@ -1,0 +1,136 @@
+{
+  "date": "2026-10-13",
+  "passed": true,
+  "scope": "Only globe-framing.css changes: disable obsolete portrait lift for the main full-viewport scene. Keep radius, dimensions, X centre, other controls, engine and campus viewport unchanged.",
+  "baseline": "pre-cycling-entrance-20261013 (142), exact CSS source bytes verified",
+  "beforeSha256": "6d1a4e8297b85dc17ef89a55905b5cd2b3b39a43494b3959079d36df8a1d1edc",
+  "afterSha256": "a544a2e08a7697a44aa3c0cd5334a976a04fd9797934d27bb13c4d3ec7177ae6",
+  "comparativeCases": 8,
+  "campusBorrowRestoreCases": 2,
+  "geometry": [
+    {
+      "case": "fr-1280x900",
+      "center": {
+        "x": 640,
+        "y": 450
+      },
+      "delta": {
+        "x": 0,
+        "y": 0
+      },
+      "radius": 362.72876929568247,
+      "miniErrorX": 3.749999996216502e-05,
+      "miniErrorY": 0
+    },
+    {
+      "case": "fr-390x844",
+      "center": {
+        "x": 195,
+        "y": 422
+      },
+      "delta": {
+        "x": 0,
+        "y": 60.44444444444446
+      },
+      "radius": 190.9210158015419,
+      "miniErrorX": 2.4999999993724487e-05,
+      "miniErrorY": 0
+    },
+    {
+      "case": "fr-320x640",
+      "center": {
+        "x": 160,
+        "y": 320
+      },
+      "delta": {
+        "x": 0,
+        "y": 64
+      },
+      "radius": 155.01131846835955,
+      "miniErrorX": 3.749999999058673e-05,
+      "miniErrorY": 0
+    },
+    {
+      "case": "fr-667x375",
+      "center": {
+        "x": 333.5,
+        "y": 187.5
+      },
+      "delta": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "radius": 160.87678208991917,
+      "miniErrorX": 4.999999998744897e-05,
+      "miniErrorY": 0
+    },
+    {
+      "case": "ar-1280x900",
+      "center": {
+        "x": 640,
+        "y": 450
+      },
+      "delta": {
+        "x": 0,
+        "y": 0
+      },
+      "radius": 362.72876929568247,
+      "miniErrorX": 1.2500000025283953e-05,
+      "miniErrorY": 0
+    },
+    {
+      "case": "ar-390x844",
+      "center": {
+        "x": 195,
+        "y": 422
+      },
+      "delta": {
+        "x": 0,
+        "y": 60.44444444444446
+      },
+      "radius": 190.9210158015419,
+      "miniErrorX": 4.999999998744897e-05,
+      "miniErrorY": 0
+    },
+    {
+      "case": "ar-320x640",
+      "center": {
+        "x": 160,
+        "y": 320
+      },
+      "delta": {
+        "x": 0,
+        "y": 64
+      },
+      "radius": 155.01131846835955,
+      "miniErrorX": 2.4999999993724487e-05,
+      "miniErrorY": 0
+    },
+    {
+      "case": "ar-667x375",
+      "center": {
+        "x": 333.5,
+        "y": 187.5
+      },
+      "delta": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "radius": 160.87678208991917,
+      "miniErrorX": 4.999999998744897e-05,
+      "miniErrorY": 0
+    }
+  ],
+  "visuallyReviewed": [
+    "before-fr-390x844.png",
+    "after-fr-390x844.png",
+    "after-ar-320x640.png",
+    "after-fr-667x375.png",
+    "after-fr-1280x900.png",
+    "after-mini-fr-1280.png",
+    "after-mini-ar-390.png",
+    "after-campus-viewport-fr-1280.png",
+    "after-campus-viewport-ar-390.png"
+  ],
+  "limits": "Isolated Chrome; reduced motion; viewport emulation, no physical phone or screen reader. Campus street readiness not asserted; desktop campus capture remains in loading while mobile shows available data. First baseline harness wait incorrectly serialized a DOM node; corrected to Boolean without application changes and preserved separately. No aesthetic acceptance inferred."
+}

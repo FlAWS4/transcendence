@@ -1,0 +1,292 @@
+[
+  {
+    "case": "entrance-first-screen",
+    "claim": "Arrival shows only Sign in and Visit; no Create an account, no account icon, no dock",
+    "observed": {
+      "buttons": [
+        "entry-theme-toggle",
+        "entry-login",
+        "entry-guest"
+      ],
+      "login": "Se connecterSign inتسجيل الدخولSe connecter",
+      "visit": "VisiterVisitزيارةVisiter",
+      "createAccountVisible": false,
+      "accountVisible": false,
+      "dockVisible": false
+    },
+    "pass": true
+  },
+  {
+    "case": "entrance-error-path",
+    "claim": "Globe failure: Try again / Back to the message / Continue without the globe, account visible with Create an account; Continue opens Explore without the globe",
+    "observed": {
+      "entry": "error",
+      "retry": true,
+      "backToMessage": true,
+      "continue": true,
+      "accountVisible": true,
+      "accountPanelSignUp": true,
+      "after": {
+        "entry": "welcome",
+        "hash": "#explore",
+        "noGlobeMessage": true
+      }
+    },
+    "pass": true
+  },
+  {
+    "case": "dock-everywhere",
+    "claim": "Bottom menu opens each section; on 42 Awards the search and die are hidden, the menu stays",
+    "observed": {
+      "people": "#people",
+      "journal": "#journal",
+      "awards": "#awards",
+      "explore": "#explore",
+      "projects": "#projects",
+      "awards-search-visible": false,
+      "awards-die-visible": false,
+      "awards-dock-visible": true
+    },
+    "pass": true
+  },
+  {
+    "case": "card-detail-back-dock-noop",
+    "claim": "Card opens the project page with “Retour aux projets”; the Projects button does nothing there; Back returns to the list",
+    "observed": {
+      "detail": "#projects/ft-transcendence-building-together",
+      "back": "Retour aux projets",
+      "afterDockProjects": "#projects/ft-transcendence-building-together",
+      "afterBack": "#projects"
+    },
+    "pass": true
+  },
+  {
+    "case": "project-tabs-team",
+    "claim": "Project tabs exist; Media and Comments change the address; comments start empty; a team member opens the profile with “Retour au projet”",
+    "observed": {
+      "tabs": {
+        "Vue d’ensemble": true,
+        "Réalisation": true,
+        "Médias": true,
+        "Tester le projet": true,
+        "Commentaires": true
+      },
+      "media": "#projects/minishell-under-the-prompt?tab=media",
+      "comments": "#projects/minishell-under-the-prompt?tab=comments",
+      "commentMenus": 0,
+      "teamMember": "#people/profile-leila-mansour",
+      "teamMemberBack": "Retour au projet"
+    },
+    "pass": true
+  },
+  {
+    "case": "project-campus-report",
+    "claim": "Single campus opens the campus window; Report opens “Signaler ce projet”; a multi-campus project opens “Choisir un campus”",
+    "observed": {
+      "singleCampusButton": true,
+      "singleCampus": [
+        {
+          "id": "campus-map-dialog",
+          "title": "42 Paris"
+        }
+      ],
+      "campusWindowText": "Autour du campus · France42 ParisLa carte n’a pas pu se préparer.Explore le quar",
+      "report": [
+        {
+          "id": "content-report-1",
+          "title": "Signaler ce projet"
+        }
+      ],
+      "multiCampus": [
+        {
+          "id": "project-campus-choice-1",
+          "title": "Choisir un campus"
+        }
+      ]
+    },
+    "pass": true
+  },
+  {
+    "case": "profile-links",
+    "claim": "Profile tabs exist; Send a message and Report open their windows; Contribution leads to a chronicle with “Retour au profil”",
+    "observed": {
+      "tabs": {
+        "Vue d’ensemble": true,
+        "Projets": true,
+        "Parcours": true,
+        "Contribution": true
+      },
+      "message": [
+        {
+          "id": "",
+          "title": "Envoyer un message"
+        }
+      ],
+      "report": [
+        {
+          "id": "content-report-1",
+          "title": "Signaler ce profil"
+        }
+      ],
+      "contribution": "#people/profile-ines-morel?tab=contribution",
+      "article": "#journal/journal-an-evening-debugging?country=FRA&campus=lyon",
+      "articleBack": "Retour au profil"
+    },
+    "pass": true
+  },
+  {
+    "case": "chronicle-links",
+    "claim": "Chronicle tabs exist; Authors leads to a profile with “Retour à l’article”",
+    "observed": {
+      "tabs": {
+        "Article": true,
+        "Médias": true,
+        "Auteurs": true,
+        "Commentaires": true
+      },
+      "explore": true,
+      "authors": "#journal/journal-share-the-unfinished?tab=authors",
+      "author": "#people/profile-ines-morel",
+      "authorBack": "Retour à l’article"
+    },
+    "pass": true
+  },
+  {
+    "case": "list-filters",
+    "claim": "Profiles has “Filtrer les profils”; Chronicles has no Filter button",
+    "observed": {
+      "people": [
+        {
+          "id": "content-category-dialog",
+          "title": "Filtrer les profils"
+        }
+      ],
+      "journalHasFilter": false
+    },
+    "pass": true
+  },
+  {
+    "case": "account-panels",
+    "claim": "Visitor panel entries; simulated sign-in makes a member; Account opens Leïla’s profile; Messages offers Discover profiles",
+    "observed": {
+      "visitor": {
+        "Se connecter": true,
+        "Créer un compte": true,
+        "Paramètres": true,
+        "Thème": true,
+        "Langue": true
+      },
+      "signin": [
+        {
+          "id": "dialog",
+          "title": "Connexion simulée"
+        }
+      ],
+      "member": true,
+      "account": "#people/profile-leila-mansour?country=FRA&campus=paris",
+      "discover": true,
+      "afterDiscover": "#people?country=FRA&campus=paris"
+    },
+    "pass": true
+  },
+  {
+    "case": "search-campus",
+    "claim": "Search for Paris returns a Campus result that opens Explore at 42 Paris",
+    "observed": {
+      "types": [
+        "Campus",
+        "Projet",
+        "Projet",
+        "Projet",
+        "Chroniques",
+        "Profil",
+        "Profil",
+        "Profil"
+      ],
+      "after": "#explore?country=FRA&campus=paris"
+    },
+    "pass": true
+  },
+  {
+    "case": "explore-about",
+    "claim": "“Exploration · 42 Horizon” opens “Une nouvelle façon d’explorer”",
+    "observed": {
+      "about": [
+        {
+          "id": "dialog",
+          "title": "Une nouvelle façon d’explorer"
+        }
+      ]
+    },
+    "pass": true
+  },
+  {
+    "case": "integrated-selection",
+    "claim": "42 Awards shows the coming-soon sentence without any link, search and die hidden; profile cards show no pending-login mention",
+    "observed": {
+      "awardsNote": "Les 42 Awards arrivent bientôt.",
+      "awardsNoteVisible": true,
+      "controlsInNote": 0,
+      "searchVisible": false,
+      "dieVisible": false,
+      "dockVisible": true,
+      "pendingLoginShown": 0,
+      "realLoginsShown": 6
+    },
+    "pass": true
+  },
+  {
+    "case": "entrance-visit-deep-link",
+    "claim": "Visit plays the entrance, then opens the direct link (#projects) as a visitor",
+    "observed": {
+      "entry": "welcome",
+      "hash": "#projects",
+      "member": false
+    },
+    "pass": true
+  },
+  {
+    "case": "entrance-sign-in",
+    "claim": "Sign in opens “Connexion — prototype”; simulating it leads into the site as a member",
+    "observed": {
+      "dialogs": [
+        {
+          "id": "dialog",
+          "title": "Connexion — prototype"
+        }
+      ],
+      "simulate": true,
+      "cancel": true,
+      "entry": "welcome",
+      "hash": "#explore",
+      "messagesButton": true
+    },
+    "pass": true
+  },
+  {
+    "case": "globe-campus-sheets",
+    "claim": "With the globe: the Paris marker opens the campus sheet in Explore and inside the campus window",
+    "observed": {
+      "globeReady": true,
+      "markerExplore": true,
+      "exploreSheet": [
+        {
+          "id": "dialog",
+          "title": "42 Paris"
+        }
+      ],
+      "markerWindow": true,
+      "windowSheet": [
+        {
+          "id": "dialog",
+          "title": "42 Paris"
+        },
+        {
+          "id": "campus-map-dialog",
+          "title": "42 Paris"
+        }
+      ]
+    },
+    "pass": true
+  }
+]

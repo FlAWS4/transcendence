@@ -1,0 +1,167 @@
+{
+  "archiveDate": "2026-10-07",
+  "name": "42 Horizon — Navigation des profils",
+  "status": "prototypes à comparer ; aucune variante sélectionnée ou intégrée",
+  "gallery": "index.html",
+  "registry": "../research-archive/index.html",
+  "notes": "NOTES.md",
+  "variants": [
+    {
+      "id": 1,
+      "title": "Repères permanents",
+      "entry": "demo.html?variant=1#profiles",
+      "directExample": "demo.html?variant=1#profile/projects"
+    },
+    {
+      "id": 2,
+      "title": "Dock contextuel",
+      "entry": "demo.html?variant=2#profiles",
+      "directExample": "demo.html?variant=2#profile/projects"
+    },
+    {
+      "id": 3,
+      "title": "Double niveau",
+      "entry": "demo.html?variant=3#profiles",
+      "directExample": "demo.html?variant=3#profile/projects"
+    }
+  ],
+  "versions": {
+    "demoCss": 2,
+    "demoJs": 2,
+    "gallery": 1
+  },
+  "provenance": {
+    "tokensAndLogo": "work/figma/",
+    "fonts": "work/visualizations/assets/",
+    "dataPortraitsAndMaterial": "work/visualizations/horizon-welcome/",
+    "dataNature": "fictitious demonstration content"
+  },
+  "preservation": "Conserver les trois variantes, leurs sources et les dépendances locales. Archiver cet état avant une future refonte.",
+  "files": [
+    {
+      "path": "NOTES.md",
+      "bytes": 6534,
+      "sha256": "7d029c2c7be5ceb6e673a9d8f8c10a595f9a233bed8d8bbfdf193cde4659615e"
+    },
+    {
+      "path": "assets/control-glass.css",
+      "bytes": 4402,
+      "sha256": "042bb6e05f163cfd198d5cfc98f3576877a1bf1ddb6093fda64c456bc7eda50d"
+    },
+    {
+      "path": "assets/jost-0.ttf",
+      "bytes": 58796,
+      "sha256": "c3143e923ed1ca7bdf27f96c351fbafaebcbd3cf3f4c2d30d03e6c7f98e73d7a"
+    },
+    {
+      "path": "assets/jost-1.ttf",
+      "bytes": 58936,
+      "sha256": "d6ff7726ec21576cf2fdac55080b2d43832780fa981f03f0b66d2723a7c1ea09"
+    },
+    {
+      "path": "assets/jost-2.ttf",
+      "bytes": 58936,
+      "sha256": "a63c8d75600a2d42e0e152e4c4810474a90a0b93206f47530a741dbb78a9e571"
+    },
+    {
+      "path": "assets/jost.css",
+      "bytes": 441,
+      "sha256": "1f67cdf2d8a7eb3d0b6d6ecdae838ac025bffc18b5f2b07ce3bfa26e0fd51dec"
+    },
+    {
+      "path": "assets/leila-mansour.svg",
+      "bytes": 1756,
+      "sha256": "9fd36e21e1ed4d29fd5e975fffa44e75c3dac9c18b724bbadf6e8406e8838f81"
+    },
+    {
+      "path": "assets/logo-42.svg",
+      "bytes": 830,
+      "sha256": "cb27f1e1c89bcdfe58185710ac66f0232a2bb8c9ac0c596275f06f101dbd7efc"
+    },
+    {
+      "path": "assets/profile-avatars/caio-mendes.svg",
+      "bytes": 1681,
+      "sha256": "b14030ac43482591e5ffce5fd9efa091ac56bed9f3a923c7a957b2536ac8ecb1"
+    },
+    {
+      "path": "assets/profile-avatars/haru-mizuno.svg",
+      "bytes": 1572,
+      "sha256": "ca6290a54a65f6e33e2c99c20320f6418ba9120823ceb2fa54497ce380ae8091"
+    },
+    {
+      "path": "assets/profile-avatars/ines-morel.svg",
+      "bytes": 1761,
+      "sha256": "3c0700986228a9fca11e9d82f4c9866556cd4857fcc51b4c5ede7b30c0e146e7"
+    },
+    {
+      "path": "assets/profile-avatars/leila-mansour.svg",
+      "bytes": 1756,
+      "sha256": "9fd36e21e1ed4d29fd5e975fffa44e75c3dac9c18b724bbadf6e8406e8838f81"
+    },
+    {
+      "path": "assets/profile-avatars/luiza-costa.svg",
+      "bytes": 1855,
+      "sha256": "8d9ff2ad2893b2f8bfd720f1b86028dca53b64633de0ef01e8b1d3ac8ae1edca"
+    },
+    {
+      "path": "assets/profile-avatars/noe-laurent.svg",
+      "bytes": 1653,
+      "sha256": "16ca0fa5fa698a38441225b52360629f685d2ba27afe31dcad1034d60ad16008"
+    },
+    {
+      "path": "assets/readable-glass.css",
+      "bytes": 3721,
+      "sha256": "922f0c523f48bb5f066c6d440df92734df7afff6bce332ada5b2c96e02a87687"
+    },
+    {
+      "path": "assets/tokens.css",
+      "bytes": 7190,
+      "sha256": "bcc71ae119e87b0abe75d4b781e2352becc633491da265298d36dcb0f80fb4cd"
+    },
+    {
+      "path": "content-preview-art.mjs",
+      "bytes": 8619,
+      "sha256": "6c62c48e772bf24496f57de9220f710ba91828c7ae708e65fa1851a1c03e40f1"
+    },
+    {
+      "path": "content-preview-data.mjs",
+      "bytes": 23276,
+      "sha256": "fbdb7a8da54c0733599a5b369a693aa7b39ee23df989262fa4e17e1e62c29e32"
+    },
+    {
+      "path": "demo.css",
+      "bytes": 16468,
+      "sha256": "3c2465636e00ea7f878c697f32578505120fdff2c51f4993d19280011f110380"
+    },
+    {
+      "path": "demo.html",
+      "bytes": 2395,
+      "sha256": "f9f98925da1ceec6a6da16a63a49c112c62942c7c468f5a96749cff6ebbbda8a"
+    },
+    {
+      "path": "demo.mjs",
+      "bytes": 19213,
+      "sha256": "60a961587badc500fc6e5f31441dd91d9bf8de2a3a2865959f7a4c5e90ff0954"
+    },
+    {
+      "path": "gallery.css",
+      "bytes": 7411,
+      "sha256": "1babe95ca2db7be2f04f19384491a60b1f3e923e48f60bb6570bd77128883dcf"
+    },
+    {
+      "path": "gallery.mjs",
+      "bytes": 360,
+      "sha256": "5d5fd774fd0c753746b967a0b208cefdf92274a7e628a67758ef51ecb53d9502"
+    },
+    {
+      "path": "index.html",
+      "bytes": 5476,
+      "sha256": "4b7c222427300765533a5c2e57fe5fb413feb214fee55e1725ea1870d7b519bc"
+    },
+    {
+      "path": "profile-data.mjs",
+      "bytes": 21663,
+      "sha256": "12316aadf8ad95df445f0bbf7034f896d7aa776b234f3e8a04cead0e55f588a1"
+    }
+  ]
+}

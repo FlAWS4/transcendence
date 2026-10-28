@@ -1,0 +1,56 @@
+/* Essai globe-espace-libre (14 Oct 2026): the resting world globe fits between
+   the stats line under the filter and the first text below it (status line, or
+   the search capsule when the status is hidden), at least 16 px clear of both.
+   The centre stays at 50 %/50 %; portrait phones keep the baseline radius.
+   integrated-globe.mjs reads --hg-radius with parseFloat at creation and on
+   every resize of the stage, so the fitted value must compute to a plain
+   number: a registered <number> provides it. It only ever shrinks the radius. */
+@property --essai-globe-radius { syntax: '<number>'; inherits: true; initial-value: .425; }
+
+/* Bands measured on the frozen baseline, worst case of FR, EN and AR (Arabic
+   lines are taller): bottom of the stats line from the top of the viewport,
+   and top of the status text (or search capsule) from its bottom. These
+   layouts place both at fixed pixel offsets. */
+@media (min-width: 701px) and (min-height: 521px) {
+  :root .app[data-navigation=dock] #main > .globe-stage { --essai-globe-top: 168.3px; --essai-globe-bottom: 193px; }
+}
+/* Short windows hide the status text: the search capsule bounds the disc. */
+@media (min-width: 701px) and (max-height: 520px) {
+  :root .app[data-navigation=dock] #main > .globe-stage { --essai-globe-top: 159.3px; --essai-globe-bottom: 126px; }
+}
+/* Landscape phones use the mobile filter seat. */
+@media (max-width: 700px) and (orientation: landscape) and (min-height: 521px) {
+  :root .app[data-navigation=dock] #main > .globe-stage { --essai-globe-top: 154.4px; --essai-globe-bottom: 174px; }
+}
+@media (max-width: 700px) and (orientation: landscape) and (max-height: 520px) {
+  :root .app[data-navigation=dock] #main > .globe-stage { --essai-globe-top: 150.4px; --essai-globe-bottom: 126px; }
+}
+/* With lisibilite-textes, its 13 px floors move two bands (worst case Arabic, measured on the copy with both
+   trials): "Exploration · 42 Horizon" (12 px on desktop, 10 px below 701 px) starts 3 px higher on desktop
+   and tablet and 7 px higher in narrow landscape; below 701 px the stats line (12 px) ends 1.45 px lower,
+   which matters in short windows, where the top band binds. Without lisibilite-textes nothing changes. */
+@media (min-width: 701px) and (min-height: 521px) {
+  :root[data-essais~=lisibilite-textes] .app[data-navigation=dock] #main > .globe-stage { --essai-globe-bottom: 196px; }
+}
+@media (max-width: 700px) and (orientation: landscape) and (min-height: 521px) {
+  :root[data-essais~=lisibilite-textes] .app[data-navigation=dock] #main > .globe-stage { --essai-globe-bottom: 181px; }
+}
+@media (max-width: 700px) and (orientation: landscape) and (max-height: 520px) {
+  :root[data-essais~=lisibilite-textes] .app[data-navigation=dock] #main > .globe-stage { --essai-globe-top: 151.9px; }
+}
+
+@media (min-width: 701px), (orientation: landscape) {
+  :root .app[data-navigation=dock] #main > .globe-stage {
+    /* Wanted screen radius of the disc: 16 px of air plus 1 px for rounding,
+       never below the 16 px medallion seat. */
+    --essai-globe-disc: max(16px, min(50svh - var(--essai-globe-top), 50svh - var(--essai-globe-bottom)) - 17px);
+    /* MapLibre draws a sphere of radius R = 1.23668 × min(w, h) × --hg-radius
+       (worldZoom formula, globe scale at the 18° resting latitude), seen from
+       f = 1.5 × height (36.87° field of view): its disc is d = R / √(1 + 2R/f).
+       Inverted: R = d × (q + √(q² + 1)) with q = d/f. tan(atan2(a, b)) turns
+       the ratio of two lengths into a number. */
+    --essai-globe-q: tan(atan2(var(--essai-globe-disc), 150svh));
+    --essai-globe-radius: min(var(--horizon-globe-radius), tan(atan2(var(--essai-globe-disc), min(100vw, 100svh))) * (var(--essai-globe-q) + sqrt(var(--essai-globe-q) * var(--essai-globe-q) + 1)) / 1.23668);
+    --hg-radius: var(--essai-globe-radius);
+  }
+}

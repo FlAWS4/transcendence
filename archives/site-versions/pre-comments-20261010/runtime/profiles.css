@@ -1,0 +1,428 @@
+/* Public profiles and visible project authors. Existing Horizon tokens stay shared. */
+.cp-profile-card .cp-profile-portrait {
+ position:relative; display:grid; place-items:center; aspect-ratio:1.5;
+ overflow:hidden; border-radius:22px; isolation:isolate;
+ background:color-mix(in srgb,var(--h42-teal) 7%,var(--h42-color-surface));
+ border:1px solid var(--cp-line);
+}
+.cp-profile-portrait::before {
+ content:''; position:absolute; width:78%; aspect-ratio:1; border-radius:50%;
+ border:1px solid color-mix(in srgb,var(--h42-teal) 14%,transparent); z-index:-1;
+}
+.cp-profile-portrait .cp-person-avatar {
+ width:48%; height:auto; aspect-ratio:1; max-width:170px; border-radius:50%;
+ object-fit:cover; border:4px solid var(--h42-color-surface);
+ transition:transform .45s var(--ease);
+}
+.cp-profile-card:hover .cp-profile-portrait .cp-person-avatar { transform:translateY(-3px); }
+.cp-profile-status {
+ display:inline-flex; align-items:center; min-height:25px; padding:3px 9px; border-radius:999px;
+ color:var(--cp-accent); background:var(--h42-color-surface); border:1px solid var(--cp-line);
+ font-size:11px; line-height:1.5; font-weight:500;
+}
+.cp-profile-portrait > .cp-profile-status { position:absolute; inset-inline-start:14px; bottom:12px; }
+.cp-profile-card .cp-card-copy > .cp-profile-role { margin:0 0 10px; color:var(--h42-color-text); font-size:14px; line-height:1.5; }
+.cp-profile-tags { display:flex; flex-wrap:wrap; gap:6px; list-style:none; margin:16px 0 0; padding:0; }
+.cp-profile-tags li {
+ padding:4px 8px; border:1px solid var(--cp-line); border-radius:7px;
+ color:var(--h42-color-muted); font-size:11px; line-height:1.4; overflow-wrap:anywhere;
+}
+.cp-profile-feature { display:flex; align-items:center; gap:10px; width:100%; padding-top:17px; margin-top:18px; border-top:1px solid var(--cp-line); }
+.cp-profile-feature-art { position:relative; flex:0 0 62px; width:62px; height:46px; border-radius:9px; overflow:hidden; }
+.cp-profile-feature-copy { display:grid; gap:3px; min-width:0; }
+.cp-profile-feature-copy small { color:var(--h42-color-muted); font-size:10px; line-height:1.4; }
+.cp-profile-feature-copy strong { font-size:12px; line-height:1.5; font-weight:500; }
+:root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-card {
+ grid-template-columns:minmax(0,170px) minmax(0,1fr); gap:28px; align-items:start;
+}
+:root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-portrait { aspect-ratio:1; }
+:root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-portrait .cp-person-avatar { width:72%; }
+:root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-feature { max-width:400px; }
+:root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-card .cp-card-link { margin-top:0; }
+
+/* Separate author links remain usable alongside the card's main link and heart. */
+.cp-card-cover-link { display:block; color:inherit; text-decoration:none; border-radius:20px; }
+.cp-card-title-link { color:inherit; text-decoration:none; border-radius:4px; }
+.cp-card-title-link:hover { color:var(--cp-accent); }
+.cp-card-copy > .cp-authors { width:100%; margin:2px 0 13px; }
+#detail-authors { margin:25px 0 20px; }
+
+.cp-authors { min-width:0; }
+.cp-authors:empty { display:none; }
+.cp-authors-label { margin:0 0 9px; font-size:11px; line-height:1.5; color:var(--h42-color-muted); }
+.cp-author-list { display:flex; flex-wrap:wrap; align-items:start; gap:12px 22px; list-style:none; margin:0; padding:0; }
+.cp-author-item { min-width:0; max-width:100%; }
+.cp-author-link { display:flex; align-items:center; gap:10px; min-width:0; min-height:44px; border-radius:11px; color:inherit; text-decoration:none; }
+.cp-author-link .cp-person-avatar { flex:0 0 42px; width:42px; height:42px; object-fit:cover; border-radius:50%; border:1px solid var(--cp-line); }
+.cp-author-copy { display:grid; min-width:0; gap:2px; }
+.cp-author-copy > strong { font-size:14px; line-height:1.45; font-weight:500; overflow-wrap:anywhere; }
+.cp-author-role { font-size:12px; line-height:1.45; color:var(--h42-color-muted); overflow-wrap:anywhere; }
+.cp-author-link:hover .cp-author-copy > strong { color:var(--cp-accent); }
+.cp-authors[data-compact=true] .cp-author-list { gap:6px 16px; }
+.cp-authors[data-compact=true] .cp-author-link { gap:8px; min-height:40px; }
+.cp-authors[data-compact=true] .cp-person-avatar { width:30px; height:30px; flex-basis:30px; }
+.cp-authors[data-compact=true] .cp-author-copy > strong { font-size:12px; }
+.cp-authors[data-compact=true] .cp-authors-label { margin-bottom:4px; font-size:10px; }
+.cp-author-more{display:inline-flex;align-items:center;justify-content:center;min-width:40px;min-height:40px;gap:1px;padding:5px 9px;border:1px solid var(--cp-line);border-radius:999px;color:var(--h42-color-text);background:var(--warm-soft);text-decoration:none;font-size:12px;line-height:1.4;direction:ltr;unicode-bidi:isolate}
+.cp-author-more:hover{color:var(--cp-accent);border-color:var(--cp-accent)}
+.cp-author-responsibility{display:block;width:fit-content;max-width:100%;padding:2px 6px;border-radius:5px;background:color-mix(in srgb,var(--cp-accent) 10%,transparent);color:var(--cp-accent);font-size:11px;line-height:1.4;font-weight:500;overflow-wrap:anywhere}
+.cp-authors[data-compact=true] .cp-author-responsibility{font-size:10px;padding:1px 5px}
+.cp-card > .cp-authors { margin-top:18px; padding-top:15px; border-top:1px solid var(--cp-line); }
+.cp-detail-header > .cp-authors { margin-top:26px; }
+:root .app[data-navigation=dock] #content-index[data-view=list] .cp-card > .cp-authors { grid-column:2; margin-top:-12px; }
+
+/* The public profile is a full document, not the account panel in the header. */
+:root .app[data-navigation=dock] .content-sheet:has(#profile-detail:not([hidden])) {
+ width:min(1040px,calc(100% - var(--horizon-page-gutter) * 2)); max-width:1040px;
+}
+.cp-profile-detail { min-width:0; }
+.cp-profile-detail[hidden] { display:none; }
+.cp-profile-hero { display:grid; grid-template-columns:minmax(170px,240px) minmax(0,1fr); align-items:center; gap:42px; margin:10px 0 48px; }
+.cp-profile-hero-portrait { aspect-ratio:1; border-radius:32px; overflow:hidden; background:var(--h42-color-surface); border:1px solid var(--cp-line); }
+.cp-profile-hero-portrait .cp-person-avatar { width:100%; height:100%; display:block; object-fit:cover; }
+.cp-profile-portrait-open { display:block;padding:0;cursor:zoom-in;color:inherit;font:inherit; }
+.cp-profile-portrait-open:focus-visible { outline:2px solid var(--h42-color-focus);outline-offset:4px; }
+.cp-profile-heading { min-width:0; }
+/* A route focus announces the document title without framing it like a control. */
+#profile-title:focus { outline:none; }
+
+.content-sheet .cp-profile-heading h1 { margin:10px 0 12px; font-size:clamp(38px,4.7vw,64px); font-weight:500; line-height:1.08; letter-spacing:-.045em; overflow-wrap:anywhere; }
+.cp-profile-hero-role { margin:0 0 12px; font-size:18px; line-height:1.5; }
+.cp-profile-hero-summary { max-width:55ch; margin:0; font-size:17px; line-height:1.65; color:var(--h42-color-muted); }
+.cp-profile-facts { display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin:17px 0 0; font-size:13px; line-height:1.6; color:var(--h42-color-muted); }
+.cp-profile-actions { display:flex; flex-wrap:wrap; gap:10px 16px; align-items:center; margin-top:22px; }
+.cp-profile-campus { display:inline-flex; align-items:center; justify-content:center; gap:8px; min-height:42px; padding:7px 0; background:transparent; font-size:13px; color:var(--cp-accent); }
+.cp-profile-campus > svg { width:16px; height:16px; }
+.cp-profile-message{display:inline-flex;align-items:center;justify-content:flex-start;gap:8px;min-height:36px;max-width:100%;padding:7px 10px;border:1px solid var(--cp-line);border-radius:12px;background:var(--h42-color-surface);color:var(--cp-accent);font-size:12px;line-height:1.5;text-align:start}
+.cp-profile-message>.cp-profile-icon{width:16px;height:16px}
+.cp-profile-message:hover{background:var(--h42-color-soft);border-color:var(--cp-accent)}
+dialog.cp-profile-message-dialog{width:min(480px,calc(100% - 28px));max-height:calc(100svh - 28px);padding:24px;overflow:auto;overscroll-behavior:contain;scrollbar-width:thin}
+.cp-profile-message-top{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.cp-profile-message-top h2{margin:0;font-size:24px;font-weight:500;line-height:1.3;overflow-wrap:anywhere}
+.cp-profile-message-close{display:grid;place-items:center;flex:none;width:36px;height:36px;border-radius:50%;background:transparent;color:var(--h42-color-muted)}
+.cp-profile-message-recipient{margin:15px 0 7px;font-size:14px;line-height:1.6;overflow-wrap:anywhere}
+.cp-profile-message-recipient>bdi:first-child{font-weight:500}
+.cp-profile-message-recipient>bdi+ bdi{color:var(--h42-color-muted);font-size:12px}
+.cp-profile-message-hint{margin:0 0 22px;color:var(--h42-color-muted);font-size:12px;line-height:1.6}
+.cp-profile-message-label{display:grid;gap:10px;font-size:14px;line-height:1.5}
+.cp-profile-message-label textarea{display:block;box-sizing:border-box;width:100%;min-height:135px;max-height:40svh;resize:vertical;padding:12px 14px;border:1px solid var(--h42-color-input-border);border-radius:14px;background:var(--h42-color-surface);color:var(--h42-color-text);font:inherit;line-height:1.6}
+.cp-profile-message-label textarea:focus-visible{outline:2px solid var(--h42-color-focus);outline-offset:3px}
+.cp-profile-message-status{font-size:13px;line-height:1.6;color:var(--cp-accent);margin:14px 0}
+.cp-profile-message-status:empty{display:none}
+.cp-profile-message-preview{padding:13px 15px;background:var(--h42-color-soft);border:1px solid var(--cp-line);border-radius:14px}
+.cp-profile-message-preview h3{margin:0 0 8px;font-size:12px;font-weight:500;line-height:1.5;color:var(--h42-color-muted)}
+.cp-profile-message-preview p{margin:0;font-size:14px;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere}
+.cp-profile-message-controls{display:flex;justify-content:flex-end;flex-wrap:wrap;gap:10px;margin-top:22px}
+.cp-profile-message-controls button{min-height:42px;padding:9px 16px;border-radius:30px;font-size:13px;line-height:1.5}
+.cp-profile-message-cancel{background:transparent;color:var(--h42-color-muted)}
+.cp-profile-message-send{background:var(--cp-accent);color:var(--h42-color-bg)}
+@media(max-width:420px){dialog.cp-profile-message-dialog{padding:20px}.cp-profile-message-top h2{font-size:21px}.cp-profile-message-controls button{flex:1}}
+.cp-profile-section { padding-top:28px; border-top:1px solid var(--cp-line); margin:0 0 42px; }
+.cp-profile-section > h2 { margin:0 0 25px; font-size:27px; font-weight:500; line-height:1.25; letter-spacing:-.025em; }
+.cp-profile-about { display:grid; grid-template-columns:200px minmax(0,1fr); gap:40px; }
+.cp-profile-about > p { max-width:67ch; margin:0; color:var(--h42-color-muted); font-size:17px; line-height:1.8; }
+.cp-profile-empty { margin:0; padding:2px 0 14px; color:var(--h42-color-muted); font-size:15px; line-height:1.65; }
+.cp-profile-related-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:30px; }
+.cp-profile-related-card { min-width:0; position:relative; }
+.cp-profile-related-link { color:inherit; text-decoration:none; display:block; border-radius:20px; }
+.cp-profile-related-link .cp-cover { aspect-ratio:1.7; }
+.cp-profile-related-copy { padding-top:18px; }
+.cp-profile-related-copy h3 { margin:8px 0 10px; font-size:25px; line-height:1.25; letter-spacing:-.025em; font-weight:500; }
+.cp-profile-related-summary { margin:0; color:var(--h42-color-muted); font-size:15px; line-height:1.7; }
+.cp-profile-related-card > .cp-favorite { position:absolute; inset-block-start:10px; inset-inline-end:10px; }
+.cp-profile-related-link:hover .cp-art { transform:scale(1.035); }
+.cp-profile-timeline { list-style:none; margin:0; padding:0; }
+.cp-profile-milestone { display:grid; grid-template-columns:110px minmax(0,1fr); gap:24px; position:relative; padding-bottom:29px; }
+.cp-profile-milestone:last-child { padding-bottom:0; }
+.cp-profile-milestone-date { padding-top:3px; color:var(--cp-accent); font-size:13px; font-weight:500; line-height:1.65; }
+.cp-profile-milestone-copy { position:relative; padding-inline-start:26px; min-width:0; }
+.cp-profile-milestone-copy::before { content:''; position:absolute; inset-inline-start:0; top:10px; width:7px; height:7px; border-radius:50%; background:var(--cp-accent); }
+.cp-profile-milestone:not(:last-child) .cp-profile-milestone-copy::after { content:''; position:absolute; inset-inline-start:3px; top:24px; bottom:-22px; width:1px; background:var(--cp-line); }
+.cp-profile-milestone h3 { margin:0 0 7px; font-size:18px; font-weight:500; line-height:1.5; }
+.cp-profile-milestone p { max-width:65ch; margin:0; color:var(--h42-color-muted); font-size:15px; line-height:1.75; }
+.cp-profile-story { max-width:760px; margin:38px 0 0 auto; padding:26px 28px; border:1px solid var(--cp-line); border-radius:24px; }
+[dir=rtl] .cp-profile-story { margin-inline-start:auto; margin-inline-end:0; }
+.cp-profile-story > h3 { margin:9px 0 15px; font-size:26px; line-height:1.3; font-weight:500; letter-spacing:-.025em; }
+.cp-profile-story > h4 { margin:25px 0 10px; font-size:18px; line-height:1.5; font-weight:500; }
+.cp-profile-story > p:not(.cp-meta) { margin:0; font-size:16px; line-height:1.8; color:var(--h42-color-muted); }
+.cp-profile-story > .cp-profile-story-intro { margin-bottom:24px; }
+[dir=rtl] .cp-profile-campus > svg { transform:scaleX(-1); }
+[lang=ar] .content-sheet :is(.cp-profile-heading h1,.cp-profile-section h2,.cp-profile-story h3) { letter-spacing:0; line-height:1.5; }
+
+@media(max-width:850px) {
+ .cp-profile-hero { grid-template-columns:180px minmax(0,1fr); gap:28px; }
+ .cp-profile-about { grid-template-columns:160px minmax(0,1fr); gap:28px; }
+}
+@media(max-width:700px) {
+ .cp-profile-hero { grid-template-columns:minmax(0,1fr); gap:24px; margin:0 0 34px; }
+ .cp-profile-hero-portrait { width:140px; border-radius:26px; }
+ .content-sheet .cp-profile-heading h1 { font-size:38px; }
+ .cp-profile-heading > .cp-meta { font-size:11px; }
+ .cp-profile-hero-role { font-size:17px; }
+ .cp-profile-hero-summary,.cp-profile-about > p { font-size:16px; }
+ .cp-profile-about { display:block; }
+ .cp-profile-section { padding-top:24px; margin-bottom:34px; }
+ .cp-profile-section > h2 { font-size:24px; margin-bottom:20px; }
+ .cp-profile-related-grid { grid-template-columns:minmax(0,1fr); gap:30px; }
+ .cp-profile-related-copy h3 { font-size:24px; }
+ .cp-profile-milestone { grid-template-columns:70px minmax(0,1fr); gap:13px; }
+ .cp-profile-milestone-copy { padding-inline-start:19px; }
+ .cp-profile-milestone h3 { font-size:17px; }
+ .cp-profile-milestone-date { font-size:12px; }
+ .cp-profile-story { padding:22px 20px; margin-top:30px; }
+ .cp-profile-story > h3 { font-size:23px; }
+ .cp-profile-story > p:not(.cp-meta) { font-size:15px; }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-card { grid-template-columns:86px minmax(0,1fr); gap:17px; }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-portrait { overflow:visible; margin-top:7px; border-radius:50%; }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-portrait::before { display:none; }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-portrait .cp-person-avatar { width:100%; border-width:2px; }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-portrait > .cp-profile-status { bottom:-29px; inset-inline-start:50%; transform:translateX(-50%); font-size:9px; white-space:nowrap; padding:2px 6px; min-height:23px; }
+ :root[dir=rtl] .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-portrait > .cp-profile-status { transform:translateX(50%); }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-card .cp-favorite { inset-block-start:126px; inset-inline-start:26px; inset-inline-end:auto; }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-card h2 { font-size:24px; }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-card .cp-profile-role { font-size:12px; }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-card .cp-summary { font-size:14px; }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-feature { align-items:start; gap:8px; }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-feature-art { flex-basis:42px; width:42px; height:34px; }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-feature-copy strong { font-size:11px; }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-feature-copy small { font-size:9px; }
+}
+@media(max-width:360px) {
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-card { grid-template-columns:68px minmax(0,1fr); gap:14px; }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-card .cp-favorite { inset-block-start:110px; inset-inline-start:17px; }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-card h2 { font-size:22px; }
+ .cp-profile-milestone { grid-template-columns:58px minmax(0,1fr); gap:9px; }
+ .cp-profile-milestone-copy { padding-inline-start:17px; }
+ .cp-profile-story { padding:20px 17px; }
+}
+@media(prefers-reduced-motion:reduce) {
+ .cp-profile-portrait .cp-person-avatar { transition:none; }
+ .cp-profile-card:hover .cp-profile-portrait .cp-person-avatar { transform:none; }
+}
+
+/* Essential directory cards: identity only; full content stays in the profile. */
+.cp-profile-login { margin:0 0 9px; color:var(--h42-color-muted); font-size:clamp(.8125rem,calc(.776rem + .182vw),.9375rem); line-height:1.5; overflow-wrap:anywhere; }
+:root .app[data-navigation=dock] #content-index .cp-profile-card .cp-card-copy { flex:initial; }
+:root .app[data-navigation=dock] #content-index .cp-profile-card .cp-card-copy > h2 { margin-top:0; }
+:root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-card .cp-meta { padding-inline-end:0; }
+@media(max-width:700px) {
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-card .cp-profile-portrait { margin-bottom:34px; }
+}
+
+/* Campus arrival and cohort stay quiet, readable facts in both directory layouts. */
+.cp-profile-cohort { display:flex; flex-wrap:wrap; gap:3px 14px; margin:9px 0 0; padding:0; color:var(--h42-color-muted); font-size:.75rem; line-height:1.65; }
+.cp-profile-cohort:empty { display:none; }
+.cp-profile-cohort-item { display:inline-flex; flex-wrap:wrap; align-items:baseline; column-gap:5px; }
+.cp-profile-cohort dt,.cp-profile-cohort dd { margin:0; }
+.cp-profile-cohort dd { color:var(--h42-color-text); font-weight:500; font-variant-numeric:tabular-nums; }
+.cp-profile-heading > .cp-profile-cohort { margin-top:12px; font-size:.8125rem; }
+
+/* Accepted study 04: the global dock stays global; the profile owns its index. */
+:root .app[data-navigation=dock] .content-sheet:has(#profile-detail:not([hidden])){width:min(1100px,calc(100% - var(--horizon-page-gutter) * 2));max-width:1100px}
+.cp-profile-workspace{display:grid;grid-template-columns:246px minmax(0,1fr);gap:64px;align-items:start;margin-top:14px}
+.cp-profile-sidebar{position:sticky;top:calc(var(--header-fade-end,124px) + 12px);min-width:0}
+.cp-profile-sidebar .cp-profile-hero{display:flex;flex-direction:column;align-items:flex-start;gap:18px;margin:0 0 28px}
+.cp-profile-sidebar .cp-profile-hero-portrait{width:108px;height:108px;flex:none;border-radius:24px}
+.content-sheet .cp-profile-sidebar .cp-profile-heading h1{font-size:38px;line-height:1.08;letter-spacing:-.035em;margin:12px 0 10px;overflow-wrap:normal}
+.cp-profile-sidebar .cp-profile-login{font-size:14px;margin:0}
+.cp-profile-sidebar .cp-profile-facts{margin-top:12px;font-size:13px}
+.cp-profile-sidebar .cp-profile-cohort{font-size:12px;margin-top:9px;gap:5px 12px}
+.cp-profile-sidebar .cp-profile-actions{gap:9px;margin-top:18px}
+.cp-profile-sidebar .cp-favorite{font-size:11px;min-height:36px;padding:7px 10px}
+.cp-profile-sidebar .cp-profile-campus{font-size:12px;min-height:36px;text-align:start;justify-content:flex-start}
+.cp-profile-sidebar-nav{display:grid;gap:6px;border-top:1px solid var(--cp-line);padding-top:20px}
+.cp-profile-sidebar-nav a,.cp-profile-switch-panel a{display:flex;align-items:center;gap:11px;min-height:48px;padding:12px 13px;border-radius:14px;font-size:14px;line-height:1.5;color:var(--h42-color-muted);text-decoration:none;transition:background .2s,color .2s}
+.cp-profile-sidebar-nav a[aria-current],.cp-profile-switch-panel a[aria-current]{background:var(--control-glass-selection);box-shadow:inset 0 0 0 1px var(--control-glass-selection-edge);color:var(--h42-color-text);font-weight:500}
+.cp-profile-sidebar-nav a[aria-current]>.cp-profile-icon,.cp-profile-switch-panel a[aria-current]>.cp-profile-icon{color:var(--readable-glass-accent,var(--cp-accent))}
+.cp-profile-sidebar-nav a:hover,.cp-profile-switch-panel a:hover{background:var(--h42-color-soft);color:var(--h42-color-text)}
+.cp-profile-sidebar-nav a:focus-visible,.cp-profile-switch-panel a:focus-visible,.cp-profile-section-trigger:focus-visible{outline:2px solid var(--h42-color-focus);outline-offset:3px}
+.cp-profile-icon{width:19px;height:19px;flex:none;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.cp-profile-reading-pane{min-width:0;border-inline-start:1px solid var(--cp-line);padding-inline-start:38px;padding-top:4px;min-height:510px}
+.cp-profile-active-section{border:0;padding:0;margin:0}
+.cp-profile-active-section>h2{font-size:32px;margin-bottom:24px}
+.cp-profile-active-section>h2:focus{outline:none}
+.cp-profile-overview-block{padding:24px 0;border-top:1px solid var(--cp-line)}
+.cp-profile-overview-block h3{display:flex;flex-wrap:wrap;align-items:baseline;gap:9px;margin:0 0 12px;font-size:20px;font-weight:500;line-height:1.4;letter-spacing:-.015em}
+.cp-profile-overview-block>p{font-size:16px;line-height:1.8;color:var(--h42-color-muted);margin:0;max-width:720px}
+.cp-profile-overview-block .cp-profile-tags{margin-top:0;gap:8px}
+.cp-profile-overview-block .cp-profile-tags li{border-radius:50px;font-size:12px;padding:6px 11px}
+.cp-profile-overview-block .cp-profile-campus-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 24px;margin:0;font-size:13px;line-height:1.6}
+.cp-profile-campus-facts>.cp-profile-cohort-item{display:block;min-width:0}
+.cp-profile-campus-facts dt{margin:0 0 5px;overflow-wrap:anywhere}
+.cp-profile-campus-facts dd{font-size:16px;line-height:1.5;overflow-wrap:anywhere}
+.cp-profile-campus-facts>[data-profile-fact=currentCampus]{grid-column:1/-1}
+.cp-profile-campus-info>.cp-profile-campus{margin-top:16px}
+.cp-profile-campus-history{margin:0 0 30px;padding-bottom:26px;border-bottom:1px solid var(--cp-line)}
+.cp-profile-campus-history>h3{margin:0 0 20px;font-size:20px;font-weight:500;line-height:1.4}
+.cp-profile-campus-timeline{display:grid;gap:18px;list-style:none;margin:0;padding:0}
+.cp-profile-campus-stop{display:grid;grid-template-columns:100px minmax(0,1fr);gap:12px 22px;align-items:start}
+.cp-profile-campus-stop>time{font-size:12px;line-height:1.7;color:var(--h42-color-muted);overflow-wrap:anywhere}
+.cp-profile-campus-stop>div{grid-column:2;min-width:0;padding-inline-start:16px;border-inline-start:2px solid var(--cp-line)}
+.cp-profile-campus-stop p{margin:0;line-height:1.6;overflow-wrap:anywhere}
+.cp-profile-campus-stop .cp-profile-campus-step{font-size:12px;color:var(--h42-color-muted);margin-bottom:4px}
+.cp-profile-campus-stop .cp-profile-campus-name{font-size:16px;font-weight:500;color:var(--h42-color-text)}
+@media(max-width:600px){.cp-profile-campus-stop{grid-template-columns:72px minmax(0,1fr);gap:12px}.cp-profile-campus-stop>div{padding-inline-start:12px}}
+@media(min-width:1200px){.cp-profile-overview-block .cp-profile-campus-facts{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:380px){.cp-profile-overview-block .cp-profile-campus-facts{grid-template-columns:minmax(0,1fr);gap:15px}}
+.cp-profile-social-list{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.cp-profile-social-list>li{min-width:0;max-width:100%}
+.cp-profile-social-link{display:inline-flex;align-items:center;gap:8px;min-height:44px;max-width:100%;padding:9px 13px;border:1px solid var(--cp-line);border-radius:12px;color:var(--h42-color-text);background:var(--h42-color-surface);font-size:13px;line-height:1.5;text-decoration:none;transition:background .2s,border-color .2s}
+.cp-profile-social-link>bdi{min-width:0;overflow-wrap:anywhere}
+.cp-profile-social-link>.cp-profile-icon{width:15px;height:15px;color:var(--cp-accent)}
+.cp-profile-social-link:hover{background:var(--h42-color-soft);border-color:var(--cp-accent)}
+.cp-profile-social-link:focus-visible{outline:2px solid var(--h42-color-focus);outline-offset:3px}
+.cp-profile-socials>.cp-profile-social-empty{font-size:14px}
+.cp-profile-socials>.cp-profile-social-hint{margin-top:4px;font-size:13px;line-height:1.6}
+@media(prefers-reduced-motion:reduce){.cp-profile-social-link{transition:none}}
+.cp-profile-heading-note{font-size:12px;font-weight:400;color:var(--h42-color-muted);letter-spacing:0}
+.cp-profile-award-empty{display:flex;align-items:flex-start;gap:15px;padding-top:3px;color:var(--h42-color-muted)}
+.cp-profile-award-empty>.cp-profile-icon{width:26px;height:26px;margin-top:2px}
+.cp-profile-award-empty p{font-size:14px;line-height:1.6;margin:0}
+.cp-profile-award-empty .cp-profile-award-title{font-size:15px;color:var(--h42-color-text);margin-bottom:4px}
+.cp-profile-reading-pane .cp-profile-related-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,255px),1fr))}
+.cp-profile-reading-pane .cp-profile-milestone{grid-template-columns:70px minmax(0,1fr);gap:20px}
+.cp-profile-project-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 22px;position:relative;z-index:4}
+.cp-profile-project-count{font-size:12px;color:var(--h42-color-muted);margin:0}
+.cp-profile-project-toolbar .cp-content-controls{flex:0 1 auto}
+.cp-profile-section-switch{display:none}
+[lang=ar] .content-sheet .cp-profile-sidebar .cp-profile-heading h1{letter-spacing:0;line-height:1.4}
+[lang=ar] .cp-profile-overview-block h3{letter-spacing:0}
+@media(max-width:1100px) and (min-width:841px){
+ .cp-profile-workspace{grid-template-columns:220px minmax(0,1fr);gap:32px}.cp-profile-reading-pane{padding-inline-start:28px}
+ .content-sheet .cp-profile-sidebar .cp-profile-heading h1{font-size:35px}.cp-profile-sidebar-nav a{padding-inline:10px;font-size:13px}
+}
+@media(max-width:840px){
+ .cp-profile-workspace{display:block}.cp-profile-sidebar{position:static}.cp-profile-sidebar-nav{display:none}
+ .cp-profile-sidebar .cp-profile-hero{display:grid;grid-template-columns:100px minmax(0,1fr);gap:23px;align-items:start;margin-bottom:26px}
+ .cp-profile-sidebar .cp-profile-hero-portrait{width:100px;height:100px;border-radius:23px}
+ .content-sheet .cp-profile-sidebar .cp-profile-heading h1{font-size:34px;max-width:none;margin:8px 0 7px}
+ .cp-profile-sidebar .cp-profile-actions{margin-top:13px}
+ .cp-profile-reading-pane{padding:0;border:0;min-height:0}.cp-profile-active-section{margin-top:27px}
+ .cp-profile-active-section>h2{font-size:27px;margin-bottom:20px}
+ .cp-profile-section-switch{display:block;position:sticky;top:calc(var(--header-fade-end,154px) + 8px);z-index:5;max-width:460px}
+ .cp-profile-section-switch summary{list-style:none;cursor:pointer}.cp-profile-section-switch summary::-webkit-details-marker{display:none}
+ .cp-profile-section-trigger{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:5px 14px;width:100%;padding:13px 17px;border-radius:21px;font-size:15px;user-select:none;background:var(--control-glass-surface);border:1px solid var(--control-glass-edge);box-shadow:var(--control-glass-shadow);-webkit-backdrop-filter:blur(26px) saturate(1.15);backdrop-filter:blur(26px) saturate(1.15)}
+ .cp-profile-switch-caption{grid-column:1;font-size:10px;line-height:1.4;letter-spacing:.025em;color:var(--h42-color-muted)}
+ .cp-profile-switch-choice{grid-column:1;display:flex;align-items:center;gap:9px;color:var(--h42-color-text);font-weight:500;line-height:1.4}
+ .cp-profile-switch-choice .cp-profile-icon{width:18px;height:18px;color:var(--readable-glass-accent,var(--cp-accent))}
+ .cp-profile-section-trigger>.cp-profile-icon{grid-column:2;grid-row:1/3;color:var(--h42-color-muted);transition:transform .2s}
+ .cp-profile-section-switch[open] .cp-profile-section-trigger>.cp-profile-icon{transform:rotate(180deg)}
+ .cp-profile-switch-panel{position:absolute;z-index:5;top:calc(100% + 8px);inset-inline:0;display:grid;gap:3px;max-height:min(320px,55svh,var(--profile-selector-room,320px));padding:7px;border-radius:22px;overflow:auto;overscroll-behavior:contain;background:var(--control-glass-surface);border:1px solid var(--control-glass-edge);box-shadow:var(--control-glass-shadow);-webkit-backdrop-filter:blur(26px) saturate(1.15);backdrop-filter:blur(26px) saturate(1.15);animation:cp-profile-menu-in .18s var(--ease) both}
+ .cp-profile-switch-panel a{min-height:47px;border-radius:15px;padding:10px 12px}
+}
+@media(max-width:600px){
+ .cp-profile-sidebar .cp-profile-hero{grid-template-columns:85px minmax(0,1fr);gap:16px}.cp-profile-sidebar .cp-profile-hero-portrait{width:85px;height:85px;border-radius:20px}
+ .content-sheet .cp-profile-sidebar .cp-profile-heading h1{font-size:32px}
+ .cp-profile-overview-block{padding:21px 0}.cp-profile-overview-block h3{font-size:19px}.cp-profile-overview-block>p{font-size:15px}
+ .cp-profile-award-empty{gap:12px}.cp-profile-award-empty p{font-size:13px}.cp-profile-award-empty .cp-profile-award-title{font-size:14px}
+ .cp-profile-active-section>h2{font-size:25px}.cp-profile-reading-pane .cp-profile-milestone{grid-template-columns:60px minmax(0,1fr);gap:14px}
+}
+@media(max-width:380px){
+ .cp-profile-sidebar .cp-profile-hero{grid-template-columns:72px minmax(0,1fr);gap:14px}.cp-profile-sidebar .cp-profile-hero-portrait{width:72px;height:72px;border-radius:17px}
+ .content-sheet .cp-profile-sidebar .cp-profile-heading h1{font-size:29px}.cp-profile-section-trigger{padding:12px 15px;font-size:14px}.cp-profile-active-section>h2{font-size:24px}
+}
+@keyframes cp-profile-menu-in{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){.cp-profile-sidebar-nav a,.cp-profile-switch-panel a,.cp-profile-section-trigger>.cp-profile-icon{transition:none}.cp-profile-switch-panel{animation:none}}
+/* Scope the accepted composition above the older document-wide responsive rules. */
+#profile-detail .cp-profile-hero{gap:18px;margin:0 0 28px;grid-template-columns:none}
+#profile-detail .cp-profile-hero-portrait{width:108px;height:108px;border-radius:24px}
+#profile-detail .cp-profile-heading h1{font-size:clamp(1.8125rem,calc(1.375rem + 2vw),2.375rem);line-height:1.08;letter-spacing:-.035em;margin:0 0 10px}
+#profile-detail .cp-profile-active-section{padding:0;margin:0}
+#profile-detail .cp-profile-active-section>h2{font-size:clamp(1.5rem,calc(1.25rem + 1.25vw),2rem);margin-bottom:24px}
+#profile-detail .cp-profile-milestone{grid-template-columns:70px minmax(0,1fr);gap:20px}
+[lang=ar] #profile-detail .cp-profile-heading h1{letter-spacing:0;line-height:1.4}
+@media(max-width:840px){
+ #profile-detail .cp-profile-hero{grid-template-columns:100px minmax(0,1fr);gap:23px;margin-bottom:26px}
+ #profile-detail .cp-profile-hero-portrait{width:100px;height:100px;border-radius:23px}
+ #profile-detail .cp-profile-heading h1{margin:8px 0 7px}
+ #profile-detail .cp-profile-active-section{margin-top:27px}
+ #profile-detail .cp-profile-active-section>h2{margin-bottom:20px}
+}
+@media(max-width:600px){
+ #profile-detail .cp-profile-hero{grid-template-columns:85px minmax(0,1fr);gap:16px}
+ #profile-detail .cp-profile-hero-portrait{width:85px;height:85px;border-radius:20px}
+ #profile-detail .cp-profile-milestone{grid-template-columns:60px minmax(0,1fr);gap:14px}
+}
+@media(max-width:380px){
+ #profile-detail .cp-profile-hero{grid-template-columns:72px minmax(0,1fr);gap:14px}
+ #profile-detail .cp-profile-hero-portrait{width:72px;height:72px;border-radius:17px}
+}
+
+/* Full-width profile actions keep the mobile identity compact and readable. */
+#profile-detail .cp-profile-hero>.cp-profile-actions{margin-top:0;max-width:100%}
+/* Match the profile's scoped identity rules to the menu controller's short-window
+   densities. Without this scope the older #profile-detail rules win the cascade. */
+@media(min-width:841px){
+ #profile-detail [data-detail-density]>.cp-profile-hero{grid-template-columns:56px minmax(0,1fr);gap:10px;margin:0 0 14px}
+ #profile-detail [data-detail-density] .cp-profile-hero-portrait{width:56px;height:56px;border-radius:15px}
+ #profile-detail [data-detail-density] .cp-profile-heading h1{font-size:25px;line-height:1.15;margin:0 0 5px;overflow-wrap:anywhere}
+ #profile-detail [data-detail-density=dense]>.cp-profile-hero{grid-template-columns:32px minmax(0,1fr);gap:7px;margin:0 0 9px}
+ #profile-detail [data-detail-density=dense] .cp-profile-hero-portrait{width:32px;height:32px;border-radius:9px}
+ #profile-detail [data-detail-density=dense] .cp-profile-heading h1{font-size:18px;margin:0 0 3px}
+ [lang=ar] #profile-detail [data-detail-density] .cp-profile-heading h1{line-height:1.4}
+}
+@media(max-width:840px){
+ #profile-detail .cp-profile-hero{row-gap:13px}
+ #profile-detail .cp-profile-hero>.cp-profile-actions{grid-column:1/-1;gap:7px 14px}
+ #profile-detail .cp-profile-sidebar .cp-profile-actions .cp-favorite{white-space:nowrap}
+}
+
+
+/* Denser directory grid: only profile index cards, never lists or detail pages. */
+:root .app[data-navigation=dock] #content-index[data-section=people][data-view=grid] .cp-grid {
+ grid-template-columns:repeat(auto-fill,minmax(min(100%,180px),1fr));
+ gap:30px 20px;
+}
+:root .app[data-navigation=dock] #content-index[data-section=people][data-view=grid] .cp-profile-portrait {
+ aspect-ratio:auto;padding:14px 12px 12px;gap:8px;border-radius:18px;
+}
+:root .app[data-navigation=dock] #content-index[data-section=people][data-view=grid] .cp-profile-portrait::before {
+ width:min(80%,132px);top:7px;
+}
+:root .app[data-navigation=dock] #content-index[data-section=people][data-view=grid] .cp-profile-portrait .cp-person-avatar {
+ width:clamp(64px,calc(48px + 3vw),88px);max-width:100%;border-width:3px;
+}
+:root .app[data-navigation=dock] #content-index[data-section=people][data-view=grid] .cp-profile-portrait > .cp-profile-status {
+ position:static;justify-self:start;max-width:100%;
+}
+:root .app[data-navigation=dock] #content-index[data-section=people][data-view=grid] .cp-card-copy {
+ padding-top:13px;
+}
+:root .app[data-navigation=dock] #content-index[data-section=people][data-view=grid] .cp-profile-card h2 {
+ font-size:clamp(1.125rem,calc(1rem + .35vw),1.375rem);line-height:1.3;margin-block:0 6px;
+}
+:root .app[data-navigation=dock] #content-index[data-section=people][data-view=grid] .cp-profile-login {
+ font-size:.8125rem;margin-bottom:6px;
+}
+@media(max-width:600px) {
+ :root .app[data-navigation=dock] #content-index[data-section=people][data-view=grid] .cp-grid {
+  grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 14px;
+ }
+}
+
+
+/* Compact profile rows share the grid's identity scale. */
+:root .app[data-navigation=dock] #content-index[data-section=people][data-view=list] .cp-profile-card {
+ --compact-list-thumb:clamp(88px,calc(72px + 2vw),104px);
+ grid-template-columns:var(--compact-list-thumb) minmax(0,1fr);
+ gap:clamp(14px,2vw,22px);align-items:start;
+}
+:root .app[data-navigation=dock] #content-index[data-section=people][data-view=list] .cp-grid {
+ gap:24px;
+}
+:root .app[data-navigation=dock] #content-index[data-section=people][data-view=list] .cp-profile-portrait {
+ aspect-ratio:auto;margin:0;padding:8px 5px 7px;gap:7px;border-radius:16px;overflow:hidden;
+}
+:root .app[data-navigation=dock] #content-index[data-section=people][data-view=list] .cp-profile-portrait .cp-person-avatar {
+ width:clamp(64px,calc(48px + 3vw),88px);max-width:100%;border-width:3px;
+}
+:root .app[data-navigation=dock] #content-index[data-section=people][data-view=list] .cp-profile-portrait > .cp-profile-status {
+ position:static;transform:none;justify-self:center;max-width:100%;
+ padding:3px 6px;white-space:normal;text-align:center;
+}
+:root .app[data-navigation=dock] #content-index[data-section=people][data-view=list] .cp-profile-card h2 {
+ font-size:clamp(1.125rem,calc(1rem + .35vw),1.375rem);line-height:1.3;margin-block:0 6px;
+}
+:root .app[data-navigation=dock] #content-index[data-section=people][data-view=list] .cp-profile-login {
+ font-size:.8125rem;margin-bottom:6px;
+}

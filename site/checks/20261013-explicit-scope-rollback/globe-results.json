@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "globe-ready-return",
+      "result": {
+        "ready": true,
+        "canvas": true,
+        "hidden": false,
+        "width": 44,
+        "height": 44,
+        "zoomButtons": 0
+      }
+    },
+    {
+      "case": "return-hidden-in-content",
+      "result": true
+    }
+  ],
+  "sourcesBefore": {
+    "index.html": "ebe3130fb4ec623cdab75ecad9be8cc41abcafaed611e4490b2f50a2d8c69097",
+    "content-preview.html": "9037b297795842e6838475a1a2588cd6921579ff5515a916e28d2530f0883ce2",
+    "welcome.mjs": "6f498eeac496f02e06affc6638497ec10e2b7ee8f4f342f25bee1a0d79e1c279",
+    "entrance.mjs": "e7298291d5b731deffb0ec24fd001b087e76a167f774b67651d153d68c28c86d",
+    "entrance.css": "d82cb8c8fef086e187a522720134d4e9877651fef2a85ad4f13d58ee18ee55c3",
+    "dock-navigation.css": "0a88ce081a1a257ca715a1e33081154a9a7d75e192200b7b833808bae7f65886",
+    "account-menu.mjs": "b839d5c2c1c44e19d75d6d84fc89ff9cb5b91909b53cb093f7bbea338e9ef105",
+    "comments.mjs": "46ef2373e124339d429fdbbfb2c69c04242e97d7b7430ecf9522f5bf59b7aeea",
+    "content-report.mjs": "e81b69e60f00b336253c0efdf8ff24652a51e52260c1f9553222030480211bf2",
+    "content-preview-data.mjs": "f4a5ae6be75fdc54a72304e014109189247fb723cd1bcd2387f7a72107e7facd",
+    "project-trial.mjs": "9cf60282a01c5b85a0268f0aba7c4fdd9118d58fe4cbc0831ab528f82024977a",
+    "profile-ui.mjs": "dda7bbee23d2072bdddf9cfcdae0fa021e24c2c5f7664bc681846f7e1d59b452",
+    "project-ui.mjs": "821575931f5551a0ce735a33caa0cc497c7b59103a10374bda578d7b745fe287",
+    "journal-ui.mjs": "6bcce7d266199b87427d74ada6d7a63726f764abbfa017053f2f9587badc8859",
+    "content-controls.mjs": "58ac9a724ba2168a3109cf13b3c77e06d457068827074370ec8c5aff1625e2eb"
+  },
+  "sourcesAfter": {
+    "index.html": "ebe3130fb4ec623cdab75ecad9be8cc41abcafaed611e4490b2f50a2d8c69097",
+    "content-preview.html": "9037b297795842e6838475a1a2588cd6921579ff5515a916e28d2530f0883ce2",
+    "welcome.mjs": "6f498eeac496f02e06affc6638497ec10e2b7ee8f4f342f25bee1a0d79e1c279",
+    "entrance.mjs": "e7298291d5b731deffb0ec24fd001b087e76a167f774b67651d153d68c28c86d",
+    "entrance.css": "d82cb8c8fef086e187a522720134d4e9877651fef2a85ad4f13d58ee18ee55c3",
+    "dock-navigation.css": "0a88ce081a1a257ca715a1e33081154a9a7d75e192200b7b833808bae7f65886",
+    "account-menu.mjs": "b839d5c2c1c44e19d75d6d84fc89ff9cb5b91909b53cb093f7bbea338e9ef105",
+    "comments.mjs": "46ef2373e124339d429fdbbfb2c69c04242e97d7b7430ecf9522f5bf59b7aeea",
+    "content-report.mjs": "e81b69e60f00b336253c0efdf8ff24652a51e52260c1f9553222030480211bf2",
+    "content-preview-data.mjs": "f4a5ae6be75fdc54a72304e014109189247fb723cd1bcd2387f7a72107e7facd",
+    "project-trial.mjs": "9cf60282a01c5b85a0268f0aba7c4fdd9118d58fe4cbc0831ab528f82024977a",
+    "profile-ui.mjs": "dda7bbee23d2072bdddf9cfcdae0fa021e24c2c5f7664bc681846f7e1d59b452",
+    "project-ui.mjs": "821575931f5551a0ce735a33caa0cc497c7b59103a10374bda578d7b745fe287",
+    "journal-ui.mjs": "6bcce7d266199b87427d74ada6d7a63726f764abbfa017053f2f9587badc8859",
+    "content-controls.mjs": "58ac9a724ba2168a3109cf13b3c77e06d457068827074370ec8c5aff1625e2eb"
+  },
+  "limits": "Isolated headless Chrome, desktop viewport, reduced motion. Completes the loading screenshot in the main account comparison without repeating unchanged account checks."
+}

@@ -1,0 +1,323 @@
+{
+ "script": "complement_d1.py",
+ "fermetures": {
+  "145": {
+   "croix": {
+    "pointer": [
+     803,
+     352.4
+    ],
+    "dialogRect": [
+     430,
+     305.4,
+     420,
+     289.2
+    ],
+    "activeAtClose": "entry-login",
+    "afterClose": {
+     "active": "entry-login",
+     "focusVisible": false,
+     "dialogOpen": false,
+     "site": "fr",
+     "theme": "light",
+     "label": "en"
+    },
+    "observedAfterCloseMs": 9795,
+    "changesAfterClose": [
+     {
+      "dtMs": 4001,
+      "lang": "ar",
+      "active": "entry-login"
+     },
+     {
+      "dtMs": 8001,
+      "lang": "fr",
+      "active": "entry-login"
+     }
+    ],
+    "passed": true
+   },
+   "hors-fenetre": {
+    "pointer": [
+     20,
+     20
+    ],
+    "dialogRect": [
+     430,
+     305.4,
+     420,
+     289.2
+    ],
+    "activeAtClose": "entry-login",
+    "afterClose": {
+     "active": "entry-login",
+     "focusVisible": false,
+     "dialogOpen": false,
+     "site": "fr",
+     "theme": "light",
+     "label": "en"
+    },
+    "observedAfterCloseMs": 9793,
+    "changesAfterClose": [
+     {
+      "dtMs": 4000,
+      "lang": "ar",
+      "active": "entry-login"
+     },
+     {
+      "dtMs": 8001,
+      "lang": "fr",
+      "active": "entry-login"
+     }
+    ],
+    "passed": true
+   }
+  },
+  "144": {
+   "croix": {
+    "pointer": [
+     803,
+     352.4
+    ],
+    "dialogRect": [
+     430,
+     305.4,
+     420,
+     289.2
+    ],
+    "activeAtClose": "entry-login",
+    "afterClose": {
+     "active": "entry-login",
+     "focusVisible": false,
+     "dialogOpen": false,
+     "site": "fr",
+     "theme": "light",
+     "label": "en"
+    },
+    "observedAfterCloseMs": 9794,
+    "changesAfterClose": [],
+    "passed": true
+   },
+   "hors-fenetre": {
+    "pointer": [
+     20,
+     20
+    ],
+    "dialogRect": [
+     430,
+     305.4,
+     420,
+     289.2
+    ],
+    "activeAtClose": "entry-login",
+    "afterClose": {
+     "active": "entry-login",
+     "focusVisible": false,
+     "dialogOpen": false,
+     "site": "fr",
+     "theme": "light",
+     "label": "en"
+    },
+    "observedAfterCloseMs": 9791,
+    "changesAfterClose": [],
+    "passed": true
+   }
+  }
+ },
+ "sansBouger": {
+  "667x375": {
+   "cancelPoint": [
+    333.5,
+    273.7
+   ],
+   "elementUnderPointer": "entry-theme-toggle",
+   "pointerInsideAButtonRect": false,
+   "loginRect": [
+    24,
+    261.25,
+    304.5,
+    44
+   ],
+   "guestRect": [
+    338.5,
+    261.25,
+    304.5,
+    44
+   ],
+   "active": "entry-login",
+   "accessHover": false,
+   "loginHover": false,
+   "guestHover": false,
+   "accessEnterLeave": [
+    {
+     "type": "pointerenter",
+     "dtMs": -483,
+     "pointerType": "mouse"
+    },
+    {
+     "type": "pointerleave",
+     "dtMs": -316,
+     "pointerType": "mouse"
+    }
+   ],
+   "stillMs": 9293,
+   "changesWhileStill": [
+    {
+     "dtMs": 4001,
+     "lang": "ar",
+     "active": "entry-login"
+    },
+    {
+     "dtMs": 8002,
+     "lang": "fr",
+     "active": "entry-login"
+    }
+   ],
+   "changesAfterLeave": [
+    {
+     "dtMs": 2710,
+     "lang": "en",
+     "active": "entry-login"
+    }
+   ]
+  },
+  "320x640": {
+   "cancelPoint": [
+    160,
+    460.3
+   ],
+   "elementUnderPointer": "entry-login",
+   "pointerInsideAButtonRect": true,
+   "loginRect": [
+    24,
+    448,
+    272,
+    52
+   ],
+   "guestRect": [
+    24,
+    514,
+    272,
+    52
+   ],
+   "active": "entry-login",
+   "accessHover": true,
+   "loginHover": true,
+   "guestHover": false,
+   "accessEnterLeave": [
+    {
+     "type": "pointerenter",
+     "dtMs": -483,
+     "pointerType": "mouse"
+    },
+    {
+     "type": "pointerleave",
+     "dtMs": -317,
+     "pointerType": "mouse"
+    },
+    {
+     "type": "pointerenter",
+     "dtMs": 0,
+     "pointerType": "mouse"
+    },
+    {
+     "type": "pointerleave",
+     "dtMs": 9330,
+     "pointerType": "mouse"
+    }
+   ],
+   "stillMs": 9327,
+   "changesWhileStill": [],
+   "changesAfterLeave": [
+    {
+     "dtMs": 4004,
+     "lang": "ar",
+     "active": "entry-login"
+    }
+   ]
+  },
+  "390x844": {
+   "cancelPoint": [
+    195,
+    527.1
+   ],
+   "elementUnderPointer": "entry-theme-toggle",
+   "pointerInsideAButtonRect": false,
+   "loginRect": [
+    24,
+    552,
+    342,
+    52
+   ],
+   "guestRect": [
+    24,
+    616,
+    342,
+    52
+   ],
+   "active": "entry-login",
+   "accessHover": false,
+   "loginHover": false,
+   "guestHover": false,
+   "accessEnterLeave": [
+    {
+     "type": "pointerenter",
+     "dtMs": -483,
+     "pointerType": "mouse"
+    },
+    {
+     "type": "pointerleave",
+     "dtMs": -316,
+     "pointerType": "mouse"
+    }
+   ],
+   "stillMs": 9294,
+   "changesWhileStill": [
+    {
+     "dtMs": 4000,
+     "lang": "ar",
+     "active": "entry-login"
+    },
+    {
+     "dtMs": 8001,
+     "lang": "fr",
+     "active": "entry-login"
+    }
+   ],
+   "changesAfterLeave": [
+    {
+     "dtMs": 2708,
+     "lang": "en",
+     "active": "entry-login"
+    }
+   ]
+  }
+ },
+ "passed": true,
+ "console": [
+  {
+   "kind": "log.network.error",
+   "text": "Failed to load resource: the server responded with a status of 404 (File not found)",
+   "resource": "http://127.0.0.1:8765/favicon.ico",
+   "page": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/index.html?qa=verif-complement-d1-croix-145"
+  }
+ ],
+ "sourcesUnchanged": true,
+ "sources": {
+  "index.html": "1c917ec3cf69e72818ae48e408d28563ed2fb6dc6bf48c6aac7a1ad1052753c6",
+  "content-preview.html": "8817305bef2eb91cd3c36c76aedb961bd757d398746bfb3c50817ebdc2c3666f",
+  "welcome.mjs": "e1b31b75b8aa4e9b24bb9b3f646f59467a32b72dbaa016d80f6b1ff738aa9e60",
+  "content-preview.mjs": "efba6b21f19d03c587cfc6023972f32d5f14dd792b8191d0e79fb815c4817819",
+  "entrance.mjs": "d9940372d745df7de1bc0a347548b744fadab9a5eb46dcf467c2def1734fe2d4",
+  "entrance.css": "e5f9b6205d7a5fd0cba85e666eee48539fcbaf74944f94f4f25637cc369bd312",
+  "account-menu.mjs": "b839d5c2c1c44e19d75d6d84fc89ff9cb5b91909b53cb093f7bbea338e9ef105",
+  "account-menu.css": "8f6da743782fb50abad856317bcb3292d8babcd96b51e8b6a13c7ff28d266540",
+  "welcome-panels.html": "8ea7fed7eb308dbd12e8c8222f8359536905c549bda63e98f1e89fc4856a1f0e",
+  "welcome-panels.mjs": "325263f40009464e8ef3e950a6e81ec124412c3d5b4f5c5e7f9e0787bb602074",
+  "archive/pre-codex-audit-fixes-20261015/baseline/index.html": "387cfb9cb300fd29fa1f2f58997f9f1f4fa83c16de8d33650a2b3a95edc27d42",
+  "archive/pre-codex-audit-fixes-20261015/baseline/welcome.mjs": "fa65d17e822b1f1f5587c6af43cea7e713eb12efe48c9e9bb210363477b2ae0a",
+  "archive/pre-codex-audit-fixes-20261015/baseline/entrance.mjs": "1ae3cb3b4407290cefaf998c523726a4ad6b9ac5aaedfb99ee02cb9428205b4d",
+  "archive/pre-codex-audit-fixes-20261015/baseline/entrance.css": "1adda0abf677d2eceea4fbb74619ee5b0416867e65891635ac8f19d873d409ad"
+ },
+ "durationS": 114.1
+}

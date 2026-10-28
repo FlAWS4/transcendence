@@ -1,0 +1,2069 @@
+{
+ "id": "voile-pile-basse",
+ "errors": {
+  "coverage": [],
+  "ends-ordinateur": [],
+  "ends-mobile": [],
+  "ends-petit": [],
+  "ends-commentaires-petit": [],
+  "keyboard": [],
+  "focusCases": [],
+  "runtime": [],
+  "explorer": [],
+  "globe": []
+ },
+ "coverage": [
+  {
+   "vue": "ordinateur",
+   "route": "projects",
+   "theme": "light",
+   "viewport": [
+    1440,
+    900
+   ],
+   "target": {
+    "scroll": 72,
+    "cls": "cp-cover",
+    "tag": "div"
+   },
+   "scrollY": 72,
+   "veil": {
+    "host": "app::before",
+    "height": 173,
+    "top": 727,
+    "opacity": "1",
+    "pointerEvents": "none",
+    "bg": "rgb(247, 250, 250)"
+   },
+   "capsuleTop": 751,
+   "rampAboveCapsule": 24,
+   "contentPixels": 927,
+   "hiddenShare": 1.0,
+   "effectiveCoverage": 0.9999
+  },
+  {
+   "vue": "sombre-mobile",
+   "route": "journal",
+   "theme": "dark",
+   "viewport": [
+    390,
+    844
+   ],
+   "target": {
+    "scroll": 235,
+    "cls": "cp-cover",
+    "tag": "div"
+   },
+   "scrollY": 235,
+   "veil": {
+    "host": "app::before",
+    "height": 158,
+    "top": 686,
+    "opacity": "1",
+    "pointerEvents": "none",
+    "bg": "rgb(27, 27, 27)"
+   },
+   "capsuleTop": 710,
+   "rampAboveCapsule": 24,
+   "contentPixels": 37065,
+   "hiddenShare": 1.0,
+   "effectiveCoverage": 1.0
+  },
+  {
+   "vue": "petit",
+   "route": "projects",
+   "theme": "light",
+   "viewport": [
+    320,
+    640
+   ],
+   "target": {
+    "scroll": 104,
+    "cls": "cp-cover",
+    "tag": "div"
+   },
+   "scrollY": 104,
+   "veil": {
+    "host": "app::before",
+    "height": 158,
+    "top": 482,
+    "opacity": "1",
+    "pointerEvents": "none",
+    "bg": "rgb(247, 250, 250)"
+   },
+   "capsuleTop": 506,
+   "rampAboveCapsule": 24,
+   "contentPixels": 22024,
+   "hiddenShare": 1.0,
+   "effectiveCoverage": 0.9998
+  }
+ ],
+ "keyboard": {
+  "mobile": {
+   "steps": 22,
+   "focusVisibleSteps": 22,
+   "wouldBeHidden": [
+    {
+     "el": "a.cp-card-title-link",
+     "text": "Une porte vers la troisi",
+     "top": 762,
+     "bottom": 812,
+     "scrollY": 0,
+     "veilTop": 686,
+     "veilOpacity": "0",
+     "focusVisible": true,
+     "inSheet": true,
+     "visibleAboveVeil": 0,
+     "inViewport": true,
+     "step": 9
+    },
+    {
+     "el": "a.cp-author-link",
+     "text": "Inès Morel. Chef de proj",
+     "top": 804,
+     "bottom": 844,
+     "scrollY": 36,
+     "veilTop": 686,
+     "veilOpacity": "0",
+     "focusVisible": true,
+     "inSheet": true,
+     "visibleAboveVeil": 0,
+     "inViewport": true,
+     "step": 10
+    },
+    {
+     "el": "a.cp-card-title-link",
+     "text": "Ce qui relie nos message",
+     "top": 726,
+     "bottom": 776,
+     "scrollY": 36,
+     "veilTop": 686,
+     "veilOpacity": "0",
+     "focusVisible": true,
+     "inSheet": true,
+     "visibleAboveVeil": 0,
+     "inViewport": true,
+     "step": 12
+    },
+    {
+     "el": "a.cp-author-link",
+     "text": "Haru Mizuno. Chef de pro",
+     "top": 804,
+     "bottom": 844,
+     "scrollY": 36,
+     "veilTop": 686,
+     "veilOpacity": "0",
+     "focusVisible": true,
+     "inSheet": true,
+     "visibleAboveVeil": 0,
+     "inViewport": true,
+     "step": 13
+    }
+   ],
+   "hiddenUnderOpaqueVeil": [],
+   "veilOpacities": [
+    "0"
+   ],
+   "veilAfterBlur": "1"
+  },
+  "petit": {
+   "steps": 22,
+   "focusVisibleSteps": 22,
+   "wouldBeHidden": [
+    {
+     "el": "a.cp-author-link",
+     "text": "Luiza Costa. Chef de pro",
+     "top": 489,
+     "bottom": 529,
+     "scrollY": 0,
+     "veilTop": 482,
+     "veilOpacity": "0",
+     "focusVisible": true,
+     "inSheet": true,
+     "visibleAboveVeil": 0,
+     "inViewport": true,
+     "step": 2
+    },
+    {
+     "el": "a.cp-author-more",
+     "text": "Voir les 5 auteurs",
+     "top": 489,
+     "bottom": 529,
+     "scrollY": 0,
+     "veilTop": 482,
+     "veilOpacity": "0",
+     "focusVisible": true,
+     "inSheet": true,
+     "visibleAboveVeil": 0,
+     "inViewport": true,
+     "step": 3
+    }
+   ],
+   "hiddenUnderOpaqueVeil": [],
+   "veilOpacities": [
+    "0"
+   ],
+   "veilAfterBlur": "1"
+  },
+  "ordinateur": {
+   "steps": 22,
+   "focusVisibleSteps": 22,
+   "wouldBeHidden": [],
+   "hiddenUnderOpaqueVeil": [],
+   "veilOpacities": [
+    "0"
+   ],
+   "veilAfterBlur": "1"
+  },
+  "apresFocusCapture": {
+   "el": "a.cp-card-title-link",
+   "text": "Une porte vers la troisi",
+   "top": 762,
+   "bottom": 812,
+   "scrollY": 0,
+   "veilTop": 686,
+   "veilOpacity": "0",
+   "focusVisible": true,
+   "inSheet": true,
+   "visibleAboveVeil": 0,
+   "inViewport": true,
+   "step": 9
+  },
+  "avantFocusCapture": {
+   "el": "a.cp-card-title-link",
+   "text": "Une porte vers la troisi",
+   "top": 762,
+   "bottom": 812,
+   "scrollY": 0,
+   "veilTop": 844,
+   "veilOpacity": "1",
+   "focusVisible": true,
+   "inSheet": true,
+   "visibleAboveVeil": 50,
+   "inViewport": true,
+   "step": 9
+  },
+  "mouseClick": {
+   "focusVisible": false,
+   "veil": "1"
+  },
+  "textField": {
+   "field": "project-comment-input",
+   "focusVisible": true,
+   "veil": "0",
+   "afterBlur": "1"
+  },
+  "dockFocus": {
+   "focus": "icon-button random-campus dock-random-toggle",
+   "focusVisible": true,
+   "veil": "1"
+  },
+  "sidebarFocus": {
+   "focus": "Réalisation",
+   "inSidebar": true,
+   "focusVisible": true,
+   "veil": {
+    "host": "content-sheet::after",
+    "height": 173,
+    "top": 727,
+    "opacity": "1",
+    "visibility": "visible",
+    "pointerEvents": "none",
+    "image": "linear-gradient(to top, rgb(247, 250, 250) 0px, rgb(247, 250",
+    "bg": "rgb(247, 250, 250)",
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr",
+    "section": "projects",
+    "toggle": {
+     "x": 594,
+     "y": 751,
+     "w": 200,
+     "h": 44
+    },
+    "die": {
+     "x": 802,
+     "y": 751,
+     "w": 44,
+     "h": 44
+    },
+    "dock": {
+     "x": 402,
+     "y": 808,
+     "w": 636,
+     "h": 60
+    },
+    "scrollY": 0
+   }
+  }
+ },
+ "runtime": {
+  "start": {
+   "host": "app::before",
+   "height": 158,
+   "top": 686,
+   "opacity": "1",
+   "visibility": "visible",
+   "pointerEvents": "none",
+   "image": "linear-gradient(to top, rgb(247, 250, 250) 0px, rgb(247, 250",
+   "bg": "rgb(247, 250, 250)",
+   "theme": "light",
+   "lang": "fr",
+   "dir": "ltr",
+   "section": "projects",
+   "toggle": {
+    "x": 69,
+    "y": 710,
+    "w": 200,
+    "h": 44
+   },
+   "die": {
+    "x": 277,
+    "y": 710,
+    "w": 44,
+    "h": 44
+   },
+   "dock": {
+    "x": 16,
+    "y": 767,
+    "w": 358,
+    "h": 60
+   },
+   "scrollY": 0
+  },
+  "arDark": {
+   "host": "app::before",
+   "height": 158,
+   "top": 686,
+   "opacity": "1",
+   "visibility": "visible",
+   "pointerEvents": "none",
+   "image": "linear-gradient(to top, rgb(27, 27, 27) 0px, rgb(27, 27, 27)",
+   "bg": "rgb(27, 27, 27)",
+   "theme": "dark",
+   "lang": "ar",
+   "dir": "rtl",
+   "section": "projects",
+   "toggle": {
+    "x": 121,
+    "y": 710,
+    "w": 200,
+    "h": 44
+   },
+   "die": {
+    "x": 69,
+    "y": 710,
+    "w": 44,
+    "h": 44
+   },
+   "dock": {
+    "x": 16,
+    "y": 767,
+    "w": 358,
+    "h": 60
+   },
+   "scrollY": 0
+  },
+  "enLight": {
+   "host": "app::before",
+   "height": 158,
+   "top": 686,
+   "opacity": "1",
+   "visibility": "visible",
+   "pointerEvents": "none",
+   "image": "linear-gradient(to top, rgb(247, 250, 250) 0px, rgb(247, 250",
+   "bg": "rgb(247, 250, 250)",
+   "theme": "light",
+   "lang": "en",
+   "dir": "ltr",
+   "section": "projects",
+   "toggle": {
+    "x": 69,
+    "y": 710,
+    "w": 200,
+    "h": 44
+   },
+   "die": {
+    "x": 277,
+    "y": 710,
+    "w": 44,
+    "h": 44
+   },
+   "dock": {
+    "x": 16,
+    "y": 767,
+    "w": 358,
+    "h": 60
+   },
+   "scrollY": 0
+  }
+ },
+ "explorer": {
+  "ordinateur": {
+   "avant": {
+    "host": null,
+    "opacity": null,
+    "visibility": null
+   },
+   "apres": {
+    "host": "app::before",
+    "opacity": "0",
+    "visibility": "hidden"
+   },
+   "identicalPixels": true
+  },
+  "mobile": {
+   "avant": {
+    "host": null,
+    "opacity": null,
+    "visibility": null
+   },
+   "apres": {
+    "host": "app::before",
+    "opacity": "0",
+    "visibility": "hidden"
+   },
+   "identicalPixels": true
+  },
+  "globe": {
+   "avantReady": true,
+   "apresReady": true,
+   "identicalPixels": true,
+   "pixelShare": 0.0
+  }
+ },
+ "ends": [
+  {
+   "vue": "ordinateur",
+   "route": "projects",
+   "viewport": [
+    1440,
+    900
+   ],
+   "veil": {
+    "host": "app::before",
+    "height": 173,
+    "top": 727,
+    "opacity": "1",
+    "visibility": "visible",
+    "pointerEvents": "none",
+    "image": "linear-gradient(to top, rgb(247, 250, 250) 0px, rgb(247, 250",
+    "bg": "rgb(247, 250, 250)",
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr",
+    "section": "projects",
+    "toggle": {
+     "x": 594,
+     "y": 751,
+     "w": 200,
+     "h": 44
+    },
+    "die": {
+     "x": 802,
+     "y": 751,
+     "w": 44,
+     "h": 44
+    },
+    "dock": {
+     "x": 402,
+     "y": 808,
+     "w": 636,
+     "h": 60
+    },
+    "scrollY": 0
+   },
+   "gridApres": [
+    [
+     8,
+     724,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     166,
+     724,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     324,
+     724,
+     "p.cp-summary",
+     true,
+     true
+    ],
+    [
+     483,
+     724,
+     "p.cp-summary",
+     true,
+     true
+    ],
+    [
+     641,
+     724,
+     "p.cp-summary",
+     true,
+     true
+    ],
+    [
+     799,
+     724,
+     "p.cp-summary",
+     true,
+     true
+    ],
+    [
+     957,
+     724,
+     "p.cp-summary",
+     true,
+     true
+    ],
+    [
+     1116,
+     724,
+     "p.cp-summary",
+     true,
+     true
+    ],
+    [
+     1274,
+     724,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     1432,
+     724,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     8,
+     735,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     166,
+     735,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     324,
+     735,
+     "p.cp-summary",
+     true,
+     true
+    ],
+    [
+     483,
+     735,
+     "p.cp-summary",
+     true,
+     true
+    ],
+    [
+     641,
+     735,
+     "p.cp-summary",
+     true,
+     true
+    ],
+    [
+     799,
+     735,
+     "p.cp-summary",
+     true,
+     true
+    ],
+    [
+     957,
+     735,
+     "p.cp-summary",
+     true,
+     true
+    ],
+    [
+     1116,
+     735,
+     "p.cp-summary",
+     true,
+     true
+    ],
+    [
+     1274,
+     735,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     1432,
+     735,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     8,
+     787,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     166,
+     787,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     324,
+     787,
+     "div#content-list.cp-grid",
+     true,
+     true
+    ],
+    [
+     483,
+     787,
+     "div#content-list.cp-grid",
+     true,
+     true
+    ],
+    [
+     957,
+     787,
+     "div#content-list.cp-grid",
+     true,
+     true
+    ],
+    [
+     1116,
+     787,
+     "div#content-list.cp-grid",
+     true,
+     true
+    ],
+    [
+     1274,
+     787,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     1432,
+     787,
+     "main#main",
+     false,
+     false
+    ]
+   ],
+   "apres": {
+    "best": {
+     "bottom": 688.3,
+     "tag": "nav",
+     "text": "Page 1 sur 7123…7"
+    },
+    "scrollY": 1778,
+    "maxScroll": 1778
+   },
+   "gridAvant": [
+    [
+     8,
+     724,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     166,
+     724,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     324,
+     724,
+     "p.cp-summary",
+     true,
+     true
+    ],
+    [
+     483,
+     724,
+     "p.cp-summary",
+     true,
+     true
+    ],
+    [
+     641,
+     724,
+     "p.cp-summary",
+     true,
+     true
+    ],
+    [
+     799,
+     724,
+     "p.cp-summary",
+     true,
+     true
+    ],
+    [
+     957,
+     724,
+     "p.cp-summary",
+     true,
+     true
+    ],
+    [
+     1116,
+     724,
+     "p.cp-summary",
+     true,
+     true
+    ],
+    [
+     1274,
+     724,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     1432,
+     724,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     8,
+     735,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     166,
+     735,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     324,
+     735,
+     "p.cp-summary",
+     true,
+     true
+    ],
+    [
+     483,
+     735,
+     "p.cp-summary",
+     true,
+     true
+    ],
+    [
+     641,
+     735,
+     "p.cp-summary",
+     true,
+     true
+    ],
+    [
+     799,
+     735,
+     "p.cp-summary",
+     true,
+     true
+    ],
+    [
+     957,
+     735,
+     "p.cp-summary",
+     true,
+     true
+    ],
+    [
+     1116,
+     735,
+     "p.cp-summary",
+     true,
+     true
+    ],
+    [
+     1274,
+     735,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     1432,
+     735,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     8,
+     787,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     166,
+     787,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     324,
+     787,
+     "div#content-list.cp-grid",
+     true,
+     true
+    ],
+    [
+     483,
+     787,
+     "div#content-list.cp-grid",
+     true,
+     true
+    ],
+    [
+     957,
+     787,
+     "div#content-list.cp-grid",
+     true,
+     true
+    ],
+    [
+     1116,
+     787,
+     "div#content-list.cp-grid",
+     true,
+     true
+    ],
+    [
+     1274,
+     787,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     1432,
+     787,
+     "main#main",
+     false,
+     false
+    ]
+   ],
+   "avant": {
+    "best": {
+     "bottom": 688.3,
+     "tag": "nav",
+     "text": "Page 1 sur 7123…7"
+    },
+    "scrollY": 1778,
+    "maxScroll": 1778
+   },
+   "sameLayout": true,
+   "margin": 38.7,
+   "hitsIdentical": true,
+   "hitsAboveVeilOnContent": true,
+   "points": 28
+  },
+  {
+   "vue": "mobile",
+   "route": "projects",
+   "viewport": [
+    390,
+    844
+   ],
+   "veil": {
+    "host": "app::before",
+    "height": 158,
+    "top": 686,
+    "opacity": "1",
+    "visibility": "visible",
+    "pointerEvents": "none",
+    "image": "linear-gradient(to top, rgb(247, 250, 250) 0px, rgb(247, 250",
+    "bg": "rgb(247, 250, 250)",
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr",
+    "section": "projects",
+    "toggle": {
+     "x": 69,
+     "y": 710,
+     "w": 200,
+     "h": 44
+    },
+    "die": {
+     "x": 277,
+     "y": 710,
+     "w": 44,
+     "h": 44
+    },
+    "dock": {
+     "x": 16,
+     "y": 767,
+     "w": 358,
+     "h": 60
+    },
+    "scrollY": 0
+   },
+   "gridApres": [
+    [
+     8,
+     683,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     50,
+     683,
+     "path",
+     true,
+     true
+    ],
+    [
+     91,
+     683,
+     "rect",
+     true,
+     true
+    ],
+    [
+     133,
+     683,
+     "path",
+     true,
+     true
+    ],
+    [
+     174,
+     683,
+     "path",
+     true,
+     true
+    ],
+    [
+     216,
+     683,
+     "rect",
+     true,
+     true
+    ],
+    [
+     257,
+     683,
+     "rect",
+     true,
+     true
+    ],
+    [
+     299,
+     683,
+     "rect",
+     true,
+     true
+    ],
+    [
+     340,
+     683,
+     "rect",
+     true,
+     true
+    ],
+    [
+     382,
+     683,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     8,
+     694,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     50,
+     694,
+     "path",
+     true,
+     true
+    ],
+    [
+     91,
+     694,
+     "path",
+     true,
+     true
+    ],
+    [
+     133,
+     694,
+     "path",
+     true,
+     true
+    ],
+    [
+     174,
+     694,
+     "path",
+     true,
+     true
+    ],
+    [
+     216,
+     694,
+     "rect",
+     true,
+     true
+    ],
+    [
+     257,
+     694,
+     "rect",
+     true,
+     true
+    ],
+    [
+     299,
+     694,
+     "rect",
+     true,
+     true
+    ],
+    [
+     340,
+     694,
+     "rect",
+     true,
+     true
+    ],
+    [
+     382,
+     694,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     8,
+     746,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     50,
+     746,
+     "bdi",
+     true,
+     true
+    ],
+    [
+     340,
+     746,
+     "p.cp-meta",
+     true,
+     true
+    ],
+    [
+     382,
+     746,
+     "main#main",
+     false,
+     false
+    ]
+   ],
+   "apres": {
+    "best": {
+     "bottom": 646.5,
+     "tag": "nav",
+     "text": "Page 1 sur 7123…7"
+    },
+    "scrollY": 1822,
+    "maxScroll": 1822
+   },
+   "gridAvant": [
+    [
+     8,
+     683,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     50,
+     683,
+     "path",
+     true,
+     true
+    ],
+    [
+     91,
+     683,
+     "rect",
+     true,
+     true
+    ],
+    [
+     133,
+     683,
+     "path",
+     true,
+     true
+    ],
+    [
+     174,
+     683,
+     "path",
+     true,
+     true
+    ],
+    [
+     216,
+     683,
+     "rect",
+     true,
+     true
+    ],
+    [
+     257,
+     683,
+     "rect",
+     true,
+     true
+    ],
+    [
+     299,
+     683,
+     "rect",
+     true,
+     true
+    ],
+    [
+     340,
+     683,
+     "rect",
+     true,
+     true
+    ],
+    [
+     382,
+     683,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     8,
+     694,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     50,
+     694,
+     "path",
+     true,
+     true
+    ],
+    [
+     91,
+     694,
+     "path",
+     true,
+     true
+    ],
+    [
+     133,
+     694,
+     "path",
+     true,
+     true
+    ],
+    [
+     174,
+     694,
+     "path",
+     true,
+     true
+    ],
+    [
+     216,
+     694,
+     "rect",
+     true,
+     true
+    ],
+    [
+     257,
+     694,
+     "rect",
+     true,
+     true
+    ],
+    [
+     299,
+     694,
+     "rect",
+     true,
+     true
+    ],
+    [
+     340,
+     694,
+     "rect",
+     true,
+     true
+    ],
+    [
+     382,
+     694,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     8,
+     746,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     50,
+     746,
+     "bdi",
+     true,
+     true
+    ],
+    [
+     340,
+     746,
+     "p.cp-meta",
+     true,
+     true
+    ],
+    [
+     382,
+     746,
+     "main#main",
+     false,
+     false
+    ]
+   ],
+   "avant": {
+    "best": {
+     "bottom": 646.5,
+     "tag": "nav",
+     "text": "Page 1 sur 7123…7"
+    },
+    "scrollY": 1822,
+    "maxScroll": 1822
+   },
+   "sameLayout": true,
+   "margin": 39.5,
+   "hitsIdentical": true,
+   "hitsAboveVeilOnContent": true,
+   "points": 24
+  },
+  {
+   "vue": "petit",
+   "route": "projects",
+   "viewport": [
+    320,
+    640
+   ],
+   "veil": {
+    "host": "app::before",
+    "height": 158,
+    "top": 482,
+    "opacity": "1",
+    "visibility": "visible",
+    "pointerEvents": "none",
+    "image": "linear-gradient(to top, rgb(247, 250, 250) 0px, rgb(247, 250",
+    "bg": "rgb(247, 250, 250)",
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr",
+    "section": "projects",
+    "toggle": {
+     "x": 34,
+     "y": 506,
+     "w": 200,
+     "h": 44
+    },
+    "die": {
+     "x": 242,
+     "y": 506,
+     "w": 44,
+     "h": 44
+    },
+    "dock": {
+     "x": 12,
+     "y": 563,
+     "w": 296,
+     "h": 60
+    },
+    "scrollY": 0
+   },
+   "gridApres": [
+    [
+     8,
+     479,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     42,
+     479,
+     "p.cp-authors-label",
+     true,
+     true
+    ],
+    [
+     76,
+     479,
+     "p.cp-authors-label",
+     true,
+     true
+    ],
+    [
+     109,
+     479,
+     "p.cp-authors-label",
+     true,
+     true
+    ],
+    [
+     143,
+     479,
+     "p.cp-authors-label",
+     true,
+     true
+    ],
+    [
+     177,
+     479,
+     "img.cp-person-avatar",
+     true,
+     true
+    ],
+    [
+     211,
+     479,
+     "strong",
+     true,
+     true
+    ],
+    [
+     244,
+     479,
+     "span.cp-author-name",
+     true,
+     true
+    ],
+    [
+     278,
+     479,
+     "a.cp-author-more",
+     true,
+     true
+    ],
+    [
+     312,
+     479,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     8,
+     490,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     42,
+     490,
+     "a.cp-author-link",
+     true,
+     true
+    ],
+    [
+     76,
+     490,
+     "a.cp-author-link",
+     true,
+     true
+    ],
+    [
+     109,
+     490,
+     "ul.cp-author-list",
+     true,
+     true
+    ],
+    [
+     143,
+     490,
+     "li.cp-author-item",
+     true,
+     true
+    ],
+    [
+     177,
+     490,
+     "div.cp-card-copy",
+     true,
+     true
+    ],
+    [
+     211,
+     490,
+     "div.cp-card-copy",
+     true,
+     true
+    ],
+    [
+     244,
+     490,
+     "div.cp-card-copy",
+     true,
+     true
+    ],
+    [
+     278,
+     490,
+     "div.cp-card-copy",
+     true,
+     true
+    ],
+    [
+     312,
+     490,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     8,
+     542,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     312,
+     542,
+     "main#main",
+     false,
+     false
+    ]
+   ],
+   "apres": {
+    "best": {
+     "bottom": 443.1,
+     "tag": "a",
+     "text": ""
+    },
+    "scrollY": 1988,
+    "maxScroll": 1988
+   },
+   "gridAvant": [
+    [
+     8,
+     479,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     42,
+     479,
+     "p.cp-authors-label",
+     true,
+     true
+    ],
+    [
+     76,
+     479,
+     "p.cp-authors-label",
+     true,
+     true
+    ],
+    [
+     109,
+     479,
+     "p.cp-authors-label",
+     true,
+     true
+    ],
+    [
+     143,
+     479,
+     "p.cp-authors-label",
+     true,
+     true
+    ],
+    [
+     177,
+     479,
+     "img.cp-person-avatar",
+     true,
+     true
+    ],
+    [
+     211,
+     479,
+     "strong",
+     true,
+     true
+    ],
+    [
+     244,
+     479,
+     "span.cp-author-name",
+     true,
+     true
+    ],
+    [
+     278,
+     479,
+     "a.cp-author-more",
+     true,
+     true
+    ],
+    [
+     312,
+     479,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     8,
+     490,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     42,
+     490,
+     "a.cp-author-link",
+     true,
+     true
+    ],
+    [
+     76,
+     490,
+     "a.cp-author-link",
+     true,
+     true
+    ],
+    [
+     109,
+     490,
+     "ul.cp-author-list",
+     true,
+     true
+    ],
+    [
+     143,
+     490,
+     "li.cp-author-item",
+     true,
+     true
+    ],
+    [
+     177,
+     490,
+     "div.cp-card-copy",
+     true,
+     true
+    ],
+    [
+     211,
+     490,
+     "div.cp-card-copy",
+     true,
+     true
+    ],
+    [
+     244,
+     490,
+     "div.cp-card-copy",
+     true,
+     true
+    ],
+    [
+     278,
+     490,
+     "div.cp-card-copy",
+     true,
+     true
+    ],
+    [
+     312,
+     490,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     8,
+     542,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     312,
+     542,
+     "main#main",
+     false,
+     false
+    ]
+   ],
+   "avant": {
+    "best": {
+     "bottom": 443.1,
+     "tag": "a",
+     "text": ""
+    },
+    "scrollY": 1988,
+    "maxScroll": 1988
+   },
+   "sameLayout": true,
+   "margin": 38.9,
+   "hitsIdentical": true,
+   "hitsAboveVeilOnContent": true,
+   "points": 22
+  },
+  {
+   "vue": "commentaires-petit",
+   "route": "projects/ft-transcendence-building-together?tab=comments",
+   "viewport": [
+    320,
+    640
+   ],
+   "veil": {
+    "host": "app::before",
+    "height": 158,
+    "top": 482,
+    "opacity": "1",
+    "visibility": "visible",
+    "pointerEvents": "none",
+    "image": "linear-gradient(to top, rgb(247, 250, 250) 0px, rgb(247, 250",
+    "bg": "rgb(247, 250, 250)",
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr",
+    "section": "projects",
+    "toggle": {
+     "x": 34,
+     "y": 506,
+     "w": 200,
+     "h": 44
+    },
+    "die": {
+     "x": 242,
+     "y": 506,
+     "w": 44,
+     "h": 44
+    },
+    "dock": {
+     "x": 12,
+     "y": 563,
+     "w": 296,
+     "h": 60
+    },
+    "scrollY": 0
+   },
+   "gridApres": [
+    [
+     8,
+     479,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     42,
+     479,
+     "path",
+     true,
+     true
+    ],
+    [
+     76,
+     479,
+     "span",
+     true,
+     true
+    ],
+    [
+     109,
+     479,
+     "span",
+     true,
+     true
+    ],
+    [
+     143,
+     479,
+     "span",
+     true,
+     true
+    ],
+    [
+     177,
+     479,
+     "span.cp-project-switch-choice",
+     true,
+     true
+    ],
+    [
+     211,
+     479,
+     "span.cp-project-switch-choice",
+     true,
+     true
+    ],
+    [
+     244,
+     479,
+     "span.cp-project-switch-choice",
+     true,
+     true
+    ],
+    [
+     278,
+     479,
+     "svg.cp-project-icon",
+     true,
+     true
+    ],
+    [
+     312,
+     479,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     8,
+     490,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     42,
+     490,
+     "span.cp-project-switch-choice",
+     true,
+     true
+    ],
+    [
+     76,
+     490,
+     "span",
+     true,
+     true
+    ],
+    [
+     109,
+     490,
+     "span",
+     true,
+     true
+    ],
+    [
+     143,
+     490,
+     "span",
+     true,
+     true
+    ],
+    [
+     177,
+     490,
+     "span.cp-project-switch-choice",
+     true,
+     true
+    ],
+    [
+     211,
+     490,
+     "span.cp-project-switch-choice",
+     true,
+     true
+    ],
+    [
+     244,
+     490,
+     "span.cp-project-switch-choice",
+     true,
+     true
+    ],
+    [
+     278,
+     490,
+     "summary#project-section-picker.cp-project-section-trigger",
+     true,
+     true
+    ],
+    [
+     312,
+     490,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     8,
+     542,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     312,
+     542,
+     "main#main",
+     false,
+     false
+    ]
+   ],
+   "apres": {
+    "best": {
+     "bottom": 420.7,
+     "tag": "p",
+     "text": "Ouvrez la discussion en partageant votre"
+    },
+    "scrollY": 764,
+    "maxScroll": 764
+   },
+   "gridAvant": [
+    [
+     8,
+     479,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     42,
+     479,
+     "path",
+     true,
+     true
+    ],
+    [
+     76,
+     479,
+     "span",
+     true,
+     true
+    ],
+    [
+     109,
+     479,
+     "span",
+     true,
+     true
+    ],
+    [
+     143,
+     479,
+     "span",
+     true,
+     true
+    ],
+    [
+     177,
+     479,
+     "span.cp-project-switch-choice",
+     true,
+     true
+    ],
+    [
+     211,
+     479,
+     "span.cp-project-switch-choice",
+     true,
+     true
+    ],
+    [
+     244,
+     479,
+     "span.cp-project-switch-choice",
+     true,
+     true
+    ],
+    [
+     278,
+     479,
+     "svg.cp-project-icon",
+     true,
+     true
+    ],
+    [
+     312,
+     479,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     8,
+     490,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     42,
+     490,
+     "span.cp-project-switch-choice",
+     true,
+     true
+    ],
+    [
+     76,
+     490,
+     "span",
+     true,
+     true
+    ],
+    [
+     109,
+     490,
+     "span",
+     true,
+     true
+    ],
+    [
+     143,
+     490,
+     "span",
+     true,
+     true
+    ],
+    [
+     177,
+     490,
+     "span.cp-project-switch-choice",
+     true,
+     true
+    ],
+    [
+     211,
+     490,
+     "span.cp-project-switch-choice",
+     true,
+     true
+    ],
+    [
+     244,
+     490,
+     "span.cp-project-switch-choice",
+     true,
+     true
+    ],
+    [
+     278,
+     490,
+     "summary#project-section-picker.cp-project-section-trigger",
+     true,
+     true
+    ],
+    [
+     312,
+     490,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     8,
+     542,
+     "main#main",
+     false,
+     false
+    ],
+    [
+     312,
+     542,
+     "main#main",
+     false,
+     false
+    ]
+   ],
+   "avant": {
+    "best": {
+     "bottom": 420.7,
+     "tag": "p",
+     "text": "Ouvrez la discussion en partageant votre"
+    },
+    "scrollY": 764,
+    "maxScroll": 764
+   },
+   "sameLayout": true,
+   "margin": 61.3,
+   "hitsIdentical": true,
+   "hitsAboveVeilOnContent": true,
+   "points": 22
+  }
+ ],
+ "combined": {
+  "active": [
+   "recherche-repliee",
+   "voile-pile-basse"
+  ],
+  "toggle": {
+   "x": 147,
+   "y": 710,
+   "w": 44,
+   "h": 44
+  },
+  "veilTop": 686,
+  "rampAboveMagnifier": 24,
+  "opacity": "1"
+ },
+ "passed": true
+}

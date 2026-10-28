@@ -1,0 +1,44 @@
+/* Essai recherche-repliee (14 Oct 2026). On content pages the floating search
+   capsule folds into a 44 px round magnifier beside the die; Explorer keeps the
+   capsule. The same toggle still opens the baseline search and grows into its results. */
+
+/* Two 44 px buttons, 8 px apart, centred above the dock: the magnifier keeps the
+   capsule's centre (-26 px), so only the die moves (+104 px -> +26 px). */
+:root[data-theme] .app[data-navigation=dock]:not([data-section=explore]) .dock-shell[data-has-discovery=true] {
+ --dock-discovery-offset:26px;
+}
+:root[data-theme][dir=rtl] .app[data-navigation=dock]:not([data-section=explore]) .dock-shell[data-has-discovery=true] {
+ --dock-discovery-offset:-26px;
+}
+/* The die follows the capsule's own .48 s width morph instead of overlapping it. */
+:root[data-theme] .app[data-navigation=dock]:not([data-section=explore]) .dock-shell[data-has-discovery=true]:not([data-search-open=true]) > .dock-random-toggle {
+ transition:left .48s var(--ease),opacity var(--dock-glass-duration) ease,transform .3s var(--ease),color .2s,border-color var(--dock-glass-duration) ease,background-color var(--dock-glass-duration) ease,box-shadow var(--dock-glass-duration) ease,-webkit-backdrop-filter var(--dock-glass-duration) ease,backdrop-filter var(--dock-glass-duration) ease,visibility 0s;
+}
+
+/* Closed state only: the open state keeps the baseline morph into the results.
+   Icon colour and hover copy the die, so both buttons read as one pair. */
+:root[data-theme] .app[data-navigation=dock]:not([data-section=explore]) .dock-shell[data-has-discovery=true]:not([data-search-open=true]) > .dock-search-toggle {
+ width:44px;
+ padding:0;
+ color:var(--readable-glass-accent,var(--cp-accent));
+}
+:root[data-theme] .app[data-navigation=dock]:not([data-section=explore]) .dock-shell[data-has-discovery=true]:not([data-search-open=true]) > .dock-search-toggle:hover {
+ color:var(--h42-color-text);
+ border-color:var(--dock-glass-selection-edge);
+}
+/* The visible label gives way to the icon; the localized aria-label and title stay. */
+:root[data-theme] .app[data-navigation=dock]:not([data-section=explore]) .dock-shell[data-has-discovery=true] .dock-search-toggle-label {
+ display:none;
+}
+
+/* Magnifier inserted by essai.mjs, shown on content pages only. */
+.dock-search-toggle > svg[data-essai=recherche-repliee] { display:none; }
+:root[data-theme] .app[data-navigation=dock]:not([data-section=explore]) .dock-shell[data-has-discovery=true] > .dock-search-toggle > svg[data-essai=recherche-repliee] {
+ display:block;
+ opacity:1;
+ transition:opacity .16s .24s,transform .4s var(--ease);
+}
+:root[data-theme] .app[data-navigation=dock]:not([data-section=explore]) .dock-shell[data-has-discovery=true][data-search-open=true] > .dock-search-toggle > svg[data-essai=recherche-repliee] {
+ opacity:0;
+ transition-delay:0s;
+}

@@ -1,0 +1,41 @@
+/* Essai deux-colonnes-allegees (14 Oct 2026). At 360 px wide or less, Projects and
+   Chronicles keep two cards per row; only their author row changes: avatar, name on
+   one line with an ellipsis, +N chip, and the lead's crown as a badge on its avatar.
+   Titles keep the baseline 3-line clamp; no colour is changed. */
+@media (max-width:360px) {
+ :root .app[data-navigation=dock] #content-index:is([data-section=projects],[data-section=journal])[data-view=grid] .cp-authors[data-compact=true] .cp-author-link {
+  --essai-avatar:clamp(24px,3.8vw,30px); /* the baseline avatar size of this row */
+  position:relative;
+ }
+ /* One line; the full name stays in the text, the link title and its accessible name. */
+ :root .app[data-navigation=dock] #content-index:is([data-section=projects],[data-section=journal])[data-view=grid] .cp-authors[data-compact=true] .cp-author-name > strong {
+  display:block;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+ }
+ /* The crown leaves the name line for the avatar's top end corner, so it never meets
+    the name or the chip. Its disc is the page colour and the avatar's own line. Sides
+    are physical: the name line is dir=ltr in every language, the link is not. */
+ :root .app[data-navigation=dock] #content-index:is([data-section=projects],[data-section=journal])[data-view=grid] .cp-authors[data-compact=true] .cp-author-responsibility {
+  position:absolute;
+  top:calc(50% - var(--essai-avatar) / 2 - 5px);
+  left:calc(var(--essai-avatar) - 12px);
+  box-sizing:border-box;
+  width:16px;
+  height:16px;
+  border:1px solid var(--cp-line);
+  border-radius:50%;
+  background:var(--h42-color-bg);
+ }
+ :root .app[data-navigation=dock] #content-index:is([data-section=projects],[data-section=journal])[data-view=grid] .cp-authors[data-compact=true] .cp-author-link:dir(rtl) .cp-author-responsibility {
+  left:auto;
+  right:calc(var(--essai-avatar) - 12px);
+ }
+ /* Smaller icon, same drawn line weight as the baseline crown (1.7 at 18 px). */
+ :root .app[data-navigation=dock] #content-index:is([data-section=projects],[data-section=journal])[data-view=grid] .cp-authors[data-compact=true] .cp-author-responsibility > svg {
+  width:11px;
+  height:11px;
+  stroke-width:2.78;
+ }
+}

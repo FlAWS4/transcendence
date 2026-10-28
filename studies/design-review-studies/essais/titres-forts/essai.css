@@ -1,0 +1,35 @@
+@import url(../_partage/fonts.css);
+/* Trial titres-forts (14 Oct 2026): titles carry the hierarchy with weight, not size alone.
+   Detail titles, card titles and the content-page section headings take a real 700 face:
+   Jost Bold from essais/_partage, and for Arabic glyphs Noto Sans Arabic Bold where installed
+   (never a synthesised bold). Sizes, line heights, colours and case are unchanged; hidden list
+   and tab titles stay hidden; header, dialogs, campus sheet and empty states are untouched. */
+:root #app :is(#project-detail,#journal-detail) .cp-project-heading>h1,
+:root #app #profile-detail .cp-profile-heading>h1,
+:root #app .cp-card .cp-card-copy>h2,
+:root #app .cp-profile-related-copy>h3,
+:root #app :is(.cp-project-block,.cp-profile-overview-block,.cp-profile-campus-history,.cp-project-trial-mode)>h3,
+:root #app .cp-profile-milestone-copy>h3,
+:root #app .cp-profile-story>:is(h3,h4){font-weight:700;font-synthesis-weight:none}
+/* Arabic glyphs come from a system fallback that ignores the weight. Naming Noto Sans Arabic
+   (as .arabic-brand does) lets its real Bold face apply where installed; elsewhere they stay regular. */
+:root[lang=ar] #app :is(#project-detail,#journal-detail) .cp-project-heading>h1,
+:root[lang=ar] #app #profile-detail .cp-profile-heading>h1,
+:root[lang=ar] #app .cp-card .cp-card-copy>h2,
+:root[lang=ar] #app .cp-profile-related-copy>h3,
+:root[lang=ar] #app :is(.cp-project-block,.cp-profile-overview-block,.cp-profile-campus-history,.cp-project-trial-mode)>h3,
+:root[lang=ar] #app .cp-profile-milestone-copy>h3,
+:root[lang=ar] #app .cp-profile-story>:is(h3,h4){font-family:var(--h42-font-family),'Noto Sans Arabic',sans-serif}
+/* Bold Jost is about 6 % wider than Medium: each baseline tracking value of these titles is tightened
+   by .02em, which keeps nearly all measured line breaks of the demo titles and keeps "ft_transcendence"
+   whole in the 129 px card columns at 320 px (overflow-wrap would split it). Arabic letters ignore
+   letter-spacing: the card rules, applied in Arabic by the baseline too, only tighten the Latin words
+   there; the other Arabic titles keep their baseline value (0). */
+:root #app .cp-card .cp-card-copy>h2{letter-spacing:-.055em}
+:root #app .cp-profile-related-copy>h3{letter-spacing:-.045em}
+:root:not([lang=ar]) #app #profile-detail .cp-profile-heading>h1{letter-spacing:-.055em}
+:root:not([lang=ar]) #app :is(#project-detail,#journal-detail) .cp-project-heading>h1,
+:root:not([lang=ar]) #app .cp-profile-story>h3{letter-spacing:-.045em}
+:root:not([lang=ar]) #app :is(.cp-project-block,.cp-profile-overview-block)>h3{letter-spacing:-.035em}
+:root:not([lang=ar]) #app :is(.cp-profile-campus-history,.cp-project-trial-mode,.cp-profile-milestone-copy)>h3,
+:root:not([lang=ar]) #app .cp-profile-story>h4{letter-spacing:-.02em}

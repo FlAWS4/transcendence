@@ -1,0 +1,40 @@
+Monde ordinateur (toutes régions du format) :
+  rang (moyen) [îlots puis |Δt|]  variante                 îlots site (manq./trop)   îlots réétal.     |Δt|     px>0,5  côtes (rapport, biais)  frontières  frange
+  1 (2.38) [2]  liseré 0,5 px            457/459 ( 2/ 5)       555/558 ( 3/ 9)  0.01106     30   1.091 +0.0408        0.6716     1.0509
+  2 (2.88) [3]  liseré 0,4 px            457/459 ( 2/ 5)       555/558 ( 3/ 9)  0.01110     30   1.089 +0.0400        0.6716     1.0505
+  3 (2.88) [4]  liseré 0,3 px + points   450/459 ( 9/ 2)       537/558 (21/ 2)  0.01107     35   0.982 -0.0082        0.6716     0.9923
+  4 (3.25) [1]  liseré 0,5 px + points   458/459 ( 1/ 5)       556/558 ( 2/ 9)  0.01111     30   1.093 +0.0419        0.6716     1.052
+  5 (3.62) [5]  liseré 0,3 px            448/459 (11/ 2)       530/558 (28/ 2)  0.01108     35   0.980 -0.0088        0.6716     0.9917
+  6 (6.00) [6]  liseré 0 px              424/459 (35/ 0)       494/558 (64/ 0)  0.01334    116   0.869 -0.0585        0.6716     0.9253
+Monde mobile (toutes régions du format) :
+  rang (moyen) [îlots puis |Δt|]  variante                 îlots site (manq./trop)   îlots réétal.     |Δt|     px>0,5  côtes (rapport, biais)  frontières  frange
+  1 (2.25) [1]  liseré 0,3 px            322/324 ( 2/ 6)       351/354 ( 3/ 7)  0.00803      2   1.111 +0.0423        0.7001     1.0589
+  2 (2.75) [2]  liseré 0,3 px + points   322/324 ( 2/ 6)       351/354 ( 3/ 7)  0.00807      2   1.113 +0.0432        0.7001     1.06
+  3 (3.00) [6]  liseré 0,1 px            301/324 (23/ 0)       329/354 (25/ 0)  0.00788      4   1.001 +0.0003        0.7001     0.9807
+  4 (3.50) [7]  liseré 0 px              300/324 (24/ 0)       327/354 (27/ 0)  0.00786      5   0.993 -0.0025        0.7001     0.979
+  5 (4.88) [3]  liseré 0,4 px            324/324 ( 0/12)       354/354 ( 0/13)  0.00995      9   1.220 +0.0843        0.7001     1.1268
+  6 (5.38) [4]  liseré 0,5 px            324/324 ( 0/12)       354/354 ( 0/13)  0.00997      9   1.222 +0.0852        0.7001     1.1269
+  7 (6.25) [5]  liseré 0,5 px + points   324/324 ( 0/13)       354/354 ( 0/14)  0.01005      9   1.225 +0.0863        0.7001     1.1284
+Comparaisons entre cases d’une région (|Δt| max ; pixels où |Δt| > 0,01, toute la case) :
+  ordi-arctique      liseré 0,4             / liseré 0,5             max 0.1226 px 57
+  ordi-arctique      liseré 0,3             / liseré 0,3 + points    max 0.1278 px 40
+  ordi-arctique      liseré 0,5             / liseré 0,5 + points    max 0.2517 px 38
+  ordi-arctique      liseré 0               / liseré 0,3             max 0.6667 px 2174
+  ordi-arctique      liseré 0,3             / liseré 0,5             max 0.4846 px 2030
+  ordi-atlantique    liseré 0,4             / liseré 0,5             max 0.1251 px 62
+  ordi-atlantique    liseré 0,3             / liseré 0,3 + points    max 0.1251 px 9
+  ordi-atlantique    liseré 0,5             / liseré 0,5 + points    max 0.1251 px 8
+  ordi-atlantique    liseré 0               / liseré 0,3             max 0.5179 px 491
+  ordi-atlantique    liseré 0,3             / liseré 0,5             max 0.4394 px 512
+  mobile-arctique    liseré 0               / liseré 0,1             max 0.1903 px 265
+  mobile-arctique    liseré 0,4             / liseré 0,5             max 0.1354 px 60
+  mobile-arctique    liseré 0,3             / liseré 0,3 + points    max 0.1673 px 59
+  mobile-arctique    liseré 0,5             / liseré 0,5 + points    max 0.2529 px 45
+  mobile-arctique    liseré 0               / liseré 0,3             max 0.6284 px 1918
+  mobile-arctique    liseré 0,3             / liseré 0,5             max 0.4369 px 1836
+  mobile-atlantique  liseré 0               / liseré 0,1             max 0.1251 px 167
+  mobile-atlantique  liseré 0,4             / liseré 0,5             max 0.0920 px 96
+  mobile-atlantique  liseré 0,3             / liseré 0,3 + points    max 0.0626 px 4
+  mobile-atlantique  liseré 0,5             / liseré 0,5 + points    max 0.1864 px 4
+  mobile-atlantique  liseré 0               / liseré 0,3             max 0.2797 px 493
+  mobile-atlantique  liseré 0,3             / liseré 0,5             max 0.3378 px 504

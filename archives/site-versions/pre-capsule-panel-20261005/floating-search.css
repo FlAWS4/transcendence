@@ -1,0 +1,127 @@
+/* Selected search study, 5 October: the floating capsule uses no dock width. */
+:root .app[data-navigation=dock] .dock-shell {
+  width:min(510px,calc(100vw - 32px));
+  gap:0;
+}
+:root .app[data-navigation=dock] .dock-shell[data-search-open=true] {
+  width:min(680px,calc(100vw - 32px));
+}
+:root .app[data-navigation=dock] .dock-shell > .dock-search-toggle {
+  position:absolute;
+  inset:auto;
+  bottom:calc(100% + 13px);
+  left:50%;
+  flex:none;
+  width:200px;
+  max-width:100%;
+  height:44px;
+  min-height:44px;
+  padding:0 20px;
+  border-radius:999px;
+  transform:translateX(-50%);
+  font:inherit;
+  font-size:13px;
+  white-space:nowrap;
+  transition:transform .55s var(--ease),width .55s var(--ease),opacity .18s,background-color var(--dock-glass-duration) ease,color .2s;
+}
+:root .app[data-navigation=dock] .dock-search-toggle-label {
+  min-width:0;overflow:hidden;text-overflow:ellipsis;
+}
+:root .app[data-navigation=dock] .dock-shell[data-search-open=true] > .dock-search-toggle {
+  width:100%;
+  border-width:1px;
+  opacity:0;
+  transform:translate(-50%,calc(var(--dock-height) / 2 + 35px));
+  transition:transform .55s var(--ease),width .55s var(--ease),opacity .18s .2s;
+}
+:root .app[data-navigation=dock] .main-nav.has-dock-search[data-search-open=true] .dock-search-form {
+  transition-delay:.23s,.23s,0s;
+}
+/* Keep the single explicit close action after text has been entered. */
+.dock-search-input::-webkit-search-cancel-button {
+  -webkit-appearance:none;
+  appearance:none;
+  display:none;
+}
+
+/* Labels always stay beside their icons; narrow docks show only the active name. */
+:root .app[data-navigation=dock] .main-nav.has-dock-search { container-type:inline-size; }
+:root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section] {
+  flex-direction:row;
+}
+@media(max-width:700px) {
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section] {
+    gap:8px;font-size:13px;padding-inline:9px;
+  }
+}
+@container(max-width:440px) {
+  /* All buttons keep the same basis. Only their share of the free space moves,
+     so the icon never jumps into an instantly resized, centred button. */
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section] {
+    --dock-compact-item:48px;
+    flex:0 0 var(--dock-compact-item);gap:0;padding-inline:8px;
+    transition:opacity .2s ease,transform .36s var(--ease),color .25s,flex-grow .35s var(--ease);
+    transition-delay:calc(150ms + var(--dock-menu-order,0) * 24ms),calc(150ms + var(--dock-menu-order,0) * 24ms),0s,0s;
+  }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section][aria-current] {
+    flex-grow:1;
+  }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section] > svg {
+    flex:0 0 21px;
+  }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section] > span {
+    min-width:0;max-width:0;margin-inline-start:0;opacity:0;overflow:hidden;text-overflow:ellipsis;font-weight:500;
+    transition:opacity .2s,max-width .35s var(--ease),margin-inline-start .35s var(--ease);
+  }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section][aria-current] > span {
+    max-width:150px;margin-inline-start:8px;opacity:1;
+  }
+  /* Where supported, reveal exactly the translated label width at the same pace. */
+  @supports (interpolate-size:allow-keywords) {
+    :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section] > span {
+      interpolate-size:allow-keywords;inline-size:0;max-width:none;
+      transition:opacity .2s,inline-size .35s var(--ease),margin-inline-start .35s var(--ease);
+    }
+    :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section][aria-current] > span {
+      inline-size:max-content;max-width:none;
+    }
+  }
+
+  /* The controller measures a button once at route change. During this compact
+     flex animation, derive the indicator's final slot instead of retaining that
+     intermediate measurement. Its existing colour and border stay unchanged. */
+  :root .app[data-navigation=dock] .main-nav.has-dock-search .nav-indicator {
+    --dock-compact-item:48px;--dock-indicator-slot:0;
+    width:calc(100cqw - 3 * (var(--dock-compact-item) + 2px)) !important;
+    left:calc(6px + var(--dock-indicator-slot) * (var(--dock-compact-item) + 2px));
+    top:6px;transform:none !important;
+    transition:left .35s var(--ease),width .35s var(--ease),opacity .22s ease;
+  }
+  :root .app[data-navigation=dock][data-section=projects] .main-nav.has-dock-search .nav-indicator { --dock-indicator-slot:1; }
+  :root .app[data-navigation=dock][data-section=people] .main-nav.has-dock-search .nav-indicator { --dock-indicator-slot:2; }
+  :root .app[data-navigation=dock][data-section=journal] .main-nav.has-dock-search .nav-indicator { --dock-indicator-slot:3; }
+  :root[dir=rtl] .app[data-navigation=dock] .main-nav.has-dock-search .nav-indicator {
+    left:calc(6px + (3 - var(--dock-indicator-slot)) * (var(--dock-compact-item) + 2px));
+  }
+}
+@container(max-width:300px) {
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section],
+  :root .app[data-navigation=dock] .main-nav.has-dock-search .nav-indicator { --dock-compact-item:44px; }
+}
+@media(max-width:360px) {
+  :root .app[data-navigation=dock] .dock-shell,
+  :root .app[data-navigation=dock] .dock-shell[data-search-open=true] { width:calc(100vw - 24px); }
+}
+/* The globe controls and the last article lines leave room for the extra row. */
+@media(min-height:521px) {
+  :root .app[data-navigation=dock] .globe-footer { bottom:calc(var(--dock-bottom) + var(--dock-height) + 102px); }
+  :root .app[data-navigation=dock] .prototype-note { bottom:calc(var(--dock-bottom) + var(--dock-height) + 70px); }
+}
+:root .app[data-navigation=dock] .content-sheet {
+  padding-bottom:calc(var(--dock-bottom) + var(--dock-height) + 112px);
+}
+
+/* Short portrait screens keep the vertical globe controls above the capsule. */
+@media(max-height:520px) and (max-width:440px) {
+ :root .app[data-navigation=dock] .globe-footer { bottom:calc(var(--dock-bottom) + var(--dock-height) + 70px); }
+}

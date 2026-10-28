@@ -1,0 +1,190 @@
+{
+ "date": "2026-10-15",
+ "scope": "Files that differ between the archived states 145 (pre-audit-fixes-refinement) and 144 (pre-codex-audit-fixes) and the active state 146.",
+ "vs145": {
+  "comments.mjs": {
+   "changedLines": 8,
+   "lines": [
+    "-  // Like the comment action menus, the sort panel opens upward when it cannot fit below.",
+    "-  const below=Math.max(0,bottomLimit-anchor.bottom-gap),above=Math.max(0,anchor.top-topLimit-gap),down=panel.height<=below||below>=above;",
+    "+  // Like the comment action menus, the sort panel opens upward when it cannot fit below;",
+    "+  // a sort button partly under the floating controls keeps its panel above them.",
+    "+  const upper=menu.sort?Math.min(anchor.top-gap,bottomLimit):anchor.top-gap;",
+    "+  const below=Math.max(0,bottomLimit-anchor.bottom-gap),above=Math.max(0,upper-topLimit),down=panel.height<=below||below>=above;",
+    "-  menu.panel.style.maxHeight=room+'px';menu.panel.style.top=(down?anchor.bottom+gap-wrapper.top:anchor.top-gap-height-wrapper.top)+'px';",
+    "+  menu.panel.style.maxHeight=room+'px';menu.panel.style.top=(down?anchor.bottom+gap-wrapper.top:upper-height-wrapper.top)+'px';"
+   ]
+  },
+  "content-preview.html": {
+   "changedLines": 2,
+   "lines": [
+    "-  <script src=\"content-preview.mjs?v=112\" type=\"module\"></script>",
+    "+  <script src=\"content-preview.mjs?v=113\" type=\"module\"></script>"
+   ]
+  },
+  "content-preview.mjs": {
+   "changedLines": 2,
+   "lines": [
+    "-await import('./welcome.mjs?v=audit-fixes-145');",
+    "+await import('./welcome.mjs?v=audit-fixes-146');"
+   ]
+  },
+  "entrance.mjs": {
+   "changedLines": 10,
+   "lines": [
+    "-const MODIFIER_KEYS=['Alt','AltGraph','CapsLock','Control','Meta','OS','Shift'];",
+    "+const NAVIGATION_KEYS=['Tab','Enter',' '];",
+    "- let languageTimer=0,languageLocked=false,accessHovered=false,keyboardFocus=false;",
+    "+ // Until a pointer is used, focus is assumed to come from a keyboard or an assistive technology.",
+    "+ let languageTimer=0,languageLocked=false,accessHovered=false,keyboardFocus=true;",
+    "-  // Modifier keys and shortcuts (Alt+Tab, Ctrl+C…) are not keyboard navigation.",
+    "+  // Only keys that move or activate focus are keyboard navigation; modifiers,",
+    "+  // shortcuts (Alt+Tab, Ctrl+C…), lock keys or Escape after a pointer action are not.",
+    "-   if(event.ctrlKey||event.metaKey||event.altKey||MODIFIER_KEYS.includes(event.key))return;",
+    "+   if(event.ctrlKey||event.metaKey||event.altKey||!NAVIGATION_KEYS.includes(event.key))return;"
+   ]
+  },
+  "index.html": {
+   "changedLines": 2,
+   "lines": [
+    "-  <script src=\"welcome.mjs?v=audit-fixes-145\" type=\"module\"></script>",
+    "+  <script src=\"welcome.mjs?v=audit-fixes-146\" type=\"module\"></script>"
+   ]
+  },
+  "journal-ui.mjs": {
+   "changedLines": 2,
+   "lines": [
+    "-import {renderSectionedDetail,clearProjectDetail} from './project-ui.mjs?v=40';",
+    "+import {renderSectionedDetail,clearProjectDetail} from './project-ui.mjs?v=41';"
+   ]
+  },
+  "project-ui.mjs": {
+   "changedLines": 2,
+   "lines": [
+    "-import {createComments} from './comments.mjs?v=16';",
+    "+import {createComments} from './comments.mjs?v=17';"
+   ]
+  },
+  "welcome.mjs": {
+   "changedLines": 6,
+   "lines": [
+    "-import {mountEntrance} from './entrance.mjs?v=audit-fixes-14';",
+    "+import {mountEntrance} from './entrance.mjs?v=audit-fixes-15';",
+    "-import {renderProjectDetail,clearProjectDetail,normalizeProjectSection,projectBackDistance} from './project-ui.mjs?v=40';",
+    "-import {renderJournalDetail,clearJournalDetail,normalizeJournalSection,journalBackDistance} from './journal-ui.mjs?v=39';",
+    "+import {renderProjectDetail,clearProjectDetail,normalizeProjectSection,projectBackDistance} from './project-ui.mjs?v=41';",
+    "+import {renderJournalDetail,clearJournalDetail,normalizeJournalSection,journalBackDistance} from './journal-ui.mjs?v=40';"
+   ]
+  }
+ },
+ "vs144": {
+  "comments.mjs": {
+   "changedLines": 10,
+   "lines": [
+    "-  const dock=[doc.querySelector('.dock-search-toggle'),doc.getElementById('main-nav')].map(visibleRect).filter(Boolean);",
+    "+  // On mobile the sort panel would otherwise open under the floating back-to-top button.",
+    "+  const dock=[doc.querySelector('.dock-search-toggle'),doc.getElementById('main-nav'),menu.sort?doc.getElementById('back-to-top'):null].map(visibleRect).filter(Boolean);",
+    "-  const below=Math.max(0,bottomLimit-anchor.bottom-gap),above=Math.max(0,anchor.top-topLimit-gap),down=menu.sort||panel.height<=below||below>=above;",
+    "+  // Like the comment action menus, the sort panel opens upward when it cannot fit below;",
+    "+  // a sort button partly under the floating controls keeps its panel above them.",
+    "+  const upper=menu.sort?Math.min(anchor.top-gap,bottomLimit):anchor.top-gap;",
+    "+  const below=Math.max(0,bottomLimit-anchor.bottom-gap),above=Math.max(0,upper-topLimit),down=panel.height<=below||below>=above;",
+    "-  menu.panel.style.maxHeight=room+'px';menu.panel.style.top=(down?anchor.bottom+gap-wrapper.top:anchor.top-gap-height-wrapper.top)+'px';",
+    "+  menu.panel.style.maxHeight=room+'px';menu.panel.style.top=(down?anchor.bottom+gap-wrapper.top:upper-height-wrapper.top)+'px';"
+   ]
+  },
+  "content-preview.html": {
+   "changedLines": 4,
+   "lines": [
+    "-  <link rel=\"stylesheet\" href=\"entrance.css?v=animated-labels-23\">",
+    "+  <link rel=\"stylesheet\" href=\"entrance.css?v=audit-fixes-24\">",
+    "-  <script src=\"content-preview.mjs?v=111\" type=\"module\"></script>",
+    "+  <script src=\"content-preview.mjs?v=113\" type=\"module\"></script>"
+   ]
+  },
+  "content-preview.mjs": {
+   "changedLines": 2,
+   "lines": [
+    "-await import('./welcome.mjs?v=animated-entry-144');",
+    "+await import('./welcome.mjs?v=audit-fixes-146');"
+   ]
+  },
+  "entrance.css": {
+   "changedLines": 7,
+   "lines": [
+    "-/* Arrival has its own background theme control; the account returns after entry. */",
+    "-body:not([data-entry=welcome]) .account-switcher{display:none}",
+    "+/* Arrival has its own background theme control; the account stays available on",
+    "+   the map error screen, where that control is inactive, and returns after entry. */",
+    "+body:not([data-entry=welcome]):not([data-entry=error]) .account-switcher{display:none}",
+    "+/* On the account glass, Royal Pink text needs the charter ink behind it to reach 4.5:1. */",
+    "+:root[data-theme=dark] [data-account-action=signup]{background:var(--h42-ink)}"
+   ]
+  },
+  "entrance.mjs": {
+   "changedLines": 31,
+   "lines": [
+    "+const NAVIGATION_KEYS=['Tab','Enter',' '];",
+    "-export function mountEntrance({getLocale,getTheme=()=>document.documentElement.dataset.theme,onToggleTheme=()=>{},openDialog,closeDialog,prepare,getGlobeGeometry,onOpen,onEvent=()=>{}}){",
+    "+// Pages opt into the rotating access labels; older compositions sharing this",
+    "+// module keep plain labels in the site language, as before the rotation.",
+    "+export function mountEntrance({getLocale,cycleLabels=false,getTheme=()=>document.documentElement.dataset.theme,onToggleTheme=()=>{},openDialog,closeDialog,prepare,getGlobeGeometry,onOpen,onEvent=()=>{}}){",
+    "- let languageTimer=0,languageLocked=false,accessHovered=false,keyboardFocus=false;",
+    "+ // Until a pointer is used, focus is assumed to come from a keyboard or an assistive technology.",
+    "+ let languageTimer=0,languageLocked=false,accessHovered=false,keyboardFocus=true;",
+    "- const interactionEvents=new AbortController(),labelMotions=new Map();",
+    "+ const interactionEvents=cycleLabels||themeToggle?new AbortController():null,labelMotions=new Map();",
+    "-  return choosing()&&!document.hidden&&!dialog?.open&&!accessHovered&&!access.contains(active)&&!(active===themeToggle&&keyboardFocus);",
+    "+  // Only keyboard focus holds the labels: a closing dialog returns focus to its",
+    "+  // opener after a pointer action too, which must not stop the rotation.",
+    "+  return cycleLabels&&choosing()&&!document.hidden&&!dialog?.open&&!accessHovered&&!((access.contains(active)||active===themeToggle)&&keyboardFocus);",
+    "-   if(siteLocale!==getLocale()){siteLocale=getLocale();displayLocale=siteLocale;}",
+    "-   refreshLabels();",
+    "+   if(cycleLabels){",
+    "+    if(siteLocale!==getLocale()){siteLocale=getLocale();displayLocale=siteLocale;}",
+    "+    refreshLabels();",
+    "+   }else for(const [id,key] of [['entry-login','login'],['entry-guest','guest']]){",
+    "+    const button=document.getElementById(id);button.textContent=t(key);button.setAttribute('lang',getLocale());",
+    "+   }",
+    "-  login.id='entry-login';guest.id='entry-guest';prepareLabel(login,'login');prepareLabel(guest,'guest');access.replaceChildren(login,guest);refresh();",
+    "+  login.id='entry-login';guest.id='entry-guest';if(cycleLabels){prepareLabel(login,'login');prepareLabel(guest,'guest');}access.replaceChildren(login,guest);refresh();"
+   ]
+  },
+  "index.html": {
+   "changedLines": 4,
+   "lines": [
+    "-  <link rel=\"stylesheet\" href=\"entrance.css?v=animated-labels-23\">",
+    "+  <link rel=\"stylesheet\" href=\"entrance.css?v=audit-fixes-24\">",
+    "-  <script src=\"welcome.mjs?v=animated-entry-144\" type=\"module\"></script>",
+    "+  <script src=\"welcome.mjs?v=audit-fixes-146\" type=\"module\"></script>"
+   ]
+  },
+  "journal-ui.mjs": {
+   "changedLines": 2,
+   "lines": [
+    "-import {renderSectionedDetail,clearProjectDetail} from './project-ui.mjs?v=39';",
+    "+import {renderSectionedDetail,clearProjectDetail} from './project-ui.mjs?v=41';"
+   ]
+  },
+  "project-ui.mjs": {
+   "changedLines": 2,
+   "lines": [
+    "-import {createComments} from './comments.mjs?v=15';",
+    "+import {createComments} from './comments.mjs?v=17';"
+   ]
+  },
+  "welcome.mjs": {
+   "changedLines": 8,
+   "lines": [
+    "-import {mountEntrance} from './entrance.mjs?v=animated-labels-13';",
+    "+import {mountEntrance} from './entrance.mjs?v=audit-fixes-15';",
+    "-import {renderProjectDetail,clearProjectDetail,normalizeProjectSection,projectBackDistance} from './project-ui.mjs?v=39';",
+    "-import {renderJournalDetail,clearJournalDetail,normalizeJournalSection,journalBackDistance} from './journal-ui.mjs?v=38';",
+    "+import {renderProjectDetail,clearProjectDetail,normalizeProjectSection,projectBackDistance} from './project-ui.mjs?v=41';",
+    "+import {renderJournalDetail,clearJournalDetail,normalizeJournalSection,journalBackDistance} from './journal-ui.mjs?v=40';",
+    "- entrance=mountEntrance({getLocale:()=>locale,getTheme:()=>themePreferences.snapshot().theme,onToggleTheme:()=>themePreferences.setPreference(dark?'light':'dark'),openDialog,closeDialog,prepare:prepareGlobe,getGlobeGeometry:()=>globe?.getWorldScreenGeometry?.(),",
+    "+ entrance=mountEntrance({getLocale:()=>locale,cycleLabels:true,getTheme:()=>themePreferences.snapshot().theme,onToggleTheme:()=>themePreferences.setPreference(dark?'light':'dark'),openDialog,closeDialog,prepare:prepareGlobe,getGlobeGeometry:()=>globe?.getWorldScreenGeometry?.(),"
+   ]
+  }
+ }
+}

@@ -1,0 +1,924 @@
+{
+  "passed": true,
+  "input": "Chrome CDP trusted touch, mobile 390×844 emulation, reduced motion",
+  "cases": [
+    {
+      "case": "ready-touch-mobile",
+      "result": {
+        "controls": {
+          "variant": "3",
+          "open": false,
+          "pinned": false,
+          "available": true,
+          "reason": "",
+          "hold": false
+        },
+        "map": {
+          "level": "world",
+          "country": null,
+          "campus": null,
+          "countryName": null,
+          "campusName": null,
+          "worldRender": {
+            "phase": "ready",
+            "zoom": 1.3726826431730412
+          },
+          "inFlight": false,
+          "flightStage": null,
+          "center": [
+            6,
+            18
+          ],
+          "zoom": 1.3726826431730412,
+          "minZoom": 1.3726826431730412,
+          "maxZoom": 3.172682643173041,
+          "campusDistanceKm": null,
+          "detailVisible": false,
+          "detail": {
+            "phase": "local",
+            "opacityTarget": 0
+          },
+          "campusRender": {
+            "mode": "progressive",
+            "phase": "local",
+            "fullyPrepared": false
+          },
+          "campusPreload": {
+            "phase": "idle",
+            "campusId": null,
+            "radiusKm": 3,
+            "total": 0,
+            "completed": 0,
+            "available": 0,
+            "failed": 0,
+            "ready": false,
+            "cacheBytes": 0,
+            "cacheLimitBytes": 50331648,
+            "cacheTiles": 0,
+            "networkTiles": 0,
+            "networkBytes": 0,
+            "rendererRequests": 0,
+            "rendererCacheHits": 0,
+            "sharedRequests": 0
+          },
+          "randomCampus": {
+            "phase": "loading",
+            "campusId": "rio",
+            "radiusKm": 5,
+            "total": 26,
+            "completed": 0,
+            "available": 0,
+            "failed": 0,
+            "ready": false,
+            "zoom": 14,
+            "cacheBytes": 0,
+            "cacheLimitBytes": 50331648,
+            "cacheTiles": 0,
+            "networkTiles": 0,
+            "networkBytes": 0,
+            "rendererRequests": 0,
+            "rendererCacheHits": 0,
+            "sharedRequests": 0,
+            "nextCampusId": "rio"
+          },
+          "flightDuration": null,
+          "detailOpacity": 0,
+          "renderedDetail": {
+            "paints": {
+              "h42-land": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-water": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-road-major": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-building-relief": {
+                "opacity": null,
+                "hidden": true
+              }
+            },
+            "evaluatedZoom": 1.3726826431730412,
+            "covered": false,
+            "canvasVisibility": "visible"
+          }
+        },
+        "active": ""
+      }
+    },
+    {
+      "case": "held-touch-observation",
+      "result": {
+        "controls": {
+          "variant": "3",
+          "open": true,
+          "pinned": false,
+          "available": true,
+          "reason": "hold",
+          "hold": true
+        },
+        "map": {
+          "level": "world",
+          "country": null,
+          "campus": null,
+          "countryName": null,
+          "campusName": null,
+          "worldRender": {
+            "phase": "ready",
+            "zoom": 1.3726826431730412
+          },
+          "inFlight": false,
+          "flightStage": null,
+          "center": [
+            6,
+            18
+          ],
+          "zoom": 1.3726826431730412,
+          "minZoom": 1.3726826431730412,
+          "maxZoom": 3.172682643173041,
+          "campusDistanceKm": null,
+          "detailVisible": false,
+          "detail": {
+            "phase": "local",
+            "opacityTarget": 0
+          },
+          "campusRender": {
+            "mode": "progressive",
+            "phase": "local",
+            "fullyPrepared": false
+          },
+          "campusPreload": {
+            "phase": "idle",
+            "campusId": null,
+            "radiusKm": 3,
+            "total": 0,
+            "completed": 0,
+            "available": 0,
+            "failed": 0,
+            "ready": false,
+            "cacheBytes": 823945,
+            "cacheLimitBytes": 50331648,
+            "cacheTiles": 2,
+            "networkTiles": 2,
+            "networkBytes": 823945,
+            "rendererRequests": 0,
+            "rendererCacheHits": 0,
+            "sharedRequests": 0
+          },
+          "randomCampus": {
+            "phase": "loading",
+            "campusId": "rio",
+            "radiusKm": 5,
+            "total": 26,
+            "completed": 2,
+            "available": 2,
+            "failed": 0,
+            "ready": false,
+            "zoom": 14,
+            "cacheBytes": 823945,
+            "cacheLimitBytes": 50331648,
+            "cacheTiles": 2,
+            "networkTiles": 2,
+            "networkBytes": 823945,
+            "rendererRequests": 0,
+            "rendererCacheHits": 0,
+            "sharedRequests": 0,
+            "nextCampusId": "rio"
+          },
+          "flightDuration": null,
+          "detailOpacity": 0,
+          "renderedDetail": {
+            "paints": {
+              "h42-land": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-water": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-road-major": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-building-relief": {
+                "opacity": null,
+                "hidden": true
+              }
+            },
+            "evaluatedZoom": 1.3726826431730412,
+            "covered": false,
+            "canvasVisibility": "visible"
+          }
+        },
+        "active": ""
+      }
+    },
+    {
+      "case": "touch-release-without-action",
+      "result": {
+        "controls": {
+          "variant": "3",
+          "open": true,
+          "pinned": false,
+          "available": true,
+          "reason": "manual",
+          "hold": false
+        },
+        "map": {
+          "level": "world",
+          "country": null,
+          "campus": null,
+          "countryName": null,
+          "campusName": null,
+          "worldRender": {
+            "phase": "ready",
+            "zoom": 1.3726826431730412
+          },
+          "inFlight": false,
+          "flightStage": null,
+          "center": [
+            6,
+            18
+          ],
+          "zoom": 1.3726826431730412,
+          "minZoom": 1.3726826431730412,
+          "maxZoom": 3.172682643173041,
+          "campusDistanceKm": null,
+          "detailVisible": false,
+          "detail": {
+            "phase": "local",
+            "opacityTarget": 0
+          },
+          "campusRender": {
+            "mode": "progressive",
+            "phase": "local",
+            "fullyPrepared": false
+          },
+          "campusPreload": {
+            "phase": "idle",
+            "campusId": null,
+            "radiusKm": 3,
+            "total": 0,
+            "completed": 0,
+            "available": 0,
+            "failed": 0,
+            "ready": false,
+            "cacheBytes": 823945,
+            "cacheLimitBytes": 50331648,
+            "cacheTiles": 2,
+            "networkTiles": 2,
+            "networkBytes": 823945,
+            "rendererRequests": 0,
+            "rendererCacheHits": 0,
+            "sharedRequests": 0
+          },
+          "randomCampus": {
+            "phase": "loading",
+            "campusId": "rio",
+            "radiusKm": 5,
+            "total": 26,
+            "completed": 2,
+            "available": 2,
+            "failed": 0,
+            "ready": false,
+            "zoom": 14,
+            "cacheBytes": 823945,
+            "cacheLimitBytes": 50331648,
+            "cacheTiles": 2,
+            "networkTiles": 2,
+            "networkBytes": 823945,
+            "rendererRequests": 0,
+            "rendererCacheHits": 0,
+            "sharedRequests": 0,
+            "nextCampusId": "rio"
+          },
+          "flightDuration": null,
+          "detailOpacity": 0,
+          "renderedDetail": {
+            "paints": {
+              "h42-land": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-water": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-road-major": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-building-relief": {
+                "opacity": null,
+                "hidden": true
+              }
+            },
+            "evaluatedZoom": 1.3726826431730412,
+            "covered": false,
+            "canvasVisibility": "visible"
+          }
+        },
+        "active": ""
+      }
+    },
+    {
+      "case": "repeated-hold-observation",
+      "result": {
+        "controls": {
+          "variant": "3",
+          "open": true,
+          "pinned": false,
+          "available": true,
+          "reason": "hold",
+          "hold": true
+        },
+        "map": {
+          "level": "world",
+          "country": null,
+          "campus": null,
+          "countryName": null,
+          "campusName": null,
+          "worldRender": {
+            "phase": "ready",
+            "zoom": 1.3726826431730412
+          },
+          "inFlight": false,
+          "flightStage": null,
+          "center": [
+            6,
+            18
+          ],
+          "zoom": 1.3726826431730412,
+          "minZoom": 1.3726826431730412,
+          "maxZoom": 3.172682643173041,
+          "campusDistanceKm": null,
+          "detailVisible": false,
+          "detail": {
+            "phase": "local",
+            "opacityTarget": 0
+          },
+          "campusRender": {
+            "mode": "progressive",
+            "phase": "local",
+            "fullyPrepared": false
+          },
+          "campusPreload": {
+            "phase": "idle",
+            "campusId": null,
+            "radiusKm": 3,
+            "total": 0,
+            "completed": 0,
+            "available": 0,
+            "failed": 0,
+            "ready": false,
+            "cacheBytes": 1992827,
+            "cacheLimitBytes": 50331648,
+            "cacheTiles": 8,
+            "networkTiles": 8,
+            "networkBytes": 1992827,
+            "rendererRequests": 0,
+            "rendererCacheHits": 0,
+            "sharedRequests": 0
+          },
+          "randomCampus": {
+            "phase": "loading",
+            "campusId": "rio",
+            "radiusKm": 5,
+            "total": 26,
+            "completed": 8,
+            "available": 8,
+            "failed": 0,
+            "ready": false,
+            "zoom": 14,
+            "cacheBytes": 1992827,
+            "cacheLimitBytes": 50331648,
+            "cacheTiles": 8,
+            "networkTiles": 8,
+            "networkBytes": 1992827,
+            "rendererRequests": 0,
+            "rendererCacheHits": 0,
+            "sharedRequests": 0,
+            "nextCampusId": "rio"
+          },
+          "flightDuration": null,
+          "detailOpacity": 0,
+          "renderedDetail": {
+            "paints": {
+              "h42-land": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-water": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-road-major": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-building-relief": {
+                "opacity": null,
+                "hidden": true
+              }
+            },
+            "evaluatedZoom": 1.3726826431730412,
+            "covered": false,
+            "canvasVisibility": "visible"
+          }
+        },
+        "active": "study-trigger"
+      }
+    },
+    {
+      "case": "repeated-touch-hold",
+      "result": true
+    },
+    {
+      "case": "ordinary-touch-drag-rotates",
+      "result": {
+        "before": [
+          6,
+          18
+        ],
+        "after": [
+          -15.722203434166886,
+          18
+        ]
+      }
+    },
+    {
+      "case": "second-touch-before-threshold-cancels",
+      "result": {
+        "controls": {
+          "variant": "3",
+          "open": false,
+          "pinned": false,
+          "available": true,
+          "reason": "manual",
+          "hold": false
+        },
+        "map": {
+          "level": "world",
+          "country": null,
+          "campus": null,
+          "countryName": null,
+          "campusName": null,
+          "worldRender": {
+            "phase": "ready",
+            "zoom": 1.3726826431730412
+          },
+          "inFlight": false,
+          "flightStage": null,
+          "center": [
+            -15.722203434166886,
+            18
+          ],
+          "zoom": 1.3726826431730412,
+          "minZoom": 1.3726826431730412,
+          "maxZoom": 3.172682643173041,
+          "campusDistanceKm": null,
+          "detailVisible": false,
+          "detail": {
+            "phase": "local",
+            "opacityTarget": 0
+          },
+          "campusRender": {
+            "mode": "progressive",
+            "phase": "local",
+            "fullyPrepared": false
+          },
+          "campusPreload": {
+            "phase": "idle",
+            "campusId": null,
+            "radiusKm": 3,
+            "total": 0,
+            "completed": 0,
+            "available": 0,
+            "failed": 0,
+            "ready": false,
+            "cacheBytes": 3180741,
+            "cacheLimitBytes": 50331648,
+            "cacheTiles": 16,
+            "networkTiles": 16,
+            "networkBytes": 3180741,
+            "rendererRequests": 0,
+            "rendererCacheHits": 0,
+            "sharedRequests": 0
+          },
+          "randomCampus": {
+            "phase": "loading",
+            "campusId": "rio",
+            "radiusKm": 5,
+            "total": 26,
+            "completed": 16,
+            "available": 16,
+            "failed": 0,
+            "ready": false,
+            "zoom": 14,
+            "cacheBytes": 3180741,
+            "cacheLimitBytes": 50331648,
+            "cacheTiles": 16,
+            "networkTiles": 16,
+            "networkBytes": 3180741,
+            "rendererRequests": 0,
+            "rendererCacheHits": 0,
+            "sharedRequests": 0,
+            "nextCampusId": "rio"
+          },
+          "flightDuration": null,
+          "detailOpacity": 0,
+          "renderedDetail": {
+            "paints": {
+              "h42-land": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-water": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-road-major": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-building-relief": {
+                "opacity": null,
+                "hidden": true
+              }
+            },
+            "evaluatedZoom": 1.3726826431730412,
+            "covered": false,
+            "canvasVisibility": "visible"
+          }
+        },
+        "active": "study-trigger"
+      }
+    },
+    {
+      "case": "second-touch-after-open-cancels",
+      "result": {
+        "controls": {
+          "variant": "3",
+          "open": false,
+          "pinned": false,
+          "available": true,
+          "reason": "hold",
+          "hold": false
+        },
+        "map": {
+          "level": "world",
+          "country": null,
+          "campus": null,
+          "countryName": null,
+          "campusName": null,
+          "worldRender": {
+            "phase": "ready",
+            "zoom": 1.3726826431730412
+          },
+          "inFlight": false,
+          "flightStage": null,
+          "center": [
+            -16.618130325709217,
+            16.684624113933058
+          ],
+          "zoom": 1.6054184046945574,
+          "minZoom": 1.3830259833581093,
+          "maxZoom": 3.1830259833581094,
+          "campusDistanceKm": null,
+          "detailVisible": false,
+          "detail": {
+            "phase": "local",
+            "opacityTarget": 0
+          },
+          "campusRender": {
+            "mode": "progressive",
+            "phase": "local",
+            "fullyPrepared": false
+          },
+          "campusPreload": {
+            "phase": "idle",
+            "campusId": null,
+            "radiusKm": 3,
+            "total": 0,
+            "completed": 0,
+            "available": 0,
+            "failed": 0,
+            "ready": false,
+            "cacheBytes": 3364703,
+            "cacheLimitBytes": 50331648,
+            "cacheTiles": 18,
+            "networkTiles": 18,
+            "networkBytes": 3364703,
+            "rendererRequests": 0,
+            "rendererCacheHits": 0,
+            "sharedRequests": 0
+          },
+          "randomCampus": {
+            "phase": "loading",
+            "campusId": "rio",
+            "radiusKm": 5,
+            "total": 26,
+            "completed": 18,
+            "available": 18,
+            "failed": 0,
+            "ready": false,
+            "zoom": 14,
+            "cacheBytes": 3364703,
+            "cacheLimitBytes": 50331648,
+            "cacheTiles": 18,
+            "networkTiles": 18,
+            "networkBytes": 3364703,
+            "rendererRequests": 0,
+            "rendererCacheHits": 0,
+            "sharedRequests": 0,
+            "nextCampusId": "rio"
+          },
+          "flightDuration": null,
+          "detailOpacity": 0,
+          "renderedDetail": {
+            "paints": {
+              "h42-land": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-water": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-road-major": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-building-relief": {
+                "opacity": null,
+                "hidden": true
+              }
+            },
+            "evaluatedZoom": 1.6054184046945574,
+            "covered": false,
+            "canvasVisibility": "visible"
+          }
+        },
+        "active": "study-trigger"
+      }
+    },
+    {
+      "case": "touch-single-click-alternative-zooms",
+      "result": true
+    },
+    {
+      "case": "keyboard-alternative-and-return-focus",
+      "result": true
+    },
+    {
+      "case": "gallery-back-press-remains-functional",
+      "result": {
+        "sameInstance": true,
+        "lifecycle": [
+          {
+            "type": "pageshow",
+            "persisted": false
+          },
+          {
+            "type": "pagehide",
+            "persisted": true
+          },
+          {
+            "type": "pageshow",
+            "persisted": true
+          }
+        ],
+        "state": {
+          "controls": {
+            "variant": "3",
+            "open": false,
+            "pinned": false,
+            "available": true,
+            "reason": "manual",
+            "hold": false
+          },
+          "map": {
+            "level": "world",
+            "country": null,
+            "campus": null,
+            "countryName": null,
+            "campusName": null,
+            "worldRender": {
+              "phase": "ready",
+              "zoom": 1.3726826431730412
+            },
+            "inFlight": false,
+            "flightStage": null,
+            "center": [
+              6,
+              18
+            ],
+            "zoom": 1.3726826431730412,
+            "minZoom": 1.3726826431730412,
+            "maxZoom": 3.172682643173041,
+            "campusDistanceKm": null,
+            "detailVisible": false,
+            "detail": {
+              "phase": "local",
+              "opacityTarget": 0
+            },
+            "campusRender": {
+              "mode": "progressive",
+              "phase": "local",
+              "fullyPrepared": false
+            },
+            "campusPreload": {
+              "phase": "idle",
+              "campusId": null,
+              "radiusKm": 3,
+              "total": 0,
+              "completed": 0,
+              "available": 0,
+              "failed": 0,
+              "ready": false,
+              "cacheBytes": 3392915,
+              "cacheLimitBytes": 50331648,
+              "cacheTiles": 19,
+              "networkTiles": 19,
+              "networkBytes": 3392915,
+              "rendererRequests": 0,
+              "rendererCacheHits": 0,
+              "sharedRequests": 0
+            },
+            "randomCampus": {
+              "phase": "loading",
+              "campusId": "rio",
+              "radiusKm": 5,
+              "total": 26,
+              "completed": 19,
+              "available": 19,
+              "failed": 0,
+              "ready": false,
+              "zoom": 14,
+              "cacheBytes": 3392915,
+              "cacheLimitBytes": 50331648,
+              "cacheTiles": 19,
+              "networkTiles": 19,
+              "networkBytes": 3392915,
+              "rendererRequests": 0,
+              "rendererCacheHits": 0,
+              "sharedRequests": 0,
+              "nextCampusId": "rio"
+            },
+            "flightDuration": null,
+            "detailOpacity": 0,
+            "renderedDetail": {
+              "paints": {
+                "h42-land": {
+                  "opacity": null,
+                  "hidden": true
+                },
+                "h42-water": {
+                  "opacity": null,
+                  "hidden": true
+                },
+                "h42-road-major": {
+                  "opacity": null,
+                  "hidden": true
+                },
+                "h42-building-relief": {
+                  "opacity": null,
+                  "hidden": true
+                }
+              },
+              "evaluatedZoom": 1.3726826431730412,
+              "covered": false,
+              "canvasVisibility": "visible"
+            }
+          },
+          "active": "study-trigger"
+        }
+      }
+    },
+    {
+      "case": "trusted-touch-events",
+      "result": [
+        {
+          "type": "pointerdown",
+          "pointerType": "touch",
+          "id": 2,
+          "x": 100,
+          "y": 410,
+          "target": "maplibregl-canvas",
+          "trusted": true,
+          "time": 8239
+        },
+        {
+          "type": "pointerdown",
+          "pointerType": "touch",
+          "id": 3,
+          "x": 100,
+          "y": 410,
+          "target": "maplibregl-canvas",
+          "trusted": true,
+          "time": 9492
+        },
+        {
+          "type": "pointerdown",
+          "pointerType": "touch",
+          "id": 4,
+          "x": 100,
+          "y": 410,
+          "target": "maplibregl-canvas",
+          "trusted": true,
+          "time": 10471
+        },
+        {
+          "type": "pointerdown",
+          "pointerType": "touch",
+          "id": 5,
+          "x": 100,
+          "y": 410,
+          "target": "maplibregl-canvas",
+          "trusted": true,
+          "time": 13912
+        },
+        {
+          "type": "pointerdown",
+          "pointerType": "touch",
+          "id": 6,
+          "x": 220,
+          "y": 410,
+          "target": "maplibregl-canvas",
+          "trusted": true,
+          "time": 14064
+        },
+        {
+          "type": "pointerdown",
+          "pointerType": "touch",
+          "id": 7,
+          "x": 100,
+          "y": 410,
+          "target": "maplibregl-canvas",
+          "trusted": true,
+          "time": 16978
+        },
+        {
+          "type": "pointerdown",
+          "pointerType": "touch",
+          "id": 8,
+          "x": 225,
+          "y": 410,
+          "target": "globe-controls study-zoom",
+          "trusted": true,
+          "time": 18105
+        },
+        {
+          "type": "pointerdown",
+          "pointerType": "touch",
+          "id": 9,
+          "x": 301,
+          "y": 498.546875,
+          "target": "study-trigger-label",
+          "trusted": true,
+          "time": 18675
+        },
+        {
+          "type": "pointerdown",
+          "pointerType": "touch",
+          "id": 10,
+          "x": 335,
+          "y": 320,
+          "target": {},
+          "trusted": true,
+          "time": 18938
+        },
+        {
+          "type": "pointerdown",
+          "pointerType": "touch",
+          "id": 11,
+          "x": 100,
+          "y": 410,
+          "target": "maplibregl-canvas",
+          "trusted": true,
+          "time": 23030
+        },
+        {
+          "type": "pointerdown",
+          "pointerType": "touch",
+          "id": 11,
+          "x": 100,
+          "y": 410,
+          "target": "maplibregl-canvas",
+          "trusted": true,
+          "time": 24430
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "study.mjs": "62b0681938fada3eb538b3a0311366ae0dab844b2b42453687a2ee3d484983a1",
+    "study.css": "7e0b82cb75831de8e6073dab932c2b58bf7e7c3b896fc6cdc1985d1f84cb85c7",
+    "press-gesture.mjs": "8cd4604022dee043f760d9677f520994d8a7ef20bb296f12b352469c7065044c"
+  }
+}

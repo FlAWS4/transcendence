@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-13",
+  "scenario": "Pause globe module request, use selectors before map ready, release request",
+  "initial_sha256": "9e5450ff9da82bb36bbc90ecba49165aef1495a3e5e404f7e002c50286d5bfdc",
+  "results": [
+    {
+      "case": "module-held",
+      "result": {
+        "url": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/integrated-globe.mjs?v=32",
+        "state": {
+          "hash": "#projects",
+          "scope": "Monde",
+          "disabled": false,
+          "count": 5,
+          "phase": "downloaded",
+          "canvas": false,
+          "zoomDisabled": true,
+          "errors": [],
+          "loading": ""
+        }
+      }
+    },
+    {
+      "case": "select-tokyo-before-globe-response",
+      "result": {
+        "hash": "#projects?country=JPN&campus=tokyo",
+        "scope": "42 Tokyo",
+        "disabled": false,
+        "count": 2,
+        "phase": "prepared",
+        "canvas": false,
+        "zoomDisabled": true,
+        "errors": [],
+        "loading": ""
+      }
+    },
+    {
+      "case": "globe-released",
+      "result": {
+        "ready": true,
+        "state": {
+          "hash": "#projects?country=JPN&campus=tokyo",
+          "scope": "42 Tokyo",
+          "disabled": false,
+          "count": 2,
+          "phase": "ready",
+          "canvas": true,
+          "zoomDisabled": true,
+          "errors": [],
+          "loading": "Le monde se prépare…"
+        }
+      }
+    },
+    {
+      "case": "restored-map-explorer",
+      "result": {
+        "hash": "#explore?country=JPN&campus=tokyo",
+        "scope": "42 Tokyo",
+        "disabled": false,
+        "count": 2,
+        "phase": "ready",
+        "canvas": true,
+        "zoomDisabled": true,
+        "errors": [],
+        "loading": "Le monde se prépare…"
+      }
+    }
+  ],
+  "filter_preserved": true,
+  "real_globe_ready": true,
+  "passed": true,
+  "final_sha256": "9e5450ff9da82bb36bbc90ecba49165aef1495a3e5e404f7e002c50286d5bfdc"
+}

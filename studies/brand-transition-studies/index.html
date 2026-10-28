@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Dix propositions interactives pour la transition HORIZON et AWARDS, séparées du prototype actif.">
+  <title>Horizon — Dix transitions de marque</title>
+  <link rel="preload" href="../../shared/assets/jost-1.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="../../shared/brand/tokens.css">
+  <link rel="stylesheet" href="../../shared/assets/jost.css">
+  <link rel="stylesheet" href="styles.css?v=2">
+  <script type="module" src="studies.mjs?v=3"></script>
+</head>
+<body>
+  <header class="page-header">
+    <div class="header-top">
+      <a class="back-link" href="../research-archive/index.html">← Les explorations</a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false">Passer en sombre</button>
+    </div>
+    <p class="eyebrow">42 Horizon · Recherche de mouvement</p>
+    <h1>HORIZON <span>↔</span> AWARDS</h1>
+    <p class="introduction">Dix façons de faire évoluer le nom dans l’en-tête.<br>Choisis AWARDS, puis HORIZON pour regarder le retour.</p>
+    <p class="collection-links"><a href="#study-pivot">Voir les six nouvelles pistes · 05 à 10 ↓</a><a href="archive/initial-20261008/index.html">Les quatre premières, dans leur état initial ↗</a></p>
+  </header>
+  <main>
+    <section class="comparison-controls" aria-label="Comparer les transitions">
+      <div class="all-directions">
+        <span>Comparer ensemble</span>
+        <button type="button" data-all-target="AWARDS">Vers AWARDS <span aria-hidden="true">→</span></button>
+        <button type="button" data-all-target="HORIZON"><span aria-hidden="true">←</span> Vers HORIZON</button>
+      </div>
+      <label class="speed-control" for="speed">Lecture
+        <select id="speed"><option value="1">Normale</option><option value="0.5">Ralentie · ×0,5</option><option value="1.5">Rapide · ×1,5</option></select>
+      </label>
+    </section>
+    <div class="studies" id="studies"></div>
+    <p class="motion-note" id="motion-note" hidden>La réduction des animations est activée. Les boutons changent le nom directement ; les curseurs permettent d’examiner les étapes.</p>
+  </main>
+  <footer class="page-footer"><span>Dix propositions à comparer.</span><span>La piste 08 est choisie pour l’en-tête. <a href="../../archives/site-versions/pre-cascade-wordmark-20261008/preview.html">Revoir l’ancien rendu</a></span></footer>
+  <p class="sr-only" id="announcement" role="status" aria-live="polite"></p>
+  <template id="study-template">
+    <section class="study">
+      <div class="stage">
+        <div class="stage-meta"><span class="stage-kicker">Le nom dans l’en-tête</span><span class="duration"></span></div>
+        <div class="brand-demo" role="img" aria-label="42 Horizon">
+          <img class="brand-symbol" src="../../shared/brand/logo-42.svg" alt="" width="58" height="41">
+          <div class="word-frame" aria-hidden="true"><span class="word-layer word-source"></span><span class="word-layer word-target"></span><span class="shared-letter">R</span><span class="sweep-light"></span></div>
+        </div>
+        <p class="stage-route">HORIZON <span aria-hidden="true">→</span> AWARDS</p>
+      </div>
+      <div class="study-body">
+        <div class="study-title"><span class="number"></span><h2></h2></div>
+        <p class="study-description"></p>
+        <div class="local-controls">
+          <div class="destinations" role="group"><button type="button" data-target="HORIZON" aria-pressed="true">HORIZON</button><button type="button" data-target="AWARDS" aria-pressed="false">AWARDS</button></div>
+          <button class="replay" type="button"><span aria-hidden="true">↻</span><span>Rejouer</span></button>
+        </div>
+        <label class="timeline-label"><span>Déroulé</span><output>0 %</output><input type="range" min="0" max="100" step="1" value="0"></label>
+      </div>
+    </section>
+  </template>
+</body>
+</html>

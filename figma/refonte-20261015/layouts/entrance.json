@@ -1,0 +1,1253 @@
+{
+ "area": "entrance",
+ "key": "entrance",
+ "page": "01 · Arrivée et décryptage",
+ "sections": [
+  {
+   "id": "arrival",
+   "title": "Arrivée : message chiffré",
+   "note": "Scan binaire puis texte chiffré. Seuls deux boutons, visibles dès le début : Se connecter et Visiter. Leurs libellés alternent français, anglais, arabe sans changer la langue du site. Cliquer le fond change le thème. Un lien direct (#projects/…) passe aussi par cet écran, puis ouvre l’adresse demandée au lieu d’Explorer.",
+   "route": "index.html",
+   "main": true,
+   "y": 0,
+   "w": 4180,
+   "h": 9140,
+   "rows": [
+    [
+     {
+      "state": "arrival-scan-binary",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Arrivée : message chiffré · scan · binaire — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "arrival-scan-binary",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Arrivée : message chiffré · scan · binaire — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "arrival-scan-binary",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Arrivée : message chiffré · scan · binaire — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "arrival-scan-binary",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Arrivée : message chiffré · scan · binaire — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 260
+     }
+    ],
+    [
+     {
+      "state": "arrival-scan-hex",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Arrivée : message chiffré · scan · hexadécimal — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 1380
+     },
+     {
+      "state": "arrival-scan-hex",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Arrivée : message chiffré · scan · hexadécimal — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 1380
+     },
+     {
+      "state": "arrival-scan-hex",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Arrivée : message chiffré · scan · hexadécimal — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 1380
+     },
+     {
+      "state": "arrival-scan-hex",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Arrivée : message chiffré · scan · hexadécimal — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 1380
+     }
+    ],
+    [
+     {
+      "state": "arrival-scan-return",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Arrivée : message chiffré · scan · remontée — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 2500
+     },
+     {
+      "state": "arrival-scan-return",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Arrivée : message chiffré · scan · remontée — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 2500
+     },
+     {
+      "state": "arrival-scan-return",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Arrivée : message chiffré · scan · remontée — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 2500
+     },
+     {
+      "state": "arrival-scan-return",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Arrivée : message chiffré · scan · remontée — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 2500
+     }
+    ],
+    [
+     {
+      "state": "arrival-encrypted",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Arrivée : message chiffré · message chiffré au repos — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 3620
+     },
+     {
+      "state": "arrival-encrypted",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Arrivée : message chiffré · message chiffré au repos — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 3620
+     },
+     {
+      "state": "arrival-encrypted",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Arrivée : message chiffré · message chiffré au repos — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 3620
+     },
+     {
+      "state": "arrival-encrypted",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Arrivée : message chiffré · message chiffré au repos — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 3620
+     }
+    ],
+    [
+     {
+      "state": "arrival-encrypted",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "light",
+      "name": "Arrivée : message chiffré · message chiffré au repos — Ordinateur · Clair · English",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 4740
+     },
+     {
+      "state": "arrival-encrypted",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Arrivée : message chiffré · message chiffré au repos — Ordinateur · Sombre · English",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 4740
+     },
+     {
+      "state": "arrival-encrypted",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "Arrivée : message chiffré · message chiffré au repos — Mobile · Clair · English",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 4740
+     },
+     {
+      "state": "arrival-encrypted",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Arrivée : message chiffré · message chiffré au repos — Mobile · Sombre · English",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 4740
+     }
+    ],
+    [
+     {
+      "state": "arrival-encrypted",
+      "fmt": "desktop",
+      "lang": "ar",
+      "theme": "light",
+      "name": "Arrivée : message chiffré · message chiffré au repos — Ordinateur · Clair · العربية",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 5860
+     },
+     {
+      "state": "arrival-encrypted",
+      "fmt": "desktop",
+      "lang": "ar",
+      "theme": "dark",
+      "name": "Arrivée : message chiffré · message chiffré au repos — Ordinateur · Sombre · العربية",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 5860
+     },
+     {
+      "state": "arrival-encrypted",
+      "fmt": "mobile",
+      "lang": "ar",
+      "theme": "light",
+      "name": "Arrivée : message chiffré · message chiffré au repos — Mobile · Clair · العربية",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 5860
+     },
+     {
+      "state": "arrival-encrypted",
+      "fmt": "mobile",
+      "lang": "ar",
+      "theme": "dark",
+      "name": "Arrivée : message chiffré · message chiffré au repos — Mobile · Sombre · العربية",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 5860
+     }
+    ],
+    [
+     {
+      "state": "arrival-labels-en",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Arrivée : message chiffré · libellés en anglais — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 6980
+     },
+     {
+      "state": "arrival-labels-en",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Arrivée : message chiffré · libellés en anglais — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 6980
+     },
+     {
+      "state": "arrival-labels-en",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Arrivée : message chiffré · libellés en anglais — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 6980
+     },
+     {
+      "state": "arrival-labels-en",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Arrivée : message chiffré · libellés en anglais — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 6980
+     }
+    ],
+    [
+     {
+      "state": "arrival-labels-ar",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Arrivée : message chiffré · libellés en arabe — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 8100
+     },
+     {
+      "state": "arrival-labels-ar",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Arrivée : message chiffré · libellés en arabe — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 8100
+     },
+     {
+      "state": "arrival-labels-ar",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Arrivée : message chiffré · libellés en arabe — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 8100
+     },
+     {
+      "state": "arrival-labels-ar",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Arrivée : message chiffré · libellés en arabe — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 8100
+     }
+    ]
+   ]
+  },
+  {
+   "id": "entry-signin",
+   "title": "Connexion — prototype",
+   "note": "Aucun champ à remplir : la connexion est simulée.",
+   "route": "",
+   "main": false,
+   "y": 9340,
+   "w": 4180,
+   "h": 2420,
+   "rows": [
+    [
+     {
+      "state": "entry-signin",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Connexion — prototype — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "entry-signin",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Connexion — prototype — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "entry-signin",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Connexion — prototype — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "entry-signin",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Connexion — prototype — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 260
+     }
+    ],
+    [
+     {
+      "state": "entry-signin",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "light",
+      "name": "Connexion — prototype — Ordinateur · Clair · English",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 1380
+     },
+     {
+      "state": "entry-signin",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Connexion — prototype — Ordinateur · Sombre · English",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 1380
+     },
+     {
+      "state": "entry-signin",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "Connexion — prototype — Mobile · Clair · English",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 1380
+     },
+     {
+      "state": "entry-signin",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Connexion — prototype — Mobile · Sombre · English",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 1380
+     }
+    ]
+   ]
+  },
+  {
+   "id": "entry-signup",
+   "title": "Création de compte simulée",
+   "note": "Absente du premier écran. Le profil fictif de Leïla Mansour sert de compte.",
+   "route": "",
+   "main": false,
+   "y": 11960,
+   "w": 4180,
+   "h": 2420,
+   "rows": [
+    [
+     {
+      "state": "entry-signup",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Création de compte simulée — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "entry-signup",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Création de compte simulée — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "entry-signup",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Création de compte simulée — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "entry-signup",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Création de compte simulée — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 260
+     }
+    ],
+    [
+     {
+      "state": "entry-signup",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "light",
+      "name": "Création de compte simulée — Ordinateur · Clair · English",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 1380
+     },
+     {
+      "state": "entry-signup",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Création de compte simulée — Ordinateur · Sombre · English",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 1380
+     },
+     {
+      "state": "entry-signup",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "Création de compte simulée — Mobile · Clair · English",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 1380
+     },
+     {
+      "state": "entry-signup",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Création de compte simulée — Mobile · Sombre · English",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 1380
+     }
+    ]
+   ]
+  },
+  {
+   "id": "decrypt",
+   "title": "Déchiffrement : BEYOND THE CODE",
+   "note": "Seulement après la connexion simulée ; attend la fin du scan s’il est encore en cours.",
+   "route": "",
+   "main": false,
+   "y": 14580,
+   "w": 4180,
+   "h": 3540,
+   "rows": [
+    [
+     {
+      "state": "decrypt-mid",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Déchiffrement : BEYOND THE CODE · à mi-parcours — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "decrypt-mid",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Déchiffrement : BEYOND THE CODE · à mi-parcours — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "decrypt-mid",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Déchiffrement : BEYOND THE CODE · à mi-parcours — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "decrypt-mid",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Déchiffrement : BEYOND THE CODE · à mi-parcours — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 260
+     }
+    ],
+    [
+     {
+      "state": "decrypt-final",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Déchiffrement : BEYOND THE CODE · phrase finale — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 1380
+     },
+     {
+      "state": "decrypt-final",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Déchiffrement : BEYOND THE CODE · phrase finale — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 1380
+     },
+     {
+      "state": "decrypt-final",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Déchiffrement : BEYOND THE CODE · phrase finale — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 1380
+     },
+     {
+      "state": "decrypt-final",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Déchiffrement : BEYOND THE CODE · phrase finale — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 1380
+     }
+    ],
+    [
+     {
+      "state": "member-transition",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Déchiffrement : BEYOND THE CODE · vers le logo (membre) — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 2500
+     },
+     {
+      "state": "member-transition",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Déchiffrement : BEYOND THE CODE · vers le logo (membre) — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 2500
+     },
+     {
+      "state": "member-transition",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Déchiffrement : BEYOND THE CODE · vers le logo (membre) — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 2500
+     },
+     {
+      "state": "member-transition",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Déchiffrement : BEYOND THE CODE · vers le logo (membre) — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 2500
+     }
+    ]
+   ]
+  },
+  {
+   "id": "opening",
+   "title": "Logo 42, puis cercle",
+   "note": "Commun aux deux accès. Le globe se prépare depuis l’arrivée, pendant le message chiffré.",
+   "route": "",
+   "main": false,
+   "y": 18320,
+   "w": 4180,
+   "h": 4660,
+   "rows": [
+    [
+     {
+      "state": "visitor-transition",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Logo 42, puis cercle · parcours visiteur — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "visitor-transition",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Logo 42, puis cercle · parcours visiteur — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "visitor-transition",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Logo 42, puis cercle · parcours visiteur — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "visitor-transition",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Logo 42, puis cercle · parcours visiteur — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 260
+     }
+    ],
+    [
+     {
+      "state": "opening-logo",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Logo 42, puis cercle · logo seul — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 1380
+     },
+     {
+      "state": "opening-logo",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Logo 42, puis cercle · logo seul — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 1380
+     },
+     {
+      "state": "opening-logo",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Logo 42, puis cercle · logo seul — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 1380
+     },
+     {
+      "state": "opening-logo",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Logo 42, puis cercle · logo seul — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 1380
+     }
+    ],
+    [
+     {
+      "state": "opening-ring-drawing",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Logo 42, puis cercle · tracé du cercle — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 2500
+     },
+     {
+      "state": "opening-ring-drawing",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Logo 42, puis cercle · tracé du cercle — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 2500
+     },
+     {
+      "state": "opening-ring-drawing",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Logo 42, puis cercle · tracé du cercle — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 2500
+     },
+     {
+      "state": "opening-ring-drawing",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Logo 42, puis cercle · tracé du cercle — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 2500
+     }
+    ],
+    [
+     {
+      "state": "opening-ring",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Logo 42, puis cercle · cercle complet — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 3620
+     },
+     {
+      "state": "opening-ring",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Logo 42, puis cercle · cercle complet — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 3620
+     },
+     {
+      "state": "opening-ring",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Logo 42, puis cercle · cercle complet — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 3620
+     },
+     {
+      "state": "opening-ring",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Logo 42, puis cercle · cercle complet — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 3620
+     }
+    ]
+   ]
+  },
+  {
+   "id": "world-wait",
+   "title": "« Le monde se prépare… »",
+   "note": "",
+   "route": "",
+   "main": false,
+   "y": 23180,
+   "w": 4180,
+   "h": 1300,
+   "rows": [
+    [
+     {
+      "state": "world-wait",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "« Le monde se prépare… » — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "world-wait",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "« Le monde se prépare… » — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "world-wait",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "« Le monde se prépare… » — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "world-wait",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "« Le monde se prépare… » — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 260
+     }
+    ]
+   ]
+  },
+  {
+   "id": "reveal",
+   "title": "Le cercle devient le globe",
+   "note": "Puis Explorer, ou l’adresse d’un lien direct.",
+   "route": "",
+   "main": false,
+   "y": 24680,
+   "w": 4180,
+   "h": 2420,
+   "rows": [
+    [
+     {
+      "state": "reveal-mid",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Le cercle devient le globe · à mi-parcours — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "reveal-mid",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Le cercle devient le globe · à mi-parcours — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "reveal-mid",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Le cercle devient le globe · à mi-parcours — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "reveal-mid",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Le cercle devient le globe · à mi-parcours — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 260
+     }
+    ],
+    [
+     {
+      "state": "reveal-end",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Le cercle devient le globe · fin — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 1380
+     },
+     {
+      "state": "reveal-end",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Le cercle devient le globe · fin — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 1380
+     },
+     {
+      "state": "reveal-end",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Le cercle devient le globe · fin — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 1380
+     },
+     {
+      "state": "reveal-end",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Le cercle devient le globe · fin — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 1380
+     }
+    ]
+   ]
+  },
+  {
+   "id": "entry-error",
+   "title": "Le monde n’a pas pu se préparer",
+   "note": "Seul état de l’entrée où l’icône du compte est visible.",
+   "route": "",
+   "main": true,
+   "y": 27300,
+   "w": 4180,
+   "h": 3540,
+   "rows": [
+    [
+     {
+      "state": "entry-error",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Le monde n’a pas pu se préparer — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "entry-error",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Le monde n’a pas pu se préparer — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "entry-error",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Le monde n’a pas pu se préparer — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "entry-error",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Le monde n’a pas pu se préparer — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 260
+     }
+    ],
+    [
+     {
+      "state": "entry-error",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "light",
+      "name": "Le monde n’a pas pu se préparer — Ordinateur · Clair · English",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 1380
+     },
+     {
+      "state": "entry-error",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Le monde n’a pas pu se préparer — Ordinateur · Sombre · English",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 1380
+     },
+     {
+      "state": "entry-error",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "Le monde n’a pas pu se préparer — Mobile · Clair · English",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 1380
+     },
+     {
+      "state": "entry-error",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Le monde n’a pas pu se préparer — Mobile · Sombre · English",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 1380
+     }
+    ],
+    [
+     {
+      "state": "entry-error",
+      "fmt": "desktop",
+      "lang": "ar",
+      "theme": "light",
+      "name": "Le monde n’a pas pu se préparer — Ordinateur · Clair · العربية",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 2500
+     },
+     {
+      "state": "entry-error",
+      "fmt": "desktop",
+      "lang": "ar",
+      "theme": "dark",
+      "name": "Le monde n’a pas pu se préparer — Ordinateur · Sombre · العربية",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 2500
+     },
+     {
+      "state": "entry-error",
+      "fmt": "mobile",
+      "lang": "ar",
+      "theme": "light",
+      "name": "Le monde n’a pas pu se préparer — Mobile · Clair · العربية",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 2500
+     },
+     {
+      "state": "entry-error",
+      "fmt": "mobile",
+      "lang": "ar",
+      "theme": "dark",
+      "name": "Le monde n’a pas pu se préparer — Mobile · Sombre · العربية",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 2500
+     }
+    ]
+   ]
+  }
+ ]
+}

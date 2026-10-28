@@ -1,0 +1,90 @@
+{
+  "retrievedAt": "2026-10-05",
+  "campuses": {
+    "paris": {
+      "verifiedAt": "2026-10-05",
+      "openedLabel": "2013",
+      "openedSourceUrl": "https://42.fr/le-campus-de-paris/42-paris-campus/",
+      "photos": [
+        {
+          "src": "./assets/campuses/paris-campus.jpg",
+          "alt": {
+            "fr": "Le bâtiment du campus de 42 Paris",
+            "en": "The 42 Paris campus building",
+            "ar": "مبنى فرع 42 باريس"
+          },
+          "credit": "42 Paris",
+          "sourceUrl": "https://42.fr/le-campus-de-paris/42-paris-campus/"
+        },
+        {
+          "src": "./assets/campuses/paris-cluster.jpg",
+          "alt": {
+            "fr": "Une salle informatique de 42 Paris",
+            "en": "A computer room at 42 Paris",
+            "ar": "قاعة حواسيب في 42 باريس"
+          },
+          "credit": "42 Paris",
+          "sourceUrl": "https://42.fr/le-campus-de-paris/42-paris-campus/"
+        }
+      ],
+      "contacts": [
+        {
+          "label": {
+            "fr": "Admissions",
+            "en": "Admissions",
+            "ar": "القبول"
+          },
+          "value": "apply@42paris.fr",
+          "href": "mailto:apply@42paris.fr"
+        },
+        {
+          "label": {
+            "fr": "Contact général",
+            "en": "General enquiries",
+            "ar": "استفسارات عامة"
+          },
+          "value": "contact@42paris.fr",
+          "href": "mailto:contact@42paris.fr"
+        },
+        {
+          "label": {
+            "fr": "Accessibilité",
+            "en": "Accessibility",
+            "ar": "إمكانية الوصول"
+          },
+          "value": "referent-handicap@42.fr",
+          "href": "mailto:referent-handicap@42.fr"
+        }
+      ],
+      "contactSourceUrl": "https://42.fr/entrer-en-contact/",
+      "piscineSourceUrl": "https://42.fr/admissions/admissions/",
+      "piscines": [
+        {
+          "startsOn": "2027-01-25",
+          "endsOn": "2027-02-19",
+          "label": {
+            "fr": "Piscine de février",
+            "en": "February Piscine",
+            "ar": "بيسين فبراير"
+          },
+          "sourceUrl": "https://42.fr/admissions/admissions/"
+        },
+        {
+          "startsOn": "2027-03-01",
+          "endsOn": "2027-03-26",
+          "label": {
+            "fr": "Piscine de mars",
+            "en": "March Piscine",
+            "ar": "بيسين مارس"
+          },
+          "sourceUrl": "https://42.fr/admissions/admissions/"
+        }
+      ],
+      "piscinesNote": {
+        "fr": "Des sessions sont également annoncées pour juillet, août et septembre 2027, sans dates précises publiées.",
+        "en": "Sessions are also announced for July, August and September 2027; exact dates have not been published.",
+        "ar": "أُعلن أيضًا عن دورات في يوليو وأغسطس وسبتمبر 2027، من دون نشر تواريخ دقيقة."
+      }
+    }
+  }
+}

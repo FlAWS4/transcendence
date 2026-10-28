@@ -1,0 +1,24 @@
+.horizon-prisms { width: 100%; height: 100%; min-height: 260px; container-type: inline-size; display: grid; place-items: center; color: var(--h42-color-text); }
+.prisms-bank { display: flex; align-items: center; justify-content: center; gap: .08em; direction: ltr; unicode-bidi: isolate; font: 500 clamp(28px, 5.2cqw, 72px)/1 var(--h42-font-family, Jost), sans-serif; }
+.prisms-word-group { position: relative; display: flex; gap: .08em; }
+.prism-cell { --prism-depth: .76em; position: relative; width: var(--prism-depth); height: 1.45em; perspective: 450px; flex: none; }
+.prism-cell.space { --prism-depth: .34em; }
+.prism-body { position: absolute; inset: 0; transform-style: preserve-3d; will-change: transform; }
+.prism-face { position: absolute; inset: 0; display: grid; place-items: center; border: 1px solid var(--h42-color-border); border-radius: 3px; background: color-mix(in srgb, var(--h42-color-soft) 44%, var(--h42-color-bg)); backface-visibility: hidden; }
+.prism-face.front { transform: translateZ(calc(var(--prism-depth) / 2)); }
+.prism-face.side { transform: rotateY(90deg) translateZ(calc(var(--prism-depth) / 2)); background: color-mix(in srgb, var(--h42-color-soft) 72%, var(--h42-color-bg)); }
+.prism-face::after { position: absolute; content: ''; inset: 0; border-inline-start: 1px solid color-mix(in srgb, var(--h42-color-text) 7%, transparent); pointer-events: none; }
+.prism-shadow { position: absolute; left: 10%; bottom: -.14em; width: 80%; height: .12em; border-radius: 50%; background: color-mix(in srgb, var(--h42-color-text) 10%, transparent); filter: blur(3px); }
+.horizon-prisms .spatial-ink { display: block; transform-origin: center; }
+.horizon-prisms [data-type="glyph"] .spatial-ink { font-size: .9em; line-height: 1; }
+.horizon-prisms [data-type="hex"] .spatial-ink { font: 500 .38em/1 ui-monospace, monospace; letter-spacing: -.07em; }
+.horizon-prisms .space [data-type="hex"] .spatial-ink { font-size: .24em; }
+.horizon-prisms .spatial-bits { display: flex; gap: .3em; font: 500 .19em/1.2 ui-monospace, monospace; }
+.horizon-prisms .spatial-bits > span { display: grid; }
+.prism-cell[data-phase="decrypting"] { color: var(--h42-color-action-quiet); }
+@container (max-width: 650px) {
+  .prisms-bank { flex-direction: column; gap: .36em; font-size: clamp(28px, 10cqw, 44px); }
+  .prisms-word-group { gap: .07em; }
+  .prisms-word-group.first .line-space { position: absolute; left: calc(100% + .07em); }
+  .horizon-prisms .spatial-bits { font-size: .22em; }
+}

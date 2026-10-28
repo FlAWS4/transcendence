@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-15",
+  "scope": "Sondes au niveau du code (harnais de test, pas de navigateur) sur les chemins qui peuvent encore retenir les libellés de l’arrivée, état 145.",
+  "exitCode": 0,
+  "summary": {
+    "tests": 40,
+    "pass": 6,
+    "fail": 0,
+    "skipped": 34
+  },
+  "results": [
+    {
+      "probe": "P1",
+      "heldAfter20s": "fr",
+      "afterPointerdownAnd4s": "en"
+    },
+    {
+      "probe": "P2",
+      "rows": {
+        "Tab": "held",
+        "Escape": "held",
+        "Enter": "held",
+        " ": "held",
+        "a": "held",
+        "F5": "held",
+        "F6": "held",
+        "F11": "held",
+        "PrintScreen": "held",
+        "AudioVolumeUp": "held",
+        "MediaPlayPause": "held",
+        "NumLock": "held",
+        "ScrollLock": "held",
+        "ContextMenu": "held",
+        "Dead": "held",
+        "Unidentified": "held",
+        "Process": "held",
+        "Fn": "held",
+        "Hyper": "held",
+        "Super": "held",
+        "Shift": "rotating",
+        "Alt": "rotating",
+        "AltGraph": "rotating",
+        "CapsLock": "rotating",
+        "Control": "rotating",
+        "Meta": "rotating",
+        "OS": "rotating"
+      }
+    },
+    {
+      "probe": "P3",
+      "phaseBefore": "error",
+      "phaseAfter": "encrypted",
+      "heldAfter20s": "fr",
+      "afterPointerleaveAnd4s": "en"
+    },
+    {
+      "probe": "P4",
+      "afterFocusAnd4s": "en",
+      "ariaDescription": "Languages rotate automatically. Hovering or focusing the buttons pauses the changes."
+    },
+    {
+      "probe": "P5",
+      "rows": {
+        "signIn": {
+          "phaseBefore": "error",
+          "phaseAfterRequest": "encrypted",
+          "dialogTitle": "Connexion — prototype",
+          "accessButtons": [
+            "entry-login",
+            "entry-guest"
+          ],
+          "afterCancelAnd4s": "en",
+          "dialogOpenAfterCancel": false
+        },
+        "signUp": {
+          "phaseBefore": "error",
+          "phaseAfterRequest": "encrypted",
+          "dialogTitle": "Création de compte simulée",
+          "accessButtons": [
+            "entry-login",
+            "entry-guest"
+          ],
+          "afterCancelAnd4s": "en",
+          "dialogOpenAfterCancel": false
+        },
+        "confirmFromErrorThenContinue": {
+          "phaseAfterConfirm": "error",
+          "decoded": true,
+          "opened": [
+            "member"
+          ],
+          "finalPhase": "welcome"
+        },
+        "duringWaiting": {
+          "phase": "waiting",
+          "after": "waiting",
+          "dialog": null
+        }
+      }
+    },
+    {
+      "probe": "P6",
+      "row": {
+        "errorPhase": "error",
+        "phaseAfterBack": "encrypted",
+        "login": "Se connecter",
+        "guest": "Visiter",
+        "labelSpans": false,
+        "ariaDescription": null,
+        "timers": 0,
+        "arabic": [
+          "تسجيل الدخول",
+          "ar"
+        ],
+        "after20s": "تسجيل الدخول",
+        "timersAfter": 0
+      }
+    }
+  ]
+}

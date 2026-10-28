@@ -1,0 +1,1215 @@
+{
+ "date": "2026-10-17",
+ "method": "Each corrected SVG (../assets-update/svg/) is drawn by headless Chrome as a standalone image, the way Figma imports it\n(no page stylesheet: only its own attributes), at the place and size of an illustration in a capture of the site\n(../reference/<zone>/<state>.png, boxes from ../dom/<zone>/<state>.json.gz), then compared with that capture.\nVariants drawn for comparison, never sent:\n  before      what was imported until 17 Oct. (raw markup: no inherited stroke, butt caps; Chrome still draws the\n              texts in the right fonts, Figma did not)\n  stroked     the same drawing with the stroke of the detail headers and of the viewer (#1B1B1B light, #FFFFFF dark)\n  rtl         texts anchored as in the Arabic pages (direction rtl: text-anchor start = right edge, bidi order)\n  dark        a bound stroke resolved in the dark mode (#FFFFFF instead of #1B1B1B)\n  wrong-font  control: outlines from other fonts (Noto Serif, Liberation Mono) must be worse on the text regions\n  vsChromeText  the component against the same markup whose <text> Chrome draws itself, unhinted\n              (text-rendering geometricPrecision): checks the outlines and their positions, hinting set aside\nMasked: rounded corners of the container, and the layers painted over the illustration (favourite button, dock…).\nMetrics (inside the mask): mae = mean absolute difference per channel (0-255); diff = share of pixels whose summed\nchannel difference exceeds 24 (helper.image_diff); text = the same on the boxes of the outlined texts; inkIoU = per\ntext, intersection over union of its ink (luminance closer to the text colour than to the background of its box),\ncapture vs drawing, insensitive to the coloured fringes of Chrome's sub-pixel text antialiasing.",
+ "cases": [
+  {
+   "dump": "projects/projects--desktop--fr-light",
+   "capture": "projects/projects--desktop--fr-light--full.png",
+   "ref": "kz2k1m-1697",
+   "id": "5:42",
+   "box": [
+    170,
+    272,
+    348,
+    232
+   ],
+   "masked": 0.0543,
+   "variants": {
+    "component": {
+     "all": {
+      "mae": 0.06,
+      "diff": 0.0001,
+      "pixels": 76352
+     }
+    },
+    "before": {
+     "all": {
+      "mae": 0.1,
+      "diff": 0.0014,
+      "pixels": 76352
+     }
+    },
+    "stroked": {
+     "all": {
+      "mae": 1.94,
+      "diff": 0.0259,
+      "pixels": 76352
+     }
+    }
+   }
+  },
+  {
+   "dump": "projects/projects--desktop--fr-light",
+   "capture": "projects/projects--desktop--fr-light--full.png",
+   "ref": "11myu71-1682",
+   "id": "5:122",
+   "box": [
+    546,
+    272,
+    348,
+    232
+   ],
+   "masked": 0.0543,
+   "variants": {
+    "component": {
+     "all": {
+      "mae": 0.15,
+      "diff": 0.0032,
+      "pixels": 76352
+     },
+     "text": {
+      "mae": 5.84,
+      "diff": 0.1709,
+      "pixels": 1445
+     },
+     "inkIoU": [
+      [
+       "$ ./minishell",
+       0.521
+      ]
+     ],
+     "vsChromeText": {
+      "text": {
+       "mae": 6.04,
+       "diff": 0.2464,
+       "pixels": 1445
+      },
+      "inkIoU": [
+       [
+        "$ ./minishell",
+        0.624
+       ]
+      ]
+     }
+    },
+    "before": {
+     "all": {
+      "mae": 0.13,
+      "diff": 0.0043,
+      "pixels": 76352
+     },
+     "text": {
+      "mae": 4.49,
+      "diff": 0.2118,
+      "pixels": 1445
+     },
+     "inkIoU": [
+      [
+       "$ ./minishell",
+       0.949
+      ]
+     ]
+    },
+    "stroked": {
+     "all": {
+      "mae": 2.38,
+      "diff": 0.0391,
+      "pixels": 76352
+     },
+     "text": {
+      "mae": 13.13,
+      "diff": 0.1931,
+      "pixels": 1445
+     },
+     "inkIoU": [
+      [
+       "$ ./minishell",
+       0.0
+      ]
+     ]
+    },
+    "wrong-font": {
+     "all": {
+      "mae": 0.19,
+      "diff": 0.0037,
+      "pixels": 76352
+     },
+     "text": {
+      "mae": 8.17,
+      "diff": 0.2003,
+      "pixels": 1428
+     },
+     "inkIoU": [
+      [
+       "$ ./minishell",
+       0.473
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "dump": "projects/projects--desktop--fr-light",
+   "capture": "projects/projects--desktop--fr-light--full.png",
+   "ref": "114x1ky-1393",
+   "id": "5:161",
+   "box": [
+    922,
+    272,
+    348,
+    232
+   ],
+   "masked": 0.0543,
+   "variants": {
+    "component": {
+     "all": {
+      "mae": 0.03,
+      "diff": 0.0,
+      "pixels": 76352
+     }
+    },
+    "before": {
+     "all": {
+      "mae": 0.05,
+      "diff": 0.0001,
+      "pixels": 76352
+     }
+    }
+   }
+  },
+  {
+   "dump": "projects/projects--desktop--fr-light",
+   "capture": "projects/projects--desktop--fr-light--full.png",
+   "ref": "9fxl1s-1710",
+   "id": "5:223",
+   "box": [
+    170,
+    1300.8,
+    348,
+    232
+   ],
+   "masked": 0.0547,
+   "variants": {
+    "component": {
+     "all": {
+      "mae": 0.54,
+      "diff": 0.0045,
+      "pixels": 76648
+     }
+    },
+    "before": {
+     "all": {
+      "mae": 0.8,
+      "diff": 0.0082,
+      "pixels": 76648
+     }
+    }
+   }
+  },
+  {
+   "dump": "projects/projects--desktop--fr-dark",
+   "capture": "projects/projects--desktop--fr-dark--full.png",
+   "ref": "11myu71-1682",
+   "id": "5:122",
+   "box": [
+    546,
+    272,
+    348,
+    232
+   ],
+   "masked": 0.0543,
+   "variants": {
+    "component": {
+     "all": {
+      "mae": 0.27,
+      "diff": 0.009,
+      "pixels": 76352
+     },
+     "text": {
+      "mae": 5.84,
+      "diff": 0.1709,
+      "pixels": 1445
+     },
+     "inkIoU": [
+      [
+       "$ ./minishell",
+       0.521
+      ]
+     ],
+     "vsChromeText": {
+      "text": {
+       "mae": 6.04,
+       "diff": 0.2464,
+       "pixels": 1445
+      },
+      "inkIoU": [
+       [
+        "$ ./minishell",
+        0.624
+       ]
+      ]
+     }
+    },
+    "stroked-dark": {
+     "all": {
+      "mae": 2.84,
+      "diff": 0.0536,
+      "pixels": 76352
+     },
+     "text": {
+      "mae": 19.39,
+      "diff": 0.2913,
+      "pixels": 1445
+     },
+     "inkIoU": [
+      [
+       "$ ./minishell",
+       0.533
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "dump": "projects/projects--desktop--ar-light",
+   "capture": "projects/projects--desktop--ar-light--full.png",
+   "ref": "11myu71-1682",
+   "id": "5:122",
+   "box": [
+    546,
+    282.75,
+    348,
+    232
+   ],
+   "masked": 0.0547,
+   "variants": {
+    "component": {
+     "all": {
+      "mae": 0.83,
+      "diff": 0.0096,
+      "pixels": 76648
+     },
+     "text": {
+      "mae": 13.33,
+      "diff": 0.2048,
+      "pixels": 1445
+     },
+     "inkIoU": [
+      [
+       "$ ./minishell",
+       0.0
+      ]
+     ],
+     "vsChromeText": {
+      "text": {
+       "mae": 6.04,
+       "diff": 0.2464,
+       "pixels": 1445
+      },
+      "inkIoU": [
+       [
+        "$ ./minishell",
+        0.624
+       ]
+      ]
+     }
+    },
+    "rtl": {
+     "all": {
+      "mae": 0.55,
+      "diff": 0.0052,
+      "pixels": 76648
+     },
+     "text": {
+      "mae": 2.16,
+      "diff": 0.0933,
+      "pixels": 986
+     },
+     "inkIoU": [
+      [
+       "$ ./minishell",
+       0.902
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "dump": "journal/journal--desktop--fr-light",
+   "capture": "journal/journal--desktop--fr-light.png",
+   "ref": "1jtwtz9-1629",
+   "id": "171:31",
+   "box": [
+    170,
+    272,
+    348,
+    232
+   ],
+   "masked": 0.0543,
+   "variants": {
+    "component": {
+     "all": {
+      "mae": 0.09,
+      "diff": 0.0022,
+      "pixels": 76352
+     },
+     "text": {
+      "mae": 0.55,
+      "diff": 0.0317,
+      "pixels": 4542
+     },
+     "inkIoU": [
+      [
+       "“",
+       0.956
+      ],
+      [
+       "&",
+       0.952
+      ]
+     ],
+     "vsChromeText": {
+      "text": {
+       "mae": 0.59,
+       "diff": 0.0348,
+       "pixels": 4542
+      },
+      "inkIoU": [
+       [
+        "“",
+        0.965
+       ],
+       [
+        "&",
+        0.966
+       ]
+      ]
+     }
+    },
+    "before": {
+     "all": {
+      "mae": 0.09,
+      "diff": 0.002,
+      "pixels": 76352
+     },
+     "text": {
+      "mae": 0.36,
+      "diff": 0.0194,
+      "pixels": 4542
+     },
+     "inkIoU": [
+      [
+       "“",
+       1.0
+      ],
+      [
+       "&",
+       0.961
+      ]
+     ]
+    },
+    "stroked": {
+     "all": {
+      "mae": 2.38,
+      "diff": 0.05,
+      "pixels": 76352
+     },
+     "text": {
+      "mae": 5.48,
+      "diff": 0.0975,
+      "pixels": 4542
+     },
+     "inkIoU": [
+      [
+       "“",
+       0.766
+      ],
+      [
+       "&",
+       0.806
+      ]
+     ]
+    },
+    "wrong-font": {
+     "all": {
+      "mae": 0.42,
+      "diff": 0.0066,
+      "pixels": 76352
+     },
+     "text": {
+      "mae": 4.94,
+      "diff": 0.0858,
+      "pixels": 5408
+     },
+     "inkIoU": [
+      [
+       "“",
+       0.667
+      ],
+      [
+       "&",
+       0.554
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "dump": "journal/journal--desktop--ar-light",
+   "capture": "journal/journal--desktop--ar-light.png",
+   "ref": "1jtwtz9-1629",
+   "id": "171:31",
+   "box": [
+    922,
+    282.75,
+    348,
+    232
+   ],
+   "masked": 0.0547,
+   "variants": {
+    "component": {
+     "all": {
+      "mae": 1.55,
+      "diff": 0.0178,
+      "pixels": 76648
+     },
+     "text": {
+      "mae": 10.59,
+      "diff": 0.1421,
+      "pixels": 4491
+     },
+     "inkIoU": [
+      [
+       "“",
+       0.31
+      ],
+      [
+       "&",
+       0.0
+      ]
+     ],
+     "vsChromeText": {
+      "text": {
+       "mae": 0.59,
+       "diff": 0.035,
+       "pixels": 4518
+      },
+      "inkIoU": [
+       [
+        "“",
+        0.965
+       ],
+       [
+        "&",
+        0.966
+       ]
+      ]
+     }
+    },
+    "rtl": {
+     "all": {
+      "mae": 0.55,
+      "diff": 0.0049,
+      "pixels": 76648
+     },
+     "text": {
+      "mae": 0.51,
+      "diff": 0.0099,
+      "pixels": 4443
+     },
+     "inkIoU": [
+      [
+       "“",
+       0.998
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "dump": "projects/project--desktop--fr-light",
+   "capture": "projects/project--desktop--fr-light.png",
+   "ref": "kz2k1m-1697",
+   "id": "5:42",
+   "box": [
+    525,
+    240,
+    745,
+    465.63
+   ],
+   "masked": 0.0056,
+   "variants": {
+    "component": {
+     "all": {
+      "mae": 2.52,
+      "diff": 0.0225,
+      "pixels": 345234
+     }
+    },
+    "stroked": {
+     "all": {
+      "mae": 0.43,
+      "diff": 0.0123,
+      "pixels": 345234
+     }
+    }
+   }
+  },
+  {
+   "dump": "projects/project--desktop--fr-dark",
+   "capture": "projects/project--desktop--fr-dark.png",
+   "ref": "kz2k1m-1697",
+   "id": "5:42",
+   "box": [
+    525,
+    240,
+    745,
+    465.63
+   ],
+   "masked": 0.0056,
+   "variants": {
+    "component": {
+     "all": {
+      "mae": 0.67,
+      "diff": 0.0187,
+      "pixels": 345234
+     }
+    },
+    "stroked-dark": {
+     "all": {
+      "mae": 0.17,
+      "diff": 0.006,
+      "pixels": 345234
+     }
+    }
+   }
+  },
+  {
+   "dump": "projects/project-single--desktop--fr-light",
+   "capture": "projects/project-single--desktop--fr-light.png",
+   "ref": "11myu71-1682",
+   "id": "5:122",
+   "box": [
+    525,
+    240,
+    745,
+    465.63
+   ],
+   "masked": 0.0056,
+   "variants": {
+    "component": {
+     "all": {
+      "mae": 2.56,
+      "diff": 0.0321,
+      "pixels": 345234
+     },
+     "text": {
+      "mae": 18.22,
+      "diff": 0.2517,
+      "pixels": 4620
+     },
+     "inkIoU": [
+      [
+       "$ ./minishell",
+       0.014
+      ]
+     ],
+     "vsChromeText": {
+      "text": {
+       "mae": 4.95,
+       "diff": 0.184,
+       "pixels": 4620
+      },
+      "inkIoU": [
+       [
+        "$ ./minishell",
+        0.86
+       ]
+      ]
+     }
+    },
+    "stroked": {
+     "all": {
+      "mae": 0.35,
+      "diff": 0.009,
+      "pixels": 345234
+     },
+     "text": {
+      "mae": 2.34,
+      "diff": 0.0916,
+      "pixels": 4620
+     },
+     "inkIoU": [
+      [
+       "$ ./minishell",
+       0.286
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "dump": "projects/project-single--desktop--fr-dark",
+   "capture": "projects/project-single--desktop--fr-dark.png",
+   "ref": "11myu71-1682",
+   "id": "5:122",
+   "box": [
+    525,
+    240,
+    745,
+    465.63
+   ],
+   "masked": 0.0056,
+   "variants": {
+    "component": {
+     "all": {
+      "mae": 2.69,
+      "diff": 0.0357,
+      "pixels": 345234
+     },
+     "text": {
+      "mae": 31.98,
+      "diff": 0.3048,
+      "pixels": 4620
+     },
+     "inkIoU": [
+      [
+       "$ ./minishell",
+       0.42
+      ]
+     ],
+     "vsChromeText": {
+      "text": {
+       "mae": 4.95,
+       "diff": 0.184,
+       "pixels": 4620
+      },
+      "inkIoU": [
+       [
+        "$ ./minishell",
+        0.86
+       ]
+      ]
+     }
+    },
+    "stroked-dark": {
+     "all": {
+      "mae": 0.52,
+      "diff": 0.012,
+      "pixels": 345234
+     },
+     "text": {
+      "mae": 9.55,
+      "diff": 0.1866,
+      "pixels": 4620
+     },
+     "inkIoU": [
+      [
+       "$ ./minishell",
+       0.844
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "dump": "projects/project-single--desktop--ar-light",
+   "capture": "projects/project-single--desktop--ar-light.png",
+   "ref": "11myu71-1682",
+   "id": "5:122",
+   "box": [
+    170,
+    245.75,
+    745,
+    465.63
+   ],
+   "masked": 0.0056,
+   "variants": {
+    "stroked": {
+     "all": {
+      "mae": 1.72,
+      "diff": 0.0291,
+      "pixels": 345979
+     },
+     "text": {
+      "mae": 4.9,
+      "diff": 0.2435,
+      "pixels": 4785
+     },
+     "inkIoU": [
+      [
+       "$ ./minishell",
+       0.0
+      ]
+     ]
+    },
+    "stroked-rtl": {
+     "all": {
+      "mae": 1.33,
+      "diff": 0.0245,
+      "pixels": 345979
+     },
+     "text": {
+      "mae": 4.64,
+      "diff": 0.1518,
+      "pixels": 3973
+     },
+     "inkIoU": [
+      [
+       "$ ./minishell",
+       0.973
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "dump": "journal/article--desktop--fr-light",
+   "capture": "journal/article--desktop--fr-light.png",
+   "ref": "1jtwtz9-1629",
+   "id": "171:31",
+   "box": [
+    525,
+    240,
+    745,
+    465.63
+   ],
+   "masked": 0.0056,
+   "variants": {
+    "component": {
+     "all": {
+      "mae": 2.22,
+      "diff": 0.0359,
+      "pixels": 345234
+     },
+     "text": {
+      "mae": 5.98,
+      "diff": 0.0782,
+      "pixels": 16295
+     },
+     "inkIoU": [
+      [
+       "“",
+       0.791
+      ],
+      [
+       "&",
+       0.849
+      ]
+     ],
+     "vsChromeText": {
+      "text": {
+       "mae": 0.17,
+       "diff": 0.0064,
+       "pixels": 16295
+      },
+      "inkIoU": [
+       [
+        "“",
+        0.992
+       ],
+       [
+        "&",
+        0.98
+       ]
+      ]
+     }
+    },
+    "stroked": {
+     "all": {
+      "mae": 0.49,
+      "diff": 0.0182,
+      "pixels": 345234
+     },
+     "text": {
+      "mae": 1.4,
+      "diff": 0.0492,
+      "pixels": 16295
+     },
+     "inkIoU": [
+      [
+       "“",
+       0.95
+      ],
+      [
+       "&",
+       0.986
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "dump": "journal/article--desktop--fr-dark",
+   "capture": "journal/article--desktop--fr-dark.png",
+   "ref": "1jtwtz9-1629",
+   "id": "171:31",
+   "box": [
+    525,
+    240,
+    745,
+    465.63
+   ],
+   "masked": 0.0056,
+   "variants": {
+    "component": {
+     "all": {
+      "mae": 3.35,
+      "diff": 0.0384,
+      "pixels": 345234
+     },
+     "text": {
+      "mae": 5.35,
+      "diff": 0.076,
+      "pixels": 16295
+     },
+     "inkIoU": [
+      [
+       "“",
+       0.79
+      ],
+      [
+       "&",
+       0.76
+      ]
+     ],
+     "vsChromeText": {
+      "text": {
+       "mae": 0.17,
+       "diff": 0.0064,
+       "pixels": 16295
+      },
+      "inkIoU": [
+       [
+        "“",
+        0.992
+       ],
+       [
+        "&",
+        0.98
+       ]
+      ]
+     }
+    },
+    "stroked-dark": {
+     "all": {
+      "mae": 0.56,
+      "diff": 0.0171,
+      "pixels": 345234
+     },
+     "text": {
+      "mae": 0.92,
+      "diff": 0.0346,
+      "pixels": 16295
+     },
+     "inkIoU": [
+      [
+       "“",
+       0.928
+      ],
+      [
+       "&",
+       0.97
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "dump": "projects/viewer--desktop--fr-light",
+   "capture": "projects/viewer--desktop--fr-light.png",
+   "ref": "rqcd84-1681",
+   "id": "48:118",
+   "box": [
+    93,
+    98,
+    1254,
+    783.75
+   ],
+   "masked": 0.2814,
+   "variants": {
+    "component": {
+     "all": {
+      "mae": 0.25,
+      "diff": 0.007,
+      "pixels": 706494
+     },
+     "text": {
+      "mae": 1.21,
+      "diff": 0.0461,
+      "pixels": 6615
+     },
+     "inkIoU": [
+      [
+       "$ ./minishell",
+       0.557
+      ]
+     ],
+     "vsChromeText": {
+      "text": {
+       "mae": 1.89,
+       "diff": 0.0593,
+       "pixels": 12375
+      },
+      "inkIoU": [
+       [
+        "$ ./minishell",
+        0.084
+       ]
+      ]
+     }
+    },
+    "before": {
+     "all": {
+      "mae": 2.09,
+      "diff": 0.0278,
+      "pixels": 706494
+     },
+     "text": {
+      "mae": 22.58,
+      "diff": 0.2714,
+      "pixels": 6615
+     },
+     "inkIoU": [
+      [
+       "$ ./minishell",
+       0.09
+      ]
+     ]
+    },
+    "wrong-font": {
+     "all": {
+      "mae": 0.28,
+      "diff": 0.0079,
+      "pixels": 706494
+     },
+     "text": {
+      "mae": 5.0,
+      "diff": 0.1441,
+      "pixels": 6424
+     },
+     "inkIoU": [
+      [
+       "$ ./minishell",
+       0.041
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "dump": "projects/viewer--desktop--fr-dark",
+   "capture": "projects/viewer--desktop--fr-dark.png",
+   "ref": "rqcd84-1681",
+   "id": "48:118",
+   "box": [
+    93,
+    98,
+    1254,
+    783.75
+   ],
+   "masked": 0.2814,
+   "variants": {
+    "dark": {
+     "all": {
+      "mae": 0.36,
+      "diff": 0.0094,
+      "pixels": 706494
+     },
+     "text": {
+      "mae": 4.46,
+      "diff": 0.1084,
+      "pixels": 6615
+     },
+     "inkIoU": [
+      [
+       "$ ./minishell",
+       0.924
+      ]
+     ],
+     "vsChromeText": {
+      "text": {
+       "mae": 6.19,
+       "diff": 0.1678,
+       "pixels": 12375
+      },
+      "inkIoU": [
+       [
+        "$ ./minishell",
+        0.918
+       ]
+      ]
+     }
+    },
+    "before": {
+     "all": {
+      "mae": 2.36,
+      "diff": 0.0269,
+      "pixels": 706494
+     },
+     "text": {
+      "mae": 34.21,
+      "diff": 0.3166,
+      "pixels": 6615
+     },
+     "inkIoU": [
+      [
+       "$ ./minishell",
+       0.516
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "dump": "projects/project-implementation--desktop--fr-light",
+   "capture": "projects/project-implementation--desktop--fr-light.png",
+   "ref": "file:./assets/minishell-flow-demo.svg",
+   "id": "48:93",
+   "box": [
+    525,
+    415.39,
+    745,
+    465.63
+   ],
+   "masked": 0.0341,
+   "variants": {
+    "component": {
+     "all": {
+      "mae": 0.93,
+      "diff": 0.0186,
+      "pixels": 336039
+     },
+     "text": {
+      "mae": 4.45,
+      "diff": 0.1203,
+      "pixels": 24407
+     },
+     "inkIoU": [
+      [
+       "MINISHELL",
+       0.915
+      ],
+      [
+       "01 · READ",
+       0.82
+      ],
+      [
+       "02 · PARSE",
+       0.804
+      ],
+      [
+       "03 · RUN",
+       0.83
+      ],
+      [
+       "04 · OUTPUT",
+       0.765
+      ],
+      [
+       "> echo \"hello\"",
+       0.859
+      ],
+      [
+       "hello",
+       0.741
+      ],
+      [
+       "echo",
+       0.897
+      ],
+      [
+       "hello",
+       0.906
+      ]
+     ],
+     "vsChromeText": {
+      "text": {
+       "mae": 6.79,
+       "diff": 0.1886,
+       "pixels": 24407
+      },
+      "inkIoU": [
+       [
+        "MINISHELL",
+        0.896
+       ],
+       [
+        "01 · READ",
+        0.81
+       ],
+       [
+        "02 · PARSE",
+        0.775
+       ],
+       [
+        "03 · RUN",
+        0.849
+       ],
+       [
+        "04 · OUTPUT",
+        0.87
+       ],
+       [
+        "> echo \"hello\"",
+        0.897
+       ],
+       [
+        "hello",
+        0.771
+       ],
+       [
+        "echo",
+        0.703
+       ],
+       [
+        "hello",
+        0.763
+       ]
+      ]
+     }
+    },
+    "wrong-font": {
+     "all": {
+      "mae": 1.36,
+      "diff": 0.0216,
+      "pixels": 336039
+     },
+     "text": {
+      "mae": 10.64,
+      "diff": 0.1671,
+      "pixels": 23731
+     },
+     "inkIoU": [
+      [
+       "MINISHELL",
+       0.677
+      ],
+      [
+       "01 · READ",
+       0.635
+      ],
+      [
+       "02 · PARSE",
+       0.577
+      ],
+      [
+       "03 · RUN",
+       0.548
+      ],
+      [
+       "04 · OUTPUT",
+       0.499
+      ],
+      [
+       "> echo \"hello\"",
+       0.663
+      ],
+      [
+       "hello",
+       0.492
+      ],
+      [
+       "echo",
+       0.623
+      ],
+      [
+       "hello",
+       0.598
+      ]
+     ]
+    }
+   }
+  }
+ ]
+}

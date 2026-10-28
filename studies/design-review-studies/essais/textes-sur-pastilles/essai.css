@@ -1,0 +1,33 @@
+/* Essai textes-sur-pastilles (14 Oct 2026): the two texts drawn over the map in
+   Explorer, the stats/hint line under the filter and the status line above the
+   search, sit on a compact opaque pill: surface token with the filter's glass
+   edge and shadow. The pill is a pseudo-element drawn outside each text box,
+   so no text, box or hit area moves; the globe is unchanged. The retry button
+   already has an opaque fill and the filter text measures above 4.5:1 over
+   land in both themes, so both stay as they are. */
+:root .app[data-navigation=dock][data-section=explore] .globe-status > #globe-hint {
+  position: relative;
+  z-index: 0;
+}
+:root .app[data-navigation=dock][data-section=explore] .globe-status > #globe-hint::before,
+:root .app[data-navigation=dock][data-section=explore] #about.prototype-note::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  /* The same 2 px × 8 px margin and 16 px radius as the baseline's low-landscape pill. */
+  inset: -2px -8px;
+  border-radius: 16px;
+  border: 1px solid var(--control-glass-edge);
+  background: var(--h42-color-surface);
+  box-shadow: var(--control-glass-shadow);
+  pointer-events: none;
+}
+:root .app[data-navigation=dock][data-section=explore] .globe-status > #globe-hint:empty::before { display: none; }
+/* The status button already has 3 px of vertical padding inside its box. */
+:root .app[data-navigation=dock][data-section=explore] #about.prototype-note::before { inset: 0 -8px; }
+/* Low viewports already pad this line into a 96 % pill: the opaque pill now
+   covers that same box instead of adding a second one around it. */
+@media (max-height: 520px) {
+  :root .app[data-navigation=dock][data-section=explore] .globe-status > #globe-hint { background: transparent; }
+  :root .app[data-navigation=dock][data-section=explore] .globe-status > #globe-hint::before { inset: 0; }
+}

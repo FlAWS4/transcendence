@@ -1,218 +1,289 @@
 *This project has been created as part of the 42 curriculum by hchowdhu, mshariar, mkettab, mmutsulk, rel-hass.*
 
-# ft_transcendence - 0.0.1 pre-alpha -
+# ft_transcendence — 0.0.1 pre-alpha
 
-<!--
-README template based on the subject's numbered pages 27–29.
-Keep the README in English. Replace every [PLACEHOLDER], duplicate table rows
-as needed, and remove these comments before submitting the project.
-Describe the actual implementation and contributions accurately.
--->
+**Current state, 13 October 2026:** product research, Figma designs and interactive web prototypes on `rel-hass`, plus a separate experimental Express/TypeScript backend on `hchowdhu` and a CI skeleton on `mshariar`. The working name is **42 Horizon**. These contributions are not yet integrated into an application or a production release. See the [branch review and proposed integration order](docs/reviews/20261012-team-branches.md).
+
+`0.0.1` remains the development version. The existing local `v0.0.1` tag identifies the initial documentation commit, not the current prototype. No remote tag or GitHub release was found during the 7 October check. The 8–11 October changes were pushed to `rel-hass` as commit `77a45e7`, with the remote hash confirmed; a separate documentation commit records that confirmation. The later responsive-menu adjustment was pushed to `rel-hass` as `fc09e4f`, with its exact remote hash confirmed. The 12 October changes were pushed to `rel-hass`: team-branch review `57fadfe`, then multi-campus projects, independent detail navigation and preserved evidence/archives in `0166ac7`. GitHub returned the exact local hash for that push; a separate documentation commit records the confirmation. Version numbers and maturity follow [VERSIONING.md](VERSIONING.md); prototype iterations and asset cache versions do not increment the project version.
+
+**13 October sharing:** the user requested all current changes on `rel-hass`. Local and remote branches matched at `b3940af` after fetching. Commit **c91307d** was pushed to `origin/rel-hass`, and GitHub returned the exact hash `c91307d24f33bd4aab3acff89023b78db59a90e9`. It includes797 files covering paginated discovery, the expanded fictional corpus, independent/collapsible filters, account controls, interface refinements, evidence and preserved earlier variants (578 archive files and166 check artifacts, no file deletions). A separate documentation commit records this confirmation. The project remains **0.0.1 pre-alpha**. The globe-control studies developed in a separate conversation remain local; their scope is now recorded below.
+
+**Repository reorganization, 23 October:** at rel-hass's request, the former `work/` folder is split into explicit top-level folders, so that each version has its own place: the current prototype alone in `site/`, its 159 earlier states in `archives/site-versions/`, the first prototypes in `archives/early-prototypes/`, each design study with its frozen states in `studies/`, shared fonts, map libraries, logo and tokens in `shared/`, the Figma work in `figma/`, and team documents in `docs/` (see [Repository layout](#repository-layout)). Files were moved, not deleted. The links that resolved before were rewritten and checked: they land on the same files, the 660 prototype tests and the other test files pass, every self-contained archive still verifies its hashes, and the pages checked in headless Chrome load as they did before the move. The site now carries its own copy of the decryption scanner instead of loading it from a study. Old and new paths are listed in [the reorganization record](docs/reorganization-20261023/README.md). The team guide suggested agreeing on the structure before moving archives: this layout is pushed to `rel-hass` only (signed commit `94969a2`, exact remote hash confirmed), is not merged into `main`, and still needs the team's approval. Still **0.0.1 pre-alpha**.
+
+**Version B of the site, 24–26 October:** at rel-hass's request, a second version of the prototype lives in [`site-b/`](site-b/README.md), beside version A, which is unchanged. It started identical except for the Explorer: a level selector replaces the globe. You choose a continent, then a country, then a campus, and only validating applies the content filter; until a continent is validated, the filter stays on the world. The selector follows the « Halo » design, which rel-hass chose among three mock-ups ([`studies/explorer-b-design/`](studies/explorer-b-design/README.md)):
+- country silhouettes with their flag and name;
+- campus logos shown directly with their name below;
+- a campus sheet that takes the place of the selector.
+
+Checks:
+- four read-only verifications, then fixes, a final check, and the last accessibility checks with their fixes ([fix list](site-b/notes/HALO-FIXES-20261025.md));
+- tests: 637 for version B, 660 for version A;
+- the silhouette generator and the logo builder report their output up to date.
+
+Refinements, 25–26 October, at rel-hass's request ([specification](site-b/notes/EXPLORER-B-REFINEMENTS-20261025.md)):
+- « Monde » removed from the first level, just before (the specification starts from that state);
+- no halos around the items, no Previous/Next buttons, the key hints behind an ⓘ button, no counts under the items, only the step dots at the top, and one fixed « Valider » button;
+- drags and key glides follow the horizon, which is lower and the same at every level; at a level change, only what changes animates;
+- a new entrance: the horizon arc instead of the ring, the 42 flying to the header, then HORIZON with the letter cascade, the continents sliding in and the other elements arriving from their edges;
+- in version B's pages: a plain black dark background, a scope pill showing the path in steps, fixed and centred, with its world pictogram on every page, no « Exploration · 42 Horizon » note, and a side menu instead of the bottom dock in short landscape windows, in the style of version A's first menu since 26 October.
+
+From 26 October, at rel-hass's request, each change gets its tests and a few key screenshots, and the complete checks are deferred to the end of the project ([list, in French](docs/VERIFICATIONS-FINALES.md)). Tests after the refinements: 749 for version B, 660 for version A.
+
+Earlier states of version B (the provisional card layout, Halo with « Monde », the state before the refinements) are preserved in [`archives/site-b-versions/`](archives/site-b-versions/README.md). The campus logos are their owners' trademarks, and no redistribution permission has been established. Pushed to `rel-hass` on 26 October in four signed commits (`03b9e8c` to `2d09264`), then the side menu and the path in steps in five more (`706ee4e` to `9d63b8c`), exact remote hashes confirmed, not merged into `main`; still **0.0.1 pre-alpha**.
 
 ## Description
 
-**[PROJECT_NAME]** is [BRIEF_PROJECT_OVERVIEW].
+42 Horizon explores a public showcase of students, projects and journeys before, during and after 42, for the community, recruiters and visitors. 42 Awards is a planned part of this broader product.
 
-The project's goal is to [PROBLEM_SOLVED_OR_MAIN_OBJECTIVE] for [TARGET_USERS].
-
-Key features:
-
-- [KEY_FEATURE_1]: [BRIEF_DESCRIPTION].
-- [KEY_FEATURE_2]: [BRIEF_DESCRIPTION].
-- [KEY_FEATURE_3]: [BRIEF_DESCRIPTION].
+The current prototype offers campus exploration, demonstration projects associated with one or more campuses, profiles, editorial articles, French/English/Arabic interfaces, and light/dark/system theme choices. Real authentication and Intra data are not connected to this prototype; permissions, production storage and AI search remain to be implemented. The separate backend branch implements an initial OAuth/Intra service, verified with simulated upstream responses, not a real 42 login. Examples and connected-account studies use demonstration data. After the arrival screen, the active header has a visitor/member account panel, including separate Theme and Language panels before sign-in; member messaging and notification buttons currently open empty, unconnected panels.
 
 ## Instructions
 
 ### Prerequisites
 
-<!-- List every required runtime, package manager, service, and tool. -->
-
-| Software / tool | Required version | Purpose |
+| Software / tool | Version / requirement | Purpose |
 | --- | --- | --- |
-| [SOFTWARE_OR_TOOL] | [VERSION] | [PURPOSE] |
+| Python | 3 | Serve static prototype files over HTTP. |
+| Browser | Recent browser with WebGL and container-query support; checked in Chrome | Play the interactive prototype. |
+| Node.js | Tests checked with 20.20.0 | Run the prototype's automated checks; optional for browsing. |
+| Git / GitHub access | Access to this private repository | Clone the shared branch. |
 
-Other requirements: [OPERATING_SYSTEM_CONSTRAINTS_PORTS_ACCOUNTS_OR_OTHER_REQUIREMENTS].
+Country/campus filtering remains available if the globe fails or is still loading, provided the local campus catalogue loads. The main entrance offers Continue without the globe after a map error. Internet access is needed for external campus websites and detailed urban map data. Figma access is separate from the local web prototype.
 
 ### Installation and configuration
 
-1. Clone the repository and enter the project directory:
+```sh
+git clone --branch rel-hass git@github.com:LeR1f/ft_transcendence.git
+cd ft_transcendence
+```
 
-   ```sh
-   git clone [REPOSITORY_URL]
-   cd [REPOSITORY_DIRECTORY]
-   ```
+The static prototype uses its checked-in assets and dependencies. It needs no npm installation, environment secrets, database initialization or build step.
 
-2. Install dependencies:
+### Repository layout
 
-   ```sh
-   [INSTALL_COMMAND]
-   ```
+| Folder | Content |
+| --- | --- |
+| [`site/`](site/README.md) | **Current version** of the web prototype, alone: entry pages, modules, tests, design notes and verification evidence. |
+| [`site-b/`](site-b/README.md) | **Version B** of the prototype, beside version A: identical except the Explorer, where a level selector (continent, then country, then campus) replaces the globe, in the « Halo » design chosen by the user, and a few page refinements requested on 25–26 October. On `rel-hass`, not merged into `main`. |
+| [`archives/site-versions/`](archives/site-versions/INDEX.md) | The 159 preserved earlier states of the site (5–18 October 2026), one folder each, indexed by date and format. |
+| [`archives/site-b-versions/`](archives/site-b-versions/README.md) | Preserved earlier states of version B. |
+| [`archives/early-prototypes/`](archives/early-prototypes/README.md) | First prototypes: decryption, globe and explorer, content-first proposal, separate city map, panel welcome. |
+| [`studies/`](studies/README.md) | Design studies and trial galleries, each with its own frozen states in `archive/`, and the research registry. |
+| [`shared/`](shared/README.md) | Files used by several versions: Jost fonts, d3/topojson and map data, the 42 logo and colour tokens. |
+| [`figma/`](figma/README.md) | Figma work: the October 2026 rebuild (current file) and the records of the historical exploration file. |
+| [`docs/`](docs/README.md) | Team guides, site map, branch reviews, subject, graphic charter, reorganization record. |
 
-3. Configure the environment:
-
-   [EXPLAIN_WHICH_ENV_FILES_TO_CREATE_WHERE_AND_HOW_TO_FILL_THEM].
-
-   | Variable | Purpose | Example value | Required? |
-   | --- | --- | --- | --- |
-   | [VARIABLE_NAME] | [PURPOSE] | [NON_SECRET_EXAMPLE] | [YES_OR_NO] |
-
-4. Initialize the database and any required services:
-
-   ```sh
-   [DATABASE_AND_SERVICE_SETUP_COMMANDS]
-   ```
-
-5. Build or compile the project, if required:
-
-   ```sh
-   [BUILD_COMMAND]
-   ```
+The continuity documents (this README, AGENTS, PROJECT_CONTEXT, BOARDING_JOURNAL, IDEA, VERSIONING) stay at the root.
 
 ### Running the project
 
-1. Start the application:
+From the repository root:
 
-   ```sh
-   [RUN_COMMAND]
-   ```
+```sh
+python3 -m http.server 8765 --bind 127.0.0.1
+```
 
-2. Open [APPLICATION_URL] and [DESCRIBE_FIRST_USE_OR_ACCOUNT_CREATION].
-3. Stop the application with [STOP_COMMAND_OR_PROCEDURE].
+- [Main prototype](http://127.0.0.1:8765/site/index.html): animated entrance, simulated connection or visitor access, then Explorer.
+- [Direct preview](http://127.0.0.1:8765/site/content-preview.html): examine the interface without the entrance.
+- [Version B Explorer](http://127.0.0.1:8765/site-b/content-preview.html#explore): the level selector that replaces the globe in version B; [main entrance of version B](http://127.0.0.1:8765/site-b/index.html). The three design mock-ups it was chosen from are in [`studies/explorer-b-design/`](studies/explorer-b-design/README.md).
+- [Site map](http://127.0.0.1:8765/docs/site-map/): interactive navigation map of the active prototype for the whole team, in French and English. It shows which screen leads to which, from the encrypted arrival down to the deepest windows. Select a screen to see what leads to it, where it leads and the shortest path from arrival. It was surveyed on 15 October 2026 against the `audit-fixes-146` state: 65 screens and 110 links. It was updated the same evening for the integrated design-review selection: 42 Awards is now a coming-soon page, and 16 key paths pass in Chrome. It is checked against the code. When a change makes the map inaccurate, update `site-map-data.js`, run `node docs/site-map/check-site-map.mjs` and republish the page with its data file at the same link (rule in AGENTS.md). [Rules, procedure, evidence and limits](docs/site-map/NOTES.md).
+- [Globe interaction studies](http://127.0.0.1:8765/studies/globe-gesture-studies/): three separate trials on a frozen copy of the real globe—direct gestures, a revealable halo and optional long press. All retain click/touch/keyboard controls, four directional buttons and a remembered always-visible option. The user declined all three on 13 October and deferred this topic. The trials remain preserved; none is integrated.
+- [Globe control placement comparison](http://127.0.0.1:8765/studies/globe-control-placement/): two separate schematic proposals, with no change to the active interface.
+- [Design-review trials](http://127.0.0.1:8765/studies/design-review-studies/): 19 separate, optional trials from the 14 October design review, applied to a frozen copy of the prototype. Compare each one side by side with the frozen 14 October copy, or combine several. All 19 are implemented and independently verified; ten revisit an earlier explicit decision. On 15 October the user selected nine of them (01, 03, 07, 09, 12, 13, 15, 18 and 19), and that combination was tested: no blocking conflict, one cross-trial conflict and one single-trial defect fixed, four minor limits documented. The user then asked to apply the selection, which is integrated into the active prototype; the other ten trials stay separate. [Trials, selection, evidence and limits](studies/design-review-studies/NOTES.md), [integration notes](site/notes/DESIGN_REVIEW_SELECTION_NOTES.md).
+- Both entry points share the same controller and content. With World selected and no content filters, the current corpus contains 78 items per section: seven project pages, four profile pages and seven Chronicles pages. A 13 October placement comparison for globe controls remains a separate proposal; see the [design notes](site/notes/INTERFACE_POLISH_NOTES.md#13-octobre--propositions-de-placement-des-commandes).
+- [Research archive](http://127.0.0.1:8765/studies/research-archive/index.html): compare preserved studies and earlier states.
+- [42 Awards interface studies](http://127.0.0.1:8765/studies/awards-studies/index.html): compare three separate layouts with simulated submission, voting, dates, archives and rules.
 
-<!-- Replace inapplicable steps with an explanation or remove them. Add any
-separate commands needed for different services or execution modes. -->
+Stop the server with `Ctrl+C`. This command does not configure automatic startup. If the local preview reports “Failed to load page”, start the server again using the command above. On 11 October, the stopped server was restarted and both entry pages plus the current comments/filter assets returned HTTP 200; no new browser-render verification was possible.
+
+Run the active Horizon test files from the repository root:
+
+```sh
+node --test site/*.test.mjs site/tests/*.test.mjs
+```
+
+**Targeted entrance refinements, 13 October — final checks completed on 14 October:** sign-in uses the charter’s **42 Blue `#00BABC` in light mode and Royal Pink `#ED3491` in dark mode**. The latest clarification applies these colors to the **World icon alone**, replacing the earlier filled disk. Visiter/Visit/زيارة replaces the longer visitor label and matches sign-in’s dimensions. Visit and Create an account first used pink text in dark mode; on 15 October the user clarified that dark mode should mirror light mode, so both now use white text there (the dark counterpart of the light ink text, 17.2:1), while sign-in keeps Royal Pink with ink text because white would reach only 3.82:1. Light mode is pixel-identical; the previous state is [archived](archives/site-versions/pre-dark-secondary-text-20261015/README.md). The dark scanner and decrypting letters also use Royal Pink. The account access is hidden only on arrival, where clicking/tapping the background outside buttons, or using its keyboard control, changes the theme.
+
+The requested FR/EN/AR cycle now belongs only to the two button labels: it must keep the app language, page direction, button dimensions and order unchanged, including when entering a French site while Arabic labels are displayed. The assistant chose a four-second interval and a short text transition, paused during hover, focus, a dialog or a hidden tab; reduced motion removes the animation. The initial global-language cycle is preserved as a superseded state. [47 entrance/account/theme tests](site/checks/20261013-animated-entry-labels-tests.json) pass with unchanged hashes; the final browser review was completed on 14 October (see below). [Detailed scope, historical evidence and pending final checks](site/notes/ACTION_AND_COPY_NOTES.md). Autonomous states [141](archives/site-versions/pre-targeted-button-colors-20261013/README.md), [142](archives/site-versions/pre-cycling-entrance-20261013/README.md) and [143](archives/site-versions/pre-animated-button-labels-20261013/README.md) remain available.
+
+**Illustration and campus-name consistency, 17 October:** at rel-hass's request (“do what is most logical”), three renderings that the Figma rebuild checks had flagged as probably unintended are corrected in the active prototype. Generated illustrations on project/article pages and in the media viewer no longer inherit the icons' outline (the cards already removed it), their drawn texts stay left to right in Arabic, and the campus in an article header and in “Explore {campus}” is isolated like the other campus names, so Arabic reads “42 Tokyo” instead of “Tokyo 42”. The previous state is [archived](archives/site-versions/pre-illustration-consistency-20261017/README.md) (139 sources). All **660 cases across 62 active Horizon files** pass; in headless Chrome, [11 before/after cases](site/checks/20261017-illustration-consistency/results.json) show changes only in the illustrations and the Arabic campus names, with the projects list and the French buttons pixel-identical. [Notes and limits](site/notes/ILLUSTRATION_CONSISTENCY_NOTES.md). Local **0.0.1 pre-alpha**, with no commit, push or publication.
+
+**Campus names on profile pages, 18 October:** the final Figma check found the same unisolated campus name on the profile pages. At rel-hass's request ("Oui, corriger"), the campus line of a profile card, the “Explore {campus}” button of a profile and the campuses of a profile's campus history are isolated (`<bdi dir="auto">`), so Arabic reads “42 Paris” instead of “Paris 42”. The previous state is [archived](archives/site-versions/pre-profile-campus-isolation-20261018/README.md) (139 sources). All **660 cases** pass; in headless Chrome, [8 before/after cases](site/checks/20261018-profile-campus-isolation/results.json) change only the Arabic campus names, with the French pages pixel-identical; no demo profile has a campus history, so that block is checked with the test DOM. Local **0.0.1 pre-alpha**, with no commit, push or publication.
+
+**Globe centering and comment sorting, 13 October:** the globe is centered at 50%/50% by removing only the obsolete vertical offset; its radius is unchanged. [Eight comparisons and two campus-dialog restoration checks](site/checks/20261013-globe-recentering/summary.json) pass, with nine screenshots examined. The comment-sort control adopts the existing project-sort presentation while keeping its options, sorting rules, storage and drafts; [browser verification completed on 14 October](site/notes/COMMENTS_NOTES.md). Earlier [32 canvas observations and 16 comparisons](site/checks/20261013-scanner-dark/browser-results.json) verify scanner colors and unchanged geometry/timing, rather than the new label interactions. The requested removal of Explorer’s zoom buttons and explicit demo qualifiers remains. Local **0.0.1 pre-alpha**, with no new commit, push, Figma update or publication.
+
+**Audit and fixes, 15 October:** at the owner’s request, a read-only audit checked the eleven requests sent to Codex on 13 October against the code, the archived states and new Chrome measurements, with adversarial counter-checks. All eleven requests were found implemented, but five defects were found:
+- the arrival labels stopped rotating after a pointer-cancelled sign-in;
+- the comment sort panel was cut near the bottom of the screen and partly covered by the mobile back-to-top button;
+- the dark Create an account text reached only 3.5–3.9:1;
+- the arrival error screen hid the account, so neither theme nor language could be changed there;
+- the older panels composition also rotated its labels.
+
+On the owner’s request, only these defects and the inaccurate notes were corrected; interpretation choices awaiting the owner’s decision were left unchanged. Since then:
+- only keyboard or assistive-technology focus pauses the label rotation;
+- the sort panel opens upward when needed and stays clear of the floating controls;
+- dark Create an account sits on the charter ink background (4.51:1);
+- the account is available on the error screen;
+- label rotation is opt-in (`cycleLabels`), enabled only by the main entrance.
+
+A first version was checked by four adversarial browser verifiers; its residual edge cases (Escape and lock keys after a pointer action, assistive-technology focus, a sort button under the floating controls) were fixed and re-measured against it. The 20-case arrival bench passes 20/20, served files match the sources, and [660/660 tests](site/checks/20261015-audit-fixes-146-tests.json) pass. Previous states [144](archives/site-versions/pre-codex-audit-fixes-20261015/README.md) and [145](archives/site-versions/pre-audit-fixes-refinement-20261015/README.md) are preserved. [Evidence](site/checks/20261015-audit-fixes/), [details](site/notes/ACTION_AND_COPY_NOTES.md). The design-review trials still run on their frozen copy of state 144; integrating a selection must start from the current state. Limits: headless Chrome, emulated touch, no physical phone or real screen reader.
+
+**Resumed checks, 14 October:** the 13 October Codex session stopped at 17:24 during its final browser checks; they were completed on 14 October without changing the prototype sources (hashes identical before and after each bench). [20 Chrome observations](site/checks/20261013-animated-entry-labels/browser-results.json) confirm the private FR/EN/AR label cycle: about four seconds between changes, site language and direction unchanged, equal and constant button dimensions at 1280/390/320 px and in landscape, captured text transition, pauses on hover/focus/dialog/hidden tab, background and keyboard theme control, reduced motion without animation, and a French welcome with the account visible after entering while Arabic labels were shown. [14 observations](site/checks/20261013-comment-sort-style/browser-results.json) confirm that the comment-sort button, panel and options share the project-sort computed styles in FR 1280/390 and AR 320 (icon-only 44 px), with keyboard sorting, preserved drafts, Escape/outside click and reload persistence. Three failed bench attempts are preserved; none exposed an application defect. [HTTP/reference check](site/checks/20261013-animated-entry-references.json): 95 files, 159 references with no missing target, 15 served resources identical to the sources. The [full active campaign](site/checks/20261014-full-tests-after-resumed-checks.json) then passes **651 cases across 62 files**, after adapting one test (`tests/detail-media.test.mjs`) that still expected the demo caption removed by the explicit 13 October decision; its previous version is preserved as `checks/20261014-detail-media-before.test.mjs`. Limits: isolated Chrome with the map blocked, simulated hidden tab, account language not persisted across loads (existing behaviour), no physical phone or screen reader.
+
+**Separate globe studies, 13 October:** 29 gesture tests,22 Chrome observations,12 emulated-touch observations and11 additional accessibility/layout checks pass. Screenshots cover desktop, narrow French/Arabic layouts, dark mode and landscape; cancellation, focus, repeated presses, hover after resizing and browser-back restoration were played. These checks do not establish full accessibility conformance and do not include a physical phone or a real screen reader. The active interface is unchanged, with a frozen dependency snapshot and isolated study preferences. [Implementation, evidence and limits](studies/globe-gesture-studies/NOTES.md).
+
+**Design-review trials, 14–15 October:** on 15 October the frozen copy passes its integrity check: 137 hashes, 11 preserved originals and 206 local references, with no missing target. Before any trial was implemented, the copy without trials rendered identically to the active prototype in five headless Chrome states (0 differing pixels). Each of the 19 trials was implemented, checked by its author, then re-verified by a second, adversarial agent: 8 validated, 10 corrected and 1 with reservations. A final gallery check with the finished sheets passes: 19 cards, 38 before/after captures served, both comparison frames loaded, the exclusive-pair warning, and no overflow or console error at 1440, 390 and 320 px. As the user decided on 15 October, combinations were not exhaustively pre-tested; the nine-trial selection the user then chose passed two read-only combination checks, an integration pass and a final check (the real globe at desktop, tablet and phone viewports, lists at 320 px in Arabic, comments, filter dialog, dark arrival, Awards), with the gallery re-tested afterwards. Checks use headless Chrome with emulated viewports, at most three instances under a memory cap; no physical phone or screen reader was used. [Evidence and limits](studies/design-review-studies/NOTES.md).
+
+**Design-review selection integrated, 15 October:** the active `audit-fixes-146` state was archived first (137 sources, identical to the active prototype in Chrome before the change). Among the 137 archived sources, only `index.html` and `content-preview.html` change, by two lines each; the two added files match the verified package. All **660 cases across 62 active Horizon files** pass, 163 local references resolve and 20 served resources match their sources. In headless Chrome, the integration's effect on the original equals the trials' effect on the study copy in 13 views (Explorer with the real globe, Projects at 320 px in Arabic, Profiles, Awards in French/Arabic/English, dark arrival), with pixel-identical renders; the only differences come from the five audit fixes made earlier that day. The older panels entrance is unchanged. The planned independent verifier was cut by a usage limit, so these checks were re-run by the main session. [Integration notes and evidence](site/notes/DESIGN_REVIEW_SELECTION_NOTES.md).
+
+**Final pre-push check, 13 October:** **639 passing cases across62 active Horizon files**, with165 source/test hashes unchanged during the run. Independent review found one outdated About statement limiting examples to five campuses; its FR/EN/AR copy is corrected and archived. Two existing listener-count warnings remain in the simulated detail-media/theme-menu suites; no test fails. [Final results](site/checks/20261013-pre-push-final-tests.json). The22 checked HTTP resources match the final local sources, and159 inspected local references have no missing target. [Resource check](site/checks/20261013-pre-push-references.json). Earlier browser evidence remains applicable to the unchanged interface behaviour; only About copy and entry cache identifiers changed in this final pass.
+
+**Latest account update, 13 October:** supplied username below the member name, guest sign-in/create-account buttons above settings, and no visible account heading or Visitor label. Nine existing account tests and19 entrance cases pass;11 Chrome states cover the entrance/preview flows, cancellation, simulated creation, existing sign-in, French/English/Arabic and desktop/320px layouts. The sign-in button uses the same CSS as the entrance and computed styles match. [Evidence and preserved previous panel](site/notes/ACCOUNT_MENU_NOTES.md).
+
+**Latest interface refinements, 13 October:** pagination arrows now stay in fixed columns on one row at every width, with narrower page buttons. Thirty Chrome states pass across320–1280px, French/English/Arabic,100-page fixtures and real pointer navigation; [evidence and preserved previous layout](site/notes/CONTENT_PAGINATION_NOTES.md). The mobile back-to-top button now fades out and returns with the dock:18 browser cases pass and359 sampled frames have identical opacity, including keyboard exceptions and reduced motion. [Evidence](site/notes/BACK_TO_TOP_NOTES.md).
+
+The account menu now opens separate Theme and Language panels, with both groups retained in Settings; nine targeted account tests and15 Chrome states pass, covering visitor/member access,320px RTL, back/focus and saved preferences. [Implementation and browser checks](site/notes/ACCOUNT_MENU_NOTES.md). The final22 local HTTP resources match their source files and the159 inspected references have no missing targets. [Resource check](site/checks/20261013-interface-refinements-references.json).
+
+**Earlier pagination check, 13 October:** 30 targeted cases pass for compact page numbers, 24 profiles per page, the real corpus, history and map-independent filtering. [Test record](site/checks/20261013-compact-pagination-tests.json). A separate Chrome fixture checks 100 pages in every section without changing the actual catalogue; 28 browser states pass, including 320px French/Arabic controls on one row, all 78 real profiles across four pages, invalid old page links and detail/back restoration. [Browser evidence](site/checks/20261013-compact-pagination-browser.json). The final previous/next arrows also pass 15 French/Arabic pointer-navigation states with accessible labels and RTL direction. The mobile-only back-to-top shortcut passes 26 browser states, including desktop absence, responsive focus, overlay hiding, French/English/Arabic and reduced motion; see [its notes](site/notes/BACK_TO_TOP_NOTES.md).
+
+**Earlier check, 13 October:** **637 passing cases across 62 active Horizon files**, excluding archives. The full run found one outdated routing-test fixture, corrected and rerun independently; all other tests and feature modules stayed unchanged; entry cache identifiers were updated afterwards and checked against the served sources. [Reproducible results and source hashes](site/checks/20261013-content-controls-tests.json). Chrome checked all 21 pages of the real 78-per-section corpus, detail/back navigation, country/campus filtering with a failed or delayed globe, recovery, collapsible filters including keyboard/mixed selections, the visitor/member account panel, and contribution cards without Discover. Selected French desktop and English/Arabic narrow layouts were inspected, including Arabic 320px. [Pagination](site/notes/CONTENT_PAGINATION_NOTES.md), [demo data](site/notes/DEMO_CONTENT_NOTES.md), [filters](site/notes/FILTER_DIALOG_NOTES.md), [independent geography](site/notes/MAP_INDEPENDENT_FILTER_NOTES.md), [account panel](site/notes/ACCOUNT_MENU_NOTES.md). These are local prototype checks with reduced motion, not real authentication, connected messaging, physical-phone or remote street-map verification. These checks preceded the13 October sharing request recorded above; no production release was made.
+
+**Previous local check, 12 October:** all **56 active Horizon files / 587 cases** pass, excluding archives. Each file was run directly with Node's built-in test runner. Independent review and a graph of162 local references found no missing dependency. Headless Chrome verified multi-campus lists/search, the campus chooser in French/English/Arabic, shared local favourite/comment state across campus contexts, and selected desktop/320px renders. Seventeen browser scenarios reproduce the old dock defect and verify that detail-menu actions leave the global dock visible while real document scrolling retains its existing fade. See [project checks and limitations](site/notes/PROJECTS_NOTES.md#12-octobre--un-projet-partagé-entre-plusieurs-campus) and [navigation checks](site/notes/DETAIL_SCROLL_NOTES.md#12-octobre--le-menu-local-ne-masque-plus-le-menu-principal). The main visitor entrance was played with reduced motion; ordinary entrance animation was not revalidated after inconclusive timed attempts. Profile project cards, their preserved campus context and the single-campus direct action were also checked. These checks cover the current changes, not every pending visual check listed below. No physical phone was tested.
+
+**Full check before sharing on 11 October:** all 54 active Horizon test files passed (564 cases), together with 10 Awards cases and 7 brand-transition cases: **581 passing cases across 56 files**, excluding historical archives. The run reported listener-count warnings in the simulated DOM tests for detail media and the theme menu; no test failed. This does not add browser-render verification.
+
+All **43 active test files passed** on 8 October. On 11 October, **96 cases in 10 targeted files passed**, covering comments, filters, preference isolation, sections, media and authors. A further targeted pass for author links, mentions, system appearance and profile navigation passed **63 cases in 9 files**, including 18 comment-model cases, 12 mention cases, 7 picker cases, 13 theme cases and 3 routing cases. The remaining cases cover shared sections and bylines. The later compact-control/crown pass passed **32 cases in 6 targeted files** (overlapping the preceding checks), including 7 author cases. These adaptations and the Grid/List excerpt clamp still need integrated visual verification. The subsequent author-fit/comment-menu/sorting/reporting pass passed **76 cases in 9 targeted files** (including 7 geometry simulations, 8 comment interaction cases and 11 report cases). Report button sizing was reviewed across the shared styles and compact variants; its rendered dimensions remain unverified. Removing the project/article sidebar images then passed 12 existing cases across 3 files after thumbnail expectations were updated; the final layout still needs browser verification. The profile campus-country/action-layout update passed two existing test files and targeted FR/EN/AR DOM checks; its visual layout remains unverified. Browser checks from 10 October cover the initial comments/display work and selected reply/reaction/emoji interactions. Browser automation was unavailable at the 11 October resumption: final icon-only reactions, saved edits/thread cleanup, profile directory favourites and new project inline media still need visual verification, along with the later mention picker, clickable comment profiles ; the account panel and its system-theme choice were subsequently checked on 13 October. Browser checks cover selected desktop/mobile widths, themes, languages, navigation and interactions; they do not establish production readiness or testing on a physical phone. Detailed evidence and limits are linked in [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md).
+
+The preceding project-team/trial and complete eyebrow-removal pass succeeded across eight targeted test files, plus 16 simulated Pong scenarios. Those Pong checks now describe the preserved archive. The replacement repository editor passes 10 interaction/data tests and three existing regression files; the active page, module, CSS and archive respond with HTTP 200. The editor and archived game still need real-browser visual verification; CUA remains unavailable.
+
+The separate Awards studies also have **10 passing model tests**, run with `node studies/awards-studies/model.test.mjs`. Selected desktop and 320 px browser flows have been checked; see [the study notes](studies/awards-studies/NOTES.md).
 
 ## Team Information
 
-| Member | Assigned role(s) | Responsibilities |
+Roles below are recorded in [IDEA.md](IDEA.md). They do not imply completed implementation work.
+
+| Member | Assigned role | Responsibility area |
 | --- | --- | --- |
-| hchowdhu | [PO_PM_TECH_LEAD_DEVELOPER_OR_OTHER] | [RESPONSIBILITIES] |
-| mshariar | [ROLE_OR_ROLES] | [RESPONSIBILITIES] |
-| mkettab | [ROLE_OR_ROLES] | [RESPONSIBILITIES] |
-| mmutsulk | [ROLE_OR_ROLES] | [RESPONSIBILITIES] |
-| rel-hass | [ROLE_OR_ROLES] | [RESPONSIBILITIES] |
+| rel-hass | Project Owner | Product direction and scope. |
+| hchowdhu | Technical Lead | Technical coordination. |
+| mshariar | Project Manager | Project coordination. |
+| mkettab | Developer | Application development. |
+| mmutsulk | Developer | Application development. |
 
 ## Project Management
 
-- **Work organization:** [HOW_WORK_WAS_PLANNED_DISTRIBUTED_AND_TRACKED].
-- **Meetings:** [MEETING_FREQUENCY_FORMAT_AND_PURPOSE].
-- **Project management tools:** [TOOLS_USED_AND_HOW_THEY_WERE_USED].
-- **Communication channels:** [CHANNELS_USED_AND_THEIR_PURPOSES].
-- **Collaboration workflow:** [BRANCHING_CODE_REVIEW_AND_INTEGRATION_PROCESS].
+Product intentions and progress are recorded in [BOARDING_JOURNAL.md](BOARDING_JOURNAL.md), [IDEA.md](IDEA.md) and [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md). Figma and the web studies support design comparisons. The French and English onboarding guides describe proposals still requiring collective decisions.
+
+[VERSIONING.md](VERSIONING.md) defines task branches, pull requests, independent review and publication. The personal `rel-hass` branch is an explicit request for sharing the research. On 12 October, GitHub returned no pull requests or Actions runs; `main` was unprotected, with no effective branch rules returned. These settings were inspected, not changed. Meeting schedules are not confirmed here.
 
 ## Technical Stack
 
-| Layer | Technology / framework | Version | Reason for choosing it |
-| --- | --- | --- | --- |
-| Frontend | [TECHNOLOGY] | [VERSION] | [JUSTIFICATION] |
-| Backend | [TECHNOLOGY] | [VERSION] | [JUSTIFICATION] |
-| Database | [DATABASE_SYSTEM] | [VERSION] | [JUSTIFICATION] |
-| [OTHER_SIGNIFICANT_TECHNOLOGY_OR_LIBRARY] | [TECHNOLOGY] | [VERSION] | [JUSTIFICATION] |
+| Layer | Current technology | Purpose / status |
+| --- | --- | --- |
+| Prototype UI | HTML, CSS, JavaScript ES modules | Directly runnable interface and animation studies. |
+| Map | Vendored MapLibre GL JS 5.24.0 | One WebGL map from world to campus neighbourhood. |
+| Geography | Local Natural Earth assets; external urban map data | Local world/country rendering and detailed campus surroundings. |
+| Typography | Local Jost and Noto Sans Arabic assets | Current Latin and Arabic prototype typography. |
+| Checks | Node.js built-in test runner | Prototype logic and regression checks. |
+| Experimental backend, separate branch | Express / TypeScript on `hchowdhu` | Initial Intra API and OAuth/session implementation; not integrated into the prototype or approved as the collective production stack. |
+| Production database | Undecided | No database or persistence implementation in the reviewed branches. |
 
-**Architecture and major technical choices:** [EXPLAIN_HOW_THE_COMPONENTS_WORK_TOGETHER_AND_JUSTIFY_MAJOR_DESIGN_DECISIONS].
+The current prototype lives in `site/`, with shared dependencies in `shared/`; earlier versions are in `archives/` and design studies in `studies/`. Figma handoff documents and state records live under `figma/`. See [Repository layout](#repository-layout). The intended production architecture is discussed in [DOCUMENTATION.en.md](docs/DOCUMENTATION.en.md).
 
 ## Database Schema
 
-**Structure overview:** [DESCRIBE_THE_DATABASE_STRUCTURE_OR_INSERT_A_SCHEMA_DIAGRAM].
-
-### Tables / collections and key fields
-
-<!-- Add a row for each key field, repeating the table / collection name.
-Include primary keys, foreign keys, and relevant constraints where applicable. -->
-
-| Table / collection | Purpose | Key field | Data type | Constraints |
-| --- | --- | --- | --- | --- |
-| [TABLE_OR_COLLECTION] | [PURPOSE] | [FIELD_NAME] | [DATA_TYPE] | [PRIMARY_KEY_FOREIGN_KEY_UNIQUE_NULLABLE_ETC] |
-
-### Relationships
-
-| Source table / field | Related table / field | Relationship | Description |
-| --- | --- | --- | --- |
-| [SOURCE] | [TARGET] | [ONE_TO_ONE_ONE_TO_MANY_OR_MANY_TO_MANY] | [DESCRIPTION] |
+No production database or approved implemented schema exists yet. The prototype reads local demonstration data and stores selected preferences locally; the separate connected-account studies use sessionStorage for simulated activity. Proposed entities and relationships in the onboarding guides must be reviewed before implementation.
 
 ## Features List
 
-<!-- List every implemented feature, including features outside the chosen modules. -->
+These are **prototype behaviours**, not completed production modules.
 
-| Feature | Functionality | Contributor(s) |
+| Feature | Current functionality | Contributor |
 | --- | --- | --- |
-| [FEATURE_NAME] | [WHAT_USERS_CAN_DO_AND_HOW_IT_WORKS] | [LOGINS] |
+| Entrance | Binary/hexadecimal scan, simulated connection, slogan and circle-to-globe transition. No account access on arrival; background theme control supports pointer and keyboard. Private animated FR/EN/AR button labels retain the app language and stable equal dimensions; final interaction checks passed on 14 October. Since 15 October, only keyboard or assistive-technology focus pauses the rotation (it keeps going after a pointer-cancelled sign-in), and the account is available on the arrival error screen. | rel-hass, with Codex assistance |
+| Explorer | World/country/campus navigation, linked filters, Paris/Mulhouse profiles with official logos/photos and dated source data, stable photo navigation arrows, mobile sheet touch/wheel/handle gestures and random discovery. | rel-hass, with Codex assistance |
+| Projects, Profiles, Chronicles | Lists with 24 profiles per page and 12 projects/articles per page, compact numbered navigation (at most five numbers plus ellipses) with narrower buttons and accessible previous/next arrows that stay in fixed columns on the same row at every width, direct page URLs and restoration after a detail visit. There are 78 fictional examples per section (four profile pages, seven project/article pages), with French/English/Arabic titles and author/campus links. Visible introductory headings have been removed while accessible titles remain. Profile contribution cards remain clickable without a repeated Discover button. Demonstration lists/details, two-column mobile content grids, truncated summaries, unlimited author rendering with a designated lead first and a crown immediately to the right of their name, carrying an accessible role label, filters, sorting and local favourites. Compact author previews switch to the first person and a +N link whenever the full row no longer fits their actual card, before a second collaborator wraps. Project/Chronicle titles and excerpts are bounded in both Grid and List; detail text remains complete. Their detail sidebars start with text and actions, with the main image kept in the project overview or article body. The editorial eyebrow lines are removed entirely from cards, details, profile contributions and search; campus/date metadata remain. Project teams now appear in Overview, and +N links jump to that team block. Opening a profile through an author/comment link preserves the current country/campus filter. Profile details show the campus country in parentheses, localized to the interface language, with Send a message above the Favorites/Report row. | rel-hass, with Codex assistance |
+| Projects across campuses | One project ID has an explicit list of participating campuses, stable if an author later changes campus. Lists, country/world results, search and random discovery avoid duplicates. Cards, details and profile projects show all campuses; a localized chooser opens the existing map when more than one campus is available. Local comments, favourites and repository data remain shared by project ID. This is static demonstration data; publication tooling and server persistence remain pending. [Details and preserved previous version](site/notes/PROJECTS_NOTES.md#12-octobre--un-projet-partagé-entre-plusieurs-campus). | rel-hass, with Codex assistance |
+| Mobile back to top | A 44px floating arrow appears after scrolling in the mobile layout (up to 840px), above the complete dock/search group. It returns to the top smoothly, or immediately with reduced motion, and restores the heading focus. It fades out during document scrolling and returns in sync with the dock. Hidden on desktop, during the entrance and while overlays are open. [Details](site/notes/BACK_TO_TOP_NOTES.md). | rel-hass, with Codex assistance |
+| Independent detail navigation | Clicking, centring or scrolling the left menu in project/profile/article details keeps the global dock visible. Normal document reading keeps the existing fade behaviour. | rel-hass, with Codex assistance |
+| Project trial | Try the project links to an author-supplied repository, with optional setup instructions. A local author-interface trial lets users add, edit, cancel or remove the link in French/English/Arabic; saved changes stay in the tab session, with an in-memory fallback. Only explicit HTTP/HTTPS links without credentials are accepted. No repository is invented for the fictional samples. The previous embedded/standalone Pong comparison remains [available as an archive](archives/site-versions/pre-project-repository-link-20261011/preview.html). This does not provide real author permissions, publishing or remote code execution. [Implementation and limits](site/notes/PROJECTS_NOTES.md#11-octobre--tester-le-projet-depuis-un-dépôt). | rel-hass, with Codex assistance |
+| Media viewer | Campus photos, detail illustrations and main profile portraits open full-size; optional project/article video media use native controls with cleanup on close. | rel-hass, with Codex assistance |
+| Comments and display preferences | Local comments/replies, clickable author names/avatars, author editing, emojis and exclusive reactions. A vertical three-dot menu contains author actions and reporting. The comment-sort button and panel share the project-sort presentation (browser check passed on 14 October; since 15 October the panel opens upward when it does not fit below and stays clear of the floating controls). Newest, oldest and most-popular sorting is remembered per content; popularity uses the local like and replies stay chronological. Progressive @ mentions match logins or hyphenated names with or without accents, insert the full display name and link to the selected profile. Reactions and deletions have no confirmation message. The fictional profile is explicitly identified, and the notice explaining tab-local comments, replies and reactions is restored; explicit demo qualifiers remain removed. Blue thumbs-up (wrist left) and red thumbs-down (wrist right) follow the YouTube orientation and remain the same in both themes; labels appear on hover and remain accessible. Deleted parents disappear after their final reply is deleted. Grid/List is remembered separately per section. No shared discussion or server permissions. | rel-hass, with Codex assistance |
+| Project filters and profile favourites | Collapsible category groups have separate Select all/Clear all commands and individual choices, including mixed states and nested project groups. The profile directory uses the same Filter dialog for status and arrival year. Draft selection and Apply/Cancel/Reset are preserved, including while the background map finishes loading. Global and profile-local project filters stay independent. Filter/View/Sort become icons only when their toolbar is at most 320 px wide, retaining tooltips and accessible names. Profile directory cards expose the existing local favourite action. | rel-hass, with Codex assistance |
+| Media in reading sections | Lead images appear in project Overview and Chronicle Article. Optional media can appear throughout Development/Article; Media collects and deduplicates them. Repeated section titles are visually hidden while accessible names remain. | rel-hass, with Codex assistance |
+| Global search | Structured/lexical search over prototype data. Conversational multimodal AI search is planned. | rel-hass, with Codex assistance |
+| Responsive navigation | Desktop labels beside icons, then all labels below, selected label only, finally icons only. The final container thresholds are 560/340/280 px: all names remain at a 390 px window, the active name at 320 px, and icons alone around 318 px. Menu/buttons remain 60/48 px. On 11 October, 28 final headless Chrome measurements checked French/English/Arabic layouts and resizing, with selected screenshots inspected; both dock/transition test files pass. Earlier thresholds remain archived. [Details and limits](site/notes/RESPONSIVE_DOCK_NOTES.md#11-octobre--prolonger-les-deux-paliers-intermédiaires). | rel-hass, with Codex assistance |
+| Content reporting | Project/article/profile detail actions and comment menus open a shared report form with a required reason and optional details. Records stay in the tab session, with duplicate detection and an in-memory fallback; no moderation service or external submission. The Report button shares Favorite dimensions and typography, growing only when its label needs more width. Its light-theme outline uses the existing input-border colour for visibility; the CSS change is served locally but has not been visually checked in the browser. Project and Chronicle actions appear in the order Favorites → Report → Explore campus. | rel-hass, with Codex assistance |
+| Account panel | Hidden on the encrypted arrival screen and available after arrival: visitor icon, or the existing demo member’s avatar after simulated sign-in. The member panel shows the supplied @username beneath the name. The visible account heading and Visitor label are removed; Sign in and Create an account sit above the settings, using the entrance button styles. In dark mode, Create an account keeps its Royal Pink text on the charter ink background (4.51:1, 15 October). Account creation has a separate confirmation flow using the existing local profile. Sign-in and creation confirmations again explicitly explain the simulation; no real account is created, while explicit demo qualifiers remain removed. Account opens the demo profile; Theme and Language each open only their own choices, while Settings keeps both groups. Back restores focus to the originating action; Sign out remains available. Messages/Notifications only appear in member mode and have explicit empty states. No real authentication, messaging or notifications backend is connected. [Details](site/notes/ACCOUNT_MENU_NOTES.md). | rel-hass, with Codex assistance |
+| Languages and themes | French, English, Arabic RTL; Light, Dark and System choices inside the account panel for both visitors and members. The saved System choice follows device appearance changes; explicit choices remain fixed. | rel-hass, with Codex assistance |
+| 42 Awards entry | Page retaining header/menu, with a centred “coming soon” note in French/English/Arabic since the 15 October design-review integration; user-selected letter cascade animates HORIZON/AWARDS in both directions. | rel-hass, with Codex assistance; note added with Claude Code assistance |
+| 42 Awards interface studies | Three separate layouts with local candidature/vote confirmation, four simulated dates, visitor/member states, edition archives and participation/vote/results rules. French, light/dark, responsive; no real submissions or votes. | rel-hass, with Codex assistance |
+| Wordmark motion studies | Ten separate HORIZON/AWARDS transitions, both directions, timeline controls and themes; the original four-study gallery is preserved. Study 08, Cascade de lettres, is selected and integrated into the header. | rel-hass, with Codex assistance |
+| Connected-account studies | Three separate demonstrations of editing, messages, notifications and Awards participation; no real accounts or sends. | rel-hass, with Codex assistance |
+| Design-review trials | Separate gallery of 19 optional trials on a frozen copy of the prototype: globe and its texts, floating search, small-screen cards, dark-theme illustrations, action colours, readability and typography. Side-by-side or toggle comparison by page, viewport, theme and language; trials can be combined, with two exclusive pairs. Implemented and verified on 14–15 October; the nine selected by the user are integrated into the active prototype (next row), the other ten remain separate. | rel-hass, with Claude Code assistance |
+| Design-review selection (integrated) | Nine user-selected trials applied to the active prototype on 15 October through one added stylesheet and one module, loaded last by both entry pages: the world globe fits the free band between the texts on desktop, tablet and landscape phones (centre kept); globe labels use the site font; Projects and Chronicles show one card per row below 360 px; the pending-login placeholder is hidden; primary buttons share the sign-in colours and Cancel buttons are neutral; Visit and Create an account get a dark-theme outline; small useful text is at least 13 px with a more readable accent; main components follow a short type scale with three radii and two shadows; the Awards page shows its coming-soon note. The previous state is archived; removing the four added lines restores it. [Details and limits](site/notes/DESIGN_REVIEW_SELECTION_NOTES.md). | rel-hass, with Claude Code assistance |
+
+Campus totals and calendars remain partial where no official figure or future date was verified. Campus photo arrows were checked for stable horizontal positions in Chrome on desktop and at 320 px, including Arabic RTL. Mobile sheet wheel expansion, reading and collapse were played in Chrome; touch was checked with synthetic events, not a physical phone. No active sample contains a video yet; the video viewer was played with an archived local clip in a separate browser fixture. The Arabic directory label is now الأعضاء (members); French and English remain Profils/Profiles.
+
+Project/article creation tooling, including WordPress or alternatives, is explicitly deferred; no CMS has been selected or installed.
+
+All previous studies and replaced prototype sources are preserved. The previous connected-account studies remain separate; the newly requested active header panel does not integrate their simulated messaging/editor workflows.
+
+**42 Awards product framing, 8 October:** requested content includes separate campus and world edition archives, ongoing editions, project submissions by category and key dates. Other campuses' local competitions are viewable without voting rights; world editions allow eligible members to vote. Campus winners qualify for world editions, with no direct world submissions, as explicitly selected by the user. Detailed eligibility and voting rules remain open. The proposed page structure is documented in [the Awards notes](site/notes/AWARDS_NOTES.md) and explored in three separate interactive studies; no layout has been selected or integrated into the active Awards page, which still contains only the shared header/menu and wordmark transition.
+
+The user also requests a section explaining participation conditions, voting rules and how results are determined and announced. The studies implement **Rules** with those three topics and links from the relevant actions. Edition context is preserved, while the text remains a shared demonstration template; final rules and historical rule versioning remain to be implemented. The studies use eight fictional projects and eleven editions, with local state per variant; they do not add real accounts, server permissions, tallying or production data.
 
 ## Modules
 
 ### Chosen modules and points
 
-<!-- Use the subject's exact module names and classifications.
-Major = 2 points; Minor = 1 point. The project requires at least 14 points. -->
-
-| Module | Type (Major / Minor) | Points | Contributor(s) |
-| --- | --- | --- | --- |
-| [MODULE_NAME] | [MAJOR_OR_MINOR] | [2_OR_1] | [LOGINS] |
-
-**Total:** [MAJOR_COUNT] × 2 + [MINOR_COUNT] × 1 = **[TOTAL_POINTS] points**.
+The final module selection is pending collective agreement. The onboarding guides propose a basket of modules; no evaluation points are claimed from these prototypes.
 
 ### Module details
 
-<!-- Duplicate this subsection for every chosen module. -->
-
-#### [MODULE_NAME]
-
-- **Reason for choosing it:** [WHY_THIS_MODULE_FITS_THE_PROJECT].
-- **Implementation:** [HOW_IT_WAS_IMPLEMENTED_AND_WHICH_COMPONENTS_ARE_INVOLVED].
-- **Contributor(s):** [LOGINS_AND_THEIR_WORK_ON_THIS_MODULE].
-- **For a custom "Module of choice", if applicable:** [DESCRIBE_ITS_SCOPE_COMPLEXITY_AND_JUSTIFY_ITS_MAJOR_OR_MINOR_CLASSIFICATION].
+Implementation details, contributors and validation for each selected subject module will be recorded here when the production scope is agreed and developed. See [DOCUMENTATION.en.md](docs/DOCUMENTATION.en.md) for the current proposal and [the subject](docs/en.subject.pdf) for requirements.
 
 ## Individual Contributions
 
 ### hchowdhu
 
-- **Contribution details:** [DETAILED_BREAKDOWN_OF_WORK_COMPLETED].
-- **Features, modules, and components:** [SPECIFIC_ITEMS_IMPLEMENTED_AND_RELEVANT_FILES_OR_DIRECTORIES].
-- **Challenges and solutions:** [CHALLENGES_FACED_AND_HOW_THEY_WERE_OVERCOME].
+Added an Express/TypeScript backend on the separate `hchowdhu` branch, reviewed at `4db950b`: student profile and paginated project-attempt lookup, 42 OAuth with session state validation/regeneration and logout, and Swagger documentation. An isolated install with lifecycle scripts disabled, type-check and build passed under Node 20.20.0; HTTP checks with simulated 42 responses verified the core flow and reproduced the documented defects. Visibility controls, production sessions, committed tests/configuration examples and the frontend contract need work. Real 42 login and deployment were not verified. The commits use the Git author name MiTuL; contributor attribution should be confirmed before integration. See the [12 October review](docs/reviews/20261012-team-branches.md).
 
 ### mshariar
 
-- **Contribution details:** [DETAILED_BREAKDOWN_OF_WORK_COMPLETED].
-- **Features, modules, and components:** [SPECIFIC_ITEMS_IMPLEMENTED_AND_RELEVANT_FILES_OR_DIRECTORIES].
-- **Challenges and solutions:** [CHALLENGES_FACED_AND_HOW_THEY_WERE_OVERCOME].
+Added a GitHub Actions CI skeleton on the separate `mshariar` branch, commit `e192236`: Frontend, Backend and Docker jobs. This workflow is not integrated into `rel-hass`. The 12 October review confirms that frontend and Docker inputs remain absent; Hasan's separate backend now provides npm manifests but lacks the `lint` and `test` scripts expected by this workflow. Combining the two branches alone would not make CI pass. No Actions execution was found. See the [current review](docs/reviews/20261012-team-branches.md) and the preserved [7 October review](docs/reviews/20261007-mshariar-ci.md).
 
 ### mkettab
 
-- **Contribution details:** [DETAILED_BREAKDOWN_OF_WORK_COMPLETED].
-- **Features, modules, and components:** [SPECIFIC_ITEMS_IMPLEMENTED_AND_RELEVANT_FILES_OR_DIRECTORIES].
-- **Challenges and solutions:** [CHALLENGES_FACED_AND_HOW_THEY_WERE_OVERCOME].
+Developer role recorded; completed implementation contributions still need to be documented from the team's actual work.
 
 ### mmutsulk
 
-- **Contribution details:** [DETAILED_BREAKDOWN_OF_WORK_COMPLETED].
-- **Features, modules, and components:** [SPECIFIC_ITEMS_IMPLEMENTED_AND_RELEVANT_FILES_OR_DIRECTORIES].
-- **Challenges and solutions:** [CHALLENGES_FACED_AND_HOW_THEY_WERE_OVERCOME].
+Developer role recorded; completed implementation contributions still need to be documented from the team's actual work.
 
 ### rel-hass
 
-- **Contribution details:** [DETAILED_BREAKDOWN_OF_WORK_COMPLETED].
-- **Features, modules, and components:** [SPECIFIC_ITEMS_IMPLEMENTED_AND_RELEVANT_FILES_OR_DIRECTORIES].
-- **Challenges and solutions:** [CHALLENGES_FACED_AND_HOW_THEY_WERE_OVERCOME].
+Product framing, design choices, Figma exploration, web prototypes, preservation of research variants, documentation and review of the CI skeleton, with Codex assistance. The personal branch contains the 7 October baseline and this 8–11 October prototype update. Key challenges include responsive layout, RTL, map transitions and preserving previous studies; checks and limits are recorded alongside each implementation.
 
 ## Resources
 
 ### References
 
-<!-- Include relevant documentation, articles, tutorials, and other classic references. -->
-
-| Resource | Link | Relevance to the project |
-| --- | --- | --- |
-| [RESOURCE_TITLE] | [RESOURCE_URL] | [WHAT_IT_EXPLAINS_AND_WHERE_IT_WAS_USED] |
+| Resource | Relevance |
+| --- | --- |
+| [Project subject](docs/en.subject.pdf) | Curriculum requirements; verify before claiming module completion. |
+| [42 graphic charter](<docs/42 - Charte graphique 2024.pdf>) | Visual identity reference. |
+| [English onboarding guide](docs/DOCUMENTATION.en.md) / [French guide](docs/DOCUMENTATION.md) | Vision, proposed architecture, scope and team onboarding. |
+| [Project context](PROJECT_CONTEXT.md) | Current decisions, implementation state, verification evidence and open questions. |
+| [Versioning guide](VERSIONING.md) | Collaboration, maturity and release conventions. |
+| [Figma mock-ups, October 2026](https://www.figma.com/design/2iWoG3h7SegFmchssYAV80) | Complete rebuild of the screens from the active prototype, made from 15 to 23 October 2026 (currently in rel-hass's Figma drafts). Since 17 October every page of the site has its screens, in light and dark. On 18 October rel-hass asked for no remaining difference with the site, and the screens were rebuilt from fresh GPU captures, with components and English frames. By that evening every screen without tabular figures (228 light and 228 dark frames) was rebuilt and compared with the site frame by frame: no construction defect, only known rendering limits (font smoothing, blur, glass saturation). The other 98 light screens and their dark versions use 11 tabular-figure text styles: at rel-hass's request, Claude created them, and rel-hass switched on tabular figures in each one, since Figma's API cannot. During the night of 18–19 October these screens and the profile-card components were rebuilt, so all 652 planned frames are now in the file. A structure check and a frame-by-frame comparison with the site found one construction defect: a dialog backdrop that was too short on the mobile media viewer. It was fixed and the frames were sent again; only the known rendering limits remain. On 19 October the typography page and the documentation of the 22 component families were added. On 23 October the clickable flows and the reading guide were finished. Pages 09 (desktop) and 10 (mobile) are wired for Figma's presentation mode, in French or English, as a visitor or a member. Their hotspots went through four review rounds (four times on mobile; on desktop, three times in English and once in French). A read-only check of both pages, with the final 5,050 hotspots, found no difference from the plan. The flows were checked by reading the file, not by playing them. The known limits of the flows are listed in [their notes](figma/refonte-20261015/parcours/LISEZMOI.md). The glass saturation shader is still missing: every build attempt on 18 and 23 October was rejected ("build service temporarily unavailable"), even an update without code. These checks are technical verification, not rel-hass's acceptance. Method and state in [the rebuild notes](figma/refonte-20261015/README.md). |
+| [Figma design explorations](https://www.figma.com/design/yFrdllVm6nrKZJ2c99MMjT) | Earlier design explorations, kept unchanged as an archive; access may require the team's Figma permissions. |
+| [Research archive](studies/research-archive/index.html) | Preserved comparisons and prototypes; open through the local HTTP server. |
+| [Geography provenance](site/geography/PROVENANCE.md) | Source and preparation of local map assets. |
 
 ### AI usage
 
-<!-- Describe actual AI use, including documentation work. Add rows for other
-tasks or tools used during the project and update this initial entry as needed. -->
-
-| Tool | Task | Affected parts of the project | Human review / verification |
+| Tool | Tasks | Affected parts | Review / verification |
 | --- | --- | --- | --- |
-| OpenAI Codex | Prepared this README template from pages 27–29 of the project subject. | README.md structure and placeholders. | [DESCRIBE_TEAM_REVIEW] |
-| [AI_TOOL] | [SPECIFIC_TASK] | [FILES_FEATURES_OR_COMPONENTS] | [HOW_THE_OUTPUT_WAS_CHECKED] |
-
-<!-- Optional additions: usage examples, screenshots, testing instructions,
-known limitations, license, and credits. -->
+| OpenAI Codex | Documentation, design exploration, prototype implementation, tests and CI review. | README and project guides, Figma work, web studies and their notes. | Product decisions and corrections come from rel-hass; automated checks and selected browser interactions/renders are documented. Technical verification does not imply final user acceptance or independent team approval. |
+| Anthropic Claude Code | Design review, then the separate design-review trials with their checks, gallery and notes (14 October); from 15 October, the complete Figma rebuild (prototype captures, conversion to Figma layers, Figma calls and checks); on 17 and 18 October, at rel-hass's request, illustration and campus-name consistency fixes in the active prototype; on 23 October, at rel-hass's request, the repository reorganization (moves, path rewriting, checks). | `studies/design-review-studies/`, `figma/refonte-20261015/`, the new Figma file, research archive entry, continuity documents and, on 23 October, the repository layout. | Trials are proposals checked in headless Chrome and by a second verifying agent; none has been accepted by rel-hass or integrated. |

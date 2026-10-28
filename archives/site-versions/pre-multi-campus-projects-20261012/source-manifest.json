@@ -1,0 +1,986 @@
+{
+  "date": "2026-10-12",
+  "purpose": "État exact avant projets associés à plusieurs campus",
+  "copied_sources": [
+    {
+      "path": "responsive-dock.css",
+      "sha256": "af8e39eb97d425dd7eaf4a3e0a73e6f4055d03ab4ba9781f5b83fad0e758528c",
+      "bytes": 4523
+    },
+    {
+      "path": "AI_SEARCH_NOTES.md",
+      "sha256": "7136e00b81d0cc0f32934107231fbfdcc07dfb90d6628d16c5ccb062e9bdb3f3",
+      "bytes": 8954
+    },
+    {
+      "path": "content-report.css",
+      "sha256": "98ced8e773ef4d80fbf2a4b7364a923812dcb3b4ab130951873c16329ea14500",
+      "bytes": 3937
+    },
+    {
+      "path": "CAMPUS_CARD_IDEAS.md",
+      "sha256": "3eab0b9fd3387b79f41490c1df163e51dc1929aadc11dd12d8a66e8c295d87e8",
+      "bytes": 2496
+    },
+    {
+      "path": "theme-bootstrap.js",
+      "sha256": "7b1220ff7349fe8446c98fac1752241559dfa1495d9018723a023a43a8bf0399",
+      "bytes": 588
+    },
+    {
+      "path": "scope-popover.mjs",
+      "sha256": "af6c72a4bd8d0d9277ebc4ef9189b6248d883b906b1a495951b25354fe36fc4a",
+      "bytes": 3694
+    },
+    {
+      "path": "project-filter-dialog.mjs",
+      "sha256": "47c0c3bfd6b6b3dd7a03eb3efea7709ffc550f5634eea8827b3d6fdea4b8d865",
+      "bytes": 9094
+    },
+    {
+      "path": "geography-loader.mjs",
+      "sha256": "16b6c4205c9bfc45ae7649411146fc7164f44c293ea2eefd70111c3852fb35b0",
+      "bytes": 1207
+    },
+    {
+      "path": "layout-resize.test.mjs",
+      "sha256": "1ff5ec7e803954581cb93901fe075090a0dd61ac1862d9718d1a34414440778f",
+      "bytes": 14633
+    },
+    {
+      "path": "campus-profiles.json",
+      "sha256": "bf7994d97cb2ad8310af013809aab5d2ffcc4b3dfc4bc580d36380bbd8c32b17",
+      "bytes": 8942
+    },
+    {
+      "path": "NOTES.md",
+      "sha256": "e8002a68cfe6c45c3835949609a93395a41694b998b94d1b3d2777d167ec2fb4",
+      "bytes": 76489
+    },
+    {
+      "path": "HEADER_NOTES.md",
+      "sha256": "f47bda5fb57fd6deeff78599e95c814d824b6ebec61f0e543a9678094786aa91",
+      "bytes": 14456
+    },
+    {
+      "path": "index.html",
+      "sha256": "c0b282f3d5798982f20fab1842e4eb798acb2544328b7eec9220b2de187f2d21",
+      "bytes": 15477
+    },
+    {
+      "path": "brand-wordmark.mjs",
+      "sha256": "3a8c66dcc24435792f0f765297734618957bf08d7f6b86bb2019829e450a6292",
+      "bytes": 6404
+    },
+    {
+      "path": "THEME_NOTES.md",
+      "sha256": "bb567222585c599aeba3da5596b053ee71401ec0affdd5044d84bf2270d32667",
+      "bytes": 2284
+    },
+    {
+      "path": "content-controls.css",
+      "sha256": "cc14237d5d978a625c8481701d82a6c49300cbde33fedcd8a9fa99d52f8b03e0",
+      "bytes": 10306
+    },
+    {
+      "path": "campus-outbound.mjs",
+      "sha256": "e452bb28cb34784de25c3eb1807b947fba906d8aeee4134ece96951c576ea840",
+      "bytes": 3319
+    },
+    {
+      "path": "campus-preview.test.mjs",
+      "sha256": "0cd3626b3c39ad613ecc2496abae5bee66d58cc07d37f3e392e0fb93eee02c06",
+      "bytes": 12181
+    },
+    {
+      "path": "navigation-policy.test.mjs",
+      "sha256": "0a0596d6768bc24e1f209f2a817ce9b5bcdd2e922d9202c0a73bfac41a954370",
+      "bytes": 5270
+    },
+    {
+      "path": "polar-geometry.test.mjs",
+      "sha256": "b5a785594e63fad5efe596efd355827006786e1c50de86153ff73f310f9c97b9",
+      "bytes": 3407
+    },
+    {
+      "path": "theme-menu.css",
+      "sha256": "c25ef151d17e4bb56ced25956317da0b19791069a8e799c053300a8d71ae134d",
+      "bytes": 1861
+    },
+    {
+      "path": "campus-render-preparation.mjs",
+      "sha256": "5ba0f5a551336398052f35e8bcd4273da504a885a95867938ef69dee7ab66328",
+      "bytes": 12830
+    },
+    {
+      "path": "comment-mentions.mjs",
+      "sha256": "67a95df40374ea05dd24d5632dbe6b70a2eca1e37bbecda018eda16a17097440",
+      "bytes": 10496
+    },
+    {
+      "path": "CONTENT_LAYOUT_NOTES.md",
+      "sha256": "685a4f19bd1f4874aff7edb3a764e02f30c36789ebf95e3ff38a345419d41ccc",
+      "bytes": 9650
+    },
+    {
+      "path": "PROFILE_NAVIGATION_RESEARCH.md",
+      "sha256": "8d84fb9fe74414701949c0658a18e09233cc45884f3a98cc67afc3b365ab4c57",
+      "bytes": 8492
+    },
+    {
+      "path": "profile-sections.mjs",
+      "sha256": "a339932705f4ea306f29d0c6a4ca2e67137207b2e0d0168eee15b916134b3a9e",
+      "bytes": 992
+    },
+    {
+      "path": "city-map.css",
+      "sha256": "29545b7ab0fa9759c7b197d7f79f496e2c24eddf7e886b0235f1819990308c92",
+      "bytes": 5328
+    },
+    {
+      "path": "entrance.css",
+      "sha256": "ccfc3492d7dcf1d4ec4b0d0b45c7dfd0535e2ffd2f80bf381a9921b5740a944e",
+      "bytes": 4056
+    },
+    {
+      "path": "content-transitions.mjs",
+      "sha256": "f60f2b1928815bb256d073cdf9a5614e02813ba411aba665544d50e6ecc6d533",
+      "bytes": 2202
+    },
+    {
+      "path": "content-preview.html",
+      "sha256": "bae2689badec354c4250f4bd987b611ae5a3a9b8a4e7cf3131adbe1e2869f261",
+      "bytes": 15477
+    },
+    {
+      "path": "campus-details.mjs",
+      "sha256": "d80d30ac49b0644dbfdc4da0b8207f846353cfa793d552b385b4edbdf90742eb",
+      "bytes": 18756
+    },
+    {
+      "path": "scope-popover.css",
+      "sha256": "832b7cbf482dd63200ef1d2e550f4b3eeb18e971a914bb86325a6c413502b991",
+      "bytes": 858
+    },
+    {
+      "path": "CONTENT_PREVIEW_NOTES.md",
+      "sha256": "5e9aaefa3dbe60eee292b0f95b4b739f88660856e533aba1372d8b07971f7d88",
+      "bytes": 4530
+    },
+    {
+      "path": "brand-wordmark.css",
+      "sha256": "a4891ff9e4a945f6d9c6f80f9bf85b94ab383b2fea320b3c95642550be61fdb8",
+      "bytes": 498
+    },
+    {
+      "path": "content-preview-art.mjs",
+      "sha256": "6c62c48e772bf24496f57de9220f710ba91828c7ae708e65fa1851a1c03e40f1",
+      "bytes": 8619
+    },
+    {
+      "path": "detail-scroll.css",
+      "sha256": "9aa6d69e112e1fae3973a613ebd404cd8e83d52b0188a42a986cb6300bd70e0c",
+      "bytes": 5227
+    },
+    {
+      "path": "campus-direction.mjs",
+      "sha256": "383b1ca089924dc5d66f340b0dc167635b1c7b2157594481e071754a3ebbc3c3",
+      "bytes": 5574
+    },
+    {
+      "path": "reading-scope.mjs",
+      "sha256": "cabd899895487c7f7c69ca879cfb83db59d2f507bcda2863577ecf7cc5238ca4",
+      "bytes": 1564
+    },
+    {
+      "path": "comment-mention-picker.mjs",
+      "sha256": "b6c8cf68a2b9f8db175f72029fe56538f0e944c71d1ede72579ba20ea8b17947",
+      "bytes": 6438
+    },
+    {
+      "path": "BRAND_WORDMARK_NOTES.md",
+      "sha256": "3ab2dc0c0bc024be79989ab31c268e583119a719a3e6d6cabf3d171949972a3e",
+      "bytes": 11586
+    },
+    {
+      "path": "profile-ui.mjs",
+      "sha256": "fb667a5c476ba3d8843ac77f3dbdaaec80819662e32a284011bcba08fdc8ef91",
+      "bytes": 34881
+    },
+    {
+      "path": "theme-menu.mjs",
+      "sha256": "a80b40202e47f2bea22a0de202b73cc135e8c64f13637abc78e15282e41d0cbe",
+      "bytes": 3764
+    },
+    {
+      "path": "comments.css",
+      "sha256": "868407e64436a7a8e63363af7b6c669b765860f0905697bdbbeaa8f59d33ef60",
+      "bytes": 9171
+    },
+    {
+      "path": "random-campus.test.mjs",
+      "sha256": "0203da1c53975dcbb15cb10f95e5d73c22d90664b0a2dd47e0cc4c85473314d5",
+      "bytes": 3825
+    },
+    {
+      "path": "style-gating.test.mjs",
+      "sha256": "df54de0c6cbf742d365124418d10de15562a5117c005d5bac3c4cce658d4ee07",
+      "bytes": 16669
+    },
+    {
+      "path": "campus-websites.json",
+      "sha256": "cbb2f7193fe404b7b57e5c5b7dadee7163e54cb90743583b4c2347f4882aa512",
+      "bytes": 12253
+    },
+    {
+      "path": "detail-gate.test.mjs",
+      "sha256": "1b1117cecb016df69e50f0cff98aa21647fd37c9dca0145cf87ec88513d2e50f",
+      "bytes": 18551
+    },
+    {
+      "path": "campuses.json",
+      "sha256": "0e6a49a0867443efd80ab1f0831e56c3a061beb136d6dc8642a462db6e41c850",
+      "bytes": 21911
+    },
+    {
+      "path": "dock-navigation.css",
+      "sha256": "a650cdea446b15c3ec47fb8ca4fe145d27dadb43286e48f31450d6fee972dbfe",
+      "bytes": 2405
+    },
+    {
+      "path": "media-viewer.mjs",
+      "sha256": "3ca844c67266cb6084abd476a06ff1e39d73fbda900978f03e4bb6f849d3a3ab",
+      "bytes": 9021
+    },
+    {
+      "path": "CAMPUS_SOURCES.md",
+      "sha256": "5a90042cdc89b58d08a8b97e96ed125e57894c6f24f6977ea996a18ef67b8304",
+      "bytes": 15807
+    },
+    {
+      "path": "scrollbars.css",
+      "sha256": "5e4b6edbf78abd360fa7f777f55c5b2032ff78fffaee53744532de066ee8f1d0",
+      "bytes": 2237
+    },
+    {
+      "path": "content-preview.mjs",
+      "sha256": "41d1bea39f4b85390ae9e577a633786db52e3e3f835cd9d33ff79544332676da",
+      "bytes": 656
+    },
+    {
+      "path": "content-controls.mjs",
+      "sha256": "18c7d57b7e5bb90b828dbc2690fe864a7ffb4f217d9dbfe05cdb811fe13f0bb9",
+      "bytes": 23975
+    },
+    {
+      "path": "profiles.css",
+      "sha256": "f4346993852c241205032081cac3e2f4db8a2231f9e1e8455e0092dc470f6c22",
+      "bytes": 39430
+    },
+    {
+      "path": "DOCK_NAVIGATION_NOTES.md",
+      "sha256": "5330c2a335a422cea984ff4f55f329732c397644f57ae197c490feecbb1a18e1",
+      "bytes": 8299
+    },
+    {
+      "path": "scope-selectors.test.mjs",
+      "sha256": "71397c275d2ef6827d0484433bed9638165c74dd9e023cc742b5bdbc4223a817",
+      "bytes": 5772
+    },
+    {
+      "path": "journal.css",
+      "sha256": "7c93f3be7197f2418e30444f3636ff5dd677f18e4b0dadccc87b466fd0d99858",
+      "bytes": 725
+    },
+    {
+      "path": "entrance.test.mjs",
+      "sha256": "a7f0228525e59422f341244862aab3e4d0ec9b43b5244c3dd79c07600a2339f4",
+      "bytes": 13752
+    },
+    {
+      "path": "control-glass.css",
+      "sha256": "042bb6e05f163cfd198d5cfc98f3576877a1bf1ddb6093fda64c456bc7eda50d",
+      "bytes": 4402
+    },
+    {
+      "path": "media-viewer.css",
+      "sha256": "4890ab241379ea3bcf6336260634d8a6890d272d85e5aa09bff838db624f24a3",
+      "bytes": 4463
+    },
+    {
+      "path": "comments.mjs",
+      "sha256": "7e5c39e625e3c2994923981c9893e3023909ddcebccb2f43bedc5c210b4b81c3",
+      "bytes": 36935
+    },
+    {
+      "path": "project-filter-dialog.css",
+      "sha256": "2227fcbcf8527c68dbee2dd31dc4d59b6b61578236abbfe3b318adb0e8148543",
+      "bytes": 5449
+    },
+    {
+      "path": "CAMPUS_PROFILES_SOURCES.md",
+      "sha256": "a7f105f03d9bc2a02f2b24d5e06f0749d67f88e80e992ac8da2f00c570230633",
+      "bytes": 12079
+    },
+    {
+      "path": "MEDIA_VIEWER_NOTES.md",
+      "sha256": "e7f1b93c8af58aeea340a66461b118a06b4c8c340f50b35b013e9c992e542f60",
+      "bytes": 6618
+    },
+    {
+      "path": "contextual-discovery.css",
+      "sha256": "859cc23c2ff1504b5c5b61684a5bcd7868f3ac91c025a95741607eca74e3f607",
+      "bytes": 6215
+    },
+    {
+      "path": "JOURNAL_NOTES.md",
+      "sha256": "d67e75fa67b14f0135461fb8109c8e3eda57d4ae2e79a74bdc73f1e0d74302d0",
+      "bytes": 10487
+    },
+    {
+      "path": "PROGRESSIVE_CAMPUS_NOTES.md",
+      "sha256": "59b4f58521021a6ac126e0af924b59f4ef1ea263593bad3f3297d5bc3e3ec65c",
+      "bytes": 18690
+    },
+    {
+      "path": "globe.js",
+      "sha256": "23d6892738948bbd36fdbd0565f14616b46ea8093f1c1a548958ffa0602f9389",
+      "bytes": 31452
+    },
+    {
+      "path": "world-render-preparation.mjs",
+      "sha256": "5a8e50649b4e281524c69af6c3c481483e39a662114a2dddc357f4121059ca08",
+      "bytes": 3784
+    },
+    {
+      "path": "PRELOAD_ESTIMATE.md",
+      "sha256": "a3f1bc5424d1b5671311dfb708821c60832758d691e43c54bb2eb1bfd0157ec0",
+      "bytes": 16958
+    },
+    {
+      "path": "welcome-panels.mjs",
+      "sha256": "325263f40009464e8ef3e950a6e81ec124412c3d5b4f5c5e7f9e0787bb602074",
+      "bytes": 32825
+    },
+    {
+      "path": "polar-geometry.mjs",
+      "sha256": "783b6ed5d1ac98b1a51ae73d30c4c4497c79ccb0029df258274c1b60a5788ee1",
+      "bytes": 2734
+    },
+    {
+      "path": "detail-gate.mjs",
+      "sha256": "3ea851da71d99cc26a1cdd43a47f2af7363c27b409829ae5ef36a2749dba2d74",
+      "bytes": 7243
+    },
+    {
+      "path": "CITY_MAP_NOTES.md",
+      "sha256": "9c712448359021c230d26479ff65946e194d8baefb3f35899d79339f33e8b139",
+      "bytes": 8349
+    },
+    {
+      "path": "navigation-policy.mjs",
+      "sha256": "4db9e09e09038370ed0f5a1ee2d8eee992fb6103b2987cbf3d9eec75dedf1524",
+      "bytes": 5322
+    },
+    {
+      "path": "campus-render-preparation.test.mjs",
+      "sha256": "8c2d471522339fce95decb8f0417c2c8b4ed7c92490290350cf945fea2cf8c8a",
+      "bytes": 15115
+    },
+    {
+      "path": "campus-camera.test.mjs",
+      "sha256": "2cc532f2df930ceb9ff4fc09838afd4e70692f4692765b22e37b24aa4670e9d6",
+      "bytes": 3160
+    },
+    {
+      "path": "PROJECTS_NOTES.md",
+      "sha256": "bd9fdbe660075c562ba5d46d190d0f52fe6c89ef65d1ac01b2e23a3c96871658",
+      "bytes": 22207
+    },
+    {
+      "path": "dock-search.mjs",
+      "sha256": "5821dd234328abe5f56b761bae71c4e6534bbebff34e21e041788a67ee421b28",
+      "bytes": 22326
+    },
+    {
+      "path": "dock-search.css",
+      "sha256": "2ac9c079d5142898615a98955fe1881af016f719e06c879727bc72ea583962fc",
+      "bytes": 24134
+    },
+    {
+      "path": "campus-preload.mjs",
+      "sha256": "1184a4329cb2119cd804e07a14e77ad96d141da96f2011d22c823699d3bae4cc",
+      "bytes": 21077
+    },
+    {
+      "path": "sticky-header.css",
+      "sha256": "26410015e1d9fa5aa2d837e66a3231bdabdf27c72d54d55f938e83e96b7c3298",
+      "bytes": 3893
+    },
+    {
+      "path": "entrance.mjs",
+      "sha256": "1b67405d60e5fadcf7997e41449c1c9ac109f4f3095d9ce7b351a4924b2d4ea0",
+      "bytes": 13178
+    },
+    {
+      "path": "theme-preferences.mjs",
+      "sha256": "efe79a5d98a76a11cc3585390ccd146476b9cbaabcf5872c1c33e6c8d722fcdc",
+      "bytes": 2546
+    },
+    {
+      "path": "responsive-content.css",
+      "sha256": "4babdc406a578228339eebbd2b8aebbd584941d36dabb3983d2e2d1f0fadc077",
+      "bytes": 13036
+    },
+    {
+      "path": "journal-ui.mjs",
+      "sha256": "1ac46ac56cbf3f6c9af7ee089dabc238b82e355c1d4f574d7de187f1908dbd55",
+      "bytes": 2184
+    },
+    {
+      "path": "CONTENT_INTEGRATION_NOTES.md",
+      "sha256": "4d5d00a9a2a71fca98c651824945dfb4d3d54bd8588f36528e36242968925f04",
+      "bytes": 11941
+    },
+    {
+      "path": "comment-mention-picker.css",
+      "sha256": "836f172c2e5ea05d6872a973a979585ff867da098f54d9047b378b97acd91cea",
+      "bytes": 1569
+    },
+    {
+      "path": "campus-map-dialog.css",
+      "sha256": "6198f760ddffdaa6ccd2d1bfba38f52261aa17db985c532f9496e6f01b412c12",
+      "bytes": 2484
+    },
+    {
+      "path": "INTERFACE_POLISH_NOTES.md",
+      "sha256": "888ce57ce3d43c3b6eabc3d3a01b80762c748c2567a499bd27e251b336e78eb7",
+      "bytes": 16031
+    },
+    {
+      "path": "campus-map-dialog.mjs",
+      "sha256": "f509460ec8524033bd9900d6aaf044d50a98575d1a33a9afbe12e521c03b0093",
+      "bytes": 6840
+    },
+    {
+      "path": "content-filters.mjs",
+      "sha256": "0b8ef39b02478a77ac9d5942fc0b010ff9df0406e43988eb5cb84ba2157fa6e1",
+      "bytes": 8664
+    },
+    {
+      "path": "content-preview.css",
+      "sha256": "6df3c25b15bb9a2c017885ac88da8c17adc6256daef8f895ea1fd5bc2fd05d07",
+      "bytes": 23197
+    },
+    {
+      "path": "DISCOVERY_NOTES.md",
+      "sha256": "75cd341f8a5ec1cb7f19c891141e10878433b58b00193cb4425d24545d0c9ff5",
+      "bytes": 13159
+    },
+    {
+      "path": "campus-direction.css",
+      "sha256": "ce0d7a21eca296c5f8220ad7aa4efca5192411848fd9937cd5895b31a2b924ef",
+      "bytes": 1856
+    },
+    {
+      "path": "AWARDS_NOTES.md",
+      "sha256": "7d34b5962c2b663f667946047ec778d4e93b01e5c2c4b836ba54e0fe0d9d587c",
+      "bytes": 19517
+    },
+    {
+      "path": "PROFILES_NOTES.md",
+      "sha256": "d85d7e2e4a90131d29d77454c61880e2bb0b1f7d81dcbc0bba72727ad12ae8d5",
+      "bytes": 47849
+    },
+    {
+      "path": "DOCK_SPACING_NOTES.md",
+      "sha256": "ade24b918703be03e8f4d100bca1aafdcb1a4f23ad11de98e2c32f49368e8858",
+      "bytes": 2402
+    },
+    {
+      "path": "world-render-preparation.test.mjs",
+      "sha256": "c2ddc5b1afc513d6e5795d17099c40c75ce9751565bb4d459cff934488794539",
+      "bytes": 5238
+    },
+    {
+      "path": "awards.css",
+      "sha256": "2c0156f4d833c22e309ff32d7c77da54a898bffb846d3ce1a8446b498b2d877d",
+      "bytes": 1857
+    },
+    {
+      "path": "DETAIL_CONTENT_NOTES.md",
+      "sha256": "7de0555073474fe4b075e0a006973ae126c76a59cd2cf79af0ddbe51372b356c",
+      "bytes": 12506
+    },
+    {
+      "path": "integrated-globe.css",
+      "sha256": "63f1ecc932b9fc0f9b4f037a93d08ccf53b48ae647f1ef5a7bf6917ed81faf27",
+      "bytes": 3852
+    },
+    {
+      "path": "campus-details.css",
+      "sha256": "2070e64788f9e0a05ad1e143bc0b68914438548600195faa54e8a8c56c74e459",
+      "bytes": 11061
+    },
+    {
+      "path": "globe-layout.test.mjs",
+      "sha256": "2e99b8f8d8bdb6298aeaef7f6de48c2e4885abda20245c108a9ddf31d32c9ed0",
+      "bytes": 2443
+    },
+    {
+      "path": "polar-cap-layer.test.mjs",
+      "sha256": "b7ef69aad5b8a376e37ceffe7009416baa4ddfd69125f9ba45516de9083362dd",
+      "bytes": 4970
+    },
+    {
+      "path": "FLOATING_SEARCH_NOTES.md",
+      "sha256": "043658a71bc6fbb5174d9cc6fb615081fcff7435942238c11edeaa1a83950cf9",
+      "bytes": 10285
+    },
+    {
+      "path": "integrated-globe.mjs",
+      "sha256": "bf4dc9fdf7bd398e95389202ea0742e1cb9187cb066bc354d8b4aa7867ecc158",
+      "bytes": 40430
+    },
+    {
+      "path": "campus-outbound.test.mjs",
+      "sha256": "5aa556368da3f46210747838951a786140b9116ffc9475b91bb0e96fda520e75",
+      "bytes": 13483
+    },
+    {
+      "path": "campus-preload.test.mjs",
+      "sha256": "c8df4dfc2b08728d6b0e26842bf4caf1ecb66c37938767ca044f4ea3cf132a1e",
+      "bytes": 17269
+    },
+    {
+      "path": "scope-selectors.mjs",
+      "sha256": "37bd969fef32bc03b95ef471fe57ca544786e916b2d1c8890244467134eeb1bd",
+      "bytes": 3433
+    },
+    {
+      "path": "campus-sheet.mjs",
+      "sha256": "9b89a2a336dad3ac75fcf1dcf927da110dd290129f8084e71eeb17d3ca35e911",
+      "bytes": 9077
+    },
+    {
+      "path": "welcome-panels.html",
+      "sha256": "8ea7fed7eb308dbd12e8c8222f8359536905c549bda63e98f1e89fc4856a1f0e",
+      "bytes": 9743
+    },
+    {
+      "path": "geography-worker.mjs",
+      "sha256": "a319c9ca1e7d3cd7a3548f551f133ef8202e70ad5e747ca7b9af9084fb841d7b",
+      "bytes": 1283
+    },
+    {
+      "path": "content-report.mjs",
+      "sha256": "693d1bce26e2cd7b74636ecc79289e11567890e0c7ebf95d3fae8ec3b905a692",
+      "bytes": 11534
+    },
+    {
+      "path": "dock-navigation.mjs",
+      "sha256": "76d27ce114a554a64f33f1ee47b7af0b565d1eff27677afeb0a14181e60ce97e",
+      "bytes": 2239
+    },
+    {
+      "path": "random-campus.mjs",
+      "sha256": "649a4ce5da9271f9edcc7b028005ae6b7bf0a969087ba9eed585f234b17ce744",
+      "bytes": 1464
+    },
+    {
+      "path": "CAPSULE_PANEL_NOTES.md",
+      "sha256": "4e711bdc6596040c65cee45023750d1848afb402bbc67b72bedbc46e66878033",
+      "bytes": 5692
+    },
+    {
+      "path": "welcome.mjs",
+      "sha256": "69029e928fcb5fa3c35ef9928914daf641b5c11035bba883f791d0fd21370dcf",
+      "bytes": 68775
+    },
+    {
+      "path": "LOCAL_MENU_NOTES.md",
+      "sha256": "7af1700498e2d4b773507c15e60d04e6fcd79309ca493358245f3e16b5b3e4c2",
+      "bytes": 1678
+    },
+    {
+      "path": "globe-framing.css",
+      "sha256": "b900b965dd49e68fc865b2022450aa7e1b8a361021595bf64756a72872a830d5",
+      "bytes": 5447
+    },
+    {
+      "path": "content-preferences.mjs",
+      "sha256": "e58ead79bc78010bde568989d58ff104b7156dc3f5c3f81bd858e8ae53a244ea",
+      "bytes": 5038
+    },
+    {
+      "path": "DETAIL_SCROLL_NOTES.md",
+      "sha256": "26a6e69d7233fafa11f69a4f84f74568e20427fdc6c2a04b2e702ed5c7c2d00c",
+      "bytes": 21966
+    },
+    {
+      "path": "content-preview-data.mjs",
+      "sha256": "26dc9ed142453aeceb5750ad8813ba1c86cbf9fa9f524356118f00901c31732d",
+      "bytes": 27173
+    },
+    {
+      "path": "campus-website-locale-evidence.json",
+      "sha256": "4b484fbdcf827c33196301c9f33c457cc38c2dd488ae91b6488adb02b584a75e",
+      "bytes": 58002
+    },
+    {
+      "path": "PERFORMANCE_NOTES.md",
+      "sha256": "708dce2e396a42b55dde18d680f00bb8d5b1dc2e5fcfbae552fca13d81118ede",
+      "bytes": 65123
+    },
+    {
+      "path": "campus-direction.test.mjs",
+      "sha256": "09ca1d23247f8168023a5659427c46c4e7660eae4519abb18b5f40c1ec630d5e",
+      "bytes": 5952
+    },
+    {
+      "path": "project-ui.mjs",
+      "sha256": "883cd1f0461df82a8ae2d675f84a5d6511290f070a595f49e1244b5d9c0013de",
+      "bytes": 17450
+    },
+    {
+      "path": "campus-location-overrides.json",
+      "sha256": "13d3e1afac34bc0c5fe0ca7eafc21f917b4af8f0c524a642d525bf3e303f2b76",
+      "bytes": 8045
+    },
+    {
+      "path": "POLAR_NOTES.md",
+      "sha256": "c616b00d18683d5619d045102fbd6f02261b049bc2388d44cf3f0fe1f9862d31",
+      "bytes": 4957
+    },
+    {
+      "path": "CONTENT_CONTROLS_NOTES.md",
+      "sha256": "f56eafaf588fed65ee936cb48fce0eed474d86b19e8acb88d5e45ba0a736881f",
+      "bytes": 20047
+    },
+    {
+      "path": "perf-diagnostics.mjs",
+      "sha256": "4016591e20323f7c65fedbc43c80357625eb17f63557fc4a88402e647c9df1a3",
+      "bytes": 28635
+    },
+    {
+      "path": "project-trial.mjs",
+      "sha256": "9cf60282a01c5b85a0268f0aba7c4fdd9118d58fe4cbc0831ab528f82024977a",
+      "bytes": 9369
+    },
+    {
+      "path": "polar-cap-layer.mjs",
+      "sha256": "c42cfcb4f41641cf71b633ced5fc608aa1a7f8f1013d0928178f401507613899",
+      "bytes": 7581
+    },
+    {
+      "path": "CONTENT_REPORT_NOTES.md",
+      "sha256": "b29cddbf4c3f578558c83a119b3fbd16f6b143913d08842b846f50061ea38782",
+      "bytes": 6287
+    },
+    {
+      "path": "globe-layout.mjs",
+      "sha256": "77cb50797dccdffbbe7d171f204142199149bd1f179f797064553c3e1604cd68",
+      "bytes": 777
+    },
+    {
+      "path": "campus-website-locales.json",
+      "sha256": "2f3079b16cd05291a8387023ef2ed80855219ac0f61cbf7919ec6311c9572159",
+      "bytes": 56887
+    },
+    {
+      "path": "campus-approach.test.mjs",
+      "sha256": "54d37e4d9ed18b60df479e59c870a073db2c8a14ff0229b07ee7123431e4389c",
+      "bytes": 7973
+    },
+    {
+      "path": "projects.css",
+      "sha256": "b148c6be283f6fc8a73609608359c2dafa0b26feb0149b306f5781dac32d4f74",
+      "bytes": 13794
+    },
+    {
+      "path": "content-layout.css",
+      "sha256": "a96bf6a639bbe0ec2e58372999f68ff96d35d34bf19989b721918bfe8846807d",
+      "bytes": 3802
+    },
+    {
+      "path": "campus-details.test.mjs",
+      "sha256": "7e15a67237cd5309763703452bf14b134a420f70af4dd3121b03b9aebe6f147b",
+      "bytes": 19865
+    },
+    {
+      "path": "author-preview-fit.mjs",
+      "sha256": "286dce97676bfef0a0c1042e5d8447b4aa90d89ae5690e3a53b522ad270fee33",
+      "bytes": 6467
+    },
+    {
+      "path": "profile-data.mjs",
+      "sha256": "d57756d01f5fba20dea308b3e3103fdcca7ce1d4db83caa2b8386042ab3258bf",
+      "bytes": 25887
+    },
+    {
+      "path": "campus-website.mjs",
+      "sha256": "79edb1a8461605b471b8e307a50c65ca4251a9dc8666d503ceedcaca8f374e04",
+      "bytes": 1658
+    },
+    {
+      "path": "dock-search-data.mjs",
+      "sha256": "24048cb690e33da039c33698de7adaf25e4b8b1558ecc9fe9c8c8d83299bbef7",
+      "bytes": 6389
+    },
+    {
+      "path": "welcome.css",
+      "sha256": "5b009f8a719890faa460f36d87b09863e44ffd5e7529c1c30d912220e3a9b1d9",
+      "bytes": 22533
+    },
+    {
+      "path": "marker-projection.test.mjs",
+      "sha256": "93c415eeb88e1f412923fda2521d2ba99f3c320a3e4303d6f883d86c7f098177",
+      "bytes": 6196
+    },
+    {
+      "path": "floating-search.css",
+      "sha256": "223a0592f6c1ae63c5bd0a2988efdd8392ab8745d1430c8424a3929106c1122b",
+      "bytes": 5018
+    },
+    {
+      "path": "globe-style.mjs",
+      "sha256": "5833157316df2fd12b68d0ff1f63bcc14002e613fe5c49a473f12c8b71f1c313",
+      "bytes": 21951
+    },
+    {
+      "path": "readable-glass.css",
+      "sha256": "922f0c523f48bb5f066c6d440df92734df7afff6bce332ada5b2c96e02a87687",
+      "bytes": 3721
+    },
+    {
+      "path": "BORDER_PRELOAD_ESTIMATE.json",
+      "sha256": "a64233fe7c6bcf23610d8e194960d318926aa8a35d5e044ac64e43f65a7704ef",
+      "bytes": 1612
+    },
+    {
+      "path": "COMMENTS_NOTES.md",
+      "sha256": "8f0b0a88d10f1df5272d6d72d37703fca98a7a65bd6770764789796cfeedcdcd",
+      "bytes": 24961
+    },
+    {
+      "path": "campus-website.test.mjs",
+      "sha256": "0a2c05c80a3c07fe8558c71830ffbdef70a353f4fa717715a5d6ec4b84f23bb6",
+      "bytes": 2217
+    },
+    {
+      "path": "city-map.mjs",
+      "sha256": "59472996d59dabde6aa8ffe1f55902aab0680c6e861dc337797189cbbfe53f6a",
+      "bytes": 14079
+    },
+    {
+      "path": "MENU_SCROLL_STUDIES.md",
+      "sha256": "27e40192a4c0792f44e96bb7ab321d34ee6da8917802788ba5c081d38ccb1455",
+      "bytes": 1697
+    },
+    {
+      "path": "RESPONSIVE_DOCK_NOTES.md",
+      "sha256": "c2f5f1aa74f8dbb0c4d90a36794c278b006de56252c3b65d2850f5a88feca42b",
+      "bytes": 8898
+    },
+    {
+      "path": "RESPONSIVE_CONTENT_NOTES.md",
+      "sha256": "4ae9586eaea8325abe69a649c9dd6e0b0088f4303a6047d8bf503b4f120c2258",
+      "bytes": 14874
+    },
+    {
+      "path": "geography-loader.test.mjs",
+      "sha256": "16b11d3c3f77d5900bd7744d88ed2ab0709526191139ba0ac8711b92259e9c8f",
+      "bytes": 2008
+    },
+    {
+      "path": "PRELOAD_ESTIMATE.json",
+      "sha256": "41ee23bec73d0106c0bd431e32e87ff011074ceff6d0fcee4d630a26a76ff9c1",
+      "bytes": 24939
+    },
+    {
+      "path": "random-discovery.mjs",
+      "sha256": "104005642da690db2551d3a0a1a22bef55a2ace1f232b4f850522335d5aa893e",
+      "bytes": 3430
+    },
+    {
+      "path": "detail-scroll.mjs",
+      "sha256": "6d34289d73a5ca9a1141e1311fd85ceb5b3650e47f95a6502abcb0083c2de72c",
+      "bytes": 10856
+    },
+    {
+      "path": "tests/profile-data.test.mjs",
+      "sha256": "a7a357a1b073ddd2810cd4af2b1af86f49772756d8dd6146e8bca6bf61e63065",
+      "bytes": 8632
+    },
+    {
+      "path": "tests/content-preferences.test.mjs",
+      "sha256": "e44bba8e19dc2a8838c3b3513d8c44fcc0725737f59a5fd00cd4468a88ed7905",
+      "bytes": 16655
+    },
+    {
+      "path": "tests/journal-sections.test.mjs",
+      "sha256": "9cea940fde20ca610415d988f7495bee3fba14de3dd591b81d29c0576dfd9634",
+      "bytes": 1785
+    },
+    {
+      "path": "tests/detail-media.test.mjs",
+      "sha256": "e596dfdd78283630322300745726bc91ff11a1c569284905b8a6ea43aea3c2f7",
+      "bytes": 14481
+    },
+    {
+      "path": "tests/comments.test.mjs",
+      "sha256": "be5f046c215ddbf677fc9202a4a5b3888b658f2e308f88e56560e86f539f240a",
+      "bytes": 19708
+    },
+    {
+      "path": "tests/author-preview-fit.test.mjs",
+      "sha256": "2d771b75e13296d369f1760918184499f5f2aa1cc234daeb9e940bd5ef8bb424",
+      "bytes": 12674
+    },
+    {
+      "path": "tests/content-category-groups.test.mjs",
+      "sha256": "782dad992ee7551a3ecbe084aa0b6391248c481ddcb21fca1274e1c308598946",
+      "bytes": 4055
+    },
+    {
+      "path": "tests/media-viewer-browser.html",
+      "sha256": "a8f90d6c40937217ef951819c185e068f4d6b7757a18f8d3cfd2d1dd4f4e9ef0",
+      "bytes": 4048
+    },
+    {
+      "path": "tests/detail-scroll.test.mjs",
+      "sha256": "793619bdfc3fe5cd80c48d9a3f45cf6c9bb169cb66a8a64dc1cc6c7db75070fb",
+      "bytes": 14968
+    },
+    {
+      "path": "tests/project-trial.test.mjs",
+      "sha256": "2390ef00d50d232e23a040d3464aa5dfee128dda10387edeaa55f143f5c53ed3",
+      "bytes": 12316
+    },
+    {
+      "path": "tests/content-filters.test.mjs",
+      "sha256": "22963acd7103b6631abc7d2f33b153eb2894e6da883de0505ee249e4f6f72568",
+      "bytes": 22185
+    },
+    {
+      "path": "tests/random-discovery.test.mjs",
+      "sha256": "f1193f713547c77354c2745a99c95105be8debbfd8caf3f9e6e4e4a2437c9e90",
+      "bytes": 7451
+    },
+    {
+      "path": "tests/campus-sheet-fixture.html",
+      "sha256": "84a233968f26b659c124d0b31322886ed9a84eb575e27d62142dc63ef0c62afd",
+      "bytes": 6766
+    },
+    {
+      "path": "tests/content-menu-placement.test.mjs",
+      "sha256": "9a94411e9b16f910252e486a9fe2d544beef20cf5974ec3f364955b8d151ae5e",
+      "bytes": 3795
+    },
+    {
+      "path": "tests/theme-preferences.test.mjs",
+      "sha256": "e427b2efb9b0bf25f09dd69ffafbdd879e4b618953795e2cd5880907fa5c974c",
+      "bytes": 7264
+    },
+    {
+      "path": "tests/campus-sheet.test.mjs",
+      "sha256": "32cc24de93311a5210264e16c7b42d00404d1fa35537a7e483848690cb09093f",
+      "bytes": 13653
+    },
+    {
+      "path": "tests/profile-sections.test.mjs",
+      "sha256": "26f2b01af76043596b6585d92726c00a4e5ba983273e140c692b820d19ab7680",
+      "bytes": 3400
+    },
+    {
+      "path": "tests/content-report.test.mjs",
+      "sha256": "07023b0dc43cd31baf3b0da5e3ee2aa609f8431eb3050c7c4482922ebe87284c",
+      "bytes": 14856
+    },
+    {
+      "path": "tests/dock-search-data.test.mjs",
+      "sha256": "27e7ebd543b1065a6b672597bb59bbba92fab828d4447ab54535aad1b7f34790",
+      "bytes": 15214
+    },
+    {
+      "path": "tests/media-viewer.test.mjs",
+      "sha256": "9f80db2864116a5daf0bbcbf959753c6ee55fc86ef9eaf136676ec884387621c",
+      "bytes": 11512
+    },
+    {
+      "path": "tests/comment-mention-picker.test.mjs",
+      "sha256": "48ffc15ec0414606567418498843ce263ddde8410ff8d9a9a10a8513bfaff713",
+      "bytes": 5837
+    },
+    {
+      "path": "tests/comment-mentions.test.mjs",
+      "sha256": "da4dace3f62c1e8c5b8dac5cba6d8a430c9426c37a9db7f24af6cef042e32381",
+      "bytes": 11188
+    },
+    {
+      "path": "tests/content-transitions.test.mjs",
+      "sha256": "59d5233aa350efda34f524edc15752a7f08bf079d0d0a918c5e5ce1b929b0625",
+      "bytes": 7830
+    },
+    {
+      "path": "tests/comments-actions.test.mjs",
+      "sha256": "f2ec4489bd67e50542b0798a247420419bf6ca5a59d115b0cee4265273f86e5e",
+      "bytes": 15001
+    },
+    {
+      "path": "tests/profile-navigation-scope.test.mjs",
+      "sha256": "9b3eb2e8d7e91f77904422490c25077f8dca83a3ea50b8be2f4d67dad153c855",
+      "bytes": 3162
+    },
+    {
+      "path": "tests/dock-search.test.mjs",
+      "sha256": "1932322c1548606feab5e387d1cb50fbeb570b10ad839889f7181e13b443df4c",
+      "bytes": 17248
+    },
+    {
+      "path": "tests/campus-sheet-browser.html",
+      "sha256": "52a16a5d0291c2c284df34f2c203a6c05c9cc9a011fc08eae88f0bed42b46ac2",
+      "bytes": 4994
+    },
+    {
+      "path": "tests/reading-scope.test.mjs",
+      "sha256": "17099b760d90cd934361d5a3e77f4bb42392c0fa7876d290918795f3e0d5d185",
+      "bytes": 8700
+    },
+    {
+      "path": "tests/profile-social-links.test.mjs",
+      "sha256": "3039e22938c5495875d8f128b87d0d29efafcc3e0891652a5ecb7f8f3a3a90f6",
+      "bytes": 4538
+    },
+    {
+      "path": "tests/brand-wordmark.test.mjs",
+      "sha256": "9c8e93f9a970f0f75cca642812ecbe940c0d38e6d8d59246f86f9657c615310c",
+      "bytes": 11411
+    },
+    {
+      "path": "tests/theme-menu.test.mjs",
+      "sha256": "5a2b8d8f17341c70d2e881fd4c808aed9961c874610cd8890df18b114ef65b96",
+      "bytes": 5896
+    },
+    {
+      "path": "tests/author-byline.test.mjs",
+      "sha256": "6e8e77fab10ac533b1c442b56bf8a066ac22df58f6761fbadcac4686f9858334",
+      "bytes": 8642
+    },
+    {
+      "path": "tests/project-sections.test.mjs",
+      "sha256": "b7696eb7b42e1d5b0764926a40f1e9c022daac642e157447d91f75154a300125",
+      "bytes": 1412
+    },
+    {
+      "path": "tests/project-team-routing.test.mjs",
+      "sha256": "408bbd8ece9e634fc286edf523d44256c7453c00249c316926d1a58289a9fcd5",
+      "bytes": 6664
+    },
+    {
+      "path": "tests/profile-campus-history.test.mjs",
+      "sha256": "d6e74cb264c742d3486fa7f8acae20609ba463c25d91813cfbc02f4678b371db",
+      "bytes": 7052
+    }
+  ]
+}

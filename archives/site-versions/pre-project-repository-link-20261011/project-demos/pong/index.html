@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Pong · Démo d’essai</title>
+  <link rel="stylesheet" href="./pong.css?v=1">
+  <script defer src="./pong.mjs?v=1"></script>
+</head>
+<body>
+  <main class="demo">
+    <header class="intro">
+      <h1 id="title">Pong · Démo d’essai</h1>
+      <p id="description">Un exemple jouable pour essayer cette présentation, distinct du projet des auteurs.</p>
+    </header>
+    <div class="scoreboard" aria-label="Score">
+      <span id="player-label">Vous</span>
+      <output id="score" aria-live="polite" aria-atomic="true">0 — 0</output>
+      <span id="computer-label">Ordinateur</span>
+    </div>
+    <div class="court">
+      <canvas id="game" width="800" height="440" tabindex="0" aria-label="Terrain de Pong. Vous jouez avec la raquette de gauche." aria-describedby="instructions state">Terrain de Pong.</canvas>
+      <p id="state" class="state" role="status">Prêt à jouer</p>
+    </div>
+    <div class="controls">
+      <button id="toggle" type="button" aria-controls="game">Démarrer</button>
+      <button id="reset" type="button" aria-controls="game">Recommencer</button>
+    </div>
+    <p id="instructions" class="instructions">Déplacez la raquette avec la souris, le doigt ou ↑ ↓ / W S. Échap met en pause. Tab permet de quitter le terrain.</p>
+    <noscript>JavaScript est nécessaire pour jouer. / JavaScript is needed to play.</noscript>
+  </main>
+</body>
+</html>

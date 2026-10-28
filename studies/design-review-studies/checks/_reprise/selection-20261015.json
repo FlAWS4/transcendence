@@ -1,0 +1,268 @@
+{
+ "ids": [
+  "globe-espace-libre",
+  "police-etiquettes-globe",
+  "une-colonne-320",
+  "pseudo-manquant",
+  "roles-couleur",
+  "visiter-contour-sombre",
+  "lisibilite-textes",
+  "echelle-unifiee",
+  "awards-a-venir"
+ ],
+ "intro": "Test du 15 octobre : deux contrôles parallèles en lecture seule (Explorer, arrivée et Awards ; rubriques, fiches et dialogues), puis une passe d’intégration qui reproduit chaque point avec le plus petit ensemble d’essais. **Aucun conflit bloquant.** Un conflit est corrigé entre le globe réduit et les textes plus lisibles, un défaut propre aux textes plus lisibles est corrigé, quatre points sont consignés sans correction et une alerte concerne un défaut déjà présent dans le site actuel. Les comptes rendus complets sont dans [selection-20261015.json](checks/_reprise/selection-20261015.json). Points traités, dans les mots de l’agent d’intégration :",
+ "reports": {
+  "zone": "Explorer (Monde, France, 42 Paris et fiche campus, vrai globe), arrivée index.html (scan chiffré, Visiter / Se connecter, dialogue de connexion, révélation du globe), page 42 Awards, en-tête et dock — risques 1, 2, 4 (partie arrivée) et 5, avec les neuf essais 01, 03, 07, 09, 12, 13, 15, 18 et 19",
+  "vues": [
+   "Explorer Monde, vrai globe, mesures du disque (getWorldScreenGeometry) contre filtre, statistiques, statut, recherche et dé : 1440×900 clair FR (puis AR et EN sans rechargement), 1366×768, 1280×720 et 1920×1080 (FR + AR), 667×375 (FR + AR), 390×844 sombre FR, 320×640 AR clair ; en plus 680×560 et 844×390 (FR + AR), les deux autres jeux de bandes de globe-espace-libre. Pour chaque page : les neuf, socle, G, L, E, G+L, G+E, G+L+E, G+P, puis retour aux neuf",
+   "Explorer France puis 42 Paris et fiche campus, vrai globe : 1440×900 clair FR (et AR au niveau Campus et fiche), 1280×720, 667×375, 390×844 sombre FR, 320×640 AR clair ; étiquettes comparées aux états G+P, P, P+L+E et socle, fiche comparée à L seul, E seul, R seul, L+E et socle (styles calculés et pixels)",
+   "Transitions 1440×900, vrai globe : Monde → Projets (globe logé dans le médaillon) → retour Explorer → arabe sombre par les réglages du compte, sans rechargement",
+   "Arrivée index.html, globe bloqué : 1440×900 clair et sombre FR, 390×844 sombre FR, 320×640 AR clair, 667×375 sombre ; boutons mesurés pour le socle, R, V, L, E, R+V, V+E, R+E, R+V+E, R+V+L+E et les neuf ; alternance FR → EN → AR des libellés ; focus clavier ; dialogue de connexion (socle, R, E, L, R+E, R+L+E, les neuf) et focus de ses deux boutons",
+   "Arrivée 1440×900 clair, vrai globe : Visiter → révélation → disque du Monde avec les neuf",
+   "Page 42 Awards, globe bloqué : 1440×900 clair FR, 390×844 sombre FR, 320×640 AR clair, 667×375 clair FR, 1440×900 sombre EN ; états socle, A, A+E, A+L, A+L+E et les neuf ; bandes de l'en-tête et du dock comparées au pixel près",
+   "Comparaison élément par élément des styles calculés (24 propriétés, 348 à 509 éléments) entre socle, chacun des neuf essais seul et les neuf : Explorer 1440×900 et 390×844 sombre, fiche 42 Paris, arrivée 1440×900 sombre, dialogue de connexion 390×844 sombre et 320×640 AR clair, Awards 1440×900 et 390×844 sombre EN",
+   "Sondes hors zone pour les essais 07, 09 et 12 : Projets à 320 px, Profils à 1440 px, dialogue Filtrer à 1440 px",
+   "Vue en anglais : Explorer 1440×900 (changement de langue sans rechargement), Awards 1440×900 sombre EN, Awards 390×844 sombre EN (comparaison des styles), libellés EN de l'arrivée pendant l'alternance"
+  ],
+  "passed": false,
+  "problemes": [
+   {
+    "description": "Air sous le globe réduit sous 16 px en arabe. globe-espace-libre calcule le rayon du globe à partir d'une bande basse fixe (193 px sur ordinateur et tablette, 174 px en paysage étroit d'au moins 521 px de haut), mesurée sur la copie sans lisibilite-textes. Or lisibilite-textes agrandit « Exploration · 42 Horizon » (#about) : 12 → 13 px sur ordinateur, 10 → 13 px sous 701 px. Avec les deux essais, comme avec les neuf, l'air entre le bas du disque et ce texte de statut passe en arabe de 17,0 px (globe seul) à 14,0 px à 1280×720, 1366×768, 1440×900 et 1920×1080 ; c'est aussi le cas après le passage en arabe sombre par les réglages du compte, sans rechargement. À 680×560, il passe de 17,0 à 10,0 px. Il n'y a aucun chevauchement, et en français l'air reste d'au moins 16 px (24 → 23 px, et 23 → 19 px à 680×560). En arabe, la garantie « au moins 16 px d'air » de globe-espace-libre n'est donc plus tenue. echelle-unifiee n'y est pour rien : G+E donne 17,0 px, et ce dernier essai ne fait que raccourcir le filtre de 3 px en arabe, ce qui ajoute de l'air en haut.",
+    "gravite": "mineur",
+    "essaisEnCause": [
+     "globe-espace-libre",
+     "lisibilite-textes"
+    ],
+    "preuves": [
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/results-explorer-monde.json (clés 1440x900, 1366x768, 1280x720 et 1920x1080 → G-ar / G+L-ar / G+E-ar / ALL9-ar, clearance.status = 16.99 / 13.99 / 16.99 / 13.99 ; clé 680x560 → 17.0 / 10.0 / 17.0 / 10.0 ; mêmes valeurs sur deux passages)",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/planches/monde-1440x900-ar-bas-G-vs-ALL9.png",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/planches/monde-680x560-ar-bas-G-vs-ALL9.png",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/results-transitions.json (ar-sombre : status 13.99 après changement par les réglages)",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/results-correctifs.json (essai à blanc de la correction)",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/explorer_monde.py"
+    ],
+    "correctionProposee": "La correction se fait dans essais/globe-espace-libre/essai.css uniquement, par deux règles ajoutées après les bandes existantes. Elles ne s'appliquent que si lisibilite-textes est actif, par le même mécanisme que celui d'echelle-unifiee : `@media (min-width: 701px) and (min-height: 521px) { :root[data-essais~=lisibilite-textes] .app[data-navigation=dock] #main > .globe-stage { --essai-globe-bottom: 196px; } }` et `@media (max-width: 700px) and (orientation: landscape) and (min-height: 521px) { :root[data-essais~=lisibilite-textes] .app[data-navigation=dock] #main > .globe-stage { --essai-globe-bottom: 181px; } }`. Les valeurs 196 et 181 px correspondent au haut du statut arabe mesuré avec les deux essais. Essai à blanc avec le vrai globe et les neuf essais, la règle étant injectée dans la page sans toucher aux fichiers : l'air arabe revient à 17,0 px aux quatre tailles d'ordinateur et à 680×560, l'air français passe à 26,0 px. Le rayon passe de 240 à 237 px à 1440×900, de 174 à 171, de 150 à 147 et de 330 à 327 px aux autres tailles d'ordinateur, et de 89 à 82 px à 680×560. Le rayon baisse ainsi pour toutes les langues, puisque les bandes restent le pire cas des trois langues, comme le prévoit déjà globe-espace-libre. Chaque essai seul reste inchangé : avec la règle injectée, globe-espace-libre seul garde 240,01 et 89 px. La bande haute peut rester telle quelle, car c'est la bande basse qui fixe le rayon."
+   },
+   {
+    "description": "lisibilite-textes réduit sur ordinateur la ligne d'aide sous le filtre, de 14 à 13 px (interligne de 20,3 à 18,85 px). C'est le cas de « 58 campus · 30 pays » au niveau Monde, de « Choisis un campus pour t'en approcher. » au niveau Pays et de « Explore les alentours du campus. » au niveau Campus. Or sa fiche annonce des planchers : « ne descendent plus sous 13 px », « seules des tailles augmentent ». Sa règle `:root #app[data-navigation=dock] .globe-status p{font-size:13px}`, de spécificité (1,3,1), l'emporte à toutes les largeurs sur la règle de base à 14 px (globe-framing.css:127, spécificité (0,4,1)). Elle n'est justifiée que sous 701 px, où la base est à 12 px. Ce défaut appartient à l'essai seul : il apparaît avec L seul comme avec les neuf. Il n'a aucun effet néfaste sur le globe réduit : l'air au-dessus du disque augmente de 1,5 px.",
+    "gravite": "mineur",
+    "essaisEnCause": [
+     "lisibilite-textes"
+    ],
+    "preuves": [
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/results-explorer-monde.json (fonts.stats : socle et G « 14px / 20.3px », L et ALL9 « 13px / 18.85px » à 1280×720, 1366×768, 1440×900, 1920×1080 et 844×390)",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/results-explorer-niveaux.json (1440x900 → pays.ALL9.hintFont 13px / 18.85px contre G+P 14px / 20.3px)",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/planches/pays-france-G+P-vs-ALL9.png",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/lisibilite-textes/essai.css (règle « Explorer and dock search »)",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/baseline/globe-framing.css (ligne 127 : 14 px ; ligne 132 : 12 px sous 701 px)"
+    ],
+    "correctionProposee": "Dans essais/lisibilite-textes/essai.css, sortir `.globe-status p` de la règle commune : garder `:root #app[data-navigation=dock] .prototype-note{font-size:13px}` et ajouter `@media(max-width:700px){:root #app[data-navigation=dock] .globe-status p{font-size:13px}}`. Sur ordinateur, l'essai seul en est modifié : la ligne revient aux 14 px de la base, ce qui correspond à sa fiche. C'est la seule façon de corriger, puisque la règle fautive appartient à cet essai. Essai à blanc, avec les 14 px rétablis au-dessus de 700 px et la correction du problème 1 : l'air au-dessus du disque vaut 47,7 px en arabe et 50,7 px en français. La bande haute de globe-espace-libre (168,3 px) redevient exacte."
+   },
+   {
+    "description": "En paysage 667×375 et en arabe, l'air au-dessus du disque tombe sous 16 px. Avec lisibilite-textes, la ligne de statistiques passe de 12 à 13 px et son bas descend de 1,45 px : l'air passe de 16,5 px (globe seul) à 15,0 px. En français, il passe de 19,5 à 18,0 px et reste au-dessus du seuil. La bande haute de globe-espace-libre ne peut pas compenser, car le disque y est déjà bloqué au zoom minimal de MapLibre : rayon de 20,65 px pour 20,1 px voulus. Une bande corrigée (151,9 px) ne réduirait donc pas le rayon. Le cas est sans chevauchement, sur le format que globe-espace-libre signale déjà comme inutilisable (une « bille » de 41 px).",
+    "gravite": "mineur",
+    "essaisEnCause": [
+     "globe-espace-libre",
+     "lisibilite-textes"
+    ],
+    "preuves": [
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/results-explorer-monde.json (clé 667x375 → G-ar stats 16.46, G+L-ar 15.01, G+E-ar 16.46, ALL9-ar 15.01 ; en français G 19.46, ALL9 18.01 ; rayon 20.65 dans tous les états avec G)",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/planches/monde-667x375-ar-G-vs-ALL9.png"
+    ],
+    "correctionProposee": "Il n'existe pas de correction efficace dans globe-espace-libre, puisque le rayon est déjà au minimum. Proposition : consigner cette limite de la paire dans la fiche de la sélection, avec la réserve existante de globe-espace-libre sur les téléphones en paysage. À éviter : garder la ligne à 12 px en paysage bas quand le globe réduit est actif, ce qui casserait le plancher de 13 px de lisibilite-textes."
+   }
+  ],
+  "effetsPresents": [
+   "globe-espace-libre (01) : à 1440×900, --hg-radius vaut 0.257347 (socle .425) et le disque mesure 240,01 px (socle 362,73), centré à 0 px. Mêmes 240,01 px après « Visiter », après un passage par Projets puis le retour à Explorer, et après le passage en arabe sombre. Disque de 174,01 / 150,01 / 330,01 px à 1366×768 / 1280×720 / 1920×1080. Logé dans le médaillon de Projets avec un rayon de 16,0 px, à 0 px du centre",
+   "police-etiquettes-globe (03) : étiquettes du globe en « Jost, sans-serif » (socle : « \"Helvetica Neue\", Arial, Helvetica, sans-serif ») aux niveaux Monde, France et 42 Paris, à toutes les tailles, en FR, EN et AR. Taille, graisse et interligne inchangés (14 px / 500 / 20 px, 12 px sur mobile) ; zone des étiquettes identique au pixel près à l'état G+P",
+   "une-colonne-320 (07) : grille Projets à 320×640 en grid-template-columns « 280px », soit une colonne (« 133px 133px » sans l'essai)",
+   "pseudo-manquant (09) : Profils à 1440×900 : aucune des 18 lignes provisoires « Pseudo Intra à renseigner » n'est visible (visibles dans le socle) ; les vrais pseudos @lcosta, @imorel et @lmansour restent affichés",
+   "roles-couleur (12) : dialogue de connexion de l'arrivée en sombre : « Annuler » en texte blanc avec un trait neutre à 12 %, contraste 16,2:1 (socle : turquoise #00BABC sans trait). « Appliquer » du filtre en 42 Blue rgb(0,186,188) avec texte encre (socle : sarcelle avec texte clair)",
+   "visiter-contour-sombre (13) : contour #708383 de « Visiter » en sombre, 4,32:1 contre le fond (socle transparent, 1,0:1), à 1440×900, 390×844 et 667×375",
+   "lisibilite-textes (15) : « Exploration · 42 Horizon » à 13 px (socle : 12 px sur ordinateur, 10 px sur mobile). Plus petit texte de la fiche 42 Paris à 13 px (socle : 10 px) ; cette fiche est identique, styles calculés et pixels, à celle de lisibilite-textes seul",
+   "echelle-unifiee (18) : Visiter et Se connecter à 16 px avec un rayon de 12 px (socle : 17 px et 14 px), chacun de 153,61 × 52 px à 1440 px. Dialogue de connexion : rayon 20 px, titre 20 px, ombre de niveau 2 (socle : 28 px et 24 px). Libellé de la recherche à 14 px (socle : 13 px)",
+   "awards-a-venir (19) : « Les 42 Awards arrivent bientôt. » (EN « 42 Awards are coming soon. », AR « جوائز 42 قادمة قريبًا. »), 20/28 px, sur une ligne, centré à 0 px près. À 1440×900, il se trouve 228 px sous la fin du fondu de l'en-tête et 324 px au-dessus du dock, comme avec l'essai seul, et ce dans les cinq vues"
+  ],
+  "notes": "Résultat : hormis les trois points signalés, les neuf essais produisent dans cette zone exactement leurs effets isolés. Les trois points sont mineurs et viennent tous de globe-espace-libre et de lisibilite-textes ; le premier a une correction testée à blanc.\n\nCe qui va bien :\n- Comparaison des styles calculés, élément par élément, sur 8 vues : aucune valeur inattendue. Pour chaque élément et chaque propriété, la valeur obtenue avec les neuf est celle de l'essai qui la change seul, ou celle du socle.\n- Seuls recouvrements : lisibilite-textes et echelle-unifiee sur les mêmes petits textes (déclencheurs Filtrer, Affichage et Trier, statut de la recherche, note de tri). La valeur de lisibilite-textes (13 px) l'emporte, comme le prévoit echelle-unifiee avec `--eu-caption`.\n- Risque 1 : aucun chevauchement entre le disque et le filtre, les statistiques, le statut, la recherche ou le dé, aux 9 tailles et dans les 3 langues. Le disque est centré à 0 px.\n- Risque 2 : lisibilite-textes et echelle-unifiee ne touchent pas aux étiquettes du globe (styles identiques à G+P). La fiche 42 Paris ne bouge ni avec echelle-unifiee seul ni avec roles-couleur seul ; avec les neuf, elle est identique à lisibilite-textes seul.\n- Risque 4, arrivée :\n  - Visiter et Se connecter gardent les mêmes dimensions dans tous les états et pendant l'alternance FR → EN → AR : 153,61 × 52, 342 × 52, 272 × 52 et 304,5 × 44 px.\n  - Aucun libellé rogné. Le contraste des textes est d'au moins 4,51:1. Le contour sombre atteint 4,32:1.\n  - Le focus est visible : contour plein de 2 px ; l'anneau atteint 3,38 à 7,16:1.\n  - Dans le dialogue de connexion, les boutons sont lisibles (7,18, 17,22, 4,51 et 16,2:1), sans rognure ni débordement.\n- Risque 5 : la position, la taille et l'écart de la phrase Awards sont identiques à l'essai seul. Les bandes de l'en-tête et du dock sont identiques au socle au pixel près dans les 5 vues. Le seul écart est un bruit d'un niveau sur 255 dans la phrase à 1440 px (3 114 et 3 809 pixels).\n- Dans Explorer, le dock ne change qu'au libellé de la recherche (passé à 14 px par echelle-unifiee, non rogné).\n- Aucune erreur de console ni aucun défilement horizontal dans toutes les mesures.\n\nMéthode : les sous-ensembles sont obtenus dans la même page en désactivant les feuilles des essais (les neuf n'agissent ici que par CSS) et en relançant `refreshLayout` du globe.\n- Validation : G désactivé puis rétabli donne les mêmes valeurs qu'un chargement direct de G seul (240,01 px, mêmes marges), et le retour aux neuf redonne leurs valeurs. Deux passages complets donnent les mêmes chiffres.\n- Artefact corrigé : au premier passage, la phrase d'awards-a-venir apparaissait sans style dans les captures des états sans cet essai, sans effet sur les mesures. Elle est désormais masquée par `commun.subset`, et les captures concernées ont été refaites.\n\nConstats hors combinaison, non comptés comme problèmes :\n- À 844×390 en arabe, globe-espace-libre seul ne laisse que 15,0 px d'air (disque au zoom minimal). Les neuf améliorent ce cas (18,5 px), parce que lisibilite-textes réduit la ligne et qu'echelle-unifiee raccourcit le filtre.\n- À 320×640 en arabe, en portrait (globe-espace-libre inactif), le disque recouvrait déjà « Exploration · 42 Horizon » dans le socle (−9 px). Avec lisibilite-textes seul, ce recouvrement passe à −16 px ; le texte reste lisible sur l'océan pâle.\n- Le repère compact de « 42 Nice » touche l'étiquette « 42 Marseille » dès le socle.\n- Limites déjà connues, visibles pareillement avec les neuf :\n  - le contour clair de Visiter n'atteint que 1,1 à 1,2:1 (visiter-contour-sombre) ;\n  - les deux boutons du dialogue de connexion se touchent (roles-couleur) ;\n  - le haut du trophée Awards n'est qu'à 13,5 px sous le fondu à 667×375 (awards-a-venir).\n\nNon couvert ici :\n- le dialogue « Créer un compte » de l'arrivée, ouvrable seulement par script ;\n- le menu du compte, la recherche ouverte et la fenêtre « Autour du campus » ;\n- les niveaux Pays et Campus à 1366×768 et 1920×1080 ;\n- la tablette 768×1024, couverte par la même règle de bande que l'ordinateur mais non mesurée.\nToutes les mesures ont été faites dans Chrome sans interface, en mouvement réduit, sans appareil physique.\n\nIntégrité :\n- `snapshot.py --verify` confirme les 137 fichiers de la copie figée.\n- Aucun fichier modifié en dehors du dossier de contrôle : /home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/\n- Ce dossier contient les scripts (commun.py, explorer_monde.py, explorer_niveaux.py, transitions.py, arrivee.py, awards.py, algebre.py, correctifs.py, sondes.py et planches.py), les résultats results-*.json, les journaux log-*.txt et les dossiers captures/ et planches/."
+ },
+ "reports2": {
+  "zone": "rubriques-fiches-dialogues",
+  "vues": [
+   "Listes Projets, Chroniques et Profils, en Grille et en Liste, copie puis neuf essais (60 états, chargements frais) : 1440×900 clair FR, 390×844 sombre FR, 360×640, 340×640 et 320×640 clair AR",
+   "Vue en anglais : grilles Projets et Profils à 340×640 clair EN ; fiche projet (aperçu) 1440×900 clair EN ; commentaires 390×844 sombre EN",
+   "Fiche projet ft-transcendence-building-together (aperçu et commentaires), profil profile-leila-mansour (aperçu, et onglet Projets à 320 AR), chronique journal-an-evening-debugging (article) : 1440 clair FR, 390 sombre FR, 320 clair AR",
+   "Profil profile-lucia-roca (sans pseudo Intra) à 1440 FR et 320 AR : copie, pseudo-manquant seul, neuf essais",
+   "Dialogues et menus du risque 4 hors arrivée : Filtrer (Appliquer, Annuler, Réinitialiser, Tout sélectionner, croix), menu du compte (Se connecter, Créer un compte), dialogues Se connecter et Créer un compte du compte, formulaire de commentaire (Ajouter, Emoji) et palette d’emoji, Signaler, lien du dépôt de « Tester le projet », Envoyer un message : 1440 clair FR, 1440 sombre FR, 390×844 sombre AR, 320×640 clair AR",
+   "Fil de commentaire après publication d’un commentaire (stockage local du Chrome de contrôle) : réactions, Répondre et son formulaire, menu Modifier/Supprimer : 1440 clair FR, 390 sombre AR, 320 clair AR",
+   "Sondes : Explorer 1440×900 avec le vrai globe (copie, globe-espace-libre seul, police-etiquettes-globe seul, neuf) ; médaillon du globe dans l’en-tête de Projets avec le vrai globe (copie, globe-espace-libre seul, neuf) ; page 42 Awards 1440 clair FR et 390 sombre FR (awards-a-venir seul, neuf)",
+   "Reproductions ciblées : grille Projets 390 sombre (lisibilite seul, echelle seul, paire, neuf) ; liste Profils 360 AR (lisibilite, echelle, pseudo-manquant seuls, paires, neuf) ; liste Projets 360 AR ; actions de la fiche projet à 320 AR"
+  ],
+  "passed": true,
+  "problemes": [
+   {
+    "description": "À 390×844 (grille Projets, deux colonnes, sombre FR), le nom d’auteur « Arun Suri » (carte « D’un terminal à l’autre ») passe sur deux lignes ; il tient sur une ligne dans la copie. La coupure tombe à l’espace : aucun mot n’est coupé, rien ne déborde. Cause : le plancher de 13 px que lisibilite-textes donne aux noms compacts (12,2 px dans la copie). Le défaut se reproduit avec lisibilite-textes seul, avec la paire lisibilite-textes + echelle-unifiee et avec les neuf, mais pas avec echelle-unifiee seul (12 px). Ce n’est pas un conflit de combinaison : une-colonne-320 ne s’applique volontairement que jusqu’à 360 px, et la copie a déjà des noms sur deux lignes entre 361 et 389 px.",
+    "gravite": "mineur",
+    "essaisEnCause": [
+     "lisibilite-textes"
+    ],
+    "preuves": [
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/planches/p1-arun-suri-390-sombre.png",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/attribution-listes.json (projects-grid-mobile-sombre : 'Arun Suri:1:12.2188px' dans la copie, 'Arun Suri:2:13px' avec lisibilite-textes seul, avec la paire et avec les neuf)",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/listes.json (bilan.projects-grid-mobile-sombre.nouveauxDansCombinaison)"
+    ],
+    "correctionProposee": "Aucune correction de combinaison. Consigner la limite dans essais/lisibilite-textes/essai.json : « à 390 px, 1 nom d’auteur sur 12 passe sur deux lignes à l’espace (Arun Suri), comme la copie le fait déjà entre 361 et 389 px ». Une vraie correction toucherait author-preview-fit.mjs de la copie ou le seuil de 360 px d’une-colonne-320 : c’est hors périmètre et sans décision de l’utilisateur."
+   },
+   {
+    "description": "Vue Liste des Profils en arabe, à 360, 340 et 320 px : la pastille « خريج / خريجة » (Alumni) passe sur deux lignes sous la vignette. Les 6 rangées Alumni de la page 1 font alors 132 px au lieu de 113 à 114 px ; les autres rangées font 114 px. La pastille reste entière : aucun rognage, aucun texte sous le cœur, aucune collision. Cause : echelle-unifiee seul (pastille 11 → 12 px). Le résultat est identique avec echelle-unifiee seul, avec echelle-unifiee + pseudo-manquant, avec lisibilite-textes + echelle-unifiee et avec les neuf : echelle-unifiee garde exprès 12 px quand lisibilite-textes est actif, sous 1200 px. Ni lisibilite-textes seul ni pseudo-manquant seul ne le provoquent. Ce n’est pas un conflit, et les vérifications d’echelle-unifiee ne l’avaient pas relevé (pastilles non rognées, hauteurs des rangées non mesurées en arabe sous 390 px).",
+    "gravite": "mineur",
+    "essaisEnCause": [
+     "echelle-unifiee"
+    ],
+    "preuves": [
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/planches/p7-liste-profils-360-et-actions-320.png",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/visuel.json (liste-profils-360 : carte d’Inès Morel 112,5 px dans la copie, 132 px avec echelle-unifiee seul et avec les neuf)",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/attribution-listes.json (people-list-360-ar, rangées hautes par ensemble d’essais)",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/listes.json (people-list-360-ar, -340-ar, -320-ar : hauteurs [114, 132] dans la combinaison)"
+    ],
+    "correctionProposee": "Aucune correction de combinaison ; ajouter la limite dans essais/echelle-unifiee/essai.json. Pour obtenir des rangées égales, la seule correction dans le périmètre serait de laisser cette pastille à 11 px en vue Liste arabe sous 390 px. Elle changerait l’essai seul et sortirait la pastille de l’échelle : je ne la recommande pas sans décision de l’utilisateur."
+   },
+   {
+    "description": "En sombre, dans le menu du compte, le texte Royal Pink de « Créer un compte » n’atteint que 3,81:1 (ordinateur FR) et 3,80:1 (390 px AR) sur le verre du menu, sous le seuil de 4,5:1 demandé. Le défaut est préexistant : la copie mesure 3,81:1 et 3,59:1, aucun des neuf essais ne change cette couleur, et visiter-contour-sombre le signale déjà dans ses limites (couleur choisie par l’utilisateur le 13 oct.). Ce que l’essai doit apporter est bien là : le contour #708383 atteint 3,74:1 et 3,68:1 (au moins 3:1), et « Se connecter » et « Créer un compte » gardent les mêmes dimensions, 246×53 px sur ordinateur (rayon 12 d’echelle-unifiee) et 246×64 px sur mobile.",
+    "gravite": "mineur",
+    "essaisEnCause": [
+     "visiter-contour-sombre"
+    ],
+    "preuves": [
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/dialogues.json (ordinateur-sombre.compte et mobile-sombre-ar.compte : contraste, contrasteBordure, toggle)",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/planches/p8-sombre-ordinateur-neuf.png",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-compte-ordinateur-sombre-combo.png"
+    ],
+    "correctionProposee": "Aucune correction dans la combinaison : le défaut est préexistant et hors du périmètre strict. Le corriger (par exemple texte #F485BD sur le verre, ou autre surface) demande une décision explicite de l’utilisateur sur la couleur choisie le 13 octobre."
+   }
+  ],
+  "effetsPresents": [
+   "globe-espace-libre : à 1440×900 avec le vrai globe, les neuf donnent --hg-radius 0.257347 et un disque de 240,0 px, comme l’essai seul (copie : .425 et 362,7 px). Dans le médaillon de l’en-tête de Projets, l’échelle vaut 0,0667 comme seul (copie : 0,0441), avec le même siège de 32 px. Preuves : sondes.json, medaillon.json, planches/p10-medaillon-1440.png",
+   "police-etiquettes-globe : les 25 repères du globe sont en « Jost, sans-serif » dans les neuf comme avec l’essai seul (copie : « Helvetica Neue », Arial…), toujours en 14 px. Preuve : sondes.json",
+   "une-colonne-320 : les grilles Projets et Chroniques passent à 1 colonne à 320, 340 et 360 px en arabe et à 340 px en anglais (copie : 2 colonnes) ; elles restent à 2 colonnes à 390 px. Dans ces vues, aucun nom d’auteur sur deux lignes, aucun mot coupé, aucun chevauchement. Ses 91 valeurs sont identiques seul et combiné. Preuves : listes.json, planches/p3-profils-projets-320-ar.png",
+   "pseudo-manquant : sur les 24 cartes Profils, en grille et en liste, à tous les formats, plus aucune mention « pseudo à renseigner » visible (18 dans la copie). 9 à 14 lignes sont marquées « replie » et aucune rangée n’est décalée (4 dans la copie à 340 et 320 px en arabe). Sur la fiche de Lucía Roca, la mention est masquée et le bloc d’identité passe de 72 à 47,8 px. Preuves : listes.json, visuel.json (fiche-lucia), planches/p3, p6, p9",
+   "roles-couleur : Appliquer, Ajouter, Répondre, Enregistrer le signalement, Enregistrer (dépôt), Envoyer et Simuler la création du compte sont en #00BABC avec texte encre (7,18:1) en clair, et en #ED3491 avec texte encre en sombre (4,51:1 mesuré sur les pixels). En sombre, Annuler des dialogues Se connecter et Créer un compte passe de #341E29 à #29292E. Ses 81 valeurs sont identiques seul et combiné. Preuves : dialogues.json, commentaires.json, planches/p4, p8",
+   "visiter-contour-sombre : en sombre, « Créer un compte » du menu du compte reçoit une bordure rgb(112, 131, 131), contrastée à 3,74:1 (ordinateur) et 3,68:1 (390 px AR), contre une bordure transparente dans la copie. Ses 2 valeurs sont identiques seul et combiné. Preuves : dialogues.json, planches/p8",
+   "lisibilite-textes : les métadonnées des cartes passent de 11–12 à 13 px, en #0C7677 en clair et #F485BD en sombre ; Favoris et Signaler passent de 11 à 14 px, les pieds de dialogue à 14 px. 12 974 des 12 987 valeurs qu’il change seul sont identiques dans les neuf. Les 13 autres : le tri des commentaires à 14 px (palier d’echelle-unifiee, au-dessus du plancher) et 3 pistes de grille calculées. Preuves : listes.json, fiches.json, dialogues.json",
+   "echelle-unifiee : rayon des cartes 22 → 20 px ; dialogues 24/28 → 20 px avec ombre de niveau 2 ; boutons du compte 17 → 16 px, rayon 12 ; nom du profil 38 → 35 px ; titres des cartes 31 → 28 px à 1440. 9 528 de ses 12 854 valeurs sont identiques dans les neuf. Les 3 326 autres sont 1 650 tailles relevées aux planchers 13/14 px de lisibilite-textes par sa propre règle :root[data-essais~=lisibilite-textes], 1 368 interlignes qui en découlent, 305 pistes de grille et 3 interlettrages en em. Aucun rayon, aucune ombre, aucune couleur n’est perdu. Preuves : listes.json, fiches.json, dialogues.json",
+   "awards-a-venir : la note « Les 42 Awards arrivent bientôt. » est visible en 20/28 px, avec la même boîte seule et combinée : y 456–484 px à 1440×900 (le fondu s’arrête à 188 px, le dock commence à 808 px) et 428–456 px à 390×844 sombre (166 et 767 px). Preuve : sondes.json"
+  ],
+  "notes": "Bilan : dans ma zone, aucun conflit entre les neuf essais. Les trois problèmes mineurs relevés viennent d’un essai seul (lisibilite-textes, echelle-unifiee) ou existaient déjà dans la copie.\n\nMéthode. J’ai rechargé chaque page à neuf (about:blank puis la page), sans essai puis avec les neuf. J’ai repris en lecture seule les détecteurs écrits par les vérificateurs des essais : CLIP, SHAPE, SPILL et WORDS d’echelle-unifiee, AUDIT et BREAKS d’une-colonne-320, GRID, LIST et UNLEVEL de pseudo-manquant.\nJ’ai ajouté un traçage par feuille (lib.py, CASCADE_JS et TOGGLE_JS). Dans la page des neuf, chaque élément visible est relu avec toutes les feuilles, avec aucune, puis avec chaque feuille seule. Toute propriété changée par un seul essai garde sa valeur dans la combinaison. Seuls lisibilite-textes et echelle-unifiee se recouvrent, sur les tailles, et le recouvrement suit la règle prévue par echelle-unifiee : planchers 13/14 px, jamais moins de 13 px.\n\nChiffres. 108 états de page mesurés, aucune erreur console, aucun débordement horizontal. 115 boutons mesurés dans la combinaison, aucun libellé coupé. Le texte de chaque bouton principal atteint au moins 4,5:1 (minimum 4,51:1 sur Royal Pink, mesuré sur les pixels). Le focus est visible sur tous, sauf « Modifier » du menu d’un commentaire : c’est un artefact de mesure (élément déjà focalisé à la souris à l’ouverture), identique dans la copie.\n\nFausse alerte. CLIP_JS signale les titres arabes de la vue Liste à 360 px (boîte de police 3 px plus haute que le lien limité à trois lignes). La copie déclenche la même alerte à 340 et 320 px, et la capture ne montre aucun glyphe coupé (planches/p2-titres-liste-360-ar.png).\n\nContrastes déjà faibles dans la copie, hors de la liste du risque 4 et inchangés par les essais : réactions J’aime #2563EB et Je n’aime pas #E53935 (3,3 à 4,9:1), « Supprimer » du menu d’un commentaire (3,5 à 4,2:1).\n\nEffets d’un essai seul, sans coupure et identiques dans la combinaison :\n- lisibilite-textes, sur mobile : Emoji 44 → 47 px de haut ; Favoris et Signaler 39 → 45 px à 320 px en arabe ; « Tout sélectionner » sur plus de lignes, mais tient dans sa pastille.\n- echelle-unifiee : le menu local collant recouvre en partie le formulaire du dépôt et l’indication des commentaires, comme dans la copie.\n\nCopie figée intacte : 137 fichiers conformes au manifeste. Je l’ai vérifié avec copie-intacte.py, en lecture seule, sans lancer snapshot.py --verify, qui réécrit snapshot-verification.json à la racine de l’étude. Aucun fichier d’essais/ ni de baseline/ modifié.\n\nNon couvert ici : l’arrivée et Explorer (autre zone), la recherche du dock, la visionneuse des médias, le choix du campus, la carte du campus, les largeurs de 361 à 389 px, un vrai téléphone, un lecteur d’écran.\n\nMémoire : Chrome s’est arrêté (« pipe » fermé) vers la 8e page chargée dans une même session ; je suis passé à 6 chargements par Chrome, avec reprise automatique.\n\nTous les fichiers (scripts, résultats JSON et captures) sont dans /home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/ : listes.json, fiches.json, dialogues.json, commentaires.json, attribution-listes.json, visuel.json, sondes.json, medaillon.json, copie-intacte.json, bilan.json ; planches/p1 à p10 (regardées) ; shots/ (captures brutes)."
+ },
+ "final": {
+  "passed": true,
+  "problemesTraites": [
+   {
+    "description": "Air sous le globe réduit (globe-espace-libre) sous 16 px en arabe avec lisibilite-textes. Les bandes fixes de globe-espace-libre ont été mesurées sans lisibilite-textes, qui agrandit « Exploration · 42 Horizon » (12 → 13 px sur ordinateur, 10 → 13 px sous 701 px). Reproduit avec globe-espace-libre et lisibilite-textes seuls (chargements directs, vrai globe) : en arabe, l’air passe de 17,0 à 14,0 px à 1440 × 900 (même chose à 1366 × 768, 1280 × 720 et 1920 × 1080) et de 17,0 à 10,0 px à 680 × 560. echelle-unifiee n’y est pour rien : avec globe-espace-libre seul, l’air reste à 17,0 px. J’ai trouvé un troisième effet du même conflit, que les contrôleurs n’avaient pas signalé : à 700 × 500 (paysage étroit et bas, disque non bloqué au zoom minimal), la ligne de statistiques passée à 13 px fait tomber l’air au-dessus du disque de 17,0 à 15,6 px.",
+    "conclusion": "conflit corrigé",
+    "correction": "Dans essais/globe-espace-libre/essai.css, j’ai ajouté trois bandes qui ne s’appliquent que si lisibilite-textes est actif (:root[data-essais~=lisibilite-textes], le mécanisme qu’utilise déjà echelle-unifiee). Leurs valeurs reprennent le pire cas arabe mesuré avec les deux essais : bande basse à 196 px sur ordinateur et tablette (au lieu de 193), bande basse à 181 px en paysage étroit d’au moins 521 px de haut (au lieu de 174), bande haute à 151,9 px en paysage étroit bas (au lieu de 150,4). globe-espace-libre seul ne change pas : rayons 240,0 / 174,0 / 150,0 / 330,0 / 302,0 / 89,0 / 82,6 px, bandes et marges identiques. Avec lisibilite-textes, comme avec les neuf : rayons de 237,0 / 171,0 / 147,0 / 327,0 / 299,0 px aux tailles d’ordinateur et de tablette, 82,0 px à 680 × 560 et 81,1 px à 700 × 500. L’air est d’au moins 17,0 px en arabe et de 26,0 px en français et en anglais, et le disque reste centré à 0 px. La fiche essai.json (changement, vérifications, limites, fichiers) et checks/globe-espace-libre/results.json (ajout de integration20261015 et du contrôle bandsFollowLisibiliteTextes) sont mis à jour.",
+    "preuves": [
+     "checks/_selection-20261015/integration/results-globe-avant.json (1440x900 : G-ar statut 16.99, G+L-ar 13.99, G+E-ar 16.99 ; 680x560 : 17.0 → 10.0 ; 700x500 : statistiques 17.01 → 15.56)",
+     "checks/_selection-20261015/integration/results-globe-apres.json (globe-espace-libre seul inchangé ; G+L et les neuf : 237.01 px, air 16.99 en arabe et 25.99 en français à 1440x900 ; 82 px et 17.0 à 680x560 ; 81.1 px et 17.06 à 700x500)",
+     "checks/_selection-20261015/integration/planches/p3-air-sous-globe-1440x900-ar.png (examinée)",
+     "checks/_selection-20261015/integration/results-parcours-globe.json (Visiter → révélation à 237.01 px ; médaillon de Projets à 16.0 px, centré ; retour à Explorer ; arabe sombre sans rechargement, air 16.99 px)",
+     "checks/_selection-20261015/integration/globe_bandes.py"
+    ]
+   },
+   {
+    "description": "lisibilite-textes réduisait sur ordinateur la ligne d’aide du globe (« 58 campus · 30 pays », « Choisis un campus pour t’en approcher. », « Explore les alentours du campus. ») de 14 à 13 px. Sa règle, de spécificité (1,3,1), l’emportait sur la règle de la copie (0,4,1) à toutes les largeurs, contrairement à sa fiche (« seules des tailles augmentent »). Reproduit avec lisibilite-textes seul : 14 → 13 px à 1440 × 900 et à 844 × 390. Sous 701 px, la hausse de 12 à 13 px est voulue. Ses vérificateurs n’avaient pas mesuré le périmètre dans Explorer.",
+    "conclusion": "défaut d’un essai corrigé",
+    "correction": "Dans essais/lisibilite-textes/essai.css, la ligne d’aide (.globe-status p) n’est plus relevée à 13 px que sous @media(max-width:700px) ; « Exploration · 42 Horizon » garde ses 13 px partout. Cette correction change l’essai seul, et c’est la seule façon de corriger, puisque la règle fautive lui appartient : sur ordinateur, la ligne d’aide revient aux 14 px de la copie, comme le décrit sa fiche. J’ai revérifié son périmètre dans Explorer, sur le même DOM en coupant puis rétablissant la feuille : 5 formats globe bloqué, puis les niveaux Monde, Pays et Campus avec le vrai globe. Aucune taille ne baisse ni ne dépasse 14 px, aucune couleur ne change, et la ligne d’aide est à 14 px aux trois niveaux sur ordinateur. La bande haute de globe-espace-libre (168,3 px) redevient exacte. La fiche essai.json (changement, vérifications, limites, fichiers) et checks/lisibilite-textes/results.json (ajout de integration20261015 et du contrôle scopeExplorer) sont mis à jour.",
+    "preuves": [
+     "checks/_selection-20261015/integration/results-globe-avant.json (polices : 1440x900 copie 14px, L 13px ; 844x390 14 → 13 ; 390x844 12 → 13)",
+     "checks/_selection-20261015/integration/results-globe-apres.json (polices : 14px avec L à 1440x900, 844x390 et 1280x500 ; 13px sous 701 px)",
+     "checks/_selection-20261015/integration/results-perimetre-lisibilite.json",
+     "checks/_selection-20261015/integration/perimetre_lisibilite.py"
+    ]
+   },
+   {
+    "description": "En paysage, à 667 × 375 et en arabe, l’air au-dessus de la bille passe de 16,5 px (globe seul) à 15,0 px avec lisibilite-textes, car la ligne de statistiques passe de 12 à 13 px. Le disque est déjà bloqué au zoom minimal de MapLibre (rayon de 20,65 px). Reproduit avec globe-espace-libre et lisibilite-textes ; les valeurs sont les mêmes après correction, et la nouvelle bande haute (151,9 px) s’applique sans effet. En complément : globe-espace-libre seul ne laisse déjà que 15,0 px en arabe à 844 × 390, pour la même raison ; c’est un constat de l’essai seul, jusque-là non consigné.",
+    "conclusion": "non corrigé",
+    "correction": "Aucune correction n’est possible dans le périmètre des essais : réduire encore la bille demanderait de modifier le moteur du globe, et garder la ligne à 12 px casserait le plancher de 13 px de lisibilite-textes. J’ai consigné la limite dans les deux fiches : dans celle de globe-espace-libre, avec le cas 844 × 390 de l’essai seul, et dans celle de lisibilite-textes.",
+    "preuves": [
+     "checks/_selection-20261015/integration/results-globe-apres.json (667x375 : G-ar 16.46, G+L-ar 15.01, neuf-ar 15.01, rayon 20.65 ; 844x390 : G-ar 15.02 = G+L-ar)",
+     "checks/_selection-20261015/integration/captures/apres-globe-667x375-G+L-ar.png"
+    ]
+   },
+   {
+    "description": "À 390 × 844, dans la grille Projets en deux colonnes en sombre, le nom « Arun Suri » passe sur deux lignes, et la coupure tombe à l’espace. Reproduit avec lisibilite-textes seul (12,2 → 13 px) ; c’est identique avec lisibilite-textes et echelle-unifiee, et avec les neuf, alors qu’echelle-unifiee seul garde le nom sur une ligne. La copie replie déjà quatre noms à cette même largeur (Luiza Costa, Leïla Mansour, Caio Mendes, Tomás Vieira). Il n’y a ni mot coupé, ni chevauchement, ni conflit entre essais.",
+    "conclusion": "non corrigé",
+    "correction": "Aucune correction : c’est l’effet attendu du plancher de 13 px, identique seul et combiné. J’ai ajouté la limite à essais/lisibilite-textes/essai.json.",
+    "preuves": [
+     "checks/_selection-20261015/integration/results-listes-compte.json (arun)",
+     "checks/_selection-20261015/integration/planches/p1-arun-suri-390-sombre.png (examinée)"
+    ]
+   },
+   {
+    "description": "Vue Liste des Profils en arabe : la pastille « خريج / خريجة » (Alumni) passe sur deux lignes dans sa vignette, qui s’allonge. Les rangées Alumni mesurent 132 px au lieu de 114 px (112,5 px dans la copie). La cause est echelle-unifiee seul (11 → 12 px) ; le résultat est identique avec lisibilite-textes et echelle-unifiee, et avec les neuf, alors que ni lisibilite-textes seul ni pseudo-manquant seul ne le provoquent. Contrairement au rapport (360 px et moins), l’effet couvre toutes les largeurs de 320 à au moins 768 px (139 contre 121 px à 768 px) ; la pastille tient sur une ligne à 1024 et à 1199 px. Elle n’est jamais rognée et ne touche rien.",
+    "conclusion": "non corrigé",
+    "correction": "Aucune correction : la seule possible dans le périmètre serait de garder la pastille à 11 px, ce qui changerait l’essai seul et la sortirait de l’échelle, sans décision de l’utilisateur. J’ai ajouté la limite à essais/echelle-unifiee/essai.json, avec les largeurs mesurées.",
+    "preuves": [
+     "checks/_selection-20261015/integration/results-listes-compte.json (alumni, alumni-largeurs, alumni-largeurs-ordinateur)",
+     "checks/_selection-20261015/integration/planches/p2-pastille-alumni-liste-360-ar.png (examinée)"
+    ]
+   },
+   {
+    "description": "En sombre, le texte Royal Pink de « Créer un compte », dans le menu du compte, n’atteint pas 4,5:1 sur le verre. Mesuré sur les pixels : 3,84:1 à 1440 px en français, dans la copie, avec visiter-contour-sombre seul et avec les neuf ; 3,41:1 à 390 px en arabe dans la copie et avec visiter-contour-sombre seul, et 3,74:1 avec les neuf, parce que le verre floute un autre fond. Aucun des essais ne change cette couleur. Le contour #708383 voulu par visiter-contour-sombre est bien présent : 3,68:1, et 3,27 à 3,58:1 à 390 px.",
+    "conclusion": "fausse alerte",
+    "correction": "Aucune correction dans la combinaison. Le défaut existe déjà dans la copie : c’est la couleur choisie par l’utilisateur le 13 octobre, déjà signalée dans les limites de visiter-contour-sombre. La changer demande sa décision.",
+    "preuves": [
+     "checks/_selection-20261015/integration/results-listes-compte.json (compte)",
+     "checks/_selection-20261015/integration/captures/compte-1440-fr-socle.png"
+    ]
+   },
+   {
+    "description": "Constat hors combinaison du premier contrôleur, que j’ai revérifié : à 320 × 640 en arabe, en portrait, où globe-espace-libre ne s’applique pas, le disque de la copie recouvre déjà le bas de « Exploration · 42 Horizon » (−9,0 px, et −3,0 px en français). Avec lisibilite-textes seul, ce recouvrement passe à −16,0 px (−7,0 px en français), et c’est identique avec les neuf. Le texte reste lisible sur le bord pâle de l’océan.",
+    "conclusion": "non corrigé",
+    "correction": "Aucune correction : le recouvrement existe déjà dans la copie et son agrandissement vient de l’essai seul. J’ai ajouté la limite à essais/lisibilite-textes/essai.json.",
+    "preuves": [
+     "checks/_selection-20261015/integration/results-globe-apres.json (320x640)",
+     "checks/_selection-20261015/integration/planches/p4-statut-globe-320x640-ar.png (examinée)"
+    ]
+   }
+  ],
+  "fichiersModifies": [
+   "essais/globe-espace-libre/essai.css",
+   "essais/globe-espace-libre/essai.json",
+   "checks/globe-espace-libre/results.json",
+   "essais/lisibilite-textes/essai.css",
+   "essais/lisibilite-textes/essai.json",
+   "checks/lisibilite-textes/results.json",
+   "essais/echelle-unifiee/essai.json",
+   "checks/_selection-20261015/integration/ (créé : commun.py, globe_bandes.py, listes_compte.py, perimetre_lisibilite.py, parcours_globe.py, passe_finale.py, fiches_valides.py, maj_fiches.py, bilan.py, results.json, results-*.json, log-*.txt, empreintes-essais-avant.txt et empreintes-essais-apres.txt, captures/, planches/)",
+   "snapshot-verification.json (réécrit par snapshot.py --verify, mêmes valeurs)"
+  ],
+  "verificationsFinales": [
+   "Explorer à 1440 × 900, clair, français, vrai globe, avec les neuf : disque de 237,01 px centré à 0 px. Air : 80,99 px avec le filtre, 50,69 avec les statistiques, 25,99 avec le statut, 63,99 avec la recherche et 74,96 avec le dé. Étiquettes en « Jost, sans-serif » (25 repères), ligne d’aide à 14 px, statut à 13 px, libellé de la recherche à 14 px. Aucune erreur ni débordement. Planche f1 examinée.",
+   "Explorer à 390 × 844, sombre, français, vrai globe : disque de 190,92 px, inchangé en portrait comme le prévoit globe-espace-libre, au moins 59 px d’air, étiquettes en Jost, sans erreur ni débordement.",
+   "Neuf essais aux autres formats (vrai globe) : 237,0 / 171,0 / 147,0 / 327,0 / 299,0 px de rayon à 1440 × 900, 1366 × 768, 1280 × 720, 1920 × 1080 et 768 × 1024 ; 82 px à 680 × 560 et 81,1 px à 700 × 500. Air d’au moins 16,99 px en arabe partout, sauf aux formats bloqués au zoom minimal (667 × 375 à 15,0 px ; 844 × 390 à 17,0 px). Centre à 0 px, sans erreur.",
+   "Parcours avec les neuf : arrivée → Visiter → révélation sur le disque de 237,01 px ; Monde → Projets avec le globe logé dans le médaillon (16,0 px, centré) ; retour à Explorer ; passage en arabe sombre par les réglages sans rechargement (237,01 px, air de 16,99 px). Aucune erreur.",
+   "Projets à 320 × 640 en arabe : une colonne (280px), aucun nom ni titre coupé au milieu d’un mot, aucune pastille rognée, métadonnées à 13 px en #0C7677, rayon des cartes de 20 px. Aucune erreur ni débordement. Planche f2 examinée : la recherche flottante recouvre du contenu comme dans la copie.",
+   "Profils à 1440 px : aucune mention « pseudo à renseigner » visible, et les vrais pseudos (@lcosta, @imorel, @lmansour…) restent affichés.",
+   "Fiche ft_transcendence, onglet Commentaires (1440 px clair FR, 390 px sombre AR) : « Ajouter » en 42 Blue sur texte encre (7,18:1) puis en Royal Pink sur texte encre (4,51:1) ; Emoji et Favoris à 14 px, zone de saisie arrondie à 12 px. Aucune erreur ni débordement. Planche f2 examinée.",
+   "Dialogue Filtrer (1440 px clair FR, 390 px sombre AR) : rayon de 20 px, ombre de niveau 2. « Appliquer » à 14 px atteint 7,18:1 en clair et 4,51:1 en sombre, « Annuler » 15,47:1 et 14,47:1. Aucun libellé rogné. Planche f3 examinée.",
+   "Arrivée en sombre (1440 et 390 px) : Visiter et Se connecter ont les mêmes dimensions (153,6 × 52 et 342 × 52 px), en 16 px avec un rayon de 12 px. Contour de Visiter #708383 à 4,32:1, textes à 4,51:1. Focus clavier visible (trait plein de 2 px) sur le changement de thème, Se connecter et Visiter. Dialogue de connexion : rayon de 20 px, boutons à 4,51:1 et 16,2:1, non rognés. Planche f4 examinée.",
+   "42 Awards (1440 px clair FR, 390 px sombre FR) : « Les 42 Awards arrivent bientôt. » en 20/28 px, sur une ligne, centré à 0 px, à 228 et 222 px sous le fondu de l’en-tête et à 324 et 311 px au-dessus du dock. Planche f5 examinée.",
+   "Aucune erreur de console ni défilement horizontal dans toutes les vues de la passe finale et dans tous les relevés du globe.",
+   "Les neuf essai.json sont du JSON valide, avec tous les champs lus par la galerie ; leurs fichiers (4 à 14 par fiche) et leurs captures (10 à 38 par fiche) existent tous (results-fiches.json).",
+   "snapshot.py --verify, lancé en dernier : copie figée intacte."
+  ],
+  "limites": [
+   "Reste un écart entre la combinaison et les essais seuls : en paysage, à 667 × 375 en arabe, 15,0 px d’air au-dessus de la bille au lieu de 16,5 px avec le globe seul. Il est inévitable sans modifier le moteur du globe ou le plancher de lisibilite-textes, et il est consigné. globe-espace-libre seul ne laisse lui-même que 15,0 px en arabe à 844 × 390.",
+   "Les effets de deux essais seuls restent tels quels, documentés, en attente d’une décision de l’utilisateur : « Arun Suri » sur deux lignes à 390 px (lisibilite-textes), et la pastille Alumni arabe sur deux lignes avec des rangées de 18 px plus hautes, de 320 à au moins 768 px (echelle-unifiee).",
+   "Le contraste de « Créer un compte » en sombre (3,4 à 3,8:1) existe déjà dans la copie et n’est pas traité : la couleur a été choisie par l’utilisateur.",
+   "lisibilite-textes change seul sur un point : sur ordinateur, sa ligne d’aide du globe revient de 13 à 14 px, la valeur de la copie. globe-espace-libre seul ne change pas ; avec lisibilite-textes, son disque perd 3 px de rayon sur ordinateur et tablette, 7 px à 680 × 560 et 1,5 px à 700 × 500.",
+   "NOTES.md est généré à partir des essai.json par checks/_reprise/notes_final.py ; il a été régénéré à 12 h 04, avant mes modifications des fiches (12 h 20 à 12 h 31). L’agent principal doit le régénérer : le nombre de contrôles passe de 13 à 14 pour globe-espace-libre et pour lisibilite-textes, et les limites changent.",
+   "Le chargeur garde ?v=1 (boot.js est hors du périmètre autorisé) et le serveur n’envoie que Last-Modified. Le navigateur de l’utilisateur peut donc encore servir les anciennes feuilles en cache ; un rechargement forcé (Ctrl+Maj+R) peut être nécessaire.",
+   "Les comparaisons de styles des contrôleurs, faites avant les corrections, ne sont pas rejouées : les corrections ne touchent qu’Explorer (ligne d’aide et bandes du globe), et la passe finale couvre les vues demandées. Le contrôle de la galerie (checks/galerie/check.py) n’est pas relancé, car il réécrirait des fichiers hors des dossiers des essais ; mon propre contrôle valide les fiches.",
+   "Je n’ai pas recouvert le dialogue « Créer un compte » de l’arrivée, le menu du compte ouvert, la recherche ouverte ni la fenêtre « Autour du campus » ; mes corrections ne les touchent pas.",
+   "Tous les contrôles ont été faits dans Chrome sans interface, en mouvement réduit, avec des formats émulés, sans téléphone physique ni lecteur d’écran ; l’anglais n’est mesuré que pour le globe."
+  ],
+  "snapshotVerify": "python3 -I snapshot.py --verify, lancé en dernière opération (code de sortie 0) : 137 fichiers vérifiés, 11 originaux adaptés, 12 191 456 octets, 206 références, aucune manquante ni hors de l’étude. L’outil a réécrit snapshot-verification.json avec les mêmes valeurs.",
+  "lienCombinaison": "baseline/content-preview.html?essais=globe-espace-libre,police-etiquettes-globe,une-colonne-320,roles-couleur,visiter-contour-sombre,lisibilite-textes,echelle-unifiee,pseudo-manquant,awards-a-venir#explore"
+ }
+}

@@ -1,0 +1,75 @@
+/* Readable frosted glass. Load after all material and search-morph styles.
+   A neutral veil bounds the contrast over bright, dark or saturated content;
+   the existing 26 px blur, reflections and geometry remain unchanged. */
+:root {
+  --readable-glass-opacity: 82%;
+  --readable-glass-muted: color-mix(in srgb, #536163 75%, var(--h42-ink));
+  --readable-glass-accent: color-mix(in srgb, var(--h42-teal) 57%, var(--h42-ink));
+}
+:root[data-theme=dark] {
+  --readable-glass-muted: color-mix(in srgb, var(--h42-white) 45%, var(--h42-cadet));
+  --readable-glass-accent: color-mix(in srgb, var(--h42-white) 40%, var(--h42-pink));
+}
+:root[data-theme=light] {
+  --control-glass-surface: color-mix(in srgb, var(--h42-white) var(--readable-glass-opacity), transparent);
+}
+:root[data-theme=dark] {
+  --control-glass-surface: color-mix(in srgb, var(--h42-graphite) var(--readable-glass-opacity), transparent);
+}
+
+/* The more specific background-only scroll rule still sets this to 0%.
+   Full-menu fading continues to animate the existing element opacities. */
+:root[data-theme] .app[data-navigation=dock] .dock-shell,
+:root[data-theme] .app[data-navigation=dock] .globe-controls {
+  --dock-glass-opacity: var(--readable-glass-opacity);
+}
+
+/* Keep the stronger secondary tone local to the glass controls. Neither the
+   article palette nor the opaque native select options are restyled. */
+:root[data-theme] .app[data-navigation=dock] .dock-shell,
+:root[data-theme] .app[data-navigation=dock] .globe-controls,
+:root[data-theme] .app[data-navigation=dock] .scope-path,
+:root[data-theme] .app[data-navigation=dock] .scope-back,
+:root[data-theme] .app[data-navigation=dock] #language,
+:root[data-theme] .app[data-navigation=dock] #profile,
+:root[data-theme] .app[data-navigation=dock] .language-menu,
+:root[data-theme] #scope-popover {
+  --h42-color-muted: var(--readable-glass-muted);
+}
+
+/* The light-theme menu previously used a literal muted colour. */
+:root[data-theme] .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section]:not([aria-current]) {
+  color: var(--readable-glass-muted);
+}
+:root[data-theme] .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section]:hover {
+  color: var(--h42-color-text);
+}
+
+/* Selected labels remain primary text; their indicators carry the accent. */
+:root[data-theme] .app[data-navigation=dock] #language,
+:root[data-theme] .app[data-navigation=dock] #profile,
+:root[data-theme] .app[data-navigation=dock] .scope-back,
+:root[data-theme] .app[data-navigation=dock] .globe-controls .icon-button,
+:root[data-theme] .app[data-navigation=dock] .language-option[aria-checked=true] {
+  color: var(--h42-color-text);
+}
+:root[data-theme] .app[data-navigation=dock] .language-option[aria-checked=true] svg,
+:root[data-theme] .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section][aria-current] svg,
+:root[data-theme] .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-form-icon,
+:root[data-theme] .app[data-navigation=dock] .globe-controls .random-campus {
+  color: var(--readable-glass-accent);
+}
+
+/* Results inherit the same primary/secondary text. Their single glass surface
+   is the expanding capsule, so no background or backdrop is added here. */
+:root[data-theme] .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-panel,
+:root[data-theme] .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-result {
+  color: var(--h42-color-text);
+}
+:root[data-theme] .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-more {
+  color: var(--h42-color-text);
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  :root { --readable-glass-opacity: 96%; }
+}

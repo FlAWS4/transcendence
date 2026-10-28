@@ -1,0 +1,223 @@
+{
+  "passed": false,
+  "cases": [
+    {
+      "case": "desktop-controls-and-empty-capsule-absence",
+      "result": {
+        "section": "explore",
+        "resetShown": true,
+        "resetHidden": false,
+        "reset": {
+          "x": 567.8984375,
+          "y": 86,
+          "w": 44,
+          "h": 44,
+          "cx": 589.8984375,
+          "cy": 108
+        },
+        "anchor": {
+          "x": 573.8984375,
+          "y": 92,
+          "w": 32,
+          "h": 32,
+          "cx": 589.8984375,
+          "cy": 108
+        },
+        "zoomIds": 0,
+        "visibleFooter": false,
+        "visibleMainCapsules": 0,
+        "dieShown": true,
+        "dieInDock": true,
+        "dieDisabled": false,
+        "docked": "false",
+        "canvas": 1,
+        "overflow": false
+      }
+    },
+    {
+      "case": "keyboard-zoom-in",
+      "result": {
+        "before": {
+          "level": "world",
+          "country": null,
+          "campus": null,
+          "zoom": 2.464962500721156,
+          "minZoom": 2.464962500721156,
+          "maxZoom": 4.264962500721156,
+          "center": [
+            6,
+            18
+          ],
+          "inFlight": false,
+          "worldReady": "ready"
+        },
+        "after": {
+          "level": "world",
+          "country": null,
+          "campus": null,
+          "zoom": 3.1088186904958808,
+          "minZoom": 2.464962500721156,
+          "maxZoom": 4.264962500721156,
+          "center": [
+            6,
+            18
+          ],
+          "inFlight": false,
+          "worldReady": "ready"
+        }
+      }
+    },
+    {
+      "case": "keyboard-zoom-out",
+      "result": {
+        "before": {
+          "level": "world",
+          "country": null,
+          "campus": null,
+          "zoom": 3.1088186904958808,
+          "minZoom": 2.464962500721156,
+          "maxZoom": 4.264962500721156,
+          "center": [
+            6,
+            18
+          ],
+          "inFlight": false,
+          "worldReady": "ready"
+        },
+        "after": {
+          "level": "world",
+          "country": null,
+          "campus": null,
+          "zoom": 2.464962500721156,
+          "minZoom": 2.464962500721156,
+          "maxZoom": 4.264962500721156,
+          "center": [
+            6,
+            18
+          ],
+          "inFlight": false,
+          "worldReady": "ready"
+        }
+      }
+    },
+    {
+      "case": "keyboard-pan",
+      "result": {
+        "before": {
+          "level": "world",
+          "country": null,
+          "campus": null,
+          "zoom": 2.464962500721156,
+          "minZoom": 2.464962500721156,
+          "maxZoom": 4.264962500721156,
+          "center": [
+            6,
+            18
+          ],
+          "inFlight": false,
+          "worldReady": "ready"
+        },
+        "after": {
+          "level": "world",
+          "country": null,
+          "campus": null,
+          "zoom": 2.4632420233641468,
+          "minZoom": 2.4632420233641468,
+          "maxZoom": 4.263242023364147,
+          "center": [
+            14.986074655295397,
+            18.208993182182155
+          ],
+          "inFlight": false,
+          "worldReady": "ready"
+        }
+      }
+    },
+    {
+      "case": "native-wheel-zoom-in",
+      "result": {
+        "hit": "maplibregl-canvas",
+        "before": {
+          "level": "world",
+          "country": null,
+          "campus": null,
+          "zoom": 2.4632420233641468,
+          "minZoom": 2.4632420233641468,
+          "maxZoom": 4.263242023364147,
+          "center": [
+            14.986074655295397,
+            18.208993182182155
+          ],
+          "inFlight": false,
+          "worldReady": "ready"
+        },
+        "after": {
+          "level": "world",
+          "country": null,
+          "campus": null,
+          "zoom": 2.6457969155928556,
+          "minZoom": 2.4662237149871493,
+          "maxZoom": 4.26622371498715,
+          "center": [
+            13.265910593119315,
+            17.845132072864363
+          ],
+          "inFlight": false,
+          "worldReady": "ready"
+        }
+      }
+    },
+    {
+      "case": "native-wheel-zoom-out",
+      "result": {
+        "before": {
+          "level": "world",
+          "country": null,
+          "campus": null,
+          "zoom": 2.6457969155928556,
+          "minZoom": 2.4662237149871493,
+          "maxZoom": 4.26622371498715,
+          "center": [
+            13.265910593119315,
+            17.845132072864363
+          ],
+          "inFlight": false,
+          "worldReady": "ready"
+        },
+        "after": {
+          "level": "world",
+          "country": null,
+          "campus": null,
+          "zoom": 2.464029023824747,
+          "minZoom": 2.464029023824747,
+          "maxZoom": 4.264029023824747,
+          "center": [
+            14.57892503757364,
+            18.113713247782243
+          ],
+          "inFlight": false,
+          "worldReady": "ready"
+        }
+      }
+    },
+    {
+      "case": "failure",
+      "result": {
+        "errors": [],
+        "hash": "#explore?country=FRA",
+        "body": "inclus ; hors fontes et TileJSON. Tailles encodées lorsqu’elles sont exposées par le serveur.\"\n}\n{\n  \"version\": 5,\n  \"renderer\": {\n    \"available\": true,\n    \"version\": \"WebGL 2.0 (OpenGL ES 3.0 Chromium)\",\n    \"renderer\": \"WebKit WebGL\",\n    \"unmaskedVendor\": \"Google Inc. (Google)\",\n    \"unmaskedRenderer\": \"ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)\",\n    \"contextAttributes\": {\n      \"alpha\": true,\n      \"antialias\": true,\n      \"depth\": true,\n      \"desynchronized\": false,\n      \"failIfMajorPerformanceCaveat\": false,\n      \"powerPreference\": \"high-performance\",\n      \"premultipliedAlpha\": true,\n      \"preserveDrawingBuffer\": false,\n      \"stencil\": true,\n      \"xrCompatible\": false\n    }\n  },\n  \"runs\": [],\n  \"limits\": [],\n  \"campus\": []\n}"
+      }
+    }
+  ],
+  "sources": {
+    "index.html": "386108ced016657793dc71ecc30635d8fa900427e80e236318e654586bd1928b",
+    "content-preview.html": "d3e13c6702d5e26ca03783e0e0438b4bbe464815e3f61657872958d9c3ffe50e",
+    "content-preview.mjs": "9f26c0687eabcdd54468dad79ff4e9e45337db70fc718a41893ddb705b9c91f1",
+    "welcome.mjs": "d7a56728594b5ecdbc0357e943d238c12a76f28bc737ffe7da33bc534924e1d3",
+    "entrance.css": "80d4d561f6e19263f394fa6b4307808bfb96da09cdd9659dd83ddbb7f1dd094e",
+    "dock-navigation.css": "68b395258995146cc483beae15fb175bb77a7e6153845bfa2954e654861fdaa3",
+    "globe-framing.css": "6d1a4e8297b85dc17ef89a55905b5cd2b3b39a43494b3959079d36df8a1d1edc"
+  },
+  "sourcesChangedDuringRun": [],
+  "limits": "Chrome isolated profile; emulated viewport; no physical device, screen reader or remote campus street rendering tested."
+}

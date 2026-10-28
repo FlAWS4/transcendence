@@ -1,0 +1,123 @@
+{
+  "id": "police-etiquettes-globe",
+  "groupe": "Explorer et globe",
+  "titre": "Étiquettes du globe en Jost",
+  "resume": "Les étiquettes des repères du globe (pays, campus, campus sélectionné et flèche hors champ) prennent la police du site au lieu de celle de MapLibre. Seule la famille change : taille, graisse, interligne et couleur restent les mêmes.",
+  "probleme": "Les repères héritent de MapLibre « 12px/20px Helvetica Neue, Arial, Helvetica, sans-serif » (.maplibregl-map), car integrated-globe.css donne .hg-marker{font-family:inherit}. Sur cette machine, toutes les étiquettes latines sont dessinées en Liberation Sans (équivalent d’Arial) : 197 glyphes au niveau Monde, 80 au niveau France, alors que tout le reste du site est en Jost.",
+  "changement": "essai.css ajoute une seule règle : .hg-integrated .hg-marker { font-family: var(--h42-font-family), sans-serif; }, c’est-à-dire exactement la pile de :root dans welcome.css, utilisée par tous les autres textes en FR, EN et AR. Les étiquettes intérieures (pays, campus, nom du campus sélectionné, étiquette de la flèche hors champ) en héritent, y compris celles des repères compacts. Le crédit de carte, placé hors du conteneur MapLibre, était déjà en Jost et ne change pas. essai.mjs ne fait rien : le globe remesure déjà la largeur des étiquettes quand les polices sont prêtes.",
+  "decisionConcernee": "",
+  "alternativeDe": "",
+  "vues": [
+    {
+      "libelle": "France, ordinateur clair",
+      "page": "content-preview.html",
+      "route": "explore?country=FRA",
+      "viewport": "ordinateur",
+      "theme": "light",
+      "lang": "fr"
+    },
+    {
+      "libelle": "42 Paris, ordinateur clair",
+      "page": "content-preview.html",
+      "route": "explore?country=FRA&campus=paris",
+      "viewport": "ordinateur",
+      "theme": "light",
+      "lang": "fr"
+    },
+    {
+      "libelle": "France, arabe sombre",
+      "page": "content-preview.html",
+      "route": "explore?country=FRA",
+      "viewport": "ordinateur",
+      "theme": "dark",
+      "lang": "ar"
+    },
+    {
+      "libelle": "Monde, ordinateur clair",
+      "page": "content-preview.html",
+      "route": "explore",
+      "viewport": "ordinateur",
+      "theme": "light",
+      "lang": "fr"
+    }
+  ],
+  "verifications": [
+    "Police calculée des étiquettes (getComputedStyle) : « Jost, sans-serif » aux niveaux Monde, France, 42 Paris et pour l’étiquette de la flèche hors champ, en français clair et en arabe sombre, à 1440 × 900 ; à 390 × 844 pour toutes les étiquettes, repères compacts compris ; en anglais aussi. Plus aucune pile Helvetica (avant : « \"Helvetica Neue\", Arial, Helvetica, sans-serif »).",
+    "Police réellement dessinée (CDP CSS.getPlatformFontsForNode) : Liberation Sans → Jost Medium pour les 197 glyphes du Monde, les 80 de la France, et les 8 de « 42 Paris » au niveau Campus et sur la flèche, en français. En arabe, les noms de pays restent en Noto Sans Arabic (178 glyphes, avant comme après) et les parties latines, dont les noms de campus, passent de Liberation Sans à Jost Medium.",
+    "Taille, graisse calculée, interligne et couleur identiques avant et après : 14 px / 500 / 20 px sur ordinateur, 12 px / 500 / 16,8 px pour l’étiquette de la flèche, 12 px / 500 / 20 px sur mobile ; couleur rgb(27, 27, 27) en clair et blanche en sombre.",
+    "Mêmes étiquettes visibles à chaque niveau, avant comme après (7 au Monde, 5 en France sur ordinateur ; 4 et 4 sur mobile) ; aucune paire d’étiquettes qui se chevauche, avant comme après.",
+    "Changement de langue et de thème sans rechargement (réglages du compte : français clair → arabe sombre → anglais clair) : les repères sont reconstruits par le globe et gardent « Jost, sans-serif » (Jost Medium 197 / Noto Sans Arabic 178 + Jost Medium 3 / Jost Medium 202 glyphes), sans erreur.",
+    "Crédit de carte : hors du conteneur MapLibre, déjà « Jost, sans-serif » 9 px, inchangé.",
+    "Aucun débordement horizontal, aucune erreur console ; captures Monde, France, 42 Paris et flèche examinées en français clair et arabe sombre, et sur mobile."
+  ],
+  "limites": [
+    "La graisse calculée reste 500, mais Jost possède une vraie graisse Medium alors que Liberation Sans (Arial sur cette machine) n’en a pas et était dessinée en normal : les étiquettes paraissent nettement plus appuyées (visible sur la capture de 42 Paris), comme les autres textes de graisse 500 du site. Sur un Mac, Helvetica Neue Medium donnait déjà un rendu medium.",
+    "Le site n’a pas de pile arabe dédiée pour ses textes : il utilise partout « Jost, sans-serif » et laisse le système choisir les glyphes arabes (Noto Sans Arabic ici, mesuré). Seuls le nom de marque أفق et l’option « العربية » nomment 'Noto Sans Arabic', sans-serif. L’essai reprend la pile commune ; sur une machine dont la police arabe par défaut est autre, les étiquettes suivraient le reste du site, pas forcément Noto Sans Arabic.",
+    "Contrairement à la revue, les noms arabes des repères étaient déjà dessinés en Noto Sans Arabic par repli du système ; en arabe, l’essai change surtout les noms latins des campus et les chiffres.",
+    "Jost reste une police de remplacement : Futura PT, police de la charte, n’est pas encore disponible.",
+    "Niveau Campus contrôlé seulement pour 42 Paris ; pas d’essai sur téléphone physique."
+  ],
+  "fichiers": [
+    "essais/police-etiquettes-globe/essai.css",
+    "essais/police-etiquettes-globe/essai.mjs",
+    "checks/police-etiquettes-globe/check.py",
+    "checks/police-etiquettes-globe/results.json"
+  ],
+  "captures": [
+    {
+      "vue": "france-ordinateur (zoom ×2)",
+      "avant": "checks/police-etiquettes-globe/avant-etiquettes-zoom.png",
+      "apres": "checks/police-etiquettes-globe/apres-etiquettes-zoom.png"
+    },
+    {
+      "vue": "france-ordinateur",
+      "avant": "checks/police-etiquettes-globe/avant-pays-fr-clair.png",
+      "apres": "checks/police-etiquettes-globe/apres-pays-fr-clair.png"
+    },
+    {
+      "vue": "monde-ordinateur",
+      "avant": "checks/police-etiquettes-globe/avant-monde-fr-clair.png",
+      "apres": "checks/police-etiquettes-globe/apres-monde-fr-clair.png"
+    },
+    {
+      "vue": "paris-ordinateur",
+      "avant": "checks/police-etiquettes-globe/avant-campus-fr-clair.png",
+      "apres": "checks/police-etiquettes-globe/apres-campus-fr-clair.png"
+    },
+    {
+      "vue": "fleche-hors-champ",
+      "avant": "checks/police-etiquettes-globe/avant-bord-fr-clair.png",
+      "apres": "checks/police-etiquettes-globe/apres-bord-fr-clair.png"
+    },
+    {
+      "vue": "ar-sombre-monde",
+      "avant": "checks/police-etiquettes-globe/avant-monde-ar-sombre.png",
+      "apres": "checks/police-etiquettes-globe/apres-monde-ar-sombre.png"
+    },
+    {
+      "vue": "ar-sombre-france",
+      "avant": "checks/police-etiquettes-globe/avant-pays-ar-sombre.png",
+      "apres": "checks/police-etiquettes-globe/apres-pays-ar-sombre.png"
+    },
+    {
+      "vue": "ar-sombre-paris",
+      "avant": "checks/police-etiquettes-globe/avant-campus-ar-sombre.png",
+      "apres": "checks/police-etiquettes-globe/apres-campus-ar-sombre.png"
+    },
+    {
+      "vue": "ar-sombre-fleche",
+      "avant": "checks/police-etiquettes-globe/avant-bord-ar-sombre.png",
+      "apres": "checks/police-etiquettes-globe/apres-bord-ar-sombre.png"
+    },
+    {
+      "vue": "mobile-monde",
+      "avant": "checks/police-etiquettes-globe/avant-monde-mobile.png",
+      "apres": "checks/police-etiquettes-globe/apres-monde-mobile.png"
+    },
+    {
+      "vue": "mobile-france",
+      "avant": "checks/police-etiquettes-globe/avant-pays-mobile.png",
+      "apres": "checks/police-etiquettes-globe/apres-pays-mobile.png"
+    }
+  ]
+}

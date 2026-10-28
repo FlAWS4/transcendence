@@ -1,0 +1,200 @@
+{
+ "date": "2026-10-17",
+ "before": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/archive/pre-illustration-consistency-20261017/baseline/",
+ "after": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/",
+ "cases": [
+  {
+   "case": "fiche-projet-fr-clair-ordinateur",
+   "route": "projects/ft-transcendence-building-together",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "expected": "contours retirés de l’illustration de tête",
+   "changedShare": 0.00492,
+   "changedBox": [
+    525,
+    240,
+    1270,
+    706
+   ]
+  },
+  {
+   "case": "fiche-projet-fr-sombre-ordinateur",
+   "route": "projects/ft-transcendence-building-together",
+   "theme": "dark",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "expected": "contours retirés de l’illustration de tête",
+   "changedShare": 0.004,
+   "changedBox": [
+    525,
+    240,
+    1270,
+    706
+   ]
+  },
+  {
+   "case": "fiche-projet-ar-clair-ordinateur",
+   "route": "projects/ft-transcendence-building-together",
+   "theme": "light",
+   "lang": "ar",
+   "viewport": [
+    1440,
+    900
+   ],
+   "expected": "contours retirés",
+   "changedShare": 0.00437,
+   "changedBox": [
+    170,
+    246,
+    915,
+    697
+   ]
+  },
+  {
+   "case": "visionneuse-fr-clair-ordinateur",
+   "route": "projects/minishell-under-the-prompt",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "expected": "contours retirés de l’illustration agrandie",
+   "changedShare": 0.02095,
+   "changedBox": [
+    93,
+    98,
+    1347,
+    781
+   ]
+  },
+  {
+   "case": "fiche-minishell-ar-clair-ordinateur",
+   "route": "projects/minishell-under-the-prompt",
+   "theme": "light",
+   "lang": "ar",
+   "viewport": [
+    1440,
+    900
+   ],
+   "expected": "contours retirés ; bouton « استكشف 42 Paris » dans le bon ordre",
+   "changedShare": 0.00876,
+   "changedBox": [
+    170,
+    246,
+    1212,
+    711
+   ]
+  },
+  {
+   "case": "fiche-minishell-fr-clair-ordinateur",
+   "route": "projects/minishell-under-the-prompt",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "expected": "contours retirés ; bouton « Explorer 42 Paris » inchangé",
+   "changedShare": 0.00837,
+   "changedBox": [
+    525,
+    240,
+    1270,
+    706
+   ]
+  },
+  {
+   "case": "chronique-fr-clair-ordinateur",
+   "route": "journal/journal-share-the-unfinished",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "expected": "contours retirés ; en-tête inchangé",
+   "changedShare": 0.00879,
+   "changedBox": [
+    525,
+    240,
+    1270,
+    706
+   ]
+  },
+  {
+   "case": "chronique-ar-clair-ordinateur",
+   "route": "journal/journal-share-the-unfinished",
+   "theme": "light",
+   "lang": "ar",
+   "viewport": [
+    1440,
+    900
+   ],
+   "expected": "contours retirés, guillemet et « & » à leur place, « 42 Tokyo »",
+   "changedShare": 0.01119,
+   "changedBox": [
+    170,
+    246,
+    1270,
+    697
+   ]
+  },
+  {
+   "case": "chronique-ar-clair-mobile",
+   "route": "journal/journal-share-the-unfinished",
+   "theme": "light",
+   "lang": "ar",
+   "viewport": [
+    390,
+    844
+   ],
+   "expected": "idem sur mobile",
+   "changedShare": 0.00985,
+   "changedBox": [
+    48,
+    590,
+    732,
+    1479
+   ]
+  },
+  {
+   "case": "chroniques-ar-clair-ordinateur",
+   "route": "journal",
+   "theme": "light",
+   "lang": "ar",
+   "viewport": [
+    1440,
+    900
+   ],
+   "expected": "vignettes : guillemet et « & » à leur place",
+   "changedShare": 0.0036,
+   "changedBox": [
+    188,
+    356,
+    1140,
+    871
+   ]
+  },
+  {
+   "case": "projets-fr-clair-ordinateur",
+   "route": "projects",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "expected": "témoin : aucun changement attendu",
+   "changedShare": 0.0,
+   "changedBox": null
+  }
+ ]
+}

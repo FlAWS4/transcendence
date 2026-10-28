@@ -1,0 +1,664 @@
+{
+  "fixture": "1200 projects,2400 profiles,1200 chronicles injected into HTTP only; actual corpus remains78 per section",
+  "sourcesBefore": {
+    "content-pagination.mjs": "f87741911342678e4f0d4afae8266e4b8722ccb0f1a23d3eef13f35bd7fa56fc",
+    "content-pagination-ui.mjs": "1aeab7721936054538428ed72e39023d82341e507af0c8caa98214d369c3505d",
+    "content-pagination.css": "fac581c1f2071cd94a6d174c0dd4de99c81f528e8bd880df2a8530814cb21420"
+  },
+  "sourcesAfter": {
+    "content-pagination.mjs": "f87741911342678e4f0d4afae8266e4b8722ccb0f1a23d3eef13f35bd7fa56fc",
+    "content-pagination-ui.mjs": "1aeab7721936054538428ed72e39023d82341e507af0c8caa98214d369c3505d",
+    "content-pagination.css": "fac581c1f2071cd94a6d174c0dd4de99c81f528e8bd880df2a8530814cb21420"
+  },
+  "cases": [
+    {
+      "case": "projects-1",
+      "result": {
+        "hash": "#projects",
+        "count": 12,
+        "summary": "Page 1 sur 100",
+        "current": "1",
+        "numbers": [
+          1,
+          2,
+          3,
+          100
+        ],
+        "ellipses": 1,
+        "rows": [
+          2311
+        ],
+        "previousDisabled": true,
+        "nextDisabled": false,
+        "overflow": false,
+        "scroll": 0
+      }
+    },
+    {
+      "case": "projects-50",
+      "result": {
+        "hash": "#projects?page=50",
+        "count": 12,
+        "summary": "Page 50 sur 100",
+        "current": "50",
+        "numbers": [
+          1,
+          49,
+          50,
+          51,
+          100
+        ],
+        "ellipses": 2,
+        "rows": [
+          2328
+        ],
+        "previousDisabled": false,
+        "nextDisabled": false,
+        "overflow": false,
+        "scroll": 0
+      }
+    },
+    {
+      "case": "projects-100",
+      "result": {
+        "hash": "#projects?page=100",
+        "count": 12,
+        "summary": "Page 100 sur 100",
+        "current": "100",
+        "numbers": [
+          1,
+          98,
+          99,
+          100
+        ],
+        "ellipses": 1,
+        "rows": [
+          2363
+        ],
+        "previousDisabled": false,
+        "nextDisabled": true,
+        "overflow": false,
+        "scroll": 0
+      }
+    },
+    {
+      "case": "projects-previous",
+      "result": {
+        "hash": "#projects?page=99",
+        "count": 12,
+        "summary": "Page 99 sur 100",
+        "current": "99",
+        "numbers": [
+          1,
+          98,
+          99,
+          100
+        ],
+        "ellipses": 1,
+        "rows": [
+          2322
+        ],
+        "previousDisabled": false,
+        "nextDisabled": false,
+        "overflow": false,
+        "scroll": 0
+      }
+    },
+    {
+      "case": "projects-first",
+      "result": {
+        "hash": "#projects",
+        "count": 12,
+        "summary": "Page 1 sur 100",
+        "current": "1",
+        "numbers": [
+          1,
+          2,
+          3,
+          100
+        ],
+        "ellipses": 1,
+        "rows": [
+          2311
+        ],
+        "previousDisabled": true,
+        "nextDisabled": false,
+        "overflow": false,
+        "scroll": 0
+      }
+    },
+    {
+      "case": "people-1",
+      "result": {
+        "hash": "#people",
+        "count": 24,
+        "summary": "Page 1 sur 100",
+        "current": "1",
+        "numbers": [
+          1,
+          2,
+          3,
+          100
+        ],
+        "ellipses": 1,
+        "rows": [
+          1848
+        ],
+        "previousDisabled": true,
+        "nextDisabled": false,
+        "overflow": false,
+        "scroll": 0
+      }
+    },
+    {
+      "case": "people-50",
+      "result": {
+        "hash": "#people?page=50",
+        "count": 24,
+        "summary": "Page 50 sur 100",
+        "current": "50",
+        "numbers": [
+          1,
+          49,
+          50,
+          51,
+          100
+        ],
+        "ellipses": 2,
+        "rows": [
+          1848
+        ],
+        "previousDisabled": false,
+        "nextDisabled": false,
+        "overflow": false,
+        "scroll": 0
+      }
+    },
+    {
+      "case": "people-100",
+      "result": {
+        "hash": "#people?page=100",
+        "count": 24,
+        "summary": "Page 100 sur 100",
+        "current": "100",
+        "numbers": [
+          1,
+          98,
+          99,
+          100
+        ],
+        "ellipses": 1,
+        "rows": [
+          1901
+        ],
+        "previousDisabled": false,
+        "nextDisabled": true,
+        "overflow": false,
+        "scroll": 0
+      }
+    },
+    {
+      "case": "people-previous",
+      "result": {
+        "hash": "#people?page=99",
+        "count": 24,
+        "summary": "Page 99 sur 100",
+        "current": "99",
+        "numbers": [
+          1,
+          98,
+          99,
+          100
+        ],
+        "ellipses": 1,
+        "rows": [
+          1928
+        ],
+        "previousDisabled": false,
+        "nextDisabled": false,
+        "overflow": false,
+        "scroll": 0
+      }
+    },
+    {
+      "case": "people-first",
+      "result": {
+        "hash": "#people",
+        "count": 24,
+        "summary": "Page 1 sur 100",
+        "current": "1",
+        "numbers": [
+          1,
+          2,
+          3,
+          100
+        ],
+        "ellipses": 1,
+        "rows": [
+          1848
+        ],
+        "previousDisabled": true,
+        "nextDisabled": false,
+        "overflow": false,
+        "scroll": 0
+      }
+    },
+    {
+      "case": "journal-1",
+      "result": {
+        "hash": "#journal",
+        "count": 12,
+        "summary": "Page 1 sur 100",
+        "current": "1",
+        "numbers": [
+          1,
+          2,
+          3,
+          100
+        ],
+        "ellipses": 1,
+        "rows": [
+          2235
+        ],
+        "previousDisabled": true,
+        "nextDisabled": false,
+        "overflow": false,
+        "scroll": 0
+      }
+    },
+    {
+      "case": "journal-50",
+      "result": {
+        "hash": "#journal?page=50",
+        "count": 12,
+        "summary": "Page 50 sur 100",
+        "current": "50",
+        "numbers": [
+          1,
+          49,
+          50,
+          51,
+          100
+        ],
+        "ellipses": 2,
+        "rows": [
+          2355
+        ],
+        "previousDisabled": false,
+        "nextDisabled": false,
+        "overflow": false,
+        "scroll": 0
+      }
+    },
+    {
+      "case": "journal-100",
+      "result": {
+        "hash": "#journal?page=100",
+        "count": 12,
+        "summary": "Page 100 sur 100",
+        "current": "100",
+        "numbers": [
+          1,
+          98,
+          99,
+          100
+        ],
+        "ellipses": 1,
+        "rows": [
+          2149
+        ],
+        "previousDisabled": false,
+        "nextDisabled": true,
+        "overflow": false,
+        "scroll": 0
+      }
+    },
+    {
+      "case": "journal-previous",
+      "result": {
+        "hash": "#journal?page=99",
+        "count": 12,
+        "summary": "Page 99 sur 100",
+        "current": "99",
+        "numbers": [
+          1,
+          98,
+          99,
+          100
+        ],
+        "ellipses": 1,
+        "rows": [
+          2149
+        ],
+        "previousDisabled": false,
+        "nextDisabled": false,
+        "overflow": false,
+        "scroll": 0
+      }
+    },
+    {
+      "case": "journal-first",
+      "result": {
+        "hash": "#journal",
+        "count": 12,
+        "summary": "Page 1 sur 100",
+        "current": "1",
+        "numbers": [
+          1,
+          2,
+          3,
+          100
+        ],
+        "ellipses": 1,
+        "rows": [
+          2235
+        ],
+        "previousDisabled": true,
+        "nextDisabled": false,
+        "overflow": false,
+        "scroll": 0
+      }
+    },
+    {
+      "case": "fr-mobile-1",
+      "result": {
+        "hash": "#projects",
+        "count": 12,
+        "summary": "Page 1 sur 100",
+        "current": "1",
+        "numbers": [
+          1,
+          2,
+          3,
+          100
+        ],
+        "ellipses": 1,
+        "rows": [
+          2211
+        ],
+        "previousDisabled": true,
+        "nextDisabled": false,
+        "overflow": false,
+        "scroll": 0
+      }
+    },
+    {
+      "case": "fr-mobile-50",
+      "result": {
+        "hash": "#projects?page=50",
+        "count": 12,
+        "summary": "Page 50 sur 100",
+        "current": "50",
+        "numbers": [
+          1,
+          49,
+          50,
+          51,
+          100
+        ],
+        "ellipses": 2,
+        "rows": [
+          2172
+        ],
+        "previousDisabled": false,
+        "nextDisabled": false,
+        "overflow": false,
+        "scroll": 0
+      }
+    },
+    {
+      "case": "fr-mobile-100",
+      "result": {
+        "hash": "#projects?page=100",
+        "count": 12,
+        "summary": "Page 100 sur 100",
+        "current": "100",
+        "numbers": [
+          1,
+          98,
+          99,
+          100
+        ],
+        "ellipses": 1,
+        "rows": [
+          1954
+        ],
+        "previousDisabled": false,
+        "nextDisabled": true,
+        "overflow": false,
+        "scroll": 0
+      }
+    },
+    {
+      "case": "ar-mobile-1",
+      "result": {
+        "hash": "#projects",
+        "count": 12,
+        "summary": "الصفحة 1 من 100",
+        "current": "1",
+        "numbers": [
+          1,
+          2,
+          3,
+          100
+        ],
+        "ellipses": 1,
+        "rows": [
+          2212
+        ],
+        "previousDisabled": true,
+        "nextDisabled": false,
+        "overflow": false,
+        "scroll": 0
+      }
+    },
+    {
+      "case": "ar-mobile-50",
+      "result": {
+        "hash": "#projects?page=50",
+        "count": 12,
+        "summary": "الصفحة 50 من 100",
+        "current": "50",
+        "numbers": [
+          1,
+          49,
+          50,
+          51,
+          100
+        ],
+        "ellipses": 2,
+        "rows": [
+          2172
+        ],
+        "previousDisabled": false,
+        "nextDisabled": false,
+        "overflow": false,
+        "scroll": 0
+      }
+    },
+    {
+      "case": "ar-mobile-100",
+      "result": {
+        "hash": "#projects?page=100",
+        "count": 12,
+        "summary": "الصفحة 100 من 100",
+        "current": "100",
+        "numbers": [
+          1,
+          98,
+          99,
+          100
+        ],
+        "ellipses": 1,
+        "rows": [
+          1954
+        ],
+        "previousDisabled": false,
+        "nextDisabled": true,
+        "overflow": false,
+        "scroll": 0
+      }
+    },
+    {
+      "case": "real-people-1",
+      "result": {
+        "hash": "#people",
+        "count": 24,
+        "summary": "Page 1 sur 4",
+        "current": "1",
+        "numbers": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ellipses": 0,
+        "rows": [
+          1848
+        ],
+        "previousDisabled": true,
+        "nextDisabled": false,
+        "overflow": false,
+        "scroll": 0
+      }
+    },
+    {
+      "case": "real-people-2",
+      "result": {
+        "hash": "#people?page=2",
+        "count": 24,
+        "summary": "Page 2 sur 4",
+        "current": "2",
+        "numbers": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ellipses": 0,
+        "rows": [
+          1848
+        ],
+        "previousDisabled": false,
+        "nextDisabled": false,
+        "overflow": false,
+        "scroll": 0
+      }
+    },
+    {
+      "case": "real-people-3",
+      "result": {
+        "hash": "#people?page=3",
+        "count": 24,
+        "summary": "Page 3 sur 4",
+        "current": "3",
+        "numbers": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ellipses": 0,
+        "rows": [
+          1848
+        ],
+        "previousDisabled": false,
+        "nextDisabled": false,
+        "overflow": false,
+        "scroll": 0
+      }
+    },
+    {
+      "case": "real-people-4",
+      "result": {
+        "hash": "#people?page=4",
+        "count": 6,
+        "summary": "Page 4 sur 4",
+        "current": "4",
+        "numbers": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ellipses": 0,
+        "rows": [
+          951
+        ],
+        "previousDisabled": false,
+        "nextDisabled": true,
+        "overflow": false,
+        "scroll": 0
+      }
+    },
+    {
+      "case": "old-profile-page-clamped",
+      "result": {
+        "hash": "#people?page=4",
+        "count": 6,
+        "summary": "Page 4 sur 4",
+        "current": "4",
+        "numbers": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ellipses": 0,
+        "rows": [
+          951
+        ],
+        "previousDisabled": false,
+        "nextDisabled": true,
+        "overflow": false,
+        "scroll": 0
+      }
+    },
+    {
+      "case": "real-profile-detail-back",
+      "result": {
+        "hash": "#people?page=2",
+        "count": 24,
+        "summary": "Page 2 sur 4",
+        "current": "2",
+        "numbers": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ellipses": 0,
+        "rows": [
+          1648
+        ],
+        "previousDisabled": false,
+        "nextDisabled": false,
+        "overflow": false,
+        "scroll": 200
+      }
+    },
+    {
+      "case": "real-seven-page-compact",
+      "result": {
+        "hash": "#projects",
+        "count": 12,
+        "summary": "Page 1 sur 7",
+        "current": "1",
+        "numbers": [
+          1,
+          2,
+          3,
+          7
+        ],
+        "ellipses": 1,
+        "rows": [
+          2452
+        ],
+        "previousDisabled": true,
+        "nextDisabled": false,
+        "overflow": false,
+        "scroll": 0
+      }
+    }
+  ]
+}

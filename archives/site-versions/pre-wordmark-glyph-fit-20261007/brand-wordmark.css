@@ -1,0 +1,4 @@
+/* Inherits Jost, weight, size, letter spacing and colour from the existing brand. */
+[data-brand-wordmark]{position:relative;display:block;flex:none;height:1.15em;white-space:nowrap;direction:ltr;isolation:isolate}
+.brand-wordmark-cell{position:absolute;top:0;left:0;display:block;font:inherit;line-height:inherit;letter-spacing:inherit;white-space:pre;text-align:left;pointer-events:none}
+.brand-wordmark-cell[data-active=true]{color:var(--h42-color-accent)}

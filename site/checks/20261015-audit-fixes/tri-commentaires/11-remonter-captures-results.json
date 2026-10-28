@@ -1,0 +1,2430 @@
+{
+ "date": "2026-10-15",
+ "cases": [
+  {
+   "case": "fr390-remonter-145-reglages",
+   "t": 2.3,
+   "result": {
+    "lang": "fr",
+    "dir": "ltr",
+    "theme": "light"
+   }
+  },
+  {
+   "case": "fr390-remonter-145",
+   "t": 7.9,
+   "result": [
+    {
+     "label": "remonter@132",
+     "buttonTop": 131.69,
+     "buttonBottom": 175.69,
+     "scrollY": 785,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      184.69,
+      324.69,
+      84.81,
+      351
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {
+      "switch": {
+       "w": 266.19,
+       "h": 49.31
+      }
+     },
+     "btt": {
+      "x": 315,
+      "y": 654,
+      "w": 44,
+      "h": 44,
+      "right": 359,
+      "bottom": 698
+     },
+     "limits": {
+      "top": 130,
+      "bottom144": 702,
+      "bottom145": 646,
+      "audit": 702
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {
+       "switch": {
+        "w": 266.19,
+        "h": 49.31
+       }
+      },
+      "inViewport": true,
+      "ok": false,
+      "errors": []
+     },
+     "probe": {
+      "btt": {
+       "x": 315,
+       "y": 654,
+       "w": 44,
+       "h": 44,
+       "right": 359,
+       "bottom": 698
+      },
+      "inter": null,
+      "topmost": null,
+      "bttZ": "19",
+      "panelZ": "5",
+      "menuZ": "auto",
+      "optionsCover": [
+       {
+        "value": "newest",
+        "checked": "true",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       },
+       {
+        "value": "oldest",
+        "checked": "false",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       },
+       {
+        "value": "popular",
+        "checked": "false",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       }
+      ]
+     },
+     "clickPoint": {
+      "x": 254.8,
+      "y": 153.69,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 9,
+      "hits": {
+       "#project-section-picker<summary>.cp-project-section-trigger": 9
+      }
+     },
+     "bttState": {
+      "hidden": false,
+      "display": "flex",
+      "opacity": "1",
+      "z": "19",
+      "pointer": "auto"
+     },
+     "scrollYOk": 785
+    },
+    {
+     "label": "remonter@210",
+     "buttonTop": 209.69,
+     "buttonBottom": 253.69,
+     "scrollY": 707,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      262.69,
+      402.69,
+      84.81,
+      351
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": {
+      "x": 315,
+      "y": 654,
+      "w": 44,
+      "h": 44,
+      "right": 359,
+      "bottom": 698
+     },
+     "limits": {
+      "top": 130,
+      "bottom144": 702,
+      "bottom145": 646,
+      "audit": 702
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "probe": {
+      "btt": {
+       "x": 315,
+       "y": 654,
+       "w": 44,
+       "h": 44,
+       "right": 359,
+       "bottom": 698
+      },
+      "inter": null,
+      "topmost": null,
+      "bttZ": "19",
+      "panelZ": "5",
+      "menuZ": "auto",
+      "optionsCover": [
+       {
+        "value": "newest",
+        "checked": "true",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       },
+       {
+        "value": "oldest",
+        "checked": "false",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       },
+       {
+        "value": "popular",
+        "checked": "false",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       }
+      ]
+     },
+     "clickPoint": {
+      "x": 254.8,
+      "y": 240.49,
+      "fx": 0.5,
+      "fy": 0.7
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 27,
+      "hits": {
+       "<span>.cp-project-switch-choice": 7,
+       "#project-section-picker<summary>.cp-project-section-trigger": 19,
+       "<details>.cp-project-section-switch": 1
+      }
+     },
+     "bttState": {
+      "hidden": false,
+      "display": "flex",
+      "opacity": "1",
+      "z": "19",
+      "pointer": "auto"
+     },
+     "scrollYOk": 707
+    },
+    {
+     "label": "remonter@250",
+     "buttonTop": 249.69,
+     "buttonBottom": 293.69,
+     "scrollY": 667,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      302.69,
+      442.69,
+      84.81,
+      351
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": {
+      "x": 315,
+      "y": 654,
+      "w": 44,
+      "h": 44,
+      "right": 359,
+      "bottom": 698
+     },
+     "limits": {
+      "top": 130,
+      "bottom144": 702,
+      "bottom145": 646,
+      "audit": 702
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "probe": {
+      "btt": {
+       "x": 315,
+       "y": 654,
+       "w": 44,
+       "h": 44,
+       "right": 359,
+       "bottom": 698
+      },
+      "inter": null,
+      "topmost": null,
+      "bttZ": "19",
+      "panelZ": "5",
+      "menuZ": "auto",
+      "optionsCover": [
+       {
+        "value": "newest",
+        "checked": "true",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       },
+       {
+        "value": "oldest",
+        "checked": "false",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       },
+       {
+        "value": "popular",
+        "checked": "false",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       }
+      ]
+     },
+     "clickPoint": {
+      "x": 254.8,
+      "y": 271.69,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     },
+     "bttState": {
+      "hidden": false,
+      "display": "flex",
+      "opacity": "1",
+      "z": "19",
+      "pointer": "auto"
+     },
+     "scrollYOk": 667
+    },
+    {
+     "label": "remonter@280",
+     "buttonTop": 279.69,
+     "buttonBottom": 323.69,
+     "scrollY": 637,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      332.69,
+      472.69,
+      84.81,
+      351
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": {
+      "x": 315,
+      "y": 654,
+      "w": 44,
+      "h": 44,
+      "right": 359,
+      "bottom": 698
+     },
+     "limits": {
+      "top": 130,
+      "bottom144": 702,
+      "bottom145": 646,
+      "audit": 702
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "probe": {
+      "btt": {
+       "x": 315,
+       "y": 654,
+       "w": 44,
+       "h": 44,
+       "right": 359,
+       "bottom": 698
+      },
+      "inter": null,
+      "topmost": null,
+      "bttZ": "19",
+      "panelZ": "5",
+      "menuZ": "auto",
+      "optionsCover": [
+       {
+        "value": "newest",
+        "checked": "true",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       },
+       {
+        "value": "oldest",
+        "checked": "false",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       },
+       {
+        "value": "popular",
+        "checked": "false",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       }
+      ]
+     },
+     "clickPoint": {
+      "x": 254.8,
+      "y": 301.69,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     },
+     "bttState": {
+      "hidden": false,
+      "display": "flex",
+      "opacity": "1",
+      "z": "19",
+      "pointer": "auto"
+     },
+     "scrollYOk": 637
+    }
+   ]
+  },
+  {
+   "case": "fr390-remonter-145-bilan",
+   "t": 7.9,
+   "result": {
+    "positions": 4,
+    "remonterVisible": 4,
+    "intersections": [],
+    "seuil": 633
+   }
+  },
+  {
+   "case": "fr390-remonter-144-reglages",
+   "t": 10.2,
+   "result": {
+    "lang": "fr",
+    "dir": "ltr",
+    "theme": "light"
+   }
+  },
+  {
+   "case": "fr390-remonter-144",
+   "t": 15.7,
+   "result": [
+    {
+     "label": "remonter@132",
+     "buttonTop": 131.69,
+     "buttonBottom": 175.69,
+     "scrollY": 785,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      184.69,
+      324.69,
+      84.81,
+      351
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {
+      "switch": {
+       "w": 266.19,
+       "h": 49.31
+      }
+     },
+     "btt": {
+      "x": 315,
+      "y": 654,
+      "w": 44,
+      "h": 44,
+      "right": 359,
+      "bottom": 698
+     },
+     "limits": {
+      "top": 130,
+      "bottom144": 702,
+      "bottom145": 646,
+      "audit": 702
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {
+       "switch": {
+        "w": 266.19,
+        "h": 49.31
+       }
+      },
+      "inViewport": true,
+      "ok": false,
+      "errors": []
+     },
+     "probe": {
+      "btt": {
+       "x": 315,
+       "y": 654,
+       "w": 44,
+       "h": 44,
+       "right": 359,
+       "bottom": 698
+      },
+      "inter": null,
+      "topmost": null,
+      "bttZ": "19",
+      "panelZ": "5",
+      "menuZ": "auto",
+      "optionsCover": [
+       {
+        "value": "newest",
+        "checked": "true",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       },
+       {
+        "value": "oldest",
+        "checked": "false",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       },
+       {
+        "value": "popular",
+        "checked": "false",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       }
+      ]
+     },
+     "clickPoint": {
+      "x": 254.8,
+      "y": 153.69,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 9,
+      "hits": {
+       "#project-section-picker<summary>.cp-project-section-trigger": 9
+      }
+     },
+     "bttState": {
+      "hidden": false,
+      "display": "flex",
+      "opacity": "1",
+      "z": "19",
+      "pointer": "auto"
+     },
+     "scrollYOk": 785
+    },
+    {
+     "label": "remonter@210",
+     "buttonTop": 209.69,
+     "buttonBottom": 253.69,
+     "scrollY": 707,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      262.69,
+      402.69,
+      84.81,
+      351
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": {
+      "x": 315,
+      "y": 654,
+      "w": 44,
+      "h": 44,
+      "right": 359,
+      "bottom": 698
+     },
+     "limits": {
+      "top": 130,
+      "bottom144": 702,
+      "bottom145": 646,
+      "audit": 702
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "probe": {
+      "btt": {
+       "x": 315,
+       "y": 654,
+       "w": 44,
+       "h": 44,
+       "right": 359,
+       "bottom": 698
+      },
+      "inter": null,
+      "topmost": null,
+      "bttZ": "19",
+      "panelZ": "5",
+      "menuZ": "auto",
+      "optionsCover": [
+       {
+        "value": "newest",
+        "checked": "true",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       },
+       {
+        "value": "oldest",
+        "checked": "false",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       },
+       {
+        "value": "popular",
+        "checked": "false",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       }
+      ]
+     },
+     "clickPoint": {
+      "x": 254.8,
+      "y": 240.49,
+      "fx": 0.5,
+      "fy": 0.7
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 27,
+      "hits": {
+       "<span>.cp-project-switch-choice": 7,
+       "#project-section-picker<summary>.cp-project-section-trigger": 19,
+       "<details>.cp-project-section-switch": 1
+      }
+     },
+     "bttState": {
+      "hidden": false,
+      "display": "flex",
+      "opacity": "1",
+      "z": "19",
+      "pointer": "auto"
+     },
+     "scrollYOk": 707
+    },
+    {
+     "label": "remonter@250",
+     "buttonTop": 249.69,
+     "buttonBottom": 293.69,
+     "scrollY": 667,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      302.69,
+      442.69,
+      84.81,
+      351
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": {
+      "x": 315,
+      "y": 654,
+      "w": 44,
+      "h": 44,
+      "right": 359,
+      "bottom": 698
+     },
+     "limits": {
+      "top": 130,
+      "bottom144": 702,
+      "bottom145": 646,
+      "audit": 702
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "probe": {
+      "btt": {
+       "x": 315,
+       "y": 654,
+       "w": 44,
+       "h": 44,
+       "right": 359,
+       "bottom": 698
+      },
+      "inter": null,
+      "topmost": null,
+      "bttZ": "19",
+      "panelZ": "5",
+      "menuZ": "auto",
+      "optionsCover": [
+       {
+        "value": "newest",
+        "checked": "true",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       },
+       {
+        "value": "oldest",
+        "checked": "false",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       },
+       {
+        "value": "popular",
+        "checked": "false",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       }
+      ]
+     },
+     "clickPoint": {
+      "x": 254.8,
+      "y": 271.69,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     },
+     "bttState": {
+      "hidden": false,
+      "display": "flex",
+      "opacity": "1",
+      "z": "19",
+      "pointer": "auto"
+     },
+     "scrollYOk": 667
+    },
+    {
+     "label": "remonter@280",
+     "buttonTop": 279.69,
+     "buttonBottom": 323.69,
+     "scrollY": 637,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      332.69,
+      472.69,
+      84.81,
+      351
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": {
+      "x": 315,
+      "y": 654,
+      "w": 44,
+      "h": 44,
+      "right": 359,
+      "bottom": 698
+     },
+     "limits": {
+      "top": 130,
+      "bottom144": 702,
+      "bottom145": 646,
+      "audit": 702
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "probe": {
+      "btt": {
+       "x": 315,
+       "y": 654,
+       "w": 44,
+       "h": 44,
+       "right": 359,
+       "bottom": 698
+      },
+      "inter": null,
+      "topmost": null,
+      "bttZ": "19",
+      "panelZ": "5",
+      "menuZ": "auto",
+      "optionsCover": [
+       {
+        "value": "newest",
+        "checked": "true",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       },
+       {
+        "value": "oldest",
+        "checked": "false",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       },
+       {
+        "value": "popular",
+        "checked": "false",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       }
+      ]
+     },
+     "clickPoint": {
+      "x": 254.8,
+      "y": 301.69,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     },
+     "bttState": {
+      "hidden": false,
+      "display": "flex",
+      "opacity": "1",
+      "z": "19",
+      "pointer": "auto"
+     },
+     "scrollYOk": 637
+    }
+   ]
+  },
+  {
+   "case": "fr390-remonter-144-bilan",
+   "t": 15.7,
+   "result": {
+    "positions": 4,
+    "remonterVisible": 4,
+    "intersections": [],
+    "seuil": 633
+   }
+  },
+  {
+   "case": "ar320-residuel-145-reglages",
+   "t": 17.9,
+   "result": {
+    "lang": "ar",
+    "dir": "rtl",
+    "theme": "dark"
+   }
+  },
+  {
+   "case": "ar320-residuel-145",
+   "t": 23.5,
+   "result": [
+    {
+     "label": "residuel@455",
+     "buttonTop": 455.28,
+     "buttonBottom": 499.28,
+     "scrollY": 549,
+     "direction": "above",
+     "gap": 9,
+     "panel": [
+      282.28,
+      446.28,
+      20,
+      234.89
+     ],
+     "sh/ch": [
+      162,
+      162
+     ],
+     "opts": [
+      [
+       "newest",
+       50,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       50,
+       true,
+       0
+      ],
+      [
+       "popular",
+       50,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": {
+      "x": 16,
+      "y": 450,
+      "w": 44,
+      "h": 44,
+      "right": 60,
+      "bottom": 494
+     },
+     "limits": {
+      "top": 126,
+      "bottom144": 498,
+      "bottom145": 442,
+      "audit": 498
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "above",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "probe": {
+      "btt": {
+       "x": 16,
+       "y": 450,
+       "w": 44,
+       "h": 44,
+       "right": 60,
+       "bottom": 494
+      },
+      "inter": null,
+      "topmost": null,
+      "bttZ": "19",
+      "panelZ": "5",
+      "menuZ": "auto",
+      "optionsCover": [
+       {
+        "value": "newest",
+        "checked": "true",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       },
+       {
+        "value": "oldest",
+        "checked": "false",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       },
+       {
+        "value": "popular",
+        "checked": "false",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       }
+      ]
+     },
+     "clickPoint": {
+      "x": 53,
+      "y": 488.28,
+      "fx": 0.75,
+      "fy": 0.75
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 36,
+      "hits": {
+       "#back-to-top<button>.back-to-top": 21,
+       "<div>.cp-control-menu": 5,
+       "<svg>": 10
+      }
+     },
+     "bttState": {
+      "hidden": false,
+      "display": "flex",
+      "opacity": "1",
+      "z": "19",
+      "pointer": "auto"
+     },
+     "scrollYOk": 549
+    },
+    {
+     "label": "residuel@470",
+     "buttonTop": 470.28,
+     "buttonBottom": 514.28,
+     "scrollY": 534,
+     "direction": "above",
+     "gap": 9,
+     "panel": [
+      297.28,
+      461.28,
+      20,
+      234.89
+     ],
+     "sh/ch": [
+      162,
+      162
+     ],
+     "opts": [
+      [
+       "newest",
+       50,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       50,
+       true,
+       0
+      ],
+      [
+       "popular",
+       50,
+       true,
+       0
+      ]
+     ],
+     "overlap": {
+      "btt": {
+       "w": 40,
+       "h": 11.28
+      }
+     },
+     "btt": {
+      "x": 16,
+      "y": 450,
+      "w": 44,
+      "h": 44,
+      "right": 60,
+      "bottom": 494
+     },
+     "limits": {
+      "top": 126,
+      "bottom144": 498,
+      "bottom145": 442,
+      "audit": 498
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "above",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {
+       "btt": {
+        "w": 40,
+        "h": 11.28
+       }
+      },
+      "inViewport": true,
+      "ok": false,
+      "errors": []
+     },
+     "probe": {
+      "btt": {
+       "x": 16,
+       "y": 450,
+       "w": 44,
+       "h": 44,
+       "right": 60,
+       "bottom": 494
+      },
+      "inter": {
+       "x": 20,
+       "y": 450,
+       "w": 40,
+       "h": 11.28
+      },
+      "topmost": "#back-to-top<button>.back-to-top",
+      "bttZ": "19",
+      "panelZ": "5",
+      "menuZ": "auto",
+      "topmostIsBtt": true,
+      "optionsCover": [
+       {
+        "value": "newest",
+        "checked": "true",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       },
+       {
+        "value": "oldest",
+        "checked": "false",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       },
+       {
+        "value": "popular",
+        "checked": "false",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       }
+      ]
+     },
+     "clickPoint": {
+      "x": 48.6,
+      "y": 492.28,
+      "fx": 0.65,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 27,
+      "hits": {
+       "#back-to-top<button>.back-to-top": 14,
+       "<div>.cp-control-menu": 3,
+       "<svg>": 5,
+       "#random-campus<button>.icon-button.random-campus.dock-random-toggle": 5
+      }
+     },
+     "bttState": {
+      "hidden": false,
+      "display": "flex",
+      "opacity": "1",
+      "z": "19",
+      "pointer": "auto"
+     },
+     "scrollYOk": 534
+    },
+    {
+     "label": "residuel@480",
+     "buttonTop": 480.28,
+     "buttonBottom": 524.28,
+     "scrollY": 524,
+     "direction": "above",
+     "gap": 9,
+     "panel": [
+      307.28,
+      471.28,
+      20,
+      234.89
+     ],
+     "sh/ch": [
+      162,
+      162
+     ],
+     "opts": [
+      [
+       "newest",
+       50,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       50,
+       true,
+       0
+      ],
+      [
+       "popular",
+       50,
+       true,
+       1
+      ]
+     ],
+     "overlap": {
+      "btt": {
+       "w": 40,
+       "h": 21.28
+      }
+     },
+     "btt": {
+      "x": 16,
+      "y": 450,
+      "w": 44,
+      "h": 44,
+      "right": 60,
+      "bottom": 494
+     },
+     "limits": {
+      "top": 126,
+      "bottom144": 498,
+      "bottom145": 442,
+      "audit": 498
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "above",
+      "roomEitherSide": true,
+      "allOptionsFull": false,
+      "scrollEqualsClient": true,
+      "overlaps": {
+       "btt": {
+        "w": 40,
+        "h": 21.28
+       }
+      },
+      "inViewport": true,
+      "ok": false,
+      "errors": []
+     },
+     "probe": {
+      "btt": {
+       "x": 16,
+       "y": 450,
+       "w": 44,
+       "h": 44,
+       "right": 60,
+       "bottom": 494
+      },
+      "inter": {
+       "x": 20,
+       "y": 450,
+       "w": 40,
+       "h": 21.28
+      },
+      "topmost": "<svg>",
+      "bttZ": "19",
+      "panelZ": "5",
+      "menuZ": "auto",
+      "topmostIsBtt": true,
+      "optionsCover": [
+       {
+        "value": "newest",
+        "checked": "true",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       },
+       {
+        "value": "oldest",
+        "checked": "false",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       },
+       {
+        "value": "popular",
+        "checked": "false",
+        "samples": 100,
+        "covered": 2,
+        "by": {
+         "#back-to-top<button>.back-to-top": 2
+        }
+       }
+      ]
+     },
+     "clickPoint": {
+      "x": 42,
+      "y": 502.28,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 24,
+      "hits": {
+       "#back-to-top<button>.back-to-top": 10,
+       "<div>.cp-control-menu": 3,
+       "#random-campus<button>.icon-button.random-campus.dock-random-toggle": 7,
+       "<svg>": 1,
+       "<use>": 3
+      }
+     },
+     "bttState": {
+      "hidden": false,
+      "display": "flex",
+      "opacity": "1",
+      "z": "19",
+      "pointer": "auto"
+     },
+     "scrollYOk": 524
+    },
+    {
+     "label": "residuel@510",
+     "buttonTop": 510.28,
+     "buttonBottom": 554.28,
+     "scrollY": 494,
+     "direction": "above",
+     "gap": 9,
+     "panel": [
+      337.28,
+      501.28,
+      20,
+      234.89
+     ],
+     "sh/ch": [
+      162,
+      162
+     ],
+     "opts": [
+      [
+       "newest",
+       50,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       50,
+       true,
+       0
+      ],
+      [
+       "popular",
+       50,
+       true,
+       2
+      ]
+     ],
+     "overlap": {
+      "btt": {
+       "w": 40,
+       "h": 44
+      }
+     },
+     "btt": {
+      "x": 16,
+      "y": 450,
+      "w": 44,
+      "h": 44,
+      "right": 60,
+      "bottom": 494
+     },
+     "limits": {
+      "top": 126,
+      "bottom144": 498,
+      "bottom145": 442,
+      "audit": 498
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "above",
+      "roomEitherSide": true,
+      "allOptionsFull": false,
+      "scrollEqualsClient": true,
+      "overlaps": {
+       "btt": {
+        "w": 40,
+        "h": 44
+       }
+      },
+      "inViewport": true,
+      "ok": false,
+      "errors": []
+     },
+     "probe": {
+      "btt": {
+       "x": 16,
+       "y": 450,
+       "w": 44,
+       "h": 44,
+       "right": 60,
+       "bottom": 494
+      },
+      "inter": {
+       "x": 20,
+       "y": 450,
+       "w": 40,
+       "h": 44
+      },
+      "topmost": "<svg>",
+      "bttZ": "19",
+      "panelZ": "5",
+      "menuZ": "auto",
+      "topmostIsBtt": true,
+      "optionsCover": [
+       {
+        "value": "newest",
+        "checked": "true",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       },
+       {
+        "value": "oldest",
+        "checked": "false",
+        "samples": 100,
+        "covered": 0,
+        "by": {}
+       },
+       {
+        "value": "popular",
+        "checked": "false",
+        "samples": 100,
+        "covered": 7,
+        "by": {
+         "#back-to-top<button>.back-to-top": 5,
+         "<svg>": 2
+        }
+       }
+      ]
+     },
+     "clickPoint": {
+      "x": 28.8,
+      "y": 532.28,
+      "fx": 0.2,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 28,
+      "hits": {
+       "<div>.cp-control-menu": 4,
+       "#random-campus<button>.icon-button.random-campus.dock-random-toggle": 16,
+       "<svg>": 8
+      }
+     },
+     "bttState": {
+      "hidden": false,
+      "display": "flex",
+      "opacity": "1",
+      "z": "19",
+      "pointer": "auto"
+     },
+     "scrollYOk": 494
+    }
+   ]
+  },
+  {
+   "case": "ar320-residuel-144-reglages",
+   "t": 25.6,
+   "result": {
+    "lang": "ar",
+    "dir": "rtl",
+    "theme": "dark"
+   }
+  },
+  {
+   "case": "ar320-residuel-144",
+   "t": 31.2,
+   "result": [
+    {
+     "label": "residuel@455",
+     "buttonTop": 455.28,
+     "buttonBottom": 499.28,
+     "scrollY": 549,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      508.28,
+      522.28,
+      20,
+      234.89
+     ],
+     "sh/ch": [
+      162,
+      12
+     ],
+     "opts": [
+      [
+       "newest",
+       7,
+       false,
+       15
+      ],
+      [
+       "oldest",
+       0,
+       false,
+       0
+      ],
+      [
+       "popular",
+       0,
+       false,
+       0
+      ]
+     ],
+     "overlap": {
+      "search": {
+       "w": 148.89,
+       "h": 14
+      },
+      "random": {
+       "w": 44,
+       "h": 14
+      }
+     },
+     "btt": {
+      "x": 16,
+      "y": 450,
+      "w": 44,
+      "h": 44,
+      "right": 60,
+      "bottom": 494
+     },
+     "limits": {
+      "top": 126,
+      "bottom144": 498,
+      "bottom145": 442,
+      "audit": 498
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": false,
+      "scrollEqualsClient": false,
+      "overlaps": {
+       "search": {
+        "w": 148.89,
+        "h": 14
+       },
+       "random": {
+        "w": 44,
+        "h": 14
+       }
+      },
+      "inViewport": true,
+      "ok": false,
+      "errors": []
+     },
+     "probe": {
+      "btt": {
+       "x": 16,
+       "y": 450,
+       "w": 44,
+       "h": 44,
+       "right": 60,
+       "bottom": 494
+      },
+      "inter": null,
+      "topmost": null,
+      "bttZ": "19",
+      "panelZ": "5",
+      "menuZ": "auto",
+      "optionsCover": [
+       {
+        "value": "newest",
+        "checked": "true",
+        "samples": 20,
+        "covered": 19,
+        "by": {
+         "<svg>": 3,
+         "#random-campus<button>.icon-button.random-campus.dock-random-toggle": 1,
+         "<button>.dock-search-toggle": 8,
+         "<span>.dock-search-toggle-label": 7
+        }
+       },
+       {
+        "value": "oldest",
+        "checked": "false",
+        "samples": 0,
+        "covered": 0,
+        "by": {}
+       },
+       {
+        "value": "popular",
+        "checked": "false",
+        "samples": 0,
+        "covered": 0,
+        "by": {}
+       }
+      ]
+     },
+     "clickPoint": {
+      "x": 53,
+      "y": 488.28,
+      "fx": 0.75,
+      "fy": 0.75
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 36,
+      "hits": {
+       "#back-to-top<button>.back-to-top": 21,
+       "<div>.cp-control-menu": 5,
+       "<svg>": 10
+      }
+     },
+     "bttState": {
+      "hidden": false,
+      "display": "flex",
+      "opacity": "1",
+      "z": "19",
+      "pointer": "auto"
+     },
+     "scrollYOk": 549
+    },
+    {
+     "label": "residuel@470",
+     "buttonTop": 470.28,
+     "buttonBottom": 514.28,
+     "scrollY": 534,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      523.28,
+      537.28,
+      20,
+      234.89
+     ],
+     "sh/ch": [
+      162,
+      12
+     ],
+     "opts": [
+      [
+       "newest",
+       7,
+       false,
+       15
+      ],
+      [
+       "oldest",
+       0,
+       false,
+       0
+      ],
+      [
+       "popular",
+       0,
+       false,
+       0
+      ]
+     ],
+     "overlap": {
+      "search": {
+       "w": 148.89,
+       "h": 14
+      },
+      "random": {
+       "w": 44,
+       "h": 14
+      }
+     },
+     "btt": {
+      "x": 16,
+      "y": 450,
+      "w": 44,
+      "h": 44,
+      "right": 60,
+      "bottom": 494
+     },
+     "limits": {
+      "top": 126,
+      "bottom144": 498,
+      "bottom145": 442,
+      "audit": 498
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": false,
+      "scrollEqualsClient": false,
+      "overlaps": {
+       "search": {
+        "w": 148.89,
+        "h": 14
+       },
+       "random": {
+        "w": 44,
+        "h": 14
+       }
+      },
+      "inViewport": true,
+      "ok": false,
+      "errors": []
+     },
+     "probe": {
+      "btt": {
+       "x": 16,
+       "y": 450,
+       "w": 44,
+       "h": 44,
+       "right": 60,
+       "bottom": 494
+      },
+      "inter": null,
+      "topmost": null,
+      "bttZ": "19",
+      "panelZ": "5",
+      "menuZ": "auto",
+      "optionsCover": [
+       {
+        "value": "newest",
+        "checked": "true",
+        "samples": 20,
+        "covered": 19,
+        "by": {
+         "<svg>": 3,
+         "#random-campus<button>.icon-button.random-campus.dock-random-toggle": 1,
+         "<button>.dock-search-toggle": 8,
+         "<span>.dock-search-toggle-label": 7
+        }
+       },
+       {
+        "value": "oldest",
+        "checked": "false",
+        "samples": 0,
+        "covered": 0,
+        "by": {}
+       },
+       {
+        "value": "popular",
+        "checked": "false",
+        "samples": 0,
+        "covered": 0,
+        "by": {}
+       }
+      ]
+     },
+     "clickPoint": {
+      "x": 48.6,
+      "y": 492.28,
+      "fx": 0.65,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 27,
+      "hits": {
+       "#back-to-top<button>.back-to-top": 14,
+       "<div>.cp-control-menu": 3,
+       "<svg>": 5,
+       "#random-campus<button>.icon-button.random-campus.dock-random-toggle": 5
+      }
+     },
+     "bttState": {
+      "hidden": false,
+      "display": "flex",
+      "opacity": "1",
+      "z": "19",
+      "pointer": "auto"
+     },
+     "scrollYOk": 534
+    },
+    {
+     "label": "residuel@480",
+     "buttonTop": 480.28,
+     "buttonBottom": 524.28,
+     "scrollY": 524,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      533.28,
+      547.28,
+      20,
+      234.89
+     ],
+     "sh/ch": [
+      162,
+      12
+     ],
+     "opts": [
+      [
+       "newest",
+       7,
+       false,
+       12
+      ],
+      [
+       "oldest",
+       0,
+       false,
+       0
+      ],
+      [
+       "popular",
+       0,
+       false,
+       0
+      ]
+     ],
+     "overlap": {
+      "search": {
+       "w": 148.89,
+       "h": 14
+      },
+      "random": {
+       "w": 44,
+       "h": 14
+      }
+     },
+     "btt": {
+      "x": 16,
+      "y": 450,
+      "w": 44,
+      "h": 44,
+      "right": 60,
+      "bottom": 494
+     },
+     "limits": {
+      "top": 126,
+      "bottom144": 498,
+      "bottom145": 442,
+      "audit": 498
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": false,
+      "scrollEqualsClient": false,
+      "overlaps": {
+       "search": {
+        "w": 148.89,
+        "h": 14
+       },
+       "random": {
+        "w": 44,
+        "h": 14
+       }
+      },
+      "inViewport": true,
+      "ok": false,
+      "errors": []
+     },
+     "probe": {
+      "btt": {
+       "x": 16,
+       "y": 450,
+       "w": 44,
+       "h": 44,
+       "right": 60,
+       "bottom": 494
+      },
+      "inter": null,
+      "topmost": null,
+      "bttZ": "19",
+      "panelZ": "5",
+      "menuZ": "auto",
+      "optionsCover": [
+       {
+        "value": "newest",
+        "checked": "true",
+        "samples": 20,
+        "covered": 18,
+        "by": {
+         "#random-campus<button>.icon-button.random-campus.dock-random-toggle": 3,
+         "<button>.dock-search-toggle": 15
+        }
+       },
+       {
+        "value": "oldest",
+        "checked": "false",
+        "samples": 0,
+        "covered": 0,
+        "by": {}
+       },
+       {
+        "value": "popular",
+        "checked": "false",
+        "samples": 0,
+        "covered": 0,
+        "by": {}
+       }
+      ]
+     },
+     "clickPoint": {
+      "x": 42,
+      "y": 502.28,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 24,
+      "hits": {
+       "#back-to-top<button>.back-to-top": 10,
+       "<div>.cp-control-menu": 3,
+       "#random-campus<button>.icon-button.random-campus.dock-random-toggle": 7,
+       "<svg>": 1,
+       "<use>": 3
+      }
+     },
+     "bttState": {
+      "hidden": false,
+      "display": "flex",
+      "opacity": "1",
+      "z": "19",
+      "pointer": "auto"
+     },
+     "scrollYOk": 524
+    },
+    {
+     "label": "residuel@510",
+     "buttonTop": 510.28,
+     "buttonBottom": 554.28,
+     "scrollY": 494,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      563.28,
+      577.28,
+      20,
+      234.89
+     ],
+     "sh/ch": [
+      162,
+      12
+     ],
+     "opts": [
+      [
+       "newest",
+       7,
+       false,
+       15
+      ],
+      [
+       "oldest",
+       0,
+       false,
+       0
+      ],
+      [
+       "popular",
+       0,
+       false,
+       0
+      ]
+     ],
+     "overlap": {
+      "nav": {
+       "w": 214.89,
+       "h": 14
+      },
+      "shell": {
+       "w": 214.89,
+       "h": 14
+      }
+     },
+     "btt": {
+      "x": 16,
+      "y": 450,
+      "w": 44,
+      "h": 44,
+      "right": 60,
+      "bottom": 494
+     },
+     "limits": {
+      "top": 126,
+      "bottom144": 498,
+      "bottom145": 442,
+      "audit": 498
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": false,
+      "scrollEqualsClient": false,
+      "overlaps": {
+       "nav": {
+        "w": 214.89,
+        "h": 14
+       }
+      },
+      "inViewport": true,
+      "ok": false,
+      "errors": []
+     },
+     "probe": {
+      "btt": {
+       "x": 16,
+       "y": 450,
+       "w": 44,
+       "h": 44,
+       "right": 60,
+       "bottom": 494
+      },
+      "inter": null,
+      "topmost": null,
+      "bttZ": "19",
+      "panelZ": "5",
+      "menuZ": "auto",
+      "optionsCover": [
+       {
+        "value": "newest",
+        "checked": "true",
+        "samples": 20,
+        "covered": 20,
+        "by": {
+         "<button>": 13,
+         "#main-nav<nav>.main-nav.has-dock-search": 5,
+         "<svg>": 2
+        }
+       },
+       {
+        "value": "oldest",
+        "checked": "false",
+        "samples": 0,
+        "covered": 0,
+        "by": {}
+       },
+       {
+        "value": "popular",
+        "checked": "false",
+        "samples": 0,
+        "covered": 0,
+        "by": {}
+       }
+      ]
+     },
+     "clickPoint": {
+      "x": 28.8,
+      "y": 532.28,
+      "fx": 0.2,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 28,
+      "hits": {
+       "<div>.cp-control-menu": 4,
+       "#random-campus<button>.icon-button.random-campus.dock-random-toggle": 16,
+       "<svg>": 8
+      }
+     },
+     "bttState": {
+      "hidden": false,
+      "display": "flex",
+      "opacity": "1",
+      "z": "19",
+      "pointer": "auto"
+     },
+     "scrollYOk": 494
+    }
+   ]
+  },
+  {
+   "case": "fr390-capsule-145-reglages",
+   "t": 33.4,
+   "result": {
+    "lang": "fr",
+    "dir": "ltr",
+    "theme": "light"
+   }
+  },
+  {
+   "case": "fr390-capsule-145",
+   "t": 34.8,
+   "result": {
+    "label": "capsule@748",
+    "buttonTop": 747.69,
+    "buttonBottom": 791.69,
+    "scrollY": 169,
+    "direction": "above",
+    "gap": 9,
+    "panel": [
+     598.69,
+     738.69,
+     84.81,
+     351
+    ],
+    "sh/ch": [
+     138,
+     138
+    ],
+    "opts": [
+     [
+      "newest",
+      42,
+      true,
+      0
+     ],
+     [
+      "oldest",
+      42,
+      true,
+      0
+     ],
+     [
+      "popular",
+      42,
+      true,
+      7
+     ]
+    ],
+    "overlap": {
+     "search": {
+      "w": 184.19,
+      "h": 28.69
+     },
+     "random": {
+      "w": 44,
+      "h": 28.69
+     }
+    },
+    "btt": null,
+    "limits": {
+     "top": 130,
+     "bottom144": 702,
+     "bottom145": 702,
+     "audit": 702
+    },
+    "edgeOffset": 0,
+    "eval": {
+     "clickable": true,
+     "direction": "above",
+     "roomEitherSide": true,
+     "allOptionsFull": false,
+     "scrollEqualsClient": true,
+     "overlaps": {
+      "search": {
+       "w": 184.19,
+       "h": 28.69
+      },
+      "random": {
+       "w": 44,
+       "h": 28.69
+      }
+     },
+     "inViewport": true,
+     "ok": false,
+     "errors": []
+    },
+    "probe": {
+     "btt": null,
+     "inter": null,
+     "topmost": null,
+     "bttZ": "auto",
+     "panelZ": "5",
+     "menuZ": "auto",
+     "optionsCover": [
+      {
+       "value": "newest",
+       "checked": "true",
+       "samples": 100,
+       "covered": 0,
+       "by": {}
+      },
+      {
+       "value": "oldest",
+       "checked": "false",
+       "samples": 100,
+       "covered": 0,
+       "by": {}
+      },
+      {
+       "value": "popular",
+       "checked": "false",
+       "samples": 100,
+       "covered": 51,
+       "by": {
+        "<button>.dock-search-toggle": 33,
+        "<span>.dock-search-toggle-label": 11,
+        "#random-campus<button>.icon-button.random-campus.dock-random-toggle": 6,
+        "<svg>": 1
+       }
+      }
+     ]
+    },
+    "clickPoint": {
+     "x": 254.8,
+     "y": 760.89,
+     "fx": 0.5,
+     "fy": 0.3
+    },
+    "buttonCover": {
+     "samples": 45,
+     "covered": 33,
+     "hits": {
+      "<button>.dock-search-toggle": 5,
+      "#main-nav<nav>.main-nav.has-dock-search": 12,
+      "<button>": 9,
+      "<svg>": 5,
+      "<use>": 1,
+      "#random-campus<button>.icon-button.random-campus.dock-random-toggle": 1
+     }
+    },
+    "bttState": {
+     "hidden": true,
+     "display": "none",
+     "opacity": "1",
+     "z": "auto",
+     "pointer": "auto"
+    },
+    "scrollYOk": 169
+   }
+  }
+ ],
+ "phaseErrors": [],
+ "failure": null,
+ "sourcesUnchanged": true,
+ "sourceHashes": {
+  "145": {
+   "comments.mjs": "7cd542685536b244",
+   "comments.css": "9f93b003d8e2cc5d",
+   "content-controls.mjs": "58ac9a724ba2168a",
+   "content-controls.css": "cc14237d5d978a62",
+   "project-ui.mjs": "a4bff6110875d436",
+   "journal-ui.mjs": "f5b76c927851a1c8",
+   "back-to-top.css": "917add7417209c47",
+   "back-to-top.mjs": "6e1cb92805b3236b",
+   "dock-search.css": "2ac9c079d5142898",
+   "content-preview.html": "8817305bef2eb91c",
+   "content-preview.mjs": "efba6b21f19d03c5",
+   "welcome.mjs": "e1b31b75b8aa4e9b"
+  },
+  "144": {
+   "comments.mjs": "65076bfb8130434e",
+   "comments.css": "9f93b003d8e2cc5d",
+   "content-controls.mjs": "58ac9a724ba2168a",
+   "content-controls.css": "cc14237d5d978a62",
+   "project-ui.mjs": "866115f8eebe5dbd",
+   "journal-ui.mjs": "68466b09bbaad881",
+   "back-to-top.css": "917add7417209c47",
+   "back-to-top.mjs": "6e1cb92805b3236b",
+   "dock-search.css": "2ac9c079d5142898",
+   "content-preview.html": "470bf471e88250d9",
+   "content-preview.mjs": "d0ae536f7a101511",
+   "welcome.mjs": "fa65d17e822b1f1f"
+  }
+ },
+ "durationSeconds": 34.8
+}

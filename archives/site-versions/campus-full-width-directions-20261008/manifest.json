@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-08",
+  "purpose": "Itinéraire pleine largeur",
+  "preview": "preview.html",
+  "sources": {
+    "campus-details.mjs": "49532e1d41e15401937bfebf86bfbb5209c39f514573dd6e9c0166a41081e898",
+    "campus-details.css": "2cb2a25735edf71ba6f7b61b19c4366cb9d708bf43f8ac4793c6635c143b93ea"
+  },
+  "runtime": [
+    {
+      "file": "runtime/campus-website.mjs",
+      "source": "campus-website.mjs",
+      "sourceSha256": "79edb1a8461605b471b8e307a50c65ca4251a9dc8666d503ceedcaca8f374e04",
+      "sha256": "79edb1a8461605b471b8e307a50c65ca4251a9dc8666d503ceedcaca8f374e04",
+      "adapted": false
+    },
+    {
+      "file": "runtime/campus-sheet.mjs",
+      "source": "campus-sheet.mjs",
+      "sourceSha256": "433187f48dacdf1641cda6bc27bc198e67c4c5edbace110a4d69c2752f2b55b4",
+      "sha256": "433187f48dacdf1641cda6bc27bc198e67c4c5edbace110a4d69c2752f2b55b4",
+      "adapted": false
+    },
+    {
+      "file": "runtime/campuses.json",
+      "source": "campuses.json",
+      "sourceSha256": "0e6a49a0867443efd80ab1f0831e56c3a061beb136d6dc8642a462db6e41c850",
+      "sha256": "0e6a49a0867443efd80ab1f0831e56c3a061beb136d6dc8642a462db6e41c850",
+      "adapted": false
+    },
+    {
+      "file": "runtime/campus-location-overrides.json",
+      "source": "campus-location-overrides.json",
+      "sourceSha256": "13d3e1afac34bc0c5fe0ca7eafc21f917b4af8f0c524a642d525bf3e303f2b76",
+      "sha256": "13d3e1afac34bc0c5fe0ca7eafc21f917b4af8f0c524a642d525bf3e303f2b76",
+      "adapted": false
+    },
+    {
+      "file": "runtime/campus-websites.json",
+      "source": "campus-websites.json",
+      "sourceSha256": "cbb2f7193fe404b7b57e5c5b7dadee7163e54cb90743583b4c2347f4882aa512",
+      "sha256": "cbb2f7193fe404b7b57e5c5b7dadee7163e54cb90743583b4c2347f4882aa512",
+      "adapted": false
+    },
+    {
+      "file": "runtime/campus-website-locales.json",
+      "source": "campus-website-locales.json",
+      "sourceSha256": "2f3079b16cd05291a8387023ef2ed80855219ac0f61cbf7919ec6311c9572159",
+      "sha256": "2f3079b16cd05291a8387023ef2ed80855219ac0f61cbf7919ec6311c9572159",
+      "adapted": false
+    },
+    {
+      "file": "runtime/campus-profiles.json",
+      "source": "campus-profiles.json",
+      "sourceSha256": "bf7994d97cb2ad8310af013809aab5d2ffcc4b3dfc4bc580d36380bbd8c32b17",
+      "sha256": "bf7994d97cb2ad8310af013809aab5d2ffcc4b3dfc4bc580d36380bbd8c32b17",
+      "adapted": false
+    },
+    {
+      "file": "runtime/campus-details.mjs",
+      "source": "archive/campus-full-width-directions-20261008/campus-details.mjs",
+      "sourceSha256": "49532e1d41e15401937bfebf86bfbb5209c39f514573dd6e9c0166a41081e898",
+      "sha256": "49532e1d41e15401937bfebf86bfbb5209c39f514573dd6e9c0166a41081e898",
+      "adapted": false
+    },
+    {
+      "file": "runtime/campus-details.css",
+      "source": "archive/campus-full-width-directions-20261008/campus-details.css",
+      "sourceSha256": "2cb2a25735edf71ba6f7b61b19c4366cb9d708bf43f8ac4793c6635c143b93ea",
+      "sha256": "2cb2a25735edf71ba6f7b61b19c4366cb9d708bf43f8ac4793c6635c143b93ea",
+      "adapted": false
+    }
+  ],
+  "dataScope": "Presentation reconstruction: original full-width directions UI with the sourced Paris/Mulhouse data preserved on 8 October, before the Chronicles label change. The data was not part of the original two-file source snapshot.",
+  "sharedAssets": "Fonts, photos and logos remain in the parent prototype. No live map is included in this component reader.",
+  "verification": "Static imports, asset paths and data checked; no browser replay in this maintenance task."
+}

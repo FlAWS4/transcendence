@@ -1,0 +1,7 @@
+/* Essai illustrations-attenuees (14 Oct 2026): dark theme only.
+   Simpler alternative to illustrations-sombres: the six inline covers
+   (content-preview-art.mjs, the only 800 x 500 SVGs) are dimmed as a whole in
+   cards, profile grids, detail media and the media viewer. Their colours are not
+   remapped. Portraits, campus photos and other image files are not inline SVGs
+   and keep their rendering. Light theme is untouched. */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"]{filter:brightness(.8) saturate(.9)}

@@ -1,0 +1,278 @@
+{
+ "id": "echelle-unifiee",
+ "groupe": "Typographie, lisibilité et pages",
+ "titre": "Échelle et arrondis unifiés",
+ "resume": "Démonstrateur d’un système consolidé : les principaux composants passent sur une échelle courte de tailles (12, 14, 16, 20, 28 et 35 px), trois rayons (12, 20 et 999 px) et deux niveaux d’ombre, sans toucher aux couleurs ni à la disposition. Les titres, les déclencheurs Filtrer/Affichage/Trier, les noms d’auteur et les images des cartes restent progressifs entre deux paliers ; les autres tailles prennent un palier fixe.",
+ "probleme": "La revue du 14 octobre relève 85 valeurs de font-size et 48 de border-radius dans 36 feuilles (20 !important). Un recomptage strict des 35 feuilles que la copie charge directement, hors MapLibre et polices, trouve 67 valeurs de font-size (416 déclarations) et 34 de border-radius (207 déclarations) ; 67 et 35 avec les deux feuilles chargées en cascade, 69 et 39 avec celle de MapLibre (checks/echelle-unifiee/compte-statique.json). Les 20 !important ne portent sur aucune de ces deux propriétés. À l’écran, les six vues clés (Projets ordinateur clair, fiche projet, profil sombre, chronique, Profils arabe sombre mobile, Projets mobile) montrent ensemble 17 tailles de texte d’interface et 8 rayons différents ; avec les menus et dialogues, 21 tailles, 13 rayons et 6 ombres. Les écarts se voient d’un composant à l’autre : dialogues arrondis à 22, 24 ou 28 px, titres de dialogue de 20 à 24 px, petits textes à 10, 11, 11,22, 12 ou 13 px.",
+ "changement": "Une seule feuille, essais/echelle-unifiee/essai.css, chargée après celles de la copie, reporte les composants sur des jetons --eu-* ; aucune règle de la base n’est modifiée, essai.mjs et early.js n’ajoutent aucun comportement, et seules les propriétés font-size, border-radius et box-shadow changent. Tailles : 12 px « légende » (métadonnées, dates, campus, pseudos des cartes Profils, étiquettes, statuts, compteurs, légendes, rôles d’auteur, petits textes du compte, de la recherche et des dialogues) et 12 px « actions compactes » (Favoris, Signaler, Envoyer un message, boutons de campus, actions des commentaires, pieds de dialogue), qui passent à 13 et 14 px avec lisibilite-textes pour garder ses planchers ; 14 px « libellé » (extraits, pagination, navigation latérale, sélecteur Monde, recherche, pseudo de la fiche profil, textes secondaires) ; 16 px « corps » (textes de lecture, titres de récompenses, boutons de l’arrivée, du compte et du dialogue de connexion) ; 20 px « titre 3 » (titres de blocs, noms des cartes Profils, titres de dialogue, états vides) ; titres des cartes Projets et Chroniques en rampe 20 → 28 px entre 390 et 1024 px (sous 390 px, la grille garde la taille de la base), de même que les titres en vue Liste, les projets liés et les récits du profil ; nom du profil en rampe 28 → 35 px ; titres des fiches projet et chronique laissés sur la rampe de la base (22 → 28 px) ; déclencheurs Filtrer/Affichage/Trier et noms d’auteur des cartes en rampe 12 → 14 px. Rayons : 12 px pour les boutons qui ne sont pas des pilules, les champs, les options de menu, les résultats de recherche et les petites vignettes ; 20 px pour les cartes, grandes images, panneaux, menus et dialogues ; 999 px pour les pilules ; les images des cartes gardent la rampe 12 → 20 px des couvertures de la base, que prennent aussi les portraits des cartes Profils. Ombres : niveau 1 = ombre verre des commandes de la base, inchangée et étendue en clair aux boutons de l’arrivée, du compte et du dialogue de connexion ; niveau 2 = ombre --shadow de la base pour les surfaces ouvertes au-dessus de la page, les surfaces en verre gardant leurs reflets intérieurs. Ajustements techniques : la dernière option du menu Trier garde ses coins supérieurs à angle droit (elle est sous un séparateur) ; avec lisibilite-textes, le statut des portraits de la vue Liste Profils reste à 12 px sous 1200 px, où lisibilite-textes le laisse sans plancher (sa vignette le rognerait à 13 px). Restent hors échelle : logotype, libellés du dock, illustrations, globe, fiche campus, densités compactes, cases à cocher, focus, emoji. La table mesurée figure dans « correspondance ». La vraie consolidation — jetons comme source unique, feuilles moins nombreuses, suppression des valeurs locales — est un travail structurel qu’un essai ne peut pas montrer.",
+ "decisionConcernee": "6 octobre 2026, « Adapter toute la page, sans paliers de taille » : l’utilisateur remarque « les changements de taille quand je réduis la fenêtre » et précise que « les titres n’étaient qu’un exemple : cela concerne les autres éléments également » ; textes, boutons, vignettes, portraits et espacements reçoivent alors des tailles progressives, les petits libellés restant stables. L’essai revient en partie sur ce choix : il garde les progressions des titres, des déclencheurs, des noms d’auteur et des images de cartes, mais entre deux paliers ; il fige sur un palier des tailles jusque-là progressives (extraits des cartes 14 → 15 px, dates et campus des cartes 11 → 12 px, sélecteur Monde 13 → 15 px, noms des cartes Profils 18 → 21 px) et ajoute un petit saut des titres de cartes à 390 px (19,08 → 20 px). Il supprime en revanche quatre sauts de la base entre mobile et ordinateur (titres de blocs 19/20 px, textes de lecture 15/16 px, titres de récompenses 14/15 px, textes secondaires 13/14 px).",
+ "alternativeDe": "",
+ "vues": [
+  {
+   "libelle": "Projets, ordinateur clair",
+   "page": "content-preview.html",
+   "route": "projects",
+   "viewport": "ordinateur",
+   "theme": "light",
+   "lang": "fr"
+  },
+  {
+   "libelle": "Profil, ordinateur sombre",
+   "page": "content-preview.html",
+   "route": "people/profile-leila-mansour",
+   "viewport": "ordinateur",
+   "theme": "dark",
+   "lang": "fr"
+  },
+  {
+   "libelle": "Projets, mobile clair",
+   "page": "content-preview.html",
+   "route": "projects",
+   "viewport": "mobile",
+   "theme": "light",
+   "lang": "fr"
+  },
+  {
+   "libelle": "Profils, mobile sombre arabe",
+   "page": "content-preview.html",
+   "route": "people",
+   "viewport": "mobile",
+   "theme": "dark",
+   "lang": "ar"
+  }
+ ],
+ "verifications": [
+  "Six vues clés (Projets ordinateur clair FR, fiche projet ordinateur, profil ordinateur sombre, chronique ordinateur, Profils mobile sombre AR, Projets mobile clair) : 17 → 6 tailles de texte d’interface distinctes au total (12, 14, 16, 20, 28 et 35 px, toutes sur l’échelle) et 8 → 3 rayons (12 px, 20 px, pilule) ; par vue, de 6 à 10 tailles avant et de 3 à 5 après, de 3 ou 4 rayons à 2 ou 3. Mêmes totaux à la contre-vérification indépendante (verif.py, chaque vue rechargée).",
+  "Douze vues de menus et dialogues (compte, filtre fermé et ouvert, recherche FR et AR sombre, tri, signalement, message, média, choix du campus, connexion simulée FR et AR sombre) : 21 → 6 tailles, 13 → 5 rayons (les 4 et 5 px restants sont les cases à cocher, exclues) et 6 → 4 ombres (niveaux 1 et 2, en clair et en sombre) ; toutes s’ouvrent avant comme après. La palette d’emoji et le menu d’actions d’un commentaire passent aussi de 16 à 20 px de rayon et au niveau 2, à taille égale (180 × 146 px pour le menu), en FR clair ordinateur et en AR sombre mobile ; la démonstration n’ayant aucun commentaire, un commentaire est publié dans le stockage local du Chrome de contrôle pour ouvrir ce menu.",
+  "Vingt-deux vues supplémentaires (onglets des fiches et profils, vue Liste, 320, 390, 667 × 375, 834 et 1024 px, Explorer) : 30 → 13 tailles et 14 → 4 rayons ; les valeurs hors paliers restantes viennent des rampes aux largeurs intermédiaires (13,4, 25,6 et 32,9 px, rayon d’image 16,5 px à 834 px) et des tailles de la base gardées (titres de cartes 18 px à 320 px, titres de fiche 22 à 25,25 px sur mobile et en paysage).",
+  "Sur les 40 vues avant/après de check.py : aucun débordement horizontal, aucun libellé de bouton nouvellement rogné, aucune erreur console, aucune cible d’au moins 44 × 44 px perdue. Seuls 17 liens de titres de cartes passent sous 44 px de haut (80,6 → 36,4 px sur ordinateur, 55,6 → 24,8 px en vue Liste mobile) parce que leur titre tient sur une ligne au lieu de deux, comme les titres d’une ligne de la base.",
+  "Contre-vérification (verif.py, chaque vue rechargée) sur 15 vues clés, dont trois en anglais, 21 menus et dialogues ouverts (FR, AR, sombre, 320 px) et 16 vues aux largeurs intermédiaires (701 à 1100 px, Explorer) : aucun texte nouvellement coupé, sorti de sa pastille ou chevauchant un autre texte (6193 textes contrôlés), aucun portrait devenu ovale, aucun mot de titre coupé, aucun débordement, aucune erreur ; 5892 applications des règles de l’essai vérifiées effectives.",
+  "Défauts trouvés par les vérifications précédentes et corrigés dans essai.css (état corrigé remesuré ici) : les portraits de la vue Liste Profils devenaient ovales (aucun ovale mesuré désormais) ; l’ombre du sélecteur Monde restait sans effet (niveau 2 mesuré, en clair et en sombre) ; un statut était rogné avec lisibilite-textes (aucun) ; l’indication et l’état vide des réseaux du profil montaient à 16 px (14 px mesurés) ; une règle visait une couverture jamais affichée (retirée) ; à 14 px, le texte provisoire des profils sans pseudo Intra passait sur deux lignes et décalait des rangées de la grille Profils entre 350 et 390 px. Les pseudos des cartes sont maintenant à 12 px, comme les autres métadonnées : sur 18 couples langue/largeur (FR, EN, AR ; 320 à 430 px), aucune rangée nouvellement décalée ; à 320 px, les 4 rangées que la base décale déjà ; en arabe à 350 px, l’essai n’en décale plus aucune (la base en décale 4).",
+  "Titres sur 17 vues (dont les listes et fiches à 320 px) : aucun mot coupé, aucun titre de carte tronqué par la limite de 3 lignes de la base, aucun titre plus large que sa boîte.",
+  "Clavier : mêmes arrêts de tabulation et mêmes contours de focus (style, épaisseur, couleur, décalage) avant et après sur Projets ordinateur, fiche projet ordinateur, Profils AR sombre mobile, l’arrivée en FR clair et en AR sombre, et le menu du compte.",
+  "Changement de thème et de langue sans rechargement (menu du compte) : sur 5 transitions (FR sombre, AR sombre, EN clair sur la liste ; EN sombre, AR clair sur un profil mobile), tailles, rayons et ombres identiques à un chargement direct, toujours sur l’échelle, RTL correct, sans erreur ni débordement.",
+  "Densités des fiches (detail-scroll) identiques avant et après sur 23 des 24 couples fiche/fenêtre mesurés en redimensionnant (1440 × 900 à 900 × 600) et sur 14 des 15 couples chargés directement ; seule exception, le profil à 1024 × 768 (voir limites et la capture profil-1024-ordinateur).",
+  "Arrivée (index.html) : Se connecter et Visiter 17 → 16 px et rayon 14 → 12 px sur ordinateur (160 → 154 px de large, 52 px de haut conservés), rayon 14 → 12 px sur mobile FR et AR sombre (342 × 52 px conservés) ; dialogue de connexion : titre 24 → 20 px, rayon 28 → 20 px, ombre de niveau 2, boutons 17 → 16 px (54 → 53 px de haut) ; ni débordement ni erreur. Sélecteur Monde : rayon 18 → 20 px, ombre de niveau 2 avec ses reflets ; dialogue À propos : rayon 28 → 20 px, titre 24 → 20 px.",
+  "Combinaisons (versions des essais voisins : lisibilite-textes du 14 octobre 19 h 47, titres-forts 18 h 53, pseudo-manquant 18 h 19) : avec lisibilite-textes, 1514 contrôles des planchers 13/14 px, 0 échec ; avec titres-forts, 664 contrôles de graisse 700 et d’interlettrage, 0 échec ; avec pseudo-manquant, aucune régression ; avec les trois essais de typographie ensemble, 0 débordement, 0 erreur, 0 mot coupé, 0 titre tronqué. En arabe sombre mobile, le compteur et les lignes Rentrée/Promotion des cartes Profils passent sur deux lignes avec lisibilite-textes (13 px), avec ou sans cet essai : le reflux vient de lisibilite-textes. Captures : checks/echelle-unifiee/apres-trois-ordinateur.png et apres-trois-ar-sombre-mobile.png.",
+  "Page 42 Awards identique au pixel près avant et après (ordinateur clair, mobile AR sombre). Fiche campus d’Explorer, ouverte avec le vrai globe (Paris, ordinateur clair) : même boîte, même rayon (28 px), même ombre et mêmes styles calculés sur ses 99 éléments, 0 % de pixels différents sur sa surface.",
+  "Part de pixels différents entre avant et après : 0,02 à 1,1 % sur l’arrivée et son dialogue, 0,65 à 8,4 % sur les pages, menus et dialogues, surtout par reflux du texte. Captures avant/après regardées côte à côte (Projets ordinateur et mobile, fiche et profil sombre ordinateur, Profils AR sombre mobile, compte, connexion, recherche, filtre mobile, arrivée et son dialogue, palette d’emoji, menu d’actions d’un commentaire, profil à 1024 × 768, combinaison des trois essais) : couleurs et disposition identiques, changements discrets hors l’exception du profil à 1024 × 768.",
+  "Copie de référence intacte : snapshot.py --verify confirme les 137 fichiers."
+ ],
+ "limites": [
+  "Démonstrateur seulement : une feuille de surcharge chargée en dernier, qui ajoute des sélecteurs au lieu d’en retirer. La vraie consolidation — jetons comme source unique dans shared/figma/tokens.css, feuilles moins nombreuses, suppression des valeurs locales et des surcharges — est un travail structurel qu’un essai ne peut pas montrer ; les 67 valeurs de font-size et 34 de border-radius restent déclarées dessous.",
+  "Progressions du 6 octobre en partie revisitées (voir « Décision concernée ») : l’échelle n’est exacte qu’à 390 px et à partir de 1024 px ; entre les deux, titres, déclencheurs et images de cartes passent par des valeurs intermédiaires (13,4, 25,6 et 32,9 px, rayon 16,5 px à 834 px), tandis que les extraits, dates et campus des cartes, le sélecteur Monde et les noms des cartes Profils ne varient plus avec la largeur.",
+  "Petit saut au seuil de 390 px : sous cette largeur, les titres des cartes de la grille gardent la taille de la base (18 à 19,08 px, sinon « ft_transcendence » ne tient plus dans la colonne de 129 px à 320 px), puis passent à 20 px ; en redimensionnant la fenêtre, ils sautent donc de 0,9 px à 390 px. Les titres des fiches projet et chronique gardent la rampe de la base 22 → 28 px (un 28 px fixe les faisait passer sur deux lignes sur mobile).",
+  "Seuil de densité décalé : avec le nom du profil à 35 px au lieu de 38, la fiche profil sort de la densité compacte dès 768 px de haut au lieu de 772 px (à 1024 px de large). À 1024 × 768 exactement, elle montre donc l’en-tête complet et une navigation latérale défilante (1 rubrique sur 4 entièrement visible, flèche vers le bas) au lieu de l’en-tête compact et des 4 rubriques : l’état que la copie montre elle-même dès 772 px de haut, et que les fiches projet et chronique ont déjà à 1024 × 768. Changement visible, à juger.",
+  "Avec lisibilite-textes, les noms d’auteur des cartes restent à 13 px sur ordinateur (sa règle plus spécifique l’emporte) au lieu de monter à 14 px ; les planchers sont respectés. Sous 1200 px, le statut des portraits de la vue Liste Profils garde 12 px avec cet essai, car lisibilite-textes le laisse sans plancher (sa vignette le rognerait à 13 px).",
+  "Hors périmètre volontaire, donc hors échelle : logotype (25 px sur ordinateur, 16,7 px sur mobile), libellés du dock, textes des illustrations SVG, globe et ses étiquettes, fiche campus d’Explorer et carte du campus, densités compactes des fiches pour fenêtres basses, cases à cocher (4 et 5 px), anneaux de focus, emoji. Non repris non plus : la note « À propos » du prototype dans Explorer, à 10 px sur mobile, et les boutons d’emoji de la palette, qui gardent leur rayon de 10 px.",
+  "Changements visibles à juger : titres de cartes plus petits sur ordinateur (31 → 28 px), qui tiennent plus souvent sur une ligne et raccourcissent certaines cartes ; à 390 px, un titre de carte passe de deux à trois lignes en français et un autre d’une à deux lignes en arabe (sans troncature) ; nom du profil 38 → 35 px ; projets liés du profil 25 → 28 px ; plusieurs textes de 13 px descendent à 12 px (pseudos des cartes Profils, rôles d’auteur, légendes des médias, Rentrée/Promotion, « Explorer 42 Paris » du profil, boutons de pied des dialogues sur ordinateur) ; portraits des cartes Profils moins arrondis sur mobile (18 → 12 px) ; en clair, ombre de « Visiter » plus marquée et ombre des dialogues plus légère.",
+  "Le palier 28 px suit la charte (titres d’interface 55/35/28/20/18 px) plutôt que le 25 px de l’exemple de la revue ; le 18 px de la charte n’est pas un palier.",
+  "Futura PT, la police de la charte, reste absente (Jost). Globe bloqué pendant les mesures des pages (vue Explorer contrôlée sans le vrai globe ; seule la fiche campus l’a chargé). Anglais mesuré sur trois vues et deux changements de langue seulement ; aucun téléphone physique. Les combinaisons ne couvrent que les essais de typographie voisins : la sélection finale de l’utilisateur restera à tester ensemble.",
+  "Vue Liste des Profils en arabe, de 320 à au moins 768 px de large : la pastille « خريج / خريجة » (Alumni), passée de 11 à 12 px, se replie sur deux lignes dans sa vignette, qui s’allonge ; les rangées Alumni mesurent alors 18 px de plus que les autres (132 contre 114 px de 320 à 390 px, 139 contre 121 px à 768 px ; 112,5 et 120 px pour toutes dans la copie). Pastille entière, sans rognure ni chevauchement ; sur une ligne à 1024 et 1199 px. Même résultat avec les neuf essais de la sélection (intégration de la sélection du 15 octobre). La garder à 11 px dans ce cas la sortirait de l’échelle : non fait, faute de décision."
+ ],
+ "fichiers": [
+  "essais/echelle-unifiee/essai.css",
+  "essais/echelle-unifiee/essai.mjs",
+  "essais/echelle-unifiee/early.js",
+  "essais/echelle-unifiee/essai.json",
+  "checks/echelle-unifiee/check.py",
+  "checks/echelle-unifiee/results.json",
+  "checks/echelle-unifiee/verif.py",
+  "checks/echelle-unifiee/verif-results.json",
+  "checks/echelle-unifiee/contre-verif.py",
+  "checks/echelle-unifiee/contre-verif-results.json",
+  "checks/echelle-unifiee/compte-statique.py",
+  "checks/echelle-unifiee/compte-statique.json",
+  "checks/_selection-20261015/integration/listes_compte.py",
+  "checks/_selection-20261015/integration/results-listes-compte.json"
+ ],
+ "captures": [
+  {
+   "vue": "ordinateur",
+   "avant": "checks/echelle-unifiee/avant-ordinateur.png",
+   "apres": "checks/echelle-unifiee/apres-ordinateur.png"
+  },
+  {
+   "vue": "mobile",
+   "avant": "checks/echelle-unifiee/avant-mobile.png",
+   "apres": "checks/echelle-unifiee/apres-mobile.png"
+  },
+  {
+   "vue": "profil-sombre-ordinateur",
+   "avant": "checks/echelle-unifiee/avant-profil-sombre-ordinateur.png",
+   "apres": "checks/echelle-unifiee/apres-profil-sombre-ordinateur.png"
+  },
+  {
+   "vue": "ar-sombre-mobile",
+   "avant": "checks/echelle-unifiee/avant-ar-sombre-mobile.png",
+   "apres": "checks/echelle-unifiee/apres-ar-sombre-mobile.png"
+  },
+  {
+   "vue": "fiche-ordinateur",
+   "avant": "checks/echelle-unifiee/avant-fiche-ordinateur.png",
+   "apres": "checks/echelle-unifiee/apres-fiche-ordinateur.png"
+  },
+  {
+   "vue": "fiche-mobile",
+   "avant": "checks/echelle-unifiee/avant-fiche-mobile.png",
+   "apres": "checks/echelle-unifiee/apres-fiche-mobile.png"
+  },
+  {
+   "vue": "article-ordinateur",
+   "avant": "checks/echelle-unifiee/avant-article-ordinateur.png",
+   "apres": "checks/echelle-unifiee/apres-article-ordinateur.png"
+  },
+  {
+   "vue": "profils-liste-mobile",
+   "avant": "checks/echelle-unifiee/avant-profils-liste-mobile.png",
+   "apres": "checks/echelle-unifiee/apres-profils-liste-mobile.png"
+  },
+  {
+   "vue": "compte-ordinateur",
+   "avant": "checks/echelle-unifiee/avant-compte-ordinateur.png",
+   "apres": "checks/echelle-unifiee/apres-compte-ordinateur.png"
+  },
+  {
+   "vue": "filtre-mobile",
+   "avant": "checks/echelle-unifiee/avant-filtre-mobile.png",
+   "apres": "checks/echelle-unifiee/apres-filtre-mobile.png"
+  },
+  {
+   "vue": "recherche-ordinateur",
+   "avant": "checks/echelle-unifiee/avant-recherche-ordinateur.png",
+   "apres": "checks/echelle-unifiee/apres-recherche-ordinateur.png"
+  },
+  {
+   "vue": "connexion-ordinateur",
+   "avant": "checks/echelle-unifiee/avant-connexion-ordinateur.png",
+   "apres": "checks/echelle-unifiee/apres-connexion-ordinateur.png"
+  },
+  {
+   "vue": "arrivee-ordinateur",
+   "avant": "checks/echelle-unifiee/avant-arrivee-ordinateur.png",
+   "apres": "checks/echelle-unifiee/apres-arrivee-ordinateur.png"
+  },
+  {
+   "vue": "arrivee-mobile",
+   "avant": "checks/echelle-unifiee/avant-arrivee-mobile.png",
+   "apres": "checks/echelle-unifiee/apres-arrivee-mobile.png"
+  },
+  {
+   "vue": "arrivee-ar-sombre-mobile",
+   "avant": "checks/echelle-unifiee/avant-arrivee-ar-sombre-mobile.png",
+   "apres": "checks/echelle-unifiee/apres-arrivee-ar-sombre-mobile.png"
+  },
+  {
+   "vue": "arrivee-connexion-ordinateur",
+   "avant": "checks/echelle-unifiee/avant-arrivee-connexion-ordinateur.png",
+   "apres": "checks/echelle-unifiee/apres-arrivee-connexion-ordinateur.png"
+  },
+  {
+   "vue": "profil-1024-ordinateur",
+   "avant": "checks/echelle-unifiee/avant-profil-1024-ordinateur.png",
+   "apres": "checks/echelle-unifiee/apres-profil-1024-ordinateur.png"
+  },
+  {
+   "vue": "emoji-ordinateur",
+   "avant": "checks/echelle-unifiee/avant-emoji-ordinateur.png",
+   "apres": "checks/echelle-unifiee/apres-emoji-ordinateur.png"
+  },
+  {
+   "vue": "actions-commentaire-ordinateur",
+   "avant": "checks/echelle-unifiee/avant-actions-commentaire-ordinateur.png",
+   "apres": "checks/echelle-unifiee/apres-actions-commentaire-ordinateur.png"
+  }
+ ],
+ "correspondance": [
+  {
+   "jeton": "--eu-caption",
+   "palier": "12 px (13 px avec lisibilite-textes)",
+   "base": "10, 11, 11,22, 12, 13 px",
+   "composants": "métadonnées, dates et campus des cartes et fiches (11 → 12 px sur mobile), pseudos des cartes Profils (13 → 12 px), statuts et étiquettes (11 → 12 px), compteurs (compteurs du filtre 10 ou 11 → 12 px), légendes des médias et compteur de la visionneuse (13 → 12 px), « Créé par » (11 → 12 px), rôles d’auteur (13 → 12 px), Rentrée/Promotion, légendes des sélecteurs de section mobiles (10 → 12 px), petits textes du menu du compte, de la recherche (types de résultats 10 → 12 px, état 11 → 12 px) et des dialogues"
+  },
+  {
+   "jeton": "--eu-action",
+   "palier": "12 px (14 px avec lisibilite-textes)",
+   "base": "11, 12, 13 px",
+   "composants": "Favoris et Signaler (11 → 12 px), Tout sélectionner (11 → 12 px), Envoyer un message, bouton de campus du profil (« Explorer 42 Paris », 13 → 12 px), actions des commentaires, boutons de pied des dialogues Filtrer, Signaler, Message et choix du campus (13 → 12 px sur ordinateur)"
+  },
+  {
+   "jeton": "--eu-label",
+   "palier": "14 px",
+   "base": "13, 13,18, 14, 14,11, 15, 16 px",
+   "composants": "extraits des cartes (15 → 14 px sur ordinateur), pagination (13 → 14 px), tri des commentaires, choix des menus Trier et Filtrer, libellés des champs du signalement, sélecteurs de section mobiles (14–15 → 14 px), sélecteur Monde (15 → 14 px sur ordinateur, 13 → 14 px sur mobile), bouton de recherche (13 → 14 px), pseudo de la fiche profil, textes secondaires (indication des réseaux du profil 13 → 14 px), légende de la visionneuse sur mobile (13 → 14 px)"
+  },
+  {
+   "jeton": "rampe --eu-caption → --eu-label",
+   "palier": "12 → 14 px (390 → 1024 px)",
+   "base": "11,24 → 13 px",
+   "composants": "déclencheurs Filtrer, Affichage, Trier et boutons Liste/Grille (11,24 → 12 px à 390 px, 13 → 14 px sur ordinateur), noms d’auteur des cartes (12,22 → 12 px, 13 → 14 px)"
+  },
+  {
+   "jeton": "--eu-body",
+   "palier": "16 px",
+   "base": "14, 15, 16, 17 px",
+   "composants": "textes de lecture des fiches (15 → 16 px sur mobile), titres de récompenses (14 → 16 px sur mobile, 15 → 16 px sur ordinateur), boutons de l’arrivée, du compte et du dialogue de connexion (17 → 16 px sur ordinateur)"
+  },
+  {
+   "jeton": "--eu-title-3",
+   "palier": "20 px",
+   "base": "18, 19, 20, 21, 21,04, 23, 24 px",
+   "composants": "titres de blocs des fiches (19 → 20 px sur mobile), noms des cartes Profils (18 → 20 px sur mobile, 21,04 → 20 px sur ordinateur), titres des dialogues (Filtrer 21 ou 24 → 20 px, Signaler 23 → 20 px, Connexion, À propos et Message 24 → 20 px), états vides (18 → 20 px)"
+  },
+  {
+   "jeton": "rampe --eu-title-3 → --eu-title-2",
+   "palier": "20 → 28 px (390 → 1024 px)",
+   "base": "18 → 31 px",
+   "composants": "titres des cartes Projets et Chroniques (31 → 28 px sur ordinateur, 19,09 → 20 px à 390 px ; sous 390 px, les 18 à 19 px de la base sont gardés), titres en vue Liste, projets liés du profil (25 → 28 px sur ordinateur)"
+  },
+  {
+   "jeton": "aucun (rampe de la base)",
+   "palier": "22 → 28 px",
+   "base": "22 → 28 px",
+   "composants": "titres des fiches projet et chronique, inchangés"
+  },
+  {
+   "jeton": "rampe --eu-title-2 → --eu-title-1",
+   "palier": "28 → 35 px (390 → 1024 px)",
+   "base": "29 → 38 px",
+   "composants": "nom du profil (38 → 35 px sur ordinateur, 29 ou 29,8 → 28 px sur mobile)"
+  },
+  {
+   "jeton": "--eu-radius-control",
+   "palier": "12 px",
+   "base": "8, 10, 11, 14, 16, 18 px",
+   "composants": "pagination (8 px), boutons du menu d’actions d’un commentaire (10 px), Tout sélectionner (11 px), liens de navigation latérale, options du menu Trier, résultats de recherche, choix du campus, sélecteurs du Monde, champ du message, boutons de l’arrivée et du compte (14 px), options des dialogues (16 px), champ de commentaire (18 px)"
+  },
+  {
+   "jeton": "--eu-radius-surface",
+   "palier": "20 px",
+   "base": "16, 17, 18, 21, 22, 24, 28 px",
+   "composants": "cartes d’auteur (18 px), grandes images et portrait du profil (17 à 24 px), sélecteurs de section mobiles sur deux lignes (21 px), recherche ouverte (24 px), sélecteur Monde (18 px), menus et panneaux, palette d’emoji et menu d’actions d’un commentaire (16 px), dialogues Signaler et choix du campus (22 px), Filtrer et visionneuse (24 px), Connexion, À propos et Message (28 px) ; fiche campus d’Explorer et carte du campus exclues"
+  },
+  {
+   "jeton": "--eu-radius-pill",
+   "palier": "999 px",
+   "base": "8, 12 px (les autres étaient déjà en pilule)",
+   "composants": "Envoyer un message (12 px), compteurs du filtre (8 px), étiquettes, types des résultats de recherche, liens et boutons déjà arrondis"
+  },
+  {
+   "jeton": "rampe --eu-radius-control → --eu-radius-surface",
+   "palier": "12 → 20 px (2vw, rampe de la base)",
+   "base": "12 → 20 px pour les couvertures ; 18 px (grille) et 16 px (liste) pour les portraits Profils",
+   "composants": "couvertures des cartes Projets et Chroniques (inchangées), portraits des cartes Profils (18 → 12 px sur mobile, 18 → 20 px sur ordinateur)"
+  },
+  {
+   "jeton": "niveau 1 (ombre verre de la base)",
+   "palier": "0 9px 22px #183D3C12 (clair) · 0 12px 26px #0003 (sombre)",
+   "base": "inchangée pour les commandes ; boutons de l’arrivée en clair : 0 7px 20px #1B1B1B12 et 0 3px 12px #183D3C06",
+   "composants": "commandes, pastilles, dock, recherche fermée ; en clair, boutons de l’arrivée, du compte et du dialogue de connexion"
+  },
+  {
+   "jeton": "--eu-shadow-2 (niveau 2)",
+   "palier": "0 22px 64px #183D3C12 + 0 3px 12px #183D3C06 (clair) · 0 16px 48px #0003 (sombre), soit l’ombre --shadow de la base",
+   "base": "niveau 1 pour les menus, panneaux, le sélecteur Monde, le menu du compte, le menu d’actions d’un commentaire et le dialogue Filtrer ; 0 8px 24px #0002 pour la palette d’emoji ; 0 28px 90px #183D3C24 + 0 4px 14px #183D3C0A pour les autres dialogues en clair",
+   "composants": "menu du compte, menus et panneaux, recherche ouverte, sélecteur Monde, palette d’emoji, menu d’actions d’un commentaire, dialogues ; les surfaces en verre gardent leurs reflets intérieurs"
+  }
+ ]
+}

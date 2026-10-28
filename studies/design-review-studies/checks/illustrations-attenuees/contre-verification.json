@@ -1,0 +1,167 @@
+{
+ "essai": "illustrations-attenuees",
+ "petit": {
+  "avant": {
+   "meanCoverLuminance": 0.4204,
+   "overflow": false,
+   "filters": {
+    "covers": 12,
+    "dimmed": 0,
+    "undimmed": 12,
+    "otherFiltered": [
+     "IMG.",
+     "IMG."
+    ],
+    "images": 29
+   }
+  },
+  "apres": {
+   "meanCoverLuminance": 0.259,
+   "overflow": false,
+   "filters": {
+    "covers": 12,
+    "dimmed": 12,
+    "undimmed": 0,
+    "otherFiltered": [
+     "IMG.",
+     "IMG."
+    ],
+    "images": 29
+   }
+  }
+ },
+ "langue": {
+  "avant": {
+   "covers": 12,
+   "dimmed": 12,
+   "undimmed": 0,
+   "otherFiltered": [
+    "IMG.",
+    "IMG."
+   ],
+   "images": 29
+  },
+  "apres": {
+   "covers": 12,
+   "dimmed": 12,
+   "undimmed": 0,
+   "otherFiltered": [
+    "IMG.",
+    "IMG."
+   ],
+   "images": 29
+  },
+  "lang": "ar rtl"
+ },
+ "theme": {
+  "clair": {
+   "covers": 12,
+   "dimmed": 0,
+   "undimmed": 12,
+   "otherFiltered": [],
+   "images": 29
+  },
+  "sombreAgain": {
+   "covers": 12,
+   "dimmed": 12,
+   "undimmed": 0,
+   "otherFiltered": [
+    "IMG.",
+    "IMG."
+   ],
+   "images": 29
+  },
+  "theme": "dark",
+  "noReload": true
+ },
+ "images": [
+  {
+   "route": "people",
+   "avant": {
+    "covers": 0,
+    "dimmed": 0,
+    "undimmed": 0,
+    "otherFiltered": [
+     "IMG.",
+     "IMG."
+    ],
+    "images": 26
+   },
+   "apres": {
+    "covers": 0,
+    "dimmed": 0,
+    "undimmed": 0,
+    "otherFiltered": [
+     "IMG.",
+     "IMG."
+    ],
+    "images": 26
+   }
+  },
+  {
+   "route": "people/profile-leila-mansour",
+   "avant": {
+    "covers": 0,
+    "dimmed": 0,
+    "undimmed": 0,
+    "otherFiltered": [
+     "IMG.",
+     "IMG."
+    ],
+    "images": 3
+   },
+   "apres": {
+    "covers": 0,
+    "dimmed": 0,
+    "undimmed": 0,
+    "otherFiltered": [
+     "IMG.",
+     "IMG."
+    ],
+    "images": 3
+   }
+  },
+  {
+   "route": "projects/minishell-under-the-prompt?tab=media",
+   "avant": {
+    "covers": 1,
+    "dimmed": 0,
+    "undimmed": 1,
+    "otherFiltered": [
+     "IMG.",
+     "IMG."
+    ],
+    "images": 3
+   },
+   "apres": {
+    "covers": 1,
+    "dimmed": 1,
+    "undimmed": 0,
+    "otherFiltered": [
+     "IMG.",
+     "IMG."
+    ],
+    "images": 3
+   }
+  }
+ ],
+ "errors": {
+  "petit-avant": [],
+  "petit-apres": [],
+  "live": [],
+  "people-avant": [],
+  "people-apres": [],
+  "people/profile-leila-mansour-avant": [],
+  "people/profile-leila-mansour-apres": [],
+  "projects/minishell-under-the-prompt?tab=media-avant": [],
+  "projects/minishell-under-the-prompt?tab=media-apres": []
+ },
+ "passed": true,
+ "checks": {
+  "smallScreenDimmed": true,
+  "liveLanguage": true,
+  "liveTheme": true,
+  "imagesUntouched": true,
+  "noErrors": true
+ }
+}

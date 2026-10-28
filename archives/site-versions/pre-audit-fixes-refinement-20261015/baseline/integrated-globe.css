@@ -1,0 +1,24 @@
+.hg-integrated{outline:none;isolation:isolate}
+.hg-integrated:focus-visible{outline:2px solid var(--h42-color-focus);outline-offset:-5px;border-radius:32px}
+.hg-map{position:absolute;inset:0;background:transparent;--hg-edge-fade-x:0px;--hg-edge-fade-y:0px}
+.hg-map.hg-faded .maplibregl-canvas{
+ -webkit-mask-image:linear-gradient(to right,transparent,#000 var(--hg-edge-fade-x),#000 calc(100% - var(--hg-edge-fade-x)),transparent),linear-gradient(to bottom,transparent,#000 var(--hg-edge-fade-y),#000 calc(100% - var(--hg-edge-fade-y)),transparent);mask-image:linear-gradient(to right,transparent,#000 var(--hg-edge-fade-x),#000 calc(100% - var(--hg-edge-fade-x)),transparent),linear-gradient(to bottom,transparent,#000 var(--hg-edge-fade-y),#000 calc(100% - var(--hg-edge-fade-y)),transparent);-webkit-mask-composite:source-in;mask-composite:intersect}
+.hg-map .maplibregl-canvas{outline:none}
+.hg-pin{position:absolute;left:0;top:0;width:0;height:0;pointer-events:none;z-index:2}
+.hg-marker{position:absolute;left:0;top:0;transform:translate(-13px,-50%);display:flex;align-items:center;gap:10px;min-height:44px;padding:10px 16px 10px 9px;border:1px solid var(--warm-line);border-radius:99px;background:var(--h42-color-surface);color:var(--h42-color-text);box-shadow:0 8px 26px color-mix(in srgb,var(--h42-pink) 10%,transparent);font-family:inherit;font-size:14px;font-weight:500;white-space:nowrap;direction:ltr;pointer-events:auto;transition:background .25s,color .25s}
+.hg-marker-dot{display:block;flex-shrink:0;width:8px;height:8px;border-radius:50%;background:var(--h42-pink);box-shadow:0 0 0 5px color-mix(in srgb,var(--h42-pink) 12%,transparent)}
+.hg-pin:has(:hover),.hg-pin:has(:focus-visible){z-index:4}
+.hg-marker.hg-selected{background:var(--h42-color-text);color:var(--h42-color-bg)}
+.hg-marker.hg-compact{width:14px;height:14px;min-height:14px;justify-content:center;padding:0;border:0;background:transparent;box-shadow:none;transform:translate(-50%,-50%)}
+.hg-marker.hg-compact .hg-marker-label{position:absolute;left:23px;padding:9px 13px;border-radius:99px;background:var(--h42-color-surface);color:var(--h42-color-text);visibility:hidden;pointer-events:none;box-shadow:var(--shadow)}
+.hg-marker.hg-compact:hover .hg-marker-label,.hg-marker.hg-compact:focus-visible .hg-marker-label{visibility:visible}
+.hg-marker.hg-target{width:52px;height:52px;min-height:52px;justify-content:center;transform:translate(-50%,-50%);padding:0;background:color-mix(in srgb,var(--h42-pink) 8%,transparent);border:1px solid var(--h42-pink);box-shadow:0 0 0 9px color-mix(in srgb,var(--h42-pink) 7%,transparent)}
+.hg-target::before,.hg-target::after{content:'';position:absolute;pointer-events:none;background:var(--h42-pink);opacity:.65}
+.hg-target::before{height:1px;width:68px}.hg-target::after{width:1px;height:68px}
+.hg-target .hg-marker-dot{position:relative;z-index:1;width:11px;height:11px;border:2px solid var(--h42-color-surface);box-shadow:0 0 0 4px var(--h42-pink)}
+.hg-target .hg-marker-label{position:absolute;bottom:calc(100% + 18px);left:50%;transform:translateX(-50%);border-radius:99px;padding:8px 16px;background:var(--h42-color-surface);border:1px solid var(--warm-line);color:var(--h42-color-text);box-shadow:var(--shadow)}
+.map-credit{position:absolute;bottom:15px;right:40px;z-index:5;display:flex;gap:4px;align-items:center;font-size:9px;line-height:1.4;color:var(--h42-color-muted)}
+.map-credit a{color:inherit;text-decoration:none}.map-credit a:hover{text-decoration:underline}
+[dir=rtl] .map-credit{right:auto;left:40px}
+@media(max-width:700px){.map-credit,[dir=rtl] .map-credit{left:0;right:0;justify-content:center;bottom:3px;font-size:8px}.hg-marker{font-size:12px;gap:8px}.hg-target .hg-marker-label{max-width:230px;overflow:hidden;text-overflow:ellipsis}}
+@media(prefers-reduced-motion:reduce){.hg-marker{transition:none}}

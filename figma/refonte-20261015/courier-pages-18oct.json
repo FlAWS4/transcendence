@@ -1,0 +1,908 @@
+{
+ "note": "18 octobre, après la pause : l'entrée part par la course wvytxjod5 (préalables 1175, 1190 puis chaînes 1176-1188). Ensuite 'pages' : préalables = les 10 appels de variables (textes et ombres) d'Explorer, Projets, Profils, Chroniques, Compte et Awards, dans l'ordre ; puis chaînes en parallèle de ces pages et des cartes de Projets à 300 px (1410-1415, une chaîne, l'ensemble se combine au dernier appel). Enfin 'sombres' : les clones sombres de chaque page (1189, 1234, 1291, 1306, 1329, 1392, 1408), une fois ses cadres clairs posés. « Éléments communs » est régénéré après l'enregistrement des cartes à 300 px. Les cadres tenus pour les styles tabulaires ne sont dans aucun de ces appels. 20 h 15 : la première course « pages » s'est arrêtée à 1236 (U+202F recopié en espace ordinaire, voir _superseded/appels-espaces-fines-recopiees-20261018) ; 1236 est remplacé par 1416, 1287 et 1288 par 1417 et 1418. « sombres » (révisé à 20 h 20) : 1189 envoyé à 20 h 11 ; chaque clone sombre est suivi, sur la même page, de l'appel qui place les rendus antérieurs des cadres tenus à leur emplacement du nouveau plan (1419 à 1422). 20 h 58 : cartes à 300 px enregistrées (24 variantes, jeu 599:133728) ; « Éléments communs » régénéré (1424 à 1436, 24 instances de cartes à 300 px) et envoyé par la course « communs » avec le rangement de la page « Composants » (1423) ; 1435 rejoint « sombres ». 21 h 35 UTC : tout est envoyé (237 appels du plan dans calls/done/, 1257 renvoyé à l'identique après une recopie inexacte) ; vérification des huit pages faite (verification/<zone>/synthese-rendu-complet.md).",
+ "entree-sombre": {
+  "base": "/home/le-rif/Bureau/Transcendence/figma/refonte-20261015",
+  "transcripts": "/home/le-rif/.claude/projects/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/subagents",
+  "tries": 4,
+  "context": "Rendu des pages de la refonte Figma demandé par l'utilisateur (« reprend ce qu'on faisait », 18 octobre) : ces appels ont été générés et simulés par la session principale pour être envoyés maintenant.",
+  "chains": [
+   [
+    {
+     "file": "1189-dark-entrance.js"
+    }
+   ]
+  ]
+ },
+ "explorer": {
+  "base": "/home/le-rif/Bureau/Transcendence/figma/refonte-20261015",
+  "transcripts": "/home/le-rif/.claude/projects/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/subagents",
+  "tries": 4,
+  "context": "Rendu des pages de la refonte Figma demandé par l'utilisateur (« reprend ce qu'on faisait », 18 octobre) : ces appels ont été générés et simulés par la session principale pour être envoyés maintenant.",
+  "pre": [
+   {
+    "file": "1235-effets.js"
+   }
+  ],
+  "chains": [
+   [
+    {
+     "file": "1216-explorer-lot.js"
+    },
+    {
+     "file": "1217-explorer-lot.js"
+    },
+    {
+     "file": "1218-explorer-lot.js"
+    },
+    {
+     "file": "1219-explorer-lot.js"
+    },
+    {
+     "file": "1220-explorer-lot.js"
+    }
+   ],
+   [
+    {
+     "file": "1221-explorer-lot.js"
+    },
+    {
+     "file": "1222-explorer-lot.js"
+    },
+    {
+     "file": "1223-explorer-lot.js"
+    },
+    {
+     "file": "1224-explorer-lot.js"
+    },
+    {
+     "file": "1225-explorer-lot.js"
+    }
+   ],
+   [
+    {
+     "file": "1226-explorer-lot.js"
+    },
+    {
+     "file": "1227-explorer-lot.js"
+    },
+    {
+     "file": "1228-explorer-lot.js"
+    },
+    {
+     "file": "1229-explorer-lot.js"
+    }
+   ],
+   [
+    {
+     "file": "1230-explorer-lot.js"
+    },
+    {
+     "file": "1231-explorer-lot.js"
+    },
+    {
+     "file": "1232-fen-tre-autour-du-campus-ordinateur-clair-english-1of2.js"
+    },
+    {
+     "file": "1232-fen-tre-autour-du-campus-ordinateur-clair-english-2of2.js"
+    },
+    {
+     "file": "1233-explorer-lot.js"
+    }
+   ]
+  ]
+ },
+ "explorer-sombre": {
+  "base": "/home/le-rif/Bureau/Transcendence/figma/refonte-20261015",
+  "transcripts": "/home/le-rif/.claude/projects/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/subagents",
+  "tries": 4,
+  "context": "Rendu des pages de la refonte Figma demandé par l'utilisateur (« reprend ce qu'on faisait », 18 octobre) : ces appels ont été générés et simulés par la session principale pour être envoyés maintenant.",
+  "chains": [
+   [
+    {
+     "file": "1234-dark-explorer.js"
+    }
+   ]
+  ]
+ },
+ "pages": {
+  "base": "/home/le-rif/Bureau/Transcendence/figma/refonte-20261015",
+  "transcripts": "/home/le-rif/.claude/projects/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/subagents",
+  "tries": 4,
+  "context": "Rendu des pages de la refonte Figma demandé par l'utilisateur (« reprend ce qu'on faisait », 18 octobre) : ces appels ont été générés et simulés par la session principale pour être envoyés maintenant.",
+  "pre": [
+   {
+    "file": "1292-effets.js"
+   },
+   {
+    "file": "1293-variables-textes.js"
+   },
+   {
+    "file": "1307-effets.js"
+   },
+   {
+    "file": "1308-variables-textes.js"
+   },
+   {
+    "file": "1330-effets.js"
+   },
+   {
+    "file": "1331-variables-textes.js"
+   },
+   {
+    "file": "1393-effets.js"
+   },
+   {
+    "file": "1409-effets.js"
+   },
+   {
+    "file": "1416-variables-textes.js"
+   }
+  ],
+  "chains": [
+   [
+    {
+     "file": "1216-explorer-lot.js"
+    },
+    {
+     "file": "1217-explorer-lot.js"
+    },
+    {
+     "file": "1218-explorer-lot.js"
+    },
+    {
+     "file": "1219-explorer-lot.js"
+    },
+    {
+     "file": "1220-explorer-lot.js"
+    }
+   ],
+   [
+    {
+     "file": "1221-explorer-lot.js"
+    },
+    {
+     "file": "1222-explorer-lot.js"
+    },
+    {
+     "file": "1223-explorer-lot.js"
+    },
+    {
+     "file": "1224-explorer-lot.js"
+    },
+    {
+     "file": "1225-explorer-lot.js"
+    }
+   ],
+   [
+    {
+     "file": "1226-explorer-lot.js"
+    },
+    {
+     "file": "1227-explorer-lot.js"
+    },
+    {
+     "file": "1228-explorer-lot.js"
+    },
+    {
+     "file": "1229-explorer-lot.js"
+    }
+   ],
+   [
+    {
+     "file": "1230-explorer-lot.js"
+    },
+    {
+     "file": "1231-explorer-lot.js"
+    },
+    {
+     "file": "1232-fen-tre-autour-du-campus-ordinateur-clair-english-1of2.js"
+    },
+    {
+     "file": "1232-fen-tre-autour-du-campus-ordinateur-clair-english-2of2.js"
+    },
+    {
+     "file": "1233-explorer-lot.js"
+    }
+   ],
+   [
+    {
+     "file": "1237-projects-lot.js"
+    },
+    {
+     "file": "1238-projects-lot.js"
+    },
+    {
+     "file": "1239-projects-lot.js"
+    },
+    {
+     "file": "1240-projects-lot.js"
+    },
+    {
+     "file": "1241-projects-lot.js"
+    },
+    {
+     "file": "1242-projects-lot.js"
+    },
+    {
+     "file": "1243-projects-lot.js"
+    },
+    {
+     "file": "1244-projects-lot.js"
+    },
+    {
+     "file": "1245-projects-lot.js"
+    },
+    {
+     "file": "1246-projects-lot.js"
+    },
+    {
+     "file": "1247-projects-lot.js"
+    },
+    {
+     "file": "1248-projects-lot.js"
+    }
+   ],
+   [
+    {
+     "file": "1249-projects-lot.js"
+    },
+    {
+     "file": "1250-projects-lot.js"
+    },
+    {
+     "file": "1251-projects-lot.js"
+    },
+    {
+     "file": "1252-projects-lot.js"
+    },
+    {
+     "file": "1253-projects-lot.js"
+    },
+    {
+     "file": "1254-projects-lot.js"
+    },
+    {
+     "file": "1255-projects-lot.js"
+    },
+    {
+     "file": "1256-projects-lot.js"
+    },
+    {
+     "file": "1257-projects-lot.js"
+    },
+    {
+     "file": "1258-projects-lot.js"
+    },
+    {
+     "file": "1259-projects-lot.js"
+    },
+    {
+     "file": "1260-projects-lot.js"
+    },
+    {
+     "file": "1261-projects-lot.js"
+    }
+   ],
+   [
+    {
+     "file": "1262-projects-lot.js"
+    },
+    {
+     "file": "1263-projects-lot.js"
+    },
+    {
+     "file": "1264-projects-lot.js"
+    },
+    {
+     "file": "1265-projects-lot.js"
+    },
+    {
+     "file": "1266-projects-lot.js"
+    },
+    {
+     "file": "1267-projects-lot.js"
+    },
+    {
+     "file": "1268-projects-lot.js"
+    },
+    {
+     "file": "1269-projects-lot.js"
+    },
+    {
+     "file": "1270-projects-lot.js"
+    },
+    {
+     "file": "1271-projects-lot.js"
+    },
+    {
+     "file": "1272-projects-lot.js"
+    },
+    {
+     "file": "1273-projects-lot.js"
+    }
+   ],
+   [
+    {
+     "file": "1274-projects-lot.js"
+    },
+    {
+     "file": "1275-projects-lot.js"
+    },
+    {
+     "file": "1276-projects-lot.js"
+    },
+    {
+     "file": "1277-projects-lot.js"
+    },
+    {
+     "file": "1278-projects-lot.js"
+    },
+    {
+     "file": "1279-projects-lot.js"
+    },
+    {
+     "file": "1280-projects-lot.js"
+    },
+    {
+     "file": "1281-projects-lot.js"
+    },
+    {
+     "file": "1282-projects-lot.js"
+    },
+    {
+     "file": "1283-choisir-un-campus-ordinateur-clair-1of2.js"
+    },
+    {
+     "file": "1283-choisir-un-campus-ordinateur-clair-2of2.js"
+    },
+    {
+     "file": "1284-choisir-un-campus-mobile-clair-1of2.js"
+    },
+    {
+     "file": "1284-choisir-un-campus-mobile-clair-2of2.js"
+    }
+   ],
+   [
+    {
+     "file": "1285-choisir-un-campus-ordinateur-clair-english-1of2.js"
+    },
+    {
+     "file": "1285-choisir-un-campus-ordinateur-clair-english-2of2.js"
+    },
+    {
+     "file": "1286-choisir-un-campus-mobile-clair-english-1of2.js"
+    },
+    {
+     "file": "1286-choisir-un-campus-mobile-clair-english-2of2.js"
+    },
+    {
+     "file": "1417-signaler-ordinateur-clair-1of2.js"
+    },
+    {
+     "file": "1417-signaler-ordinateur-clair-2of2.js"
+    },
+    {
+     "file": "1418-signaler-mobile-clair-1of2.js"
+    },
+    {
+     "file": "1418-signaler-mobile-clair-2of2.js"
+    },
+    {
+     "file": "1289-signaler-ordinateur-clair-english-1of2.js"
+    },
+    {
+     "file": "1289-signaler-ordinateur-clair-english-2of2.js"
+    },
+    {
+     "file": "1290-signaler-mobile-clair-english-1of2.js"
+    },
+    {
+     "file": "1290-signaler-mobile-clair-english-2of2.js"
+    }
+   ],
+   [
+    {
+     "file": "1294-profiles-lot.js"
+    },
+    {
+     "file": "1295-profiles-lot.js"
+    },
+    {
+     "file": "1296-profiles-lot.js"
+    },
+    {
+     "file": "1297-profiles-lot.js"
+    },
+    {
+     "file": "1298-profiles-lot.js"
+    },
+    {
+     "file": "1299-profiles-lot.js"
+    }
+   ],
+   [
+    {
+     "file": "1300-profiles-lot.js"
+    },
+    {
+     "file": "1301-profiles-lot.js"
+    },
+    {
+     "file": "1302-profiles-lot.js"
+    },
+    {
+     "file": "1303-profiles-lot.js"
+    },
+    {
+     "file": "1304-profiles-lot.js"
+    },
+    {
+     "file": "1305-profiles-lot.js"
+    }
+   ],
+   [
+    {
+     "file": "1309-journal-lot.js"
+    },
+    {
+     "file": "1310-journal-lot.js"
+    },
+    {
+     "file": "1311-journal-lot.js"
+    },
+    {
+     "file": "1312-journal-lot.js"
+    },
+    {
+     "file": "1313-journal-lot.js"
+    },
+    {
+     "file": "1314-journal-lot.js"
+    },
+    {
+     "file": "1315-journal-lot.js"
+    },
+    {
+     "file": "1316-journal-lot.js"
+    },
+    {
+     "file": "1317-journal-lot.js"
+    },
+    {
+     "file": "1318-journal-lot.js"
+    }
+   ],
+   [
+    {
+     "file": "1319-journal-lot.js"
+    },
+    {
+     "file": "1320-journal-lot.js"
+    },
+    {
+     "file": "1321-journal-lot.js"
+    },
+    {
+     "file": "1322-journal-lot.js"
+    },
+    {
+     "file": "1323-journal-lot.js"
+    },
+    {
+     "file": "1324-journal-lot.js"
+    },
+    {
+     "file": "1325-journal-lot.js"
+    },
+    {
+     "file": "1326-journal-lot.js"
+    },
+    {
+     "file": "1327-journal-lot.js"
+    },
+    {
+     "file": "1328-journal-lot.js"
+    }
+   ],
+   [
+    {
+     "file": "1332-compte-lot.js"
+    },
+    {
+     "file": "1333-compte-lot.js"
+    },
+    {
+     "file": "1334-compte-lot.js"
+    },
+    {
+     "file": "1335-compte-lot.js"
+    },
+    {
+     "file": "1336-compte-lot.js"
+    },
+    {
+     "file": "1337-compte-lot.js"
+    },
+    {
+     "file": "1338-compte-lot.js"
+    },
+    {
+     "file": "1339-compte-lot.js"
+    },
+    {
+     "file": "1340-compte-lot.js"
+    },
+    {
+     "file": "1341-compte-lot.js"
+    },
+    {
+     "file": "1342-compte-lot.js"
+    },
+    {
+     "file": "1343-compte-lot.js"
+    },
+    {
+     "file": "1344-compte-lot.js"
+    },
+    {
+     "file": "1345-compte-lot.js"
+    }
+   ],
+   [
+    {
+     "file": "1346-compte-lot.js"
+    },
+    {
+     "file": "1347-compte-lot.js"
+    },
+    {
+     "file": "1348-compte-lot.js"
+    },
+    {
+     "file": "1349-compte-lot.js"
+    },
+    {
+     "file": "1350-compte-lot.js"
+    },
+    {
+     "file": "1351-compte-lot.js"
+    },
+    {
+     "file": "1352-compte-lot.js"
+    },
+    {
+     "file": "1353-compte-lot.js"
+    },
+    {
+     "file": "1354-compte-lot.js"
+    },
+    {
+     "file": "1355-compte-lot.js"
+    },
+    {
+     "file": "1356-compte-lot.js"
+    },
+    {
+     "file": "1357-compte-lot.js"
+    },
+    {
+     "file": "1358-compte-lot.js"
+    },
+    {
+     "file": "1359-compte-lot.js"
+    }
+   ],
+   [
+    {
+     "file": "1360-connexion-simul-e-ordinateur-clair-1of3.js"
+    },
+    {
+     "file": "1360-connexion-simul-e-ordinateur-clair-2of3.js"
+    },
+    {
+     "file": "1360-connexion-simul-e-ordinateur-clair-3of3.js"
+    },
+    {
+     "file": "1361-connexion-simul-e-ordinateur-sombre-1of3.js"
+    },
+    {
+     "file": "1361-connexion-simul-e-ordinateur-sombre-2of3.js"
+    },
+    {
+     "file": "1361-connexion-simul-e-ordinateur-sombre-3of3.js"
+    },
+    {
+     "file": "1362-connexion-simul-e-mobile-clair-1of2.js"
+    },
+    {
+     "file": "1362-connexion-simul-e-mobile-clair-2of2.js"
+    },
+    {
+     "file": "1363-connexion-simul-e-mobile-sombre-1of2.js"
+    },
+    {
+     "file": "1363-connexion-simul-e-mobile-sombre-2of2.js"
+    },
+    {
+     "file": "1364-connexion-simul-e-ordinateur-clair-english-1of3.js"
+    },
+    {
+     "file": "1364-connexion-simul-e-ordinateur-clair-english-2of3.js"
+    },
+    {
+     "file": "1364-connexion-simul-e-ordinateur-clair-english-3of3.js"
+    }
+   ],
+   [
+    {
+     "file": "1365-connexion-simul-e-ordinateur-sombre-english-1of3.js"
+    },
+    {
+     "file": "1365-connexion-simul-e-ordinateur-sombre-english-2of3.js"
+    },
+    {
+     "file": "1365-connexion-simul-e-ordinateur-sombre-english-3of3.js"
+    },
+    {
+     "file": "1366-connexion-simul-e-mobile-clair-english-1of2.js"
+    },
+    {
+     "file": "1366-connexion-simul-e-mobile-clair-english-2of2.js"
+    },
+    {
+     "file": "1367-connexion-simul-e-mobile-sombre-english-1of2.js"
+    },
+    {
+     "file": "1367-connexion-simul-e-mobile-sombre-english-2of2.js"
+    },
+    {
+     "file": "1368-cr-ation-de-compte-simul-e-ordinateur-clair-1of3.js"
+    },
+    {
+     "file": "1368-cr-ation-de-compte-simul-e-ordinateur-clair-2of3.js"
+    },
+    {
+     "file": "1368-cr-ation-de-compte-simul-e-ordinateur-clair-3of3.js"
+    },
+    {
+     "file": "1369-cr-ation-de-compte-simul-e-ordinateur-sombre-1of3.js"
+    },
+    {
+     "file": "1369-cr-ation-de-compte-simul-e-ordinateur-sombre-2of3.js"
+    },
+    {
+     "file": "1369-cr-ation-de-compte-simul-e-ordinateur-sombre-3of3.js"
+    },
+    {
+     "file": "1370-cr-ation-de-compte-simul-e-mobile-clair-1of2.js"
+    },
+    {
+     "file": "1370-cr-ation-de-compte-simul-e-mobile-clair-2of2.js"
+    }
+   ],
+   [
+    {
+     "file": "1371-cr-ation-de-compte-simul-e-mobile-sombre-1of2.js"
+    },
+    {
+     "file": "1371-cr-ation-de-compte-simul-e-mobile-sombre-2of2.js"
+    },
+    {
+     "file": "1372-cr-ation-de-compte-simul-e-ordinateur-clair-englis-1of3.js"
+    },
+    {
+     "file": "1372-cr-ation-de-compte-simul-e-ordinateur-clair-englis-2of3.js"
+    },
+    {
+     "file": "1372-cr-ation-de-compte-simul-e-ordinateur-clair-englis-3of3.js"
+    },
+    {
+     "file": "1373-cr-ation-de-compte-simul-e-ordinateur-sombre-engli-1of3.js"
+    },
+    {
+     "file": "1373-cr-ation-de-compte-simul-e-ordinateur-sombre-engli-2of3.js"
+    },
+    {
+     "file": "1373-cr-ation-de-compte-simul-e-ordinateur-sombre-engli-3of3.js"
+    },
+    {
+     "file": "1374-cr-ation-de-compte-simul-e-mobile-clair-english-1of2.js"
+    },
+    {
+     "file": "1374-cr-ation-de-compte-simul-e-mobile-clair-english-2of2.js"
+    },
+    {
+     "file": "1375-cr-ation-de-compte-simul-e-mobile-sombre-english-1of2.js"
+    },
+    {
+     "file": "1375-cr-ation-de-compte-simul-e-mobile-sombre-english-2of2.js"
+    },
+    {
+     "file": "1376-compte-lot.js"
+    },
+    {
+     "file": "1377-compte-lot.js"
+    }
+   ],
+   [
+    {
+     "file": "1378-compte-lot.js"
+    },
+    {
+     "file": "1379-compte-lot.js"
+    },
+    {
+     "file": "1380-compte-lot.js"
+    },
+    {
+     "file": "1381-compte-lot.js"
+    },
+    {
+     "file": "1382-compte-lot.js"
+    },
+    {
+     "file": "1383-compte-lot.js"
+    },
+    {
+     "file": "1384-compte-lot.js"
+    },
+    {
+     "file": "1385-compte-lot.js"
+    },
+    {
+     "file": "1386-compte-lot.js"
+    },
+    {
+     "file": "1387-compte-lot.js"
+    },
+    {
+     "file": "1388-compte-lot.js"
+    },
+    {
+     "file": "1389-compte-lot.js"
+    },
+    {
+     "file": "1390-compte-lot.js"
+    },
+    {
+     "file": "1391-compte-lot.js"
+    }
+   ],
+   [
+    {
+     "file": "1407-awards-lot.js"
+    }
+   ],
+   [
+    {
+     "file": "1410-bibliotheque-carte-projets-300-px.js"
+    },
+    {
+     "file": "1411-bibliotheque-carte-projets-300-px.js"
+    },
+    {
+     "file": "1412-bibliotheque-carte-projets-300-px.js"
+    },
+    {
+     "file": "1413-bibliotheque-carte-projets-300-px.js"
+    },
+    {
+     "file": "1414-bibliotheque-carte-projets-300-px.js"
+    },
+    {
+     "file": "1415-bibliotheque-carte-projets-300-px.js"
+    }
+   ]
+  ]
+ },
+ "sombres": {
+  "base": "/home/le-rif/Bureau/Transcendence/figma/refonte-20261015",
+  "transcripts": "/home/le-rif/.claude/projects/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/subagents",
+  "tries": 4,
+  "context": "Rendu des pages de la refonte Figma demandé par l'utilisateur (« reprend ce qu'on faisait », 18 octobre) : ces appels ont été générés et simulés par la session principale pour être envoyés maintenant.",
+  "chains": [
+   [
+    {
+     "file": "1234-dark-explorer.js"
+    },
+    {
+     "file": "1419-tenus-a-leur-place-explorer.js"
+    }
+   ],
+   [
+    {
+     "file": "1291-dark-projects.js"
+    },
+    {
+     "file": "1420-tenus-a-leur-place-projects.js"
+    }
+   ],
+   [
+    {
+     "file": "1306-dark-profiles.js"
+    },
+    {
+     "file": "1421-tenus-a-leur-place-profiles.js"
+    }
+   ],
+   [
+    {
+     "file": "1329-dark-journal.js"
+    },
+    {
+     "file": "1422-tenus-a-leur-place-journal.js"
+    }
+   ],
+   [
+    {
+     "file": "1392-dark-compte.js"
+    }
+   ],
+   [
+    {
+     "file": "1408-dark-awards.js"
+    }
+   ],
+   [
+    {
+     "file": "1435-dark-communs.js"
+    }
+   ]
+  ]
+ },
+ "communs": {
+  "base": "/home/le-rif/Bureau/Transcendence/figma/refonte-20261015",
+  "transcripts": "/home/le-rif/.claude/projects/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/subagents",
+  "tries": 4,
+  "context": "Rendu des pages de la refonte Figma demandé par l'utilisateur (« reprend ce qu'on faisait », 18 octobre) : ces appels ont été générés et simulés par la session principale pour être envoyés maintenant.",
+  "pre": [
+   {
+    "file": "1424-variables-textes.js"
+   },
+   {
+    "file": "1436-effets.js"
+   }
+  ],
+  "chains": [
+   [
+    {
+     "file": "1425-communs-lot.js"
+    },
+    {
+     "file": "1426-communs-lot.js"
+    },
+    {
+     "file": "1427-communs-lot.js"
+    },
+    {
+     "file": "1428-communs-lot.js"
+    },
+    {
+     "file": "1429-communs-lot.js"
+    }
+   ],
+   [
+    {
+     "file": "1430-communs-lot.js"
+    },
+    {
+     "file": "1431-communs-lot.js"
+    },
+    {
+     "file": "1432-communs-lot.js"
+    },
+    {
+     "file": "1433-communs-lot.js"
+    },
+    {
+     "file": "1434-communs-lot.js"
+    }
+   ],
+   [
+    {
+     "file": "1423-rangement-composants.js"
+    }
+   ]
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-10",
+  "purpose": "Sources before technology filtering",
+  "files": [
+    {
+      "path": "content-filters.mjs",
+      "sha256": "ec67ed465dd7140485b20b1c427499d433560066d92d50e044f0b490122ce3de"
+    },
+    {
+      "path": "content-preferences.mjs",
+      "sha256": "8e974297b96387eda775098bdf2ce4b163131537d0cb26046ce9e4e1bbf61f12"
+    },
+    {
+      "path": "profile-sections.mjs",
+      "sha256": "95f553b5e23f6796751296d2e03ba59d262187541a8ecdff36357a6f4f373c9c"
+    },
+    {
+      "path": "welcome.mjs",
+      "sha256": "9b2b879d5c50ad2ba3e4ffa9fcf52b61b3773bc5c1b0f3753ee40b025bb8e69e"
+    },
+    {
+      "path": "tests/content-filters.test.mjs",
+      "sha256": "6cc2b441944719be951543ad0b67cc3fdf037fabda5d84487a8c9990c7bf4c62"
+    },
+    {
+      "path": "tests/content-preferences.test.mjs",
+      "sha256": "bcb2d5a48ed31beb6a9e452ecb6f0dde0e23f7eed41f3eeb2808eb25cf01b30e"
+    },
+    {
+      "path": "tests/profile-sections.test.mjs",
+      "sha256": "97259079c7e2078cd09bc2c40bc86272033698047af70cfcbdba9866d1ded36b"
+    }
+  ]
+}

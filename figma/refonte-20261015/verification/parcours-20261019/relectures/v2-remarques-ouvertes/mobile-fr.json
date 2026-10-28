@@ -1,0 +1,226 @@
+[
+ {
+  "board": "_Où_veux-tu_aller_—_Mobile_·_Clair__scope-popover.png",
+  "zone": "Fermer ; À côté du menu",
+  "problem": "arrivée douteuse",
+  "detail": "En v1, ces zones revenaient à l'écran précédent. Elles mènent désormais à Explorer · Monde (l'écran sous le panneau), parce que la zone « Portée » du menu à trois points ouvre aussi ce panneau. Or « Où veux-tu aller ? » s'ouvre depuis 44 cadres (listes, fiches, rubriques, pages membres) : fermer le panneau ouvert depuis Liste des projets ou une fiche emmène sur le globe. Ce cadre ne fait pas partie des cas listés par la règle « écran sous la fenêtre ».",
+  "severity": "bloquant"
+ },
+ {
+  "board": "Visionneuse_de_médias_—_Mobile_·_Clair__viewer.png",
+  "zone": "Fermer le média ; À côté de la fenêtre",
+  "problem": "arrivée douteuse",
+  "detail": "En v1, ces zones revenaient à l'écran précédent. Elles mènent maintenant à Fiche projet · projet à campus unique, parce que la photo de la fiche campus ouvre aussi la visionneuse. Celle-ci s'ouvre depuis 18 cadres (portrait de Leïla et rubriques du profil, illustrations de la Chronique et de ft_transcendence, pages membres…) : fermer ramène toujours sur minishell. Même depuis la fiche campus, l'écran précédent serait le bon.",
+  "severity": "bloquant"
+ },
+ {
+  "board": "Signaler_—_Mobile_·_Clair__report.png",
+  "zone": "Fermer ; Annuler ; À côté de la fenêtre",
+  "problem": "arrivée douteuse",
+  "detail": "En v1, ces zones revenaient à l'écran précédent. Elles mènent maintenant à Fiche projet (ft_transcendence, visiteur), parce que « Signaler » du menu à trois points ouvre aussi cette fenêtre. Elle s'ouvre depuis 18 cadres : minishell et ses rubriques, Chronique et ses rubriques, Fiche projet · membre, Chronique · membre, suggestions de mention. Fermer un signalement ouvert depuis une chronique ou une page membre emmène sur ft_transcendence.",
+  "severity": "bloquant"
+ },
+ {
+  "board": "Panneau_du_compte_·_visiteur_—_Mobile_·_Clair__account-visitor.png",
+  "zone": "Fermer ; Compte · fermer ; À côté du menu",
+  "problem": "arrivée douteuse",
+  "detail": "En v1, ces zones revenaient en arrière. Elles mènent toujours à Liste des projets (l'écran sous le panneau), parce que « ‹ Retour » des sous-panneaux rouvre ce panneau. Or le panneau s'ouvre depuis 40 cadres visiteur (Explorer, fiches, chroniques, profils…) : le fermer depuis Explorer · Monde ou une fiche emmène sur la liste des projets. C'est à arbitrer avec la règle des sous-panneaux du compte.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Fenêtre_Autour_du_campus_—_Mobile_·_Clair__campus-window.png",
+  "zone": "Fermer la carte ; À côté de la fenêtre",
+  "problem": "arrivée douteuse",
+  "detail": "En v1, ces zones revenaient en arrière. Elles mènent maintenant à Fiche projet · projet à campus unique, parce que « Choisir un campus » ouvre aussi cette fenêtre. Mais « Explorer 42 Paris / 42 Tokyo » l'ouvre directement depuis 17 cadres (Chronique et ses rubriques, fiche et rubriques de profil, Compte, pages membres, rubriques de minishell) : la fermer depuis une chronique ou un profil emmène sur minishell.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Menu_à_trois_points_d_un_commentaire_—_Mobile_·_Clair__comment-menu.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Ce menu n'a ni bandes « à côté du menu » ni zones de page : seuls ⋮, « Signaler » et « Portée » réagissent. Logo, Compte, menu du bas, recherche et dé sont visibles sans zone, et un clic à côté ne referme pas le menu, alors que le site le referme. Les autres menus ouverts (tris, sélecteurs) ont ces zones.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Réalisation_—_Mobile_·_Clair__project-implementation.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Le sélecteur « Dans ce projet » des rubriques de minishell est toujours sans zone : Réalisation, Médias, Tester le projet et lien enregistré, Commentaires et Commentaires · avec un fil, ainsi que les états suggestions de mention, tri ouvert et menu à trois points. Depuis une rubrique, on ne peut ni changer de rubrique ni revenir à la vue d'ensemble, sauf par Retour aux projets puis la carte. Le cadre « sélecteur ouvert », relevé une fois, pourrait servir.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Projets_—_Mobile_·_Clair__profile-projects.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Le sélecteur « Dans ce profil » des rubriques Projets, Parcours et Contribution n'a pas de zone. Pourtant, Fiche profil · sélecteur de rubriques ouvert montre le même profil (Leïla). On ne peut pas passer d'une rubrique à l'autre ni revenir à la vue d'ensemble.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Fiche_projet_·_projet_à_campus_unique_—_Mobile_·_Clair__project-single.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Le sélecteur « Dans ce projet · Vue d’ensemble » de minishell n'a toujours pas de zone : ses propres rubriques ne s'ouvrent que depuis le sélecteur de ft_transcendence.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Commentaires_·_suggestions_de_mention_—_Mobile_·_Clair__mention-picker.png",
+  "zone": "Menu du bas ; Recherche ; Dé",
+  "problem": "trop petite ou trop grande",
+  "detail": "La liste de mentions est découpée comme si elle couvrait l'écran jusqu'à y 793. Les zones du menu du bas ne gardent que leurs 27 px du bas (libellés), et la recherche et le dé n'ont plus de zone. Or la recherche, le dé et le menu du bas sont dessinés au-dessus de la liste, et ils avaient leurs zones entières en v1.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Recherche_·_ouverte_—_Mobile_·_Clair__search-open.png",
+  "zone": "Résultat · Leïla Mansour",
+  "problem": "élément caché",
+  "detail": "Bande de 14 px (y 740–754) sur la marge vide au bas du panneau : le résultat Leïla Mansour n'est pas visible, le panneau ne défilant pas. Un clic sous « Suivre un événement » ouvre Fiche profil sans aucun indice visible.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Recherche_·_ouverte_—_Mobile_·_Clair__search-open.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Au-dessus du panneau, « Affichage » et « Trier » de la liste sont visibles sans zone, alors que « Filtrer », juste à côté, garde la sienne.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Panneau_du_compte_·_visiteur_—_Mobile_·_Clair__account-visitor.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Le dé de la liste reste visible sans zone à côté des panneaux du compte, alors que la recherche voisine en a une. C'est le cas sur le panneau visiteur, le panneau membre, Paramètres, Thème, Langue, Messagerie et Notifications. Sur le site, il ferme le panneau puis tire une fiche ; ici, le clic ne fait que fermer.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Paramètres_—_Mobile_·_Clair__account-settings.png",
+  "zone": "Compte",
+  "problem": "arrivée douteuse",
+  "detail": "Dans Paramètres, Thème et Langue, l'avatar rouvre Panneau du compte · visiteur. Sur le site, un second clic sur l'avatar referme le menu (account-menu.mjs), comme « Fermer ».",
+  "severity": "mineur"
+ },
+ {
+  "board": "Messagerie_—_Mobile_·_Clair__messages.png",
+  "zone": "Fermer ; À côté du menu",
+  "problem": "arrivée douteuse",
+  "detail": "Messagerie, Notifications et Panneau du compte · membre s'ouvrent les uns depuis les autres par les boutons de l'en-tête, et leur fermeture revient en arrière. Ainsi, panneau du compte → Messagerie → Fermer rouvre le panneau du compte, alors que le site referme tout et laisse la page.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Liste_des_profils_·_dernière_page_—_Mobile_·_Clair__people-last-page.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Aucune carte de profil n'a de zone, alors que la dernière page des projets a reçu les siennes (vers la fiche relevée).",
+  "severity": "mineur"
+ },
+ {
+  "board": "Fiche_campus_·_déployée_—_Mobile_·_Clair__campus-sheet-expanded.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "La poignée en haut de la fiche déployée, qui la replie, n'a pas de zone, alors que la fiche repliée est relevée et que sa poignée mène bien à la fiche déployée.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Commentaires_·_avec_un_fil_—_Mobile_·_Clair__article-comments-thread.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "« Trier les commentaires » de la chronique n'a pas de zone, alors que le ⋮ du même fil mène déjà au menu relevé côté projet. Commentaires · tri ouvert pourrait servir de la même façon.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Liste_des_chroniques_—_Mobile_·_Clair__journal.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "La pagination « Page 1 sur 7 » reste sans zone, ici comme sur la liste membre, faute de cadre de page suivante : il faudrait une capture, ou accepter ce manque.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Liste_des_profils_·_dernière_page_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "toujours là (v1)",
+  "detail": "« Page 1 » a maintenant une zone, mais aucune carte de profil n'en a, alors que la dernière page des projets a reçu les siennes. Affichage et Trier restent sans zone, ce qui se défend : leurs variantes ne sont relevées qu'en page 1.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Fiche_projet_·_projet_à_campus_unique_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "toujours là (v1)",
+  "detail": "Le sélecteur « Dans ce projet · Vue d’ensemble » de minishell n'a toujours pas de zone. Ses rubriques ne s'ouvrent que depuis le sélecteur de ft_transcendence.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Commentaires_·_avec_un_fil_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "toujours là (v1)",
+  "detail": "« Retour aux projets », « Signaler » et « Explorer 42 Paris » ont leurs zones. Le sélecteur « Dans ce projet · Commentaires » n'en a toujours pas, ni sur les états « suggestions de mention », « tri ouvert » et « menu à trois points ». La version chronique a ses trois commandes, et son sélecteur relève du compromis.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Commentaires_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "toujours là (v1)",
+  "detail": "Retour, Signaler et Explorer 42 Paris sont corrigés, mais le sélecteur « Dans ce projet » reste sans zone. La version chronique est conforme au compromis.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Médias_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "toujours là (v1)",
+  "detail": "Retour, Signaler et Explorer 42 Paris sont corrigés, mais le sélecteur « Dans ce projet · Médias » reste sans zone. La version chronique est conforme au compromis.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Réalisation_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "toujours là (v1)",
+  "detail": "Retour, Signaler et Explorer 42 Paris sont corrigés, mais le sélecteur « Dans ce projet · Réalisation » reste sans zone.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Tester_le_projet_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "toujours là (v1)",
+  "detail": "Retour, Signaler et Explorer 42 Paris sont corrigés, mais le sélecteur « Dans ce projet · Tester le projet » reste sans zone.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Tester_le_projet_·_lien_enregistré_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "toujours là (v1)",
+  "detail": "Retour, Signaler, Explorer 42 Paris et « Modifier le lien » (→ Tester le projet) ont leurs zones. Seul le sélecteur reste sans zone.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Contribution_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "toujours là (v1)",
+  "detail": "Retour aux profils, le portrait, Envoyer un message et Signaler ont leurs zones, mais le sélecteur « Dans ce profil · Contribution » reste sans zone.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Parcours_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "toujours là (v1)",
+  "detail": "Retour aux profils, le portrait, Envoyer un message et Signaler ont leurs zones, mais le sélecteur « Dans ce profil · Parcours » reste sans zone.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Projets_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "toujours là (v1)",
+  "detail": "Retour aux profils, le portrait, Envoyer un message et Signaler ont leurs zones, mais le sélecteur « Dans ce profil · Projets » reste sans zone.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Liste_des_chroniques_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "toujours là (v1)",
+  "detail": "La pagination « Page 1 sur 7 » reste sans zone, et aucun cadre de page suivante n'est relevé : il faudrait une capture, pas seulement une zone.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Liste_des_chroniques_·_membre_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "toujours là (v1)",
+  "detail": "La pagination reste sans zone, faute de cadre de page suivante.",
+  "severity": "gênant"
+ }
+]

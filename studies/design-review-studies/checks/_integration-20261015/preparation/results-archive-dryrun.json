@@ -1,0 +1,32 @@
+{
+ "date": "2026-10-15",
+ "scope": "Dry run of a copy of archive/pre-codex-audit-fixes-20261015/snapshot.py outside the repository (scratch), with REPO set explicitly and the new storage prefix, on the current active sources; nothing written in horizon-welcome.",
+ "runtimeFiles": 137,
+ "adaptedOriginals": 11,
+ "runtimeBytes": 12192538,
+ "changedSince144Archive": [
+  "comments.mjs",
+  "content-preview.html",
+  "content-preview.mjs",
+  "entrance.css",
+  "entrance.mjs",
+  "index.html",
+  "journal-ui.mjs",
+  "project-ui.mjs",
+  "welcome.mjs"
+ ],
+ "added": [],
+ "removed": [],
+ "storageKeys": [
+  "horizon-archive-pre-design-review-selection-20261015-comments-demo-v1:",
+  "horizon-archive-pre-design-review-selection-20261015-content-preferences-v1",
+  "horizon-archive-pre-design-review-selection-20261015-content-preferences-v2",
+  "horizon-archive-pre-design-review-selection-20261015-content-reports-v1",
+  "horizon-archive-pre-design-review-selection-20261015-content-view",
+  "horizon-archive-pre-design-review-selection-20261015-project-repository-v1:",
+  "horizon-archive-pre-design-review-selection-20261015-theme-preference-v1"
+ ],
+ "controllerInSnapshot": [
+  "  <script src=\"welcome.mjs?v=audit-fixes-146\" type=\"module\"></script>"
+ ]
+}

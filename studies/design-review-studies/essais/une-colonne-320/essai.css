@@ -1,0 +1,8 @@
+/* Essai une-colonne-320 (14 Oct 2026). At 360 px wide or less, the Projects and
+   Chronicles grids show one card per row instead of two. Card internals, the List
+   view, the Profiles grid and every wider screen keep the baseline rules. */
+@media (max-width:360px) {
+ :root .app[data-navigation=dock] #content-index:is([data-section=projects],[data-section=journal])[data-view=grid] .cp-grid {
+  grid-template-columns:minmax(0,1fr);
+ }
+}

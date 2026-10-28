@@ -1,0 +1,519 @@
+[
+ {
+  "group": "explorer",
+  "title": "Explorer et globe",
+  "report": {
+   "group": "Explorer et globe",
+   "trials": [
+    {
+     "id": "globe-espace-libre",
+     "status": "réalisé",
+     "resume": "Le globe du niveau Monde est réduit sur ordinateur et en paysage. Il tient entre la ligne « 58 campus · 30 pays » et « Exploration · 42 Horizon » (ou la recherche quand ce texte est masqué), avec au moins 16 px d’air, et reste centré à 50 %/50 %. essai.css surcharge uniquement --hg-radius sur #main > .globe-stage. La valeur est calculée en CSS à partir de la taille de la fenêtre et de la projection perspective de MapLibre ; une propriété enregistrée <number> la rend lisible par parseFloat. Les bandes sont des valeurs fixes mesurées sur la copie, pire cas FR/EN/AR. La valeur ne fait que réduire le rayon. Les téléphones en portrait ne sont pas touchés. essai.mjs ne fait rien.",
+     "fichiers": [
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/globe-espace-libre/essai.css",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/globe-espace-libre/essai.mjs",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/globe-espace-libre/essai.json",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/globe-espace-libre/check.py",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/globe-espace-libre/check_campus_dialog.py",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/globe-espace-libre/results.json"
+     ],
+     "verifications": [
+      "Rayon du disque mesuré par getWorldScreenGeometry() sur le vrai globe : 1440×900 362,7→240,0 px ; 1366×768 309,5→174,0 ; 1280×720 290,2→150,0 ; 1920×1080 435,3→330,0 ; 667×375 160,9→20,7.",
+      "Aucune intersection aux 5 tailles (avant : jusqu’à −98,7 px). Marges sur ordinateur en FR : filtre 78 px, statistiques 47,7, statut 24,0, recherche 61, dé ≥ 69. En arabe : statistiques 41,7, statut 17,0. À 667×375 : statistiques 19,5, recherche 40,9.",
+      "Centre du disque à 0,0 px du centre de la fenêtre aux 5 tailles. Thème sombre et anglais : mêmes marges.",
+      "Redimensionnement 1440×900 → 1280×720 → 1440×900 sans rechargement : 150,0 puis 240,0 px, comme aux chargements directs.",
+      "390×844 et 320×640 : 0 pixel différent avec la copie actuelle ; un second chargement de référence donne aussi 0.",
+      "France puis 42 Paris : niveaux atteints. Vue France quasi identique (≈ 6 pixels au seuil du helper), vue Paris sans différence.",
+      "Ouverture de Projets : le globe se loge dans le médaillon avec un rayon de 16,0 px, centre à 0 px du médaillon.",
+      "Arrivée index.html → Visiter : le révélateur se termine sur le disque réduit. Fenêtre « Autour du campus » : le globe emprunté garde --hg-radius .43, puis revient réduit.",
+      "Aucune erreur console. Les 4 essais du groupe activés ensemble : pas d’erreur, chaque effet présent.",
+      "Captures examinées : ordinateur clair, sombre et arabe, 1280×720, paysage, portrait, France, Paris, médaillon, arrivée."
+     ],
+     "limites": [
+      "Paysage 667×375 : le disque tombe à ≈ 41 px de diamètre, une bille presque cachée par les repères. Le résultat passe le critère géométrique mais paraît inutilisable. 844×390 est du même ordre (valeur CSS calculée, pas mesurée sur le vrai globe).",
+      "Brésil et Canada moins zoomés au niveau Pays (calcul avec la formule du moteur, non vu à l’écran) : le plancher worldZoom+1,35 suit le monde réduit. À 1440×900 : Brésil 3,82→3,23, Canada 3,82→3,09. Les 28 autres pays, dont la France, ne changent pas.",
+      "Le zoom maximal au niveau Monde baisse aussi (−0,72 niveau à 1440×900, calculé).",
+      "En FR/EN, l’air sous le disque est de 24 px : les bandes reprennent le pire cas arabe, pour que le rayon ne dépende pas de la langue.",
+      "Les bandes sont fixes : combinées à un essai de typographie qui déplace le filtre ou les textes, elles ne suivraient pas.",
+      "Pas d’appareil physique, pas de mesure de fluidité."
+     ],
+     "decisionConcernee": "4 octobre « Globe sur toute la surface, rayon initial un peu réduit » ; 13 octobre « centre à 50 %/50 %, rayon inchangé ». L’essai garde le centre exact et réduit le rayon."
+    },
+    {
+     "id": "textes-sur-pastilles",
+     "status": "réalisé",
+     "resume": "Le globe ne change pas. En Explorer, deux textes reçoivent une pastille opaque compacte : #globe-hint (« 58 campus · 30 pays » et ses variantes Pays/Campus) et #about (« Exploration · 42 Horizon »). La pastille est un ::before dessiné hors de la boîte du texte : fond --h42-color-surface, bord --control-glass-edge et ombre --control-glass-shadow comme le filtre, rayon 16 px, marge 2×8 px. Sous 521 px de haut, elle reprend exactement la boîte de la pastille à 96 % de la copie. Le bouton Réessayer (déjà opaque) et le filtre (mesuré au-dessus de 4,5:1) restent tels quels. Aucun JS.",
+     "fichiers": [
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/textes-sur-pastilles/essai.css",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/textes-sur-pastilles/essai.mjs",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/textes-sur-pastilles/essai.json",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/textes-sur-pastilles/check.py",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/textes-sur-pastilles/results.json"
+     ],
+     "verifications": [
+      "Méthode : une capture avec le texte, une autre avec ce seul texte rendu transparent ; chaque pixel de glyphe est comparé au fond derrière lui. Vrai globe, niveaux Monde puis France.",
+      "Après : 6,45:1 en clair et 7,03:1 en sombre, au pire pixel comme au 5e centile, à 1440×900 et 390×844.",
+      "Avant, au pire pixel : 2,6:1 en clair, 1,2:1 en sombre (5e centile 2,2:1) ; France mobile 2,6:1 en clair, 1,2:1 en sombre.",
+      "Arabe mobile sombre, chaîne « 58 فرعًا · 30 دولة » : 7,03:1 partout (avant : 1,19:1). Paysage 667×375 : 6,1→6,45:1.",
+      "Filtre : 13,1–17,2:1 avant et après, aucun changement nécessaire. Réessayer (échec simulé dans la page) : ≈ 15:1.",
+      "Positions : écart 0,0 px sur 7 éléments, en FR/EN/AR, à 1440×900, 390×844, 320×640 et 667×375. dir=rtl en arabe, aucun débordement.",
+      "Focus clavier sur le statut : contour visible au-dessus de la pastille, nom accessible inchangé.",
+      "Aucune erreur console ; captures examinées en clair, sombre, mobile, paysage et arabe."
+     ],
+     "limites": [
+      "Variantes du niveau Campus (« Explore les alentours… », « Préparation… », échec) : même élément et même pastille, contraste non mesuré à ce niveau.",
+      "La pastille de la ligne d’aide passe au-dessus des repères proches, comme le filtre.",
+      "Le contraste « avant » dépend de la position de la carte au moment de la capture.",
+      "Pas d’appareil physique ; pas combiné aux essais de typographie."
+     ],
+     "decisionConcernee": ""
+    },
+    {
+     "id": "police-etiquettes-globe",
+     "status": "réalisé",
+     "resume": "Une seule règle CSS : .hg-integrated .hg-marker { font-family: var(--h42-font-family), sans-serif; }, exactement la pile :root du site utilisée par tous les autres textes en FR, EN et AR. Les étiquettes en héritent : pays, campus, campus sélectionné, flèche hors champ et repères compacts. Taille, graisse, interligne et couleur ne changent pas. Le crédit de carte, hors du conteneur MapLibre, était déjà en Jost.",
+     "fichiers": [
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/police-etiquettes-globe/essai.css",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/police-etiquettes-globe/essai.mjs",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/police-etiquettes-globe/essai.json",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/police-etiquettes-globe/check.py",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/police-etiquettes-globe/results.json"
+     ],
+     "verifications": [
+      "Police calculée « Jost, sans-serif » aux niveaux Monde, France, 42 Paris et flèche hors champ, en FR clair et en AR sombre (1440×900). Sur 390×844, toutes les étiquettes le sont, repères compacts compris. Plus aucune pile Helvetica.",
+      "Police dessinée (CDP CSS.getPlatformFontsForNode) : Liberation Sans → Jost Medium (197 glyphes au Monde, 80 en France). En arabe, les noms de pays restent en Noto Sans Arabic (178 glyphes) et les parties latines passent en Jost.",
+      "Taille, graisse, interligne et couleur identiques : 14px/500/20px ; 12px/500/16,8px pour l’étiquette de la flèche.",
+      "Mêmes étiquettes visibles à chaque niveau, aucune paire qui se chevauche avant ou après (7/5 sur ordinateur, 4/4 sur mobile).",
+      "Aucun débordement ni erreur console ; captures examinées."
+     ],
+     "limites": [
+      "La graisse calculée reste 500, mais Jost a une vraie graisse Medium alors que Liberation Sans s’affichait en normal : les étiquettes paraissent un peu plus appuyées.",
+      "Le site n’a pas de pile arabe dédiée : il utilise « Jost, sans-serif » et laisse le système choisir les glyphes arabes (Noto Sans Arabic ici). Seuls أفق et l’option العربية nomment 'Noto Sans Arabic', sans-serif. L’essai suit la pile commune.",
+      "Les noms arabes étaient déjà dessinés en Noto Sans Arabic par repli du système, contrairement à la lecture de la revue.",
+      "Jost reste un substitut de Futura PT. Seul le campus 42 Paris a été contrôlé."
+     ],
+     "decisionConcernee": ""
+    },
+    {
+     "id": "titre-fiche-campus",
+     "status": "réalisé",
+     "resume": "essai.mjs observe #dialog (MutationObserver idempotent). Quand le logo officiel d’une fiche est visible et que son titre texte a été masqué, il insère après l’emplacement du logo une copie de ce titre (h3.campus-details-name, même typographie), avant la ligne du pays. Il la retire si le logo échoue. Le titre reste hors de la plaque sombre du logo. Aucune règle CSS, aucun texte à traduire (nom propre du campus).",
+     "fichiers": [
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/titre-fiche-campus/essai.mjs",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/titre-fiche-campus/essai.css",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/titre-fiche-campus/essai.json",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/titre-fiche-campus/check.py",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/titre-fiche-campus/results.json"
+     ],
+     "verifications": [
+      "campus-profiles.json : seuls paris et mulhouse ont un logo ; lyon sert de campus sans logo.",
+      "Fiches ouvertes par clic sur le repère, vrai globe : Paris, Mulhouse et Lyon sur ordinateur FR clair et mobile AR sombre ; Paris aussi sur ordinateur AR et mobile FR.",
+      "Noms visibles dans l’en-tête : 0 avant pour Paris et Mulhouse, exactement 1 après pour les trois campus ; Lyon inchangé.",
+      "Ordre logo (bas y 241) → titre (251–288) → pays (298).",
+      "Typographie du titre identique au titre de Lyon : Jost 32px/500/37,1px, −0,8px.",
+      "Nom du dialogue inchangé dans l’arbre d’accessibilité ; ordre de tabulation identique (17 éléments pour Paris). Les fiches à logo gagnent le titre h3 qu’avaient déjà les fiches sans logo.",
+      "Logo de Paris bloqué : retour au nom dans l’emplacement, pas de second titre, capture identique à la copie.",
+      "Aucun débordement ni erreur console ; captures examinées."
+     ],
+     "limites": [
+      "Le logo de Mulhouse contient déjà « MULHOUSE Grand Est » : le nom apparaît deux fois, dans le logo et en titre. Aucune donnée n’indique si un logo contient le nom ; l’essai n’en a pas inventé.",
+      "Le titre ajoute ≈ 47 px : le contenu de la fiche descend d’autant.",
+      "Le titre est placé sous la plaque pour ne pas imiter le logotype officiel « 42 + nom » ; sa place diffère donc de celle du nom dans les fiches sans logo.",
+      "Dans la galerie, il faut cliquer le repère pour ouvrir la fiche."
+     ],
+     "decisionConcernee": "8 octobre « Fiches campus : logo officiel en tête, sinon nom texte (également si l’image échoue) ». L’essai affiche le nom même avec un logo."
+    }
+   ],
+   "notesForMain": "J’ai réalisé et vérifié dans Chrome les 4 essais du groupe Explorer et globe (vrai globe, une seule session Chrome à la fois). Chaque essai a son essai.json en français, son check.py relançable et un results.json avec checks et passed=true. Je n’ai rien modifié dans baseline/, originals/, le chargeur, les documents ou le prototype actif. snapshot.py --verify passe (137 fichiers vérifiés, 0 manquant). Il réécrit snapshot-verification.json, avec un contenu identique. checks/__pycache__ existait déjà et l’import du helper l’alimente.\n\nPoints à présenter à l’utilisateur :\n1) globe-espace-libre : le critère passe aux 5 tailles. En paysage 667×375, le globe devient une bille de ≈ 41 px presque cachée par les repères : c’est à juger, et textes-sur-pastilles reste l’alternative. Effet de bord calculé : Brésil et Canada sont moins zoomés au niveau Pays. Les bandes reprennent le pire cas arabe, d’où 24 px d’air en FR. Elles sont fixes et ne suivraient pas un essai de typographie.\n2) titre-fiche-campus : Mulhouse affiche son nom deux fois (dans le logo et en titre). C’est la lecture littérale du cahier des charges ; c’est à l’utilisateur de trancher, car aucune donnée n’indique si un logo contient le nom. Dans la galerie, il faut cliquer le repère pour ouvrir la fiche (les routes mènent jusqu’au campus).\n3) police-etiquettes-globe : les glyphes arabes étaient déjà dessinés en Noto Sans Arabic par repli du système (mesuré avec CSS.getPlatformFontsForNode). Le site n’a pas de pile arabe dédiée, l’essai reprend donc « Jost, sans-serif ». Les étiquettes paraissent un peu plus appuyées, car Jost a une vraie graisse Medium.\n4) textes-sur-pastilles : le filtre mesure 13–17:1 et le bouton Réessayer est déjà opaque, ils sont inchangés.\n\nLes 4 essais activés ensemble ne produisent aucune erreur.\n\nMémoire : une 3e page de globe sur ordinateur dans le même onglet a fait tomber Chrome (pipe closed) sous le plafond de 2,6 Go. Mes contrôles se limitent donc à 2 pages de globe par session, et le conseil du helper (« environ 6 ») est trop optimiste.\n\nLes captures occupent environ 63 Mo dans les 4 dossiers checks."
+  },
+  "verification": {
+   "group": "Explorer et globe",
+   "trials": [
+    {
+     "id": "globe-espace-libre",
+     "verdict": "réserves",
+     "problemesTrouves": [
+      "Le code de l'essai est conforme (seul --hg-radius change sur #main > .globe-stage, centre gardé à 50 %/50 %). Mais plusieurs affirmations n'avaient pas été vérifiées, ou ne se reproduisaient pas.",
+      "« 390 × 844 : 0 pixel différent » ne se reproduit pas d'une session Chrome à l'autre : 6 pixels du globe diffèrent d'un niveau sur 255 (bruit WebGL). Le verdict de l'ancien check.py, qui exigeait 0, échouait donc.",
+      "Effet au niveau Pays seulement calculé, jamais regardé. Vu maintenant : la vue Pays du Canada à 1440 × 900 est nettement plus large, avec le globe visible (36,6 % des pixels différents). C'est un changement au-delà du « niveau Monde seul ». Il vient du plancher worldZoom + 1,35 du moteur et ne peut pas être évité sans toucher au moteur.",
+      "844 × 390 n'était que calculé. Mesuré sur le vrai globe : rayon 157,2 → 20,7 px, une bille cachée par l'étiquette « Maroc ».",
+      "Effets non documentés : le rayon perd 44 à 48 % sur les portables 1366 × 768 et 1280 × 720 ; à 1440 × 900, le point d'un repère voisin passe sur l'étiquette « Albanie » ; dans le médaillon du filtre, les repères paraissent 1,5 fois plus grands.",
+      "Le changement de langue et de thème sans rechargement n'avait pas été testé.",
+      "Citations de decisionConcernee approximatives : je les ai reprises avec les mots du journal du 4 octobre et du contexte du 13 octobre."
+     ],
+     "corrections": [
+      "essai.css et essai.mjs : aucun changement, aucun défaut de code trouvé.",
+      "check.py : nouvelle partie toggle. Dans une même page, la feuille de l'essai est coupée puis rétablie : aucun style calculé (hash trié des propriétés) ni aucun pixel ne doit changer. Le verdict de pixel-identité repose maintenant dessus ; l'égalité du rayon entre sessions est un critère à part.",
+      "check.py : nouvelles parties live (FR clair → AR sombre → EN clair via les réglages du compte), canada (captures avant/après de la vue Pays) et more (844 × 390, 768 × 1024). Bruit entre sessions (maxLevelDifference) enregistré.",
+      "Nouveau checks/globe-espace-libre/check_ensemble.py : les 4 essais du groupe activés ensemble, avant puis après un changement de langue et de thème. Ajouté au verdict.",
+      "results.json repart de zéro (l'ancien est sauvegardé dans le scratchpad) : toutes les mesures viennent de mes passages, passed=true avec 13 critères.",
+      "essai.json réécrit : chiffres remesurés, nouvelles captures (Canada, 844 × 390, tablette), limites complétées (Canada/Brésil, portables, Albanie, médaillon, bille en paysage), vue paysage libellée « bille »."
+     ],
+     "verificationsRejouees": [
+      "Vrai globe, rayon mesuré par getWorldScreenGeometry : 1440 × 900 362,7 → 240,0 ; 1366 × 768 309,5 → 174,0 ; 1280 × 720 290,2 → 150,0 ; 1920 × 1080 435,3 → 330,0 ; 667 × 375 160,9 → 20,7 px. Centre à 0,0 px partout.",
+      "Marges sur ordinateur : filtre 78,0, statistiques 47,7, statut 24,0, recherche 61,0, dé ≥ 69,5 px. À 667 × 375 : 50,9 / 19,5 / 40,9 px. Avant : toutes négatives (1440 × 900 : −44,7 / −75,0 / −98,7 / −61,7 px).",
+      "Sombre et anglais : mêmes marges. Arabe : statistiques 41,7 et statut 17,0 px. Redimensionnement sans rechargement : 150,0 puis 240,0 px. Langue et thème changés sans rechargement : 240,0 px, marges ≥ 17,0 px, aucune erreur.",
+      "Portrait : 0 style différent sur 478 éléments et 0 pixel quand la feuille est coupée puis rétablie, à 390 × 844 et 320 × 640. --hg-radius .46 et rayons 190,9 / 155,0 px identiques entre sessions.",
+      "Tablette 768 × 1024 : 326,8 → 302,0 px, sans collision. 844 × 390 : 157,2 → 20,7 px.",
+      "France puis 42 Paris : niveaux atteints ; France ≈ 6 pixels différents sur 1,3 million, Paris 0. Médaillon : rayon 16,0 px, décalage 0. Fenêtre campus : .43 puis 240,0 px. Arrivée « Visiter » : 240,0 px.",
+      "Les 4 essais ensemble, en FR clair puis AR sombre sans rechargement : disque 240,0 px, pastilles, étiquettes en Jost, un seul titre « 42 Paris », 0 erreur.",
+      "snapshot vérifié en lecture seule : 137 fichiers, 206 références, 0 manquant. Captures examinées : ordinateur, sombre, AR, 1280 × 720, paysage, 844 × 390, tablette, portrait, Canada, médaillon zoomé, arrivée, fenêtre campus, ensemble."
+     ],
+     "reservesRestantes": [
+      "Téléphone en paysage (667 × 375 et 844 × 390) : disque d'environ 41 px, inutilisable. Le critère géométrique passe quand même.",
+      "Vues Pays du Canada et du Brésil moins zoomées (calculé : Canada 3,82 → 3,09 et Brésil 3,82 → 3,23 à 1440 × 900 ; Canada vu à l'écran). Zoom maximal au niveau Monde −0,72 niveau.",
+      "Bandes fixes : elles ne suivraient pas un essai qui déplace le filtre, les textes ou la recherche. En FR/EN, 24 px d'air sous le disque au lieu de 16.",
+      "Pas d'appareil physique ni de mesure de fluidité."
+     ]
+    },
+    {
+     "id": "textes-sur-pastilles",
+     "verdict": "validé",
+     "problemesTrouves": [
+      "Aucun défaut de code ni de périmètre. Pseudo-éléments uniquement, pas de déplacement ; le filtre et le bouton Réessayer restent inchangés à juste titre.",
+      "Lacune de vérification : le niveau Campus n'était pas mesuré (c'était une limite). Mesuré maintenant : « Exploration · 42 Horizon » tombait à 1,02:1 en sombre.",
+      "Les recadrages de focus étaient gardés hors de checks/ et le changement de langue ou de thème sans rechargement n'avait pas été testé."
+     ],
+     "corrections": [
+      "essai.css et essai.mjs : inchangés.",
+      "check.py : nouvelles parties campus (42 Paris, clair puis sombre appliqué sans rechargement, avec le maillon « France » du chemin) et live (FR clair → AR sombre → EN clair). Les recadrages de focus ×3 sont enregistrés dans checks/textes-sur-pastilles/. Verdict complété.",
+      "essai.json réécrit avec mes mesures. Première capture : zoom ×3 de la ligne d'aide sur les terres en sombre. Vues réordonnées (ordinateur sombre, France en clair, mobile sombre, mobile arabe). Limite « niveau Campus non mesuré » remplacée par la mesure."
+     ],
+     "verificationsRejouees": [
+      "Contraste au pixel, vrai globe. Après : 6,45:1 en clair et 7,03:1 en sombre (pire pixel = 5e centile), Monde et France, à 1440 × 900 et 390 × 844. Avant : 2,55 / 1,22:1 sur ordinateur, 2,63 / 1,2:1 sur mobile.",
+      "Campus 42 Paris : ligne d'aide 1,91 → 6,45 et 1,43 → 7,03:1 ; statut 3,57 → 6,45 et 1,02 → 7,03:1.",
+      "Arabe mobile sombre : 1,19 → 7,03:1, chaîne « 58 فرعًا · 30 دولة » à 7,03:1.",
+      "Langue et thème changés sans rechargement : fond de pastille blanc → rgb(32,32,38), 6,45 / 7,03 / 6,45:1, dir=rtl, 0 erreur.",
+      "Filtre : 13,1–17,2:1 (12,6–15,4 au niveau Campus), inchangé. Réessayer : 15,1–15,6:1.",
+      "Positions : écart 0,0 px sur 7 boîtes, en FR/EN/AR, à 1440 × 900, 390 × 844, 320 × 640 et 667 × 375. Aucun débordement. Focus : contour 2 px rgb(0,142,144) visible.",
+      "Captures examinées : zoom sombre, ordinateur, mobile France, arabe, campus sombre, focus, AR sans rechargement."
+     ],
+     "reservesRestantes": [
+      "« Préparation des alentours… » et le message d'échec : même élément et même pastille opaque, mais pas mesurés séparément.",
+      "La pastille de la ligne d'aide peut cacher un repère proche.",
+      "Pas d'appareil physique ; pas combiné aux essais de typographie."
+     ]
+    },
+    {
+     "id": "police-etiquettes-globe",
+     "verdict": "validé",
+     "problemesTrouves": [
+      "Aucun défaut : une seule règle, la famille de police seulement. Taille, graisse, interligne et couleur restent identiques.",
+      "Point à trancher par l'utilisateur, déjà signalé et que je confirme : le site n'a pas de pile arabe dédiée. Seuls .arabic-brand et l'option « العربية » utilisent 'Noto Sans Arabic'. L'essai reprend donc la pile commune « Jost, sans-serif ».",
+      "Jost Medium rend les étiquettes nettement plus appuyées que Liberation Sans, alors que la graisse calculée reste 500. C'était décrit comme « un peu » plus appuyé ; je l'ai regardé de près."
+     ],
+     "corrections": [
+      "essai.css et essai.mjs : inchangés.",
+      "check.py : nouvelle partie live (FR clair → AR sombre → EN clair, repères reconstruits par le globe) et critère de verdict correspondant.",
+      "essai.json mis à jour avec mes mesures. Première capture : zoom ×2 des étiquettes de France. Vues réordonnées, France d'abord. Limite sur la graisse reformulée."
+     ],
+     "verificationsRejouees": [
+      "Police calculée « Jost, sans-serif » aux niveaux Monde, France, 42 Paris et sur la flèche hors champ, en FR clair et AR sombre à 1440 × 900 ; sur toutes les étiquettes à 390 × 844, repères compacts compris ; en EN pendant le test live.",
+      "Police dessinée (CDP) : Liberation Sans → Jost Medium (197 / 80 / 8 / 8 glyphes). En arabe : Noto Sans Arabic 178 avant comme après, parties latines en Jost Medium.",
+      "Avant comme après : 14 px / 500 / 20 px, 12 px / 500 / 16,8 px sur la flèche, 12 px / 500 / 20 px sur mobile ; couleurs identiques. Mêmes étiquettes visibles (7 / 5 / 1 / 1 ; 4 / 4 sur mobile), 0 chevauchement.",
+      "Langue et thème changés sans rechargement : pile du site conservée, 0 erreur. Crédit de carte déjà en Jost. Aucun débordement.",
+      "Captures examinées : zoom France, 42 Paris (zoom), flèche AR sombre, Monde AR avant/après."
+     ],
+     "reservesRestantes": [
+      "L'interprétation de la « pile arabe » reste un choix de l'utilisateur. Sur une autre machine, les glyphes arabes suivraient la police arabe par défaut du système.",
+      "Rendu plus appuyé (vraie graisse Medium). Jost reste un substitut de Futura PT. Niveau Campus contrôlé pour 42 Paris seulement."
+     ]
+    },
+    {
+     "id": "titre-fiche-campus",
+     "verdict": "corrigé",
+     "problemesTrouves": [
+      "Défaut réel : la fiche 42 Mulhouse affichait le nom deux fois. Le logo officiel écrit déjà « 42 | MULHOUSE Grand Est » et l'essai ajoutait le titre « 42 Mulhouse ». Cela contredit le critère « no duplicated name » et l'intention du cahier des charges : le problème n'existe que pour un logo réduit au sigle, comme celui de Paris (source « 42-Final-sigle-seul.svg »).",
+      "Le changement de langue et de thème sans rechargement n'avait pas été testé."
+     ],
+     "corrections": [
+      "essai.mjs : nouvelle liste NAMED_LOGOS (le seul fichier mulhouse-logo-official-white.svg, classé à l'œil). Le titre n'est ajouté que si le logo affiché n'écrit pas déjà le nom ; un logo non classé reçoit le titre. Le MutationObserver reste idempotent.",
+      "check.py : attentes du verdict selon le type de logo. Pour Mulhouse et Lyon, la zone de la fiche doit rester identique au pixel à la copie. Nouvelle partie live : FR clair → AR sombre → EN clair, fiche rouverte à chaque fois.",
+      "essai.json réécrit : résumé, changement et mesures. Mulhouse et Lyon deviennent des vues de contrôle « inchangé ». Limites : classement manuel, hauteur ajoutée, double annonce au lecteur d'écran."
+     ],
+     "verificationsRejouees": [
+      "Paris : 0 nom visible avant → 1 après, dans les 4 vues (ordinateur FR clair et AR clair, mobile FR clair et AR sombre). Mulhouse 0 → 0 et Lyon 1 → 1 : 0 pixel différent dans la fiche, sur ordinateur FR et mobile AR sombre.",
+      "Ordre logo → titre → pays : logo jusqu'à y 241, titre de 251 à 288,1, pays à 298,1. Typographie identique au nom de Lyon : 32 px / 500 / 37,12 px / −0,8 px ; 28 px / 42 px en arabe mobile.",
+      "Nom du dialogue inchangé dans l'arbre d'accessibilité ; focalisables identiques et dans le même ordre (17 / 16 / 5).",
+      "Logo de Paris bloqué : un seul nom, pas de second titre. Langue et thème changés sans rechargement : un seul titre « 42 Paris », dir=rtl, 0 erreur.",
+      "Captures examinées : Paris ordinateur avant/après, Mulhouse après, Paris mobile FR, Paris AR sombre sans rechargement."
+     ],
+     "reservesRestantes": [
+      "Le classement « logo qui contient le nom » est manuel : campus-profiles.json n'a pas ce champ. Un nouveau logo non classé recevrait le titre.",
+      "Le titre ajoute 47 px (FR) à 58 px (AR) sur ordinateur, 42 à 52 px sur mobile. Il est placé sous la plaque du logo, pas à la place du nom des fiches sans logo.",
+      "Lecteur d'écran : le nom est annoncé deux fois (alternative du logo, puis titre). Dans la galerie, il faut cliquer le repère pour ouvrir la fiche."
+     ]
+    }
+   ],
+   "notesForMain": "J'ai relu et revérifié les 4 essais dans Chrome. Les quatre results.json donnent passed=true, et toutes leurs mesures viennent de mes propres passages. Les anciens résultats de l'implémenteur sont sauvegardés dans scratchpad/agents/verif-explorer/backup-implementer/.\n\nJe n'ai écrit que dans essais/<4 ids>/ et checks/<4 ids>/, et je n'ai rien commité.\n\nJe n'ai pas lancé snapshot.py --verify, car il réécrit snapshot-verification.json, un fichier snapshot*. J'ai fait les mêmes contrôles en lecture seule (scratchpad/agents/verif-explorer/verify_snapshot_ro.py) : 137 fichiers, 206 références, 0 manquant.\n\nAucun Chrome ni profil ne reste ouvert. Les dossiers checks des 4 essais pèsent environ 76 Mo.\n\nCe qui a changé et ce qu'il faut présenter à l'utilisateur :\n\n1) titre-fiche-campus, corrigé. Avant, Mulhouse affichait son nom deux fois : dans le logo, puis en titre. L'essai n'ajoute plus le titre que sous un logo qui n'écrit pas le nom. La liste est faite à l'œil sur les deux logos existants ; aujourd'hui, seul Paris est concerné. Résultat : Mulhouse et Lyon sont identiques au pixel à la copie, et Paris gagne « 42 Paris ».\n\n2) globe-espace-libre, avec réserves. Le critère de la revue passe à toutes les tailles demandées.\n- Vue Pays : le Canada est nettement moins zoomé, avec le globe visible (capture avant/apres-pays-canada.png). Le Brésil l'est aussi (calculé). C'est un effet du moteur, impossible à éviter avec la seule propriété CSS prescrite.\n- Paysage : le globe devient une bille de 41 px, à 667 × 375 comme à 844 × 390, ce qui le rend inutilisable.\n- Portables : le globe perd 44 à 48 % de son rayon à 1366 × 768 et à 1280 × 720.\n- Portrait : l'implémenteur annonçait « 0 pixel ». Je trouve 6 pixels d'un niveau d'écart entre deux sessions, du bruit WebGL. Couper puis rétablir la feuille de l'essai dans la même page ne change rien : 0 style, 0 pixel.\n\n3) textes-sur-pastilles, validé. Le niveau Campus est maintenant mesuré : « Exploration · 42 Horizon » passe de 1,02 à 7,03:1 en sombre. Le filtre reste au-dessus de 12,5:1, donc il ne change pas.\n\n4) police-etiquettes-globe, validé. Reste à trancher par l'utilisateur : le site n'a pas de pile arabe dédiée, et Jost Medium rend les étiquettes nettement plus appuyées.\n\nLes 4 essais activés ensemble fonctionnent, en FR clair puis en AR sombre sans rechargement (checks/globe-espace-libre/check_ensemble.py).\n\nPour la galerie : la carte n'affiche que captures[0]. J'ai donc mis en premier des recadrages zoomés pour police-etiquettes-globe (avant/apres-etiquettes-zoom.png) et textes-sur-pastilles (avant/apres-sombre-ordinateur-zoom.png).\n\nPour titre-fiche-campus, il faut cliquer le repère pour ouvrir la fiche ; les vues Mulhouse et Lyon sont des contrôles qui ne changent pas.\n\nMachine : la plage Chrome partagée a été longtemps occupée par un autre groupe (roles-couleur). Une session de ≤ 3 pages de globe n'a jamais fait planter Chrome.\n\nAttention à pgrep -f dans une boucle until : le motif apparaît dans la ligne de commande de la boucle elle-même, qui ne se termine donc jamais. J'ai arrêté trois de ces boucles."
+  }
+ },
+ {
+  "group": "couleurs",
+  "title": "Couleurs, thème sombre et illustrations",
+  "report": {
+   "group": "Couleurs, thème sombre et illustrations",
+   "trials": [
+    {
+     "id": "illustrations-sombres",
+     "status": "réalisé",
+     "resume": "En sombre seulement, les fonds et décors clairs de cinq illustrations (shell, network, garden, path, chronique) prennent des teintes sombres calculées comme mélanges exacts des couleurs de la charte : Dark Slate Gray, Cadet Gray, Royal Pink et noir. Les accents 42 Blue et Royal Pink ne changent pas. Raycast n'est pas touché. Tout passe par des sélecteurs CSS sur les attributs fill/stroke, donc un changement de thème s'applique sans rechargement. J'ai repris le brouillon, mais refait la palette (ses teintes n'étaient pas dérivées de la charte) et retiré sa recoloration du contour hérité : elle sortait du périmètre et rendait le texte du terminal illisible.",
+     "fichiers": [
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/illustrations-sombres/essai.css",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/illustrations-sombres/essai.mjs",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/illustrations-sombres/essai.json",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/illustrations-sombres/check.py",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/illustrations-sombres/results.json"
+     ],
+     "verifications": [
+      "Luminance moyenne des zones d'illustration en sombre, avant → après : Projets ordinateur 0,445 → 0,061 ; Projets mobile 0,464 → 0,057 ; Chroniques 0,276 → 0,119 ; Chroniques mobile arabe 0,255 → 0,123 ; fiche network 0,770 → 0,048 ; fiche shell 0,464 → 0,050 ; fiche garden 0,731 → 0,078 ; article 0,302 → 0,142 ; visionneuse 0,696 → 0,048 ; profil 0,581 → 0,036.",
+      "Planche des 6 motifs (en carte et en cadre de fiche) examinée : chaque motif reste reconnaissable.",
+      "Accents : 0 élément #00BABC ou #EC3391 modifié sur 184 relevés.",
+      "Thème clair identique au pixel près (0 pixel différent) sur 5 vues : liste, mobile arabe, fiche, visionneuse, profil.",
+      "Changement de thème en direct par le menu du compte, sans rechargement : rgb(64,43,57) → rgb(245,228,234) → rgb(64,43,57).",
+      "Aucun débordement horizontal ni erreur de console."
+     ],
+     "limites": [
+      "En fiche et en visionneuse, le socle trace un fin contour blanc hérité autour des formes. Il devient visible sur les fonds assombris, comme il l'est déjà sur les illustrations chronique et raycast. Je ne l'ai pas modifié (périmètre strict).",
+      "Le motif path n'apparaît sur aucune page actuelle : il n'est vérifié que sur la planche.",
+      "Les teintes sont des mélanges calculés à partir de la charte, pas des couleurs que la charte nomme.",
+      "Avec illustrations-variees, seul le fond de network et garden varie encore en sombre (vérifié dans combinaisons.json)."
+     ],
+     "decisionConcernee": ""
+    },
+    {
+     "id": "illustrations-attenuees",
+     "status": "réalisé",
+     "resume": "Alternative simple : en sombre seulement, filter: brightness(.8) saturate(.9) sur les seuls SVG en ligne de 800 × 500, c'est-à-dire les six illustrations, partout où elles apparaissent (cartes, profils, fiches, visionneuse). Les couleurs ne sont pas remappées. Portraits et photos ne sont pas touchés.",
+     "fichiers": [
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/illustrations-attenuees/essai.css",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/illustrations-attenuees/essai.mjs",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/illustrations-attenuees/essai.json",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/illustrations-attenuees/check.py",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/illustrations-attenuees/results.json"
+     ],
+     "verifications": [
+      "La luminance des zones d'illustration baisse d'environ 39 % partout : Projets 0,445 → 0,272 ; fiche 0,770 → 0,467 ; visionneuse 0,696 → 0,423 ; Chroniques mobile arabe 0,255 → 0,156.",
+      "Portraits et photos identiques au pixel près, avec le même filtre calculé avant et après : 15 portraits de la liste Profils, portrait de Leïla, schéma image de minishell, et photo de 42 Paris dans la fiche campus ouverte depuis le vrai globe.",
+      "Thème clair identique au pixel près sur 5 vues.",
+      "Changement de thème en direct sans rechargement.",
+      "Aucun débordement ni erreur de console."
+     ],
+     "limites": [
+      "Les accents sont eux aussi assombris (composantes ×0,8) et légèrement désaturés.",
+      "Les couvertures restent nettement plus claires que le fond : luminance de 0,27 à 0,47.",
+      "Les valeurs 0,8 et 0,9 viennent de la revue, sans réglage fin."
+     ],
+     "decisionConcernee": ""
+    },
+    {
+     "id": "roles-couleur",
+     "status": "réalisé",
+     "resume": "Une règle unique, couleurs seulement. Les actions principales prennent var(--h42-access-accent) : 42 Blue #00BABC en clair, Royal Pink #ED3491 en sombre, texte encre #1B1B1B, même couleur au survol. Sont concernés : Appliquer, Ajouter/Répondre/Enregistrer des commentaires, Enregistrer le signalement, Envoyer du message, Enregistrer du lien de dépôt et Simuler la création du compte. En sombre, les « Annuler » des dialogues de connexion et d'inscription deviennent neutres : texte blanc avec un trait neutre à l'arrivée ; surface #29292E et trait intérieur dans le compte. Les secondaires déjà neutres, les états sélectionnés et les liens ne changent pas.",
+     "fichiers": [
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/roles-couleur/essai.css",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/roles-couleur/essai.mjs",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/roles-couleur/essai.json",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/roles-couleur/check.py",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/roles-couleur/results.json",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/roles-couleur/inventaire.csv"
+     ],
+     "verifications": [
+      "Inventaire de 17 boutons × 4 vues (clair et sombre, FR ordinateur et AR mobile), soit 68 relevés avant/après dans inventaire.csv : filtre, commentaires, signalement, message, lien du dépôt, dialogues connexion et inscription du compte, connexion de l'arrivée.",
+      "Boutons principaux après l'essai : 7,18:1 en clair et 4,51:1 en sombre, identiques au survol. Avant, Enregistrer le signalement et Envoyer en clair n'étaient qu'à 3,80:1 (blanc sur #008E90).",
+      "Annuler de l'arrivée en sombre : turquoise à 6,75:1 sans contour → blanc à 16,2:1 avec trait neutre.",
+      "Les 68 textes de bouton atteignent au moins 4,5:1 (minimum 4,51:1) ; focus visible sur les 68.",
+      "Taille, rayon, marges intérieures et bordures identiques ; états sélectionnés (dock, menus locaux) identiques ; aucun débordement ni erreur."
+     ],
+     "limites": [
+      "Le dialogue d'inscription de l'arrivée ne s'ouvre pas depuis l'interface : son sélecteur est couvert mais il n'est pas mesuré.",
+      "Royal Pink avec texte encre n'est qu'à 4,51:1 : aucune variante plus sombre au survol n'est possible.",
+      "Les deux boutons du dialogue de connexion de l'arrivée se touchent ; le trait neutre rend ce contact visible. L'espacement n'est pas modifié.",
+      "« Annuler » du message reste gris et sans contour, car un contour changerait sa taille.",
+      "Non traités : Réessayer, Retour et Continuer de l'écran d'erreur ; les boutons du menu ; les liens."
+     ],
+     "decisionConcernee": "13 octobre 2026 : après le retour à 139, la couleur d'action a été limitée à Se connecter et au retour Monde (« les autres boutons gardent leur style » ; création de compte, Annuler, Visiter et Réessayer inchangés). Cet essai étend volontairement la règle, à titre de comparaison."
+    },
+    {
+     "id": "visiter-contour-sombre",
+     "status": "réalisé",
+     "resume": "En sombre seulement, #entry-guest (Visiter) et [data-account-action=signup] (Créer un compte) reçoivent border-color #708383, soit Cadet Gray à 70 % + noir. La bordure de 1 px existait déjà en transparent : le texte rose, les dimensions, l'alternance des libellés et le focus sont inchangés.",
+     "fichiers": [
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/visiter-contour-sombre/essai.css",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/visiter-contour-sombre/essai.mjs",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/visiter-contour-sombre/essai.json",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/visiter-contour-sombre/check.py",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/visiter-contour-sombre/results.json"
+     ],
+     "verifications": [
+      "Contour peint mesuré à 4,32:1 sur le fond #1B1B1B de l'arrivée, ordinateur et mobile (1,0:1 avant).",
+      "Dans le menu : 3,68:1 en FR et 3,58:1 en AR mobile, sur le verre du menu.",
+      "Boîtes identiques : 159,58×52 et 342×52 px ; menu 246×54 et 246×64 px.",
+      "Le texte reste rgb(237,52,145) ; les libellés alternent toujours (Visiter → Visit) à taille constante.",
+      "Focus clavier : anneau 2 px de 7,16:1, visible autour du nouveau contour (capture examinée).",
+      "Thème clair : 0 pixel différent (page entière sur ordinateur, canevas exclu sur mobile, menu)."
+     ],
+     "limites": [
+      "Hors périmètre, mais mesuré : en sombre, le texte rose de « Créer un compte » n'est qu'à 3,85:1 (FR) et 3,74:1 (AR) sur le verre du menu, donc sous 4,5:1.",
+      "Le contour clair existant n'est qu'à 1,1–1,2:1 ; il est laissé tel quel.",
+      "Pas de surface ajoutée, pas de lecteur d'écran."
+     ],
+     "decisionConcernee": "13 octobre 2026 : texte Royal Pink demandé pour Visiter et Créer un compte en sombre, et dimensions de Visiter égales à celles de Se connecter. Les deux sont conservés ; seul un contour est ajouté."
+    },
+    {
+     "id": "illustrations-variees",
+     "status": "réalisé",
+     "resume": "essai.mjs attribue à chaque contenu fictif une palette fixe : son rang parmi les contenus du même motif, dans l'ordre par défaut, modulo le nombre de palettes (network 3, garden 3, chronique 4 ; shell et raycast ne se suivent jamais). Il pose data-essai-palette sur les cartes, les grilles de profil, les médias de fiche et la visionneuse, et le réapplique à chaque rendu via un MutationObserver. Les imports utilisent les mêmes URL de modules que welcome.mjs. essai.css change seulement le fond et le décor, avec des mélanges de couleurs de la charte. Des garde-fous CSS permettent de le combiner avec illustrations-sombres ou illustrations-attenuees.",
+     "fichiers": [
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/illustrations-variees/essai.css",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/illustrations-variees/essai.mjs",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/illustrations-variees/essai.json",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/illustrations-variees/check.py",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/illustrations-variees/results.json",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/illustrations-variees/combinaisons.py",
+      "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/illustrations-variees/combinaisons.json"
+     ],
+     "verifications": [
+      "16 états testés (Projets et Chroniques × grille et liste × clair et sombre × FR ordinateur et AR mobile) : 0 paire de cartes voisines identique, par balisage comme par couleurs peintes. Avant : 5/17 en grille Projets, 1/11 en liste Projets, 17/17 (16/16 sur mobile) en grille Chroniques, 11/11 en liste Chroniques.",
+      "Chaque paire de voisines diffère au pixel près (écart moyen d'au moins 6,7 par canal) sur 33 paires.",
+      "Même suite de palettes dans 4 navigateurs indépendants, et même ordre de liste que la copie actuelle.",
+      "Carte, fiche et visionneuse identiques pour 4 contenus, en clair FR et en sombre AR.",
+      "Combinés avec illustrations-sombres ou illustrations-attenuees : 0 paire identique et couvertures plus sombres.",
+      "Aucun débordement ni erreur de console ; captures examinées."
+     ],
+     "limites": [
+      "Le tri « favoris » ou un filtre peuvent rapprocher deux contenus de même palette.",
+      "Deux des sept exemples d'origine reçoivent aussi une variante (network-messages-between-us, journal-share-the-unfinished) : sans cela, ils restaient identiques à leur voisin.",
+      "Seuls le fond et le décor varient, pas le dessin.",
+      "Les combinaisons ne sont vérifiées qu'en sombre, sur la grille ordinateur."
+     ],
+     "decisionConcernee": ""
+    }
+   ],
+   "notesForMain": "Les cinq essais sont faits et leurs contrôles passent tous (results.json avec passed true). Rien n'est commité. J'ai écrit uniquement dans essais/<id>/, checks/<id>/ et le scratchpad.\n\n1) Mémoire Chrome : réutiliser un même onglet avec Page.navigate garde en mémoire chaque document précédent, environ +480 Mo par navigation (mesuré). Même avec le globe bloqué, mon premier contrôle a été tué par le plafond de 2,6 Go après environ 7 pages (journal : oom-kill). Ouvrir un nouvel onglet par vue (Target.createTarget, puis Target.closeTarget sur l'ancien) garde la mémoire stable vers 1,47 Go. Chacun de mes check.py contient une fonction fresh() qui fait cela. Je n'ai pas modifié helper.py ; tu peux l'y intégrer pour les autres groupes.\n\n2) snapshot.py --verify réécrit snapshot-verification.json. Pour ne pas toucher ce fichier, j'ai vérifié les empreintes en lecture seule avec une réplique : les 137 fichiers du socle sont intacts.\n\n3) Défauts trouvés dans le site actuel, hors périmètre : en clair, « Enregistrer le signalement » et « Envoyer » du message (blanc sur #008E90) ne sont qu'à 3,80:1 ; roles-couleur les corrige. En sombre, le texte rose de « Créer un compte » n'est qu'à 3,85:1 (FR) et 3,74:1 (AR) sur le verre du menu ; c'est le choix de l'utilisateur, je ne l'ai pas changé. Le contour clair de Visiter (#DCE5E5) n'est qu'à 1,1–1,2:1.\n\n4) Le motif path n'est affiché sur aucune page (les récits de parcours redirigent vers le profil). Le dialogue d'inscription de l'arrivée ne s'ouvre pas depuis l'interface.\n\n5) Pour roles-couleur, les vues de la galerie demandent un clic pour ouvrir les dialogues ; les libellés le précisent.\n\n6) illustrations-variees se combine avec illustrations-sombres ou illustrations-attenuees (paire exclusive entre elles) : preuves dans checks/illustrations-variees/combinaisons.json et ses captures. Il modifie aussi deux des sept exemples d'origine, ce qui est indiqué dans ses limites.\n\n7) Pour illustrations-sombres, j'ai abandonné la recoloration du contour SVG hérité que faisait le brouillon (stroke #1B1B1B) : elle sortait du périmètre et rendait illisible le texte « $ ./minishell ». Le contour blanc du socle est conservé, et c'est noté dans les limites."
+  },
+  "verification": {
+   "group": "Couleurs, thème sombre et illustrations",
+   "trials": [
+    {
+     "id": "illustrations-sombres",
+     "verdict": "validé",
+     "problemesTrouves": [
+      "Aucun défaut de code ni de périmètre : toutes les règles sont sous :root[data-theme=dark] et ciblent les attributs fill/stroke des SVG 800 × 500. Les 30 mélanges de la charte annoncés ont été recalculés : écart d’au plus 0,5 par canal.",
+      "Point visible, déjà signalé en limite mais sous-décrit : la règle globale du socle svg{stroke:currentColor} n’est pas annulée dans les médias de fiche ni dans la visionneuse. Le contour blanc hérité devient donc bien visible autour des formes et du cadre entier de l’illustration (capture de la visionneuse examinée). Il est laissé tel quel, par périmètre strict."
+     ],
+     "corrections": [
+      "essai.json : mesures rejouées ; ajout de la contre-vérification (320 px, langue et thème changés en direct, combinaisons, paire exclusive, recalcul des mélanges) ; limite du contour hérité précisée (cadre entier, visible dans la visionneuse) ; capture petit-sombre ajoutée.",
+      "Ajout de checks/illustrations-sombres/contre-verification.py et .json, plus avant/apres-petit-sombre.png. essai.css et essai.mjs n’ont pas été modifiés."
+     ],
+     "verificationsRejouees": [
+      "check.py rejoué (passed true). Luminance des couvertures en sombre, avant → après : Projets 1440 px 0,445 → 0,060 ; 390 px 0,464 → 0,057 ; Chroniques 0,276 → 0,119 ; Chroniques AR mobile 0,255 → 0,123 ; fiche network 0,770 → 0,048 ; fiche shell 0,464 → 0,050 ; fiche garden 0,731 → 0,078 ; article 0,302 → 0,142 ; visionneuse 0,696 → 0,048 ; profil 0,581 → 0,036.",
+      "Accents : 0 élément #00BABC ou #EC3391 modifié sur 184. Clair : 0 pixel différent sur 5 vues. Planche des 6 motifs examinée : tous restent reconnaissables.",
+      "Contre-vérification (passed true) : à 320 × 640, luminance 0,420 → 0,039, sans débordement. En sombre, passage du FR à l’AR sans rechargement : les 11 fonds restent remappés. Sur la fiche, sombre → clair → sombre : en clair, les 20 attributs fill/stroke sont peints à leur valeur d’origine.",
+      "Avec roles-couleur, visiter-contour-sombre et illustrations-variees actifs ensemble : aucun fond clair restant, aucune erreur. Demandé avec illustrations-attenuees, celui-ci est bien ignoré (filtre none). Aucune erreur de console."
+     ],
+     "reservesRestantes": [
+      "Contour blanc hérité visible dans la fiche et la visionneuse (déjà le cas sur raycast et chronique dans le socle) ; une variante pourrait l’annuler si l’utilisateur retient l’essai.",
+      "Le motif path n’apparaît sur aucune page : il n’est vérifié que sur la planche.",
+      "Ce sont des teintes mélangées à partir de la charte, pas des couleurs qu’elle nomme ; pas d’écran physique."
+     ]
+    },
+    {
+     "id": "illustrations-attenuees",
+     "verdict": "validé",
+     "problemesTrouves": [
+      "Aucun défaut. Le sélecteur svg[viewBox=\"0 0 800 500\"] ne correspond qu’aux six illustrations : content-preview-art.mjs est le seul fichier du socle à avoir ce viewBox. Thème sombre seulement."
+     ],
+     "corrections": [
+      "essai.json : mesures rejouées ; 320 px, changements en direct et contrôle des filtres d’images ajoutés ; capture petit-sombre ajoutée.",
+      "Ajout de contre-verification.py et .json, plus avant/apres-petit-sombre.png. Aucun changement de code."
+     ],
+     "verificationsRejouees": [
+      "check.py rejoué (passed true), y compris la session avec le vrai globe. Luminance, avant → après : Projets 0,445 → 0,272 ; 390 px 0,464 → 0,283 ; Chroniques 0,276 → 0,169 ; AR mobile 0,255 → 0,156 ; fiche 0,770 → 0,467 ; article 0,302 → 0,183 ; visionneuse 0,696 → 0,423 ; profil 0,581 → 0,353.",
+      "Portraits, schéma de minishell et photo de 42 Paris (fiche campus ouverte depuis le vrai globe) : 0 pixel changé dans leurs rectangles. Clair : 0 pixel sur 5 vues.",
+      "Contre-vérification (passed true) : à 320 px, 0,420 → 0,259, sans débordement. FR → AR en direct : 12/12 couvertures restent atténuées. Clair → sombre en direct : filtre none puis rétabli. Images, icônes et canevas gardent les mêmes filtres qu’avant sur 3 pages."
+     ],
+     "reservesRestantes": [
+      "Les accents sont eux aussi assombris (composantes × 0,8).",
+      "Les couvertures restent nettement plus claires que le fond (0,16 à 0,47).",
+      "Les valeurs 0,8 et 0,9 viennent de la revue, sans réglage fin."
+     ]
+    },
+    {
+     "id": "roles-couleur",
+     "verdict": "corrigé",
+     "problemesTrouves": [
+      "essai.json omettait un effet réel du sélecteur .cp-report-footer .cp-report-submit : le bouton « Fermer », affiché une fois le signalement enregistré, change aussi. En clair, il passe de #008E90 (texte clair, 3,80:1) à 42 Blue (7,18:1). Mesuré.",
+      "decisionConcernee attribuait à l’utilisateur la citation « les autres boutons gardent leur style ». C’est le récit de la réalisation dans le journal : l’utilisateur avait demandé 42 Blue / Royal Pink pour Se connecter et le retour Monde seulement, sous la règle de périmètre strict. Reformulé.",
+      "La limite « dialogue d’inscription de l’arrivée non mesuré » était dépassée : ce dialogue est maintenant ouvert par script et mesuré.",
+      "Pas de défaut de code : couleurs seulement, variables existantes, tailles, rayons et marges identiques sur 68 relevés."
+     ],
+     "corrections": [
+      "essai.json : decisionConcernee reformulée ; « changement » mentionne « Fermer » ; ajout de quatre vérifications (inscription de l’arrivée, boutons atteints après une action, pages non concernées, changements en direct) ; limites mises à jour (inscription mesurée par script, Réinitialiser et Annuler du message restent sans contour).",
+      "Ajout de checks/roles-couleur/contre-verification.py et .json. essai.css et essai.mjs n’ont pas été modifiés."
+     ],
+     "verificationsRejouees": [
+      "check.py rejoué (passed true) : 68 relevés (17 boutons × 4 vues, clair et sombre, FR ordinateur et AR mobile). Contraste minimal après l’essai 4,51:1, survol identique, focus visible sur les 68, géométrie et états sélectionnés inchangés.",
+      "Inscription de l’arrivée ouverte par script : « Simuler la création du compte » passe en clair de l’encre (17,22:1) à 42 Blue (7,18:1), et en sombre de #00BABC à Royal Pink (4,51:1). « Annuler » passe en sombre de 6,75:1 (turquoise) à 16,2:1 (blanc et trait neutre). Tailles inchangées.",
+      "« Répondre » passe de la teinte translucide à l’accent, avec texte encre (7,18 / 4,51:1). « Fermer » du signalement : voir ci-dessus.",
+      "Pages sans ces boutons : 0 pixel différent sur 4 vues. Sur Projets sombre, 1 pixel change d’un niveau, comme avec un essai témoin : c’est un artefact du chargeur.",
+      "Changements en direct (clair → sombre → clair, puis FR → AR) : « Appliquer » prend la bonne couleur à chaque étape, y compris dans le dialogue arabe en RTL. Aucune erreur."
+     ],
+     "reservesRestantes": [
+      "L’inscription de l’arrivée n’est accessible que par script.",
+      "Royal Pink avec texte encre n’est qu’à 4,51:1, juste au-dessus du seuil.",
+      "Les deux boutons des dialogues de l’arrivée se touchent ; le trait neutre rend ce contact visible.",
+      "« Annuler » du message et « Réinitialiser » restent sans contour.",
+      "Non traités : Réessayer, Retour et Continuer de l’écran d’erreur."
+     ]
+    },
+    {
+     "id": "visiter-contour-sombre",
+     "verdict": "validé",
+     "problemesTrouves": [
+      "Aucun défaut : seule la couleur de la bordure de 1 px, déjà présente et transparente, change, en sombre, sur #entry-guest et [data-account-action=signup]. Les boutons de l’écran d’erreur n’ont pas d’id, ils ne sont donc pas touchés. decisionConcernee est exacte."
+     ],
+     "corrections": [
+      "essai.json : ajout des petits formats, des changements en direct, de l’arrivée arabe et de la combinaison ; captures petit et paysage ajoutées.",
+      "Ajout de contre-verification.py et .json, plus les captures petit, paysage et ar-mobile sombres. La capture AR montre des libellés français au moment de la prise (alternance) : elle n’est pas citée. Aucun changement de code."
+     ],
+     "verificationsRejouees": [
+      "check.py rejoué (passed true) : contour peint à 4,32:1 sur l’arrivée sombre ordinateur et mobile (1,0 avant), 3,68:1 et 3,58:1 dans le menu FR et AR. Boîtes identiques (159,58 × 52, 342 × 52, 246 × 54 et 246 × 64). Texte rgb(237,52,145) conservé ; libellés qui alternent (Visiter → Visit). Anneau de focus 7,16:1. Clair : 0 pixel différent.",
+      "Contre-vérification (passed true) : 4,32:1 à 320 × 640 et en paysage 667 × 375, boîtes à ±0,5 px, sans débordement. Bascule de thème de l’arrivée en direct : #708383 → #DCE5E5 (bordure claire d’origine) → #708383.",
+      "Arrivée arabe : boîte constante pendant l’alternance زيارة → Visiter. Menu reconstruit après FR → AR : contour conservé. Avec roles-couleur : contour conservé et dialogue qui s’ouvre. Captures examinées."
+     ],
+     "reservesRestantes": [
+      "Hors périmètre : le texte rose de « Créer un compte » n’est qu’à 3,85:1 (FR) et 3,74:1 (AR) sur le verre du menu, sous 4,5:1 ; c’est le choix de l’utilisateur.",
+      "Le contour clair existant n’est qu’à 1,1–1,2:1 ; pas de surface ajoutée."
+     ]
+    },
+    {
+     "id": "illustrations-variees",
+     "verdict": "validé",
+     "problemesTrouves": [
+      "Formulation de essai.json : « balisage de couverture identique ». Le SVG n’est pas modifié ; la différence vient de l’attribut data-essai-palette et des couleurs peintes. Précisé.",
+      "L’affirmation « valable dans l’ordre inverse et sur toutes les pages » n’était pas prouvée. Elle est maintenant vérifiée et vraie.",
+      "Pas de défaut de code : MutationObserver idempotent, mêmes URL de modules que welcome.mjs, aucun texte visible ajouté, mélanges de la charte recalculés et conformes."
+     ],
+     "corrections": [
+      "essai.json : vérifications réécrites avec les mesures rejouées et les contre-vérifications ; limites mises à jour (ajout du cas sombre sans essai de thème).",
+      "Ajout de checks/illustrations-variees/palettes-exhaustif.mjs et .json, et de contre-verification.py et .json. Aucun changement de code."
+     ],
+     "verificationsRejouees": [
+      "check.py rejoué (passed true) : 16 états de la page 1 sans aucune paire voisine identique, contre 5/17, 1/11, 17/17 (16/16 sur mobile) et 11/11 dans la copie. Écart de pixels d’au moins 6,7 (12,8 sur Chroniques). Carte = fiche = visionneuse pour 4 contenus en clair FR et en sombre AR.",
+      "combinaisons.py rejoué (passed true) : 0 paire identique ; luminance 0,047 / 0,114 avec sombres, 0,415 / 0,165 avec attenuees.",
+      "Contrôle hors navigateur sous Node : 0 paire identique sur les 7 pages, en ordre récent comme ancien, en 1, 2 et 3 colonnes (copie actuelle : 15 à 26 paires pour Projets, toutes pour Chroniques).",
+      "Contre-vérification Chrome (passed true) : pages 2 à 7, en 3 et en 2 colonnes (28 états), sans paire identique. En clair, hors couvertures, 0 pixel changé hors du verre dépoli du dock, qui floute les couvertures ; boîtes identiques. Changements FR → AR et clair → sombre en direct : palettes conservées. Grilles des profils d’Arun Suri et de Haru Mizuno : 4 sur 5 variées, toutes avec la même palette que leur carte."
+     ],
+     "reservesRestantes": [
+      "Le tri « favoris » ou un filtre peut rapprocher deux contenus de même palette.",
+      "Deux des sept exemples d’origine reçoivent une variante.",
+      "Seuls le fond et le décor varient ; en sombre sans essai de thème, les variantes restent claires.",
+      "Combinaisons vérifiées seulement en sombre, sur la grille ordinateur."
+     ]
+    }
+   ],
+   "notesForMain": "J'ai vérifié les cinq essais. J'ai rejoué tous leurs contrôles d'origine (check.py et combinaisons.py) et ils passent tous. J'ai aussi écrit une contre-vérification par essai, qui passe également. Aucun essai.css ni essai.mjs n'a eu besoin de correction. J'ai mis à jour les cinq essai.json avec les mesures rejouées. Rien n'est commité.\n\n1) Artefact du chargeur, utile pour les autres groupes. Dès qu'une feuille d'essai est chargée, un pixel de Projets sombre (1440 × 900) passe de 77 à 78. Il se trouve en (669, 92), au bord du médaillon de la pastille Monde, sous le flou de verre. Le même pixel change avec visiter-contour-sombre, dont aucune règle ne s'applique sur cette page. Deux chargements de la même configuration restent identiques entre eux. Les affirmations « 0 pixel » en sombre sur les pages qui ont cette pastille peuvent donc buter sur ce pixel.\n\n2) roles-couleur passe en « corrigé » pour la documentation seulement :\n- « Fermer », affiché après l'enregistrement d'un signalement, change aussi de couleur. Dans le socle en clair, il n'est qu'à 3,80:1 ; avec l'essai, à 7,18:1.\n- La décision citée est reformulée. « Les autres boutons gardent leur style » vient du récit de la réalisation dans le journal, pas d'une phrase de l'utilisateur.\n- Le dialogue d'inscription de l'arrivée est maintenant mesuré, en l'ouvrant par script.\nAutre incohérence du socle : en sombre, dans les dialogues de l'arrivée, l'action principale de l'inscription est turquoise alors que celle de la connexion est rose.\n\n3) illustrations-sombres : en fiche et en visionneuse, la règle du socle svg{stroke:currentColor} n'est pas annulée. Un contour blanc apparaît donc autour des formes et du cadre (capture checks/illustrations-sombres/apres-visionneuse-sombre.png). Je l'ai laissé, par périmètre strict, et la limite est précisée. Si l'utilisateur retient l'essai, une variante pourrait l'annuler.\n\n4) Je n'ai pas lancé snapshot.py --verify, qui réécrit snapshot-verification.json. Une vérification en lecture seule confirme les 137 fichiers et leurs originaux. Je n'ai écrit que dans essais/<id>/essai.json et checks/<id>/ de mes cinq essais, et dans le scratchpad. Les fichiers récemment modifiés dans titre-fiche-campus, globe-espace-libre et police-etiquettes-globe viennent d'autres agents.\n\n5) Nouveaux fichiers sous /home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/ :\n- contre-verification.py et .json dans les cinq dossiers d'essai ;\n- illustrations-variees/palettes-exhaustif.mjs et .json (Node, hors navigateur) ;\n- captures avant/apres-petit-sombre.png pour sombres, attenuees et visiter, et avant/apres-paysage-sombre.png et avant/apres-ar-mobile-sombre.png pour visiter.\nLa capture AR de visiter montre des libellés français au moment de la prise, à cause de l'alternance : elle n'est pas citée dans essai.json.\nPour relancer : python3 -I <dossier>/contre-verification.py et node checks/illustrations-variees/palettes-exhaustif.mjs.\n\n6) La galerie n'affiche sur la carte que captures[0]. J'ai gardé en tête les captures les plus parlantes et ajouté les nouvelles plus loin. Le créneau Chrome partagé a parfois fait attendre quelques secondes ; la mémoire est restée correcte, avec un nouvel onglet par vue."
+  }
+ }
+]

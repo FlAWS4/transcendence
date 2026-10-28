@@ -1,0 +1,159 @@
+{
+ "script": "d1_146.py",
+ "state": "146",
+ "url": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/index.html?qa=verif-146-d1",
+ "viewport": [
+  1280,
+  900
+ ],
+ "cases": {
+  "annuler-souris": {
+   "active": "entry-login",
+   "focusVisible": false,
+   "changes": [
+    {
+     "dtMs": 3809,
+     "lang": "ar",
+     "active": "entry-login"
+    },
+    {
+     "dtMs": 7809,
+     "lang": "fr",
+     "active": "entry-login"
+    }
+   ]
+  },
+  "echap-apres-souris": {
+   "active": "entry-login",
+   "focusVisible": true,
+   "changes": [
+    {
+     "dtMs": 3890,
+     "lang": "ar",
+     "active": "entry-login"
+    },
+    {
+     "dtMs": 7890,
+     "lang": "fr",
+     "active": "entry-login"
+    }
+   ]
+  },
+  "touches-rares": [
+   {
+    "key": "NumLock",
+    "active": "entry-login",
+    "focusVisible": true,
+    "changesWithin4700ms": [
+     {
+      "dtMs": 3688,
+      "lang": "ar",
+      "active": "entry-login"
+     }
+    ]
+   },
+   {
+    "key": "ScrollLock",
+    "active": "entry-login",
+    "focusVisible": true,
+    "changesWithin4700ms": [
+     {
+      "dtMs": 2809,
+      "lang": "fr",
+      "active": "entry-login"
+     }
+    ]
+   },
+   {
+    "key": "PrintScreen",
+    "active": "entry-login",
+    "focusVisible": true,
+    "changesWithin4700ms": [
+     {
+      "dtMs": 1933,
+      "lang": "en",
+      "active": "entry-login"
+     }
+    ]
+   },
+   {
+    "key": "F11",
+    "active": "entry-login",
+    "focusVisible": true,
+    "changesWithin4700ms": [
+     {
+      "dtMs": 1056,
+      "lang": "ar",
+      "active": "entry-login"
+     }
+    ]
+   },
+   {
+    "key": "Escape",
+    "active": "entry-login",
+    "focusVisible": true,
+    "changesWithin4700ms": [
+     {
+      "dtMs": 179,
+      "lang": "fr",
+      "active": "entry-login"
+     },
+     {
+      "dtMs": 4180,
+      "lang": "en",
+      "active": "entry-login"
+     }
+    ]
+   }
+  ],
+  "modificateurs": [
+   {
+    "key": "Alt",
+    "active": "entry-theme-toggle",
+    "theme": "dark",
+    "changesWithin4700ms": [
+     {
+      "dtMs": 3661,
+      "lang": "ar",
+      "active": "entry-theme-toggle"
+     }
+    ]
+   },
+   {
+    "key": "Shift",
+    "active": "entry-theme-toggle",
+    "theme": "light",
+    "changesWithin4700ms": [
+     {
+      "dtMs": 3661,
+      "lang": "fr",
+      "active": "entry-theme-toggle"
+     }
+    ]
+   },
+   {
+    "key": "ctrl+c",
+    "active": "entry-theme-toggle",
+    "theme": "dark",
+    "changesWithin4700ms": [
+     {
+      "dtMs": 3665,
+      "lang": "en",
+      "active": "entry-theme-toggle"
+     }
+    ]
+   }
+  ]
+ },
+ "console": [
+  {
+   "kind": "log.network.error",
+   "text": "Failed to load resource: the server responded with a status of 404 (File not found)",
+   "resource": "http://127.0.0.1:8765/favicon.ico",
+   "page": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/index.html?qa=verif-146-d1"
+  }
+ ],
+ "failure": "AssertionError('wait timeout: document.querySelector(\"#dialog\").open')",
+ "sourcesUnchanged": true,
+ "seconds": 93.5
+}

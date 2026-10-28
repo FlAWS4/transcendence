@@ -1,0 +1,406 @@
+{
+  "date": "2026-10-13",
+  "sourcesBefore": {
+    "back-to-top.mjs": "627c64dc27839d3b370ac675e2cb8f685ff71065e5edca702e73eb4fc31a2ffd",
+    "back-to-top.css": "e2afa54482fcb63e0e476987f8a8817b1d7a79aca80af9147857bd57d26b0152",
+    "welcome.mjs": "c9c96d579187074020f1ee65f8d7d0c3a00bdfb0a3e03068b12abaf3061265ca",
+    "index.html": "6eceb066bb7b74d35c5ef1cf1638bf4568bef6e0ee03ba7d4dd35d538fd559f8",
+    "content-preview.html": "5ec22bc3b393c2824f6381b742e8301a00eb3905fad0998739b02c075ec2b253"
+  },
+  "cases": [
+    {
+      "case": "entrance-mobile-hidden",
+      "result": {
+        "hidden": true,
+        "shown": false,
+        "label": "Remonter en haut",
+        "rect": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "scroll": 0,
+        "hash": "#explore",
+        "lang": "fr",
+        "focus": "",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              16,
+              767,
+              374,
+              827
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              95,
+              710,
+              295,
+              754
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              277,
+              710,
+              321,
+              754
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "mobile-list-top-hidden",
+      "result": {
+        "hidden": true,
+        "shown": false,
+        "label": "Remonter en haut",
+        "rect": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "scroll": 0,
+        "hash": "#projects",
+        "lang": "fr",
+        "focus": "",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              16,
+              767,
+              374,
+              827
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              69,
+              710,
+              269,
+              754
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              277,
+              710,
+              321,
+              754
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "below-threshold-hidden",
+      "result": {
+        "hidden": true,
+        "shown": false,
+        "label": "Remonter en haut",
+        "rect": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "scroll": 300,
+        "hash": "#projects",
+        "lang": "fr",
+        "focus": "",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              16,
+              767,
+              374,
+              827
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              69,
+              710,
+              269,
+              754
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              277,
+              710,
+              321,
+              754
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "mobile-list-scrolled",
+      "result": {
+        "hidden": false,
+        "shown": true,
+        "label": "Remonter en haut",
+        "rect": [
+          315,
+          654,
+          359,
+          698
+        ],
+        "scroll": 1000,
+        "hash": "#projects",
+        "lang": "fr",
+        "focus": "",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              16,
+              767,
+              374,
+              827
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              69,
+              710,
+              269,
+              754
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              277,
+              710,
+              321,
+              754
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "smooth-return-focus-list",
+      "result": {
+        "hidden": true,
+        "shown": false,
+        "label": "Remonter en haut",
+        "rect": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "scroll": 0,
+        "hash": "#projects",
+        "lang": "fr",
+        "focus": "section-title",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              16,
+              767,
+              374,
+              827
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              69,
+              710,
+              269,
+              754
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              277,
+              710,
+              321,
+              754
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "width840-visible",
+      "result": {
+        "hidden": false,
+        "shown": true,
+        "label": "Remonter en haut",
+        "rect": [
+          765,
+          639,
+          809,
+          683
+        ],
+        "scroll": 1000,
+        "hash": "#projects",
+        "lang": "fr",
+        "focus": "section-title",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              102.1171875,
+              752,
+              737.8828125,
+              812
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              293.9921875,
+              695,
+              493.9921875,
+              739
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              501.9921875,
+              695,
+              545.9921875,
+              739
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "width841-hidden-focus-retained",
+      "result": {
+        "hidden": true,
+        "shown": false,
+        "label": "Remonter en haut",
+        "rect": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "scroll": 1000,
+        "hash": "#projects",
+        "lang": "fr",
+        "focus": "",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              102.5,
+              752,
+              738.5,
+              812
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              294.5,
+              695,
+              494.5,
+              739
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              502.5,
+              695,
+              546.5,
+              739
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "failure",
+      "result": {
+        "hidden": true,
+        "shown": false,
+        "label": "Remonter en haut",
+        "rect": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "scroll": 1000,
+        "hash": "#projects",
+        "lang": "fr",
+        "focus": "",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              102.5,
+              752,
+              738.5,
+              812
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              294.5,
+              695,
+              494.5,
+              739
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              502.5,
+              695,
+              546.5,
+              739
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    }
+  ],
+  "passed": false,
+  "error": "AssertionError()",
+  "sourcesAfter": {
+    "back-to-top.mjs": "627c64dc27839d3b370ac675e2cb8f685ff71065e5edca702e73eb4fc31a2ffd",
+    "back-to-top.css": "e2afa54482fcb63e0e476987f8a8817b1d7a79aca80af9147857bd57d26b0152",
+    "welcome.mjs": "c9c96d579187074020f1ee65f8d7d0c3a00bdfb0a3e03068b12abaf3061265ca",
+    "index.html": "6eceb066bb7b74d35c5ef1cf1638bf4568bef6e0ee03ba7d4dd35d538fd559f8",
+    "content-preview.html": "5ec22bc3b393c2824f6381b742e8301a00eb3905fad0998739b02c075ec2b253"
+  },
+  "sourcesUnchanged": true
+}

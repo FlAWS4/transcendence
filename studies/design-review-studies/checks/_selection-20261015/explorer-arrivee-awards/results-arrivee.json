@@ -1,0 +1,5601 @@
+{
+ "1440x900-clair": {
+  "viewport": [
+   1440,
+   900,
+   false
+  ],
+  "theme": "light",
+  "lang": "fr",
+  "ALL9": {
+   "guest": {
+    "text": "Visiter",
+    "lang": "fr",
+    "rect": [
+     732,
+     605,
+     153.61,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(255, 255, 255)",
+    "border": "rgb(220, 229, 229) 1px solid",
+    "radius": "12px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 95.61,
+    "clipped": false,
+    "textContrast": 17.22
+   },
+   "login": {
+    "text": "Se connecter",
+    "lang": "fr",
+    "rect": [
+     554.39,
+     605,
+     153.61,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(0, 186, 188)",
+    "border": "rgb(0, 186, 188) 1px solid",
+    "radius": "12px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 95.61,
+    "clipped": false,
+    "textContrast": 7.18
+   },
+   "pageBg": "#F5FAFA",
+   "guestBoundary": {
+    "edgePixel": "#DCE5E5",
+    "paintedContrast": 1.22,
+    "computedContrast": 1.22
+   },
+   "sameSize": true,
+   "overflow": false,
+   "focusGuest": {
+    "id": "entry-guest",
+    "focusVisible": true,
+    "outline": "solid 2px rgb(0, 142, 144)",
+    "offset": "5px",
+    "rect": [
+     732,
+     605,
+     153.609375,
+     52
+    ],
+    "ringPixel": "#008E90",
+    "ringContrast": 3.78
+   },
+   "focusLogin": {
+    "id": "entry-login",
+    "focusVisible": true,
+    "outline": "solid 2px rgb(0, 142, 144)",
+    "offset": "5px",
+    "rect": [
+     554.390625,
+     605,
+     153.609375,
+     52
+    ],
+    "ringPixel": "#008E90",
+    "ringContrast": 3.78
+   },
+   "cycle": [
+    [
+     "Visit",
+     [
+      732,
+      605,
+      153.61,
+      52
+     ],
+     false
+    ],
+    [
+     "Sign in",
+     [
+      554.39,
+      605,
+      153.61,
+      52
+     ],
+     false
+    ],
+    [
+     "زيارة",
+     [
+      732,
+      605,
+      153.61,
+      52
+     ],
+     false
+    ],
+    [
+     "تسجيل الدخول",
+     [
+      554.39,
+      605,
+      153.61,
+      52
+     ],
+     false
+    ]
+   ]
+  },
+  "socle": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     732,
+     605,
+     159.58,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(255, 255, 255)",
+    "border": "rgb(220, 229, 229) 1px solid",
+    "radius": "14px",
+    "shadow": "rgba(24, 61, 60, 0.024) 0px 3px 12px 0px",
+    "font": "17px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 45.58,
+    "innerWidth": 101.58,
+    "clipped": false,
+    "textContrast": 17.22
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     548.42,
+     605,
+     159.58,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(0, 186, 188)",
+    "border": "rgb(0, 186, 188) 1px solid",
+    "radius": "14px",
+    "shadow": "rgba(27, 27, 27, 0.07) 0px 7px 20px 0px",
+    "font": "17px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 101.58,
+    "innerWidth": 101.58,
+    "clipped": false,
+    "textContrast": 7.18
+   },
+   "pageBg": "#F5F9F9",
+   "guestBoundary": {
+    "edgePixel": "#DCE5E5",
+    "paintedContrast": 1.21,
+    "computedContrast": 1.21
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "R": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     732,
+     605,
+     159.58,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(255, 255, 255)",
+    "border": "rgb(220, 229, 229) 1px solid",
+    "radius": "14px",
+    "shadow": "rgba(24, 61, 60, 0.024) 0px 3px 12px 0px",
+    "font": "17px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 45.58,
+    "innerWidth": 101.58,
+    "clipped": false,
+    "textContrast": 17.22
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     548.42,
+     605,
+     159.58,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(0, 186, 188)",
+    "border": "rgb(0, 186, 188) 1px solid",
+    "radius": "14px",
+    "shadow": "rgba(27, 27, 27, 0.07) 0px 7px 20px 0px",
+    "font": "17px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 101.58,
+    "innerWidth": 101.58,
+    "clipped": false,
+    "textContrast": 7.18
+   },
+   "pageBg": "#F5F9F9",
+   "guestBoundary": {
+    "edgePixel": "#DCE5E5",
+    "paintedContrast": 1.21,
+    "computedContrast": 1.21
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "V": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     732,
+     605,
+     159.58,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(255, 255, 255)",
+    "border": "rgb(220, 229, 229) 1px solid",
+    "radius": "14px",
+    "shadow": "rgba(24, 61, 60, 0.024) 0px 3px 12px 0px",
+    "font": "17px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 45.58,
+    "innerWidth": 101.58,
+    "clipped": false,
+    "textContrast": 17.22
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     548.42,
+     605,
+     159.58,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(0, 186, 188)",
+    "border": "rgb(0, 186, 188) 1px solid",
+    "radius": "14px",
+    "shadow": "rgba(27, 27, 27, 0.07) 0px 7px 20px 0px",
+    "font": "17px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 101.58,
+    "innerWidth": 101.58,
+    "clipped": false,
+    "textContrast": 7.18
+   },
+   "pageBg": "#F5F9F9",
+   "guestBoundary": {
+    "edgePixel": "#DCE5E5",
+    "paintedContrast": 1.21,
+    "computedContrast": 1.21
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "L": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     732,
+     605,
+     159.58,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(255, 255, 255)",
+    "border": "rgb(220, 229, 229) 1px solid",
+    "radius": "14px",
+    "shadow": "rgba(24, 61, 60, 0.024) 0px 3px 12px 0px",
+    "font": "17px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 45.58,
+    "innerWidth": 101.58,
+    "clipped": false,
+    "textContrast": 17.22
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     548.42,
+     605,
+     159.58,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(0, 186, 188)",
+    "border": "rgb(0, 186, 188) 1px solid",
+    "radius": "14px",
+    "shadow": "rgba(27, 27, 27, 0.07) 0px 7px 20px 0px",
+    "font": "17px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 101.58,
+    "innerWidth": 101.58,
+    "clipped": false,
+    "textContrast": 7.18
+   },
+   "pageBg": "#F5F9F9",
+   "guestBoundary": {
+    "edgePixel": "#DCE5E5",
+    "paintedContrast": 1.21,
+    "computedContrast": 1.21
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "E": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     732,
+     605,
+     153.61,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(255, 255, 255)",
+    "border": "rgb(220, 229, 229) 1px solid",
+    "radius": "12px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 95.61,
+    "clipped": false,
+    "textContrast": 17.22
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     554.39,
+     605,
+     153.61,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(0, 186, 188)",
+    "border": "rgb(0, 186, 188) 1px solid",
+    "radius": "12px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 95.61,
+    "clipped": false,
+    "textContrast": 7.18
+   },
+   "pageBg": "#F5FAFA",
+   "guestBoundary": {
+    "edgePixel": "#DCE5E5",
+    "paintedContrast": 1.22,
+    "computedContrast": 1.22
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "R+V": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     732,
+     605,
+     159.58,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(255, 255, 255)",
+    "border": "rgb(220, 229, 229) 1px solid",
+    "radius": "14px",
+    "shadow": "rgba(24, 61, 60, 0.024) 0px 3px 12px 0px",
+    "font": "17px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 45.58,
+    "innerWidth": 101.58,
+    "clipped": false,
+    "textContrast": 17.22
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     548.42,
+     605,
+     159.58,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(0, 186, 188)",
+    "border": "rgb(0, 186, 188) 1px solid",
+    "radius": "14px",
+    "shadow": "rgba(27, 27, 27, 0.07) 0px 7px 20px 0px",
+    "font": "17px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 101.58,
+    "innerWidth": 101.58,
+    "clipped": false,
+    "textContrast": 7.18
+   },
+   "pageBg": "#F5F9F9",
+   "guestBoundary": {
+    "edgePixel": "#DCE5E5",
+    "paintedContrast": 1.21,
+    "computedContrast": 1.21
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "V+E": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     732,
+     605,
+     153.61,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(255, 255, 255)",
+    "border": "rgb(220, 229, 229) 1px solid",
+    "radius": "12px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 95.61,
+    "clipped": false,
+    "textContrast": 17.22
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     554.39,
+     605,
+     153.61,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(0, 186, 188)",
+    "border": "rgb(0, 186, 188) 1px solid",
+    "radius": "12px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 95.61,
+    "clipped": false,
+    "textContrast": 7.18
+   },
+   "pageBg": "#F5FAFA",
+   "guestBoundary": {
+    "edgePixel": "#DCE5E5",
+    "paintedContrast": 1.22,
+    "computedContrast": 1.22
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "R+E": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     732,
+     605,
+     153.61,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(255, 255, 255)",
+    "border": "rgb(220, 229, 229) 1px solid",
+    "radius": "12px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 95.61,
+    "clipped": false,
+    "textContrast": 17.22
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     554.39,
+     605,
+     153.61,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(0, 186, 188)",
+    "border": "rgb(0, 186, 188) 1px solid",
+    "radius": "12px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 95.61,
+    "clipped": false,
+    "textContrast": 7.18
+   },
+   "pageBg": "#F5FAFA",
+   "guestBoundary": {
+    "edgePixel": "#DCE5E5",
+    "paintedContrast": 1.22,
+    "computedContrast": 1.22
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "R+V+E": {
+   "guest": {
+    "text": "Visiter",
+    "lang": "fr",
+    "rect": [
+     732,
+     605,
+     153.61,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(255, 255, 255)",
+    "border": "rgb(220, 229, 229) 1px solid",
+    "radius": "12px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 95.61,
+    "clipped": false,
+    "textContrast": 17.22
+   },
+   "login": {
+    "text": "Se connecter",
+    "lang": "fr",
+    "rect": [
+     554.39,
+     605,
+     153.61,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(0, 186, 188)",
+    "border": "rgb(0, 186, 188) 1px solid",
+    "radius": "12px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 95.61,
+    "clipped": false,
+    "textContrast": 7.18
+   },
+   "pageBg": "#F5FAFA",
+   "guestBoundary": {
+    "edgePixel": "#DCE5E5",
+    "paintedContrast": 1.22,
+    "computedContrast": 1.22
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "R+V+L+E": {
+   "guest": {
+    "text": "Visiter",
+    "lang": "fr",
+    "rect": [
+     732,
+     605,
+     153.61,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(255, 255, 255)",
+    "border": "rgb(220, 229, 229) 1px solid",
+    "radius": "12px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 95.61,
+    "clipped": false,
+    "textContrast": 17.22
+   },
+   "login": {
+    "text": "Se connecter",
+    "lang": "fr",
+    "rect": [
+     554.39,
+     605,
+     153.61,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(0, 186, 188)",
+    "border": "rgb(0, 186, 188) 1px solid",
+    "radius": "12px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 95.61,
+    "clipped": false,
+    "textContrast": 7.18
+   },
+   "pageBg": "#F5FAFA",
+   "guestBoundary": {
+    "edgePixel": "#DCE5E5",
+    "paintedContrast": 1.22,
+    "computedContrast": 1.22
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "dialog": {
+   "ALL9": {
+    "kind": "login",
+    "rect": [
+     510,
+     306.41,
+     420,
+     287.19
+    ],
+    "radius": "20px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 22px 64px 0px, rgba(24, 61, 60, 0.024) 0px 3px 12px 0px",
+    "bg": "rgb(255, 255, 255)",
+    "title": [
+     "Connexion — prototype",
+     "20px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "Simuler une connexion réussie",
+      "cls": "entrance-action",
+      "rect": [
+       535,
+       462.59,
+       265.05,
+       53
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(0, 186, 188)",
+      "border": "rgb(0, 186, 188) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+      "clipped": false,
+      "textContrast": 7.18,
+      "borderContrastOnDialog": 2.4
+     },
+     {
+      "text": "Annuler",
+      "cls": "entrance-action secondary",
+      "rect": [
+       535,
+       515.59,
+       111.17,
+       53
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(255, 255, 255)",
+      "border": "rgb(220, 229, 229) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+      "clipped": false,
+      "textContrast": 17.22,
+      "borderContrastOnDialog": 1.28
+     }
+    ],
+    "verticalGaps": [
+     0
+    ],
+    "overflow": false
+   },
+   "socle": {
+    "kind": "login",
+    "rect": [
+     510,
+     305.41,
+     420,
+     289.19
+    ],
+    "radius": "28px",
+    "shadow": "rgba(24, 61, 60, 0.14) 0px 28px 90px 0px, rgba(24, 61, 60, 0.04) 0px 4px 14px 0px",
+    "bg": "rgb(255, 255, 255)",
+    "title": [
+     "Connexion — prototype",
+     "24px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "Simuler une connexion réussie",
+      "cls": "entrance-action",
+      "rect": [
+       535,
+       461.59,
+       277.98,
+       54
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(0, 186, 188)",
+      "border": "rgb(0, 186, 188) 1px solid",
+      "radius": "14px",
+      "font": "17px 400",
+      "shadow": "rgba(27, 27, 27, 0.07) 0px 7px 20px 0px",
+      "clipped": false,
+      "textContrast": 7.18,
+      "borderContrastOnDialog": 2.4
+     },
+     {
+      "text": "Annuler",
+      "cls": "entrance-action secondary",
+      "rect": [
+       535,
+       515.59,
+       114.5,
+       54
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(255, 255, 255)",
+      "border": "rgb(220, 229, 229) 1px solid",
+      "radius": "14px",
+      "font": "17px 400",
+      "shadow": "rgba(24, 61, 60, 0.024) 0px 3px 12px 0px",
+      "clipped": false,
+      "textContrast": 17.22,
+      "borderContrastOnDialog": 1.28
+     }
+    ],
+    "verticalGaps": [
+     0
+    ],
+    "overflow": false
+   },
+   "R": {
+    "kind": "login",
+    "rect": [
+     510,
+     305.41,
+     420,
+     289.19
+    ],
+    "radius": "28px",
+    "shadow": "rgba(24, 61, 60, 0.14) 0px 28px 90px 0px, rgba(24, 61, 60, 0.04) 0px 4px 14px 0px",
+    "bg": "rgb(255, 255, 255)",
+    "title": [
+     "Connexion — prototype",
+     "24px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "Simuler une connexion réussie",
+      "cls": "entrance-action",
+      "rect": [
+       535,
+       461.59,
+       277.98,
+       54
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(0, 186, 188)",
+      "border": "rgb(0, 186, 188) 1px solid",
+      "radius": "14px",
+      "font": "17px 400",
+      "shadow": "rgba(27, 27, 27, 0.07) 0px 7px 20px 0px",
+      "clipped": false,
+      "textContrast": 7.18,
+      "borderContrastOnDialog": 2.4
+     },
+     {
+      "text": "Annuler",
+      "cls": "entrance-action secondary",
+      "rect": [
+       535,
+       515.59,
+       114.5,
+       54
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(255, 255, 255)",
+      "border": "rgb(220, 229, 229) 1px solid",
+      "radius": "14px",
+      "font": "17px 400",
+      "shadow": "rgba(24, 61, 60, 0.024) 0px 3px 12px 0px",
+      "clipped": false,
+      "textContrast": 17.22,
+      "borderContrastOnDialog": 1.28
+     }
+    ],
+    "verticalGaps": [
+     0
+    ],
+    "overflow": false
+   },
+   "E": {
+    "kind": "login",
+    "rect": [
+     510,
+     306.41,
+     420,
+     287.19
+    ],
+    "radius": "20px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 22px 64px 0px, rgba(24, 61, 60, 0.024) 0px 3px 12px 0px",
+    "bg": "rgb(255, 255, 255)",
+    "title": [
+     "Connexion — prototype",
+     "20px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "Simuler une connexion réussie",
+      "cls": "entrance-action",
+      "rect": [
+       535,
+       462.59,
+       265.05,
+       53
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(0, 186, 188)",
+      "border": "rgb(0, 186, 188) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+      "clipped": false,
+      "textContrast": 7.18,
+      "borderContrastOnDialog": 2.4
+     },
+     {
+      "text": "Annuler",
+      "cls": "entrance-action secondary",
+      "rect": [
+       535,
+       515.59,
+       111.17,
+       53
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(255, 255, 255)",
+      "border": "rgb(220, 229, 229) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+      "clipped": false,
+      "textContrast": 17.22,
+      "borderContrastOnDialog": 1.28
+     }
+    ],
+    "verticalGaps": [
+     0
+    ],
+    "overflow": false
+   },
+   "L": {
+    "kind": "login",
+    "rect": [
+     510,
+     305.41,
+     420,
+     289.19
+    ],
+    "radius": "28px",
+    "shadow": "rgba(24, 61, 60, 0.14) 0px 28px 90px 0px, rgba(24, 61, 60, 0.04) 0px 4px 14px 0px",
+    "bg": "rgb(255, 255, 255)",
+    "title": [
+     "Connexion — prototype",
+     "24px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "Simuler une connexion réussie",
+      "cls": "entrance-action",
+      "rect": [
+       535,
+       461.59,
+       277.98,
+       54
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(0, 186, 188)",
+      "border": "rgb(0, 186, 188) 1px solid",
+      "radius": "14px",
+      "font": "17px 400",
+      "shadow": "rgba(27, 27, 27, 0.07) 0px 7px 20px 0px",
+      "clipped": false,
+      "textContrast": 7.18,
+      "borderContrastOnDialog": 2.4
+     },
+     {
+      "text": "Annuler",
+      "cls": "entrance-action secondary",
+      "rect": [
+       535,
+       515.59,
+       114.5,
+       54
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(255, 255, 255)",
+      "border": "rgb(220, 229, 229) 1px solid",
+      "radius": "14px",
+      "font": "17px 400",
+      "shadow": "rgba(24, 61, 60, 0.024) 0px 3px 12px 0px",
+      "clipped": false,
+      "textContrast": 17.22,
+      "borderContrastOnDialog": 1.28
+     }
+    ],
+    "verticalGaps": [
+     0
+    ],
+    "overflow": false
+   },
+   "R+E": {
+    "kind": "login",
+    "rect": [
+     510,
+     306.41,
+     420,
+     287.19
+    ],
+    "radius": "20px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 22px 64px 0px, rgba(24, 61, 60, 0.024) 0px 3px 12px 0px",
+    "bg": "rgb(255, 255, 255)",
+    "title": [
+     "Connexion — prototype",
+     "20px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "Simuler une connexion réussie",
+      "cls": "entrance-action",
+      "rect": [
+       535,
+       462.59,
+       265.05,
+       53
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(0, 186, 188)",
+      "border": "rgb(0, 186, 188) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+      "clipped": false,
+      "textContrast": 7.18,
+      "borderContrastOnDialog": 2.4
+     },
+     {
+      "text": "Annuler",
+      "cls": "entrance-action secondary",
+      "rect": [
+       535,
+       515.59,
+       111.17,
+       53
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(255, 255, 255)",
+      "border": "rgb(220, 229, 229) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+      "clipped": false,
+      "textContrast": 17.22,
+      "borderContrastOnDialog": 1.28
+     }
+    ],
+    "verticalGaps": [
+     0
+    ],
+    "overflow": false
+   },
+   "R+L+E": {
+    "kind": "login",
+    "rect": [
+     510,
+     306.41,
+     420,
+     287.19
+    ],
+    "radius": "20px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 22px 64px 0px, rgba(24, 61, 60, 0.024) 0px 3px 12px 0px",
+    "bg": "rgb(255, 255, 255)",
+    "title": [
+     "Connexion — prototype",
+     "20px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "Simuler une connexion réussie",
+      "cls": "entrance-action",
+      "rect": [
+       535,
+       462.59,
+       265.05,
+       53
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(0, 186, 188)",
+      "border": "rgb(0, 186, 188) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+      "clipped": false,
+      "textContrast": 7.18,
+      "borderContrastOnDialog": 2.4
+     },
+     {
+      "text": "Annuler",
+      "cls": "entrance-action secondary",
+      "rect": [
+       535,
+       515.59,
+       111.17,
+       53
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(255, 255, 255)",
+      "border": "rgb(220, 229, 229) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+      "clipped": false,
+      "textContrast": 17.22,
+      "borderContrastOnDialog": 1.28
+     }
+    ],
+    "verticalGaps": [
+     0
+    ],
+    "overflow": false
+   },
+   "focus": [
+    {
+     "id": "entrance-action",
+     "focusVisible": true,
+     "outline": "solid 2px rgb(0, 142, 144)",
+     "offset": "5px",
+     "rect": [
+      535,
+      462.59375,
+      265.046875,
+      53
+     ]
+    },
+    {
+     "id": "entrance-action secondary",
+     "focusVisible": true,
+     "outline": "solid 2px rgb(0, 142, 144)",
+     "offset": "5px",
+     "rect": [
+      535,
+      515.59375,
+      111.171875,
+      53
+     ]
+    }
+   ]
+  },
+  "errors": []
+ },
+ "1440x900-sombre": {
+  "viewport": [
+   1440,
+   900,
+   false
+  ],
+  "theme": "dark",
+  "lang": "fr",
+  "ALL9": {
+   "guest": {
+    "text": "Visiter",
+    "lang": "fr",
+    "rect": [
+     732,
+     605,
+     153.61,
+     52
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(112, 131, 131) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 95.61,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "Se connecter",
+    "lang": "fr",
+    "rect": [
+     554.39,
+     605,
+     153.61,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 95.61,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#708383",
+    "paintedContrast": 4.32,
+    "computedContrast": 4.32
+   },
+   "sameSize": true,
+   "overflow": false,
+   "focusGuest": {
+    "id": "entry-guest",
+    "focusVisible": true,
+    "outline": "solid 2px rgb(150, 163, 235)",
+    "offset": "5px",
+    "rect": [
+     732,
+     605,
+     153.609375,
+     52
+    ],
+    "ringPixel": "#96A3EB",
+    "ringContrast": 7.16
+   },
+   "focusLogin": {
+    "id": "entry-login",
+    "focusVisible": true,
+    "outline": "solid 2px rgb(150, 163, 235)",
+    "offset": "5px",
+    "rect": [
+     554.390625,
+     605,
+     153.609375,
+     52
+    ],
+    "ringPixel": "#96A3EB",
+    "ringContrast": 7.16
+   },
+   "cycle": [
+    [
+     "Visit",
+     [
+      732,
+      605,
+      153.61,
+      52
+     ],
+     false
+    ],
+    [
+     "Sign in",
+     [
+      554.39,
+      605,
+      153.61,
+      52
+     ],
+     false
+    ],
+    [
+     "زيارة",
+     [
+      732,
+      605,
+      153.61,
+      52
+     ],
+     false
+    ],
+    [
+     "تسجيل الدخول",
+     [
+      554.39,
+      605,
+      153.61,
+      52
+     ],
+     false
+    ]
+   ]
+  },
+  "socle": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     732,
+     605,
+     159.58,
+     52
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0) 1px solid",
+    "radius": "14px",
+    "shadow": "none",
+    "font": "17px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 45.58,
+    "innerWidth": 101.58,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     548.42,
+     605,
+     159.58,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "14px",
+    "shadow": "none",
+    "font": "17px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 101.58,
+    "innerWidth": 101.58,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#1B1B1B",
+    "paintedContrast": 1.0,
+    "computedContrast": null
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "R": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     732,
+     605,
+     159.58,
+     52
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0) 1px solid",
+    "radius": "14px",
+    "shadow": "none",
+    "font": "17px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 45.58,
+    "innerWidth": 101.58,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     548.42,
+     605,
+     159.58,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "14px",
+    "shadow": "none",
+    "font": "17px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 101.58,
+    "innerWidth": 101.58,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#1B1B1B",
+    "paintedContrast": 1.0,
+    "computedContrast": null
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "V": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     732,
+     605,
+     159.58,
+     52
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(112, 131, 131) 1px solid",
+    "radius": "14px",
+    "shadow": "none",
+    "font": "17px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 45.58,
+    "innerWidth": 101.58,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     548.42,
+     605,
+     159.58,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "14px",
+    "shadow": "none",
+    "font": "17px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 101.58,
+    "innerWidth": 101.58,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#708383",
+    "paintedContrast": 4.32,
+    "computedContrast": 4.32
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "L": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     732,
+     605,
+     159.58,
+     52
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0) 1px solid",
+    "radius": "14px",
+    "shadow": "none",
+    "font": "17px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 45.58,
+    "innerWidth": 101.58,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     548.42,
+     605,
+     159.58,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "14px",
+    "shadow": "none",
+    "font": "17px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 101.58,
+    "innerWidth": 101.58,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#1B1B1B",
+    "paintedContrast": 1.0,
+    "computedContrast": null
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "E": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     732,
+     605,
+     153.61,
+     52
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 95.61,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     554.39,
+     605,
+     153.61,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 95.61,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#1B1B1B",
+    "paintedContrast": 1.0,
+    "computedContrast": null
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "R+V": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     732,
+     605,
+     159.58,
+     52
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(112, 131, 131) 1px solid",
+    "radius": "14px",
+    "shadow": "none",
+    "font": "17px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 45.58,
+    "innerWidth": 101.58,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     548.42,
+     605,
+     159.58,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "14px",
+    "shadow": "none",
+    "font": "17px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 101.58,
+    "innerWidth": 101.58,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#708383",
+    "paintedContrast": 4.32,
+    "computedContrast": 4.32
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "V+E": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     732,
+     605,
+     153.61,
+     52
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(112, 131, 131) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 95.61,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     554.39,
+     605,
+     153.61,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 95.61,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#708383",
+    "paintedContrast": 4.32,
+    "computedContrast": 4.32
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "R+E": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     732,
+     605,
+     153.61,
+     52
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 95.61,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     554.39,
+     605,
+     153.61,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 95.61,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#1B1B1B",
+    "paintedContrast": 1.0,
+    "computedContrast": null
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "R+V+E": {
+   "guest": {
+    "text": "Visiter",
+    "lang": "fr",
+    "rect": [
+     732,
+     605,
+     153.61,
+     52
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(112, 131, 131) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 95.61,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "Se connecter",
+    "lang": "fr",
+    "rect": [
+     554.39,
+     605,
+     153.61,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 95.61,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#708383",
+    "paintedContrast": 4.32,
+    "computedContrast": 4.32
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "R+V+L+E": {
+   "guest": {
+    "text": "Visiter",
+    "lang": "fr",
+    "rect": [
+     732,
+     605,
+     153.61,
+     52
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(112, 131, 131) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 95.61,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "Se connecter",
+    "lang": "fr",
+    "rect": [
+     554.39,
+     605,
+     153.61,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 95.61,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#708383",
+    "paintedContrast": 4.32,
+    "computedContrast": 4.32
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "dialog": {
+   "ALL9": {
+    "kind": "login",
+    "rect": [
+     510,
+     306.41,
+     420,
+     287.19
+    ],
+    "radius": "20px",
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 16px 48px 0px",
+    "bg": "rgb(32, 32, 38)",
+    "title": [
+     "Connexion — prototype",
+     "20px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "Simuler une connexion réussie",
+      "cls": "entrance-action",
+      "rect": [
+       535,
+       462.59,
+       265.05,
+       53
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(237, 52, 145)",
+      "border": "rgb(237, 52, 145) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 4.51,
+      "borderContrastOnDialog": 4.24
+     },
+     {
+      "text": "Annuler",
+      "cls": "entrance-action secondary",
+      "rect": [
+       535,
+       515.59,
+       111.17,
+       53
+      ],
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "color(srgb 1 1 1 / 0.12) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 16.2,
+      "borderContrastOnDialog": null
+     }
+    ],
+    "verticalGaps": [
+     0
+    ],
+    "overflow": false
+   },
+   "socle": {
+    "kind": "login",
+    "rect": [
+     510,
+     305.41,
+     420,
+     289.19
+    ],
+    "radius": "28px",
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 16px 48px 0px",
+    "bg": "rgb(32, 32, 38)",
+    "title": [
+     "Connexion — prototype",
+     "24px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "Simuler une connexion réussie",
+      "cls": "entrance-action",
+      "rect": [
+       535,
+       461.59,
+       277.98,
+       54
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(237, 52, 145)",
+      "border": "rgb(237, 52, 145) 1px solid",
+      "radius": "14px",
+      "font": "17px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 4.51,
+      "borderContrastOnDialog": 4.24
+     },
+     {
+      "text": "Annuler",
+      "cls": "entrance-action secondary",
+      "rect": [
+       535,
+       515.59,
+       114.5,
+       54
+      ],
+      "color": "rgb(0, 186, 188)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "rgba(0, 0, 0, 0) 1px solid",
+      "radius": "14px",
+      "font": "17px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 6.75,
+      "borderContrastOnDialog": null
+     }
+    ],
+    "verticalGaps": [
+     0
+    ],
+    "overflow": false
+   },
+   "R": {
+    "kind": "login",
+    "rect": [
+     510,
+     305.41,
+     420,
+     289.19
+    ],
+    "radius": "28px",
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 16px 48px 0px",
+    "bg": "rgb(32, 32, 38)",
+    "title": [
+     "Connexion — prototype",
+     "24px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "Simuler une connexion réussie",
+      "cls": "entrance-action",
+      "rect": [
+       535,
+       461.59,
+       277.98,
+       54
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(237, 52, 145)",
+      "border": "rgb(237, 52, 145) 1px solid",
+      "radius": "14px",
+      "font": "17px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 4.51,
+      "borderContrastOnDialog": 4.24
+     },
+     {
+      "text": "Annuler",
+      "cls": "entrance-action secondary",
+      "rect": [
+       535,
+       515.59,
+       114.5,
+       54
+      ],
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "color(srgb 1 1 1 / 0.12) 1px solid",
+      "radius": "14px",
+      "font": "17px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 16.2,
+      "borderContrastOnDialog": null
+     }
+    ],
+    "verticalGaps": [
+     0
+    ],
+    "overflow": false
+   },
+   "E": {
+    "kind": "login",
+    "rect": [
+     510,
+     306.41,
+     420,
+     287.19
+    ],
+    "radius": "20px",
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 16px 48px 0px",
+    "bg": "rgb(32, 32, 38)",
+    "title": [
+     "Connexion — prototype",
+     "20px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "Simuler une connexion réussie",
+      "cls": "entrance-action",
+      "rect": [
+       535,
+       462.59,
+       265.05,
+       53
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(237, 52, 145)",
+      "border": "rgb(237, 52, 145) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 4.51,
+      "borderContrastOnDialog": 4.24
+     },
+     {
+      "text": "Annuler",
+      "cls": "entrance-action secondary",
+      "rect": [
+       535,
+       515.59,
+       111.17,
+       53
+      ],
+      "color": "rgb(0, 186, 188)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "rgba(0, 0, 0, 0) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 6.75,
+      "borderContrastOnDialog": null
+     }
+    ],
+    "verticalGaps": [
+     0
+    ],
+    "overflow": false
+   },
+   "L": {
+    "kind": "login",
+    "rect": [
+     510,
+     305.41,
+     420,
+     289.19
+    ],
+    "radius": "28px",
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 16px 48px 0px",
+    "bg": "rgb(32, 32, 38)",
+    "title": [
+     "Connexion — prototype",
+     "24px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "Simuler une connexion réussie",
+      "cls": "entrance-action",
+      "rect": [
+       535,
+       461.59,
+       277.98,
+       54
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(237, 52, 145)",
+      "border": "rgb(237, 52, 145) 1px solid",
+      "radius": "14px",
+      "font": "17px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 4.51,
+      "borderContrastOnDialog": 4.24
+     },
+     {
+      "text": "Annuler",
+      "cls": "entrance-action secondary",
+      "rect": [
+       535,
+       515.59,
+       114.5,
+       54
+      ],
+      "color": "rgb(0, 186, 188)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "rgba(0, 0, 0, 0) 1px solid",
+      "radius": "14px",
+      "font": "17px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 6.75,
+      "borderContrastOnDialog": null
+     }
+    ],
+    "verticalGaps": [
+     0
+    ],
+    "overflow": false
+   },
+   "R+E": {
+    "kind": "login",
+    "rect": [
+     510,
+     306.41,
+     420,
+     287.19
+    ],
+    "radius": "20px",
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 16px 48px 0px",
+    "bg": "rgb(32, 32, 38)",
+    "title": [
+     "Connexion — prototype",
+     "20px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "Simuler une connexion réussie",
+      "cls": "entrance-action",
+      "rect": [
+       535,
+       462.59,
+       265.05,
+       53
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(237, 52, 145)",
+      "border": "rgb(237, 52, 145) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 4.51,
+      "borderContrastOnDialog": 4.24
+     },
+     {
+      "text": "Annuler",
+      "cls": "entrance-action secondary",
+      "rect": [
+       535,
+       515.59,
+       111.17,
+       53
+      ],
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "color(srgb 1 1 1 / 0.12) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 16.2,
+      "borderContrastOnDialog": null
+     }
+    ],
+    "verticalGaps": [
+     0
+    ],
+    "overflow": false
+   },
+   "R+L+E": {
+    "kind": "login",
+    "rect": [
+     510,
+     306.41,
+     420,
+     287.19
+    ],
+    "radius": "20px",
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 16px 48px 0px",
+    "bg": "rgb(32, 32, 38)",
+    "title": [
+     "Connexion — prototype",
+     "20px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "Simuler une connexion réussie",
+      "cls": "entrance-action",
+      "rect": [
+       535,
+       462.59,
+       265.05,
+       53
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(237, 52, 145)",
+      "border": "rgb(237, 52, 145) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 4.51,
+      "borderContrastOnDialog": 4.24
+     },
+     {
+      "text": "Annuler",
+      "cls": "entrance-action secondary",
+      "rect": [
+       535,
+       515.59,
+       111.17,
+       53
+      ],
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "color(srgb 1 1 1 / 0.12) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 16.2,
+      "borderContrastOnDialog": null
+     }
+    ],
+    "verticalGaps": [
+     0
+    ],
+    "overflow": false
+   },
+   "focus": [
+    {
+     "id": "entrance-action",
+     "focusVisible": true,
+     "outline": "solid 2px rgb(150, 163, 235)",
+     "offset": "5px",
+     "rect": [
+      535,
+      462.59375,
+      265.046875,
+      53
+     ]
+    },
+    {
+     "id": "entrance-action secondary",
+     "focusVisible": true,
+     "outline": "solid 2px rgb(150, 163, 235)",
+     "offset": "5px",
+     "rect": [
+      535,
+      515.59375,
+      111.171875,
+      53
+     ]
+    }
+   ]
+  },
+  "errors": []
+ },
+ "390x844-sombre": {
+  "viewport": [
+   390,
+   844,
+   true
+  ],
+  "theme": "dark",
+  "lang": "fr",
+  "ALL9": {
+   "guest": {
+    "text": "Visiter",
+    "lang": "fr",
+    "rect": [
+     24,
+     616,
+     342,
+     52
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(112, 131, 131) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 284,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "Se connecter",
+    "lang": "fr",
+    "rect": [
+     24,
+     552,
+     342,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 284,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#708383",
+    "paintedContrast": 4.32,
+    "computedContrast": 4.32
+   },
+   "sameSize": true,
+   "overflow": false,
+   "focusGuest": {
+    "id": "entry-guest",
+    "focusVisible": true,
+    "outline": "solid 2px rgb(150, 163, 235)",
+    "offset": "5px",
+    "rect": [
+     24,
+     616,
+     342,
+     52
+    ],
+    "ringPixel": "#96A3EB",
+    "ringContrast": 7.16
+   },
+   "focusLogin": {
+    "id": "entry-login",
+    "focusVisible": true,
+    "outline": "solid 2px rgb(150, 163, 235)",
+    "offset": "5px",
+    "rect": [
+     24,
+     552,
+     342,
+     52
+    ],
+    "ringPixel": "#96A3EB",
+    "ringContrast": 7.16
+   },
+   "cycle": [
+    [
+     "Visit",
+     [
+      24,
+      616,
+      342,
+      52
+     ],
+     false
+    ],
+    [
+     "Sign in",
+     [
+      24,
+      552,
+      342,
+      52
+     ],
+     false
+    ],
+    [
+     "زيارة",
+     [
+      24,
+      616,
+      342,
+      52
+     ],
+     false
+    ],
+    [
+     "تسجيل الدخول",
+     [
+      24,
+      552,
+      342,
+      52
+     ],
+     false
+    ]
+   ]
+  },
+  "socle": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     24,
+     616,
+     342,
+     52
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0) 1px solid",
+    "radius": "14px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 284,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     24,
+     552,
+     342,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "14px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 284,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#1B1B1B",
+    "paintedContrast": 1.0,
+    "computedContrast": null
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "R": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     24,
+     616,
+     342,
+     52
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0) 1px solid",
+    "radius": "14px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 284,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     24,
+     552,
+     342,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "14px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 284,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#1B1B1B",
+    "paintedContrast": 1.0,
+    "computedContrast": null
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "V": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     24,
+     616,
+     342,
+     52
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(112, 131, 131) 1px solid",
+    "radius": "14px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 284,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     24,
+     552,
+     342,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "14px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 284,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#708383",
+    "paintedContrast": 4.32,
+    "computedContrast": 4.32
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "L": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     24,
+     616,
+     342,
+     52
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0) 1px solid",
+    "radius": "14px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 284,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     24,
+     552,
+     342,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "14px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 284,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#1B1B1B",
+    "paintedContrast": 1.0,
+    "computedContrast": null
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "E": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     24,
+     616,
+     342,
+     52
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 284,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     24,
+     552,
+     342,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 284,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#1B1B1B",
+    "paintedContrast": 1.0,
+    "computedContrast": null
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "R+V": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     24,
+     616,
+     342,
+     52
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(112, 131, 131) 1px solid",
+    "radius": "14px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 284,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     24,
+     552,
+     342,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "14px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 284,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#708383",
+    "paintedContrast": 4.32,
+    "computedContrast": 4.32
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "V+E": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     24,
+     616,
+     342,
+     52
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(112, 131, 131) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 284,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     24,
+     552,
+     342,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 284,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#708383",
+    "paintedContrast": 4.32,
+    "computedContrast": 4.32
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "R+E": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     24,
+     616,
+     342,
+     52
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 284,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     24,
+     552,
+     342,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 284,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#1B1B1B",
+    "paintedContrast": 1.0,
+    "computedContrast": null
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "R+V+E": {
+   "guest": {
+    "text": "Visiter",
+    "lang": "fr",
+    "rect": [
+     24,
+     616,
+     342,
+     52
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(112, 131, 131) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 284,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "Se connecter",
+    "lang": "fr",
+    "rect": [
+     24,
+     552,
+     342,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 284,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#708383",
+    "paintedContrast": 4.32,
+    "computedContrast": 4.32
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "R+V+L+E": {
+   "guest": {
+    "text": "Visiter",
+    "lang": "fr",
+    "rect": [
+     24,
+     616,
+     342,
+     52
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(112, 131, 131) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 284,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "Se connecter",
+    "lang": "fr",
+    "rect": [
+     24,
+     552,
+     342,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 284,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#708383",
+    "paintedContrast": 4.32,
+    "computedContrast": 4.32
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "dialog": {
+   "ALL9": {
+    "kind": "login",
+    "rect": [
+     19,
+     278.41,
+     352,
+     287.19
+    ],
+    "radius": "20px",
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 16px 48px 0px",
+    "bg": "rgb(32, 32, 38)",
+    "title": [
+     "Connexion — prototype",
+     "20px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "Simuler une connexion réussie",
+      "cls": "entrance-action",
+      "rect": [
+       44,
+       434.59,
+       302,
+       53
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(237, 52, 145)",
+      "border": "rgb(237, 52, 145) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 4.51,
+      "borderContrastOnDialog": 4.24
+     },
+     {
+      "text": "Annuler",
+      "cls": "entrance-action secondary",
+      "rect": [
+       44,
+       487.59,
+       302,
+       53
+      ],
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "color(srgb 1 1 1 / 0.12) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 16.2,
+      "borderContrastOnDialog": null
+     }
+    ],
+    "verticalGaps": [
+     0
+    ],
+    "overflow": false
+   },
+   "socle": {
+    "kind": "login",
+    "rect": [
+     19,
+     265.41,
+     352,
+     313.19
+    ],
+    "radius": "28px",
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 16px 48px 0px",
+    "bg": "rgb(32, 32, 38)",
+    "title": [
+     "Connexion — prototype",
+     "24px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "Simuler une connexion réussie",
+      "cls": "entrance-action",
+      "rect": [
+       44,
+       447.59,
+       302,
+       53
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(237, 52, 145)",
+      "border": "rgb(237, 52, 145) 1px solid",
+      "radius": "14px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 4.51,
+      "borderContrastOnDialog": 4.24
+     },
+     {
+      "text": "Annuler",
+      "cls": "entrance-action secondary",
+      "rect": [
+       44,
+       500.59,
+       302,
+       53
+      ],
+      "color": "rgb(0, 186, 188)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "rgba(0, 0, 0, 0) 1px solid",
+      "radius": "14px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 6.75,
+      "borderContrastOnDialog": null
+     }
+    ],
+    "verticalGaps": [
+     0
+    ],
+    "overflow": false
+   },
+   "R": {
+    "kind": "login",
+    "rect": [
+     19,
+     265.41,
+     352,
+     313.19
+    ],
+    "radius": "28px",
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 16px 48px 0px",
+    "bg": "rgb(32, 32, 38)",
+    "title": [
+     "Connexion — prototype",
+     "24px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "Simuler une connexion réussie",
+      "cls": "entrance-action",
+      "rect": [
+       44,
+       447.59,
+       302,
+       53
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(237, 52, 145)",
+      "border": "rgb(237, 52, 145) 1px solid",
+      "radius": "14px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 4.51,
+      "borderContrastOnDialog": 4.24
+     },
+     {
+      "text": "Annuler",
+      "cls": "entrance-action secondary",
+      "rect": [
+       44,
+       500.59,
+       302,
+       53
+      ],
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "color(srgb 1 1 1 / 0.12) 1px solid",
+      "radius": "14px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 16.2,
+      "borderContrastOnDialog": null
+     }
+    ],
+    "verticalGaps": [
+     0
+    ],
+    "overflow": false
+   },
+   "E": {
+    "kind": "login",
+    "rect": [
+     19,
+     278.41,
+     352,
+     287.19
+    ],
+    "radius": "20px",
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 16px 48px 0px",
+    "bg": "rgb(32, 32, 38)",
+    "title": [
+     "Connexion — prototype",
+     "20px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "Simuler une connexion réussie",
+      "cls": "entrance-action",
+      "rect": [
+       44,
+       434.59,
+       302,
+       53
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(237, 52, 145)",
+      "border": "rgb(237, 52, 145) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 4.51,
+      "borderContrastOnDialog": 4.24
+     },
+     {
+      "text": "Annuler",
+      "cls": "entrance-action secondary",
+      "rect": [
+       44,
+       487.59,
+       302,
+       53
+      ],
+      "color": "rgb(0, 186, 188)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "rgba(0, 0, 0, 0) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 6.75,
+      "borderContrastOnDialog": null
+     }
+    ],
+    "verticalGaps": [
+     0
+    ],
+    "overflow": false
+   },
+   "L": {
+    "kind": "login",
+    "rect": [
+     19,
+     265.41,
+     352,
+     313.19
+    ],
+    "radius": "28px",
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 16px 48px 0px",
+    "bg": "rgb(32, 32, 38)",
+    "title": [
+     "Connexion — prototype",
+     "24px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "Simuler une connexion réussie",
+      "cls": "entrance-action",
+      "rect": [
+       44,
+       447.59,
+       302,
+       53
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(237, 52, 145)",
+      "border": "rgb(237, 52, 145) 1px solid",
+      "radius": "14px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 4.51,
+      "borderContrastOnDialog": 4.24
+     },
+     {
+      "text": "Annuler",
+      "cls": "entrance-action secondary",
+      "rect": [
+       44,
+       500.59,
+       302,
+       53
+      ],
+      "color": "rgb(0, 186, 188)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "rgba(0, 0, 0, 0) 1px solid",
+      "radius": "14px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 6.75,
+      "borderContrastOnDialog": null
+     }
+    ],
+    "verticalGaps": [
+     0
+    ],
+    "overflow": false
+   },
+   "R+E": {
+    "kind": "login",
+    "rect": [
+     19,
+     278.41,
+     352,
+     287.19
+    ],
+    "radius": "20px",
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 16px 48px 0px",
+    "bg": "rgb(32, 32, 38)",
+    "title": [
+     "Connexion — prototype",
+     "20px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "Simuler une connexion réussie",
+      "cls": "entrance-action",
+      "rect": [
+       44,
+       434.59,
+       302,
+       53
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(237, 52, 145)",
+      "border": "rgb(237, 52, 145) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 4.51,
+      "borderContrastOnDialog": 4.24
+     },
+     {
+      "text": "Annuler",
+      "cls": "entrance-action secondary",
+      "rect": [
+       44,
+       487.59,
+       302,
+       53
+      ],
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "color(srgb 1 1 1 / 0.12) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 16.2,
+      "borderContrastOnDialog": null
+     }
+    ],
+    "verticalGaps": [
+     0
+    ],
+    "overflow": false
+   },
+   "R+L+E": {
+    "kind": "login",
+    "rect": [
+     19,
+     278.41,
+     352,
+     287.19
+    ],
+    "radius": "20px",
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 16px 48px 0px",
+    "bg": "rgb(32, 32, 38)",
+    "title": [
+     "Connexion — prototype",
+     "20px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "Simuler une connexion réussie",
+      "cls": "entrance-action",
+      "rect": [
+       44,
+       434.59,
+       302,
+       53
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(237, 52, 145)",
+      "border": "rgb(237, 52, 145) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 4.51,
+      "borderContrastOnDialog": 4.24
+     },
+     {
+      "text": "Annuler",
+      "cls": "entrance-action secondary",
+      "rect": [
+       44,
+       487.59,
+       302,
+       53
+      ],
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "color(srgb 1 1 1 / 0.12) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 16.2,
+      "borderContrastOnDialog": null
+     }
+    ],
+    "verticalGaps": [
+     0
+    ],
+    "overflow": false
+   },
+   "focus": [
+    {
+     "id": "entrance-action",
+     "focusVisible": true,
+     "outline": "solid 2px rgb(150, 163, 235)",
+     "offset": "5px",
+     "rect": [
+      44,
+      434.59375,
+      302,
+      53
+     ]
+    },
+    {
+     "id": "entrance-action secondary",
+     "focusVisible": true,
+     "outline": "solid 2px rgb(150, 163, 235)",
+     "offset": "5px",
+     "rect": [
+      44,
+      487.59375,
+      302,
+      53
+     ]
+    }
+   ]
+  },
+  "errors": []
+ },
+ "320x640-ar-clair": {
+  "viewport": [
+   320,
+   640,
+   true
+  ],
+  "theme": "light",
+  "lang": "ar",
+  "ALL9": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     24,
+     514,
+     272,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(255, 255, 255)",
+    "border": "rgb(220, 229, 229) 1px solid",
+    "radius": "12px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 214,
+    "clipped": false,
+    "textContrast": 17.22
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     24,
+     450,
+     272,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(0, 186, 188)",
+    "border": "rgb(0, 186, 188) 1px solid",
+    "radius": "12px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 214,
+    "clipped": false,
+    "textContrast": 7.18
+   },
+   "pageBg": "#E9EDED",
+   "guestBoundary": {
+    "edgePixel": "#DCE5E5",
+    "paintedContrast": 1.09,
+    "computedContrast": 1.09
+   },
+   "sameSize": true,
+   "overflow": false,
+   "focusGuest": {
+    "id": "entry-guest",
+    "focusVisible": true,
+    "outline": "solid 2px rgb(0, 142, 144)",
+    "offset": "5px",
+    "rect": [
+     24,
+     514,
+     272,
+     52
+    ],
+    "ringPixel": "#008E90",
+    "ringContrast": 3.38
+   },
+   "focusLogin": {
+    "id": "entry-login",
+    "focusVisible": true,
+    "outline": "solid 2px rgb(0, 142, 144)",
+    "offset": "5px",
+    "rect": [
+     24,
+     450,
+     272,
+     52
+    ],
+    "ringPixel": "#008E90",
+    "ringContrast": 3.38
+   },
+   "cycle": [
+    [
+     "Visiter",
+     [
+      24,
+      514,
+      272,
+      52
+     ],
+     false
+    ],
+    [
+     "Se connecter",
+     [
+      24,
+      450,
+      272,
+      52
+     ],
+     false
+    ],
+    [
+     "Visit",
+     [
+      24,
+      514,
+      272,
+      52
+     ],
+     false
+    ],
+    [
+     "Sign in",
+     [
+      24,
+      450,
+      272,
+      52
+     ],
+     false
+    ]
+   ]
+  },
+  "socle": {
+   "guest": {
+    "text": "Visit",
+    "lang": "en",
+    "rect": [
+     24,
+     514,
+     272,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(255, 255, 255)",
+    "border": "rgb(220, 229, 229) 1px solid",
+    "radius": "14px",
+    "shadow": "rgba(24, 61, 60, 0.024) 0px 3px 12px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 214,
+    "clipped": false,
+    "textContrast": 17.22
+   },
+   "login": {
+    "text": "Sign in",
+    "lang": "en",
+    "rect": [
+     24,
+     450,
+     272,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(0, 186, 188)",
+    "border": "rgb(0, 186, 188) 1px solid",
+    "radius": "14px",
+    "shadow": "rgba(27, 27, 27, 0.07) 0px 7px 20px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 214,
+    "clipped": false,
+    "textContrast": 7.18
+   },
+   "pageBg": "#EAECEC",
+   "guestBoundary": {
+    "edgePixel": "#DCE5E5",
+    "paintedContrast": 1.08,
+    "computedContrast": 1.08
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "R": {
+   "guest": {
+    "text": "Visit",
+    "lang": "en",
+    "rect": [
+     24,
+     514,
+     272,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(255, 255, 255)",
+    "border": "rgb(220, 229, 229) 1px solid",
+    "radius": "14px",
+    "shadow": "rgba(24, 61, 60, 0.024) 0px 3px 12px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 214,
+    "clipped": false,
+    "textContrast": 17.22
+   },
+   "login": {
+    "text": "Sign in",
+    "lang": "en",
+    "rect": [
+     24,
+     450,
+     272,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(0, 186, 188)",
+    "border": "rgb(0, 186, 188) 1px solid",
+    "radius": "14px",
+    "shadow": "rgba(27, 27, 27, 0.07) 0px 7px 20px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 214,
+    "clipped": false,
+    "textContrast": 7.18
+   },
+   "pageBg": "#EAECEC",
+   "guestBoundary": {
+    "edgePixel": "#DCE5E5",
+    "paintedContrast": 1.08,
+    "computedContrast": 1.08
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "V": {
+   "guest": {
+    "text": "Visit",
+    "lang": "en",
+    "rect": [
+     24,
+     514,
+     272,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(255, 255, 255)",
+    "border": "rgb(220, 229, 229) 1px solid",
+    "radius": "14px",
+    "shadow": "rgba(24, 61, 60, 0.024) 0px 3px 12px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 214,
+    "clipped": false,
+    "textContrast": 17.22
+   },
+   "login": {
+    "text": "Sign in",
+    "lang": "en",
+    "rect": [
+     24,
+     450,
+     272,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(0, 186, 188)",
+    "border": "rgb(0, 186, 188) 1px solid",
+    "radius": "14px",
+    "shadow": "rgba(27, 27, 27, 0.07) 0px 7px 20px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 214,
+    "clipped": false,
+    "textContrast": 7.18
+   },
+   "pageBg": "#EAECEC",
+   "guestBoundary": {
+    "edgePixel": "#DCE5E5",
+    "paintedContrast": 1.08,
+    "computedContrast": 1.08
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "L": {
+   "guest": {
+    "text": "Visit",
+    "lang": "en",
+    "rect": [
+     24,
+     514,
+     272,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(255, 255, 255)",
+    "border": "rgb(220, 229, 229) 1px solid",
+    "radius": "14px",
+    "shadow": "rgba(24, 61, 60, 0.024) 0px 3px 12px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 214,
+    "clipped": false,
+    "textContrast": 17.22
+   },
+   "login": {
+    "text": "Sign in",
+    "lang": "en",
+    "rect": [
+     24,
+     450,
+     272,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(0, 186, 188)",
+    "border": "rgb(0, 186, 188) 1px solid",
+    "radius": "14px",
+    "shadow": "rgba(27, 27, 27, 0.07) 0px 7px 20px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 214,
+    "clipped": false,
+    "textContrast": 7.18
+   },
+   "pageBg": "#EAECEC",
+   "guestBoundary": {
+    "edgePixel": "#DCE5E5",
+    "paintedContrast": 1.08,
+    "computedContrast": 1.08
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "E": {
+   "guest": {
+    "text": "Visit",
+    "lang": "en",
+    "rect": [
+     24,
+     514,
+     272,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(255, 255, 255)",
+    "border": "rgb(220, 229, 229) 1px solid",
+    "radius": "12px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 214,
+    "clipped": false,
+    "textContrast": 17.22
+   },
+   "login": {
+    "text": "Sign in",
+    "lang": "en",
+    "rect": [
+     24,
+     450,
+     272,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(0, 186, 188)",
+    "border": "rgb(0, 186, 188) 1px solid",
+    "radius": "12px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 214,
+    "clipped": false,
+    "textContrast": 7.18
+   },
+   "pageBg": "#E9EDED",
+   "guestBoundary": {
+    "edgePixel": "#DCE5E5",
+    "paintedContrast": 1.09,
+    "computedContrast": 1.09
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "R+V": {
+   "guest": {
+    "text": "Visit",
+    "lang": "en",
+    "rect": [
+     24,
+     514,
+     272,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(255, 255, 255)",
+    "border": "rgb(220, 229, 229) 1px solid",
+    "radius": "14px",
+    "shadow": "rgba(24, 61, 60, 0.024) 0px 3px 12px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 214,
+    "clipped": false,
+    "textContrast": 17.22
+   },
+   "login": {
+    "text": "Sign in",
+    "lang": "en",
+    "rect": [
+     24,
+     450,
+     272,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(0, 186, 188)",
+    "border": "rgb(0, 186, 188) 1px solid",
+    "radius": "14px",
+    "shadow": "rgba(27, 27, 27, 0.07) 0px 7px 20px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 214,
+    "clipped": false,
+    "textContrast": 7.18
+   },
+   "pageBg": "#EAECEC",
+   "guestBoundary": {
+    "edgePixel": "#DCE5E5",
+    "paintedContrast": 1.08,
+    "computedContrast": 1.08
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "V+E": {
+   "guest": {
+    "text": "Visit",
+    "lang": "en",
+    "rect": [
+     24,
+     514,
+     272,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(255, 255, 255)",
+    "border": "rgb(220, 229, 229) 1px solid",
+    "radius": "12px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 214,
+    "clipped": false,
+    "textContrast": 17.22
+   },
+   "login": {
+    "text": "Sign in",
+    "lang": "en",
+    "rect": [
+     24,
+     450,
+     272,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(0, 186, 188)",
+    "border": "rgb(0, 186, 188) 1px solid",
+    "radius": "12px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 214,
+    "clipped": false,
+    "textContrast": 7.18
+   },
+   "pageBg": "#E9EDED",
+   "guestBoundary": {
+    "edgePixel": "#DCE5E5",
+    "paintedContrast": 1.09,
+    "computedContrast": 1.09
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "R+E": {
+   "guest": {
+    "text": "Visit",
+    "lang": "en",
+    "rect": [
+     24,
+     514,
+     272,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(255, 255, 255)",
+    "border": "rgb(220, 229, 229) 1px solid",
+    "radius": "12px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 214,
+    "clipped": false,
+    "textContrast": 17.22
+   },
+   "login": {
+    "text": "Sign in",
+    "lang": "en",
+    "rect": [
+     24,
+     450,
+     272,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(0, 186, 188)",
+    "border": "rgb(0, 186, 188) 1px solid",
+    "radius": "12px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 214,
+    "clipped": false,
+    "textContrast": 7.18
+   },
+   "pageBg": "#E9EDED",
+   "guestBoundary": {
+    "edgePixel": "#DCE5E5",
+    "paintedContrast": 1.09,
+    "computedContrast": 1.09
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "R+V+E": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     24,
+     514,
+     272,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(255, 255, 255)",
+    "border": "rgb(220, 229, 229) 1px solid",
+    "radius": "12px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 214,
+    "clipped": false,
+    "textContrast": 17.22
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     24,
+     450,
+     272,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(0, 186, 188)",
+    "border": "rgb(0, 186, 188) 1px solid",
+    "radius": "12px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 214,
+    "clipped": false,
+    "textContrast": 7.18
+   },
+   "pageBg": "#E9EDED",
+   "guestBoundary": {
+    "edgePixel": "#DCE5E5",
+    "paintedContrast": 1.09,
+    "computedContrast": 1.09
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "R+V+L+E": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     24,
+     514,
+     272,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(255, 255, 255)",
+    "border": "rgb(220, 229, 229) 1px solid",
+    "radius": "12px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 42.91,
+    "innerWidth": 214,
+    "clipped": false,
+    "textContrast": 17.22
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     24,
+     450,
+     272,
+     52
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(0, 186, 188)",
+    "border": "rgb(0, 186, 188) 1px solid",
+    "radius": "12px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+    "font": "16px 400 normal",
+    "padding": "14px 28px",
+    "widestLabel": 95.61,
+    "innerWidth": 214,
+    "clipped": false,
+    "textContrast": 7.18
+   },
+   "pageBg": "#E9EDED",
+   "guestBoundary": {
+    "edgePixel": "#DCE5E5",
+    "paintedContrast": 1.09,
+    "computedContrast": 1.09
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "dialog": {
+   "ALL9": {
+    "kind": "login",
+    "rect": [
+     19,
+     145.41,
+     282,
+     349.19
+    ],
+    "radius": "20px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 22px 64px 0px, rgba(24, 61, 60, 0.024) 0px 3px 12px 0px",
+    "bg": "rgb(255, 255, 255)",
+    "title": [
+     "تسجيل الدخول — نموذج أولي",
+     "20px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "محاكاة تسجيل دخول ناجح",
+      "cls": "entrance-action",
+      "rect": [
+       44,
+       341.59,
+       232,
+       64
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(0, 186, 188)",
+      "border": "rgb(0, 186, 188) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+      "clipped": false,
+      "textContrast": 7.18,
+      "borderContrastOnDialog": 2.4
+     },
+     {
+      "text": "إلغاء",
+      "cls": "entrance-action secondary",
+      "rect": [
+       44,
+       405.59,
+       232,
+       64
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(255, 255, 255)",
+      "border": "rgb(220, 229, 229) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+      "clipped": false,
+      "textContrast": 17.22,
+      "borderContrastOnDialog": 1.28
+     }
+    ],
+    "verticalGaps": [
+     0
+    ],
+    "overflow": false
+   },
+   "socle": {
+    "kind": "login",
+    "rect": [
+     19,
+     136.41,
+     282,
+     367.19
+    ],
+    "radius": "28px",
+    "shadow": "rgba(24, 61, 60, 0.14) 0px 28px 90px 0px, rgba(24, 61, 60, 0.04) 0px 4px 14px 0px",
+    "bg": "rgb(255, 255, 255)",
+    "title": [
+     "تسجيل الدخول — نموذج أولي",
+     "24px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "محاكاة تسجيل دخول ناجح",
+      "cls": "entrance-action",
+      "rect": [
+       44,
+       350.59,
+       232,
+       64
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(0, 186, 188)",
+      "border": "rgb(0, 186, 188) 1px solid",
+      "radius": "14px",
+      "font": "16px 400",
+      "shadow": "rgba(27, 27, 27, 0.07) 0px 7px 20px 0px",
+      "clipped": false,
+      "textContrast": 7.18,
+      "borderContrastOnDialog": 2.4
+     },
+     {
+      "text": "إلغاء",
+      "cls": "entrance-action secondary",
+      "rect": [
+       44,
+       412.59,
+       232,
+       64
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(234, 245, 244)",
+      "border": "rgb(188, 220, 217) 1px solid",
+      "radius": "14px",
+      "font": "16px 400",
+      "shadow": "rgba(24, 61, 60, 0.024) 0px 3px 12px 0px",
+      "clipped": false,
+      "textContrast": 15.47,
+      "borderContrastOnDialog": 1.46
+     }
+    ],
+    "verticalGaps": [
+     -2
+    ],
+    "overflow": false
+   },
+   "R": {
+    "kind": "login",
+    "rect": [
+     19,
+     136.41,
+     282,
+     367.19
+    ],
+    "radius": "28px",
+    "shadow": "rgba(24, 61, 60, 0.14) 0px 28px 90px 0px, rgba(24, 61, 60, 0.04) 0px 4px 14px 0px",
+    "bg": "rgb(255, 255, 255)",
+    "title": [
+     "تسجيل الدخول — نموذج أولي",
+     "24px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "محاكاة تسجيل دخول ناجح",
+      "cls": "entrance-action",
+      "rect": [
+       44,
+       350.59,
+       232,
+       64
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(0, 186, 188)",
+      "border": "rgb(0, 186, 188) 1px solid",
+      "radius": "14px",
+      "font": "16px 400",
+      "shadow": "rgba(27, 27, 27, 0.07) 0px 7px 20px 0px",
+      "clipped": false,
+      "textContrast": 7.18,
+      "borderContrastOnDialog": 2.4
+     },
+     {
+      "text": "إلغاء",
+      "cls": "entrance-action secondary",
+      "rect": [
+       44,
+       414.59,
+       232,
+       64
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(255, 255, 255)",
+      "border": "rgb(220, 229, 229) 1px solid",
+      "radius": "14px",
+      "font": "16px 400",
+      "shadow": "rgba(24, 61, 60, 0.024) 0px 3px 12px 0px",
+      "clipped": false,
+      "textContrast": 17.22,
+      "borderContrastOnDialog": 1.28
+     }
+    ],
+    "verticalGaps": [
+     0
+    ],
+    "overflow": false
+   },
+   "E": {
+    "kind": "login",
+    "rect": [
+     19,
+     145.41,
+     282,
+     349.19
+    ],
+    "radius": "20px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 22px 64px 0px, rgba(24, 61, 60, 0.024) 0px 3px 12px 0px",
+    "bg": "rgb(255, 255, 255)",
+    "title": [
+     "تسجيل الدخول — نموذج أولي",
+     "20px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "محاكاة تسجيل دخول ناجح",
+      "cls": "entrance-action",
+      "rect": [
+       44,
+       341.59,
+       232,
+       64
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(0, 186, 188)",
+      "border": "rgb(0, 186, 188) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+      "clipped": false,
+      "textContrast": 7.18,
+      "borderContrastOnDialog": 2.4
+     },
+     {
+      "text": "إلغاء",
+      "cls": "entrance-action secondary",
+      "rect": [
+       44,
+       405.59,
+       232,
+       64
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(255, 255, 255)",
+      "border": "rgb(220, 229, 229) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+      "clipped": false,
+      "textContrast": 17.22,
+      "borderContrastOnDialog": 1.28
+     }
+    ],
+    "verticalGaps": [
+     0
+    ],
+    "overflow": false
+   },
+   "L": {
+    "kind": "login",
+    "rect": [
+     19,
+     136.41,
+     282,
+     367.19
+    ],
+    "radius": "28px",
+    "shadow": "rgba(24, 61, 60, 0.14) 0px 28px 90px 0px, rgba(24, 61, 60, 0.04) 0px 4px 14px 0px",
+    "bg": "rgb(255, 255, 255)",
+    "title": [
+     "تسجيل الدخول — نموذج أولي",
+     "24px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "محاكاة تسجيل دخول ناجح",
+      "cls": "entrance-action",
+      "rect": [
+       44,
+       350.59,
+       232,
+       64
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(0, 186, 188)",
+      "border": "rgb(0, 186, 188) 1px solid",
+      "radius": "14px",
+      "font": "16px 400",
+      "shadow": "rgba(27, 27, 27, 0.07) 0px 7px 20px 0px",
+      "clipped": false,
+      "textContrast": 7.18,
+      "borderContrastOnDialog": 2.4
+     },
+     {
+      "text": "إلغاء",
+      "cls": "entrance-action secondary",
+      "rect": [
+       44,
+       412.59,
+       232,
+       64
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(234, 245, 244)",
+      "border": "rgb(188, 220, 217) 1px solid",
+      "radius": "14px",
+      "font": "16px 400",
+      "shadow": "rgba(24, 61, 60, 0.024) 0px 3px 12px 0px",
+      "clipped": false,
+      "textContrast": 15.47,
+      "borderContrastOnDialog": 1.46
+     }
+    ],
+    "verticalGaps": [
+     -2
+    ],
+    "overflow": false
+   },
+   "R+E": {
+    "kind": "login",
+    "rect": [
+     19,
+     145.41,
+     282,
+     349.19
+    ],
+    "radius": "20px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 22px 64px 0px, rgba(24, 61, 60, 0.024) 0px 3px 12px 0px",
+    "bg": "rgb(255, 255, 255)",
+    "title": [
+     "تسجيل الدخول — نموذج أولي",
+     "20px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "محاكاة تسجيل دخول ناجح",
+      "cls": "entrance-action",
+      "rect": [
+       44,
+       341.59,
+       232,
+       64
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(0, 186, 188)",
+      "border": "rgb(0, 186, 188) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+      "clipped": false,
+      "textContrast": 7.18,
+      "borderContrastOnDialog": 2.4
+     },
+     {
+      "text": "إلغاء",
+      "cls": "entrance-action secondary",
+      "rect": [
+       44,
+       405.59,
+       232,
+       64
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(255, 255, 255)",
+      "border": "rgb(220, 229, 229) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+      "clipped": false,
+      "textContrast": 17.22,
+      "borderContrastOnDialog": 1.28
+     }
+    ],
+    "verticalGaps": [
+     0
+    ],
+    "overflow": false
+   },
+   "R+L+E": {
+    "kind": "login",
+    "rect": [
+     19,
+     145.41,
+     282,
+     349.19
+    ],
+    "radius": "20px",
+    "shadow": "rgba(24, 61, 60, 0.07) 0px 22px 64px 0px, rgba(24, 61, 60, 0.024) 0px 3px 12px 0px",
+    "bg": "rgb(255, 255, 255)",
+    "title": [
+     "تسجيل الدخول — نموذج أولي",
+     "20px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "محاكاة تسجيل دخول ناجح",
+      "cls": "entrance-action",
+      "rect": [
+       44,
+       341.59,
+       232,
+       64
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(0, 186, 188)",
+      "border": "rgb(0, 186, 188) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+      "clipped": false,
+      "textContrast": 7.18,
+      "borderContrastOnDialog": 2.4
+     },
+     {
+      "text": "إلغاء",
+      "cls": "entrance-action secondary",
+      "rect": [
+       44,
+       405.59,
+       232,
+       64
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(255, 255, 255)",
+      "border": "rgb(220, 229, 229) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+      "clipped": false,
+      "textContrast": 17.22,
+      "borderContrastOnDialog": 1.28
+     }
+    ],
+    "verticalGaps": [
+     0
+    ],
+    "overflow": false
+   },
+   "focus": [
+    {
+     "id": "entrance-action",
+     "focusVisible": true,
+     "outline": "solid 2px rgb(0, 142, 144)",
+     "offset": "5px",
+     "rect": [
+      44,
+      341.59375,
+      232,
+      64
+     ]
+    },
+    {
+     "id": "entrance-action secondary",
+     "focusVisible": true,
+     "outline": "solid 2px rgb(0, 142, 144)",
+     "offset": "5px",
+     "rect": [
+      44,
+      405.59375,
+      232,
+      64
+     ]
+    }
+   ]
+  },
+  "errors": []
+ },
+ "667x375-sombre": {
+  "viewport": [
+   667,
+   375,
+   true
+  ],
+  "theme": "dark",
+  "lang": "fr",
+  "ALL9": {
+   "guest": {
+    "text": "Visiter",
+    "lang": "fr",
+    "rect": [
+     338.5,
+     261.25,
+     304.5,
+     44
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(112, 131, 131) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "10px 16px",
+    "widestLabel": 42.91,
+    "innerWidth": 270.5,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "Se connecter",
+    "lang": "fr",
+    "rect": [
+     24,
+     261.25,
+     304.5,
+     44
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "10px 16px",
+    "widestLabel": 95.61,
+    "innerWidth": 270.5,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#708383",
+    "paintedContrast": 4.32,
+    "computedContrast": 4.32
+   },
+   "sameSize": true,
+   "overflow": false,
+   "focusGuest": {
+    "id": "entry-guest",
+    "focusVisible": true,
+    "outline": "solid 2px rgb(150, 163, 235)",
+    "offset": "5px",
+    "rect": [
+     338.5,
+     261.25,
+     304.5,
+     44
+    ],
+    "ringPixel": "#96A3EB",
+    "ringContrast": 7.16
+   },
+   "focusLogin": {
+    "id": "entry-login",
+    "focusVisible": true,
+    "outline": "solid 2px rgb(150, 163, 235)",
+    "offset": "5px",
+    "rect": [
+     24,
+     261.25,
+     304.5,
+     44
+    ],
+    "ringPixel": "#96A3EB",
+    "ringContrast": 7.16
+   },
+   "cycle": [
+    [
+     "Visit",
+     [
+      338.5,
+      261.25,
+      304.5,
+      44
+     ],
+     false
+    ],
+    [
+     "Sign in",
+     [
+      24,
+      261.25,
+      304.5,
+      44
+     ],
+     false
+    ],
+    [
+     "زيارة",
+     [
+      338.5,
+      261.25,
+      304.5,
+      44
+     ],
+     false
+    ],
+    [
+     "تسجيل الدخول",
+     [
+      24,
+      261.25,
+      304.5,
+      44
+     ],
+     false
+    ]
+   ]
+  },
+  "socle": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     338.5,
+     261.25,
+     304.5,
+     44
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0) 1px solid",
+    "radius": "14px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "10px 16px",
+    "widestLabel": 42.91,
+    "innerWidth": 270.5,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     24,
+     261.25,
+     304.5,
+     44
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "14px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "10px 16px",
+    "widestLabel": 95.61,
+    "innerWidth": 270.5,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#1B1B1B",
+    "paintedContrast": 1.0,
+    "computedContrast": null
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "R": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     338.5,
+     261.25,
+     304.5,
+     44
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0) 1px solid",
+    "radius": "14px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "10px 16px",
+    "widestLabel": 42.91,
+    "innerWidth": 270.5,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     24,
+     261.25,
+     304.5,
+     44
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "14px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "10px 16px",
+    "widestLabel": 95.61,
+    "innerWidth": 270.5,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#1B1B1B",
+    "paintedContrast": 1.0,
+    "computedContrast": null
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "V": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     338.5,
+     261.25,
+     304.5,
+     44
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(112, 131, 131) 1px solid",
+    "radius": "14px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "10px 16px",
+    "widestLabel": 42.91,
+    "innerWidth": 270.5,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     24,
+     261.25,
+     304.5,
+     44
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "14px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "10px 16px",
+    "widestLabel": 95.61,
+    "innerWidth": 270.5,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#708383",
+    "paintedContrast": 4.32,
+    "computedContrast": 4.32
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "L": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     338.5,
+     261.25,
+     304.5,
+     44
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0) 1px solid",
+    "radius": "14px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "10px 16px",
+    "widestLabel": 42.91,
+    "innerWidth": 270.5,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     24,
+     261.25,
+     304.5,
+     44
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "14px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "10px 16px",
+    "widestLabel": 95.61,
+    "innerWidth": 270.5,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#1B1B1B",
+    "paintedContrast": 1.0,
+    "computedContrast": null
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "E": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     338.5,
+     261.25,
+     304.5,
+     44
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "10px 16px",
+    "widestLabel": 42.91,
+    "innerWidth": 270.5,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     24,
+     261.25,
+     304.5,
+     44
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "10px 16px",
+    "widestLabel": 95.61,
+    "innerWidth": 270.5,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#1B1B1B",
+    "paintedContrast": 1.0,
+    "computedContrast": null
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "R+V": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     338.5,
+     261.25,
+     304.5,
+     44
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(112, 131, 131) 1px solid",
+    "radius": "14px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "10px 16px",
+    "widestLabel": 42.91,
+    "innerWidth": 270.5,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     24,
+     261.25,
+     304.5,
+     44
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "14px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "10px 16px",
+    "widestLabel": 95.61,
+    "innerWidth": 270.5,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#708383",
+    "paintedContrast": 4.32,
+    "computedContrast": 4.32
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "V+E": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     338.5,
+     261.25,
+     304.5,
+     44
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(112, 131, 131) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "10px 16px",
+    "widestLabel": 42.91,
+    "innerWidth": 270.5,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     24,
+     261.25,
+     304.5,
+     44
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "10px 16px",
+    "widestLabel": 95.61,
+    "innerWidth": 270.5,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#708383",
+    "paintedContrast": 4.32,
+    "computedContrast": 4.32
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "R+E": {
+   "guest": {
+    "text": "زيارة",
+    "lang": "ar",
+    "rect": [
+     338.5,
+     261.25,
+     304.5,
+     44
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "10px 16px",
+    "widestLabel": 42.91,
+    "innerWidth": 270.5,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "تسجيل الدخول",
+    "lang": "ar",
+    "rect": [
+     24,
+     261.25,
+     304.5,
+     44
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "10px 16px",
+    "widestLabel": 95.61,
+    "innerWidth": 270.5,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#1B1B1B",
+    "paintedContrast": 1.0,
+    "computedContrast": null
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "R+V+E": {
+   "guest": {
+    "text": "Visiter",
+    "lang": "fr",
+    "rect": [
+     338.5,
+     261.25,
+     304.5,
+     44
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(112, 131, 131) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "10px 16px",
+    "widestLabel": 42.91,
+    "innerWidth": 270.5,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "Se connecter",
+    "lang": "fr",
+    "rect": [
+     24,
+     261.25,
+     304.5,
+     44
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "10px 16px",
+    "widestLabel": 95.61,
+    "innerWidth": 270.5,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#708383",
+    "paintedContrast": 4.32,
+    "computedContrast": 4.32
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "R+V+L+E": {
+   "guest": {
+    "text": "Visiter",
+    "lang": "fr",
+    "rect": [
+     338.5,
+     261.25,
+     304.5,
+     44
+    ],
+    "color": "rgb(237, 52, 145)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(112, 131, 131) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "10px 16px",
+    "widestLabel": 42.91,
+    "innerWidth": 270.5,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "login": {
+    "text": "Se connecter",
+    "lang": "fr",
+    "rect": [
+     24,
+     261.25,
+     304.5,
+     44
+    ],
+    "color": "rgb(27, 27, 27)",
+    "bg": "rgb(237, 52, 145)",
+    "border": "rgb(237, 52, 145) 1px solid",
+    "radius": "12px",
+    "shadow": "none",
+    "font": "16px 400 normal",
+    "padding": "10px 16px",
+    "widestLabel": 95.61,
+    "innerWidth": 270.5,
+    "clipped": false,
+    "textContrast": 4.51
+   },
+   "pageBg": "#1B1B1B",
+   "guestBoundary": {
+    "edgePixel": "#708383",
+    "paintedContrast": 4.32,
+    "computedContrast": 4.32
+   },
+   "sameSize": true,
+   "overflow": false
+  },
+  "dialog": {
+   "ALL9": {
+    "kind": "login",
+    "rect": [
+     123.5,
+     51.91,
+     420,
+     271.19
+    ],
+    "radius": "20px",
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 16px 48px 0px",
+    "bg": "rgb(32, 32, 38)",
+    "title": [
+     "Connexion — prototype",
+     "20px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "Simuler une connexion réussie",
+      "cls": "entrance-action",
+      "rect": [
+       148.5,
+       208.09,
+       370,
+       45
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(237, 52, 145)",
+      "border": "rgb(237, 52, 145) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 4.51,
+      "borderContrastOnDialog": 4.24
+     },
+     {
+      "text": "Annuler",
+      "cls": "entrance-action secondary",
+      "rect": [
+       148.5,
+       251.09,
+       370,
+       45
+      ],
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "color(srgb 1 1 1 / 0.12) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 16.2,
+      "borderContrastOnDialog": null
+     }
+    ],
+    "verticalGaps": [
+     -2
+    ],
+    "overflow": false
+   },
+   "socle": {
+    "kind": "login",
+    "rect": [
+     123.5,
+     51.91,
+     420,
+     271.19
+    ],
+    "radius": "28px",
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 16px 48px 0px",
+    "bg": "rgb(32, 32, 38)",
+    "title": [
+     "Connexion — prototype",
+     "24px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "Simuler une connexion réussie",
+      "cls": "entrance-action",
+      "rect": [
+       148.5,
+       208.09,
+       370,
+       45
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(237, 52, 145)",
+      "border": "rgb(237, 52, 145) 1px solid",
+      "radius": "14px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 4.51,
+      "borderContrastOnDialog": 4.24
+     },
+     {
+      "text": "Annuler",
+      "cls": "entrance-action secondary",
+      "rect": [
+       148.5,
+       251.09,
+       370,
+       45
+      ],
+      "color": "rgb(0, 186, 188)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "rgba(0, 0, 0, 0) 1px solid",
+      "radius": "14px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 6.75,
+      "borderContrastOnDialog": null
+     }
+    ],
+    "verticalGaps": [
+     -2
+    ],
+    "overflow": false
+   },
+   "R": {
+    "kind": "login",
+    "rect": [
+     123.5,
+     51.91,
+     420,
+     271.19
+    ],
+    "radius": "28px",
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 16px 48px 0px",
+    "bg": "rgb(32, 32, 38)",
+    "title": [
+     "Connexion — prototype",
+     "24px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "Simuler une connexion réussie",
+      "cls": "entrance-action",
+      "rect": [
+       148.5,
+       208.09,
+       370,
+       45
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(237, 52, 145)",
+      "border": "rgb(237, 52, 145) 1px solid",
+      "radius": "14px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 4.51,
+      "borderContrastOnDialog": 4.24
+     },
+     {
+      "text": "Annuler",
+      "cls": "entrance-action secondary",
+      "rect": [
+       148.5,
+       251.09,
+       370,
+       45
+      ],
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "color(srgb 1 1 1 / 0.12) 1px solid",
+      "radius": "14px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 16.2,
+      "borderContrastOnDialog": null
+     }
+    ],
+    "verticalGaps": [
+     -2
+    ],
+    "overflow": false
+   },
+   "E": {
+    "kind": "login",
+    "rect": [
+     123.5,
+     51.91,
+     420,
+     271.19
+    ],
+    "radius": "20px",
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 16px 48px 0px",
+    "bg": "rgb(32, 32, 38)",
+    "title": [
+     "Connexion — prototype",
+     "20px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "Simuler une connexion réussie",
+      "cls": "entrance-action",
+      "rect": [
+       148.5,
+       208.09,
+       370,
+       45
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(237, 52, 145)",
+      "border": "rgb(237, 52, 145) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 4.51,
+      "borderContrastOnDialog": 4.24
+     },
+     {
+      "text": "Annuler",
+      "cls": "entrance-action secondary",
+      "rect": [
+       148.5,
+       251.09,
+       370,
+       45
+      ],
+      "color": "rgb(0, 186, 188)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "rgba(0, 0, 0, 0) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 6.75,
+      "borderContrastOnDialog": null
+     }
+    ],
+    "verticalGaps": [
+     -2
+    ],
+    "overflow": false
+   },
+   "L": {
+    "kind": "login",
+    "rect": [
+     123.5,
+     51.91,
+     420,
+     271.19
+    ],
+    "radius": "28px",
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 16px 48px 0px",
+    "bg": "rgb(32, 32, 38)",
+    "title": [
+     "Connexion — prototype",
+     "24px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "Simuler une connexion réussie",
+      "cls": "entrance-action",
+      "rect": [
+       148.5,
+       208.09,
+       370,
+       45
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(237, 52, 145)",
+      "border": "rgb(237, 52, 145) 1px solid",
+      "radius": "14px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 4.51,
+      "borderContrastOnDialog": 4.24
+     },
+     {
+      "text": "Annuler",
+      "cls": "entrance-action secondary",
+      "rect": [
+       148.5,
+       251.09,
+       370,
+       45
+      ],
+      "color": "rgb(0, 186, 188)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "rgba(0, 0, 0, 0) 1px solid",
+      "radius": "14px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 6.75,
+      "borderContrastOnDialog": null
+     }
+    ],
+    "verticalGaps": [
+     -2
+    ],
+    "overflow": false
+   },
+   "R+E": {
+    "kind": "login",
+    "rect": [
+     123.5,
+     51.91,
+     420,
+     271.19
+    ],
+    "radius": "20px",
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 16px 48px 0px",
+    "bg": "rgb(32, 32, 38)",
+    "title": [
+     "Connexion — prototype",
+     "20px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "Simuler une connexion réussie",
+      "cls": "entrance-action",
+      "rect": [
+       148.5,
+       208.09,
+       370,
+       45
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(237, 52, 145)",
+      "border": "rgb(237, 52, 145) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 4.51,
+      "borderContrastOnDialog": 4.24
+     },
+     {
+      "text": "Annuler",
+      "cls": "entrance-action secondary",
+      "rect": [
+       148.5,
+       251.09,
+       370,
+       45
+      ],
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "color(srgb 1 1 1 / 0.12) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 16.2,
+      "borderContrastOnDialog": null
+     }
+    ],
+    "verticalGaps": [
+     -2
+    ],
+    "overflow": false
+   },
+   "R+L+E": {
+    "kind": "login",
+    "rect": [
+     123.5,
+     51.91,
+     420,
+     271.19
+    ],
+    "radius": "20px",
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 16px 48px 0px",
+    "bg": "rgb(32, 32, 38)",
+    "title": [
+     "Connexion — prototype",
+     "20px"
+    ],
+    "titleClipped": false,
+    "buttons": [
+     {
+      "text": "Simuler une connexion réussie",
+      "cls": "entrance-action",
+      "rect": [
+       148.5,
+       208.09,
+       370,
+       45
+      ],
+      "color": "rgb(27, 27, 27)",
+      "bg": "rgb(237, 52, 145)",
+      "border": "rgb(237, 52, 145) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 4.51,
+      "borderContrastOnDialog": 4.24
+     },
+     {
+      "text": "Annuler",
+      "cls": "entrance-action secondary",
+      "rect": [
+       148.5,
+       251.09,
+       370,
+       45
+      ],
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "color(srgb 1 1 1 / 0.12) 1px solid",
+      "radius": "12px",
+      "font": "16px 400",
+      "shadow": "none",
+      "clipped": false,
+      "textContrast": 16.2,
+      "borderContrastOnDialog": null
+     }
+    ],
+    "verticalGaps": [
+     -2
+    ],
+    "overflow": false
+   },
+   "focus": [
+    {
+     "id": "entrance-action",
+     "focusVisible": true,
+     "outline": "solid 2px rgb(150, 163, 235)",
+     "offset": "5px",
+     "rect": [
+      148.5,
+      208.09375,
+      370,
+      45
+     ]
+    },
+    {
+     "id": "entrance-action secondary",
+     "focusVisible": true,
+     "outline": "solid 2px rgb(150, 163, 235)",
+     "offset": "5px",
+     "rect": [
+      148.5,
+      251.09375,
+      370,
+      45
+     ]
+    }
+   ]
+  },
+  "errors": []
+ },
+ "revelation": {
+  "ALL9": {
+   "vw": 1440,
+   "vh": 900,
+   "geometry": {
+    "center": {
+     "x": 720,
+     "y": 450
+    },
+    "radius": 240.01103468031363,
+    "rect": {
+     "left": 0,
+     "top": 0,
+     "width": 1440,
+     "height": 900
+    }
+   },
+   "filter": {
+    "left": 648.4375,
+    "top": 84,
+    "right": 791.5625,
+    "bottom": 132,
+    "shown": true
+   },
+   "stats": {
+    "left": 662.265625,
+    "top": 142,
+    "right": 777.734375,
+    "bottom": 160.84375,
+    "shown": true
+   },
+   "status": {
+    "left": 652.1171875,
+    "top": 713,
+    "right": 787.8828125,
+    "bottom": 738,
+    "shown": true
+   },
+   "search": {
+    "left": 594,
+    "top": 751,
+    "right": 794,
+    "bottom": 795,
+    "shown": true
+   },
+   "dice": {
+    "left": 802,
+    "top": 751,
+    "right": 846,
+    "bottom": 795,
+    "shown": true
+   },
+   "entry": "welcome",
+   "errors": [],
+   "clearance": {
+    "filter": 77.99,
+    "stats": 49.15,
+    "status": 22.99,
+    "search": 60.99,
+    "dice": 71.96
+   },
+   "welcome": true
+  }
+ }
+}

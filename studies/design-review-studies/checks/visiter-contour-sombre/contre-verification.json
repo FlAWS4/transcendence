@@ -1,0 +1,362 @@
+{
+ "essai": "visiter-contour-sombre",
+ "basculeTheme": {
+  "states": [
+   {
+    "rect": [
+     732,
+     605,
+     159.578125,
+     52
+    ],
+    "border": "rgb(112, 131, 131)",
+    "borderWidth": "1px",
+    "color": "rgb(237, 52, 145)",
+    "label": "Visiter"
+   },
+   {
+    "rect": [
+     732,
+     605,
+     159.578125,
+     52
+    ],
+    "border": "rgb(220, 229, 229)",
+    "borderWidth": "1px",
+    "color": "rgb(27, 27, 27)",
+    "label": "Visiter",
+    "theme": "light"
+   },
+   {
+    "rect": [
+     732,
+     605,
+     159.578125,
+     52
+    ],
+    "border": "rgb(112, 131, 131)",
+    "borderWidth": "1px",
+    "color": "rgb(237, 52, 145)",
+    "label": "Visiter",
+    "theme": "dark"
+   }
+  ],
+  "noReload": true,
+  "lightBaseline": {
+   "rect": [
+    732,
+    605,
+    159.578125,
+    52
+   ],
+   "border": "rgb(220, 229, 229)",
+   "borderWidth": "1px",
+   "color": "rgb(27, 27, 27)",
+   "label": "Visiter"
+  }
+ },
+ "formats": [
+  {
+   "vue": "petit",
+   "avant": {
+    "guest": {
+     "rect": [
+      24,
+      514,
+      272,
+      52
+     ],
+     "border": "rgba(0, 0, 0, 0)",
+     "borderWidth": "1px",
+     "color": "rgb(237, 52, 145)",
+     "label": "Visiter"
+    },
+    "login": {
+     "rect": [
+      24,
+      450,
+      272,
+      52
+     ],
+     "border": "rgb(237, 52, 145)",
+     "borderWidth": "1px",
+     "color": "rgb(27, 27, 27)",
+     "label": "Se connecter"
+    },
+    "painted": {
+     "edge": [
+      27,
+      27,
+      27
+     ],
+     "outside": [
+      27,
+      27,
+      27
+     ],
+     "contrast": 1.0
+    },
+    "overflow": false
+   },
+   "apres": {
+    "guest": {
+     "rect": [
+      24,
+      514,
+      272,
+      52
+     ],
+     "border": "rgb(112, 131, 131)",
+     "borderWidth": "1px",
+     "color": "rgb(237, 52, 145)",
+     "label": "Visiter"
+    },
+    "login": {
+     "rect": [
+      24,
+      450,
+      272,
+      52
+     ],
+     "border": "rgb(237, 52, 145)",
+     "borderWidth": "1px",
+     "color": "rgb(27, 27, 27)",
+     "label": "Se connecter"
+    },
+    "painted": {
+     "edge": [
+      112,
+      131,
+      131
+     ],
+     "outside": [
+      27,
+      27,
+      27
+     ],
+     "contrast": 4.32
+    },
+    "overflow": false
+   }
+  },
+  {
+   "vue": "paysage",
+   "avant": {
+    "guest": {
+     "rect": [
+      338.5,
+      261.25,
+      304.5,
+      44
+     ],
+     "border": "rgba(0, 0, 0, 0)",
+     "borderWidth": "1px",
+     "color": "rgb(237, 52, 145)",
+     "label": "Visiter"
+    },
+    "login": {
+     "rect": [
+      24,
+      261.25,
+      304.5,
+      44
+     ],
+     "border": "rgb(237, 52, 145)",
+     "borderWidth": "1px",
+     "color": "rgb(27, 27, 27)",
+     "label": "Se connecter"
+    },
+    "painted": {
+     "edge": [
+      27,
+      27,
+      27
+     ],
+     "outside": [
+      27,
+      27,
+      27
+     ],
+     "contrast": 1.0
+    },
+    "overflow": false
+   },
+   "apres": {
+    "guest": {
+     "rect": [
+      338.5,
+      261.25,
+      304.5,
+      44
+     ],
+     "border": "rgb(112, 131, 131)",
+     "borderWidth": "1px",
+     "color": "rgb(237, 52, 145)",
+     "label": "Visiter"
+    },
+    "login": {
+     "rect": [
+      24,
+      261.25,
+      304.5,
+      44
+     ],
+     "border": "rgb(237, 52, 145)",
+     "borderWidth": "1px",
+     "color": "rgb(27, 27, 27)",
+     "label": "Se connecter"
+    },
+    "painted": {
+     "edge": [
+      112,
+      131,
+      131
+     ],
+     "outside": [
+      27,
+      27,
+      27
+     ],
+     "contrast": 4.32
+    },
+    "overflow": false
+   }
+  }
+ ],
+ "arabe": {
+  "avant": {
+   "first": {
+    "rect": [
+     24,
+     616,
+     342,
+     52
+    ],
+    "border": "rgba(0, 0, 0, 0)",
+    "borderWidth": "1px",
+    "color": "rgb(237, 52, 145)",
+    "label": "زيارة"
+   },
+   "later": {
+    "rect": [
+     24,
+     616,
+     342,
+     52
+    ],
+    "border": "rgba(0, 0, 0, 0)",
+    "borderWidth": "1px",
+    "color": "rgb(237, 52, 145)",
+    "label": "Visiter"
+   },
+   "painted": {
+    "edge": [
+     27,
+     27,
+     27
+    ],
+    "outside": [
+     27,
+     27,
+     27
+    ],
+    "contrast": 1.0
+   },
+   "dir": "rtl"
+  },
+  "apres": {
+   "first": {
+    "rect": [
+     24,
+     616,
+     342,
+     52
+    ],
+    "border": "rgb(112, 131, 131)",
+    "borderWidth": "1px",
+    "color": "rgb(237, 52, 145)",
+    "label": "زيارة"
+   },
+   "later": {
+    "rect": [
+     24,
+     616,
+     342,
+     52
+    ],
+    "border": "rgb(112, 131, 131)",
+    "borderWidth": "1px",
+    "color": "rgb(237, 52, 145)",
+    "label": "Visiter"
+   },
+   "painted": {
+    "edge": [
+     112,
+     131,
+     131
+    ],
+    "outside": [
+     27,
+     27,
+     27
+    ],
+    "contrast": 4.32
+   },
+   "dir": "rtl"
+  }
+ },
+ "menuLangue": {
+  "signup": {
+   "rect": [
+    67,
+    225.875,
+    246,
+    66
+   ],
+   "border": "rgb(112, 131, 131)",
+   "borderWidth": "1px",
+   "color": "rgb(237, 52, 145)",
+   "label": "إنشاء حساب"
+  },
+  "lang": "ar",
+  "noReload": true
+ },
+ "avecRoles": {
+  "active": "roles-couleur visiter-contour-sombre",
+  "guest": {
+   "rect": [
+    732,
+    605,
+    159.578125,
+    52
+   ],
+   "border": "rgb(112, 131, 131)",
+   "borderWidth": "1px",
+   "color": "rgb(237, 52, 145)",
+   "label": "Visiter"
+  },
+  "dialog": true
+ },
+ "errors": {
+  "bascule": [],
+  "petit-avant": [],
+  "petit-apres": [],
+  "paysage-avant": [],
+  "paysage-apres": [],
+  "arabe-avant": [],
+  "arabe-apres": [],
+  "menu": [],
+  "avecRoles": []
+ },
+ "passed": true,
+ "checks": {
+  "liveThemeToggle": true,
+  "phonesKeepBoxes": true,
+  "phonesBoundary3": true,
+  "phonesNoOverflow": true,
+  "arabicCycle": true,
+  "menuAfterLanguage": true,
+  "withRolesCouleur": true,
+  "noErrors": true
+ }
+}

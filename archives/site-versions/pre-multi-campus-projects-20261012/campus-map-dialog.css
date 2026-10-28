@@ -1,0 +1,25 @@
+#campus-map-dialog{width:min(1080px,calc(100% - 48px));height:min(780px,calc(100svh - 64px));max-height:none;max-width:none;margin:auto;padding:0;border-radius:28px;overflow:hidden;background:var(--h42-color-bg)}
+#campus-map-dialog[open]{display:grid;grid-template-rows:auto minmax(0,1fr) auto}
+#campus-map-dialog::backdrop{background:color-mix(in srgb,var(--h42-ink) 38%,transparent);backdrop-filter:blur(7px)}
+body:has(#campus-map-dialog[open]){overflow:hidden}
+.campus-map-header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 24px 16px;border-bottom:1px solid var(--warm-line)}
+.campus-map-header p{margin:0 0 5px;color:var(--h42-color-muted);font-size:12px}
+.campus-map-header h2{font-size:28px;line-height:1.25;font-weight:500;margin:0}
+.campus-map-viewport{position:relative;min-height:0;isolation:isolate;overflow:hidden}
+#campus-map-dialog #globe{position:absolute;inset:0;width:100%;height:100%;--hg-center-x:.5;--hg-center-y:.5;--hg-radius:.43;opacity:1;visibility:visible;pointer-events:auto;transform:none;transition:none}
+#campus-map-status{position:absolute;bottom:14px;inset-inline:20px;z-index:4;width:fit-content;max-width:calc(100% - 40px);margin:0 auto;padding:8px 16px;border-radius:25px;background:var(--h42-color-surface);font-size:13px;color:var(--h42-color-muted);pointer-events:none}
+.campus-map-footer{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 20px;padding:14px 24px 12px;border-top:1px solid var(--warm-line)}
+#campus-map-hint{flex:1;min-width:170px;margin:0;font-size:13px;line-height:1.5;color:var(--h42-color-muted)}
+.campus-map-footer .globe-controls{flex-shrink:0;gap:8px}
+.campus-map-footer .icon-button{width:44px;height:44px}
+.campus-map-credits{flex-basis:100%}
+#campus-map-dialog .map-credit{position:static;display:flex;justify-content:flex-end;flex-wrap:wrap;gap:4px;font-size:9px}
+.campus-map-retry{padding:10px 16px;border-radius:20px;background:var(--warm-soft);color:var(--h42-color-text);font-size:13px}
+@media(max-width:700px){
+ #campus-map-dialog{width:calc(100% - 24px);height:calc(100svh - 32px);border-radius:24px}
+ .campus-map-header{padding:17px 16px 13px;gap:12px}
+ .campus-map-header h2{font-size:24px}.campus-map-header p{font-size:11px}
+ .campus-map-footer{padding:12px 14px;justify-content:center;gap:9px}
+ #campus-map-hint{flex-basis:100%;text-align:center;font-size:12px}
+ #campus-map-dialog .map-credit{justify-content:center;font-size:8px}
+}

@@ -1,0 +1,3 @@
+{
+  "reason": "Color changes can alter a few glyph antialias alpha bytes (two low-alpha pixels at desktop decrypting). The shared renderer source is unchanged. Subsequent proof compares exact canvas draw coordinates instead of requiring color-independent alpha identity. No application correction was needed."
+}

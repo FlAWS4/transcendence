@@ -1,0 +1,28 @@
+/* Trial « Seulement centrer le texte » (texte-centre) of the version B filter study, 26 Oct 2026 (README.md).
+ * Nothing changes but the alignment. The pill keeps the copy's fixed width (scope-pill.mjs: the longest indication of
+ * the language), its text (the trail and the picker) is centred in it instead of starting after the globe, and the
+ * pill itself is centred on the page's axis at every level, « Monde » included, the ← keeping one fixed place before it.
+ * The line under the pill (#globe-status, centred on the bar) does not change.
+ * Every rule names the live pill by an id: scope-pill.mjs measures copies of the pill without ids, so the width it
+ * gives the pill stays the copy's. */
+
+/* The pill on the axis. The copy centres the bar (← and pill) on the page's axis, the column beside the side rail when
+ * the rail shows. An empty room the size of the ← (44 px; 38 px at 700 px wide and below, welcome.css), with the bar's
+ * own gap, now closes the bar after the pill, so that the pill sits in the bar's middle. The ← keeps its place before the pill,
+ * hidden but still taking its room at « Monde » (dock-navigation.css). Reading drops the ← (globe-framing.css), and
+ * this room with it. Where the bar reaches the page's margins (phones), the pill gives way as the copy lets it (min-width
+ * 0), so it is narrower there than in the copy: README.md, « Limites ». */
+:root .app[data-navigation=dock] #scope-bar::after{content:'';flex:0 0 44px}
+@media(max-width:700px){
+ :root .app[data-navigation=dock] #scope-bar::after{flex-basis:38px}
+}
+:root .app[data-navigation=dock][data-reading=true] #scope-bar::after{display:none}
+
+/* The text centred in the pill. An empty room the size of the globe's seat (6 + 32 + 6 px, dock-navigation.css) ends
+ * the pill and balances the seat at its start; the trail keeps its own width and is centred between them by its auto
+ * margins, so a short text stands in the pill's middle, on the axis, above the line under the pill. A text too long
+ * for that room starts right after the seat, as in the copy: the auto margins fall to zero and the trail runs into the
+ * end room, never past the pill's edge (max-width). Only a text longer than the room after the seat still ends with
+ * « … », as in the copy. */
+:root .app[data-navigation=dock] #scope-path{padding-inline-end:44px}
+:root .app[data-navigation=dock] #scope-path>.scope-trail{flex:0 0 auto;max-width:100%;margin-inline:auto}

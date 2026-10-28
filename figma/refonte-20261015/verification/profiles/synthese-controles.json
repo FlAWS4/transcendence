@@ -1,0 +1,541 @@
+{
+ "date": "2026-10-18T05:40Z",
+ "note": "Conversions à blanc en mémoire (dom2fig.convert, sans écriture de scène ni de bytecode) ; aucune modification de scripts/, scenes/ ou calls/.",
+ "code": {
+  "dom2fig.py": [
+   {
+    "sha1": "b1141c07640e",
+    "mtime": "2026-10-18T05:27:00Z"
+   },
+   {
+    "sha1": "3faeee6a162c",
+    "mtime": "2026-10-18T05:31:47Z"
+   }
+  ],
+  "auteur": "autre session (stacking_context, hoist_z, hauteur du fond, polices de secours des symboles)"
+ },
+ "dryRun33": {
+  "people--desktop--fr": {
+   "frame": "Liste des profils — Ordinateur · Clair",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    188
+   ],
+   "barY": 84
+  },
+  "people--mobile--fr": {
+   "frame": "Liste des profils — Mobile · Clair",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    166
+   ],
+   "barY": 84
+  },
+  "people--desktop--ar": {
+   "frame": "Liste des profils — Ordinateur · Clair · العربية",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    188
+   ],
+   "barY": 84
+  },
+  "people--mobile--ar": {
+   "frame": "Liste des profils — Mobile · Clair · العربية",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    166
+   ],
+   "barY": 84
+  },
+  "people-list--desktop--fr": {
+   "frame": "Liste des profils · vue Liste — Ordinateur · Clair",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    188
+   ],
+   "barY": 84
+  },
+  "people-list--mobile--fr": {
+   "frame": "Liste des profils · vue Liste — Mobile · Clair",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    166
+   ],
+   "barY": 84
+  },
+  "people-sort-open--desktop--fr": {
+   "frame": "Liste des profils · tri ouvert — Ordinateur · Clair",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    188
+   ],
+   "barY": 84
+  },
+  "people-sort-open--mobile--fr": {
+   "frame": "Liste des profils · tri ouvert — Mobile · Clair",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    166
+   ],
+   "barY": 84
+  },
+  "people-last-page--desktop--fr": {
+   "frame": "Liste des profils · dernière page — Ordinateur · Clair",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    188
+   ],
+   "barY": 84
+  },
+  "people-last-page--mobile--fr": {
+   "frame": "Liste des profils · dernière page — Mobile · Clair",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    166
+   ],
+   "barY": 84
+  },
+  "filter-people--desktop--fr": {
+   "frame": "Filtrer les profils — Ordinateur · Clair",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    188
+   ],
+   "barY": 84
+  },
+  "filter-people--mobile--fr": {
+   "frame": "Filtrer les profils — Mobile · Clair",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    166
+   ],
+   "barY": 84
+  },
+  "filter-people-expanded--desktop--fr": {
+   "frame": "Filtrer les profils · déployée — Ordinateur · Clair",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    188
+   ],
+   "barY": 84
+  },
+  "filter-people-expanded--mobile--fr": {
+   "frame": "Filtrer les profils · déployée — Mobile · Clair",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    166
+   ],
+   "barY": 84
+  },
+  "profile--desktop--fr": {
+   "frame": "Fiche profil — Ordinateur · Clair",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    124
+   ],
+   "barY": 40
+  },
+  "profile--mobile--fr": {
+   "frame": "Fiche profil — Mobile · Clair",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    158
+   ],
+   "barY": 84
+  },
+  "profile--desktop--ar": {
+   "frame": "Fiche profil — Ordinateur · Clair · العربية",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    124
+   ],
+   "barY": 40
+  },
+  "profile--mobile--ar": {
+   "frame": "Fiche profil — Mobile · Clair · العربية",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    158
+   ],
+   "barY": 84
+  },
+  "profile-alumni--desktop--fr": {
+   "frame": "Fiche profil · statut Alumni — Ordinateur · Clair",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    124
+   ],
+   "barY": 40
+  },
+  "profile-local-menu--mobile--fr": {
+   "frame": "Fiche profil · sélecteur de rubriques ouvert — Mobile · Clair",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    158
+   ],
+   "barY": 84
+  },
+  "profile-transcender--desktop--fr": {
+   "frame": "Fiche profil · statut Transcender — Ordinateur · Clair",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    124
+   ],
+   "barY": 40
+  },
+  "profile-projects--desktop--fr": {
+   "frame": "Projets — Ordinateur · Clair",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    124
+   ],
+   "barY": 40
+  },
+  "profile-projects--mobile--fr": {
+   "frame": "Projets — Mobile · Clair",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    158
+   ],
+   "barY": 84
+  },
+  "profile-projects-filter--desktop--fr": {
+   "frame": "Projets · filtre local ouvert — Ordinateur · Clair",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    124
+   ],
+   "barY": 40
+  },
+  "profile-projects-filter--mobile--fr": {
+   "frame": "Projets · filtre local ouvert — Mobile · Clair",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    158
+   ],
+   "barY": 84
+  },
+  "profile-journey--desktop--fr": {
+   "frame": "Parcours — Ordinateur · Clair",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    124
+   ],
+   "barY": 40
+  },
+  "profile-journey--mobile--fr": {
+   "frame": "Parcours — Mobile · Clair",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    158
+   ],
+   "barY": 84
+  },
+  "profile-contribution--desktop--fr": {
+   "frame": "Contribution — Ordinateur · Clair",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    124
+   ],
+   "barY": 40
+  },
+  "profile-contribution--mobile--fr": {
+   "frame": "Contribution — Mobile · Clair",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    158
+   ],
+   "barY": 84
+  },
+  "message-dialog--desktop--fr": {
+   "frame": "Envoyer un message — Ordinateur · Clair",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    124
+   ],
+   "barY": 40
+  },
+  "message-dialog--mobile--fr": {
+   "frame": "Envoyer un message — Mobile · Clair",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    158
+   ],
+   "barY": 84
+  },
+  "report-profile--desktop--fr": {
+   "frame": "Signaler · depuis un profil — Ordinateur · Clair",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    124
+   ],
+   "barY": 40
+  },
+  "report-profile--mobile--fr": {
+   "frame": "Signaler · depuis un profil — Mobile · Clair",
+   "ok": {
+    "bar_above_fade": true,
+    "content_below_fade": true,
+    "sort_menu_above_cards": true
+   },
+   "fondeH": true,
+   "fade": [
+    0,
+    158
+   ],
+   "barY": 84
+  }
+ },
+ "dryRunSummary": {
+  "frames": 33,
+  "allOk": true
+ },
+ "sortOpen": {
+  "desktop": {
+   "sortMenuIndex": [
+    373
+   ],
+   "lastCardIndex": 343
+  },
+  "mobile": {
+   "sortMenuIndex": [
+    373
+   ],
+   "lastCardIndex": 343
+  }
+ },
+ "storedScenes0533": {
+  "regenerated_ok": 20,
+  "notRegenerated": [
+   "people--desktop--fr",
+   "people--mobile--fr",
+   "people--desktop--ar",
+   "people-list--desktop--fr",
+   "people-list--mobile--fr",
+   "people-last-page--desktop--fr",
+   "people-last-page--mobile--fr",
+   "filter-people--desktop--fr",
+   "filter-people--mobile--fr",
+   "profile--mobile--fr",
+   "profile-projects--mobile--fr",
+   "profile-projects-filter--mobile--fr",
+   "profile-contribution--mobile--fr"
+  ],
+  "notRegeneratedState": "fondu mesuré sur toute la page et peint en premier (sans effet visible), Fond limité à la hauteur de l'écran"
+ },
+ "trappedZ": {
+  "zones": [
+   "profiles",
+   "projects",
+   "journal",
+   "compte",
+   "communs",
+   "explorer",
+   "awards"
+  ],
+  "cases": 0,
+  "rule": "calque à z-index resté dans un cadre sans contexte d'empilement et recouvert par un frère suivant (z>0) ou précédent (z<0)"
+ },
+ "simulation": {
+  "calls": "832 à 848 (+849 clonage, non simulé)",
+  "result": "OK, aucune icône, ressource ni police manquante",
+  "varsMissing": "artefact du simulateur (variables de couleur factices) : 59 aussi pour l'appel 744 déjà envoyé"
+ },
+ "callsQueued": {
+  "profiles": "832 à 849 (20 cadres clairs, 20 clones)",
+  "sentAt0538": false,
+  "batchStarted": "887 envoyé à 05 h 37"
+ }
+}

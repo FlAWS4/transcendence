@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-08",
+  "purpose": "Exact original wordmark sources before the user-selected Cascade 08 integration",
+  "sources": {
+    "brand-wordmark.mjs": "a057685c6e438dcff6850891487bd0d1862e91aa7547b70c634e105a789a77f9",
+    "brand-wordmark.css": "fef9e79d5f0ab056d58ec458c774c5477cf9a5c605d85c39bf8082431cfe211b",
+    "tests/brand-wordmark.test.mjs": "3f8e3e3dbc370452f88b7b3e6a99215d4dbf9d3924300072c3a994d98d0c86e2",
+    "BRAND_WORDMARK_NOTES.md": "24425ade842f9143026a4ea01782267576944e0ee2aab296921c153ff3f54ea2"
+  },
+  "preview": "preview.html",
+  "readerModule": "viewer-wordmark.mjs",
+  "readerAdaptations": "Only dependency import paths differ from the exact historical module; viewer CSS copies header brand proportions and adds an isolated control scene.",
+  "sharedDependencies": [
+    "../../../horizon-decryption-engine.mjs",
+    "../../../decryption-examples/scanner-return-together.mjs",
+    "../../../assets/jost.css",
+    "../../../../figma/tokens.css",
+    "../../../../figma/logo-42.svg"
+  ],
+  "verification": {
+    "date": "2026-10-08",
+    "originalSourceHashes": "All four original hashes match.",
+    "localReferences": 14,
+    "syntax": "Both viewer modules pass node --check.",
+    "historicalTests": "Adapted copy of seven original wordmark tests passes.",
+    "browserReplayed": true,
+    "browser": {
+      "date": "2026-10-08",
+      "performedBy": "Parent agent",
+      "browser": "Chrome",
+      "viewport": "Desktop",
+      "checks": [
+        "AWARDS button followed by an inspected intermediate capture containing scrambled glyphs",
+        "42 AWARDS resting state",
+        "HORIZON button followed by 42 HORIZON resting state"
+      ],
+      "limitations": [
+        "No new mobile replay of this historical reader"
+      ]
+    }
+  }
+}

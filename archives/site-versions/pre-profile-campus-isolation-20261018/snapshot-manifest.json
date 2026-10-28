@@ -1,0 +1,1256 @@
+{
+  "date": "2026-10-17",
+  "purpose": "Preserved active state before the campus names of the profile pages were isolated on 18 October (profile cards, « Explore {campus} » of a profile, campuses of the journey), so that Arabic reads « 42 Paris » as on the article pages since 17 October.",
+  "entry": "baseline/content-preview.html#explore",
+  "localDependencies": "Physical snapshots; no runtime references to the active horizon-welcome directory.",
+  "externalServices": "Campus vector tiles, glyphs and sprites still use the existing external map provider when a campus is explored.",
+  "storagePrefix": "horizon-archive-pre-profile-campus-isolation-20261018-",
+  "storageReplacements": {
+    "horizon-theme-preference-v1": "horizon-archive-pre-profile-campus-isolation-20261018-theme-preference-v1",
+    "horizon-content-preferences-v2": "horizon-archive-pre-profile-campus-isolation-20261018-content-preferences-v2",
+    "horizon-content-preferences-v1": "horizon-archive-pre-profile-campus-isolation-20261018-content-preferences-v1",
+    "horizon-content-view": "horizon-archive-pre-profile-campus-isolation-20261018-content-view",
+    "horizon-comments-demo-v1:": "horizon-archive-pre-profile-campus-isolation-20261018-comments-demo-v1:",
+    "horizon-content-reports-v1": "horizon-archive-pre-profile-campus-isolation-20261018-content-reports-v1",
+    "horizon-project-repository-v1:": "horizon-archive-pre-profile-campus-isolation-20261018-project-repository-v1:"
+  },
+  "extensions": [],
+  "sourceCount": 139,
+  "files": [
+    {
+      "source": "work/figma/logo-42.svg",
+      "sourceBytes": 830,
+      "sourceSha256": "cb27f1e1c89bcdfe58185710ac66f0232a2bb8c9ac0c596275f06f101dbd7efc",
+      "runtime": "baseline/shared/figma/logo-42.svg",
+      "runtimeBytes": 830,
+      "runtimeSha256": "cb27f1e1c89bcdfe58185710ac66f0232a2bb8c9ac0c596275f06f101dbd7efc"
+    },
+    {
+      "source": "work/figma/tokens.css",
+      "sourceBytes": 7190,
+      "sourceSha256": "bcc71ae119e87b0abe75d4b781e2352becc633491da265298d36dcb0f80fb4cd",
+      "runtime": "baseline/shared/figma/tokens.css",
+      "runtimeBytes": 7190,
+      "runtimeSha256": "bcc71ae119e87b0abe75d4b781e2352becc633491da265298d36dcb0f80fb4cd"
+    },
+    {
+      "source": "work/visualizations/assets/jost-0.ttf",
+      "sourceBytes": 58796,
+      "sourceSha256": "c3143e923ed1ca7bdf27f96c351fbafaebcbd3cf3f4c2d30d03e6c7f98e73d7a",
+      "runtime": "baseline/shared/assets/jost-0.ttf",
+      "runtimeBytes": 58796,
+      "runtimeSha256": "c3143e923ed1ca7bdf27f96c351fbafaebcbd3cf3f4c2d30d03e6c7f98e73d7a"
+    },
+    {
+      "source": "work/visualizations/assets/jost-1.ttf",
+      "sourceBytes": 58936,
+      "sourceSha256": "d6ff7726ec21576cf2fdac55080b2d43832780fa981f03f0b66d2723a7c1ea09",
+      "runtime": "baseline/shared/assets/jost-1.ttf",
+      "runtimeBytes": 58936,
+      "runtimeSha256": "d6ff7726ec21576cf2fdac55080b2d43832780fa981f03f0b66d2723a7c1ea09"
+    },
+    {
+      "source": "work/visualizations/assets/jost-2.ttf",
+      "sourceBytes": 58936,
+      "sourceSha256": "a63c8d75600a2d42e0e152e4c4810474a90a0b93206f47530a741dbb78a9e571",
+      "runtime": "baseline/shared/assets/jost-2.ttf",
+      "runtimeBytes": 58936,
+      "runtimeSha256": "a63c8d75600a2d42e0e152e4c4810474a90a0b93206f47530a741dbb78a9e571"
+    },
+    {
+      "source": "work/visualizations/assets/jost.css",
+      "sourceBytes": 441,
+      "sourceSha256": "1f67cdf2d8a7eb3d0b6d6ecdae838ac025bffc18b5f2b07ce3bfa26e0fd51dec",
+      "runtime": "baseline/shared/assets/jost.css",
+      "runtimeBytes": 441,
+      "runtimeSha256": "1f67cdf2d8a7eb3d0b6d6ecdae838ac025bffc18b5f2b07ce3bfa26e0fd51dec"
+    },
+    {
+      "source": "work/visualizations/decryption-examples/scanner-return-random.mjs",
+      "sourceBytes": 170,
+      "sourceSha256": "8dd977e7cafdca174ed7dbe3ff74c4e36e6853a99a4414cc83be97873b40f9cb",
+      "runtime": "baseline/shared/decryption-examples/scanner-return-random.mjs",
+      "runtimeBytes": 170,
+      "runtimeSha256": "8dd977e7cafdca174ed7dbe3ff74c4e36e6853a99a4414cc83be97873b40f9cb"
+    },
+    {
+      "source": "work/visualizations/decryption-examples/scanner-return-together.mjs",
+      "sourceBytes": 11691,
+      "sourceSha256": "1d0253503d3799a82c833611a21ef24e19a03582de5699647655515526805eae",
+      "runtime": "baseline/shared/decryption-examples/scanner-return-together.mjs",
+      "runtimeBytes": 11691,
+      "runtimeSha256": "1d0253503d3799a82c833611a21ef24e19a03582de5699647655515526805eae"
+    },
+    {
+      "source": "work/visualizations/decryption-examples/shared.mjs",
+      "sourceBytes": 2101,
+      "sourceSha256": "e07633623475877cfb71cdfca38f918ee2d66d05e56792edb05d5b9a95852815",
+      "runtime": "baseline/shared/decryption-examples/shared.mjs",
+      "runtimeBytes": 2101,
+      "runtimeSha256": "e07633623475877cfb71cdfca38f918ee2d66d05e56792edb05d5b9a95852815"
+    },
+    {
+      "source": "work/visualizations/horizon-decryption-engine.mjs",
+      "sourceBytes": 5664,
+      "sourceSha256": "18f2983119bd8d7e4fd7beb29c34d9ef3d0cef0c0311354863894b99783b7d94",
+      "runtime": "baseline/shared/horizon-decryption-engine.mjs",
+      "runtimeBytes": 5664,
+      "runtimeSha256": "18f2983119bd8d7e4fd7beb29c34d9ef3d0cef0c0311354863894b99783b7d94"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/account-menu.css",
+      "sourceBytes": 4753,
+      "sourceSha256": "8f6da743782fb50abad856317bcb3292d8babcd96b51e8b6a13c7ff28d266540",
+      "runtime": "baseline/account-menu.css",
+      "runtimeBytes": 4753,
+      "runtimeSha256": "8f6da743782fb50abad856317bcb3292d8babcd96b51e8b6a13c7ff28d266540"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/account-menu.mjs",
+      "sourceBytes": 13168,
+      "sourceSha256": "b839d5c2c1c44e19d75d6d84fc89ff9cb5b91909b53cb093f7bbea338e9ef105",
+      "runtime": "baseline/account-menu.mjs",
+      "runtimeBytes": 13168,
+      "runtimeSha256": "b839d5c2c1c44e19d75d6d84fc89ff9cb5b91909b53cb093f7bbea338e9ef105"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/assets/campuses/mulhouse-cantina.jpg",
+      "sourceBytes": 135397,
+      "sourceSha256": "a2b027bf7e14d8abe671b92a34db8c2af7007e70855d516fc55e959453a4275e",
+      "runtime": "baseline/assets/campuses/mulhouse-cantina.jpg",
+      "runtimeBytes": 135397,
+      "runtimeSha256": "a2b027bf7e14d8abe671b92a34db8c2af7007e70855d516fc55e959453a4275e"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/assets/campuses/mulhouse-cluster.jpg",
+      "sourceBytes": 529575,
+      "sourceSha256": "f91adf217ebeae1e0f0c15c5ed51cf86ff2227ece77aa52d08f8a7c549de0318",
+      "runtime": "baseline/assets/campuses/mulhouse-cluster.jpg",
+      "runtimeBytes": 529575,
+      "runtimeSha256": "f91adf217ebeae1e0f0c15c5ed51cf86ff2227ece77aa52d08f8a7c549de0318"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/assets/campuses/mulhouse-entrance.jpg",
+      "sourceBytes": 273901,
+      "sourceSha256": "97831ce215e87ec2a38f749a79ee09ad26365b0b8a1426dd6e5965bd23b79e6e",
+      "runtime": "baseline/assets/campuses/mulhouse-entrance.jpg",
+      "runtimeBytes": 273901,
+      "runtimeSha256": "97831ce215e87ec2a38f749a79ee09ad26365b0b8a1426dd6e5965bd23b79e6e"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/assets/campuses/mulhouse-km0-campus.jpg",
+      "sourceBytes": 221588,
+      "sourceSha256": "6b7026b881cdc2000926834720280506366cc6f2bebc095dd6d4a70eb2f269b5",
+      "runtime": "baseline/assets/campuses/mulhouse-km0-campus.jpg",
+      "runtimeBytes": 221588,
+      "runtimeSha256": "6b7026b881cdc2000926834720280506366cc6f2bebc095dd6d4a70eb2f269b5"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/assets/campuses/mulhouse-logo-official-white.svg",
+      "sourceBytes": 9749,
+      "sourceSha256": "56185aa46900c5060261b83bcd1c043ca845b5a7aa1f951f0b6dbab6fb3f1098",
+      "runtime": "baseline/assets/campuses/mulhouse-logo-official-white.svg",
+      "runtimeBytes": 9749,
+      "runtimeSha256": "56185aa46900c5060261b83bcd1c043ca845b5a7aa1f951f0b6dbab6fb3f1098"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/assets/campuses/paris-campus.jpg",
+      "sourceBytes": 572855,
+      "sourceSha256": "16aa4ff59c21494fccb221419bdb9940599905b02521002a5235128250084f0a",
+      "runtime": "baseline/assets/campuses/paris-campus.jpg",
+      "runtimeBytes": 572855,
+      "runtimeSha256": "16aa4ff59c21494fccb221419bdb9940599905b02521002a5235128250084f0a"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/assets/campuses/paris-cluster.jpg",
+      "sourceBytes": 288800,
+      "sourceSha256": "0d627ef9e6b94b7491d16fb8ea02e1713a5a8b591a10fa153f965eed751beb13",
+      "runtime": "baseline/assets/campuses/paris-cluster.jpg",
+      "runtimeBytes": 288800,
+      "runtimeSha256": "0d627ef9e6b94b7491d16fb8ea02e1713a5a8b591a10fa153f965eed751beb13"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/assets/campuses/paris-logo-official.svg",
+      "sourceBytes": 2073,
+      "sourceSha256": "95ef45252cf1eac032cff411c8ab352a9d698f58beaff9d58034d178e7638047",
+      "runtime": "baseline/assets/campuses/paris-logo-official.svg",
+      "runtimeBytes": 2073,
+      "runtimeSha256": "95ef45252cf1eac032cff411c8ab352a9d698f58beaff9d58034d178e7638047"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/assets/minishell-flow-demo.svg",
+      "sourceBytes": 2443,
+      "sourceSha256": "52898120d0470c3dbd732c7a2aebd15bb208d536aed733cb6306dd0559cf2b30",
+      "runtime": "baseline/assets/minishell-flow-demo.svg",
+      "runtimeBytes": 2443,
+      "runtimeSha256": "52898120d0470c3dbd732c7a2aebd15bb208d536aed733cb6306dd0559cf2b30"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/assets/profile-avatars/caio-mendes.svg",
+      "sourceBytes": 1681,
+      "sourceSha256": "b14030ac43482591e5ffce5fd9efa091ac56bed9f3a923c7a957b2536ac8ecb1",
+      "runtime": "baseline/assets/profile-avatars/caio-mendes.svg",
+      "runtimeBytes": 1681,
+      "runtimeSha256": "b14030ac43482591e5ffce5fd9efa091ac56bed9f3a923c7a957b2536ac8ecb1"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/assets/profile-avatars/haru-mizuno.svg",
+      "sourceBytes": 1572,
+      "sourceSha256": "ca6290a54a65f6e33e2c99c20320f6418ba9120823ceb2fa54497ce380ae8091",
+      "runtime": "baseline/assets/profile-avatars/haru-mizuno.svg",
+      "runtimeBytes": 1572,
+      "runtimeSha256": "ca6290a54a65f6e33e2c99c20320f6418ba9120823ceb2fa54497ce380ae8091"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/assets/profile-avatars/ines-morel.svg",
+      "sourceBytes": 1761,
+      "sourceSha256": "3c0700986228a9fca11e9d82f4c9866556cd4857fcc51b4c5ede7b30c0e146e7",
+      "runtime": "baseline/assets/profile-avatars/ines-morel.svg",
+      "runtimeBytes": 1761,
+      "runtimeSha256": "3c0700986228a9fca11e9d82f4c9866556cd4857fcc51b4c5ede7b30c0e146e7"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/assets/profile-avatars/leila-mansour.svg",
+      "sourceBytes": 1756,
+      "sourceSha256": "9fd36e21e1ed4d29fd5e975fffa44e75c3dac9c18b724bbadf6e8406e8838f81",
+      "runtime": "baseline/assets/profile-avatars/leila-mansour.svg",
+      "runtimeBytes": 1756,
+      "runtimeSha256": "9fd36e21e1ed4d29fd5e975fffa44e75c3dac9c18b724bbadf6e8406e8838f81"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/assets/profile-avatars/luiza-costa.svg",
+      "sourceBytes": 1855,
+      "sourceSha256": "8d9ff2ad2893b2f8bfd720f1b86028dca53b64633de0ef01e8b1d3ac8ae1edca",
+      "runtime": "baseline/assets/profile-avatars/luiza-costa.svg",
+      "runtimeBytes": 1855,
+      "runtimeSha256": "8d9ff2ad2893b2f8bfd720f1b86028dca53b64633de0ef01e8b1d3ac8ae1edca"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/assets/profile-avatars/noe-laurent.svg",
+      "sourceBytes": 1653,
+      "sourceSha256": "16ca0fa5fa698a38441225b52360629f685d2ba27afe31dcad1034d60ad16008",
+      "runtime": "baseline/assets/profile-avatars/noe-laurent.svg",
+      "runtimeBytes": 1653,
+      "runtimeSha256": "16ca0fa5fa698a38441225b52360629f685d2ba27afe31dcad1034d60ad16008"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/author-preview-fit.mjs",
+      "sourceBytes": 6467,
+      "sourceSha256": "286dce97676bfef0a0c1042e5d8447b4aa90d89ae5690e3a53b522ad270fee33",
+      "runtime": "baseline/author-preview-fit.mjs",
+      "runtimeBytes": 6467,
+      "runtimeSha256": "286dce97676bfef0a0c1042e5d8447b4aa90d89ae5690e3a53b522ad270fee33"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/awards.css",
+      "sourceBytes": 1857,
+      "sourceSha256": "2c0156f4d833c22e309ff32d7c77da54a898bffb846d3ce1a8446b498b2d877d",
+      "runtime": "baseline/awards.css",
+      "runtimeBytes": 1857,
+      "runtimeSha256": "2c0156f4d833c22e309ff32d7c77da54a898bffb846d3ce1a8446b498b2d877d"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/back-to-top.css",
+      "sourceBytes": 1978,
+      "sourceSha256": "917add7417209c47f721fffe2415e48f56d6e90cb5845293034feb1bfb7088d8",
+      "runtime": "baseline/back-to-top.css",
+      "runtimeBytes": 1978,
+      "runtimeSha256": "917add7417209c47f721fffe2415e48f56d6e90cb5845293034feb1bfb7088d8"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/back-to-top.mjs",
+      "sourceBytes": 3741,
+      "sourceSha256": "6e1cb92805b3236b83e947ca09c94c5a65771fa0aeceaa7c6044cfccd02bf4ce",
+      "runtime": "baseline/back-to-top.mjs",
+      "runtimeBytes": 3741,
+      "runtimeSha256": "6e1cb92805b3236b83e947ca09c94c5a65771fa0aeceaa7c6044cfccd02bf4ce"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/brand-wordmark.css",
+      "sourceBytes": 498,
+      "sourceSha256": "a4891ff9e4a945f6d9c6f80f9bf85b94ab383b2fea320b3c95642550be61fdb8",
+      "runtime": "baseline/brand-wordmark.css",
+      "runtimeBytes": 498,
+      "runtimeSha256": "a4891ff9e4a945f6d9c6f80f9bf85b94ab383b2fea320b3c95642550be61fdb8"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/brand-wordmark.mjs",
+      "sourceBytes": 6404,
+      "sourceSha256": "3a8c66dcc24435792f0f765297734618957bf08d7f6b86bb2019829e450a6292",
+      "runtime": "baseline/brand-wordmark.mjs",
+      "runtimeBytes": 6404,
+      "runtimeSha256": "3a8c66dcc24435792f0f765297734618957bf08d7f6b86bb2019829e450a6292"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/campus-details.css",
+      "sourceBytes": 11061,
+      "sourceSha256": "2070e64788f9e0a05ad1e143bc0b68914438548600195faa54e8a8c56c74e459",
+      "runtime": "baseline/campus-details.css",
+      "runtimeBytes": 11061,
+      "runtimeSha256": "2070e64788f9e0a05ad1e143bc0b68914438548600195faa54e8a8c56c74e459"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/campus-details.mjs",
+      "sourceBytes": 18756,
+      "sourceSha256": "d80d30ac49b0644dbfdc4da0b8207f846353cfa793d552b385b4edbdf90742eb",
+      "runtime": "baseline/campus-details.mjs",
+      "runtimeBytes": 18756,
+      "runtimeSha256": "d80d30ac49b0644dbfdc4da0b8207f846353cfa793d552b385b4edbdf90742eb"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/campus-direction.css",
+      "sourceBytes": 1856,
+      "sourceSha256": "ce0d7a21eca296c5f8220ad7aa4efca5192411848fd9937cd5895b31a2b924ef",
+      "runtime": "baseline/campus-direction.css",
+      "runtimeBytes": 1856,
+      "runtimeSha256": "ce0d7a21eca296c5f8220ad7aa4efca5192411848fd9937cd5895b31a2b924ef"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/campus-direction.mjs",
+      "sourceBytes": 5574,
+      "sourceSha256": "383b1ca089924dc5d66f340b0dc167635b1c7b2157594481e071754a3ebbc3c3",
+      "runtime": "baseline/campus-direction.mjs",
+      "runtimeBytes": 5574,
+      "runtimeSha256": "383b1ca089924dc5d66f340b0dc167635b1c7b2157594481e071754a3ebbc3c3"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/campus-location-overrides.json",
+      "sourceBytes": 8045,
+      "sourceSha256": "13d3e1afac34bc0c5fe0ca7eafc21f917b4af8f0c524a642d525bf3e303f2b76",
+      "runtime": "baseline/campus-location-overrides.json",
+      "runtimeBytes": 8045,
+      "runtimeSha256": "13d3e1afac34bc0c5fe0ca7eafc21f917b4af8f0c524a642d525bf3e303f2b76"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/campus-map-dialog.css",
+      "sourceBytes": 2484,
+      "sourceSha256": "6198f760ddffdaa6ccd2d1bfba38f52261aa17db985c532f9496e6f01b412c12",
+      "runtime": "baseline/campus-map-dialog.css",
+      "runtimeBytes": 2484,
+      "runtimeSha256": "6198f760ddffdaa6ccd2d1bfba38f52261aa17db985c532f9496e6f01b412c12"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/campus-map-dialog.mjs",
+      "sourceBytes": 6840,
+      "sourceSha256": "f509460ec8524033bd9900d6aaf044d50a98575d1a33a9afbe12e521c03b0093",
+      "runtime": "baseline/campus-map-dialog.mjs",
+      "runtimeBytes": 6840,
+      "runtimeSha256": "f509460ec8524033bd9900d6aaf044d50a98575d1a33a9afbe12e521c03b0093"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/campus-outbound.mjs",
+      "sourceBytes": 3319,
+      "sourceSha256": "e452bb28cb34784de25c3eb1807b947fba906d8aeee4134ece96951c576ea840",
+      "runtime": "baseline/campus-outbound.mjs",
+      "runtimeBytes": 3319,
+      "runtimeSha256": "e452bb28cb34784de25c3eb1807b947fba906d8aeee4134ece96951c576ea840"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/campus-preload.mjs",
+      "sourceBytes": 21077,
+      "sourceSha256": "1184a4329cb2119cd804e07a14e77ad96d141da96f2011d22c823699d3bae4cc",
+      "runtime": "baseline/campus-preload.mjs",
+      "runtimeBytes": 21077,
+      "runtimeSha256": "1184a4329cb2119cd804e07a14e77ad96d141da96f2011d22c823699d3bae4cc"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/campus-profiles.json",
+      "sourceBytes": 8942,
+      "sourceSha256": "bf7994d97cb2ad8310af013809aab5d2ffcc4b3dfc4bc580d36380bbd8c32b17",
+      "runtime": "baseline/campus-profiles.json",
+      "runtimeBytes": 8942,
+      "runtimeSha256": "bf7994d97cb2ad8310af013809aab5d2ffcc4b3dfc4bc580d36380bbd8c32b17"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/campus-sheet.mjs",
+      "sourceBytes": 9077,
+      "sourceSha256": "9b89a2a336dad3ac75fcf1dcf927da110dd290129f8084e71eeb17d3ca35e911",
+      "runtime": "baseline/campus-sheet.mjs",
+      "runtimeBytes": 9077,
+      "runtimeSha256": "9b89a2a336dad3ac75fcf1dcf927da110dd290129f8084e71eeb17d3ca35e911"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/campus-website-locales.json",
+      "sourceBytes": 56887,
+      "sourceSha256": "2f3079b16cd05291a8387023ef2ed80855219ac0f61cbf7919ec6311c9572159",
+      "runtime": "baseline/campus-website-locales.json",
+      "runtimeBytes": 56887,
+      "runtimeSha256": "2f3079b16cd05291a8387023ef2ed80855219ac0f61cbf7919ec6311c9572159"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/campus-website.mjs",
+      "sourceBytes": 1658,
+      "sourceSha256": "79edb1a8461605b471b8e307a50c65ca4251a9dc8666d503ceedcaca8f374e04",
+      "runtime": "baseline/campus-website.mjs",
+      "runtimeBytes": 1658,
+      "runtimeSha256": "79edb1a8461605b471b8e307a50c65ca4251a9dc8666d503ceedcaca8f374e04"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/campus-websites.json",
+      "sourceBytes": 12253,
+      "sourceSha256": "cbb2f7193fe404b7b57e5c5b7dadee7163e54cb90743583b4c2347f4882aa512",
+      "runtime": "baseline/campus-websites.json",
+      "runtimeBytes": 12253,
+      "runtimeSha256": "cbb2f7193fe404b7b57e5c5b7dadee7163e54cb90743583b4c2347f4882aa512"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/campuses.json",
+      "sourceBytes": 21911,
+      "sourceSha256": "0e6a49a0867443efd80ab1f0831e56c3a061beb136d6dc8642a462db6e41c850",
+      "runtime": "baseline/campuses.json",
+      "runtimeBytes": 21911,
+      "runtimeSha256": "0e6a49a0867443efd80ab1f0831e56c3a061beb136d6dc8642a462db6e41c850"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/comment-mention-picker.css",
+      "sourceBytes": 1569,
+      "sourceSha256": "836f172c2e5ea05d6872a973a979585ff867da098f54d9047b378b97acd91cea",
+      "runtime": "baseline/comment-mention-picker.css",
+      "runtimeBytes": 1569,
+      "runtimeSha256": "836f172c2e5ea05d6872a973a979585ff867da098f54d9047b378b97acd91cea"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/comment-mention-picker.mjs",
+      "sourceBytes": 6438,
+      "sourceSha256": "b6c8cf68a2b9f8db175f72029fe56538f0e944c71d1ede72579ba20ea8b17947",
+      "runtime": "baseline/comment-mention-picker.mjs",
+      "runtimeBytes": 6438,
+      "runtimeSha256": "b6c8cf68a2b9f8db175f72029fe56538f0e944c71d1ede72579ba20ea8b17947"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/comment-mentions.mjs",
+      "sourceBytes": 10496,
+      "sourceSha256": "67a95df40374ea05dd24d5632dbe6b70a2eca1e37bbecda018eda16a17097440",
+      "runtime": "baseline/comment-mentions.mjs",
+      "runtimeBytes": 10496,
+      "runtimeSha256": "67a95df40374ea05dd24d5632dbe6b70a2eca1e37bbecda018eda16a17097440"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/comments.css",
+      "sourceBytes": 8906,
+      "sourceSha256": "9f93b003d8e2cc5d33da7324525f30a6353e05c95a371b5b2b9d6031f7aae84a",
+      "runtime": "baseline/comments.css",
+      "runtimeBytes": 8906,
+      "runtimeSha256": "9f93b003d8e2cc5d33da7324525f30a6353e05c95a371b5b2b9d6031f7aae84a"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/comments.mjs",
+      "sourceBytes": 39320,
+      "sourceSha256": "24dd71a770b072f6aeade8ba16addb4e3023fb3b5d9a8713fe0cd8869423854b",
+      "runtime": "baseline/comments.mjs",
+      "runtimeBytes": 39366,
+      "runtimeSha256": "9ab6074f3c8eb276e2d34f71206b8becb8226731da00829d031c98d95a696f08",
+      "original": "originals/comments.mjs",
+      "changes": [
+        {
+          "kind": "isolated-storage",
+          "from": "horizon-comments-demo-v1:",
+          "to": "horizon-archive-pre-profile-campus-isolation-20261018-comments-demo-v1:",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-controls.css",
+      "sourceBytes": 10306,
+      "sourceSha256": "cc14237d5d978a625c8481701d82a6c49300cbde33fedcd8a9fa99d52f8b03e0",
+      "runtime": "baseline/content-controls.css",
+      "runtimeBytes": 10306,
+      "runtimeSha256": "cc14237d5d978a625c8481701d82a6c49300cbde33fedcd8a9fa99d52f8b03e0"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-controls.mjs",
+      "sourceBytes": 23933,
+      "sourceSha256": "58ac9a724ba2168a3109cf13b3c77e06d457068827074370ec8c5aff1625e2eb",
+      "runtime": "baseline/content-controls.mjs",
+      "runtimeBytes": 23933,
+      "runtimeSha256": "58ac9a724ba2168a3109cf13b3c77e06d457068827074370ec8c5aff1625e2eb"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-filters.mjs",
+      "sourceBytes": 8841,
+      "sourceSha256": "b494e148b4689c8cd8ccf9800496962f2d32517b092190b1a2ab15ccf571b3f7",
+      "runtime": "baseline/content-filters.mjs",
+      "runtimeBytes": 8841,
+      "runtimeSha256": "b494e148b4689c8cd8ccf9800496962f2d32517b092190b1a2ab15ccf571b3f7"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-geography.mjs",
+      "sourceBytes": 1210,
+      "sourceSha256": "1067f2e0493428450c818df822147d4cd4c1ab4ab5532b753217415afb69a33e",
+      "runtime": "baseline/content-geography.mjs",
+      "runtimeBytes": 1210,
+      "runtimeSha256": "1067f2e0493428450c818df822147d4cd4c1ab4ab5532b753217415afb69a33e"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-layout.css",
+      "sourceBytes": 3728,
+      "sourceSha256": "618738d403bdd445d5ff8157f510b9a634c99a9e586cd1114a51cc2d29729e65",
+      "runtime": "baseline/content-layout.css",
+      "runtimeBytes": 3728,
+      "runtimeSha256": "618738d403bdd445d5ff8157f510b9a634c99a9e586cd1114a51cc2d29729e65"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-pagination-ui.mjs",
+      "sourceBytes": 3357,
+      "sourceSha256": "d04673417e100a6531b65135953221c7310ba5a275eb6a931154b068bea558dd",
+      "runtime": "baseline/content-pagination-ui.mjs",
+      "runtimeBytes": 3357,
+      "runtimeSha256": "d04673417e100a6531b65135953221c7310ba5a275eb6a931154b068bea558dd"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-pagination.css",
+      "sourceBytes": 1916,
+      "sourceSha256": "8a86f6806a1bd2ddcbc4638d2fe3c2645befeaa600314b79e2952dd33fd15572",
+      "runtime": "baseline/content-pagination.css",
+      "runtimeBytes": 1916,
+      "runtimeSha256": "8a86f6806a1bd2ddcbc4638d2fe3c2645befeaa600314b79e2952dd33fd15572"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-pagination.mjs",
+      "sourceBytes": 1733,
+      "sourceSha256": "f87741911342678e4f0d4afae8266e4b8722ccb0f1a23d3eef13f35bd7fa56fc",
+      "runtime": "baseline/content-pagination.mjs",
+      "runtimeBytes": 1733,
+      "runtimeSha256": "f87741911342678e4f0d4afae8266e4b8722ccb0f1a23d3eef13f35bd7fa56fc"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-preferences.mjs",
+      "sourceBytes": 5038,
+      "sourceSha256": "e58ead79bc78010bde568989d58ff104b7156dc3f5c3f81bd858e8ae53a244ea",
+      "runtime": "baseline/content-preferences.mjs",
+      "runtimeBytes": 5176,
+      "runtimeSha256": "f2f6cb78c379bc0cd901b9fb40a223e4fc613c58628c91b0d38254aff3abf0da",
+      "original": "originals/content-preferences.mjs",
+      "changes": [
+        {
+          "kind": "isolated-storage",
+          "from": "horizon-content-preferences-v2",
+          "to": "horizon-archive-pre-profile-campus-isolation-20261018-content-preferences-v2",
+          "count": 1
+        },
+        {
+          "kind": "isolated-storage",
+          "from": "horizon-content-preferences-v1",
+          "to": "horizon-archive-pre-profile-campus-isolation-20261018-content-preferences-v1",
+          "count": 1
+        },
+        {
+          "kind": "isolated-storage",
+          "from": "horizon-content-view",
+          "to": "horizon-archive-pre-profile-campus-isolation-20261018-content-view",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-preview-art.mjs",
+      "sourceBytes": 8619,
+      "sourceSha256": "6c62c48e772bf24496f57de9220f710ba91828c7ae708e65fa1851a1c03e40f1",
+      "runtime": "baseline/content-preview-art.mjs",
+      "runtimeBytes": 8619,
+      "runtimeSha256": "6c62c48e772bf24496f57de9220f710ba91828c7ae708e65fa1851a1c03e40f1"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-preview-data.mjs",
+      "sourceBytes": 27703,
+      "sourceSha256": "f4a5ae6be75fdc54a72304e014109189247fb723cd1bcd2387f7a72107e7facd",
+      "runtime": "baseline/content-preview-data.mjs",
+      "runtimeBytes": 27703,
+      "runtimeSha256": "f4a5ae6be75fdc54a72304e014109189247fb723cd1bcd2387f7a72107e7facd"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-preview.css",
+      "sourceBytes": 23316,
+      "sourceSha256": "ce8b0a56c8aab13150abeb865d72632469caa546ba40d78c46d983292affc3cf",
+      "runtime": "baseline/content-preview.css",
+      "runtimeBytes": 23316,
+      "runtimeSha256": "ce8b0a56c8aab13150abeb865d72632469caa546ba40d78c46d983292affc3cf"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-preview.html",
+      "sourceBytes": 15536,
+      "sourceSha256": "60604213547a7364c3d34918befb87abcfe10379431dc01471580fe7b2c49b3b",
+      "runtime": "baseline/content-preview.html",
+      "runtimeBytes": 15557,
+      "runtimeSha256": "54bedadf94038570b331c2a6a351f250b22e6436cf312e3e6ae97083881e9dd1",
+      "original": "originals/content-preview.html",
+      "changes": [
+        {
+          "kind": "dependency-url",
+          "from": "../../figma/",
+          "to": "./shared/figma/",
+          "count": 3
+        },
+        {
+          "kind": "dependency-url",
+          "from": "../assets/",
+          "to": "./shared/assets/",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-preview.mjs",
+      "sourceBytes": 649,
+      "sourceSha256": "e34b7b57106d413a96df12c60f8fe1618b7c6801046ce992c68762a0d82fe02a",
+      "runtime": "baseline/content-preview.mjs",
+      "runtimeBytes": 649,
+      "runtimeSha256": "e34b7b57106d413a96df12c60f8fe1618b7c6801046ce992c68762a0d82fe02a"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-report.css",
+      "sourceBytes": 3937,
+      "sourceSha256": "98ced8e773ef4d80fbf2a4b7364a923812dcb3b4ab130951873c16329ea14500",
+      "runtime": "baseline/content-report.css",
+      "runtimeBytes": 3937,
+      "runtimeSha256": "98ced8e773ef4d80fbf2a4b7364a923812dcb3b4ab130951873c16329ea14500"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-report.mjs",
+      "sourceBytes": 11350,
+      "sourceSha256": "e81b69e60f00b336253c0efdf8ff24652a51e52260c1f9553222030480211bf2",
+      "runtime": "baseline/content-report.mjs",
+      "runtimeBytes": 11396,
+      "runtimeSha256": "fe0d2cbddd1bc81744d6b14cac0bbe5d4145e90909216f546fee32bef25888cf",
+      "original": "originals/content-report.mjs",
+      "changes": [
+        {
+          "kind": "isolated-storage",
+          "from": "horizon-content-reports-v1",
+          "to": "horizon-archive-pre-profile-campus-isolation-20261018-content-reports-v1",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-transitions.mjs",
+      "sourceBytes": 2202,
+      "sourceSha256": "f60f2b1928815bb256d073cdf9a5614e02813ba411aba665544d50e6ecc6d533",
+      "runtime": "baseline/content-transitions.mjs",
+      "runtimeBytes": 2202,
+      "runtimeSha256": "f60f2b1928815bb256d073cdf9a5614e02813ba411aba665544d50e6ecc6d533"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/contextual-discovery.css",
+      "sourceBytes": 6215,
+      "sourceSha256": "859cc23c2ff1504b5c5b61684a5bcd7868f3ac91c025a95741607eca74e3f607",
+      "runtime": "baseline/contextual-discovery.css",
+      "runtimeBytes": 6215,
+      "runtimeSha256": "859cc23c2ff1504b5c5b61684a5bcd7868f3ac91c025a95741607eca74e3f607"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/control-glass.css",
+      "sourceBytes": 4402,
+      "sourceSha256": "042bb6e05f163cfd198d5cfc98f3576877a1bf1ddb6093fda64c456bc7eda50d",
+      "runtime": "baseline/control-glass.css",
+      "runtimeBytes": 4402,
+      "runtimeSha256": "042bb6e05f163cfd198d5cfc98f3576877a1bf1ddb6093fda64c456bc7eda50d"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/demo-content-expanded.mjs",
+      "sourceBytes": 23519,
+      "sourceSha256": "71a1f8490817f2fee80f3025310ec4ac047af6e210263514805f07b01cb599cd",
+      "runtime": "baseline/demo-content-expanded.mjs",
+      "runtimeBytes": 23519,
+      "runtimeSha256": "71a1f8490817f2fee80f3025310ec4ac047af6e210263514805f07b01cb599cd"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/demo-content-seed.mjs",
+      "sourceBytes": 34314,
+      "sourceSha256": "2b25388d3469a55803325b2b17b729ba4eb250d864ffa21c9c8215520771a734",
+      "runtime": "baseline/demo-content-seed.mjs",
+      "runtimeBytes": 34314,
+      "runtimeSha256": "2b25388d3469a55803325b2b17b729ba4eb250d864ffa21c9c8215520771a734"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/design-review-selection.css",
+      "sourceBytes": 30433,
+      "sourceSha256": "68c9986bf451fc95eea0a50b1863db42661c6ee0c9adcdbbe966acaf87b83dff",
+      "runtime": "baseline/design-review-selection.css",
+      "runtimeBytes": 30433,
+      "runtimeSha256": "68c9986bf451fc95eea0a50b1863db42661c6ee0c9adcdbbe966acaf87b83dff"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/design-review-selection.mjs",
+      "sourceBytes": 4226,
+      "sourceSha256": "0200f2ff846812a1bfaf869571e3acf264923bcd5772a257e622798b1038d351",
+      "runtime": "baseline/design-review-selection.mjs",
+      "runtimeBytes": 4226,
+      "runtimeSha256": "0200f2ff846812a1bfaf869571e3acf264923bcd5772a257e622798b1038d351"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/detail-gate.mjs",
+      "sourceBytes": 7243,
+      "sourceSha256": "3ea851da71d99cc26a1cdd43a47f2af7363c27b409829ae5ef36a2749dba2d74",
+      "runtime": "baseline/detail-gate.mjs",
+      "runtimeBytes": 7243,
+      "runtimeSha256": "3ea851da71d99cc26a1cdd43a47f2af7363c27b409829ae5ef36a2749dba2d74"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/detail-scroll.css",
+      "sourceBytes": 5227,
+      "sourceSha256": "9aa6d69e112e1fae3973a613ebd404cd8e83d52b0188a42a986cb6300bd70e0c",
+      "runtime": "baseline/detail-scroll.css",
+      "runtimeBytes": 5227,
+      "runtimeSha256": "9aa6d69e112e1fae3973a613ebd404cd8e83d52b0188a42a986cb6300bd70e0c"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/detail-scroll.mjs",
+      "sourceBytes": 10856,
+      "sourceSha256": "6d34289d73a5ca9a1141e1311fd85ceb5b3650e47f95a6502abcb0083c2de72c",
+      "runtime": "baseline/detail-scroll.mjs",
+      "runtimeBytes": 10856,
+      "runtimeSha256": "6d34289d73a5ca9a1141e1311fd85ceb5b3650e47f95a6502abcb0083c2de72c"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/dock-navigation.css",
+      "sourceBytes": 3381,
+      "sourceSha256": "174ea265d6a863f906a945747e8b3056e071056a0f84832f4f695711547b998c",
+      "runtime": "baseline/dock-navigation.css",
+      "runtimeBytes": 3381,
+      "runtimeSha256": "174ea265d6a863f906a945747e8b3056e071056a0f84832f4f695711547b998c"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/dock-navigation.mjs",
+      "sourceBytes": 2239,
+      "sourceSha256": "76d27ce114a554a64f33f1ee47b7af0b565d1eff27677afeb0a14181e60ce97e",
+      "runtime": "baseline/dock-navigation.mjs",
+      "runtimeBytes": 2239,
+      "runtimeSha256": "76d27ce114a554a64f33f1ee47b7af0b565d1eff27677afeb0a14181e60ce97e"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/dock-search-data.mjs",
+      "sourceBytes": 7094,
+      "sourceSha256": "82e9deffb24f7ed0884a2eccba6dc9db591715868ff46778a03ddc99bb770ad9",
+      "runtime": "baseline/dock-search-data.mjs",
+      "runtimeBytes": 7094,
+      "runtimeSha256": "82e9deffb24f7ed0884a2eccba6dc9db591715868ff46778a03ddc99bb770ad9"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/dock-search.css",
+      "sourceBytes": 24134,
+      "sourceSha256": "2ac9c079d5142898615a98955fe1881af016f719e06c879727bc72ea583962fc",
+      "runtime": "baseline/dock-search.css",
+      "runtimeBytes": 24134,
+      "runtimeSha256": "2ac9c079d5142898615a98955fe1881af016f719e06c879727bc72ea583962fc"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/dock-search.mjs",
+      "sourceBytes": 22326,
+      "sourceSha256": "5821dd234328abe5f56b761bae71c4e6534bbebff34e21e041788a67ee421b28",
+      "runtime": "baseline/dock-search.mjs",
+      "runtimeBytes": 22326,
+      "runtimeSha256": "5821dd234328abe5f56b761bae71c4e6534bbebff34e21e041788a67ee421b28"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/entrance.css",
+      "sourceBytes": 7097,
+      "sourceSha256": "c9a83315deea8ca05546d11cfcce6c18987f74479ec7ca812b3046bc35ff3f56",
+      "runtime": "baseline/entrance.css",
+      "runtimeBytes": 7097,
+      "runtimeSha256": "c9a83315deea8ca05546d11cfcce6c18987f74479ec7ca812b3046bc35ff3f56"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/entrance.mjs",
+      "sourceBytes": 21273,
+      "sourceSha256": "d2426b872e48813fba3df998d3512d2c32acdbbc013c2a33a13f461bc61c82e8",
+      "runtime": "baseline/entrance.mjs",
+      "runtimeBytes": 21285,
+      "runtimeSha256": "556941e9a2a7376b1c1c8df8177234dd30a9493288a8d97d32b1d5cef59e73c0",
+      "original": "originals/entrance.mjs",
+      "changes": [
+        {
+          "kind": "dependency-url",
+          "from": "../decryption-examples/",
+          "to": "./shared/decryption-examples/",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/floating-search.css",
+      "sourceBytes": 5018,
+      "sourceSha256": "223a0592f6c1ae63c5bd0a2988efdd8392ab8745d1430c8424a3929106c1122b",
+      "runtime": "baseline/floating-search.css",
+      "runtimeBytes": 5018,
+      "runtimeSha256": "223a0592f6c1ae63c5bd0a2988efdd8392ab8745d1430c8424a3929106c1122b"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/geography/PROVENANCE.md",
+      "sourceBytes": 8079,
+      "sourceSha256": "792b179dff18af3d22c57198215180a58d395f53ba6307f3bb2f105bdbfe206e",
+      "runtime": "baseline/geography/PROVENANCE.md",
+      "runtimeBytes": 8079,
+      "runtimeSha256": "792b179dff18af3d22c57198215180a58d395f53ba6307f3bb2f105bdbfe206e"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/geography/world-countries.topo.json",
+      "sourceBytes": 5392533,
+      "sourceSha256": "c6d54f03aba7ea7d63e58053ac27ebea23ef520421a90effcf0201c6cd7945cc",
+      "runtime": "baseline/geography/world-countries.topo.json",
+      "runtimeBytes": 5392533,
+      "runtimeSha256": "c6d54f03aba7ea7d63e58053ac27ebea23ef520421a90effcf0201c6cd7945cc"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/geography/world-countries.topo.json.gz",
+      "sourceBytes": 2006643,
+      "sourceSha256": "13640abdfe1ae1b7109dd921a79cd7a051d1829be510cac8e41b29f14af1b5f0",
+      "runtime": "baseline/geography/world-countries.topo.json.gz",
+      "runtimeBytes": 2006643,
+      "runtimeSha256": "13640abdfe1ae1b7109dd921a79cd7a051d1829be510cac8e41b29f14af1b5f0"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/geography-loader.mjs",
+      "sourceBytes": 1207,
+      "sourceSha256": "16b6c4205c9bfc45ae7649411146fc7164f44c293ea2eefd70111c3852fb35b0",
+      "runtime": "baseline/geography-loader.mjs",
+      "runtimeBytes": 1207,
+      "runtimeSha256": "16b6c4205c9bfc45ae7649411146fc7164f44c293ea2eefd70111c3852fb35b0"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/geography-worker.mjs",
+      "sourceBytes": 1283,
+      "sourceSha256": "a319c9ca1e7d3cd7a3548f551f133ef8202e70ad5e747ca7b9af9084fb841d7b",
+      "runtime": "baseline/geography-worker.mjs",
+      "runtimeBytes": 1289,
+      "runtimeSha256": "36414191a7c62661369e5d1686850b43aed219e4ac3a48d8a430e846eee9e758",
+      "original": "originals/geography-worker.mjs",
+      "changes": [
+        {
+          "kind": "dependency-url",
+          "from": "../map-data/",
+          "to": "./shared/map-data/",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/globe-framing.css",
+      "sourceBytes": 6726,
+      "sourceSha256": "a544a2e08a7697a44aa3c0cd5334a976a04fd9797934d27bb13c4d3ec7177ae6",
+      "runtime": "baseline/globe-framing.css",
+      "runtimeBytes": 6726,
+      "runtimeSha256": "a544a2e08a7697a44aa3c0cd5334a976a04fd9797934d27bb13c4d3ec7177ae6"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/globe-layout.mjs",
+      "sourceBytes": 777,
+      "sourceSha256": "77cb50797dccdffbbe7d171f204142199149bd1f179f797064553c3e1604cd68",
+      "runtime": "baseline/globe-layout.mjs",
+      "runtimeBytes": 777,
+      "runtimeSha256": "77cb50797dccdffbbe7d171f204142199149bd1f179f797064553c3e1604cd68"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/globe-style.mjs",
+      "sourceBytes": 21951,
+      "sourceSha256": "5833157316df2fd12b68d0ff1f63bcc14002e613fe5c49a473f12c8b71f1c313",
+      "runtime": "baseline/globe-style.mjs",
+      "runtimeBytes": 21951,
+      "runtimeSha256": "5833157316df2fd12b68d0ff1f63bcc14002e613fe5c49a473f12c8b71f1c313"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/index.html",
+      "sourceBytes": 15528,
+      "sourceSha256": "a2994b3c15f09ecdcec9176dca7c0324fbc9d08484d1dc5e3ddaa7b635de52c8",
+      "runtime": "baseline/index.html",
+      "runtimeBytes": 15549,
+      "runtimeSha256": "e58b6cae41b523428424c439dd4f397b610fdaadd4384d5caf270b7198a4ea59",
+      "original": "originals/index.html",
+      "changes": [
+        {
+          "kind": "dependency-url",
+          "from": "../../figma/",
+          "to": "./shared/figma/",
+          "count": 3
+        },
+        {
+          "kind": "dependency-url",
+          "from": "../assets/",
+          "to": "./shared/assets/",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/integrated-globe.css",
+      "sourceBytes": 3852,
+      "sourceSha256": "63f1ecc932b9fc0f9b4f037a93d08ccf53b48ae647f1ef5a7bf6917ed81faf27",
+      "runtime": "baseline/integrated-globe.css",
+      "runtimeBytes": 3852,
+      "runtimeSha256": "63f1ecc932b9fc0f9b4f037a93d08ccf53b48ae647f1ef5a7bf6917ed81faf27"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/integrated-globe.mjs",
+      "sourceBytes": 40430,
+      "sourceSha256": "bf4dc9fdf7bd398e95389202ea0742e1cb9187cb066bc354d8b4aa7867ecc158",
+      "runtime": "baseline/integrated-globe.mjs",
+      "runtimeBytes": 40430,
+      "runtimeSha256": "bf4dc9fdf7bd398e95389202ea0742e1cb9187cb066bc354d8b4aa7867ecc158"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/journal-ui.mjs",
+      "sourceBytes": 2139,
+      "sourceSha256": "59e9624d8260a962860f1664b7badea8487557e973cbc1430f44bf09089248d5",
+      "runtime": "baseline/journal-ui.mjs",
+      "runtimeBytes": 2139,
+      "runtimeSha256": "59e9624d8260a962860f1664b7badea8487557e973cbc1430f44bf09089248d5"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/journal.css",
+      "sourceBytes": 725,
+      "sourceSha256": "7c93f3be7197f2418e30444f3636ff5dd677f18e4b0dadccc87b466fd0d99858",
+      "runtime": "baseline/journal.css",
+      "runtimeBytes": 725,
+      "runtimeSha256": "7c93f3be7197f2418e30444f3636ff5dd677f18e4b0dadccc87b466fd0d99858"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/media-viewer.css",
+      "sourceBytes": 4660,
+      "sourceSha256": "34ca80b3a135f69717d21d3b3d4e564716a5cd83663f6de439507ee82d770d9c",
+      "runtime": "baseline/media-viewer.css",
+      "runtimeBytes": 4660,
+      "runtimeSha256": "34ca80b3a135f69717d21d3b3d4e564716a5cd83663f6de439507ee82d770d9c"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/media-viewer.mjs",
+      "sourceBytes": 9021,
+      "sourceSha256": "3ca844c67266cb6084abd476a06ff1e39d73fbda900978f03e4bb6f849d3a3ab",
+      "runtime": "baseline/media-viewer.mjs",
+      "runtimeBytes": 9021,
+      "runtimeSha256": "3ca844c67266cb6084abd476a06ff1e39d73fbda900978f03e4bb6f849d3a3ab"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/navigation-policy.mjs",
+      "sourceBytes": 5322,
+      "sourceSha256": "4db9e09e09038370ed0f5a1ee2d8eee992fb6103b2987cbf3d9eec75dedf1524",
+      "runtime": "baseline/navigation-policy.mjs",
+      "runtimeBytes": 5322,
+      "runtimeSha256": "4db9e09e09038370ed0f5a1ee2d8eee992fb6103b2987cbf3d9eec75dedf1524"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/perf-diagnostics.mjs",
+      "sourceBytes": 28635,
+      "sourceSha256": "4016591e20323f7c65fedbc43c80357625eb17f63557fc4a88402e647c9df1a3",
+      "runtime": "baseline/perf-diagnostics.mjs",
+      "runtimeBytes": 28635,
+      "runtimeSha256": "4016591e20323f7c65fedbc43c80357625eb17f63557fc4a88402e647c9df1a3"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/polar-cap-layer.mjs",
+      "sourceBytes": 7581,
+      "sourceSha256": "c42cfcb4f41641cf71b633ced5fc608aa1a7f8f1013d0928178f401507613899",
+      "runtime": "baseline/polar-cap-layer.mjs",
+      "runtimeBytes": 7581,
+      "runtimeSha256": "c42cfcb4f41641cf71b633ced5fc608aa1a7f8f1013d0928178f401507613899"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/polar-geometry.mjs",
+      "sourceBytes": 2734,
+      "sourceSha256": "783b6ed5d1ac98b1a51ae73d30c4c4497c79ccb0029df258274c1b60a5788ee1",
+      "runtime": "baseline/polar-geometry.mjs",
+      "runtimeBytes": 2734,
+      "runtimeSha256": "783b6ed5d1ac98b1a51ae73d30c4c4497c79ccb0029df258274c1b60a5788ee1"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/profile-data.mjs",
+      "sourceBytes": 26133,
+      "sourceSha256": "de16da2ab6b512303dafc69d94d745325a11d50af48aa7ec2c4e7035ed1fa125",
+      "runtime": "baseline/profile-data.mjs",
+      "runtimeBytes": 26133,
+      "runtimeSha256": "de16da2ab6b512303dafc69d94d745325a11d50af48aa7ec2c4e7035ed1fa125"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/profile-sections.mjs",
+      "sourceBytes": 992,
+      "sourceSha256": "a339932705f4ea306f29d0c6a4ca2e67137207b2e0d0168eee15b916134b3a9e",
+      "runtime": "baseline/profile-sections.mjs",
+      "runtimeBytes": 992,
+      "runtimeSha256": "a339932705f4ea306f29d0c6a4ca2e67137207b2e0d0168eee15b916134b3a9e"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/profile-ui.mjs",
+      "sourceBytes": 34947,
+      "sourceSha256": "dda7bbee23d2072bdddf9cfcdae0fa021e24c2c5f7664bc681846f7e1d59b452",
+      "runtime": "baseline/profile-ui.mjs",
+      "runtimeBytes": 34947,
+      "runtimeSha256": "dda7bbee23d2072bdddf9cfcdae0fa021e24c2c5f7664bc681846f7e1d59b452"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/profiles.css",
+      "sourceBytes": 39430,
+      "sourceSha256": "f4346993852c241205032081cac3e2f4db8a2231f9e1e8455e0092dc470f6c22",
+      "runtime": "baseline/profiles.css",
+      "runtimeBytes": 39430,
+      "runtimeSha256": "f4346993852c241205032081cac3e2f4db8a2231f9e1e8455e0092dc470f6c22"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/project-filter-dialog.css",
+      "sourceBytes": 10818,
+      "sourceSha256": "d5643f96875855256998462c896cdfbe86d29681196efff635333d57584ac559",
+      "runtime": "baseline/project-filter-dialog.css",
+      "runtimeBytes": 10818,
+      "runtimeSha256": "d5643f96875855256998462c896cdfbe86d29681196efff635333d57584ac559"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/project-filter-dialog.mjs",
+      "sourceBytes": 11494,
+      "sourceSha256": "9908ac8570d61e8964b7b0f73dcfbb18875a85075c1fe376ce13e8ade82bacd0",
+      "runtime": "baseline/project-filter-dialog.mjs",
+      "runtimeBytes": 11494,
+      "runtimeSha256": "9908ac8570d61e8964b7b0f73dcfbb18875a85075c1fe376ce13e8ade82bacd0"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/project-trial.mjs",
+      "sourceBytes": 9369,
+      "sourceSha256": "9cf60282a01c5b85a0268f0aba7c4fdd9118d58fe4cbc0831ab528f82024977a",
+      "runtime": "baseline/project-trial.mjs",
+      "runtimeBytes": 9415,
+      "runtimeSha256": "4261a9cccf4f67237f2568a5e1babfcd329dd05a632f64ab8ec93fb18787fef9",
+      "original": "originals/project-trial.mjs",
+      "changes": [
+        {
+          "kind": "isolated-storage",
+          "from": "horizon-project-repository-v1:",
+          "to": "horizon-archive-pre-profile-campus-isolation-20261018-project-repository-v1:",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/project-ui.mjs",
+      "sourceBytes": 22272,
+      "sourceSha256": "59f141b31bf950a502455077e6227025729927200ae9f10d29fd91f2904b04be",
+      "runtime": "baseline/project-ui.mjs",
+      "runtimeBytes": 22272,
+      "runtimeSha256": "59f141b31bf950a502455077e6227025729927200ae9f10d29fd91f2904b04be"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/projects.css",
+      "sourceBytes": 15969,
+      "sourceSha256": "9deea530ab8ac6eb21eb4c3fb805a89cb0c3058d40bbdfb4c6a9f57ad9254364",
+      "runtime": "baseline/projects.css",
+      "runtimeBytes": 15969,
+      "runtimeSha256": "9deea530ab8ac6eb21eb4c3fb805a89cb0c3058d40bbdfb4c6a9f57ad9254364"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/random-campus.mjs",
+      "sourceBytes": 1464,
+      "sourceSha256": "649a4ce5da9271f9edcc7b028005ae6b7bf0a969087ba9eed585f234b17ce744",
+      "runtime": "baseline/random-campus.mjs",
+      "runtimeBytes": 1464,
+      "runtimeSha256": "649a4ce5da9271f9edcc7b028005ae6b7bf0a969087ba9eed585f234b17ce744"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/random-discovery.mjs",
+      "sourceBytes": 3430,
+      "sourceSha256": "104005642da690db2551d3a0a1a22bef55a2ace1f232b4f850522335d5aa893e",
+      "runtime": "baseline/random-discovery.mjs",
+      "runtimeBytes": 3430,
+      "runtimeSha256": "104005642da690db2551d3a0a1a22bef55a2ace1f232b4f850522335d5aa893e"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/readable-glass.css",
+      "sourceBytes": 3721,
+      "sourceSha256": "922f0c523f48bb5f066c6d440df92734df7afff6bce332ada5b2c96e02a87687",
+      "runtime": "baseline/readable-glass.css",
+      "runtimeBytes": 3721,
+      "runtimeSha256": "922f0c523f48bb5f066c6d440df92734df7afff6bce332ada5b2c96e02a87687"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/reading-scope.mjs",
+      "sourceBytes": 1564,
+      "sourceSha256": "cabd899895487c7f7c69ca879cfb83db59d2f507bcda2863577ecf7cc5238ca4",
+      "runtime": "baseline/reading-scope.mjs",
+      "runtimeBytes": 1564,
+      "runtimeSha256": "cabd899895487c7f7c69ca879cfb83db59d2f507bcda2863577ecf7cc5238ca4"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/responsive-content.css",
+      "sourceBytes": 12961,
+      "sourceSha256": "31210d835f68cc59cfe17cc0ce5fe3e22c3d14adc1976b256cbf2c3bc87980ec",
+      "runtime": "baseline/responsive-content.css",
+      "runtimeBytes": 12961,
+      "runtimeSha256": "31210d835f68cc59cfe17cc0ce5fe3e22c3d14adc1976b256cbf2c3bc87980ec"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/responsive-dock.css",
+      "sourceBytes": 4523,
+      "sourceSha256": "af8e39eb97d425dd7eaf4a3e0a73e6f4055d03ab4ba9781f5b83fad0e758528c",
+      "runtime": "baseline/responsive-dock.css",
+      "runtimeBytes": 4523,
+      "runtimeSha256": "af8e39eb97d425dd7eaf4a3e0a73e6f4055d03ab4ba9781f5b83fad0e758528c"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/scope-popover.css",
+      "sourceBytes": 858,
+      "sourceSha256": "832b7cbf482dd63200ef1d2e550f4b3eeb18e971a914bb86325a6c413502b991",
+      "runtime": "baseline/scope-popover.css",
+      "runtimeBytes": 858,
+      "runtimeSha256": "832b7cbf482dd63200ef1d2e550f4b3eeb18e971a914bb86325a6c413502b991"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/scope-popover.mjs",
+      "sourceBytes": 3694,
+      "sourceSha256": "af6c72a4bd8d0d9277ebc4ef9189b6248d883b906b1a495951b25354fe36fc4a",
+      "runtime": "baseline/scope-popover.mjs",
+      "runtimeBytes": 3694,
+      "runtimeSha256": "af6c72a4bd8d0d9277ebc4ef9189b6248d883b906b1a495951b25354fe36fc4a"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/scope-selectors.mjs",
+      "sourceBytes": 3433,
+      "sourceSha256": "37bd969fef32bc03b95ef471fe57ca544786e916b2d1c8890244467134eeb1bd",
+      "runtime": "baseline/scope-selectors.mjs",
+      "runtimeBytes": 3433,
+      "runtimeSha256": "37bd969fef32bc03b95ef471fe57ca544786e916b2d1c8890244467134eeb1bd"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/scrollbars.css",
+      "sourceBytes": 2237,
+      "sourceSha256": "5e4b6edbf78abd360fa7f777f55c5b2032ff78fffaee53744532de066ee8f1d0",
+      "runtime": "baseline/scrollbars.css",
+      "runtimeBytes": 2237,
+      "runtimeSha256": "5e4b6edbf78abd360fa7f777f55c5b2032ff78fffaee53744532de066ee8f1d0"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/sticky-header.css",
+      "sourceBytes": 3893,
+      "sourceSha256": "26410015e1d9fa5aa2d837e66a3231bdabdf27c72d54d55f938e83e96b7c3298",
+      "runtime": "baseline/sticky-header.css",
+      "runtimeBytes": 3893,
+      "runtimeSha256": "26410015e1d9fa5aa2d837e66a3231bdabdf27c72d54d55f938e83e96b7c3298"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/theme-bootstrap.js",
+      "sourceBytes": 588,
+      "sourceSha256": "7b1220ff7349fe8446c98fac1752241559dfa1495d9018723a023a43a8bf0399",
+      "runtime": "baseline/theme-bootstrap.js",
+      "runtimeBytes": 634,
+      "runtimeSha256": "8162c611f342452a0593d1047c73fdb2d0cbc90bbaf82198236f133c7863c82d",
+      "original": "originals/theme-bootstrap.js",
+      "changes": [
+        {
+          "kind": "isolated-storage",
+          "from": "horizon-theme-preference-v1",
+          "to": "horizon-archive-pre-profile-campus-isolation-20261018-theme-preference-v1",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/theme-menu.css",
+      "sourceBytes": 1861,
+      "sourceSha256": "c25ef151d17e4bb56ced25956317da0b19791069a8e799c053300a8d71ae134d",
+      "runtime": "baseline/theme-menu.css",
+      "runtimeBytes": 1861,
+      "runtimeSha256": "c25ef151d17e4bb56ced25956317da0b19791069a8e799c053300a8d71ae134d"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/theme-menu.mjs",
+      "sourceBytes": 3764,
+      "sourceSha256": "a80b40202e47f2bea22a0de202b73cc135e8c64f13637abc78e15282e41d0cbe",
+      "runtime": "baseline/theme-menu.mjs",
+      "runtimeBytes": 3764,
+      "runtimeSha256": "a80b40202e47f2bea22a0de202b73cc135e8c64f13637abc78e15282e41d0cbe"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/theme-preferences.mjs",
+      "sourceBytes": 2546,
+      "sourceSha256": "efe79a5d98a76a11cc3585390ccd146476b9cbaabcf5872c1c33e6c8d722fcdc",
+      "runtime": "baseline/theme-preferences.mjs",
+      "runtimeBytes": 2592,
+      "runtimeSha256": "782e97052c8b82bf55bfe870c39064b3a12c3ed214bc9482f66cb6197b8963c3",
+      "original": "originals/theme-preferences.mjs",
+      "changes": [
+        {
+          "kind": "isolated-storage",
+          "from": "horizon-theme-preference-v1",
+          "to": "horizon-archive-pre-profile-campus-isolation-20261018-theme-preference-v1",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/vendor/maplibre-LICENSE.txt",
+      "sourceBytes": 5984,
+      "sourceSha256": "ee5fc05a0677eaf69601d2c7db0d9ecd6cc27c3abc1d0733bc9ed34707cf8ef2",
+      "runtime": "baseline/vendor/maplibre-LICENSE.txt",
+      "runtimeBytes": 5984,
+      "runtimeSha256": "ee5fc05a0677eaf69601d2c7db0d9ecd6cc27c3abc1d0733bc9ed34707cf8ef2"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/vendor/maplibre-PROVENANCE.md",
+      "sourceBytes": 4874,
+      "sourceSha256": "ff2d768ab825a417f9f3eee24d47f83506bce4053abfe04f561b16e2ecaa04ae",
+      "runtime": "baseline/vendor/maplibre-PROVENANCE.md",
+      "runtimeBytes": 4874,
+      "runtimeSha256": "ff2d768ab825a417f9f3eee24d47f83506bce4053abfe04f561b16e2ecaa04ae"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/vendor/maplibre-gl.css",
+      "sourceBytes": 70024,
+      "sourceSha256": "ab1e70d59ec40465bae7e7030da2f3ccf28133fd502e62bd598eefbadfd7a732",
+      "runtime": "baseline/vendor/maplibre-gl.css",
+      "runtimeBytes": 70024,
+      "runtimeSha256": "ab1e70d59ec40465bae7e7030da2f3ccf28133fd502e62bd598eefbadfd7a732"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/vendor/maplibre-gl.js",
+      "sourceBytes": 1056837,
+      "sourceSha256": "45a9b07a9189ce56054c620a947ccf41e291e58c95e9b61533b740aaa65ee5cb",
+      "runtime": "baseline/vendor/maplibre-gl.js",
+      "runtimeBytes": 1056837,
+      "runtimeSha256": "45a9b07a9189ce56054c620a947ccf41e291e58c95e9b61533b740aaa65ee5cb"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/welcome.css",
+      "sourceBytes": 22533,
+      "sourceSha256": "5b009f8a719890faa460f36d87b09863e44ffd5e7529c1c30d912220e3a9b1d9",
+      "runtime": "baseline/welcome.css",
+      "runtimeBytes": 22533,
+      "runtimeSha256": "5b009f8a719890faa460f36d87b09863e44ffd5e7529c1c30d912220e3a9b1d9"
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/welcome.mjs",
+      "sourceBytes": 76196,
+      "sourceSha256": "4a75a76395525f5ca194635efea5c16a71d69d9e110a016f8c28c23643e24cf5",
+      "runtime": "baseline/welcome.mjs",
+      "runtimeBytes": 76202,
+      "runtimeSha256": "123c6083def72c96e872618682d9aac43e6abbe6d420da6c0aba7c016e488ae7",
+      "original": "originals/welcome.mjs",
+      "changes": [
+        {
+          "kind": "dependency-url",
+          "from": "../map-data/",
+          "to": "./shared/map-data/",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/world-render-preparation.mjs",
+      "sourceBytes": 3784,
+      "sourceSha256": "5a8e50649b4e281524c69af6c3c481483e39a662114a2dddc357f4121059ca08",
+      "runtime": "baseline/world-render-preparation.mjs",
+      "runtimeBytes": 3784,
+      "runtimeSha256": "5a8e50649b4e281524c69af6c3c481483e39a662114a2dddc357f4121059ca08"
+    },
+    {
+      "source": "work/visualizations/map-data/d3.min.js",
+      "sourceBytes": 279706,
+      "sourceSha256": "f2094bbf6141b359722c4fe454eb6c4b0f0e42cc10cc7af921fc158fceb86539",
+      "runtime": "baseline/shared/map-data/d3.min.js",
+      "runtimeBytes": 279706,
+      "runtimeSha256": "f2094bbf6141b359722c4fe454eb6c4b0f0e42cc10cc7af921fc158fceb86539"
+    },
+    {
+      "source": "work/visualizations/map-data/topojson.min.js",
+      "sourceBytes": 7169,
+      "sourceSha256": "25cd02ae486cc5063e0215a4e4cfb15de83700c87ac48bac4d57dc6aaf3ebb89",
+      "runtime": "baseline/shared/map-data/topojson.min.js",
+      "runtimeBytes": 7169,
+      "runtimeSha256": "25cd02ae486cc5063e0215a4e4cfb15de83700c87ac48bac4d57dc6aaf3ebb89"
+    }
+  ]
+}

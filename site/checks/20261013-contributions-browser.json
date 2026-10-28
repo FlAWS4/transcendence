@@ -1,0 +1,83 @@
+{
+  "sources": {
+    "profile-ui.mjs": "497c1882c896e83fe0551b95e1f73a28f65bed62b0cd94bc776fd63479d48d9f",
+    "profile-data.mjs": "de16da2ab6b512303dafc69d94d745325a11d50af48aa7ec2c4e7035ed1fa125"
+  },
+  "cases": [
+    {
+      "case": "fr",
+      "result": {
+        "cards": [
+          {
+            "text": "“\n&\nAutour d’un bug, une conversation\n\nUn carnet sur ces échanges informels où expliquer son problème devient déjà une partie de la solution.",
+            "href": "#journal/journal-an-evening-debugging?country=FRA&campus=lyon"
+          },
+          {
+            "text": "“\n&\nMontrer ce qui n’est pas encore fini\n\nUne démonstration peut ouvrir une discussion, même quand il reste des coins à arrondir.",
+            "href": "#journal/journal-share-the-unfinished?country=JPN&campus=tokyo"
+          }
+        ],
+        "cta": 0,
+        "overflow": false,
+        "hash": "#people/profile-ines-morel?tab=contribution",
+        "headings": [
+          "Contribution"
+        ]
+      }
+    },
+    {
+      "case": "open-fr",
+      "hash": "#journal/journal-an-evening-debugging?country=FRA&campus=lyon"
+    },
+    {
+      "case": "en",
+      "result": {
+        "cards": [
+          {
+            "text": "“\n&\nA bug becomes a conversation\n\nA note on informal conversations where explaining a problem becomes part of solving it.",
+            "href": "#journal/journal-an-evening-debugging?country=FRA&campus=lyon"
+          },
+          {
+            "text": "“\n&\nSharing work before it is finished\n\nA demo can open a conversation, even while there are still rough edges.",
+            "href": "#journal/journal-share-the-unfinished?country=JPN&campus=tokyo"
+          }
+        ],
+        "cta": 0,
+        "overflow": false,
+        "hash": "#people/profile-ines-morel?tab=contribution",
+        "headings": [
+          "Contribution"
+        ]
+      }
+    },
+    {
+      "case": "open-en",
+      "hash": "#journal/journal-an-evening-debugging?country=FRA&campus=lyon"
+    },
+    {
+      "case": "ar",
+      "result": {
+        "cards": [
+          {
+            "text": "“\n&\nحديث يبدأ بخطأ برمجي\n\nحكاية عن أحاديث عفوية يصبح فيها شرح المشكلة جزءًا من حلّها.",
+            "href": "#journal/journal-an-evening-debugging?country=FRA&campus=lyon"
+          },
+          {
+            "text": "“\n&\nمشاركة العمل قبل اكتماله\n\nقد يفتح عرض بسيط باب النقاش، حتى حين تبقى تفاصيل تحتاج إلى تحسين.",
+            "href": "#journal/journal-share-the-unfinished?country=JPN&campus=tokyo"
+          }
+        ],
+        "cta": 0,
+        "overflow": false,
+        "hash": "#people/profile-ines-morel?tab=contribution",
+        "headings": [
+          "المساهمة"
+        ]
+      }
+    },
+    {
+      "case": "open-ar",
+      "hash": "#journal/journal-an-evening-debugging?country=FRA&campus=lyon"
+    }
+  ]
+}

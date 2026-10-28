@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-13",
+  "sourcesBefore": {
+    "back-to-top.mjs": "6e1cb92805b3236b83e947ca09c94c5a65771fa0aeceaa7c6044cfccd02bf4ce",
+    "back-to-top.css": "180aa134413a0885528da2f34f0ab8dba4dec260afc1590342ab3c42e0ca5160"
+  },
+  "cases": [
+    {
+      "case": "fr-motion-rest",
+      "result": {
+        "scroll": 900,
+        "dockScrolling": false,
+        "buttonHidden": false,
+        "buttonOpacity": 1,
+        "menuOpacity": 1,
+        "buttonPointer": "auto",
+        "menuPointer": "auto",
+        "buttonVisible": true,
+        "focus": "",
+        "lang": "fr",
+        "hash": "#projects",
+        "overflow": false
+      }
+    },
+    {
+      "case": "fr-motion-wheel-hides-both",
+      "result": {
+        "scroll": 1375,
+        "dockScrolling": true,
+        "buttonHidden": false,
+        "buttonOpacity": 1,
+        "menuOpacity": 0,
+        "buttonPointer": "auto",
+        "menuPointer": "none",
+        "buttonVisible": true,
+        "focus": "",
+        "lang": "fr",
+        "hash": "#projects",
+        "overflow": false
+      }
+    },
+    {
+      "case": "failure",
+      "result": {
+        "scroll": 1375,
+        "dockScrolling": true,
+        "buttonHidden": false,
+        "buttonOpacity": 1,
+        "menuOpacity": 0,
+        "buttonPointer": "auto",
+        "menuPointer": "none",
+        "buttonVisible": true,
+        "focus": "",
+        "lang": "fr",
+        "hash": "#projects",
+        "overflow": false
+      }
+    }
+  ],
+  "passed": false,
+  "error": "AssertionError()",
+  "sourcesAfter": {
+    "back-to-top.mjs": "6e1cb92805b3236b83e947ca09c94c5a65771fa0aeceaa7c6044cfccd02bf4ce",
+    "back-to-top.css": "180aa134413a0885528da2f34f0ab8dba4dec260afc1590342ab3c42e0ca5160"
+  },
+  "sourcesUnchanged": true
+}

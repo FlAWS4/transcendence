@@ -1,0 +1,17 @@
+/* Keep the shared header in the viewport while content pages scroll.
+   Sticky positioning keeps its natural height in the document, so initial
+   content spacing, the raised filter and the entrance geometry stay intact. */
+:root .app[data-navigation=dock] > .header {
+  position: sticky;
+  top: 0;
+  pointer-events: none;
+}
+
+/* Only the visible brand and utilities intercept input. The transparent centre
+   remains available to the globe/filter, including after the header sticks. */
+:root .app[data-navigation=dock] > .header > * {
+  pointer-events: auto;
+}
+
+/* Keep the existing z-index, theme surfaces and visibility rules. In particular
+   no backdrop is added here: the language menu must sample the page directly. */

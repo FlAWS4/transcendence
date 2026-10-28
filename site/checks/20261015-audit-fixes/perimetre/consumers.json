@@ -1,0 +1,630 @@
+{
+  "date": "2026-10-15",
+  "scope": "Inventaire en lecture seule des pages qui chargent un des sept fichiers actifs modifiés par audit-fixes-145 (base href respecté). Écrit seulement ce fichier.",
+  "summary": {
+    "pagesLoadingChangedFiles": 14,
+    "byZone": {
+      "active": [
+        "work/visualizations/horizon-welcome/content-preview.html",
+        "work/visualizations/horizon-welcome/index.html",
+        "work/visualizations/horizon-welcome/welcome-panels.html"
+      ],
+      "checks": [],
+      "archive": [
+        "work/visualizations/horizon-welcome/archive/pre-campus-logo-sheet-20261008/preview-before-dependency-pin-20261008.html",
+        "work/visualizations/horizon-welcome/archive/pre-campus-logo-sheet-20261008/preview-before-history-url-fix-20261008.html",
+        "work/visualizations/horizon-welcome/archive/pre-campus-logo-sheet-20261008/preview.html",
+        "work/visualizations/horizon-welcome/archive/pre-chronicles-label-20261008/preview-before-history-url-fix-20261008.html",
+        "work/visualizations/horizon-welcome/archive/pre-chronicles-label-20261008/preview.html",
+        "work/visualizations/horizon-welcome/archive/pre-compact-editorial-grids-20261008/preview-before-dependency-pin-20261008.html",
+        "work/visualizations/horizon-welcome/archive/pre-compact-editorial-grids-20261008/preview-before-history-url-fix-20261008.html",
+        "work/visualizations/horizon-welcome/archive/pre-compact-editorial-grids-20261008/preview.html",
+        "work/visualizations/horizon-welcome/archive/pre-four-stage-dock-20261007/preview-before-dependency-pin-20261008.html",
+        "work/visualizations/horizon-welcome/archive/pre-four-stage-dock-20261007/preview-before-history-url-fix-20261008.html",
+        "work/visualizations/horizon-welcome/archive/pre-four-stage-dock-20261007/preview.html"
+      ]
+    },
+    "pagesWithStaleIdentifiers": [
+      {
+        "page": "work/visualizations/horizon-welcome/archive/pre-campus-logo-sheet-20261008/preview-before-dependency-pin-20261008.html",
+        "loaded": [
+          [
+            "entrance.css",
+            "v=circle-globe-15"
+          ],
+          [
+            "entrance.mjs",
+            "v=visible-scan-5"
+          ]
+        ]
+      },
+      {
+        "page": "work/visualizations/horizon-welcome/archive/pre-campus-logo-sheet-20261008/preview-before-history-url-fix-20261008.html",
+        "loaded": [
+          [
+            "entrance.css",
+            "v=circle-globe-15"
+          ],
+          [
+            "entrance.mjs",
+            "v=visible-scan-5"
+          ]
+        ]
+      },
+      {
+        "page": "work/visualizations/horizon-welcome/archive/pre-campus-logo-sheet-20261008/preview.html",
+        "loaded": [
+          [
+            "entrance.css",
+            "v=circle-globe-15"
+          ],
+          [
+            "entrance.mjs",
+            "v=visible-scan-5"
+          ]
+        ]
+      },
+      {
+        "page": "work/visualizations/horizon-welcome/archive/pre-chronicles-label-20261008/preview-before-history-url-fix-20261008.html",
+        "loaded": [
+          [
+            "entrance.css",
+            "v=circle-globe-15"
+          ],
+          [
+            "entrance.mjs",
+            "v=visible-scan-5"
+          ]
+        ]
+      },
+      {
+        "page": "work/visualizations/horizon-welcome/archive/pre-chronicles-label-20261008/preview.html",
+        "loaded": [
+          [
+            "entrance.css",
+            "v=circle-globe-15"
+          ],
+          [
+            "entrance.mjs",
+            "v=visible-scan-5"
+          ]
+        ]
+      },
+      {
+        "page": "work/visualizations/horizon-welcome/archive/pre-compact-editorial-grids-20261008/preview-before-dependency-pin-20261008.html",
+        "loaded": [
+          [
+            "entrance.css",
+            "v=circle-globe-15"
+          ],
+          [
+            "entrance.mjs",
+            "v=visible-scan-5"
+          ]
+        ]
+      },
+      {
+        "page": "work/visualizations/horizon-welcome/archive/pre-compact-editorial-grids-20261008/preview-before-history-url-fix-20261008.html",
+        "loaded": [
+          [
+            "entrance.css",
+            "v=circle-globe-15"
+          ],
+          [
+            "entrance.mjs",
+            "v=visible-scan-5"
+          ]
+        ]
+      },
+      {
+        "page": "work/visualizations/horizon-welcome/archive/pre-compact-editorial-grids-20261008/preview.html",
+        "loaded": [
+          [
+            "entrance.css",
+            "v=circle-globe-15"
+          ],
+          [
+            "entrance.mjs",
+            "v=visible-scan-5"
+          ]
+        ]
+      },
+      {
+        "page": "work/visualizations/horizon-welcome/archive/pre-four-stage-dock-20261007/preview-before-dependency-pin-20261008.html",
+        "loaded": [
+          [
+            "entrance.css",
+            "v=circle-globe-15"
+          ],
+          [
+            "entrance.mjs",
+            "v=visible-scan-5"
+          ]
+        ]
+      },
+      {
+        "page": "work/visualizations/horizon-welcome/archive/pre-four-stage-dock-20261007/preview-before-history-url-fix-20261008.html",
+        "loaded": [
+          [
+            "entrance.css",
+            "v=circle-globe-15"
+          ],
+          [
+            "entrance.mjs",
+            "v=visible-scan-5"
+          ]
+        ]
+      },
+      {
+        "page": "work/visualizations/horizon-welcome/archive/pre-four-stage-dock-20261007/preview.html",
+        "loaded": [
+          [
+            "entrance.css",
+            "v=circle-globe-15"
+          ],
+          [
+            "entrance.mjs",
+            "v=visible-scan-5"
+          ]
+        ]
+      },
+      {
+        "page": "work/visualizations/horizon-welcome/welcome-panels.html",
+        "loaded": [
+          [
+            "entrance.css",
+            "v=circle-globe-15"
+          ],
+          [
+            "entrance.mjs",
+            "v=visible-scan-5"
+          ]
+        ]
+      }
+    ],
+    "pagesMountingEntranceWithoutCycleLabels": [
+      "work/visualizations/horizon-welcome/archive/pre-campus-logo-sheet-20261008/preview-before-dependency-pin-20261008.html",
+      "work/visualizations/horizon-welcome/archive/pre-campus-logo-sheet-20261008/preview-before-history-url-fix-20261008.html",
+      "work/visualizations/horizon-welcome/archive/pre-campus-logo-sheet-20261008/preview.html",
+      "work/visualizations/horizon-welcome/archive/pre-chronicles-label-20261008/preview-before-history-url-fix-20261008.html",
+      "work/visualizations/horizon-welcome/archive/pre-chronicles-label-20261008/preview.html",
+      "work/visualizations/horizon-welcome/archive/pre-compact-editorial-grids-20261008/preview-before-dependency-pin-20261008.html",
+      "work/visualizations/horizon-welcome/archive/pre-compact-editorial-grids-20261008/preview-before-history-url-fix-20261008.html",
+      "work/visualizations/horizon-welcome/archive/pre-compact-editorial-grids-20261008/preview.html",
+      "work/visualizations/horizon-welcome/archive/pre-four-stage-dock-20261007/preview-before-dependency-pin-20261008.html",
+      "work/visualizations/horizon-welcome/archive/pre-four-stage-dock-20261007/preview-before-history-url-fix-20261008.html",
+      "work/visualizations/horizon-welcome/archive/pre-four-stage-dock-20261007/preview.html",
+      "work/visualizations/horizon-welcome/welcome-panels.html"
+    ]
+  },
+  "pages": [
+    {
+      "page": "work/visualizations/horizon-welcome/archive/pre-campus-logo-sheet-20261008/preview-before-dependency-pin-20261008.html",
+      "zone": "archive",
+      "base": "../../",
+      "bodyDataEntry": "welcome",
+      "startsOnArrival": false,
+      "hasEntryThemeToggle": false,
+      "changedFilesLoaded": [
+        [
+          "entrance.css",
+          "v=circle-globe-15"
+        ],
+        [
+          "entrance.mjs",
+          "v=visible-scan-5"
+        ]
+      ],
+      "usesCurrentIdentifiers": false,
+      "mountEntranceCalls": [
+        {
+          "module": "work/visualizations/horizon-welcome/archive/pre-campus-logo-sheet-20261008/viewer-welcome.mjs",
+          "cycleLabels": false
+        }
+      ],
+      "hasAccountSignupCode": false,
+      "hasCommentSortCode": false,
+      "missingLocalFiles": []
+    },
+    {
+      "page": "work/visualizations/horizon-welcome/archive/pre-campus-logo-sheet-20261008/preview-before-history-url-fix-20261008.html",
+      "zone": "archive",
+      "base": "../../",
+      "bodyDataEntry": "welcome",
+      "startsOnArrival": false,
+      "hasEntryThemeToggle": false,
+      "changedFilesLoaded": [
+        [
+          "entrance.css",
+          "v=circle-globe-15"
+        ],
+        [
+          "entrance.mjs",
+          "v=visible-scan-5"
+        ]
+      ],
+      "usesCurrentIdentifiers": false,
+      "mountEntranceCalls": [
+        {
+          "module": "work/visualizations/horizon-welcome/archive/pre-campus-logo-sheet-20261008/viewer-welcome.mjs",
+          "cycleLabels": false
+        }
+      ],
+      "hasAccountSignupCode": false,
+      "hasCommentSortCode": false,
+      "missingLocalFiles": []
+    },
+    {
+      "page": "work/visualizations/horizon-welcome/archive/pre-campus-logo-sheet-20261008/preview.html",
+      "zone": "archive",
+      "base": "../../",
+      "bodyDataEntry": "welcome",
+      "startsOnArrival": false,
+      "hasEntryThemeToggle": false,
+      "changedFilesLoaded": [
+        [
+          "entrance.css",
+          "v=circle-globe-15"
+        ],
+        [
+          "entrance.mjs",
+          "v=visible-scan-5"
+        ]
+      ],
+      "usesCurrentIdentifiers": false,
+      "mountEntranceCalls": [
+        {
+          "module": "work/visualizations/horizon-welcome/archive/pre-campus-logo-sheet-20261008/viewer-welcome.mjs",
+          "cycleLabels": false
+        }
+      ],
+      "hasAccountSignupCode": false,
+      "hasCommentSortCode": false,
+      "missingLocalFiles": []
+    },
+    {
+      "page": "work/visualizations/horizon-welcome/archive/pre-chronicles-label-20261008/preview-before-history-url-fix-20261008.html",
+      "zone": "archive",
+      "base": "../../",
+      "bodyDataEntry": "welcome",
+      "startsOnArrival": false,
+      "hasEntryThemeToggle": false,
+      "changedFilesLoaded": [
+        [
+          "entrance.css",
+          "v=circle-globe-15"
+        ],
+        [
+          "entrance.mjs",
+          "v=visible-scan-5"
+        ]
+      ],
+      "usesCurrentIdentifiers": false,
+      "mountEntranceCalls": [
+        {
+          "module": "work/visualizations/horizon-welcome/archive/pre-chronicles-label-20261008/viewer-welcome.mjs",
+          "cycleLabels": false
+        }
+      ],
+      "hasAccountSignupCode": false,
+      "hasCommentSortCode": false,
+      "missingLocalFiles": []
+    },
+    {
+      "page": "work/visualizations/horizon-welcome/archive/pre-chronicles-label-20261008/preview.html",
+      "zone": "archive",
+      "base": "../../",
+      "bodyDataEntry": "welcome",
+      "startsOnArrival": false,
+      "hasEntryThemeToggle": false,
+      "changedFilesLoaded": [
+        [
+          "entrance.css",
+          "v=circle-globe-15"
+        ],
+        [
+          "entrance.mjs",
+          "v=visible-scan-5"
+        ]
+      ],
+      "usesCurrentIdentifiers": false,
+      "mountEntranceCalls": [
+        {
+          "module": "work/visualizations/horizon-welcome/archive/pre-chronicles-label-20261008/viewer-welcome.mjs",
+          "cycleLabels": false
+        }
+      ],
+      "hasAccountSignupCode": false,
+      "hasCommentSortCode": false,
+      "missingLocalFiles": []
+    },
+    {
+      "page": "work/visualizations/horizon-welcome/archive/pre-compact-editorial-grids-20261008/preview-before-dependency-pin-20261008.html",
+      "zone": "archive",
+      "base": "../../",
+      "bodyDataEntry": "welcome",
+      "startsOnArrival": false,
+      "hasEntryThemeToggle": false,
+      "changedFilesLoaded": [
+        [
+          "entrance.css",
+          "v=circle-globe-15"
+        ],
+        [
+          "entrance.mjs",
+          "v=visible-scan-5"
+        ]
+      ],
+      "usesCurrentIdentifiers": false,
+      "mountEntranceCalls": [
+        {
+          "module": "work/visualizations/horizon-welcome/archive/pre-compact-editorial-grids-20261008/viewer-welcome.mjs",
+          "cycleLabels": false
+        }
+      ],
+      "hasAccountSignupCode": false,
+      "hasCommentSortCode": false,
+      "missingLocalFiles": []
+    },
+    {
+      "page": "work/visualizations/horizon-welcome/archive/pre-compact-editorial-grids-20261008/preview-before-history-url-fix-20261008.html",
+      "zone": "archive",
+      "base": "../../",
+      "bodyDataEntry": "welcome",
+      "startsOnArrival": false,
+      "hasEntryThemeToggle": false,
+      "changedFilesLoaded": [
+        [
+          "entrance.css",
+          "v=circle-globe-15"
+        ],
+        [
+          "entrance.mjs",
+          "v=visible-scan-5"
+        ]
+      ],
+      "usesCurrentIdentifiers": false,
+      "mountEntranceCalls": [
+        {
+          "module": "work/visualizations/horizon-welcome/archive/pre-compact-editorial-grids-20261008/viewer-welcome.mjs",
+          "cycleLabels": false
+        }
+      ],
+      "hasAccountSignupCode": false,
+      "hasCommentSortCode": false,
+      "missingLocalFiles": []
+    },
+    {
+      "page": "work/visualizations/horizon-welcome/archive/pre-compact-editorial-grids-20261008/preview.html",
+      "zone": "archive",
+      "base": "../../",
+      "bodyDataEntry": "welcome",
+      "startsOnArrival": false,
+      "hasEntryThemeToggle": false,
+      "changedFilesLoaded": [
+        [
+          "entrance.css",
+          "v=circle-globe-15"
+        ],
+        [
+          "entrance.mjs",
+          "v=visible-scan-5"
+        ]
+      ],
+      "usesCurrentIdentifiers": false,
+      "mountEntranceCalls": [
+        {
+          "module": "work/visualizations/horizon-welcome/archive/pre-compact-editorial-grids-20261008/viewer-welcome.mjs",
+          "cycleLabels": false
+        }
+      ],
+      "hasAccountSignupCode": false,
+      "hasCommentSortCode": false,
+      "missingLocalFiles": []
+    },
+    {
+      "page": "work/visualizations/horizon-welcome/archive/pre-four-stage-dock-20261007/preview-before-dependency-pin-20261008.html",
+      "zone": "archive",
+      "base": null,
+      "bodyDataEntry": "welcome",
+      "startsOnArrival": false,
+      "hasEntryThemeToggle": false,
+      "changedFilesLoaded": [
+        [
+          "entrance.css",
+          "v=circle-globe-15"
+        ],
+        [
+          "entrance.mjs",
+          "v=visible-scan-5"
+        ]
+      ],
+      "usesCurrentIdentifiers": false,
+      "mountEntranceCalls": [
+        {
+          "module": "work/visualizations/horizon-welcome/archive/pre-four-stage-dock-20261007/viewer-welcome.mjs",
+          "cycleLabels": false
+        }
+      ],
+      "hasAccountSignupCode": false,
+      "hasCommentSortCode": false,
+      "missingLocalFiles": []
+    },
+    {
+      "page": "work/visualizations/horizon-welcome/archive/pre-four-stage-dock-20261007/preview-before-history-url-fix-20261008.html",
+      "zone": "archive",
+      "base": "../../",
+      "bodyDataEntry": "welcome",
+      "startsOnArrival": false,
+      "hasEntryThemeToggle": false,
+      "changedFilesLoaded": [
+        [
+          "entrance.css",
+          "v=circle-globe-15"
+        ],
+        [
+          "entrance.mjs",
+          "v=visible-scan-5"
+        ]
+      ],
+      "usesCurrentIdentifiers": false,
+      "mountEntranceCalls": [
+        {
+          "module": "work/visualizations/horizon-welcome/archive/pre-four-stage-dock-20261007/viewer-welcome.mjs",
+          "cycleLabels": false
+        }
+      ],
+      "hasAccountSignupCode": false,
+      "hasCommentSortCode": false,
+      "missingLocalFiles": []
+    },
+    {
+      "page": "work/visualizations/horizon-welcome/archive/pre-four-stage-dock-20261007/preview.html",
+      "zone": "archive",
+      "base": "../../",
+      "bodyDataEntry": "welcome",
+      "startsOnArrival": false,
+      "hasEntryThemeToggle": false,
+      "changedFilesLoaded": [
+        [
+          "entrance.css",
+          "v=circle-globe-15"
+        ],
+        [
+          "entrance.mjs",
+          "v=visible-scan-5"
+        ]
+      ],
+      "usesCurrentIdentifiers": false,
+      "mountEntranceCalls": [
+        {
+          "module": "work/visualizations/horizon-welcome/archive/pre-four-stage-dock-20261007/viewer-welcome.mjs",
+          "cycleLabels": false
+        }
+      ],
+      "hasAccountSignupCode": false,
+      "hasCommentSortCode": false,
+      "missingLocalFiles": []
+    },
+    {
+      "page": "work/visualizations/horizon-welcome/content-preview.html",
+      "zone": "active",
+      "base": null,
+      "bodyDataEntry": "welcome",
+      "startsOnArrival": false,
+      "hasEntryThemeToggle": true,
+      "changedFilesLoaded": [
+        [
+          "comments.mjs",
+          "v=16"
+        ],
+        [
+          "content-preview.mjs",
+          "v=112"
+        ],
+        [
+          "entrance.css",
+          "v=audit-fixes-24"
+        ],
+        [
+          "entrance.mjs",
+          "v=audit-fixes-14"
+        ],
+        [
+          "journal-ui.mjs",
+          "v=39"
+        ],
+        [
+          "project-ui.mjs",
+          "v=40"
+        ],
+        [
+          "welcome.mjs",
+          "v=audit-fixes-145"
+        ]
+      ],
+      "usesCurrentIdentifiers": true,
+      "mountEntranceCalls": [
+        {
+          "module": "work/visualizations/horizon-welcome/welcome.mjs",
+          "cycleLabels": true
+        }
+      ],
+      "hasAccountSignupCode": true,
+      "hasCommentSortCode": true,
+      "missingLocalFiles": []
+    },
+    {
+      "page": "work/visualizations/horizon-welcome/index.html",
+      "zone": "active",
+      "base": null,
+      "bodyDataEntry": "encrypted",
+      "startsOnArrival": true,
+      "hasEntryThemeToggle": true,
+      "changedFilesLoaded": [
+        [
+          "comments.mjs",
+          "v=16"
+        ],
+        [
+          "entrance.css",
+          "v=audit-fixes-24"
+        ],
+        [
+          "entrance.mjs",
+          "v=audit-fixes-14"
+        ],
+        [
+          "journal-ui.mjs",
+          "v=39"
+        ],
+        [
+          "project-ui.mjs",
+          "v=40"
+        ],
+        [
+          "welcome.mjs",
+          "v=audit-fixes-145"
+        ]
+      ],
+      "usesCurrentIdentifiers": true,
+      "mountEntranceCalls": [
+        {
+          "module": "work/visualizations/horizon-welcome/welcome.mjs",
+          "cycleLabels": true
+        }
+      ],
+      "hasAccountSignupCode": true,
+      "hasCommentSortCode": true,
+      "missingLocalFiles": []
+    },
+    {
+      "page": "work/visualizations/horizon-welcome/welcome-panels.html",
+      "zone": "active",
+      "base": null,
+      "bodyDataEntry": "encrypted",
+      "startsOnArrival": true,
+      "hasEntryThemeToggle": false,
+      "changedFilesLoaded": [
+        [
+          "entrance.css",
+          "v=circle-globe-15"
+        ],
+        [
+          "entrance.mjs",
+          "v=visible-scan-5"
+        ]
+      ],
+      "usesCurrentIdentifiers": false,
+      "mountEntranceCalls": [
+        {
+          "module": "work/visualizations/horizon-welcome/welcome-panels.mjs",
+          "cycleLabels": false
+        }
+      ],
+      "hasAccountSignupCode": false,
+      "hasCommentSortCode": false,
+      "missingLocalFiles": []
+    }
+  ]
+}

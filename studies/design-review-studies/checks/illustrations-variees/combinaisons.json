@@ -1,0 +1,178 @@
+{
+ "cases": [
+  {
+   "combinaison": "sombres",
+   "essais": [
+    "illustrations-sombres",
+    "illustrations-variees"
+   ],
+   "active": "illustrations-sombres illustrations-variees",
+   "section": "projects",
+   "cards": 12,
+   "pairs": 17,
+   "identicalNeighbours": [],
+   "meanCoverLuminance": 0.0467,
+   "palettes": [
+    "0",
+    "0",
+    "0",
+    "1",
+    "0",
+    "2",
+    "1",
+    "2",
+    "0",
+    "0",
+    "1",
+    "0"
+   ],
+   "errors": []
+  },
+  {
+   "combinaison": "sombres",
+   "essais": [
+    "illustrations-sombres",
+    "illustrations-variees"
+   ],
+   "active": "illustrations-sombres illustrations-variees",
+   "section": "journal",
+   "cards": 12,
+   "pairs": 17,
+   "identicalNeighbours": [],
+   "meanCoverLuminance": 0.1135,
+   "palettes": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "0",
+    "1",
+    "2",
+    "3",
+    "0",
+    "1",
+    "2",
+    "3"
+   ],
+   "errors": []
+  },
+  {
+   "combinaison": "attenuees",
+   "essais": [
+    "illustrations-attenuees",
+    "illustrations-variees"
+   ],
+   "active": "illustrations-attenuees illustrations-variees",
+   "section": "projects",
+   "cards": 12,
+   "pairs": 17,
+   "identicalNeighbours": [],
+   "meanCoverLuminance": 0.4154,
+   "palettes": [
+    "0",
+    "0",
+    "0",
+    "1",
+    "0",
+    "2",
+    "1",
+    "2",
+    "0",
+    "0",
+    "1",
+    "0"
+   ],
+   "errors": []
+  },
+  {
+   "combinaison": "attenuees",
+   "essais": [
+    "illustrations-attenuees",
+    "illustrations-variees"
+   ],
+   "active": "illustrations-attenuees illustrations-variees",
+   "section": "journal",
+   "cards": 12,
+   "pairs": 17,
+   "identicalNeighbours": [],
+   "meanCoverLuminance": 0.1652,
+   "palettes": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "0",
+    "1",
+    "2",
+    "3",
+    "0",
+    "1",
+    "2",
+    "3"
+   ],
+   "errors": []
+  },
+  {
+   "combinaison": "variees-seul",
+   "essais": [
+    "illustrations-variees"
+   ],
+   "active": "illustrations-variees",
+   "section": "projects",
+   "cards": 12,
+   "pairs": 17,
+   "identicalNeighbours": [],
+   "meanCoverLuminance": 0.6822,
+   "palettes": [
+    "0",
+    "0",
+    "0",
+    "1",
+    "0",
+    "2",
+    "1",
+    "2",
+    "0",
+    "0",
+    "1",
+    "0"
+   ],
+   "errors": []
+  },
+  {
+   "combinaison": "variees-seul",
+   "essais": [
+    "illustrations-variees"
+   ],
+   "active": "illustrations-variees",
+   "section": "journal",
+   "cards": 12,
+   "pairs": 17,
+   "identicalNeighbours": [],
+   "meanCoverLuminance": 0.2701,
+   "palettes": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "0",
+    "1",
+    "2",
+    "3",
+    "0",
+    "1",
+    "2",
+    "3"
+   ],
+   "errors": []
+  }
+ ],
+ "passed": true,
+ "checks": {
+  "bothActive": true,
+  "noIdenticalNeighbours": true,
+  "darkerThanVarieesAlone": true,
+  "samePalettes": true,
+  "noErrors": true
+ }
+}

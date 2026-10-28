@@ -1,0 +1,26 @@
+/* Desktop detail pages own two independent scroll regions; lists and the
+   <=840px document flow retain their existing behaviour. */
+@media(min-width:841px){
+ :root .app[data-navigation=dock][data-reading=true]:not([data-section=explore]) .content-sheet:has(:is(#profile-detail,#project-detail,#journal-detail):not([hidden])){
+  position:fixed;inset:calc(var(--header-fade-end,124px) + 4px) 0 calc(var(--dock-bottom) + var(--dock-height) + 64px);
+  display:flex;flex-direction:column;margin-inline:auto;padding:0;min-height:0;max-height:none;overflow:visible;
+ }
+ :root .app[data-navigation=dock] .content-sheet :is(#profile-detail,#project-detail,#journal-detail):not([hidden]){
+  flex:1;display:grid;grid-template-rows:auto minmax(0,1fr);min-height:0;
+ }
+ :root .app[data-navigation=dock] :is(#profile-detail,#project-detail,#journal-detail)>.cp-back{justify-self:start;margin-bottom:10px}
+ :root .app[data-navigation=dock] :is(.cp-profile-workspace,.cp-project-workspace){min-height:0;align-items:stretch;margin-top:0}
+ :root .app[data-navigation=dock] :is(.cp-profile-sidebar,.cp-project-sidebar,.cp-profile-reading-pane,.cp-project-reading-pane){
+  position:static;min-height:0;max-height:100%;overflow-y:auto;overflow-x:hidden;overscroll-behavior-y:contain;
+  scrollbar-gutter:stable;scroll-padding-block:8px;padding-block-end:12px;
+ }
+ :root .app[data-navigation=dock] :is(.cp-profile-sidebar,.cp-project-sidebar){padding-inline-end:8px}
+ :root .app[data-navigation=dock] :is(.cp-profile-reading-pane,.cp-project-reading-pane){padding-inline-end:12px}
+ :root .app[data-navigation=dock] [data-detail-scroll]:focus-visible{outline:2px solid var(--h42-color-focus);outline-offset:3px;border-radius:4px}
+ :root .app[data-navigation=dock] .content-sheet:has(:is(#profile-detail,#project-detail,#journal-detail):not([hidden]))>.sample-note{
+  flex:none;margin:12px 0 0;padding-top:8px;font-size:10px;line-height:1.5;
+ }
+ :root .app[data-navigation=dock][data-section=explore][data-content-exiting=true] .content-sheet:has(:is(#profile-detail,#project-detail,#journal-detail):not([hidden])){
+  display:flex;flex-direction:column;height:var(--cp-exit-height);padding:0;
+ }
+}

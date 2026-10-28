@@ -1,0 +1,1034 @@
+{
+  "viewport": {
+    "width": 960,
+    "height": 640
+  },
+  "method": "Chrome headless, CDP pipe; DOM activation for out-of-view section links and native pointer/wheel for menu arrows and scrolling.",
+  "cases": [
+    {
+      "url": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/archive/pre-multi-campus-projects-20261012/preview.html?independent-menu-check=20261012&case=1791799312420192473#projects/ft-transcendence-building-together?tab=comments",
+      "scrollY": 0,
+      "documentScrolling": false,
+      "menu": {
+        "top": 190,
+        "height": 82,
+        "scrollHeight": 272,
+        "selected": "Commentaires"
+      },
+      "title": "ft_transcendence · Construire à cinq",
+      "qa": {
+        "startY": 0,
+        "startMenu": 0,
+        "maxY": 0,
+        "minY": 0,
+        "maxMenu": 190,
+        "minMenu": 0,
+        "scrollingObserved": true,
+        "minButtonOpacity": 0,
+        "dockChanges": [
+          {
+            "t": 1224,
+            "state": true
+          },
+          {
+            "t": 1237,
+            "state": true
+          },
+          {
+            "t": 1252,
+            "state": true
+          },
+          {
+            "t": 1269,
+            "state": true
+          },
+          {
+            "t": 1286,
+            "state": true
+          },
+          {
+            "t": 1302,
+            "state": true
+          },
+          {
+            "t": 1319,
+            "state": true
+          },
+          {
+            "t": 1337,
+            "state": true
+          },
+          {
+            "t": 1353,
+            "state": true
+          },
+          {
+            "t": 1370,
+            "state": true
+          },
+          {
+            "t": 1386,
+            "state": true
+          },
+          {
+            "t": 1406,
+            "state": true
+          },
+          {
+            "t": 1420,
+            "state": true
+          },
+          {
+            "t": 3068,
+            "state": false
+          }
+        ],
+        "scrollTargets": [
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 3
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 15
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 51
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 104
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 134
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 153
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 165
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 173
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 180
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 184
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 187
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 189
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 190
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 190
+          }
+        ],
+        "startedAt": 1128.1000000014901,
+        "stop": true,
+        "done": true
+      },
+      "name": "archive-project-comment-click",
+      "expectedDocumentFade": true,
+      "errors": [],
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/content-preview.html?independent-menu-check=20261012&case=1791799315753850946#projects/ft-transcendence-building-together?tab=comments",
+      "scrollY": 0,
+      "documentScrolling": false,
+      "menu": {
+        "top": 214,
+        "height": 58,
+        "scrollHeight": 272,
+        "selected": "Commentaires"
+      },
+      "title": "ft_transcendence · Construire à cinq",
+      "qa": {
+        "startY": 0,
+        "startMenu": 0,
+        "maxY": 0,
+        "minY": 0,
+        "maxMenu": 214,
+        "minMenu": 0,
+        "scrollingObserved": false,
+        "minButtonOpacity": 1,
+        "dockChanges": [],
+        "scrollTargets": [
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 3
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 14
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 48
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 106
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 143
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 166
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 181
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 191
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 199
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 205
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 209
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 211
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 213
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 214
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 214
+          }
+        ],
+        "startedAt": 1090.7000000029802,
+        "stop": true,
+        "done": true
+      },
+      "name": "project-section-click",
+      "expectedDocumentFade": false,
+      "errors": [],
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/content-preview.html?independent-menu-check=20261012&case=1791799315753850946#projects/ft-transcendence-building-together?tab=comments",
+      "scrollY": 0,
+      "documentScrolling": false,
+      "menu": {
+        "top": 214,
+        "height": 58,
+        "scrollHeight": 272,
+        "selected": "Commentaires"
+      },
+      "title": "ft_transcendence · Construire à cinq",
+      "qa": {
+        "startY": 0,
+        "startMenu": 0,
+        "maxY": 0,
+        "minY": 0,
+        "maxMenu": 214,
+        "minMenu": 0,
+        "scrollingObserved": false,
+        "minButtonOpacity": 1,
+        "dockChanges": [],
+        "scrollTargets": [
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 14
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 143
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 191
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 199
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 209
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 211
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 213
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 214
+          }
+        ],
+        "startedAt": 4185.89999999851,
+        "stop": true,
+        "done": true
+      },
+      "name": "project-selected-section-reclick",
+      "expectedDocumentFade": false,
+      "errors": [],
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/content-preview.html?independent-menu-check=20261012&case=1791799315753850946#projects/ft-transcendence-building-together?tab=comments",
+      "scrollY": 0,
+      "documentScrolling": false,
+      "menu": {
+        "top": 166,
+        "height": 58,
+        "scrollHeight": 272,
+        "selected": "Commentaires"
+      },
+      "title": "ft_transcendence · Construire à cinq",
+      "qa": {
+        "startY": 0,
+        "startMenu": 214,
+        "maxY": 0,
+        "minY": 0,
+        "maxMenu": 214,
+        "minMenu": 166,
+        "scrollingObserved": false,
+        "minButtonOpacity": 1,
+        "dockChanges": [],
+        "scrollTargets": [
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 166
+          },
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 166
+          }
+        ],
+        "startedAt": 8695.29999999702,
+        "stop": true,
+        "done": true
+      },
+      "name": "project-arrow-up",
+      "expectedDocumentFade": false,
+      "errors": [],
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/content-preview.html?independent-menu-check=20261012&case=1791799315753850946#projects/ft-transcendence-building-together?tab=comments",
+      "scrollY": 0,
+      "documentScrolling": false,
+      "menu": {
+        "top": 214,
+        "height": 58,
+        "scrollHeight": 272,
+        "selected": "Commentaires"
+      },
+      "title": "ft_transcendence · Construire à cinq",
+      "qa": {
+        "startY": 0,
+        "startMenu": 166,
+        "maxY": 0,
+        "minY": 0,
+        "maxMenu": 214,
+        "minMenu": 166,
+        "scrollingObserved": false,
+        "minButtonOpacity": 1,
+        "dockChanges": [],
+        "scrollTargets": [
+          {
+            "target": "project-detail-desktop-menu",
+            "y": 0,
+            "top": 214
+          }
+        ],
+        "startedAt": 10580.10000000149,
+        "stop": true,
+        "done": true
+      },
+      "name": "project-wheel-down",
+      "expectedDocumentFade": false,
+      "errors": [],
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/content-preview.html?independent-menu-check=20261012&case=1791799315753850946#projects/ft-transcendence-building-together?tab=comments",
+      "scrollY": 0,
+      "documentScrolling": false,
+      "menu": {
+        "top": 214,
+        "height": 58,
+        "scrollHeight": 272,
+        "selected": "Commentaires"
+      },
+      "title": "ft_transcendence · Construire à cinq",
+      "qa": {
+        "startY": 0,
+        "startMenu": 214,
+        "maxY": 0,
+        "minY": 0,
+        "maxMenu": 214,
+        "minMenu": 214,
+        "scrollingObserved": false,
+        "minButtonOpacity": 1,
+        "dockChanges": [],
+        "scrollTargets": [],
+        "startedAt": 12029.5,
+        "stop": true,
+        "done": true
+      },
+      "name": "project-wheel-boundary",
+      "expectedDocumentFade": false,
+      "errors": [],
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/content-preview.html?independent-menu-check=20261012&case=1791799329185770010#people/profile-leila-mansour?tab=contribution",
+      "scrollY": 0,
+      "documentScrolling": false,
+      "menu": {
+        "top": 117,
+        "height": 101,
+        "scrollHeight": 218,
+        "selected": "Contribution"
+      },
+      "title": "Leïla Mansour",
+      "qa": {
+        "startY": 0,
+        "startMenu": 0,
+        "maxY": 0,
+        "minY": 0,
+        "maxMenu": 117,
+        "minMenu": 0,
+        "scrollingObserved": false,
+        "minButtonOpacity": 1,
+        "dockChanges": [],
+        "scrollTargets": [
+          {
+            "target": "profile-detail-desktop-menu",
+            "y": 0,
+            "top": 105
+          },
+          {
+            "target": "profile-detail-desktop-menu",
+            "y": 0,
+            "top": 117
+          }
+        ],
+        "startedAt": 1784.3000000044703,
+        "stop": true,
+        "done": true
+      },
+      "name": "profile-section-click",
+      "expectedDocumentFade": false,
+      "errors": [],
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/content-preview.html?independent-menu-check=20261012&case=1791799329185770010#people/profile-leila-mansour?tab=contribution",
+      "scrollY": 0,
+      "documentScrolling": false,
+      "menu": {
+        "top": 117,
+        "height": 101,
+        "scrollHeight": 218,
+        "selected": "Contribution"
+      },
+      "title": "Leïla Mansour",
+      "qa": {
+        "startY": 0,
+        "startMenu": 0,
+        "maxY": 0,
+        "minY": 0,
+        "maxMenu": 117,
+        "minMenu": 0,
+        "scrollingObserved": false,
+        "minButtonOpacity": 1,
+        "dockChanges": [],
+        "scrollTargets": [
+          {
+            "target": "profile-detail-desktop-menu",
+            "y": 0,
+            "top": 3
+          },
+          {
+            "target": "profile-detail-desktop-menu",
+            "y": 0,
+            "top": 18
+          },
+          {
+            "target": "profile-detail-desktop-menu",
+            "y": 0,
+            "top": 59
+          },
+          {
+            "target": "profile-detail-desktop-menu",
+            "y": 0,
+            "top": 97
+          },
+          {
+            "target": "profile-detail-desktop-menu",
+            "y": 0,
+            "top": 105
+          },
+          {
+            "target": "profile-detail-desktop-menu",
+            "y": 0,
+            "top": 110
+          },
+          {
+            "target": "profile-detail-desktop-menu",
+            "y": 0,
+            "top": 114
+          },
+          {
+            "target": "profile-detail-desktop-menu",
+            "y": 0,
+            "top": 117
+          }
+        ],
+        "startedAt": 3794.8000000044703,
+        "stop": true,
+        "done": true
+      },
+      "name": "profile-selected-section-reclick",
+      "expectedDocumentFade": false,
+      "errors": [],
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/content-preview.html?independent-menu-check=20261012&case=1791799329185770010#people/profile-leila-mansour?tab=contribution",
+      "scrollY": 0,
+      "documentScrolling": false,
+      "menu": {
+        "top": 46,
+        "height": 101,
+        "scrollHeight": 218,
+        "selected": "Contribution"
+      },
+      "title": "Leïla Mansour",
+      "qa": {
+        "startY": 0,
+        "startMenu": 117,
+        "maxY": 0,
+        "minY": 0,
+        "maxMenu": 117,
+        "minMenu": 46,
+        "scrollingObserved": false,
+        "minButtonOpacity": 1,
+        "dockChanges": [],
+        "scrollTargets": [
+          {
+            "target": "profile-detail-desktop-menu",
+            "y": 0,
+            "top": 46
+          },
+          {
+            "target": "profile-detail-desktop-menu",
+            "y": 0,
+            "top": 46
+          }
+        ],
+        "startedAt": 5819.30000000447,
+        "stop": true,
+        "done": true
+      },
+      "name": "profile-arrow-up",
+      "expectedDocumentFade": false,
+      "errors": [],
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/content-preview.html?independent-menu-check=20261012&case=1791799329185770010#people/profile-leila-mansour?tab=contribution",
+      "scrollY": 0,
+      "documentScrolling": false,
+      "menu": {
+        "top": 117,
+        "height": 101,
+        "scrollHeight": 218,
+        "selected": "Contribution"
+      },
+      "title": "Leïla Mansour",
+      "qa": {
+        "startY": 0,
+        "startMenu": 46,
+        "maxY": 0,
+        "minY": 0,
+        "maxMenu": 117,
+        "minMenu": 46,
+        "scrollingObserved": false,
+        "minButtonOpacity": 1,
+        "dockChanges": [],
+        "scrollTargets": [
+          {
+            "target": "profile-detail-desktop-menu",
+            "y": 0,
+            "top": 117
+          }
+        ],
+        "startedAt": 7197.5,
+        "stop": true,
+        "done": true
+      },
+      "name": "profile-wheel-down",
+      "expectedDocumentFade": false,
+      "errors": [],
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/content-preview.html?independent-menu-check=20261012&case=1791799329185770010#people/profile-leila-mansour?tab=contribution",
+      "scrollY": 0,
+      "documentScrolling": false,
+      "menu": {
+        "top": 117,
+        "height": 101,
+        "scrollHeight": 218,
+        "selected": "Contribution"
+      },
+      "title": "Leïla Mansour",
+      "qa": {
+        "startY": 0,
+        "startMenu": 117,
+        "maxY": 0,
+        "minY": 0,
+        "maxMenu": 117,
+        "minMenu": 117,
+        "scrollingObserved": false,
+        "minButtonOpacity": 1,
+        "dockChanges": [],
+        "scrollTargets": [],
+        "startedAt": 8647.70000000298,
+        "stop": true,
+        "done": true
+      },
+      "name": "profile-wheel-boundary",
+      "expectedDocumentFade": false,
+      "errors": [],
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/content-preview.html?independent-menu-check=20261012&case=1791799339235652057#journal/journal-an-evening-debugging?tab=comments",
+      "scrollY": 0,
+      "documentScrolling": false,
+      "menu": {
+        "top": 119,
+        "height": 82,
+        "scrollHeight": 218,
+        "selected": "Commentaires"
+      },
+      "title": "Autour d’un bug, une conversation",
+      "qa": {
+        "startY": 0,
+        "startMenu": 0,
+        "maxY": 0,
+        "minY": 0,
+        "maxMenu": 119,
+        "minMenu": 0,
+        "scrollingObserved": false,
+        "minButtonOpacity": 1,
+        "dockChanges": [],
+        "scrollTargets": [
+          {
+            "target": "journal-detail-desktop-menu",
+            "y": 0,
+            "top": 3
+          },
+          {
+            "target": "journal-detail-desktop-menu",
+            "y": 0,
+            "top": 17
+          },
+          {
+            "target": "journal-detail-desktop-menu",
+            "y": 0,
+            "top": 59
+          },
+          {
+            "target": "journal-detail-desktop-menu",
+            "y": 0,
+            "top": 91
+          },
+          {
+            "target": "journal-detail-desktop-menu",
+            "y": 0,
+            "top": 108
+          },
+          {
+            "target": "journal-detail-desktop-menu",
+            "y": 0,
+            "top": 119
+          }
+        ],
+        "startedAt": 815.1000000014901,
+        "stop": true,
+        "done": true
+      },
+      "name": "journal-section-click",
+      "expectedDocumentFade": false,
+      "errors": [],
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/content-preview.html?independent-menu-check=20261012&case=1791799339235652057#journal/journal-an-evening-debugging?tab=comments",
+      "scrollY": 0,
+      "documentScrolling": false,
+      "menu": {
+        "top": 136,
+        "height": 82,
+        "scrollHeight": 218,
+        "selected": "Commentaires"
+      },
+      "title": "Autour d’un bug, une conversation",
+      "qa": {
+        "startY": 0,
+        "startMenu": 0,
+        "maxY": 0,
+        "minY": 0,
+        "maxMenu": 136,
+        "minMenu": 0,
+        "scrollingObserved": false,
+        "minButtonOpacity": 1,
+        "dockChanges": [],
+        "scrollTargets": [
+          {
+            "target": "journal-detail-desktop-menu",
+            "y": 0,
+            "top": 17
+          },
+          {
+            "target": "journal-detail-desktop-menu",
+            "y": 0,
+            "top": 91
+          },
+          {
+            "target": "journal-detail-desktop-menu",
+            "y": 0,
+            "top": 119
+          },
+          {
+            "target": "journal-detail-desktop-menu",
+            "y": 0,
+            "top": 126
+          },
+          {
+            "target": "journal-detail-desktop-menu",
+            "y": 0,
+            "top": 133
+          },
+          {
+            "target": "journal-detail-desktop-menu",
+            "y": 0,
+            "top": 135
+          },
+          {
+            "target": "journal-detail-desktop-menu",
+            "y": 0,
+            "top": 136
+          }
+        ],
+        "startedAt": 3196.60000000149,
+        "stop": true,
+        "done": true
+      },
+      "name": "journal-selected-section-reclick",
+      "expectedDocumentFade": false,
+      "errors": [],
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/content-preview.html?independent-menu-check=20261012&case=1791799339235652057#journal/journal-an-evening-debugging?tab=comments",
+      "scrollY": 0,
+      "documentScrolling": false,
+      "menu": {
+        "top": 79,
+        "height": 82,
+        "scrollHeight": 218,
+        "selected": "Commentaires"
+      },
+      "title": "Autour d’un bug, une conversation",
+      "qa": {
+        "startY": 0,
+        "startMenu": 136,
+        "maxY": 0,
+        "minY": 0,
+        "maxMenu": 136,
+        "minMenu": 79,
+        "scrollingObserved": false,
+        "minButtonOpacity": 1,
+        "dockChanges": [],
+        "scrollTargets": [
+          {
+            "target": "journal-detail-desktop-menu",
+            "y": 0,
+            "top": 79
+          },
+          {
+            "target": "journal-detail-desktop-menu",
+            "y": 0,
+            "top": 79
+          }
+        ],
+        "startedAt": 5514.5,
+        "stop": true,
+        "done": true
+      },
+      "name": "journal-arrow-up",
+      "expectedDocumentFade": false,
+      "errors": [],
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/content-preview.html?independent-menu-check=20261012&case=1791799339235652057#journal/journal-an-evening-debugging?tab=comments",
+      "scrollY": 0,
+      "documentScrolling": false,
+      "menu": {
+        "top": 136,
+        "height": 82,
+        "scrollHeight": 218,
+        "selected": "Commentaires"
+      },
+      "title": "Autour d’un bug, une conversation",
+      "qa": {
+        "startY": 0,
+        "startMenu": 79,
+        "maxY": 0,
+        "minY": 0,
+        "maxMenu": 136,
+        "minMenu": 79,
+        "scrollingObserved": false,
+        "minButtonOpacity": 1,
+        "dockChanges": [],
+        "scrollTargets": [
+          {
+            "target": "journal-detail-desktop-menu",
+            "y": 0,
+            "top": 136
+          }
+        ],
+        "startedAt": 7896.80000000447,
+        "stop": true,
+        "done": true
+      },
+      "name": "journal-wheel-down",
+      "expectedDocumentFade": false,
+      "errors": [],
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/content-preview.html?independent-menu-check=20261012&case=1791799339235652057#journal/journal-an-evening-debugging?tab=comments",
+      "scrollY": 0,
+      "documentScrolling": false,
+      "menu": {
+        "top": 136,
+        "height": 82,
+        "scrollHeight": 218,
+        "selected": "Commentaires"
+      },
+      "title": "Autour d’un bug, une conversation",
+      "qa": {
+        "startY": 0,
+        "startMenu": 136,
+        "maxY": 0,
+        "minY": 0,
+        "maxMenu": 136,
+        "minMenu": 136,
+        "scrollingObserved": false,
+        "minButtonOpacity": 1,
+        "dockChanges": [],
+        "scrollTargets": [],
+        "startedAt": 9731.30000000447,
+        "stop": true,
+        "done": true
+      },
+      "name": "journal-wheel-boundary",
+      "expectedDocumentFade": false,
+      "errors": [],
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/content-preview.html?independent-menu-check=20261012&case=1791799350368624552#projects/ft-transcendence-building-together",
+      "scrollY": 300,
+      "documentScrolling": false,
+      "menu": {
+        "top": 0,
+        "height": 58,
+        "scrollHeight": 272,
+        "selected": "Vue d’ensemble"
+      },
+      "title": "ft_transcendence · Construire à cinq",
+      "qa": {
+        "startY": 0,
+        "startMenu": 0,
+        "maxY": 300,
+        "minY": 0,
+        "maxMenu": 0,
+        "minMenu": 0,
+        "scrollingObserved": true,
+        "minButtonOpacity": 0,
+        "dockChanges": [
+          {
+            "t": 2048,
+            "state": true
+          },
+          {
+            "t": 2563,
+            "state": false
+          }
+        ],
+        "scrollTargets": [
+          {
+            "target": "document",
+            "y": 300,
+            "top": 0
+          }
+        ],
+        "startedAt": 1669.4000000059605,
+        "stop": true,
+        "done": true
+      },
+      "name": "document-reading-wheel",
+      "expectedDocumentFade": true,
+      "errors": [],
+      "pass": true
+    }
+  ],
+  "archiveInitial": {
+    "url": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/archive/pre-multi-campus-projects-20261012/preview.html?independent-menu-check=20261012&case=1791799312420192473#projects/ft-transcendence-building-together",
+    "scrollY": 0,
+    "documentScrolling": false,
+    "menu": {
+      "top": 0,
+      "height": 82,
+      "scrollHeight": 272,
+      "selected": "Vue d’ensemble"
+    },
+    "title": "ft_transcendence · Construire à cinq"
+  },
+  "archiveIcons": [
+    {
+      "href": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/archive/pre-multi-campus-projects-20261012/preview.html?independent-menu-check=20261012&case=1791799312420192473#i-user",
+      "width": 13.270832061767578,
+      "height": 15.640625
+    },
+    {
+      "href": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/archive/pre-multi-campus-projects-20261012/preview.html?independent-menu-check=20261012&case=1791799312420192473#i-compass",
+      "width": 15.75,
+      "height": 15.75
+    },
+    {
+      "href": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/archive/pre-multi-campus-projects-20261012/preview.html?independent-menu-check=20261012&case=1791799312420192473#i-projects",
+      "width": 15.75,
+      "height": 15.75
+    },
+    {
+      "href": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/archive/pre-multi-campus-projects-20261012/preview.html?independent-menu-check=20261012&case=1791799312420192473#i-people",
+      "width": 15.751750946044922,
+      "height": 13.125
+    },
+    {
+      "href": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/archive/pre-multi-campus-projects-20261012/preview.html?independent-menu-check=20261012&case=1791799312420192473#i-journal",
+      "width": 14,
+      "height": 15.75
+    },
+    {
+      "href": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/archive/pre-multi-campus-projects-20261012/preview.html?independent-menu-check=20261012&case=1791799312420192473#i-awards",
+      "width": 14,
+      "height": 15.75
+    }
+  ],
+  "archiveData": {
+    "campus": "paris",
+    "campuses": null
+  },
+  "archiveAfterNavigation": {
+    "url": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/archive/pre-multi-campus-projects-20261012/preview.html?independent-menu-check=20261012&case=1791799354727841406#projects/ft-transcendence-building-together",
+    "scrollY": 0,
+    "documentScrolling": false,
+    "menu": {
+      "top": 0,
+      "height": 82,
+      "scrollHeight": 272,
+      "selected": "Vue d’ensemble"
+    },
+    "title": "ft_transcendence · Construire à cinq"
+  },
+  "sourceHashes": {
+    "welcome.mjs": "271bedc119e3ba0c864b1ea3b948eef57853be85b02ff629017d8c9bb531efc0",
+    "dock-search.mjs": "5821dd234328abe5f56b761bae71c4e6534bbebff34e21e041788a67ee421b28",
+    "detail-scroll.mjs": "6d34289d73a5ca9a1141e1311fd85ceb5b3650e47f95a6502abcb0083c2de72c",
+    "content-preview.html": "35623f9eab74056553a4481527688582f97e0422ab58c5aeebb60a5f7bd87d50"
+  },
+  "passed": 17,
+  "failed": 0
+}

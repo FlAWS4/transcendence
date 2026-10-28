@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Horizon — Essais du filtre de la version B</title>
+  <meta name="description" content="Quatre essais pour le filtre de la version B, comparés à une copie de la version B figée le 26 octobre 2026.">
+  <link rel="stylesheet" href="../../shared/assets/jost.css">
+  <link rel="stylesheet" href="gallery.css?v=2">
+  <script type="module" src="gallery.mjs?v=3"></script>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../../site-b/" aria-label="Version B du site"><img src="../../shared/brand/logo-42.svg" alt="42" width="46" height="32"><span>HORIZON</span></a>
+  <a href="NOTES.md">Notes de l’étude</a>
+</header>
+<main>
+  <p class="eyebrow">Essais du filtre de la version B · 26 octobre 2026</p>
+  <h1>Quatre essais pour le filtre, à comparer un par un.</h1>
+  <blockquote class="request"><p>« Tu dois aussi me changer le filtre : la plupart du temps il y a beaucoup d’espace vide. Propose-moi des solutions pour qu’il ne soit pas vide, qu’il soit centré, mais qu’en même temps il ne se déplace pas à chaque fois qu’on sélectionne un pays ou un campus. »</p></blockquote>
+  <p class="intro">Chaque essai s’applique à une copie de la version B figée le 26 octobre (commit 46279b0). Comparez-le à cette copie, sur la page, le format, le thème et la langue de votre choix.</p>
+
+  <section class="compare" id="comparer" aria-labelledby="compare-title">
+    <div class="compare-head">
+      <div>
+        <h2 id="compare-title">Comparer</h2>
+        <p class="compare-subject" id="compare-subject">Choisissez un essai ci-dessous.</p>
+      </div>
+      <div class="compare-links"><a id="open-current" target="_blank" rel="noopener">Ouvrir la copie</a><a id="open-trial" target="_blank" rel="noopener">Ouvrir l’essai</a></div>
+    </div>
+    <form class="compare-controls" id="compare-controls" aria-label="Réglages de la comparaison">
+      <label>Page <select id="view-select"></select></label>
+      <label>Format <select id="format-select">
+        <option value="ordinateur">Ordinateur · 1440 × 900</option>
+        <option value="portable">Portable · 1280 × 720</option>
+        <option value="mobile">Mobile · 390 × 844</option>
+        <option value="paysage">Paysage · 667 × 375</option>
+      </select></label>
+      <label>Thème <select id="theme-select"><option value="light">Clair</option><option value="dark">Sombre</option></select></label>
+      <label>Langue <select id="lang-select"><option value="fr">Français</option><option value="en" lang="en">English</option><option value="ar" lang="ar">العربية</option></select></label>
+      <button type="button" id="reload-frames">Recharger</button>
+    </form>
+    <div class="frames" id="frames">
+      <figure data-side="current"><figcaption>Copie figée du 26 octobre</figcaption><div class="frame-box"><iframe id="frame-current" title="Copie figée du 26 octobre"></iframe></div></figure>
+      <figure data-side="trial"><figcaption id="trial-caption">Avec l’essai</figcaption><div class="frame-box"><iframe id="frame-trial" title="Avec l’essai"></iframe></div></figure>
+    </div>
+    <p class="hint">Les deux vues sont réduites à la largeur de la page et restent interactives. Elles partagent les réglages de l’étude : un changement de thème dans l’une se répercute dans l’autre. Une vue de mobile garde ici le pointeur de l’ordinateur ; « Ouvrir l’essai » l’affiche en grand dans un nouvel onglet.</p>
+  </section>
+
+  <section class="trials" aria-labelledby="trials-title">
+    <h2 id="trials-title">Les quatre essais</h2>
+    <div class="cards" id="cards" aria-live="polite"><p class="loading">Chargement des essais…</p></div>
+  </section>
+
+  <section class="about" aria-labelledby="about-title">
+    <h2 id="about-title">Comment lire ces essais</h2>
+    <p>Les quatre essais répondent à la même demande et gardent les mêmes règles : le filtre ne bouge ni ne change de taille quand on choisit un pays ou un campus, il est centré sur l’axe de la page à chaque niveau, « Monde » compris, et le bouton ← garde une place fixe. Ce sont des propositions à comparer ; aucune n’est choisie.</p>
+    <p>Notes détaillées : <a href="NOTES.md">NOTES.md</a> · copie et adaptations : <a href="snapshot-manifest.json">snapshot-manifest.json</a>.</p>
+  </section>
+</main>
+<footer><a href="../../site-b/">Version B actuelle</a><span>Aucun essai choisi pour le moment · version du projet 0.0.1 pré-alpha.</span></footer>
+</body>
+</html>

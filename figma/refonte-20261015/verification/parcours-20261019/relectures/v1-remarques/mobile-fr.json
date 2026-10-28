@@ -1,0 +1,450 @@
+[
+ {
+  "board": "Recherche_·_ouverte_—_Mobile_·_Clair.png",
+  "zone": "Recherche",
+  "problem": "sur un autre élément",
+  "detail": "La zone « Recherche ⇢ » mesure 356 × 440 px, renvoie sur « Recherche · ouverte » elle-même et couvre tout le panneau des résultats. Dans parcours.py (LINKS_CALL), sur un cadre qui ne défile pas, chaque zone est posée au-dessus des précédentes. Créée après « Résultat « Campus » », « Résultat « Projet » » et « Résultat « Chroniques » », elle les recouvre : un clic sur un résultat rouvre la recherche au lieu de l'ouvrir. Or « Fiche projet · projet à campus unique » (minishell) ne s'atteint que par ce résultat.",
+  "severity": "bloquant"
+ },
+ {
+  "board": "Fiche_projet_·_sélecteur_Dans_ce_projet_ouvert_—_Mobile_·_Clair.png",
+  "zone": "Onglet · comments",
+  "problem": "sur un autre élément",
+  "detail": "L'option « Commentaires » est invisible : le menu, coupé par son défilement interne, s'arrête après « Tester le projet ». La zone (y 710–757) est posée sur le champ « Chercher dans Horizon » et sur le dé. Créée après eux, elle recouvre entièrement les zones « Recherche » et « Dé » : sur cet écran, la recherche et le dé ouvrent « Commentaires ». C'est aussi le seul accès aux commentaires du projet.",
+  "severity": "bloquant"
+ },
+ {
+  "board": "Fiche_projet_·_sélecteur_Dans_ce_projet_ouvert_—_Mobile_·_Clair.png",
+  "zone": "Onglet · implementation, Onglet · media, Onglet · test, Onglet · comments",
+  "problem": "arrivée douteuse",
+  "detail": "Le sélecteur ouvert est celui de « ft_transcendence · Construire à cinq ». Pourtant, Réalisation, Médias, Tester le projet et Commentaires ouvrent les rubriques de « Derrière une ligne de commande » (minishell) : le projet change en cours de route.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Fiche_profil_·_sélecteur_de_rubriques_ouvert_—_Mobile_·_Clair.png",
+  "zone": "Onglet · contribution",
+  "problem": "sur un autre élément",
+  "detail": "Le menu s'arrête après « Parcours » : l'option « Contribution » est presque entièrement masquée par le défilement interne. La zone est posée sur le texte « À propos » de la page et déborde d'environ 13 px sur le haut de la recherche et du dé, qu'elle recouvre. C'est le seul accès à « Contribution ».",
+  "severity": "gênant"
+ },
+ {
+  "board": "Explorer_·_Monde_—_Mobile_·_Clair.png",
+  "zone": "Cliquer un pays",
+  "problem": "sur un autre élément",
+  "detail": "Zone de 14 × 14 px posée sur le coin inférieur gauche de l'étiquette « Luxembourg », sous laquelle se cache le repère de la France. On croit cliquer sur Luxembourg et on arrive sur Explorer · Pays (France). Les autres pays et étiquettes du globe (Maroc, Palestine, Angola…) ne réagissent pas, et la zone est très difficile à trouver sur téléphone.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Explorer_·_Monde_·_membre_—_Mobile_·_Clair.png",
+  "zone": "Cliquer un pays",
+  "problem": "sur un autre élément",
+  "detail": "Même zone de 14 × 14 px que sur la version visiteur, sur le coin de l'étiquette « Luxembourg », qui cache le repère de la France. Elle mène de plus vers le cadre visiteur « Explorer · Pays » : l'en-tête membre disparaît.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Explorer_·_Campus_—_Mobile_·_Clair.png",
+  "zone": "Revenir au monde ; ← ou nom du pays",
+  "problem": "arrivée douteuse",
+  "detail": "Ces trois zones orange font « écran précédent ». Sur le site, le globe (#reset) mène toujours au monde, et ← ou « France » mènent au pays. Avec « écran précédent » : sur le chemin Monde → France → 42 Paris, « Revenir au monde » ramène à France. Après le dé du monde, « ← / France » ramène au monde. Après un résultat de recherche ou « Choisir un campus » dans « Où veux-tu aller ? », on rouvre la recherche ou le panneau. Après le dé de cet écran, qui reboucle sur lui-même, on reste sur 42 Paris.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Liste_des_projets_—_Mobile_·_Clair.png",
+  "zone": "Carte d’un projet (image de la carte de droite) ; « +N » d’une carte (équipe) de droite",
+  "problem": "arrivée douteuse",
+  "detail": "La carte de droite est « Derrière une ligne de commande » (minishell), mais son image et son « +1 » mènent à « Fiche projet » (ft_transcendence). Ils devraient mener à « Fiche projet · projet à campus unique ». Ce cadre minishell n'est alors atteint que par la recherche, elle-même bloquée.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Liste_des_projets_·_vue_Liste_—_Mobile_·_Clair.png",
+  "zone": "Carte d’un projet (vignette de minishell, 2e ligne) ; « +N » d’une carte (équipe) de minishell",
+  "problem": "arrivée douteuse",
+  "detail": "La vignette et le « +1 » de « Derrière une ligne de commande » ouvrent la fiche ft_transcendence au lieu de « Fiche projet · projet à campus unique ».",
+  "severity": "gênant"
+ },
+ {
+  "board": "Projets_—_Mobile_·_Clair.png",
+  "zone": "Carte d’un projet (1re carte, minishell)",
+  "problem": "arrivée douteuse",
+  "detail": "La première carte de l'onglet Projets du profil est « Derrière une ligne de commande », mais elle mène à la fiche ft_transcendence au lieu de « Fiche projet · projet à campus unique ».",
+  "severity": "gênant"
+ },
+ {
+  "board": "Liste_des_projets_·_tri_ouvert_—_Mobile_·_Clair.png",
+  "zone": "Carte d’un projet (×3), Auteur d’une carte (« Créé par »), « +N » d’une carte (équipe) de droite",
+  "problem": "sur un autre élément",
+  "detail": "Ces zones, reprises de la liste, restent sous le menu de tri ouvert. Les deux zones d'image couvrent les options « Du plus récent au plus ancien », « Du plus ancien au plus récent » et le haut de « Le plus de favoris ». Le titre de gauche couvre la note du menu. L'auteur et le +1 de droite sont à moitié dessous. Un clic sur une option de tri ouvre la fiche ft_transcendence.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Liste_des_projets_·_tri_ouvert_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Rien ne referme le menu de tri : ni le bouton « Trier » ouvert, ni les options (seul « Mes favoris uniquement » a une zone). On reste sur l'état « tri ouvert » sauf à quitter la page. « Affichage » n'a pas de zone non plus.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Liste_des_profils_·_tri_ouvert_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Ni le bouton « Trier » ouvert ni les options du menu (« Du plus récent… », « Le plus de favoris », « Mes favoris uniquement ») n'ont de zone : le menu de tri ne se referme pas. « Affichage » n'a pas de zone non plus.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Commentaires_·_tri_ouvert_—_Mobile_·_Clair.png",
+  "zone": "Publier, puis l’auteur ou une mention @ ; Publier, puis les trois points",
+  "problem": "sur un autre élément",
+  "detail": "Le menu de tri ouvert recouvre la ligne de l'auteur. La zone des trois points est entièrement sur la fin de la première option (« Du plus récent au plus ancien ✓ ») et le bouton ⋮ est caché. La moitié droite de la zone de l'auteur est aussi sur cette option. Un clic sur l'option ouvre la fiche profil ou le menu du commentaire.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Commentaires_·_tri_ouvert_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Rien ne referme le menu de tri : ni le bouton « Du plus récent au plus ancien ▴ », ni les trois options. On ne peut pas revenir au fil des commentaires.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Projets_·_filtre_local_ouvert_—_Mobile_·_Clair.png",
+  "zone": "Filtrer",
+  "problem": "sur un autre élément",
+  "detail": "Cette zone vient de la page du dessous, cachée par la fenêtre modale. Elle est posée sur « Réinitialiser » et sur le haut du bouton « Appliquer », et renvoie sur ce même écran.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Projets_·_filtre_local_ouvert_—_Mobile_·_Clair.png",
+  "zone": "Carte d’un projet",
+  "problem": "sur un autre élément",
+  "detail": "La zone de la carte reste sous la fenêtre modale. Elle couvre le bas des boutons « Annuler » et « Appliquer » et tout le fond voilé : un clic à côté de la fenêtre ouvre la fiche ft_transcendence au lieu de la fermer.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Liste_des_profils_·_dernière_page_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Aucune carte de profil n'a de zone, et la pagination (←, 1, 2, 3) non plus : on ne peut pas revenir à la page 1, car le bouton Profils du menu du bas est celui de la rubrique en cours. « Affichage » et « Trier » n'ont pas de zone non plus.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Liste_des_projets_·_dernière_page_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Aucune carte de projet n'a de zone, et la pagination (←, 1, 5, 6) non plus : on ne peut pas revenir à la page 1, car le bouton Projets du menu du bas est celui de la rubrique en cours. « Affichage » et « Trier » n'ont pas de zone non plus.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Liste_des_projets_·_état_vide_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "« Afficher tous les contenus », seule sortie de l'état vide, n'a pas de zone (arrivée attendue : Liste des projets). « Trier » et « Affichage » n'en ont pas non plus.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Chronique_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Le sélecteur « Dans cet article · Article » n'a pas de zone, et aucun cadre ne le montre ouvert. En mobile, aucune zone ne mène aux rubriques « Médias » et « Commentaires » de la chronique ; « Auteurs » n'est atteint que par le « +N » de la liste.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Chronique_·_membre_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Le sélecteur « Dans cet article · Article » n'a pas de zone : aucune rubrique de la chronique n'est accessible.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Fiche_projet_·_membre_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Le sélecteur « Dans ce projet · Vue d’ensemble » n'a pas de zone, alors que la fiche visiteur en a une (« Dans ce … »). Les rubriques du projet sont inaccessibles en membre.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Fiche_profil_·_membre_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Le sélecteur « Dans ce profil · Vue d’ensemble » n'a pas de zone, alors que la fiche visiteur en a une. Projets, Parcours et Contribution sont inaccessibles en membre.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Fiche_projet_·_projet_à_campus_unique_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Le sélecteur « Dans ce projet · Vue d’ensemble » de la fiche minishell n'a pas de zone. Ses rubriques ne s'ouvrent que depuis le sélecteur de ft_transcendence.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Auteurs_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Quatre commandes sont visibles sans zone : « ← Retour aux chroniques », le sélecteur « Dans cet article · Auteurs », « Signaler » et « Explorer 42 Tokyo ». On ne peut revenir ni à la chronique ni à la liste (le bouton Chroniques du menu du bas est celui de la rubrique en cours), sauf par le dé.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Commentaires_·_avec_un_fil_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Quatre commandes sont visibles sans zone : « ← Retour aux projets », le sélecteur « Dans ce projet · Commentaires », « Signaler » et « Explorer 42 Paris ». On ne peut revenir ni à la fiche ni à la liste, ni changer de rubrique, sauf par le dé. Le sélecteur est aussi sans zone sur les états « suggestions de mention », « tri ouvert » et « menu à trois points ».",
+  "severity": "gênant"
+ },
+ {
+  "board": "Commentaires_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Quatre commandes sont visibles sans zone : « ← Retour aux projets », le sélecteur « Dans ce projet · Commentaires », « Signaler » et « Explorer 42 Paris ». On ne peut revenir ni à la fiche ni à la liste, ni changer de rubrique.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Médias_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Quatre commandes sont visibles sans zone : « ← Retour aux projets », le sélecteur « Dans ce projet · Médias », « Signaler » et « Explorer 42 Paris ». On ne peut revenir ni à la fiche ni à la liste, ni changer de rubrique.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Réalisation_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Quatre commandes sont visibles sans zone : « ← Retour aux projets », le sélecteur « Dans ce projet · Réalisation », « Signaler » et « Explorer 42 Paris ». On ne peut revenir ni à la fiche ni à la liste, ni changer de rubrique.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Tester_le_projet_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Quatre commandes sont visibles sans zone : « ← Retour aux projets », le sélecteur « Dans ce projet · Tester le projet », « Signaler » et « Explorer 42 Paris ». On ne peut revenir ni à la fiche ni à la liste, ni changer de rubrique.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Tester_le_projet_·_lien_enregistré_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Quatre commandes sont visibles sans zone : « ← Retour aux projets », le sélecteur « Dans ce projet », « Signaler » et « Explorer 42 Paris ». « Modifier le lien », qui revient au formulaire, n'en a pas non plus.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Contribution_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Plusieurs commandes sont visibles sans zone : « ← Retour aux profils », le portrait, « Envoyer un message », « Signaler » et le sélecteur « Dans ce profil · Contribution ». On ne peut revenir ni à la fiche ni à la liste, ni changer de rubrique, sauf par le dé.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Parcours_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Plusieurs commandes sont visibles sans zone : « ← Retour aux profils », le portrait, « Envoyer un message », « Signaler » et le sélecteur « Dans ce profil · Parcours ». On ne peut revenir ni à la fiche ni à la liste, ni changer de rubrique.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Projets_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Plusieurs commandes sont visibles sans zone : « ← Retour aux profils », le portrait, « Envoyer un message », « Signaler » et le sélecteur « Dans ce profil · Projets ». On ne peut revenir ni à la fiche ni à la liste, ni changer de rubrique.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Compte_de_Leïla_Mansour_·_membre_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Le dé, à droite de « Chercher dans Horizon », n'a pas de zone, alors qu'il en a une sur toutes les autres pages de profils (arrivée attendue : Fiche profil · membre).",
+  "severity": "gênant"
+ },
+ {
+  "board": "Compte_de_Leïla_Mansour_·_membre_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Cette page ne porte que les zones communes. « ← Retour aux profils », le portrait, « Envoyer un message », « Signaler », le sélecteur « Dans ce profil » et « Explorer 42 Paris » sont visibles sans zone, alors qu'ils en ont sur « Fiche profil · membre ».",
+  "severity": "gênant"
+ },
+ {
+  "board": "Panneau_du_compte_·_membre_—_Mobile_·_Clair.png",
+  "zone": "Fermer",
+  "problem": "arrivée douteuse",
+  "detail": "« Fermer » revient à l'écran précédent. Ce panneau s'ouvre aussi depuis « Continuer avec le profil » (Connexion simulée) et « Simuler la création du compte » : fermer rouvre alors cette fenêtre de visiteur, au lieu de la page en membre visible sous le panneau (Liste des projets · membre).",
+  "severity": "gênant"
+ },
+ {
+  "board": "Paramètres_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Clair, Sombre, Système, Français et English sont visibles sans zone, alors qu'ils en ont dans les panneaux Thème et Langue. Le panneau n'offre que « Fermer ».",
+  "severity": "gênant"
+ },
+ {
+  "board": "Explorer_·_Pays_—_Mobile_·_Clair.png",
+  "zone": "Cliquer un campus",
+  "problem": "trop petite ou trop grande",
+  "detail": "Zone de 14 × 14 px sur le repère de Paris, à moitié sous l'étiquette « 42 Le Havre ». Paris n'a pas d'étiquette visible : on voit mal où cliquer pour arriver sur 42 Paris.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Explorer_·_Pays_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Le bouton « Exploration · 42 Horizon » (#about, qui ouvre « Une nouvelle façon d’explorer ») est visible sans zone, alors qu'il en a une sur Explorer · Monde.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Explorer_·_Campus_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Le bouton « Exploration · 42 Horizon » (#about) est visible sans zone, alors qu'il en a une sur Explorer · Monde.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Liste_des_projets_·_état_vide_—_Mobile_·_Clair.png",
+  "zone": "Dé",
+  "problem": "autre",
+  "detail": "Dans cet état, le dé est grisé et inactif (opacité 0,42, libellé « Aucun contenu avec ces filtres »), mais il garde une zone vers « Fiche projet ».",
+  "severity": "mineur"
+ },
+ {
+  "board": "Fiche_projet_·_projet_à_campus_unique_—_Mobile_·_Clair.png",
+  "zone": "Un membre de l’équipe",
+  "problem": "arrivée douteuse",
+  "detail": "La zone est sur la carte de Noé Laurent mais ouvre la fiche de Leïla Mansour. La carte de Leïla (« Créé par »), juste au-dessus, n'a pas de zone.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Liste_des_projets_·_membre_—_Mobile_·_Clair.png",
+  "zone": "Carte d’un projet (image de la carte de droite) ; « +N » d’une carte (équipe) de droite",
+  "problem": "arrivée douteuse",
+  "detail": "La carte minishell ouvre la fiche ft_transcendence en membre. Aucun cadre membre de minishell n'existe.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Liste_des_projets_·_membre_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "« Trier », « Affichage » et la pagination (2, 3, 7, →) n'ont pas de zone, alors qu'ils en ont en visiteur.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Liste_des_profils_·_membre_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "« Trier », « Affichage » et la pagination (2, 3, 4, →) n'ont pas de zone, alors qu'ils en ont en visiteur.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Liste_des_chroniques_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "La pagination « Page 1 sur 7 » (2, 3, …, 7, →) n'a pas de zone, et aucun cadre de page suivante n'existe (les projets et les profils ont « Dernière page »).",
+  "severity": "mineur"
+ },
+ {
+  "board": "Liste_des_chroniques_·_membre_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "La pagination « Page 1 sur 7 » n'a pas de zone.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Liste_des_profils_·_vue_Liste_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "« Affichage » (retour à la grille), « Trier » et la pagination (4 = dernière page) n'ont pas de zone.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Liste_des_projets_·_vue_Liste_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "« Affichage » (retour à la grille), « Trier » et la pagination (7 = dernière page) n'ont pas de zone.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Panneau_du_compte_·_membre_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "« Se déconnecter » n'a pas de zone. Sur le site, il ferme le menu et repasse la page en visiteur.",
+  "severity": "mineur"
+ },
+ {
+  "board": "_Où_veux-tu_aller_—_Mobile_·_Clair.png",
+  "zone": "Tous les pays",
+  "problem": "arrivée douteuse",
+  "detail": "La liste « Pays » mène à « Tous les pays » → Explorer · Monde : on ne peut pas y choisir un pays (Explorer · Pays). plan.json relève le conflit « zones confondues : Tous les pays / Choisir un pays ».",
+  "severity": "mineur"
+ },
+ {
+  "board": "Connexion_simulée_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Le bouton « Annuler » n'a pas de zone ; seul le X ferme la fenêtre.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Connexion_—_prototype_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Le bouton « Annuler » n'a pas de zone ; seul le X ferme la fenêtre.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Création_de_compte_simulée_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Le bouton « Annuler » n'a pas de zone ; seul le X ferme la fenêtre.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Envoyer_un_message_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Le bouton « Annuler » n'a pas de zone ; seul le X ferme la fenêtre.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Signaler_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Le bouton « Annuler » n'a pas de zone ; seul le X ferme la fenêtre.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Signaler_·_depuis_un_profil_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Le bouton « Annuler » n'a pas de zone ; seul le X ferme la fenêtre.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Filtrer_les_profils_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "« Annuler » et « Appliquer », qui ferment la fenêtre, n'ont pas de zone.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Filtrer_les_profils_·_déployée_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "« Annuler » et « Appliquer » n'ont pas de zone ; seul le X ferme la fenêtre.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Filtrer_les_projets_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "« Annuler » et « Appliquer », qui ferment la fenêtre, n'ont pas de zone.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Filtrer_les_projets_·_déployée_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "« Annuler » et « Appliquer » n'ont pas de zone ; seul le X ferme la fenêtre.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Projets_·_filtre_local_ouvert_—_Mobile_·_Clair.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "« Annuler » et « Appliquer » n'ont pas de zone propre : seul leur bas est couvert, à tort, par la zone de la carte.",
+  "severity": "mineur"
+ }
+]

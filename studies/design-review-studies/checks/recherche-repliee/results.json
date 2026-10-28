@@ -1,0 +1,3187 @@
+{
+ "id": "recherche-repliee",
+ "views": [
+  {
+   "vue": "ordinateur",
+   "route": "projects",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "avant": {
+    "geometry": {
+     "vw": 1440,
+     "vh": 900,
+     "lang": "fr",
+     "dir": "ltr",
+     "section": "projects",
+     "toggle": {
+      "x": 594,
+      "y": 751,
+      "w": 200,
+      "h": 44
+     },
+     "die": {
+      "x": 802,
+      "y": 751,
+      "w": 44,
+      "h": 44
+     },
+     "dock": {
+      "x": 402,
+      "y": 808,
+      "w": 636,
+      "h": 60
+     },
+     "header": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 124
+     },
+     "scope": {
+      "x": 646.9,
+      "y": 84,
+      "w": 146.2,
+      "h": 48
+     },
+     "toggleName": "Rechercher dans Horizon",
+     "toggleTitle": "Rechercher dans Horizon",
+     "labelDisplay": "block",
+     "iconDisplay": "absent",
+     "toggleColor": "color(srgb 0.270588 0.311765 0.317647)",
+     "dieColor": "color(srgb 0.0455294 0.461294 0.465765)",
+     "toggleRadius": "22px",
+     "toggleBorder": "color(srgb 1 1 1 / 0.72)",
+     "dieBorder": "color(srgb 1 1 1 / 0.72)",
+     "toggleBg": "color(srgb 1 1 1 / 0.82)",
+     "dieBg": "color(srgb 1 1 1 / 0.82)",
+     "dieName": "Découvrir un projet",
+     "nav": [
+      {
+       "section": "explore",
+       "text": "Explorer",
+       "button": [
+        408,
+        814,
+        122,
+        48
+       ],
+       "label": [
+        459,
+        829,
+        49,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "17.5px"
+      },
+      {
+       "section": "projects",
+       "text": "Projets",
+       "button": [
+        534,
+        814,
+        122,
+        48
+       ],
+       "label": [
+        589,
+        829,
+        42,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "17.5px"
+      },
+      {
+       "section": "people",
+       "text": "Profils",
+       "button": [
+        659,
+        814,
+        122,
+        48
+       ],
+       "label": [
+        717,
+        829,
+        36,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "17.5px"
+      },
+      {
+       "section": "journal",
+       "text": "Chroniques",
+       "button": [
+        785,
+        814,
+        122,
+        48
+       ],
+       "label": [
+        826,
+        829,
+        68,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "17.5px"
+      },
+      {
+       "section": "awards",
+       "text": "42 Awards",
+       "button": [
+        910,
+        814,
+        122,
+        48
+       ],
+       "label": [
+        954,
+        829,
+        64,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "17.5px"
+      }
+     ],
+     "overflow": false
+    },
+    "floatingUnionBox": {
+     "x": 594,
+     "y": 751,
+     "w": 252,
+     "h": 44,
+     "area": 11088
+    },
+    "stackUnionBox": {
+     "x": 402,
+     "y": 751,
+     "w": 636,
+     "h": 117,
+     "area": 74412
+    },
+    "stackCoveredArea": 48896,
+    "stackCoveredShare": 0.0377,
+    "textUnderStack": {
+     "area": 1316,
+     "lines": [
+      "Un petit shell, et toutes les questions "
+     ]
+    },
+    "errors": []
+   },
+   "apres": {
+    "geometry": {
+     "vw": 1440,
+     "vh": 900,
+     "lang": "fr",
+     "dir": "ltr",
+     "section": "projects",
+     "toggle": {
+      "x": 672,
+      "y": 751,
+      "w": 44,
+      "h": 44
+     },
+     "die": {
+      "x": 724,
+      "y": 751,
+      "w": 44,
+      "h": 44
+     },
+     "dock": {
+      "x": 402,
+      "y": 808,
+      "w": 636,
+      "h": 60
+     },
+     "header": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 124
+     },
+     "scope": {
+      "x": 646.9,
+      "y": 84,
+      "w": 146.2,
+      "h": 48
+     },
+     "toggleName": "Rechercher dans Horizon",
+     "toggleTitle": "Rechercher dans Horizon",
+     "labelDisplay": "none",
+     "iconDisplay": "block",
+     "toggleColor": "color(srgb 0.0455294 0.461294 0.465765)",
+     "dieColor": "color(srgb 0.0455294 0.461294 0.465765)",
+     "toggleRadius": "22px",
+     "toggleBorder": "color(srgb 1 1 1 / 0.72)",
+     "dieBorder": "color(srgb 1 1 1 / 0.72)",
+     "toggleBg": "color(srgb 1 1 1 / 0.82)",
+     "dieBg": "color(srgb 1 1 1 / 0.82)",
+     "dieName": "Découvrir un projet",
+     "nav": [
+      {
+       "section": "explore",
+       "text": "Explorer",
+       "button": [
+        408,
+        814,
+        122,
+        48
+       ],
+       "label": [
+        459,
+        829,
+        49,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "17.5px"
+      },
+      {
+       "section": "projects",
+       "text": "Projets",
+       "button": [
+        534,
+        814,
+        122,
+        48
+       ],
+       "label": [
+        589,
+        829,
+        42,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "17.5px"
+      },
+      {
+       "section": "people",
+       "text": "Profils",
+       "button": [
+        659,
+        814,
+        122,
+        48
+       ],
+       "label": [
+        717,
+        829,
+        36,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "17.5px"
+      },
+      {
+       "section": "journal",
+       "text": "Chroniques",
+       "button": [
+        785,
+        814,
+        122,
+        48
+       ],
+       "label": [
+        826,
+        829,
+        68,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "17.5px"
+      },
+      {
+       "section": "awards",
+       "text": "42 Awards",
+       "button": [
+        910,
+        814,
+        122,
+        48
+       ],
+       "label": [
+        954,
+        829,
+        64,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "17.5px"
+      }
+     ],
+     "overflow": false
+    },
+    "floatingUnionBox": {
+     "x": 672,
+     "y": 751,
+     "w": 96,
+     "h": 44,
+     "area": 4224
+    },
+    "stackUnionBox": {
+     "x": 402,
+     "y": 751,
+     "w": 636,
+     "h": 117,
+     "area": 74412
+    },
+    "stackCoveredArea": 42032,
+    "stackCoveredShare": 0.0324,
+    "textUnderStack": {
+     "area": 628,
+     "lines": [
+      "Un petit shell, et toutes les questions "
+     ]
+    },
+    "errors": []
+   },
+   "navLabelsUnchanged": true,
+   "dockUnchanged": true,
+   "floatingAreaBefore": 11088,
+   "floatingAreaAfter": 4224,
+   "floatingAreaSaved": 0.619,
+   "textAreaUnderStackBefore": 1316,
+   "textAreaUnderStackAfter": 628,
+   "pixelShare": 0.00193
+  },
+  {
+   "vue": "mobile",
+   "route": "projects",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    390,
+    844
+   ],
+   "avant": {
+    "geometry": {
+     "vw": 390,
+     "vh": 844,
+     "lang": "fr",
+     "dir": "ltr",
+     "section": "projects",
+     "toggle": {
+      "x": 69,
+      "y": 710,
+      "w": 200,
+      "h": 44
+     },
+     "die": {
+      "x": 277,
+      "y": 710,
+      "w": 44,
+      "h": 44
+     },
+     "dock": {
+      "x": 16,
+      "y": 767,
+      "w": 358,
+      "h": 60
+     },
+     "header": {
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 92
+     },
+     "scope": {
+      "x": 132.2,
+      "y": 84,
+      "w": 125.5,
+      "h": 46
+     },
+     "toggleName": "Rechercher dans Horizon",
+     "toggleTitle": "Rechercher dans Horizon",
+     "labelDisplay": "block",
+     "iconDisplay": "absent",
+     "toggleColor": "color(srgb 0.270588 0.311765 0.317647)",
+     "dieColor": "color(srgb 0.0455294 0.461294 0.465765)",
+     "toggleRadius": "22px",
+     "toggleBorder": "color(srgb 1 1 1 / 0.72)",
+     "dieBorder": "color(srgb 1 1 1 / 0.72)",
+     "toggleBg": "color(srgb 1 1 1 / 0.82)",
+     "dieBg": "color(srgb 1 1 1 / 0.82)",
+     "dieName": "Découvrir un projet",
+     "nav": [
+      {
+       "section": "explore",
+       "text": "Explorer",
+       "button": [
+        23,
+        773,
+        67,
+        48
+       ],
+       "label": [
+        37,
+        799,
+        39,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      },
+      {
+       "section": "projects",
+       "text": "Projets",
+       "button": [
+        92,
+        773,
+        67,
+        48
+       ],
+       "label": [
+        109,
+        799,
+        33,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      },
+      {
+       "section": "people",
+       "text": "Profils",
+       "button": [
+        161,
+        773,
+        67,
+        48
+       ],
+       "label": [
+        181,
+        799,
+        28,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      },
+      {
+       "section": "journal",
+       "text": "Chroniques",
+       "button": [
+        231,
+        773,
+        67,
+        48
+       ],
+       "label": [
+        237,
+        799,
+        54,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      },
+      {
+       "section": "awards",
+       "text": "42 Awards",
+       "button": [
+        300,
+        773,
+        67,
+        48
+       ],
+       "label": [
+        308,
+        799,
+        50,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      }
+     ],
+     "overflow": false
+    },
+    "floatingUnionBox": {
+     "x": 69,
+     "y": 710,
+     "w": 252,
+     "h": 44,
+     "area": 11088
+    },
+    "stackUnionBox": {
+     "x": 16,
+     "y": 710,
+     "w": 358,
+     "h": 117,
+     "area": 41886
+    },
+    "stackCoveredArea": 32216,
+    "stackCoveredShare": 0.0979,
+    "textUnderStack": {
+     "area": 2757,
+     "lines": [
+      "28 sept. 2026",
+      "42 Tokyo",
+      "21 sept. 2026"
+     ]
+    },
+    "errors": []
+   },
+   "apres": {
+    "geometry": {
+     "vw": 390,
+     "vh": 844,
+     "lang": "fr",
+     "dir": "ltr",
+     "section": "projects",
+     "toggle": {
+      "x": 147,
+      "y": 710,
+      "w": 44,
+      "h": 44
+     },
+     "die": {
+      "x": 199,
+      "y": 710,
+      "w": 44,
+      "h": 44
+     },
+     "dock": {
+      "x": 16,
+      "y": 767,
+      "w": 358,
+      "h": 60
+     },
+     "header": {
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 92
+     },
+     "scope": {
+      "x": 132.2,
+      "y": 84,
+      "w": 125.5,
+      "h": 46
+     },
+     "toggleName": "Rechercher dans Horizon",
+     "toggleTitle": "Rechercher dans Horizon",
+     "labelDisplay": "none",
+     "iconDisplay": "block",
+     "toggleColor": "color(srgb 0.0455294 0.461294 0.465765)",
+     "dieColor": "color(srgb 0.0455294 0.461294 0.465765)",
+     "toggleRadius": "22px",
+     "toggleBorder": "color(srgb 1 1 1 / 0.72)",
+     "dieBorder": "color(srgb 1 1 1 / 0.72)",
+     "toggleBg": "color(srgb 1 1 1 / 0.82)",
+     "dieBg": "color(srgb 1 1 1 / 0.82)",
+     "dieName": "Découvrir un projet",
+     "nav": [
+      {
+       "section": "explore",
+       "text": "Explorer",
+       "button": [
+        23,
+        773,
+        67,
+        48
+       ],
+       "label": [
+        37,
+        799,
+        39,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      },
+      {
+       "section": "projects",
+       "text": "Projets",
+       "button": [
+        92,
+        773,
+        67,
+        48
+       ],
+       "label": [
+        109,
+        799,
+        33,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      },
+      {
+       "section": "people",
+       "text": "Profils",
+       "button": [
+        161,
+        773,
+        67,
+        48
+       ],
+       "label": [
+        181,
+        799,
+        28,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      },
+      {
+       "section": "journal",
+       "text": "Chroniques",
+       "button": [
+        231,
+        773,
+        67,
+        48
+       ],
+       "label": [
+        237,
+        799,
+        54,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      },
+      {
+       "section": "awards",
+       "text": "42 Awards",
+       "button": [
+        300,
+        773,
+        67,
+        48
+       ],
+       "label": [
+        308,
+        799,
+        50,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      }
+     ],
+     "overflow": false
+    },
+    "floatingUnionBox": {
+     "x": 147,
+     "y": 710,
+     "w": 96,
+     "h": 44,
+     "area": 4224
+    },
+    "stackUnionBox": {
+     "x": 16,
+     "y": 710,
+     "w": 358,
+     "h": 117,
+     "area": 41886
+    },
+    "stackCoveredArea": 25352,
+    "stackCoveredShare": 0.077,
+    "textUnderStack": {
+     "area": 624,
+     "lines": [
+      "42 Tokyo"
+     ]
+    },
+    "errors": []
+   },
+   "navLabelsUnchanged": true,
+   "dockUnchanged": true,
+   "floatingAreaBefore": 11088,
+   "floatingAreaAfter": 4224,
+   "floatingAreaSaved": 0.619,
+   "textAreaUnderStackBefore": 2757,
+   "textAreaUnderStackAfter": 624,
+   "pixelShare": 0.01247
+  },
+  {
+   "vue": "petit",
+   "route": "projects",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    320,
+    640
+   ],
+   "avant": {
+    "geometry": {
+     "vw": 320,
+     "vh": 640,
+     "lang": "fr",
+     "dir": "ltr",
+     "section": "projects",
+     "toggle": {
+      "x": 34,
+      "y": 506,
+      "w": 200,
+      "h": 44
+     },
+     "die": {
+      "x": 242,
+      "y": 506,
+      "w": 44,
+      "h": 44
+     },
+     "dock": {
+      "x": 12,
+      "y": 563,
+      "w": 296,
+      "h": 60
+     },
+     "header": {
+      "x": 0,
+      "y": 0,
+      "w": 320,
+      "h": 78
+     },
+     "scope": {
+      "x": 97.5,
+      "y": 78,
+      "w": 125,
+      "h": 46
+     },
+     "toggleName": "Rechercher dans Horizon",
+     "toggleTitle": "Rechercher dans Horizon",
+     "labelDisplay": "block",
+     "iconDisplay": "absent",
+     "toggleColor": "color(srgb 0.270588 0.311765 0.317647)",
+     "dieColor": "color(srgb 0.0455294 0.461294 0.465765)",
+     "toggleRadius": "22px",
+     "toggleBorder": "color(srgb 1 1 1 / 0.72)",
+     "dieBorder": "color(srgb 1 1 1 / 0.72)",
+     "toggleBg": "color(srgb 1 1 1 / 0.82)",
+     "dieBg": "color(srgb 1 1 1 / 0.82)",
+     "dieName": "Découvrir un projet",
+     "nav": [
+      {
+       "section": "explore",
+       "text": "Explorer",
+       "button": [
+        19,
+        569,
+        48,
+        48
+       ],
+       "label": [
+        24,
+        603,
+        39,
+        0
+       ],
+       "opacity": "0",
+       "blockSize": "0px"
+      },
+      {
+       "section": "projects",
+       "text": "Projets",
+       "button": [
+        69,
+        569,
+        82,
+        48
+       ],
+       "label": [
+        94,
+        595,
+        33,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      },
+      {
+       "section": "people",
+       "text": "Profils",
+       "button": [
+        153,
+        569,
+        48,
+        48
+       ],
+       "label": [
+        163,
+        603,
+        28,
+        0
+       ],
+       "opacity": "0",
+       "blockSize": "0px"
+      },
+      {
+       "section": "journal",
+       "text": "Chroniques",
+       "button": [
+        203,
+        569,
+        48,
+        48
+       ],
+       "label": [
+        205,
+        603,
+        44,
+        0
+       ],
+       "opacity": "0",
+       "blockSize": "0px"
+      },
+      {
+       "section": "awards",
+       "text": "42 Awards",
+       "button": [
+        253,
+        569,
+        48,
+        48
+       ],
+       "label": [
+        255,
+        603,
+        44,
+        0
+       ],
+       "opacity": "0",
+       "blockSize": "0px"
+      }
+     ],
+     "overflow": false
+    },
+    "floatingUnionBox": {
+     "x": 34,
+     "y": 506,
+     "w": 252,
+     "h": 44,
+     "area": 11088
+    },
+    "stackUnionBox": {
+     "x": 12,
+     "y": 506,
+     "w": 296,
+     "h": 117,
+     "area": 34632
+    },
+    "stackCoveredArea": 28496,
+    "stackCoveredShare": 0.1391,
+    "textUnderStack": {
+     "area": 6227,
+     "lines": [
+      "Luiza Costa",
+      "+",
+      "Cinq regards pour imaginer une applicati",
+      "Leïla Mansour",
+      "Un petit shell, et toutes les questions "
+     ]
+    },
+    "errors": []
+   },
+   "apres": {
+    "geometry": {
+     "vw": 320,
+     "vh": 640,
+     "lang": "fr",
+     "dir": "ltr",
+     "section": "projects",
+     "toggle": {
+      "x": 112,
+      "y": 506,
+      "w": 44,
+      "h": 44
+     },
+     "die": {
+      "x": 164,
+      "y": 506,
+      "w": 44,
+      "h": 44
+     },
+     "dock": {
+      "x": 12,
+      "y": 563,
+      "w": 296,
+      "h": 60
+     },
+     "header": {
+      "x": 0,
+      "y": 0,
+      "w": 320,
+      "h": 78
+     },
+     "scope": {
+      "x": 97.5,
+      "y": 78,
+      "w": 125,
+      "h": 46
+     },
+     "toggleName": "Rechercher dans Horizon",
+     "toggleTitle": "Rechercher dans Horizon",
+     "labelDisplay": "none",
+     "iconDisplay": "block",
+     "toggleColor": "color(srgb 0.0455294 0.461294 0.465765)",
+     "dieColor": "color(srgb 0.0455294 0.461294 0.465765)",
+     "toggleRadius": "22px",
+     "toggleBorder": "color(srgb 1 1 1 / 0.72)",
+     "dieBorder": "color(srgb 1 1 1 / 0.72)",
+     "toggleBg": "color(srgb 1 1 1 / 0.82)",
+     "dieBg": "color(srgb 1 1 1 / 0.82)",
+     "dieName": "Découvrir un projet",
+     "nav": [
+      {
+       "section": "explore",
+       "text": "Explorer",
+       "button": [
+        19,
+        569,
+        48,
+        48
+       ],
+       "label": [
+        24,
+        603,
+        39,
+        0
+       ],
+       "opacity": "0",
+       "blockSize": "0px"
+      },
+      {
+       "section": "projects",
+       "text": "Projets",
+       "button": [
+        69,
+        569,
+        82,
+        48
+       ],
+       "label": [
+        94,
+        595,
+        33,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      },
+      {
+       "section": "people",
+       "text": "Profils",
+       "button": [
+        153,
+        569,
+        48,
+        48
+       ],
+       "label": [
+        163,
+        603,
+        28,
+        0
+       ],
+       "opacity": "0",
+       "blockSize": "0px"
+      },
+      {
+       "section": "journal",
+       "text": "Chroniques",
+       "button": [
+        203,
+        569,
+        48,
+        48
+       ],
+       "label": [
+        205,
+        603,
+        44,
+        0
+       ],
+       "opacity": "0",
+       "blockSize": "0px"
+      },
+      {
+       "section": "awards",
+       "text": "42 Awards",
+       "button": [
+        253,
+        569,
+        48,
+        48
+       ],
+       "label": [
+        255,
+        603,
+        44,
+        0
+       ],
+       "opacity": "0",
+       "blockSize": "0px"
+      }
+     ],
+     "overflow": false
+    },
+    "floatingUnionBox": {
+     "x": 112,
+     "y": 506,
+     "w": 96,
+     "h": 44,
+     "area": 4224
+    },
+    "stackUnionBox": {
+     "x": 12,
+     "y": 506,
+     "w": 296,
+     "h": 117,
+     "area": 34632
+    },
+    "stackCoveredArea": 21632,
+    "stackCoveredShare": 0.1056,
+    "textUnderStack": {
+     "area": 2012,
+     "lines": [
+      "+",
+      "Cinq regards pour imaginer une applicati",
+      "Leïla Mansour",
+      "Un petit shell, et toutes les questions "
+     ]
+    },
+    "errors": []
+   },
+   "navLabelsUnchanged": true,
+   "dockUnchanged": true,
+   "floatingAreaBefore": 11088,
+   "floatingAreaAfter": 4224,
+   "floatingAreaSaved": 0.619,
+   "textAreaUnderStackBefore": 6227,
+   "textAreaUnderStackAfter": 2012,
+   "pixelShare": 0.01409
+  },
+  {
+   "vue": "ar-sombre-mobile",
+   "route": "projects",
+   "theme": "dark",
+   "lang": "ar",
+   "viewport": [
+    390,
+    844
+   ],
+   "avant": {
+    "geometry": {
+     "vw": 390,
+     "vh": 844,
+     "lang": "ar",
+     "dir": "rtl",
+     "section": "projects",
+     "toggle": {
+      "x": 121,
+      "y": 710,
+      "w": 200,
+      "h": 44
+     },
+     "die": {
+      "x": 69,
+      "y": 710,
+      "w": 44,
+      "h": 44
+     },
+     "dock": {
+      "x": 16,
+      "y": 767,
+      "w": 358,
+      "h": 60
+     },
+     "header": {
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 92
+     },
+     "scope": {
+      "x": 138.5,
+      "y": 84,
+      "w": 113.1,
+      "h": 48
+     },
+     "toggleName": "البحث في أفق",
+     "toggleTitle": "البحث في أفق",
+     "labelDisplay": "block",
+     "iconDisplay": "absent",
+     "toggleColor": "color(srgb 0.771373 0.829608 0.829608)",
+     "dieColor": "color(srgb 0.957647 0.522353 0.741176)",
+     "toggleRadius": "22px",
+     "toggleBorder": "color(srgb 1 1 1 / 0.25)",
+     "dieBorder": "color(srgb 1 1 1 / 0.25)",
+     "toggleBg": "color(srgb 0.160784 0.160784 0.180392 / 0.82)",
+     "dieBg": "color(srgb 0.160784 0.160784 0.180392 / 0.82)",
+     "dieName": "اكتشف مشروعًا",
+     "nav": [
+      {
+       "section": "explore",
+       "text": "استكشف",
+       "button": [
+        300,
+        773,
+        67,
+        48
+       ],
+       "label": [
+        312,
+        799,
+        42,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      },
+      {
+       "section": "projects",
+       "text": "المشاريع",
+       "button": [
+        231,
+        773,
+        67,
+        48
+       ],
+       "label": [
+        245,
+        799,
+        38,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      },
+      {
+       "section": "people",
+       "text": "الأعضاء",
+       "button": [
+        161,
+        773,
+        67,
+        48
+       ],
+       "label": [
+        179,
+        799,
+        33,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      },
+      {
+       "section": "journal",
+       "text": "حكايات",
+       "button": [
+        92,
+        773,
+        67,
+        48
+       ],
+       "label": [
+        109,
+        799,
+        33,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      },
+      {
+       "section": "awards",
+       "text": "جوائز 42",
+       "button": [
+        23,
+        773,
+        67,
+        48
+       ],
+       "label": [
+        38,
+        799,
+        38,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      }
+     ],
+     "overflow": false
+    },
+    "floatingUnionBox": {
+     "x": 69,
+     "y": 710,
+     "w": 252,
+     "h": 44,
+     "area": 11088
+    },
+    "stackUnionBox": {
+     "x": 16,
+     "y": 710,
+     "w": 358,
+     "h": 117,
+     "area": 41886
+    },
+    "stackCoveredArea": 32216,
+    "stackCoveredShare": 0.0979,
+    "textUnderStack": {
+     "area": 0,
+     "lines": []
+    },
+    "errors": []
+   },
+   "apres": {
+    "geometry": {
+     "vw": 390,
+     "vh": 844,
+     "lang": "ar",
+     "dir": "rtl",
+     "section": "projects",
+     "toggle": {
+      "x": 199,
+      "y": 710,
+      "w": 44,
+      "h": 44
+     },
+     "die": {
+      "x": 147,
+      "y": 710,
+      "w": 44,
+      "h": 44
+     },
+     "dock": {
+      "x": 16,
+      "y": 767,
+      "w": 358,
+      "h": 60
+     },
+     "header": {
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 92
+     },
+     "scope": {
+      "x": 138.5,
+      "y": 84,
+      "w": 113.1,
+      "h": 48
+     },
+     "toggleName": "البحث في أفق",
+     "toggleTitle": "البحث في أفق",
+     "labelDisplay": "none",
+     "iconDisplay": "block",
+     "toggleColor": "color(srgb 0.957647 0.522353 0.741176)",
+     "dieColor": "color(srgb 0.957647 0.522353 0.741176)",
+     "toggleRadius": "22px",
+     "toggleBorder": "color(srgb 1 1 1 / 0.25)",
+     "dieBorder": "color(srgb 1 1 1 / 0.25)",
+     "toggleBg": "color(srgb 0.160784 0.160784 0.180392 / 0.82)",
+     "dieBg": "color(srgb 0.160784 0.160784 0.180392 / 0.82)",
+     "dieName": "اكتشف مشروعًا",
+     "nav": [
+      {
+       "section": "explore",
+       "text": "استكشف",
+       "button": [
+        300,
+        773,
+        67,
+        48
+       ],
+       "label": [
+        312,
+        799,
+        42,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      },
+      {
+       "section": "projects",
+       "text": "المشاريع",
+       "button": [
+        231,
+        773,
+        67,
+        48
+       ],
+       "label": [
+        245,
+        799,
+        38,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      },
+      {
+       "section": "people",
+       "text": "الأعضاء",
+       "button": [
+        161,
+        773,
+        67,
+        48
+       ],
+       "label": [
+        179,
+        799,
+        33,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      },
+      {
+       "section": "journal",
+       "text": "حكايات",
+       "button": [
+        92,
+        773,
+        67,
+        48
+       ],
+       "label": [
+        109,
+        799,
+        33,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      },
+      {
+       "section": "awards",
+       "text": "جوائز 42",
+       "button": [
+        23,
+        773,
+        67,
+        48
+       ],
+       "label": [
+        38,
+        799,
+        38,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      }
+     ],
+     "overflow": false
+    },
+    "floatingUnionBox": {
+     "x": 147,
+     "y": 710,
+     "w": 96,
+     "h": 44,
+     "area": 4224
+    },
+    "stackUnionBox": {
+     "x": 16,
+     "y": 710,
+     "w": 358,
+     "h": 117,
+     "area": 41886
+    },
+    "stackCoveredArea": 25352,
+    "stackCoveredShare": 0.077,
+    "textUnderStack": {
+     "area": 0,
+     "lines": []
+    },
+    "errors": []
+   },
+   "navLabelsUnchanged": true,
+   "dockUnchanged": true,
+   "floatingAreaBefore": 11088,
+   "floatingAreaAfter": 4224,
+   "floatingAreaSaved": 0.619,
+   "textAreaUnderStackBefore": 0,
+   "textAreaUnderStackAfter": 0,
+   "pixelShare": 0.02509
+  },
+  {
+   "vue": "fiche-commentaires-ordinateur",
+   "route": "projects/ft-transcendence-building-together?tab=comments",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "avant": {
+    "geometry": {
+     "vw": 1440,
+     "vh": 900,
+     "lang": "fr",
+     "dir": "ltr",
+     "section": "projects",
+     "toggle": {
+      "x": 594,
+      "y": 751,
+      "w": 200,
+      "h": 44
+     },
+     "die": {
+      "x": 802,
+      "y": 751,
+      "w": 44,
+      "h": 44
+     },
+     "dock": {
+      "x": 402,
+      "y": 808,
+      "w": 636,
+      "h": 60
+     },
+     "header": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 124
+     },
+     "scope": {
+      "x": 658.9,
+      "y": 40,
+      "w": 122.2,
+      "h": 48
+     },
+     "toggleName": "Rechercher dans Horizon",
+     "toggleTitle": "Rechercher dans Horizon",
+     "labelDisplay": "block",
+     "iconDisplay": "absent",
+     "toggleColor": "color(srgb 0.270588 0.311765 0.317647)",
+     "dieColor": "color(srgb 0.0455294 0.461294 0.465765)",
+     "toggleRadius": "22px",
+     "toggleBorder": "color(srgb 1 1 1 / 0.72)",
+     "dieBorder": "color(srgb 1 1 1 / 0.72)",
+     "toggleBg": "color(srgb 1 1 1 / 0.82)",
+     "dieBg": "color(srgb 1 1 1 / 0.82)",
+     "dieName": "Découvrir un projet",
+     "nav": [
+      {
+       "section": "explore",
+       "text": "Explorer",
+       "button": [
+        408,
+        814,
+        122,
+        48
+       ],
+       "label": [
+        459,
+        829,
+        49,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "17.5px"
+      },
+      {
+       "section": "projects",
+       "text": "Projets",
+       "button": [
+        534,
+        814,
+        122,
+        48
+       ],
+       "label": [
+        589,
+        829,
+        42,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "17.5px"
+      },
+      {
+       "section": "people",
+       "text": "Profils",
+       "button": [
+        659,
+        814,
+        122,
+        48
+       ],
+       "label": [
+        717,
+        829,
+        36,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "17.5px"
+      },
+      {
+       "section": "journal",
+       "text": "Chroniques",
+       "button": [
+        785,
+        814,
+        122,
+        48
+       ],
+       "label": [
+        826,
+        829,
+        68,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "17.5px"
+      },
+      {
+       "section": "awards",
+       "text": "42 Awards",
+       "button": [
+        910,
+        814,
+        122,
+        48
+       ],
+       "label": [
+        954,
+        829,
+        64,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "17.5px"
+      }
+     ],
+     "overflow": false
+    },
+    "floatingUnionBox": {
+     "x": 594,
+     "y": 751,
+     "w": 252,
+     "h": 44,
+     "area": 11088
+    },
+    "stackUnionBox": {
+     "x": 402,
+     "y": 751,
+     "w": 636,
+     "h": 117,
+     "area": 74412
+    },
+    "stackCoveredArea": 48896,
+    "stackCoveredShare": 0.0377,
+    "textUnderStack": {
+     "area": 2619,
+     "lines": [
+      "Ouvrez la discussion en partageant votre"
+     ]
+    },
+    "errors": []
+   },
+   "apres": {
+    "geometry": {
+     "vw": 1440,
+     "vh": 900,
+     "lang": "fr",
+     "dir": "ltr",
+     "section": "projects",
+     "toggle": {
+      "x": 672,
+      "y": 751,
+      "w": 44,
+      "h": 44
+     },
+     "die": {
+      "x": 724,
+      "y": 751,
+      "w": 44,
+      "h": 44
+     },
+     "dock": {
+      "x": 402,
+      "y": 808,
+      "w": 636,
+      "h": 60
+     },
+     "header": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 124
+     },
+     "scope": {
+      "x": 658.9,
+      "y": 40,
+      "w": 122.2,
+      "h": 48
+     },
+     "toggleName": "Rechercher dans Horizon",
+     "toggleTitle": "Rechercher dans Horizon",
+     "labelDisplay": "none",
+     "iconDisplay": "block",
+     "toggleColor": "color(srgb 0.0455294 0.461294 0.465765)",
+     "dieColor": "color(srgb 0.0455294 0.461294 0.465765)",
+     "toggleRadius": "22px",
+     "toggleBorder": "color(srgb 1 1 1 / 0.72)",
+     "dieBorder": "color(srgb 1 1 1 / 0.72)",
+     "toggleBg": "color(srgb 1 1 1 / 0.82)",
+     "dieBg": "color(srgb 1 1 1 / 0.82)",
+     "dieName": "Découvrir un projet",
+     "nav": [
+      {
+       "section": "explore",
+       "text": "Explorer",
+       "button": [
+        408,
+        814,
+        122,
+        48
+       ],
+       "label": [
+        459,
+        829,
+        49,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "17.5px"
+      },
+      {
+       "section": "projects",
+       "text": "Projets",
+       "button": [
+        534,
+        814,
+        122,
+        48
+       ],
+       "label": [
+        589,
+        829,
+        42,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "17.5px"
+      },
+      {
+       "section": "people",
+       "text": "Profils",
+       "button": [
+        659,
+        814,
+        122,
+        48
+       ],
+       "label": [
+        717,
+        829,
+        36,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "17.5px"
+      },
+      {
+       "section": "journal",
+       "text": "Chroniques",
+       "button": [
+        785,
+        814,
+        122,
+        48
+       ],
+       "label": [
+        826,
+        829,
+        68,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "17.5px"
+      },
+      {
+       "section": "awards",
+       "text": "42 Awards",
+       "button": [
+        910,
+        814,
+        122,
+        48
+       ],
+       "label": [
+        954,
+        829,
+        64,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "17.5px"
+      }
+     ],
+     "overflow": false
+    },
+    "floatingUnionBox": {
+     "x": 672,
+     "y": 751,
+     "w": 96,
+     "h": 44,
+     "area": 4224
+    },
+    "stackUnionBox": {
+     "x": 402,
+     "y": 751,
+     "w": 636,
+     "h": 117,
+     "area": 74412
+    },
+    "stackCoveredArea": 42032,
+    "stackCoveredShare": 0.0324,
+    "textUnderStack": {
+     "area": 945,
+     "lines": [
+      "Ouvrez la discussion en partageant votre"
+     ]
+    },
+    "errors": []
+   },
+   "navLabelsUnchanged": true,
+   "dockUnchanged": true,
+   "floatingAreaBefore": 11088,
+   "floatingAreaAfter": 4224,
+   "floatingAreaSaved": 0.619,
+   "textAreaUnderStackBefore": 2619,
+   "textAreaUnderStackAfter": 945,
+   "pixelShare": 0.0022
+  },
+  {
+   "vue": "fiche-ordinateur",
+   "route": "projects/ft-transcendence-building-together?tab=overview",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "avant": {
+    "geometry": {
+     "vw": 1440,
+     "vh": 900,
+     "lang": "fr",
+     "dir": "ltr",
+     "section": "projects",
+     "toggle": {
+      "x": 594,
+      "y": 751,
+      "w": 200,
+      "h": 44
+     },
+     "die": {
+      "x": 802,
+      "y": 751,
+      "w": 44,
+      "h": 44
+     },
+     "dock": {
+      "x": 402,
+      "y": 808,
+      "w": 636,
+      "h": 60
+     },
+     "header": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 124
+     },
+     "scope": {
+      "x": 658.9,
+      "y": 40,
+      "w": 122.2,
+      "h": 48
+     },
+     "toggleName": "Rechercher dans Horizon",
+     "toggleTitle": "Rechercher dans Horizon",
+     "labelDisplay": "block",
+     "iconDisplay": "absent",
+     "toggleColor": "color(srgb 0.270588 0.311765 0.317647)",
+     "dieColor": "color(srgb 0.0455294 0.461294 0.465765)",
+     "toggleRadius": "22px",
+     "toggleBorder": "color(srgb 1 1 1 / 0.72)",
+     "dieBorder": "color(srgb 1 1 1 / 0.72)",
+     "toggleBg": "color(srgb 1 1 1 / 0.82)",
+     "dieBg": "color(srgb 1 1 1 / 0.82)",
+     "dieName": "Découvrir un projet",
+     "nav": [
+      {
+       "section": "explore",
+       "text": "Explorer",
+       "button": [
+        408,
+        814,
+        122,
+        48
+       ],
+       "label": [
+        459,
+        829,
+        49,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "17.5px"
+      },
+      {
+       "section": "projects",
+       "text": "Projets",
+       "button": [
+        534,
+        814,
+        122,
+        48
+       ],
+       "label": [
+        589,
+        829,
+        42,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "17.5px"
+      },
+      {
+       "section": "people",
+       "text": "Profils",
+       "button": [
+        659,
+        814,
+        122,
+        48
+       ],
+       "label": [
+        717,
+        829,
+        36,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "17.5px"
+      },
+      {
+       "section": "journal",
+       "text": "Chroniques",
+       "button": [
+        785,
+        814,
+        122,
+        48
+       ],
+       "label": [
+        826,
+        829,
+        68,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "17.5px"
+      },
+      {
+       "section": "awards",
+       "text": "42 Awards",
+       "button": [
+        910,
+        814,
+        122,
+        48
+       ],
+       "label": [
+        954,
+        829,
+        64,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "17.5px"
+      }
+     ],
+     "overflow": false
+    },
+    "floatingUnionBox": {
+     "x": 594,
+     "y": 751,
+     "w": 252,
+     "h": 44,
+     "area": 11088
+    },
+    "stackUnionBox": {
+     "x": 402,
+     "y": 751,
+     "w": 636,
+     "h": 117,
+     "area": 74412
+    },
+    "stackCoveredArea": 48896,
+    "stackCoveredShare": 0.0377,
+    "textUnderStack": {
+     "area": 4636,
+     "lines": [
+      "Ce visuel accompagne le projet fictif. I"
+     ]
+    },
+    "errors": []
+   },
+   "apres": {
+    "geometry": {
+     "vw": 1440,
+     "vh": 900,
+     "lang": "fr",
+     "dir": "ltr",
+     "section": "projects",
+     "toggle": {
+      "x": 672,
+      "y": 751,
+      "w": 44,
+      "h": 44
+     },
+     "die": {
+      "x": 724,
+      "y": 751,
+      "w": 44,
+      "h": 44
+     },
+     "dock": {
+      "x": 402,
+      "y": 808,
+      "w": 636,
+      "h": 60
+     },
+     "header": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 124
+     },
+     "scope": {
+      "x": 658.9,
+      "y": 40,
+      "w": 122.2,
+      "h": 48
+     },
+     "toggleName": "Rechercher dans Horizon",
+     "toggleTitle": "Rechercher dans Horizon",
+     "labelDisplay": "none",
+     "iconDisplay": "block",
+     "toggleColor": "color(srgb 0.0455294 0.461294 0.465765)",
+     "dieColor": "color(srgb 0.0455294 0.461294 0.465765)",
+     "toggleRadius": "22px",
+     "toggleBorder": "color(srgb 1 1 1 / 0.72)",
+     "dieBorder": "color(srgb 1 1 1 / 0.72)",
+     "toggleBg": "color(srgb 1 1 1 / 0.82)",
+     "dieBg": "color(srgb 1 1 1 / 0.82)",
+     "dieName": "Découvrir un projet",
+     "nav": [
+      {
+       "section": "explore",
+       "text": "Explorer",
+       "button": [
+        408,
+        814,
+        122,
+        48
+       ],
+       "label": [
+        459,
+        829,
+        49,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "17.5px"
+      },
+      {
+       "section": "projects",
+       "text": "Projets",
+       "button": [
+        534,
+        814,
+        122,
+        48
+       ],
+       "label": [
+        589,
+        829,
+        42,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "17.5px"
+      },
+      {
+       "section": "people",
+       "text": "Profils",
+       "button": [
+        659,
+        814,
+        122,
+        48
+       ],
+       "label": [
+        717,
+        829,
+        36,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "17.5px"
+      },
+      {
+       "section": "journal",
+       "text": "Chroniques",
+       "button": [
+        785,
+        814,
+        122,
+        48
+       ],
+       "label": [
+        826,
+        829,
+        68,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "17.5px"
+      },
+      {
+       "section": "awards",
+       "text": "42 Awards",
+       "button": [
+        910,
+        814,
+        122,
+        48
+       ],
+       "label": [
+        954,
+        829,
+        64,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "17.5px"
+      }
+     ],
+     "overflow": false
+    },
+    "floatingUnionBox": {
+     "x": 672,
+     "y": 751,
+     "w": 96,
+     "h": 44,
+     "area": 4224
+    },
+    "stackUnionBox": {
+     "x": 402,
+     "y": 751,
+     "w": 636,
+     "h": 117,
+     "area": 74412
+    },
+    "stackCoveredArea": 42032,
+    "stackCoveredShare": 0.0324,
+    "textUnderStack": {
+     "area": 1672,
+     "lines": [
+      "Ce visuel accompagne le projet fictif. I"
+     ]
+    },
+    "errors": []
+   },
+   "navLabelsUnchanged": true,
+   "dockUnchanged": true,
+   "floatingAreaBefore": 11088,
+   "floatingAreaAfter": 4224,
+   "floatingAreaSaved": 0.619,
+   "textAreaUnderStackBefore": 4636,
+   "textAreaUnderStackAfter": 1672,
+   "pixelShare": 0.00224
+  },
+  {
+   "vue": "fiche-mobile",
+   "route": "projects/ft-transcendence-building-together?tab=overview",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    390,
+    844
+   ],
+   "avant": {
+    "geometry": {
+     "vw": 390,
+     "vh": 844,
+     "lang": "fr",
+     "dir": "ltr",
+     "section": "projects",
+     "toggle": {
+      "x": 69,
+      "y": 710,
+      "w": 200,
+      "h": 44
+     },
+     "die": {
+      "x": 277,
+      "y": 710,
+      "w": 44,
+      "h": 44
+     },
+     "dock": {
+      "x": 16,
+      "y": 767,
+      "w": 358,
+      "h": 60
+     },
+     "header": {
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 92
+     },
+     "scope": {
+      "x": 141.7,
+      "y": 84,
+      "w": 106.5,
+      "h": 38
+     },
+     "toggleName": "Rechercher dans Horizon",
+     "toggleTitle": "Rechercher dans Horizon",
+     "labelDisplay": "block",
+     "iconDisplay": "absent",
+     "toggleColor": "color(srgb 0.270588 0.311765 0.317647)",
+     "dieColor": "color(srgb 0.0455294 0.461294 0.465765)",
+     "toggleRadius": "22px",
+     "toggleBorder": "color(srgb 1 1 1 / 0.72)",
+     "dieBorder": "color(srgb 1 1 1 / 0.72)",
+     "toggleBg": "color(srgb 1 1 1 / 0.82)",
+     "dieBg": "color(srgb 1 1 1 / 0.82)",
+     "dieName": "Découvrir un projet",
+     "nav": [
+      {
+       "section": "explore",
+       "text": "Explorer",
+       "button": [
+        23,
+        773,
+        67,
+        48
+       ],
+       "label": [
+        37,
+        799,
+        39,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      },
+      {
+       "section": "projects",
+       "text": "Projets",
+       "button": [
+        92,
+        773,
+        67,
+        48
+       ],
+       "label": [
+        109,
+        799,
+        33,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      },
+      {
+       "section": "people",
+       "text": "Profils",
+       "button": [
+        161,
+        773,
+        67,
+        48
+       ],
+       "label": [
+        181,
+        799,
+        28,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      },
+      {
+       "section": "journal",
+       "text": "Chroniques",
+       "button": [
+        231,
+        773,
+        67,
+        48
+       ],
+       "label": [
+        237,
+        799,
+        54,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      },
+      {
+       "section": "awards",
+       "text": "42 Awards",
+       "button": [
+        300,
+        773,
+        67,
+        48
+       ],
+       "label": [
+        308,
+        799,
+        50,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      }
+     ],
+     "overflow": false
+    },
+    "floatingUnionBox": {
+     "x": 69,
+     "y": 710,
+     "w": 252,
+     "h": 44,
+     "area": 11088
+    },
+    "stackUnionBox": {
+     "x": 16,
+     "y": 710,
+     "w": 358,
+     "h": 117,
+     "area": 41886
+    },
+    "stackCoveredArea": 32216,
+    "stackCoveredShare": 0.0979,
+    "textUnderStack": {
+     "area": 4914,
+     "lines": [
+      "Illustration",
+      "Ce visuel accompagne le projet fictif. I"
+     ]
+    },
+    "errors": []
+   },
+   "apres": {
+    "geometry": {
+     "vw": 390,
+     "vh": 844,
+     "lang": "fr",
+     "dir": "ltr",
+     "section": "projects",
+     "toggle": {
+      "x": 147,
+      "y": 710,
+      "w": 44,
+      "h": 44
+     },
+     "die": {
+      "x": 199,
+      "y": 710,
+      "w": 44,
+      "h": 44
+     },
+     "dock": {
+      "x": 16,
+      "y": 767,
+      "w": 358,
+      "h": 60
+     },
+     "header": {
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 92
+     },
+     "scope": {
+      "x": 141.7,
+      "y": 84,
+      "w": 106.5,
+      "h": 38
+     },
+     "toggleName": "Rechercher dans Horizon",
+     "toggleTitle": "Rechercher dans Horizon",
+     "labelDisplay": "none",
+     "iconDisplay": "block",
+     "toggleColor": "color(srgb 0.0455294 0.461294 0.465765)",
+     "dieColor": "color(srgb 0.0455294 0.461294 0.465765)",
+     "toggleRadius": "22px",
+     "toggleBorder": "color(srgb 1 1 1 / 0.72)",
+     "dieBorder": "color(srgb 1 1 1 / 0.72)",
+     "toggleBg": "color(srgb 1 1 1 / 0.82)",
+     "dieBg": "color(srgb 1 1 1 / 0.82)",
+     "dieName": "Découvrir un projet",
+     "nav": [
+      {
+       "section": "explore",
+       "text": "Explorer",
+       "button": [
+        23,
+        773,
+        67,
+        48
+       ],
+       "label": [
+        37,
+        799,
+        39,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      },
+      {
+       "section": "projects",
+       "text": "Projets",
+       "button": [
+        92,
+        773,
+        67,
+        48
+       ],
+       "label": [
+        109,
+        799,
+        33,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      },
+      {
+       "section": "people",
+       "text": "Profils",
+       "button": [
+        161,
+        773,
+        67,
+        48
+       ],
+       "label": [
+        181,
+        799,
+        28,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      },
+      {
+       "section": "journal",
+       "text": "Chroniques",
+       "button": [
+        231,
+        773,
+        67,
+        48
+       ],
+       "label": [
+        237,
+        799,
+        54,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      },
+      {
+       "section": "awards",
+       "text": "42 Awards",
+       "button": [
+        300,
+        773,
+        67,
+        48
+       ],
+       "label": [
+        308,
+        799,
+        50,
+        18
+       ],
+       "opacity": "1",
+       "blockSize": "18px"
+      }
+     ],
+     "overflow": false
+    },
+    "floatingUnionBox": {
+     "x": 147,
+     "y": 710,
+     "w": 96,
+     "h": 44,
+     "area": 4224
+    },
+    "stackUnionBox": {
+     "x": 16,
+     "y": 710,
+     "w": 358,
+     "h": 117,
+     "area": 41886
+    },
+    "stackCoveredArea": 25352,
+    "stackCoveredShare": 0.077,
+    "textUnderStack": {
+     "area": 1672,
+     "lines": [
+      "Ce visuel accompagne le projet fictif. I"
+     ]
+    },
+    "errors": []
+   },
+   "navLabelsUnchanged": true,
+   "dockUnchanged": true,
+   "floatingAreaBefore": 11088,
+   "floatingAreaAfter": 4224,
+   "floatingAreaSaved": 0.619,
+   "textAreaUnderStackBefore": 4914,
+   "textAreaUnderStackAfter": 1672,
+   "pixelShare": 0.00883
+  }
+ ],
+ "search": [
+  {
+   "vue": "ordinateur",
+   "essais": [],
+   "openedFocus": "dock-search-input",
+   "results": 8,
+   "status": "8 résultats",
+   "firstResult": "42 Paris",
+   "closed": true,
+   "focusBackOnToggle": true,
+   "focusVisible": true,
+   "outline": "solid 2px rgb(0, 142, 144)",
+   "toggleAfterClose": [
+    200,
+    44
+   ],
+   "errors": []
+  },
+  {
+   "vue": "ordinateur",
+   "essais": [
+    "recherche-repliee"
+   ],
+   "openedFocus": "dock-search-input",
+   "results": 8,
+   "status": "8 résultats",
+   "firstResult": "42 Paris",
+   "closed": true,
+   "focusBackOnToggle": true,
+   "focusVisible": true,
+   "outline": "solid 2px rgb(0, 142, 144)",
+   "toggleAfterClose": [
+    44,
+    44
+   ],
+   "errors": []
+  },
+  {
+   "vue": "mobile",
+   "essais": [],
+   "openedFocus": "dock-search-input",
+   "results": 8,
+   "status": "8 résultats",
+   "firstResult": "42 Paris",
+   "closed": true,
+   "focusBackOnToggle": true,
+   "focusVisible": true,
+   "outline": "solid 2px rgb(0, 142, 144)",
+   "toggleAfterClose": [
+    200,
+    44
+   ],
+   "errors": []
+  },
+  {
+   "vue": "mobile",
+   "essais": [
+    "recherche-repliee"
+   ],
+   "openedFocus": "dock-search-input",
+   "results": 8,
+   "status": "8 résultats",
+   "firstResult": "42 Paris",
+   "closed": true,
+   "focusBackOnToggle": true,
+   "focusVisible": true,
+   "outline": "solid 2px rgb(0, 142, 144)",
+   "toggleAfterClose": [
+    44,
+    44
+   ],
+   "errors": []
+  }
+ ],
+ "names": [
+  {
+   "lang": "en",
+   "toggleName": "Search Horizon",
+   "toggleTitle": "Search Horizon",
+   "dieName": "Discover a profile",
+   "section": "people",
+   "toggle": {
+    "x": 672,
+    "y": 751,
+    "w": 44,
+    "h": 44
+   },
+   "die": {
+    "x": 724,
+    "y": 751,
+    "w": 44,
+    "h": 44
+   }
+  },
+  {
+   "lang": "fr",
+   "vue": "ordinateur",
+   "toggleName": "Rechercher dans Horizon",
+   "toggleTitle": "Rechercher dans Horizon",
+   "dir": "ltr",
+   "toggle": {
+    "x": 672,
+    "y": 751,
+    "w": 44,
+    "h": 44
+   },
+   "die": {
+    "x": 724,
+    "y": 751,
+    "w": 44,
+    "h": 44
+   }
+  },
+  {
+   "lang": "fr",
+   "vue": "mobile",
+   "toggleName": "Rechercher dans Horizon",
+   "toggleTitle": "Rechercher dans Horizon",
+   "dir": "ltr",
+   "toggle": {
+    "x": 147,
+    "y": 710,
+    "w": 44,
+    "h": 44
+   },
+   "die": {
+    "x": 199,
+    "y": 710,
+    "w": 44,
+    "h": 44
+   }
+  },
+  {
+   "lang": "fr",
+   "vue": "petit",
+   "toggleName": "Rechercher dans Horizon",
+   "toggleTitle": "Rechercher dans Horizon",
+   "dir": "ltr",
+   "toggle": {
+    "x": 112,
+    "y": 506,
+    "w": 44,
+    "h": 44
+   },
+   "die": {
+    "x": 164,
+    "y": 506,
+    "w": 44,
+    "h": 44
+   }
+  },
+  {
+   "lang": "ar",
+   "vue": "ar-sombre-mobile",
+   "toggleName": "البحث في أفق",
+   "toggleTitle": "البحث في أفق",
+   "dir": "rtl",
+   "toggle": {
+    "x": 199,
+    "y": 710,
+    "w": 44,
+    "h": 44
+   },
+   "die": {
+    "x": 147,
+    "y": 710,
+    "w": 44,
+    "h": 44
+   }
+  },
+  {
+   "lang": "fr",
+   "vue": "fiche-commentaires-ordinateur",
+   "toggleName": "Rechercher dans Horizon",
+   "toggleTitle": "Rechercher dans Horizon",
+   "dir": "ltr",
+   "toggle": {
+    "x": 672,
+    "y": 751,
+    "w": 44,
+    "h": 44
+   },
+   "die": {
+    "x": 724,
+    "y": 751,
+    "w": 44,
+    "h": 44
+   }
+  },
+  {
+   "lang": "fr",
+   "vue": "fiche-ordinateur",
+   "toggleName": "Rechercher dans Horizon",
+   "toggleTitle": "Rechercher dans Horizon",
+   "dir": "ltr",
+   "toggle": {
+    "x": 672,
+    "y": 751,
+    "w": 44,
+    "h": 44
+   },
+   "die": {
+    "x": 724,
+    "y": 751,
+    "w": 44,
+    "h": 44
+   }
+  },
+  {
+   "lang": "fr",
+   "vue": "fiche-mobile",
+   "toggleName": "Rechercher dans Horizon",
+   "toggleTitle": "Rechercher dans Horizon",
+   "dir": "ltr",
+   "toggle": {
+    "x": 147,
+    "y": 710,
+    "w": 44,
+    "h": 44
+   },
+   "die": {
+    "x": 199,
+    "y": 710,
+    "w": 44,
+    "h": 44
+   }
+  }
+ ],
+ "explorer": {
+  "explorer-ordinateur": {
+   "avant": {
+    "toggle": {
+     "x": 594,
+     "y": 751,
+     "w": 200,
+     "h": 44
+    },
+    "die": {
+     "x": 802,
+     "y": 751,
+     "w": 44,
+     "h": 44
+    },
+    "dock": {
+     "x": 402,
+     "y": 808,
+     "w": 636,
+     "h": 60
+    },
+    "labelDisplay": "block",
+    "toggleColor": "color(srgb 0.270588 0.311765 0.317647)",
+    "toggleName": "Rechercher dans Horizon",
+    "nav": [
+     {
+      "section": "explore",
+      "text": "Explorer",
+      "button": [
+       408,
+       814,
+       122,
+       48
+      ],
+      "label": [
+       458,
+       829,
+       52,
+       18
+      ],
+      "opacity": "1",
+      "blockSize": "17.5px"
+     },
+     {
+      "section": "projects",
+      "text": "Projets",
+      "button": [
+       534,
+       814,
+       122,
+       48
+      ],
+      "label": [
+       590,
+       829,
+       39,
+       18
+      ],
+      "opacity": "1",
+      "blockSize": "17.5px"
+     },
+     {
+      "section": "people",
+      "text": "Profils",
+      "button": [
+       659,
+       814,
+       122,
+       48
+      ],
+      "label": [
+       717,
+       829,
+       36,
+       18
+      ],
+      "opacity": "1",
+      "blockSize": "17.5px"
+     },
+     {
+      "section": "journal",
+      "text": "Chroniques",
+      "button": [
+       785,
+       814,
+       122,
+       48
+      ],
+      "label": [
+       826,
+       829,
+       68,
+       18
+      ],
+      "opacity": "1",
+      "blockSize": "17.5px"
+     },
+     {
+      "section": "awards",
+      "text": "42 Awards",
+      "button": [
+       910,
+       814,
+       122,
+       48
+      ],
+      "label": [
+       954,
+       829,
+       64,
+       18
+      ],
+      "opacity": "1",
+      "blockSize": "17.5px"
+     }
+    ]
+   },
+   "avantIcon": "absent",
+   "apres": {
+    "toggle": {
+     "x": 594,
+     "y": 751,
+     "w": 200,
+     "h": 44
+    },
+    "die": {
+     "x": 802,
+     "y": 751,
+     "w": 44,
+     "h": 44
+    },
+    "dock": {
+     "x": 402,
+     "y": 808,
+     "w": 636,
+     "h": 60
+    },
+    "labelDisplay": "block",
+    "toggleColor": "color(srgb 0.270588 0.311765 0.317647)",
+    "toggleName": "Rechercher dans Horizon",
+    "nav": [
+     {
+      "section": "explore",
+      "text": "Explorer",
+      "button": [
+       408,
+       814,
+       122,
+       48
+      ],
+      "label": [
+       458,
+       829,
+       52,
+       18
+      ],
+      "opacity": "1",
+      "blockSize": "17.5px"
+     },
+     {
+      "section": "projects",
+      "text": "Projets",
+      "button": [
+       534,
+       814,
+       122,
+       48
+      ],
+      "label": [
+       590,
+       829,
+       39,
+       18
+      ],
+      "opacity": "1",
+      "blockSize": "17.5px"
+     },
+     {
+      "section": "people",
+      "text": "Profils",
+      "button": [
+       659,
+       814,
+       122,
+       48
+      ],
+      "label": [
+       717,
+       829,
+       36,
+       18
+      ],
+      "opacity": "1",
+      "blockSize": "17.5px"
+     },
+     {
+      "section": "journal",
+      "text": "Chroniques",
+      "button": [
+       785,
+       814,
+       122,
+       48
+      ],
+      "label": [
+       826,
+       829,
+       68,
+       18
+      ],
+      "opacity": "1",
+      "blockSize": "17.5px"
+     },
+     {
+      "section": "awards",
+      "text": "42 Awards",
+      "button": [
+       910,
+       814,
+       122,
+       48
+      ],
+      "label": [
+       954,
+       829,
+       64,
+       18
+      ],
+      "opacity": "1",
+      "blockSize": "17.5px"
+     }
+    ]
+   },
+   "apresIcon": "none",
+   "identicalGeometry": true,
+   "pixelShare": 0.0
+  },
+  "explorer-mobile": {
+   "avant": {
+    "toggle": {
+     "x": 69,
+     "y": 710,
+     "w": 200,
+     "h": 44
+    },
+    "die": {
+     "x": 277,
+     "y": 710,
+     "w": 44,
+     "h": 44
+    },
+    "dock": {
+     "x": 16,
+     "y": 767,
+     "w": 358,
+     "h": 60
+    },
+    "labelDisplay": "block",
+    "toggleColor": "color(srgb 0.270588 0.311765 0.317647)",
+    "toggleName": "Rechercher dans Horizon",
+    "nav": [
+     {
+      "section": "explore",
+      "text": "Explorer",
+      "button": [
+       23,
+       773,
+       67,
+       48
+      ],
+      "label": [
+       36,
+       799,
+       41,
+       18
+      ],
+      "opacity": "1",
+      "blockSize": "18px"
+     },
+     {
+      "section": "projects",
+      "text": "Projets",
+      "button": [
+       92,
+       773,
+       67,
+       48
+      ],
+      "label": [
+       110,
+       799,
+       31,
+       18
+      ],
+      "opacity": "1",
+      "blockSize": "18px"
+     },
+     {
+      "section": "people",
+      "text": "Profils",
+      "button": [
+       161,
+       773,
+       67,
+       48
+      ],
+      "label": [
+       181,
+       799,
+       28,
+       18
+      ],
+      "opacity": "1",
+      "blockSize": "18px"
+     },
+     {
+      "section": "journal",
+      "text": "Chroniques",
+      "button": [
+       231,
+       773,
+       67,
+       48
+      ],
+      "label": [
+       237,
+       799,
+       54,
+       18
+      ],
+      "opacity": "1",
+      "blockSize": "18px"
+     },
+     {
+      "section": "awards",
+      "text": "42 Awards",
+      "button": [
+       300,
+       773,
+       67,
+       48
+      ],
+      "label": [
+       308,
+       799,
+       50,
+       18
+      ],
+      "opacity": "1",
+      "blockSize": "18px"
+     }
+    ]
+   },
+   "avantIcon": "absent",
+   "apres": {
+    "toggle": {
+     "x": 69,
+     "y": 710,
+     "w": 200,
+     "h": 44
+    },
+    "die": {
+     "x": 277,
+     "y": 710,
+     "w": 44,
+     "h": 44
+    },
+    "dock": {
+     "x": 16,
+     "y": 767,
+     "w": 358,
+     "h": 60
+    },
+    "labelDisplay": "block",
+    "toggleColor": "color(srgb 0.270588 0.311765 0.317647)",
+    "toggleName": "Rechercher dans Horizon",
+    "nav": [
+     {
+      "section": "explore",
+      "text": "Explorer",
+      "button": [
+       23,
+       773,
+       67,
+       48
+      ],
+      "label": [
+       36,
+       799,
+       41,
+       18
+      ],
+      "opacity": "1",
+      "blockSize": "18px"
+     },
+     {
+      "section": "projects",
+      "text": "Projets",
+      "button": [
+       92,
+       773,
+       67,
+       48
+      ],
+      "label": [
+       110,
+       799,
+       31,
+       18
+      ],
+      "opacity": "1",
+      "blockSize": "18px"
+     },
+     {
+      "section": "people",
+      "text": "Profils",
+      "button": [
+       161,
+       773,
+       67,
+       48
+      ],
+      "label": [
+       181,
+       799,
+       28,
+       18
+      ],
+      "opacity": "1",
+      "blockSize": "18px"
+     },
+     {
+      "section": "journal",
+      "text": "Chroniques",
+      "button": [
+       231,
+       773,
+       67,
+       48
+      ],
+      "label": [
+       237,
+       799,
+       54,
+       18
+      ],
+      "opacity": "1",
+      "blockSize": "18px"
+     },
+     {
+      "section": "awards",
+      "text": "42 Awards",
+      "button": [
+       300,
+       773,
+       67,
+       48
+      ],
+      "label": [
+       308,
+       799,
+       50,
+       18
+      ],
+      "opacity": "1",
+      "blockSize": "18px"
+     }
+    ]
+   },
+   "apresIcon": "none",
+   "identicalGeometry": true,
+   "pixelShare": 0.0
+  },
+  "globe": {
+   "avantReady": true,
+   "apresReady": true,
+   "pixelShare": 0.0
+  }
+ },
+ "errors": {
+  "content": [],
+  "explorer": []
+ },
+ "passed": true
+}

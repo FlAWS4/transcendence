@@ -1,0 +1,481 @@
+{
+ "essai": "pseudo-manquant",
+ "date": "2026-10-14",
+ "role": "contre-vérification indépendante de check.py",
+ "page": "baseline/content-preview.html",
+ "cases": [
+  {
+   "case": "toutes-pages-mobile-fr",
+   "pages": 4,
+   "cards": 78,
+   "lang": "fr",
+   "theme": "light",
+   "apres": {
+    "wrongState": 0,
+    "shownPlaceholders": 0,
+    "unequalHeights": 0,
+    "unlevelCampus": 0,
+    "unlevelCohort": 0,
+    "reserveNotOneLoginLine": 0
+   },
+   "avant": {
+    "unequalHeights": 0,
+    "unlevelCampus": 0,
+    "unlevelCohort": 0
+   },
+   "texteVisibleAvant": 72,
+   "texteVisibleApres": 0,
+   "innerTextAvant": 72,
+   "innerTextApres": 0,
+   "rangeesAvantApres": [
+    [
+     12,
+     12
+    ],
+    [
+     12,
+     12
+    ],
+    [
+     12,
+     12
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "colonnes": [
+    2
+   ],
+   "hauteursPage1": {
+    "avant": [
+     243,
+     243,
+     243,
+     243,
+     243,
+     243,
+     243,
+     243,
+     243,
+     243,
+     243,
+     243
+    ],
+    "apres": [
+     243,
+     243,
+     243,
+     216,
+     243,
+     216,
+     243,
+     216,
+     216,
+     216,
+     216,
+     216
+    ]
+   },
+   "overflowApres": false,
+   "errors": []
+  },
+  {
+   "case": "toutes-pages-petit-fr",
+   "pages": 4,
+   "cards": 78,
+   "lang": "fr",
+   "theme": "light",
+   "apres": {
+    "wrongState": 0,
+    "shownPlaceholders": 0,
+    "unequalHeights": 0,
+    "unlevelCampus": 0,
+    "unlevelCohort": 0,
+    "reserveNotOneLoginLine": 0
+   },
+   "avant": {
+    "unequalHeights": 0,
+    "unlevelCampus": 4,
+    "unlevelCohort": 4
+   },
+   "texteVisibleAvant": 72,
+   "texteVisibleApres": 0,
+   "innerTextAvant": 72,
+   "innerTextApres": 0,
+   "rangeesAvantApres": [
+    [
+     12,
+     12
+    ],
+    [
+     12,
+     12
+    ],
+    [
+     12,
+     12
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "colonnes": [
+    2
+   ],
+   "hauteursPage1": {
+    "avant": [
+     266,
+     288,
+     288,
+     288,
+     288,
+     288,
+     288,
+     288,
+     288,
+     288,
+     288,
+     288
+    ],
+    "apres": [
+     266,
+     266,
+     266,
+     239,
+     266,
+     239,
+     266,
+     239,
+     239,
+     239,
+     239,
+     239
+    ]
+   },
+   "overflowApres": false,
+   "errors": []
+  },
+  {
+   "case": "toutes-pages-petit-en",
+   "pages": 4,
+   "cards": 78,
+   "lang": "en",
+   "theme": "light",
+   "apres": {
+    "wrongState": 0,
+    "shownPlaceholders": 0,
+    "unequalHeights": 0,
+    "unlevelCampus": 0,
+    "unlevelCohort": 0,
+    "reserveNotOneLoginLine": 0
+   },
+   "avant": {
+    "unequalHeights": 0,
+    "unlevelCampus": 0,
+    "unlevelCohort": 0
+   },
+   "texteVisibleAvant": 72,
+   "texteVisibleApres": 0,
+   "innerTextAvant": 72,
+   "innerTextApres": 0,
+   "rangeesAvantApres": [
+    [
+     12,
+     12
+    ],
+    [
+     12,
+     12
+    ],
+    [
+     12,
+     12
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "colonnes": [
+    2
+   ],
+   "hauteursPage1": {
+    "avant": [
+     266,
+     266,
+     266,
+     266,
+     266,
+     266,
+     266,
+     266,
+     266,
+     266,
+     266,
+     266
+    ],
+    "apres": [
+     266,
+     266,
+     266,
+     239,
+     266,
+     239,
+     266,
+     239,
+     239,
+     239,
+     239,
+     239
+    ]
+   },
+   "overflowApres": false,
+   "errors": []
+  },
+  {
+   "case": "toutes-pages-petit-ar",
+   "pages": 4,
+   "cards": 78,
+   "lang": "ar",
+   "theme": "light",
+   "apres": {
+    "wrongState": 0,
+    "shownPlaceholders": 0,
+    "unequalHeights": 0,
+    "unlevelCampus": 0,
+    "unlevelCohort": 0,
+    "reserveNotOneLoginLine": 0
+   },
+   "avant": {
+    "unequalHeights": 0,
+    "unlevelCampus": 4,
+    "unlevelCohort": 4
+   },
+   "texteVisibleAvant": 72,
+   "texteVisibleApres": 0,
+   "innerTextAvant": 72,
+   "innerTextApres": 0,
+   "rangeesAvantApres": [
+    [
+     12,
+     12
+    ],
+    [
+     12,
+     12
+    ],
+    [
+     12,
+     12
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "colonnes": [
+    2
+   ],
+   "hauteursPage1": {
+    "avant": [
+     266,
+     288,
+     288,
+     288,
+     288,
+     288,
+     288,
+     288,
+     288,
+     288,
+     288,
+     288
+    ],
+    "apres": [
+     266,
+     266,
+     266,
+     239,
+     266,
+     239,
+     266,
+     239,
+     239,
+     239,
+     239,
+     239
+    ]
+   },
+   "overflowApres": false,
+   "errors": []
+  },
+  {
+   "case": "toutes-pages-mobile-ar-sombre",
+   "pages": 4,
+   "cards": 78,
+   "lang": "ar",
+   "theme": "dark",
+   "apres": {
+    "wrongState": 0,
+    "shownPlaceholders": 0,
+    "unequalHeights": 0,
+    "unlevelCampus": 0,
+    "unlevelCohort": 0,
+    "reserveNotOneLoginLine": 0
+   },
+   "avant": {
+    "unequalHeights": 0,
+    "unlevelCampus": 0,
+    "unlevelCohort": 0
+   },
+   "texteVisibleAvant": 72,
+   "texteVisibleApres": 0,
+   "innerTextAvant": 72,
+   "innerTextApres": 0,
+   "rangeesAvantApres": [
+    [
+     12,
+     12
+    ],
+    [
+     12,
+     12
+    ],
+    [
+     12,
+     12
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "colonnes": [
+    2
+   ],
+   "hauteursPage1": {
+    "avant": [
+     243,
+     243,
+     243,
+     243,
+     243,
+     243,
+     243,
+     243,
+     243,
+     243,
+     243,
+     243
+    ],
+    "apres": [
+     243,
+     243,
+     243,
+     216,
+     243,
+     216,
+     243,
+     216,
+     216,
+     216,
+     216,
+     216
+    ]
+   },
+   "overflowApres": false,
+   "errors": []
+  },
+  {
+   "case": "liste-toutes-pages",
+   "resume": {
+    "avant-petit-fr": {
+     "pages": 4,
+     "cards": 78,
+     "heartOverlap": 0,
+     "shownPlaceholders": 72,
+     "heights": [
+      113,
+      127
+     ],
+     "overflow": false
+    },
+    "apres-petit-fr": {
+     "pages": 4,
+     "cards": 78,
+     "heartOverlap": 0,
+     "shownPlaceholders": 0,
+     "heights": [
+      113
+     ],
+     "overflow": false
+    },
+    "avant-petit-ar": {
+     "pages": 4,
+     "cards": 78,
+     "heartOverlap": 0,
+     "shownPlaceholders": 72,
+     "heights": [
+      113,
+      127
+     ],
+     "overflow": false
+    },
+    "apres-petit-ar": {
+     "pages": 4,
+     "cards": 78,
+     "heartOverlap": 0,
+     "shownPlaceholders": 0,
+     "heights": [
+      113
+     ],
+     "overflow": false
+    },
+    "avant-mobile-en": {
+     "pages": 4,
+     "cards": 78,
+     "heartOverlap": 0,
+     "shownPlaceholders": 72,
+     "heights": [
+      113
+     ],
+     "overflow": false
+    },
+    "apres-mobile-en": {
+     "pages": 4,
+     "cards": 78,
+     "heartOverlap": 0,
+     "shownPlaceholders": 0,
+     "heights": [
+      113
+     ],
+     "overflow": false
+    },
+    "avant-ordinateur-fr": {
+     "pages": 4,
+     "cards": 78,
+     "heartOverlap": 0,
+     "shownPlaceholders": 72,
+     "heights": [
+      137
+     ],
+     "overflow": false
+    },
+    "apres-ordinateur-fr": {
+     "pages": 4,
+     "cards": 78,
+     "heartOverlap": 0,
+     "shownPlaceholders": 0,
+     "heights": [
+      137
+     ],
+     "overflow": false
+    }
+   },
+   "errors": []
+  }
+ ]
+}

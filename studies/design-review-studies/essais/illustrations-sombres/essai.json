@@ -1,0 +1,121 @@
+{
+ "id": "illustrations-sombres",
+ "groupe": "Couleurs, thème sombre et illustrations",
+ "titre": "Illustrations adaptées au sombre",
+ "resume": "En thème sombre seulement, les fonds et décors clairs des illustrations fictives (shell, network, garden, path, chronique) sont remplacés par des teintes sombres mélangées à partir de la charte ; les accents 42 Blue et Royal Pink restent identiques.",
+ "probleme": "En sombre, les couvertures restent claires et forment de grands blocs lumineux : luminance relative moyenne des zones d’illustration de 0,44 sur la liste Projets (1440 px), 0,77 sur la fiche ft_transcendence et 0,70 dans la visionneuse, pour un fond de page à 0,011.",
+ "changement": "essai.css, sous :root[data-theme=dark], recolore les éléments SVG par leurs attributs fill/stroke (mélanges sRGB de Dark Slate Gray #324B4B, Cadet Gray #95B0B0, Royal Pink #ED3491 et noir #1B1B1B). Shell : fond #DCECE7 → #2A3A3A, disque #BBDDD6 → #324B4B, disque rose #F2D6E3 → #452033, croix #86BEB3 → #586666, terminal #173B38 → #1B1B1B. Network : fond #F5E4EA → #402B39, anneaux #DDAFC3 → #6E465E et #E7C6D3 → #573A4B, rayons #AD839B → #8F5878, croix #C38CA6 → #7F4F6B, terminal #242F38 → #1B1B1B, nœuds blancs #FFFFFF (cercles de ce motif seulement) → #644156. Garden : fond #DCEDE7 → #293838, grille #C5DCD3 → #2F4444, carte papier #F5F3E9 → #415A5A, tige #27554A → #1B1B1B, carte rose #EFB7CC → #5A223E, barres #9F3F70 → Royal Pink #ED3491, légendes #B3C3B6 → #95B0B0 et #DAE0D4 → #6D8888, pastille #A5C7B8 → #506969. Path : fond #ECE8DD → #283535, bords de route #DAD4C6 → #2D4141, route #F8F6EF → #415A5A, pointillés #B7B6A6 → #708383, étape sombre #304F4C → #1B1B1B, mâts #A5AA96 → #647474, traits #B2BBAC → #506969, disque #CAD7C7 → #304646. Chronique : page crème #F1EFDF → #556565, lignes #647C70 → #95B0B0. Les fonds de conteneur des cartes (shell, network, garden, path) suivent le nouveau fond. Raycast, déjà sombre, n’est pas modifié. Cartes, grilles de profil, fiches et visionneuse sont couvertes ; le changement de thème s’applique sans rechargement.",
+ "decisionConcernee": "",
+ "alternativeDe": "illustrations-attenuees",
+ "vues": [
+  {
+   "libelle": "Projets, ordinateur sombre",
+   "page": "content-preview.html",
+   "route": "projects",
+   "viewport": "ordinateur",
+   "theme": "dark",
+   "lang": "fr"
+  },
+  {
+   "libelle": "Fiche projet, ordinateur sombre",
+   "page": "content-preview.html",
+   "route": "projects/ft-transcendence-building-together",
+   "viewport": "ordinateur",
+   "theme": "dark",
+   "lang": "fr"
+  },
+  {
+   "libelle": "Fiche shell, ordinateur sombre",
+   "page": "content-preview.html",
+   "route": "projects/demo-project-commands-in-layers",
+   "viewport": "ordinateur",
+   "theme": "dark",
+   "lang": "fr"
+  },
+  {
+   "libelle": "Chroniques, mobile sombre arabe",
+   "page": "content-preview.html",
+   "route": "journal",
+   "viewport": "mobile",
+   "theme": "dark",
+   "lang": "ar"
+  }
+ ],
+ "verifications": [
+  "Luminance relative moyenne des zones d’illustration en sombre, avant → après (contrôle rejoué le 14 octobre) : Projets ordinateur 0,445 → 0,060 ; Projets mobile 390 px 0,464 → 0,057 ; Projets 320 px 0,420 → 0,039 ; Chroniques ordinateur 0,276 → 0,119 ; Chroniques mobile arabe 0,255 → 0,123 ; fiche network 0,770 → 0,048 ; fiche shell 0,464 → 0,050 ; fiche garden 0,731 → 0,078 ; article 0,302 → 0,142 ; visionneuse 0,696 → 0,048 ; projets du profil de Leïla 0,581 → 0,036.",
+  "Planche des six motifs en carte et en cadre de fiche examinée : terminal, réseau, plante, chemin, page et raycast restent reconnaissables ; luminance carte network 0,758 → 0,040, path 0,793 → 0,053, garden 0,709 → 0,064, shell 0,413 → 0,033, chronique 0,313 → 0,134, raycast inchangé à 0,130.",
+  "Accents conservés : sur les 10 vues sombres, 0 élément #00BABC ou #EC3391 sur 184 relevés n’a changé de couleur calculée.",
+  "Thème clair identique au pixel près (0 pixel différent, comparaison stricte) sur Projets ordinateur, Chroniques mobile arabe, fiche ft_transcendence, visionneuse et projets du profil.",
+  "Changement de thème par le menu du compte sans rechargement : fond de la première carte rgb(64, 43, 57) → rgb(245, 228, 234) en clair → rgb(64, 43, 57) au retour en sombre ; sur la fiche, une fois revenu en clair, chacun des 20 attributs fill/stroke de l’illustration est peint à sa valeur d’origine. Changement de langue (français → arabe) sans rechargement : la liste reconstruite garde ses 11 fonds remappés (0 fond clair restant).",
+  "Aucun débordement horizontal (y compris à 320 × 640) ni erreur de console sur les 22 états sombres, les contrôles clairs et les changements en direct.",
+  "Combinaisons : avec roles-couleur, visiter-contour-sombre et illustrations-variees actifs ensemble, 0 fond clair restant, luminance 0,060, aucune erreur ; demandé avec illustrations-attenuees, seul le premier essai s’applique (l’autre est ignoré, filtre none).",
+  "Les 30 teintes déclarées comme mélanges de la charte ont été recalculées : écart d’au plus 0,5 niveau par canal."
+ ],
+ "limites": [
+  "Dans la fiche et la visionneuse, le socle trace un fin contour hérité (couleur du texte, donc blanc en sombre) autour de chaque forme et du cadre de l’illustration entière ; invisible sur les anciens fonds clairs, il devient bien visible sur les fonds assombris (voir la capture de la visionneuse), comme il l’est déjà sur les illustrations chronique et raycast du socle. L’essai ne le modifie pas, par périmètre strict ; le retirer serait un autre choix, valable aussi pour ces deux motifs.",
+  "Le motif path n’apparaît sur aucune page actuelle (les deux récits de parcours redirigent vers le profil) : il n’est vérifié que sur la planche des motifs.",
+  "Les nouvelles teintes sont des mélanges calculés des couleurs de la charte, pas des couleurs nommées par celle-ci ; aucun contrôle sur écran physique ni par une personne malvoyante.",
+  "Combinable avec illustrations-variees : en sombre, les teintes de cet essai restent appliquées et illustrations-variees ne fait plus varier que le fond des motifs network et garden (vérifié : 0 paire voisine identique, luminance moyenne des couvertures 0,047 sur Projets et 0,114 sur Chroniques ; checks/illustrations-variees/combinaisons.json)."
+ ],
+ "fichiers": [
+  "essais/illustrations-sombres/essai.css",
+  "essais/illustrations-sombres/essai.mjs",
+  "essais/illustrations-sombres/essai.json",
+  "checks/illustrations-sombres/check.py",
+  "checks/illustrations-sombres/results.json",
+  "checks/illustrations-sombres/contre-verification.py",
+  "checks/illustrations-sombres/contre-verification.json"
+ ],
+ "captures": [
+  {
+   "vue": "sombre-ordinateur",
+   "avant": "checks/illustrations-sombres/avant-sombre-ordinateur.png",
+   "apres": "checks/illustrations-sombres/apres-sombre-ordinateur.png"
+  },
+  {
+   "vue": "sombre-mobile",
+   "avant": "checks/illustrations-sombres/avant-sombre-mobile.png",
+   "apres": "checks/illustrations-sombres/apres-sombre-mobile.png"
+  },
+  {
+   "vue": "petit-sombre",
+   "avant": "checks/illustrations-sombres/avant-petit-sombre.png",
+   "apres": "checks/illustrations-sombres/apres-petit-sombre.png"
+  },
+  {
+   "vue": "chroniques-sombre-ordinateur",
+   "avant": "checks/illustrations-sombres/avant-chroniques-sombre-ordinateur.png",
+   "apres": "checks/illustrations-sombres/apres-chroniques-sombre-ordinateur.png"
+  },
+  {
+   "vue": "ar-mobile",
+   "avant": "checks/illustrations-sombres/avant-ar-mobile.png",
+   "apres": "checks/illustrations-sombres/apres-ar-mobile.png"
+  },
+  {
+   "vue": "fiche-sombre-ordinateur",
+   "avant": "checks/illustrations-sombres/avant-fiche-sombre-ordinateur.png",
+   "apres": "checks/illustrations-sombres/apres-fiche-sombre-ordinateur.png"
+  },
+  {
+   "vue": "article-sombre-ordinateur",
+   "avant": "checks/illustrations-sombres/avant-article-sombre-ordinateur.png",
+   "apres": "checks/illustrations-sombres/apres-article-sombre-ordinateur.png"
+  },
+  {
+   "vue": "visionneuse-sombre",
+   "avant": "checks/illustrations-sombres/avant-visionneuse-sombre.png",
+   "apres": "checks/illustrations-sombres/apres-visionneuse-sombre.png"
+  },
+  {
+   "vue": "profil-sombre",
+   "avant": "checks/illustrations-sombres/avant-profil-sombre.png",
+   "apres": "checks/illustrations-sombres/apres-profil-sombre.png"
+  },
+  {
+   "vue": "motifs",
+   "avant": "checks/illustrations-sombres/avant-motifs.png",
+   "apres": "checks/illustrations-sombres/apres-motifs.png"
+  }
+ ]
+}

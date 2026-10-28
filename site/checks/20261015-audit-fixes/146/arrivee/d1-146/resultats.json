@@ -1,0 +1,205 @@
+{
+ "script": "d1_146.py",
+ "state": "146",
+ "url": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/index.html?qa=verif-146-d1",
+ "viewport": [
+  1280,
+  900
+ ],
+ "cases": {
+  "annuler-souris": {
+   "active": "entry-login",
+   "focusVisible": false,
+   "changes": [
+    {
+     "dtMs": 3810,
+     "lang": "ar",
+     "active": "entry-login"
+    },
+    {
+     "dtMs": 7811,
+     "lang": "fr",
+     "active": "entry-login"
+    }
+   ]
+  },
+  "echap-apres-souris": {
+   "active": "entry-login",
+   "focusVisible": true,
+   "changes": [
+    {
+     "dtMs": 3893,
+     "lang": "ar",
+     "active": "entry-login"
+    },
+    {
+     "dtMs": 7893,
+     "lang": "fr",
+     "active": "entry-login"
+    }
+   ]
+  },
+  "touches-rares": [
+   {
+    "key": "NumLock",
+    "active": "entry-login",
+    "focusVisible": true,
+    "changesWithin4700ms": [
+     {
+      "dtMs": 3688,
+      "lang": "ar",
+      "active": "entry-login"
+     }
+    ]
+   },
+   {
+    "key": "ScrollLock",
+    "active": "entry-login",
+    "focusVisible": true,
+    "changesWithin4700ms": [
+     {
+      "dtMs": 2811,
+      "lang": "fr",
+      "active": "entry-login"
+     }
+    ]
+   },
+   {
+    "key": "PrintScreen",
+    "active": "entry-login",
+    "focusVisible": true,
+    "changesWithin4700ms": [
+     {
+      "dtMs": 1935,
+      "lang": "en",
+      "active": "entry-login"
+     }
+    ]
+   },
+   {
+    "key": "F11",
+    "active": "entry-login",
+    "focusVisible": true,
+    "changesWithin4700ms": [
+     {
+      "dtMs": 1056,
+      "lang": "ar",
+      "active": "entry-login"
+     }
+    ]
+   },
+   {
+    "key": "Escape",
+    "active": "entry-login",
+    "focusVisible": true,
+    "changesWithin4700ms": [
+     {
+      "dtMs": 178,
+      "lang": "fr",
+      "active": "entry-login"
+     },
+     {
+      "dtMs": 4179,
+      "lang": "en",
+      "active": "entry-login"
+     }
+    ]
+   }
+  ],
+  "modificateurs": [
+   {
+    "key": "Alt",
+    "active": "entry-theme-toggle",
+    "theme": "dark",
+    "changesWithin4700ms": [
+     {
+      "dtMs": 3664,
+      "lang": "ar",
+      "active": "entry-theme-toggle"
+     }
+    ]
+   },
+   {
+    "key": "Shift",
+    "active": "entry-theme-toggle",
+    "theme": "light",
+    "changesWithin4700ms": [
+     {
+      "dtMs": 3676,
+      "lang": "fr",
+      "active": "entry-theme-toggle"
+     }
+    ]
+   },
+   {
+    "key": "ctrl+c",
+    "active": "entry-theme-toggle",
+    "theme": "dark",
+    "changesWithin4700ms": [
+     {
+      "dtMs": 3658,
+      "lang": "en",
+      "active": "entry-theme-toggle"
+     }
+    ]
+   }
+  ],
+  "clavier": {
+   "afterTabTab": {
+    "active": "entry-login",
+    "focusVisible": true,
+    "changes": []
+   },
+   "afterEnterEscape": {
+    "active": "entry-login",
+    "focusVisible": true,
+    "changes": []
+   },
+   "afterBackgroundClick": {
+    "active": "entry-theme-toggle",
+    "theme": "light",
+    "changes": [
+     {
+      "dtMs": 3787,
+      "lang": "en",
+      "active": "entry-theme-toggle"
+     }
+    ]
+   }
+  },
+  "focus-programme": {
+   "active": "entry-login",
+   "focusVisible": true,
+   "changes": [],
+   "afterBackgroundClick": [
+    {
+     "dtMs": 3785,
+     "lang": "en",
+     "active": "entry-theme-toggle"
+    }
+   ]
+  },
+  "survol": {
+   "whileHovering": [],
+   "afterLeaving": [
+    {
+     "dtMs": 3949,
+     "lang": "ar",
+     "active": "BODY"
+    }
+   ]
+  }
+ },
+ "console": [
+  {
+   "kind": "log.network.error",
+   "text": "Failed to load resource: the server responded with a status of 404 (File not found)",
+   "resource": "http://127.0.0.1:8765/favicon.ico",
+   "page": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/index.html?qa=verif-146-d1"
+  }
+ ],
+ "failure": null,
+ "errors": [],
+ "sourcesUnchanged": true,
+ "seconds": 129.8
+}

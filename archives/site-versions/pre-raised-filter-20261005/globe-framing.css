@@ -1,0 +1,86 @@
+/* Keep viewport units stable across routes; Explorer has no document scrollbar. */
+html:has(.app[data-navigation=dock]) { scrollbar-gutter: auto; }
+html:has(.app[data-navigation=dock][data-section=explore]) { overflow-y: hidden; }
+
+/* The same full viewport is kept on every route so docking the single map
+   does not trigger a resize. The campus dialog owns its separate viewport. */
+:root .app[data-navigation=dock] {
+  --horizon-globe-top: 0px;
+  --horizon-globe-bottom: 0px;
+  --horizon-globe-radius: .425;
+}
+:root .app[data-navigation=dock] #main > .globe-stage {
+  inset: 0 auto auto 0;
+  width: 100vw;
+  height: 100svh;
+}
+
+/* Stay centred and keep the same dock width when document pages regain their
+   scrollbar. Existing limits, small-screen gutters and search expansion remain. */
+:root .app[data-navigation=dock] .dock-shell {
+  left: 50vw;
+  width: min(574px, calc(100vw - 32px));
+}
+:root .app[data-navigation=dock] .dock-shell[data-search-open=true] {
+  width: min(680px, calc(100vw - 32px));
+}
+
+/* Keep one raised filter anchor on every route, including scrollbar changes. */
+:root .app[data-navigation=dock] .scope-bar {
+  top: calc(var(--horizon-scope-top) - 24px);
+  left: 50vw;
+}
+
+/* This overlay blends a constant blur progressively over the map background,
+   below the z-index:2 campus markers. The centre, controls and existing canvas
+   edge fade are preserved; neither docking nor the campus portal matches it. */
+@supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  :root .app[data-navigation=dock][data-section=explore]:not([data-globe-docked=true]) #main > .globe-stage > .hg-map::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    -webkit-mask-image: radial-gradient(ellipse closest-side at 50% 50%, transparent 52%, #0003 72%, #0009 88%, #000 100%);
+    mask-image: radial-gradient(ellipse closest-side at 50% 50%, transparent 52%, #0003 72%, #0009 88%, #000 100%);
+  }
+}
+
+@media (max-width: 700px) {
+  :root .app[data-navigation=dock] {
+    --horizon-globe-radius: .46;
+  }
+  :root .app[data-navigation=dock][data-section=explore]:not([data-globe-docked=true]) #main > .globe-stage > .hg-map::after {
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+  }
+}
+
+@media (max-height: 720px) and (max-width: 700px) {
+  :root .app[data-navigation=dock] .scope-bar {
+    top: calc(var(--horizon-scope-top) - 20px);
+  }
+}
+
+@media (max-width: 360px) {
+  :root .app[data-navigation=dock] .dock-shell,
+  :root .app[data-navigation=dock] .dock-shell[data-search-open=true] {
+    width: calc(100vw - 24px);
+  }
+}
+
+/* Short viewports keep the filter clear of the header utilities. */
+@media(max-height:520px) {
+ :root .app[data-navigation=dock] .scope-bar { top:calc(var(--horizon-scope-top) - 10px); }
+}
+
+/* Geography filters select collections, not the article currently being read.
+   Keep the anchor box measurable so the same map returns without a camera jump. */
+:root .app[data-navigation=dock][data-reading=true] .scope-bar { visibility:hidden;pointer-events:none; }
+:root .app[data-navigation=dock][data-reading=true] #main > .globe-stage { opacity:0;visibility:hidden;pointer-events:none; }
+:root .app[data-navigation=dock][data-reading=true] .content-sheet { padding-top:28px; }
+@media(max-width:700px) {
+ :root .app[data-navigation=dock][data-reading=true] .content-sheet { padding-top:20px; }
+}

@@ -1,0 +1,113 @@
+/* Contextual discovery joins the floating search capsule without taking dock width.
+   Load after floating-search.css and readable-glass.css. The controller owns
+   availability, labels and data-search-open; .is-drawing is optional feedback. */
+:root .app[data-navigation=dock] .dock-shell[data-has-discovery=true] {
+ --dock-capsule-offset:-26px;
+ --dock-discovery-offset:104px;
+}
+:root[dir=rtl] .app[data-navigation=dock] .dock-shell[data-has-discovery=true] {
+ --dock-capsule-offset:26px;
+ --dock-discovery-offset:-104px;
+}
+/* 200 px capsule + 8 px interval + 44 px die = one centred 252 px row. */
+:root[data-theme] .app[data-navigation=dock] .dock-shell[data-has-discovery=true] > .dock-search-toggle {
+ left:calc(50% + var(--dock-capsule-offset));
+ transition:left .48s var(--ease),width .48s var(--ease),height .48s var(--ease),border-radius .48s var(--ease),opacity var(--dock-glass-duration) ease,background-color var(--dock-glass-duration) ease,border-color var(--dock-glass-duration) ease,box-shadow var(--dock-glass-duration) ease,-webkit-backdrop-filter var(--dock-glass-duration) ease,backdrop-filter var(--dock-glass-duration) ease,color .2s;
+}
+:root[data-theme] .app[data-navigation=dock] .dock-shell[data-has-discovery=true][data-search-open=true] > .dock-search-toggle {
+ left:50%;
+}
+/* Preserve immediate keyboard revelation while retaining the capsule's morph. */
+:root[data-theme] .app[data-navigation=dock] .dock-shell[data-has-discovery=true]:not([data-search-open=true]):has(:focus-visible) > .dock-search-toggle {
+ transition:left .48s var(--ease),width .48s var(--ease),height .48s var(--ease),border-radius .48s var(--ease),background-color var(--dock-glass-duration) ease,border-color var(--dock-glass-duration) ease,box-shadow var(--dock-glass-duration) ease,color .2s;
+}
+:root[data-theme] .app[data-navigation=dock] .dock-shell[data-has-discovery=true] > .dock-random-toggle {
+ position:absolute;
+ inset:auto;
+ left:calc(50% + var(--dock-discovery-offset));
+ bottom:var(--dock-results-bottom,calc(100% + 13px));
+ z-index:2;
+ display:inline-flex;
+ align-items:center;
+ justify-content:center;
+ flex:none;
+ width:44px;
+ height:44px;
+ min-width:44px;
+ min-height:44px;
+ margin:0;
+ padding:10px;
+ border:1px solid var(--dock-glass-edge);
+ border-radius:50%;
+ color:var(--readable-glass-accent,var(--cp-accent));
+ background:var(--dock-glass-surface);
+ box-shadow:var(--dock-glass-shadow);
+ -webkit-backdrop-filter:blur(26px) saturate(1.15);
+ backdrop-filter:blur(26px) saturate(1.15);
+ opacity:1;
+ visibility:inherit;
+ transform:translateX(-50%) scale(1);
+ transition:opacity var(--dock-glass-duration) ease,transform .3s var(--ease),color .2s,border-color var(--dock-glass-duration) ease,background-color var(--dock-glass-duration) ease,box-shadow var(--dock-glass-duration) ease,-webkit-backdrop-filter var(--dock-glass-duration) ease,backdrop-filter var(--dock-glass-duration) ease,visibility 0s;
+}
+:root[data-theme] .app[data-navigation=dock] .dock-shell[data-has-discovery=true] > .dock-random-toggle > svg {
+ width:21px;
+ height:21px;
+ transition:transform .35s var(--ease);
+}
+:root[data-theme] .app[data-navigation=dock] .dock-shell[data-has-discovery=true] > .dock-random-toggle:not(:disabled):hover {
+ color:var(--h42-color-text);
+ border-color:var(--dock-glass-selection-edge);
+}
+:root[data-theme] .app[data-navigation=dock] .dock-shell[data-has-discovery=true] > .dock-random-toggle:not(:disabled):active {
+ transform:translateX(-50%) scale(.94);
+}
+:root[data-theme] .app[data-navigation=dock] .dock-shell[data-has-discovery=true] > .dock-random-toggle:focus-visible {
+ outline:2px solid var(--h42-color-focus);
+ outline-offset:4px;
+}
+:root[data-theme] .app[data-navigation=dock] .dock-shell[data-has-discovery=true] > .dock-random-toggle:disabled {
+ opacity:.42;
+ cursor:default;
+}
+/* The expanding result surface occupies the row, so the die leaves both sight
+   and the focus order once its short fade completes. */
+:root[data-theme] .app[data-navigation=dock] .dock-shell[data-has-discovery=true][data-search-open=true] > .dock-random-toggle {
+ opacity:0;
+ visibility:hidden;
+ pointer-events:none;
+ transform:translateX(-50%) scale(.86);
+ transition:opacity .16s ease,transform .3s var(--ease),visibility 0s .16s;
+}
+/* Active scroll behaviour: fade every surface, while keyboard focus can reveal
+   the entire dock just as it already reveals its other controls. */
+:root[data-theme] .app[data-navigation=dock]:not([data-menu-scroll-study=background]) .dock-shell[data-has-discovery=true][data-document-scrolling=true]:not([data-search-open=true]):not(:has(:focus-visible)) > .dock-random-toggle {
+ opacity:0;
+ pointer-events:none;
+}
+:root[data-theme] .app[data-navigation=dock]:not([data-menu-scroll-study=background]) .dock-shell[data-has-discovery=true]:not([data-search-open=true]):has(:focus-visible) > .dock-random-toggle {
+ transition:transform .3s var(--ease),color .2s,border-color var(--dock-glass-duration) ease,background-color var(--dock-glass-duration) ease,box-shadow var(--dock-glass-duration) ease,visibility 0s;
+}
+/* Preserve the archived background-only comparison when selected explicitly. */
+:root[data-theme] .app[data-navigation=dock][data-menu-scroll-study=background] .dock-shell[data-has-discovery=true][data-document-scrolling=true]:not([data-search-open=true]) > .dock-random-toggle {
+ background:transparent;
+ border-color:transparent;
+ box-shadow:none;
+ -webkit-backdrop-filter:blur(0px);
+ backdrop-filter:blur(0px);
+}
+:root .app[data-navigation=dock] .dock-shell[data-has-discovery=true] > .dock-random-toggle.is-drawing > svg {
+ animation:dock-discovery-draw .42s var(--ease);
+}
+@keyframes dock-discovery-draw {
+ 0% { transform:rotate(0); }
+ 25% { transform:rotate(-18deg); }
+ 100% { transform:rotate(360deg); }
+}
+@media(prefers-reduced-motion:reduce) {
+ :root[data-theme] .app[data-navigation=dock] .dock-shell[data-has-discovery=true] > .dock-search-toggle,
+ :root[data-theme] .app[data-navigation=dock] .dock-shell[data-has-discovery=true] > .dock-random-toggle,
+ :root[data-theme] .app[data-navigation=dock] .dock-shell[data-has-discovery=true] > .dock-random-toggle > svg {
+  transition:none !important;
+  animation:none !important;
+ }
+}

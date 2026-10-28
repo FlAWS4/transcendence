@@ -1,0 +1,20 @@
+/* Essai roles-couleur (14 Oct 2026): one colour rule for actions, colours only.
+   Primary actions take the treatment already chosen for sign-in
+   (--h42-access-accent: 42 Blue #00BABC in light, Royal Pink #ED3491 in dark,
+   ink #1B1B1B text; 7.2:1 and 4.5:1) and keep it on hover. Secondary actions
+   that still carried an accent become neutral: text colour and a neutral line.
+   Secondary actions that are already neutral, selected states (dock, local
+   menus, filter choices), links, sizes, radii and layout are not changed. */
+
+/* Primary: filter Appliquer, comment Ajouter/Répondre/Enregistrer, report Envoyer,
+   message Envoyer, repository Enregistrer, and the sign-up confirmation (arrival and
+   account dialogs; the sign-in confirmation already has this treatment). */
+:root :is(.cp-project-filter-actions .cp-project-filter-apply,.cp-comments-form .cp-comments-submit,.cp-report-footer .cp-report-submit,.cp-profile-message-controls .cp-profile-message-send,.cp-project-repository-actions button[type=submit],#dialog[data-kind=signup] #dialog-content>button:first-of-type),
+:root :is(.cp-project-filter-actions .cp-project-filter-apply,.cp-comments-form .cp-comments-submit,.cp-report-footer .cp-report-submit,.cp-profile-message-controls .cp-profile-message-send,.cp-project-repository-actions button[type=submit],#dialog[data-kind=signup] #dialog-content>button:first-of-type):hover{background:var(--h42-access-accent);border-color:var(--h42-access-accent);color:var(--h42-ink)}
+
+/* Secondary in the sign-in/sign-up dialogs, dark only (light ones are already neutral).
+   Arrival dialog: the turquoise text becomes the text colour with a neutral line. */
+:root[data-theme=dark] :is(#dialog[data-kind=login],#dialog[data-kind=signup]) #dialog-content>.entrance-action.secondary{color:var(--h42-color-text);border-color:var(--cp-line)}
+/* Account dialog: the pink-tinted surface becomes the neutral soft surface; the line is
+   inset so the borderless option keeps its size. */
+:root[data-theme=dark] :is(#dialog[data-kind=login],#dialog[data-kind=signup]) #dialog-content>.dialog-option:last-of-type{background:var(--h42-color-soft);color:var(--h42-color-text);box-shadow:inset 0 0 0 1px var(--cp-line)}

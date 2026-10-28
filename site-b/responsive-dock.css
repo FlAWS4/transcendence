@@ -1,0 +1,356 @@
+/* Four stages, driven by the dock's available content width. The outer dock
+   stays 60px high; its buttons and selection stay 48px high in every stage.
+   Desktop keeps the existing horizontal composition. */
+/* Derive the selection from its final slot at every width. Measuring during
+   a resize can otherwise leave the old flex animation's intermediate width. */
+:root .app[data-navigation=dock] .main-nav.has-dock-search .nav-indicator {
+  --dock-last-slot:3;
+  --dock-indicator-slot:0;
+  --dock-slot-gap:4px;
+  --dock-inline-padding:5px;
+  --dock-slot-step:calc((100cqw + var(--dock-slot-gap)) / (var(--dock-last-slot) + 1));
+  width:calc(var(--dock-slot-step) - var(--dock-slot-gap)) !important;
+  left:calc(var(--dock-inline-padding) + var(--dock-indicator-slot) * var(--dock-slot-step));
+  transform:translateY(-50%) !important;
+  transition:left .45s var(--ease),width .45s var(--ease),opacity .22s ease;
+}
+:root .app[data-navigation=dock] .main-nav.has-dock-search:has(> button[data-section=awards]) .nav-indicator { --dock-last-slot:4; }
+:root .app[data-navigation=dock][data-section=projects] .main-nav.has-dock-search .nav-indicator { --dock-indicator-slot:1; }
+:root .app[data-navigation=dock][data-section=people] .main-nav.has-dock-search .nav-indicator { --dock-indicator-slot:2; }
+:root .app[data-navigation=dock][data-section=journal] .main-nav.has-dock-search .nav-indicator { --dock-indicator-slot:3; }
+:root .app[data-navigation=dock][data-section=awards] .main-nav.has-dock-search .nav-indicator { --dock-indicator-slot:4; }
+:root[dir=rtl] .app[data-navigation=dock] .main-nav.has-dock-search .nav-indicator {
+  left:calc(var(--dock-inline-padding) + (var(--dock-last-slot) - var(--dock-indicator-slot)) * var(--dock-slot-step));
+}
+@media(max-width:700px) {
+  :root .app[data-navigation=dock] .main-nav.has-dock-search .nav-indicator {
+    --dock-slot-gap:2px;
+    --dock-inline-padding:6px;
+  }
+}
+
+@container (max-width:560px) {
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section] {
+    flex-direction:column;
+    gap:2px;
+    padding-inline:2px;
+    font-size:11px;
+    line-height:18px;
+  }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section] > svg {
+    width:20px;
+    height:20px;
+    flex:0 0 20px;
+  }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section] > span {
+    min-width:0;
+    max-inline-size:100%;
+    block-size:18px;
+    flex-shrink:0;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    transition:opacity .2s,block-size .35s var(--ease);
+  }
+}
+
+@container (max-width:340px) {
+  /* Keep each icon centred while the selected button receives label space.
+     The controller also reads this token to compact the geographic path. */
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section] {
+    --dock-compact-item:48px;
+    flex:0 0 var(--dock-compact-item);
+    gap:0;
+    transition:opacity .2s ease,transform .36s var(--ease),color .25s,flex-grow .35s var(--ease),gap .35s var(--ease);
+    transition-delay:calc(150ms + var(--dock-menu-order,0) * 24ms),calc(150ms + var(--dock-menu-order,0) * 24ms),0s,0s,0s;
+  }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section][aria-current] {
+    flex-grow:1;
+    gap:2px;
+  }
+  /* A zero-height, transparent label retains the button's accessible name. */
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section]:not([aria-current]) > span {
+    block-size:0;
+    opacity:0;
+  }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search .nav-indicator {
+    --dock-compact-item:48px;
+    --dock-slot-step:calc(var(--dock-compact-item) + var(--dock-slot-gap));
+    width:calc(100cqw - var(--dock-last-slot) * var(--dock-slot-step)) !important;
+    transition:left .35s var(--ease),width .35s var(--ease),opacity .22s ease;
+  }
+}
+
+@container (max-width:280px) {
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section],
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section][aria-current] {
+    flex:1 1 0;
+    gap:0;
+  }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section] > span {
+    block-size:0;
+    opacity:0;
+  }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search .nav-indicator {
+    --dock-slot-step:calc((100cqw + var(--dock-slot-gap)) / (var(--dock-last-slot) + 1));
+    width:calc(var(--dock-slot-step) - var(--dock-slot-gap)) !important;
+  }
+}
+
+/* Refinements §W (26 Oct 2026): « À partir d'une certaine hauteur minimale, je veux que le menu et les boutons ne soient
+   plus en bas mais sur le côté gauche », for « Paysage et moins de 720 px » on « Toutes les pages », the labels following
+   the width as in this dock and the icons alone when it is too narrow. In a window wider than tall and at most 720 px
+   tall, the dock stands as a rail on the inline-start side (left; right in Arabic), the search and the dice under its
+   destinations. The page beside it starts after the rail (--dock-rail-room: the Explorer's stage, the scope bar, the
+   content, the loading status) and takes the freed height (the Explorer's band reaches down to the window's bottom
+   margin, welcome.mjs). The markup and its order never change, so a resize or a rotation switches at once, the section,
+   an open search and the focus kept (welcome.mjs drops the transitions for that frame); the entrance sees the menu
+   upright on its side and slides it in from there.
+   Refinements §X (26 Oct 2026): « Je veux que le nouveau menu, quand la hauteur devient trop faible, soit dans le même
+   style que le menu dans les premières versions du site A », then, after a first look, « Le menu est beaucoup trop gros,
+   réduis la taille, recentre un peu ça, et pour les deux boutons du bas fais-en uniquement des icônes finalement » and
+   « Le menu ne doit plus être affecté par l'effet de disparition lorsqu'il passe à gauche » (« Moyenne, environ 70 % »,
+   « Centré en hauteur »), and « Le bouton pour la sélection au hasard doit passer sous la recherche quand le texte du
+   menu à gauche disparaît ». The rail has the look of version A's first side menu (welcome.css's base .main-nav,
+   .main-nav button and .nav-indicator rules, which the dock overrides) at about 70 % of its size:
+   - no panel (no background, border, shadow or blur behind the rail or its buttons); each destination a row with its
+     icon (stroke 1.6) and its label, start-aligned, in the page's muted colour, the text colour on hover; the current
+     one in the text colour, weight 500, its icon turned and coloured (light: teal 75 % in ink; dark: pink), over one soft
+     pill that glides from row to row (light: the turquoise pill of welcome.css's light theme; dark: --warm-soft,
+     --warm-line); the rows and the pill rounded as the old 66 px rows (22 and 23 px), in proportion;
+   - the old menu's steps by width: wider than 1050 px, labels at 18 px and icons at 20 px in rows of 44 px, a 180 px
+     menu at the header's side (48 px, the old menu's place; 32 px in windows at most 520 px tall); from 701 to 1050 px,
+     labels at 16 px and icons at 18 px in rows of 40 px, a 150 px menu 24 px from the side; at 700 px and less, the
+     icons alone in 40 px rows as wide as tall, one column (a 56 px menu), 14 px from the side, each label kept as its
+     button's name and shown as its tooltip (welcome.mjs); in the two narrower steps the pill lines up with the header's
+     42, as in the old middle step;
+   - the search and the dice: two icon buttons under the destinations, after a slightly larger break, in the rows' style
+     (no background, the muted colour, the same hover and focus), each named by its aria-label and its title; the search
+     under the destinations' icons, the dice beside it where the labels show, under it in the icons-alone column; the
+     pill never goes to them; the search still grows into the glass surface beside the rail, as from the capsule;
+   - the whole block centred in the free height between the header and the bottom margin: the five rows, their four gaps
+     (2/11 of a row, the old 12 px of 66), the break (3/11) and the search's row make seven rows; where they do not fit
+     at full height they shrink together, never under 32 px, under which the block keeps under the header and runs into
+     the bottom margin; in the icons-alone column the dice's row and one more gap make 8 2/11 rows, and under 32 px rows
+     the spacing shrinks first, then the rows, never under 24 px (WCAG 2.5.8);
+   - no scroll fade: while a content page scrolls, the rail stays as at rest (the bottom dock still fades). */
+:root .app[data-navigation=dock] .dock-shell > .dock-search-toggle > svg { display:none; }
+/* welcome.mjs marks the frame of a switch between the dock and the rail: every part takes its other place at once. */
+:root .app[data-navigation=dock][data-dock-switch] :is(.dock-shell,.dock-shell *),
+:root .app[data-navigation=dock][data-dock-switch] .dock-shell *::before { transition:none !important; }
+@media (orientation:landscape) and (max-height:720px) {
+  /* --dock-rail-top: under the header (its height + 8 px). The step's sizes, here the icons alone (the labelled steps
+     below); --dock-rail-cell: an icon in its row's padding, the width of the search's and the dice's buttons, and of the
+     rows while they show their icons alone. */
+  :root .app[data-navigation=dock] {
+    --dock-rail-inset:14px;
+    --dock-rail-top:86px;
+    --dock-rail-bottom:calc(16px + env(safe-area-inset-bottom, 0px));
+    --dock-rail-row-max:40px;
+    --dock-rail-icon:18px;
+    --dock-rail-pad:11px;
+    --dock-rail-icon-gap:8px;
+    --dock-rail-label:16px;
+    --dock-rail-pair-gap:7px;
+    --dock-rail-cell:calc(2 * var(--dock-rail-pad) + var(--dock-rail-icon));
+    /* One column, a cell wide. */
+    --dock-rail-width:calc(16px + var(--dock-rail-cell));
+    /* The page's muted colour, taken outside the dock, whose glass controls set their own (readable-glass.css). */
+    --dock-rail-muted:var(--h42-color-muted);
+    /* The free height and its share, here seven rows (the five destinations, the search, the dice) and their spacing in
+       elevenths of a row (--dock-rail-part): four gaps of 2, the break's 3 and one more gap between the search and the
+       dice, 8 2/11 rows in all, the rows at most the step's full row. Where they do not fit, the rows shrink together
+       down to 32 px, then the spacing shrinks, then the rows again, never under 24 px (WCAG 2.5.8). */
+    --dock-rail-free:calc(100svh - var(--dock-rail-top) - var(--dock-rail-bottom));
+    --dock-rail-row:clamp(24px, min(var(--dock-rail-free) / 7, max(32px, var(--dock-rail-free) * 11 / 90)), var(--dock-rail-row-max));
+    --dock-rail-part:max(0px, min(var(--dock-rail-row) / 11, (var(--dock-rail-free) - 7 * var(--dock-rail-row)) / 13));
+    --dock-rail-gap:calc(2 * var(--dock-rail-part));
+    --dock-rail-break:calc(3 * var(--dock-rail-part));
+    --dock-rail-tail:calc(var(--dock-rail-break) + 2 * var(--dock-rail-row) + var(--dock-rail-gap));
+    --dock-rail-block:calc(7 * var(--dock-rail-row) + 13 * var(--dock-rail-part));
+    /* The block's lift from the bottom margin: half the room left over, or below it when even the smallest rows do not fit. */
+    --dock-rail-lift:calc(max(0px, (var(--dock-rail-free) - var(--dock-rail-block)) / 2) + min(0px, var(--dock-rail-free) - var(--dock-rail-block)));
+    /* The search under the destinations' icons, a row and a gap above the shell's foot; the dice under it, on the foot. */
+    --dock-rail-search-x:8px;
+    --dock-rail-search-y:calc(var(--dock-rail-row) + var(--dock-rail-gap));
+    --dock-rail-dice-x:var(--dock-rail-search-x);
+    --dock-rail-room:calc(var(--dock-rail-inset) + var(--dock-rail-width) + 12px);
+    --dock-rail-form:60px;
+    --dock-rail-flyout-width:min(560px, calc(100vw - var(--dock-rail-room) - 16px));
+  }
+  /* In Arabic the search stays under the destinations' icons, on the right, and the dice with it (the labelled steps
+     below put it on the search's left). */
+  :root[dir=rtl] .app[data-navigation=dock] {
+    --dock-rail-search-x:calc(100% - 8px - var(--dock-rail-cell));
+  }
+  :root .app[data-navigation=dock] #main>.dock-shell {
+    left:auto;right:auto;inset-inline-start:var(--dock-rail-inset);
+    top:auto;bottom:var(--dock-rail-bottom);margin-bottom:var(--dock-rail-lift);
+    transform:none;
+    flex-direction:column;align-items:stretch;gap:0;
+    width:var(--dock-rail-width);height:auto;
+    padding:0 0 var(--dock-rail-tail);
+  }
+  /* No container: the bottom dock's stages above never apply to the rail. No panel: the dock's glass is not drawn. */
+  :root .app[data-navigation=dock] #main>.dock-shell>.main-nav.has-dock-search {
+    container-type:normal;
+    flex:none;flex-direction:column;align-items:stretch;gap:var(--dock-rail-gap);
+    width:auto;height:auto;min-height:0;padding:0 8px;border:0;
+  }
+  :root[data-theme] .app[data-navigation=dock] #main>.dock-shell>.main-nav.has-dock-search::before { content:none; }
+  /* The destinations' rows, and the search's and the dice's buttons in the shell's tail (the search's surface grows from
+     its button), each icon at the row's padding from its start. */
+  :root .app[data-navigation=dock] #main>.dock-shell>.main-nav>button[data-section],
+  :root .app[data-navigation=dock] #main>.dock-shell>.dock-search-toggle,
+  :root[data-theme] .app[data-navigation=dock] #main>.dock-shell[data-has-discovery=true]>.dock-random-toggle {
+    flex:none;flex-direction:row;align-items:center;justify-content:flex-start;gap:var(--dock-rail-icon-gap);
+    width:var(--dock-rail-cell);height:var(--dock-rail-row);min-width:0;min-height:0;max-width:none;padding:0 var(--dock-rail-pad);
+    border-radius:calc(var(--dock-rail-row) * 22 / 66);color:var(--dock-rail-muted);font-weight:400;
+  }
+  /* The icons; the search's and the dice's keep still on hover, as the rows' (the dock turns them; the current
+     destination's turn and the dice's draw are the only motions). */
+  :root .app[data-navigation=dock] #main>.dock-shell>.main-nav>button[data-section]>svg,
+  :root .app[data-navigation=dock] #main>.dock-shell>.dock-search-toggle>svg,
+  :root[data-theme] .app[data-navigation=dock] #main>.dock-shell[data-has-discovery=true]>.dock-random-toggle>svg {
+    width:var(--dock-rail-icon);height:var(--dock-rail-icon);flex:0 0 var(--dock-rail-icon);stroke-width:1.6;transform:none;
+  }
+  /* The destinations' labels: visually hidden in the icons-alone step, each still its button's name (never display:none,
+     visibility:hidden or aria-hidden). */
+  :root .app[data-navigation=dock] #main>.dock-shell>.main-nav>button[data-section]>span {
+    position:absolute;inline-size:1px;block-size:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;
+  }
+  :root .app[data-navigation=dock] #main>.dock-shell>.main-nav>button[data-section][aria-current] { color:var(--h42-color-text);font-weight:500; }
+  :root .app[data-navigation=dock] #main>.dock-shell>.main-nav>button[data-section][aria-current]>svg { color:var(--h42-pink);transform:rotate(-8deg) scale(1.08); }
+  :root[data-theme=light] .app[data-navigation=dock] #main>.dock-shell>.main-nav>button[data-section][aria-current]>svg { color:color-mix(in srgb,var(--h42-teal) 75%,var(--h42-ink)); }
+  :root .app[data-navigation=dock] #main>.dock-shell>.main-nav>button[data-section]:hover,
+  :root .app[data-navigation=dock] #main>.dock-shell>.dock-search-toggle:hover,
+  :root[data-theme] .app[data-navigation=dock] #main>.dock-shell[data-has-discovery=true]>.dock-random-toggle:not(:disabled):hover { color:var(--h42-color-text); }
+  /* The pill: behind the current destination's row, from row to row. */
+  :root .app[data-navigation=dock] #main>.dock-shell>.main-nav>.nav-indicator {
+    top:0;left:auto;right:auto;inset-inline-start:8px;
+    width:var(--dock-rail-cell) !important;
+    height:var(--dock-rail-row) !important;
+    border:1px solid var(--warm-line);border-radius:calc(var(--dock-rail-row) * 23 / 66);background:var(--warm-soft);box-shadow:none;
+    transform:translateY(calc(var(--dock-indicator-slot) * (var(--dock-rail-row) + var(--dock-rail-gap)))) !important;
+    transition:transform .48s var(--ease),opacity var(--dock-glass-duration) ease;
+  }
+  :root[data-theme=light] .app[data-navigation=dock] #main>.dock-shell>.main-nav>.nav-indicator {
+    background:color-mix(in srgb,var(--h42-teal) 10%,var(--h42-color-bg));
+    border-color:color-mix(in srgb,var(--h42-teal) 22%,var(--h42-color-bg));
+    box-shadow:0 8px 20px color-mix(in srgb,var(--h42-teal) 6%,transparent);
+  }
+  /* While the search is open beside it, the rail stays in place, dimmed (its buttons are inert, dock-search.mjs). */
+  :root .app[data-navigation=dock] #main>.dock-shell>.main-nav[data-search-open=true]>button[data-section] { opacity:.32;transform:none; }
+  :root .app[data-navigation=dock] #main>.dock-shell>.main-nav[data-search-open=true]>.nav-indicator { opacity:.32; }
+  /* No scroll fade: while a content page scrolls (dock-search.mjs's data-document-scrolling), the rail stays as at rest,
+     shown and usable; the bottom dock keeps its fade (dock-search.css, contextual-discovery.css), the back-to-top shortcut
+     its own (back-to-top.css), and the disabled dice its .42 (contextual-discovery.css). */
+  :root .app[data-navigation=dock] #main>.dock-shell[data-document-scrolling=true]:not([data-search-open=true])>.main-nav>:is(button[data-section],.nav-indicator),
+  :root .app[data-navigation=dock] #main>.dock-shell[data-document-scrolling=true]:not([data-search-open=true])>.dock-search-toggle,
+  :root[data-theme] .app[data-navigation=dock] #main>.dock-shell[data-document-scrolling=true]:not([data-search-open=true])>.dock-random-toggle:not(:disabled) { opacity:1; }
+  :root[data-theme] .app[data-navigation=dock] #main>.dock-shell[data-document-scrolling=true]:not([data-search-open=true])>.dock-random-toggle:disabled { opacity:.42; }
+  :root .app[data-navigation=dock] #main>.dock-shell[data-document-scrolling=true]:not([data-search-open=true]),
+  :root .app[data-navigation=dock] #main>.dock-shell[data-document-scrolling=true]:not([data-search-open=true])>:is(.main-nav,.dock-search-toggle,.dock-random-toggle),
+  :root .app[data-navigation=dock] #main>.dock-shell[data-document-scrolling=true]:not([data-search-open=true])>.main-nav>button[data-section] { pointer-events:auto; }
+  /* The search: an icon button that grows, as the capsule does, into the results' glass surface, beside the rail and
+     level with its own foot; the field lies at the bottom of that surface, the results above it. */
+  :root .app[data-navigation=dock] #main>.dock-shell>.dock-search-toggle {
+    left:var(--dock-rail-search-x);right:auto;top:auto;bottom:var(--dock-rail-search-y);transform:none;
+  }
+  :root[data-theme] .app[data-navigation=dock] #main>.dock-shell:not([data-search-open=true])>.dock-search-toggle {
+    border-width:0;background:transparent;box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none;
+  }
+  :root .app[data-navigation=dock] #main>.dock-shell>.dock-search-toggle>svg { display:block;transition:opacity .16s .24s; }
+  :root .app[data-navigation=dock] #main>.dock-shell>.dock-search-toggle>.dock-search-toggle-label { display:none; }
+  :root .app[data-navigation=dock] #main>.dock-shell[data-search-open=true]>.dock-search-toggle {
+    left:calc(100% + 12px);
+    bottom:var(--dock-keyboard-offset, 0px);
+    width:var(--dock-rail-flyout-width);
+    height:calc(var(--dock-results-height, 120px) + var(--dock-rail-form));
+    border-radius:24px;
+  }
+  :root[dir=rtl] .app[data-navigation=dock] #main>.dock-shell[data-search-open=true]>.dock-search-toggle {
+    left:calc(-12px - var(--dock-rail-flyout-width));
+  }
+  :root .app[data-navigation=dock] #main>.dock-shell[data-search-open=true]>.dock-search-toggle>svg { opacity:0;transition-delay:0s; }
+  /* The field's focus shows on the surface that holds it. */
+  :root[data-theme] .app[data-navigation=dock] #main>.dock-shell[data-search-open=true]:has(.dock-search-input:focus-visible)>.dock-search-toggle {
+    border-color:var(--readable-glass-accent,var(--h42-color-focus));
+  }
+  /* The field and the results are placed from the nav's padding box (the rail has no border), the field 5 px inside the
+     surface. */
+  :root .app[data-navigation=dock] #main>.dock-shell>.main-nav .dock-search-form {
+    inset:auto;
+    inset-inline-start:calc(var(--dock-rail-width) + 17px);
+    bottom:calc(var(--dock-keyboard-offset, 0px) + 5px - var(--dock-rail-tail));
+    width:calc(var(--dock-rail-flyout-width) - 10px);
+    height:calc(var(--dock-rail-form) - 10px);
+  }
+  :root .app[data-navigation=dock] #main>.dock-shell>.main-nav .dock-search-panel {
+    inset:auto;
+    inset-inline-start:calc(var(--dock-rail-width) + 12px);
+    bottom:calc(var(--dock-keyboard-offset, 0px) + var(--dock-rail-form) - var(--dock-rail-tail));
+    width:var(--dock-rail-flyout-width);
+    max-height:min(440px, calc(var(--dock-search-viewport-height, 100dvh) - var(--dock-rail-bottom) - var(--dock-rail-lift) - var(--dock-rail-form) - 36px));
+  }
+  /* The dice: beside the search (under it in the icons-alone column), its focus ring as the rows' (welcome.css's 5 px). */
+  :root[data-theme] .app[data-navigation=dock] #main>.dock-shell[data-has-discovery=true]>.dock-random-toggle {
+    left:var(--dock-rail-dice-x);bottom:0;
+    border:0;background:transparent;box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none;transform:none;
+  }
+  :root[data-theme] .app[data-navigation=dock] #main>.dock-shell[data-has-discovery=true]>.dock-random-toggle:focus-visible { outline-offset:5px; }
+  :root[data-theme] .app[data-navigation=dock] #main>.dock-shell[data-has-discovery=true][data-search-open=true]>.dock-random-toggle { transform:scale(.86); }
+  /* The page beside the rail: its column starts after it, centred items and bars on that column. */
+  :root .app[data-navigation=dock] #main { padding-inline-start:var(--dock-rail-room); }
+  :root .app[data-navigation=dock] #main>#explorer.explorer-selector { inset-inline-start:var(--dock-rail-room); }
+  :root .app[data-navigation=dock] #main>.scope-bar { left:calc(50vw + var(--dock-rail-room) / 2); }
+  :root[dir=rtl] .app[data-navigation=dock] #main>.scope-bar { left:calc(50vw - var(--dock-rail-room) / 2); }
+  :root .app[data-navigation=dock]:not([data-reading=true]) #main>.scope-bar { max-width:min(640px, calc(100vw - var(--dock-rail-room) - 32px)); }
+  :root .app[data-navigation=dock] #main>.loading-status { left:calc(50% + var(--dock-rail-room) / 2); }
+  :root[dir=rtl] .app[data-navigation=dock] #main>.loading-status { left:calc(50% - var(--dock-rail-room) / 2); }
+  /* Nothing at the bottom any more: the content ends with its own margin, the back-to-top shortcut in the corner
+     (back-to-top.mjs lifts it over the dock's controls, which stand beside it now: its inline bottom is overruled). */
+  :root .app[data-navigation=dock] .content-sheet { padding-bottom:calc(72px + env(safe-area-inset-bottom, 0px)); }
+  :root .app[data-navigation=dock] > .back-to-top:not([hidden]) { bottom:var(--dock-rail-bottom) !important; }
+}
+@media (orientation:landscape) and (max-height:520px) {
+  :root .app[data-navigation=dock] { --dock-rail-top:70px; }
+}
+@media (orientation:landscape) and (max-height:720px) and (max-width:700px) {
+  :root .app[data-navigation=dock][data-reading=true] #main>.scope-bar { max-width:calc(100vw - var(--dock-rail-room) - 32px); }
+}
+/* The labelled steps: from 701 px wide, the middle step's sizes (the wide step's below); the rows and the pill as wide as
+   the menu, each label beside its icon; the search and the dice side by side on one row, so the block is seven rows
+   (six rows, their four gaps and the break), which shrink together, never under 32 px. */
+@media (orientation:landscape) and (max-height:720px) and (min-width:701px) {
+  :root .app[data-navigation=dock] {
+    --dock-rail-inset:24px;--dock-rail-top:116px;--dock-rail-width:150px;
+    --dock-rail-row:clamp(32px, var(--dock-rail-free) / 7, var(--dock-rail-row-max));--dock-rail-part:calc(var(--dock-rail-row) / 11);
+    --dock-rail-tail:calc(var(--dock-rail-break) + var(--dock-rail-row));--dock-rail-block:calc(7 * var(--dock-rail-row));
+    --dock-rail-search-y:0px;--dock-rail-dice-x:calc(8px + var(--dock-rail-cell) + var(--dock-rail-pair-gap));
+  }
+  /* In Arabic the dice on the search's left. */
+  :root[dir=rtl] .app[data-navigation=dock] { --dock-rail-dice-x:calc(100% - 8px - 2 * var(--dock-rail-cell) - var(--dock-rail-pair-gap)); }
+  :root .app[data-navigation=dock] #main>.dock-shell>.main-nav>button[data-section] { width:auto; }
+  :root .app[data-navigation=dock] #main>.dock-shell>.main-nav>button[data-section]>span {
+    position:static;inline-size:auto;block-size:auto;min-width:0;clip-path:none;text-overflow:ellipsis;font-size:var(--dock-rail-label);
+  }
+  :root .app[data-navigation=dock] #main>.dock-shell>.main-nav>.nav-indicator { width:calc(100% - 16px) !important; }
+}
+@media (orientation:landscape) and (max-height:520px) and (min-width:701px) {
+  :root .app[data-navigation=dock] { --dock-rail-top:84px; }
+}
+@media (orientation:landscape) and (max-height:720px) and (min-width:1051px) {
+  :root .app[data-navigation=dock] {
+    --dock-rail-inset:48px;--dock-rail-top:132px;--dock-rail-width:180px;
+    --dock-rail-row-max:44px;--dock-rail-icon:20px;--dock-rail-pad:14px;--dock-rail-icon-gap:13px;--dock-rail-label:18px;--dock-rail-pair-gap:8px;
+  }
+}
+@media (orientation:landscape) and (max-height:520px) and (min-width:1051px) {
+  :root .app[data-navigation=dock] { --dock-rail-inset:32px;--dock-rail-top:84px; }
+}
+/* Forced colours: the pill and the current destination in system colours (over both themes' colours). */
+@media (orientation:landscape) and (max-height:720px) and (forced-colors:active) {
+  :root[data-theme] .app[data-navigation=dock] #main>.dock-shell>.main-nav>.nav-indicator { background:Canvas;border:2px solid Highlight;box-shadow:none; }
+  :root[data-theme] .app[data-navigation=dock] #main>.dock-shell>.main-nav>button[data-section][aria-current],
+  :root[data-theme] .app[data-navigation=dock] #main>.dock-shell>.main-nav>button[data-section][aria-current]>svg { color:Highlight; }
+}

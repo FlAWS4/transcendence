@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="Trois essais interactifs pour explorer les sections d’un profil Horizon.">
+  <title>Horizon — Trois navigations de profil</title>
+  <link rel="stylesheet" href="assets/tokens.css">
+  <link rel="stylesheet" href="assets/jost.css">
+  <link rel="stylesheet" href="gallery.css?v=1">
+  <script type="module" src="gallery.mjs?v=1"></script>
+</head>
+<body>
+  <header class="gallery-header">
+    <a href="../../../research-archive/index.html" class="brand" aria-label="42 Horizon · Archives de recherche"><img src="assets/logo-42.svg" alt="42" width="43" height="32"><span>HORIZON</span></a>
+    <div class="header-actions"><a href="../../../research-archive/index.html">Les archives <span aria-hidden="true">↗</span></a><button id="theme" type="button" aria-label="Activer le thème sombre" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 13a8.5 8.5 0 0 1-9.5-9.5A8.5 8.5 0 1 0 20.5 13Z"/></svg></button></div>
+  </header>
+  <main>
+    <div class="intro"><div><p class="eyebrow">Recherche de navigation · 07 octobre 2026</p><h1>Un profil.<br>Trois façons de l’explorer.</h1></div><p class="intro-copy">La même personne, les mêmes contenus. <br>Seule la navigation change. <br><span>Ouvre une piste pour essayer les transitions.</span></p></div>
+    <div class="studies">
+      <article class="study">
+        <div class="mini-screen" aria-hidden="true"><span class="number">01</span><div class="mini-person"><img src="assets/leila-mansour.svg" alt=""><div><b>Leïla Mansour</b><small>@lmansour · 42 Paris</small></div></div><div class="mini-tabs"><span class="active">Présentation</span><span>Projets</span><span>Parcours</span><span>Journal</span></div><div class="mini-content"><b>Apprendre à demander.</b><i></i><i class="short"></i></div><div class="mini-dock"><span>Explorer</span><span>Projets</span><span class="active">Profils</span><span>Journal</span></div></div>
+        <div class="study-copy"><p class="eyebrow">Les sections près du contenu</p><h2>Repères permanents</h2><p>Le menu du site garde sa place. Les rubriques du profil apparaissent sous son identité.</p><a class="try" href="demo.html?variant=1#profiles">Essayer la piste 01 <span aria-hidden="true">↗</span></a><a class="direct" href="demo.html?variant=1#profile/projects">Arriver directement dans ses projets</a></div>
+      </article>
+      <article class="study">
+        <div class="mini-screen contextual" aria-hidden="true"><span class="number">02</span><div class="mini-person"><img src="assets/leila-mansour.svg" alt=""><div><b>Leïla Mansour</b><small>@lmansour · 42 Paris</small></div></div><div class="mini-content"><b>Apprendre à demander.</b><i></i><i class="short"></i></div><div class="mini-horizon">Menu Horizon</div><div class="mini-dock"><span class="mini-back">← Profils</span><span class="active">Présentation</span><span>Projets</span><span>Parcours</span><span>Journal</span></div></div>
+        <div class="study-copy"><p class="eyebrow">Le menu entre dans le profil</p><h2>Dock contextuel</h2><p>Profils se déplace à gauche ; les rubriques de Leïla prennent place à droite. Un accès au site reste disponible.</p><a class="try" href="demo.html?variant=2#profiles">Essayer la piste 02 <span aria-hidden="true">↗</span></a><a class="direct" href="demo.html?variant=2#profile/projects">Arriver directement dans ses projets</a></div>
+      </article>
+      <article class="study">
+        <div class="mini-screen two-level" aria-hidden="true"><span class="number">03</span><div class="mini-person"><img src="assets/leila-mansour.svg" alt=""><div><b>Leïla Mansour</b><small>@lmansour · 42 Paris</small></div></div><div class="mini-content"><b>Apprendre à demander.</b><i></i><i class="short"></i></div><div class="mini-local"><small>Profil de Leïla</small><div><span class="active">Présentation</span><span>Projets</span><span>Parcours</span><span>Journal</span></div></div><div class="mini-dock"><span>Explorer</span><span>Projets</span><span class="active">Profils</span><span>Journal</span></div></div>
+        <div class="study-copy"><p class="eyebrow">Les deux niveaux à portée de main</p><h2>Double niveau</h2><p>Une rangée propre au profil s’ouvre au-dessus du dock global. Les deux destinations restent visibles.</p><a class="try" href="demo.html?variant=3#profiles">Essayer la piste 03 <span aria-hidden="true">↗</span></a><a class="direct" href="demo.html?variant=3#profile/projects">Arriver directement dans ses projets</a></div>
+      </article>
+    </div>
+    <section class="compare" aria-labelledby="compare-title"><div><p class="eyebrow">Pour les comparer</p><h2 id="compare-title">Le même petit parcours.</h2></div><ol><li>Ouvre le profil de Leïla, puis ses projets.</li><li>Retrouve les projets de tout Horizon.</li><li>Reviens à son parcours, puis à Explorer.</li></ol><p>Observe où tu hésites et si tu sais toujours dans quel espace tu te trouves. Les liens directs permettent aussi d’essayer sans avoir vu l’animation.</p></section>
+  </main>
+  <footer><p>Trois prototypes conservés · Données de démonstration · Aucun choix final</p><div><a href="NOTES.md">Notes de recherche</a><a href="../../../../site/index.html">Ouvrir le site actuel ↗</a></div></footer>
+</body>
+</html>

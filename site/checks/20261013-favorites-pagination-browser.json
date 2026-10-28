@@ -1,0 +1,48 @@
+{
+  "source": "0ab26e2bb3a1911b790cd3b779c885015bde50978182514c9d690306d7fdb9b6",
+  "cases": [
+    {
+      "case": "favorite-list-page2",
+      "result": {
+        "hash": "#projects?page=2",
+        "page": "Page 2 sur 3",
+        "scroll": 250,
+        "count": 12,
+        "history": {
+          "cp": true,
+          "scroll": 0
+        }
+      }
+    },
+    {
+      "case": "changed-favorite-back-page1",
+      "result": {
+        "hash": "#projects",
+        "page": "Page 1 sur 3",
+        "scroll": 0,
+        "count": 12,
+        "history": {
+          "cp": true,
+          "scroll": 0,
+          "detailScroll": null,
+          "listCriteria": "[\"newest\",[],true,[\"minishell-under-the-prompt\",\"raycast-find-the-light\",\"network-messages-between-us\",\"garden-small-useful-tools\",\"ft-transcendence-building-together\",\"demo-project-bytes-in-order\",\"demo-project-keyboard-notebook\",\"demo-project-quiet-chat-room\",\"demo-project-pipes-and-paths\",\"demo-project-courtyard-in-light\",\"demo-project-shared-match-board\",\"demo-project-small-string-toolbox\",\"demo-project-channel-observatory\",\"demo-project-gentle-forms\",\"demo-project-texture-walk\",\"demo-project-allocation-notes\",\"demo-project-server-from-scratch\",\"demo-project-drafts-at-hand\",\"demo-project-commands-in-layers\",\"demo-project-messages-under-pressure\",\"demo-project-lightweight-reading\",\"demo-project-permissions-made-clear\",\"demo-project-wayfinding-garden\",\"demo-project-pairing-calendar\",\"demo-project-across-the-terminals\"]]"
+        }
+      }
+    },
+    {
+      "case": "unchanged-back-page2",
+      "result": {
+        "hash": "#projects?page=2",
+        "page": "Page 2 sur 3",
+        "scroll": 180,
+        "count": 12,
+        "history": {
+          "cp": true,
+          "scroll": 180,
+          "detailScroll": null,
+          "listCriteria": "[\"newest\",[],true,[\"minishell-under-the-prompt\",\"raycast-find-the-light\",\"network-messages-between-us\",\"garden-small-useful-tools\",\"ft-transcendence-building-together\",\"demo-project-bytes-in-order\",\"demo-project-keyboard-notebook\",\"demo-project-quiet-chat-room\",\"demo-project-pipes-and-paths\",\"demo-project-courtyard-in-light\",\"demo-project-shared-match-board\",\"demo-project-small-string-toolbox\",\"demo-project-channel-observatory\",\"demo-project-gentle-forms\",\"demo-project-texture-walk\",\"demo-project-allocation-notes\",\"demo-project-server-from-scratch\",\"demo-project-drafts-at-hand\",\"demo-project-commands-in-layers\",\"demo-project-messages-under-pressure\",\"demo-project-lightweight-reading\",\"demo-project-permissions-made-clear\",\"demo-project-wayfinding-garden\",\"demo-project-pairing-calendar\",\"demo-project-across-the-terminals\"]]"
+        }
+      }
+    }
+  ]
+}

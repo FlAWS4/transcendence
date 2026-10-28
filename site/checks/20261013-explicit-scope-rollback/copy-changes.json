@@ -1,0 +1,405 @@
+[
+  {
+    "file": "account-menu.mjs",
+    "before": "const small=doc.createElement('small');small.textContent=t.demo;text.append(small);identity.append(text,exit);panel.append(identity);",
+    "after": "identity.append(text,exit);panel.append(identity);",
+    "occurrences": 1
+  },
+  {
+    "file": "profile-ui.mjs",
+    "before": "Pseudo de démonstration",
+    "after": "Pseudo",
+    "occurrences": 1
+  },
+  {
+    "file": "profile-ui.mjs",
+    "before": "Demo username",
+    "after": "Username",
+    "occurrences": 1
+  },
+  {
+    "file": "profile-ui.mjs",
+    "before": "اسم مستخدم تجريبي",
+    "after": "اسم مستخدم",
+    "occurrences": 1
+  },
+  {
+    "file": "profile-ui.mjs",
+    "before": "Envoyer (démo)",
+    "after": "Envoyer",
+    "occurrences": 1
+  },
+  {
+    "file": "profile-ui.mjs",
+    "before": "Send (demo)",
+    "after": "Send",
+    "occurrences": 1
+  },
+  {
+    "file": "profile-ui.mjs",
+    "before": "إرسال (تجريبي)",
+    "after": "إرسال",
+    "occurrences": 1
+  },
+  {
+    "file": "profile-ui.mjs",
+    "before": "Démonstration locale : aucun message réel n’est envoyé.",
+    "after": "Aucun message réel n’est envoyé.",
+    "occurrences": 1
+  },
+  {
+    "file": "profile-ui.mjs",
+    "before": "Local demonstration: no real message is sent.",
+    "after": "No real message is sent.",
+    "occurrences": 1
+  },
+  {
+    "file": "profile-ui.mjs",
+    "before": "عرض محلي تجريبي: لا تُرسل أي رسالة فعلية.",
+    "after": "لا تُرسل أي رسالة فعلية.",
+    "occurrences": 1
+  },
+  {
+    "file": "profile-ui.mjs",
+    "before": "Message saved for this demo. Nothing was sent.",
+    "after": "Message saved. Nothing was sent.",
+    "occurrences": 1
+  },
+  {
+    "file": "profile-ui.mjs",
+    "before": "حُفظت الرسالة لهذا العرض التجريبي. لم تُرسل فعلياً.",
+    "after": "حُفظت الرسالة. لم تُرسل فعلياً.",
+    "occurrences": 1
+  },
+  {
+    "file": "profile-ui.mjs",
+    "before": "Votre dernier message de démonstration",
+    "after": "Votre dernier message",
+    "occurrences": 1
+  },
+  {
+    "file": "profile-ui.mjs",
+    "before": "Your latest demonstration message",
+    "after": "Your latest message",
+    "occurrences": 1
+  },
+  {
+    "file": "profile-ui.mjs",
+    "before": "آخر رسالة تجريبية لك",
+    "after": "آخر رسالة لك",
+    "occurrences": 1
+  },
+  {
+    "file": "project-ui.mjs",
+    "before": "Illustration de démonstration",
+    "after": "Illustration",
+    "occurrences": 1
+  },
+  {
+    "file": "project-ui.mjs",
+    "before": "Demonstration illustration",
+    "after": "Illustration",
+    "occurrences": 1
+  },
+  {
+    "file": "project-ui.mjs",
+    "before": "رسم توضيحي تجريبي",
+    "after": "رسم توضيحي",
+    "occurrences": 1
+  },
+  {
+    "file": "journal-ui.mjs",
+    "before": "Illustration de démonstration",
+    "after": "Illustration",
+    "occurrences": 1
+  },
+  {
+    "file": "journal-ui.mjs",
+    "before": "Demonstration illustration",
+    "after": "Illustration",
+    "occurrences": 1
+  },
+  {
+    "file": "journal-ui.mjs",
+    "before": "رسم توضيحي تجريبي",
+    "after": "رسم توضيحي",
+    "occurrences": 1
+  },
+  {
+    "file": "content-preview-data.mjs",
+    "before": "Schéma de démonstration créé pour ce récit fictif",
+    "after": "Schéma créé pour ce récit fictif",
+    "occurrences": 1
+  },
+  {
+    "file": "content-preview-data.mjs",
+    "before": "Demonstration diagram created for this fictional account",
+    "after": "Diagram created for this fictional account",
+    "occurrences": 1
+  },
+  {
+    "file": "content-preview-data.mjs",
+    "before": "مخطط تجريبي أُنشئ لهذا السرد الخيالي",
+    "after": "مخطط أُنشئ لهذا السرد الخيالي",
+    "occurrences": 1
+  },
+  {
+    "file": "content-controls.mjs",
+    "before": "Dates illustratives des contenus de démonstration.",
+    "after": "Dates illustratives des contenus.",
+    "occurrences": 1
+  },
+  {
+    "file": "content-controls.mjs",
+    "before": "Illustrative dates for the sample content.",
+    "after": "Illustrative dates for the content.",
+    "occurrences": 1
+  },
+  {
+    "file": "content-controls.mjs",
+    "before": "تواريخ توضيحية للمحتوى التجريبي.",
+    "after": "تواريخ توضيحية للمحتوى.",
+    "occurrences": 1
+  },
+  {
+    "file": "comments.mjs",
+    "before": " (démo)",
+    "after": "",
+    "occurrences": 3
+  },
+  {
+    "file": "comments.mjs",
+    "before": " (demo)",
+    "after": "",
+    "occurrences": 3
+  },
+  {
+    "file": "comments.mjs",
+    "before": " (تجريبي)",
+    "after": "",
+    "occurrences": 3
+  },
+  {
+    "file": "comments.mjs",
+    "before": "Démonstration : commentaires",
+    "after": "Commentaires",
+    "occurrences": 1
+  },
+  {
+    "file": "comments.mjs",
+    "before": "Demo: comments",
+    "after": "Comments",
+    "occurrences": 1
+  },
+  {
+    "file": "comments.mjs",
+    "before": "عرض تجريبي: تبقى",
+    "after": "تبقى",
+    "occurrences": 1
+  },
+  {
+    "file": "comments.mjs",
+    "before": " à la démonstration.",
+    "after": ".",
+    "occurrences": 2
+  },
+  {
+    "file": "comments.mjs",
+    "before": " to the demo.",
+    "after": ".",
+    "occurrences": 2
+  },
+  {
+    "file": "comments.mjs",
+    "before": " إلى العرض التجريبي.",
+    "after": ".",
+    "occurrences": 2
+  },
+  {
+    "file": "comments.mjs",
+    "before": "Comments in this demo",
+    "after": "Comments",
+    "occurrences": 1
+  },
+  {
+    "file": "comments.mjs",
+    "before": "تعليقات هذا العرض التجريبي",
+    "after": "التعليقات",
+    "occurrences": 1
+  },
+  {
+    "file": "comments.mjs",
+    "before": "Réaction locale de démonstration",
+    "after": "Réaction locale",
+    "occurrences": 1
+  },
+  {
+    "file": "comments.mjs",
+    "before": "Local demo reaction",
+    "after": "Local reaction",
+    "occurrences": 1
+  },
+  {
+    "file": "comments.mjs",
+    "before": "تفاعل تجريبي محلي",
+    "after": "تفاعل محلي",
+    "occurrences": 1
+  },
+  {
+    "file": "comments.mjs",
+    "before": "Comment updated in this demo.",
+    "after": "Comment updated.",
+    "occurrences": 1
+  },
+  {
+    "file": "comments.mjs",
+    "before": "عُدّل التعليق في هذا العرض التجريبي.",
+    "after": "عُدّل التعليق.",
+    "occurrences": 1
+  },
+  {
+    "file": "comments.mjs",
+    "before": "For this demo, you are using the fictional profile {name}.",
+    "after": "You are using the fictional profile {name}.",
+    "occurrences": 1
+  },
+  {
+    "file": "content-report.mjs",
+    "before": "Démonstration : ce signalement",
+    "after": "Ce signalement",
+    "occurrences": 1
+  },
+  {
+    "file": "content-report.mjs",
+    "before": "Demo: this report",
+    "after": "This report",
+    "occurrences": 1
+  },
+  {
+    "file": "content-report.mjs",
+    "before": "عرض تجريبي: يبقى",
+    "after": "يبقى",
+    "occurrences": 1
+  },
+  {
+    "file": "content-report.mjs",
+    "before": " dans la démonstration.",
+    "after": ".",
+    "occurrences": 1
+  },
+  {
+    "file": "content-report.mjs",
+    "before": " dans cette démonstration.",
+    "after": ".",
+    "occurrences": 1
+  },
+  {
+    "file": "content-report.mjs",
+    "before": " in the demo.",
+    "after": ".",
+    "occurrences": 1
+  },
+  {
+    "file": "content-report.mjs",
+    "before": " in this demo.",
+    "after": ".",
+    "occurrences": 1
+  },
+  {
+    "file": "content-report.mjs",
+    "before": " في العرض التجريبي.",
+    "after": ".",
+    "occurrences": 2
+  },
+  {
+    "file": "welcome.mjs",
+    "before": "sample:'Contenus de démonstration'",
+    "after": "sample:''",
+    "occurrences": 1
+  },
+  {
+    "file": "welcome.mjs",
+    "before": "sample:'Sample content'",
+    "after": "sample:''",
+    "occurrences": 1
+  },
+  {
+    "file": "welcome.mjs",
+    "before": "sample:'محتوى توضيحي'",
+    "after": "sample:''",
+    "occurrences": 1
+  },
+  {
+    "file": "welcome.mjs",
+    "before": "Aucun contenu de démonstration",
+    "after": "Aucun contenu",
+    "occurrences": 2
+  },
+  {
+    "file": "welcome.mjs",
+    "before": "No sample content",
+    "after": "No content",
+    "occurrences": 2
+  },
+  {
+    "file": "welcome.mjs",
+    "before": "محتوى توضيحي",
+    "after": "محتوى",
+    "occurrences": 2,
+    "scope": "Only the two empty-content messages; detailNote is preserved."
+  },
+  {
+    "file": "welcome.mjs",
+    "before": "Illustration de démonstration",
+    "after": "Illustration",
+    "occurrences": 1
+  },
+  {
+    "file": "welcome.mjs",
+    "before": "Demonstration illustration",
+    "after": "Illustration",
+    "occurrences": 1
+  },
+  {
+    "file": "welcome.mjs",
+    "before": "رسم توضيحي تجريبي",
+    "after": "رسم توضيحي",
+    "occurrences": 1
+  },
+  {
+    "file": "welcome.mjs",
+    "before": "Continuer avec le profil de démonstration",
+    "after": "Continuer avec le profil",
+    "occurrences": 1
+  },
+  {
+    "file": "welcome.mjs",
+    "before": "Continue with the demo profile",
+    "after": "Continue with the profile",
+    "occurrences": 1
+  },
+  {
+    "file": "welcome.mjs",
+    "before": "المتابعة بالملف التجريبي",
+    "after": "المتابعة بالملف",
+    "occurrences": 1
+  },
+  {
+    "file": "welcome.mjs",
+    "before": " document.querySelector('.sample-note').textContent=section===",
+    "after": " document.querySelector('.sample-note').hidden=section!=='people';\n document.querySelector('.sample-note').textContent=section===",
+    "occurrences": 1
+  },
+  {
+    "file": "index.html",
+    "before": "<p class=\"sample-note\" data-copy=\"sample\">Contenus de démonstration</p>",
+    "after": "<p class=\"sample-note\" data-copy=\"sample\" hidden></p>",
+    "occurrences": 1
+  },
+  {
+    "file": "content-preview.html",
+    "before": "<p class=\"sample-note\" data-copy=\"sample\">Contenus de démonstration</p>",
+    "after": "<p class=\"sample-note\" data-copy=\"sample\" hidden></p>",
+    "occurrences": 1
+  }
+]

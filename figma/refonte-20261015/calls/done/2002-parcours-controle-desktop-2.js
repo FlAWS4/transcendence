@@ -1,0 +1,32 @@
+// 42 Horizon — lecture seule (19 oct. 2026) : cadres, zones, interactions et points de départ de « 09 · Parcours · ordinateur » ; rien n'est modifié
+const page = await figma.getNodeByIdAsync('760:7');
+await figma.setCurrentPageAsync(page);
+const S = {"desktop-fr-account": "760:29", "desktop-fr-member": "760:32", "desktop-en-entry": "760:35", "desktop-en-explore": "760:38", "desktop-en-projects": "760:41"}, IN = {"767:1183159": [{"path": ["Application", "En-tête", "#account-menu"], "x": 1108.0, "y": 92.0}], "767:1183275": [{"path": ["Application", "En-tête", "#account-menu"], "x": 1108.0, "y": 94.0}], "767:1183404": [{"path": ["Application", "En-tête", "#account-menu"], "x": 1108.0, "y": 92.0}], "767:1183531": [{"path": ["Application", "En-tête", "#account-menu"], "x": 1108.0, "y": 92.0}], "767:1183647": [{"path": ["Application", "En-tête", "#account-menu"], "x": 1108.0, "y": 92.0}], "767:1183765": [{"path": ["Application", "En-tête", "#account-menu"], "x": 1108.0, "y": 94.0}], "767:1183878": [{"path": ["Application", "En-tête", "#account-menu"], "x": 1108.0, "y": 94.0}], "767:1183988": [{"path": ["#dialog"], "x": 510.0, "y": 328.4}], "767:1189728": [{"path": ["#dialog"], "x": 510.0, "y": 328.4}], "767:1591972": [{"path": ["#dialog"], "x": 510.0, "y": 225.4}], "796:261497": [{"path": ["#project-campus-choice-1"], "x": 510.0, "y": 287.0}], "767:1593489": [{"path": ["#dialog"], "x": 936.0, "y": 24.0}], "767:1680236": [{"path": ["Application", "Contenu", "#project-detail", "#project-comment-sort-menu"], "x": 1089.1, "y": 511.0}], "767:1399170": [{"path": ["#dialog"], "x": 510.0, "y": 362.9}], "767:1692502": [{"path": ["#content-category-dialog", ".cp-project-filter-form", ".cp-project-filter-body"], "x": 381.0, "y": 378.9}], "769:1372957": [{"path": ["Application", "Contenu", "#project-detail", ".cp-project-reading-pane", ".cp-project-active-section", ".cp-comments-form", ".cp-mention-picker", "Profiles to mention"], "x": 534.0, "y": 508.6}], "797:261301": [{"path": ["Application", "Contenu", "#content-sort-menu"], "x": 961.0, "y": 257.0}], "767:1676698": [{"path": ["#scope-popover"], "x": 701.0, "y": 137.0}]};
+function locate(c, path, x, y) {
+  let cur = c;
+  const T0 = c.absoluteTransform;
+  for (let i = 0; i < path.length; i++) {
+    const kids = ('children' in cur ? cur.children : []).filter(n => n.name === path[i]);
+    if (!kids.length) return null;
+    if (i < path.length - 1) { cur = kids[0]; continue; }
+    let best = null, bd = 1e9;
+    for (const k of kids) { const t = k.absoluteTransform, d = Math.abs(t[0][2] - T0[0][2] - x) + Math.abs(t[1][2] - T0[1][2] - y); if (d < bd) { bd = d; best = k; } }
+    return bd < 2 ? best : null;
+  }
+  return null;
+}
+const zoneInfo = z => { const r = z.reactions || []; const a = r.length && r[0].actions && r[0].actions[0]; return a ? (a.type === 'NODE' ? a.destinationId : a.type === 'BACK' ? 'BACK' : a.type === 'URL' ? 'URL' : a.type) : null; };
+const out = { sections: {}, flows: page.flowStartingPoints.map(p => [p.name, p.nodeId]) };
+for (const [sid, id] of Object.entries(S)) {
+  const s = await figma.getNodeByIdAsync(id);
+  if (!s) { out.sections[sid] = 'absente'; continue; }
+  out.sections[sid] = s.children.filter(n => n.type === 'FRAME').map(f => {
+    const top = f.children.filter(c => c.name.startsWith('Zone · '));
+    const inner = (IN[f.id] || []).map(p => { const c = locate(f, p.path, p.x, p.y); return c ? [c.overflowDirection, c.children.filter(z => z.name.startsWith('Zone · ')).map(zoneInfo)] : null; });
+    const fr = (f.reactions || [])[0];
+    return { name: f.name, id: f.id, w: Math.round(f.width), h: Math.round(f.height), fixed: f.numberOfFixedChildren, scroll: f.overflowDirection,
+             zones: top.map(zoneInfo), lastFixed: f.children.slice(f.children.length - f.numberOfFixedChildren).map(c => c.name.startsWith('Zone · ') ? 'Z' : c.name).filter(n => n !== 'Z'),
+             inner, auto: fr ? [fr.trigger && fr.trigger.type, fr.trigger && fr.trigger.timeout, fr.actions && fr.actions[0] && fr.actions[0].destinationId] : null };
+  });
+}
+return out;

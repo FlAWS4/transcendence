@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <title>Contrôle navigateur — fiche campus mobile</title>
+ <style>
+  *{box-sizing:border-box}body{margin:0;padding:24px;background:#edf3f3;color:#153a3c;font:15px/1.5 system-ui,sans-serif}main{max-width:1100px;margin:auto}h1{margin:0 0 8px;font-size:24px}p{margin:0 0 16px}.layout{display:grid;grid-template-columns:minmax(0,390px) minmax(0,1fr);gap:24px;align-items:start}.controls{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}button{border:1px solid #8eacad;border-radius:8px;padding:9px 12px;background:white;color:inherit;font:inherit;cursor:pointer}button:hover{background:#d9eeee}button:disabled{opacity:.45;cursor:wait}button:focus-visible{outline:3px solid #087d82;outline-offset:2px}iframe{display:block;width:min(390px,100%);height:640px;border:0;border-radius:18px;background:white;box-shadow:0 8px 32px #153a3c22}#status{padding:12px 16px;background:white;border-radius:10px;margin-bottom:12px}#status[data-result=pass]{border-left:5px solid #08754b}#status[data-result=fail]{border-left:5px solid #c82e3b}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#fff;border:1px solid #cddede;border-radius:10px;padding:16px;font:12px/1.55 ui-monospace,monospace;max-height:680px;overflow:auto}small{display:block;margin-top:8px;color:#476567}@media(max-width:760px){body{padding:16px}.layout{grid-template-columns:1fr}.preview{order:2}}
+ </style>
+</head>
+<body>
+ <main>
+  <h1>Fiche campus mobile — contrôle navigateur</h1>
+  <p>Vrais composant, styles et données Paris dans une fenêtre de390×640px. Les gestes envoyés par ces commandes sont synthétiques : ce contrôle ne remplace pas un essai sur téléphone.</p>
+  <div class="controls" aria-label="Scénarios de contrôle">
+   <button data-scenario="expand" disabled>Déployer</button>
+   <button data-scenario="collapse" disabled>Replier</button>
+   <button data-scenario="reading" disabled>Retour de lecture</button>
+   <button data-scenario="handle" disabled>Poignée après défilement</button>
+   <button data-scenario="cancel" disabled>Annuler un geste</button>
+   <button data-scenario="reopen" disabled>Fermer et réouvrir</button>
+   <button data-scenario="photo" disabled>Bouton photo</button>
+   <button data-scenario="all" disabled>Tout vérifier</button>
+  </div>
+  <div class="layout">
+   <div class="preview"><iframe id="fixture" src="./campus-sheet-fixture.html" title="Fiche Paris — fenêtre mobile de contrôle"></iframe><small>La croix, les photos, les liens et le défilement restent directement utilisables dans cette fenêtre.</small></div>
+   <section aria-label="Résultats">
+    <div id="status" role="status">Chargement de la fiche Paris…</div>
+    <pre id="results">En attente des contrôles.</pre>
+   </section>
+  </div>
+ </main>
+ <script type="module">
+  const frame = document.querySelector('#fixture');
+  const buttons = [...document.querySelectorAll('[data-scenario]')];
+  const status = document.querySelector('#status');
+  const results = document.querySelector('#results');
+  const scenarioNames = {expand:'Déployer',collapse:'Replier',reading:'Retour de lecture',handle:'Poignée après défilement',cancel:'Annuler un geste',reopen:'Fermer et réouvrir',photo:'Bouton photo'};
+  window.addEventListener('message', event => {
+   if (event.source !== frame.contentWindow || event.origin !== location.origin) return;
+   if (event.data?.type === 'campus-sheet-ready') {
+    buttons.forEach(button => {button.disabled=false;});
+    status.textContent='Prêt — sélectionnez un scénario.';
+    results.textContent=JSON.stringify(event.data.metrics,null,2);
+   }
+   if (event.data?.type === 'campus-sheet-error') {
+    status.dataset.result='fail';status.textContent='Échec du chargement';results.textContent=event.data.message;
+   }
+  });
+  for (const button of buttons) button.addEventListener('click', async () => {
+   buttons.forEach(item => {item.disabled=true;});
+   status.textContent='Contrôle en cours…';delete status.dataset.result;
+   const names=button.dataset.scenario==='all'?Object.keys(scenarioNames):[button.dataset.scenario];
+   const reports=[];
+   try {
+    for (const name of names) {
+     const report=await frame.contentWindow.campusSheetHarness.run(name);
+     reports.push({scenario:scenarioNames[name],...report});
+     results.textContent=JSON.stringify(reports,null,2);
+    }
+    const passed=reports.every(report=>report.passed);
+    status.dataset.result=passed?'pass':'fail';
+    status.textContent=`${passed?'Réussi':'Échec'} — ${reports.filter(report=>report.passed).length}/${reports.length} scénario(s). Événements tactiles synthétiques.`;
+   } catch (error) {
+    status.dataset.result='fail';status.textContent='Erreur de contrôle';results.textContent=String(error.stack||error);
+   } finally {
+    buttons.forEach(item=>{item.disabled=false;});
+   }
+  });
+ </script>
+</body>
+</html>

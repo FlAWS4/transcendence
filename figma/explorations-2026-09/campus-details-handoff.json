@@ -1,0 +1,86 @@
+{
+  "date": "2026-09-27",
+  "fileKey": "yFrdllVm6nrKZJ2c99MMjT",
+  "pageId": "115:2",
+  "scope": "Paris campus information overlays, FR/light, from campus-details.css and campus-details.mjs",
+  "desktop": {
+    "overlayId": "330:4463",
+    "componentId": "332:4467",
+    "dismissId": "332:4463",
+    "closeId": "332:4470",
+    "websiteId": "332:4489",
+    "viewport": [
+      1440,
+      960
+    ],
+    "panel": [
+      734.8,
+      257.5,
+      460,
+      445
+    ],
+    "canvas": [
+      22000,
+      6000
+    ]
+  },
+  "mobile": {
+    "overlayId": "330:4464",
+    "instanceId": "332:4504",
+    "dismissId": "332:4465",
+    "closeId": "I332:4504;332:4470",
+    "websiteId": "I332:4504;332:4489",
+    "viewport": [
+      390,
+      844
+    ],
+    "panel": [
+      16,
+      199.5,
+      358,
+      445
+    ],
+    "canvas": [
+      22000,
+      7200
+    ]
+  },
+  "interactions": {
+    "close": "Native CLOSE action on close button and backdrop",
+    "website": {
+      "url": "https://42.fr/",
+      "openInNewTab": true
+    },
+    "trigger": "Connected from conditional Paris details text button under the scope control on the four LTR homes; no city reticle on the world globe.",
+    "verifiedEnArUrl": "https://42.fr/en/homepage/",
+    "websiteLocaleCoverage": "FR interaction only; web resolves Horizon locale, then English, then local language."
+  },
+  "verification": {
+    "fonts": [
+      "Jost Regular",
+      "Jost Medium"
+    ],
+    "tokens": "Existing welcome colour variables, spacing/radii, existing 42/Floating effect, existing close icon/button and Action button instance; no existing library components modified.",
+    "componentProperties": [
+      "Campus name#332:0",
+      "Country#332:1",
+      "Address#332:2"
+    ],
+    "visual": "Desktop and mobile exports examined. Button text aligned to source; clipping contains shadow within viewport; backdrop node opacity 0.12. Bodies fit with no clipped address or CTA.",
+    "exports": [
+      "assets/campus-details-desktop.png",
+      "assets/campus-details-mobile.png"
+    ],
+    "sourceWebSize": [
+      460,
+      445.04
+    ],
+    "browser": "Après rechargement du lecteur : France → Paris → Voir la carte → Fiche du campus → fermeture par croix. Bouton visible, fiche Paris examinée et fermeture confirmée par root ; aucun problème restant."
+  },
+  "limitations": [
+    "No campus-neighbourhood map existed in the Figma file.",
+    "The WebGL Paris view was inspected in Chrome, but Chrome content export was unavailable; no map image was imported and no geographic plan was invented.",
+    "These are composable information overlays over the prototype's current view, not a reproduction of the web's full map camera or 58 campus states.",
+    "The matching web implementation handles visible reticle/name information and offscreen-arrow recentering."
+  ]
+}

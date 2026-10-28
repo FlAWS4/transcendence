@@ -1,0 +1,1937 @@
+{
+ "id": "recherche-repliee",
+ "stages": [
+  {
+   "vue": "ordinateur",
+   "viewport": [
+    1440,
+    900
+   ],
+   "avant": {
+    "vw": 1440,
+    "vh": 900,
+    "section": "projects",
+    "navContent": 624,
+    "stage": 1,
+    "buttons": [
+     {
+      "section": "explore",
+      "current": false,
+      "text": "Explorer",
+      "button": {
+       "x": 408,
+       "y": 814,
+       "w": 121.6,
+       "h": 48
+      },
+      "label": {
+       "x": 459.3,
+       "y": 829.3,
+       "w": 49,
+       "h": 17.5
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "17.5px",
+      "direction": "row"
+     },
+     {
+      "section": "projects",
+      "current": true,
+      "text": "Projets",
+      "button": {
+       "x": 533.6,
+       "y": 814,
+       "w": 121.6,
+       "h": 48
+      },
+      "label": {
+       "x": 588.6,
+       "y": 829.3,
+       "w": 41.6,
+       "h": 17.5
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "17.5px",
+      "direction": "row"
+     },
+     {
+      "section": "people",
+      "current": false,
+      "text": "Profils",
+      "button": {
+       "x": 659.2,
+       "y": 814,
+       "w": 121.6,
+       "h": 48
+      },
+      "label": {
+       "x": 716.9,
+       "y": 829.3,
+       "w": 36.1,
+       "h": 17.5
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "17.5px",
+      "direction": "row"
+     },
+     {
+      "section": "journal",
+      "current": false,
+      "text": "Chroniques",
+      "button": {
+       "x": 784.8,
+       "y": 814,
+       "w": 121.6,
+       "h": 48
+      },
+      "label": {
+       "x": 826.4,
+       "y": 829.3,
+       "w": 68.4,
+       "h": 17.5
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "17.5px",
+      "direction": "row"
+     },
+     {
+      "section": "awards",
+      "current": false,
+      "text": "42 Awards",
+      "button": {
+       "x": 910.4,
+       "y": 814,
+       "w": 121.6,
+       "h": 48
+      },
+      "label": {
+       "x": 954.4,
+       "y": 829.3,
+       "w": 63.5,
+       "h": 17.5
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "17.5px",
+      "direction": "row"
+     }
+    ],
+    "indicator": {
+     "x": 533.6,
+     "y": 814,
+     "w": 121.6,
+     "h": 48
+    },
+    "toggle": {
+     "x": 594,
+     "y": 751,
+     "w": 200,
+     "h": 44
+    },
+    "die": {
+     "x": 802,
+     "y": 751,
+     "w": 44,
+     "h": 44
+    },
+    "toggleDisplay": "flex",
+    "dieDisplay": "flex",
+    "overflow": false
+   },
+   "apres": {
+    "vw": 1440,
+    "vh": 900,
+    "section": "projects",
+    "navContent": 624,
+    "stage": 1,
+    "buttons": [
+     {
+      "section": "explore",
+      "current": false,
+      "text": "Explorer",
+      "button": {
+       "x": 408,
+       "y": 814,
+       "w": 121.6,
+       "h": 48
+      },
+      "label": {
+       "x": 459.3,
+       "y": 829.3,
+       "w": 49,
+       "h": 17.5
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "17.5px",
+      "direction": "row"
+     },
+     {
+      "section": "projects",
+      "current": true,
+      "text": "Projets",
+      "button": {
+       "x": 533.6,
+       "y": 814,
+       "w": 121.6,
+       "h": 48
+      },
+      "label": {
+       "x": 588.6,
+       "y": 829.3,
+       "w": 41.6,
+       "h": 17.5
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "17.5px",
+      "direction": "row"
+     },
+     {
+      "section": "people",
+      "current": false,
+      "text": "Profils",
+      "button": {
+       "x": 659.2,
+       "y": 814,
+       "w": 121.6,
+       "h": 48
+      },
+      "label": {
+       "x": 716.9,
+       "y": 829.3,
+       "w": 36.1,
+       "h": 17.5
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "17.5px",
+      "direction": "row"
+     },
+     {
+      "section": "journal",
+      "current": false,
+      "text": "Chroniques",
+      "button": {
+       "x": 784.8,
+       "y": 814,
+       "w": 121.6,
+       "h": 48
+      },
+      "label": {
+       "x": 826.4,
+       "y": 829.3,
+       "w": 68.4,
+       "h": 17.5
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "17.5px",
+      "direction": "row"
+     },
+     {
+      "section": "awards",
+      "current": false,
+      "text": "42 Awards",
+      "button": {
+       "x": 910.4,
+       "y": 814,
+       "w": 121.6,
+       "h": 48
+      },
+      "label": {
+       "x": 954.4,
+       "y": 829.3,
+       "w": 63.5,
+       "h": 17.5
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "17.5px",
+      "direction": "row"
+     }
+    ],
+    "indicator": {
+     "x": 533.6,
+     "y": 814,
+     "w": 121.6,
+     "h": 48
+    },
+    "toggle": {
+     "x": 672,
+     "y": 751,
+     "w": 44,
+     "h": 44
+    },
+    "die": {
+     "x": 724,
+     "y": 751,
+     "w": 44,
+     "h": 44
+    },
+    "toggleDisplay": "flex",
+    "dieDisplay": "flex",
+    "overflow": false
+   },
+   "labelsUnchanged": true,
+   "floatingAreaBefore": 11088,
+   "floatingAreaAfter": 4224,
+   "toggleAfter": {
+    "x": 672,
+    "y": 751,
+    "w": 44,
+    "h": 44
+   },
+   "noOverflow": true
+  },
+  {
+   "vue": "mobile",
+   "viewport": [
+    390,
+    844
+   ],
+   "avant": {
+    "vw": 390,
+    "vh": 844,
+    "section": "projects",
+    "navContent": 344,
+    "stage": 2,
+    "buttons": [
+     {
+      "section": "explore",
+      "current": false,
+      "text": "Explorer",
+      "button": {
+       "x": 23,
+       "y": 773,
+       "w": 67.2,
+       "h": 48
+      },
+      "label": {
+       "x": 37.3,
+       "y": 799,
+       "w": 38.5,
+       "h": 18
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "18px",
+      "direction": "column"
+     },
+     {
+      "section": "projects",
+      "current": true,
+      "text": "Projets",
+      "button": {
+       "x": 92.2,
+       "y": 773,
+       "w": 67.2,
+       "h": 48
+      },
+      "label": {
+       "x": 109.4,
+       "y": 799,
+       "w": 32.7,
+       "h": 18
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "18px",
+      "direction": "column"
+     },
+     {
+      "section": "people",
+      "current": false,
+      "text": "Profils",
+      "button": {
+       "x": 161.4,
+       "y": 773,
+       "w": 67.2,
+       "h": 48
+      },
+      "label": {
+       "x": 180.8,
+       "y": 799,
+       "w": 28.4,
+       "h": 18
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "18px",
+      "direction": "column"
+     },
+     {
+      "section": "journal",
+      "current": false,
+      "text": "Chroniques",
+      "button": {
+       "x": 230.6,
+       "y": 773,
+       "w": 67.2,
+       "h": 48
+      },
+      "label": {
+       "x": 237.3,
+       "y": 799,
+       "w": 53.7,
+       "h": 18
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "18px",
+      "direction": "column"
+     },
+     {
+      "section": "awards",
+      "current": false,
+      "text": "42 Awards",
+      "button": {
+       "x": 299.8,
+       "y": 773,
+       "w": 67.2,
+       "h": 48
+      },
+      "label": {
+       "x": 308.4,
+       "y": 799,
+       "w": 49.9,
+       "h": 18
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "18px",
+      "direction": "column"
+     }
+    ],
+    "indicator": {
+     "x": 92.2,
+     "y": 773,
+     "w": 67.2,
+     "h": 48
+    },
+    "toggle": {
+     "x": 69,
+     "y": 710,
+     "w": 200,
+     "h": 44
+    },
+    "die": {
+     "x": 277,
+     "y": 710,
+     "w": 44,
+     "h": 44
+    },
+    "toggleDisplay": "flex",
+    "dieDisplay": "flex",
+    "overflow": false
+   },
+   "apres": {
+    "vw": 390,
+    "vh": 844,
+    "section": "projects",
+    "navContent": 344,
+    "stage": 2,
+    "buttons": [
+     {
+      "section": "explore",
+      "current": false,
+      "text": "Explorer",
+      "button": {
+       "x": 23,
+       "y": 773,
+       "w": 67.2,
+       "h": 48
+      },
+      "label": {
+       "x": 37.3,
+       "y": 799,
+       "w": 38.5,
+       "h": 18
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "18px",
+      "direction": "column"
+     },
+     {
+      "section": "projects",
+      "current": true,
+      "text": "Projets",
+      "button": {
+       "x": 92.2,
+       "y": 773,
+       "w": 67.2,
+       "h": 48
+      },
+      "label": {
+       "x": 109.4,
+       "y": 799,
+       "w": 32.7,
+       "h": 18
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "18px",
+      "direction": "column"
+     },
+     {
+      "section": "people",
+      "current": false,
+      "text": "Profils",
+      "button": {
+       "x": 161.4,
+       "y": 773,
+       "w": 67.2,
+       "h": 48
+      },
+      "label": {
+       "x": 180.8,
+       "y": 799,
+       "w": 28.4,
+       "h": 18
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "18px",
+      "direction": "column"
+     },
+     {
+      "section": "journal",
+      "current": false,
+      "text": "Chroniques",
+      "button": {
+       "x": 230.6,
+       "y": 773,
+       "w": 67.2,
+       "h": 48
+      },
+      "label": {
+       "x": 237.3,
+       "y": 799,
+       "w": 53.7,
+       "h": 18
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "18px",
+      "direction": "column"
+     },
+     {
+      "section": "awards",
+      "current": false,
+      "text": "42 Awards",
+      "button": {
+       "x": 299.8,
+       "y": 773,
+       "w": 67.2,
+       "h": 48
+      },
+      "label": {
+       "x": 308.4,
+       "y": 799,
+       "w": 49.9,
+       "h": 18
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "18px",
+      "direction": "column"
+     }
+    ],
+    "indicator": {
+     "x": 92.2,
+     "y": 773,
+     "w": 67.2,
+     "h": 48
+    },
+    "toggle": {
+     "x": 147,
+     "y": 710,
+     "w": 44,
+     "h": 44
+    },
+    "die": {
+     "x": 199,
+     "y": 710,
+     "w": 44,
+     "h": 44
+    },
+    "toggleDisplay": "flex",
+    "dieDisplay": "flex",
+    "overflow": false
+   },
+   "labelsUnchanged": true,
+   "floatingAreaBefore": 11088,
+   "floatingAreaAfter": 4224,
+   "toggleAfter": {
+    "x": 147,
+    "y": 710,
+    "w": 44,
+    "h": 44
+   },
+   "noOverflow": true
+  },
+  {
+   "vue": "petit",
+   "viewport": [
+    320,
+    640
+   ],
+   "avant": {
+    "vw": 320,
+    "vh": 640,
+    "section": "projects",
+    "navContent": 282,
+    "stage": 3,
+    "buttons": [
+     {
+      "section": "explore",
+      "current": false,
+      "text": "Explorer",
+      "button": {
+       "x": 19,
+       "y": 569,
+       "w": 48,
+       "h": 48
+      },
+      "label": {
+       "x": 23.7,
+       "y": 603,
+       "w": 38.5,
+       "h": 0
+      },
+      "labelOpacity": "0",
+      "labelBlockSize": "0px",
+      "direction": "column"
+     },
+     {
+      "section": "projects",
+      "current": true,
+      "text": "Projets",
+      "button": {
+       "x": 69,
+       "y": 569,
+       "w": 82,
+       "h": 48
+      },
+      "label": {
+       "x": 93.7,
+       "y": 595,
+       "w": 32.7,
+       "h": 18
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "18px",
+      "direction": "column"
+     },
+     {
+      "section": "people",
+      "current": false,
+      "text": "Profils",
+      "button": {
+       "x": 153,
+       "y": 569,
+       "w": 48,
+       "h": 48
+      },
+      "label": {
+       "x": 162.8,
+       "y": 603,
+       "w": 28.4,
+       "h": 0
+      },
+      "labelOpacity": "0",
+      "labelBlockSize": "0px",
+      "direction": "column"
+     },
+     {
+      "section": "journal",
+      "current": false,
+      "text": "Chroniques",
+      "button": {
+       "x": 203,
+       "y": 569,
+       "w": 48,
+       "h": 48
+      },
+      "label": {
+       "x": 205,
+       "y": 603,
+       "w": 44,
+       "h": 0
+      },
+      "labelOpacity": "0",
+      "labelBlockSize": "0px",
+      "direction": "column"
+     },
+     {
+      "section": "awards",
+      "current": false,
+      "text": "42 Awards",
+      "button": {
+       "x": 253,
+       "y": 569,
+       "w": 48,
+       "h": 48
+      },
+      "label": {
+       "x": 255,
+       "y": 603,
+       "w": 44,
+       "h": 0
+      },
+      "labelOpacity": "0",
+      "labelBlockSize": "0px",
+      "direction": "column"
+     }
+    ],
+    "indicator": {
+     "x": 69,
+     "y": 569,
+     "w": 82,
+     "h": 48
+    },
+    "toggle": {
+     "x": 34,
+     "y": 506,
+     "w": 200,
+     "h": 44
+    },
+    "die": {
+     "x": 242,
+     "y": 506,
+     "w": 44,
+     "h": 44
+    },
+    "toggleDisplay": "flex",
+    "dieDisplay": "flex",
+    "overflow": false
+   },
+   "apres": {
+    "vw": 320,
+    "vh": 640,
+    "section": "projects",
+    "navContent": 282,
+    "stage": 3,
+    "buttons": [
+     {
+      "section": "explore",
+      "current": false,
+      "text": "Explorer",
+      "button": {
+       "x": 19,
+       "y": 569,
+       "w": 48,
+       "h": 48
+      },
+      "label": {
+       "x": 23.7,
+       "y": 603,
+       "w": 38.5,
+       "h": 0
+      },
+      "labelOpacity": "0",
+      "labelBlockSize": "0px",
+      "direction": "column"
+     },
+     {
+      "section": "projects",
+      "current": true,
+      "text": "Projets",
+      "button": {
+       "x": 69,
+       "y": 569,
+       "w": 82,
+       "h": 48
+      },
+      "label": {
+       "x": 93.7,
+       "y": 595,
+       "w": 32.7,
+       "h": 18
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "18px",
+      "direction": "column"
+     },
+     {
+      "section": "people",
+      "current": false,
+      "text": "Profils",
+      "button": {
+       "x": 153,
+       "y": 569,
+       "w": 48,
+       "h": 48
+      },
+      "label": {
+       "x": 162.8,
+       "y": 603,
+       "w": 28.4,
+       "h": 0
+      },
+      "labelOpacity": "0",
+      "labelBlockSize": "0px",
+      "direction": "column"
+     },
+     {
+      "section": "journal",
+      "current": false,
+      "text": "Chroniques",
+      "button": {
+       "x": 203,
+       "y": 569,
+       "w": 48,
+       "h": 48
+      },
+      "label": {
+       "x": 205,
+       "y": 603,
+       "w": 44,
+       "h": 0
+      },
+      "labelOpacity": "0",
+      "labelBlockSize": "0px",
+      "direction": "column"
+     },
+     {
+      "section": "awards",
+      "current": false,
+      "text": "42 Awards",
+      "button": {
+       "x": 253,
+       "y": 569,
+       "w": 48,
+       "h": 48
+      },
+      "label": {
+       "x": 255,
+       "y": 603,
+       "w": 44,
+       "h": 0
+      },
+      "labelOpacity": "0",
+      "labelBlockSize": "0px",
+      "direction": "column"
+     }
+    ],
+    "indicator": {
+     "x": 69,
+     "y": 569,
+     "w": 82,
+     "h": 48
+    },
+    "toggle": {
+     "x": 112,
+     "y": 506,
+     "w": 44,
+     "h": 44
+    },
+    "die": {
+     "x": 164,
+     "y": 506,
+     "w": 44,
+     "h": 44
+    },
+    "toggleDisplay": "flex",
+    "dieDisplay": "flex",
+    "overflow": false
+   },
+   "labelsUnchanged": true,
+   "floatingAreaBefore": 11088,
+   "floatingAreaAfter": 4224,
+   "toggleAfter": {
+    "x": 112,
+    "y": 506,
+    "w": 44,
+    "h": 44
+   },
+   "noOverflow": true
+  },
+  {
+   "vue": "etroit-300",
+   "viewport": [
+    300,
+    640
+   ],
+   "avant": {
+    "vw": 300,
+    "vh": 640,
+    "section": "projects",
+    "navContent": 262,
+    "stage": 4,
+    "buttons": [
+     {
+      "section": "explore",
+      "current": false,
+      "text": "Explorer",
+      "button": {
+       "x": 19,
+       "y": 569,
+       "w": 50.8,
+       "h": 48
+      },
+      "label": {
+       "x": 25.1,
+       "y": 603,
+       "w": 38.5,
+       "h": 0
+      },
+      "labelOpacity": "0",
+      "labelBlockSize": "0px",
+      "direction": "column"
+     },
+     {
+      "section": "projects",
+      "current": true,
+      "text": "Projets",
+      "button": {
+       "x": 71.8,
+       "y": 569,
+       "w": 50.8,
+       "h": 48
+      },
+      "label": {
+       "x": 80.9,
+       "y": 603,
+       "w": 32.7,
+       "h": 0
+      },
+      "labelOpacity": "0",
+      "labelBlockSize": "0px",
+      "direction": "column"
+     },
+     {
+      "section": "people",
+      "current": false,
+      "text": "Profils",
+      "button": {
+       "x": 124.6,
+       "y": 569,
+       "w": 50.8,
+       "h": 48
+      },
+      "label": {
+       "x": 135.8,
+       "y": 603,
+       "w": 28.4,
+       "h": 0
+      },
+      "labelOpacity": "0",
+      "labelBlockSize": "0px",
+      "direction": "column"
+     },
+     {
+      "section": "journal",
+      "current": false,
+      "text": "Chroniques",
+      "button": {
+       "x": 177.4,
+       "y": 569,
+       "w": 50.8,
+       "h": 48
+      },
+      "label": {
+       "x": 179.4,
+       "y": 603,
+       "w": 46.8,
+       "h": 0
+      },
+      "labelOpacity": "0",
+      "labelBlockSize": "0px",
+      "direction": "column"
+     },
+     {
+      "section": "awards",
+      "current": false,
+      "text": "42 Awards",
+      "button": {
+       "x": 230.2,
+       "y": 569,
+       "w": 50.8,
+       "h": 48
+      },
+      "label": {
+       "x": 232.2,
+       "y": 603,
+       "w": 46.8,
+       "h": 0
+      },
+      "labelOpacity": "0",
+      "labelBlockSize": "0px",
+      "direction": "column"
+     }
+    ],
+    "indicator": {
+     "x": 71.8,
+     "y": 569,
+     "w": 50.8,
+     "h": 48
+    },
+    "toggle": {
+     "x": 24,
+     "y": 506,
+     "w": 200,
+     "h": 44
+    },
+    "die": {
+     "x": 232,
+     "y": 506,
+     "w": 44,
+     "h": 44
+    },
+    "toggleDisplay": "flex",
+    "dieDisplay": "flex",
+    "overflow": false
+   },
+   "apres": {
+    "vw": 300,
+    "vh": 640,
+    "section": "projects",
+    "navContent": 262,
+    "stage": 4,
+    "buttons": [
+     {
+      "section": "explore",
+      "current": false,
+      "text": "Explorer",
+      "button": {
+       "x": 19,
+       "y": 569,
+       "w": 50.8,
+       "h": 48
+      },
+      "label": {
+       "x": 25.1,
+       "y": 603,
+       "w": 38.5,
+       "h": 0
+      },
+      "labelOpacity": "0",
+      "labelBlockSize": "0px",
+      "direction": "column"
+     },
+     {
+      "section": "projects",
+      "current": true,
+      "text": "Projets",
+      "button": {
+       "x": 71.8,
+       "y": 569,
+       "w": 50.8,
+       "h": 48
+      },
+      "label": {
+       "x": 80.9,
+       "y": 603,
+       "w": 32.7,
+       "h": 0
+      },
+      "labelOpacity": "0",
+      "labelBlockSize": "0px",
+      "direction": "column"
+     },
+     {
+      "section": "people",
+      "current": false,
+      "text": "Profils",
+      "button": {
+       "x": 124.6,
+       "y": 569,
+       "w": 50.8,
+       "h": 48
+      },
+      "label": {
+       "x": 135.8,
+       "y": 603,
+       "w": 28.4,
+       "h": 0
+      },
+      "labelOpacity": "0",
+      "labelBlockSize": "0px",
+      "direction": "column"
+     },
+     {
+      "section": "journal",
+      "current": false,
+      "text": "Chroniques",
+      "button": {
+       "x": 177.4,
+       "y": 569,
+       "w": 50.8,
+       "h": 48
+      },
+      "label": {
+       "x": 179.4,
+       "y": 603,
+       "w": 46.8,
+       "h": 0
+      },
+      "labelOpacity": "0",
+      "labelBlockSize": "0px",
+      "direction": "column"
+     },
+     {
+      "section": "awards",
+      "current": false,
+      "text": "42 Awards",
+      "button": {
+       "x": 230.2,
+       "y": 569,
+       "w": 50.8,
+       "h": 48
+      },
+      "label": {
+       "x": 232.2,
+       "y": 603,
+       "w": 46.8,
+       "h": 0
+      },
+      "labelOpacity": "0",
+      "labelBlockSize": "0px",
+      "direction": "column"
+     }
+    ],
+    "indicator": {
+     "x": 71.8,
+     "y": 569,
+     "w": 50.8,
+     "h": 48
+    },
+    "toggle": {
+     "x": 102,
+     "y": 506,
+     "w": 44,
+     "h": 44
+    },
+    "die": {
+     "x": 154,
+     "y": 506,
+     "w": 44,
+     "h": 44
+    },
+    "toggleDisplay": "flex",
+    "dieDisplay": "flex",
+    "overflow": false
+   },
+   "labelsUnchanged": true,
+   "floatingAreaBefore": 11088,
+   "floatingAreaAfter": 4224,
+   "toggleAfter": {
+    "x": 102,
+    "y": 506,
+    "w": 44,
+    "h": 44
+   },
+   "noOverflow": true
+  },
+  {
+   "vue": "paysage",
+   "viewport": [
+    667,
+    375
+   ],
+   "avant": {
+    "vw": 667,
+    "vh": 375,
+    "section": "projects",
+    "navContent": 621,
+    "stage": 1,
+    "buttons": [
+     {
+      "section": "explore",
+      "current": false,
+      "text": "Explorer",
+      "button": {
+       "x": 23,
+       "y": 307,
+       "w": 122.6,
+       "h": 48
+      },
+      "label": {
+       "x": 74.9,
+       "y": 322.5,
+       "w": 47.8,
+       "h": 17.1
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "17.0781px",
+      "direction": "row"
+     },
+     {
+      "section": "projects",
+      "current": true,
+      "text": "Projets",
+      "button": {
+       "x": 147.6,
+       "y": 307,
+       "w": 122.6,
+       "h": 48
+      },
+      "label": {
+       "x": 203.1,
+       "y": 322.5,
+       "w": 40.6,
+       "h": 17.1
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "17.0781px",
+      "direction": "row"
+     },
+     {
+      "section": "people",
+      "current": false,
+      "text": "Profils",
+      "button": {
+       "x": 272.2,
+       "y": 307,
+       "w": 122.6,
+       "h": 48
+      },
+      "label": {
+       "x": 330.4,
+       "y": 322.5,
+       "w": 35.3,
+       "h": 17.1
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "17.0781px",
+      "direction": "row"
+     },
+     {
+      "section": "journal",
+      "current": false,
+      "text": "Chroniques",
+      "button": {
+       "x": 396.8,
+       "y": 307,
+       "w": 122.6,
+       "h": 48
+      },
+      "label": {
+       "x": 439.3,
+       "y": 322.5,
+       "w": 66.7,
+       "h": 17.1
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "17.0781px",
+      "direction": "row"
+     },
+     {
+      "section": "awards",
+      "current": false,
+      "text": "42 Awards",
+      "button": {
+       "x": 521.4,
+       "y": 307,
+       "w": 122.6,
+       "h": 48
+      },
+      "label": {
+       "x": 566.2,
+       "y": 322.5,
+       "w": 62,
+       "h": 17.1
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "17.0781px",
+      "direction": "row"
+     }
+    ],
+    "indicator": {
+     "x": 147.6,
+     "y": 307,
+     "w": 122.6,
+     "h": 48
+    },
+    "toggle": {
+     "x": 207.5,
+     "y": 249,
+     "w": 200,
+     "h": 44
+    },
+    "die": {
+     "x": 415.5,
+     "y": 249,
+     "w": 44,
+     "h": 44
+    },
+    "toggleDisplay": "flex",
+    "dieDisplay": "flex",
+    "overflow": false
+   },
+   "apres": {
+    "vw": 667,
+    "vh": 375,
+    "section": "projects",
+    "navContent": 621,
+    "stage": 1,
+    "buttons": [
+     {
+      "section": "explore",
+      "current": false,
+      "text": "Explorer",
+      "button": {
+       "x": 23,
+       "y": 307,
+       "w": 122.6,
+       "h": 48
+      },
+      "label": {
+       "x": 74.9,
+       "y": 322.5,
+       "w": 47.8,
+       "h": 17.1
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "17.0781px",
+      "direction": "row"
+     },
+     {
+      "section": "projects",
+      "current": true,
+      "text": "Projets",
+      "button": {
+       "x": 147.6,
+       "y": 307,
+       "w": 122.6,
+       "h": 48
+      },
+      "label": {
+       "x": 203.1,
+       "y": 322.5,
+       "w": 40.6,
+       "h": 17.1
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "17.0781px",
+      "direction": "row"
+     },
+     {
+      "section": "people",
+      "current": false,
+      "text": "Profils",
+      "button": {
+       "x": 272.2,
+       "y": 307,
+       "w": 122.6,
+       "h": 48
+      },
+      "label": {
+       "x": 330.4,
+       "y": 322.5,
+       "w": 35.3,
+       "h": 17.1
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "17.0781px",
+      "direction": "row"
+     },
+     {
+      "section": "journal",
+      "current": false,
+      "text": "Chroniques",
+      "button": {
+       "x": 396.8,
+       "y": 307,
+       "w": 122.6,
+       "h": 48
+      },
+      "label": {
+       "x": 439.3,
+       "y": 322.5,
+       "w": 66.7,
+       "h": 17.1
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "17.0781px",
+      "direction": "row"
+     },
+     {
+      "section": "awards",
+      "current": false,
+      "text": "42 Awards",
+      "button": {
+       "x": 521.4,
+       "y": 307,
+       "w": 122.6,
+       "h": 48
+      },
+      "label": {
+       "x": 566.2,
+       "y": 322.5,
+       "w": 62,
+       "h": 17.1
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "17.0781px",
+      "direction": "row"
+     }
+    ],
+    "indicator": {
+     "x": 147.6,
+     "y": 307,
+     "w": 122.6,
+     "h": 48
+    },
+    "toggle": {
+     "x": 285.5,
+     "y": 249,
+     "w": 44,
+     "h": 44
+    },
+    "die": {
+     "x": 337.5,
+     "y": 249,
+     "w": 44,
+     "h": 44
+    },
+    "toggleDisplay": "flex",
+    "dieDisplay": "flex",
+    "overflow": false
+   },
+   "labelsUnchanged": true,
+   "floatingAreaBefore": 11088,
+   "floatingAreaAfter": 4224,
+   "toggleAfter": {
+    "x": 285.5,
+    "y": 249,
+    "w": 44,
+    "h": 44
+   },
+   "noOverflow": true
+  }
+ ],
+ "awards": {
+  "awards-ordinateur": {
+   "avant": {
+    "toggleDisplay": "none",
+    "dieDisplay": "none",
+    "buttons": [
+     {
+      "section": "explore",
+      "current": false,
+      "text": "Explorer",
+      "button": {
+       "x": 408,
+       "y": 814,
+       "w": 121.6,
+       "h": 48
+      },
+      "label": {
+       "x": 459.3,
+       "y": 829.3,
+       "w": 49,
+       "h": 17.5
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "17.5px",
+      "direction": "row"
+     },
+     {
+      "section": "projects",
+      "current": false,
+      "text": "Projets",
+      "button": {
+       "x": 533.6,
+       "y": 814,
+       "w": 121.6,
+       "h": 48
+      },
+      "label": {
+       "x": 589.7,
+       "y": 829.3,
+       "w": 39.3,
+       "h": 17.5
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "17.5px",
+      "direction": "row"
+     },
+     {
+      "section": "people",
+      "current": false,
+      "text": "Profils",
+      "button": {
+       "x": 659.2,
+       "y": 814,
+       "w": 121.6,
+       "h": 48
+      },
+      "label": {
+       "x": 716.9,
+       "y": 829.3,
+       "w": 36.1,
+       "h": 17.5
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "17.5px",
+      "direction": "row"
+     },
+     {
+      "section": "journal",
+      "current": false,
+      "text": "Chroniques",
+      "button": {
+       "x": 784.8,
+       "y": 814,
+       "w": 121.6,
+       "h": 48
+      },
+      "label": {
+       "x": 826.4,
+       "y": 829.3,
+       "w": 68.4,
+       "h": 17.5
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "17.5px",
+      "direction": "row"
+     },
+     {
+      "section": "awards",
+      "current": true,
+      "text": "42 Awards",
+      "button": {
+       "x": 910.4,
+       "y": 814,
+       "w": 121.6,
+       "h": 48
+      },
+      "label": {
+       "x": 952.8,
+       "y": 829.3,
+       "w": 66.8,
+       "h": 17.5
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "17.5px",
+      "direction": "row"
+     }
+    ]
+   },
+   "apres": {
+    "toggleDisplay": "none",
+    "dieDisplay": "none",
+    "buttons": [
+     {
+      "section": "explore",
+      "current": false,
+      "text": "Explorer",
+      "button": {
+       "x": 408,
+       "y": 814,
+       "w": 121.6,
+       "h": 48
+      },
+      "label": {
+       "x": 459.3,
+       "y": 829.3,
+       "w": 49,
+       "h": 17.5
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "17.5px",
+      "direction": "row"
+     },
+     {
+      "section": "projects",
+      "current": false,
+      "text": "Projets",
+      "button": {
+       "x": 533.6,
+       "y": 814,
+       "w": 121.6,
+       "h": 48
+      },
+      "label": {
+       "x": 589.7,
+       "y": 829.3,
+       "w": 39.3,
+       "h": 17.5
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "17.5px",
+      "direction": "row"
+     },
+     {
+      "section": "people",
+      "current": false,
+      "text": "Profils",
+      "button": {
+       "x": 659.2,
+       "y": 814,
+       "w": 121.6,
+       "h": 48
+      },
+      "label": {
+       "x": 716.9,
+       "y": 829.3,
+       "w": 36.1,
+       "h": 17.5
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "17.5px",
+      "direction": "row"
+     },
+     {
+      "section": "journal",
+      "current": false,
+      "text": "Chroniques",
+      "button": {
+       "x": 784.8,
+       "y": 814,
+       "w": 121.6,
+       "h": 48
+      },
+      "label": {
+       "x": 826.4,
+       "y": 829.3,
+       "w": 68.4,
+       "h": 17.5
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "17.5px",
+      "direction": "row"
+     },
+     {
+      "section": "awards",
+      "current": true,
+      "text": "42 Awards",
+      "button": {
+       "x": 910.4,
+       "y": 814,
+       "w": 121.6,
+       "h": 48
+      },
+      "label": {
+       "x": 952.8,
+       "y": 829.3,
+       "w": 66.8,
+       "h": 17.5
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "17.5px",
+      "direction": "row"
+     }
+    ]
+   },
+   "pixelShare": 0.0
+  },
+  "awards-mobile": {
+   "avant": {
+    "toggleDisplay": "none",
+    "dieDisplay": "none",
+    "buttons": [
+     {
+      "section": "explore",
+      "current": false,
+      "text": "Explorer",
+      "button": {
+       "x": 23,
+       "y": 773,
+       "w": 67.2,
+       "h": 48
+      },
+      "label": {
+       "x": 37.3,
+       "y": 799,
+       "w": 38.5,
+       "h": 18
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "18px",
+      "direction": "column"
+     },
+     {
+      "section": "projects",
+      "current": false,
+      "text": "Projets",
+      "button": {
+       "x": 92.2,
+       "y": 773,
+       "w": 67.2,
+       "h": 48
+      },
+      "label": {
+       "x": 110.3,
+       "y": 799,
+       "w": 30.9,
+       "h": 18
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "18px",
+      "direction": "column"
+     },
+     {
+      "section": "people",
+      "current": false,
+      "text": "Profils",
+      "button": {
+       "x": 161.4,
+       "y": 773,
+       "w": 67.2,
+       "h": 48
+      },
+      "label": {
+       "x": 180.8,
+       "y": 799,
+       "w": 28.4,
+       "h": 18
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "18px",
+      "direction": "column"
+     },
+     {
+      "section": "journal",
+      "current": false,
+      "text": "Chroniques",
+      "button": {
+       "x": 230.6,
+       "y": 773,
+       "w": 67.2,
+       "h": 48
+      },
+      "label": {
+       "x": 237.3,
+       "y": 799,
+       "w": 53.7,
+       "h": 18
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "18px",
+      "direction": "column"
+     },
+     {
+      "section": "awards",
+      "current": true,
+      "text": "42 Awards",
+      "button": {
+       "x": 299.8,
+       "y": 773,
+       "w": 67.2,
+       "h": 48
+      },
+      "label": {
+       "x": 307.1,
+       "y": 799,
+       "w": 52.5,
+       "h": 18
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "18px",
+      "direction": "column"
+     }
+    ]
+   },
+   "apres": {
+    "toggleDisplay": "none",
+    "dieDisplay": "none",
+    "buttons": [
+     {
+      "section": "explore",
+      "current": false,
+      "text": "Explorer",
+      "button": {
+       "x": 23,
+       "y": 773,
+       "w": 67.2,
+       "h": 48
+      },
+      "label": {
+       "x": 37.3,
+       "y": 799,
+       "w": 38.5,
+       "h": 18
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "18px",
+      "direction": "column"
+     },
+     {
+      "section": "projects",
+      "current": false,
+      "text": "Projets",
+      "button": {
+       "x": 92.2,
+       "y": 773,
+       "w": 67.2,
+       "h": 48
+      },
+      "label": {
+       "x": 110.3,
+       "y": 799,
+       "w": 30.9,
+       "h": 18
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "18px",
+      "direction": "column"
+     },
+     {
+      "section": "people",
+      "current": false,
+      "text": "Profils",
+      "button": {
+       "x": 161.4,
+       "y": 773,
+       "w": 67.2,
+       "h": 48
+      },
+      "label": {
+       "x": 180.8,
+       "y": 799,
+       "w": 28.4,
+       "h": 18
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "18px",
+      "direction": "column"
+     },
+     {
+      "section": "journal",
+      "current": false,
+      "text": "Chroniques",
+      "button": {
+       "x": 230.6,
+       "y": 773,
+       "w": 67.2,
+       "h": 48
+      },
+      "label": {
+       "x": 237.3,
+       "y": 799,
+       "w": 53.7,
+       "h": 18
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "18px",
+      "direction": "column"
+     },
+     {
+      "section": "awards",
+      "current": true,
+      "text": "42 Awards",
+      "button": {
+       "x": 299.8,
+       "y": 773,
+       "w": 67.2,
+       "h": 48
+      },
+      "label": {
+       "x": 307.1,
+       "y": 799,
+       "w": 52.5,
+       "h": 18
+      },
+      "labelOpacity": "1",
+      "labelBlockSize": "18px",
+      "direction": "column"
+     }
+    ]
+   },
+   "pixelShare": 0.0
+  }
+ },
+ "search": [
+  {
+   "vue": "ordinateur",
+   "side": "avant",
+   "focusInField": true,
+   "results": 8,
+   "surface": [
+    381,
+    355,
+    678,
+    440
+   ],
+   "titles": [
+    "42 Paris",
+    "Derrière une ligne de commande",
+    "ft_transcendence · Construire à cinq",
+    "Des salons partagés · Le parcours expliqué",
+    "Suivre un événement · Ce que nous transmettons",
+    "Leïla Mansour",
+    "Noé Laurent",
+    "Karim Abbas"
+   ],
+   "closed": true,
+   "focusBack": true
+  },
+  {
+   "vue": "ordinateur",
+   "side": "apres",
+   "focusInField": true,
+   "results": 8,
+   "surface": [
+    381,
+    355,
+    678,
+    440
+   ],
+   "titles": [
+    "42 Paris",
+    "Derrière une ligne de commande",
+    "ft_transcendence · Construire à cinq",
+    "Des salons partagés · Le parcours expliqué",
+    "Suivre un événement · Ce que nous transmettons",
+    "Leïla Mansour",
+    "Noé Laurent",
+    "Karim Abbas"
+   ],
+   "closed": true,
+   "focusBack": true
+  },
+  {
+   "vue": "mobile",
+   "side": "avant",
+   "focusInField": true,
+   "results": 8,
+   "surface": [
+    17,
+    314,
+    356,
+    440
+   ],
+   "titles": [
+    "42 Paris",
+    "Derrière une ligne de commande",
+    "ft_transcendence · Construire à cinq",
+    "Des salons partagés · Le parcours expliqué",
+    "Suivre un événement · Ce que nous transmettons",
+    "Leïla Mansour",
+    "Noé Laurent",
+    "Karim Abbas"
+   ],
+   "closed": true,
+   "focusBack": true
+  },
+  {
+   "vue": "mobile",
+   "side": "apres",
+   "focusInField": true,
+   "results": 8,
+   "surface": [
+    17,
+    314,
+    356,
+    440
+   ],
+   "titles": [
+    "42 Paris",
+    "Derrière une ligne de commande",
+    "ft_transcendence · Construire à cinq",
+    "Des salons partagés · Le parcours expliqué",
+    "Suivre un événement · Ce que nous transmettons",
+    "Leïla Mansour",
+    "Noé Laurent",
+    "Karim Abbas"
+   ],
+   "closed": true,
+   "focusBack": true
+  }
+ ],
+ "errors": {
+  "stages": [],
+  "search": []
+ },
+ "searchComparison": {
+  "ordinateur": {
+   "sameSurface": true,
+   "sameResults": true,
+   "pixelShare": 0.0
+  },
+  "mobile": {
+   "sameSurface": true,
+   "sameResults": true,
+   "pixelShare": 0.0
+  }
+ },
+ "passed": true
+}

@@ -1,0 +1,89 @@
+{
+  "id": "une-colonne-320",
+  "groupe": "Pile flottante, cartes et petits écrans",
+  "titre": "Une colonne sous 360 px",
+  "resume": "Sous 360 px de largeur d’écran (360 px inclus), les grilles Projets et Chroniques affichent une carte par ligne au lieu de deux. L’intérieur des cartes, la vue Liste, les Profils et les écrans plus larges ne changent pas.",
+  "probleme": "À 320 px, deux cartes de 133 px par ligne ne laissent que 23 px au nom de l’auteur, et la couronne n’est qu’à 12 px de la pastille +N en français. Sur les 12 cartes de la première page de Projets, 5 noms sont coupés au milieu du mot (« Luiz|a », « Leïl|a », « Cai|o », « Ar|un », « Tom|ás »), en français comme en anglais, et jusqu’à 3 titres prennent 3 lignes ; en Chroniques, 2 noms sur 12 sont coupés, en français comme en arabe, et 4 titres prennent 3 lignes en français. À 340 et 360 px, 5 noms sur 12 passent encore sur deux lignes ; en arabe à 340 px, un nom de Projets (« توماس فييرا ») est encore coupé au milieu du mot. Les rectangles ne se chevauchent pas dans la référence : la « collision » relevée par l’avis tient au manque de place.",
+  "changement": "essais/une-colonne-320/essai.css : une seule règle, sous @media (max-width:360px), donne grid-template-columns:minmax(0,1fr) à la grille des listes Projets et Chroniques en vue Grille (#content-index[data-section=projects|journal][data-view=grid] .cp-grid). Aucune autre propriété n’est modifiée et essai.mjs ne fait rien. L’onglet Projets d’un profil utilise une autre grille (.cp-profile-related-grid), déjà en une colonne sous 700 px dans la référence : il n’est pas touché.",
+  "decisionConcernee": "8 oct. 2026 : « Projets et Chroniques : deux cartes par ligne sur mobile à 320 px » ; 6 oct. 2026 : « adapter d’abord les tailles des textes et éléments avant d’imposer une grille mobile ». Sous 360 px, l’essai revient sur ces deux choix.",
+  "alternativeDe": "deux-colonnes-allegees",
+  "vues": [
+    {
+      "libelle": "Petit écran clair — Projets",
+      "page": "content-preview.html",
+      "route": "projects",
+      "viewport": "petit",
+      "theme": "light",
+      "lang": "fr"
+    },
+    {
+      "libelle": "Petit écran clair — Chroniques",
+      "page": "content-preview.html",
+      "route": "journal",
+      "viewport": "petit",
+      "theme": "light",
+      "lang": "fr"
+    },
+    {
+      "libelle": "Petit écran sombre — Chroniques en arabe",
+      "page": "content-preview.html",
+      "route": "journal",
+      "viewport": "petit",
+      "theme": "dark",
+      "lang": "ar"
+    }
+  ],
+  "verifications": [
+    "Contre-vérification indépendante (contre-verification.py : toutes les cartes de la page et tous les auteurs visibles, pas seulement le premier). À 320×640 (Projets en français et en anglais, Chroniques en français clair et en arabe sombre), 340×720 (Projets en arabe sombre, Chroniques en français) et 360×780 (Projets) : une colonne au lieu de deux. Sur les 12 cartes de chaque vue, les 16 à 17 noms visibles tiennent sur une ligne, aucun mot n’est coupé, aucun élément ne sort de sa carte et il n’y a aucun défilement horizontal.",
+    "Aucune intersection de rectangles entre l’intitulé « Créé par », les avatars, les noms, la couronne et la pastille +N. Avec la place gagnée, le contrôleur de la référence affiche de lui-même le deuxième auteur dans 4 à 5 cartes sur 12 (règle du 11 oct. : le +N suit la place réelle de chaque carte ; elle n’est pas modifiée).",
+    "Titres : 1 à 2 lignes avec l’essai, contre 3 lignes pour 3 cartes sur 12 en Projets et 4 sur 12 en Chroniques avant.",
+    "États que l’essai ne doit pas toucher : 390×844 (Projets en français clair, Chroniques en arabe sombre), 361×780 (juste au-dessus du seuil), 1440×900 et paysage 667×375. Captures identiques au pixel exact (0 pixel différent, sans tolérance) et même mise en page de toute la page, sous la ligne de flottaison comprise (position et taille des quelque 1 100 éléments) ; la règle de l’essai n’y atteint aucun élément.",
+    "À 320 px, grille Profils (aussi à 340 px), fiche projet et onglet Projets d’un profil : identiques au pixel exact. Profils mesurés à 320 et 340 px : deux colonnes, aucun mot coupé dans les noms, identifiants, rôles, statuts ou étiquettes, aucune collision statut/cœur ; ils ne présentent donc pas le même défaut et n’ont pas été modifiés. L’onglet Projets d’un profil (.cp-profile-related-grid) est déjà en une colonne sous 700 px dans la référence.",
+    "Bascule Grille/Liste à 320 px avec l’essai : la Liste est identique au pixel exact à celle de la référence, et le retour en Grille redonne une colonne (280 px).",
+    "Langue et thème changés sans rechargement, par le menu du compte : français clair → arabe sombre → anglais clair. L’essai reste en une colonne, sens rtl puis ltr, sans aucun problème mesuré ; dans les mêmes états, la référence garde 5 à 6 noms coupés ou sur deux lignes.",
+    "Clavier : la touche Tab atteint les liens des cartes, avec l’anneau de focus visible de 2 px (:focus-visible).",
+    "Explorer à 320 px avec le vrai globe : 0 pixel différent entre la copie et l’essai (0 aussi entre deux chargements de la copie) ; la règle de l’essai n’y atteint aucun élément.",
+    "Aucune erreur JavaScript ni console, avant comme après. Captures regardées : Projets 320 px, Chroniques 340 px, arabe sombre (chargé et basculé à chaud), Liste et Explorer avec le globe."
+  ],
+  "limites": [
+    "Les cartes deviennent bien plus hautes : à 320 px, les 8 premières cartes occupent 3073 px au lieu de 1390 px (×2,2), et il faut défiler davantage pour parcourir une page.",
+    "Le seuil suit la largeur de l’écran (360 px inclus), pas celle de la grille. 360 px est une largeur courante de téléphones Android : ils passeraient eux aussi en une colonne. De 361 à 389 px, les deux colonnes de la référence restent, avec des noms parfois sur deux lignes.",
+    "Combinaison avec les autres essais non vérifiée ici. L’essai est exclusif avec deux-colonnes-allegees : le premier listé dans l’URL l’emporte.",
+    "Vérifié uniquement dans Chrome 155 sans interface, avec le mouvement réduit émulé ; pas sur un téléphone réel."
+  ],
+  "fichiers": [
+    "essais/une-colonne-320/essai.css",
+    "essais/une-colonne-320/essai.mjs",
+    "checks/une-colonne-320/check.py",
+    "checks/une-colonne-320/results.json",
+    "checks/une-colonne-320/contre-verification.py",
+    "checks/une-colonne-320/contre-verification.json"
+  ],
+  "captures": [
+    {
+      "vue": "petit-auteurs",
+      "avant": "checks/une-colonne-320/avant-petit-auteurs.png",
+      "apres": "checks/une-colonne-320/apres-petit-auteurs.png"
+    },
+    {
+      "vue": "petit-340-auteurs",
+      "avant": "checks/une-colonne-320/avant-petit-340-auteurs.png",
+      "apres": "checks/une-colonne-320/apres-petit-340-auteurs.png"
+    },
+    {
+      "vue": "ar-sombre-petit-auteurs",
+      "avant": "checks/une-colonne-320/avant-ar-sombre-petit-auteurs.png",
+      "apres": "checks/une-colonne-320/apres-ar-sombre-petit-auteurs.png"
+    },
+    {
+      "vue": "liste-petit",
+      "avant": "checks/une-colonne-320/avant-liste-petit.png",
+      "apres": "checks/une-colonne-320/apres-liste-petit.png"
+    },
+    {
+      "vue": "direct-ar-sombre-petit",
+      "avant": "checks/une-colonne-320/avant-direct-ar-sombre-petit.png",
+      "apres": "checks/une-colonne-320/apres-direct-ar-sombre-petit.png"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+/* Chosen frosted material, extended to geography and language controls.
+   The dock's source palettes and proportions are preserved. Both popovers own
+   their backdrop so their triggers cannot cut off the page underneath. */
+:root {
+  --control-glass-surface: color-mix(in srgb, var(--h42-white) 32%, transparent);
+  --control-glass-edge: color-mix(in srgb, var(--h42-white) 72%, transparent);
+  --control-glass-shadow: 0 9px 22px #183D3C12, inset 0 1px 0 #ffffffb3, inset 0 -1px 0 #183D3C0B;
+  --control-glass-selection: color-mix(in srgb, var(--h42-teal) 19%, transparent);
+  --control-glass-selection-edge: color-mix(in srgb, var(--h42-teal) 32%, transparent);
+  --control-field-surface: color-mix(in srgb, var(--h42-white) 14%, transparent);
+}
+:root[data-theme=dark] {
+  --control-glass-surface: color-mix(in srgb, var(--h42-graphite) 32%, transparent);
+  --control-glass-edge: color-mix(in srgb, var(--h42-white) 25%, transparent);
+  --control-glass-shadow: 0 12px 26px #0003, inset 0 1px 0 #ffffff30, inset 0 -1px 0 #0002;
+  --control-glass-selection: color-mix(in srgb, var(--h42-pink) 22%, transparent);
+  --control-glass-selection-edge: color-mix(in srgb, var(--h42-pink) 32%, transparent);
+  --control-field-surface: color-mix(in srgb, var(--h42-graphite) 14%, transparent);
+}
+
+/* The geographic trail keeps its transparent 32 px seat and existing mask.
+   No backdrop belongs to the parent: the same globe stays sharp in the hole. */
+:root[data-theme] .app[data-navigation=dock] .scope-path {
+  background: transparent;
+  border-color: var(--control-glass-edge);
+  box-shadow: var(--control-glass-shadow);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+:root[data-theme] .app[data-navigation=dock] .scope-path::before {
+  background: var(--control-glass-surface);
+  -webkit-backdrop-filter: blur(26px) saturate(1.15);
+  backdrop-filter: blur(26px) saturate(1.15);
+}
+:root[data-theme] .app[data-navigation=dock] .scope-medallion {
+  border-color: var(--control-glass-edge);
+}
+
+/* Language button, back action and anchored lists share one material.
+   In particular, language-switcher and header remain free of backdrop filters. */
+:root[data-theme] .app[data-navigation=dock] #language,
+:root[data-theme] .app[data-navigation=dock] .scope-back,
+:root[data-theme] .app[data-navigation=dock] .language-menu,
+:root[data-theme] #scope-popover {
+  background: var(--control-glass-surface);
+  border: 1px solid var(--control-glass-edge);
+  box-shadow: var(--control-glass-shadow);
+  -webkit-backdrop-filter: blur(26px) saturate(1.15);
+  backdrop-filter: blur(26px) saturate(1.15);
+}
+:root[data-theme] .app[data-navigation=dock] #language:hover,
+:root[data-theme] .app[data-navigation=dock] .scope-back:not(:disabled):hover,
+:root[data-theme] .app[data-navigation=dock] #language[aria-expanded=true] {
+  border-color: var(--control-glass-selection-edge);
+  color: var(--h42-color-text);
+}
+:root[data-theme] .app[data-navigation=dock] .scope-picker:hover,
+:root[data-theme] .app[data-navigation=dock] .scope-picker[aria-expanded=true],
+:root[data-theme] .app[data-navigation=dock] .scope-ancestor button:hover,
+:root[data-theme] #scope-popover .icon-button:hover {
+  background: var(--control-glass-selection);
+}
+:root[data-theme] .app[data-navigation=dock] .language-menu::before {
+  background: var(--control-glass-selection);
+  border: 1px solid var(--control-glass-selection-edge);
+}
+
+/* Native select menus retain their opaque system-friendly options. The closed
+   fields use a light veil; a nested blur would only sample the popover itself. */
+:root[data-theme] #scope-popover .scope-field select {
+  background: var(--control-field-surface);
+  border-color: var(--control-glass-edge);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--h42-white) 8%, transparent);
+}
+:root[data-theme] #scope-popover .scope-field select:hover {
+  border-color: var(--control-glass-selection-edge);
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  :root,
+  :root[data-theme=dark] {
+    --control-glass-surface: color-mix(in srgb, var(--h42-color-surface) 88%, transparent);
+  }
+}

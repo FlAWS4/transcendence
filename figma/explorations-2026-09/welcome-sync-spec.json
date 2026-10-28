@@ -1,0 +1,2505 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-27",
+  "purpose": "Relevé du web actuel pour report fidèle dans Figma ; ne constitue ni nouvelle direction artistique ni acceptation utilisateur.",
+  "verification": {
+    "method": "Inspection des fichiers sources locaux et calculs géométriques depuis CSS. Aucun navigateur ni mutation Figma par cet agent.",
+    "limitations": [
+      "Les positions de texte, hauteurs line-height:normal, positions des repères et rayon apparent de la sphère doivent être mesurés dans le navigateur actif.",
+      "Les nombres CSS sous-pixel et les dimensions clientWidth/clientHeight arrondies utilisées par MapLibre sont distingués.",
+      "Les traductions pays sont obtenues par Intl.DisplayNames de Node ; vérifier si la version ICU du navigateur diffère."
+    ]
+  },
+  "versions": {
+    "welcomeCss": "nav-filter-16",
+    "welcomeController": "stability-light-17",
+    "integratedGlobe": 17,
+    "integratedGlobeCss": 3,
+    "globeStyle": 13,
+    "entranceCss": "light-13"
+  },
+  "sources": [
+    {
+      "path": "site/index.html",
+      "sha256": "11b01109d12dc39557bfd1c6a730e735c55ccbd04f7133c2e6a0fbe55dc12214"
+    },
+    {
+      "path": "site/welcome.css",
+      "sha256": "00434d8c56e8550cc65b615d530b4121b655c167659fc9047c2ddcb4da96d9d5"
+    },
+    {
+      "path": "site/integrated-globe.css",
+      "sha256": "63f1ecc932b9fc0f9b4f037a93d08ccf53b48ae647f1ef5a7bf6917ed81faf27"
+    },
+    {
+      "path": "site/entrance.css",
+      "sha256": "894c85f3f2d6c9c3673fabbb4d4094687a8b1a9a59dd1cd37f56925db57d594e"
+    },
+    {
+      "path": "site/welcome.mjs",
+      "sha256": "4a833a98c2921321c206aae0cf45da7075262a64c1852e54f8fa38a9f1d46ec7"
+    },
+    {
+      "path": "site/integrated-globe.mjs",
+      "sha256": "d2a645fe29fbd478c97be809205592d599c7c4fe6e7a9fc026d2d9069c8c26c1"
+    },
+    {
+      "path": "site/globe-style.mjs",
+      "sha256": "35acf17567f3ba652c2095d7d704009284fb844ad220dfae2e2d42103db2ef05"
+    },
+    {
+      "path": "site/navigation-policy.mjs",
+      "sha256": "4db9e09e09038370ed0f5a1ee2d8eee992fb6103b2987cbf3d9eec75dedf1524"
+    },
+    {
+      "path": "site/campuses.json",
+      "sha256": "0e6a49a0867443efd80ab1f0831e56c3a061beb136d6dc8642a462db6e41c850"
+    },
+    {
+      "path": "site/campus-location-overrides.json",
+      "sha256": "13d3e1afac34bc0c5fe0ca7eafc21f917b4af8f0c524a642d525bf3e303f2b76"
+    },
+    {
+      "path": "shared/brand/tokens.css",
+      "sha256": "bcc71ae119e87b0abe75d4b781e2352becc633491da265298d36dcb0f80fb4cd"
+    },
+    {
+      "path": "shared/brand/logo-42.svg",
+      "sha256": "cb27f1e1c89bcdfe58185710ac66f0232a2bb8c9ac0c596275f06f101dbd7efc"
+    },
+    {
+      "path": "shared/assets/jost.css",
+      "sha256": "1f67cdf2d8a7eb3d0b6d6ecdae838ac025bffc18b5f2b07ce3bfa26e0fd51dec"
+    }
+  ],
+  "codeConnect": {
+    "files": [],
+    "found": false
+  },
+  "logo": {
+    "path": "shared/brand/logo-42.svg",
+    "pathData": "figma/explorations-2026-09/logo-42-paths.json",
+    "viewBox": [
+      0,
+      0,
+      31.144531,
+      21.855468
+    ],
+    "originalVectorPaths": 4,
+    "origin": "Original vector paths extracted from 42 - Charte graphique 2024.pdf, page 15. Translation only; no redraw.",
+    "fillLight": "#000000",
+    "fillDark": "#FFFFFF",
+    "darkCss": "filter:invert(1)",
+    "internalOrder": "42 puis noms, toujours de gauche à droite ; bloc positionné à droite en RTL.",
+    "widthDesktop": 58,
+    "widthMobile": 45,
+    "computedHeightDesktop": 40.70111519740014,
+    "computedHeightMobile": 31.578451446258732
+  },
+  "fonts": {
+    "family": "Jost",
+    "loadedFiles": [
+      {
+        "weight": 400,
+        "path": "shared/assets/jost-0.ttf"
+      },
+      {
+        "weight": 500,
+        "path": "shared/assets/jost-1.ttf"
+      },
+      {
+        "weight": 600,
+        "path": "shared/assets/jost-2.ttf"
+      }
+    ],
+    "normalFontMetrics": {
+      "unitsPerEm": 1000,
+      "ascent": 1070,
+      "descent": -375,
+      "lineGap": 0,
+      "note": "line-height:normal dépend du navigateur ; rapport métrique1.445 utile pour estimation seulement."
+    },
+    "arabicBrand": {
+      "familyCss": "Noto Sans Arabic, sans-serif",
+      "fontFileLoaded": false,
+      "note": "Pas de @font-face Noto dans la page actuelle. Le navigateur peut utiliser une police système de remplacement. Le reste des textes arabes hérite Jost,sans-serif."
+    },
+    "pendingBrandFont": "Futura PT Heavy Oblique non disponible dans les sources chargées ; ne pas annoncer son utilisation."
+  },
+  "typography": {
+    "brand": {
+      "desktop": {
+        "size": 25,
+        "weight": 500,
+        "lineHeight": 28.75,
+        "letterSpacingLight": -0.875,
+        "letterSpacingDark": -0.625
+      },
+      "mobile": {
+        "size": 18,
+        "weight": 500,
+        "lineHeight": 20.7,
+        "letterSpacingLight": -0.63,
+        "letterSpacingDark": -0.45
+      }
+    },
+    "arabicBrand": {
+      "desktop": {
+        "size": 14,
+        "lineHeight": 21
+      },
+      "mobile": {
+        "size": 11,
+        "lineHeight": 16.5
+      }
+    },
+    "nav": {
+      "desktop": {
+        "size": 26,
+        "lineHeight": "normal",
+        "weight": 400,
+        "selectedWeight": 500
+      },
+      "mobile": {
+        "size": 12,
+        "lineHeight": 15,
+        "weight": 400,
+        "selectedWeight": 500
+      }
+    },
+    "scope": {
+      "desktop": {
+        "size": 15,
+        "lineHeight": "normal",
+        "weightLight": 500,
+        "weightDark": 400
+      },
+      "mobile": {
+        "size": 13,
+        "lineHeight": "normal",
+        "weightLight": 500,
+        "weightDark": 400
+      }
+    },
+    "hint": {
+      "size": 14,
+      "lineHeight": "normal"
+    },
+    "marker": {
+      "desktop": {
+        "size": 14,
+        "weight": 500
+      },
+      "mobile": {
+        "size": 12,
+        "weight": 500
+      }
+    },
+    "prototype": {
+      "desktop": 12,
+      "mobile": 10
+    }
+  },
+  "themes": {
+    "light": {
+      "background": "#F7FAFA",
+      "surface": "#FFFFFF",
+      "text": "#1B1B1B",
+      "muted": "#536163",
+      "soft": "#EAF5F4",
+      "border": "#DCE5E5",
+      "inputBorder": "#AFBFBE",
+      "focus": "#008E90",
+      "brandFill": "#000000",
+      "utility": "#1B1B1B",
+      "navText": "#536163",
+      "navSelectedText": "#1B1B1B",
+      "navSelectedIcon": {
+        "rgb": [
+          6.75,
+          146.25,
+          147.75
+        ],
+        "hexApprox": "#079294"
+      },
+      "navIndicatorFill": {
+        "rgb": [
+          222.3,
+          243.6,
+          243.8
+        ],
+        "hexApprox": "#DEF4F4"
+      },
+      "navIndicatorBorder": {
+        "rgb": [
+          192.66,
+          235.92,
+          236.36
+        ],
+        "hexApprox": "#C1ECEC"
+      },
+      "scopeIcon": "#008E90",
+      "scopeSurface": "#FFFFFF",
+      "scopeBorder": "#FFFFFF",
+      "marker": "#ED3491",
+      "markerSurface": "#FFFFFF",
+      "markerBorder": "#FFFFFF",
+      "mobileNavSurface": "#FFFFFFF2",
+      "mobileNavBorder": "#FFFFFF",
+      "atmosphereDesktop": "radial-gradient(ellipse at 77% 42%,#00BABC12,transparent 44%),radial-gradient(ellipse at 8% 97%,#EC33910B,transparent 36%),linear-gradient(145deg,#FFFFFF 8%,#F7FAFA 70%)",
+      "atmosphereMobile": "radial-gradient(ellipse at 83% 39%,#00BABC14,transparent 49%),radial-gradient(ellipse at 3% 86%,#EC33910D,transparent 43%),linear-gradient(160deg,#FFFFFF,#F4F8F8)"
+    },
+    "dark": {
+      "background": "#1B1B1B",
+      "surface": "#202026",
+      "text": "#FFFFFF",
+      "muted": "#95B0B0",
+      "soft": "#29292E",
+      "border": "#324B4B",
+      "inputBorder": "#95B0B0",
+      "focus": "#96A3EB",
+      "brandFill": "#FFFFFF",
+      "utility": "#FFFFFF",
+      "navText": "#95B0B0",
+      "navSelectedText": "#FFFFFF",
+      "navSelectedIcon": "#ED3491",
+      "navIndicatorFill": {
+        "rgb": [
+          52.2,
+          30,
+          41.16
+        ],
+        "hexApprox": "#341E29"
+      },
+      "navIndicatorBorder": {
+        "rgb": [
+          64.8,
+          31.5,
+          48.24
+        ],
+        "hexApprox": "#412030"
+      },
+      "scopeIcon": "#FFFFFF",
+      "scopeSurface": "#202026",
+      "scopeBorder": {
+        "rgb": [
+          64.8,
+          31.5,
+          48.24
+        ],
+        "hexApprox": "#412030"
+      },
+      "marker": "#ED3491",
+      "markerSurface": "#202026",
+      "markerBorder": {
+        "rgb": [
+          64.8,
+          31.5,
+          48.24
+        ],
+        "hexApprox": "#412030"
+      },
+      "mobileNavSurface": "rgba(32,32,38,0.94)",
+      "atmosphereDesktop": "radial-gradient(ellipse at 24% 83%,rgba(237,52,145,0.07),transparent 49%),radial-gradient(ellipse at 91% 21%,rgba(0,186,188,0.08),transparent 43%)",
+      "atmosphereMobile": "radial-gradient(ellipse at 10% 65%,rgba(237,52,145,0.08),transparent 54%),radial-gradient(ellipse at 95% 28%,rgba(0,186,188,0.09),transparent 52%)"
+    },
+    "map": {
+      "light": {
+        "landWorld": "#19B8B5",
+        "landCountry": "#96D8CE",
+        "landLocal": "#EDF2F0",
+        "waterWorld": "#D9EEEE",
+        "waterLocal": "#AADFE1",
+        "waterLine": "#4CADB3",
+        "green": "#8FCFBA",
+        "urban": "#DCE9E5",
+        "campus": "#EC3391",
+        "border": "#C4F3EF",
+        "region": "#4C9590",
+        "road": "#FFFFFF",
+        "major": "#FFFFFF",
+        "roadEdge": "#B2C4C2",
+        "path": "#899E9A",
+        "rail": "#809493",
+        "building": "#A6CFC8",
+        "buildingEdge": "#579F98",
+        "extrusion": "#7ABBB3",
+        "text": "#234B49",
+        "textSecondary": "#566E6B",
+        "halo": "#FFFFFF",
+        "light": "#FFFFFF",
+        "lightIntensity": 0.26
+      },
+      "dark": {
+        "landWorld": "#256967",
+        "landCountry": "#245755",
+        "landLocal": "#203B3D",
+        "waterWorld": "#25232B",
+        "waterLocal": "#20232C",
+        "waterLine": "#387A7F",
+        "green": "#27685B",
+        "urban": "#684B62",
+        "campus": "#EC3391",
+        "border": "#A5DBD2",
+        "region": "#578C87",
+        "road": "#71948F",
+        "major": "#B6B1B5",
+        "roadEdge": "#533C50",
+        "path": "#AD7D9B",
+        "rail": "#748A90",
+        "building": "#408883",
+        "buildingEdge": "#65A8A2",
+        "extrusion": "#559F96",
+        "text": "#D7EAE4",
+        "textSecondary": "#A8C5BF",
+        "halo": "#203B3D",
+        "light": "#E6F4F1",
+        "lightIntensity": 0.2
+      }
+    }
+  },
+  "geometry": {
+    "units": "CSS px",
+    "safeAreaBottomAssumption": 0,
+    "desktop1440x960": {
+      "header": {
+        "padding": [
+          40,
+          48
+        ],
+        "heightMin": 124,
+        "brandLeft": 48,
+        "brandGap": 22,
+        "utilities": {
+          "right": 48,
+          "top": 40,
+          "gap": 14,
+          "button": [
+            44,
+            44
+          ],
+          "totalWidth": 160,
+          "buttonsLtrX": [
+            1232,
+            1290,
+            1348
+          ],
+          "buttonsRtlX": [
+            164,
+            106,
+            48
+          ]
+        }
+      },
+      "nav": {
+        "left": 48,
+        "width": 248,
+        "padding": 8,
+        "gap": 12,
+        "centerY": 480,
+        "buttonWidth": 232,
+        "buttonMinHeight": 66,
+        "buttonPadding": [
+          15,
+          20
+        ],
+        "icon": [
+          23,
+          23
+        ],
+        "iconTextGap": 19,
+        "buttonRadius": 22,
+        "indicatorRadius": 23,
+        "exactHeight": "4*max(66,normalLineHeight(26px)+30)+3*12+16",
+        "buttonTop": "480-navHeight/2+8+i*(buttonHeight+12)",
+        "rtlRight": 48
+      },
+      "scope": {
+        "centerX": 964.8,
+        "top": 130,
+        "rtlCenterX": 475.2,
+        "trailPadding": [
+          2,
+          5
+        ],
+        "buttonMinHeight": 42,
+        "outerMinHeight": 48,
+        "icon": [
+          18,
+          18
+        ],
+        "chevron": [
+          16,
+          18
+        ],
+        "buttonPadding": [
+          8,
+          10
+        ],
+        "iconTextGap": 8,
+        "relativeWidth": "2 border+10 trailPadding+20 buttonPadding+18 icon+16 chevron+16 gaps+labelTextWidth",
+        "maxWidth": 560,
+        "radius": 50
+      },
+      "globeStageCss": {
+        "x": 388.8,
+        "y": 208,
+        "width": 1051.2,
+        "height": 668,
+        "bottom": 84,
+        "centerFraction": [
+          0.55,
+          0.5
+        ],
+        "radiusFraction": 0.425,
+        "rtl": {
+          "x": 0,
+          "y": 208,
+          "width": 1051.2,
+          "height": 668,
+          "centerFraction": [
+            0.45,
+            0.5
+          ]
+        }
+      },
+      "globeEngine": {
+        "clientWidth": 1051,
+        "clientHeight": 668,
+        "centerPointWithinStage": [
+          578.05,
+          334
+        ],
+        "worldZoom": 2.0348856019781714,
+        "padding": {
+          "left": 105.1,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        },
+        "rtlPadding": {
+          "left": 0,
+          "right": 105.1,
+          "top": 0,
+          "bottom": 0
+        },
+        "note": "client dimensions are integer-rounded; confirm current runtime before pixel comparison."
+      },
+      "footer": {
+        "centerX": 964.8,
+        "bottom": 50,
+        "horizontalGap": 24,
+        "controls": {
+          "width": 132,
+          "height": 48,
+          "radius": 50,
+          "padding": 3,
+          "button": [
+            40,
+            40
+          ],
+          "gap": 2,
+          "icon": [
+            20,
+            20
+          ]
+        },
+        "rtlCenterX": 475.2
+      },
+      "prototype": {
+        "left": 56,
+        "bottom": 40,
+        "padding": [
+          8,
+          0
+        ],
+        "rtlRight": 56
+      },
+      "contentSheetWhenOpened": {
+        "x": 330,
+        "y": 170,
+        "width": 385,
+        "height": 680,
+        "padding": [
+          25,
+          28
+        ],
+        "radius": 32,
+        "globeCenterFractionX": 0.68,
+        "rtlGlobeCenterFractionX": 0.32
+      }
+    },
+    "mobile390x844": {
+      "header": {
+        "padding": [
+          24,
+          22
+        ],
+        "heightMin": 92,
+        "brandLeft": 22,
+        "brandGap": 16,
+        "utilities": {
+          "right": 22,
+          "top": 24,
+          "gap": 2,
+          "button": [
+            40,
+            44
+          ],
+          "totalWidth": 124,
+          "buttonsLtrX": [
+            244,
+            286,
+            328
+          ],
+          "buttonsRtlX": [
+            106,
+            64,
+            22
+          ]
+        }
+      },
+      "nav": {
+        "x": 20,
+        "y": 744,
+        "width": 350,
+        "height": 78,
+        "padding": 7,
+        "border": 1,
+        "radius": 29,
+        "gap": 0,
+        "button": {
+          "width": 83.5,
+          "height": 62,
+          "padding": [
+            7,
+            2
+          ],
+          "radius": 22,
+          "icon": [
+            23,
+            23
+          ],
+          "iconTextGap": 6
+        },
+        "buttonsLtr": [
+          {
+            "section": "explore",
+            "x": 28,
+            "y": 752
+          },
+          {
+            "section": "projects",
+            "x": 111.5,
+            "y": 752
+          },
+          {
+            "section": "people",
+            "x": 195,
+            "y": 752
+          },
+          {
+            "section": "journal",
+            "x": 278.5,
+            "y": 752
+          }
+        ],
+        "rtl": "Same bar box; visual ordering of buttons reverses. Explorer starts on the right.",
+        "indicator": {
+          "width": 83.5,
+          "height": 62,
+          "radius": 22
+        }
+      },
+      "scope": {
+        "centerX": 195,
+        "top": 107,
+        "maxWidth": 358,
+        "trailPadding": [
+          1,
+          3
+        ],
+        "buttonMinHeight": 42,
+        "outerMinHeight": 46,
+        "buttonPadding": [
+          8,
+          7
+        ],
+        "icon": [
+          18,
+          18
+        ],
+        "chevron": [
+          14,
+          18
+        ],
+        "iconTextGap": 5,
+        "radius": 50
+      },
+      "globeStageCss": {
+        "x": 0,
+        "y": 170,
+        "width": 390,
+        "height": 429,
+        "bottom": 245,
+        "centerFraction": [
+          0.5,
+          0.5
+        ],
+        "radiusFraction": 0.46
+      },
+      "globeEngine": {
+        "clientWidth": 390,
+        "clientHeight": 429,
+        "centerPointWithinStage": [
+          195,
+          214.5
+        ],
+        "globalCenterPoint": [
+          195,
+          384.5
+        ],
+        "worldZoom": 1.3726826431730412,
+        "padding": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        }
+      },
+      "footer": {
+        "centerX": 195,
+        "bottom": 137,
+        "verticalGap": 13,
+        "controls": {
+          "x": 112,
+          "y": 655,
+          "width": 166,
+          "height": 52,
+          "radius": 50,
+          "padding": [
+            3,
+            8
+          ],
+          "button": [
+            44,
+            44
+          ],
+          "gap": 8,
+          "icon": [
+            20,
+            20
+          ]
+        }
+      },
+      "prototype": {
+        "centerX": 195,
+        "bottom": 109,
+        "padding": 3
+      },
+      "contentSheetWhenOpened": {
+        "x": 12,
+        "y": 261.64,
+        "width": 366,
+        "height": 470.36,
+        "bottom": 112,
+        "padding": [
+          12,
+          24,
+          24
+        ],
+        "radius": 30,
+        "globeOpacity": 0.6
+      }
+    }
+  },
+  "translations": {
+    "welcome": {
+      "fr": {
+        "explore": "Explorer",
+        "projects": "Projets",
+        "people": "Parcours",
+        "journal": "Le journal",
+        "world": "Le monde",
+        "hint": "Fais tourner, puis choisis un pays.",
+        "language": "Choisir une langue",
+        "themeDark": "Activer le thème sombre",
+        "themeLight": "Activer le thème clair",
+        "profile": "Mon espace",
+        "back": "Revenir au niveau précédent",
+        "reset": "Revenir au monde",
+        "zoomIn": "Zoomer",
+        "zoomOut": "Dézoomer",
+        "close": "Fermer",
+        "closeSheet": "Revenir au globe",
+        "sample": "Contenus de démonstration",
+        "prototype": "Exploration · 42 Horizon",
+        "scopeTitle": "Où veux-tu aller ?",
+        "countries": "Choisir un pays",
+        "campuses": "Choisir un campus",
+        "all": "Tous les campus",
+        "globeLabel": "Globe interactif. Glisse pour tourner, pince ou utilise la molette pour zoomer dans les limites du niveau actuel. Clique sur un pays, puis sur un campus pour descendre. Utilise le chemin géographique ou la flèche de retour pour remonter. Au clavier : flèches, plus et moins. Échap revient au niveau précédent.",
+        "marker": "Explorer",
+        "loading": "Le monde se prépare…",
+        "error": "Le globe n’a pas pu se charger. Recharge la page pour réessayer.",
+        "projectsIntro": "Des idées qui prennent forme, ensemble.",
+        "peopleIntro": "Chaque parcours commence quelque part.",
+        "journalIntro": "La vie de la communauté, au fil des jours.",
+        "guestTitle": "Bienvenue sur Horizon",
+        "guestText": "Tu explores Horizon en visiteur. Cet aperçu permet de découvrir le globe et les rubriques, sans connexion à un compte.",
+        "aboutTitle": "Une nouvelle façon d’explorer",
+        "detailNote": "Exemple de contenu pour cette exploration.",
+        "breadcrumb": "Chemin géographique",
+        "breadcrumbWorld": "Monde",
+        "choosePlace": "Choisir un pays ou un campus",
+        "countryHint": "Choisis un campus pour t’en approcher.",
+        "campusHint": "Explore les alentours du campus.",
+        "search": "Rechercher un campus ou un pays",
+        "searchPlaceholder": "Paris, Codam, Japon…",
+        "countryFilter": "Pays",
+        "allCountries": "Tous les pays",
+        "searchWithin": "Recherche dans {country}",
+        "searchEverywhere": "Recherche dans tous les pays",
+        "results": "{count} campus",
+        "noResults": "Aucun campus ne correspond à cette recherche.",
+        "emptyTitle": "Pas encore de contenu dans cet aperçu",
+        "emptyText": "Aucun contenu de démonstration n’a été ajouté pour ce périmètre du réseau.",
+        "networkText": "{count} campus référencés dans {countries} pays, d’après la source officielle consultée le {date}. Cet instantané n’indique pas si les admissions sont ouvertes.",
+        "networkSource": "Consulter la source officielle des campus",
+        "aboutSource": "Les repères viennent du réseau 42, avec des positions corrigées à partir de sources cartographiques et des adresses officielles. La précision des autres positions reste à vérifier. Carte continue : OpenStreetMap / OpenFreeMap ; rendu Horizon.",
+        "aboutDemo": "Les rubriques restent une démonstration : seuls Paris, Lyon, Tokyo, Rio et São Paulo disposent de contenus fictifs.",
+        "networkUnavailable": "Les données du réseau ne sont pas encore disponibles."
+      },
+      "en": {
+        "explore": "Explore",
+        "projects": "Projects",
+        "people": "Journeys",
+        "journal": "Journal",
+        "world": "The world",
+        "hint": "Spin the world, then choose a country.",
+        "language": "Choose a language",
+        "themeDark": "Switch to dark theme",
+        "themeLight": "Switch to light theme",
+        "profile": "My space",
+        "back": "Back to the previous level",
+        "reset": "Back to the world",
+        "zoomIn": "Zoom in",
+        "zoomOut": "Zoom out",
+        "close": "Close",
+        "closeSheet": "Back to the globe",
+        "sample": "Sample content",
+        "prototype": "Exploration · 42 Horizon",
+        "scopeTitle": "Where would you like to go?",
+        "countries": "Choose a country",
+        "campuses": "Choose a campus",
+        "all": "All campuses",
+        "globeLabel": "Interactive globe. Drag to rotate, pinch or use the wheel to zoom within the current level. Select a country, then a campus to go closer. Use the location path or back arrow to return to a higher level. Keyboard: arrows, plus and minus. Escape goes back one level.",
+        "marker": "Explore",
+        "loading": "Getting the world ready…",
+        "error": "The globe could not load. Refresh the page to try again.",
+        "projectsIntro": "Ideas taking shape, together.",
+        "peopleIntro": "Every journey starts somewhere.",
+        "journalIntro": "Stories from our community, day by day.",
+        "guestTitle": "Welcome to Horizon",
+        "guestText": "You are exploring Horizon as a visitor. This preview lets you discover the globe and its sections without signing into an account.",
+        "aboutTitle": "A new way to explore",
+        "detailNote": "Sample content for this exploration.",
+        "breadcrumb": "Location path",
+        "breadcrumbWorld": "World",
+        "choosePlace": "Choose a country or campus",
+        "countryHint": "Choose a campus to explore up close.",
+        "campusHint": "Explore around the campus.",
+        "search": "Search for a campus or country",
+        "searchPlaceholder": "Paris, Codam, Japan…",
+        "countryFilter": "Country",
+        "allCountries": "All countries",
+        "searchWithin": "Searching in {country}",
+        "searchEverywhere": "Searching all countries",
+        "results": "{count} campuses",
+        "noResults": "No campuses match this search.",
+        "emptyTitle": "No content in this preview yet",
+        "emptyText": "No sample content has been added for this part of the network.",
+        "networkText": "{count} campuses listed in {countries} countries, based on the official source retrieved on {date}. This snapshot does not indicate whether admissions are open.",
+        "networkSource": "View the official campus source",
+        "aboutSource": "Markers come from the 42 network, with positions corrected using maps and official addresses. The accuracy of the other positions has yet to be checked. Continuous map: OpenStreetMap / OpenFreeMap; Horizon styling.",
+        "aboutDemo": "The sections remain a demonstration: only Paris, Lyon, Tokyo, Rio and São Paulo have fictional content.",
+        "networkUnavailable": "The network data is not available yet."
+      },
+      "ar": {
+        "explore": "استكشف",
+        "projects": "المشاريع",
+        "people": "المسارات",
+        "journal": "المجلة",
+        "world": "العالم",
+        "hint": "أدر العالم، ثم اختر دولة.",
+        "language": "اختر اللغة",
+        "themeDark": "تفعيل المظهر الداكن",
+        "themeLight": "تفعيل المظهر الفاتح",
+        "profile": "مساحتي",
+        "back": "العودة إلى المستوى السابق",
+        "reset": "العودة إلى العالم",
+        "zoomIn": "تكبير",
+        "zoomOut": "تصغير",
+        "close": "إغلاق",
+        "closeSheet": "العودة إلى الكرة الأرضية",
+        "sample": "محتوى توضيحي",
+        "prototype": "تصوّر أولي · 42 Horizon",
+        "scopeTitle": "إلى أين تريد الذهاب؟",
+        "countries": "اختر دولة",
+        "campuses": "اختر حرمًا",
+        "all": "جميع الفروع",
+        "globeLabel": "كرة أرضية تفاعلية. اسحب للتدوير واستخدم إصبعين أو عجلة الفأرة للتكبير ضمن حدود المستوى الحالي. اختر دولة ثم فرعًا للاقتراب. استخدم مسار الموقع أو سهم الرجوع للعودة إلى مستوى أعلى. استخدم الأسهم وعلامتي الجمع والطرح بلوحة المفاتيح. اضغط Escape للعودة إلى المستوى السابق.",
+        "marker": "استكشف",
+        "loading": "نجهّز العالم…",
+        "error": "تعذّر تحميل الكرة الأرضية. أعد تحميل الصفحة للمحاولة مجددًا.",
+        "projectsIntro": "أفكار نبنيها معًا.",
+        "peopleIntro": "لكل رحلة نقطة بداية.",
+        "journalIntro": "حكايات المجتمع، يومًا بعد يوم.",
+        "guestTitle": "مرحبًا بك في Horizon",
+        "guestText": "أنت تتصفح Horizon كزائر. يتيح لك هذا التصوّر استكشاف العالم والأقسام دون تسجيل الدخول إلى حساب.",
+        "aboutTitle": "طريقة جديدة للاستكشاف",
+        "detailNote": "محتوى توضيحي لهذا التصوّر.",
+        "breadcrumb": "مسار الموقع",
+        "breadcrumbWorld": "العالم",
+        "choosePlace": "اختر دولة أو فرعًا",
+        "countryHint": "اختر فرعًا لاستكشافه عن قرب.",
+        "campusHint": "استكشف محيط الفرع.",
+        "search": "ابحث عن فرع أو دولة",
+        "searchPlaceholder": "Paris، Codam، اليابان…",
+        "countryFilter": "الدولة",
+        "allCountries": "جميع الدول",
+        "searchWithin": "البحث في {country}",
+        "searchEverywhere": "البحث في جميع الدول",
+        "results": "عدد الفروع: {count}",
+        "noResults": "لا توجد فروع تطابق هذا البحث.",
+        "emptyTitle": "لا يوجد محتوى في هذا التصوّر بعد",
+        "emptyText": "لم يُضف محتوى توضيحي لهذا النطاق من الشبكة بعد.",
+        "networkText": "{count} فرعًا مُدرجًا في {countries} دولة، وفق المصدر الرسمي الذي جرت مراجعته في {date}. لا يبيّن هذا السجل ما إذا كان التسجيل مفتوحًا.",
+        "networkSource": "الاطلاع على المصدر الرسمي للفروع",
+        "aboutSource": "مصدر العلامات هو شبكة 42، مع تصحيح بعض المواقع باستخدام الخرائط والعناوين الرسمية. لم تُتحقق دقة المواقع الأخرى بعد. خريطة متصلة: OpenStreetMap / OpenFreeMap؛ بأسلوب Horizon.",
+        "aboutDemo": "الأقسام ما زالت توضيحية: يوجد محتوى خيالي فقط لفروع باريس وليون وطوكيو وريو وساو باولو.",
+        "networkUnavailable": "بيانات الشبكة غير متاحة بعد."
+      }
+    },
+    "entrance": {
+      "fr": {
+        "login": "Se connecter",
+        "guest": "Explorer en visiteur",
+        "encrypted": "Message chiffré",
+        "decoding": "Déchiffrement en cours",
+        "title": "Connexion — prototype",
+        "description": "Cette maquette simule la connexion. Aucune authentification réelle n’est effectuée.",
+        "confirm": "Simuler une connexion réussie",
+        "cancel": "Annuler",
+        "waiting": "Le monde se prépare…",
+        "error": "Le monde n’a pas pu se préparer.",
+        "retry": "Réessayer",
+        "back": "Revenir au message"
+      },
+      "en": {
+        "login": "Sign in",
+        "guest": "Explore as a visitor",
+        "encrypted": "Encrypted message",
+        "decoding": "Decrypting",
+        "title": "Sign in — prototype",
+        "description": "This preview simulates sign-in. No real authentication takes place.",
+        "confirm": "Simulate a successful sign-in",
+        "cancel": "Cancel",
+        "waiting": "Getting the world ready…",
+        "error": "The world could not be prepared.",
+        "retry": "Try again",
+        "back": "Back to the message"
+      },
+      "ar": {
+        "login": "تسجيل الدخول",
+        "guest": "استكشف كزائر",
+        "encrypted": "رسالة مشفرة",
+        "decoding": "جارٍ فك التشفير",
+        "title": "تسجيل الدخول — نموذج أولي",
+        "description": "يحاكي هذا النموذج تسجيل الدخول. لا يتم إجراء مصادقة حقيقية.",
+        "confirm": "محاكاة تسجيل دخول ناجح",
+        "cancel": "إلغاء",
+        "waiting": "نجهّز العالم…",
+        "error": "تعذّر تجهيز العالم.",
+        "retry": "إعادة المحاولة",
+        "back": "العودة إلى الرسالة"
+      }
+    },
+    "languageShort": {
+      "fr": "FR",
+      "en": "EN",
+      "ar": "ع"
+    },
+    "languageOptions": {
+      "fr": "Français",
+      "en": "English",
+      "ar": "العربية"
+    },
+    "brandLatin": "HORIZON",
+    "brandArabic": "أفق",
+    "brandArabicWebVisibility": "Visible in AR only, hidden in FR/EN. No IP/region simulation in this web page.",
+    "brandArabicPriorFigmaRule": "AR always; EN if connection region Arab world; never FR. Preserve the documented policy unless explicitly reconciling current web limitation.",
+    "direction": {
+      "fr": "ltr",
+      "en": "ltr",
+      "ar": "rtl"
+    },
+    "geographyMustNeverMirror": true
+  },
+  "icons": [
+    {
+      "id": "i-compass",
+      "viewBox": "0 0 24 24",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"m16 8-2.5 5.5L8 16l2.5-5.5Z\"/></svg>"
+    },
+    {
+      "id": "i-projects",
+      "viewBox": "0 0 24 24",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m12 3 9 5-9 5-9-5Zm-9 9 9 5 9-5M3 16l9 5 9-5\"/></svg>"
+    },
+    {
+      "id": "i-people",
+      "viewBox": "0 0 24 24",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"9\" cy=\"8\" r=\"3\"/><path d=\"M3 20v-2a6 6 0 0 1 12 0v2M17 5a3 3 0 0 1 0 6m1 4a4 4 0 0 1 3 4v1\"/></svg>"
+    },
+    {
+      "id": "i-journal",
+      "viewBox": "0 0 24 24",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"4\" y=\"3\" width=\"16\" height=\"18\" rx=\"3\"/><path d=\"M9 3v18m4-12h3m-3 4h3\"/></svg>"
+    },
+    {
+      "id": "i-moon",
+      "viewBox": "0 0 24 24",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20.5 13a8.5 8.5 0 0 1-9.5-9.5A8.5 8.5 0 1 0 20.5 13Z\"/></svg>"
+    },
+    {
+      "id": "i-sun",
+      "viewBox": "0 0 24 24",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5\"/></svg>"
+    },
+    {
+      "id": "i-user",
+      "viewBox": "0 0 24 24",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"8\" r=\"3.5\"/><path d=\"M5 21v-2a7 7 0 0 1 14 0v2\"/></svg>"
+    },
+    {
+      "id": "i-down",
+      "viewBox": "0 0 24 24",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m7 10 5 5 5-5\"/></svg>"
+    },
+    {
+      "id": "i-arrow",
+      "viewBox": "0 0 24 24",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14m-5-5 5 5-5 5\"/></svg>"
+    },
+    {
+      "id": "i-back",
+      "viewBox": "0 0 24 24",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m10 6-6 6 6 6m-6-6h16\"/></svg>"
+    },
+    {
+      "id": "i-close",
+      "viewBox": "0 0 24 24",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m6 6 12 12M6 18 18 6\"/></svg>"
+    },
+    {
+      "id": "i-globe",
+      "viewBox": "0 0 24 24",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><ellipse cx=\"12\" cy=\"12\" rx=\"4\" ry=\"9\"/><path d=\"M3 12h18\"/></svg>"
+    },
+    {
+      "id": "i-plus",
+      "viewBox": "0 0 24 24",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14m-7-7v14\"/></svg>"
+    },
+    {
+      "id": "i-minus",
+      "viewBox": "0 0 24 24",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14\"/></svg>"
+    }
+  ],
+  "map": {
+    "engine": "MapLibre GL 5.24",
+    "projection": "globe with perspective; do not silently substitute orthographic D3 when matching pixels",
+    "sourceFile": "site/integrated-globe.mjs",
+    "initialCamera": {
+      "center": [
+        6,
+        18
+      ],
+      "pitch": 0,
+      "bearing": 0,
+      "zoom": "See geometry.*.globeEngine.worldZoom"
+    },
+    "geography": {
+      "source": "site/geography/world-countries.topo.json.gz",
+      "editableRawSource": "site/geography/world-countries.geojson",
+      "version": "Natural Earth 5.1.1",
+      "featureCount": 258,
+      "borders": "Shared mesh created from topology; filtered polar closing segments; south polar cap added by polar-cap-layer.mjs.",
+      "waterTransparentOutsideSphere": true
+    },
+    "worldBorder": {
+      "colorLight": "#C4F3EF",
+      "colorDark": "#A5DBD2",
+      "widthExpression": [
+        "interpolate",
+        [
+          "linear"
+        ],
+        [
+          "zoom"
+        ],
+        0,
+        0.4,
+        5,
+        0.75,
+        10,
+        1.1
+      ],
+      "opacityExpression": [
+        "interpolate",
+        [
+          "linear"
+        ],
+        [
+          "zoom"
+        ],
+        0,
+        0.72,
+        7,
+        0.75,
+        11,
+        0.25,
+        14,
+        0
+      ]
+    },
+    "markerData": {
+      "dataset": "site/campuses.json",
+      "coordinateOverrides": "site/campus-location-overrides.json",
+      "count": 58,
+      "countryCount": 30,
+      "overridesCount": 18,
+      "worldMode": "One marker per country at spherical centroid of member campus coordinates, 30 total before horizon filtering.",
+      "countryMode": "Only member campuses of selected country; 58 campus records available overall.",
+      "visibleWorldMarkers": "Occlusion and collisions depend on actual MapLibre projection. Do not display all 58 at once.",
+      "maxPillLabels": {
+        "desktop": 7,
+        "mobile": 4
+      },
+      "collisionRule": "Compact if another pill is within50px vertically and horizontal boxes overlap with12px margin; sort by spherical distance to camera.",
+      "horizonRule": "Distance<π/2-(currentlyVisible?0.07:0.12) and !map.transform.isLocationOccluded(lngLat), with8/18px viewport margins.",
+      "coordinates": [
+        {
+          "id": "luanda",
+          "name": "42 Luanda",
+          "country": "AGO",
+          "coordinates": [
+            13.184199,
+            -8.924652
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-luanda/",
+          "officialId": 1841,
+          "address": "ISPTEC\nEdifício dos Laboratórios Profissionalizantes, Piso 2\nLuanda - 0 -\nAngola",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "tirana",
+          "name": "42 Tirana",
+          "country": "ALB",
+          "coordinates": [
+            19.821455001831055,
+            41.323001861572266
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-tirana/",
+          "officialId": 3841,
+          "address": "Pyramid of Tirana, Level -1\nBulevardi Dëshmorët e Kombit 5\n1001 Tirana, Albania",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "abu-dhabi",
+          "name": "42 Abu Dhabi",
+          "country": "ARE",
+          "coordinates": [
+            54.368035,
+            24.520285
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-abu-dhabi/",
+          "officialId": 1793,
+          "address": "Mina Zayed warehouses district\nAbu Dhabi\nUAE",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "yerevan",
+          "name": "42 Yerevan",
+          "country": "ARM",
+          "coordinates": [
+            44.479984,
+            40.196518
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-yerevan/",
+          "officialId": 1818,
+          "address": "16 Halabyan St\nYerevan 0038\nArmenia",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "vienna",
+          "name": "42 Vienna",
+          "country": "AUT",
+          "coordinates": [
+            16.3683296,
+            48.2484523
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-vienna/",
+          "officialId": 1828,
+          "address": "42 Vienna GMBH\nMuthgasse 26/1st floor\n1190 Wien\nAustria",
+          "coordinatePrecision": "campus",
+          "coordinateSource": "https://www.openstreetmap.org/node/12133122701"
+        },
+        {
+          "id": "wels",
+          "name": "42 Wels",
+          "country": "AUT",
+          "coordinates": [
+            14.0102873,
+            48.1511453
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-wels/",
+          "officialId": 4604,
+          "address": "Bauernstraße 11a\n4600 Wels\nAustria",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "antwerp",
+          "name": "42 Antwerp",
+          "country": "BEL",
+          "coordinates": [
+            4.4218121,
+            51.2129396
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-antwerp/",
+          "officialId": 1837,
+          "address": "Mediaplein 1\n2018 Antwerp\nBelgium",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "brussels",
+          "name": "42 Brussels",
+          "country": "BEL",
+          "coordinates": [
+            4.357563018798828,
+            50.84537887573242
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-brussels/",
+          "officialId": 1795,
+          "address": "Cantersteen 12\n1000 Brussels\nBelgium",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "belo-horizonte",
+          "name": "42 Belo Horizonte",
+          "country": "BRA",
+          "coordinates": [
+            -43.9344931,
+            -19.9166813
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-belo-horizonte/",
+          "officialId": 1836,
+          "address": "R. Rio de Janeiro\n471 - Centro, Belo Horizonte\nMG, 30160-041",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "rio",
+          "name": "42 Rio",
+          "country": "BRA",
+          "coordinates": [
+            -43.19806318899948,
+            -22.909956498767578
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-rio/",
+          "officialId": 1809,
+          "address": "Rua Marquês de Sapucaí, 200, 12º andar\nSanto Cristo - Rio de Janeiro - RJ\n20210-072\nBrazil",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "sao",
+          "name": "42 São Paulo",
+          "country": "BRA",
+          "coordinates": [
+            -46.689493,
+            -23.557359
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-sao-paulo/",
+          "officialId": 1813,
+          "address": "Rua Aspicuelta, 422\nVila Madalena\n8 andar\nSão Paulo 05416-011\nBrazil",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "quebec",
+          "name": "42 Québec",
+          "country": "CAN",
+          "coordinates": [
+            -71.22382024496463,
+            46.81218664042808
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-quebec/",
+          "officialId": 1808,
+          "address": "330 Rue Saint-Vallier E\nQuébec, QC\nCanada G1K 9C5",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "lausanne",
+          "name": "42 Lausanne",
+          "country": "CHE",
+          "coordinates": [
+            6.603866,
+            46.517628
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-lausanne/",
+          "officialId": 1803,
+          "address": "Rue de Lausanne 64\n1020 Renens\nSwitzerland",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "zurich",
+          "name": "42 Zürich",
+          "country": "CHE",
+          "coordinates": [
+            8.559128761291504,
+            47.41770935058594
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-zurich/",
+          "officialId": 5141,
+          "address": "SPACES Z.One\nLeutschenbachstrasse 95\n8052 Zürich",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "prague",
+          "name": "42 Prague",
+          "country": "CZE",
+          "coordinates": [
+            14.518224868107842,
+            50.11119312075461
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-prague/",
+          "officialId": 1831,
+          "address": "AFI CITY TOWER\nKolbenova 1021/9\nPrague 9\nCzech Republic",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "berlin",
+          "name": "42 Berlin",
+          "country": "DEU",
+          "coordinates": [
+            13.4500839,
+            52.4842705
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-berlin/",
+          "officialId": 1826,
+          "address": "HarzerStraße, 42\nNeukölln\nBerlin",
+          "coordinatePrecision": "campus",
+          "coordinateSource": "https://www.openstreetmap.org/node/11048360138"
+        },
+        {
+          "id": "heilbronn",
+          "name": "42 Heilbronn",
+          "country": "DEU",
+          "coordinates": [
+            9.202188,
+            49.140611
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-heilbronn-42-network/",
+          "officialId": 1801,
+          "address": "Weipertstraße 8-10\n74076 Heilbronn\nGermany",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "wolfsburg",
+          "name": "42 Wolfsburg",
+          "country": "DEU",
+          "coordinates": [
+            10.789543291562392,
+            52.42683056483372
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-wolfsburg/",
+          "officialId": 1825,
+          "address": "Porschestraße 2c\nD-38440 Wolfsburg\nGermany",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "barcelona",
+          "name": "42 Barcelona",
+          "country": "ESP",
+          "coordinates": [
+            2.1703619943206243,
+            41.439213161783535
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-barcelona/",
+          "officialId": 1799,
+          "address": "Parc Tecnològic de Barcelona Activa\nCarrer Albert Einstein 8-14\n08042 Barcelona\nSpain",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "madrid",
+          "name": "42 Madrid",
+          "country": "ESP",
+          "coordinates": [
+            -3.664176423907283,
+            40.51629809848375
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-madrid/",
+          "officialId": 1806,
+          "address": "Distrito Telefónica - Edificio Norte 3\nRonda de la Comunicación, s/n\n28050 Madrid\nSpain",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "malaga",
+          "name": "42 Málaga",
+          "country": "ESP",
+          "coordinates": [
+            -4.439711332633282,
+            36.69948099191123
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-malaga/",
+          "officialId": 1822,
+          "address": "Avenida Sor Teresa Prat, 15\nComplejo Tabacalera, Edificio E3\n29003 Málaga\nSpain",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "urduliz",
+          "name": "42 Urduliz",
+          "country": "ESP",
+          "coordinates": [
+            -2.9602571976300367,
+            43.37999240414109
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-urduliz/",
+          "officialId": 1800,
+          "address": "Torre Urduliz\nAita Gotzon, 37\n48610 Urduliz (Bizkaia)\nSpain",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "angouleme",
+          "name": "42 Angoulême",
+          "country": "FRA",
+          "coordinates": [
+            0.158948,
+            45.655191
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-angouleme/",
+          "officialId": 1816,
+          "address": "49-51 boulevard Besson-Bey\n16000 Angoulême\nFrance",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "le-havre",
+          "name": "42 Le Havre",
+          "country": "FRA",
+          "coordinates": [
+            0.1250682,
+            49.4895911
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-le-havre/",
+          "officialId": 1835,
+          "address": "Cité Numérique\n20 Quai Frissard\n76600 Le Havre\nFrance",
+          "coordinatePrecision": "campus",
+          "coordinateSource": "https://www.openstreetmap.org/node/10785309505"
+        },
+        {
+          "id": "lyon",
+          "name": "42 Lyon",
+          "country": "FRA",
+          "coordinates": [
+            4.7482783,
+            45.7804034
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-lyon/",
+          "officialId": 1805,
+          "address": "Campus Région du Numérique\n78, route de Paris\n69260 Charbonnières-les-Bains\nFrance",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "marseille",
+          "name": "42 Marseille",
+          "country": "FRA",
+          "coordinates": [
+            5.3740692138671875,
+            43.297889709472656
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-marseille/",
+          "officialId": 4224,
+          "address": "19 rue Henri Barbusse\n13001 Marseille\nFrance",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "mulhouse",
+          "name": "42 Mulhouse",
+          "country": "FRA",
+          "coordinates": [
+            7.3274918,
+            47.738475
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-mulhouse/",
+          "officialId": 1817,
+          "address": "KMØ\n30 rue François Spoerry\n68100 Mulhouse",
+          "coordinatePrecision": "campus",
+          "coordinateSource": "https://www.openstreetmap.org/node/12063680661"
+        },
+        {
+          "id": "nice",
+          "name": "42 Nice",
+          "country": "FRA",
+          "coordinates": [
+            7.200040340423584,
+            43.69113540649414
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-nice/",
+          "officialId": 1807,
+          "address": "Bâtiment PREMIUM - 4ème Etage\n61 Avenue Simone Veil\n06200 Nice\nFrance",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "paris",
+          "name": "42 Paris",
+          "country": "FRA",
+          "coordinates": [
+            2.31838649,
+            48.896685275
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-paris/",
+          "officialId": 1819,
+          "address": "96, boulevard Bessières\n75017 PARIS\nFrance",
+          "coordinatePrecision": "campus",
+          "coordinateSource": "https://www.openstreetmap.org/way/297467455"
+        },
+        {
+          "id": "perpignan",
+          "name": "42 Perpignan",
+          "country": "FRA",
+          "coordinates": [
+            2.8883257,
+            42.6985494
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-perpignan/",
+          "officialId": 1834,
+          "address": "Les Dames de France\nRue Pierre Curie\n66000 Perpignan\nFrance",
+          "coordinatePrecision": "campus",
+          "coordinateSource": "https://www.openstreetmap.org/node/10125597530"
+        },
+        {
+          "id": "london",
+          "name": "42 London",
+          "country": "GBR",
+          "coordinates": [
+            -0.0673864,
+            51.5168674
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-london/",
+          "officialId": 1832,
+          "address": "20-30 Whitechapel Road\nE1 1EW\nLondon, UK",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "firenze",
+          "name": "42 Firenze",
+          "country": "ITA",
+          "coordinates": [
+            11.2428696,
+            43.7709549
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-firenze/",
+          "officialId": 1830,
+          "address": "Via del Tiratoio 1\n50124 Florence\nItaly",
+          "coordinatePrecision": "campus",
+          "coordinateSource": "https://www.openstreetmap.org/node/13158540399"
+        },
+        {
+          "id": "milano",
+          "name": "42 Milano",
+          "country": "ITA",
+          "coordinates": [
+            9.1642787,
+            45.452459
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-milano/",
+          "officialId": 1845,
+          "address": "V. Ambrogio Bergognone da Fossano, 34, 20144 Milano MI",
+          "coordinatePrecision": "address",
+          "coordinateSource": "https://www.openstreetmap.org/node/2297227015"
+        },
+        {
+          "id": "roma",
+          "name": "42 Roma",
+          "country": "ITA",
+          "coordinates": [
+            12.5490518,
+            41.9037179
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-roma/",
+          "officialId": 1810,
+          "address": "Via Sandro Sandri, 81\n00159 Rome\nItaly",
+          "coordinatePrecision": "address",
+          "coordinateSource": "https://www.openstreetmap.org/way/222895553"
+        },
+        {
+          "id": "amman",
+          "name": "42 Amman",
+          "country": "JOR",
+          "coordinates": [
+            35.8874267689284,
+            31.954064917842697
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-amman/",
+          "officialId": 1824,
+          "address": "Abdun neighborhood\nAmman\nJordan",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "irbid",
+          "name": "42 Irbid",
+          "country": "JOR",
+          "coordinates": [
+            35.8713171,
+            32.5040645
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-irbid/",
+          "officialId": 4136,
+          "address": "Irbid, Jordan",
+          "coordinatePrecision": "campus",
+          "coordinateSource": "https://42irbid.com/footer-en/"
+        },
+        {
+          "id": "tokyo",
+          "name": "42 Tokyo",
+          "country": "JPN",
+          "coordinates": [
+            139.68813187116757,
+            35.69044841395869
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-tokyo/",
+          "officialId": 1815,
+          "address": "2 Chome-11-2 Nishishinjuku\nShinjuku City\nTokyo 160-0023\nJapan",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "gyeongsan",
+          "name": "42 Gyeongsan",
+          "country": "KOR",
+          "coordinates": [
+            128.847131,
+            35.90267
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-gyeongsan/",
+          "officialId": 1842,
+          "address": "201 Daegudae-ro, Jillyang-eup,\nGyeongsan-si, Gyeongsangbuk-do,\nRepublic of Korea",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "seoul",
+          "name": "42 Seoul",
+          "country": "KOR",
+          "coordinates": [
+            127.065101,
+            37.488203
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-seoul/",
+          "officialId": 1814,
+          "address": "416, Gaepo-ro\nGangnam-gu\nSeoul\nThe republic of Korea",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "beirut",
+          "name": "42 Beirut",
+          "country": "LBN",
+          "coordinates": [
+            35.5025585,
+            33.8892265
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-beirut/",
+          "officialId": 1844,
+          "address": "Beirut Digital District 1499\nNassif El Yazaji St\nLebanon",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "luxembourg",
+          "name": "42 Luxembourg",
+          "country": "LUX",
+          "coordinates": [
+            5.9462343,
+            49.5032137
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-luxembourg/",
+          "officialId": 1833,
+          "address": "14, porte de France,\nL-4360 Esch-sur-Alzette",
+          "coordinatePrecision": "campus",
+          "coordinateSource": "https://www.openstreetmap.org/node/11546026732"
+        },
+        {
+          "id": "1337-ben-guerir",
+          "name": "1337 Ben Guérir",
+          "country": "MAR",
+          "coordinates": [
+            -7.939922,
+            32.21987
+          ],
+          "sourceUrl": "https://www.42network.org/campus/1337-ben-guerir/",
+          "officialId": 1821,
+          "address": "Lot 660, Hay Moulay Rachid\n43150 Ben Guérir\nMorocco",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "1337-khouribga",
+          "name": "1337 Khouribga",
+          "country": "MAR",
+          "coordinates": [
+            -6.897858,
+            32.882134
+          ],
+          "sourceUrl": "https://www.42network.org/campus/1337-khouribga/",
+          "officialId": 1820,
+          "address": "Mail central, Bâtiment B\n25000 Khouribga\nMorocco",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "1337-med",
+          "name": "1337 Med",
+          "country": "MAR",
+          "coordinates": [
+            -5.3625516,
+            35.5888995
+          ],
+          "sourceUrl": "https://www.42network.org/campus/1337-med/",
+          "officialId": 1827,
+          "address": "Parc TetouanShore commune de Martil\nTetouan 93150",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "1337-rabat",
+          "name": "1337 – Rabat",
+          "country": "MAR",
+          "coordinates": [
+            -6.8408929,
+            34.0218454
+          ],
+          "sourceUrl": "https://www.42network.org/campus/1337-rabat/",
+          "officialId": 4095,
+          "address": "Rabat, Morocco",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "antananarivo",
+          "name": "42 Antananarivo",
+          "country": "MDG",
+          "coordinates": [
+            47.50829015,
+            -18.8780753
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-antananarivo/",
+          "officialId": 1839,
+          "address": "42 Campus Antananarivo\nBuilding Titan VI Zone Galaxy\nAndraharo 101 Antananarivo\nMadagascar",
+          "coordinatePrecision": "campus",
+          "coordinateSource": "https://www.openstreetmap.org/way/1149136546"
+        },
+        {
+          "id": "iskandar-puteri",
+          "name": "42 Iskandar Puteri",
+          "country": "MYS",
+          "coordinates": [
+            103.6144729,
+            1.4522711
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-iskandar-puteri/",
+          "officialId": 1846,
+          "address": "Iskandar Puteri, Johor Bahru, Malaysia",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "kuala-lumpur",
+          "name": "42 Kuala Lumpur",
+          "country": "MYS",
+          "coordinates": [
+            101.6060748,
+            3.0665913
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-kuala-lumpur/",
+          "officialId": 1802,
+          "address": "Sunway FutureX\nDuplex, Jalan PJS 11/26, Bandar Sunway\n47500 Subang Jaya, Selangor\nMalaysia",
+          "coordinatePrecision": "address",
+          "coordinateSource": "https://www.openstreetmap.org/way/210994251"
+        },
+        {
+          "id": "penang",
+          "name": "42 Penang",
+          "country": "MYS",
+          "coordinates": [
+            100.3422899,
+            5.4152454
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-penang/",
+          "officialId": 2329,
+          "address": "Penang, Malaysia",
+          "coordinatePrecision": "address",
+          "coordinateSource": "https://www.openstreetmap.org/way/264867124"
+        },
+        {
+          "id": "codam",
+          "name": "Codam",
+          "country": "NLD",
+          "coordinates": [
+            4.91561,
+            52.374485
+          ],
+          "sourceUrl": "https://www.42network.org/campus/codam/",
+          "officialId": 1792,
+          "address": "Kattenburgerstraat 7\nBuilding 039\n1018 JA Amsterdam\nThe Netherlands",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "warsaw",
+          "name": "42 Warsaw",
+          "country": "POL",
+          "coordinates": [
+            20.978907,
+            52.2358891
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-warsaw/",
+          "officialId": 1840,
+          "address": "SPARK\nAl. Solidarności 171 B\n00-877 Warsaw\nPoland",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "lisboa",
+          "name": "42 Lisboa",
+          "country": "PRT",
+          "coordinates": [
+            -9.1058741,
+            38.7311004
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-lisboa/",
+          "officialId": 1804,
+          "address": "Av. Infante Dom Henrique 143, 1º\n1950-406 Lisboa\nPortugal",
+          "coordinatePrecision": "campus",
+          "coordinateSource": "https://www.openstreetmap.org/node/12697013430"
+        },
+        {
+          "id": "porto",
+          "name": "42 Porto",
+          "country": "PRT",
+          "coordinates": [
+            -8.6129889,
+            41.148894
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-porto/",
+          "officialId": 1829,
+          "address": "Rua da Picaria 5\n4050-478 Porto\nPortugal",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "nablus",
+          "name": "42 Nablus",
+          "country": "PSE",
+          "coordinates": [
+            35.2569374,
+            32.2205316
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-nablus/",
+          "officialId": 1843,
+          "address": "Nablus, Palestine.",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "singapore",
+          "name": "42 Singapore",
+          "country": "SGP",
+          "coordinates": [
+            103.96278104,
+            1.34037192
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-singapore/",
+          "officialId": 1838,
+          "address": "42 Singapore\nSingapore University of Technology and Design\nBlock 1, Level 4 (Library)\n8 Somapah Road, Singapore 487372",
+          "coordinatePrecision": "campus",
+          "coordinateSource": "https://www.openstreetmap.org/way/1554458909"
+        },
+        {
+          "id": "bangkok",
+          "name": "42 Bangkok",
+          "country": "THA",
+          "coordinates": [
+            100.778442,
+            13.727506
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-bangkok/",
+          "officialId": 1798,
+          "address": "KMITL Lifelong Learning Center (4th floor)\nKing Mongkut’s Institute of Technology Ladkrabang (KMITL)\n1 Soi Chalongkrung 1, Ladkrabang\nBangkok 10520\nThailand",
+          "coordinatePrecision": "address",
+          "coordinateSource": "https://www.42bangkok.com/contact/"
+        },
+        {
+          "id": "istanbul",
+          "name": "42 Istanbul",
+          "country": "TUR",
+          "coordinates": [
+            28.984801724834792,
+            41.10347413799488
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-istanbul/",
+          "officialId": 1811,
+          "address": "Ayazaga Mahallesi\nCendere Caddesi 109C 2B Blok Kat 3 Sarıyer\nİstanbul\nTürkiye",
+          "coordinatePrecision": "network-position-not-individually-verified",
+          "coordinateSource": "https://www.42network.org/wp-content/uploads/campus/campus.json"
+        },
+        {
+          "id": "kocaeli",
+          "name": "42 Kocaeli",
+          "country": "TUR",
+          "coordinates": [
+            29.5107064,
+            40.7925707
+          ],
+          "sourceUrl": "https://www.42network.org/campus/42-kocaeli/",
+          "officialId": 1812,
+          "address": "Muallimköy Mahallesi\nDeniz Cd. No:143-5\n41400 Gebze\nKocaeli\nTürkiye",
+          "coordinatePrecision": "campus",
+          "coordinateSource": "https://42turkiye.com.tr/iletisim/"
+        }
+      ],
+      "countries": [
+        {
+          "id": "ALB",
+          "iso2": "AL",
+          "name": "Albania",
+          "labels": {
+            "fr": "Albanie",
+            "en": "Albania",
+            "ar": "ألبانيا"
+          },
+          "centroidOfMemberCampuses": [
+            19.82145500183105,
+            41.32300186157226
+          ],
+          "campusIds": [
+            "tirana"
+          ]
+        },
+        {
+          "id": "AGO",
+          "iso2": "AO",
+          "name": "Angola",
+          "labels": {
+            "fr": "Angola",
+            "en": "Angola",
+            "ar": "أنغولا"
+          },
+          "centroidOfMemberCampuses": [
+            13.184199000000001,
+            -8.924652
+          ],
+          "campusIds": [
+            "luanda"
+          ]
+        },
+        {
+          "id": "ARM",
+          "iso2": "AM",
+          "name": "Armenia",
+          "labels": {
+            "fr": "Arménie",
+            "en": "Armenia",
+            "ar": "أرمينيا"
+          },
+          "centroidOfMemberCampuses": [
+            44.479984,
+            40.19651799999999
+          ],
+          "campusIds": [
+            "yerevan"
+          ]
+        },
+        {
+          "id": "AUT",
+          "iso2": "AT",
+          "name": "Austria",
+          "labels": {
+            "fr": "Autriche",
+            "en": "Austria",
+            "ar": "النمسا"
+          },
+          "centroidOfMemberCampuses": [
+            15.188188538388982,
+            48.20582676907073
+          ],
+          "campusIds": [
+            "vienna",
+            "wels"
+          ]
+        },
+        {
+          "id": "BEL",
+          "iso2": "BE",
+          "name": "Belgium",
+          "labels": {
+            "fr": "Belgique",
+            "en": "Belgium",
+            "ar": "بلجيكا"
+          },
+          "centroidOfMemberCampuses": [
+            4.389560180441163,
+            51.02916364133188
+          ],
+          "campusIds": [
+            "antwerp",
+            "brussels"
+          ]
+        },
+        {
+          "id": "BRA",
+          "iso2": "BR",
+          "name": "Brazil",
+          "labels": {
+            "fr": "Brésil",
+            "en": "Brazil",
+            "ar": "البرازيل"
+          },
+          "centroidOfMemberCampuses": [
+            -44.59928800122792,
+            -22.13495359559709
+          ],
+          "campusIds": [
+            "belo-horizonte",
+            "rio",
+            "sao"
+          ]
+        },
+        {
+          "id": "CAN",
+          "iso2": "CA",
+          "name": "Canada",
+          "labels": {
+            "fr": "Canada",
+            "en": "Canada",
+            "ar": "كندا"
+          },
+          "centroidOfMemberCampuses": [
+            -71.22382024496463,
+            46.81218664042807
+          ],
+          "campusIds": [
+            "quebec"
+          ]
+        },
+        {
+          "id": "CZE",
+          "iso2": "CZ",
+          "name": "Czech Republic",
+          "labels": {
+            "fr": "Tchéquie",
+            "en": "Czechia",
+            "ar": "التشيك"
+          },
+          "centroidOfMemberCampuses": [
+            14.518224868107836,
+            50.11119312075461
+          ],
+          "campusIds": [
+            "prague"
+          ]
+        },
+        {
+          "id": "FRA",
+          "iso2": "FR",
+          "name": "France",
+          "labels": {
+            "fr": "France",
+            "en": "France",
+            "ar": "فرنسا"
+          },
+          "centroidOfMemberCampuses": [
+            3.81113101476358,
+            45.93666466011295
+          ],
+          "campusIds": [
+            "angouleme",
+            "le-havre",
+            "lyon",
+            "marseille",
+            "mulhouse",
+            "nice",
+            "paris",
+            "perpignan"
+          ]
+        },
+        {
+          "id": "DEU",
+          "iso2": "DE",
+          "name": "Germany",
+          "labels": {
+            "fr": "Allemagne",
+            "en": "Germany",
+            "ar": "ألمانيا"
+          },
+          "centroidOfMemberCampuses": [
+            11.100060117269685,
+            51.36384053203147
+          ],
+          "campusIds": [
+            "berlin",
+            "heilbronn",
+            "wolfsburg"
+          ]
+        },
+        {
+          "id": "ITA",
+          "iso2": "IT",
+          "name": "Italy",
+          "labels": {
+            "fr": "Italie",
+            "en": "Italy",
+            "ar": "إيطاليا"
+          },
+          "centroidOfMemberCampuses": [
+            11.018737237151822,
+            43.71748266860808
+          ],
+          "campusIds": [
+            "firenze",
+            "milano",
+            "roma"
+          ]
+        },
+        {
+          "id": "JPN",
+          "iso2": "JP",
+          "name": "Japan",
+          "labels": {
+            "fr": "Japon",
+            "en": "Japan",
+            "ar": "اليابان"
+          },
+          "centroidOfMemberCampuses": [
+            139.68813187116757,
+            35.69044841395869
+          ],
+          "campusIds": [
+            "tokyo"
+          ]
+        },
+        {
+          "id": "JOR",
+          "iso2": "JO",
+          "name": "Jordan",
+          "labels": {
+            "fr": "Jordanie",
+            "en": "Jordan",
+            "ar": "الأردن"
+          },
+          "centroidOfMemberCampuses": [
+            35.87939630780257,
+            32.22906496434633
+          ],
+          "campusIds": [
+            "amman",
+            "irbid"
+          ]
+        },
+        {
+          "id": "LBN",
+          "iso2": "LB",
+          "name": "Lebanon",
+          "labels": {
+            "fr": "Liban",
+            "en": "Lebanon",
+            "ar": "لبنان"
+          },
+          "centroidOfMemberCampuses": [
+            35.502558500000006,
+            33.8892265
+          ],
+          "campusIds": [
+            "beirut"
+          ]
+        },
+        {
+          "id": "LUX",
+          "iso2": "LU",
+          "name": "Luxembourg",
+          "labels": {
+            "fr": "Luxembourg",
+            "en": "Luxembourg",
+            "ar": "لوكسمبورغ"
+          },
+          "centroidOfMemberCampuses": [
+            5.9462342999999995,
+            49.5032137
+          ],
+          "campusIds": [
+            "luxembourg"
+          ]
+        },
+        {
+          "id": "MDG",
+          "iso2": "MG",
+          "name": "Madagascar",
+          "labels": {
+            "fr": "Madagascar",
+            "en": "Madagascar",
+            "ar": "مدغشقر"
+          },
+          "centroidOfMemberCampuses": [
+            47.50829015,
+            -18.8780753
+          ],
+          "campusIds": [
+            "antananarivo"
+          ]
+        },
+        {
+          "id": "MYS",
+          "iso2": "MY",
+          "name": "Malaysia",
+          "labels": {
+            "fr": "Malaisie",
+            "en": "Malaysia",
+            "ar": "ماليزيا"
+          },
+          "centroidOfMemberCampuses": [
+            101.85642988173798,
+            3.3122343440915154
+          ],
+          "campusIds": [
+            "iskandar-puteri",
+            "kuala-lumpur",
+            "penang"
+          ]
+        },
+        {
+          "id": "MAR",
+          "iso2": "MA",
+          "name": "Morocco",
+          "labels": {
+            "fr": "Maroc",
+            "en": "Morocco",
+            "ar": "المغرب"
+          },
+          "centroidOfMemberCampuses": [
+            -6.773421703456579,
+            33.68151624988969
+          ],
+          "campusIds": [
+            "1337-ben-guerir",
+            "1337-khouribga",
+            "1337-med",
+            "1337-rabat"
+          ]
+        },
+        {
+          "id": "PSE",
+          "iso2": "PS",
+          "name": "Palestine",
+          "labels": {
+            "fr": "Territoires palestiniens",
+            "en": "Palestinian Territories",
+            "ar": "الأراضي الفلسطينية"
+          },
+          "centroidOfMemberCampuses": [
+            35.2569374,
+            32.2205316
+          ],
+          "campusIds": [
+            "nablus"
+          ]
+        },
+        {
+          "id": "POL",
+          "iso2": "PL",
+          "name": "Poland",
+          "labels": {
+            "fr": "Pologne",
+            "en": "Poland",
+            "ar": "بولندا"
+          },
+          "centroidOfMemberCampuses": [
+            20.978907,
+            52.235889099999994
+          ],
+          "campusIds": [
+            "warsaw"
+          ]
+        },
+        {
+          "id": "PRT",
+          "iso2": "PT",
+          "name": "Portugal",
+          "labels": {
+            "fr": "Portugal",
+            "en": "Portugal",
+            "ar": "البرتغال"
+          },
+          "centroidOfMemberCampuses": [
+            -8.863786009150571,
+            39.940257998509594
+          ],
+          "campusIds": [
+            "lisboa",
+            "porto"
+          ]
+        },
+        {
+          "id": "SGP",
+          "iso2": "SG",
+          "name": "Singapore",
+          "labels": {
+            "fr": "Singapour",
+            "en": "Singapore",
+            "ar": "سنغافورة"
+          },
+          "centroidOfMemberCampuses": [
+            103.96278104000001,
+            1.34037192
+          ],
+          "campusIds": [
+            "singapore"
+          ]
+        },
+        {
+          "id": "KOR",
+          "iso2": "KR",
+          "name": "South Korea",
+          "labels": {
+            "fr": "Corée du Sud",
+            "en": "South Korea",
+            "ar": "كوريا الجنوبية"
+          },
+          "centroidOfMemberCampuses": [
+            127.96530512604542,
+            36.698755882599364
+          ],
+          "campusIds": [
+            "gyeongsan",
+            "seoul"
+          ]
+        },
+        {
+          "id": "ESP",
+          "iso2": "ES",
+          "name": "Spain",
+          "labels": {
+            "fr": "Espagne",
+            "en": "Spain",
+            "ar": "إسبانيا"
+          },
+          "centroidOfMemberCampuses": [
+            -2.2618459282116663,
+            40.53804920403229
+          ],
+          "campusIds": [
+            "barcelona",
+            "madrid",
+            "malaga",
+            "urduliz"
+          ]
+        },
+        {
+          "id": "CHE",
+          "iso2": "CH",
+          "name": "Switzerland",
+          "labels": {
+            "fr": "Suisse",
+            "en": "Switzerland",
+            "ar": "سويسرا"
+          },
+          "centroidOfMemberCampuses": [
+            7.573271011976373,
+            46.9718290321331
+          ],
+          "campusIds": [
+            "lausanne",
+            "zurich"
+          ]
+        },
+        {
+          "id": "THA",
+          "iso2": "TH",
+          "name": "Thailand",
+          "labels": {
+            "fr": "Thaïlande",
+            "en": "Thailand",
+            "ar": "تايلاند"
+          },
+          "centroidOfMemberCampuses": [
+            100.778442,
+            13.727505999999998
+          ],
+          "campusIds": [
+            "bangkok"
+          ]
+        },
+        {
+          "id": "NLD",
+          "iso2": "NL",
+          "name": "The Netherlands",
+          "labels": {
+            "fr": "Pays-Bas",
+            "en": "Netherlands",
+            "ar": "هولندا"
+          },
+          "centroidOfMemberCampuses": [
+            4.915610000000002,
+            52.37448500000001
+          ],
+          "campusIds": [
+            "codam"
+          ]
+        },
+        {
+          "id": "TUR",
+          "iso2": "TR",
+          "name": "Turkey",
+          "labels": {
+            "fr": "Turquie",
+            "en": "Türkiye",
+            "ar": "تركيا"
+          },
+          "centroidOfMemberCampuses": [
+            29.248373106089918,
+            40.948321103158484
+          ],
+          "campusIds": [
+            "istanbul",
+            "kocaeli"
+          ]
+        },
+        {
+          "id": "ARE",
+          "iso2": "AE",
+          "name": "United Arab Emirates",
+          "labels": {
+            "fr": "Émirats arabes unis",
+            "en": "United Arab Emirates",
+            "ar": "الإمارات العربية المتحدة"
+          },
+          "centroidOfMemberCampuses": [
+            54.368035,
+            24.520285000000005
+          ],
+          "campusIds": [
+            "abu-dhabi"
+          ]
+        },
+        {
+          "id": "GBR",
+          "iso2": "GB",
+          "name": "United Kingdom",
+          "labels": {
+            "fr": "Royaume-Uni",
+            "en": "United Kingdom",
+            "ar": "المملكة المتحدة"
+          },
+          "centroidOfMemberCampuses": [
+            -0.06738640000000001,
+            51.5168674
+          ],
+          "campusIds": [
+            "london"
+          ]
+        }
+      ]
+    },
+    "markerAppearance": {
+      "direction": "ltr even within RTL layout; label dir=auto",
+      "regular": {
+        "minHeight": 44,
+        "padding": [
+          10,
+          16,
+          10,
+          9
+        ],
+        "borderWidth": 1,
+        "radius": 99,
+        "transform": "translate(-13px,-50%)",
+        "gapDesktop": 10,
+        "gapMobile": 8
+      },
+      "dot": {
+        "size": 8,
+        "fill": "#ED3491",
+        "haloWidth": 5,
+        "haloColor": "rgba(237,52,145,0.12)"
+      },
+      "compact": {
+        "size": 14,
+        "fill": "transparent",
+        "borderWidth": 0,
+        "transform": "translate(-50%,-50%)",
+        "labelHidden": true
+      }
+    },
+    "figmaStrategy": [
+      "Use the same corrected campus JSON and derive 30 world country centroids; create named editable marker components only for visible front-side positions.",
+      "For pixel-accurate geography, export the actual prepared MapLibre canvas at each target viewport/theme with the camera above, or use exactly the same perspective projection. Raster geography can sit below editable UI and markers.",
+      "Keep light/dark map assets or matching theme-aware vector fills. Static map screenshots cannot inherit Figma colour variables automatically.",
+      "Keep all58 corrected campus coordinates as technical source data; country and campus states can be illustrated with selected destinations, without falsely claiming live globe rotation or MapLibre availability in Figma.",
+      "Do not mirror coastline SVGs, logo, geographic marker positions, or letters in RTL. Mirror only interface composition."
+    ]
+  },
+  "motion": {
+    "easing": "cubic-bezier(.22,1,.36,1)",
+    "navIndicatorDesktop": 480,
+    "navIndicatorMobile": 420,
+    "buttonSelectedIconDesktop": "rotate(-8deg) scale(1.08)",
+    "buttonSelectedIconMobile": "translateY(-1px) rotate(-6deg)",
+    "themePaintTransition": 450,
+    "geographicApproachCountry": 1500,
+    "geographicApproachCampus": 2800,
+    "returnWorld": 2000,
+    "reducedMotion": "CSS animations/transitions disabled; JS respects prefers-reduced-motion."
+  },
+  "implementationNotes": [
+    "The welcome source is the latest standalone prototype, not production application.",
+    "The Figma v9 token snapshot alone is insufficient: welcome.css overrides light background, surfaces, muted text, active menu and dimensions.",
+    "At initial world level the back arrow is hidden and zoom-out is disabled at minimum zoom.",
+    "Profile popup content reflects visitor/member simulation; there is no real account.",
+    "Clean Explore home keeps content sheet hidden. Do not add project cards to the initial home."
+  ]
+}

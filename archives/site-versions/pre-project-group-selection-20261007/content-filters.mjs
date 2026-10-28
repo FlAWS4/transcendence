@@ -1,0 +1,95 @@
+// Category filters only describe records already present in the demo corpus.
+// Available project types can honestly return no matching demonstration record.
+export const validProjectFilters=Object.freeze(['all','libft','minishell','cub3d','so_long','born2beroot','ft_irc','ft_linear_regression','personal']);
+export const validStatusFilters=Object.freeze(['all','student','transcender','alumni']);
+const projectGroups=Object.freeze({
+ libft:'common-core',minishell:'common-core',cub3d:'common-core',so_long:'common-core',born2beroot:'common-core',ft_irc:'common-core',
+ ft_linear_regression:'specialization',personal:'personal',
+});
+const projectKinds=Object.freeze({
+ 'minishell-under-the-prompt':'minishell',
+ 'raycast-find-the-light':'cub3d',
+ 'network-messages-between-us':'ft_irc',
+ 'garden-small-useful-tools':'personal',
+});
+const copy={
+ fr:{commonCore:'Tronc commun',specialization:'Spécialisation',personalProjects:'Projets personnels',allProjects:'Tous les projets',personal:'Projet personnel',allProfiles:'Tous les profils',statusGroup:'Statut',arrivalGroup:'Année d’arrivée',student:'Cadet',transcender:'Transcender',alumni:'Alumni'},
+ en:{commonCore:'Common core',specialization:'Specialisation',personalProjects:'Personal projects',allProjects:'All projects',personal:'Personal project',allProfiles:'All profiles',statusGroup:'Status',arrivalGroup:'Arrival year',student:'Cadet',transcender:'Transcender',alumni:'Alumni'},
+ ar:{commonCore:'الجذع المشترك',specialization:'التخصّص',personalProjects:'المشاريع الشخصية',allProjects:'جميع المشاريع',personal:'مشروع شخصي',allProfiles:'جميع الملفات الشخصية',statusGroup:'الحالة',arrivalGroup:'سنة الالتحاق',student:'كاديت',transcender:'ترانسيندر',alumni:'الخريجون'},
+};
+const languageOf=locale=>String(locale||'fr').toLowerCase().split(/[-_]/)[0];
+const words=locale=>copy[languageOf(locale)]||copy.fr;
+
+export function projectFilterGroups(locale='fr'){
+ const text=words(locale);
+ return [
+  {value:'common-core',label:text.commonCore},
+  {value:'specialization',label:text.specialization},
+  {value:'personal',label:text.personalProjects},
+ ];
+}
+
+export function projectFilterOptions(locale='fr'){
+ const text=words(locale);
+ return validProjectFilters.map(value=>({value,label:value==='all'?text.allProjects:value==='personal'?text.personal:value==='born2beroot'?'Born2beroot':value,
+  ...(value==='all'?{}:{group:projectGroups[value]}),
+ }));
+}
+
+export function statusFilterOptions(locale='fr'){
+ const text=words(locale);
+ return validStatusFilters.map(value=>({value,label:value==='all'?text.allProfiles:text[value]}));
+}
+
+// Keep stored choices independent of the current campus or corpus so moving to
+// another location does not silently discard a selected year.
+const isArrivalYear=value=>Number.isInteger(value)&&value>=1900&&value<=2199;
+export function isValidProfileFilterValue(value){
+ return validStatusFilters.includes(value)||(typeof value==='string'&&/^arrival:(?:19|20|21)\d{2}$/.test(value));
+}
+
+export function profileFilterGroups(locale='fr'){
+ const text=words(locale);
+ return [{value:'status',label:text.statusGroup},{value:'arrival',label:text.arrivalGroup}];
+}
+
+export function profileFilterOptions(profiles=[],locale='fr'){
+ const language=languageOf(locale),numberLocale=Object.hasOwn(copy,language)?language:'fr';
+ const number=new Intl.NumberFormat(numberLocale,{useGrouping:false});
+ const years=[...new Set(profiles.map(profile=>profile?.arrivalYear).filter(isArrivalYear))].sort((a,b)=>b-a);
+ return [
+  ...statusFilterOptions(locale).map(option=>option.value==='all'?option:{...option,group:'status'}),
+  ...years.map(year=>({value:'arrival:'+year,label:number.format(year),group:'arrival'})),
+ ];
+}
+
+// Empty sets mean all. A saved single choice remains valid after switching to
+// multiple selection. Unknown values never hide an otherwise valid selection.
+function selectedValues(value,allowed){
+ const values=Array.isArray(value)?value:[value];
+ if(values.includes('all'))return new Set();
+ return new Set(values.filter(item=>item!=='all'&&(typeof allowed==='function'?allowed(item):allowed.includes(item))));
+}
+
+/**
+ * Accept a mixed corpus or an already scoped list. Multiple selected categories
+ * form a union within each facet. Profile status and arrival year intersect;
+ * [] and 'all' retain the whole section.
+ * Journal entries never inherit project/profile selections. Geography, favorites
+ * and sort remain composable filters owned by the caller.
+ * Transcender means common core completed, with specialisation still in progress.
+ */
+export function applyContentCategory(entries=[],{section,project=[],status=[]}={}){
+ const scoped=section?entries.filter(entry=>entry.section===section):[...entries];
+ if(section==='projects'){
+  const selected=selectedValues(project,validProjectFilters);
+  if(selected.size)return scoped.filter(entry=>Object.hasOwn(projectKinds,entry.id)&&selected.has(projectKinds[entry.id]));
+ }
+ if(section==='people'){
+  const selected=selectedValues(status,isValidProfileFilterValue);
+  const statuses=new Set([...selected].filter(value=>validStatusFilters.includes(value)));
+  const years=new Set([...selected].filter(value=>value.startsWith('arrival:')));
+  if(selected.size)return scoped.filter(entry=>(!statuses.size||statuses.has(entry.status))&&(!years.size||years.has('arrival:'+entry.arrivalYear)));
+ }
+ return scoped;
+}

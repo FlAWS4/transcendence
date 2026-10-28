@@ -1,0 +1,272 @@
+/* Four stages, driven by the dock's available content width. The outer dock
+   stays 60px high; its buttons and selection stay 48px high in every stage.
+   Desktop keeps the existing horizontal composition. */
+/* Derive the selection from its final slot at every width. Measuring during
+   a resize can otherwise leave the old flex animation's intermediate width. */
+:root .app[data-navigation=dock] .main-nav.has-dock-search .nav-indicator {
+  --dock-last-slot:3;
+  --dock-indicator-slot:0;
+  --dock-slot-gap:4px;
+  --dock-inline-padding:5px;
+  --dock-slot-step:calc((100cqw + var(--dock-slot-gap)) / (var(--dock-last-slot) + 1));
+  width:calc(var(--dock-slot-step) - var(--dock-slot-gap)) !important;
+  left:calc(var(--dock-inline-padding) + var(--dock-indicator-slot) * var(--dock-slot-step));
+  transform:translateY(-50%) !important;
+  transition:left .45s var(--ease),width .45s var(--ease),opacity .22s ease;
+}
+:root .app[data-navigation=dock] .main-nav.has-dock-search:has(> button[data-section=awards]) .nav-indicator { --dock-last-slot:4; }
+:root .app[data-navigation=dock][data-section=projects] .main-nav.has-dock-search .nav-indicator { --dock-indicator-slot:1; }
+:root .app[data-navigation=dock][data-section=people] .main-nav.has-dock-search .nav-indicator { --dock-indicator-slot:2; }
+:root .app[data-navigation=dock][data-section=journal] .main-nav.has-dock-search .nav-indicator { --dock-indicator-slot:3; }
+:root .app[data-navigation=dock][data-section=awards] .main-nav.has-dock-search .nav-indicator { --dock-indicator-slot:4; }
+:root[dir=rtl] .app[data-navigation=dock] .main-nav.has-dock-search .nav-indicator {
+  left:calc(var(--dock-inline-padding) + (var(--dock-last-slot) - var(--dock-indicator-slot)) * var(--dock-slot-step));
+}
+@media(max-width:700px) {
+  :root .app[data-navigation=dock] .main-nav.has-dock-search .nav-indicator {
+    --dock-slot-gap:2px;
+    --dock-inline-padding:6px;
+  }
+}
+
+@container (max-width:560px) {
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section] {
+    flex-direction:column;
+    gap:2px;
+    padding-inline:2px;
+    font-size:11px;
+    line-height:18px;
+  }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section] > svg {
+    width:20px;
+    height:20px;
+    flex:0 0 20px;
+  }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section] > span {
+    min-width:0;
+    max-inline-size:100%;
+    block-size:18px;
+    flex-shrink:0;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    transition:opacity .2s,block-size .35s var(--ease);
+  }
+}
+
+@container (max-width:340px) {
+  /* Keep each icon centred while the selected button receives label space.
+     The controller also reads this token to compact the geographic path. */
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section] {
+    --dock-compact-item:48px;
+    flex:0 0 var(--dock-compact-item);
+    gap:0;
+    transition:opacity .2s ease,transform .36s var(--ease),color .25s,flex-grow .35s var(--ease),gap .35s var(--ease);
+    transition-delay:calc(150ms + var(--dock-menu-order,0) * 24ms),calc(150ms + var(--dock-menu-order,0) * 24ms),0s,0s,0s;
+  }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section][aria-current] {
+    flex-grow:1;
+    gap:2px;
+  }
+  /* A zero-height, transparent label retains the button's accessible name. */
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section]:not([aria-current]) > span {
+    block-size:0;
+    opacity:0;
+  }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search .nav-indicator {
+    --dock-compact-item:48px;
+    --dock-slot-step:calc(var(--dock-compact-item) + var(--dock-slot-gap));
+    width:calc(100cqw - var(--dock-last-slot) * var(--dock-slot-step)) !important;
+    transition:left .35s var(--ease),width .35s var(--ease),opacity .22s ease;
+  }
+}
+
+@container (max-width:280px) {
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section],
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section][aria-current] {
+    flex:1 1 0;
+    gap:0;
+  }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section] > span {
+    block-size:0;
+    opacity:0;
+  }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search .nav-indicator {
+    --dock-slot-step:calc((100cqw + var(--dock-slot-gap)) / (var(--dock-last-slot) + 1));
+    width:calc(var(--dock-slot-step) - var(--dock-slot-gap)) !important;
+  }
+}
+
+/* Refinements §W (26 Oct 2026): « À partir d'une certaine hauteur minimale, je veux que le menu et les boutons ne soient
+   plus en bas mais sur le côté gauche », for « Paysage et moins de 720 px » on « Toutes les pages », the labels following
+   the width as in this dock and the icons alone when it is too narrow. In a window wider than tall and at most 720 px
+   tall, the dock stands as a rail on the inline-start side (left; right in Arabic), from the bottom margin up and under
+   the header's brand, and the search and the dice become round buttons at its foot. The page beside it starts after the
+   rail (--dock-rail-room: the Explorer's stage, the scope bar, the content, the loading status) and takes the freed
+   height (the Explorer's band reaches down to the rail's foot, welcome.mjs). The markup and its order never change, so a
+   resize or a rotation switches at once, the section, an open search and the focus kept (welcome.mjs drops the
+   transitions for that frame); the entrance sees the dock upright on its side and slides it in from there.
+   The rail's steps, from this dock's stages and the room each destination gets in it:
+   - wider than 1050 px (the page's desktop width): the dock's first stage, each label beside its icon, in a 140 px rail
+     whose buttons (132 px) are wider than the 112 px a destination needs for it in the dock; the search and the dice
+     side by side at its foot;
+   - otherwise: the dock's last stage, the icons alone, in a 56 px rail, the search above the dice; each label stays the
+     button's name, visually hidden, and becomes its tooltip (welcome.mjs).
+   The dock's middle stages (the labels under the icons, the current label alone) have no rail form: they spend the
+   height these windows lack. The rail's seven rows (six with the buttons side by side) share the height between the
+   header and the bottom margin: 48 px each at most, the search and the dice 44 px at most, never under 32 px. */
+:root .app[data-navigation=dock] .dock-shell > .dock-search-toggle > svg { display:none; }
+/* welcome.mjs marks the frame of a switch between the dock and the rail: every part takes its other place at once. */
+:root .app[data-navigation=dock][data-dock-switch] :is(.dock-shell,.dock-shell *),
+:root .app[data-navigation=dock][data-dock-switch] .dock-shell *::before { transition:none !important; }
+@media (orientation:landscape) and (max-height:720px) {
+  /* --dock-rail-top: under the header (its height + 8 px); --dock-rail-inset: the header's own, under the brand. */
+  :root .app[data-navigation=dock] {
+    --dock-rail-inset:22px;
+    --dock-rail-top:86px;
+    --dock-rail-bottom:calc(16px + env(safe-area-inset-bottom, 0px));
+    --dock-rail-width:56px;
+    --dock-rail-rows:7;
+    --dock-rail-fixed:30px;
+    --dock-rail-item:clamp(32px, calc((100svh - var(--dock-rail-top) - var(--dock-rail-bottom) - var(--dock-rail-fixed)) / var(--dock-rail-rows)), 48px);
+    --dock-rail-button:min(44px, var(--dock-rail-item));
+    --dock-rail-button-gap:6px;
+    --dock-rail-tail:calc(8px + 2 * var(--dock-rail-button) + var(--dock-rail-button-gap));
+    --dock-rail-search-x:calc((var(--dock-rail-width) - var(--dock-rail-button)) / 2);
+    --dock-rail-dice-x:var(--dock-rail-search-x);
+    --dock-rail-search-bottom:calc(var(--dock-rail-button) + var(--dock-rail-button-gap));
+    --dock-rail-room:calc(var(--dock-rail-inset) + var(--dock-rail-width) + 12px);
+    --dock-rail-form:60px;
+    --dock-rail-flyout-width:min(560px, calc(100vw - var(--dock-rail-room) - 16px));
+  }
+  :root .app[data-navigation=dock] #main>.dock-shell {
+    left:auto;right:auto;inset-inline-start:var(--dock-rail-inset);
+    top:auto;bottom:var(--dock-rail-bottom);
+    transform:none;
+    flex-direction:column;align-items:stretch;gap:0;
+    width:var(--dock-rail-width);height:auto;
+    padding:0 0 var(--dock-rail-tail);
+  }
+  /* No container: the bottom dock's stages above never apply to the rail. */
+  :root .app[data-navigation=dock] #main>.dock-shell>.main-nav.has-dock-search {
+    container-type:normal;
+    flex:none;flex-direction:column;align-items:stretch;gap:2px;
+    width:auto;height:auto;min-height:0;padding:4px;border-radius:28px;
+  }
+  :root .app[data-navigation=dock] #main>.dock-shell>.main-nav>button[data-section] {
+    flex:none;flex-direction:row;justify-content:center;gap:0;
+    width:auto;min-width:0;height:var(--dock-rail-item);min-height:0;padding:0;
+  }
+  :root .app[data-navigation=dock] #main>.dock-shell>.main-nav>button[data-section]>span {
+    position:absolute;inline-size:1px;block-size:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;
+  }
+  :root .app[data-navigation=dock] #main>.dock-shell>.main-nav>.nav-indicator {
+    top:calc(4px + var(--dock-indicator-slot) * (var(--dock-rail-item) + 2px));
+    left:4px;
+    width:calc(100% - 8px) !important;
+    height:var(--dock-rail-item) !important;
+    transform:none !important;
+    transition:top .45s var(--ease),opacity var(--dock-glass-duration) ease;
+  }
+  /* While the search is open beside it, the rail stays in place, dimmed (its buttons are inert, dock-search.mjs). */
+  :root .app[data-navigation=dock] #main>.dock-shell>.main-nav[data-search-open=true]>:is(button[data-section],.nav-indicator) {
+    opacity:.32;transform:none;
+  }
+  /* The search: a round button at the rail's foot that grows, as the capsule does, into the results' glass surface,
+     beside the rail and level with its own foot; the field lies at the bottom of that surface, the results above it. */
+  :root .app[data-navigation=dock] #main>.dock-shell>.dock-search-toggle {
+    left:var(--dock-rail-search-x);right:auto;top:auto;bottom:var(--dock-rail-search-bottom);
+    width:var(--dock-rail-button);height:var(--dock-rail-button);min-height:0;max-width:none;
+    padding:0;border-radius:50%;transform:none;
+  }
+  :root .app[data-navigation=dock] #main>.dock-shell>.dock-search-toggle>svg { display:block;transition:opacity .16s .24s,transform .4s var(--ease); }
+  :root .app[data-navigation=dock] #main>.dock-shell>.dock-search-toggle>.dock-search-toggle-label { display:none; }
+  :root .app[data-navigation=dock] #main>.dock-shell[data-search-open=true]>.dock-search-toggle {
+    left:calc(100% + 12px);
+    bottom:calc(var(--dock-rail-search-bottom) + var(--dock-keyboard-offset, 0px));
+    width:var(--dock-rail-flyout-width);
+    height:calc(var(--dock-results-height, 120px) + var(--dock-rail-form));
+    border-radius:24px;
+  }
+  :root[dir=rtl] .app[data-navigation=dock] #main>.dock-shell[data-search-open=true]>.dock-search-toggle {
+    left:calc(-12px - var(--dock-rail-flyout-width));
+  }
+  :root .app[data-navigation=dock] #main>.dock-shell[data-search-open=true]>.dock-search-toggle>svg { opacity:0;transition-delay:0s; }
+  /* The field's focus shows on the surface that holds it, not on the rail. */
+  :root[data-theme] .app[data-navigation=dock] #main>.dock-shell>.main-nav.has-dock-search:has(.dock-search-input:focus-visible)::before { border-color:var(--dock-glass-edge); }
+  :root[data-theme] .app[data-navigation=dock] #main>.dock-shell[data-search-open=true]:has(.dock-search-input:focus-visible)>.dock-search-toggle {
+    border-color:var(--readable-glass-accent,var(--h42-color-focus));
+  }
+  /* The field and the results are placed from the nav's padding box, inside its 1 px border. */
+  :root .app[data-navigation=dock] #main>.dock-shell>.main-nav .dock-search-form {
+    inset:auto;
+    inset-inline-start:calc(var(--dock-rail-width) + 16px);
+    bottom:calc(var(--dock-rail-search-bottom) + var(--dock-keyboard-offset, 0px) + 4px - var(--dock-rail-tail));
+    width:calc(var(--dock-rail-flyout-width) - 10px);
+    height:calc(var(--dock-rail-form) - 10px);
+  }
+  :root .app[data-navigation=dock] #main>.dock-shell>.main-nav .dock-search-panel {
+    inset:auto;
+    inset-inline-start:calc(var(--dock-rail-width) + 11px);
+    bottom:calc(var(--dock-rail-search-bottom) + var(--dock-keyboard-offset, 0px) + var(--dock-rail-form) - 1px - var(--dock-rail-tail));
+    width:var(--dock-rail-flyout-width);
+    max-height:min(440px, calc(var(--dock-search-viewport-height, 100dvh) - var(--dock-rail-bottom) - var(--dock-rail-search-bottom) - var(--dock-rail-form) - 36px));
+  }
+  :root[data-theme] .app[data-navigation=dock] #main>.dock-shell[data-has-discovery=true]>.dock-random-toggle {
+    left:var(--dock-rail-dice-x);bottom:0;
+    width:var(--dock-rail-button);height:var(--dock-rail-button);min-width:0;min-height:0;
+    padding:0;transform:none;
+  }
+  :root[data-theme] .app[data-navigation=dock] #main>.dock-shell[data-has-discovery=true]>.dock-random-toggle:not(:disabled):active { transform:scale(.94); }
+  :root[data-theme] .app[data-navigation=dock] #main>.dock-shell[data-has-discovery=true][data-search-open=true]>.dock-random-toggle { transform:scale(.86); }
+  /* The page beside the rail: its column starts after it, centred items and bars on that column. */
+  :root .app[data-navigation=dock] #main { padding-inline-start:var(--dock-rail-room); }
+  :root .app[data-navigation=dock] #main>#explorer.explorer-selector { inset-inline-start:var(--dock-rail-room); }
+  :root .app[data-navigation=dock] #main>.scope-bar { left:calc(50vw + var(--dock-rail-room) / 2); }
+  :root[dir=rtl] .app[data-navigation=dock] #main>.scope-bar { left:calc(50vw - var(--dock-rail-room) / 2); }
+  :root .app[data-navigation=dock]:not([data-reading=true]) #main>.scope-bar { max-width:min(640px, calc(100vw - var(--dock-rail-room) - 32px)); }
+  :root .app[data-navigation=dock] #main>.loading-status { left:calc(50% + var(--dock-rail-room) / 2); }
+  :root[dir=rtl] .app[data-navigation=dock] #main>.loading-status { left:calc(50% - var(--dock-rail-room) / 2); }
+  /* Nothing at the bottom any more: the content ends with its own margin, the back-to-top shortcut in the corner
+     (back-to-top.mjs lifts it over the dock's controls, which stand beside it now: its inline bottom is overruled). */
+  :root .app[data-navigation=dock] .content-sheet { padding-bottom:calc(72px + env(safe-area-inset-bottom, 0px)); }
+  :root .app[data-navigation=dock] > .back-to-top:not([hidden]) { bottom:var(--dock-rail-bottom) !important; }
+}
+@media (orientation:landscape) and (max-height:520px) {
+  :root .app[data-navigation=dock] { --dock-rail-top:70px; }
+}
+@media (orientation:landscape) and (max-height:720px) and (max-width:700px) {
+  :root .app[data-navigation=dock][data-reading=true] #main>.scope-bar { max-width:calc(100vw - var(--dock-rail-room) - 32px); }
+}
+@media (orientation:landscape) and (max-height:720px) and (min-width:701px) {
+  :root .app[data-navigation=dock] { --dock-rail-inset:32px;--dock-rail-top:116px; }
+}
+@media (orientation:landscape) and (max-height:520px) and (min-width:701px) {
+  :root .app[data-navigation=dock] { --dock-rail-top:84px; }
+}
+@media (orientation:landscape) and (max-height:720px) and (min-width:1051px) {
+  :root .app[data-navigation=dock] {
+    --dock-rail-inset:48px;
+    --dock-rail-top:132px;
+    --dock-rail-width:140px;
+    --dock-rail-rows:6;
+    --dock-rail-fixed:24px;
+    --dock-rail-button-gap:8px;
+    --dock-rail-tail:calc(8px + var(--dock-rail-button));
+    --dock-rail-search-x:calc(50% - var(--dock-rail-button) - var(--dock-rail-button-gap) / 2);
+    --dock-rail-dice-x:calc(50% + var(--dock-rail-button-gap) / 2);
+    --dock-rail-search-bottom:0px;
+  }
+  :root[dir=rtl] .app[data-navigation=dock] {
+    --dock-rail-search-x:calc(50% + var(--dock-rail-button-gap) / 2);
+    --dock-rail-dice-x:calc(50% - var(--dock-rail-button) - var(--dock-rail-button-gap) / 2);
+  }
+  :root .app[data-navigation=dock] #main>.dock-shell>.main-nav>button[data-section] {
+    justify-content:flex-start;gap:10px;padding-inline:12px;
+  }
+  :root .app[data-navigation=dock] #main>.dock-shell>.main-nav>button[data-section]>span {
+    position:static;inline-size:auto;block-size:auto;min-width:0;clip-path:none;text-overflow:ellipsis;
+  }
+}
+@media (orientation:landscape) and (max-height:520px) and (min-width:1051px) {
+  :root .app[data-navigation=dock] { --dock-rail-inset:32px;--dock-rail-top:84px; }
+}

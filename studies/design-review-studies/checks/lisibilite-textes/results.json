@@ -1,0 +1,5650 @@
+{
+ "id": "lisibilite-textes",
+ "views": [
+  {
+   "vue": "ordinateur",
+   "route": "projects",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "avant": {
+    "audit": {
+     "texts": 46,
+     "below13": 16,
+     "below13Share": 0.3478,
+     "below13OutsideDock": 16,
+     "below13Useful": 16,
+     "contrastFails": 7,
+     "contrastFailsOutsideSvgArt": 7,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      22,
+      25,
+      31,
+      34
+     ],
+     "smallSamples": [
+      "11 cp-authors-label «Créé par»",
+      "12 cp-author-more «+»",
+      "12 cp-author-more-count-wide «3»",
+      "12 cp-content-campuses «42 Lyon»",
+      "12 cp-content-campuses «42 Paris»",
+      "12 cp-content-campuses «42 Rio»",
+      "12 cp-content-campuses «42 Tokyo»",
+      "12 cp-content-campuses «·»",
+      "12 cp-published «28 sept. 2026»",
+      "12 cp-published «3 oct. 2026»",
+      "12 cp-published «8 oct. 2026»",
+      "12 cp-toolbar «78 contenus»"
+     ],
+     "failSamples": [
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 Lyon»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 Paris»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 Rio»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 Tokyo»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «·»"
+     ]
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "statusLines": [],
+     "toolbarRows": 2,
+     "countLines": [
+      1
+     ],
+     "toolbarRoom": 711,
+     "dockClipped": [],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explorer",
+       "size": "14px",
+       "label": 49,
+       "slot": 122
+      },
+      {
+       "t": "Projets",
+       "size": "14px",
+       "label": 42,
+       "slot": 122
+      },
+      {
+       "t": "Profils",
+       "size": "14px",
+       "label": 36,
+       "slot": 122
+      },
+      {
+       "t": "Chroniques",
+       "size": "14px",
+       "label": 68,
+       "slot": 122
+      },
+      {
+       "t": "42 Awards",
+       "size": "14px",
+       "label": 64,
+       "slot": 122
+      }
+     ],
+     "actions": []
+    },
+    "errors": []
+   },
+   "apres": {
+    "audit": {
+     "texts": 46,
+     "below13": 0,
+     "below13Share": 0.0,
+     "below13OutsideDock": 0,
+     "below13Useful": 0,
+     "contrastFails": 0,
+     "contrastFailsOutsideSvgArt": 0,
+     "sizes": [
+      13,
+      14,
+      15,
+      22,
+      25,
+      31,
+      34
+     ],
+     "smallSamples": [],
+     "failSamples": []
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "statusLines": [],
+     "toolbarRows": 2,
+     "countLines": [
+      1
+     ],
+     "toolbarRoom": 706,
+     "dockClipped": [],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explorer",
+       "size": "14px",
+       "label": 49,
+       "slot": 122
+      },
+      {
+       "t": "Projets",
+       "size": "14px",
+       "label": 42,
+       "slot": 122
+      },
+      {
+       "t": "Profils",
+       "size": "14px",
+       "label": 36,
+       "slot": 122
+      },
+      {
+       "t": "Chroniques",
+       "size": "14px",
+       "label": 68,
+       "slot": 122
+      },
+      {
+       "t": "42 Awards",
+       "size": "14px",
+       "label": 64,
+       "slot": 122
+      }
+     ],
+     "actions": []
+    },
+    "errors": []
+   }
+  },
+  {
+   "vue": "profils-ordinateur",
+   "route": "people",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "avant": {
+    "audit": {
+     "texts": 99,
+     "below13": 61,
+     "below13Share": 0.6162,
+     "below13OutsideDock": 61,
+     "below13Useful": 61,
+     "contrastFails": 20,
+     "contrastFailsOutsideSvgArt": 20,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      21.04,
+      25,
+      34
+     ],
+     "smallSamples": [
+      "11 cp-profile-status «Alumni»",
+      "11 cp-profile-status «Cadet»",
+      "11 cp-profile-status «Transcender»",
+      "12  «2022»",
+      "12  «2023»",
+      "12  «2024»",
+      "12  «2»",
+      "12  «3»",
+      "12  «4»",
+      "12  «5»",
+      "12  «6»",
+      "12  «7»",
+      "12  «8»",
+      "12 cp-meta «42 Antananarivo»"
+     ],
+     "failSamples": [
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-meta «42 Antananarivo»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-meta «42 Barcelona»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-meta «42 Brussels»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-meta «42 Heilbronn»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-meta «42 Luanda»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-meta «42 Lyon»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-meta «42 Paris»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-meta «42 Rio»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-meta «42 Tokyo»",
+      "3.98 rgb(0, 142, 144) on rgb(255, 255, 255) cp-profile-status «Alumni»"
+     ]
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "statusLines": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "toolbarRows": 2,
+     "countLines": [
+      1
+     ],
+     "toolbarRoom": 725,
+     "dockClipped": [],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explorer",
+       "size": "14px",
+       "label": 49,
+       "slot": 122
+      },
+      {
+       "t": "Projets",
+       "size": "14px",
+       "label": 39,
+       "slot": 122
+      },
+      {
+       "t": "Profils",
+       "size": "14px",
+       "label": 38,
+       "slot": 122
+      },
+      {
+       "t": "Chroniques",
+       "size": "14px",
+       "label": 68,
+       "slot": 122
+      },
+      {
+       "t": "42 Awards",
+       "size": "14px",
+       "label": 64,
+       "slot": 122
+      }
+     ],
+     "actions": []
+    },
+    "errors": []
+   },
+   "apres": {
+    "audit": {
+     "texts": 99,
+     "below13": 0,
+     "below13Share": 0.0,
+     "below13OutsideDock": 0,
+     "below13Useful": 0,
+     "contrastFails": 0,
+     "contrastFailsOutsideSvgArt": 0,
+     "sizes": [
+      13,
+      14,
+      15,
+      21.04,
+      25,
+      34
+     ],
+     "smallSamples": [],
+     "failSamples": []
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "statusLines": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "toolbarRows": 2,
+     "countLines": [
+      1
+     ],
+     "toolbarRoom": 721,
+     "dockClipped": [],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explorer",
+       "size": "14px",
+       "label": 49,
+       "slot": 122
+      },
+      {
+       "t": "Projets",
+       "size": "14px",
+       "label": 39,
+       "slot": 122
+      },
+      {
+       "t": "Profils",
+       "size": "14px",
+       "label": 38,
+       "slot": 122
+      },
+      {
+       "t": "Chroniques",
+       "size": "14px",
+       "label": 68,
+       "slot": 122
+      },
+      {
+       "t": "42 Awards",
+       "size": "14px",
+       "label": 64,
+       "slot": 122
+      }
+     ],
+     "actions": []
+    },
+    "errors": []
+   }
+  },
+  {
+   "vue": "chroniques-ordinateur",
+   "route": "journal",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "avant": {
+    "audit": {
+     "texts": 52,
+     "below13": 12,
+     "below13Share": 0.2308,
+     "below13OutsideDock": 12,
+     "below13Useful": 12,
+     "contrastFails": 15,
+     "contrastFailsOutsideSvgArt": 3,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      25,
+      31,
+      34,
+      70,
+      165
+     ],
+     "smallSamples": [
+      "11 cp-authors-label «Rédigé par»",
+      "12 cp-author-more «+»",
+      "12 cp-author-more-count-wide «2»",
+      "12 cp-content-campuses «42 London»",
+      "12 cp-content-campuses «42 Lyon»",
+      "12 cp-content-campuses «42 Tokyo»",
+      "12 cp-published «1 oct. 2026»",
+      "12 cp-published «24 juil. 2026»",
+      "12 cp-published «24 sept. 2026»",
+      "12 cp-toolbar «78 contenus»"
+     ],
+     "failSamples": [
+      "1 rgb(22, 62, 61) on rgb(32, 60, 64)  «&»",
+      "1 rgb(22, 62, 61) on rgb(32, 60, 64)  «“»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 London»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 Lyon»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 Tokyo»"
+     ]
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "statusLines": [],
+     "toolbarRows": 2,
+     "countLines": [
+      1
+     ],
+     "toolbarRoom": 804,
+     "dockClipped": [],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explorer",
+       "size": "14px",
+       "label": 49,
+       "slot": 122
+      },
+      {
+       "t": "Projets",
+       "size": "14px",
+       "label": 39,
+       "slot": 122
+      },
+      {
+       "t": "Profils",
+       "size": "14px",
+       "label": 36,
+       "slot": 122
+      },
+      {
+       "t": "Chroniques",
+       "size": "14px",
+       "label": 71,
+       "slot": 122
+      },
+      {
+       "t": "42 Awards",
+       "size": "14px",
+       "label": 64,
+       "slot": 122
+      }
+     ],
+     "actions": []
+    },
+    "errors": []
+   },
+   "apres": {
+    "audit": {
+     "texts": 52,
+     "below13": 0,
+     "below13Share": 0.0,
+     "below13OutsideDock": 0,
+     "below13Useful": 0,
+     "contrastFails": 12,
+     "contrastFailsOutsideSvgArt": 0,
+     "sizes": [
+      13,
+      14,
+      15,
+      25,
+      31,
+      34,
+      70,
+      165
+     ],
+     "smallSamples": [],
+     "failSamples": [
+      "1 rgb(22, 62, 61) on rgb(32, 60, 64)  «&»",
+      "1 rgb(22, 62, 61) on rgb(32, 60, 64)  «“»"
+     ]
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "statusLines": [],
+     "toolbarRows": 2,
+     "countLines": [
+      1
+     ],
+     "toolbarRoom": 799,
+     "dockClipped": [],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explorer",
+       "size": "14px",
+       "label": 49,
+       "slot": 122
+      },
+      {
+       "t": "Projets",
+       "size": "14px",
+       "label": 39,
+       "slot": 122
+      },
+      {
+       "t": "Profils",
+       "size": "14px",
+       "label": 36,
+       "slot": 122
+      },
+      {
+       "t": "Chroniques",
+       "size": "14px",
+       "label": 71,
+       "slot": 122
+      },
+      {
+       "t": "42 Awards",
+       "size": "14px",
+       "label": 64,
+       "slot": 122
+      }
+     ],
+     "actions": []
+    },
+    "errors": []
+   }
+  },
+  {
+   "vue": "fiche-ordinateur",
+   "route": "projects/ft-transcendence-building-together",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "avant": {
+    "audit": {
+     "texts": 36,
+     "below13": 9,
+     "below13Share": 0.25,
+     "below13OutsideDock": 9,
+     "below13Useful": 9,
+     "contrastFails": 1,
+     "contrastFailsOutsideSvgArt": 1,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      20,
+      25,
+      28,
+      32
+     ],
+     "smallSamples": [
+      "11 cp-favorite «Favoris»",
+      "11 cp-report-trigger «Signaler»",
+      "12 cp-project-campus «Explorer un campus»",
+      "12 cp-project-campus-names «42 Lyon»",
+      "12 cp-project-campus-names «42 Paris»",
+      "12 cp-project-campus-names «42 Rio»",
+      "12 cp-project-campus-names «42 Tokyo»",
+      "12 cp-project-campus-names «·»",
+      "12 cp-published «8 oct. 2026»"
+     ],
+     "failSamples": [
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-project-campus «Explorer un camp»"
+     ]
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [],
+     "statusLines": [],
+     "toolbarRows": 0,
+     "countLines": [],
+     "toolbarRoom": null,
+     "dockClipped": [],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explorer",
+       "size": "14px",
+       "label": 49,
+       "slot": 122
+      },
+      {
+       "t": "Projets",
+       "size": "14px",
+       "label": 42,
+       "slot": 122
+      },
+      {
+       "t": "Profils",
+       "size": "14px",
+       "label": 36,
+       "slot": 122
+      },
+      {
+       "t": "Chroniques",
+       "size": "14px",
+       "label": 68,
+       "slot": 122
+      },
+      {
+       "t": "42 Awards",
+       "size": "14px",
+       "label": 64,
+       "slot": 122
+      }
+     ],
+     "actions": [
+      {
+       "t": "Favoris",
+       "size": "11px",
+       "w": 79,
+       "h": 36
+      },
+      {
+       "t": "SignalerFavoris",
+       "size": "11px",
+       "w": 85,
+       "h": 36
+      },
+      {
+       "t": "Explorer un campus",
+       "size": "12px",
+       "w": 124,
+       "h": 36
+      }
+     ]
+    },
+    "errors": []
+   },
+   "apres": {
+    "audit": {
+     "texts": 36,
+     "below13": 0,
+     "below13Share": 0.0,
+     "below13OutsideDock": 0,
+     "below13Useful": 0,
+     "contrastFails": 0,
+     "contrastFailsOutsideSvgArt": 0,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      20,
+      25,
+      28,
+      32
+     ],
+     "smallSamples": [],
+     "failSamples": []
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [],
+     "statusLines": [],
+     "toolbarRows": 0,
+     "countLines": [],
+     "toolbarRoom": null,
+     "dockClipped": [],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explorer",
+       "size": "14px",
+       "label": 49,
+       "slot": 122
+      },
+      {
+       "t": "Projets",
+       "size": "14px",
+       "label": 42,
+       "slot": 122
+      },
+      {
+       "t": "Profils",
+       "size": "14px",
+       "label": 36,
+       "slot": 122
+      },
+      {
+       "t": "Chroniques",
+       "size": "14px",
+       "label": 68,
+       "slot": 122
+      },
+      {
+       "t": "42 Awards",
+       "size": "14px",
+       "label": 64,
+       "slot": 122
+      }
+     ],
+     "actions": [
+      {
+       "t": "Favoris",
+       "size": "14px",
+       "w": 88,
+       "h": 36
+      },
+      {
+       "t": "SignalerFavoris",
+       "size": "14px",
+       "w": 96,
+       "h": 36
+      },
+      {
+       "t": "Explorer un campus",
+       "size": "14px",
+       "w": 140,
+       "h": 36
+      }
+     ]
+    },
+    "errors": []
+   }
+  },
+  {
+   "vue": "commentaires-ordinateur",
+   "route": "projects/ft-transcendence-building-together?tab=comments",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "avant": {
+    "audit": {
+     "texts": 42,
+     "below13": 12,
+     "below13Share": 0.2857,
+     "below13OutsideDock": 12,
+     "below13Useful": 12,
+     "contrastFails": 1,
+     "contrastFailsOutsideSvgArt": 1,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18,
+      25,
+      28,
+      32
+     ],
+     "smallSamples": [
+      "11 cp-favorite «Favoris»",
+      "11 cp-report-trigger «Signaler»",
+      "12 cp-comments-count «0 / 2 000 caractèr»",
+      "12 cp-comments-emoji-toggle «☺ Emoji»",
+      "12 cp-comments-hint «Pour cet essai, vo»",
+      "12 cp-project-campus «Explorer un campus»",
+      "12 cp-project-campus-names «42 Lyon»",
+      "12 cp-project-campus-names «42 Paris»",
+      "12 cp-project-campus-names «42 Rio»",
+      "12 cp-project-campus-names «42 Tokyo»",
+      "12 cp-project-campus-names «·»",
+      "12 cp-published «8 oct. 2026»"
+     ],
+     "failSamples": [
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-project-campus «Explorer un camp»"
+     ]
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [],
+     "statusLines": [],
+     "toolbarRows": 0,
+     "countLines": [],
+     "toolbarRoom": null,
+     "dockClipped": [],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explorer",
+       "size": "14px",
+       "label": 49,
+       "slot": 122
+      },
+      {
+       "t": "Projets",
+       "size": "14px",
+       "label": 42,
+       "slot": 122
+      },
+      {
+       "t": "Profils",
+       "size": "14px",
+       "label": 36,
+       "slot": 122
+      },
+      {
+       "t": "Chroniques",
+       "size": "14px",
+       "label": 68,
+       "slot": 122
+      },
+      {
+       "t": "42 Awards",
+       "size": "14px",
+       "label": 64,
+       "slot": 122
+      }
+     ],
+     "actions": [
+      {
+       "t": "Favoris",
+       "size": "11px",
+       "w": 79,
+       "h": 36
+      },
+      {
+       "t": "SignalerFavoris",
+       "size": "11px",
+       "w": 85,
+       "h": 36
+      },
+      {
+       "t": "Explorer un campus",
+       "size": "12px",
+       "w": 124,
+       "h": 36
+      }
+     ]
+    },
+    "errors": []
+   },
+   "apres": {
+    "audit": {
+     "texts": 42,
+     "below13": 0,
+     "below13Share": 0.0,
+     "below13OutsideDock": 0,
+     "below13Useful": 0,
+     "contrastFails": 0,
+     "contrastFailsOutsideSvgArt": 0,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      18,
+      25,
+      28,
+      32
+     ],
+     "smallSamples": [],
+     "failSamples": []
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [],
+     "statusLines": [],
+     "toolbarRows": 0,
+     "countLines": [],
+     "toolbarRoom": null,
+     "dockClipped": [],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explorer",
+       "size": "14px",
+       "label": 49,
+       "slot": 122
+      },
+      {
+       "t": "Projets",
+       "size": "14px",
+       "label": 42,
+       "slot": 122
+      },
+      {
+       "t": "Profils",
+       "size": "14px",
+       "label": 36,
+       "slot": 122
+      },
+      {
+       "t": "Chroniques",
+       "size": "14px",
+       "label": 68,
+       "slot": 122
+      },
+      {
+       "t": "42 Awards",
+       "size": "14px",
+       "label": 64,
+       "slot": 122
+      }
+     ],
+     "actions": [
+      {
+       "t": "Favoris",
+       "size": "14px",
+       "w": 88,
+       "h": 36
+      },
+      {
+       "t": "SignalerFavoris",
+       "size": "14px",
+       "w": 96,
+       "h": 36
+      },
+      {
+       "t": "Explorer un campus",
+       "size": "14px",
+       "w": 140,
+       "h": 36
+      }
+     ]
+    },
+    "errors": []
+   }
+  },
+  {
+   "vue": "profil-ordinateur",
+   "route": "people/profile-leila-mansour",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "avant": {
+    "audit": {
+     "texts": 47,
+     "below13": 6,
+     "below13Share": 0.1277,
+     "below13OutsideDock": 6,
+     "below13Useful": 6,
+     "contrastFails": 2,
+     "contrastFailsOutsideSvgArt": 2,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      20,
+      25,
+      32,
+      38
+     ],
+     "smallSamples": [
+      "11 cp-favorite «Favoris»",
+      "11 cp-report-trigger «Signaler»",
+      "12 cp-profile-message «Envoyer un message»",
+      "12 cp-profile-tags «C»",
+      "12 cp-profile-tags «Debugging»",
+      "12 cp-profile-tags «POSIX»"
+     ],
+     "failSamples": [
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-profile-campus «Explorer 42 Pari»",
+      "3.98 rgb(0, 142, 144) on rgb(255, 255, 255) cp-profile-message «Envoyer un messa»"
+     ]
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [],
+     "statusLines": [],
+     "toolbarRows": 0,
+     "countLines": [],
+     "toolbarRoom": null,
+     "dockClipped": [],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explorer",
+       "size": "14px",
+       "label": 49,
+       "slot": 122
+      },
+      {
+       "t": "Projets",
+       "size": "14px",
+       "label": 39,
+       "slot": 122
+      },
+      {
+       "t": "Profils",
+       "size": "14px",
+       "label": 38,
+       "slot": 122
+      },
+      {
+       "t": "Chroniques",
+       "size": "14px",
+       "label": 68,
+       "slot": 122
+      },
+      {
+       "t": "42 Awards",
+       "size": "14px",
+       "label": 64,
+       "slot": 122
+      }
+     ],
+     "actions": [
+      {
+       "t": "Envoyer un message",
+       "size": "12px",
+       "w": 150,
+       "h": 36
+      },
+      {
+       "t": "Favoris",
+       "size": "11px",
+       "w": 79,
+       "h": 36
+      },
+      {
+       "t": "SignalerFavoris",
+       "size": "11px",
+       "w": 85,
+       "h": 36
+      },
+      {
+       "t": "Explorer 42 Paris",
+       "size": "13px",
+       "w": 118,
+       "h": 42
+      }
+     ]
+    },
+    "errors": []
+   },
+   "apres": {
+    "audit": {
+     "texts": 47,
+     "below13": 0,
+     "below13Share": 0.0,
+     "below13OutsideDock": 0,
+     "below13Useful": 0,
+     "contrastFails": 0,
+     "contrastFailsOutsideSvgArt": 0,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      20,
+      25,
+      32,
+      38
+     ],
+     "smallSamples": [],
+     "failSamples": []
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [],
+     "statusLines": [],
+     "toolbarRows": 0,
+     "countLines": [],
+     "toolbarRoom": null,
+     "dockClipped": [],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explorer",
+       "size": "14px",
+       "label": 49,
+       "slot": 122
+      },
+      {
+       "t": "Projets",
+       "size": "14px",
+       "label": 39,
+       "slot": 122
+      },
+      {
+       "t": "Profils",
+       "size": "14px",
+       "label": 38,
+       "slot": 122
+      },
+      {
+       "t": "Chroniques",
+       "size": "14px",
+       "label": 68,
+       "slot": 122
+      },
+      {
+       "t": "42 Awards",
+       "size": "14px",
+       "label": 64,
+       "slot": 122
+      }
+     ],
+     "actions": [
+      {
+       "t": "Envoyer un message",
+       "size": "14px",
+       "w": 167,
+       "h": 37
+      },
+      {
+       "t": "Favoris",
+       "size": "14px",
+       "w": 88,
+       "h": 36
+      },
+      {
+       "t": "SignalerFavoris",
+       "size": "14px",
+       "w": 96,
+       "h": 36
+      },
+      {
+       "t": "Explorer 42 Paris",
+       "size": "14px",
+       "w": 126,
+       "h": 42
+      }
+     ]
+    },
+    "errors": []
+   }
+  },
+  {
+   "vue": "parcours-ordinateur",
+   "route": "people/profile-leila-mansour?tab=journey",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "avant": {
+    "audit": {
+     "texts": 41,
+     "below13": 7,
+     "below13Share": 0.1707,
+     "below13OutsideDock": 7,
+     "below13Useful": 7,
+     "contrastFails": 5,
+     "contrastFailsOutsideSvgArt": 5,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18,
+      25,
+      26,
+      32,
+      38
+     ],
+     "smallSamples": [
+      "11 cp-favorite «Favoris»",
+      "11 cp-report-trigger «Signaler»",
+      "12 cp-meta «Un récit du parcou»",
+      "12 cp-profile-message «Envoyer un message»",
+      "12 cp-profile-milestone-date «2023»",
+      "12 cp-profile-milestone-date «2024»",
+      "12 cp-profile-milestone-date «2026»"
+     ],
+     "failSamples": [
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-meta «Un récit du parc»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-profile-milestone-date «2023»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-profile-milestone-date «2024»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-profile-milestone-date «2026»",
+      "3.98 rgb(0, 142, 144) on rgb(255, 255, 255) cp-profile-message «Envoyer un messa»"
+     ]
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [],
+     "statusLines": [],
+     "toolbarRows": 0,
+     "countLines": [],
+     "toolbarRoom": null,
+     "dockClipped": [],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explorer",
+       "size": "14px",
+       "label": 49,
+       "slot": 122
+      },
+      {
+       "t": "Projets",
+       "size": "14px",
+       "label": 39,
+       "slot": 122
+      },
+      {
+       "t": "Profils",
+       "size": "14px",
+       "label": 38,
+       "slot": 122
+      },
+      {
+       "t": "Chroniques",
+       "size": "14px",
+       "label": 68,
+       "slot": 122
+      },
+      {
+       "t": "42 Awards",
+       "size": "14px",
+       "label": 64,
+       "slot": 122
+      }
+     ],
+     "actions": [
+      {
+       "t": "Envoyer un message",
+       "size": "12px",
+       "w": 150,
+       "h": 36
+      },
+      {
+       "t": "Favoris",
+       "size": "11px",
+       "w": 79,
+       "h": 36
+      },
+      {
+       "t": "SignalerFavoris",
+       "size": "11px",
+       "w": 85,
+       "h": 36
+      }
+     ]
+    },
+    "errors": []
+   },
+   "apres": {
+    "audit": {
+     "texts": 41,
+     "below13": 0,
+     "below13Share": 0.0,
+     "below13OutsideDock": 0,
+     "below13Useful": 0,
+     "contrastFails": 0,
+     "contrastFailsOutsideSvgArt": 0,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      18,
+      25,
+      26,
+      32,
+      38
+     ],
+     "smallSamples": [],
+     "failSamples": []
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [],
+     "statusLines": [],
+     "toolbarRows": 0,
+     "countLines": [],
+     "toolbarRoom": null,
+     "dockClipped": [],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explorer",
+       "size": "14px",
+       "label": 49,
+       "slot": 122
+      },
+      {
+       "t": "Projets",
+       "size": "14px",
+       "label": 39,
+       "slot": 122
+      },
+      {
+       "t": "Profils",
+       "size": "14px",
+       "label": 38,
+       "slot": 122
+      },
+      {
+       "t": "Chroniques",
+       "size": "14px",
+       "label": 68,
+       "slot": 122
+      },
+      {
+       "t": "42 Awards",
+       "size": "14px",
+       "label": 64,
+       "slot": 122
+      }
+     ],
+     "actions": [
+      {
+       "t": "Envoyer un message",
+       "size": "14px",
+       "w": 167,
+       "h": 37
+      },
+      {
+       "t": "Favoris",
+       "size": "14px",
+       "w": 88,
+       "h": 36
+      },
+      {
+       "t": "SignalerFavoris",
+       "size": "14px",
+       "w": 96,
+       "h": 36
+      }
+     ]
+    },
+    "errors": []
+   }
+  },
+  {
+   "vue": "article-ordinateur",
+   "route": "journal/journal-an-evening-debugging",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "avant": {
+    "audit": {
+     "texts": 33,
+     "below13": 5,
+     "below13Share": 0.1515,
+     "below13OutsideDock": 5,
+     "below13Useful": 5,
+     "contrastFails": 1,
+     "contrastFailsOutsideSvgArt": 1,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      20,
+      25,
+      28,
+      32,
+      70,
+      165
+     ],
+     "smallSamples": [
+      "11 cp-favorite «Favoris»",
+      "11 cp-report-trigger «Signaler»",
+      "12 cp-project-campus «Explorer 42 Lyon»",
+      "12 cp-project-facts «42 Lyon»",
+      "12 cp-published «1 oct. 2026»"
+     ],
+     "failSamples": [
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-project-campus «Explorer 42 Lyon»"
+     ]
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [],
+     "statusLines": [],
+     "toolbarRows": 0,
+     "countLines": [],
+     "toolbarRoom": null,
+     "dockClipped": [],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explorer",
+       "size": "14px",
+       "label": 49,
+       "slot": 122
+      },
+      {
+       "t": "Projets",
+       "size": "14px",
+       "label": 39,
+       "slot": 122
+      },
+      {
+       "t": "Profils",
+       "size": "14px",
+       "label": 36,
+       "slot": 122
+      },
+      {
+       "t": "Chroniques",
+       "size": "14px",
+       "label": 71,
+       "slot": 122
+      },
+      {
+       "t": "42 Awards",
+       "size": "14px",
+       "label": 64,
+       "slot": 122
+      }
+     ],
+     "actions": [
+      {
+       "t": "Favoris",
+       "size": "11px",
+       "w": 79,
+       "h": 36
+      },
+      {
+       "t": "SignalerFavoris",
+       "size": "11px",
+       "w": 85,
+       "h": 36
+      },
+      {
+       "t": "Explorer 42 Lyon",
+       "size": "12px",
+       "w": 109,
+       "h": 36
+      }
+     ]
+    },
+    "errors": []
+   },
+   "apres": {
+    "audit": {
+     "texts": 33,
+     "below13": 0,
+     "below13Share": 0.0,
+     "below13OutsideDock": 0,
+     "below13Useful": 0,
+     "contrastFails": 0,
+     "contrastFailsOutsideSvgArt": 0,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      20,
+      25,
+      28,
+      32,
+      70,
+      165
+     ],
+     "smallSamples": [],
+     "failSamples": []
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [],
+     "statusLines": [],
+     "toolbarRows": 0,
+     "countLines": [],
+     "toolbarRoom": null,
+     "dockClipped": [],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explorer",
+       "size": "14px",
+       "label": 49,
+       "slot": 122
+      },
+      {
+       "t": "Projets",
+       "size": "14px",
+       "label": 39,
+       "slot": 122
+      },
+      {
+       "t": "Profils",
+       "size": "14px",
+       "label": 36,
+       "slot": 122
+      },
+      {
+       "t": "Chroniques",
+       "size": "14px",
+       "label": 71,
+       "slot": 122
+      },
+      {
+       "t": "42 Awards",
+       "size": "14px",
+       "label": 64,
+       "slot": 122
+      }
+     ],
+     "actions": [
+      {
+       "t": "Favoris",
+       "size": "14px",
+       "w": 88,
+       "h": 36
+      },
+      {
+       "t": "SignalerFavoris",
+       "size": "14px",
+       "w": 96,
+       "h": 36
+      },
+      {
+       "t": "Explorer 42 Lyon",
+       "size": "14px",
+       "w": 123,
+       "h": 36
+      }
+     ]
+    },
+    "errors": []
+   }
+  },
+  {
+   "vue": "mobile",
+   "route": "projects",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    390,
+    844
+   ],
+   "avant": {
+    "audit": {
+     "texts": 48,
+     "below13": 31,
+     "below13Share": 0.6458,
+     "below13OutsideDock": 26,
+     "below13Useful": 26,
+     "contrastFails": 8,
+     "contrastFailsOutsideSvgArt": 8,
+     "sizes": [
+      11,
+      11.22,
+      11.24,
+      12,
+      12.22,
+      13,
+      13.18,
+      14.11,
+      16.7,
+      19.09,
+      22,
+      30
+     ],
+     "smallSamples": [
+      "11  «42 Awards»",
+      "11  «Chroniques»",
+      "11  «Explorer»",
+      "11  «Profils»",
+      "11  «Projets»",
+      "11 cp-authors-label «Créé par»",
+      "11.22 cp-content-campuses «42 Lyon»",
+      "11.22 cp-content-campuses «42 Paris»",
+      "11.22 cp-content-campuses «42 Rio»",
+      "11.22 cp-content-campuses «42 Tokyo»",
+      "11.22 cp-content-campuses «·»",
+      "11.22 cp-published «21 sept. 2026»",
+      "11.22 cp-published «28 sept. 2026»",
+      "11.22 cp-published «3 oct. 2026»"
+     ],
+     "failSamples": [
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 Lyon»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 Paris»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 Rio»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 Tokyo»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «·»"
+     ]
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [
+      3,
+      1,
+      1,
+      1,
+      2,
+      3,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1
+     ],
+     "statusLines": [],
+     "toolbarRows": 2,
+     "countLines": [
+      1
+     ],
+     "toolbarRoom": 11,
+     "dockClipped": [],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explorer",
+       "size": "11px",
+       "label": 39,
+       "slot": 67
+      },
+      {
+       "t": "Projets",
+       "size": "11px",
+       "label": 33,
+       "slot": 67
+      },
+      {
+       "t": "Profils",
+       "size": "11px",
+       "label": 28,
+       "slot": 67
+      },
+      {
+       "t": "Chroniques",
+       "size": "11px",
+       "label": 54,
+       "slot": 67
+      },
+      {
+       "t": "42 Awards",
+       "size": "11px",
+       "label": 50,
+       "slot": 67
+      }
+     ],
+     "actions": []
+    },
+    "errors": []
+   },
+   "apres": {
+    "audit": {
+     "texts": 48,
+     "below13": 5,
+     "below13Share": 0.1042,
+     "below13OutsideDock": 0,
+     "below13Useful": 0,
+     "contrastFails": 0,
+     "contrastFailsOutsideSvgArt": 0,
+     "sizes": [
+      11,
+      13,
+      13.18,
+      14.11,
+      16.7,
+      19.09,
+      22,
+      30
+     ],
+     "smallSamples": [
+      "11  «42 Awards»",
+      "11  «Chroniques»",
+      "11  «Explorer»",
+      "11  «Profils»",
+      "11  «Projets»"
+     ],
+     "failSamples": []
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [
+      3,
+      1,
+      1,
+      1,
+      2,
+      3,
+      2,
+      1,
+      1,
+      3,
+      2,
+      1
+     ],
+     "statusLines": [],
+     "toolbarRows": 2,
+     "countLines": [
+      1
+     ],
+     "toolbarRoom": 11,
+     "dockClipped": [],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explorer",
+       "size": "11px",
+       "label": 39,
+       "slot": 67
+      },
+      {
+       "t": "Projets",
+       "size": "11px",
+       "label": 33,
+       "slot": 67
+      },
+      {
+       "t": "Profils",
+       "size": "11px",
+       "label": 28,
+       "slot": 67
+      },
+      {
+       "t": "Chroniques",
+       "size": "11px",
+       "label": 54,
+       "slot": 67
+      },
+      {
+       "t": "42 Awards",
+       "size": "11px",
+       "label": 50,
+       "slot": 67
+      }
+     ],
+     "actions": []
+    },
+    "errors": []
+   }
+  },
+  {
+   "vue": "profils-mobile",
+   "route": "people",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    390,
+    844
+   ],
+   "avant": {
+    "audit": {
+     "texts": 51,
+     "below13": 33,
+     "below13Share": 0.6471,
+     "below13OutsideDock": 28,
+     "below13Useful": 28,
+     "contrastFails": 8,
+     "contrastFailsOutsideSvgArt": 8,
+     "sizes": [
+      11,
+      11.24,
+      12,
+      13,
+      13.18,
+      16.7,
+      18,
+      30
+     ],
+     "smallSamples": [
+      "11  «42 Awards»",
+      "11  «Chroniques»",
+      "11  «Explorer»",
+      "11  «Profils»",
+      "11  «Projets»",
+      "11 cp-profile-status «Alumni»",
+      "11 cp-profile-status «Cadet»",
+      "11 cp-profile-status «Transcender»",
+      "11.24 cp-control-trigger «Affichage»",
+      "11.24 cp-control-trigger «Filtrer»",
+      "11.24 cp-control-trigger «Trier»",
+      "12  «2022»",
+      "12  «2023»",
+      "12  «2024»"
+     ],
+     "failSamples": [
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-meta «42 Barcelona»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-meta «42 Lyon»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-meta «42 Paris»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-meta «42 Rio»",
+      "3.98 rgb(0, 142, 144) on rgb(255, 255, 255) cp-profile-status «Alumni»",
+      "3.98 rgb(0, 142, 144) on rgb(255, 255, 255) cp-profile-status «Cadet»",
+      "3.98 rgb(0, 142, 144) on rgb(255, 255, 255) cp-profile-status «Transcender»"
+     ]
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "statusLines": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "toolbarRows": 2,
+     "countLines": [
+      1
+     ],
+     "toolbarRoom": 11,
+     "dockClipped": [],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explorer",
+       "size": "11px",
+       "label": 39,
+       "slot": 67
+      },
+      {
+       "t": "Projets",
+       "size": "11px",
+       "label": 31,
+       "slot": 67
+      },
+      {
+       "t": "Profils",
+       "size": "11px",
+       "label": 30,
+       "slot": 67
+      },
+      {
+       "t": "Chroniques",
+       "size": "11px",
+       "label": 54,
+       "slot": 67
+      },
+      {
+       "t": "42 Awards",
+       "size": "11px",
+       "label": 50,
+       "slot": 67
+      }
+     ],
+     "actions": []
+    },
+    "errors": []
+   },
+   "apres": {
+    "audit": {
+     "texts": 51,
+     "below13": 5,
+     "below13Share": 0.098,
+     "below13OutsideDock": 0,
+     "below13Useful": 0,
+     "contrastFails": 0,
+     "contrastFailsOutsideSvgArt": 0,
+     "sizes": [
+      11,
+      13,
+      13.18,
+      16.7,
+      18,
+      30
+     ],
+     "smallSamples": [
+      "11  «42 Awards»",
+      "11  «Chroniques»",
+      "11  «Explorer»",
+      "11  «Profils»",
+      "11  «Projets»"
+     ],
+     "failSamples": []
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "statusLines": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "toolbarRows": 2,
+     "countLines": [
+      1
+     ],
+     "toolbarRoom": 11,
+     "dockClipped": [],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explorer",
+       "size": "11px",
+       "label": 39,
+       "slot": 67
+      },
+      {
+       "t": "Projets",
+       "size": "11px",
+       "label": 31,
+       "slot": 67
+      },
+      {
+       "t": "Profils",
+       "size": "11px",
+       "label": 30,
+       "slot": 67
+      },
+      {
+       "t": "Chroniques",
+       "size": "11px",
+       "label": 54,
+       "slot": 67
+      },
+      {
+       "t": "42 Awards",
+       "size": "11px",
+       "label": 50,
+       "slot": 67
+      }
+     ],
+     "actions": []
+    },
+    "errors": []
+   }
+  },
+  {
+   "vue": "fiche-mobile",
+   "route": "projects/ft-transcendence-building-together",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    390,
+    844
+   ],
+   "avant": {
+    "audit": {
+     "texts": 37,
+     "below13": 15,
+     "below13Share": 0.4054,
+     "below13OutsideDock": 10,
+     "below13Useful": 10,
+     "contrastFails": 1,
+     "contrastFailsOutsideSvgArt": 1,
+     "sizes": [
+      10,
+      11,
+      12,
+      13,
+      13.18,
+      14,
+      15,
+      16,
+      16.7,
+      19,
+      22.66,
+      24.88
+     ],
+     "smallSamples": [
+      "10 cp-project-switch-caption «Dans ce projet»",
+      "11  «42 Awards»",
+      "11  «Chroniques»",
+      "11  «Explorer»",
+      "11  «Profils»",
+      "11  «Projets»",
+      "11 cp-favorite «Favoris»",
+      "11 cp-report-trigger «Signaler»",
+      "12 cp-project-campus «Explorer un campus»",
+      "12 cp-project-campus-names «42 Lyon»",
+      "12 cp-project-campus-names «42 Paris»",
+      "12 cp-project-campus-names «42 Rio»",
+      "12 cp-project-campus-names «42 Tokyo»",
+      "12 cp-project-campus-names «·»"
+     ],
+     "failSamples": [
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-project-campus «Explorer un camp»"
+     ]
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [],
+     "statusLines": [],
+     "toolbarRows": 0,
+     "countLines": [],
+     "toolbarRoom": null,
+     "dockClipped": [],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explorer",
+       "size": "11px",
+       "label": 39,
+       "slot": 67
+      },
+      {
+       "t": "Projets",
+       "size": "11px",
+       "label": 33,
+       "slot": 67
+      },
+      {
+       "t": "Profils",
+       "size": "11px",
+       "label": 28,
+       "slot": 67
+      },
+      {
+       "t": "Chroniques",
+       "size": "11px",
+       "label": 54,
+       "slot": 67
+      },
+      {
+       "t": "42 Awards",
+       "size": "11px",
+       "label": 50,
+       "slot": 67
+      }
+     ],
+     "actions": [
+      {
+       "t": "Favoris",
+       "size": "11px",
+       "w": 79,
+       "h": 36
+      },
+      {
+       "t": "SignalerFavoris",
+       "size": "11px",
+       "w": 85,
+       "h": 36
+      },
+      {
+       "t": "Explorer un campus",
+       "size": "12px",
+       "w": 124,
+       "h": 36
+      }
+     ]
+    },
+    "errors": []
+   },
+   "apres": {
+    "audit": {
+     "texts": 36,
+     "below13": 5,
+     "below13Share": 0.1389,
+     "below13OutsideDock": 0,
+     "below13Useful": 0,
+     "contrastFails": 0,
+     "contrastFailsOutsideSvgArt": 0,
+     "sizes": [
+      11,
+      13,
+      13.18,
+      14,
+      15,
+      16,
+      16.7,
+      22.66,
+      24.88
+     ],
+     "smallSamples": [
+      "11  «42 Awards»",
+      "11  «Chroniques»",
+      "11  «Explorer»",
+      "11  «Profils»",
+      "11  «Projets»"
+     ],
+     "failSamples": []
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [],
+     "statusLines": [],
+     "toolbarRows": 0,
+     "countLines": [],
+     "toolbarRoom": null,
+     "dockClipped": [],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explorer",
+       "size": "11px",
+       "label": 39,
+       "slot": 67
+      },
+      {
+       "t": "Projets",
+       "size": "11px",
+       "label": 33,
+       "slot": 67
+      },
+      {
+       "t": "Profils",
+       "size": "11px",
+       "label": 28,
+       "slot": 67
+      },
+      {
+       "t": "Chroniques",
+       "size": "11px",
+       "label": 54,
+       "slot": 67
+      },
+      {
+       "t": "42 Awards",
+       "size": "11px",
+       "label": 50,
+       "slot": 67
+      }
+     ],
+     "actions": [
+      {
+       "t": "Favoris",
+       "size": "14px",
+       "w": 88,
+       "h": 36
+      },
+      {
+       "t": "SignalerFavoris",
+       "size": "14px",
+       "w": 96,
+       "h": 36
+      },
+      {
+       "t": "Explorer un campus",
+       "size": "14px",
+       "w": 140,
+       "h": 36
+      }
+     ]
+    },
+    "errors": []
+   }
+  },
+  {
+   "vue": "petit",
+   "route": "projects",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    320,
+    640
+   ],
+   "avant": {
+    "audit": {
+     "texts": 33,
+     "below13": 18,
+     "below13Share": 0.5455,
+     "below13OutsideDock": 17,
+     "below13Useful": 17,
+     "contrastFails": 6,
+     "contrastFailsOutsideSvgArt": 6,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      16,
+      18,
+      22,
+      30
+     ],
+     "smallSamples": [
+      "11  «Projets»",
+      "11 cp-authors-label «Créé par»",
+      "11 cp-content-campuses «42 Lyon»",
+      "11 cp-content-campuses «42 Paris»",
+      "11 cp-content-campuses «42 Rio»",
+      "11 cp-content-campuses «42 Tokyo»",
+      "11 cp-content-campuses «·»",
+      "11 cp-published «3 oct. 2026»",
+      "11 cp-published «8 oct. 2026»",
+      "12 cp-author-more «+»",
+      "12 cp-author-more-count-narrow «1»",
+      "12 cp-author-more-count-narrow «4»",
+      "12 cp-author-name «Leïla Mansour»",
+      "12 cp-author-name «Luiza Costa»"
+     ],
+     "failSamples": [
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 Lyon»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 Paris»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 Rio»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 Tokyo»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «·»"
+     ]
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [
+      3,
+      1,
+      1,
+      1,
+      2,
+      3,
+      2,
+      2,
+      1,
+      3,
+      2,
+      1
+     ],
+     "statusLines": [],
+     "toolbarRows": 2,
+     "countLines": [
+      1
+     ],
+     "toolbarRoom": 10,
+     "dockClipped": [
+      "Chroniques",
+      "42 Awards"
+     ],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explorer",
+       "size": "11px",
+       "label": 39,
+       "slot": 48
+      },
+      {
+       "t": "Projets",
+       "size": "11px",
+       "label": 33,
+       "slot": 82
+      },
+      {
+       "t": "Profils",
+       "size": "11px",
+       "label": 28,
+       "slot": 48
+      },
+      {
+       "t": "Chroniques",
+       "size": "11px",
+       "label": 54,
+       "slot": 48
+      },
+      {
+       "t": "42 Awards",
+       "size": "11px",
+       "label": 50,
+       "slot": 48
+      }
+     ],
+     "actions": []
+    },
+    "errors": []
+   },
+   "apres": {
+    "audit": {
+     "texts": 33,
+     "below13": 1,
+     "below13Share": 0.0303,
+     "below13OutsideDock": 0,
+     "below13Useful": 0,
+     "contrastFails": 0,
+     "contrastFailsOutsideSvgArt": 0,
+     "sizes": [
+      11,
+      13,
+      14,
+      16,
+      18,
+      22,
+      30
+     ],
+     "smallSamples": [
+      "11  «Projets»"
+     ],
+     "failSamples": []
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [
+      3,
+      1,
+      2,
+      2,
+      2,
+      4,
+      2,
+      2,
+      2,
+      3,
+      2,
+      2
+     ],
+     "statusLines": [],
+     "toolbarRows": 2,
+     "countLines": [
+      1
+     ],
+     "toolbarRoom": 10,
+     "dockClipped": [
+      "Chroniques",
+      "42 Awards"
+     ],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explorer",
+       "size": "11px",
+       "label": 39,
+       "slot": 48
+      },
+      {
+       "t": "Projets",
+       "size": "11px",
+       "label": 33,
+       "slot": 82
+      },
+      {
+       "t": "Profils",
+       "size": "11px",
+       "label": 28,
+       "slot": 48
+      },
+      {
+       "t": "Chroniques",
+       "size": "11px",
+       "label": 54,
+       "slot": 48
+      },
+      {
+       "t": "42 Awards",
+       "size": "11px",
+       "label": 50,
+       "slot": 48
+      }
+     ],
+     "actions": []
+    },
+    "errors": []
+   }
+  },
+  {
+   "vue": "profils-petit-en-sombre",
+   "route": "people",
+   "theme": "dark",
+   "lang": "en",
+   "viewport": [
+    320,
+    640
+   ],
+   "avant": {
+    "audit": {
+     "texts": 30,
+     "below13": 16,
+     "below13Share": 0.5333,
+     "below13OutsideDock": 15,
+     "below13Useful": 15,
+     "contrastFails": 4,
+     "contrastFailsOutsideSvgArt": 4,
+     "sizes": [
+      11,
+      12,
+      13,
+      16,
+      18,
+      30
+     ],
+     "smallSamples": [
+      "11  «Profiles»",
+      "11 cp-profile-status «Alumni»",
+      "11 cp-profile-status «Cadet»",
+      "11 cp-profile-status «Transcender»",
+      "12  «2022»",
+      "12  «2024»",
+      "12  «4»",
+      "12  «6»",
+      "12 cp-meta «42 Lyon»",
+      "12 cp-meta «42 Rio»",
+      "12 cp-profile-cohort-item «Cohort»",
+      "12 cp-profile-cohort-item «Joined campus»",
+      "12 cp-toolbar «78 profiles»"
+     ],
+     "failSamples": [
+      "4.24 rgb(237, 52, 145) on rgb(32, 32, 38) cp-profile-status «Alumni»",
+      "4.24 rgb(237, 52, 145) on rgb(32, 32, 38) cp-profile-status «Cadet»",
+      "4.24 rgb(237, 52, 145) on rgb(32, 32, 38) cp-profile-status «Transcender»"
+     ]
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "statusLines": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "toolbarRows": 2,
+     "countLines": [
+      1
+     ],
+     "toolbarRoom": 10,
+     "dockClipped": [
+      "Chronicles",
+      "42 Awards"
+     ],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explore",
+       "size": "11px",
+       "label": 35,
+       "slot": 48
+      },
+      {
+       "t": "Projects",
+       "size": "11px",
+       "label": 36,
+       "slot": 48
+      },
+      {
+       "t": "Profiles",
+       "size": "11px",
+       "label": 36,
+       "slot": 82
+      },
+      {
+       "t": "Chronicles",
+       "size": "11px",
+       "label": 49,
+       "slot": 48
+      },
+      {
+       "t": "42 Awards",
+       "size": "11px",
+       "label": 50,
+       "slot": 48
+      }
+     ],
+     "actions": []
+    },
+    "errors": []
+   },
+   "apres": {
+    "audit": {
+     "texts": 30,
+     "below13": 1,
+     "below13Share": 0.0333,
+     "below13OutsideDock": 0,
+     "below13Useful": 0,
+     "contrastFails": 0,
+     "contrastFailsOutsideSvgArt": 0,
+     "sizes": [
+      11,
+      13,
+      16,
+      18,
+      30
+     ],
+     "smallSamples": [
+      "11  «Profiles»"
+     ],
+     "failSamples": []
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "statusLines": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "toolbarRows": 2,
+     "countLines": [
+      1
+     ],
+     "toolbarRoom": 10,
+     "dockClipped": [
+      "Chronicles",
+      "42 Awards"
+     ],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explore",
+       "size": "11px",
+       "label": 35,
+       "slot": 48
+      },
+      {
+       "t": "Projects",
+       "size": "11px",
+       "label": 36,
+       "slot": 48
+      },
+      {
+       "t": "Profiles",
+       "size": "11px",
+       "label": 36,
+       "slot": 82
+      },
+      {
+       "t": "Chronicles",
+       "size": "11px",
+       "label": 49,
+       "slot": 48
+      },
+      {
+       "t": "42 Awards",
+       "size": "11px",
+       "label": 50,
+       "slot": 48
+      }
+     ],
+     "actions": []
+    },
+    "errors": []
+   }
+  },
+  {
+   "vue": "sombre-ordinateur",
+   "route": "people",
+   "theme": "dark",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "avant": {
+    "audit": {
+     "texts": 99,
+     "below13": 61,
+     "below13Share": 0.6162,
+     "below13OutsideDock": 61,
+     "below13Useful": 61,
+     "contrastFails": 10,
+     "contrastFailsOutsideSvgArt": 10,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      21.04,
+      25,
+      34
+     ],
+     "smallSamples": [
+      "11 cp-profile-status «Alumni»",
+      "11 cp-profile-status «Cadet»",
+      "11 cp-profile-status «Transcender»",
+      "12  «2022»",
+      "12  «2023»",
+      "12  «2024»",
+      "12  «2»",
+      "12  «3»",
+      "12  «4»",
+      "12  «5»",
+      "12  «6»",
+      "12  «7»",
+      "12  «8»",
+      "12 cp-meta «42 Antananarivo»"
+     ],
+     "failSamples": [
+      "4.24 rgb(237, 52, 145) on rgb(32, 32, 38) cp-profile-status «Alumni»",
+      "4.24 rgb(237, 52, 145) on rgb(32, 32, 38) cp-profile-status «Cadet»",
+      "4.24 rgb(237, 52, 145) on rgb(32, 32, 38) cp-profile-status «Transcender»"
+     ]
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "statusLines": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "toolbarRows": 2,
+     "countLines": [
+      1
+     ],
+     "toolbarRoom": 725,
+     "dockClipped": [],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explorer",
+       "size": "14px",
+       "label": 49,
+       "slot": 122
+      },
+      {
+       "t": "Projets",
+       "size": "14px",
+       "label": 39,
+       "slot": 122
+      },
+      {
+       "t": "Profils",
+       "size": "14px",
+       "label": 38,
+       "slot": 122
+      },
+      {
+       "t": "Chroniques",
+       "size": "14px",
+       "label": 68,
+       "slot": 122
+      },
+      {
+       "t": "42 Awards",
+       "size": "14px",
+       "label": 64,
+       "slot": 122
+      }
+     ],
+     "actions": []
+    },
+    "errors": []
+   },
+   "apres": {
+    "audit": {
+     "texts": 99,
+     "below13": 0,
+     "below13Share": 0.0,
+     "below13OutsideDock": 0,
+     "below13Useful": 0,
+     "contrastFails": 0,
+     "contrastFailsOutsideSvgArt": 0,
+     "sizes": [
+      13,
+      14,
+      15,
+      21.04,
+      25,
+      34
+     ],
+     "smallSamples": [],
+     "failSamples": []
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "statusLines": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "toolbarRows": 2,
+     "countLines": [
+      1
+     ],
+     "toolbarRoom": 721,
+     "dockClipped": [],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explorer",
+       "size": "14px",
+       "label": 49,
+       "slot": 122
+      },
+      {
+       "t": "Projets",
+       "size": "14px",
+       "label": 39,
+       "slot": 122
+      },
+      {
+       "t": "Profils",
+       "size": "14px",
+       "label": 38,
+       "slot": 122
+      },
+      {
+       "t": "Chroniques",
+       "size": "14px",
+       "label": 68,
+       "slot": 122
+      },
+      {
+       "t": "42 Awards",
+       "size": "14px",
+       "label": 64,
+       "slot": 122
+      }
+     ],
+     "actions": []
+    },
+    "errors": []
+   }
+  },
+  {
+   "vue": "fiche-sombre-ordinateur",
+   "route": "people/profile-leila-mansour",
+   "theme": "dark",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "avant": {
+    "audit": {
+     "texts": 47,
+     "below13": 6,
+     "below13Share": 0.1277,
+     "below13OutsideDock": 6,
+     "below13Useful": 6,
+     "contrastFails": 1,
+     "contrastFailsOutsideSvgArt": 1,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      20,
+      25,
+      32,
+      38
+     ],
+     "smallSamples": [
+      "11 cp-favorite «Favoris»",
+      "11 cp-report-trigger «Signaler»",
+      "12 cp-profile-message «Envoyer un message»",
+      "12 cp-profile-tags «C»",
+      "12 cp-profile-tags «Debugging»",
+      "12 cp-profile-tags «POSIX»"
+     ],
+     "failSamples": [
+      "4.24 rgb(237, 52, 145) on rgb(32, 32, 38) cp-profile-message «Envoyer un messa»"
+     ]
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [],
+     "statusLines": [],
+     "toolbarRows": 0,
+     "countLines": [],
+     "toolbarRoom": null,
+     "dockClipped": [],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explorer",
+       "size": "14px",
+       "label": 49,
+       "slot": 122
+      },
+      {
+       "t": "Projets",
+       "size": "14px",
+       "label": 39,
+       "slot": 122
+      },
+      {
+       "t": "Profils",
+       "size": "14px",
+       "label": 38,
+       "slot": 122
+      },
+      {
+       "t": "Chroniques",
+       "size": "14px",
+       "label": 68,
+       "slot": 122
+      },
+      {
+       "t": "42 Awards",
+       "size": "14px",
+       "label": 64,
+       "slot": 122
+      }
+     ],
+     "actions": [
+      {
+       "t": "Envoyer un message",
+       "size": "12px",
+       "w": 150,
+       "h": 36
+      },
+      {
+       "t": "Favoris",
+       "size": "11px",
+       "w": 79,
+       "h": 36
+      },
+      {
+       "t": "SignalerFavoris",
+       "size": "11px",
+       "w": 85,
+       "h": 36
+      },
+      {
+       "t": "Explorer 42 Paris",
+       "size": "13px",
+       "w": 118,
+       "h": 42
+      }
+     ]
+    },
+    "errors": []
+   },
+   "apres": {
+    "audit": {
+     "texts": 47,
+     "below13": 0,
+     "below13Share": 0.0,
+     "below13OutsideDock": 0,
+     "below13Useful": 0,
+     "contrastFails": 0,
+     "contrastFailsOutsideSvgArt": 0,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      20,
+      25,
+      32,
+      38
+     ],
+     "smallSamples": [],
+     "failSamples": []
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [],
+     "statusLines": [],
+     "toolbarRows": 0,
+     "countLines": [],
+     "toolbarRoom": null,
+     "dockClipped": [],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explorer",
+       "size": "14px",
+       "label": 49,
+       "slot": 122
+      },
+      {
+       "t": "Projets",
+       "size": "14px",
+       "label": 39,
+       "slot": 122
+      },
+      {
+       "t": "Profils",
+       "size": "14px",
+       "label": 38,
+       "slot": 122
+      },
+      {
+       "t": "Chroniques",
+       "size": "14px",
+       "label": 68,
+       "slot": 122
+      },
+      {
+       "t": "42 Awards",
+       "size": "14px",
+       "label": 64,
+       "slot": 122
+      }
+     ],
+     "actions": [
+      {
+       "t": "Envoyer un message",
+       "size": "14px",
+       "w": 167,
+       "h": 37
+      },
+      {
+       "t": "Favoris",
+       "size": "14px",
+       "w": 88,
+       "h": 36
+      },
+      {
+       "t": "SignalerFavoris",
+       "size": "14px",
+       "w": 96,
+       "h": 36
+      },
+      {
+       "t": "Explorer 42 Paris",
+       "size": "14px",
+       "w": 126,
+       "h": 42
+      }
+     ]
+    },
+    "errors": []
+   }
+  },
+  {
+   "vue": "ar-sombre-mobile",
+   "route": "people",
+   "theme": "dark",
+   "lang": "ar",
+   "viewport": [
+    390,
+    844
+   ],
+   "avant": {
+    "audit": {
+     "texts": 52,
+     "below13": 34,
+     "below13Share": 0.6538,
+     "below13OutsideDock": 29,
+     "below13Useful": 28,
+     "contrastFails": 4,
+     "contrastFailsOutsideSvgArt": 4,
+     "sizes": [
+      11,
+      11.17,
+      11.24,
+      12,
+      13,
+      13.18,
+      16.7,
+      18,
+      30
+     ],
+     "smallSamples": [
+      "11  «استكشف»",
+      "11  «الأعضاء»",
+      "11  «المشاريع»",
+      "11  «جوائز 42»",
+      "11  «حكايات»",
+      "11 cp-profile-status «Transcender»",
+      "11 cp-profile-status «خريج / خريجة»",
+      "11 cp-profile-status «كاديت»",
+      "11.17 arabic-brand «أفق»",
+      "11.24 cp-control-trigger «الترتيب»",
+      "11.24 cp-control-trigger «العرض»",
+      "11.24 cp-control-trigger «تصفية»",
+      "12  «2022»",
+      "12  «2023»"
+     ],
+     "failSamples": [
+      "4.24 rgb(237, 52, 145) on rgb(32, 32, 38) cp-profile-status «Transcender»",
+      "4.24 rgb(237, 52, 145) on rgb(32, 32, 38) cp-profile-status «خريج / خريجة»",
+      "4.24 rgb(237, 52, 145) on rgb(32, 32, 38) cp-profile-status «كاديت»"
+     ]
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "statusLines": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "toolbarRows": 2,
+     "countLines": [
+      1
+     ],
+     "toolbarRoom": 11,
+     "dockClipped": [],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "استكشف",
+       "size": "11px",
+       "label": 42,
+       "slot": 67
+      },
+      {
+       "t": "المشاريع",
+       "size": "11px",
+       "label": 38,
+       "slot": 67
+      },
+      {
+       "t": "الأعضاء",
+       "size": "11px",
+       "label": 33,
+       "slot": 67
+      },
+      {
+       "t": "حكايات",
+       "size": "11px",
+       "label": 33,
+       "slot": 67
+      },
+      {
+       "t": "جوائز 42",
+       "size": "11px",
+       "label": 38,
+       "slot": 67
+      }
+     ],
+     "actions": []
+    },
+    "errors": []
+   },
+   "apres": {
+    "audit": {
+     "texts": 52,
+     "below13": 6,
+     "below13Share": 0.1154,
+     "below13OutsideDock": 1,
+     "below13Useful": 0,
+     "contrastFails": 0,
+     "contrastFailsOutsideSvgArt": 0,
+     "sizes": [
+      11,
+      11.17,
+      13,
+      13.18,
+      16.7,
+      18,
+      30
+     ],
+     "smallSamples": [
+      "11  «استكشف»",
+      "11  «الأعضاء»",
+      "11  «المشاريع»",
+      "11  «جوائز 42»",
+      "11  «حكايات»",
+      "11.17 arabic-brand «أفق»"
+     ],
+     "failSamples": []
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "statusLines": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "toolbarRows": 1,
+     "countLines": [
+      2
+     ],
+     "toolbarRoom": 11,
+     "dockClipped": [],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "استكشف",
+       "size": "11px",
+       "label": 42,
+       "slot": 67
+      },
+      {
+       "t": "المشاريع",
+       "size": "11px",
+       "label": 38,
+       "slot": 67
+      },
+      {
+       "t": "الأعضاء",
+       "size": "11px",
+       "label": 33,
+       "slot": 67
+      },
+      {
+       "t": "حكايات",
+       "size": "11px",
+       "label": 33,
+       "slot": 67
+      },
+      {
+       "t": "جوائز 42",
+       "size": "11px",
+       "label": 38,
+       "slot": 67
+      }
+     ],
+     "actions": []
+    },
+    "errors": []
+   }
+  },
+  {
+   "vue": "explorer-ordinateur",
+   "route": "explore",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "avant": {
+    "audit": {
+     "texts": 18,
+     "below13": 1,
+     "below13Share": 0.0556,
+     "below13OutsideDock": 1,
+     "below13Useful": 1,
+     "contrastFails": 0,
+     "contrastFailsOutsideSvgArt": 0,
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      25
+     ],
+     "smallSamples": [
+      "12 prototype-note «Exploration · 42 H»"
+     ],
+     "failSamples": []
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [],
+     "statusLines": [],
+     "toolbarRows": 0,
+     "countLines": [],
+     "toolbarRoom": null,
+     "dockClipped": [],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explorer",
+       "size": "14px",
+       "label": 52,
+       "slot": 122
+      },
+      {
+       "t": "Projets",
+       "size": "14px",
+       "label": 39,
+       "slot": 122
+      },
+      {
+       "t": "Profils",
+       "size": "14px",
+       "label": 36,
+       "slot": 122
+      },
+      {
+       "t": "Chroniques",
+       "size": "14px",
+       "label": 68,
+       "slot": 122
+      },
+      {
+       "t": "42 Awards",
+       "size": "14px",
+       "label": 64,
+       "slot": 122
+      }
+     ],
+     "actions": []
+    },
+    "errors": []
+   },
+   "apres": {
+    "audit": {
+     "texts": 18,
+     "below13": 0,
+     "below13Share": 0.0,
+     "below13OutsideDock": 0,
+     "below13Useful": 0,
+     "contrastFails": 0,
+     "contrastFailsOutsideSvgArt": 0,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      25
+     ],
+     "smallSamples": [],
+     "failSamples": []
+    },
+    "layout": {
+     "overflow": false,
+     "metaLines": [],
+     "statusLines": [],
+     "toolbarRows": 0,
+     "countLines": [],
+     "toolbarRoom": null,
+     "dockClipped": [],
+     "headerClipped": [],
+     "density": [],
+     "dockLabels": [
+      {
+       "t": "Explorer",
+       "size": "14px",
+       "label": 52,
+       "slot": 122
+      },
+      {
+       "t": "Projets",
+       "size": "14px",
+       "label": 39,
+       "slot": 122
+      },
+      {
+       "t": "Profils",
+       "size": "14px",
+       "label": 36,
+       "slot": 122
+      },
+      {
+       "t": "Chroniques",
+       "size": "14px",
+       "label": 68,
+       "slot": 122
+      },
+      {
+       "t": "42 Awards",
+       "size": "14px",
+       "label": 64,
+       "slot": 122
+      }
+     ],
+     "actions": []
+    },
+    "errors": []
+   }
+  }
+ ],
+ "totals": {
+  "avant": {
+   "texts": 811,
+   "below13": 343,
+   "below13Share": 0.4229,
+   "below13OutsideDock": 321,
+   "below13Useful": 320,
+   "contrastFails": 94,
+   "contrastFailsOutsideSvgArt": 82
+  },
+  "apres": {
+   "texts": 810,
+   "below13": 23,
+   "below13Share": 0.0284,
+   "below13OutsideDock": 1,
+   "below13Useful": 0,
+   "contrastFails": 12,
+   "contrastFailsOutsideSvgArt": 0
+  }
+ },
+ "sheet": {
+  "avant": {
+   "opened": true,
+   "audit": {
+    "texts": 32,
+    "below13": 9,
+    "below13Share": 0.2812,
+    "below13OutsideDock": 9,
+    "below13Useful": 9,
+    "contrastFails": 0,
+    "contrastFailsOutsideSvgArt": 0,
+    "sizes": [
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     19,
+     24,
+     25
+    ],
+    "smallSamples": [
+     "11 campus-details-photo-caption «42 Paris»",
+     "11 campus-details-source «Source»",
+     "12 campus-details-address «Adresse»",
+     "12 campus-details-copy «Copier l’adresse»",
+     "12 campus-details-directions «Itinéraire»",
+     "12 campus-details-photo-next «→»",
+     "12 campus-details-photo-prev «←»",
+     "12 campus-details-photo-status «1 / 2»",
+     "12 prototype-note «Exploration · 42 H»"
+    ],
+    "failSamples": []
+   },
+   "attributionSizes": [
+    9
+   ],
+   "overflow": false,
+   "errors": []
+  },
+  "apres": {
+   "opened": true,
+   "audit": {
+    "texts": 32,
+    "below13": 0,
+    "below13Share": 0.0,
+    "below13OutsideDock": 0,
+    "below13Useful": 0,
+    "contrastFails": 0,
+    "contrastFailsOutsideSvgArt": 0,
+    "sizes": [
+     13,
+     14,
+     15,
+     16,
+     19,
+     24,
+     25
+    ],
+    "smallSamples": [],
+    "failSamples": []
+   },
+   "attributionSizes": [
+    9
+   ],
+   "overflow": false,
+   "errors": []
+  }
+ },
+ "passed": true,
+ "overlays": [
+  {
+   "vue": "recherche-mobile",
+   "viewport": [
+    390,
+    844
+   ],
+   "kind": "search",
+   "avant": {
+    "audit": {
+     "texts": 65,
+     "below13": 42,
+     "below13Share": 0.6462,
+     "below13OutsideDock": 26,
+     "below13Useful": 26,
+     "contrastFails": 8,
+     "contrastFailsOutsideSvgArt": 8,
+     "sizes": [
+      10,
+      11,
+      11.22,
+      11.24,
+      12,
+      12.22,
+      13.18,
+      14,
+      14.11,
+      16.7,
+      19.09,
+      22,
+      30
+     ],
+     "smallSamples": [
+      "10 dock-search-result-type «Campus»",
+      "10 dock-search-result-type «Chroniques»",
+      "10 dock-search-result-type «Profil»",
+      "10 dock-search-result-type «Projet»",
+      "11 cp-authors-label «Créé par»",
+      "11 dock-search-status «8 résultats»",
+      "11.22 cp-content-campuses «42 Lyon»",
+      "11.22 cp-content-campuses «42 Paris»",
+      "11.22 cp-content-campuses «42 Rio»",
+      "11.22 cp-content-campuses «42 Tokyo»",
+      "11.22 cp-content-campuses «·»",
+      "11.22 cp-published «21 sept. 2026»",
+      "11.22 cp-published «28 sept. 2026»",
+      "11.22 cp-published «3 oct. 2026»"
+     ],
+     "failSamples": [
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 Lyon»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 Paris»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 Rio»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 Tokyo»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «·»"
+     ]
+    },
+    "overflow": false,
+    "errors": [],
+    "open": true
+   },
+   "apres": {
+    "audit": {
+     "texts": 65,
+     "below13": 0,
+     "below13Share": 0.0,
+     "below13OutsideDock": 0,
+     "below13Useful": 0,
+     "contrastFails": 0,
+     "contrastFailsOutsideSvgArt": 0,
+     "sizes": [
+      13,
+      13.18,
+      14,
+      14.11,
+      16.7,
+      19.09,
+      22,
+      30
+     ],
+     "smallSamples": [],
+     "failSamples": []
+    },
+    "overflow": false,
+    "errors": [],
+    "open": true
+   }
+  },
+  {
+   "vue": "recherche-ordinateur",
+   "viewport": [
+    1440,
+    900
+   ],
+   "kind": "search",
+   "avant": {
+    "audit": {
+     "texts": 64,
+     "below13": 32,
+     "below13Share": 0.5,
+     "below13OutsideDock": 16,
+     "below13Useful": 16,
+     "contrastFails": 7,
+     "contrastFailsOutsideSvgArt": 7,
+     "sizes": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      22,
+      25,
+      31,
+      34
+     ],
+     "smallSamples": [
+      "10 dock-search-result-type «Campus»",
+      "10 dock-search-result-type «Chroniques»",
+      "10 dock-search-result-type «Profil»",
+      "10 dock-search-result-type «Projet»",
+      "11 cp-authors-label «Créé par»",
+      "11 dock-search-status «8 résultats»",
+      "12 cp-author-more «+»",
+      "12 cp-author-more-count-wide «3»",
+      "12 cp-content-campuses «42 Lyon»",
+      "12 cp-content-campuses «42 Paris»",
+      "12 cp-content-campuses «42 Rio»",
+      "12 cp-content-campuses «42 Tokyo»",
+      "12 cp-content-campuses «·»",
+      "12 cp-published «28 sept. 2026»"
+     ],
+     "failSamples": [
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 Lyon»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 Paris»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 Rio»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 Tokyo»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «·»"
+     ]
+    },
+    "overflow": false,
+    "errors": [],
+    "open": true
+   },
+   "apres": {
+    "audit": {
+     "texts": 63,
+     "below13": 0,
+     "below13Share": 0.0,
+     "below13OutsideDock": 0,
+     "below13Useful": 0,
+     "contrastFails": 0,
+     "contrastFailsOutsideSvgArt": 0,
+     "sizes": [
+      13,
+      14,
+      15,
+      22,
+      25,
+      31,
+      34
+     ],
+     "smallSamples": [],
+     "failSamples": []
+    },
+    "overflow": false,
+    "errors": [],
+    "open": true
+   }
+  },
+  {
+   "vue": "filtre-mobile",
+   "viewport": [
+    390,
+    844
+   ],
+   "kind": "filter",
+   "avant": {
+    "audit": {
+     "texts": 63,
+     "below13": 42,
+     "below13Share": 0.6667,
+     "below13OutsideDock": 37,
+     "below13Useful": 37,
+     "contrastFails": 8,
+     "contrastFailsOutsideSvgArt": 8,
+     "sizes": [
+      10,
+      11,
+      11.22,
+      11.24,
+      12,
+      12.22,
+      13,
+      13.18,
+      14,
+      14.11,
+      16.7,
+      19.09,
+      21,
+      22,
+      30
+     ],
+     "smallSamples": [
+      "10 cp-project-filter-section-count «0»",
+      "11  «42 Awards»",
+      "11  «Chroniques»",
+      "11  «Explorer»",
+      "11  «Profils»",
+      "11  «Projets»",
+      "11 cp-authors-label «Créé par»",
+      "11 cp-project-filter-all «Tout sélectionner»",
+      "11.22 cp-content-campuses «42 Lyon»",
+      "11.22 cp-content-campuses «42 Paris»",
+      "11.22 cp-content-campuses «42 Rio»",
+      "11.22 cp-content-campuses «42 Tokyo»",
+      "11.22 cp-content-campuses «·»",
+      "11.22 cp-published «21 sept. 2026»"
+     ],
+     "failSamples": [
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 Lyon»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 Paris»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 Rio»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 Tokyo»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «·»"
+     ]
+    },
+    "overflow": false,
+    "errors": [],
+    "open": true
+   },
+   "apres": {
+    "audit": {
+     "texts": 63,
+     "below13": 5,
+     "below13Share": 0.0794,
+     "below13OutsideDock": 0,
+     "below13Useful": 0,
+     "contrastFails": 0,
+     "contrastFailsOutsideSvgArt": 0,
+     "sizes": [
+      11,
+      13,
+      13.18,
+      14,
+      14.11,
+      16.7,
+      19.09,
+      21,
+      22,
+      30
+     ],
+     "smallSamples": [
+      "11  «42 Awards»",
+      "11  «Chroniques»",
+      "11  «Explorer»",
+      "11  «Profils»",
+      "11  «Projets»"
+     ],
+     "failSamples": []
+    },
+    "overflow": false,
+    "errors": [],
+    "open": true
+   }
+  },
+  {
+   "vue": "compte-ordinateur",
+   "viewport": [
+    1440,
+    900
+   ],
+   "kind": "account",
+   "avant": {
+    "audit": {
+     "texts": 54,
+     "below13": 18,
+     "below13Share": 0.3333,
+     "below13OutsideDock": 18,
+     "below13Useful": 18,
+     "contrastFails": 7,
+     "contrastFailsOutsideSvgArt": 7,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      17,
+      22,
+      25,
+      31,
+      34
+     ],
+     "smallSamples": [
+      "11 cp-authors-label «Créé par»",
+      "12 account-option  «Clair»",
+      "12 account-option  «Français»",
+      "12 cp-author-more «+»",
+      "12 cp-author-more-count-wide «3»",
+      "12 cp-content-campuses «42 Lyon»",
+      "12 cp-content-campuses «42 Paris»",
+      "12 cp-content-campuses «42 Rio»",
+      "12 cp-content-campuses «42 Tokyo»",
+      "12 cp-content-campuses «·»",
+      "12 cp-published «28 sept. 2026»",
+      "12 cp-published «3 oct. 2026»",
+      "12 cp-published «8 oct. 2026»",
+      "12 cp-toolbar «78 contenus»"
+     ],
+     "failSamples": [
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 Lyon»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 Paris»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 Rio»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «42 Tokyo»",
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-content-campuses «·»"
+     ]
+    },
+    "overflow": false,
+    "errors": [],
+    "open": true
+   },
+   "apres": {
+    "audit": {
+     "texts": 54,
+     "below13": 0,
+     "below13Share": 0.0,
+     "below13OutsideDock": 0,
+     "below13Useful": 0,
+     "contrastFails": 0,
+     "contrastFailsOutsideSvgArt": 0,
+     "sizes": [
+      13,
+      14,
+      15,
+      17,
+      22,
+      25,
+      31,
+      34
+     ],
+     "smallSamples": [],
+     "failSamples": []
+    },
+    "overflow": false,
+    "errors": [],
+    "open": true
+   }
+  }
+ ],
+ "scope": [
+  {
+   "route": "projects",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "sameDom": true,
+   "elements": 825,
+   "sizeChanges": 82,
+   "sizeDecreases": [],
+   "sizeAbove14": [],
+   "colourChanges": 44,
+   "unexpectedColours": [],
+   "colourChangedIn": [
+    "BDI",
+    "cp-content-campuses",
+    "cp-meta",
+    "cp-pagination-link "
+   ],
+   "iconBoxChanges": [],
+   "overflow": false,
+   "errors": []
+  },
+  {
+   "route": "people",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "sameDom": true,
+   "elements": 600,
+   "sizeChanges": 268,
+   "sizeDecreases": [],
+   "sizeAbove14": [],
+   "colourChanges": 49,
+   "unexpectedColours": [],
+   "colourChangedIn": [
+    "cp-meta",
+    "cp-pagination-link ",
+    "cp-profile-status"
+   ],
+   "iconBoxChanges": [],
+   "overflow": false,
+   "errors": []
+  },
+  {
+   "route": "journal",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "sameDom": true,
+   "elements": 802,
+   "sizeChanges": 69,
+   "sizeDecreases": [],
+   "sizeAbove14": [],
+   "colourChanges": 37,
+   "unexpectedColours": [],
+   "colourChangedIn": [
+    "BDI",
+    "cp-content-campuses",
+    "cp-meta",
+    "cp-pagination-link "
+   ],
+   "iconBoxChanges": [],
+   "overflow": false,
+   "errors": []
+  },
+  {
+   "route": "projects/ft-transcendence-building-together?tab=overview",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "sameDom": true,
+   "elements": 215,
+   "sizeChanges": 19,
+   "sizeDecreases": [],
+   "sizeAbove14": [],
+   "colourChanges": 3,
+   "unexpectedColours": [],
+   "colourChangedIn": [
+    "cp-project-campus",
+    "path",
+    "svg"
+   ],
+   "iconBoxChanges": [],
+   "overflow": false,
+   "errors": []
+  },
+  {
+   "route": "projects/ft-transcendence-building-together?tab=comments",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "sameDom": true,
+   "elements": 162,
+   "sizeChanges": 18,
+   "sizeDecreases": [],
+   "sizeAbove14": [],
+   "colourChanges": 3,
+   "unexpectedColours": [],
+   "colourChangedIn": [
+    "cp-project-campus",
+    "path",
+    "svg"
+   ],
+   "iconBoxChanges": [],
+   "overflow": false,
+   "errors": []
+  },
+  {
+   "route": "journal/journal-an-evening-debugging?tab=article",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "sameDom": true,
+   "elements": 168,
+   "sizeChanges": 13,
+   "sizeDecreases": [],
+   "sizeAbove14": [],
+   "colourChanges": 3,
+   "unexpectedColours": [],
+   "colourChangedIn": [
+    "cp-project-campus",
+    "path",
+    "svg"
+   ],
+   "iconBoxChanges": [],
+   "overflow": false,
+   "errors": []
+  },
+  {
+   "route": "people/profile-leila-mansour?tab=overview",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "sameDom": true,
+   "elements": 174,
+   "sizeChanges": 14,
+   "sizeDecreases": [],
+   "sizeAbove14": [],
+   "colourChanges": 7,
+   "unexpectedColours": [],
+   "colourChangedIn": [
+    "cp-profile-campus",
+    "cp-profile-message",
+    "path",
+    "svg"
+   ],
+   "iconBoxChanges": [],
+   "overflow": false,
+   "errors": []
+  },
+  {
+   "route": "people/profile-leila-mansour?tab=journey",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "sameDom": true,
+   "elements": 154,
+   "sizeChanges": 13,
+   "sizeDecreases": [],
+   "sizeAbove14": [],
+   "colourChanges": 8,
+   "unexpectedColours": [],
+   "colourChangedIn": [
+    "cp-meta",
+    "cp-profile-message",
+    "cp-profile-milestone-date",
+    "path",
+    "svg"
+   ],
+   "iconBoxChanges": [],
+   "overflow": false,
+   "errors": []
+  },
+  {
+   "route": "people",
+   "theme": "dark",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "sameDom": true,
+   "elements": 600,
+   "sizeChanges": 268,
+   "sizeDecreases": [],
+   "sizeAbove14": [],
+   "colourChanges": 49,
+   "unexpectedColours": [],
+   "colourChangedIn": [
+    "cp-meta",
+    "cp-pagination-link ",
+    "cp-profile-status"
+   ],
+   "iconBoxChanges": [],
+   "overflow": false,
+   "errors": []
+  },
+  {
+   "route": "projects/ft-transcendence-building-together?tab=overview",
+   "theme": "dark",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "sameDom": true,
+   "elements": 215,
+   "sizeChanges": 19,
+   "sizeDecreases": [],
+   "sizeAbove14": [],
+   "colourChanges": 3,
+   "unexpectedColours": [],
+   "colourChangedIn": [
+    "cp-project-campus",
+    "path",
+    "svg"
+   ],
+   "iconBoxChanges": [],
+   "overflow": false,
+   "errors": []
+  },
+  {
+   "route": "projects",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    390,
+    844
+   ],
+   "sameDom": true,
+   "elements": 807,
+   "sizeChanges": 119,
+   "sizeDecreases": [],
+   "sizeAbove14": [],
+   "colourChanges": 44,
+   "unexpectedColours": [],
+   "colourChangedIn": [
+    "BDI",
+    "cp-content-campuses",
+    "cp-meta",
+    "cp-pagination-link "
+   ],
+   "iconBoxChanges": [],
+   "overflow": false,
+   "errors": []
+  },
+  {
+   "route": "people",
+   "theme": "dark",
+   "lang": "ar",
+   "viewport": [
+    390,
+    844
+   ],
+   "sameDom": true,
+   "elements": 601,
+   "sizeChanges": 274,
+   "sizeDecreases": [],
+   "sizeAbove14": [],
+   "colourChanges": 49,
+   "unexpectedColours": [],
+   "colourChangedIn": [
+    "cp-meta",
+    "cp-pagination-link ",
+    "cp-profile-status"
+   ],
+   "iconBoxChanges": [],
+   "overflow": false,
+   "errors": []
+  },
+  {
+   "route": "projects/ft-transcendence-building-together?tab=overview",
+   "theme": "light",
+   "lang": "ar",
+   "viewport": [
+    390,
+    844
+   ],
+   "sameDom": true,
+   "elements": 224,
+   "sizeChanges": 20,
+   "sizeDecreases": [],
+   "sizeAbove14": [],
+   "colourChanges": 3,
+   "unexpectedColours": [],
+   "colourChangedIn": [
+    "cp-project-campus",
+    "path",
+    "svg"
+   ],
+   "iconBoxChanges": [],
+   "overflow": false,
+   "errors": []
+  },
+  {
+   "route": "journal",
+   "theme": "light",
+   "lang": "en",
+   "viewport": [
+    320,
+    640
+   ],
+   "sameDom": true,
+   "elements": 782,
+   "sizeChanges": 105,
+   "sizeDecreases": [],
+   "sizeAbove14": [],
+   "colourChanges": 37,
+   "unexpectedColours": [],
+   "colourChangedIn": [
+    "BDI",
+    "cp-content-campuses",
+    "cp-meta",
+    "cp-pagination-link "
+   ],
+   "iconBoxChanges": [],
+   "overflow": false,
+   "errors": []
+  }
+ ],
+ "listView": [
+  {
+   "vue": "petit",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    320,
+    640
+   ],
+   "requestedView": "list",
+   "view": "list",
+   "avant": {
+    "sizes": [
+     11
+    ],
+    "clipped": [],
+    "ownOverflow": [],
+    "twoLines": [],
+    "widest": 72.7,
+    "n": 24,
+    "overflow": false,
+    "errors": []
+   },
+   "apres": {
+    "sizes": [
+     11
+    ],
+    "clipped": [],
+    "ownOverflow": [],
+    "twoLines": [],
+    "widest": 72.7,
+    "n": 24,
+    "overflow": false,
+    "errors": []
+   }
+  },
+  {
+   "vue": "mobile",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    390,
+    844
+   ],
+   "requestedView": "list",
+   "view": "list",
+   "avant": {
+    "sizes": [
+     11
+    ],
+    "clipped": [],
+    "ownOverflow": [],
+    "twoLines": [],
+    "widest": 72.7,
+    "n": 24,
+    "overflow": false,
+    "errors": []
+   },
+   "apres": {
+    "sizes": [
+     11
+    ],
+    "clipped": [],
+    "ownOverflow": [],
+    "twoLines": [],
+    "widest": 72.7,
+    "n": 24,
+    "overflow": false,
+    "errors": []
+   }
+  },
+  {
+   "vue": "ar-sombre-mobile",
+   "theme": "dark",
+   "lang": "ar",
+   "viewport": [
+    390,
+    844
+   ],
+   "requestedView": "list",
+   "view": "list",
+   "avant": {
+    "sizes": [
+     11
+    ],
+    "clipped": [],
+    "ownOverflow": [],
+    "twoLines": [],
+    "widest": 74.4,
+    "n": 24,
+    "overflow": false,
+    "errors": []
+   },
+   "apres": {
+    "sizes": [
+     11
+    ],
+    "clipped": [],
+    "ownOverflow": [],
+    "twoLines": [],
+    "widest": 74.4,
+    "n": 24,
+    "overflow": false,
+    "errors": []
+   }
+  },
+  {
+   "vue": "tablette",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1024,
+    768
+   ],
+   "requestedView": "list",
+   "view": "list",
+   "avant": {
+    "sizes": [
+     11
+    ],
+    "clipped": [],
+    "ownOverflow": [],
+    "twoLines": [],
+    "widest": 72.7,
+    "n": 24,
+    "overflow": false,
+    "errors": []
+   },
+   "apres": {
+    "sizes": [
+     11
+    ],
+    "clipped": [],
+    "ownOverflow": [],
+    "twoLines": [],
+    "widest": 72.7,
+    "n": 24,
+    "overflow": false,
+    "errors": []
+   }
+  },
+  {
+   "vue": "seuil-1199",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1199,
+    800
+   ],
+   "requestedView": "list",
+   "view": "list",
+   "avant": {
+    "sizes": [
+     11
+    ],
+    "clipped": [],
+    "ownOverflow": [],
+    "twoLines": [],
+    "widest": 72.7,
+    "n": 24,
+    "overflow": false,
+    "errors": []
+   },
+   "apres": {
+    "sizes": [
+     11
+    ],
+    "clipped": [],
+    "ownOverflow": [],
+    "twoLines": [],
+    "widest": 72.7,
+    "n": 24,
+    "overflow": false,
+    "errors": []
+   }
+  },
+  {
+   "vue": "seuil-1200",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1200,
+    800
+   ],
+   "requestedView": "list",
+   "view": "list",
+   "avant": {
+    "sizes": [
+     11
+    ],
+    "clipped": [],
+    "ownOverflow": [],
+    "twoLines": [],
+    "widest": 72.7,
+    "n": 24,
+    "overflow": false,
+    "errors": []
+   },
+   "apres": {
+    "sizes": [
+     13
+    ],
+    "clipped": [],
+    "ownOverflow": [],
+    "twoLines": [],
+    "widest": 83.4,
+    "n": 24,
+    "overflow": false,
+    "errors": []
+   }
+  },
+  {
+   "vue": "seuil-1200-ar",
+   "theme": "light",
+   "lang": "ar",
+   "viewport": [
+    1200,
+    800
+   ],
+   "requestedView": "list",
+   "view": "list",
+   "avant": {
+    "sizes": [
+     11
+    ],
+    "clipped": [],
+    "ownOverflow": [],
+    "twoLines": [],
+    "widest": 74.4,
+    "n": 24,
+    "overflow": false,
+    "errors": []
+   },
+   "apres": {
+    "sizes": [
+     13
+    ],
+    "clipped": [],
+    "ownOverflow": [],
+    "twoLines": [
+     "خريج / خريجة"
+    ],
+    "widest": 84,
+    "n": 24,
+    "overflow": false,
+    "errors": []
+   }
+  },
+  {
+   "vue": "ordinateur",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "requestedView": "list",
+   "view": "list",
+   "avant": {
+    "sizes": [
+     11
+    ],
+    "clipped": [],
+    "ownOverflow": [],
+    "twoLines": [],
+    "widest": 72.7,
+    "n": 24,
+    "overflow": false,
+    "errors": []
+   },
+   "apres": {
+    "sizes": [
+     13
+    ],
+    "clipped": [],
+    "ownOverflow": [],
+    "twoLines": [],
+    "widest": 83.4,
+    "n": 24,
+    "overflow": false,
+    "errors": []
+   }
+  },
+  {
+   "vue": "ar-ordinateur",
+   "theme": "light",
+   "lang": "ar",
+   "viewport": [
+    1440,
+    900
+   ],
+   "requestedView": "list",
+   "view": "list",
+   "avant": {
+    "sizes": [
+     11
+    ],
+    "clipped": [],
+    "ownOverflow": [],
+    "twoLines": [],
+    "widest": 74.4,
+    "n": 24,
+    "overflow": false,
+    "errors": []
+   },
+   "apres": {
+    "sizes": [
+     13
+    ],
+    "clipped": [],
+    "ownOverflow": [],
+    "twoLines": [],
+    "widest": 85.4,
+    "n": 24,
+    "overflow": false,
+    "errors": []
+   }
+  },
+  {
+   "vue": "grille-petit",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    320,
+    640
+   ],
+   "requestedView": "grid",
+   "view": "grid",
+   "avant": {
+    "sizes": [
+     11
+    ],
+    "clipped": [],
+    "ownOverflow": [],
+    "twoLines": [],
+    "widest": 78.7,
+    "n": 24,
+    "overflow": false,
+    "errors": []
+   },
+   "apres": {
+    "sizes": [
+     13
+    ],
+    "clipped": [],
+    "ownOverflow": [],
+    "twoLines": [],
+    "widest": 89.4,
+    "n": 24,
+    "overflow": false,
+    "errors": []
+   }
+  },
+  {
+   "vue": "grille-petit-ar",
+   "theme": "light",
+   "lang": "ar",
+   "viewport": [
+    320,
+    640
+   ],
+   "requestedView": "grid",
+   "view": "grid",
+   "avant": {
+    "sizes": [
+     11
+    ],
+    "clipped": [],
+    "ownOverflow": [],
+    "twoLines": [],
+    "widest": 80.4,
+    "n": 24,
+    "overflow": false,
+    "errors": []
+   },
+   "apres": {
+    "sizes": [
+     13
+    ],
+    "clipped": [],
+    "ownOverflow": [],
+    "twoLines": [],
+    "widest": 91.4,
+    "n": 24,
+    "overflow": false,
+    "errors": []
+   }
+  },
+  {
+   "vue": "grille-ar-sombre-mobile",
+   "theme": "dark",
+   "lang": "ar",
+   "viewport": [
+    390,
+    844
+   ],
+   "requestedView": "grid",
+   "view": "grid",
+   "avant": {
+    "sizes": [
+     11
+    ],
+    "clipped": [],
+    "ownOverflow": [],
+    "twoLines": [],
+    "widest": 80.4,
+    "n": 24,
+    "overflow": false,
+    "errors": []
+   },
+   "apres": {
+    "sizes": [
+     13
+    ],
+    "clipped": [],
+    "ownOverflow": [],
+    "twoLines": [],
+    "widest": 91.4,
+    "n": 24,
+    "overflow": false,
+    "errors": []
+   }
+  }
+ ],
+ "runtime": {
+  "steps": [
+   [
+    "fr-clair",
+    {
+     "lang": "fr",
+     "theme": "light",
+     "status": [
+      [
+       13,
+       "rgb(12, 118, 119)"
+      ],
+      [
+       13,
+       "rgb(12, 118, 119)"
+      ],
+      [
+       13,
+       "rgb(12, 118, 119)"
+      ],
+      [
+       13,
+       "rgb(12, 118, 119)"
+      ]
+     ],
+     "meta": [
+      [
+       13,
+       "rgb(12, 118, 119)"
+      ],
+      [
+       13,
+       "rgb(12, 118, 119)"
+      ],
+      [
+       13,
+       "rgb(12, 118, 119)"
+      ],
+      [
+       13,
+       "rgb(12, 118, 119)"
+      ]
+     ],
+     "campus": [],
+     "actions": [],
+     "overflow": false
+    }
+   ],
+   [
+    "ar-sombre",
+    {
+     "lang": "ar",
+     "theme": "dark",
+     "status": [
+      [
+       13,
+       "rgb(244, 133, 189)"
+      ],
+      [
+       13,
+       "rgb(244, 133, 189)"
+      ],
+      [
+       13,
+       "rgb(244, 133, 189)"
+      ],
+      [
+       13,
+       "rgb(244, 133, 189)"
+      ]
+     ],
+     "meta": [
+      [
+       13,
+       "rgb(244, 133, 189)"
+      ],
+      [
+       13,
+       "rgb(244, 133, 189)"
+      ],
+      [
+       13,
+       "rgb(244, 133, 189)"
+      ],
+      [
+       13,
+       "rgb(244, 133, 189)"
+      ]
+     ],
+     "campus": [],
+     "actions": [],
+     "overflow": false
+    }
+   ],
+   [
+    "ar-sombre-fiche",
+    {
+     "lang": "ar",
+     "theme": "dark",
+     "status": [],
+     "meta": [],
+     "campus": [
+      [
+       14,
+       "rgb(244, 133, 189)"
+      ]
+     ],
+     "actions": [
+      [
+       14,
+       "rgb(255, 255, 255)"
+      ],
+      [
+       14,
+       "rgb(149, 176, 176)"
+      ]
+     ],
+     "overflow": false
+    }
+   ],
+   [
+    "en-clair-fiche",
+    {
+     "lang": "en",
+     "theme": "light",
+     "status": [],
+     "meta": [],
+     "campus": [
+      [
+       14,
+       "rgb(12, 118, 119)"
+      ]
+     ],
+     "actions": [
+      [
+       14,
+       "rgb(27, 27, 27)"
+      ],
+      [
+       14,
+       "rgb(83, 97, 99)"
+      ]
+     ],
+     "overflow": false
+    }
+   ]
+  ],
+  "errors": []
+ },
+ "densities": [
+  {
+   "viewport": [
+    1280,
+    720
+   ],
+   "route": "projects/ft-transcendence-building-together",
+   "lang": "fr",
+   "avant": {
+    "density": [],
+    "identity": [
+     195
+    ],
+    "overflow": false
+   },
+   "apres": {
+    "density": [],
+    "identity": [
+     223
+    ],
+    "overflow": false
+   },
+   "errors": []
+  },
+  {
+   "viewport": [
+    1280,
+    720
+   ],
+   "route": "journal/journal-an-evening-debugging",
+   "lang": "fr",
+   "avant": {
+    "density": [],
+    "identity": [
+     195
+    ],
+    "overflow": false
+   },
+   "apres": {
+    "density": [],
+    "identity": [
+     197
+    ],
+    "overflow": false
+   },
+   "errors": []
+  },
+  {
+   "viewport": [
+    1280,
+    720
+   ],
+   "route": "people/profile-leila-mansour",
+   "lang": "fr",
+   "avant": {
+    "density": [
+     "profile-detail:compact"
+    ],
+    "identity": [
+     136
+    ],
+    "overflow": false
+   },
+   "apres": {
+    "density": [
+     "profile-detail:compact"
+    ],
+    "identity": [
+     136
+    ],
+    "overflow": false
+   },
+   "errors": []
+  },
+  {
+   "viewport": [
+    1366,
+    768
+   ],
+   "route": "projects/ft-transcendence-building-together",
+   "lang": "fr",
+   "avant": {
+    "density": [],
+    "identity": [
+     195
+    ],
+    "overflow": false
+   },
+   "apres": {
+    "density": [],
+    "identity": [
+     223
+    ],
+    "overflow": false
+   },
+   "errors": []
+  },
+  {
+   "viewport": [
+    1366,
+    768
+   ],
+   "route": "journal/journal-an-evening-debugging",
+   "lang": "fr",
+   "avant": {
+    "density": [],
+    "identity": [
+     195
+    ],
+    "overflow": false
+   },
+   "apres": {
+    "density": [],
+    "identity": [
+     197
+    ],
+    "overflow": false
+   },
+   "errors": []
+  },
+  {
+   "viewport": [
+    1366,
+    768
+   ],
+   "route": "people/profile-leila-mansour",
+   "lang": "fr",
+   "avant": {
+    "density": [
+     "profile-detail:compact"
+    ],
+    "identity": [
+     136
+    ],
+    "overflow": false
+   },
+   "apres": {
+    "density": [
+     "profile-detail:compact"
+    ],
+    "identity": [
+     136
+    ],
+    "overflow": false
+   },
+   "errors": []
+  },
+  {
+   "viewport": [
+    1024,
+    768
+   ],
+   "route": "projects/ft-transcendence-building-together",
+   "lang": "fr",
+   "avant": {
+    "density": [],
+    "identity": [
+     220
+    ],
+    "overflow": false
+   },
+   "apres": {
+    "density": [],
+    "identity": [
+     223
+    ],
+    "overflow": false
+   },
+   "errors": []
+  },
+  {
+   "viewport": [
+    1024,
+    768
+   ],
+   "route": "journal/journal-an-evening-debugging",
+   "lang": "fr",
+   "avant": {
+    "density": [],
+    "identity": [
+     195
+    ],
+    "overflow": false
+   },
+   "apres": {
+    "density": [],
+    "identity": [
+     197
+    ],
+    "overflow": false
+   },
+   "errors": []
+  },
+  {
+   "viewport": [
+    1024,
+    768
+   ],
+   "route": "people/profile-leila-mansour",
+   "lang": "fr",
+   "avant": {
+    "density": [
+     "profile-detail:compact"
+    ],
+    "identity": [
+     136
+    ],
+    "overflow": false
+   },
+   "apres": {
+    "density": [
+     "profile-detail:compact"
+    ],
+    "identity": [
+     136
+    ],
+    "overflow": false
+   },
+   "errors": []
+  },
+  {
+   "viewport": [
+    900,
+    600
+   ],
+   "route": "projects/ft-transcendence-building-together",
+   "lang": "fr",
+   "avant": {
+    "density": [
+     "project-detail:dense"
+    ],
+    "identity": [
+     131
+    ],
+    "overflow": false
+   },
+   "apres": {
+    "density": [
+     "project-detail:dense"
+    ],
+    "identity": [
+     132
+    ],
+    "overflow": false
+   },
+   "errors": []
+  },
+  {
+   "viewport": [
+    900,
+    600
+   ],
+   "route": "journal/journal-an-evening-debugging",
+   "lang": "fr",
+   "avant": {
+    "density": [
+     "journal-detail:compact"
+    ],
+    "identity": [
+     154
+    ],
+    "overflow": false
+   },
+   "apres": {
+    "density": [
+     "journal-detail:compact"
+    ],
+    "identity": [
+     156
+    ],
+    "overflow": false
+   },
+   "errors": []
+  },
+  {
+   "viewport": [
+    900,
+    600
+   ],
+   "route": "people/profile-leila-mansour",
+   "lang": "fr",
+   "avant": {
+    "density": [
+     "profile-detail:compact"
+    ],
+    "identity": [
+     136
+    ],
+    "overflow": false
+   },
+   "apres": {
+    "density": [
+     "profile-detail:compact"
+    ],
+    "identity": [
+     136
+    ],
+    "overflow": false
+   },
+   "errors": []
+  },
+  {
+   "viewport": [
+    1280,
+    720
+   ],
+   "route": "projects/ft-transcendence-building-together",
+   "lang": "ar",
+   "avant": {
+    "density": [
+     "project-detail:compact"
+    ],
+    "identity": [
+     194
+    ],
+    "overflow": false
+   },
+   "apres": {
+    "density": [
+     "project-detail:compact"
+    ],
+    "identity": [
+     196
+    ],
+    "overflow": false
+   },
+   "errors": []
+  },
+  {
+   "viewport": [
+    1280,
+    720
+   ],
+   "route": "journal/journal-an-evening-debugging",
+   "lang": "ar",
+   "avant": {
+    "density": [],
+    "identity": [
+     174
+    ],
+    "overflow": false
+   },
+   "apres": {
+    "density": [],
+    "identity": [
+     186
+    ],
+    "overflow": false
+   },
+   "errors": []
+  },
+  {
+   "viewport": [
+    1280,
+    720
+   ],
+   "route": "people/profile-leila-mansour",
+   "lang": "ar",
+   "avant": {
+    "density": [
+     "profile-detail:compact"
+    ],
+    "identity": [
+     141
+    ],
+    "overflow": false
+   },
+   "apres": {
+    "density": [
+     "profile-detail:compact"
+    ],
+    "identity": [
+     141
+    ],
+    "overflow": false
+   },
+   "errors": []
+  }
+ ],
+ "dialogs": [
+  {
+   "vue": "signaler-mobile",
+   "kind": "report",
+   "lang": "fr",
+   "viewport": [
+    390,
+    844
+   ],
+   "avant": {
+    "audit": {
+     "texts": 39,
+     "below13": 11,
+     "below13Useful": 6,
+     "contrastFails": 2,
+     "smallSamples": [
+      "10 cp-profile-switch-caption «Dans ce profil»",
+      "11  «42 Awards»",
+      "11  «Chroniques»",
+      "11  «Explorer»",
+      "11  «Profils»",
+      "11  «Projets»",
+      "11 cp-favorite «Favoris»",
+      "11 cp-report-count «0 / 1 000»",
+      "11 cp-report-trigger «Signaler»",
+      "12 cp-profile-message «Envoyer un message»",
+      "12 cp-report-intro «Ce signalement res»"
+     ],
+     "failSamples": [
+      "3.8 rgb(247, 250, 250) on rgb(0, 142, 144) cp-report-submit «Enregistrer le s»",
+      "3.98 rgb(0, 142, 144) on rgb(255, 255, 255) cp-profile-message «Envoyer un messa»"
+     ]
+    },
+    "dialog": {
+     "cls": "cp-report-dialog",
+     "overflow": false,
+     "w": 366
+    },
+    "overflow": false,
+    "errors": []
+   },
+   "apres": {
+    "audit": {
+     "texts": 39,
+     "below13": 5,
+     "below13Useful": 0,
+     "contrastFails": 1,
+     "smallSamples": [
+      "11  «42 Awards»",
+      "11  «Chroniques»",
+      "11  «Explorer»",
+      "11  «Profils»",
+      "11  «Projets»"
+     ],
+     "failSamples": [
+      "3.8 rgb(247, 250, 250) on rgb(0, 142, 144) cp-report-submit «Enregistrer le s»"
+     ]
+    },
+    "dialog": {
+     "cls": "cp-report-dialog",
+     "overflow": false,
+     "w": 366
+    },
+    "overflow": false,
+    "errors": []
+   }
+  },
+  {
+   "vue": "message-mobile",
+   "kind": "message",
+   "lang": "fr",
+   "viewport": [
+    390,
+    844
+   ],
+   "avant": {
+    "audit": {
+     "texts": 39,
+     "below13": 11,
+     "below13Useful": 6,
+     "contrastFails": 2,
+     "smallSamples": [
+      "10 cp-profile-switch-caption «Dans ce profil»",
+      "11  «42 Awards»",
+      "11  «Chroniques»",
+      "11  «Explorer»",
+      "11  «Profils»",
+      "11  «Projets»",
+      "11 cp-favorite «Favoris»",
+      "11 cp-report-trigger «Signaler»",
+      "12 cp-profile-message «Envoyer un message»",
+      "12 cp-profile-message-hint «Aucun message réel»",
+      "12 cp-profile-message-recipient «@lmansour»"
+     ],
+     "failSamples": [
+      "3.8 rgb(247, 250, 250) on rgb(0, 142, 144) cp-profile-message-send «Envoyer»",
+      "3.98 rgb(0, 142, 144) on rgb(255, 255, 255) cp-profile-message «Envoyer un messa»"
+     ]
+    },
+    "dialog": {
+     "cls": "cp-profile-message-dialog",
+     "overflow": false,
+     "w": 352
+    },
+    "overflow": false,
+    "errors": []
+   },
+   "apres": {
+    "audit": {
+     "texts": 39,
+     "below13": 5,
+     "below13Useful": 0,
+     "contrastFails": 1,
+     "smallSamples": [
+      "11  «42 Awards»",
+      "11  «Chroniques»",
+      "11  «Explorer»",
+      "11  «Profils»",
+      "11  «Projets»"
+     ],
+     "failSamples": [
+      "3.8 rgb(247, 250, 250) on rgb(0, 142, 144) cp-profile-message-send «Envoyer»"
+     ]
+    },
+    "dialog": {
+     "cls": "cp-profile-message-dialog",
+     "overflow": false,
+     "w": 352
+    },
+    "overflow": false,
+    "errors": []
+   }
+  },
+  {
+   "vue": "signaler-ordinateur-ar",
+   "kind": "report",
+   "lang": "ar",
+   "viewport": [
+    1440,
+    900
+   ],
+   "avant": {
+    "audit": {
+     "texts": 57,
+     "below13": 9,
+     "below13Useful": 9,
+     "contrastFails": 3,
+     "smallSamples": [
+      "11 cp-favorite «المفضلة»",
+      "11 cp-report-count «0 / 1,000»",
+      "11 cp-report-trigger «إبلاغ»",
+      "12 cp-profile-heading-note «42 Awards»",
+      "12 cp-profile-message «إرسال رسالة»",
+      "12 cp-profile-tags «C»",
+      "12 cp-profile-tags «Debugging»",
+      "12 cp-profile-tags «POSIX»",
+      "12 cp-report-intro «يبقى البلاغ في علا»"
+     ],
+     "failSamples": [
+      "3.8 rgb(0, 142, 144) on rgb(247, 250, 250) cp-profile-campus «استكشف 42 Paris»",
+      "3.8 rgb(247, 250, 250) on rgb(0, 142, 144) cp-report-submit «حفظ البلاغ»",
+      "3.98 rgb(0, 142, 144) on rgb(255, 255, 255) cp-profile-message «إرسال رسالة»"
+     ]
+    },
+    "dialog": {
+     "cls": "cp-report-dialog",
+     "overflow": false,
+     "w": 510
+    },
+    "overflow": false,
+    "errors": []
+   },
+   "apres": {
+    "audit": {
+     "texts": 57,
+     "below13": 0,
+     "below13Useful": 0,
+     "contrastFails": 1,
+     "smallSamples": [],
+     "failSamples": [
+      "3.8 rgb(247, 250, 250) on rgb(0, 142, 144) cp-report-submit «حفظ البلاغ»"
+     ]
+    },
+    "dialog": {
+     "cls": "cp-report-dialog",
+     "overflow": false,
+     "w": 510
+    },
+    "overflow": false,
+    "errors": []
+   }
+  },
+  {
+   "vue": "message-petit",
+   "kind": "message",
+   "lang": "fr",
+   "viewport": [
+    320,
+    640
+   ],
+   "avant": {
+    "audit": {
+     "texts": 33,
+     "below13": 7,
+     "below13Useful": 6,
+     "contrastFails": 2,
+     "smallSamples": [
+      "10 cp-profile-switch-caption «Dans ce profil»",
+      "11  «Profils»",
+      "11 cp-favorite «Favoris»",
+      "11 cp-report-trigger «Signaler»",
+      "12 cp-profile-message «Envoyer un message»",
+      "12 cp-profile-message-hint «Aucun message réel»",
+      "12 cp-profile-message-recipient «@lmansour»"
+     ],
+     "failSamples": [
+      "3.8 rgb(247, 250, 250) on rgb(0, 142, 144) cp-profile-message-send «Envoyer»",
+      "3.98 rgb(0, 142, 144) on rgb(255, 255, 255) cp-profile-message «Envoyer un messa»"
+     ]
+    },
+    "dialog": {
+     "cls": "cp-profile-message-dialog",
+     "overflow": false,
+     "w": 282
+    },
+    "overflow": false,
+    "errors": []
+   },
+   "apres": {
+    "audit": {
+     "texts": 33,
+     "below13": 1,
+     "below13Useful": 0,
+     "contrastFails": 1,
+     "smallSamples": [
+      "11  «Profils»"
+     ],
+     "failSamples": [
+      "3.8 rgb(247, 250, 250) on rgb(0, 142, 144) cp-profile-message-send «Envoyer»"
+     ]
+    },
+    "dialog": {
+     "cls": "cp-profile-message-dialog",
+     "overflow": false,
+     "w": 282
+    },
+    "overflow": false,
+    "errors": []
+   }
+  }
+ ],
+ "checks": {
+  "scope": true,
+  "listView": true,
+  "dialogs": true,
+  "runtime": true,
+  "densities": true,
+  "scopeExplorer": true
+ },
+ "integration20261015": {
+  "cause": "La règle « Explorer and dock search » ramenait la ligne d’aide du globe de 14 à 13 px au-dessus de 700 px.",
+  "correction": "essai.css : .globe-status p à 13 px seulement sous @media(max-width:700px).",
+  "explorer": {
+   "1440x900-fr": {
+    "sameDom": true,
+    "sizeDecreases": [],
+    "sizeAbove14": [],
+    "unexpectedColours": [],
+    "hint": {
+     "socle": {
+      "text": "58 campus · 30 pays",
+      "size": "14px",
+      "level": null
+     },
+     "L": {
+      "text": "58 campus · 30 pays",
+      "size": "14px",
+      "level": null
+     }
+    }
+   },
+   "1440x900-ar-sombre": {
+    "sameDom": true,
+    "sizeDecreases": [],
+    "sizeAbove14": [],
+    "unexpectedColours": [],
+    "hint": {
+     "socle": {
+      "text": "58 فرعًا · 30 دولة",
+      "size": "14px",
+      "level": null
+     },
+     "L": {
+      "text": "58 فرعًا · 30 دولة",
+      "size": "14px",
+      "level": null
+     }
+    }
+   },
+   "390x844-fr": {
+    "sameDom": true,
+    "sizeDecreases": [],
+    "sizeAbove14": [],
+    "unexpectedColours": [],
+    "hint": {
+     "socle": {
+      "text": "58 campus · 30 pays",
+      "size": "12px",
+      "level": null
+     },
+     "L": {
+      "text": "58 campus · 30 pays",
+      "size": "13px",
+      "level": null
+     }
+    }
+   },
+   "667x375-ar": {
+    "sameDom": true,
+    "sizeDecreases": [],
+    "sizeAbove14": [],
+    "unexpectedColours": [],
+    "hint": {
+     "socle": {
+      "text": "58 فرعًا · 30 دولة",
+      "size": "12px",
+      "level": null
+     },
+     "L": {
+      "text": "58 فرعًا · 30 دولة",
+      "size": "13px",
+      "level": null
+     }
+    }
+   },
+   "844x390-fr": {
+    "sameDom": true,
+    "sizeDecreases": [],
+    "sizeAbove14": [],
+    "unexpectedColours": [],
+    "hint": {
+     "socle": {
+      "text": "58 campus · 30 pays",
+      "size": "14px",
+      "level": null
+     },
+     "L": {
+      "text": "58 campus · 30 pays",
+      "size": "14px",
+      "level": null
+     }
+    }
+   },
+   "monde": {
+    "sameDom": true,
+    "sizeDecreases": [],
+    "sizeAbove14": [],
+    "unexpectedColours": [],
+    "hint": {
+     "socle": {
+      "text": "58 campus · 30 pays",
+      "size": "14px",
+      "level": "world"
+     },
+     "L": {
+      "text": "58 campus · 30 pays",
+      "size": "14px",
+      "level": "world"
+     }
+    }
+   },
+   "pays-france": {
+    "sameDom": true,
+    "sizeDecreases": [],
+    "sizeAbove14": [],
+    "unexpectedColours": [],
+    "hint": {
+     "socle": {
+      "text": "Choisis un campus pour t’en approcher.",
+      "size": "14px",
+      "level": "country"
+     },
+     "L": {
+      "text": "Choisis un campus pour t’en approcher.",
+      "size": "14px",
+      "level": "country"
+     }
+    }
+   },
+   "campus-paris": {
+    "sameDom": true,
+    "sizeDecreases": [],
+    "sizeAbove14": [],
+    "unexpectedColours": [],
+    "hint": {
+     "socle": {
+      "text": "Explore les alentours du campus.",
+      "size": "14px",
+      "level": "campus"
+     },
+     "L": {
+      "text": "Explore les alentours du campus.",
+      "size": "14px",
+      "level": "campus"
+     }
+    }
+   }
+  },
+  "source": "checks/_selection-20261015/integration/results-perimetre-lisibilite.json"
+ }
+}

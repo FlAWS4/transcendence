@@ -1,0 +1,203 @@
+{
+  "date": "2026-10-08",
+  "sources": {
+    "index.html": "6a050a7916228b18bc8e308feecc1016297b37ddbf284f10482be256f78ccfd2",
+    "content-preview.html": "3c33fcd53cc0f4a22f1b7186794359782fa4b95c2574da55fb4569fb1e358c8c",
+    "profile-ui.mjs": "ce968e9e8e296c7668a8fccd44b09dbea582224591c1a436d7b7ae100e437dcb",
+    "content-preview.mjs": "0da3e0c3fbfdccc7857c982e745edbe23edf715ec98a6e9361b409c03f13fc2d",
+    "dock-search.mjs": "8430748c58d6f9d4f62bfc6f6ec5e1d250b63f70f01d719b9b03c8d983327235",
+    "journal-ui.mjs": "e5aa486d15d1e0e73cba53236f7501adecae17724e59938902ab51f3c981f3fe",
+    "welcome.mjs": "35c254e2af11013ab8dca15bed7c6ccca601bf74291a99f232bbd6da6ccfe96c",
+    "profile-data.mjs": "6fdeaa0357301f977e752c50bbf57c84ae20a894a2c343b9ae38f2d070a92460"
+  },
+  "preview": "preview.html#journal",
+  "dependencyPinning": {
+    "date": "2026-10-08",
+    "records": [
+      {
+        "file": "runtime/profile-ui.mjs",
+        "source": "archive/pre-chronicles-label-20261008/profile-ui.mjs",
+        "sourceSha256": "ce968e9e8e296c7668a8fccd44b09dbea582224591c1a436d7b7ae100e437dcb",
+        "sha256": "7d6f26236d5c87b6194bfdc9365ed96bf12e84a3f5d2e126abdff65cab3c4eb5",
+        "adapted": true
+      },
+      {
+        "file": "runtime/project-ui.mjs",
+        "source": "project-ui.mjs",
+        "sourceSha256": "5fd59f02e630be4bb6c4beb85579ecf0623edee0b08e2ef8f370778b1d319d6f",
+        "sha256": "cd822ae8c80f5c8d4a2c9ba589cfab2f0f66e92bfc73c0238e3f9754aa8a018e",
+        "adapted": true
+      },
+      {
+        "file": "runtime/journal-ui.mjs",
+        "source": "archive/pre-chronicles-label-20261008/journal-ui.mjs",
+        "sourceSha256": "e5aa486d15d1e0e73cba53236f7501adecae17724e59938902ab51f3c981f3fe",
+        "sha256": "e5aa486d15d1e0e73cba53236f7501adecae17724e59938902ab51f3c981f3fe",
+        "adapted": false
+      },
+      {
+        "file": "runtime/profile-sections.mjs",
+        "source": "profile-sections.mjs",
+        "sourceSha256": "463ca890b6fe5c0c352e8d59690f49d3e2140d3e91adf03f92b6311dd736a7ab",
+        "sha256": "463ca890b6fe5c0c352e8d59690f49d3e2140d3e91adf03f92b6311dd736a7ab",
+        "adapted": false
+      },
+      {
+        "file": "runtime/content-filters.mjs",
+        "source": "content-filters.mjs",
+        "sourceSha256": "2a5b89a8df3948846e04a778ff30c32889138c9220ef104fcba507b76451191a",
+        "sha256": "2a5b89a8df3948846e04a778ff30c32889138c9220ef104fcba507b76451191a",
+        "adapted": false
+      },
+      {
+        "file": "runtime/content-preferences.mjs",
+        "source": "content-preferences.mjs",
+        "sourceSha256": "0ddc07b2ceeea4209177204609eba24dc3faf726faec6a9f8d56719c26956310",
+        "sha256": "0ddc07b2ceeea4209177204609eba24dc3faf726faec6a9f8d56719c26956310",
+        "adapted": false
+      },
+      {
+        "file": "runtime/content-preview-data.mjs",
+        "source": "content-preview-data.mjs",
+        "sourceSha256": "54b78c63d5ffffdfda3aea20e06c9308afeea946b6284c16343158fd3af0a998",
+        "sha256": "54b78c63d5ffffdfda3aea20e06c9308afeea946b6284c16343158fd3af0a998",
+        "adapted": false
+      },
+      {
+        "file": "runtime/content-preview-art.mjs",
+        "source": "content-preview-art.mjs",
+        "sourceSha256": "6c62c48e772bf24496f57de9220f710ba91828c7ae708e65fa1851a1c03e40f1",
+        "sha256": "6c62c48e772bf24496f57de9220f710ba91828c7ae708e65fa1851a1c03e40f1",
+        "adapted": false
+      },
+      {
+        "file": "runtime/profile-data.mjs",
+        "source": "archive/pre-chronicles-label-20261008/profile-data.mjs",
+        "sourceSha256": "6fdeaa0357301f977e752c50bbf57c84ae20a894a2c343b9ae38f2d070a92460",
+        "sha256": "6fdeaa0357301f977e752c50bbf57c84ae20a894a2c343b9ae38f2d070a92460",
+        "adapted": false
+      },
+      {
+        "file": "runtime/dock-search.mjs",
+        "source": "archive/pre-chronicles-label-20261008/dock-search.mjs",
+        "sourceSha256": "8430748c58d6f9d4f62bfc6f6ec5e1d250b63f70f01d719b9b03c8d983327235",
+        "sha256": "8430748c58d6f9d4f62bfc6f6ec5e1d250b63f70f01d719b9b03c8d983327235",
+        "adapted": false
+      },
+      {
+        "file": "runtime/campus-details.mjs",
+        "source": "campus-details.mjs",
+        "sourceSha256": "f13ca048b7855824a48a1c812f4071653dce2f524e377c1ec6169559ed8f4c7b",
+        "sha256": "f13ca048b7855824a48a1c812f4071653dce2f524e377c1ec6169559ed8f4c7b",
+        "adapted": false
+      },
+      {
+        "file": "runtime/campus-website.mjs",
+        "source": "campus-website.mjs",
+        "sourceSha256": "79edb1a8461605b471b8e307a50c65ca4251a9dc8666d503ceedcaca8f374e04",
+        "sha256": "79edb1a8461605b471b8e307a50c65ca4251a9dc8666d503ceedcaca8f374e04",
+        "adapted": false
+      },
+      {
+        "file": "runtime/campus-sheet.mjs",
+        "source": "campus-sheet.mjs",
+        "sourceSha256": "433187f48dacdf1641cda6bc27bc198e67c4c5edbace110a4d69c2752f2b55b4",
+        "sha256": "433187f48dacdf1641cda6bc27bc198e67c4c5edbace110a4d69c2752f2b55b4",
+        "adapted": false
+      },
+      {
+        "file": "runtime/campus-map-dialog.mjs",
+        "source": "campus-map-dialog.mjs",
+        "sourceSha256": "f509460ec8524033bd9900d6aaf044d50a98575d1a33a9afbe12e521c03b0093",
+        "sha256": "91cc5f18739b2a015f5ec7f9deb71895d5fe6ae70d3dfc291dbbd856fb8bbd47",
+        "adapted": true
+      },
+      {
+        "file": "runtime/profiles.css",
+        "source": "profiles.css",
+        "sourceSha256": "045deb77ea6aae5703bbd85bfd4a5aecbb5e705a6ecacc6470b1be4eb02500a4",
+        "sha256": "045deb77ea6aae5703bbd85bfd4a5aecbb5e705a6ecacc6470b1be4eb02500a4",
+        "adapted": false
+      },
+      {
+        "file": "runtime/responsive-content.css",
+        "source": "responsive-content.css",
+        "sourceSha256": "8525f7cf6d3347add722ca9da33fe600027b65cc59ba096a93ed7efb4dab8d3b",
+        "sha256": "8525f7cf6d3347add722ca9da33fe600027b65cc59ba096a93ed7efb4dab8d3b",
+        "adapted": false
+      },
+      {
+        "file": "runtime/content-layout.css",
+        "source": "content-layout.css",
+        "sourceSha256": "a96bf6a639bbe0ec2e58372999f68ff96d35d34bf19989b721918bfe8846807d",
+        "sha256": "a96bf6a639bbe0ec2e58372999f68ff96d35d34bf19989b721918bfe8846807d",
+        "adapted": false
+      },
+      {
+        "file": "runtime/campus-details.css",
+        "source": "campus-details.css",
+        "sourceSha256": "7b9e0d929a5d65e0c4ba95c230cc918b0a1391cf702eca29784dbea4fc545f5f",
+        "sha256": "7b9e0d929a5d65e0c4ba95c230cc918b0a1391cf702eca29784dbea4fc545f5f",
+        "adapted": false
+      },
+      {
+        "file": "runtime/campuses.json",
+        "source": "campuses.json",
+        "sourceSha256": "0e6a49a0867443efd80ab1f0831e56c3a061beb136d6dc8642a462db6e41c850",
+        "sha256": "0e6a49a0867443efd80ab1f0831e56c3a061beb136d6dc8642a462db6e41c850",
+        "adapted": false
+      },
+      {
+        "file": "runtime/campus-location-overrides.json",
+        "source": "campus-location-overrides.json",
+        "sourceSha256": "13d3e1afac34bc0c5fe0ca7eafc21f917b4af8f0c524a642d525bf3e303f2b76",
+        "sha256": "13d3e1afac34bc0c5fe0ca7eafc21f917b4af8f0c524a642d525bf3e303f2b76",
+        "adapted": false
+      },
+      {
+        "file": "runtime/campus-websites.json",
+        "source": "campus-websites.json",
+        "sourceSha256": "cbb2f7193fe404b7b57e5c5b7dadee7163e54cb90743583b4c2347f4882aa512",
+        "sha256": "cbb2f7193fe404b7b57e5c5b7dadee7163e54cb90743583b4c2347f4882aa512",
+        "adapted": false
+      },
+      {
+        "file": "runtime/campus-website-locales.json",
+        "source": "campus-website-locales.json",
+        "sourceSha256": "2f3079b16cd05291a8387023ef2ed80855219ac0f61cbf7919ec6311c9572159",
+        "sha256": "2f3079b16cd05291a8387023ef2ed80855219ac0f61cbf7919ec6311c9572159",
+        "adapted": false
+      },
+      {
+        "file": "runtime/campus-profiles.json",
+        "source": "campus-profiles.json",
+        "sourceSha256": "bf7994d97cb2ad8310af013809aab5d2ffcc4b3dfc4bc580d36380bbd8c32b17",
+        "sha256": "bf7994d97cb2ad8310af013809aab5d2ffcc4b3dfc4bc580d36380bbd8c32b17",
+        "adapted": false
+      }
+    ],
+    "originalSourcesUnchanged": true,
+    "readerPathsOnly": true,
+    "sharedDependencies": "Unchanged map engine, geographic data, fonts, photos, portraits and unrelated UI modules remain in ../../. Runtime copies pin the data, campus and editorial UI affected by the 8 October changes.",
+    "knownLimits": "Static checks only in this maintenance pass; no browser replay. External map services and links may change. Native images remain shared and are not overwritten.",
+    "verification": {
+      "date": "2026-10-08",
+      "syntax": "All reader and runtime JavaScript passed node --check.",
+      "paths": "All local HTML, SVG symbols, ESM imports, import.meta URL references and profile asset paths resolve.",
+      "originalFiles": "38 pre-existing protected source files across this maintenance remained byte-identical.",
+      "data": {
+        "entries": 13,
+        "unfinishedArticleAuthors": 4,
+        "explicitLeads": true
+      },
+      "browserReplayed": false,
+      "routeURLs": "Five URL cases per reader preserve archive path/query under a parent asset base; reader and entry syntax pass. Browser replay delegated to the parent agent."
+    },
+    "readerHistory": {
+      "date": "2026-10-08",
+      "fix": "Reader page URL captured before initial history changes; all route URLs include this explicit path, independent of the shared asset base.",
+      "cache": "history-url-3",
+      "previousReaders": "*-before-history-url-fix-20261008.*"
+    }
+  }
+}

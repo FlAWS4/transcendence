@@ -1,0 +1,10809 @@
+{
+ "date": "2026-10-15",
+ "cases": [
+  {
+   "case": "fr1280-projet-145-reglages",
+   "t": 2.8,
+   "result": {
+    "lang": "fr",
+    "dir": "ltr",
+    "theme": "light"
+   }
+  },
+  {
+   "case": "fr1280-projet-145-bouton",
+   "t": 2.8,
+   "result": {
+    "id": "project-comment-sort",
+    "panel": "project-comment-sort-menu",
+    "docY": 623.734375
+   }
+  },
+  {
+   "case": "fr1280-projet-145-positions",
+   "t": 4.1,
+   "result": {
+    "i-centre": 428.0,
+    "ii-120": 587,
+    "iii-60": 647,
+    "iv-haut": 134,
+    "audit-120": 579,
+    "audit-60": 639
+   }
+  },
+  {
+   "case": "fr1280-projet-145-i-centre",
+   "t": 5.5,
+   "result": {
+    "label": "i-centre",
+    "buttonTop": 427.73,
+    "buttonBottom": 471.73,
+    "scrollY": 196,
+    "direction": "below",
+    "gap": 9,
+    "panel": [
+     480.73,
+     620.73,
+     916.31,
+     1182.5
+    ],
+    "sh/ch": [
+     138,
+     138
+    ],
+    "opts": [
+     [
+      "newest",
+      42,
+      true,
+      0
+     ],
+     [
+      "oldest",
+      42,
+      true,
+      0
+     ],
+     [
+      "popular",
+      42,
+      true,
+      0
+     ]
+    ],
+    "overlap": {},
+    "btt": null,
+    "limits": {
+     "top": 132,
+     "bottom144": 743,
+     "bottom145": 743,
+     "audit": 743
+    },
+    "edgeOffset": 0,
+    "eval": {
+     "clickable": true,
+     "direction": "below",
+     "roomEitherSide": true,
+     "allOptionsFull": true,
+     "scrollEqualsClient": true,
+     "overlaps": {},
+     "inViewport": true,
+     "ok": true,
+     "errors": []
+    },
+    "clickPoint": {
+     "x": 1063.41,
+     "y": 449.73,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    "buttonCover": {
+     "samples": 45,
+     "covered": 0,
+     "hits": {}
+    }
+   }
+  },
+  {
+   "case": "fr1280-projet-145-ii-120",
+   "t": 6.9,
+   "result": {
+    "label": "ii-120",
+    "buttonTop": 586.73,
+    "buttonBottom": 630.73,
+    "scrollY": 37,
+    "direction": "above",
+    "gap": 9,
+    "panel": [
+     437.73,
+     577.73,
+     916.31,
+     1182.5
+    ],
+    "sh/ch": [
+     138,
+     138
+    ],
+    "opts": [
+     [
+      "newest",
+      42,
+      true,
+      0
+     ],
+     [
+      "oldest",
+      42,
+      true,
+      0
+     ],
+     [
+      "popular",
+      42,
+      true,
+      0
+     ]
+    ],
+    "overlap": {},
+    "btt": null,
+    "limits": {
+     "top": 132,
+     "bottom144": 743,
+     "bottom145": 743,
+     "audit": 743
+    },
+    "edgeOffset": 0,
+    "eval": {
+     "clickable": true,
+     "direction": "above",
+     "roomEitherSide": true,
+     "allOptionsFull": true,
+     "scrollEqualsClient": true,
+     "overlaps": {},
+     "inViewport": true,
+     "ok": true,
+     "errors": []
+    },
+    "clickPoint": {
+     "x": 1063.41,
+     "y": 608.73,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    "buttonCover": {
+     "samples": 45,
+     "covered": 0,
+     "hits": {}
+    }
+   }
+  },
+  {
+   "case": "fr1280-projet-145-iii-60",
+   "t": 8.3,
+   "result": {
+    "label": "iii-60",
+    "buttonTop": 623.73,
+    "buttonBottom": 667.73,
+    "scrollY": 0,
+    "direction": "above",
+    "gap": 9,
+    "panel": [
+     474.73,
+     614.73,
+     916.31,
+     1182.5
+    ],
+    "sh/ch": [
+     138,
+     138
+    ],
+    "opts": [
+     [
+      "newest",
+      42,
+      true,
+      0
+     ],
+     [
+      "oldest",
+      42,
+      true,
+      0
+     ],
+     [
+      "popular",
+      42,
+      true,
+      0
+     ]
+    ],
+    "overlap": {},
+    "btt": null,
+    "limits": {
+     "top": 132,
+     "bottom144": 743,
+     "bottom145": 743,
+     "audit": 743
+    },
+    "edgeOffset": 0,
+    "eval": {
+     "clickable": true,
+     "direction": "above",
+     "roomEitherSide": true,
+     "allOptionsFull": true,
+     "scrollEqualsClient": true,
+     "overlaps": {},
+     "inViewport": true,
+     "ok": true,
+     "errors": []
+    },
+    "clickPoint": {
+     "x": 1063.41,
+     "y": 645.73,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    "buttonCover": {
+     "samples": 45,
+     "covered": 0,
+     "hits": {}
+    }
+   }
+  },
+  {
+   "case": "fr1280-projet-145-iv-haut",
+   "t": 9.7,
+   "result": {
+    "label": "iv-haut",
+    "buttonTop": 133.73,
+    "buttonBottom": 177.73,
+    "scrollY": 490,
+    "direction": "below",
+    "gap": 9,
+    "panel": [
+     186.73,
+     326.73,
+     916.31,
+     1182.5
+    ],
+    "sh/ch": [
+     138,
+     138
+    ],
+    "opts": [
+     [
+      "newest",
+      42,
+      true,
+      0
+     ],
+     [
+      "oldest",
+      42,
+      true,
+      0
+     ],
+     [
+      "popular",
+      42,
+      true,
+      0
+     ]
+    ],
+    "overlap": {},
+    "btt": null,
+    "limits": {
+     "top": 132,
+     "bottom144": 743,
+     "bottom145": 743,
+     "audit": 743
+    },
+    "edgeOffset": 0,
+    "eval": {
+     "clickable": true,
+     "direction": "below",
+     "roomEitherSide": true,
+     "allOptionsFull": true,
+     "scrollEqualsClient": true,
+     "overlaps": {},
+     "inViewport": true,
+     "ok": true,
+     "errors": []
+    },
+    "clickPoint": {
+     "x": 1063.41,
+     "y": 155.73,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    "buttonCover": {
+     "samples": 45,
+     "covered": 0,
+     "hits": {}
+    }
+   }
+  },
+  {
+   "case": "fr1280-projet-145-audit-120",
+   "t": 11.1,
+   "result": {
+    "label": "audit-120",
+    "buttonTop": 578.73,
+    "buttonBottom": 622.73,
+    "scrollY": 45,
+    "direction": "above",
+    "gap": 9,
+    "panel": [
+     429.73,
+     569.73,
+     916.31,
+     1182.5
+    ],
+    "sh/ch": [
+     138,
+     138
+    ],
+    "opts": [
+     [
+      "newest",
+      42,
+      true,
+      0
+     ],
+     [
+      "oldest",
+      42,
+      true,
+      0
+     ],
+     [
+      "popular",
+      42,
+      true,
+      0
+     ]
+    ],
+    "overlap": {},
+    "btt": null,
+    "limits": {
+     "top": 132,
+     "bottom144": 743,
+     "bottom145": 743,
+     "audit": 743
+    },
+    "edgeOffset": 0,
+    "eval": {
+     "clickable": true,
+     "direction": "above",
+     "roomEitherSide": true,
+     "allOptionsFull": true,
+     "scrollEqualsClient": true,
+     "overlaps": {},
+     "inViewport": true,
+     "ok": true,
+     "errors": []
+    },
+    "clickPoint": {
+     "x": 1063.41,
+     "y": 600.73,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    "buttonCover": {
+     "samples": 45,
+     "covered": 0,
+     "hits": {}
+    }
+   }
+  },
+  {
+   "case": "fr1280-projet-145-audit-60",
+   "t": 12.4,
+   "result": {
+    "label": "audit-60",
+    "buttonTop": 623.73,
+    "buttonBottom": 667.73,
+    "scrollY": 0,
+    "direction": "above",
+    "gap": 9,
+    "panel": [
+     474.73,
+     614.73,
+     916.31,
+     1182.5
+    ],
+    "sh/ch": [
+     138,
+     138
+    ],
+    "opts": [
+     [
+      "newest",
+      42,
+      true,
+      0
+     ],
+     [
+      "oldest",
+      42,
+      true,
+      0
+     ],
+     [
+      "popular",
+      42,
+      true,
+      0
+     ]
+    ],
+    "overlap": {},
+    "btt": null,
+    "limits": {
+     "top": 132,
+     "bottom144": 743,
+     "bottom145": 743,
+     "audit": 743
+    },
+    "edgeOffset": 0,
+    "eval": {
+     "clickable": true,
+     "direction": "above",
+     "roomEitherSide": true,
+     "allOptionsFull": true,
+     "scrollEqualsClient": true,
+     "overlaps": {},
+     "inViewport": true,
+     "ok": true,
+     "errors": []
+    },
+    "clickPoint": {
+     "x": 1063.41,
+     "y": 645.73,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    "buttonCover": {
+     "samples": 45,
+     "covered": 0,
+     "hits": {}
+    }
+   }
+  },
+  {
+   "case": "fr1280-projet-145-balayage",
+   "t": 49.5,
+   "result": [
+    {
+     "label": "balayage@102",
+     "buttonTop": 101.73,
+     "buttonBottom": 145.73,
+     "scrollY": 522,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      154.73,
+      294.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 123.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@130",
+     "buttonTop": 129.73,
+     "buttonBottom": 173.73,
+     "scrollY": 494,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      182.73,
+      322.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 151.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@158",
+     "buttonTop": 157.73,
+     "buttonBottom": 201.73,
+     "scrollY": 466,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      210.73,
+      350.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 179.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@186",
+     "buttonTop": 185.73,
+     "buttonBottom": 229.73,
+     "scrollY": 438,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      238.73,
+      378.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 207.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@214",
+     "buttonTop": 213.73,
+     "buttonBottom": 257.73,
+     "scrollY": 410,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      266.73,
+      406.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 235.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@242",
+     "buttonTop": 241.73,
+     "buttonBottom": 285.73,
+     "scrollY": 382,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      294.73,
+      434.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 263.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@270",
+     "buttonTop": 269.73,
+     "buttonBottom": 313.73,
+     "scrollY": 354,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      322.73,
+      462.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 291.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@298",
+     "buttonTop": 297.73,
+     "buttonBottom": 341.73,
+     "scrollY": 326,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      350.73,
+      490.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 319.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@326",
+     "buttonTop": 325.73,
+     "buttonBottom": 369.73,
+     "scrollY": 298,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      378.73,
+      518.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 347.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@354",
+     "buttonTop": 353.73,
+     "buttonBottom": 397.73,
+     "scrollY": 270,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      406.73,
+      546.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 375.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@382",
+     "buttonTop": 381.73,
+     "buttonBottom": 425.73,
+     "scrollY": 242,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      434.73,
+      574.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 403.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@410",
+     "buttonTop": 409.73,
+     "buttonBottom": 453.73,
+     "scrollY": 214,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      462.73,
+      602.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 431.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@438",
+     "buttonTop": 437.73,
+     "buttonBottom": 481.73,
+     "scrollY": 186,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      490.73,
+      630.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 459.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@466",
+     "buttonTop": 465.73,
+     "buttonBottom": 509.73,
+     "scrollY": 158,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      518.73,
+      658.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 487.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@494",
+     "buttonTop": 493.73,
+     "buttonBottom": 537.73,
+     "scrollY": 130,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      546.73,
+      686.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 515.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@522",
+     "buttonTop": 521.73,
+     "buttonBottom": 565.73,
+     "scrollY": 102,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      574.73,
+      714.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 543.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@550",
+     "buttonTop": 549.73,
+     "buttonBottom": 593.73,
+     "scrollY": 74,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      602.73,
+      742.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 571.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@578",
+     "buttonTop": 577.73,
+     "buttonBottom": 621.73,
+     "scrollY": 46,
+     "direction": "above",
+     "gap": 9,
+     "panel": [
+      428.73,
+      568.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "above",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 599.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@606",
+     "buttonTop": 605.73,
+     "buttonBottom": 649.73,
+     "scrollY": 18,
+     "direction": "above",
+     "gap": 9,
+     "panel": [
+      456.73,
+      596.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "above",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 627.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@634",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "above",
+     "gap": 9,
+     "panel": [
+      474.73,
+      614.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "above",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@662",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "above",
+     "gap": 9,
+     "panel": [
+      474.73,
+      614.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "above",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@690",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "above",
+     "gap": 9,
+     "panel": [
+      474.73,
+      614.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "above",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@718",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "above",
+     "gap": 9,
+     "panel": [
+      474.73,
+      614.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "above",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@746",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "above",
+     "gap": 9,
+     "panel": [
+      474.73,
+      614.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "above",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@774",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "above",
+     "gap": 9,
+     "panel": [
+      474.73,
+      614.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "above",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@802",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "above",
+     "gap": 9,
+     "panel": [
+      474.73,
+      614.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "above",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@830",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "above",
+     "gap": 9,
+     "panel": [
+      474.73,
+      614.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "above",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    }
+   ]
+  },
+  {
+   "case": "fr1280-projet-145-balayage-bilan",
+   "t": 49.5,
+   "result": {
+    "positions": 27,
+    "cliquables": 27,
+    "echecs": 0,
+    "detailEchecs": []
+   }
+  },
+  {
+   "case": "fr1280-projet-144-reglages",
+   "t": 52.0,
+   "result": {
+    "lang": "fr",
+    "dir": "ltr",
+    "theme": "light"
+   }
+  },
+  {
+   "case": "fr1280-projet-144-bouton",
+   "t": 52.0,
+   "result": {
+    "id": "project-comment-sort",
+    "panel": "project-comment-sort-menu",
+    "docY": 623.734375
+   }
+  },
+  {
+   "case": "fr1280-projet-144-positions",
+   "t": 53.3,
+   "result": {
+    "i-centre": 428.0,
+    "ii-120": 587,
+    "iii-60": 647,
+    "iv-haut": 134,
+    "audit-120": 579,
+    "audit-60": 639
+   }
+  },
+  {
+   "case": "fr1280-projet-144-i-centre",
+   "t": 54.6,
+   "result": {
+    "label": "i-centre",
+    "buttonTop": 427.73,
+    "buttonBottom": 471.73,
+    "scrollY": 196,
+    "direction": "below",
+    "gap": 9,
+    "panel": [
+     480.73,
+     620.73,
+     916.31,
+     1182.5
+    ],
+    "sh/ch": [
+     138,
+     138
+    ],
+    "opts": [
+     [
+      "newest",
+      42,
+      true,
+      0
+     ],
+     [
+      "oldest",
+      42,
+      true,
+      0
+     ],
+     [
+      "popular",
+      42,
+      true,
+      0
+     ]
+    ],
+    "overlap": {},
+    "btt": null,
+    "limits": {
+     "top": 132,
+     "bottom144": 743,
+     "bottom145": 743,
+     "audit": 743
+    },
+    "edgeOffset": 0,
+    "eval": {
+     "clickable": true,
+     "direction": "below",
+     "roomEitherSide": true,
+     "allOptionsFull": true,
+     "scrollEqualsClient": true,
+     "overlaps": {},
+     "inViewport": true,
+     "ok": true,
+     "errors": []
+    },
+    "clickPoint": {
+     "x": 1063.41,
+     "y": 449.73,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    "buttonCover": {
+     "samples": 45,
+     "covered": 0,
+     "hits": {}
+    }
+   }
+  },
+  {
+   "case": "fr1280-projet-144-ii-120",
+   "t": 56.1,
+   "result": {
+    "label": "ii-120",
+    "buttonTop": 586.73,
+    "buttonBottom": 630.73,
+    "scrollY": 37,
+    "direction": "below",
+    "gap": 9,
+    "panel": [
+     639.73,
+     743,
+     916.31,
+     1182.5
+    ],
+    "sh/ch": [
+     138,
+     101
+    ],
+    "opts": [
+     [
+      "newest",
+      42,
+      true,
+      0
+     ],
+     [
+      "oldest",
+      42,
+      true,
+      0
+     ],
+     [
+      "popular",
+      11.27,
+      false,
+      0
+     ]
+    ],
+    "overlap": {},
+    "btt": null,
+    "limits": {
+     "top": 132,
+     "bottom144": 743,
+     "bottom145": 743,
+     "audit": 743
+    },
+    "edgeOffset": 0,
+    "eval": {
+     "clickable": true,
+     "direction": "below",
+     "roomEitherSide": true,
+     "allOptionsFull": false,
+     "scrollEqualsClient": false,
+     "overlaps": {},
+     "inViewport": true,
+     "ok": false,
+     "errors": []
+    },
+    "clickPoint": {
+     "x": 1063.41,
+     "y": 608.73,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    "buttonCover": {
+     "samples": 45,
+     "covered": 0,
+     "hits": {}
+    }
+   }
+  },
+  {
+   "case": "fr1280-projet-144-iii-60",
+   "t": 57.5,
+   "result": {
+    "label": "iii-60",
+    "buttonTop": 623.73,
+    "buttonBottom": 667.73,
+    "scrollY": 0,
+    "direction": "below",
+    "gap": 9,
+    "panel": [
+     676.73,
+     743,
+     916.31,
+     1182.5
+    ],
+    "sh/ch": [
+     138,
+     64
+    ],
+    "opts": [
+     [
+      "newest",
+      42,
+      true,
+      0
+     ],
+     [
+      "oldest",
+      16.27,
+      false,
+      0
+     ],
+     [
+      "popular",
+      0,
+      false,
+      0
+     ]
+    ],
+    "overlap": {},
+    "btt": null,
+    "limits": {
+     "top": 132,
+     "bottom144": 743,
+     "bottom145": 743,
+     "audit": 743
+    },
+    "edgeOffset": 0,
+    "eval": {
+     "clickable": true,
+     "direction": "below",
+     "roomEitherSide": true,
+     "allOptionsFull": false,
+     "scrollEqualsClient": false,
+     "overlaps": {},
+     "inViewport": true,
+     "ok": false,
+     "errors": []
+    },
+    "clickPoint": {
+     "x": 1063.41,
+     "y": 645.73,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    "buttonCover": {
+     "samples": 45,
+     "covered": 0,
+     "hits": {}
+    }
+   }
+  },
+  {
+   "case": "fr1280-projet-144-iv-haut",
+   "t": 58.8,
+   "result": {
+    "label": "iv-haut",
+    "buttonTop": 133.73,
+    "buttonBottom": 177.73,
+    "scrollY": 490,
+    "direction": "below",
+    "gap": 9,
+    "panel": [
+     186.73,
+     326.73,
+     916.31,
+     1182.5
+    ],
+    "sh/ch": [
+     138,
+     138
+    ],
+    "opts": [
+     [
+      "newest",
+      42,
+      true,
+      0
+     ],
+     [
+      "oldest",
+      42,
+      true,
+      0
+     ],
+     [
+      "popular",
+      42,
+      true,
+      0
+     ]
+    ],
+    "overlap": {},
+    "btt": null,
+    "limits": {
+     "top": 132,
+     "bottom144": 743,
+     "bottom145": 743,
+     "audit": 743
+    },
+    "edgeOffset": 0,
+    "eval": {
+     "clickable": true,
+     "direction": "below",
+     "roomEitherSide": true,
+     "allOptionsFull": true,
+     "scrollEqualsClient": true,
+     "overlaps": {},
+     "inViewport": true,
+     "ok": true,
+     "errors": []
+    },
+    "clickPoint": {
+     "x": 1063.41,
+     "y": 155.73,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    "buttonCover": {
+     "samples": 45,
+     "covered": 0,
+     "hits": {}
+    }
+   }
+  },
+  {
+   "case": "fr1280-projet-144-audit-120",
+   "t": 60.2,
+   "result": {
+    "label": "audit-120",
+    "buttonTop": 578.73,
+    "buttonBottom": 622.73,
+    "scrollY": 45,
+    "direction": "below",
+    "gap": 9,
+    "panel": [
+     631.73,
+     743,
+     916.31,
+     1182.5
+    ],
+    "sh/ch": [
+     138,
+     109
+    ],
+    "opts": [
+     [
+      "newest",
+      42,
+      true,
+      0
+     ],
+     [
+      "oldest",
+      42,
+      true,
+      0
+     ],
+     [
+      "popular",
+      19.27,
+      false,
+      0
+     ]
+    ],
+    "overlap": {},
+    "btt": null,
+    "limits": {
+     "top": 132,
+     "bottom144": 743,
+     "bottom145": 743,
+     "audit": 743
+    },
+    "edgeOffset": 0,
+    "eval": {
+     "clickable": true,
+     "direction": "below",
+     "roomEitherSide": true,
+     "allOptionsFull": false,
+     "scrollEqualsClient": false,
+     "overlaps": {},
+     "inViewport": true,
+     "ok": false,
+     "errors": []
+    },
+    "clickPoint": {
+     "x": 1063.41,
+     "y": 600.73,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    "buttonCover": {
+     "samples": 45,
+     "covered": 0,
+     "hits": {}
+    }
+   }
+  },
+  {
+   "case": "fr1280-projet-144-audit-60",
+   "t": 61.6,
+   "result": {
+    "label": "audit-60",
+    "buttonTop": 623.73,
+    "buttonBottom": 667.73,
+    "scrollY": 0,
+    "direction": "below",
+    "gap": 9,
+    "panel": [
+     676.73,
+     743,
+     916.31,
+     1182.5
+    ],
+    "sh/ch": [
+     138,
+     64
+    ],
+    "opts": [
+     [
+      "newest",
+      42,
+      true,
+      0
+     ],
+     [
+      "oldest",
+      16.27,
+      false,
+      0
+     ],
+     [
+      "popular",
+      0,
+      false,
+      0
+     ]
+    ],
+    "overlap": {},
+    "btt": null,
+    "limits": {
+     "top": 132,
+     "bottom144": 743,
+     "bottom145": 743,
+     "audit": 743
+    },
+    "edgeOffset": 0,
+    "eval": {
+     "clickable": true,
+     "direction": "below",
+     "roomEitherSide": true,
+     "allOptionsFull": false,
+     "scrollEqualsClient": false,
+     "overlaps": {},
+     "inViewport": true,
+     "ok": false,
+     "errors": []
+    },
+    "clickPoint": {
+     "x": 1063.41,
+     "y": 645.73,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    "buttonCover": {
+     "samples": 45,
+     "covered": 0,
+     "hits": {}
+    }
+   }
+  },
+  {
+   "case": "fr1280-projet-144-balayage",
+   "t": 98.6,
+   "result": [
+    {
+     "label": "balayage@102",
+     "buttonTop": 101.73,
+     "buttonBottom": 145.73,
+     "scrollY": 522,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      154.73,
+      294.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 123.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@130",
+     "buttonTop": 129.73,
+     "buttonBottom": 173.73,
+     "scrollY": 494,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      182.73,
+      322.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 151.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@158",
+     "buttonTop": 157.73,
+     "buttonBottom": 201.73,
+     "scrollY": 466,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      210.73,
+      350.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 179.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@186",
+     "buttonTop": 185.73,
+     "buttonBottom": 229.73,
+     "scrollY": 438,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      238.73,
+      378.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 207.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@214",
+     "buttonTop": 213.73,
+     "buttonBottom": 257.73,
+     "scrollY": 410,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      266.73,
+      406.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 235.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@242",
+     "buttonTop": 241.73,
+     "buttonBottom": 285.73,
+     "scrollY": 382,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      294.73,
+      434.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 263.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@270",
+     "buttonTop": 269.73,
+     "buttonBottom": 313.73,
+     "scrollY": 354,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      322.73,
+      462.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 291.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@298",
+     "buttonTop": 297.73,
+     "buttonBottom": 341.73,
+     "scrollY": 326,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      350.73,
+      490.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 319.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@326",
+     "buttonTop": 325.73,
+     "buttonBottom": 369.73,
+     "scrollY": 298,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      378.73,
+      518.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 347.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@354",
+     "buttonTop": 353.73,
+     "buttonBottom": 397.73,
+     "scrollY": 270,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      406.73,
+      546.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 375.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@382",
+     "buttonTop": 381.73,
+     "buttonBottom": 425.73,
+     "scrollY": 242,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      434.73,
+      574.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 403.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@410",
+     "buttonTop": 409.73,
+     "buttonBottom": 453.73,
+     "scrollY": 214,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      462.73,
+      602.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 431.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@438",
+     "buttonTop": 437.73,
+     "buttonBottom": 481.73,
+     "scrollY": 186,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      490.73,
+      630.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 459.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@466",
+     "buttonTop": 465.73,
+     "buttonBottom": 509.73,
+     "scrollY": 158,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      518.73,
+      658.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 487.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@494",
+     "buttonTop": 493.73,
+     "buttonBottom": 537.73,
+     "scrollY": 130,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      546.73,
+      686.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 515.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@522",
+     "buttonTop": 521.73,
+     "buttonBottom": 565.73,
+     "scrollY": 102,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      574.73,
+      714.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 543.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@550",
+     "buttonTop": 549.73,
+     "buttonBottom": 593.73,
+     "scrollY": 74,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      602.73,
+      742.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 571.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@578",
+     "buttonTop": 577.73,
+     "buttonBottom": 621.73,
+     "scrollY": 46,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      630.73,
+      743,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      110
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       20.27,
+       false,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": false,
+      "scrollEqualsClient": false,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": false,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 599.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@606",
+     "buttonTop": 605.73,
+     "buttonBottom": 649.73,
+     "scrollY": 18,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      658.73,
+      743,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      82
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       34.27,
+       false,
+       0
+      ],
+      [
+       "popular",
+       0,
+       false,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": false,
+      "scrollEqualsClient": false,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": false,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 627.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@634",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      676.73,
+      743,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      64
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       16.27,
+       false,
+       0
+      ],
+      [
+       "popular",
+       0,
+       false,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": false,
+      "scrollEqualsClient": false,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": false,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@662",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      676.73,
+      743,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      64
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       16.27,
+       false,
+       0
+      ],
+      [
+       "popular",
+       0,
+       false,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": false,
+      "scrollEqualsClient": false,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": false,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@690",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      676.73,
+      743,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      64
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       16.27,
+       false,
+       0
+      ],
+      [
+       "popular",
+       0,
+       false,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": false,
+      "scrollEqualsClient": false,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": false,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@718",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      676.73,
+      743,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      64
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       16.27,
+       false,
+       0
+      ],
+      [
+       "popular",
+       0,
+       false,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": false,
+      "scrollEqualsClient": false,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": false,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@746",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      676.73,
+      743,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      64
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       16.27,
+       false,
+       0
+      ],
+      [
+       "popular",
+       0,
+       false,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": false,
+      "scrollEqualsClient": false,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": false,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@774",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      676.73,
+      743,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      64
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       16.27,
+       false,
+       0
+      ],
+      [
+       "popular",
+       0,
+       false,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": false,
+      "scrollEqualsClient": false,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": false,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@802",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      676.73,
+      743,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      64
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       16.27,
+       false,
+       0
+      ],
+      [
+       "popular",
+       0,
+       false,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": false,
+      "scrollEqualsClient": false,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": false,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@830",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      676.73,
+      743,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      64
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       16.27,
+       false,
+       0
+      ],
+      [
+       "popular",
+       0,
+       false,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": false,
+      "scrollEqualsClient": false,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": false,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    }
+   ]
+  },
+  {
+   "case": "fr1280-projet-144-balayage-bilan",
+   "t": 98.6,
+   "result": {
+    "positions": 27,
+    "cliquables": 27,
+    "echecs": 10,
+    "detailEchecs": [
+     {
+      "label": "balayage@578",
+      "buttonTop": 577.73,
+      "buttonBottom": 621.73,
+      "scrollY": 46,
+      "direction": "below",
+      "gap": 9,
+      "panel": [
+       630.73,
+       743,
+       916.31,
+       1182.5
+      ],
+      "sh/ch": [
+       138,
+       110
+      ],
+      "opts": [
+       [
+        "newest",
+        42,
+        true,
+        0
+       ],
+       [
+        "oldest",
+        42,
+        true,
+        0
+       ],
+       [
+        "popular",
+        20.27,
+        false,
+        0
+       ]
+      ],
+      "overlap": {},
+      "btt": null,
+      "limits": {
+       "top": 132,
+       "bottom144": 743,
+       "bottom145": 743,
+       "audit": 743
+      },
+      "edgeOffset": 0,
+      "eval": {
+       "clickable": true,
+       "direction": "below",
+       "roomEitherSide": true,
+       "allOptionsFull": false,
+       "scrollEqualsClient": false,
+       "overlaps": {},
+       "inViewport": true,
+       "ok": false,
+       "errors": []
+      },
+      "clickPoint": {
+       "x": 1063.41,
+       "y": 599.73,
+       "fx": 0.5,
+       "fy": 0.5
+      },
+      "buttonCover": {
+       "samples": 45,
+       "covered": 0,
+       "hits": {}
+      }
+     },
+     {
+      "label": "balayage@606",
+      "buttonTop": 605.73,
+      "buttonBottom": 649.73,
+      "scrollY": 18,
+      "direction": "below",
+      "gap": 9,
+      "panel": [
+       658.73,
+       743,
+       916.31,
+       1182.5
+      ],
+      "sh/ch": [
+       138,
+       82
+      ],
+      "opts": [
+       [
+        "newest",
+        42,
+        true,
+        0
+       ],
+       [
+        "oldest",
+        34.27,
+        false,
+        0
+       ],
+       [
+        "popular",
+        0,
+        false,
+        0
+       ]
+      ],
+      "overlap": {},
+      "btt": null,
+      "limits": {
+       "top": 132,
+       "bottom144": 743,
+       "bottom145": 743,
+       "audit": 743
+      },
+      "edgeOffset": 0,
+      "eval": {
+       "clickable": true,
+       "direction": "below",
+       "roomEitherSide": true,
+       "allOptionsFull": false,
+       "scrollEqualsClient": false,
+       "overlaps": {},
+       "inViewport": true,
+       "ok": false,
+       "errors": []
+      },
+      "clickPoint": {
+       "x": 1063.41,
+       "y": 627.73,
+       "fx": 0.5,
+       "fy": 0.5
+      },
+      "buttonCover": {
+       "samples": 45,
+       "covered": 0,
+       "hits": {}
+      }
+     },
+     {
+      "label": "balayage@634",
+      "buttonTop": 623.73,
+      "buttonBottom": 667.73,
+      "scrollY": 0,
+      "direction": "below",
+      "gap": 9,
+      "panel": [
+       676.73,
+       743,
+       916.31,
+       1182.5
+      ],
+      "sh/ch": [
+       138,
+       64
+      ],
+      "opts": [
+       [
+        "newest",
+        42,
+        true,
+        0
+       ],
+       [
+        "oldest",
+        16.27,
+        false,
+        0
+       ],
+       [
+        "popular",
+        0,
+        false,
+        0
+       ]
+      ],
+      "overlap": {},
+      "btt": null,
+      "limits": {
+       "top": 132,
+       "bottom144": 743,
+       "bottom145": 743,
+       "audit": 743
+      },
+      "edgeOffset": 0,
+      "eval": {
+       "clickable": true,
+       "direction": "below",
+       "roomEitherSide": true,
+       "allOptionsFull": false,
+       "scrollEqualsClient": false,
+       "overlaps": {},
+       "inViewport": true,
+       "ok": false,
+       "errors": []
+      },
+      "clickPoint": {
+       "x": 1063.41,
+       "y": 645.73,
+       "fx": 0.5,
+       "fy": 0.5
+      },
+      "buttonCover": {
+       "samples": 45,
+       "covered": 0,
+       "hits": {}
+      }
+     },
+     {
+      "label": "balayage@662",
+      "buttonTop": 623.73,
+      "buttonBottom": 667.73,
+      "scrollY": 0,
+      "direction": "below",
+      "gap": 9,
+      "panel": [
+       676.73,
+       743,
+       916.31,
+       1182.5
+      ],
+      "sh/ch": [
+       138,
+       64
+      ],
+      "opts": [
+       [
+        "newest",
+        42,
+        true,
+        0
+       ],
+       [
+        "oldest",
+        16.27,
+        false,
+        0
+       ],
+       [
+        "popular",
+        0,
+        false,
+        0
+       ]
+      ],
+      "overlap": {},
+      "btt": null,
+      "limits": {
+       "top": 132,
+       "bottom144": 743,
+       "bottom145": 743,
+       "audit": 743
+      },
+      "edgeOffset": 0,
+      "eval": {
+       "clickable": true,
+       "direction": "below",
+       "roomEitherSide": true,
+       "allOptionsFull": false,
+       "scrollEqualsClient": false,
+       "overlaps": {},
+       "inViewport": true,
+       "ok": false,
+       "errors": []
+      },
+      "clickPoint": {
+       "x": 1063.41,
+       "y": 645.73,
+       "fx": 0.5,
+       "fy": 0.5
+      },
+      "buttonCover": {
+       "samples": 45,
+       "covered": 0,
+       "hits": {}
+      }
+     },
+     {
+      "label": "balayage@690",
+      "buttonTop": 623.73,
+      "buttonBottom": 667.73,
+      "scrollY": 0,
+      "direction": "below",
+      "gap": 9,
+      "panel": [
+       676.73,
+       743,
+       916.31,
+       1182.5
+      ],
+      "sh/ch": [
+       138,
+       64
+      ],
+      "opts": [
+       [
+        "newest",
+        42,
+        true,
+        0
+       ],
+       [
+        "oldest",
+        16.27,
+        false,
+        0
+       ],
+       [
+        "popular",
+        0,
+        false,
+        0
+       ]
+      ],
+      "overlap": {},
+      "btt": null,
+      "limits": {
+       "top": 132,
+       "bottom144": 743,
+       "bottom145": 743,
+       "audit": 743
+      },
+      "edgeOffset": 0,
+      "eval": {
+       "clickable": true,
+       "direction": "below",
+       "roomEitherSide": true,
+       "allOptionsFull": false,
+       "scrollEqualsClient": false,
+       "overlaps": {},
+       "inViewport": true,
+       "ok": false,
+       "errors": []
+      },
+      "clickPoint": {
+       "x": 1063.41,
+       "y": 645.73,
+       "fx": 0.5,
+       "fy": 0.5
+      },
+      "buttonCover": {
+       "samples": 45,
+       "covered": 0,
+       "hits": {}
+      }
+     },
+     {
+      "label": "balayage@718",
+      "buttonTop": 623.73,
+      "buttonBottom": 667.73,
+      "scrollY": 0,
+      "direction": "below",
+      "gap": 9,
+      "panel": [
+       676.73,
+       743,
+       916.31,
+       1182.5
+      ],
+      "sh/ch": [
+       138,
+       64
+      ],
+      "opts": [
+       [
+        "newest",
+        42,
+        true,
+        0
+       ],
+       [
+        "oldest",
+        16.27,
+        false,
+        0
+       ],
+       [
+        "popular",
+        0,
+        false,
+        0
+       ]
+      ],
+      "overlap": {},
+      "btt": null,
+      "limits": {
+       "top": 132,
+       "bottom144": 743,
+       "bottom145": 743,
+       "audit": 743
+      },
+      "edgeOffset": 0,
+      "eval": {
+       "clickable": true,
+       "direction": "below",
+       "roomEitherSide": true,
+       "allOptionsFull": false,
+       "scrollEqualsClient": false,
+       "overlaps": {},
+       "inViewport": true,
+       "ok": false,
+       "errors": []
+      },
+      "clickPoint": {
+       "x": 1063.41,
+       "y": 645.73,
+       "fx": 0.5,
+       "fy": 0.5
+      },
+      "buttonCover": {
+       "samples": 45,
+       "covered": 0,
+       "hits": {}
+      }
+     },
+     {
+      "label": "balayage@746",
+      "buttonTop": 623.73,
+      "buttonBottom": 667.73,
+      "scrollY": 0,
+      "direction": "below",
+      "gap": 9,
+      "panel": [
+       676.73,
+       743,
+       916.31,
+       1182.5
+      ],
+      "sh/ch": [
+       138,
+       64
+      ],
+      "opts": [
+       [
+        "newest",
+        42,
+        true,
+        0
+       ],
+       [
+        "oldest",
+        16.27,
+        false,
+        0
+       ],
+       [
+        "popular",
+        0,
+        false,
+        0
+       ]
+      ],
+      "overlap": {},
+      "btt": null,
+      "limits": {
+       "top": 132,
+       "bottom144": 743,
+       "bottom145": 743,
+       "audit": 743
+      },
+      "edgeOffset": 0,
+      "eval": {
+       "clickable": true,
+       "direction": "below",
+       "roomEitherSide": true,
+       "allOptionsFull": false,
+       "scrollEqualsClient": false,
+       "overlaps": {},
+       "inViewport": true,
+       "ok": false,
+       "errors": []
+      },
+      "clickPoint": {
+       "x": 1063.41,
+       "y": 645.73,
+       "fx": 0.5,
+       "fy": 0.5
+      },
+      "buttonCover": {
+       "samples": 45,
+       "covered": 0,
+       "hits": {}
+      }
+     },
+     {
+      "label": "balayage@774",
+      "buttonTop": 623.73,
+      "buttonBottom": 667.73,
+      "scrollY": 0,
+      "direction": "below",
+      "gap": 9,
+      "panel": [
+       676.73,
+       743,
+       916.31,
+       1182.5
+      ],
+      "sh/ch": [
+       138,
+       64
+      ],
+      "opts": [
+       [
+        "newest",
+        42,
+        true,
+        0
+       ],
+       [
+        "oldest",
+        16.27,
+        false,
+        0
+       ],
+       [
+        "popular",
+        0,
+        false,
+        0
+       ]
+      ],
+      "overlap": {},
+      "btt": null,
+      "limits": {
+       "top": 132,
+       "bottom144": 743,
+       "bottom145": 743,
+       "audit": 743
+      },
+      "edgeOffset": 0,
+      "eval": {
+       "clickable": true,
+       "direction": "below",
+       "roomEitherSide": true,
+       "allOptionsFull": false,
+       "scrollEqualsClient": false,
+       "overlaps": {},
+       "inViewport": true,
+       "ok": false,
+       "errors": []
+      },
+      "clickPoint": {
+       "x": 1063.41,
+       "y": 645.73,
+       "fx": 0.5,
+       "fy": 0.5
+      },
+      "buttonCover": {
+       "samples": 45,
+       "covered": 0,
+       "hits": {}
+      }
+     },
+     {
+      "label": "balayage@802",
+      "buttonTop": 623.73,
+      "buttonBottom": 667.73,
+      "scrollY": 0,
+      "direction": "below",
+      "gap": 9,
+      "panel": [
+       676.73,
+       743,
+       916.31,
+       1182.5
+      ],
+      "sh/ch": [
+       138,
+       64
+      ],
+      "opts": [
+       [
+        "newest",
+        42,
+        true,
+        0
+       ],
+       [
+        "oldest",
+        16.27,
+        false,
+        0
+       ],
+       [
+        "popular",
+        0,
+        false,
+        0
+       ]
+      ],
+      "overlap": {},
+      "btt": null,
+      "limits": {
+       "top": 132,
+       "bottom144": 743,
+       "bottom145": 743,
+       "audit": 743
+      },
+      "edgeOffset": 0,
+      "eval": {
+       "clickable": true,
+       "direction": "below",
+       "roomEitherSide": true,
+       "allOptionsFull": false,
+       "scrollEqualsClient": false,
+       "overlaps": {},
+       "inViewport": true,
+       "ok": false,
+       "errors": []
+      },
+      "clickPoint": {
+       "x": 1063.41,
+       "y": 645.73,
+       "fx": 0.5,
+       "fy": 0.5
+      },
+      "buttonCover": {
+       "samples": 45,
+       "covered": 0,
+       "hits": {}
+      }
+     },
+     {
+      "label": "balayage@830",
+      "buttonTop": 623.73,
+      "buttonBottom": 667.73,
+      "scrollY": 0,
+      "direction": "below",
+      "gap": 9,
+      "panel": [
+       676.73,
+       743,
+       916.31,
+       1182.5
+      ],
+      "sh/ch": [
+       138,
+       64
+      ],
+      "opts": [
+       [
+        "newest",
+        42,
+        true,
+        0
+       ],
+       [
+        "oldest",
+        16.27,
+        false,
+        0
+       ],
+       [
+        "popular",
+        0,
+        false,
+        0
+       ]
+      ],
+      "overlap": {},
+      "btt": null,
+      "limits": {
+       "top": 132,
+       "bottom144": 743,
+       "bottom145": 743,
+       "audit": 743
+      },
+      "edgeOffset": 0,
+      "eval": {
+       "clickable": true,
+       "direction": "below",
+       "roomEitherSide": true,
+       "allOptionsFull": false,
+       "scrollEqualsClient": false,
+       "overlaps": {},
+       "inViewport": true,
+       "ok": false,
+       "errors": []
+      },
+      "clickPoint": {
+       "x": 1063.41,
+       "y": 645.73,
+       "fx": 0.5,
+       "fy": 0.5
+      },
+      "buttonCover": {
+       "samples": 45,
+       "covered": 0,
+       "hits": {}
+      }
+     }
+    ]
+   }
+  },
+  {
+   "case": "fr1280-chronique-145-reglages",
+   "t": 101.1,
+   "result": {
+    "lang": "fr",
+    "dir": "ltr",
+    "theme": "light"
+   }
+  },
+  {
+   "case": "fr1280-chronique-145-bouton",
+   "t": 101.1,
+   "result": {
+    "id": "journal-comment-sort",
+    "panel": "journal-comment-sort-menu",
+    "docY": 623.734375
+   }
+  },
+  {
+   "case": "fr1280-chronique-145-positions",
+   "t": 102.4,
+   "result": {
+    "i-centre": 428.0,
+    "ii-120": 587,
+    "iii-60": 647,
+    "iv-haut": 134,
+    "audit-120": 579,
+    "audit-60": 639
+   }
+  },
+  {
+   "case": "fr1280-chronique-145-i-centre",
+   "t": 103.8,
+   "result": {
+    "label": "i-centre",
+    "buttonTop": 427.73,
+    "buttonBottom": 471.73,
+    "scrollY": 196,
+    "direction": "below",
+    "gap": 9,
+    "panel": [
+     480.73,
+     620.73,
+     916.31,
+     1182.5
+    ],
+    "sh/ch": [
+     138,
+     138
+    ],
+    "opts": [
+     [
+      "newest",
+      42,
+      true,
+      0
+     ],
+     [
+      "oldest",
+      42,
+      true,
+      0
+     ],
+     [
+      "popular",
+      42,
+      true,
+      0
+     ]
+    ],
+    "overlap": {},
+    "btt": null,
+    "limits": {
+     "top": 132,
+     "bottom144": 743,
+     "bottom145": 743,
+     "audit": 743
+    },
+    "edgeOffset": 0,
+    "eval": {
+     "clickable": true,
+     "direction": "below",
+     "roomEitherSide": true,
+     "allOptionsFull": true,
+     "scrollEqualsClient": true,
+     "overlaps": {},
+     "inViewport": true,
+     "ok": true,
+     "errors": []
+    },
+    "clickPoint": {
+     "x": 1063.41,
+     "y": 449.73,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    "buttonCover": {
+     "samples": 45,
+     "covered": 0,
+     "hits": {}
+    }
+   }
+  },
+  {
+   "case": "fr1280-chronique-145-ii-120",
+   "t": 105.2,
+   "result": {
+    "label": "ii-120",
+    "buttonTop": 586.73,
+    "buttonBottom": 630.73,
+    "scrollY": 37,
+    "direction": "above",
+    "gap": 9,
+    "panel": [
+     437.73,
+     577.73,
+     916.31,
+     1182.5
+    ],
+    "sh/ch": [
+     138,
+     138
+    ],
+    "opts": [
+     [
+      "newest",
+      42,
+      true,
+      0
+     ],
+     [
+      "oldest",
+      42,
+      true,
+      0
+     ],
+     [
+      "popular",
+      42,
+      true,
+      0
+     ]
+    ],
+    "overlap": {},
+    "btt": null,
+    "limits": {
+     "top": 132,
+     "bottom144": 743,
+     "bottom145": 743,
+     "audit": 743
+    },
+    "edgeOffset": 0,
+    "eval": {
+     "clickable": true,
+     "direction": "above",
+     "roomEitherSide": true,
+     "allOptionsFull": true,
+     "scrollEqualsClient": true,
+     "overlaps": {},
+     "inViewport": true,
+     "ok": true,
+     "errors": []
+    },
+    "clickPoint": {
+     "x": 1063.41,
+     "y": 608.73,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    "buttonCover": {
+     "samples": 45,
+     "covered": 0,
+     "hits": {}
+    }
+   }
+  },
+  {
+   "case": "fr1280-chronique-145-iii-60",
+   "t": 106.5,
+   "result": {
+    "label": "iii-60",
+    "buttonTop": 623.73,
+    "buttonBottom": 667.73,
+    "scrollY": 0,
+    "direction": "above",
+    "gap": 9,
+    "panel": [
+     474.73,
+     614.73,
+     916.31,
+     1182.5
+    ],
+    "sh/ch": [
+     138,
+     138
+    ],
+    "opts": [
+     [
+      "newest",
+      42,
+      true,
+      0
+     ],
+     [
+      "oldest",
+      42,
+      true,
+      0
+     ],
+     [
+      "popular",
+      42,
+      true,
+      0
+     ]
+    ],
+    "overlap": {},
+    "btt": null,
+    "limits": {
+     "top": 132,
+     "bottom144": 743,
+     "bottom145": 743,
+     "audit": 743
+    },
+    "edgeOffset": 0,
+    "eval": {
+     "clickable": true,
+     "direction": "above",
+     "roomEitherSide": true,
+     "allOptionsFull": true,
+     "scrollEqualsClient": true,
+     "overlaps": {},
+     "inViewport": true,
+     "ok": true,
+     "errors": []
+    },
+    "clickPoint": {
+     "x": 1063.41,
+     "y": 645.73,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    "buttonCover": {
+     "samples": 45,
+     "covered": 0,
+     "hits": {}
+    }
+   }
+  },
+  {
+   "case": "fr1280-chronique-145-iv-haut",
+   "t": 107.9,
+   "result": {
+    "label": "iv-haut",
+    "buttonTop": 133.73,
+    "buttonBottom": 177.73,
+    "scrollY": 490,
+    "direction": "below",
+    "gap": 9,
+    "panel": [
+     186.73,
+     326.73,
+     916.31,
+     1182.5
+    ],
+    "sh/ch": [
+     138,
+     138
+    ],
+    "opts": [
+     [
+      "newest",
+      42,
+      true,
+      0
+     ],
+     [
+      "oldest",
+      42,
+      true,
+      0
+     ],
+     [
+      "popular",
+      42,
+      true,
+      0
+     ]
+    ],
+    "overlap": {},
+    "btt": null,
+    "limits": {
+     "top": 132,
+     "bottom144": 743,
+     "bottom145": 743,
+     "audit": 743
+    },
+    "edgeOffset": 0,
+    "eval": {
+     "clickable": true,
+     "direction": "below",
+     "roomEitherSide": true,
+     "allOptionsFull": true,
+     "scrollEqualsClient": true,
+     "overlaps": {},
+     "inViewport": true,
+     "ok": true,
+     "errors": []
+    },
+    "clickPoint": {
+     "x": 1063.41,
+     "y": 155.73,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    "buttonCover": {
+     "samples": 45,
+     "covered": 0,
+     "hits": {}
+    }
+   }
+  },
+  {
+   "case": "fr1280-chronique-145-audit-120",
+   "t": 109.3,
+   "result": {
+    "label": "audit-120",
+    "buttonTop": 578.73,
+    "buttonBottom": 622.73,
+    "scrollY": 45,
+    "direction": "above",
+    "gap": 9,
+    "panel": [
+     429.73,
+     569.73,
+     916.31,
+     1182.5
+    ],
+    "sh/ch": [
+     138,
+     138
+    ],
+    "opts": [
+     [
+      "newest",
+      42,
+      true,
+      0
+     ],
+     [
+      "oldest",
+      42,
+      true,
+      0
+     ],
+     [
+      "popular",
+      42,
+      true,
+      0
+     ]
+    ],
+    "overlap": {},
+    "btt": null,
+    "limits": {
+     "top": 132,
+     "bottom144": 743,
+     "bottom145": 743,
+     "audit": 743
+    },
+    "edgeOffset": 0,
+    "eval": {
+     "clickable": true,
+     "direction": "above",
+     "roomEitherSide": true,
+     "allOptionsFull": true,
+     "scrollEqualsClient": true,
+     "overlaps": {},
+     "inViewport": true,
+     "ok": true,
+     "errors": []
+    },
+    "clickPoint": {
+     "x": 1063.41,
+     "y": 600.73,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    "buttonCover": {
+     "samples": 45,
+     "covered": 0,
+     "hits": {}
+    }
+   }
+  },
+  {
+   "case": "fr1280-chronique-145-audit-60",
+   "t": 110.7,
+   "result": {
+    "label": "audit-60",
+    "buttonTop": 623.73,
+    "buttonBottom": 667.73,
+    "scrollY": 0,
+    "direction": "above",
+    "gap": 9,
+    "panel": [
+     474.73,
+     614.73,
+     916.31,
+     1182.5
+    ],
+    "sh/ch": [
+     138,
+     138
+    ],
+    "opts": [
+     [
+      "newest",
+      42,
+      true,
+      0
+     ],
+     [
+      "oldest",
+      42,
+      true,
+      0
+     ],
+     [
+      "popular",
+      42,
+      true,
+      0
+     ]
+    ],
+    "overlap": {},
+    "btt": null,
+    "limits": {
+     "top": 132,
+     "bottom144": 743,
+     "bottom145": 743,
+     "audit": 743
+    },
+    "edgeOffset": 0,
+    "eval": {
+     "clickable": true,
+     "direction": "above",
+     "roomEitherSide": true,
+     "allOptionsFull": true,
+     "scrollEqualsClient": true,
+     "overlaps": {},
+     "inViewport": true,
+     "ok": true,
+     "errors": []
+    },
+    "clickPoint": {
+     "x": 1063.41,
+     "y": 645.73,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    "buttonCover": {
+     "samples": 45,
+     "covered": 0,
+     "hits": {}
+    }
+   }
+  },
+  {
+   "case": "fr1280-chronique-145-balayage",
+   "t": 147.8,
+   "result": [
+    {
+     "label": "balayage@102",
+     "buttonTop": 101.73,
+     "buttonBottom": 145.73,
+     "scrollY": 522,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      154.73,
+      294.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 123.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@130",
+     "buttonTop": 129.73,
+     "buttonBottom": 173.73,
+     "scrollY": 494,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      182.73,
+      322.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 151.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@158",
+     "buttonTop": 157.73,
+     "buttonBottom": 201.73,
+     "scrollY": 466,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      210.73,
+      350.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 179.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@186",
+     "buttonTop": 185.73,
+     "buttonBottom": 229.73,
+     "scrollY": 438,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      238.73,
+      378.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 207.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@214",
+     "buttonTop": 213.73,
+     "buttonBottom": 257.73,
+     "scrollY": 410,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      266.73,
+      406.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 235.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@242",
+     "buttonTop": 241.73,
+     "buttonBottom": 285.73,
+     "scrollY": 382,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      294.73,
+      434.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 263.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@270",
+     "buttonTop": 269.73,
+     "buttonBottom": 313.73,
+     "scrollY": 354,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      322.73,
+      462.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 291.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@298",
+     "buttonTop": 297.73,
+     "buttonBottom": 341.73,
+     "scrollY": 326,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      350.73,
+      490.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 319.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@326",
+     "buttonTop": 325.73,
+     "buttonBottom": 369.73,
+     "scrollY": 298,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      378.73,
+      518.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 347.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@354",
+     "buttonTop": 353.73,
+     "buttonBottom": 397.73,
+     "scrollY": 270,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      406.73,
+      546.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 375.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@382",
+     "buttonTop": 381.73,
+     "buttonBottom": 425.73,
+     "scrollY": 242,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      434.73,
+      574.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 403.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@410",
+     "buttonTop": 409.73,
+     "buttonBottom": 453.73,
+     "scrollY": 214,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      462.73,
+      602.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 431.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@438",
+     "buttonTop": 437.73,
+     "buttonBottom": 481.73,
+     "scrollY": 186,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      490.73,
+      630.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 459.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@466",
+     "buttonTop": 465.73,
+     "buttonBottom": 509.73,
+     "scrollY": 158,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      518.73,
+      658.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 487.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@494",
+     "buttonTop": 493.73,
+     "buttonBottom": 537.73,
+     "scrollY": 130,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      546.73,
+      686.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 515.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@522",
+     "buttonTop": 521.73,
+     "buttonBottom": 565.73,
+     "scrollY": 102,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      574.73,
+      714.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 543.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@550",
+     "buttonTop": 549.73,
+     "buttonBottom": 593.73,
+     "scrollY": 74,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      602.73,
+      742.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 571.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@578",
+     "buttonTop": 577.73,
+     "buttonBottom": 621.73,
+     "scrollY": 46,
+     "direction": "above",
+     "gap": 9,
+     "panel": [
+      428.73,
+      568.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "above",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 599.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@606",
+     "buttonTop": 605.73,
+     "buttonBottom": 649.73,
+     "scrollY": 18,
+     "direction": "above",
+     "gap": 9,
+     "panel": [
+      456.73,
+      596.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "above",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 627.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@634",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "above",
+     "gap": 9,
+     "panel": [
+      474.73,
+      614.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "above",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@662",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "above",
+     "gap": 9,
+     "panel": [
+      474.73,
+      614.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "above",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@690",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "above",
+     "gap": 9,
+     "panel": [
+      474.73,
+      614.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "above",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@718",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "above",
+     "gap": 9,
+     "panel": [
+      474.73,
+      614.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "above",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@746",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "above",
+     "gap": 9,
+     "panel": [
+      474.73,
+      614.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "above",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@774",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "above",
+     "gap": 9,
+     "panel": [
+      474.73,
+      614.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "above",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@802",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "above",
+     "gap": 9,
+     "panel": [
+      474.73,
+      614.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "above",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@830",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "above",
+     "gap": 9,
+     "panel": [
+      474.73,
+      614.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "above",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    }
+   ]
+  },
+  {
+   "case": "fr1280-chronique-145-balayage-bilan",
+   "t": 147.8,
+   "result": {
+    "positions": 27,
+    "cliquables": 27,
+    "echecs": 0,
+    "detailEchecs": []
+   }
+  },
+  {
+   "case": "fr1280-chronique-144-reglages",
+   "t": 150.5,
+   "result": {
+    "lang": "fr",
+    "dir": "ltr",
+    "theme": "light"
+   }
+  },
+  {
+   "case": "fr1280-chronique-144-bouton",
+   "t": 150.5,
+   "result": {
+    "id": "journal-comment-sort",
+    "panel": "journal-comment-sort-menu",
+    "docY": 623.734375
+   }
+  },
+  {
+   "case": "fr1280-chronique-144-positions",
+   "t": 151.8,
+   "result": {
+    "i-centre": 428.0,
+    "ii-120": 587,
+    "iii-60": 647,
+    "iv-haut": 134,
+    "audit-120": 579,
+    "audit-60": 639
+   }
+  },
+  {
+   "case": "fr1280-chronique-144-i-centre",
+   "t": 153.2,
+   "result": {
+    "label": "i-centre",
+    "buttonTop": 427.73,
+    "buttonBottom": 471.73,
+    "scrollY": 196,
+    "direction": "below",
+    "gap": 9,
+    "panel": [
+     480.73,
+     620.73,
+     916.31,
+     1182.5
+    ],
+    "sh/ch": [
+     138,
+     138
+    ],
+    "opts": [
+     [
+      "newest",
+      42,
+      true,
+      0
+     ],
+     [
+      "oldest",
+      42,
+      true,
+      0
+     ],
+     [
+      "popular",
+      42,
+      true,
+      0
+     ]
+    ],
+    "overlap": {},
+    "btt": null,
+    "limits": {
+     "top": 132,
+     "bottom144": 743,
+     "bottom145": 743,
+     "audit": 743
+    },
+    "edgeOffset": 0,
+    "eval": {
+     "clickable": true,
+     "direction": "below",
+     "roomEitherSide": true,
+     "allOptionsFull": true,
+     "scrollEqualsClient": true,
+     "overlaps": {},
+     "inViewport": true,
+     "ok": true,
+     "errors": []
+    },
+    "clickPoint": {
+     "x": 1063.41,
+     "y": 449.73,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    "buttonCover": {
+     "samples": 45,
+     "covered": 0,
+     "hits": {}
+    }
+   }
+  },
+  {
+   "case": "fr1280-chronique-144-ii-120",
+   "t": 154.6,
+   "result": {
+    "label": "ii-120",
+    "buttonTop": 586.73,
+    "buttonBottom": 630.73,
+    "scrollY": 37,
+    "direction": "below",
+    "gap": 9,
+    "panel": [
+     639.73,
+     743,
+     916.31,
+     1182.5
+    ],
+    "sh/ch": [
+     138,
+     101
+    ],
+    "opts": [
+     [
+      "newest",
+      42,
+      true,
+      0
+     ],
+     [
+      "oldest",
+      42,
+      true,
+      0
+     ],
+     [
+      "popular",
+      11.27,
+      false,
+      0
+     ]
+    ],
+    "overlap": {},
+    "btt": null,
+    "limits": {
+     "top": 132,
+     "bottom144": 743,
+     "bottom145": 743,
+     "audit": 743
+    },
+    "edgeOffset": 0,
+    "eval": {
+     "clickable": true,
+     "direction": "below",
+     "roomEitherSide": true,
+     "allOptionsFull": false,
+     "scrollEqualsClient": false,
+     "overlaps": {},
+     "inViewport": true,
+     "ok": false,
+     "errors": []
+    },
+    "clickPoint": {
+     "x": 1063.41,
+     "y": 608.73,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    "buttonCover": {
+     "samples": 45,
+     "covered": 0,
+     "hits": {}
+    }
+   }
+  },
+  {
+   "case": "fr1280-chronique-144-iii-60",
+   "t": 156.0,
+   "result": {
+    "label": "iii-60",
+    "buttonTop": 623.73,
+    "buttonBottom": 667.73,
+    "scrollY": 0,
+    "direction": "below",
+    "gap": 9,
+    "panel": [
+     676.73,
+     743,
+     916.31,
+     1182.5
+    ],
+    "sh/ch": [
+     138,
+     64
+    ],
+    "opts": [
+     [
+      "newest",
+      42,
+      true,
+      0
+     ],
+     [
+      "oldest",
+      16.27,
+      false,
+      0
+     ],
+     [
+      "popular",
+      0,
+      false,
+      0
+     ]
+    ],
+    "overlap": {},
+    "btt": null,
+    "limits": {
+     "top": 132,
+     "bottom144": 743,
+     "bottom145": 743,
+     "audit": 743
+    },
+    "edgeOffset": 0,
+    "eval": {
+     "clickable": true,
+     "direction": "below",
+     "roomEitherSide": true,
+     "allOptionsFull": false,
+     "scrollEqualsClient": false,
+     "overlaps": {},
+     "inViewport": true,
+     "ok": false,
+     "errors": []
+    },
+    "clickPoint": {
+     "x": 1063.41,
+     "y": 645.73,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    "buttonCover": {
+     "samples": 45,
+     "covered": 0,
+     "hits": {}
+    }
+   }
+  },
+  {
+   "case": "fr1280-chronique-144-iv-haut",
+   "t": 157.3,
+   "result": {
+    "label": "iv-haut",
+    "buttonTop": 133.73,
+    "buttonBottom": 177.73,
+    "scrollY": 490,
+    "direction": "below",
+    "gap": 9,
+    "panel": [
+     186.73,
+     326.73,
+     916.31,
+     1182.5
+    ],
+    "sh/ch": [
+     138,
+     138
+    ],
+    "opts": [
+     [
+      "newest",
+      42,
+      true,
+      0
+     ],
+     [
+      "oldest",
+      42,
+      true,
+      0
+     ],
+     [
+      "popular",
+      42,
+      true,
+      0
+     ]
+    ],
+    "overlap": {},
+    "btt": null,
+    "limits": {
+     "top": 132,
+     "bottom144": 743,
+     "bottom145": 743,
+     "audit": 743
+    },
+    "edgeOffset": 0,
+    "eval": {
+     "clickable": true,
+     "direction": "below",
+     "roomEitherSide": true,
+     "allOptionsFull": true,
+     "scrollEqualsClient": true,
+     "overlaps": {},
+     "inViewport": true,
+     "ok": true,
+     "errors": []
+    },
+    "clickPoint": {
+     "x": 1063.41,
+     "y": 155.73,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    "buttonCover": {
+     "samples": 45,
+     "covered": 0,
+     "hits": {}
+    }
+   }
+  },
+  {
+   "case": "fr1280-chronique-144-audit-120",
+   "t": 158.7,
+   "result": {
+    "label": "audit-120",
+    "buttonTop": 578.73,
+    "buttonBottom": 622.73,
+    "scrollY": 45,
+    "direction": "below",
+    "gap": 9,
+    "panel": [
+     631.73,
+     743,
+     916.31,
+     1182.5
+    ],
+    "sh/ch": [
+     138,
+     109
+    ],
+    "opts": [
+     [
+      "newest",
+      42,
+      true,
+      0
+     ],
+     [
+      "oldest",
+      42,
+      true,
+      0
+     ],
+     [
+      "popular",
+      19.27,
+      false,
+      0
+     ]
+    ],
+    "overlap": {},
+    "btt": null,
+    "limits": {
+     "top": 132,
+     "bottom144": 743,
+     "bottom145": 743,
+     "audit": 743
+    },
+    "edgeOffset": 0,
+    "eval": {
+     "clickable": true,
+     "direction": "below",
+     "roomEitherSide": true,
+     "allOptionsFull": false,
+     "scrollEqualsClient": false,
+     "overlaps": {},
+     "inViewport": true,
+     "ok": false,
+     "errors": []
+    },
+    "clickPoint": {
+     "x": 1063.41,
+     "y": 600.73,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    "buttonCover": {
+     "samples": 45,
+     "covered": 0,
+     "hits": {}
+    }
+   }
+  },
+  {
+   "case": "fr1280-chronique-144-audit-60",
+   "t": 160.1,
+   "result": {
+    "label": "audit-60",
+    "buttonTop": 623.73,
+    "buttonBottom": 667.73,
+    "scrollY": 0,
+    "direction": "below",
+    "gap": 9,
+    "panel": [
+     676.73,
+     743,
+     916.31,
+     1182.5
+    ],
+    "sh/ch": [
+     138,
+     64
+    ],
+    "opts": [
+     [
+      "newest",
+      42,
+      true,
+      0
+     ],
+     [
+      "oldest",
+      16.27,
+      false,
+      0
+     ],
+     [
+      "popular",
+      0,
+      false,
+      0
+     ]
+    ],
+    "overlap": {},
+    "btt": null,
+    "limits": {
+     "top": 132,
+     "bottom144": 743,
+     "bottom145": 743,
+     "audit": 743
+    },
+    "edgeOffset": 0,
+    "eval": {
+     "clickable": true,
+     "direction": "below",
+     "roomEitherSide": true,
+     "allOptionsFull": false,
+     "scrollEqualsClient": false,
+     "overlaps": {},
+     "inViewport": true,
+     "ok": false,
+     "errors": []
+    },
+    "clickPoint": {
+     "x": 1063.41,
+     "y": 645.73,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    "buttonCover": {
+     "samples": 45,
+     "covered": 0,
+     "hits": {}
+    }
+   }
+  },
+  {
+   "case": "fr1280-chronique-144-balayage",
+   "t": 197.2,
+   "result": [
+    {
+     "label": "balayage@102",
+     "buttonTop": 101.73,
+     "buttonBottom": 145.73,
+     "scrollY": 522,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      154.73,
+      294.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 123.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@130",
+     "buttonTop": 129.73,
+     "buttonBottom": 173.73,
+     "scrollY": 494,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      182.73,
+      322.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 151.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@158",
+     "buttonTop": 157.73,
+     "buttonBottom": 201.73,
+     "scrollY": 466,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      210.73,
+      350.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 179.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@186",
+     "buttonTop": 185.73,
+     "buttonBottom": 229.73,
+     "scrollY": 438,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      238.73,
+      378.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 207.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@214",
+     "buttonTop": 213.73,
+     "buttonBottom": 257.73,
+     "scrollY": 410,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      266.73,
+      406.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 235.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@242",
+     "buttonTop": 241.73,
+     "buttonBottom": 285.73,
+     "scrollY": 382,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      294.73,
+      434.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 263.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@270",
+     "buttonTop": 269.73,
+     "buttonBottom": 313.73,
+     "scrollY": 354,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      322.73,
+      462.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 291.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@298",
+     "buttonTop": 297.73,
+     "buttonBottom": 341.73,
+     "scrollY": 326,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      350.73,
+      490.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 319.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@326",
+     "buttonTop": 325.73,
+     "buttonBottom": 369.73,
+     "scrollY": 298,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      378.73,
+      518.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 347.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@354",
+     "buttonTop": 353.73,
+     "buttonBottom": 397.73,
+     "scrollY": 270,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      406.73,
+      546.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 375.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@382",
+     "buttonTop": 381.73,
+     "buttonBottom": 425.73,
+     "scrollY": 242,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      434.73,
+      574.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 403.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@410",
+     "buttonTop": 409.73,
+     "buttonBottom": 453.73,
+     "scrollY": 214,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      462.73,
+      602.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 431.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@438",
+     "buttonTop": 437.73,
+     "buttonBottom": 481.73,
+     "scrollY": 186,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      490.73,
+      630.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 459.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@466",
+     "buttonTop": 465.73,
+     "buttonBottom": 509.73,
+     "scrollY": 158,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      518.73,
+      658.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 487.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@494",
+     "buttonTop": 493.73,
+     "buttonBottom": 537.73,
+     "scrollY": 130,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      546.73,
+      686.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 515.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@522",
+     "buttonTop": 521.73,
+     "buttonBottom": 565.73,
+     "scrollY": 102,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      574.73,
+      714.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 543.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@550",
+     "buttonTop": 549.73,
+     "buttonBottom": 593.73,
+     "scrollY": 74,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      602.73,
+      742.73,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      138
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       42,
+       true,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": true,
+      "scrollEqualsClient": true,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": true,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 571.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@578",
+     "buttonTop": 577.73,
+     "buttonBottom": 621.73,
+     "scrollY": 46,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      630.73,
+      743,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      110
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       42,
+       true,
+       0
+      ],
+      [
+       "popular",
+       20.27,
+       false,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": false,
+      "scrollEqualsClient": false,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": false,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 599.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@606",
+     "buttonTop": 605.73,
+     "buttonBottom": 649.73,
+     "scrollY": 18,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      658.73,
+      743,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      82
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       34.27,
+       false,
+       0
+      ],
+      [
+       "popular",
+       0,
+       false,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": false,
+      "scrollEqualsClient": false,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": false,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 627.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@634",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      676.73,
+      743,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      64
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       16.27,
+       false,
+       0
+      ],
+      [
+       "popular",
+       0,
+       false,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": false,
+      "scrollEqualsClient": false,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": false,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@662",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      676.73,
+      743,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      64
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       16.27,
+       false,
+       0
+      ],
+      [
+       "popular",
+       0,
+       false,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": false,
+      "scrollEqualsClient": false,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": false,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@690",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      676.73,
+      743,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      64
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       16.27,
+       false,
+       0
+      ],
+      [
+       "popular",
+       0,
+       false,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": false,
+      "scrollEqualsClient": false,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": false,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@718",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      676.73,
+      743,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      64
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       16.27,
+       false,
+       0
+      ],
+      [
+       "popular",
+       0,
+       false,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": false,
+      "scrollEqualsClient": false,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": false,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@746",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      676.73,
+      743,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      64
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       16.27,
+       false,
+       0
+      ],
+      [
+       "popular",
+       0,
+       false,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": false,
+      "scrollEqualsClient": false,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": false,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@774",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      676.73,
+      743,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      64
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       16.27,
+       false,
+       0
+      ],
+      [
+       "popular",
+       0,
+       false,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": false,
+      "scrollEqualsClient": false,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": false,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@802",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      676.73,
+      743,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      64
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       16.27,
+       false,
+       0
+      ],
+      [
+       "popular",
+       0,
+       false,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": false,
+      "scrollEqualsClient": false,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": false,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    },
+    {
+     "label": "balayage@830",
+     "buttonTop": 623.73,
+     "buttonBottom": 667.73,
+     "scrollY": 0,
+     "direction": "below",
+     "gap": 9,
+     "panel": [
+      676.73,
+      743,
+      916.31,
+      1182.5
+     ],
+     "sh/ch": [
+      138,
+      64
+     ],
+     "opts": [
+      [
+       "newest",
+       42,
+       true,
+       0
+      ],
+      [
+       "oldest",
+       16.27,
+       false,
+       0
+      ],
+      [
+       "popular",
+       0,
+       false,
+       0
+      ]
+     ],
+     "overlap": {},
+     "btt": null,
+     "limits": {
+      "top": 132,
+      "bottom144": 743,
+      "bottom145": 743,
+      "audit": 743
+     },
+     "edgeOffset": 0,
+     "eval": {
+      "clickable": true,
+      "direction": "below",
+      "roomEitherSide": true,
+      "allOptionsFull": false,
+      "scrollEqualsClient": false,
+      "overlaps": {},
+      "inViewport": true,
+      "ok": false,
+      "errors": []
+     },
+     "clickPoint": {
+      "x": 1063.41,
+      "y": 645.73,
+      "fx": 0.5,
+      "fy": 0.5
+     },
+     "buttonCover": {
+      "samples": 45,
+      "covered": 0,
+      "hits": {}
+     }
+    }
+   ]
+  },
+  {
+   "case": "fr1280-chronique-144-balayage-bilan",
+   "t": 197.2,
+   "result": {
+    "positions": 27,
+    "cliquables": 27,
+    "echecs": 10,
+    "detailEchecs": [
+     {
+      "label": "balayage@578",
+      "buttonTop": 577.73,
+      "buttonBottom": 621.73,
+      "scrollY": 46,
+      "direction": "below",
+      "gap": 9,
+      "panel": [
+       630.73,
+       743,
+       916.31,
+       1182.5
+      ],
+      "sh/ch": [
+       138,
+       110
+      ],
+      "opts": [
+       [
+        "newest",
+        42,
+        true,
+        0
+       ],
+       [
+        "oldest",
+        42,
+        true,
+        0
+       ],
+       [
+        "popular",
+        20.27,
+        false,
+        0
+       ]
+      ],
+      "overlap": {},
+      "btt": null,
+      "limits": {
+       "top": 132,
+       "bottom144": 743,
+       "bottom145": 743,
+       "audit": 743
+      },
+      "edgeOffset": 0,
+      "eval": {
+       "clickable": true,
+       "direction": "below",
+       "roomEitherSide": true,
+       "allOptionsFull": false,
+       "scrollEqualsClient": false,
+       "overlaps": {},
+       "inViewport": true,
+       "ok": false,
+       "errors": []
+      },
+      "clickPoint": {
+       "x": 1063.41,
+       "y": 599.73,
+       "fx": 0.5,
+       "fy": 0.5
+      },
+      "buttonCover": {
+       "samples": 45,
+       "covered": 0,
+       "hits": {}
+      }
+     },
+     {
+      "label": "balayage@606",
+      "buttonTop": 605.73,
+      "buttonBottom": 649.73,
+      "scrollY": 18,
+      "direction": "below",
+      "gap": 9,
+      "panel": [
+       658.73,
+       743,
+       916.31,
+       1182.5
+      ],
+      "sh/ch": [
+       138,
+       82
+      ],
+      "opts": [
+       [
+        "newest",
+        42,
+        true,
+        0
+       ],
+       [
+        "oldest",
+        34.27,
+        false,
+        0
+       ],
+       [
+        "popular",
+        0,
+        false,
+        0
+       ]
+      ],
+      "overlap": {},
+      "btt": null,
+      "limits": {
+       "top": 132,
+       "bottom144": 743,
+       "bottom145": 743,
+       "audit": 743
+      },
+      "edgeOffset": 0,
+      "eval": {
+       "clickable": true,
+       "direction": "below",
+       "roomEitherSide": true,
+       "allOptionsFull": false,
+       "scrollEqualsClient": false,
+       "overlaps": {},
+       "inViewport": true,
+       "ok": false,
+       "errors": []
+      },
+      "clickPoint": {
+       "x": 1063.41,
+       "y": 627.73,
+       "fx": 0.5,
+       "fy": 0.5
+      },
+      "buttonCover": {
+       "samples": 45,
+       "covered": 0,
+       "hits": {}
+      }
+     },
+     {
+      "label": "balayage@634",
+      "buttonTop": 623.73,
+      "buttonBottom": 667.73,
+      "scrollY": 0,
+      "direction": "below",
+      "gap": 9,
+      "panel": [
+       676.73,
+       743,
+       916.31,
+       1182.5
+      ],
+      "sh/ch": [
+       138,
+       64
+      ],
+      "opts": [
+       [
+        "newest",
+        42,
+        true,
+        0
+       ],
+       [
+        "oldest",
+        16.27,
+        false,
+        0
+       ],
+       [
+        "popular",
+        0,
+        false,
+        0
+       ]
+      ],
+      "overlap": {},
+      "btt": null,
+      "limits": {
+       "top": 132,
+       "bottom144": 743,
+       "bottom145": 743,
+       "audit": 743
+      },
+      "edgeOffset": 0,
+      "eval": {
+       "clickable": true,
+       "direction": "below",
+       "roomEitherSide": true,
+       "allOptionsFull": false,
+       "scrollEqualsClient": false,
+       "overlaps": {},
+       "inViewport": true,
+       "ok": false,
+       "errors": []
+      },
+      "clickPoint": {
+       "x": 1063.41,
+       "y": 645.73,
+       "fx": 0.5,
+       "fy": 0.5
+      },
+      "buttonCover": {
+       "samples": 45,
+       "covered": 0,
+       "hits": {}
+      }
+     },
+     {
+      "label": "balayage@662",
+      "buttonTop": 623.73,
+      "buttonBottom": 667.73,
+      "scrollY": 0,
+      "direction": "below",
+      "gap": 9,
+      "panel": [
+       676.73,
+       743,
+       916.31,
+       1182.5
+      ],
+      "sh/ch": [
+       138,
+       64
+      ],
+      "opts": [
+       [
+        "newest",
+        42,
+        true,
+        0
+       ],
+       [
+        "oldest",
+        16.27,
+        false,
+        0
+       ],
+       [
+        "popular",
+        0,
+        false,
+        0
+       ]
+      ],
+      "overlap": {},
+      "btt": null,
+      "limits": {
+       "top": 132,
+       "bottom144": 743,
+       "bottom145": 743,
+       "audit": 743
+      },
+      "edgeOffset": 0,
+      "eval": {
+       "clickable": true,
+       "direction": "below",
+       "roomEitherSide": true,
+       "allOptionsFull": false,
+       "scrollEqualsClient": false,
+       "overlaps": {},
+       "inViewport": true,
+       "ok": false,
+       "errors": []
+      },
+      "clickPoint": {
+       "x": 1063.41,
+       "y": 645.73,
+       "fx": 0.5,
+       "fy": 0.5
+      },
+      "buttonCover": {
+       "samples": 45,
+       "covered": 0,
+       "hits": {}
+      }
+     },
+     {
+      "label": "balayage@690",
+      "buttonTop": 623.73,
+      "buttonBottom": 667.73,
+      "scrollY": 0,
+      "direction": "below",
+      "gap": 9,
+      "panel": [
+       676.73,
+       743,
+       916.31,
+       1182.5
+      ],
+      "sh/ch": [
+       138,
+       64
+      ],
+      "opts": [
+       [
+        "newest",
+        42,
+        true,
+        0
+       ],
+       [
+        "oldest",
+        16.27,
+        false,
+        0
+       ],
+       [
+        "popular",
+        0,
+        false,
+        0
+       ]
+      ],
+      "overlap": {},
+      "btt": null,
+      "limits": {
+       "top": 132,
+       "bottom144": 743,
+       "bottom145": 743,
+       "audit": 743
+      },
+      "edgeOffset": 0,
+      "eval": {
+       "clickable": true,
+       "direction": "below",
+       "roomEitherSide": true,
+       "allOptionsFull": false,
+       "scrollEqualsClient": false,
+       "overlaps": {},
+       "inViewport": true,
+       "ok": false,
+       "errors": []
+      },
+      "clickPoint": {
+       "x": 1063.41,
+       "y": 645.73,
+       "fx": 0.5,
+       "fy": 0.5
+      },
+      "buttonCover": {
+       "samples": 45,
+       "covered": 0,
+       "hits": {}
+      }
+     },
+     {
+      "label": "balayage@718",
+      "buttonTop": 623.73,
+      "buttonBottom": 667.73,
+      "scrollY": 0,
+      "direction": "below",
+      "gap": 9,
+      "panel": [
+       676.73,
+       743,
+       916.31,
+       1182.5
+      ],
+      "sh/ch": [
+       138,
+       64
+      ],
+      "opts": [
+       [
+        "newest",
+        42,
+        true,
+        0
+       ],
+       [
+        "oldest",
+        16.27,
+        false,
+        0
+       ],
+       [
+        "popular",
+        0,
+        false,
+        0
+       ]
+      ],
+      "overlap": {},
+      "btt": null,
+      "limits": {
+       "top": 132,
+       "bottom144": 743,
+       "bottom145": 743,
+       "audit": 743
+      },
+      "edgeOffset": 0,
+      "eval": {
+       "clickable": true,
+       "direction": "below",
+       "roomEitherSide": true,
+       "allOptionsFull": false,
+       "scrollEqualsClient": false,
+       "overlaps": {},
+       "inViewport": true,
+       "ok": false,
+       "errors": []
+      },
+      "clickPoint": {
+       "x": 1063.41,
+       "y": 645.73,
+       "fx": 0.5,
+       "fy": 0.5
+      },
+      "buttonCover": {
+       "samples": 45,
+       "covered": 0,
+       "hits": {}
+      }
+     },
+     {
+      "label": "balayage@746",
+      "buttonTop": 623.73,
+      "buttonBottom": 667.73,
+      "scrollY": 0,
+      "direction": "below",
+      "gap": 9,
+      "panel": [
+       676.73,
+       743,
+       916.31,
+       1182.5
+      ],
+      "sh/ch": [
+       138,
+       64
+      ],
+      "opts": [
+       [
+        "newest",
+        42,
+        true,
+        0
+       ],
+       [
+        "oldest",
+        16.27,
+        false,
+        0
+       ],
+       [
+        "popular",
+        0,
+        false,
+        0
+       ]
+      ],
+      "overlap": {},
+      "btt": null,
+      "limits": {
+       "top": 132,
+       "bottom144": 743,
+       "bottom145": 743,
+       "audit": 743
+      },
+      "edgeOffset": 0,
+      "eval": {
+       "clickable": true,
+       "direction": "below",
+       "roomEitherSide": true,
+       "allOptionsFull": false,
+       "scrollEqualsClient": false,
+       "overlaps": {},
+       "inViewport": true,
+       "ok": false,
+       "errors": []
+      },
+      "clickPoint": {
+       "x": 1063.41,
+       "y": 645.73,
+       "fx": 0.5,
+       "fy": 0.5
+      },
+      "buttonCover": {
+       "samples": 45,
+       "covered": 0,
+       "hits": {}
+      }
+     },
+     {
+      "label": "balayage@774",
+      "buttonTop": 623.73,
+      "buttonBottom": 667.73,
+      "scrollY": 0,
+      "direction": "below",
+      "gap": 9,
+      "panel": [
+       676.73,
+       743,
+       916.31,
+       1182.5
+      ],
+      "sh/ch": [
+       138,
+       64
+      ],
+      "opts": [
+       [
+        "newest",
+        42,
+        true,
+        0
+       ],
+       [
+        "oldest",
+        16.27,
+        false,
+        0
+       ],
+       [
+        "popular",
+        0,
+        false,
+        0
+       ]
+      ],
+      "overlap": {},
+      "btt": null,
+      "limits": {
+       "top": 132,
+       "bottom144": 743,
+       "bottom145": 743,
+       "audit": 743
+      },
+      "edgeOffset": 0,
+      "eval": {
+       "clickable": true,
+       "direction": "below",
+       "roomEitherSide": true,
+       "allOptionsFull": false,
+       "scrollEqualsClient": false,
+       "overlaps": {},
+       "inViewport": true,
+       "ok": false,
+       "errors": []
+      },
+      "clickPoint": {
+       "x": 1063.41,
+       "y": 645.73,
+       "fx": 0.5,
+       "fy": 0.5
+      },
+      "buttonCover": {
+       "samples": 45,
+       "covered": 0,
+       "hits": {}
+      }
+     },
+     {
+      "label": "balayage@802",
+      "buttonTop": 623.73,
+      "buttonBottom": 667.73,
+      "scrollY": 0,
+      "direction": "below",
+      "gap": 9,
+      "panel": [
+       676.73,
+       743,
+       916.31,
+       1182.5
+      ],
+      "sh/ch": [
+       138,
+       64
+      ],
+      "opts": [
+       [
+        "newest",
+        42,
+        true,
+        0
+       ],
+       [
+        "oldest",
+        16.27,
+        false,
+        0
+       ],
+       [
+        "popular",
+        0,
+        false,
+        0
+       ]
+      ],
+      "overlap": {},
+      "btt": null,
+      "limits": {
+       "top": 132,
+       "bottom144": 743,
+       "bottom145": 743,
+       "audit": 743
+      },
+      "edgeOffset": 0,
+      "eval": {
+       "clickable": true,
+       "direction": "below",
+       "roomEitherSide": true,
+       "allOptionsFull": false,
+       "scrollEqualsClient": false,
+       "overlaps": {},
+       "inViewport": true,
+       "ok": false,
+       "errors": []
+      },
+      "clickPoint": {
+       "x": 1063.41,
+       "y": 645.73,
+       "fx": 0.5,
+       "fy": 0.5
+      },
+      "buttonCover": {
+       "samples": 45,
+       "covered": 0,
+       "hits": {}
+      }
+     },
+     {
+      "label": "balayage@830",
+      "buttonTop": 623.73,
+      "buttonBottom": 667.73,
+      "scrollY": 0,
+      "direction": "below",
+      "gap": 9,
+      "panel": [
+       676.73,
+       743,
+       916.31,
+       1182.5
+      ],
+      "sh/ch": [
+       138,
+       64
+      ],
+      "opts": [
+       [
+        "newest",
+        42,
+        true,
+        0
+       ],
+       [
+        "oldest",
+        16.27,
+        false,
+        0
+       ],
+       [
+        "popular",
+        0,
+        false,
+        0
+       ]
+      ],
+      "overlap": {},
+      "btt": null,
+      "limits": {
+       "top": 132,
+       "bottom144": 743,
+       "bottom145": 743,
+       "audit": 743
+      },
+      "edgeOffset": 0,
+      "eval": {
+       "clickable": true,
+       "direction": "below",
+       "roomEitherSide": true,
+       "allOptionsFull": false,
+       "scrollEqualsClient": false,
+       "overlaps": {},
+       "inViewport": true,
+       "ok": false,
+       "errors": []
+      },
+      "clickPoint": {
+       "x": 1063.41,
+       "y": 645.73,
+       "fx": 0.5,
+       "fy": 0.5
+      },
+      "buttonCover": {
+       "samples": 45,
+       "covered": 0,
+       "hits": {}
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "phaseErrors": [],
+ "failure": null,
+ "sourcesUnchanged": true,
+ "sourceHashes": {
+  "145": {
+   "comments.mjs": "7cd542685536b244",
+   "comments.css": "9f93b003d8e2cc5d",
+   "content-controls.mjs": "58ac9a724ba2168a",
+   "content-controls.css": "cc14237d5d978a62",
+   "project-ui.mjs": "a4bff6110875d436",
+   "journal-ui.mjs": "f5b76c927851a1c8",
+   "back-to-top.css": "917add7417209c47",
+   "back-to-top.mjs": "6e1cb92805b3236b",
+   "dock-search.css": "2ac9c079d5142898",
+   "content-preview.html": "8817305bef2eb91c",
+   "content-preview.mjs": "efba6b21f19d03c5",
+   "welcome.mjs": "e1b31b75b8aa4e9b"
+  },
+  "144": {
+   "comments.mjs": "65076bfb8130434e",
+   "comments.css": "9f93b003d8e2cc5d",
+   "content-controls.mjs": "58ac9a724ba2168a",
+   "content-controls.css": "cc14237d5d978a62",
+   "project-ui.mjs": "866115f8eebe5dbd",
+   "journal-ui.mjs": "68466b09bbaad881",
+   "back-to-top.css": "917add7417209c47",
+   "back-to-top.mjs": "6e1cb92805b3236b",
+   "dock-search.css": "2ac9c079d5142898",
+   "content-preview.html": "470bf471e88250d9",
+   "content-preview.mjs": "d0ae536f7a101511",
+   "welcome.mjs": "fa65d17e822b1f1f"
+  }
+ },
+ "durationSeconds": 197.2
+}

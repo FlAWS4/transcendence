@@ -1,0 +1,2124 @@
+{
+  "date": "2026-10-13",
+  "sourcesBefore": {
+    "back-to-top.mjs": "6e1cb92805b3236b83e947ca09c94c5a65771fa0aeceaa7c6044cfccd02bf4ce",
+    "back-to-top.css": "917add7417209c47f721fffe2415e48f56d6e90cb5845293034feb1bfb7088d8"
+  },
+  "cases": [
+    {
+      "case": "fr-motion-rest",
+      "result": {
+        "scroll": 900,
+        "dockScrolling": false,
+        "buttonHidden": false,
+        "buttonOpacity": 1,
+        "menuOpacity": 1,
+        "buttonPointer": "auto",
+        "menuPointer": "auto",
+        "buttonVisible": true,
+        "focus": "",
+        "lang": "fr",
+        "hash": "#projects",
+        "overflow": false
+      }
+    },
+    {
+      "case": "fr-motion-wheel-hides-both",
+      "result": {
+        "scroll": 1375,
+        "dockScrolling": true,
+        "buttonHidden": false,
+        "buttonOpacity": 0,
+        "menuOpacity": 0,
+        "buttonPointer": "none",
+        "menuPointer": "none",
+        "buttonVisible": true,
+        "focus": "",
+        "lang": "fr",
+        "hash": "#projects",
+        "overflow": false
+      }
+    },
+    {
+      "case": "fr-motion-idle-restores-both",
+      "result": {
+        "scroll": 1375,
+        "dockScrolling": false,
+        "buttonHidden": false,
+        "buttonOpacity": 1,
+        "menuOpacity": 1,
+        "buttonPointer": "auto",
+        "menuPointer": "auto",
+        "buttonVisible": true,
+        "focus": "",
+        "lang": "fr",
+        "hash": "#projects",
+        "overflow": false
+      },
+      "animationSamples": [
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": true,
+          "button": 0.938991,
+          "menu": 0.938991
+        },
+        {
+          "state": true,
+          "button": 0.811126,
+          "menu": 0.811126
+        },
+        {
+          "state": true,
+          "button": 0.641799,
+          "menu": 0.641799
+        },
+        {
+          "state": true,
+          "button": 0.480757,
+          "menu": 0.480757
+        },
+        {
+          "state": true,
+          "button": 0.349308,
+          "menu": 0.349308
+        },
+        {
+          "state": true,
+          "button": 0.246954,
+          "menu": 0.246954
+        },
+        {
+          "state": true,
+          "button": 0.169111,
+          "menu": 0.169111
+        },
+        {
+          "state": true,
+          "button": 0.110914,
+          "menu": 0.110914
+        },
+        {
+          "state": true,
+          "button": 0.0677113,
+          "menu": 0.0677113
+        },
+        {
+          "state": true,
+          "button": 0.0369681,
+          "menu": 0.0369681
+        },
+        {
+          "state": true,
+          "button": 0.0165912,
+          "menu": 0.0165912
+        },
+        {
+          "state": true,
+          "button": 0.0046858,
+          "menu": 0.0046858
+        },
+        {
+          "state": true,
+          "button": 0.000123703,
+          "menu": 0.000123703
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": false,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": false,
+          "button": 0.0309234,
+          "menu": 0.0309234
+        },
+        {
+          "state": false,
+          "button": 0.0875897,
+          "menu": 0.0875897
+        },
+        {
+          "state": false,
+          "button": 0.171177,
+          "menu": 0.171177
+        },
+        {
+          "state": false,
+          "button": 0.274001,
+          "menu": 0.274001
+        },
+        {
+          "state": false,
+          "button": 0.381972,
+          "menu": 0.381972
+        },
+        {
+          "state": false,
+          "button": 0.484228,
+          "menu": 0.484228
+        },
+        {
+          "state": false,
+          "button": 0.575681,
+          "menu": 0.575681
+        },
+        {
+          "state": false,
+          "button": 0.654466,
+          "menu": 0.654466
+        },
+        {
+          "state": false,
+          "button": 0.721024,
+          "menu": 0.721024
+        },
+        {
+          "state": false,
+          "button": 0.777555,
+          "menu": 0.777555
+        },
+        {
+          "state": false,
+          "button": 0.825052,
+          "menu": 0.825052
+        },
+        {
+          "state": false,
+          "button": 0.864559,
+          "menu": 0.864559
+        },
+        {
+          "state": false,
+          "button": 0.897608,
+          "menu": 0.897608
+        },
+        {
+          "state": false,
+          "button": 0.924821,
+          "menu": 0.924821
+        },
+        {
+          "state": false,
+          "button": 0.946924,
+          "menu": 0.946924
+        },
+        {
+          "state": false,
+          "button": 0.964427,
+          "menu": 0.964427
+        },
+        {
+          "state": false,
+          "button": 0.978043,
+          "menu": 0.978043
+        },
+        {
+          "state": false,
+          "button": 0.988024,
+          "menu": 0.988024
+        },
+        {
+          "state": false,
+          "button": 0.994882,
+          "menu": 0.994882
+        },
+        {
+          "state": false,
+          "button": 0.998739,
+          "menu": 0.998739
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        }
+      ]
+    },
+    {
+      "case": "ar-motion-rest",
+      "result": {
+        "scroll": 900,
+        "dockScrolling": false,
+        "buttonHidden": false,
+        "buttonOpacity": 1,
+        "menuOpacity": 1,
+        "buttonPointer": "auto",
+        "menuPointer": "auto",
+        "buttonVisible": true,
+        "focus": "",
+        "lang": "ar",
+        "hash": "#projects",
+        "overflow": false
+      }
+    },
+    {
+      "case": "ar-motion-wheel-hides-both",
+      "result": {
+        "scroll": 1375,
+        "dockScrolling": true,
+        "buttonHidden": false,
+        "buttonOpacity": 0,
+        "menuOpacity": 0,
+        "buttonPointer": "none",
+        "menuPointer": "none",
+        "buttonVisible": true,
+        "focus": "",
+        "lang": "ar",
+        "hash": "#projects",
+        "overflow": false
+      }
+    },
+    {
+      "case": "ar-motion-idle-restores-both",
+      "result": {
+        "scroll": 1375,
+        "dockScrolling": false,
+        "buttonHidden": false,
+        "buttonOpacity": 1,
+        "menuOpacity": 1,
+        "buttonPointer": "auto",
+        "menuPointer": "auto",
+        "buttonVisible": true,
+        "focus": "",
+        "lang": "ar",
+        "hash": "#projects",
+        "overflow": false
+      },
+      "animationSamples": [
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": true,
+          "button": 0.938991,
+          "menu": 0.938991
+        },
+        {
+          "state": true,
+          "button": 0.811126,
+          "menu": 0.811126
+        },
+        {
+          "state": true,
+          "button": 0.642832,
+          "menu": 0.642832
+        },
+        {
+          "state": true,
+          "button": 0.480757,
+          "menu": 0.480757
+        },
+        {
+          "state": true,
+          "button": 0.349308,
+          "menu": 0.349308
+        },
+        {
+          "state": true,
+          "button": 0.246421,
+          "menu": 0.246421
+        },
+        {
+          "state": true,
+          "button": 0.169111,
+          "menu": 0.169111
+        },
+        {
+          "state": true,
+          "button": 0.110914,
+          "menu": 0.110914
+        },
+        {
+          "state": true,
+          "button": 0.0677113,
+          "menu": 0.0677113
+        },
+        {
+          "state": true,
+          "button": 0.0369681,
+          "menu": 0.0369681
+        },
+        {
+          "state": true,
+          "button": 0.0165912,
+          "menu": 0.0165912
+        },
+        {
+          "state": true,
+          "button": 0.0046858,
+          "menu": 0.0046858
+        },
+        {
+          "state": true,
+          "button": 0.000123703,
+          "menu": 0.000123703
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": false,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": false,
+          "button": 0.0309234,
+          "menu": 0.0309234
+        },
+        {
+          "state": false,
+          "button": 0.0875897,
+          "menu": 0.0875897
+        },
+        {
+          "state": false,
+          "button": 0.171177,
+          "menu": 0.171177
+        },
+        {
+          "state": false,
+          "button": 0.273354,
+          "menu": 0.273354
+        },
+        {
+          "state": false,
+          "button": 0.381972,
+          "menu": 0.381972
+        },
+        {
+          "state": false,
+          "button": 0.484228,
+          "menu": 0.484228
+        },
+        {
+          "state": false,
+          "button": 0.575681,
+          "menu": 0.575681
+        },
+        {
+          "state": false,
+          "button": 0.654466,
+          "menu": 0.654466
+        },
+        {
+          "state": false,
+          "button": 0.721024,
+          "menu": 0.721024
+        },
+        {
+          "state": false,
+          "button": 0.777555,
+          "menu": 0.777555
+        },
+        {
+          "state": false,
+          "button": 0.825052,
+          "menu": 0.825052
+        },
+        {
+          "state": false,
+          "button": 0.864776,
+          "menu": 0.864776
+        },
+        {
+          "state": false,
+          "button": 0.897788,
+          "menu": 0.897788
+        },
+        {
+          "state": false,
+          "button": 0.924821,
+          "menu": 0.924821
+        },
+        {
+          "state": false,
+          "button": 0.946924,
+          "menu": 0.946924
+        },
+        {
+          "state": false,
+          "button": 0.964427,
+          "menu": 0.964427
+        },
+        {
+          "state": false,
+          "button": 0.978043,
+          "menu": 0.978043
+        },
+        {
+          "state": false,
+          "button": 0.988075,
+          "menu": 0.988075
+        },
+        {
+          "state": false,
+          "button": 0.994882,
+          "menu": 0.994882
+        },
+        {
+          "state": false,
+          "button": 0.998754,
+          "menu": 0.998754
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        }
+      ]
+    },
+    {
+      "case": "fr-reduced-rest",
+      "result": {
+        "scroll": 900,
+        "dockScrolling": false,
+        "buttonHidden": false,
+        "buttonOpacity": 1,
+        "menuOpacity": 1,
+        "buttonPointer": "auto",
+        "menuPointer": "auto",
+        "buttonVisible": true,
+        "focus": "",
+        "lang": "fr",
+        "hash": "#projects",
+        "overflow": false
+      }
+    },
+    {
+      "case": "fr-reduced-wheel-hides-both",
+      "result": {
+        "scroll": 1375,
+        "dockScrolling": true,
+        "buttonHidden": false,
+        "buttonOpacity": 0,
+        "menuOpacity": 0,
+        "buttonPointer": "none",
+        "menuPointer": "none",
+        "buttonVisible": true,
+        "focus": "",
+        "lang": "fr",
+        "hash": "#projects",
+        "overflow": false
+      }
+    },
+    {
+      "case": "fr-reduced-idle-restores-both",
+      "result": {
+        "scroll": 1375,
+        "dockScrolling": false,
+        "buttonHidden": false,
+        "buttonOpacity": 1,
+        "menuOpacity": 1,
+        "buttonPointer": "auto",
+        "menuPointer": "auto",
+        "buttonVisible": true,
+        "focus": "",
+        "lang": "fr",
+        "hash": "#projects",
+        "overflow": false
+      },
+      "animationSamples": [
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        }
+      ]
+    },
+    {
+      "case": "ar-reduced-rest",
+      "result": {
+        "scroll": 900,
+        "dockScrolling": false,
+        "buttonHidden": false,
+        "buttonOpacity": 1,
+        "menuOpacity": 1,
+        "buttonPointer": "auto",
+        "menuPointer": "auto",
+        "buttonVisible": true,
+        "focus": "",
+        "lang": "ar",
+        "hash": "#projects",
+        "overflow": false
+      }
+    },
+    {
+      "case": "ar-reduced-wheel-hides-both",
+      "result": {
+        "scroll": 1375,
+        "dockScrolling": true,
+        "buttonHidden": false,
+        "buttonOpacity": 0,
+        "menuOpacity": 0,
+        "buttonPointer": "none",
+        "menuPointer": "none",
+        "buttonVisible": true,
+        "focus": "",
+        "lang": "ar",
+        "hash": "#projects",
+        "overflow": false
+      }
+    },
+    {
+      "case": "ar-reduced-idle-restores-both",
+      "result": {
+        "scroll": 1375,
+        "dockScrolling": false,
+        "buttonHidden": false,
+        "buttonOpacity": 1,
+        "menuOpacity": 1,
+        "buttonPointer": "auto",
+        "menuPointer": "auto",
+        "buttonVisible": true,
+        "focus": "",
+        "lang": "ar",
+        "hash": "#projects",
+        "overflow": false
+      },
+      "animationSamples": [
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": true,
+          "button": 0,
+          "menu": 0
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        },
+        {
+          "state": false,
+          "button": 1,
+          "menu": 1
+        }
+      ]
+    },
+    {
+      "case": "keyboard-menu-focus-reveals-both-immediately",
+      "result": {
+        "scroll": 1470,
+        "dockScrolling": true,
+        "buttonHidden": false,
+        "buttonOpacity": 1,
+        "menuOpacity": 1,
+        "buttonPointer": "auto",
+        "menuPointer": "auto",
+        "buttonVisible": true,
+        "focus": "",
+        "lang": "ar",
+        "hash": "#projects",
+        "overflow": false
+      }
+    },
+    {
+      "case": "keyboard-shortcut-remains-visible",
+      "result": {
+        "scroll": 1470,
+        "dockScrolling": true,
+        "buttonHidden": false,
+        "buttonOpacity": 1,
+        "menuOpacity": 0.938617,
+        "buttonPointer": "auto",
+        "menuPointer": "none",
+        "buttonVisible": true,
+        "focus": "back-to-top",
+        "lang": "ar",
+        "hash": "#projects",
+        "overflow": false
+      }
+    },
+    {
+      "case": "keyboard-return-keeps-title-focus",
+      "result": {
+        "scroll": 0,
+        "dockScrolling": false,
+        "buttonHidden": true,
+        "buttonOpacity": 1,
+        "menuOpacity": 0.988074,
+        "buttonPointer": "auto",
+        "menuPointer": "auto",
+        "buttonVisible": false,
+        "focus": "section-title",
+        "lang": "ar",
+        "hash": "#projects",
+        "overflow": false
+      }
+    },
+    {
+      "case": "reduced-return-still-instant",
+      "result": {
+        "scroll": 0,
+        "dockScrolling": true,
+        "buttonHidden": true,
+        "buttonOpacity": 0,
+        "menuOpacity": 0,
+        "buttonPointer": "none",
+        "menuPointer": "none",
+        "buttonVisible": false,
+        "focus": "section-title",
+        "lang": "ar",
+        "hash": "#projects",
+        "overflow": false
+      }
+    },
+    {
+      "case": "desktop-stays-hidden",
+      "result": {
+        "scroll": 900,
+        "dockScrolling": false,
+        "buttonHidden": true,
+        "buttonOpacity": 1,
+        "menuOpacity": 1,
+        "buttonPointer": "auto",
+        "menuPointer": "auto",
+        "buttonVisible": false,
+        "focus": "section-title",
+        "lang": "ar",
+        "hash": "#projects",
+        "overflow": false
+      }
+    },
+    {
+      "case": "desktop-wheel-stays-hidden",
+      "result": {
+        "scroll": 995,
+        "dockScrolling": true,
+        "buttonHidden": true,
+        "buttonOpacity": 1,
+        "menuOpacity": 0,
+        "buttonPointer": "auto",
+        "menuPointer": "none",
+        "buttonVisible": false,
+        "focus": "section-title",
+        "lang": "ar",
+        "hash": "#projects",
+        "overflow": false
+      }
+    }
+  ],
+  "passed": true,
+  "sourcesAfter": {
+    "back-to-top.mjs": "6e1cb92805b3236b83e947ca09c94c5a65771fa0aeceaa7c6044cfccd02bf4ce",
+    "back-to-top.css": "917add7417209c47f721fffe2415e48f56d6e90cb5845293034feb1bfb7088d8"
+  },
+  "sourcesUnchanged": true
+}

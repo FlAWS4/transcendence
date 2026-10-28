@@ -1,0 +1,307 @@
+{
+ "essai": "pseudo-manquant",
+ "date": "2026-10-14",
+ "role": "contre-vérification indépendante de check.py",
+ "page": "baseline/content-preview.html",
+ "cases": [
+  {
+   "case": "pages-non-concernees-pixels-exacts",
+   "pixelsDifferents": {
+    "fiche-leila-mobile-ar-sombre": 0,
+    "projets-mobile-ar-sombre": 0,
+    "chronique-petit-fr": 0,
+    "explorer-bloque-mobile-en": 0
+   },
+   "errors": []
+  },
+  {
+   "case": "combinaison-essais-des-cartes",
+   "essais": [
+    "lisibilite-textes",
+    "titres-forts",
+    "echelle-unifiee",
+    "une-colonne-320"
+   ],
+   "mesures": {
+    "sans-ordinateur-fr": {
+     "actifs": "une-colonne-320 lisibilite-textes titres-forts echelle-unifiee",
+     "cards": 24,
+     "rows": 5,
+     "wrongState": 5,
+     "shownPlaceholders": 5,
+     "unequalHeights": 0,
+     "unlevelCampus": 0,
+     "unlevelCohort": 0,
+     "reserveNotOneLoginLine": 0,
+     "overflow": false,
+     "texteVisible": 18,
+     "colonnes": 5,
+     "rangeesDecalees": []
+    },
+    "avec-ordinateur-fr": {
+     "actifs": "une-colonne-320 lisibilite-textes titres-forts echelle-unifiee pseudo-manquant",
+     "cards": 24,
+     "rows": 5,
+     "wrongState": 0,
+     "shownPlaceholders": 0,
+     "unequalHeights": 0,
+     "unlevelCampus": 0,
+     "unlevelCohort": 0,
+     "reserveNotOneLoginLine": 0,
+     "overflow": false,
+     "texteVisible": 0,
+     "colonnes": 5,
+     "rangeesDecalees": []
+    },
+    "sans-petit-ar": {
+     "actifs": "une-colonne-320 lisibilite-textes titres-forts echelle-unifiee",
+     "cards": 24,
+     "rows": 12,
+     "wrongState": 11,
+     "shownPlaceholders": 11,
+     "unequalHeights": 0,
+     "unlevelCampus": 4,
+     "unlevelCohort": 4,
+     "reserveNotOneLoginLine": 0,
+     "overflow": false,
+     "texteVisible": 18,
+     "colonnes": 2,
+     "rangeesDecalees": [
+      {
+       "rangee": 2,
+       "cartes": [
+        {
+         "id": "profile-leila-mansour",
+         "nom": [
+          141,
+          26
+         ],
+         "pseudo": [
+          173,
+          23
+         ],
+         "etat": "vrai",
+         "campus": [
+          202,
+          21
+         ]
+        },
+        {
+         "id": "profile-lucia-roca",
+         "nom": [
+          141,
+          26
+         ],
+         "pseudo": [
+          173,
+          46
+         ],
+         "etat": "visible",
+         "campus": [
+          225,
+          21
+         ]
+        }
+       ]
+      },
+      {
+       "rangee": 3,
+       "cartes": [
+        {
+         "id": "profile-noe-laurent",
+         "nom": [
+          141,
+          26
+         ],
+         "pseudo": [
+          173,
+          23
+         ],
+         "etat": "vrai",
+         "campus": [
+          202,
+          21
+         ]
+        },
+        {
+         "id": "profile-emma-de-smet",
+         "nom": [
+          141,
+          52
+         ],
+         "pseudo": [
+          199,
+          46
+         ],
+         "etat": "visible",
+         "campus": [
+          251,
+          21
+         ]
+        }
+       ]
+      },
+      {
+       "rangee": 5,
+       "cartes": [
+        {
+         "id": "profile-haru-mizuno",
+         "nom": [
+          141,
+          26
+         ],
+         "pseudo": [
+          173,
+          23
+         ],
+         "etat": "vrai",
+         "campus": [
+          202,
+          21
+         ]
+        },
+        {
+         "id": "profile-amir-keller",
+         "nom": [
+          141,
+          26
+         ],
+         "pseudo": [
+          173,
+          46
+         ],
+         "etat": "visible",
+         "campus": [
+          225,
+          21
+         ]
+        }
+       ]
+      },
+      {
+       "rangee": 7,
+       "cartes": [
+        {
+         "id": "profile-mei-tan",
+         "nom": [
+          141,
+          26
+         ],
+         "pseudo": [
+          173,
+          46
+         ],
+         "etat": "visible",
+         "campus": [
+          225,
+          21
+         ]
+        },
+        {
+         "id": "profile-caio-mendes",
+         "nom": [
+          141,
+          26
+         ],
+         "pseudo": [
+          173,
+          23
+         ],
+         "etat": "vrai",
+         "campus": [
+          202,
+          21
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    "avec-petit-ar": {
+     "actifs": "une-colonne-320 lisibilite-textes titres-forts echelle-unifiee pseudo-manquant",
+     "cards": 24,
+     "rows": 12,
+     "wrongState": 0,
+     "shownPlaceholders": 0,
+     "unequalHeights": 0,
+     "unlevelCampus": 1,
+     "unlevelCohort": 1,
+     "reserveNotOneLoginLine": 0,
+     "overflow": false,
+     "texteVisible": 0,
+     "colonnes": 2,
+     "rangeesDecalees": [
+      {
+       "rangee": 3,
+       "cartes": [
+        {
+         "id": "profile-noe-laurent",
+         "nom": [
+          141,
+          26
+         ],
+         "pseudo": [
+          173,
+          23
+         ],
+         "etat": "vrai",
+         "campus": [
+          202,
+          21
+         ]
+        },
+        {
+         "id": "profile-emma-de-smet",
+         "nom": [
+          141,
+          52
+         ],
+         "pseudo": [
+          199,
+          23
+         ],
+         "etat": "reserve",
+         "campus": [
+          228,
+          21
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    "sans-mobile-fr-sombre": {
+     "actifs": "une-colonne-320 lisibilite-textes titres-forts echelle-unifiee",
+     "cards": 24,
+     "rows": 12,
+     "wrongState": 11,
+     "shownPlaceholders": 11,
+     "unequalHeights": 0,
+     "unlevelCampus": 0,
+     "unlevelCohort": 0,
+     "reserveNotOneLoginLine": 0,
+     "overflow": false,
+     "texteVisible": 18,
+     "colonnes": 2,
+     "rangeesDecalees": []
+    },
+    "avec-mobile-fr-sombre": {
+     "actifs": "une-colonne-320 lisibilite-textes titres-forts echelle-unifiee pseudo-manquant",
+     "cards": 24,
+     "rows": 12,
+     "wrongState": 0,
+     "shownPlaceholders": 0,
+     "unequalHeights": 0,
+     "unlevelCampus": 0,
+     "unlevelCohort": 0,
+     "reserveNotOneLoginLine": 0,
+     "overflow": false,
+     "texteVisible": 0,
+     "colonnes": 2,
+     "rangeesDecalees": []
+    }
+   },
+   "errors": []
+  }
+ ]
+}

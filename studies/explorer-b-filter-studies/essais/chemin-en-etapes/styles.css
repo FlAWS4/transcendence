@@ -1,0 +1,46 @@
+/* Trial « Le chemin en étapes » of the version B filter study (26 Oct 2026). Loaded after every stylesheet of the copy,
+ * only when the URL asks for the trial. scope-pill.mjs (this folder) adds the steps, sets the pill's width and its form
+ * (data-chemin-form on the pill: full, or short where the full path cannot fit), the ←'s width (--chemin-back, on the
+ * bar) and the steps' margin that centres them (--chemin-shift, on the pill). */
+
+/* Centred on the page's axis: after the pill, the bar keeps an empty room as wide as the ← before it, so the pill's
+   centre is the bar's centre at every level, « Monde » included, where the ← keeps its room hidden
+   (dock-navigation.css). Reading drops the ← (globe-framing.css), and the room with it. The line under the pill
+   (#globe-status, centred on the bar) stays on the axis, as in the copy. */
+:root .app[data-navigation=dock]:not([data-reading=true]) #scope-bar::after {
+ content:'';flex:0 0 var(--chemin-back,44px);pointer-events:none;
+}
+
+/* The steps centred on the pill's middle: the live trail keeps its natural width, after a margin computed by
+   scope-pill.mjs (0 when the path is too long to be centred without touching the globe's seat). The measuring copies
+   have no id: they keep the copy's layout. */
+:root .app[data-navigation=dock] #scope-path>.scope-trail { margin-inline-start:var(--chemin-shift,0px); }
+
+/* The trial's steps: the continent (text) and the placeholders. */
+:root .app[data-navigation=dock] .scope-trail>.chemin-step { flex:0 1 auto; }
+/* Where a phone is too narrow for the largest short form, only the chosen name ends with « … », never the placeholder. */
+:root .app[data-navigation=dock] .scope-trail>.chemin-placeholder { flex-shrink:0; }
+:root .app[data-navigation=dock] .chemin-step>.scope-separator { flex:none; }
+/* A step that is not a button takes the ancestors' size and padding (welcome.css, responsive-content.css). */
+:root .app[data-navigation=dock] .chemin-label {
+ display:block;min-width:0;padding:8px 10px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+ font-size:clamp(.8125rem,calc(.7625rem + .25vw),.9375rem);
+}
+@media(max-width:700px) {
+ :root .app[data-navigation=dock] .chemin-label { padding:8px 7px; }
+}
+
+/* The chosen steps in the text colour (the country before a campus was muted), the steps still to choose muted: the
+   theme's own muted tone (tokens.css), lighter than the reinforced one the glass gives the pill (readable-glass.css),
+   so that they read as places still empty; about 6.7:1 on the light pill. */
+:root .app[data-navigation=dock] :is(.scope-ancestor button,.chemin-continent>.chemin-label) { color:var(--h42-color-text); }
+:root .app[data-navigation=dock] .chemin-placeholder>.chemin-label { color:var(--h42-muted); }
+:root[data-theme=dark] .app[data-navigation=dock] .chemin-placeholder>.chemin-label { color:var(--h42-cadet); }
+@media(forced-colors:active) {
+ :root .app[data-navigation=dock] .chemin-placeholder>.chemin-label { color:GrayText; }
+}
+
+/* Short form: the current step and the next one to choose only. */
+:root .app[data-navigation=dock] .scope-path[data-chemin-form=short] :is(.scope-ancestor,.chemin-continent,.chemin-placeholder:not(.chemin-next)) {
+ display:none;
+}

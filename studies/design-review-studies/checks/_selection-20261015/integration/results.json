@@ -1,0 +1,890 @@
+{
+ "date": "2026-10-15",
+ "selection": [
+  "globe-espace-libre",
+  "police-etiquettes-globe",
+  "une-colonne-320",
+  "roles-couleur",
+  "visiter-contour-sombre",
+  "lisibilite-textes",
+  "echelle-unifiee",
+  "pseudo-manquant",
+  "awards-a-venir"
+ ],
+ "lienCombinaison": "baseline/content-preview.html?essais=globe-espace-libre,police-etiquettes-globe,une-colonne-320,roles-couleur,visiter-contour-sombre,lisibilite-textes,echelle-unifiee,pseudo-manquant,awards-a-venir#explore",
+ "problemes": [
+  {
+   "id": 1,
+   "source": "explorer-arrivee-awards, problème 1",
+   "essais": [
+    "globe-espace-libre",
+    "lisibilite-textes"
+   ],
+   "nature": "conflit entre essais",
+   "reproduction": {
+    "ensembleMinimal": "G+L, chargements directs, vrai globe",
+    "1440x900-ar-statut": {
+     "G": 16.99,
+     "G+L": 13.99,
+     "G+E": 16.99
+    },
+    "680x560-ar-statut": {
+     "G": 17.0,
+     "G+L": 10.0
+    },
+    "700x500-ar-statistiques (non signalé)": {
+     "G": 17.01,
+     "G+L": 15.56
+    }
+   },
+   "correction": "essais/globe-espace-libre/essai.css : trois bandes conditionnelles :root[data-essais~=lisibilite-textes] (bas 196 px ordinateur et tablette, 181 px paysage étroit ≥ 521 px, haut 151,9 px paysage étroit ≤ 520 px). Essai seul inchangé.",
+   "apres": {
+    "1440x900-ar": {
+     "G": [
+      240.01,
+      16.99
+     ],
+     "G+L": [
+      237.01,
+      16.99
+     ],
+     "neuf": [
+      237.01,
+      16.99
+     ]
+    },
+    "680x560-ar": {
+     "G": [
+      89,
+      17.0
+     ],
+     "G+L": [
+      82,
+      17.0
+     ],
+     "neuf": [
+      82,
+      17.0
+     ]
+    },
+    "700x500-ar": {
+     "G": [
+      82.6,
+      17.01
+     ],
+     "G+L": [
+      81.1,
+      17.06
+     ],
+     "neuf": [
+      81.1,
+      17.06
+     ]
+    }
+   },
+   "conclusion": "conflit corrigé"
+  },
+  {
+   "id": 2,
+   "source": "explorer-arrivee-awards, problème 2",
+   "essais": [
+    "lisibilite-textes"
+   ],
+   "nature": "défaut de l’essai seul",
+   "reproduction": {
+    "1440x900": {
+     "socle": "14px / 20.3px",
+     "L": "13px / 18.85px"
+    },
+    "844x390": {
+     "socle": "14px / 20.3px",
+     "L": "13px / 18.85px"
+    },
+    "390x844": {
+     "socle": "12px / 17.4px",
+     "L": "13px / 18.85px"
+    }
+   },
+   "correction": "essais/lisibilite-textes/essai.css : .globe-status p à 13 px seulement sous @media(max-width:700px) ; l’essai seul change sur ordinateur (ligne d’aide 13 → 14 px, valeur de la copie, conforme à sa fiche).",
+   "apres": {
+    "polices": {
+     "1440x900-socle": "14px / 20.3px",
+     "1440x900-L": "14px / 20.3px",
+     "1440x900-G+L": "14px / 20.3px",
+     "390x844-socle": "12px / 17.4px",
+     "390x844-L": "13px / 18.85px",
+     "390x844-G+L": "13px / 18.85px",
+     "667x375-socle": "12px / 17.4px",
+     "667x375-L": "13px / 18.85px",
+     "667x375-G+L": "13px / 18.85px",
+     "680x560-socle": "12px / 17.4px",
+     "680x560-L": "13px / 18.85px",
+     "680x560-G+L": "13px / 18.85px",
+     "844x390-socle": "14px / 20.3px",
+     "844x390-L": "14px / 20.3px",
+     "844x390-G+L": "14px / 20.3px",
+     "700x500-socle": "12px / 17.4px",
+     "700x500-L": "13px / 18.85px",
+     "700x500-G+L": "13px / 18.85px",
+     "1280x500-socle": "14px / 20.3px",
+     "1280x500-L": "14px / 20.3px",
+     "1280x500-G+L": "14px / 20.3px"
+    },
+    "perimetreExplorer": {
+     "1440x900-fr": {
+      "baisses": 0,
+      "auDessusDe14": 0,
+      "couleursInattendues": 0,
+      "ligneAide": "14px"
+     },
+     "1440x900-ar-sombre": {
+      "baisses": 0,
+      "auDessusDe14": 0,
+      "couleursInattendues": 0,
+      "ligneAide": "14px"
+     },
+     "390x844-fr": {
+      "baisses": 0,
+      "auDessusDe14": 0,
+      "couleursInattendues": 0,
+      "ligneAide": "13px"
+     },
+     "667x375-ar": {
+      "baisses": 0,
+      "auDessusDe14": 0,
+      "couleursInattendues": 0,
+      "ligneAide": "13px"
+     },
+     "844x390-fr": {
+      "baisses": 0,
+      "auDessusDe14": 0,
+      "couleursInattendues": 0,
+      "ligneAide": "14px"
+     },
+     "monde": {
+      "baisses": 0,
+      "auDessusDe14": 0,
+      "couleursInattendues": 0,
+      "ligneAide": "14px"
+     },
+     "pays-france": {
+      "baisses": 0,
+      "auDessusDe14": 0,
+      "couleursInattendues": 0,
+      "ligneAide": "14px"
+     },
+     "campus-paris": {
+      "baisses": 0,
+      "auDessusDe14": 0,
+      "couleursInattendues": 0,
+      "ligneAide": "14px"
+     }
+    }
+   },
+   "conclusion": "défaut d’un essai corrigé"
+  },
+  {
+   "id": 3,
+   "source": "explorer-arrivee-awards, problème 3",
+   "essais": [
+    "globe-espace-libre",
+    "lisibilite-textes"
+   ],
+   "nature": "limite de la paire, disque au zoom minimal",
+   "reproduction": {
+    "667x375-ar-statistiques": {
+     "G": 16.46,
+     "G+L": 15.01
+    },
+    "rayon": 20.65
+   },
+   "apres": {
+    "667x375-ar-statistiques": {
+     "G": 16.46,
+     "G+L": 15.01,
+     "neuf": 15.01
+    }
+   },
+   "correction": "Aucune possible sans toucher au moteur du globe ou au plancher de lisibilite-textes ; limite consignée dans les deux fiches.",
+   "conclusion": "non corrigé"
+  },
+  {
+   "id": 4,
+   "source": "rubriques-fiches-dialogues, problème 1",
+   "essais": [
+    "lisibilite-textes"
+   ],
+   "nature": "effet de l’essai seul, sans défaut",
+   "reproduction": {
+    "socle": [
+     {
+      "t": "Arun Suri",
+      "lines": 1,
+      "fs": "12.2188px",
+      "w": 51
+     }
+    ],
+    "L": [
+     {
+      "t": "Arun Suri",
+      "lines": 2,
+      "fs": "13px",
+      "w": 54
+     }
+    ],
+    "E": [
+     {
+      "t": "Arun Suri",
+      "lines": 1,
+      "fs": "12px",
+      "w": 51
+     }
+    ],
+    "L+E": [
+     {
+      "t": "Arun Suri",
+      "lines": 2,
+      "fs": "13px",
+      "w": 54
+     }
+    ],
+    "G+P+U+R+V+L+E+PM+A": [
+     {
+      "t": "Arun Suri",
+      "lines": 2,
+      "fs": "13px",
+      "w": 54
+     }
+    ]
+   },
+   "nomsSurDeuxLignesDansLaCopie": [
+    "Luiza Costa",
+    "Leïla Mansour",
+    "Caio Mendes",
+    "Tomás Vieira"
+   ],
+   "correction": "Aucune ; limite consignée dans essais/lisibilite-textes/essai.json.",
+   "conclusion": "non corrigé"
+  },
+  {
+   "id": 5,
+   "source": "rubriques-fiches-dialogues, problème 2",
+   "essais": [
+    "echelle-unifiee"
+   ],
+   "nature": "effet de l’essai seul, non relevé par ses vérificateurs",
+   "reproduction": {
+    "360": {
+     "socle": {
+      "hauteurs": [
+       112.5
+      ],
+      "pastilles": [
+       "كاديت:1:11px",
+       "خريج / خريجة:1:11px",
+       "Transcender:1:11px"
+      ],
+      "rognees": 0
+     },
+     "E": {
+      "hauteurs": [
+       114,
+       132
+      ],
+      "pastilles": [
+       "كاديت:1:12px",
+       "خريج / خريجة:2:12px",
+       "Transcender:1:12px"
+      ],
+      "rognees": 0
+     },
+     "L": {
+      "hauteurs": [
+       112.5
+      ],
+      "pastilles": [
+       "كاديت:1:11px",
+       "خريج / خريجة:1:11px",
+       "Transcender:1:11px"
+      ],
+      "rognees": 0
+     },
+     "PM": {
+      "hauteurs": [
+       112.5
+      ],
+      "pastilles": [
+       "كاديت:1:11px",
+       "خريج / خريجة:1:11px",
+       "Transcender:1:11px"
+      ],
+      "rognees": 0
+     },
+     "L+E": {
+      "hauteurs": [
+       114,
+       132
+      ],
+      "pastilles": [
+       "كاديت:1:12px",
+       "خريج / خريجة:2:12px",
+       "Transcender:1:12px"
+      ],
+      "rognees": 0
+     },
+     "G+P+U+R+V+L+E+PM+A": {
+      "hauteurs": [
+       114,
+       132
+      ],
+      "pastilles": [
+       "كاديت:1:12px",
+       "خريج / خريجة:2:12px",
+       "Transcender:1:12px"
+      ],
+      "rognees": 0
+     }
+    },
+    "autresLargeurs": {
+     "320-socle": {
+      "hauteurs": [
+       112.5,
+       126.9
+      ],
+      "pastilles": [
+       "كاديت:1:11px",
+       "خريج / خريجة:1:11px",
+       "Transcender:1:11px"
+      ]
+     },
+     "320-E": {
+      "hauteurs": [
+       114,
+       126.2,
+       132
+      ],
+      "pastilles": [
+       "كاديت:1:12px",
+       "خريج / خريجة:2:12px",
+       "Transcender:1:12px"
+      ]
+     },
+     "320-G+P+U+R+V+L+E+PM+A": {
+      "hauteurs": [
+       114,
+       132
+      ],
+      "pastilles": [
+       "كاديت:1:12px",
+       "خريج / خريجة:2:12px",
+       "Transcender:1:12px"
+      ]
+     },
+     "340-socle": {
+      "hauteurs": [
+       112.5
+      ],
+      "pastilles": [
+       "كاديت:1:11px",
+       "خريج / خريجة:1:11px",
+       "Transcender:1:11px"
+      ]
+     },
+     "340-E": {
+      "hauteurs": [
+       114,
+       132
+      ],
+      "pastilles": [
+       "كاديت:1:12px",
+       "خريج / خريجة:2:12px",
+       "Transcender:1:12px"
+      ]
+     },
+     "340-G+P+U+R+V+L+E+PM+A": {
+      "hauteurs": [
+       114,
+       132
+      ],
+      "pastilles": [
+       "كاديت:1:12px",
+       "خريج / خريجة:2:12px",
+       "Transcender:1:12px"
+      ]
+     },
+     "390-socle": {
+      "hauteurs": [
+       112.5
+      ],
+      "pastilles": [
+       "كاديت:1:11px",
+       "خريج / خريجة:1:11px",
+       "Transcender:1:11px"
+      ]
+     },
+     "390-E": {
+      "hauteurs": [
+       114,
+       132
+      ],
+      "pastilles": [
+       "كاديت:1:12px",
+       "خريج / خريجة:2:12px",
+       "Transcender:1:12px"
+      ]
+     },
+     "390-G+P+U+R+V+L+E+PM+A": {
+      "hauteurs": [
+       114,
+       132
+      ],
+      "pastilles": [
+       "كاديت:1:12px",
+       "خريج / خريجة:2:12px",
+       "Transcender:1:12px"
+      ]
+     },
+     "768-socle": {
+      "hauteurs": [
+       120
+      ],
+      "pastilles": [
+       "كاديت:1:11px",
+       "خريج / خريجة:1:11px",
+       "Transcender:1:11px"
+      ]
+     },
+     "768-E": {
+      "hauteurs": [
+       121,
+       139
+      ],
+      "pastilles": [
+       "كاديت:1:12px",
+       "خريج / خريجة:2:12px",
+       "Transcender:1:12px"
+      ]
+     },
+     "768-G+P+U+R+V+L+E+PM+A": {
+      "hauteurs": [
+       121,
+       139
+      ],
+      "pastilles": [
+       "كاديت:1:12px",
+       "خريج / خريجة:2:12px",
+       "Transcender:1:12px"
+      ]
+     },
+     "1024-socle": {
+      "hauteurs": [
+       127.7
+      ],
+      "pastilles": [
+       "كاديت:1:11px",
+       "خريج / خريجة:1:11px",
+       "Transcender:1:11px"
+      ]
+     },
+     "1024-E": {
+      "hauteurs": [
+       128.7
+      ],
+      "pastilles": [
+       "كاديت:1:12px",
+       "خريج / خريجة:1:12px",
+       "Transcender:1:12px"
+      ]
+     },
+     "1024-G+P+U+R+V+L+E+PM+A": {
+      "hauteurs": [
+       128.7
+      ],
+      "pastilles": [
+       "كاديت:1:12px",
+       "خريج / خريجة:1:12px",
+       "Transcender:1:12px"
+      ]
+     },
+     "1199-socle": {
+      "hauteurs": [
+       133
+      ],
+      "pastilles": [
+       "كاديت:1:11px",
+       "خريج / خريجة:1:11px",
+       "Transcender:1:11px"
+      ]
+     },
+     "1199-E": {
+      "hauteurs": [
+       134
+      ],
+      "pastilles": [
+       "كاديت:1:12px",
+       "خريج / خريجة:1:12px",
+       "Transcender:1:12px"
+      ]
+     },
+     "1199-G+P+U+R+V+L+E+PM+A": {
+      "hauteurs": [
+       134
+      ],
+      "pastilles": [
+       "كاديت:1:12px",
+       "خريج / خريجة:1:12px",
+       "Transcender:1:12px"
+      ]
+     },
+     "1200-socle": {
+      "hauteurs": [
+       133
+      ],
+      "pastilles": [
+       "كاديت:1:11px",
+       "خريج / خريجة:1:11px",
+       "Transcender:1:11px"
+      ]
+     },
+     "1200-E": {
+      "hauteurs": [
+       134
+      ],
+      "pastilles": [
+       "كاديت:1:12px",
+       "خريج / خريجة:1:12px",
+       "Transcender:1:12px"
+      ]
+     },
+     "1200-G+P+U+R+V+L+E+PM+A": {
+      "hauteurs": [
+       135.5,
+       155
+      ],
+      "pastilles": [
+       "كاديت:1:13px",
+       "خريج / خريجة:2:13px",
+       "Transcender:1:13px"
+      ]
+     },
+     "1440-socle": {
+      "hauteurs": [
+       137
+      ],
+      "pastilles": [
+       "كاديت:1:11px",
+       "خريج / خريجة:1:11px",
+       "Transcender:1:11px"
+      ]
+     },
+     "1440-E": {
+      "hauteurs": [
+       138
+      ],
+      "pastilles": [
+       "كاديت:1:12px",
+       "خريج / خريجة:1:12px",
+       "Transcender:1:12px"
+      ]
+     },
+     "1440-G+P+U+R+V+L+E+PM+A": {
+      "hauteurs": [
+       139.5
+      ],
+      "pastilles": [
+       "كاديت:1:13px",
+       "خريج / خريجة:1:13px",
+       "Transcender:1:13px"
+      ]
+     }
+    }
+   },
+   "correction": "Aucune (la seule correction sortirait la pastille de l’échelle et changerait l’essai seul) ; limite consignée dans essais/echelle-unifiee/essai.json, avec les largeurs exactes (320 à au moins 768 px).",
+   "conclusion": "non corrigé"
+  },
+  {
+   "id": 6,
+   "source": "rubriques-fiches-dialogues, problème 3",
+   "essais": [
+    "visiter-contour-sombre"
+   ],
+   "nature": "contraste préexistant de la copie, inchangé par les essais",
+   "reproduction": {
+    "1440-fr-socle": {
+     "texte": "rgb(237, 52, 145)",
+     "fond": [
+      40,
+      40,
+      45
+     ],
+     "contraste": 3.84,
+     "bordure": "rgba(0, 0, 0, 0)",
+     "contrasteBordure": null,
+     "taille": [
+      246,
+      54
+     ]
+    },
+    "1440-fr-V": {
+     "texte": "rgb(237, 52, 145)",
+     "fond": [
+      40,
+      40,
+      45
+     ],
+     "contraste": 3.84,
+     "bordure": "rgb(112, 131, 131)",
+     "contrasteBordure": 3.68,
+     "taille": [
+      246,
+      54
+     ]
+    },
+    "1440-fr-G+P+U+R+V+L+E+PM+A": {
+     "texte": "rgb(237, 52, 145)",
+     "fond": [
+      40,
+      40,
+      45
+     ],
+     "contraste": 3.84,
+     "bordure": "rgb(112, 131, 131)",
+     "contrasteBordure": 3.68,
+     "taille": [
+      246,
+      53
+     ]
+    },
+    "390-ar-socle": {
+     "texte": "rgb(237, 52, 145)",
+     "fond": [
+      47,
+      49,
+      53
+     ],
+     "contraste": 3.41,
+     "bordure": "rgba(0, 0, 0, 0)",
+     "contrasteBordure": null,
+     "taille": [
+      246,
+      64
+     ]
+    },
+    "390-ar-V": {
+     "texte": "rgb(237, 52, 145)",
+     "fond": [
+      47,
+      49,
+      53
+     ],
+     "contraste": 3.41,
+     "bordure": "rgb(112, 131, 131)",
+     "contrasteBordure": 3.27,
+     "taille": [
+      246,
+      64
+     ]
+    },
+    "390-ar-G+P+U+R+V+L+E+PM+A": {
+     "texte": "rgb(237, 52, 145)",
+     "fond": [
+      42,
+      42,
+      46
+     ],
+     "contraste": 3.74,
+     "bordure": "rgb(112, 131, 131)",
+     "contrasteBordure": 3.58,
+     "taille": [
+      246,
+      64
+     ]
+    }
+   },
+   "correction": "Aucune : couleur choisie par l’utilisateur le 13 octobre, déjà signalée dans les limites de visiter-contour-sombre.",
+   "conclusion": "fausse alerte"
+  }
+ ],
+ "fichiersModifies": [
+  "essais/globe-espace-libre/essai.css",
+  "essais/globe-espace-libre/essai.json",
+  "checks/globe-espace-libre/results.json",
+  "essais/lisibilite-textes/essai.css",
+  "essais/lisibilite-textes/essai.json",
+  "checks/lisibilite-textes/results.json",
+  "essais/echelle-unifiee/essai.json"
+ ],
+ "parcoursGlobe": {
+  "revelationTerminee": true,
+  "revelation": 237.01,
+  "monde": 237.01,
+  "retour": 237.01,
+  "ar-sombre": 237.01,
+  "errors": [],
+  "medaillon": [
+   16.0,
+   [
+    0.0,
+    0
+   ]
+  ]
+ },
+ "passeFinale": {
+  "explorer1440": {
+   "rayon": 237.01,
+   "air": {
+    "filter": 80.99,
+    "stats": 50.69,
+    "status": 25.99,
+    "search": 63.99,
+    "dice": 74.96
+   },
+   "etiquettes": "Jost, sans-serif"
+  },
+  "explorer390": {
+   "rayon": 190.92,
+   "air": {
+    "filter": 101.08,
+    "stats": 72.24,
+    "status": 59.08,
+    "search": 97.08,
+    "dice": 108.53
+   }
+  },
+  "projets320ar": {
+   "columns": "280px",
+   "brokenNames": [],
+   "brokenTitles": [],
+   "clippedChips": 0
+  },
+  "profils1440": {
+   "pendingVisible": 0,
+   "realLogins": [
+    "@lcosta",
+    "@imorel",
+    "@lmansour",
+    "@nlaurent",
+    "@hmizuno",
+    "@cmendes"
+   ]
+  },
+  "commentaires": {
+   "commentaires-1440-clair-fr": [
+    "rgb(0, 186, 188)",
+    7.18,
+    "14px 400"
+   ],
+   "commentaires-390-sombre-ar": [
+    "rgb(237, 52, 145)",
+    4.51,
+    "14px 400"
+   ]
+  },
+  "filtre": {
+   "filtre-1440-clair-fr": [
+    "rgb(0, 186, 188)",
+    7.18,
+    "14px 500",
+    "20px"
+   ],
+   "filtre-390-sombre-ar": [
+    "rgb(237, 52, 145)",
+    4.51,
+    "14px 500",
+    "20px"
+   ]
+  },
+  "arrivee": {
+   "1440x900-sombre": {
+    "visiter": [
+     153.6,
+     52
+    ],
+    "seConnecter": [
+     153.6,
+     52
+    ],
+    "contrastes": {
+     "bgPixel": [
+      27,
+      27,
+      27
+     ],
+     "text": 4.51,
+     "border": 4.32
+    },
+    "focus": [
+     [
+      "entry-theme-toggle",
+      true
+     ],
+     [
+      "entry-login",
+      true
+     ],
+     [
+      "entry-guest",
+      true
+     ]
+    ]
+   },
+   "390x844-sombre": {
+    "visiter": [
+     342,
+     52
+    ],
+    "seConnecter": [
+     342,
+     52
+    ],
+    "contrastes": {
+     "bgPixel": [
+      27,
+      27,
+      27
+     ],
+     "text": 4.51,
+     "border": 4.32
+    },
+    "focus": [
+     [
+      "entry-theme-toggle",
+      true
+     ],
+     [
+      "entry-login",
+      true
+     ],
+     [
+      "entry-guest",
+      true
+     ]
+    ]
+   }
+  },
+  "awards": {
+   "1440x900-clair": [
+    "Les 42 Awards arrivent bientôt.",
+    "20px / 28px",
+    228,
+    324
+   ],
+   "390x844-sombre": [
+    "Les 42 Awards arrivent bientôt.",
+    "20px / 28px",
+    222,
+    311
+   ]
+  },
+  "erreurs": [],
+  "debordement": false,
+  "planches": [
+   "checks/_selection-20261015/integration/planches/f1-explorer-neuf.png",
+   "checks/_selection-20261015/integration/planches/f2-projets-commentaires-neuf.png",
+   "checks/_selection-20261015/integration/planches/f3-filtre-neuf.png",
+   "checks/_selection-20261015/integration/planches/f4-arrivee-sombre-neuf.png",
+   "checks/_selection-20261015/integration/planches/f5-awards-neuf.png"
+  ]
+ },
+ "fiches": true
+}

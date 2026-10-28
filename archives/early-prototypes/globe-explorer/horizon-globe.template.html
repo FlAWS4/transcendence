@@ -1,0 +1,93 @@
+<!--SCENE_STYLES-->
+<div id="horizon-globe" data-theme="light" data-panel="closed" aria-label="42 Horizon, explorer les campus">
+  <aside class="hr-sidebar">
+    <div class="hr-brand" aria-label="42 Horizon"><span class="hr-logo">42</span><span class="hr-brand-name">horizon</span></div>
+    <div>
+      <div class="hr-nav-caption">DÉCOUVRIR</div>
+      <nav class="hr-nav" aria-label="Navigation principale">
+        <button type="button" data-section="Explorer" aria-label="Explorer" aria-pressed="true"><i data-lucide="globe-2" aria-hidden="true"></i><span class="hr-nav-label">Explorer</span><span class="hr-nav-dot"></span></button>
+        <button type="button" data-section="Projets" aria-label="Projets" aria-pressed="false"><i data-lucide="layers-2" aria-hidden="true"></i><span class="hr-nav-label">Projets</span><span class="hr-nav-dot"></span></button>
+        <button type="button" data-section="Parcours" aria-label="Parcours" aria-pressed="false"><i data-lucide="route" aria-hidden="true"></i><span class="hr-nav-label">Parcours</span><span class="hr-nav-dot"></span></button>
+        <button type="button" data-section="Journal" aria-label="Journal" aria-pressed="false"><i data-lucide="notebook-pen" aria-hidden="true"></i><span class="hr-nav-label">Journal</span><span class="hr-nav-dot"></span></button>
+        <button type="button" data-section="Awards" aria-label="Awards" aria-pressed="false"><i data-lucide="trophy" aria-hidden="true"></i><span class="hr-nav-label">Awards</span><span class="hr-nav-dot"></span></button>
+      </nav>
+    </div>
+    <div class="hr-sidebar-bottom">
+      <button class="hr-theme" type="button" aria-label="Activer le mode sombre" aria-pressed="false"><i data-lucide="moon" aria-hidden="true"></i><span class="hr-theme-label">Mode sombre</span><span class="hr-switch" aria-hidden="true"></span></button>
+      <div class="hr-prototype">Prototype · Contenus fictifs</div>
+    </div>
+  </aside>
+  <main class="hr-main">
+    <header class="hr-topbar"><nav class="hr-crumbs" aria-label="Périmètre géographique"></nav><span class="hr-status">5 campus de démonstration</span></header>
+    <div class="hr-intro"><div class="hr-eyebrow">EXPLORER LA COMMUNAUTÉ</div><h1>L’esprit 42.<br><span>Sans frontières.</span></h1></div>
+    <div class="hr-stage">
+      <div class="hr-globe" aria-label="Globe interactif des campus"></div>
+      <section class="hr-panel" aria-label="Contenus du périmètre sélectionné">
+        <div class="hr-panel-scope"></div>
+        <div class="hr-panel-top"><h2></h2><span class="hr-count"></span></div>
+        <div class="hr-panel-list"></div>
+      </section>
+    </div>
+    <footer class="hr-footer">
+      <div class="hr-controls">
+        <div class="hr-help">Glisser pour tourner <span>·</span> Molette pour zoomer</div>
+        <div class="hr-control-group" aria-label="Contrôles du globe">
+          <button class="hr-icon-button hr-back" type="button" aria-label="Revenir au niveau précédent" disabled><i data-lucide="undo-2" aria-hidden="true"></i></button>
+          <button class="hr-icon-button hr-world" type="button" aria-label="Revenir au monde"><i data-lucide="scan" aria-hidden="true"></i></button>
+          <span class="hr-control-separator"></span>
+          <button class="hr-icon-button hr-zoom-out" type="button" aria-label="Dézoomer"><i data-lucide="minus" aria-hidden="true"></i></button>
+          <button class="hr-icon-button hr-zoom-in" type="button" aria-label="Zoomer"><i data-lucide="plus" aria-hidden="true"></i></button>
+        </div>
+      </div>
+      <div class="hr-discover"><div class="hr-discover-text">Choisissez votre point de départ.<small>Un pays, un campus, des idées à découvrir.</small></div><div class="hr-destinations" aria-label="Destinations de démonstration"><button type="button" data-country="FRA">France</button><button type="button" data-country="BRA">Brésil</button><button type="button" data-country="JPN">Japon</button></div></div>
+    </footer>
+    <div class="hr-source"><a href="https://www.naturalearthdata.com/" target="_blank" rel="noreferrer">Natural Earth</a> · D3 Maps · Données de démonstration</div>
+    <div class="hr-screenreader hr-announcement" aria-live="polite"></div>
+  </main>
+</div>
+<!--D3_LIBRARY-->
+<!--TOPO_LIBRARY-->
+<!--GLOBE_ENGINE-->
+<script>
+(() => {
+const root=document.getElementById('horizon-globe');
+const world=/*WORLD_DATA*/null;
+const cities=/*CITY_DATA*/null;
+const campusDefs=[{id:'paris',name:'Paris',country:'FRA'},{id:'lyon',name:'Lyon',country:'FRA'},{id:'tokyo',name:'Tokyo',country:'JPN'},{id:'rio',name:'Rio de Janeiro',country:'BRA'},{id:'sao',name:'São Paulo',country:'BRA'}];
+const records={
+ Projets:[['paris','Un moteur 3D fait maison','Graphisme','Un moteur construit étape par étape : du premier pixel aux ombres et aux lumières.'],['lyon','Le jardin connecté','Objets connectés','Un projet collectif qui relie le code à un jardin et à ses besoins.'],['tokyo','La ville en sons','Création numérique','Une exploration sonore et interactive de la ville.'],['rio','Une bibliothèque ouverte','Web','Un espace pour partager ses lectures et découvrir celles des autres.'],['sao','Apprendre ensemble','Éducation','Des outils imaginés pour faciliter l’apprentissage entre pairs.']],
+ Parcours:[['paris','Camille, du premier code au premier emploi','Développement web','Les projets et les rencontres qui ont jalonné son passage à 42.'],['lyon','Samir, apprendre en construisant','Systèmes embarqués','Du premier programme à un objet connecté : les étapes d’un parcours.'],['tokyo','Aki, quand le code devient création','Création','Une rencontre entre programmation et expression artistique.'],['rio','Lia, lancer son premier projet','Entrepreneuriat','Une idée qui a grandi pendant le cursus, puis après l’école.'],['sao','Alex, transmettre à son tour','Éducation','Comment l’apprentissage collectif a donné envie de partager à son tour.']],
+ Journal:[['paris','Le déclic derrière le premier moteur 3D','Portrait','Un récit consacré aux obstacles rencontrés et à ce qui a permis de les dépasser.'],['lyon','Quand un projet rejoint une association','Actualité','Une réalisation étudiante trouve son utilité au-delà du campus.'],['tokyo','Créer une installation interactive','Entretien','Les coulisses d’une création qui associe interaction, son et programmation.'],['rio','Une bibliothèque portée par ses lecteurs','Reportage','La communauté prend part à la vie d’un projet.'],['sao','Apprendre ensemble, après 42 aussi','Entretien','Des anciens racontent comment ils continuent à apprendre ensemble.']],
+ Awards:[['paris','Un moteur 3D fait maison','Créativité · Candidature','Une candidature de démonstration aux 42 Awards.'],['lyon','Le jardin connecté','Projet · Candidature','Une candidature de démonstration aux 42 Awards.'],['tokyo','La ville en sons','Créativité · Candidature','Une candidature de démonstration aux 42 Awards.'],['rio','Une bibliothèque ouverte','Interface · Candidature','Une candidature de démonstration aux 42 Awards.'],['sao','Apprendre ensemble','Projet · Candidature','Une candidature de démonstration aux 42 Awards.']]
+};
+let scope={country:null,campus:null,level:'world'},section='Explorer',dark=false,globe,detail=null;
+const names={FRA:'France',BRA:'Brésil',JPN:'Japon'};
+const scopeLabel=()=>scope.campus?'Campus '+campusDefs.find(c=>c.id===scope.campus).name:scope.country?names[scope.country]:'Tous les campus';
+function crumbs(){const container=root.querySelector('.hr-crumbs');container.replaceChildren();const add=(label,fn,current)=>{if(container.children.length){const s=document.createElement('span');s.textContent='/';s.setAttribute('aria-hidden','true');container.append(s);}const b=document.createElement('button');b.type='button';b.textContent=label;b.onclick=fn;if(current)b.setAttribute('aria-current','location');container.append(b);};add('Monde',()=>globe.reset(),!scope.country);if(scope.country)add(names[scope.country],()=>globe.selectCountry(scope.country),!scope.campus);if(scope.campus)add(campusDefs.find(c=>c.id===scope.campus).name,()=>{},true);}
+function panel(){
+ root.dataset.panel=section==='Explorer'?'closed':'open';
+ root.style.setProperty('--hr-active-index',['Explorer','Projets','Parcours','Journal','Awards'].indexOf(section));
+ globe?.refreshLayout();
+ root.querySelectorAll('[data-section]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.section===section)));
+ const area=root.querySelector('.hr-panel');area.hidden=section==='Explorer';if(section==='Explorer')return;
+ area.querySelector('.hr-panel-scope').textContent=scopeLabel();
+ area.querySelector('h2').textContent=section;
+ const rows=records[section].filter(r=>!scope.country||campusDefs.find(c=>c.id===r[0]).country===scope.country).filter(r=>!scope.campus||r[0]===scope.campus);
+ area.querySelector('.hr-count').textContent=rows.length;
+ const list=area.querySelector('.hr-panel-list');list.replaceChildren();
+ if(detail){const title=document.createElement('div');title.className='hr-item-title';title.textContent=detail[1];const body=document.createElement('div');body.className='hr-detail-text';body.textContent=detail[3];const back=document.createElement('button');back.type='button';back.className='hr-detail-back';back.textContent='← Revenir aux résultats';back.onclick=()=>{detail=null;panel();};list.append(title,body,back);return;}
+ rows.forEach(row=>{const campus=campusDefs.find(c=>c.id===row[0]);const b=document.createElement('button');b.type='button';b.className='hr-item';const kind=document.createElement('div');kind.className='hr-item-kind';kind.textContent=row[2];const name=document.createElement('div');name.className='hr-item-title';name.textContent=row[1];const meta=document.createElement('div');meta.className='hr-item-campus';meta.textContent=campus.name;b.append(kind,name,meta);b.onclick=()=>{detail=row;panel();};list.append(b);});
+}
+function onScopeChange(next){scope=next;detail=null;crumbs();panel();root.querySelector('.hr-back').disabled=!scope.country;root.querySelector('.hr-announcement').textContent=scopeLabel()+', rubrique '+section;}
+globe=createCampusGlobe({container:root.querySelector('.hr-globe'),world,cities,onScopeChange,onViewChange:({canBack})=>{root.querySelector('.hr-back').disabled=!canBack;}});
+root.querySelectorAll('[data-section]').forEach(b=>b.onclick=()=>{section=b.dataset.section;detail=null;panel();root.querySelector('.hr-announcement').textContent=section+', '+scopeLabel();});
+root.querySelectorAll('[data-country]').forEach(b=>b.onclick=()=>globe.selectCountry(b.dataset.country));
+root.querySelector('.hr-back').onclick=()=>globe.back();
+root.querySelector('.hr-world').onclick=()=>globe.reset();
+root.querySelector('.hr-zoom-in').onclick=()=>globe.zoomBy(1.35);
+root.querySelector('.hr-zoom-out').onclick=()=>globe.zoomBy(1/1.35);
+root.querySelector('.hr-theme').onclick=()=>{dark=!dark;root.dataset.theme=dark?'dark':'light';const b=root.querySelector('.hr-theme');b.setAttribute('aria-pressed',String(dark));b.setAttribute('aria-label',dark?'Activer le mode clair':'Activer le mode sombre');root.querySelector('.hr-theme-label').textContent=dark?'Mode clair':'Mode sombre';globe.setTheme(dark);};
+crumbs();panel();
+if(globalThis.Tweak){const design={fade:53};const tweaks=new Tweak({container:root,onChange:()=>{root.style.setProperty('--hr-fade-end',design.fade+'%');}});tweaks.addSlider(design,'fade',{label:'Fondu vers le menu',min:40,max:65,unit:'%'});}
+})();
+</script>

@@ -1,0 +1,188 @@
+{
+ "_meta": {
+  "fr": "Textes d’interface de la zone Arrivée et décryptage, relevés dans le code source du prototype actif (non traduits par l’outil). Le site charge toujours en français ; l’anglais et l’arabe s’atteignent à l’arrivée par le compte de l’écran d’erreur.",
+  "en": "",
+  "ar": "",
+  "where": "figma/refonte-20261015/scripts/extract_copy_entrance.mjs, 15 oct. 2026 ; géométrie et polices : spec-entrance.md"
+ },
+ "account.signin": {
+  "fr": "Se connecter",
+  "en": "Sign in",
+  "ar": "تسجيل الدخول",
+  "where": "account-menu.mjs copy.signin — accès du panneau du compte (écran entry-error) ; revient d’abord au message chiffré puis ouvre entry-signin"
+ },
+ "account.signup": {
+  "fr": "Créer un compte",
+  "en": "Create an account",
+  "ar": "إنشاء حساب",
+  "where": "account-menu.mjs signUpLabel — accès du panneau du compte (écran entry-error) ; revient d’abord au message chiffré puis ouvre entry-signup"
+ },
+ "account.trigger": {
+  "fr": "Menu du compte",
+  "en": "Account menu",
+  "ar": "قائمة الحساب",
+  "where": "account-menu.mjs copy.menu — nom accessible du bouton du compte (#profile), visible seulement sur l’écran entry-error de l’entrée"
+ },
+ "arrival.backgroundToDark": {
+  "fr": "Passer au mode sombre",
+  "en": "Switch to dark mode",
+  "ar": "التبديل إلى الوضع الداكن",
+  "where": "entrance.mjs interactionCopy.dark — nom accessible du fond cliquable (#entry-theme-toggle) en thème clair"
+ },
+ "arrival.backgroundToLight": {
+  "fr": "Passer au mode clair",
+  "en": "Switch to light mode",
+  "ar": "التبديل إلى الوضع الفاتح",
+  "where": "entrance.mjs interactionCopy.light — nom accessible du fond cliquable en thème sombre"
+ },
+ "arrival.ciphertext": {
+  "fr": "ru%43t 9xu s4tu",
+  "en": "ru%43t 9xu s4tu",
+  "ar": "ru%43t 9xu s4tu",
+  "where": "horizon-decryption-engine.mjs encrypt(PHRASE) — rotation de 42 positions dans ALPHABET (76 caractères) ; texte du canvas au repos (arrival-encrypted), identique dans les trois langues"
+ },
+ "arrival.guest": {
+  "fr": "Visiter",
+  "en": "Visit",
+  "ar": "زيارة",
+  "where": "entrance.mjs copy.guest — bouton secondaire de l’arrivée (#entry-guest), même alternance"
+ },
+ "arrival.labelsDescription": {
+  "fr": "Les langues alternent automatiquement. Le survol ou le focus des boutons suspend le changement.",
+  "en": "Languages rotate automatically. Hovering or focusing the buttons pauses the changes.",
+  "ar": "تتبدل اللغات تلقائياً. يتوقف التبديل عند تمرير المؤشر على الأزرار أو التركيز عليها.",
+  "where": "entrance.mjs interactionCopy.languages — aria-description des deux boutons (non affichée)"
+ },
+ "arrival.login": {
+  "fr": "Se connecter",
+  "en": "Sign in",
+  "ar": "تسجيل الدخول",
+  "where": "entrance.mjs copy.login — bouton principal de l’arrivée (#entry-login). Sur un site FR, son libellé alterne FR → EN → AR toutes les 4 s sans changer la langue du site ; dans la fenêtre de connexion ouverte depuis le compte, voir account.signin"
+ },
+ "arrival.region": {
+  "fr": "Entrée",
+  "en": "Entrance",
+  "ar": "الدخول",
+  "where": "entrance.mjs refresh() — aria-label de la section #entrance"
+ },
+ "arrival.sceneDecoding": {
+  "fr": "Déchiffrement en cours",
+  "en": "Decrypting",
+  "ar": "جارٍ فك التشفير",
+  "where": "entrance.mjs copy.decoding — aria-label de #entrance-scene pendant le déchiffrement"
+ },
+ "arrival.sceneEncrypted": {
+  "fr": "Message chiffré",
+  "en": "Encrypted message",
+  "ar": "رسالة مشفرة",
+  "where": "entrance.mjs copy.encrypted — aria-label de #entrance-scene (rôle img) pendant le scan et au repos"
+ },
+ "decrypt.phrase": {
+  "fr": "BEYOND THE CODE",
+  "en": "BEYOND THE CODE",
+  "ar": "BEYOND THE CODE",
+  "where": "horizon-decryption-engine.mjs PHRASE — texte final du canvas (decrypt-final), identique dans les trois langues ; aussi aria-label de la scène et annonce #announcement"
+ },
+ "dialog.close": {
+  "fr": "Fermer",
+  "en": "Close",
+  "ar": "إغلاق",
+  "where": "welcome.mjs copy.close — nom accessible de la croix #close-dialog (fenêtres entry-signin / entry-signup)"
+ },
+ "error.back": {
+  "fr": "Revenir au message",
+  "en": "Back to the message",
+  "ar": "العودة إلى الرسالة",
+  "where": "entrance.mjs copy.back — 2e bouton (secondaire) : retour au message chiffré"
+ },
+ "error.continue": {
+  "fr": "Continuer sans le globe",
+  "en": "Continue without the globe",
+  "ar": "المتابعة دون الكرة الأرضية",
+  "where": "entrance.mjs copy.continue — 3e bouton (secondaire) : Explorer sans le globe"
+ },
+ "error.retry": {
+  "fr": "Réessayer",
+  "en": "Try again",
+  "ar": "إعادة المحاولة",
+  "where": "entrance.mjs copy.retry — 1er bouton de l’écran entry-error (principal, focus à l’ouverture)"
+ },
+ "error.status": {
+  "fr": "Le monde n’a pas pu se préparer.",
+  "en": "The world could not be prepared.",
+  "ar": "تعذّر تجهيز العالم.",
+  "where": "entrance.mjs copy.error — #entrance-status de l’écran entry-error"
+ },
+ "opening.symbol": {
+  "fr": "42",
+  "en": "42",
+  "ar": "42",
+  "where": "index.html — aria-label de #entrance-symbol et alt de l’image du logo (logo-42.svg)"
+ },
+ "page.title": {
+  "fr": "42 Horizon — Un monde à explorer",
+  "en": "",
+  "ar": "",
+  "where": "index.html <title> — fixe, non traduit"
+ },
+ "signin.cancel": {
+  "fr": "Annuler",
+  "en": "Cancel",
+  "ar": "إلغاء",
+  "where": "entrance.mjs copy.cancel — bouton secondaire (même texte dans entry-signup)"
+ },
+ "signin.confirm": {
+  "fr": "Simuler une connexion réussie",
+  "en": "Simulate a successful sign-in",
+  "ar": "محاكاة تسجيل دخول ناجح",
+  "where": "entrance.mjs copy.confirm — bouton principal (lance le déchiffrement)"
+ },
+ "signin.description": {
+  "fr": "Cette maquette simule la connexion. Aucune authentification réelle n’est effectuée.",
+  "en": "This preview simulates sign-in. No real authentication takes place.",
+  "ar": "يحاكي هذا النموذج تسجيل الدخول. لا يتم إجراء مصادقة حقيقية.",
+  "where": "entrance.mjs copy.description — paragraphe .dialog-text"
+ },
+ "signin.title": {
+  "fr": "Connexion — prototype",
+  "en": "Sign in — prototype",
+  "ar": "تسجيل الدخول — نموذج أولي",
+  "where": "entrance.mjs copy.title — titre de la fenêtre entry-signin (#dialog-title, data-kind=login)"
+ },
+ "signup.confirm": {
+  "fr": "Simuler la création du compte",
+  "en": "Simulate account creation",
+  "ar": "محاكاة إنشاء حساب",
+  "where": "entrance.mjs signupCopy.confirm — bouton principal (lance le déchiffrement) ; bouton secondaire = signin.cancel"
+ },
+ "signup.description": {
+  "fr": "Cet aperçu simule la création de compte avec le profil fictif de Leïla Mansour. Aucun compte réel n’est créé.",
+  "en": "This preview simulates account creation using Leïla Mansour’s fictional profile. No real account is created.",
+  "ar": "يحاكي هذا النموذج إنشاء حساب باستخدام الملف الخيالي لليلى منصور. لا يتم إنشاء أي حساب حقيقي.",
+  "where": "entrance.mjs signupCopy.description — paragraphe .dialog-text"
+ },
+ "signup.title": {
+  "fr": "Création de compte simulée",
+  "en": "Simulated account creation",
+  "ar": "إنشاء حساب تجريبي",
+  "where": "entrance.mjs signupCopy.title — titre de la fenêtre entry-signup (data-kind=signup)"
+ },
+ "welcome.error": {
+  "fr": "Le globe n’a pas pu se charger. Recharge la page pour réessayer.",
+  "en": "The globe could not load. Refresh the page to try again.",
+  "ar": "تعذّر تحميل الكرة الأرضية. أعد تحميل الصفحة للمحاولة مجددًا.",
+  "where": "welcome.mjs copy.error — #loading en cas d’échec (caché derrière l’entrée)"
+ },
+ "welcome.loading": {
+  "fr": "Le monde se prépare…",
+  "en": "Getting the world ready…",
+  "ar": "نجهّز العالم…",
+  "where": "welcome.mjs copy.loading — #loading de l’accueil (caché derrière l’entrée ; mêmes textes que worldWait.status, définis séparément)"
+ },
+ "worldWait.status": {
+  "fr": "Le monde se prépare…",
+  "en": "Getting the world ready…",
+  "ar": "نجهّز العالم…",
+  "where": "entrance.mjs copy.waiting — #entrance-status sous le cercle (world-wait)"
+ }
+}

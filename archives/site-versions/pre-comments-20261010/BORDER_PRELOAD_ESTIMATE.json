@@ -1,0 +1,55 @@
+{
+  "date": "2026-09-27",
+  "purpose": "Size comparison only; no renderer or geographic suitability benchmark",
+  "source": "topojson/world-atlas@2.0.2, Natural Earth 4.1.0 redistribution",
+  "method": "Raw response JSON bytes; gzip.compress(bytes, compresslevel=9, mtime=0) computed locally; decimal units",
+  "current": {
+    "file": "../map-data/world.json",
+    "bytes": 110736,
+    "gzip9": 38753,
+    "arc_points": 8294
+  },
+  "comparisons": [
+    {
+      "scale": 50,
+      "url": "https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-50m.json",
+      "bytes": 756420,
+      "gzip9": 230099,
+      "arc_points": 80617,
+      "transform": {
+        "scale": [
+          0.0036000360003600037,
+          0.001736003453784538
+        ],
+        "translate": [
+          -180,
+          -89.999
+        ]
+      }
+    },
+    {
+      "scale": 10,
+      "url": "https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-10m.json",
+      "bytes": 3661071,
+      "gzip9": 919959,
+      "arc_points": 477295,
+      "transform": {
+        "scale": [
+          0.0036000360003600037,
+          0.0016885772698826986
+        ],
+        "translate": [
+          -180,
+          -85.22193775799991
+        ]
+      }
+    }
+  ],
+  "limits": [
+    "gzip sizes are calculated locally, not measured HTTP transfers of the prototype",
+    "raw JSON and gzip bytes are not runtime memory",
+    "Natural Earth 10m means 1:10 million, not 10 metres",
+    "No assurance of sufficient precision for smallest countries at zoom 8.8",
+    "Prototype source maxzoom 4 would also need adjustment; source selection remains open"
+  ]
+}

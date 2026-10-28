@@ -1,0 +1,253 @@
+{
+  "passed": true,
+  "sourcesBefore": {
+    "account-menu.mjs": "765811893ed7ad2cd9e806be5ec4fef79759b30dd54da6d05fbc6bbdef82bc4d",
+    "account-menu.css": "8f6da743782fb50abad856317bcb3292d8babcd96b51e8b6a13c7ff28d266540",
+    "welcome.mjs": "266dd854042db409585ca5efda2dfd143f515659c1d9d6d11c7219e6cc7226d9",
+    "entrance.mjs": "e7298291d5b731deffb0ec24fd001b087e76a167f774b67651d153d68c28c86d",
+    "index.html": "decd09fc8570a901ae6f03ac8eeb70a469cfc03dd71db041784149abe4538304",
+    "content-preview.html": "0fe08e8607642e20754ba12cfe455a368591669c99a09163f427c35b60cd9055"
+  },
+  "sourcesAfter": {
+    "account-menu.mjs": "765811893ed7ad2cd9e806be5ec4fef79759b30dd54da6d05fbc6bbdef82bc4d",
+    "account-menu.css": "8f6da743782fb50abad856317bcb3292d8babcd96b51e8b6a13c7ff28d266540",
+    "welcome.mjs": "266dd854042db409585ca5efda2dfd143f515659c1d9d6d11c7219e6cc7226d9",
+    "entrance.mjs": "e7298291d5b731deffb0ec24fd001b087e76a167f774b67651d153d68c28c86d",
+    "index.html": "decd09fc8570a901ae6f03ac8eeb70a469cfc03dd71db041784149abe4538304",
+    "content-preview.html": "0fe08e8607642e20754ba12cfe455a368591669c99a09163f427c35b60cd9055"
+  },
+  "cases": [
+    {
+      "case": "entry-guest-fr",
+      "result": {
+        "usernameDirection": null,
+        "belowName": false,
+        "headingClipped": true,
+        "identity": false,
+        "actions": [
+          "close",
+          "signin",
+          "signup",
+          "settings",
+          "theme",
+          "language"
+        ],
+        "lang": "fr",
+        "theme": "light",
+        "avatar": false,
+        "overflow": false,
+        "bounds": [
+          948,
+          1232,
+          1280
+        ]
+      }
+    },
+    {
+      "case": "sign-in-style-equals-entrance",
+      "styles": [
+        {
+          "backgroundColor": "rgb(27, 27, 27)",
+          "color": "rgb(255, 255, 255)",
+          "borderRadius": "14px",
+          "padding": "14px 28px",
+          "fontSize": "17px",
+          "minHeight": "52px",
+          "boxShadow": "rgba(27, 27, 27, 0.07) 0px 7px 20px 0px"
+        },
+        {
+          "backgroundColor": "rgb(27, 27, 27)",
+          "color": "rgb(255, 255, 255)",
+          "borderRadius": "14px",
+          "padding": "14px 28px",
+          "fontSize": "17px",
+          "minHeight": "52px",
+          "boxShadow": "rgba(27, 27, 27, 0.07) 0px 7px 20px 0px"
+        }
+      ]
+    },
+    {
+      "case": "entry-create-account",
+      "result": {
+        "open": true,
+        "text": "Cet aperçu simule la création de compte avec le profil fictif de Leïla Mansour. Aucun compte réel n’est créé.Simuler la création du compteAnnuler"
+      }
+    },
+    {
+      "case": "entry-created-demo-member",
+      "result": {
+        "name": "Leïla Mansour",
+        "username": "@lmansour",
+        "usernameDirection": "ltr",
+        "belowName": true,
+        "headingClipped": true,
+        "identity": true,
+        "actions": [
+          "close",
+          "account",
+          "settings",
+          "theme",
+          "language",
+          "signout"
+        ],
+        "lang": "fr",
+        "theme": "light",
+        "avatar": true,
+        "overflow": false,
+        "bounds": [
+          948,
+          1232,
+          1280
+        ]
+      }
+    },
+    {
+      "case": "signed-out",
+      "result": {
+        "usernameDirection": null,
+        "belowName": false,
+        "headingClipped": true,
+        "identity": false,
+        "actions": [
+          "close",
+          "signin",
+          "signup",
+          "settings",
+          "theme",
+          "language"
+        ],
+        "lang": "fr",
+        "theme": "light",
+        "avatar": false,
+        "overflow": false,
+        "bounds": [
+          948,
+          1232,
+          1280
+        ]
+      }
+    },
+    {
+      "case": "guest-ar320-dark",
+      "result": {
+        "usernameDirection": null,
+        "belowName": false,
+        "headingClipped": true,
+        "identity": false,
+        "actions": [
+          "close",
+          "signin",
+          "signup",
+          "settings",
+          "theme",
+          "language"
+        ],
+        "lang": "ar",
+        "theme": "dark",
+        "avatar": false,
+        "overflow": false,
+        "bounds": [
+          16,
+          300,
+          320
+        ]
+      }
+    },
+    {
+      "case": "preview-create-account-ar",
+      "result": {
+        "open": true,
+        "text": "يحاكي هذا النموذج إنشاء حساب باستخدام الملف الخيالي لليلى منصور. لا يتم إنشاء أي حساب حقيقي.محاكاة إنشاء حسابإلغاء"
+      }
+    },
+    {
+      "case": "member-ar320-dark",
+      "result": {
+        "name": "ليلى منصور",
+        "username": "@lmansour",
+        "usernameDirection": "ltr",
+        "belowName": true,
+        "headingClipped": true,
+        "identity": true,
+        "actions": [
+          "close",
+          "account",
+          "settings",
+          "theme",
+          "language",
+          "signout"
+        ],
+        "lang": "ar",
+        "theme": "dark",
+        "avatar": true,
+        "overflow": false,
+        "bounds": [
+          16,
+          300,
+          320
+        ]
+      }
+    },
+    {
+      "case": "guest-en320",
+      "result": {
+        "usernameDirection": null,
+        "belowName": false,
+        "headingClipped": true,
+        "identity": false,
+        "actions": [
+          "close",
+          "signin",
+          "signup",
+          "settings",
+          "theme",
+          "language"
+        ],
+        "lang": "en",
+        "theme": "dark",
+        "avatar": false,
+        "overflow": false,
+        "bounds": [
+          5,
+          289,
+          320
+        ]
+      }
+    },
+    {
+      "case": "existing-sign-in-en",
+      "result": {
+        "open": true,
+        "text": "This preview uses Leïla Mansour’s fictional profile. No real account is connected.Continue with the demo profileCancel"
+      }
+    },
+    {
+      "case": "member-en320",
+      "result": {
+        "name": "Leïla Mansour",
+        "username": "@lmansour",
+        "usernameDirection": "ltr",
+        "belowName": true,
+        "headingClipped": true,
+        "identity": true,
+        "actions": [
+          "close",
+          "account",
+          "settings",
+          "theme",
+          "language",
+          "signout"
+        ],
+        "lang": "en",
+        "theme": "dark",
+        "avatar": true,
+        "overflow": false,
+        "bounds": [
+          5,
+          289,
+          320
+        ]
+      }
+    }
+  ]
+}

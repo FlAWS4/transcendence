@@ -1,0 +1,2603 @@
+{
+  "date": "2026-10-15",
+  "scope": "Périmètre des corrections audit-fixes-145 : comparaison octet par octet avec l’archive 144 (manifeste), classement de chaque bloc de diff, fichiers modifiés aujourd’hui, fichiers devant rester inchangés. Lecture seule ; écrit seulement ce fichier.",
+  "manifestFiles": 137,
+  "archiveInconsistent": [],
+  "unchangedRuntimeFiles": 128,
+  "changedRuntimeFiles": [
+    "comments.mjs",
+    "content-preview.html",
+    "content-preview.mjs",
+    "entrance.css",
+    "entrance.mjs",
+    "index.html",
+    "journal-ui.mjs",
+    "project-ui.mjs",
+    "welcome.mjs"
+  ],
+  "missingActiveFiles": [],
+  "hunkCount": 21,
+  "classificationCounts": {
+    "D1": 2,
+    "D1+D5": 1,
+    "D2": 2,
+    "D3": 1,
+    "D4": 1,
+    "D5": 5,
+    "identifiant de cache": 9
+  },
+  "scopeViolations": [],
+  "computedDiffEqualsProvidedDiff": true,
+  "providedDiffFiles": [
+    "comments.mjs",
+    "content-preview.html",
+    "content-preview.mjs",
+    "entrance.css",
+    "entrance.mjs",
+    "index.html",
+    "journal-ui.mjs",
+    "project-ui.mjs",
+    "welcome.mjs"
+  ],
+  "changed": [
+    {
+      "file": "comments.mjs",
+      "archiveBytes": "archive/pre-codex-audit-fixes-20261015/originals/comments.mjs",
+      "hunks": [
+        {
+          "header": "@@ -161 +161,2 @@",
+          "removed": [
+            "  const dock=[doc.querySelector('.dock-search-toggle'),doc.getElementById('main-nav')].map(visibleRect).filter(Boolean);"
+          ],
+          "added": [
+            "  // On mobile the sort panel would otherwise open under the floating back-to-top button.",
+            "  const dock=[doc.querySelector('.dock-search-toggle'),doc.getElementById('main-nav'),menu.sort?doc.getElementById('back-to-top'):null].map(visibleRect).filter(Boolean);"
+          ],
+          "classification": "D2"
+        },
+        {
+          "header": "@@ -168 +169,2 @@",
+          "removed": [
+            "  const below=Math.max(0,bottomLimit-anchor.bottom-gap),above=Math.max(0,anchor.top-topLimit-gap),down=menu.sort||panel.height<=below||below>=above;"
+          ],
+          "added": [
+            "  // Like the comment action menus, the sort panel opens upward when it cannot fit below.",
+            "  const below=Math.max(0,bottomLimit-anchor.bottom-gap),above=Math.max(0,anchor.top-topLimit-gap),down=panel.height<=below||below>=above;"
+          ],
+          "classification": "D2"
+        }
+      ]
+    },
+    {
+      "file": "content-preview.html",
+      "archiveBytes": "archive/pre-codex-audit-fixes-20261015/originals/content-preview.html",
+      "hunks": [
+        {
+          "header": "@@ -17 +17 @@",
+          "removed": [
+            "  <link rel=\"stylesheet\" href=\"entrance.css?v=animated-labels-23\">"
+          ],
+          "added": [
+            "  <link rel=\"stylesheet\" href=\"entrance.css?v=audit-fixes-24\">"
+          ],
+          "classification": "identifiant de cache"
+        },
+        {
+          "header": "@@ -47 +47 @@",
+          "removed": [
+            "  <script src=\"content-preview.mjs?v=111\" type=\"module\"></script>"
+          ],
+          "added": [
+            "  <script src=\"content-preview.mjs?v=112\" type=\"module\"></script>"
+          ],
+          "classification": "identifiant de cache"
+        }
+      ]
+    },
+    {
+      "file": "content-preview.mjs",
+      "archiveBytes": "archive/pre-codex-audit-fixes-20261015/baseline/content-preview.mjs",
+      "hunks": [
+        {
+          "header": "@@ -10 +10 @@",
+          "removed": [
+            "await import('./welcome.mjs?v=animated-entry-144');"
+          ],
+          "added": [
+            "await import('./welcome.mjs?v=audit-fixes-145');"
+          ],
+          "classification": "identifiant de cache"
+        }
+      ]
+    },
+    {
+      "file": "entrance.css",
+      "archiveBytes": "archive/pre-codex-audit-fixes-20261015/baseline/entrance.css",
+      "hunks": [
+        {
+          "header": "@@ -6,2 +6,3 @@",
+          "removed": [
+            "/* Arrival has its own background theme control; the account returns after entry. */",
+            "body:not([data-entry=welcome]) .account-switcher{display:none}"
+          ],
+          "added": [
+            "/* Arrival has its own background theme control; the account stays available on",
+            "   the map error screen, where that control is inactive, and returns after entry. */",
+            "body:not([data-entry=welcome]):not([data-entry=error]) .account-switcher{display:none}"
+          ],
+          "classification": "D4"
+        },
+        {
+          "header": "@@ -54,0 +56,2 @@",
+          "removed": [],
+          "added": [
+            "/* On the account glass, Royal Pink text needs the charter ink behind it to reach 4.5:1. */",
+            ":root[data-theme=dark] [data-account-action=signup]{background:var(--h42-ink)}"
+          ],
+          "classification": "D3"
+        }
+      ]
+    },
+    {
+      "file": "entrance.mjs",
+      "archiveBytes": "archive/pre-codex-audit-fixes-20261015/originals/entrance.mjs",
+      "hunks": [
+        {
+          "header": "@@ -10,0 +11 @@",
+          "removed": [],
+          "added": [
+            "const MODIFIER_KEYS=['Alt','AltGraph','CapsLock','Control','Meta','OS','Shift'];"
+          ],
+          "classification": "D1"
+        },
+        {
+          "header": "@@ -28 +29,3 @@",
+          "removed": [
+            "export function mountEntrance({getLocale,getTheme=()=>document.documentElement.dataset.theme,onToggleTheme=()=>{},openDialog,closeDialog,prepare,getGlobeGeometry,onOpen,onEvent=()=>{}}){"
+          ],
+          "added": [
+            "// Pages opt into the rotating access labels; older compositions sharing this",
+            "// module keep plain labels in the site language, as before the rotation.",
+            "export function mountEntrance({getLocale,cycleLabels=false,getTheme=()=>document.documentElement.dataset.theme,onToggleTheme=()=>{},openDialog,closeDialog,prepare,getGlobeGeometry,onOpen,onEvent=()=>{}}){"
+          ],
+          "classification": "D5"
+        },
+        {
+          "header": "@@ -40 +43 @@",
+          "removed": [
+            " const interactionEvents=new AbortController(),labelMotions=new Map();"
+          ],
+          "added": [
+            " const interactionEvents=cycleLabels||themeToggle?new AbortController():null,labelMotions=new Map();"
+          ],
+          "classification": "D5"
+        },
+        {
+          "header": "@@ -46 +49,3 @@",
+          "removed": [
+            "  return choosing()&&!document.hidden&&!dialog?.open&&!accessHovered&&!access.contains(active)&&!(active===themeToggle&&keyboardFocus);"
+          ],
+          "added": [
+            "  // Only keyboard focus holds the labels: a closing dialog returns focus to its",
+            "  // opener after a pointer action too, which must not stop the rotation.",
+            "  return cycleLabels&&choosing()&&!document.hidden&&!dialog?.open&&!accessHovered&&!((access.contains(active)||active===themeToggle)&&keyboardFocus);"
+          ],
+          "classification": "D1+D5"
+        },
+        {
+          "header": "@@ -108,2 +113,6 @@",
+          "removed": [
+            "   if(siteLocale!==getLocale()){siteLocale=getLocale();displayLocale=siteLocale;}",
+            "   refreshLabels();"
+          ],
+          "added": [
+            "   if(cycleLabels){",
+            "    if(siteLocale!==getLocale()){siteLocale=getLocale();displayLocale=siteLocale;}",
+            "    refreshLabels();",
+            "   }else for(const [id,key] of [['entry-login','login'],['entry-guest','guest']]){",
+            "    const button=document.getElementById(id);button.textContent=t(key);button.setAttribute('lang',getLocale());",
+            "   }"
+          ],
+          "classification": "D5"
+        },
+        {
+          "header": "@@ -125 +134 @@",
+          "removed": [
+            "  login.id='entry-login';guest.id='entry-guest';prepareLabel(login,'login');prepareLabel(guest,'guest');access.replaceChildren(login,guest);refresh();"
+          ],
+          "added": [
+            "  login.id='entry-login';guest.id='entry-guest';if(cycleLabels){prepareLabel(login,'login');prepareLabel(guest,'guest');}access.replaceChildren(login,guest);refresh();"
+          ],
+          "classification": "D5"
+        },
+        {
+          "header": "@@ -256 +265,5 @@",
+          "removed": [
+            "  document.addEventListener('keydown',()=>{keyboardFocus=true;syncLanguageCycle(true);},{...options,capture:true});"
+          ],
+          "added": [
+            "  // Modifier keys and shortcuts (Alt+Tab, Ctrl+C…) are not keyboard navigation.",
+            "  document.addEventListener('keydown',event=>{",
+            "   if(event.ctrlKey||event.metaKey||event.altKey||MODIFIER_KEYS.includes(event.key))return;",
+            "   keyboardFocus=true;syncLanguageCycle(true);",
+            "  },{...options,capture:true});"
+          ],
+          "classification": "D1"
+        }
+      ]
+    },
+    {
+      "file": "index.html",
+      "archiveBytes": "archive/pre-codex-audit-fixes-20261015/originals/index.html",
+      "hunks": [
+        {
+          "header": "@@ -17 +17 @@",
+          "removed": [
+            "  <link rel=\"stylesheet\" href=\"entrance.css?v=animated-labels-23\">"
+          ],
+          "added": [
+            "  <link rel=\"stylesheet\" href=\"entrance.css?v=audit-fixes-24\">"
+          ],
+          "classification": "identifiant de cache"
+        },
+        {
+          "header": "@@ -47 +47 @@",
+          "removed": [
+            "  <script src=\"welcome.mjs?v=animated-entry-144\" type=\"module\"></script>"
+          ],
+          "added": [
+            "  <script src=\"welcome.mjs?v=audit-fixes-145\" type=\"module\"></script>"
+          ],
+          "classification": "identifiant de cache"
+        }
+      ]
+    },
+    {
+      "file": "journal-ui.mjs",
+      "archiveBytes": "archive/pre-codex-audit-fixes-20261015/baseline/journal-ui.mjs",
+      "hunks": [
+        {
+          "header": "@@ -1 +1 @@",
+          "removed": [
+            "import {renderSectionedDetail,clearProjectDetail} from './project-ui.mjs?v=39';"
+          ],
+          "added": [
+            "import {renderSectionedDetail,clearProjectDetail} from './project-ui.mjs?v=40';"
+          ],
+          "classification": "identifiant de cache"
+        }
+      ]
+    },
+    {
+      "file": "project-ui.mjs",
+      "archiveBytes": "archive/pre-codex-audit-fixes-20261015/baseline/project-ui.mjs",
+      "hunks": [
+        {
+          "header": "@@ -2 +2 @@",
+          "removed": [
+            "import {createComments} from './comments.mjs?v=15';"
+          ],
+          "added": [
+            "import {createComments} from './comments.mjs?v=16';"
+          ],
+          "classification": "identifiant de cache"
+        }
+      ]
+    },
+    {
+      "file": "welcome.mjs",
+      "archiveBytes": "archive/pre-codex-audit-fixes-20261015/originals/welcome.mjs",
+      "hunks": [
+        {
+          "header": "@@ -23 +23 @@",
+          "removed": [
+            "import {mountEntrance} from './entrance.mjs?v=animated-labels-13';"
+          ],
+          "added": [
+            "import {mountEntrance} from './entrance.mjs?v=audit-fixes-14';"
+          ],
+          "classification": "identifiant de cache"
+        },
+        {
+          "header": "@@ -33,2 +33,2 @@",
+          "removed": [
+            "import {renderProjectDetail,clearProjectDetail,normalizeProjectSection,projectBackDistance} from './project-ui.mjs?v=39';",
+            "import {renderJournalDetail,clearJournalDetail,normalizeJournalSection,journalBackDistance} from './journal-ui.mjs?v=38';"
+          ],
+          "added": [
+            "import {renderProjectDetail,clearProjectDetail,normalizeProjectSection,projectBackDistance} from './project-ui.mjs?v=40';",
+            "import {renderJournalDetail,clearJournalDetail,normalizeJournalSection,journalBackDistance} from './journal-ui.mjs?v=39';"
+          ],
+          "classification": "identifiant de cache"
+        },
+        {
+          "header": "@@ -858 +858 @@",
+          "removed": [
+            " entrance=mountEntrance({getLocale:()=>locale,getTheme:()=>themePreferences.snapshot().theme,onToggleTheme:()=>themePreferences.setPreference(dark?'light':'dark'),openDialog,closeDialog,prepare:prepareGlobe,getGlobeGeometry:()=>globe?.getWorldScreenGeometry?.(),"
+          ],
+          "added": [
+            " entrance=mountEntrance({getLocale:()=>locale,cycleLabels:true,getTheme:()=>themePreferences.snapshot().theme,onToggleTheme:()=>themePreferences.setPreference(dark?'light':'dark'),openDialog,closeDialog,prepare:prepareGlobe,getGlobeGeometry:()=>globe?.getWorldScreenGeometry?.(),"
+          ],
+          "classification": "D5"
+        }
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "file": "entrance.test.mjs",
+      "originalMatchesManifest": true,
+      "activeSha256": "517cf8752447937d6c3b3da15a4f796c69692326994036d62d929c2870467fd0",
+      "changed": true,
+      "testsBefore": 30,
+      "testsAfter": 34,
+      "added": [
+        "cancelling sign-in with the pointer returns focus to its button without stopping the labels",
+        "keyboard focus restored after a dialog still holds the labels until it leaves the actions",
+        "modifier keys and shortcuts do not hold the labels after a pointer action",
+        "a page that does not opt in keeps plain site-language labels without rotation"
+      ],
+      "removed": [],
+      "modifiedExisting": [],
+      "harnessChanged": true,
+      "hunks": [
+        {
+          "header": "@@ -11 +11,3 @@",
+          "removed": [
+            "function harness({reducedMotion=false,deferFonts=false,interactions=false,siteLanguage='fr',prepare=()=>Promise.resolve()}={}){"
+          ],
+          "added": [
+            "// The main entrance opts into the rotating labels together with its background",
+            "// control; a page without them mirrors the older panels composition.",
+            "function harness({reducedMotion=false,deferFonts=false,interactions=false,cycleLabels=interactions,siteLanguage='fr',prepare=()=>Promise.resolve()}={}){"
+          ],
+          "classification": "test"
+        },
+        {
+          "header": "@@ -48 +50 @@",
+          "removed": [
+            " const entrance=context.mountEntrance({getLocale:()=>locale,prepare,"
+          ],
+          "added": [
+            " const entrance=context.mountEntrance({getLocale:()=>locale,cycleLabels,prepare,"
+          ],
+          "classification": "test"
+        },
+        {
+          "header": "@@ -68 +70,4 @@",
+          "removed": [
+            "  focus(id,keyboard=true){listeners[keyboard?'keydown':'pointerdown']?.();nodes.get(id).focus();nodes.get('entrance').listeners.focusin?.();},"
+          ],
+          "added": [
+            "  focus(id,keyboard=true){listeners[keyboard?'keydown':'pointerdown']?.(keyboard?{key:'Tab'}:{pointerType:'mouse'});nodes.get(id).focus();nodes.get('entrance').listeners.focusin?.();},",
+            "  pointer(){listeners.pointerdown?.({pointerType:'mouse'});},key(event){listeners.keydown?.(typeof event==='string'?{key:event}:event);},",
+            "  // A closing modal dialog returns focus to its opener, whatever closed it.",
+            "  restoreFocus(id){nodes.get(id).focus();nodes.get('entrance').listeners.focusin?.();},"
+          ],
+          "classification": "test"
+        },
+        {
+          "header": "@@ -297,0 +303,29 @@",
+          "removed": [],
+          "added": [
+            "});",
+            "",
+            "test('cancelling sign-in with the pointer returns focus to its button without stopping the labels',async()=>{",
+            " const h=harness({interactions:true,reducedMotion:true});await h.advance(4000);assert.equal(h.displayLocale,'en');",
+            " h.pointer();h.nodes.get('entry-login').click();assert.equal(h.dialogTitle,'Connexion — prototype');",
+            " h.pointer();h.cancelDialog();h.restoreFocus('entry-login');",
+            " await h.advance(3999);assert.equal(h.displayLocale,'en');await h.advance(1);assert.equal(h.displayLocale,'ar');",
+            "});",
+            "",
+            "test('keyboard focus restored after a dialog still holds the labels until it leaves the actions',async()=>{",
+            " const h=harness({interactions:true,reducedMotion:true});h.focus('entry-login');h.nodes.get('entry-login').click();",
+            " h.key('Escape');h.cancelDialog();h.restoreFocus('entry-login');await h.advance(20000);assert.equal(h.displayLocale,'fr');",
+            " h.blur();await h.flush();await h.advance(4000);assert.equal(h.displayLocale,'en');",
+            "});",
+            "",
+            "test('modifier keys and shortcuts do not hold the labels after a pointer action',async()=>{",
+            " const h=harness({interactions:true,reducedMotion:true});const toggle=h.nodes.get('entry-theme-toggle');",
+            " h.focus('entry-theme-toggle',false);toggle.click();",
+            " for(const event of [{key:'Shift'},{key:'Alt'},{key:'Control'},{key:'Meta'},{key:'c',ctrlKey:true},{key:'Tab',altKey:true}])h.key(event);",
+            " await h.advance(4000);assert.equal(h.displayLocale,'en');",
+            " h.key('Tab');await h.advance(20000);assert.equal(h.displayLocale,'en');",
+            "});",
+            "",
+            "test('a page that does not opt in keeps plain site-language labels without rotation',async()=>{",
+            " const h=harness({reducedMotion:true});const login=h.nodes.get('entry-login'),guest=h.nodes.get('entry-guest');",
+            " assert.equal(login.textContent,'Se connecter');assert.equal(guest.textContent,'Visiter');assert.equal(login.querySelector('.entrance-action-label'),null);",
+            " assert.equal(login.getAttribute('aria-description'),null);assert.equal(login.getAttribute('lang'),'fr');",
+            " await h.advance(20000);assert.equal(login.textContent,'Se connecter');assert.equal(h.timers.size,0);",
+            " h.language('en');assert.equal(login.textContent,'Sign in');assert.equal(guest.textContent,'Visit');assert.equal(login.getAttribute('lang'),'en');"
+          ],
+          "classification": "test"
+        }
+      ]
+    },
+    {
+      "file": "tests/comments-actions.test.mjs",
+      "originalMatchesManifest": true,
+      "activeSha256": "0dccb826e8fc891dd76fdccb13d8ea213fe2221daf70fc49aa48ad17c2f68889",
+      "changed": true,
+      "testsBefore": 9,
+      "testsAfter": 11,
+      "added": [
+        "the comment sort panel opens upward when its button is low, keeping its three choices visible",
+        "on mobile the comment sort panel stays clear of the back-to-top button"
+      ],
+      "removed": [],
+      "modifiedExisting": [],
+      "harnessChanged": false,
+      "hunks": [
+        {
+          "header": "@@ -166,0 +167,17 @@",
+          "removed": [],
+          "added": [
+            "",
+            "test('the comment sort panel opens upward when its button is low, keeping its three choices visible',t=>{",
+            " for(const locale of ['fr','ar']){",
+            "  const f=fixture(t,{locale});f.doc.rects.set(undefined,{left:locale==='ar'?16:200,top:560,width:104,height:44});",
+            "  click(f.root.querySelector('.cp-comments-sort'));const panel=f.root.querySelector('.cp-control-panel'),bounds=panel.getBoundingClientRect();",
+            "  assert.equal(panel.hidden,false);assert.equal(bounds.height,14+44*3);assert.ok(bounds.top>=8);assert.ok(bounds.bottom<=560-9);",
+            " }",
+            "});",
+            "",
+            "test('on mobile the comment sort panel stays clear of the back-to-top button',t=>{",
+            " const f=fixture(t),backToTop=f.doc.createElement('button');backToTop.id='back-to-top';",
+            " backToTop.getBoundingClientRect=()=>({left:260,top:450,width:44,height:44,right:304,bottom:494});f.doc.body.append(backToTop);",
+            " click(f.root.querySelector('.cp-comments-sort'));let bounds=f.root.querySelector('.cp-control-panel').getBoundingClientRect();",
+            " assert.equal(bounds.height,14+44*3);assert.ok(bounds.bottom<=450-8);",
+            " backToTop.hidden=true;outside(f.doc,f.doc.body);click(f.root.querySelector('.cp-comments-sort'));bounds=f.root.querySelector('.cp-control-panel').getBoundingClientRect();",
+            " assert.equal(bounds.top,344+9);assert.equal(bounds.height,14+44*3);",
+            "});"
+          ],
+          "classification": "test"
+        }
+      ]
+    }
+  ],
+  "changedTodayInFolder": [
+    {
+      "file": "work/visualizations/horizon-welcome/ACTION_AND_COPY_NOTES.md",
+      "mtime": "2026-10-15T12:11:47.198442",
+      "inRuntimeManifest": false,
+      "inTestManifest": false
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/COMMENTS_NOTES.md",
+      "mtime": "2026-10-15T12:11:47.198660",
+      "inRuntimeManifest": false,
+      "inTestManifest": false
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/INTERFACE_POLISH_NOTES.md",
+      "mtime": "2026-10-15T12:11:47.198824",
+      "inRuntimeManifest": false,
+      "inTestManifest": false
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/comments.mjs",
+      "mtime": "2026-10-15T12:06:09.207046",
+      "inRuntimeManifest": true,
+      "inTestManifest": false
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/content-preview.html",
+      "mtime": "2026-10-15T12:06:37.284355",
+      "inRuntimeManifest": true,
+      "inTestManifest": false
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/content-preview.mjs",
+      "mtime": "2026-10-15T12:06:37.284197",
+      "inRuntimeManifest": true,
+      "inTestManifest": false
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/entrance.css",
+      "mtime": "2026-10-15T12:05:57.159497",
+      "inRuntimeManifest": true,
+      "inTestManifest": false
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/entrance.mjs",
+      "mtime": "2026-10-15T12:05:45.818957",
+      "inRuntimeManifest": true,
+      "inTestManifest": false
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/entrance.test.mjs",
+      "mtime": "2026-10-15T12:07:50.619956",
+      "inRuntimeManifest": false,
+      "inTestManifest": true
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/index.html",
+      "mtime": "2026-10-15T12:06:37.284280",
+      "inRuntimeManifest": true,
+      "inTestManifest": false
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/journal-ui.mjs",
+      "mtime": "2026-10-15T12:06:37.283576",
+      "inRuntimeManifest": true,
+      "inTestManifest": false
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/project-ui.mjs",
+      "mtime": "2026-10-15T12:06:37.283455",
+      "inRuntimeManifest": true,
+      "inTestManifest": false
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/tests/comments-actions.test.mjs",
+      "mtime": "2026-10-15T12:08:04.297956",
+      "inRuntimeManifest": false,
+      "inTestManifest": true
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/welcome.mjs",
+      "mtime": "2026-10-15T12:06:37.284087",
+      "inRuntimeManifest": true,
+      "inTestManifest": false
+    }
+  ],
+  "changedTodayOutsideManifests": [
+    "work/visualizations/horizon-welcome/ACTION_AND_COPY_NOTES.md",
+    "work/visualizations/horizon-welcome/COMMENTS_NOTES.md",
+    "work/visualizations/horizon-welcome/INTERFACE_POLISH_NOTES.md"
+  ],
+  "changedTodayInRepositoryOutsideChecksAndArchive": [
+    "BOARDING_JOURNAL.md",
+    "PROJECT_CONTEXT.md",
+    "README.md",
+    "work/visualizations/design-review-studies/NOTES.md",
+    "work/visualizations/design-review-studies/checks/_reprise/__pycache__/notes_final.cpython-314.pyc",
+    "work/visualizations/design-review-studies/checks/_reprise/notes-fin-finale.md",
+    "work/visualizations/design-review-studies/checks/_reprise/notes_final.py",
+    "work/visualizations/design-review-studies/checks/_reprise/selection-20261015.json",
+    "work/visualizations/design-review-studies/checks/_reprise/surveillance-autre-session.py",
+    "work/visualizations/design-review-studies/checks/_reprise/workflow-paquet-integration-20261015.js",
+    "work/visualizations/design-review-studies/checks/_reprise/workflow-selection-20261015.js",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/algebre.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/arrivee.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/awards.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/arrivee-1440x900-clair-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/arrivee-1440x900-clair-socle.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/arrivee-1440x900-sombre-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/arrivee-1440x900-sombre-socle.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/arrivee-320x640-ar-clair-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/arrivee-320x640-ar-clair-socle.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/arrivee-390x844-sombre-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/arrivee-390x844-sombre-socle.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/arrivee-667x375-sombre-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/arrivee-667x375-sombre-socle.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/awards-1440x900-clair-A.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/awards-1440x900-clair-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/awards-1440x900-clair-socle.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/awards-1440x900-en-sombre-A.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/awards-1440x900-en-sombre-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/awards-1440x900-en-sombre-socle.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/awards-320x640-ar-clair-A.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/awards-320x640-ar-clair-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/awards-320x640-ar-clair-socle.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/awards-390x844-sombre-A.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/awards-390x844-sombre-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/awards-390x844-sombre-socle.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/awards-667x375-clair-A.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/awards-667x375-clair-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/awards-667x375-clair-socle.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/campus-1280x720-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/campus-1440x900-ALL9-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/campus-1440x900-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/campus-320x640-ar-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/campus-390x844-sombre-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/campus-667x375-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/connexion-1440x900-clair-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/connexion-1440x900-clair-socle.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/connexion-1440x900-sombre-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/connexion-1440x900-sombre-socle.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/connexion-320x640-ar-clair-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/connexion-320x640-ar-clair-socle.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/connexion-390x844-sombre-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/connexion-390x844-sombre-socle.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/connexion-667x375-sombre-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/connexion-667x375-sombre-socle.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/correctif-1440x900-ALL9+fix-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/fiche-campus-1280x720-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/fiche-campus-1280x720-L.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/fiche-campus-1280x720-socle.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/fiche-campus-1440x900-ALL9-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/fiche-campus-1440x900-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/fiche-campus-1440x900-L.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/fiche-campus-1440x900-socle.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/fiche-campus-320x640-ar-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/fiche-campus-320x640-ar-L.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/fiche-campus-320x640-ar-socle.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/fiche-campus-390x844-sombre-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/fiche-campus-390x844-sombre-L.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/fiche-campus-390x844-sombre-socle.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/fiche-campus-667x375-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/fiche-campus-667x375-L.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/fiche-campus-667x375-socle.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-1280x720-ALL9-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-1280x720-G-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-1366x768-ALL9-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-1366x768-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-1366x768-G-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-1366x768-G.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-1366x768-socle.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-1440x900-ALL9-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-1440x900-ALL9-en.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-1440x900-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-1440x900-G-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-1440x900-G-en.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-1440x900-G.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-1440x900-socle.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-1920x1080-ALL9-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-1920x1080-G-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-320x640-ar-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-320x640-ar-L.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-320x640-ar-socle.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-390x844-sombre-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-390x844-sombre-L.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-390x844-sombre-socle.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-667x375-ALL9-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-667x375-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-667x375-G-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-667x375-G.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-667x375-socle.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-680x560-ALL9-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-680x560-G-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-844x390-ALL9-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/monde-844x390-G-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/pays-1280x720-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/pays-1280x720-G+P.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/pays-1440x900-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/pays-1440x900-G+P.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/pays-320x640-ar-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/pays-320x640-ar-G+P.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/pays-390x844-sombre-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/pays-390x844-sombre-G+P.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/pays-667x375-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/pays-667x375-G+P.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/revelation-1440x900-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/transition-ar-sombre-1440x900-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/captures/transition-medaillon-1440x900-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/commun.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/correctifs.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/explorer_monde.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/explorer_niveaux.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/log-algebre.txt",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/log-arrivee.txt",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/log-awards.txt",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/log-explorer-monde-2.txt",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/log-explorer-monde-3.txt",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/log-explorer-monde-4.txt",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/log-explorer-monde.txt",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/log-explorer-niveaux-2.txt",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/log-explorer-niveaux-3.txt",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/log-explorer-niveaux-4.txt",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/log-explorer-niveaux.txt",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/log-sondes-2.txt",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/log-sondes.txt",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/log-transitions.txt",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/planches.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/planches/arrivee-1440x900-clair-socle-vs-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/planches/arrivee-sombre-1440-socle-vs-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/planches/awards-1440-A-vs-ALL9-zoom.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/planches/awards-pages-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/planches/connexion-arrivee-sombre-1440-socle-vs-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/planches/fiche-campus-667-L-vs-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/planches/fiche-campus-socle-L-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/planches/monde-1440x900-ar-bas-G-vs-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/planches/monde-1440x900-socle-G-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/planches/monde-1440x900-socle-reduit.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/planches/monde-320x640-ar-bas-socle-vs-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/planches/monde-667x375-ar-G-vs-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/planches/monde-680x560-ar-bas-G-vs-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/planches/monde-portrait-socle-vs-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/planches/pays-france-G+P-vs-ALL9.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/results-algebre.json",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/results-arrivee.json",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/results-awards.json",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/results-correctifs.json",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/results-explorer-monde.json",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/results-explorer-niveaux.json",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/results-sondes.json",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/results-transitions.json",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/sondes.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/explorer-arrivee-awards/transitions.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/bilan.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/alumni-360-ar-E.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/alumni-360-ar-G+P+U+R+V+L+E+PM+A.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/alumni-360-ar-socle.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/apres-globe-1440x900-G+L-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/apres-globe-1440x900-G+P+U+R+V+L+E+PM+A-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/apres-globe-1440x900-G-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/apres-globe-320x640-G+P+U+R+V+L+E+PM+A-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/apres-globe-320x640-L-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/apres-globe-320x640-socle-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/apres-globe-667x375-G+L-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/apres-globe-667x375-G+P+U+R+V+L+E+PM+A-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/apres-globe-667x375-G-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/apres-globe-680x560-G+L-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/apres-globe-680x560-G-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/arun-390-sombre-G+P+U+R+V+L+E+PM+A.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/arun-390-sombre-L.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/arun-390-sombre-socle.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/avant-globe-1440x900-G+L-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/avant-globe-1440x900-G-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/avant-globe-667x375-G+L-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/avant-globe-667x375-G-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/avant-globe-680x560-G+L-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/avant-globe-680x560-G-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/compte-1440-fr-G+P+U+R+V+L+E+PM+A.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/compte-1440-fr-V.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/compte-1440-fr-socle.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/compte-390-ar-G+P+U+R+V+L+E+PM+A.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/compte-390-ar-V.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/compte-390-ar-socle.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/finale-arrivee-1440x900-sombre.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/finale-arrivee-390x844-sombre.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/finale-arrivee-connexion-1440x900-sombre.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/finale-arrivee-connexion-390x844-sombre.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/finale-awards-1440x900-clair.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/finale-awards-390x844-sombre.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/finale-commentaires-1440-clair-fr.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/finale-commentaires-390-sombre-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/finale-explorer-1440x900-clair.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/finale-explorer-390x844-sombre.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/finale-filtre-1440-clair-fr.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/finale-filtre-390-sombre-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/finale-projets-320x640-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/parcours-ar-sombre-1440x900-neuf.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/captures/parcours-revelation-1440x900-neuf.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/commun.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/empreintes-essais-apres.txt",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/empreintes-essais-avant.txt",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/fiches_valides.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/globe_bandes.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/listes_compte.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/log-globe-apres.txt",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/log-globe-avant.txt",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/log-listes-compte.txt",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/log-parcours-globe.txt",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/log-passe-finale.txt",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/log-perimetre-lisibilite.txt",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/log-snapshot-verify.txt",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/maj_fiches.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/parcours_globe.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/passe_finale.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/perimetre_lisibilite.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/planches/f1-explorer-neuf.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/planches/f2-projets-commentaires-neuf.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/planches/f3-filtre-neuf.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/planches/f4-arrivee-sombre-neuf.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/planches/f5-awards-neuf.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/planches/p1-arun-suri-390-sombre.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/planches/p2-pastille-alumni-liste-360-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/planches/p3-air-sous-globe-1440x900-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/planches/p4-statut-globe-320x640-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/results-fiches.json",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/results-globe-apres.json",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/results-globe-avant.json",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/results-listes-compte.json",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/results-parcours-globe.json",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/results-passe-finale.json",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/results-perimetre-lisibilite.json",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/integration/results.json",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/__pycache__/dialogues.cpython-314.pyc",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/__pycache__/lib.cpython-314.pyc",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/__pycache__/listes.cpython-314.pyc",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/attrib_listes.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/attribution-listes.json",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/bilan.json",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/commentaires.json",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/commentaires.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/copie-intacte.json",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/copie-intacte.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/dialogues-mesure.log",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/dialogues.json",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/dialogues.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/fiches-mesure.log",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/fiches.json",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/fiches.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/lib.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/listes-mesure.log",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/listes.json",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/listes.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/medaillon.json",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/medaillon.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/peek.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/planche.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/planches/p1-arun-suri-390-sombre.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/planches/p10-medaillon-1440.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/planches/p2-titres-liste-360-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/planches/p3-profils-projets-320-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/planches/p4-dialogues-320-ar-neuf.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/planches/p5-depot-commentaires-320-ar.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/planches/p6-profils-390-sombre-et-ordinateur.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/planches/p7-liste-profils-360-et-actions-320.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/planches/p8-sombre-ordinateur-neuf.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/planches/p9-anglais-neuf.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/attrib-people-list-360-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/attrib-people-list-360-ar-echelle-unifiee+pseudo-manquant.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/attrib-people-list-360-ar-echelle-unifiee.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/attrib-people-list-360-ar-globe-espace-libre+police-etiquettes-globe+une-colonne-320+roles-couleur+visiter-contour-sombre+lisibilite-textes+echelle-unifiee+pseudo-manquant+awards-a-venir.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/attrib-people-list-360-ar-lisibilite-textes+echelle-unifiee.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/attrib-people-list-360-ar-lisibilite-textes.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/attrib-people-list-360-ar-pseudo-manquant.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/attrib-projects-grid-mobile-sombre-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/attrib-projects-grid-mobile-sombre-echelle-unifiee.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/attrib-projects-grid-mobile-sombre-globe-espace-libre+police-etiquettes-globe+une-colonne-320+roles-couleur+visiter-contour-sombre+lisibilite-textes+echelle-unifiee+pseudo-manquant+awards-a-venir.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/attrib-projects-grid-mobile-sombre-lisibilite-textes+echelle-unifiee.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/attrib-projects-grid-mobile-sombre-lisibilite-textes.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-commentaire-mobile-sombre-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-commentaire-mobile-sombre-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-commentaire-ordinateur-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-commentaire-ordinateur-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-commentaire-petit-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-commentaire-petit-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-commentaires-mobile-sombre-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-commentaires-mobile-sombre-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-commentaires-ordinateur-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-commentaires-ordinateur-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-commentaires-ordinateur-sombre-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-commentaires-ordinateur-sombre-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-commentaires-petit-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-commentaires-petit-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-compte-mobile-sombre-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-compte-mobile-sombre-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-compte-ordinateur-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-compte-ordinateur-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-compte-ordinateur-sombre-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-compte-ordinateur-sombre-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-compte-petit-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-compte-petit-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-connexion-mobile-sombre-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-connexion-mobile-sombre-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-connexion-ordinateur-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-connexion-ordinateur-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-connexion-ordinateur-sombre-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-connexion-ordinateur-sombre-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-connexion-petit-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-connexion-petit-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-depot-mobile-sombre-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-depot-mobile-sombre-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-depot-ordinateur-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-depot-ordinateur-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-depot-ordinateur-sombre-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-depot-ordinateur-sombre-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-depot-petit-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-depot-petit-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-emoji-mobile-sombre-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-emoji-mobile-sombre-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-emoji-ordinateur-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-emoji-ordinateur-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-emoji-ordinateur-sombre-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-emoji-ordinateur-sombre-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-emoji-petit-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-emoji-petit-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-filtre-mobile-sombre-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-filtre-mobile-sombre-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-filtre-ordinateur-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-filtre-ordinateur-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-filtre-ordinateur-sombre-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-filtre-ordinateur-sombre-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-filtre-petit-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-filtre-petit-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-inscription-mobile-sombre-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-inscription-mobile-sombre-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-inscription-ordinateur-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-inscription-ordinateur-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-inscription-ordinateur-sombre-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-inscription-ordinateur-sombre-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-inscription-petit-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-inscription-petit-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-menu-commentaire-mobile-sombre-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-menu-commentaire-mobile-sombre-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-menu-commentaire-ordinateur-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-menu-commentaire-ordinateur-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-menu-commentaire-petit-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-menu-commentaire-petit-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-message-mobile-sombre-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-message-mobile-sombre-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-message-ordinateur-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-message-ordinateur-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-message-ordinateur-sombre-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-message-ordinateur-sombre-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-message-petit-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-message-petit-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-reponse-mobile-sombre-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-reponse-mobile-sombre-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-reponse-ordinateur-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-reponse-ordinateur-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-reponse-petit-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-reponse-petit-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-signalement-mobile-sombre-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-signalement-mobile-sombre-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-signalement-ordinateur-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-signalement-ordinateur-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-signalement-ordinateur-sombre-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-signalement-ordinateur-sombre-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-signalement-petit-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/dialogue-signalement-petit-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-article-320-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-article-320-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-article-mobile-sombre-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-article-mobile-sombre-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-article-ordinateur-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-article-ordinateur-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-profil-320-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-profil-320-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-profil-mobile-sombre-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-profil-mobile-sombre-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-profil-ordinateur-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-profil-ordinateur-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-profil-projets-320-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-profil-projets-320-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-projet-apercu-320-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-projet-apercu-320-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-projet-apercu-en-ordinateur-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-projet-apercu-en-ordinateur-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-projet-apercu-mobile-sombre-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-projet-apercu-mobile-sombre-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-projet-apercu-ordinateur-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-projet-apercu-ordinateur-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-projet-commentaires-320-ar-base-form.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-projet-commentaires-320-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-projet-commentaires-320-ar-combo-form.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-projet-commentaires-320-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-projet-commentaires-en-sombre-mobile-base-form.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-projet-commentaires-en-sombre-mobile-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-projet-commentaires-en-sombre-mobile-combo-form.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-projet-commentaires-en-sombre-mobile-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-projet-commentaires-mobile-sombre-base-form.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-projet-commentaires-mobile-sombre-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-projet-commentaires-mobile-sombre-combo-form.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-projet-commentaires-mobile-sombre-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-projet-commentaires-ordinateur-base-form.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-projet-commentaires-ordinateur-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-projet-commentaires-ordinateur-combo-form.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/fiche-projet-commentaires-ordinateur-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/journal-grid-320-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/journal-grid-320-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/journal-grid-340-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/journal-grid-340-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/journal-grid-360-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/journal-grid-360-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/journal-grid-mobile-sombre-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/journal-grid-mobile-sombre-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/journal-grid-ordinateur-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/journal-grid-ordinateur-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/journal-list-320-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/journal-list-320-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/journal-list-340-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/journal-list-340-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/journal-list-360-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/journal-list-360-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/journal-list-mobile-sombre-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/journal-list-mobile-sombre-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/journal-list-ordinateur-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/journal-list-ordinateur-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/medaillon-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/medaillon-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/medaillon-globe-espace-libre.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/people-grid-320-ar-base-bas.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/people-grid-320-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/people-grid-320-ar-combo-bas.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/people-grid-320-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/people-grid-340-ar-base-bas.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/people-grid-340-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/people-grid-340-ar-combo-bas.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/people-grid-340-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/people-grid-340-en-base-bas.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/people-grid-340-en-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/people-grid-340-en-combo-bas.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/people-grid-340-en-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/people-grid-360-ar-base-bas.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/people-grid-360-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/people-grid-360-ar-combo-bas.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/people-grid-360-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/people-grid-mobile-sombre-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/people-grid-mobile-sombre-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/people-grid-ordinateur-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/people-grid-ordinateur-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/people-list-320-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/people-list-320-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/people-list-340-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/people-list-340-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/people-list-360-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/people-list-360-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/people-list-mobile-sombre-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/people-list-mobile-sombre-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/people-list-ordinateur-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/people-list-ordinateur-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/projects-grid-320-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/projects-grid-320-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/projects-grid-340-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/projects-grid-340-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/projects-grid-340-en-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/projects-grid-340-en-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/projects-grid-360-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/projects-grid-360-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/projects-grid-mobile-sombre-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/projects-grid-mobile-sombre-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/projects-grid-ordinateur-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/projects-grid-ordinateur-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/projects-list-320-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/projects-list-320-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/projects-list-340-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/projects-list-340-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/projects-list-360-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/projects-list-360-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/projects-list-mobile-sombre-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/projects-list-mobile-sombre-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/projects-list-ordinateur-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/projects-list-ordinateur-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/sonde-awards-mobile-sombre-awards-a-venir.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/sonde-awards-mobile-sombre-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/sonde-awards-ordinateur-awards-a-venir.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/sonde-awards-ordinateur-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/sonde-globe-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/sonde-globe-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/sonde-globe-globe-espace-libre.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/sonde-globe-police-etiquettes-globe.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/visuel-actions-fiche-320-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/visuel-actions-fiche-320-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/visuel-fiche-lucia-ordinateur-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/visuel-fiche-lucia-ordinateur-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/visuel-fiche-lucia-ordinateur-pseudo-manquant.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/visuel-fiche-lucia-petit-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/visuel-fiche-lucia-petit-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/visuel-fiche-lucia-petit-ar-pseudo-manquant.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/visuel-focus-profils-1440-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/visuel-focus-profils-1440-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/visuel-focus-projets-320-ar-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/visuel-focus-projets-320-ar-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/visuel-liste-profils-360-base.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/visuel-liste-profils-360-combo.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/shots/visuel-liste-profils-360-echelle-unifiee.png",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/sondes.json",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/sondes.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/visuel.json",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/visuel.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/voir_commentaires.py",
+    "work/visualizations/design-review-studies/checks/_selection-20261015/rubriques-fiches-dialogues/voir_dialogues.py",
+    "work/visualizations/design-review-studies/checks/galerie/galerie-comparaison.png",
+    "work/visualizations/design-review-studies/checks/galerie/galerie-mobile.png",
+    "work/visualizations/design-review-studies/checks/galerie/galerie-ordinateur.png",
+    "work/visualizations/design-review-studies/checks/galerie/galerie-petit.png",
+    "work/visualizations/design-review-studies/checks/galerie/galerie-selection.png",
+    "work/visualizations/design-review-studies/checks/galerie/results.json",
+    "work/visualizations/design-review-studies/checks/globe-espace-libre/results.json",
+    "work/visualizations/design-review-studies/checks/lisibilite-textes/results.json",
+    "work/visualizations/design-review-studies/essais/echelle-unifiee/essai.json",
+    "work/visualizations/design-review-studies/essais/globe-espace-libre/essai.css",
+    "work/visualizations/design-review-studies/essais/globe-espace-libre/essai.json",
+    "work/visualizations/design-review-studies/essais/lisibilite-textes/essai.css",
+    "work/visualizations/design-review-studies/essais/lisibilite-textes/essai.json",
+    "work/visualizations/design-review-studies/snapshot-verification.json",
+    "work/visualizations/horizon-welcome/ACTION_AND_COPY_NOTES.md",
+    "work/visualizations/horizon-welcome/COMMENTS_NOTES.md",
+    "work/visualizations/horizon-welcome/INTERFACE_POLISH_NOTES.md",
+    "work/visualizations/horizon-welcome/comments.mjs",
+    "work/visualizations/horizon-welcome/content-preview.html",
+    "work/visualizations/horizon-welcome/content-preview.mjs",
+    "work/visualizations/horizon-welcome/entrance.css",
+    "work/visualizations/horizon-welcome/entrance.mjs",
+    "work/visualizations/horizon-welcome/entrance.test.mjs",
+    "work/visualizations/horizon-welcome/index.html",
+    "work/visualizations/horizon-welcome/journal-ui.mjs",
+    "work/visualizations/horizon-welcome/project-ui.mjs",
+    "work/visualizations/horizon-welcome/tests/comments-actions.test.mjs",
+    "work/visualizations/horizon-welcome/welcome.mjs"
+  ],
+  "gitModifiedInFolder": [
+    {
+      "file": "work/visualizations/horizon-welcome/ACCOUNT_MENU_NOTES.md",
+      "inRuntimeManifest": false,
+      "identicalTo144": null,
+      "inTestManifest": false,
+      "mtime": "2026-10-13T16:51:00.311943",
+      "changedToday": false
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/COMMENTS_NOTES.md",
+      "inRuntimeManifest": false,
+      "identicalTo144": null,
+      "inTestManifest": false,
+      "mtime": "2026-10-15T12:11:47.198660",
+      "changedToday": true
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/INTERFACE_POLISH_NOTES.md",
+      "inRuntimeManifest": false,
+      "identicalTo144": null,
+      "inTestManifest": false,
+      "mtime": "2026-10-15T12:11:47.198824",
+      "changedToday": true
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/account-menu.mjs",
+      "inRuntimeManifest": true,
+      "identicalTo144": true,
+      "inTestManifest": false,
+      "mtime": "2026-10-13T16:39:58.694746",
+      "changedToday": false
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/comments.css",
+      "inRuntimeManifest": true,
+      "identicalTo144": true,
+      "inTestManifest": false,
+      "mtime": "2026-10-13T17:19:35.730423",
+      "changedToday": false
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/comments.mjs",
+      "inRuntimeManifest": true,
+      "identicalTo144": false,
+      "inTestManifest": false,
+      "mtime": "2026-10-15T12:06:09.207046",
+      "changedToday": true
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/content-controls.mjs",
+      "inRuntimeManifest": true,
+      "identicalTo144": true,
+      "inTestManifest": false,
+      "mtime": "2026-10-13T16:39:58.695597",
+      "changedToday": false
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/content-preview-data.mjs",
+      "inRuntimeManifest": true,
+      "identicalTo144": true,
+      "inTestManifest": false,
+      "mtime": "2026-10-13T16:39:58.694900",
+      "changedToday": false
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/content-preview.html",
+      "inRuntimeManifest": true,
+      "identicalTo144": false,
+      "inTestManifest": false,
+      "mtime": "2026-10-15T12:06:37.284355",
+      "changedToday": true
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/content-preview.mjs",
+      "inRuntimeManifest": true,
+      "identicalTo144": false,
+      "inTestManifest": false,
+      "mtime": "2026-10-15T12:06:37.284197",
+      "changedToday": true
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/content-report.mjs",
+      "inRuntimeManifest": true,
+      "identicalTo144": true,
+      "inTestManifest": false,
+      "mtime": "2026-10-13T16:39:58.695211",
+      "changedToday": false
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/dock-navigation.css",
+      "inRuntimeManifest": true,
+      "identicalTo144": true,
+      "inTestManifest": false,
+      "mtime": "2026-10-13T17:04:12.635429",
+      "changedToday": false
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/entrance.css",
+      "inRuntimeManifest": true,
+      "identicalTo144": false,
+      "inTestManifest": false,
+      "mtime": "2026-10-15T12:05:57.159497",
+      "changedToday": true
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/entrance.mjs",
+      "inRuntimeManifest": true,
+      "identicalTo144": false,
+      "inTestManifest": false,
+      "mtime": "2026-10-15T12:05:45.818957",
+      "changedToday": true
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/entrance.test.mjs",
+      "inRuntimeManifest": false,
+      "identicalTo144": null,
+      "inTestManifest": true,
+      "mtime": "2026-10-15T12:07:50.619956",
+      "changedToday": true
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/globe-framing.css",
+      "inRuntimeManifest": true,
+      "identicalTo144": true,
+      "inTestManifest": false,
+      "mtime": "2026-10-13T17:12:54.574157",
+      "changedToday": false
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/index.html",
+      "inRuntimeManifest": true,
+      "identicalTo144": false,
+      "inTestManifest": false,
+      "mtime": "2026-10-15T12:06:37.284280",
+      "changedToday": true
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/journal-ui.mjs",
+      "inRuntimeManifest": true,
+      "identicalTo144": false,
+      "inTestManifest": false,
+      "mtime": "2026-10-15T12:06:37.283576",
+      "changedToday": true
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/profile-ui.mjs",
+      "inRuntimeManifest": true,
+      "identicalTo144": true,
+      "inTestManifest": false,
+      "mtime": "2026-10-13T16:39:58.694459",
+      "changedToday": false
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/project-ui.mjs",
+      "inRuntimeManifest": true,
+      "identicalTo144": false,
+      "inTestManifest": false,
+      "mtime": "2026-10-15T12:06:37.283455",
+      "changedToday": true
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/tests/comments-actions.test.mjs",
+      "inRuntimeManifest": false,
+      "identicalTo144": null,
+      "inTestManifest": true,
+      "mtime": "2026-10-15T12:08:04.297956",
+      "changedToday": true
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/tests/demo-content.test.mjs",
+      "inRuntimeManifest": false,
+      "identicalTo144": null,
+      "inTestManifest": false,
+      "mtime": "2026-10-13T16:39:31.424589",
+      "changedToday": false
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/tests/detail-media.test.mjs",
+      "inRuntimeManifest": false,
+      "identicalTo144": null,
+      "inTestManifest": false,
+      "mtime": "2026-10-14T20:09:22.381743",
+      "changedToday": false
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/tests/map-independent-filter.test.mjs",
+      "inRuntimeManifest": false,
+      "identicalTo144": null,
+      "inTestManifest": false,
+      "mtime": "2026-10-13T16:11:26.146301",
+      "changedToday": false
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/welcome.mjs",
+      "inRuntimeManifest": true,
+      "identicalTo144": false,
+      "inTestManifest": false,
+      "mtime": "2026-10-15T12:06:37.284087",
+      "changedToday": true
+    }
+  ],
+  "mustStayUnchanged": [
+    {
+      "file": "work/visualizations/horizon-welcome/account-menu.css",
+      "identicalTo144": true
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/account-menu.mjs",
+      "identicalTo144": true
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/dock-navigation.css",
+      "identicalTo144": true
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/dock-navigation.mjs",
+      "identicalTo144": true
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/globe-framing.css",
+      "identicalTo144": true
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/back-to-top.css",
+      "identicalTo144": true
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/back-to-top.mjs",
+      "identicalTo144": true
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/content-controls.css",
+      "identicalTo144": true
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/content-controls.mjs",
+      "identicalTo144": true
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/comments.css",
+      "identicalTo144": true
+    },
+    {
+      "file": "work/figma/tokens.css",
+      "identicalTo144": true
+    },
+    {
+      "file": "work/visualizations/decryption-examples/scanner-return-random.mjs",
+      "identicalTo144": true
+    },
+    {
+      "file": "work/visualizations/decryption-examples/scanner-return-together.mjs",
+      "identicalTo144": true
+    },
+    {
+      "file": "work/visualizations/decryption-examples/shared.mjs",
+      "identicalTo144": true
+    },
+    {
+      "file": "work/visualizations/horizon-decryption-engine.mjs",
+      "identicalTo144": true
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/welcome-panels.html",
+      "inRuntimeManifest": false,
+      "gitHeadBlob": "eae4ce8cf8fdace2124e417220c6ff24a72e5f4b",
+      "workingBlob": "eae4ce8cf8fdace2124e417220c6ff24a72e5f4b",
+      "identicalToGitHead": true,
+      "identicalToArchive20261013": true,
+      "mtime": "2026-09-28T09:10:35.288968"
+    },
+    {
+      "file": "work/visualizations/horizon-welcome/welcome-panels.mjs",
+      "inRuntimeManifest": false,
+      "gitHeadBlob": "a927ca0e4cb7cb7c201f897c1864edbd8c66f7fb",
+      "workingBlob": "a927ca0e4cb7cb7c201f897c1864edbd8c66f7fb",
+      "identicalToGitHead": true,
+      "identicalToArchive20261013": true,
+      "mtime": "2026-09-28T09:10:35.289022"
+    }
+  ],
+  "rows": [
+    {
+      "source": "work/figma/logo-42.svg",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "cb27f1e1c89bcdfe58185710ac66f0232a2bb8c9ac0c596275f06f101dbd7efc",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/figma/tokens.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "bcc71ae119e87b0abe75d4b781e2352becc633491da265298d36dcb0f80fb4cd",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/assets/jost-0.ttf",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "c3143e923ed1ca7bdf27f96c351fbafaebcbd3cf3f4c2d30d03e6c7f98e73d7a",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/assets/jost-1.ttf",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "d6ff7726ec21576cf2fdac55080b2d43832780fa981f03f0b66d2723a7c1ea09",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/assets/jost-2.ttf",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "a63c8d75600a2d42e0e152e4c4810474a90a0b93206f47530a741dbb78a9e571",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/assets/jost.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "1f67cdf2d8a7eb3d0b6d6ecdae838ac025bffc18b5f2b07ce3bfa26e0fd51dec",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/decryption-examples/scanner-return-random.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "8dd977e7cafdca174ed7dbe3ff74c4e36e6853a99a4414cc83be97873b40f9cb",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/decryption-examples/scanner-return-together.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "1d0253503d3799a82c833611a21ef24e19a03582de5699647655515526805eae",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/decryption-examples/shared.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "e07633623475877cfb71cdfca38f918ee2d66d05e56792edb05d5b9a95852815",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-decryption-engine.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "18f2983119bd8d7e4fd7beb29c34d9ef3d0cef0c0311354863894b99783b7d94",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/account-menu.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "8f6da743782fb50abad856317bcb3292d8babcd96b51e8b6a13c7ff28d266540",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/account-menu.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "b839d5c2c1c44e19d75d6d84fc89ff9cb5b91909b53cb093f7bbea338e9ef105",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/assets/campuses/mulhouse-cantina.jpg",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "a2b027bf7e14d8abe671b92a34db8c2af7007e70855d516fc55e959453a4275e",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/assets/campuses/mulhouse-cluster.jpg",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "f91adf217ebeae1e0f0c15c5ed51cf86ff2227ece77aa52d08f8a7c549de0318",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/assets/campuses/mulhouse-entrance.jpg",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "97831ce215e87ec2a38f749a79ee09ad26365b0b8a1426dd6e5965bd23b79e6e",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/assets/campuses/mulhouse-km0-campus.jpg",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "6b7026b881cdc2000926834720280506366cc6f2bebc095dd6d4a70eb2f269b5",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/assets/campuses/mulhouse-logo-official-white.svg",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "56185aa46900c5060261b83bcd1c043ca845b5a7aa1f951f0b6dbab6fb3f1098",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/assets/campuses/paris-campus.jpg",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "16aa4ff59c21494fccb221419bdb9940599905b02521002a5235128250084f0a",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/assets/campuses/paris-cluster.jpg",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "0d627ef9e6b94b7491d16fb8ea02e1713a5a8b591a10fa153f965eed751beb13",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/assets/campuses/paris-logo-official.svg",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "95ef45252cf1eac032cff411c8ab352a9d698f58beaff9d58034d178e7638047",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/assets/minishell-flow-demo.svg",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "52898120d0470c3dbd732c7a2aebd15bb208d536aed733cb6306dd0559cf2b30",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/assets/profile-avatars/caio-mendes.svg",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "b14030ac43482591e5ffce5fd9efa091ac56bed9f3a923c7a957b2536ac8ecb1",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/assets/profile-avatars/haru-mizuno.svg",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "ca6290a54a65f6e33e2c99c20320f6418ba9120823ceb2fa54497ce380ae8091",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/assets/profile-avatars/ines-morel.svg",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "3c0700986228a9fca11e9d82f4c9866556cd4857fcc51b4c5ede7b30c0e146e7",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/assets/profile-avatars/leila-mansour.svg",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "9fd36e21e1ed4d29fd5e975fffa44e75c3dac9c18b724bbadf6e8406e8838f81",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/assets/profile-avatars/luiza-costa.svg",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "8d9ff2ad2893b2f8bfd720f1b86028dca53b64633de0ef01e8b1d3ac8ae1edca",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/assets/profile-avatars/noe-laurent.svg",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "16ca0fa5fa698a38441225b52360629f685d2ba27afe31dcad1034d60ad16008",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/author-preview-fit.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "286dce97676bfef0a0c1042e5d8447b4aa90d89ae5690e3a53b522ad270fee33",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/awards.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "2c0156f4d833c22e309ff32d7c77da54a898bffb846d3ce1a8446b498b2d877d",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/back-to-top.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "917add7417209c47f721fffe2415e48f56d6e90cb5845293034feb1bfb7088d8",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/back-to-top.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "6e1cb92805b3236b83e947ca09c94c5a65771fa0aeceaa7c6044cfccd02bf4ce",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/brand-wordmark.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "a4891ff9e4a945f6d9c6f80f9bf85b94ab383b2fea320b3c95642550be61fdb8",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/brand-wordmark.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "3a8c66dcc24435792f0f765297734618957bf08d7f6b86bb2019829e450a6292",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/campus-details.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "2070e64788f9e0a05ad1e143bc0b68914438548600195faa54e8a8c56c74e459",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/campus-details.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "d80d30ac49b0644dbfdc4da0b8207f846353cfa793d552b385b4edbdf90742eb",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/campus-direction.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "ce0d7a21eca296c5f8220ad7aa4efca5192411848fd9937cd5895b31a2b924ef",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/campus-direction.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "383b1ca089924dc5d66f340b0dc167635b1c7b2157594481e071754a3ebbc3c3",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/campus-location-overrides.json",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "13d3e1afac34bc0c5fe0ca7eafc21f917b4af8f0c524a642d525bf3e303f2b76",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/campus-map-dialog.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "6198f760ddffdaa6ccd2d1bfba38f52261aa17db985c532f9496e6f01b412c12",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/campus-map-dialog.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "f509460ec8524033bd9900d6aaf044d50a98575d1a33a9afbe12e521c03b0093",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/campus-outbound.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "e452bb28cb34784de25c3eb1807b947fba906d8aeee4134ece96951c576ea840",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/campus-preload.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "1184a4329cb2119cd804e07a14e77ad96d141da96f2011d22c823699d3bae4cc",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/campus-profiles.json",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "bf7994d97cb2ad8310af013809aab5d2ffcc4b3dfc4bc580d36380bbd8c32b17",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/campus-sheet.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "9b89a2a336dad3ac75fcf1dcf927da110dd290129f8084e71eeb17d3ca35e911",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/campus-website-locales.json",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "2f3079b16cd05291a8387023ef2ed80855219ac0f61cbf7919ec6311c9572159",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/campus-website.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "79edb1a8461605b471b8e307a50c65ca4251a9dc8666d503ceedcaca8f374e04",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/campus-websites.json",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "cbb2f7193fe404b7b57e5c5b7dadee7163e54cb90743583b4c2347f4882aa512",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/campuses.json",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "0e6a49a0867443efd80ab1f0831e56c3a061beb136d6dc8642a462db6e41c850",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/comment-mention-picker.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "836f172c2e5ea05d6872a973a979585ff867da098f54d9047b378b97acd91cea",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/comment-mention-picker.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "b6c8cf68a2b9f8db175f72029fe56538f0e944c71d1ede72579ba20ea8b17947",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/comment-mentions.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "67a95df40374ea05dd24d5632dbe6b70a2eca1e37bbecda018eda16a17097440",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/comments.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "9f93b003d8e2cc5d33da7324525f30a6353e05c95a371b5b2b9d6031f7aae84a",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/comments.mjs",
+      "archiveBytesFrom": "originals/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "7cd542685536b24490b60fa988f9e5dfbcc5102dd0a94cc475903155766cd7c2",
+      "identicalTo144": false
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-controls.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "cc14237d5d978a625c8481701d82a6c49300cbde33fedcd8a9fa99d52f8b03e0",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-controls.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "58ac9a724ba2168a3109cf13b3c77e06d457068827074370ec8c5aff1625e2eb",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-filters.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "b494e148b4689c8cd8ccf9800496962f2d32517b092190b1a2ab15ccf571b3f7",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-geography.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "1067f2e0493428450c818df822147d4cd4c1ab4ab5532b753217415afb69a33e",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-layout.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "618738d403bdd445d5ff8157f510b9a634c99a9e586cd1114a51cc2d29729e65",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-pagination-ui.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "d04673417e100a6531b65135953221c7310ba5a275eb6a931154b068bea558dd",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-pagination.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "8a86f6806a1bd2ddcbc4638d2fe3c2645befeaa600314b79e2952dd33fd15572",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-pagination.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "f87741911342678e4f0d4afae8266e4b8722ccb0f1a23d3eef13f35bd7fa56fc",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-preferences.mjs",
+      "archiveBytesFrom": "originals/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "e58ead79bc78010bde568989d58ff104b7156dc3f5c3f81bd858e8ae53a244ea",
+      "identicalTo144": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-preview-art.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "6c62c48e772bf24496f57de9220f710ba91828c7ae708e65fa1851a1c03e40f1",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-preview-data.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "f4a5ae6be75fdc54a72304e014109189247fb723cd1bcd2387f7a72107e7facd",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-preview.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "6df3c25b15bb9a2c017885ac88da8c17adc6256daef8f895ea1fd5bc2fd05d07",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-preview.html",
+      "archiveBytesFrom": "originals/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "8817305bef2eb91cd3c36c76aedb961bd757d398746bfb3c50817ebdc2c3666f",
+      "identicalTo144": false
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-preview.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "efba6b21f19d03c587cfc6023972f32d5f14dd792b8191d0e79fb815c4817819",
+      "identicalTo144": false,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-report.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "98ced8e773ef4d80fbf2a4b7364a923812dcb3b4ab130951873c16329ea14500",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-report.mjs",
+      "archiveBytesFrom": "originals/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "e81b69e60f00b336253c0efdf8ff24652a51e52260c1f9553222030480211bf2",
+      "identicalTo144": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-transitions.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "f60f2b1928815bb256d073cdf9a5614e02813ba411aba665544d50e6ecc6d533",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/contextual-discovery.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "859cc23c2ff1504b5c5b61684a5bcd7868f3ac91c025a95741607eca74e3f607",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/control-glass.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "042bb6e05f163cfd198d5cfc98f3576877a1bf1ddb6093fda64c456bc7eda50d",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/demo-content-expanded.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "71a1f8490817f2fee80f3025310ec4ac047af6e210263514805f07b01cb599cd",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/demo-content-seed.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "2b25388d3469a55803325b2b17b729ba4eb250d864ffa21c9c8215520771a734",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/detail-gate.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "3ea851da71d99cc26a1cdd43a47f2af7363c27b409829ae5ef36a2749dba2d74",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/detail-scroll.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "9aa6d69e112e1fae3973a613ebd404cd8e83d52b0188a42a986cb6300bd70e0c",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/detail-scroll.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "6d34289d73a5ca9a1141e1311fd85ceb5b3650e47f95a6502abcb0083c2de72c",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/dock-navigation.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "174ea265d6a863f906a945747e8b3056e071056a0f84832f4f695711547b998c",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/dock-navigation.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "76d27ce114a554a64f33f1ee47b7af0b565d1eff27677afeb0a14181e60ce97e",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/dock-search-data.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "82e9deffb24f7ed0884a2eccba6dc9db591715868ff46778a03ddc99bb770ad9",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/dock-search.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "2ac9c079d5142898615a98955fe1881af016f719e06c879727bc72ea583962fc",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/dock-search.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "5821dd234328abe5f56b761bae71c4e6534bbebff34e21e041788a67ee421b28",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/entrance.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "e5f9b6205d7a5fd0cba85e666eee48539fcbaf74944f94f4f25637cc369bd312",
+      "identicalTo144": false,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/entrance.mjs",
+      "archiveBytesFrom": "originals/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "d9940372d745df7de1bc0a347548b744fadab9a5eb46dcf467c2def1734fe2d4",
+      "identicalTo144": false
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/floating-search.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "223a0592f6c1ae63c5bd0a2988efdd8392ab8745d1430c8424a3929106c1122b",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/geography/PROVENANCE.md",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "792b179dff18af3d22c57198215180a58d395f53ba6307f3bb2f105bdbfe206e",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/geography/world-countries.topo.json",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "c6d54f03aba7ea7d63e58053ac27ebea23ef520421a90effcf0201c6cd7945cc",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/geography/world-countries.topo.json.gz",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "13640abdfe1ae1b7109dd921a79cd7a051d1829be510cac8e41b29f14af1b5f0",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/geography-loader.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "16b6c4205c9bfc45ae7649411146fc7164f44c293ea2eefd70111c3852fb35b0",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/geography-worker.mjs",
+      "archiveBytesFrom": "originals/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "a319c9ca1e7d3cd7a3548f551f133ef8202e70ad5e747ca7b9af9084fb841d7b",
+      "identicalTo144": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/globe-framing.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "a544a2e08a7697a44aa3c0cd5334a976a04fd9797934d27bb13c4d3ec7177ae6",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/globe-layout.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "77cb50797dccdffbbe7d171f204142199149bd1f179f797064553c3e1604cd68",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/globe-style.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "5833157316df2fd12b68d0ff1f63bcc14002e613fe5c49a473f12c8b71f1c313",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/index.html",
+      "archiveBytesFrom": "originals/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "1c917ec3cf69e72818ae48e408d28563ed2fb6dc6bf48c6aac7a1ad1052753c6",
+      "identicalTo144": false
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/integrated-globe.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "63f1ecc932b9fc0f9b4f037a93d08ccf53b48ae647f1ef5a7bf6917ed81faf27",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/integrated-globe.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "bf4dc9fdf7bd398e95389202ea0742e1cb9187cb066bc354d8b4aa7867ecc158",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/journal-ui.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "f5b76c927851a1c852ba04654c29b9ac4c0dad0671a20f9f9c2f48c4fdf9a0e7",
+      "identicalTo144": false,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/journal.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "7c93f3be7197f2418e30444f3636ff5dd677f18e4b0dadccc87b466fd0d99858",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/media-viewer.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "4890ab241379ea3bcf6336260634d8a6890d272d85e5aa09bff838db624f24a3",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/media-viewer.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "3ca844c67266cb6084abd476a06ff1e39d73fbda900978f03e4bb6f849d3a3ab",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/navigation-policy.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "4db9e09e09038370ed0f5a1ee2d8eee992fb6103b2987cbf3d9eec75dedf1524",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/perf-diagnostics.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "4016591e20323f7c65fedbc43c80357625eb17f63557fc4a88402e647c9df1a3",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/polar-cap-layer.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "c42cfcb4f41641cf71b633ced5fc608aa1a7f8f1013d0928178f401507613899",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/polar-geometry.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "783b6ed5d1ac98b1a51ae73d30c4c4497c79ccb0029df258274c1b60a5788ee1",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/profile-data.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "de16da2ab6b512303dafc69d94d745325a11d50af48aa7ec2c4e7035ed1fa125",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/profile-sections.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "a339932705f4ea306f29d0c6a4ca2e67137207b2e0d0168eee15b916134b3a9e",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/profile-ui.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "dda7bbee23d2072bdddf9cfcdae0fa021e24c2c5f7664bc681846f7e1d59b452",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/profiles.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "f4346993852c241205032081cac3e2f4db8a2231f9e1e8455e0092dc470f6c22",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/project-filter-dialog.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "d5643f96875855256998462c896cdfbe86d29681196efff635333d57584ac559",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/project-filter-dialog.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "9908ac8570d61e8964b7b0f73dcfbb18875a85075c1fe376ce13e8ade82bacd0",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/project-trial.mjs",
+      "archiveBytesFrom": "originals/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "9cf60282a01c5b85a0268f0aba7c4fdd9118d58fe4cbc0831ab528f82024977a",
+      "identicalTo144": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/project-ui.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "a4bff6110875d4362d237648031eee92321ebb9a2c93b71c9be22278238c1960",
+      "identicalTo144": false,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/projects.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "957f5fe27f99b3f3226bbc2083bdc23aee7d5305640a81d143f5cfcb87a1b500",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/random-campus.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "649a4ce5da9271f9edcc7b028005ae6b7bf0a969087ba9eed585f234b17ce744",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/random-discovery.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "104005642da690db2551d3a0a1a22bef55a2ace1f232b4f850522335d5aa893e",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/readable-glass.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "922f0c523f48bb5f066c6d440df92734df7afff6bce332ada5b2c96e02a87687",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/reading-scope.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "cabd899895487c7f7c69ca879cfb83db59d2f507bcda2863577ecf7cc5238ca4",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/responsive-content.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "31210d835f68cc59cfe17cc0ce5fe3e22c3d14adc1976b256cbf2c3bc87980ec",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/responsive-dock.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "af8e39eb97d425dd7eaf4a3e0a73e6f4055d03ab4ba9781f5b83fad0e758528c",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/scope-popover.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "832b7cbf482dd63200ef1d2e550f4b3eeb18e971a914bb86325a6c413502b991",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/scope-popover.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "af6c72a4bd8d0d9277ebc4ef9189b6248d883b906b1a495951b25354fe36fc4a",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/scope-selectors.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "37bd969fef32bc03b95ef471fe57ca544786e916b2d1c8890244467134eeb1bd",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/scrollbars.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "5e4b6edbf78abd360fa7f777f55c5b2032ff78fffaee53744532de066ee8f1d0",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/sticky-header.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "26410015e1d9fa5aa2d837e66a3231bdabdf27c72d54d55f938e83e96b7c3298",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/theme-bootstrap.js",
+      "archiveBytesFrom": "originals/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "7b1220ff7349fe8446c98fac1752241559dfa1495d9018723a023a43a8bf0399",
+      "identicalTo144": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/theme-menu.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "c25ef151d17e4bb56ced25956317da0b19791069a8e799c053300a8d71ae134d",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/theme-menu.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "a80b40202e47f2bea22a0de202b73cc135e8c64f13637abc78e15282e41d0cbe",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/theme-preferences.mjs",
+      "archiveBytesFrom": "originals/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "efe79a5d98a76a11cc3585390ccd146476b9cbaabcf5872c1c33e6c8d722fcdc",
+      "identicalTo144": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/vendor/maplibre-LICENSE.txt",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "ee5fc05a0677eaf69601d2c7db0d9ecd6cc27c3abc1d0733bc9ed34707cf8ef2",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/vendor/maplibre-PROVENANCE.md",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "ff2d768ab825a417f9f3eee24d47f83506bce4053abfe04f561b16e2ecaa04ae",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/vendor/maplibre-gl.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "ab1e70d59ec40465bae7e7030da2f3ccf28133fd502e62bd598eefbadfd7a732",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/vendor/maplibre-gl.js",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "45a9b07a9189ce56054c620a947ccf41e291e58c95e9b61533b740aaa65ee5cb",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/welcome.css",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "5b009f8a719890faa460f36d87b09863e44ffd5e7529c1c30d912220e3a9b1d9",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/welcome.mjs",
+      "archiveBytesFrom": "originals/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "e1b31b75b8aa4e9b24bb9b3f646f59467a32b72dbaa016d80f6b1ff738aa9e60",
+      "identicalTo144": false
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/world-render-preparation.mjs",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "5a8e50649b4e281524c69af6c3c481483e39a662114a2dddc357f4121059ca08",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/map-data/d3.min.js",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "f2094bbf6141b359722c4fe454eb6c4b0f0e42cc10cc7af921fc158fceb86539",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    },
+    {
+      "source": "work/visualizations/map-data/topojson.min.js",
+      "archiveBytesFrom": "baseline/",
+      "archiveMatchesSourceSha": true,
+      "activeExists": true,
+      "activeSha256": "25cd02ae486cc5063e0215a4e4cfb15de83700c87ac48bac4d57dc6aaf3ebb89",
+      "identicalTo144": true,
+      "baselineUnadapted": true
+    }
+  ]
+}

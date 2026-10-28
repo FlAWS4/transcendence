@@ -1,0 +1,109 @@
+<div id="horizon-globe-placements" aria-label="Deux propositions de placement des commandes du globe">
+  <style>
+    #horizon-globe-placements { --hz-bg:light-dark(#f8fbfa,#202225); --hz-ink:light-dark(#202525,#f2f6f5); --hz-muted:light-dark(#56676a,#b6c5c7); --hz-surface:light-dark(#fff,#303438); --hz-line:light-dark(#d9e7e5,#455357); --hz-aqua:light-dark(#d8eff0,#25494d); --hz-accent:light-dark(#007d86,#82dbe0); color:var(--hz-ink); font-family:Arial,sans-serif; }
+    #horizon-globe-placements * { box-sizing:border-box; }
+    #horizon-globe-placements .hz-comparison { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px; }
+    #horizon-globe-placements .hz-option { min-width:0; }
+    #horizon-globe-placements .hz-label { margin:0 0 12px;font-size:14px;font-weight:500; }
+    #horizon-globe-placements .hz-phone { width:100%;max-width:350px;height:590px;position:relative;margin:auto;overflow:hidden;background:var(--hz-bg);border:1px solid var(--hz-line);border-radius:24px; }
+    #horizon-globe-placements .hz-header { position:absolute;top:22px;left:18px;right:18px;display:flex;justify-content:space-between;align-items:center; }
+    #horizon-globe-placements .hz-brand { font-size:17px;letter-spacing:-.6px;display:flex;align-items:center;gap:8px; }
+    #horizon-globe-placements .hz-brand span { font-size:27px;font-weight:700; }
+    #horizon-globe-placements .hz-account { width:40px;height:40px;border-radius:50%;background:var(--hz-surface);display:grid;place-items:center; }
+    #horizon-globe-placements .hz-scope { position:absolute;top:78px;left:50%;transform:translateX(-50%);background:var(--hz-surface);padding:10px 15px;border-radius:30px;display:flex;align-items:center;gap:10px;font-size:13px; }
+    #horizon-globe-placements .hz-seat { width:21px;height:21px;border-radius:50%;background:var(--hz-aqua); }
+    #horizon-globe-placements .hz-status { position:absolute;top:126px;left:18px;right:18px;text-align:center;font-size:12px;line-height:18px;color:var(--hz-muted);margin:0;min-height:36px; }
+    #horizon-globe-placements .hz-globe-area { position:absolute;top:175px;left:0;right:0;height:244px;display:grid;place-items:center;overflow:hidden; }
+    #horizon-globe-placements .hz-sphere { width:250px;max-width:90%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,var(--hz-bg),var(--hz-aqua) 70%);border:1px solid var(--hz-line);position:relative;overflow:hidden;transition:transform .25s ease; }
+    #horizon-globe-placements .hz-sphere:before,#horizon-globe-placements .hz-sphere:after { content:'';position:absolute;inset:0 24%;border:1px solid var(--hz-line);border-radius:50%; }
+    #horizon-globe-placements .hz-sphere:after { inset:28% 0; }
+    #horizon-globe-placements .hz-center-line { position:absolute;top:0;bottom:0;left:50%;border-left:1px solid var(--hz-line); }
+    #horizon-globe-placements .hz-center-line:after { content:'';position:absolute;width:250px;left:-125px;top:50%;border-top:1px solid var(--hz-line); }
+    #horizon-globe-placements .hz-tools { position:absolute;bottom:174px;padding:4px;display:flex;gap:2px;background:var(--hz-surface);box-shadow:0 7px 22px #142b3310;border:1px solid var(--hz-line);border-radius:30px; }
+    #horizon-globe-placements .hz-side .hz-tools { right:14px;flex-direction:column; }
+    #horizon-globe-placements .hz-horizontal .hz-tools { left:50%;transform:translateX(-50%); }
+    #horizon-globe-placements .hz-tools button { background:transparent;border:0;color:var(--hz-ink);height:44px;width:44px;display:grid;place-items:center;cursor:pointer;border-radius:50%; }
+    #horizon-globe-placements .hz-tools button:hover { background:var(--hz-aqua); }
+    #horizon-globe-placements .hz-caption { position:absolute;bottom:149px;width:100%;text-align:center;font-size:11px;color:var(--hz-muted); }
+    #horizon-globe-placements .hz-search-row { position:absolute;bottom:88px;left:50%;transform:translateX(-50%);display:flex;gap:8px;align-items:center; }
+    #horizon-globe-placements .hz-search { height:44px;width:184px;background:var(--hz-surface);border-radius:30px;display:grid;place-items:center;font-size:12px; }
+    #horizon-globe-placements .hz-dice { height:44px;width:44px;background:var(--hz-surface);border-radius:50%;display:grid;place-items:center;color:var(--hz-accent); }
+    #horizon-globe-placements .hz-dock { position:absolute;bottom:16px;left:10px;right:10px;height:60px;display:flex;padding:5px;background:var(--hz-surface);border-radius:32px;box-shadow:0 7px 22px #142b330b; }
+    #horizon-globe-placements .hz-nav { flex:1;display:flex;flex-direction:column;gap:5px;align-items:center;justify-content:center;font-size:11px;min-width:0;border-radius:30px; }
+    #horizon-globe-placements .hz-nav:first-child { color:var(--hz-accent);background:var(--hz-aqua); }
+    #horizon-globe-placements .hz-nav:last-child span { font-size:11px; }
+    #horizon-globe-placements .hz-note { margin:10px 0 0;font-size:12px;color:var(--hz-muted);text-align:center; }
+    #horizon-globe-placements svg { width:18px;height:18px; }
+    @media(max-width:620px) { #horizon-globe-placements .hz-comparison { grid-template-columns:1fr;gap:24px; } }
+    @media(prefers-reduced-motion:reduce) { #horizon-globe-placements .hz-sphere { transition:none; } }
+  </style>
+  <div class="hz-comparison">
+    <section class="hz-option" aria-label="Colonne latérale">
+      <h3 class="hz-label">1 · Sur le côté</h3>
+      <div class="hz-phone hz-side">
+        <div class="hz-header"><div class="hz-brand"><span>42</span> HORIZON</div><div class="hz-account"><i data-lucide="user-round" aria-hidden="true"></i></div></div>
+        <div class="hz-scope"><span class="hz-seat"></span>Monde<i data-lucide="chevron-down" aria-hidden="true"></i></div>
+        <p class="hz-status" aria-live="polite">58 campus · 30 pays</p>
+        <div class="hz-globe-area" role="img" aria-label="Zone du globe représentée schématiquement"><div class="hz-sphere"><span class="hz-center-line"></span></div></div>
+        <div class="hz-tools" role="group" aria-label="Commandes du globe, simulation de placement">
+          <button type="button" data-zoom="in" aria-label="Zoomer" data-tooltip="Zoomer"><i data-lucide="plus" aria-hidden="true"></i></button>
+          <button type="button" data-zoom="out" aria-label="Dézoomer" data-tooltip="Dézoomer"><i data-lucide="minus" aria-hidden="true"></i></button>
+          <button type="button" data-zoom="world" aria-label="Revenir au monde" data-tooltip="Revenir au monde"><i data-lucide="globe" aria-hidden="true"></i></button>
+        </div>
+        <div class="hz-caption">Exploration · 42 Horizon</div>
+        <div class="hz-search-row"><div class="hz-search">Chercher dans Horizon</div><div class="hz-dice"><i data-lucide="dice-5" aria-hidden="true"></i></div></div>
+        <div class="hz-dock" aria-label="Menu principal représenté pour situer les commandes">
+          <div class="hz-nav"><i data-lucide="compass" aria-hidden="true"></i><span>Explorer</span></div>
+          <div class="hz-nav"><i data-lucide="layers" aria-hidden="true"></i><span>Projets</span></div>
+          <div class="hz-nav"><i data-lucide="users-round" aria-hidden="true"></i><span>Profils</span></div>
+          <div class="hz-nav"><i data-lucide="notebook-text" aria-hidden="true"></i><span>Chroniques</span></div>
+          <div class="hz-nav"><i data-lucide="trophy" aria-hidden="true"></i><span>Awards</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="hz-option" aria-label="Capsule horizontale fixe">
+      <h3 class="hz-label">2 · Capsule centrée</h3>
+      <div class="hz-phone hz-horizontal">
+        <div class="hz-header"><div class="hz-brand"><span>42</span> HORIZON</div><div class="hz-account"><i data-lucide="user-round" aria-hidden="true"></i></div></div>
+        <div class="hz-scope"><span class="hz-seat"></span>Monde<i data-lucide="chevron-down" aria-hidden="true"></i></div>
+        <p class="hz-status" aria-live="polite">58 campus · 30 pays</p>
+        <div class="hz-globe-area" role="img" aria-label="Zone du globe représentée schématiquement"><div class="hz-sphere"><span class="hz-center-line"></span></div></div>
+        <div class="hz-tools" role="group" aria-label="Commandes du globe, simulation de placement">
+          <button type="button" data-zoom="out" aria-label="Dézoomer" data-tooltip="Dézoomer"><i data-lucide="minus" aria-hidden="true"></i></button>
+          <button type="button" data-zoom="world" aria-label="Revenir au monde" data-tooltip="Revenir au monde"><i data-lucide="globe" aria-hidden="true"></i></button>
+          <button type="button" data-zoom="in" aria-label="Zoomer" data-tooltip="Zoomer"><i data-lucide="plus" aria-hidden="true"></i></button>
+        </div>
+        <div class="hz-caption">Exploration · 42 Horizon</div>
+        <div class="hz-search-row"><div class="hz-search">Chercher dans Horizon</div><div class="hz-dice"><i data-lucide="dice-5" aria-hidden="true"></i></div></div>
+        <div class="hz-dock" aria-label="Menu principal représenté pour situer les commandes">
+          <div class="hz-nav"><i data-lucide="compass" aria-hidden="true"></i><span>Explorer</span></div>
+          <div class="hz-nav"><i data-lucide="layers" aria-hidden="true"></i><span>Projets</span></div>
+          <div class="hz-nav"><i data-lucide="users-round" aria-hidden="true"></i><span>Profils</span></div>
+          <div class="hz-nav"><i data-lucide="notebook-text" aria-hidden="true"></i><span>Chroniques</span></div>
+          <div class="hz-nav"><i data-lucide="trophy" aria-hidden="true"></i><span>Awards</span></div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <p class="hz-note">Études de placement mobile · globe schématique</p>
+  <script>
+    (() => {
+      const root = document.getElementById('horizon-globe-placements');
+      const state = { message:'Statistiques' };
+      const messages = { Statistiques:'58 campus · 30 pays', Consigne:'Choisis un campus pour t’en approcher.', Chargement:'Préparation des alentours…' };
+      const render = () => root.querySelectorAll('.hz-status').forEach(el => { el.textContent = messages[state.message]; });
+      root.querySelectorAll('.hz-phone').forEach(phone => {
+        let zoom = 1;
+        phone.querySelectorAll('[data-zoom]').forEach(button => button.addEventListener('click', () => {
+          zoom = button.dataset.zoom === 'world' ? 1 : Math.max(.75,Math.min(1.5,zoom+(button.dataset.zoom === 'in' ? .15 : -.15)));
+          phone.querySelector('.hz-sphere').style.transform = `scale(${zoom})`;
+        }));
+      });
+      render();
+      if (globalThis.Tweak) {
+        const tweak = new Tweak({ container:root, onChange:render });
+        tweak.addSelect(state,'message',{label:'Texte variable',options:['Statistiques','Consigne','Chargement']});
+      }
+    })();
+  </script>
+</div>

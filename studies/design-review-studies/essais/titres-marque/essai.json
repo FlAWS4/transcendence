@@ -1,0 +1,123 @@
+{
+  "id": "titres-marque",
+  "groupe": "Typographie, lisibilité et pages",
+  "titre": "Signature typographique de la marque",
+  "resume": "Le mot-symbole HORIZON ↔ AWARDS de l’en-tête et le slogan « BEYOND THE CODE » révélé après la connexion simulée passent en Jost 800 italique, substitut provisoire du Futura PT Heavy Oblique de la charte ; la ligne arabe أفق garde sa famille et prend sa graisse grasse réelle.",
+  "probleme": "La signature de la charte (p. 6 : 42 + nom en Futura PT Heavy Oblique capitales, comme ALUMNI) est absente : HORIZON/AWARDS et le slogan sont en Jost Medium, et le site ne charge que Jost 400/500/600 droit.",
+  "changement": "essai.css importe les fontes partagées (Jost 800 italique, licence OFL) et met #brand-wordmark en italique 800 ; taille (25 px ordinateur, 16 à 16,7 px mobile), interlettrage et couleur restent hérités de .brand-names. brand-wordmark.mjs mesure les lettres depuis cette police calculée : la cascade HORIZON ↔ AWARDS est conservée telle quelle. Ligne arabe أفق : même famille Noto Sans Arabic, graisse 700 avec font-synthesis-weight: none (face grasse réelle seulement, jamais de gras simulé). Slogan : early.js, exécuté avant les modules du socle, remplace dans le canevas de déchiffrement, après « Simuler une connexion réussie », chaque lettre claire déjà résolue (dessinée à l’encre) par une jumelle Jost 800 italique à la même échelle et au même centre ; la jumelle a 40 px de marge de plus de chaque côté, car l’italique gras dépasse la marge des lettres droites (Y de 7 px, T de 5 px à 192 px) et aurait été rogné. Les lettres du message chiffré ne sont jamais remplacées, y compris pendant le quart de seconde où il reste affiché après la connexion ; les lettres qui tournent (en 42 Blue), le scan d’avant la connexion, la position des lettres et les représentations binaire/hexadécimale ne changent pas. Jost n’est qu’un substitut : Futura PT n’est pas installée.",
+  "decisionConcernee": "Point en attente, non daté, de la section « Produit et décisions à préserver » de PROJECT_CONTEXT.md : « Futura PT Heavy Oblique reste un point en attente […] HORIZON reste provisoirement en Jost Medium ; la proposition arabe أفق utilise Noto Sans Arabic Medium ». L’essai propose un substitut Jost 800 italique sans trancher ce point.",
+  "alternativeDe": "",
+  "vues": [
+    {
+      "libelle": "En-tête, ordinateur clair (ouvrir 42 Awards puis revenir)",
+      "page": "content-preview.html",
+      "route": "projects",
+      "viewport": "ordinateur",
+      "theme": "light",
+      "lang": "fr"
+    },
+    {
+      "libelle": "En-tête arabe, mobile sombre",
+      "page": "content-preview.html",
+      "route": "projects",
+      "viewport": "mobile",
+      "theme": "dark",
+      "lang": "ar"
+    },
+    {
+      "libelle": "Arrivée : Se connecter puis « Simuler une connexion réussie »",
+      "page": "index.html",
+      "route": "",
+      "viewport": "ordinateur",
+      "theme": "light",
+      "lang": "fr"
+    }
+  ],
+  "verifications": [
+    "Police réellement utilisée (Chrome, CSS.getPlatformFontsForNode) : lettres du mot-symbole en « Jost-ExtraBoldItalic » (fonte web, non simulée) dans les 5 vues ; ligne arabe أفق en « NotoSansArabic-Bold » après l’essai contre « NotoSansArabic-Regular » avant (polices système de cette machine).",
+    "Mesure du mot-symbole juste : largeur posée par brand-wordmark.mjs = largeur du même mot mis en page par le navigateur à 0,01 px près (HORIZON 112,10/112,11 px à 1440 px, 74,82/74,83 px à 390 px, 71,74/71,75 px à 320 px ; AWARDS 103,03/103,03 px et 68,76/68,77 px) ; avant : 107,08, 71,47 et 68,53 px. Même résultat au premier chargement direct de l’essai, puis après passage en arabe sombre, réduction à 390 px, ouverture de 42 Awards et retour en français clair, sans rechargement.",
+    "En-tête vérifié en français clair 1440 px, français sombre 390 px, arabe clair 390 px, arabe sombre 1440 px et anglais clair 320 px : aucun débordement, la marque ne touche jamais les boutons de droite, et tout ce qui est sous l’en-tête est identique au pixel près (écart 0 sur les 5 vues).",
+    "Transition HORIZON → AWARDS → HORIZON jouée sans réduction des animations, à 1440 px en français clair et à 390 px en arabe sombre, 9 relevés par sens : même déroulé que le socle aux instants de relevé près, mot-symbole toujours dans l’écran, jamais sur les boutons, aucun débordement, fin sur AWARDS puis HORIZON à la largeur mesurée par le navigateur.",
+    "Arrivée jouée en mouvement réel (index.html, 1440 px clair et 390 px sombre), avec un relevé de chaque image dessinée sur le canevas : message chiffré avant la connexion identique au pixel près (écart 0) ; première image dessinée après la connexion (le chiffre gardé un quart de seconde) identique au pixel près et sans lettre remplacée ; 377 dessins de lettres résolues remplacés ensuite (sur l’ensemble des images du déchiffrement et du slogan), aucune jumelle n’a d’encre sur ses deux colonnes de bord (pas de lettre rognée) et l’échelle et le centre de chaque lettre sont inchangés ; au slogan, texte rendu « BEYOND THE CODE », 4,2 % (ordinateur) et 5,3 % (mobile) des pixels du canevas changent et la part d’encre passe de 5,5 % à 8,1 % et de 7,1 % à 10,5 %.",
+    "Mouvement réduit : seule l’image finale (13 lettres) est remplacée, la première (le chiffre) ne l’est pas, aucune erreur.",
+    "Aucune erreur de console dans les chargements (en-tête, transitions, arrivée, changements de langue et de thème). Captures examinées à la relecture : en-tête à 1440 px, en arabe à 390 px et sur 42 Awards, transitions à mi-parcours (aucune lettre coupée), slogan à 1440 px et à 390 px en sombre (bras du Y et barre du T entiers depuis la correction, rognés avant) ; le message chiffré est vérifié par comparaison de pixels (écart 0)."
+  ],
+  "limites": [
+    "Jost 800 italique n’est qu’un substitut géométrique : Futura PT Heavy Oblique, police de la charte, n’est toujours pas disponible ; les proportions et l’angle diffèrent.",
+    "Le mot plus large (environ +5 px à 1440 px, +3 à 4 px sur mobile) décale d’autant le symbole 42 en arabe, où la marque est ancrée à droite ; en français le symbole ne bouge pas.",
+    "La ligne arabe ne s’alourdit que si une face grasse réelle de Noto Sans Arabic existe sur l’appareil (c’est le cas sur cette machine) ; sinon elle reste en graisse normale, sans gras simulé. La proposition Figma أفق en Noto Sans Arabic Medium n’a pas d’équivalent chargé par le site.",
+    "Le slogan est obtenu en remplaçant les images des lettres résolues dans le canevas, sans modifier le moteur : l’espacement reste calculé sur Jost Medium, donc les lettres grasses sont serrées (le bras du Y et la barre du T frôlent la lettre suivante) ; une mise en page dédiée serait plus aérée. La page du message crypté reste sans marque (règle V9) : seule la police du slogan change.",
+    "Le slogan n’apparaît qu’après une connexion simulée ; le parcours Visiter n’affiche pas de slogan et n’est pas concerné.",
+    "En mouvement réduit, le socle enchaîne sans tenir le slogan à l’écran : la dernière image est bien remplacée mais n’est presque pas visible, comme dans le site actuel."
+  ],
+  "fichiers": [
+    "essais/titres-marque/essai.css",
+    "essais/titres-marque/early.js",
+    "essais/titres-marque/essai.mjs",
+    "essais/_partage/fonts.css",
+    "checks/titres-marque/check.py",
+    "checks/titres-marque/results.json"
+  ],
+  "captures": [
+    {
+      "vue": "entete-ordinateur",
+      "avant": "checks/titres-marque/avant-entete-ordinateur.png",
+      "apres": "checks/titres-marque/apres-entete-ordinateur.png"
+    },
+    {
+      "vue": "awards-ordinateur",
+      "avant": "checks/titres-marque/avant-awards-ordinateur.png",
+      "apres": "checks/titres-marque/apres-awards-ordinateur.png"
+    },
+    {
+      "vue": "transition-ordinateur",
+      "avant": "checks/titres-marque/avant-transition-ordinateur-4.png",
+      "apres": "checks/titres-marque/apres-transition-ordinateur-4.png"
+    },
+    {
+      "vue": "entete-ar-mobile",
+      "avant": "checks/titres-marque/avant-entete-ar-mobile.png",
+      "apres": "checks/titres-marque/apres-entete-ar-mobile.png"
+    },
+    {
+      "vue": "entete-ar-sombre-ordinateur",
+      "avant": "checks/titres-marque/avant-entete-ar-sombre-ordinateur.png",
+      "apres": "checks/titres-marque/apres-entete-ar-sombre-ordinateur.png"
+    },
+    {
+      "vue": "entete-sombre-mobile",
+      "avant": "checks/titres-marque/avant-entete-sombre-mobile.png",
+      "apres": "checks/titres-marque/apres-entete-sombre-mobile.png"
+    },
+    {
+      "vue": "entete-petit",
+      "avant": "checks/titres-marque/avant-entete-petit.png",
+      "apres": "checks/titres-marque/apres-entete-petit.png"
+    },
+    {
+      "vue": "awards-ar-sombre-mobile",
+      "avant": "checks/titres-marque/avant-awards-ar-sombre-mobile.png",
+      "apres": "checks/titres-marque/apres-awards-ar-sombre-mobile.png"
+    },
+    {
+      "vue": "arrivee-chiffree-ordinateur",
+      "avant": "checks/titres-marque/avant-arrivee-chiffree-ordinateur.png",
+      "apres": "checks/titres-marque/apres-arrivee-chiffree-ordinateur.png"
+    },
+    {
+      "vue": "arrivee-dechiffrement-ordinateur",
+      "avant": "checks/titres-marque/avant-arrivee-dechiffrement-ordinateur.png",
+      "apres": "checks/titres-marque/apres-arrivee-dechiffrement-ordinateur.png"
+    },
+    {
+      "vue": "slogan-ordinateur",
+      "avant": "checks/titres-marque/avant-slogan-ordinateur.png",
+      "apres": "checks/titres-marque/apres-slogan-ordinateur.png"
+    },
+    {
+      "vue": "arrivee-slogan-sombre-mobile",
+      "avant": "checks/titres-marque/avant-arrivee-slogan-sombre-mobile.png",
+      "apres": "checks/titres-marque/apres-arrivee-slogan-sombre-mobile.png"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Brand specimen — refonte Figma</title>
+<!-- Printed to PDF by capture_shell.py (lot "brand"), then outlined by Inkscape. One mark per URL fragment.
+     Type values copied from horizon-welcome/welcome.css: .brand-names (Jost 500, line-height 1.15,
+     letter-spacing -.035em) and .arabic-brand (Noto Sans Arabic, line-height 1.5, letter-spacing 0). -->
+<link rel="stylesheet" href="../../../shared/assets/jost.css">
+<style>
+ @page { margin: 0 }
+ html, body { margin: 0; padding: 0; background: transparent; color: #1B1B1B; }
+ .mark { display: inline-block; padding: 1px; }
+ .mark[hidden] { display: none; }
+ .glyphs { display: block; white-space: nowrap; }
+ .latin .glyphs { font-family: Jost, sans-serif; font-weight: 500; line-height: 1.15; letter-spacing: -.035em; direction: ltr; }
+ .arabic .glyphs { font-family: 'Noto Sans Arabic', sans-serif; font-weight: 500; line-height: 1.5; letter-spacing: 0; direction: rtl; }
+</style>
+</head>
+<body>
+ <div class="mark latin" id="horizon-25" hidden><span class="glyphs" style="font-size:25px">HORIZON</span></div>
+ <div class="mark latin" id="awards-25" hidden><span class="glyphs" style="font-size:25px">AWARDS</span></div>
+ <div class="mark arabic" id="arabic-14" hidden><span class="glyphs" lang="ar" style="font-size:14px">أفق</span></div>
+<script>
+ const show = () => {
+  document.body.dataset.ready = 'false';
+  document.querySelectorAll('.mark').forEach(mark => { mark.hidden = '#' + mark.id !== location.hash; });
+  Promise.all([document.fonts.load('500 25px Jost'), document.fonts.ready]).then(() => { document.body.dataset.ready = 'true'; });
+ };
+ addEventListener('hashchange', show); show();
+</script>
+</body>
+</html>

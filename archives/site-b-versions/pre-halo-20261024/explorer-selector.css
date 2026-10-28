@@ -1,0 +1,203 @@
+/* Version B Explorer (24 Oct 2026): the level selector in the stage slot of A's globe. Loaded last.
+   Tokens only: tokens.css roles, welcome.css (--ease, focus ring), control-glass.css, readable-glass.css
+   and design-review-selection.css (--eu-* scale, radii 12/20/999, elevations). */
+
+/* Stage: A's fixed full-viewport layer (z 7). visibility:inherit keeps it hidden with #main during the
+   arrival until entrance.css reveals it; outside Explorer it fades out, then stops being visible. */
+:root .app[data-navigation=dock] #main>#explorer{
+ position:fixed;inset:0;z-index:7;opacity:1;visibility:inherit;transition:opacity .36s var(--ease),visibility 0s;
+ display:grid;grid-template:minmax(auto,1fr)/minmax(0,1fr);box-sizing:border-box;
+ /* The free band measured by explorer-band.mjs; the fallbacks are A's desktop band. */
+ padding-block:var(--explorer-top,168.3px) var(--explorer-bottom,calc(196px + env(safe-area-inset-bottom,0px)));
+ padding-inline:var(--horizon-page-gutter,24px);
+}
+:root .app[data-navigation=dock]:not([data-section=explore]) #main>#explorer{opacity:0;visibility:hidden;pointer-events:none;transition:opacity .36s var(--ease),visibility 0s .36s}
+/* Coming from a content page, the selector fades in once the outgoing page has faded (360 ms). */
+:root .app[data-navigation=dock][data-section=explore][data-content-exiting=true] #main>#explorer{transition-delay:.36s,0s}
+html:has(.app[data-navigation=dock][data-section=explore]){overscroll-behavior-x:none}
+/* The empty section takes the focus only without a view (loading or error), as A's stage did. */
+:root .app[data-navigation=dock] #main>#explorer:focus{outline:none}
+:root .app[data-navigation=dock] #main>#explorer:focus-visible{outline:2px solid var(--h42-color-focus);outline-offset:-5px;border-radius:32px}
+
+/* Glass text keeps its contrast with the readable secondary tone, as on the other glass controls. */
+:root #explorer{
+ --h42-color-muted:var(--readable-glass-muted);
+ --explorer-line:1.45;--explorer-name:var(--eu-title-3,20px);--explorer-gap:16px;
+ --explorer-card:clamp(200px,28vw,300px);--explorer-card-block:204px;
+ --explorer-side-surface:color-mix(in srgb,var(--h42-white) 96%,transparent);
+ line-height:var(--explorer-line);
+}
+:root[data-theme=dark] #explorer{--explorer-side-surface:color-mix(in srgb,var(--h42-graphite) 96%,transparent)}
+:root #explorer:lang(ar){--explorer-line:1.6}
+:root #explorer [data-state=leaving]{pointer-events:none}
+
+/* Levels 1-3: eyebrow, carousel, pager and hint, centred in the band. All levels share one grid cell,
+   so the outgoing level stays painted under the new one during its exit. */
+:root #explorer .explorer-level{grid-area:1/1;min-inline-size:0;display:flex;flex-direction:column;align-items:center;justify-content:center;container:explorer-level/size}
+:root #explorer .explorer-eyebrow{margin:0 0 8px;max-inline-size:100%;color:var(--readable-glass-accent);font-size:var(--eu-caption,13px);font-weight:500;letter-spacing:.075em;line-height:var(--explorer-line);text-transform:uppercase;text-align:center;overflow-wrap:anywhere}
+:root #explorer .explorer-eyebrow:lang(ar){letter-spacing:0}
+:root #explorer .explorer-carousel{display:flex;align-items:center;justify-content:center;gap:8px;inline-size:100%;min-inline-size:0}
+/* overflow:clip cannot be scrolled by focus or assistive technology, so only the track moves. Its block
+   padding, given back by negative margins, keeps the cards' shadows from being cut. */
+:root #explorer .explorer-viewport{flex:0 1 calc(3 * var(--explorer-card) + 2 * var(--explorer-gap));min-inline-size:0;margin-block:-16px;padding-block:16px;overflow:clip;touch-action:pan-y pinch-zoom;-webkit-user-select:none;user-select:none}
+/* 8 px of block padding keep the 2 px focus outline (5 px offset) inside the clip. */
+:root #explorer .explorer-track{display:flex;gap:var(--explorer-gap);inline-size:max-content;padding-block:8px}
+:root #explorer .explorer-nav{position:relative;z-index:1;flex:none;display:grid;place-items:center;inline-size:44px;block-size:44px;padding:0;border:1px solid var(--control-glass-edge);border-radius:var(--eu-radius-pill,999px);background:var(--explorer-side-surface);box-shadow:var(--control-glass-shadow);color:var(--h42-color-text);transition:border-color .2s,opacity .2s}
+:root #explorer .explorer-nav svg{inline-size:20px;block-size:20px}
+:root #explorer .explorer-nav[aria-disabled=true]{opacity:.35;cursor:default}
+[dir=rtl] #explorer :is(.explorer-nav,.explorer-campus-back) svg{transform:scaleX(-1)}
+
+/* Cards: one size for every card of a level, the same weight on the cursor and on its neighbours. */
+:root #explorer .explorer-card{
+ position:relative;flex:0 0 var(--explorer-card);inline-size:var(--explorer-card);block-size:var(--explorer-card-block);min-inline-size:0;
+ display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:34px calc(2 * var(--explorer-line) * var(--explorer-name)) auto minmax(0,1fr);
+ grid-template-areas:"index dots" "name name" "count count" "chip chip";
+ padding:12px 16px;border:2px solid transparent;border-radius:var(--eu-radius-surface,20px);background-clip:padding-box;
+ background-color:var(--explorer-side-surface);box-shadow:inset 0 0 0 1px var(--control-glass-edge),var(--control-glass-shadow);
+ color:var(--h42-color-text);font-weight:400;line-height:var(--explorer-line);text-align:center;
+ transition:border-color .2s,background-color .2s,box-shadow .2s;
+}
+:root #explorer .explorer-card-index{grid-area:index;justify-self:start;align-self:start;color:var(--h42-color-muted);font-size:var(--eu-caption,13px);font-variant-numeric:tabular-nums;letter-spacing:.06em;line-height:var(--explorer-line)}
+/* One 4 px Royal Pink dot per campus on a 6 px pitch, ten per row (decorative). */
+:root #explorer .explorer-card-dots{grid-area:dots;justify-self:end;align-self:start;display:grid;grid-template-columns:repeat(var(--explorer-dots,10),4px);grid-auto-rows:4px;gap:2px;margin-block-start:4px}
+:root #explorer .explorer-card-dots:empty{display:none}
+:root #explorer .explorer-card-dots>i{display:block;inline-size:4px;block-size:4px;border-radius:50%;background:var(--h42-pink)}
+:root #explorer .explorer-card-name{grid-area:name;align-self:end;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;overflow:hidden;font-size:var(--explorer-name);font-weight:500;letter-spacing:-.01em;line-height:var(--explorer-line);overflow-wrap:anywhere}
+:root #explorer .explorer-card-name:lang(ar){letter-spacing:0}
+:root #explorer .explorer-card-count{grid-area:count;margin-block-start:2px;color:var(--h42-color-muted);font-size:var(--eu-caption,13px);font-variant-numeric:tabular-nums;line-height:var(--explorer-line);overflow-wrap:anywhere}
+/* The only accent fill: --h42-access-accent with ink text (7.2:1 light, 4.5:1 dark). */
+:root #explorer .explorer-card-chip{grid-area:chip;align-self:end;justify-self:center;padding:3px 14px;border:1px solid transparent;border-radius:var(--eu-radius-pill,999px);background:var(--h42-access-accent);color:var(--h42-ink);font-size:var(--eu-caption,13px);font-weight:500;line-height:var(--explorer-line)}
+:root #explorer .explorer-card:not([data-cursor=true]) .explorer-card-chip{visibility:hidden}
+/* Side cards dim decoration only (surface without blur, dots, index); their text keeps its colours. */
+:root #explorer .explorer-card:not([data-cursor=true]) :is(.explorer-card-index,.explorer-card-dots){opacity:.6}
+/* Cursor: selection tint, a 2 px inner border in the readable accent and a reticle, never the focus colour. */
+:root #explorer .explorer-card[data-cursor=true]{
+ border-color:var(--readable-glass-accent);background-color:var(--control-glass-surface);
+ background-image:linear-gradient(var(--control-glass-selection),var(--control-glass-selection));
+ -webkit-backdrop-filter:blur(26px) saturate(1.15);backdrop-filter:blur(26px) saturate(1.15);
+}
+:root #explorer .explorer-card[data-cursor=true] .explorer-card-index{color:var(--readable-glass-accent)}
+:root #explorer .explorer-card[data-cursor=true]::after{
+ content:'';position:absolute;inset:7px;pointer-events:none;--explorer-reticle:linear-gradient(var(--readable-glass-accent),var(--readable-glass-accent));
+ background:var(--explorer-reticle) left top/14px 2px no-repeat,var(--explorer-reticle) left top/2px 14px no-repeat,
+  var(--explorer-reticle) right top/14px 2px no-repeat,var(--explorer-reticle) right top/2px 14px no-repeat,
+  var(--explorer-reticle) left bottom/14px 2px no-repeat,var(--explorer-reticle) left bottom/2px 14px no-repeat,
+  var(--explorer-reticle) right bottom/14px 2px no-repeat,var(--explorer-reticle) right bottom/2px 14px no-repeat;
+}
+@media(hover:hover){
+ :root #explorer .explorer-card:not([data-cursor=true]):hover,
+ :root #explorer .explorer-nav:not([aria-disabled=true]):hover,
+ :root #explorer .explorer-campus-back:hover,
+ :root #explorer .explorer-sibling:not([aria-current=true]):hover{border-color:var(--control-glass-selection-edge)}
+}
+
+/* Pager (aria-hidden): isolated Latin "3 / 14" and a bar filling from inline-start. */
+:root #explorer .explorer-pager{display:flex;align-items:center;justify-content:center;gap:10px;margin-block-start:8px;color:var(--h42-color-muted);font-size:var(--eu-caption,13px);font-variant-numeric:tabular-nums;line-height:var(--explorer-line)}
+:root #explorer .explorer-pager-count{unicode-bidi:isolate;min-inline-size:7ch;text-align:center}
+:root #explorer .explorer-pager-bar{display:block;inline-size:64px;block-size:4px;overflow:hidden;border-radius:var(--eu-radius-pill,999px);background:var(--cp-line,color-mix(in srgb,var(--h42-color-text) 12%,transparent))}
+:root #explorer .explorer-pager-fill{display:block;block-size:100%;inline-size:calc(var(--explorer-progress,0) * 100%);border-radius:inherit;background:var(--readable-glass-accent);transition:inline-size .32s var(--ease)}
+/* Both hints stay in the DOM (the group's description); the input type picks the visible one. */
+:root #explorer .explorer-hint{margin:4px 0 0;max-inline-size:100%;color:var(--h42-color-muted);font-size:var(--eu-caption,13px);line-height:var(--explorer-line);text-align:center}
+:root #explorer .explorer-hint-touch{display:none}
+@media(hover:none) and (pointer:coarse){
+ :root #explorer .explorer-hint-keys{display:none}
+ :root #explorer .explorer-hint-touch{display:inline}
+}
+
+/* Phones: 28 px peeks of each neighbour, Previous and Next beside the pager. */
+@media(max-width:700px){
+ :root #explorer{--explorer-gap:12px;--explorer-peek:28px;--explorer-card:clamp(200px,100vw - 2 * var(--horizon-page-gutter,24px) - 2 * (var(--explorer-peek) + var(--explorer-gap)),300px)}
+ :root #explorer .explorer-carousel{display:grid;grid-template-columns:44px minmax(0,1fr) 44px;grid-template-areas:"view view view" "prev . next";row-gap:4px;inline-size:auto}
+ :root #explorer .explorer-viewport{grid-area:view;justify-self:center;inline-size:calc(var(--explorer-card) + 2 * (var(--explorer-gap) + var(--explorer-peek)));max-inline-size:100%}
+ :root #explorer .explorer-nav[data-dir=prev]{grid-area:prev}
+ :root #explorer .explorer-nav[data-dir=next]{grid-area:next}
+ :root #explorer .explorer-pager{min-block-size:44px;margin-block-start:-48px;pointer-events:none}
+}
+/* Short bands keep the fixed card height they can hold (measured with Arabic lines): the decoration goes
+   first (the card is 204 px with it, 164 px without), then the hint, which stays readable by assistive technology. */
+@container explorer-level (max-height:302.98px){
+ :root #explorer .explorer-card{--explorer-card-block:164px;grid-template-rows:0 calc(2 * var(--explorer-line) * var(--explorer-name)) auto minmax(0,1fr)}
+ :root #explorer :is(.explorer-card-index,.explorer-card-dots){display:none}
+}
+@container explorer-level (max-height:262.98px){
+ :root #explorer .explorer-hint{position:absolute;inline-size:1px;block-size:1px;margin:-1px;padding:0;border:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+}
+@media(max-width:700px){
+ @container explorer-level (max-height:317.98px){
+  :root #explorer .explorer-card{--explorer-card-block:164px;grid-template-rows:0 calc(2 * var(--explorer-line) * var(--explorer-name)) auto minmax(0,1fr)}
+  :root #explorer :is(.explorer-card-index,.explorer-card-dots){display:none}
+ }
+ @container explorer-level (max-height:277.98px){
+  :root #explorer .explorer-hint{position:absolute;inline-size:1px;block-size:1px;margin:-1px;padding:0;border:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+ }
+}
+
+/* Compact band (< 260 px), set by explorer-band.mjs on the stage or an ancestor: one row of 44 px pill
+   cards with the cursor cue only; the eyebrow, pager and hint stay readable by assistive technology. */
+:root #explorer:is([data-band=compact],[data-band=scroll],[data-band=compact] *,[data-band=scroll] *){--explorer-gap:8px}
+:root #explorer:is([data-band=compact],[data-band=scroll],[data-band=compact] *,[data-band=scroll] *) .explorer-level>:is(.explorer-eyebrow,.explorer-pager,.explorer-hint){position:absolute;inline-size:1px;block-size:1px;margin:-1px;padding:0;border:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+:root #explorer:is([data-band=compact],[data-band=scroll],[data-band=compact] *,[data-band=scroll] *) .explorer-carousel{display:flex;inline-size:100%}
+:root #explorer:is([data-band=compact],[data-band=scroll],[data-band=compact] *,[data-band=scroll] *) .explorer-viewport{flex:1 1 auto;inline-size:auto;max-inline-size:none}
+:root #explorer:is([data-band=compact],[data-band=scroll],[data-band=compact] *,[data-band=scroll] *) .explorer-card{--explorer-card-block:44px;flex:0 0 auto;inline-size:auto;max-inline-size:min(280px,70vw);display:flex;align-items:center;gap:8px;padding:0 18px;border-radius:var(--eu-radius-pill,999px)}
+:root #explorer:is([data-band=compact],[data-band=scroll],[data-band=compact] *,[data-band=scroll] *) :is(.explorer-card-index,.explorer-card-dots,.explorer-card-chip){display:none}
+:root #explorer:is([data-band=compact],[data-band=scroll],[data-band=compact] *,[data-band=scroll] *) .explorer-card-name{display:block;align-self:center;min-inline-size:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;-webkit-line-clamp:none;line-clamp:none;font-size:var(--eu-body,16px)}
+:root #explorer:is([data-band=compact],[data-band=scroll],[data-band=compact] *,[data-band=scroll] *) .explorer-card-count{flex:none;align-self:center;margin:0;white-space:nowrap}
+:root #explorer:is([data-band=compact],[data-band=scroll],[data-band=compact] *,[data-band=scroll] *) .explorer-card[data-cursor=true]::after{content:none}
+/* Scrolling band (< 120 px): the stage scrolls, the content keeps its minimum height, and focused
+   controls are scrolled into the band (the module scrolls them; scroll-padding keeps the insets). */
+:root .app[data-navigation=dock] #main>#explorer:is([data-band=scroll],[data-band=scroll] *){overflow-y:auto;overscroll-behavior:contain;scroll-padding-block:var(--explorer-top,168.3px) var(--explorer-bottom,calc(196px + env(safe-area-inset-bottom,0px)))}
+:root #explorer:is([data-band=scroll],[data-band=scroll] *) .explorer-level{min-block-size:60px}
+:root #explorer:is([data-band=scroll],[data-band=scroll] *) .explorer-campus{min-block-size:240px}
+
+/* Campus screen: a glass panel (radius 20, elevation 2) as tall as the band. The surface layer is the
+   same box; it grows from the validated card's rectangle with a clip-path while the panel is empty. */
+:root #explorer :is(.explorer-campus,.explorer-campus-surface){grid-area:1/1;justify-self:center;inline-size:min(1040px,100%);block-size:100%;min-block-size:0;border:1px solid var(--control-glass-edge);border-radius:var(--eu-radius-surface,20px);background:var(--control-glass-surface);box-shadow:var(--eu-shadow-2),var(--eu-glass-edge);-webkit-backdrop-filter:blur(26px) saturate(1.15);backdrop-filter:blur(26px) saturate(1.15)}
+:root #explorer .explorer-campus{display:flex;flex-direction:column;container:explorer-campus/size;overflow:hidden auto;overscroll-behavior:contain}
+:root #explorer .explorer-campus-surface{pointer-events:none}
+:root #explorer .explorer-campus[data-growing=true]{border-color:transparent;background:none;box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none}
+:root #explorer .explorer-campus[data-growing=true]>*{opacity:0}
+:root #explorer .explorer-campus-head{flex:none;display:grid;grid-template-columns:auto minmax(0,1fr);grid-template-areas:"back eyebrow" "back title";align-items:center;gap:4px 16px;padding:16px 24px 14px;border-block-end:1px solid var(--cp-line,color-mix(in srgb,var(--h42-color-text) 12%,transparent))}
+:root #explorer .explorer-campus-back{grid-area:back;display:inline-flex;align-items:center;gap:6px;min-inline-size:44px;min-block-size:44px;max-inline-size:min(220px,40cqi);padding-block:0;padding-inline:10px 16px;border:1px solid var(--cp-line,var(--control-glass-edge));border-radius:var(--eu-radius-pill,999px);background:var(--control-field-surface);color:var(--h42-color-text);font-size:var(--eu-action,14px);line-height:var(--explorer-line);transition:border-color .2s}
+:root #explorer .explorer-campus-back svg{inline-size:20px;block-size:20px}
+:root #explorer .explorer-campus-back-label{min-inline-size:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+:root #explorer .explorer-campus-head .explorer-eyebrow{grid-area:eyebrow;margin:0;text-align:start}
+:root #explorer .explorer-campus-title{grid-area:title;margin:0;font-size:clamp(var(--eu-title-3,20px),calc(20px + 8 * var(--eu-ramp,0px)),var(--eu-title-2,28px));font-weight:500;letter-spacing:-.02em;line-height:var(--explorer-line);overflow-wrap:anywhere}
+:root #explorer .explorer-campus-title:lang(ar){letter-spacing:0}
+:root #explorer .explorer-campus-title:focus{outline:none}
+:root #explorer .explorer-campus-title:focus-visible{outline:2px solid var(--h42-color-focus);outline-offset:2px;border-radius:6px}
+/* The body is the scroller; it keeps the campus sheet's own type and line heights. */
+:root #explorer .explorer-campus-body{flex:1 1 0;min-block-size:0;overflow-y:auto;overscroll-behavior:contain;padding:20px 24px 24px;line-height:normal}
+:root #explorer .explorer-siblings{flex:none;display:flex;gap:8px;overflow-x:auto;overscroll-behavior-x:contain;padding:12px 24px 14px;border-block-start:1px solid var(--cp-line,color-mix(in srgb,var(--h42-color-text) 12%,transparent))}
+:root #explorer .explorer-sibling{flex:none;display:inline-flex;align-items:center;gap:6px;min-block-size:44px;padding-inline:16px;border:1px solid var(--cp-line,var(--control-glass-edge));border-radius:var(--eu-radius-pill,999px);background:var(--control-field-surface);color:var(--h42-color-text);font-size:var(--eu-action,14px);line-height:var(--explorer-line);white-space:nowrap;transition:border-color .2s}
+:root #explorer .explorer-sibling svg{display:none;inline-size:16px;block-size:16px;stroke-width:2;color:var(--readable-glass-accent)}
+:root #explorer .explorer-sibling[aria-current=true]{border-color:var(--readable-glass-accent);background:var(--control-glass-selection)}
+:root #explorer .explorer-sibling[aria-current=true] svg{display:block}
+/* Below 480 px the panel is the scroller: the header stays on top, the strip ends the content. */
+@container explorer-campus (max-height:479.98px){
+ :root #explorer .explorer-campus-body{flex:none;overflow:visible}
+ :root #explorer .explorer-campus-head{position:sticky;inset-block-start:0;z-index:1;background:linear-gradient(var(--control-glass-surface),var(--control-glass-surface)),var(--h42-color-bg)}
+}
+
+/* Campus sheet inside the screen: the h2 and the eyebrow carry the name and the country; a loaded logo stays. */
+:root #explorer :is(.campus-details-name,.campus-details-country,.campus-details-logo-slot:not([data-logo-surface])){display:none}
+:root #explorer .campus-details-logo-slot{min-height:88px;padding:12px}
+:root #explorer .campus-details-logo-image{height:64px}
+:root #explorer .campus-details-photos{margin-top:0}
+:root #explorer .campus-details-hero:has(.campus-details-logo-slot[data-logo-surface]){margin-bottom:24px}
+/* Two columns, row-major in DOM order: [photos | address], [contacts + website | opening], [figures | Piscines]. */
+@media(min-width:900px){
+ :root #explorer .campus-details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:32px;align-items:start}
+ :root #explorer :is(.campus-details-hero,.campus-details-verified){grid-column:1/-1}
+ :root #explorer :is(.campus-details-photos,.campus-details-facts){margin-top:0}
+}
+/* The readability floors of design-review-selection.css (lines 156-157), outside #dialog. */
+:root #explorer .campus-details :is(.campus-details-facts dt,.campus-details-copy-status,.campus-details-link-note,.campus-details-photos>h4,.campus-details-photo-caption,.campus-details-photo-status,.campus-details-contact-label,.campus-details-source,.campus-details-stat dt,.campus-details-stat-date,.campus-details-stats>.campus-details-empty,.campus-details-piscine-state,.campus-details-piscine-note,.campus-details-verified,.campus-details-stat-note){font-size:13px}
+:root #explorer .campus-details :is(.campus-details-copy,.campus-details-directions,.campus-details-photo-controls button){font-size:14px}
+
+/* Forced colours drop fills and shadows: the cursor and the current campus keep a Highlight border. */
+@media(forced-colors:active){
+ :root #explorer .explorer-card[data-cursor=true]{border:2px solid Highlight}
+ :root #explorer .explorer-card-chip{border:1px solid}
+ :root #explorer .explorer-sibling[aria-current=true]{border:2px solid Highlight}
+}
+

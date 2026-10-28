@@ -1,0 +1,1269 @@
+{
+  "date": "2026-10-13",
+  "sourcesBefore": {
+    "back-to-top.mjs": "6e1cb92805b3236b83e947ca09c94c5a65771fa0aeceaa7c6044cfccd02bf4ce",
+    "back-to-top.css": "e2afa54482fcb63e0e476987f8a8817b1d7a79aca80af9147857bd57d26b0152",
+    "welcome.mjs": "c9c96d579187074020f1ee65f8d7d0c3a00bdfb0a3e03068b12abaf3061265ca",
+    "index.html": "6eceb066bb7b74d35c5ef1cf1638bf4568bef6e0ee03ba7d4dd35d538fd559f8",
+    "content-preview.html": "5ec22bc3b393c2824f6381b742e8301a00eb3905fad0998739b02c075ec2b253"
+  },
+  "cases": [
+    {
+      "case": "entrance-mobile-hidden",
+      "result": {
+        "hidden": true,
+        "shown": false,
+        "label": "Remonter en haut",
+        "rect": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "scroll": 0,
+        "hash": "#explore",
+        "lang": "fr",
+        "focus": "",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              16,
+              767,
+              374,
+              827
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              95,
+              710,
+              295,
+              754
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              277,
+              710,
+              321,
+              754
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "mobile-list-top-hidden",
+      "result": {
+        "hidden": true,
+        "shown": false,
+        "label": "Remonter en haut",
+        "rect": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "scroll": 0,
+        "hash": "#projects",
+        "lang": "fr",
+        "focus": "",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              16,
+              767,
+              374,
+              827
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              69,
+              710,
+              269,
+              754
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              277,
+              710,
+              321,
+              754
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "below-threshold-hidden",
+      "result": {
+        "hidden": true,
+        "shown": false,
+        "label": "Remonter en haut",
+        "rect": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "scroll": 300,
+        "hash": "#projects",
+        "lang": "fr",
+        "focus": "",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              16,
+              767,
+              374,
+              827
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              69,
+              710,
+              269,
+              754
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              277,
+              710,
+              321,
+              754
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "mobile-list-scrolled",
+      "result": {
+        "hidden": false,
+        "shown": true,
+        "label": "Remonter en haut",
+        "rect": [
+          315,
+          654,
+          359,
+          698
+        ],
+        "scroll": 1000,
+        "hash": "#projects",
+        "lang": "fr",
+        "focus": "",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              16,
+              767,
+              374,
+              827
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              69,
+              710,
+              269,
+              754
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              277,
+              710,
+              321,
+              754
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "smooth-return-focus-list",
+      "result": {
+        "hidden": true,
+        "shown": false,
+        "label": "Remonter en haut",
+        "rect": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "scroll": 0,
+        "hash": "#projects",
+        "lang": "fr",
+        "focus": "section-title",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              16,
+              767,
+              374,
+              827
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              69,
+              710,
+              269,
+              754
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              277,
+              710,
+              321,
+              754
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "width840-visible",
+      "result": {
+        "hidden": false,
+        "shown": true,
+        "label": "Remonter en haut",
+        "rect": [
+          765,
+          639,
+          809,
+          683
+        ],
+        "scroll": 1000,
+        "hash": "#projects",
+        "lang": "fr",
+        "focus": "section-title",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              102.1171875,
+              752,
+              737.8828125,
+              812
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              293.9921875,
+              695,
+              493.9921875,
+              739
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              501.9921875,
+              695,
+              545.9921875,
+              739
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "width841-hidden-focus-retained",
+      "result": {
+        "hidden": true,
+        "shown": false,
+        "label": "Remonter en haut",
+        "rect": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "scroll": 1000,
+        "hash": "#projects",
+        "lang": "fr",
+        "focus": "section-title",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              102.5,
+              752,
+              738.5,
+              812
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              294.5,
+              695,
+              494.5,
+              739
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              502.5,
+              695,
+              546.5,
+              739
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "desktop-hidden-after-scroll",
+      "result": {
+        "hidden": true,
+        "shown": false,
+        "label": "Remonter en haut",
+        "rect": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "scroll": 1000,
+        "hash": "#projects",
+        "lang": "fr",
+        "focus": "section-title",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              322,
+              808,
+              958,
+              868
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              514,
+              751,
+              714,
+              795
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              722,
+              751,
+              766,
+              795
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "mobile-English",
+      "result": {
+        "hidden": false,
+        "shown": true,
+        "label": "Back to top",
+        "rect": [
+          245,
+          450,
+          289,
+          494
+        ],
+        "scroll": 900,
+        "hash": "#projects",
+        "lang": "en",
+        "focus": "profile",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              12,
+              563,
+              308,
+              623
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              34,
+              506,
+              234,
+              550
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              242,
+              506,
+              286,
+              550
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "mobile-Arabic320",
+      "result": {
+        "hidden": false,
+        "shown": true,
+        "label": "العودة إلى الأعلى",
+        "rect": [
+          16,
+          450,
+          60,
+          494
+        ],
+        "scroll": 900,
+        "hash": "#projects",
+        "lang": "ar",
+        "focus": "profile",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              12,
+              563,
+              308,
+              623
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              86,
+              506,
+              286,
+              550
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              34,
+              506,
+              78,
+              550
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "search-hides-shortcut",
+      "result": {
+        "hidden": true,
+        "shown": false,
+        "label": "العودة إلى الأعلى",
+        "rect": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "scroll": 900,
+        "hash": "#projects",
+        "lang": "ar",
+        "focus": "",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              12,
+              563,
+              308,
+              623
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              30.953125,
+              457.671875,
+              301.828125,
+              550
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              36.803871154785156,
+              508.8038635253906,
+              75.19612884521484,
+              547.1961059570312
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "search-close-restores-shortcut",
+      "result": {
+        "hidden": false,
+        "shown": true,
+        "label": "العودة إلى الأعلى",
+        "rect": [
+          16,
+          450,
+          60,
+          494
+        ],
+        "scroll": 900,
+        "hash": "#projects",
+        "lang": "ar",
+        "focus": "",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              12,
+              563,
+              308,
+              623
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              86,
+              506,
+              286,
+              550
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              34,
+              506,
+              78,
+              550
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "geography-hides-shortcut",
+      "result": {
+        "hidden": true,
+        "shown": false,
+        "label": "العودة إلى الأعلى",
+        "rect": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "scroll": 900,
+        "hash": "#projects",
+        "lang": "ar",
+        "focus": "scope-selectors-1-country",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              12,
+              563,
+              308,
+              623
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              86,
+              506,
+              286,
+              550
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              34,
+              506,
+              78,
+              550
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "geography-close-restores-shortcut",
+      "result": {
+        "hidden": false,
+        "shown": true,
+        "label": "العودة إلى الأعلى",
+        "rect": [
+          16,
+          450,
+          60,
+          494
+        ],
+        "scroll": 900,
+        "hash": "#projects",
+        "lang": "ar",
+        "focus": "scope-picker",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              12,
+              563,
+              308,
+              623
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              86,
+              506,
+              286,
+              550
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              34,
+              506,
+              78,
+              550
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "account-hides-shortcut",
+      "result": {
+        "hidden": true,
+        "shown": false,
+        "label": "العودة إلى الأعلى",
+        "rect": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "scroll": 900,
+        "hash": "#projects",
+        "lang": "ar",
+        "focus": "",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              12,
+              563,
+              308,
+              623
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              86,
+              506,
+              286,
+              550
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              34,
+              506,
+              78,
+              550
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "account-close-restores-shortcut",
+      "result": {
+        "hidden": false,
+        "shown": true,
+        "label": "العودة إلى الأعلى",
+        "rect": [
+          16,
+          450,
+          60,
+          494
+        ],
+        "scroll": 900,
+        "hash": "#projects",
+        "lang": "ar",
+        "focus": "profile",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              12,
+              563,
+              308,
+              623
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              86,
+              506,
+              286,
+              550
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              34,
+              506,
+              78,
+              550
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "filter-hides-shortcut",
+      "result": {
+        "hidden": true,
+        "shown": false,
+        "label": "العودة إلى الأعلى",
+        "rect": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "scroll": 885,
+        "hash": "#projects",
+        "lang": "ar",
+        "focus": "content-category-dialog-title",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              12,
+              563,
+              308,
+              623
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              86,
+              506,
+              286,
+              550
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              34,
+              506,
+              78,
+              550
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "filter-close-restores-shortcut",
+      "result": {
+        "hidden": false,
+        "shown": true,
+        "label": "العودة إلى الأعلى",
+        "rect": [
+          16,
+          450,
+          60,
+          494
+        ],
+        "scroll": 900,
+        "hash": "#projects",
+        "lang": "ar",
+        "focus": "content-category-button",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              12,
+              563,
+              308,
+              623
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              86,
+              506,
+              286,
+              550
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              34,
+              506,
+              78,
+              550
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "projects-detail-scrolled",
+      "result": {
+        "hidden": false,
+        "shown": true,
+        "label": "العودة إلى الأعلى",
+        "rect": [
+          16,
+          450,
+          60,
+          494
+        ],
+        "scroll": 900,
+        "hash": "#projects/ft-transcendence-building-together",
+        "lang": "ar",
+        "focus": "project-title",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              12,
+              563,
+              308,
+              623
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              86,
+              506,
+              286,
+              550
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              34,
+              506,
+              78,
+              550
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "projects-detail-reduced-return",
+      "result": {
+        "hidden": true,
+        "shown": false,
+        "label": "العودة إلى الأعلى",
+        "rect": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "scroll": 0,
+        "hash": "#projects/ft-transcendence-building-together",
+        "lang": "ar",
+        "focus": "project-title",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              12,
+              563,
+              308,
+              623
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              86,
+              506,
+              286,
+              550
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              34,
+              506,
+              78,
+              550
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "people-detail-scrolled",
+      "result": {
+        "hidden": false,
+        "shown": true,
+        "label": "العودة إلى الأعلى",
+        "rect": [
+          16,
+          450,
+          60,
+          494
+        ],
+        "scroll": 900,
+        "hash": "#people/profile-luiza-costa",
+        "lang": "ar",
+        "focus": "profile-title",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              12,
+              563,
+              308,
+              623
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              86,
+              506,
+              286,
+              550
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              34,
+              506,
+              78,
+              550
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "people-detail-reduced-return",
+      "result": {
+        "hidden": true,
+        "shown": false,
+        "label": "العودة إلى الأعلى",
+        "rect": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "scroll": 0,
+        "hash": "#people/profile-luiza-costa",
+        "lang": "ar",
+        "focus": "profile-title",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              12,
+              563,
+              308,
+              623
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              86,
+              506,
+              286,
+              550
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              34,
+              506,
+              78,
+              550
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "journal-detail-scrolled",
+      "result": {
+        "hidden": false,
+        "shown": true,
+        "label": "العودة إلى الأعلى",
+        "rect": [
+          16,
+          450,
+          60,
+          494
+        ],
+        "scroll": 900,
+        "hash": "#journal/journal-an-evening-debugging",
+        "lang": "ar",
+        "focus": "journal-title",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              12,
+              563,
+              308,
+              623
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              86,
+              506,
+              286,
+              550
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              34,
+              506,
+              78,
+              550
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "journal-detail-reduced-return",
+      "result": {
+        "hidden": true,
+        "shown": false,
+        "label": "العودة إلى الأعلى",
+        "rect": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "scroll": 0,
+        "hash": "#journal/journal-an-evening-debugging",
+        "lang": "ar",
+        "focus": "journal-title",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              12,
+              563,
+              308,
+              623
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              86,
+              506,
+              286,
+              550
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              34,
+              506,
+              78,
+              550
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "mobile-landscape",
+      "result": {
+        "hidden": false,
+        "shown": true,
+        "label": "العودة إلى الأعلى",
+        "rect": [
+          16,
+          178,
+          60,
+          222
+        ],
+        "scroll": 900,
+        "hash": "#projects",
+        "lang": "ar",
+        "focus": "section-title",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              16,
+              286,
+              624,
+              346
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              246,
+              234,
+              446,
+              278
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              194,
+              234,
+              238,
+              278
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    },
+    {
+      "case": "explorer-hidden",
+      "result": {
+        "hidden": true,
+        "shown": false,
+        "label": "العودة إلى الأعلى",
+        "rect": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "scroll": 0,
+        "hash": "#explore",
+        "lang": "ar",
+        "focus": "globe",
+        "controls": [
+          {
+            "class": "dock-shell",
+            "rect": [
+              16,
+              286,
+              624,
+              346
+            ]
+          },
+          {
+            "class": "dock-search-toggle",
+            "rect": [
+              246,
+              234,
+              446,
+              278
+            ]
+          },
+          {
+            "class": "icon-button random-campus dock-random-toggle",
+            "rect": [
+              194,
+              234,
+              238,
+              278
+            ]
+          }
+        ],
+        "overflows": false
+      }
+    }
+  ],
+  "passed": true,
+  "sourcesAfter": {
+    "back-to-top.mjs": "6e1cb92805b3236b83e947ca09c94c5a65771fa0aeceaa7c6044cfccd02bf4ce",
+    "back-to-top.css": "e2afa54482fcb63e0e476987f8a8817b1d7a79aca80af9147857bd57d26b0152",
+    "welcome.mjs": "c9c96d579187074020f1ee65f8d7d0c3a00bdfb0a3e03068b12abaf3061265ca",
+    "index.html": "6eceb066bb7b74d35c5ef1cf1638bf4568bef6e0ee03ba7d4dd35d538fd559f8",
+    "content-preview.html": "5ec22bc3b393c2824f6381b742e8301a00eb3905fad0998739b02c075ec2b253"
+  },
+  "sourcesUnchanged": true
+}

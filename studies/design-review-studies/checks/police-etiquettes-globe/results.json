@@ -1,0 +1,899 @@
+{
+ "trial": "police-etiquettes-globe",
+ "levels": {
+  "avant-fr-clair": {
+   "monde": {
+    "level": "world",
+    "lang": "fr",
+    "pills": 7,
+    "compact": 18,
+    "overlapPairs": 0,
+    "overlapArea": 0,
+    "labels": [
+     "Angola",
+     "Arménie",
+     "Italie",
+     "Madagascar",
+     "Maroc",
+     "Palestine",
+     "Pays-Bas"
+    ],
+    "styles": [
+     [
+      "\"Helvetica Neue\", Arial, Helvetica, sans-serif",
+      "14px",
+      "500",
+      "20px",
+      "rgb(27, 27, 27)",
+      "normal"
+     ]
+    ],
+    "offscreen": false,
+    "creditFont": [
+     "Jost, sans-serif",
+     "9px"
+    ],
+    "overflow": false,
+    "platform": {
+     "Liberation Sans": 197
+    },
+    "errors": []
+   },
+   "pays": {
+    "level": "country",
+    "lang": "fr",
+    "pills": 5,
+    "compact": 3,
+    "overlapPairs": 0,
+    "overlapArea": 0,
+    "labels": [
+     "42 Angoulême",
+     "42 Lyon",
+     "42 Marseille",
+     "42 Mulhouse",
+     "42 Paris"
+    ],
+    "styles": [
+     [
+      "\"Helvetica Neue\", Arial, Helvetica, sans-serif",
+      "14px",
+      "500",
+      "20px",
+      "rgb(27, 27, 27)",
+      "normal"
+     ]
+    ],
+    "offscreen": false,
+    "creditFont": [
+     "Jost, sans-serif",
+     "9px"
+    ],
+    "overflow": false,
+    "platform": {
+     "Liberation Sans": 80
+    },
+    "errors": []
+   },
+   "campus": {
+    "level": "campus",
+    "lang": "fr",
+    "pills": 1,
+    "compact": 0,
+    "overlapPairs": 0,
+    "overlapArea": 0,
+    "labels": [
+     "42 Paris"
+    ],
+    "styles": [
+     [
+      "\"Helvetica Neue\", Arial, Helvetica, sans-serif",
+      "14px",
+      "500",
+      "20px",
+      "rgb(27, 27, 27)",
+      "normal"
+     ]
+    ],
+    "offscreen": false,
+    "creditFont": [
+     "Jost, sans-serif",
+     "9px"
+    ],
+    "overflow": false,
+    "platform": {
+     "Liberation Sans": 8
+    },
+    "errors": []
+   },
+   "bord": {
+    "level": "campus",
+    "lang": "fr",
+    "pills": 1,
+    "compact": 0,
+    "overlapPairs": 0,
+    "overlapArea": 0,
+    "labels": [
+     "42 Paris"
+    ],
+    "styles": [
+     [
+      "\"Helvetica Neue\", Arial, Helvetica, sans-serif",
+      "12px",
+      "500",
+      "16.8px",
+      "rgb(27, 27, 27)",
+      "normal"
+     ]
+    ],
+    "offscreen": true,
+    "creditFont": [
+     "Jost, sans-serif",
+     "9px"
+    ],
+    "overflow": false,
+    "platform": {
+     "Liberation Sans": 8
+    },
+    "errors": [],
+    "edgeLabel": {
+     "text": "42 Paris",
+     "display": "block",
+     "font": [
+      "\"Helvetica Neue\", Arial, Helvetica, sans-serif",
+      "12px",
+      "500",
+      "rgb(27, 27, 27)"
+     ]
+    },
+    "edgePlatform": {
+     "Liberation Sans": 8
+    }
+   }
+  },
+  "apres-fr-clair": {
+   "monde": {
+    "level": "world",
+    "lang": "fr",
+    "pills": 7,
+    "compact": 18,
+    "overlapPairs": 0,
+    "overlapArea": 0,
+    "labels": [
+     "Angola",
+     "Arménie",
+     "Italie",
+     "Madagascar",
+     "Maroc",
+     "Palestine",
+     "Pays-Bas"
+    ],
+    "styles": [
+     [
+      "Jost, sans-serif",
+      "14px",
+      "500",
+      "20px",
+      "rgb(27, 27, 27)",
+      "normal"
+     ]
+    ],
+    "offscreen": false,
+    "creditFont": [
+     "Jost, sans-serif",
+     "9px"
+    ],
+    "overflow": false,
+    "platform": {
+     "Jost Medium": 197
+    },
+    "errors": []
+   },
+   "pays": {
+    "level": "country",
+    "lang": "fr",
+    "pills": 5,
+    "compact": 3,
+    "overlapPairs": 0,
+    "overlapArea": 0,
+    "labels": [
+     "42 Angoulême",
+     "42 Lyon",
+     "42 Marseille",
+     "42 Mulhouse",
+     "42 Paris"
+    ],
+    "styles": [
+     [
+      "Jost, sans-serif",
+      "14px",
+      "500",
+      "20px",
+      "rgb(27, 27, 27)",
+      "normal"
+     ]
+    ],
+    "offscreen": false,
+    "creditFont": [
+     "Jost, sans-serif",
+     "9px"
+    ],
+    "overflow": false,
+    "platform": {
+     "Jost Medium": 80
+    },
+    "errors": []
+   },
+   "campus": {
+    "level": "campus",
+    "lang": "fr",
+    "pills": 1,
+    "compact": 0,
+    "overlapPairs": 0,
+    "overlapArea": 0,
+    "labels": [
+     "42 Paris"
+    ],
+    "styles": [
+     [
+      "Jost, sans-serif",
+      "14px",
+      "500",
+      "20px",
+      "rgb(27, 27, 27)",
+      "normal"
+     ]
+    ],
+    "offscreen": false,
+    "creditFont": [
+     "Jost, sans-serif",
+     "9px"
+    ],
+    "overflow": false,
+    "platform": {
+     "Jost Medium": 8
+    },
+    "errors": []
+   },
+   "bord": {
+    "level": "campus",
+    "lang": "fr",
+    "pills": 1,
+    "compact": 0,
+    "overlapPairs": 0,
+    "overlapArea": 0,
+    "labels": [
+     "42 Paris"
+    ],
+    "styles": [
+     [
+      "Jost, sans-serif",
+      "12px",
+      "500",
+      "16.8px",
+      "rgb(27, 27, 27)",
+      "normal"
+     ]
+    ],
+    "offscreen": true,
+    "creditFont": [
+     "Jost, sans-serif",
+     "9px"
+    ],
+    "overflow": false,
+    "platform": {
+     "Jost Medium": 8
+    },
+    "errors": [],
+    "edgeLabel": {
+     "text": "42 Paris",
+     "display": "block",
+     "font": [
+      "Jost, sans-serif",
+      "12px",
+      "500",
+      "rgb(27, 27, 27)"
+     ]
+    },
+    "edgePlatform": {
+     "Jost Medium": 8
+    }
+   }
+  },
+  "avant-ar-sombre": {
+   "monde": {
+    "level": "world",
+    "lang": "ar",
+    "pills": 7,
+    "compact": 18,
+    "overlapPairs": 0,
+    "overlapArea": 0,
+    "labels": [
+     "أنغولا",
+     "إيطاليا",
+     "المغرب",
+     "فلسطين",
+     "هولندا",
+     "تركيا",
+     "الإمارات العربية المتحدة"
+    ],
+    "styles": [
+     [
+      "\"Helvetica Neue\", Arial, Helvetica, sans-serif",
+      "14px",
+      "500",
+      "20px",
+      "rgb(255, 255, 255)",
+      "normal"
+     ]
+    ],
+    "offscreen": false,
+    "creditFont": [
+     "Jost, sans-serif",
+     "9px"
+    ],
+    "overflow": false,
+    "platform": {
+     "Noto Sans Arabic": 178,
+     "Liberation Sans": 3
+    },
+    "errors": []
+   },
+   "pays": {
+    "level": "country",
+    "lang": "ar",
+    "pills": 5,
+    "compact": 3,
+    "overlapPairs": 0,
+    "overlapArea": 0,
+    "labels": [
+     "42 Angoulême",
+     "42 Lyon",
+     "42 Marseille",
+     "42 Mulhouse",
+     "42 Paris"
+    ],
+    "styles": [
+     [
+      "\"Helvetica Neue\", Arial, Helvetica, sans-serif",
+      "14px",
+      "500",
+      "20px",
+      "rgb(255, 255, 255)",
+      "normal"
+     ]
+    ],
+    "offscreen": false,
+    "creditFont": [
+     "Jost, sans-serif",
+     "9px"
+    ],
+    "overflow": false,
+    "platform": {
+     "Liberation Sans": 80
+    },
+    "errors": []
+   },
+   "campus": {
+    "level": "campus",
+    "lang": "ar",
+    "pills": 1,
+    "compact": 0,
+    "overlapPairs": 0,
+    "overlapArea": 0,
+    "labels": [
+     "42 Paris"
+    ],
+    "styles": [
+     [
+      "\"Helvetica Neue\", Arial, Helvetica, sans-serif",
+      "14px",
+      "500",
+      "20px",
+      "rgb(255, 255, 255)",
+      "normal"
+     ]
+    ],
+    "offscreen": false,
+    "creditFont": [
+     "Jost, sans-serif",
+     "9px"
+    ],
+    "overflow": false,
+    "platform": {
+     "Liberation Sans": 8
+    },
+    "errors": []
+   },
+   "bord": {
+    "level": "campus",
+    "lang": "ar",
+    "pills": 1,
+    "compact": 0,
+    "overlapPairs": 0,
+    "overlapArea": 0,
+    "labels": [
+     "42 Paris"
+    ],
+    "styles": [
+     [
+      "\"Helvetica Neue\", Arial, Helvetica, sans-serif",
+      "12px",
+      "500",
+      "16.8px",
+      "rgb(255, 255, 255)",
+      "normal"
+     ]
+    ],
+    "offscreen": true,
+    "creditFont": [
+     "Jost, sans-serif",
+     "9px"
+    ],
+    "overflow": false,
+    "platform": {
+     "Liberation Sans": 8
+    },
+    "errors": [],
+    "edgeLabel": {
+     "text": "42 Paris",
+     "display": "block",
+     "font": [
+      "\"Helvetica Neue\", Arial, Helvetica, sans-serif",
+      "12px",
+      "500",
+      "rgb(255, 255, 255)"
+     ]
+    },
+    "edgePlatform": {
+     "Liberation Sans": 8
+    }
+   }
+  },
+  "apres-ar-sombre": {
+   "monde": {
+    "level": "world",
+    "lang": "ar",
+    "pills": 7,
+    "compact": 18,
+    "overlapPairs": 0,
+    "overlapArea": 0,
+    "labels": [
+     "أنغولا",
+     "إيطاليا",
+     "المغرب",
+     "فلسطين",
+     "هولندا",
+     "تركيا",
+     "الإمارات العربية المتحدة"
+    ],
+    "styles": [
+     [
+      "Jost, sans-serif",
+      "14px",
+      "500",
+      "20px",
+      "rgb(255, 255, 255)",
+      "normal"
+     ]
+    ],
+    "offscreen": false,
+    "creditFont": [
+     "Jost, sans-serif",
+     "9px"
+    ],
+    "overflow": false,
+    "platform": {
+     "Noto Sans Arabic": 178,
+     "Jost Medium": 3
+    },
+    "errors": []
+   },
+   "pays": {
+    "level": "country",
+    "lang": "ar",
+    "pills": 5,
+    "compact": 3,
+    "overlapPairs": 0,
+    "overlapArea": 0,
+    "labels": [
+     "42 Angoulême",
+     "42 Lyon",
+     "42 Marseille",
+     "42 Mulhouse",
+     "42 Paris"
+    ],
+    "styles": [
+     [
+      "Jost, sans-serif",
+      "14px",
+      "500",
+      "20px",
+      "rgb(255, 255, 255)",
+      "normal"
+     ]
+    ],
+    "offscreen": false,
+    "creditFont": [
+     "Jost, sans-serif",
+     "9px"
+    ],
+    "overflow": false,
+    "platform": {
+     "Jost Medium": 80
+    },
+    "errors": []
+   },
+   "campus": {
+    "level": "campus",
+    "lang": "ar",
+    "pills": 1,
+    "compact": 0,
+    "overlapPairs": 0,
+    "overlapArea": 0,
+    "labels": [
+     "42 Paris"
+    ],
+    "styles": [
+     [
+      "Jost, sans-serif",
+      "14px",
+      "500",
+      "20px",
+      "rgb(255, 255, 255)",
+      "normal"
+     ]
+    ],
+    "offscreen": false,
+    "creditFont": [
+     "Jost, sans-serif",
+     "9px"
+    ],
+    "overflow": false,
+    "platform": {
+     "Jost Medium": 8
+    },
+    "errors": []
+   },
+   "bord": {
+    "level": "campus",
+    "lang": "ar",
+    "pills": 1,
+    "compact": 0,
+    "overlapPairs": 0,
+    "overlapArea": 0,
+    "labels": [
+     "42 Paris"
+    ],
+    "styles": [
+     [
+      "Jost, sans-serif",
+      "12px",
+      "500",
+      "16.8px",
+      "rgb(255, 255, 255)",
+      "normal"
+     ]
+    ],
+    "offscreen": true,
+    "creditFont": [
+     "Jost, sans-serif",
+     "9px"
+    ],
+    "overflow": false,
+    "platform": {
+     "Jost Medium": 8
+    },
+    "errors": [],
+    "edgeLabel": {
+     "text": "42 Paris",
+     "display": "block",
+     "font": [
+      "Jost, sans-serif",
+      "12px",
+      "500",
+      "rgb(255, 255, 255)"
+     ]
+    },
+    "edgePlatform": {
+     "Jost Medium": 8
+    }
+   }
+  }
+ },
+ "mobile": {
+  "avant": {
+   "monde": {
+    "level": "world",
+    "lang": "fr",
+    "pills": 4,
+    "compact": 21,
+    "overlapPairs": 0,
+    "overlapArea": 0,
+    "labels": [
+     "Angola",
+     "Luxembourg",
+     "Maroc",
+     "Palestine"
+    ],
+    "styles": [
+     [
+      "\"Helvetica Neue\", Arial, Helvetica, sans-serif",
+      "12px",
+      "500",
+      "20px",
+      "rgb(27, 27, 27)",
+      "normal"
+     ]
+    ],
+    "offscreen": false,
+    "creditFont": [
+     "Jost, sans-serif",
+     "8px"
+    ],
+    "overflow": false,
+    "platform": {
+     "Liberation Sans": 197
+    },
+    "errors": [],
+    "allLabelFamilies": [
+     "\"Helvetica Neue\", Arial, Helvetica, sans-serif"
+    ]
+   },
+   "pays": {
+    "level": "country",
+    "lang": "fr",
+    "pills": 4,
+    "compact": 4,
+    "overlapPairs": 0,
+    "overlapArea": 0,
+    "labels": [
+     "42 Le Havre",
+     "42 Lyon",
+     "42 Marseille",
+     "42 Mulhouse"
+    ],
+    "styles": [
+     [
+      "\"Helvetica Neue\", Arial, Helvetica, sans-serif",
+      "12px",
+      "500",
+      "20px",
+      "rgb(27, 27, 27)",
+      "normal"
+     ]
+    ],
+    "offscreen": false,
+    "creditFont": [
+     "Jost, sans-serif",
+     "8px"
+    ],
+    "overflow": false,
+    "platform": {
+     "Liberation Sans": 80
+    },
+    "errors": []
+   }
+  },
+  "apres": {
+   "monde": {
+    "level": "world",
+    "lang": "fr",
+    "pills": 4,
+    "compact": 21,
+    "overlapPairs": 0,
+    "overlapArea": 0,
+    "labels": [
+     "Angola",
+     "Luxembourg",
+     "Maroc",
+     "Palestine"
+    ],
+    "styles": [
+     [
+      "Jost, sans-serif",
+      "12px",
+      "500",
+      "20px",
+      "rgb(27, 27, 27)",
+      "normal"
+     ]
+    ],
+    "offscreen": false,
+    "creditFont": [
+     "Jost, sans-serif",
+     "8px"
+    ],
+    "overflow": false,
+    "platform": {
+     "Jost Medium": 197
+    },
+    "errors": [],
+    "allLabelFamilies": [
+     "Jost, sans-serif"
+    ]
+   },
+   "pays": {
+    "level": "country",
+    "lang": "fr",
+    "pills": 4,
+    "compact": 4,
+    "overlapPairs": 0,
+    "overlapArea": 0,
+    "labels": [
+     "42 Le Havre",
+     "42 Lyon",
+     "42 Marseille",
+     "42 Mulhouse"
+    ],
+    "styles": [
+     [
+      "Jost, sans-serif",
+      "12px",
+      "500",
+      "20px",
+      "rgb(27, 27, 27)",
+      "normal"
+     ]
+    ],
+    "offscreen": false,
+    "creditFont": [
+     "Jost, sans-serif",
+     "8px"
+    ],
+    "overflow": false,
+    "platform": {
+     "Jost Medium": 80
+    },
+    "errors": []
+   }
+  }
+ },
+ "live": {
+  "fr-light": {
+   "level": "world",
+   "lang": "fr",
+   "pills": 7,
+   "compact": 18,
+   "overlapPairs": 0,
+   "overlapArea": 0,
+   "labels": [
+    "Angola",
+    "Arménie",
+    "Italie",
+    "Madagascar",
+    "Maroc",
+    "Palestine",
+    "Pays-Bas"
+   ],
+   "styles": [
+    [
+     "Jost, sans-serif",
+     "14px",
+     "500",
+     "20px",
+     "rgb(27, 27, 27)",
+     "normal"
+    ]
+   ],
+   "offscreen": false,
+   "creditFont": [
+    "Jost, sans-serif",
+    "9px"
+   ],
+   "overflow": false,
+   "allLabelFamilies": [
+    "Jost, sans-serif"
+   ],
+   "platform": {
+    "Jost Medium": 197
+   },
+   "theme": "light",
+   "errors": []
+  },
+  "ar-dark": {
+   "level": "world",
+   "lang": "ar",
+   "pills": 7,
+   "compact": 18,
+   "overlapPairs": 0,
+   "overlapArea": 0,
+   "labels": [
+    "أنغولا",
+    "إيطاليا",
+    "المغرب",
+    "فلسطين",
+    "هولندا",
+    "تركيا",
+    "الإمارات العربية المتحدة"
+   ],
+   "styles": [
+    [
+     "Jost, sans-serif",
+     "14px",
+     "500",
+     "20px",
+     "rgb(255, 255, 255)",
+     "normal"
+    ]
+   ],
+   "offscreen": false,
+   "creditFont": [
+    "Jost, sans-serif",
+    "9px"
+   ],
+   "overflow": false,
+   "allLabelFamilies": [
+    "Jost, sans-serif"
+   ],
+   "platform": {
+    "Noto Sans Arabic": 178,
+    "Jost Medium": 3
+   },
+   "theme": "dark",
+   "errors": []
+  },
+  "en-light": {
+   "level": "world",
+   "lang": "en",
+   "pills": 7,
+   "compact": 18,
+   "overlapPairs": 0,
+   "overlapArea": 0,
+   "labels": [
+    "Angola",
+    "Italy",
+    "Madagascar",
+    "Morocco",
+    "Palestine",
+    "Netherlands",
+    "Türkiye"
+   ],
+   "styles": [
+    [
+     "Jost, sans-serif",
+     "14px",
+     "500",
+     "20px",
+     "rgb(27, 27, 27)",
+     "normal"
+    ]
+   ],
+   "offscreen": false,
+   "creditFont": [
+    "Jost, sans-serif",
+    "9px"
+   ],
+   "overflow": false,
+   "allLabelFamilies": [
+    "Jost, sans-serif"
+   ],
+   "platform": {
+    "Jost Medium": 202
+   },
+   "theme": "light",
+   "errors": []
+  }
+ },
+ "checks": {
+  "fr-clair:computedStartsWithJost": true,
+  "fr-clair:noHelveticaStackLeft": true,
+  "fr-clair:sizeWeightColourUnchanged": true,
+  "fr-clair:renderedJostOrNotoArabic": true,
+  "fr-clair:overlapNotWorse": true,
+  "fr-clair:edgeLabelJost": true,
+  "fr-clair:noOverflowNoErrors": true,
+  "ar-sombre:computedStartsWithJost": true,
+  "ar-sombre:noHelveticaStackLeft": true,
+  "ar-sombre:sizeWeightColourUnchanged": true,
+  "ar-sombre:renderedJostOrNotoArabic": true,
+  "ar-sombre:overlapNotWorse": true,
+  "ar-sombre:edgeLabelJost": true,
+  "ar-sombre:noOverflowNoErrors": true,
+  "ar:arabicGlyphsInNotoSansArabic": true,
+  "sameVisibleLabels": true,
+  "mobile:jostNoOverlapNoOverflow": true,
+  "mobile:everyLabelIncludingCompact": true,
+  "live:frArEnWithoutReloadKeepSiteStack": true
+ },
+ "passed": true
+}

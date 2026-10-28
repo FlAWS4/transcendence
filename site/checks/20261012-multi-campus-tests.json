@@ -1,0 +1,703 @@
+{
+  "date": "2026-10-12",
+  "runtime": "v20.20.0",
+  "method": "Each active *.test.mjs and tests/*.test.mjs executed directly with node; node:test reports parsed. No archived tests.",
+  "status": "passed",
+  "pending": [],
+  "files": [
+    {
+      "file": "campus-approach.test.mjs",
+      "sha256": "54d37e4d9ed18b60df479e59c870a073db2c8a14ff0229b07ee7123431e4389c",
+      "exitCode": 0,
+      "tests": 8,
+      "pass": 8,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "campus-camera.test.mjs",
+      "sha256": "2cc532f2df930ceb9ff4fc09838afd4e70692f4692765b22e37b24aa4670e9d6",
+      "exitCode": 0,
+      "tests": 6,
+      "pass": 6,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "campus-details.test.mjs",
+      "sha256": "7e15a67237cd5309763703452bf14b134a420f70af4dd3121b03b9aebe6f147b",
+      "exitCode": 0,
+      "tests": 18,
+      "pass": 18,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "campus-direction.test.mjs",
+      "sha256": "09ca1d23247f8168023a5659427c46c4e7660eae4519abb18b5f40c1ec630d5e",
+      "exitCode": 0,
+      "tests": 13,
+      "pass": 13,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "campus-outbound.test.mjs",
+      "sha256": "5aa556368da3f46210747838951a786140b9116ffc9475b91bb0e96fda520e75",
+      "exitCode": 0,
+      "tests": 14,
+      "pass": 14,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "campus-preload.test.mjs",
+      "sha256": "c8df4dfc2b08728d6b0e26842bf4caf1ecb66c37938767ca044f4ea3cf132a1e",
+      "exitCode": 0,
+      "tests": 18,
+      "pass": 18,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "campus-preview.test.mjs",
+      "sha256": "0cd3626b3c39ad613ecc2496abae5bee66d58cc07d37f3e392e0fb93eee02c06",
+      "exitCode": 0,
+      "tests": 8,
+      "pass": 8,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "campus-render-preparation.test.mjs",
+      "sha256": "8c2d471522339fce95decb8f0417c2c8b4ed7c92490290350cf945fea2cf8c8a",
+      "exitCode": 0,
+      "tests": 16,
+      "pass": 16,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "campus-website.test.mjs",
+      "sha256": "0a2c05c80a3c07fe8558c71830ffbdef70a353f4fa717715a5d6ec4b84f23bb6",
+      "exitCode": 0,
+      "tests": 8,
+      "pass": 8,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "detail-gate.test.mjs",
+      "sha256": "1b1117cecb016df69e50f0cff98aa21647fd37c9dca0145cf87ec88513d2e50f",
+      "exitCode": 0,
+      "tests": 32,
+      "pass": 32,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "entrance.test.mjs",
+      "sha256": "a7f0228525e59422f341244862aab3e4d0ec9b43b5244c3dd79c07600a2339f4",
+      "exitCode": 0,
+      "tests": 16,
+      "pass": 16,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "geography-loader.test.mjs",
+      "sha256": "16b11d3c3f77d5900bd7744d88ed2ab0709526191139ba0ac8711b92259e9c8f",
+      "exitCode": 0,
+      "tests": 4,
+      "pass": 4,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "globe-layout.test.mjs",
+      "sha256": "2e99b8f8d8bdb6298aeaef7f6de48c2e4885abda20245c108a9ddf31d32c9ed0",
+      "exitCode": 0,
+      "tests": 6,
+      "pass": 6,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "layout-resize.test.mjs",
+      "sha256": "1ff5ec7e803954581cb93901fe075090a0dd61ac1862d9718d1a34414440778f",
+      "exitCode": 0,
+      "tests": 14,
+      "pass": 14,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "marker-projection.test.mjs",
+      "sha256": "93c415eeb88e1f412923fda2521d2ba99f3c320a3e4303d6f883d86c7f098177",
+      "exitCode": 0,
+      "tests": 2,
+      "pass": 2,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "navigation-policy.test.mjs",
+      "sha256": "0a0596d6768bc24e1f209f2a817ce9b5bcdd2e922d9202c0a73bfac41a954370",
+      "exitCode": 0,
+      "tests": 10,
+      "pass": 10,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "polar-cap-layer.test.mjs",
+      "sha256": "b7ef69aad5b8a376e37ceffe7009416baa4ddfd69125f9ba45516de9083362dd",
+      "exitCode": 0,
+      "tests": 5,
+      "pass": 5,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "polar-geometry.test.mjs",
+      "sha256": "b5a785594e63fad5efe596efd355827006786e1c50de86153ff73f310f9c97b9",
+      "exitCode": 0,
+      "tests": 5,
+      "pass": 5,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "random-campus.test.mjs",
+      "sha256": "0203da1c53975dcbb15cb10f95e5d73c22d90664b0a2dd47e0cc4c85473314d5",
+      "exitCode": 0,
+      "tests": 5,
+      "pass": 5,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "scope-selectors.test.mjs",
+      "sha256": "71397c275d2ef6827d0484433bed9638165c74dd9e023cc742b5bdbc4223a817",
+      "exitCode": 0,
+      "tests": 9,
+      "pass": 9,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "style-gating.test.mjs",
+      "sha256": "df54de0c6cbf742d365124418d10de15562a5117c005d5bac3c4cce658d4ee07",
+      "exitCode": 0,
+      "tests": 17,
+      "pass": 17,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/author-byline.test.mjs",
+      "sha256": "6e8e77fab10ac533b1c442b56bf8a066ac22df58f6761fbadcac4686f9858334",
+      "exitCode": 0,
+      "tests": 7,
+      "pass": 7,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/author-preview-fit.test.mjs",
+      "sha256": "2d771b75e13296d369f1760918184499f5f2aa1cc234daeb9e940bd5ef8bb424",
+      "exitCode": 0,
+      "tests": 7,
+      "pass": 7,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/brand-wordmark.test.mjs",
+      "sha256": "9c8e93f9a970f0f75cca642812ecbe940c0d38e6d8d59246f86f9657c615310c",
+      "exitCode": 0,
+      "tests": 7,
+      "pass": 7,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/campus-sheet.test.mjs",
+      "sha256": "32cc24de93311a5210264e16c7b42d00404d1fa35537a7e483848690cb09093f",
+      "exitCode": 0,
+      "tests": 18,
+      "pass": 18,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/comment-mention-picker.test.mjs",
+      "sha256": "48ffc15ec0414606567418498843ce263ddde8410ff8d9a9a10a8513bfaff713",
+      "exitCode": 0,
+      "tests": 7,
+      "pass": 7,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/comment-mentions.test.mjs",
+      "sha256": "da4dace3f62c1e8c5b8dac5cba6d8a430c9426c37a9db7f24af6cef042e32381",
+      "exitCode": 0,
+      "tests": 12,
+      "pass": 12,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/comments-actions.test.mjs",
+      "sha256": "f2ec4489bd67e50542b0798a247420419bf6ca5a59d115b0cee4265273f86e5e",
+      "exitCode": 0,
+      "tests": 8,
+      "pass": 8,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/comments.test.mjs",
+      "sha256": "be5f046c215ddbf677fc9202a4a5b3888b658f2e308f88e56560e86f539f240a",
+      "exitCode": 0,
+      "tests": 20,
+      "pass": 20,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/content-category-groups.test.mjs",
+      "sha256": "782dad992ee7551a3ecbe084aa0b6391248c481ddcb21fca1274e1c308598946",
+      "exitCode": 0,
+      "tests": 5,
+      "pass": 5,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/content-filters.test.mjs",
+      "sha256": "22963acd7103b6631abc7d2f33b153eb2894e6da883de0505ee249e4f6f72568",
+      "exitCode": 0,
+      "tests": 22,
+      "pass": 22,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/content-geography.test.mjs",
+      "sha256": "b7378b333337572fe07ef68d6bddfbdfe0cef9a2e97430388b8f7da44eff6e91",
+      "exitCode": 0,
+      "tests": 7,
+      "pass": 7,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/content-menu-placement.test.mjs",
+      "sha256": "9a94411e9b16f910252e486a9fe2d544beef20cf5974ec3f364955b8d151ae5e",
+      "exitCode": 0,
+      "tests": 11,
+      "pass": 11,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/content-preferences.test.mjs",
+      "sha256": "e44bba8e19dc2a8838c3b3513d8c44fcc0725737f59a5fd00cd4468a88ed7905",
+      "exitCode": 0,
+      "tests": 24,
+      "pass": 24,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/content-report.test.mjs",
+      "sha256": "07023b0dc43cd31baf3b0da5e3ee2aa609f8431eb3050c7c4482922ebe87284c",
+      "exitCode": 0,
+      "tests": 11,
+      "pass": 11,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/content-transitions.test.mjs",
+      "sha256": "59d5233aa350efda34f524edc15752a7f08bf079d0d0a918c5e5ce1b929b0625",
+      "exitCode": 0,
+      "tests": 10,
+      "pass": 10,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/detail-media.test.mjs",
+      "sha256": "e596dfdd78283630322300745726bc91ff11a1c569284905b8a6ea43aea3c2f7",
+      "exitCode": 0,
+      "tests": 10,
+      "pass": 10,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/detail-scroll.test.mjs",
+      "sha256": "793619bdfc3fe5cd80c48d9a3f45cf6c9bb169cb66a8a64dc1cc6c7db75070fb",
+      "exitCode": 0,
+      "tests": 11,
+      "pass": 11,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/dock-search-data.test.mjs",
+      "sha256": "708ef25da99af3e4f5dc31317c7a392c92da882cb197e0ddc89f4518e8a2305a",
+      "exitCode": 0,
+      "tests": 27,
+      "pass": 27,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/dock-search.test.mjs",
+      "sha256": "1932322c1548606feab5e387d1cb50fbeb570b10ad839889f7181e13b443df4c",
+      "exitCode": 0,
+      "tests": 17,
+      "pass": 17,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/journal-sections.test.mjs",
+      "sha256": "9cea940fde20ca610415d988f7495bee3fba14de3dd591b81d29c0576dfd9634",
+      "exitCode": 0,
+      "tests": 2,
+      "pass": 2,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/media-viewer.test.mjs",
+      "sha256": "9f80db2864116a5daf0bbcbf959753c6ee55fc86ef9eaf136676ec884387621c",
+      "exitCode": 0,
+      "tests": 7,
+      "pass": 7,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/profile-campus-history.test.mjs",
+      "sha256": "d6e74cb264c742d3486fa7f8acae20609ba463c25d91813cfbc02f4678b371db",
+      "exitCode": 0,
+      "tests": 6,
+      "pass": 6,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/profile-data.test.mjs",
+      "sha256": "a7a357a1b073ddd2810cd4af2b1af86f49772756d8dd6146e8bca6bf61e63065",
+      "exitCode": 0,
+      "tests": 11,
+      "pass": 11,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/profile-navigation-scope.test.mjs",
+      "sha256": "abb32e6bb1fdea1fed691e72e5ad37518aed37709ecf5f419ecfc96aa21ff762",
+      "exitCode": 0,
+      "tests": 5,
+      "pass": 5,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/profile-sections.test.mjs",
+      "sha256": "26f2b01af76043596b6585d92726c00a4e5ba983273e140c692b820d19ab7680",
+      "exitCode": 0,
+      "tests": 5,
+      "pass": 5,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/profile-social-links.test.mjs",
+      "sha256": "3039e22938c5495875d8f128b87d0d29efafcc3e0891652a5ecb7f8f3a3a90f6",
+      "exitCode": 0,
+      "tests": 4,
+      "pass": 4,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/project-campus-choice.test.mjs",
+      "sha256": "7edac902227d2cda7968d308f0d22618cd06dfb06f3d4c7dae251936b80f910e",
+      "exitCode": 0,
+      "tests": 9,
+      "pass": 9,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/project-sections.test.mjs",
+      "sha256": "b7696eb7b42e1d5b0764926a40f1e9c022daac642e157447d91f75154a300125",
+      "exitCode": 0,
+      "tests": 2,
+      "pass": 2,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/project-team-routing.test.mjs",
+      "sha256": "408bbd8ece9e634fc286edf523d44256c7453c00249c316926d1a58289a9fcd5",
+      "exitCode": 0,
+      "tests": 5,
+      "pass": 5,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/project-trial.test.mjs",
+      "sha256": "2390ef00d50d232e23a040d3464aa5dfee128dda10387edeaa55f143f5c53ed3",
+      "exitCode": 0,
+      "tests": 10,
+      "pass": 10,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/random-discovery.test.mjs",
+      "sha256": "f1193f713547c77354c2745a99c95105be8debbfd8caf3f9e6e4e4a2437c9e90",
+      "exitCode": 0,
+      "tests": 14,
+      "pass": 14,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/reading-scope.test.mjs",
+      "sha256": "17099b760d90cd934361d5a3e77f4bb42392c0fa7876d290918795f3e0d5d185",
+      "exitCode": 0,
+      "tests": 11,
+      "pass": 11,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/theme-menu.test.mjs",
+      "sha256": "5a2b8d8f17341c70d2e881fd4c808aed9961c874610cd8890df18b114ef65b96",
+      "exitCode": 0,
+      "tests": 5,
+      "pass": 5,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "tests/theme-preferences.test.mjs",
+      "sha256": "e427b2efb9b0bf25f09dd69ffafbdd879e4b618953795e2cd5880907fa5c974c",
+      "exitCode": 0,
+      "tests": 8,
+      "pass": 8,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "file": "world-render-preparation.test.mjs",
+      "sha256": "c2ddc5b1afc513d6e5795d17099c40c75ce9751565bb4d459cff934488794539",
+      "exitCode": 0,
+      "tests": 8,
+      "pass": 8,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    }
+  ],
+  "totals": {
+    "files": 56,
+    "tests": 587,
+    "pass": 587,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "limitations": [
+    "Unit and DOM-simulated behavior tests; not a browser rendering or real account verification."
+  ],
+  "sourceSha256": {
+    "welcome.mjs": "271bedc119e3ba0c864b1ea3b948eef57853be85b02ff629017d8c9bb531efc0",
+    "content-geography.mjs": "1067f2e0493428450c818df822147d4cd4c1ab4ab5532b753217415afb69a33e",
+    "content-preview-data.mjs": "d031afc49e9b56c14f206a861f1c0737f750bad03cac103235b1635c1d32b8c3",
+    "dock-search-data.mjs": "82e9deffb24f7ed0884a2eccba6dc9db591715868ff46778a03ddc99bb770ad9",
+    "project-ui.mjs": "5c8922493ce249d0f2e83e9860a66112c8cf7a1ca8f0559d05c64207962d872b",
+    "profile-ui.mjs": "4ebe23f204b3010e394fd1aea478a663c6c7588a6a2f7d6860207f39e0a3c911",
+    "journal-ui.mjs": "fde3ae74416ebc1b97d20e069c5612846ed162412f692df937495d38d0afd229",
+    "projects.css": "957f5fe27f99b3f3226bbc2083bdc23aee7d5305640a81d143f5cfcb87a1b500"
+  },
+  "dependencyCheck": {
+    "method": "Static recursive HTML src/href, ESM imports/new URL(import.meta.url), and CSS url references from index.html and content-preview.html. Vendor bundles not parsed. No archive traversal.",
+    "entrypoints": [
+      "index.html",
+      "content-preview.html"
+    ],
+    "visitedFiles": 103,
+    "referenceCount": 162,
+    "missing": [],
+    "changedDependencyQueryStrings": {
+      "welcome.mjs": [
+        "v=multi-campus-projects-125"
+      ],
+      "content-preview.mjs": [
+        "v=92"
+      ],
+      "project-ui.mjs": [
+        "v=34"
+      ],
+      "profile-ui.mjs": [
+        "v=30"
+      ],
+      "journal-ui.mjs": [
+        "v=33"
+      ],
+      "content-preview-data.mjs": [
+        "v=7"
+      ],
+      "dock-search-data.mjs": [
+        "v=8"
+      ],
+      "content-geography.mjs": [
+        "v=1"
+      ],
+      "projects.css": [
+        "v=11"
+      ]
+    }
+  },
+  "followupChecks": {
+    "reason": "Project campus chooser now uses existing profileCampusCountryName fallback while globe initializes. Targeted route and chooser checks rerun after this final welcome.mjs change.",
+    "files": [
+      {
+        "file": "tests/profile-navigation-scope.test.mjs",
+        "exitCode": 0,
+        "tests": 5,
+        "pass": 5
+      },
+      {
+        "file": "tests/project-campus-choice.test.mjs",
+        "exitCode": 0,
+        "tests": 9,
+        "pass": 9
+      }
+    ]
+  }
+}

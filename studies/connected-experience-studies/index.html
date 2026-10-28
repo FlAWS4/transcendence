@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="Trois interfaces interactives pour contribuer à 42 Horizon depuis Explorer : profil, publications, messages, notifications, paramètres et Awards.">
+  <title>Horizon — Trois façons de prendre part</title>
+  <link rel="stylesheet" href="assets/tokens.css">
+  <link rel="stylesheet" href="assets/jost.css">
+  <link rel="stylesheet" href="gallery.css?v=2">
+  <script type="module" src="gallery.mjs?v=1"></script>
+</head>
+<body>
+  <a class="skip-link" href="#studies">Aller aux trois interfaces</a>
+  <svg class="icon-definitions" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+    <symbol id="icon-message" viewBox="0 0 24 24"><path d="M5 5h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H8l-5 3V7a2 2 0 0 1 2-2Z"/><path d="M7 10h10M7 14h6"/></symbol>
+    <symbol id="icon-bell" viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 8-3 8-3 10h18c0-2-3-2-3-10ZM10 21h4"/></symbol>
+    <symbol id="icon-person" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></symbol>
+    <symbol id="icon-moon" viewBox="0 0 24 24"><path d="M20.5 13a8.5 8.5 0 0 1-9.5-9.5A8.5 8.5 0 1 0 20.5 13Z"/></symbol>
+    <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></symbol>
+  </defs></svg>
+  <header class="gallery-header">
+    <a href="../research-archive/index.html" class="brand" aria-label="42 Horizon · Archives de recherche"><img src="assets/logo-42.svg" alt="42" width="43" height="32"><span>HORIZON</span></a>
+    <div class="header-actions"><a href="../research-archive/index.html">Les archives <span aria-hidden="true">↗</span></a><button id="theme" type="button" aria-label="Activer le thème sombre" aria-pressed="false"><svg aria-hidden="true"><use href="#icon-moon"/></svg></button></div>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <div><p class="eyebrow">L’expérience connectée · 07 octobre 2026</p><h1 id="page-title">Explorer Horizon.<br><span>Et y prendre part.</span></h1></div>
+      <div class="intro-copy"><p>Trois interfaces, un même départ : <strong>Explorer</strong>. À toi de parcourir les différentes façons de retrouver tes échanges, tes créations et ton espace personnel.</p><p class="status"><span aria-hidden="true"></span>Propositions à comparer · Aucun choix arrêté</p></div>
+    </section>
+    <section id="studies" class="studies" aria-label="Trois pistes interactives">
+      <article class="study">
+        <div class="preview direct-access" aria-hidden="true">
+          <div class="mini-header"><div class="mini-brand"><img src="assets/logo-42.svg" alt=""><span>HORIZON</span></div><div class="mini-actions"><span><svg><use href="#icon-message"/></svg><i></i></span><span><svg><use href="#icon-bell"/></svg><i></i></span><span class="selected"><svg><use href="#icon-person"/></svg></span></div></div>
+          <div class="mini-scope">Monde <span>⌄</span></div>
+          <div class="mini-globe"><span class="meridian"></span><span class="equator"></span><i></i><i></i><i></i></div>
+          <div class="mini-account"><div class="mini-identity"><span class="mini-avatar">LM</span><div><b>Leïla Mansour</b><small>@lmansour</small></div></div><div class="mini-menu-row active">Mon espace <span>↗</span></div><div class="mini-menu-row">Modifier mon profil</div><div class="mini-menu-row">Paramètres</div><div class="mini-menu-divider"></div><div class="mini-menu-row muted">Déconnexion</div></div>
+          <div class="mini-dock"><span class="active">Explorer</span><span>Projets</span><span>Profils</span><span>Journal</span><span>Awards</span></div>
+          <span class="preview-caption">Depuis Explorer · Menu Compte ouvert</span>
+        </div>
+        <div class="study-copy"><div class="study-heading"><span class="number">01</span><p class="eyebrow">Les accès au premier plan</p></div><h2>Accès directs</h2><p>Messages, notifications et compte restent en haut. Le menu du compte mène à un espace personnel organisé par sommaire.</p><div class="route"><span>Explorer</span><span aria-hidden="true">→</span><span>Compte</span><span aria-hidden="true">→</span><span>Mon espace</span></div><p class="to-observe">À observer : la facilité à retrouver chaque action depuis le globe.</p><a class="try" href="demo.html?variant=1#explore">Essayer la piste 01 <span aria-hidden="true">↗</span></a></div>
+      </article>
+      <article class="study">
+        <div class="preview companion" aria-hidden="true">
+          <div class="mini-header"><div class="mini-brand"><img src="assets/logo-42.svg" alt=""><span>HORIZON</span></div><span class="mini-space-trigger selected">Mon espace <span class="tiny-avatar">LM</span></span></div>
+          <div class="mini-scope">Monde <span>⌄</span></div>
+          <div class="mini-globe"><span class="meridian"></span><span class="equator"></span><i></i><i></i><i></i></div>
+          <div class="mini-panel companion-dashboard"><div class="mini-panel-title"><b>Fermer mon espace</b><span>×</span></div><div class="mini-panel-nav"><span class="active">Vue d’ensemble</span><span>Mon profil</span><span>Mes projets</span><span>Mes articles</span><span>Messages</span><span>Notifications</span><span>Mes Awards</span><span>Paramètres</span></div><div class="mini-panel-greeting"><small class="mini-overline">MON ESPACE</small><b>Bonjour Leïla.</b><small>Vos idées, vos échanges, votre prochain pas.</small></div><div class="mini-panel-stats"><span><b>2</b><small>projets</small></span><span><b>1</b><small>article</small></span><span><b>2</b><small>non lus</small></span><span><b>0</b><small>participation</small></span></div><div class="mini-workcards"><div><small class="mini-overline">CONTINUER À CRÉER</small><b>Vos idées prennent forme</b><span class="mini-workdraft">Common Ground<small>Brouillon personnel</small></span><span class="mini-workdraft">Apprendre à deux<small>Brouillon personnel</small></span></div><div><small class="mini-overline">42 AWARDS · DÉMO</small><b>Faites rayonner ce que vous créez.</b><small class="mini-work-description">Les projets de la communauté et vos candidatures.</small><span class="mini-work-action">Participer ↗</span></div></div></div>
+          <div class="mini-dock"><span class="active">Explorer</span><span>Projets</span><span>Profils</span><span>Journal</span><span>Awards</span></div>
+          <span class="preview-caption">Depuis Explorer · Volet Mon espace ouvert</span>
+        </div>
+        <div class="study-copy"><div class="study-heading"><span class="number">02</span><p class="eyebrow">L’activité accompagne la découverte</p></div><h2>Volet compagnon</h2><p>Mon espace se déploie à droite du globe. Les échanges et les contributions partagent ce volet presque plein écran sur mobile ; l’en-tête et le dock restent accessibles.</p><div class="route"><span>Explorer</span><span aria-hidden="true">→</span><span>Mon espace</span><span aria-hidden="true">→</span><span>Volet</span></div><p class="to-observe">À observer : le confort pour passer d’une découverte à une contribution.</p><a class="try" href="demo.html?variant=2#explore">Essayer la piste 02 <span aria-hidden="true">↗</span></a></div>
+      </article>
+      <article class="study">
+        <div class="preview two-spaces" aria-hidden="true">
+          <div class="mini-header"><div class="mini-brand"><img src="assets/logo-42.svg" alt=""><span>HORIZON</span></div><span class="tiny-avatar">LM</span></div>
+          <div class="mini-switch"><span>Découvrir</span><span class="active">Mon espace</span></div>
+          <div class="mini-workspace"><div class="mini-sidebar"><span class="mini-avatar">LM</span><b>Leïla</b><span class="active">Vue d’ensemble</span><span>Mon profil</span><span>Publications</span><span>Messages <i>2</i></span><span>Notifications</span><span>42 Awards</span><span>Paramètres</span></div><div class="mini-dashboard"><small class="mini-overline">MON ESPACE</small><b>Bonjour, Leïla.</b><small>Une place pour tes idées.</small><div class="mini-create">+ Créer une publication</div><div class="mini-dashboard-card"><b>Continuer à créer</b><span class="mini-text-line"></span><span class="mini-text-line short"></span><small>Reprendre mon brouillon ↗</small></div><div class="mini-dashboard-card mini-award"><span>✧</span><div><b>42 Awards</b><small>Mes participations</small></div></div></div></div>
+          <span class="preview-caption">Après la bascule · Espace personnel dédié</span>
+        </div>
+        <div class="study-copy"><div class="study-heading"><span class="number">03</span><p class="eyebrow">Un lieu pour chaque intention</p></div><h2>Deux espaces</h2><p>Un sélecteur relie Découvrir et Mon espace. La partie personnelle offre une vue dédiée pour gérer son profil, ses publications et son activité.</p><div class="route"><span>Explorer</span><span aria-hidden="true">→</span><span>Bascule</span><span aria-hidden="true">→</span><span>Mon espace</span></div><p class="to-observe">À observer : la clarté du passage entre consulter et contribuer.</p><a class="try" href="demo.html?variant=3#explore">Essayer la piste 03 <span aria-hidden="true">↗</span></a></div>
+      </article>
+    </section>
+    <section class="compare" aria-labelledby="compare-title">
+      <div><p class="eyebrow">Pour les comparer</p><h2 id="compare-title">Le même parcours.<br>Des repères différents.</h2><p>Commence chaque essai depuis Explorer, puis retrouve le globe après une action.</p></div>
+      <ol><li><span>01</span><p>Ouvre ton espace et <strong>modifie ton profil</strong>.</p></li><li><span>02</span><p>Crée un <strong>projet ou un article</strong>, puis prévisualise sa publication.</p></li><li><span>03</span><p>Lis un <strong>message</strong> et consulte une <strong>notification</strong>.</p></li><li><span>04</span><p>Explore les <strong>42 Awards</strong> : candidature et vote de démonstration.</p></li></ol>
+      <aside><span class="note-mark" aria-hidden="true">↗</span><p>Où cherches-tu spontanément chaque fonction ? Le retour vers Explorer reste-t-il évident ?</p><p class="note-secondary">Les paramètres du compte et les préférences complètent chaque piste.</p></aside>
+    </section>
+  </main>
+  <footer><div><p>Trois prototypes distincts, conservés dans les recherches.</p><p>Démonstration locale en français · Données fictives · Aucune authentification réelle</p><p><a href="archive/bounded-scroll-20261007/index.html">État précédent : les deux colonnes dans un cadre borné ↗</a></p><p><a href="archive/full-sidebar-scroll-20261007/index.html">État précédent : toute la colonne gauche défilait ↗</a></p></div><a href="../../site/index.html">Ouvrir l’aperçu actuel <span aria-hidden="true">↗</span></a></footer>
+</body>
+</html>

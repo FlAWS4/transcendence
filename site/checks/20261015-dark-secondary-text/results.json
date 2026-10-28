@@ -1,0 +1,305 @@
+{
+ "arrivee-sombre": {
+  "avant": {
+   "theme": "dark",
+   "probe": {
+    "#entry-login": {
+     "color": "rgb(27, 27, 27)",
+     "background": "rgb(237, 52, 145)",
+     "border": "rgb(237, 52, 145)",
+     "w": 153.61,
+     "h": 52
+    },
+    "#entry-guest": {
+     "color": "rgb(237, 52, 145)",
+     "background": "rgba(0, 0, 0, 0)",
+     "border": "rgb(112, 131, 131)",
+     "w": 153.61,
+     "h": 52
+    },
+    "[data-account-action=signin]": null,
+    "[data-account-action=signup]": null
+   },
+   "errors": [],
+   "shot": "/home/le-rif/Bureau/Transcendence/work/visualizations/horizon-welcome/checks/20261015-dark-secondary-text/captures/arrivee-sombre-avant.png"
+  },
+  "apres": {
+   "theme": "dark",
+   "probe": {
+    "#entry-login": {
+     "color": "rgb(27, 27, 27)",
+     "background": "rgb(237, 52, 145)",
+     "border": "rgb(237, 52, 145)",
+     "w": 153.61,
+     "h": 52,
+     "hex": {
+      "color": "#1B1B1B",
+      "background": "#ED3491",
+      "border": "#ED3491"
+     }
+    },
+    "#entry-guest": {
+     "color": "rgb(255, 255, 255)",
+     "background": "rgba(0, 0, 0, 0)",
+     "border": "rgb(112, 131, 131)",
+     "w": 153.61,
+     "h": 52,
+     "hex": {
+      "color": "#FFFFFF",
+      "border": "#708383"
+     }
+    },
+    "[data-account-action=signin]": null,
+    "[data-account-action=signup]": null
+   },
+   "errors": [],
+   "shot": "/home/le-rif/Bureau/Transcendence/work/visualizations/horizon-welcome/checks/20261015-dark-secondary-text/captures/arrivee-sombre-apres.png"
+  },
+  "pixelsDiffer": {
+   "count": 256,
+   "box": [
+    787,
+    624,
+    830,
+    636
+   ]
+  }
+ },
+ "arrivee-sombre-mobile": {
+  "avant": {
+   "theme": "dark",
+   "probe": {
+    "#entry-login": {
+     "color": "rgb(27, 27, 27)",
+     "background": "rgb(237, 52, 145)",
+     "border": "rgb(237, 52, 145)",
+     "w": 342,
+     "h": 52
+    },
+    "#entry-guest": {
+     "color": "rgb(237, 52, 145)",
+     "background": "rgba(0, 0, 0, 0)",
+     "border": "rgb(112, 131, 131)",
+     "w": 342,
+     "h": 52
+    },
+    "[data-account-action=signin]": null,
+    "[data-account-action=signup]": null
+   },
+   "errors": [],
+   "shot": "/home/le-rif/Bureau/Transcendence/work/visualizations/horizon-welcome/checks/20261015-dark-secondary-text/captures/arrivee-sombre-mobile-avant.png"
+  },
+  "apres": {
+   "theme": "dark",
+   "probe": {
+    "#entry-login": {
+     "color": "rgb(27, 27, 27)",
+     "background": "rgb(237, 52, 145)",
+     "border": "rgb(237, 52, 145)",
+     "w": 342,
+     "h": 52,
+     "hex": {
+      "color": "#1B1B1B",
+      "background": "#ED3491",
+      "border": "#ED3491"
+     }
+    },
+    "#entry-guest": {
+     "color": "rgb(255, 255, 255)",
+     "background": "rgba(0, 0, 0, 0)",
+     "border": "rgb(112, 131, 131)",
+     "w": 342,
+     "h": 52,
+     "hex": {
+      "color": "#FFFFFF",
+      "border": "#708383"
+     }
+    },
+    "[data-account-action=signin]": null,
+    "[data-account-action=signup]": null
+   },
+   "errors": [],
+   "shot": "/home/le-rif/Bureau/Transcendence/work/visualizations/horizon-welcome/checks/20261015-dark-secondary-text/captures/arrivee-sombre-mobile-apres.png"
+  },
+  "pixelsDiffer": {
+   "count": 930,
+   "box": [
+    346,
+    1272,
+    433,
+    1295
+   ]
+  }
+ },
+ "arrivee-claire": {
+  "avant": {
+   "theme": "light",
+   "probe": {
+    "#entry-login": {
+     "color": "rgb(27, 27, 27)",
+     "background": "rgb(0, 186, 188)",
+     "border": "rgb(0, 186, 188)",
+     "w": 153.61,
+     "h": 52
+    },
+    "#entry-guest": {
+     "color": "rgb(27, 27, 27)",
+     "background": "rgb(255, 255, 255)",
+     "border": "rgb(220, 229, 229)",
+     "w": 153.61,
+     "h": 52
+    },
+    "[data-account-action=signin]": null,
+    "[data-account-action=signup]": null
+   },
+   "errors": [],
+   "shot": "/home/le-rif/Bureau/Transcendence/work/visualizations/horizon-welcome/checks/20261015-dark-secondary-text/captures/arrivee-claire-avant.png"
+  },
+  "apres": {
+   "theme": "light",
+   "probe": {
+    "#entry-login": {
+     "color": "rgb(27, 27, 27)",
+     "background": "rgb(0, 186, 188)",
+     "border": "rgb(0, 186, 188)",
+     "w": 153.61,
+     "h": 52
+    },
+    "#entry-guest": {
+     "color": "rgb(27, 27, 27)",
+     "background": "rgb(255, 255, 255)",
+     "border": "rgb(220, 229, 229)",
+     "w": 153.61,
+     "h": 52
+    },
+    "[data-account-action=signin]": null,
+    "[data-account-action=signup]": null
+   },
+   "errors": [],
+   "shot": "/home/le-rif/Bureau/Transcendence/work/visualizations/horizon-welcome/checks/20261015-dark-secondary-text/captures/arrivee-claire-apres.png"
+  },
+  "pixelsDiffer": {
+   "count": 0,
+   "box": null
+  }
+ },
+ "compte-sombre": {
+  "avant": {
+   "theme": "dark",
+   "probe": {
+    "#entry-login": null,
+    "#entry-guest": null,
+    "[data-account-action=signin]": {
+     "color": "rgb(27, 27, 27)",
+     "background": "rgb(237, 52, 145)",
+     "border": "rgb(237, 52, 145)",
+     "w": 246,
+     "h": 53
+    },
+    "[data-account-action=signup]": {
+     "color": "rgb(237, 52, 145)",
+     "background": "rgb(27, 27, 27)",
+     "border": "rgb(112, 131, 131)",
+     "w": 246,
+     "h": 53
+    }
+   },
+   "errors": [],
+   "shot": "/home/le-rif/Bureau/Transcendence/work/visualizations/horizon-welcome/checks/20261015-dark-secondary-text/captures/compte-sombre-avant.png"
+  },
+  "apres": {
+   "theme": "dark",
+   "probe": {
+    "#entry-login": null,
+    "#entry-guest": null,
+    "[data-account-action=signin]": {
+     "color": "rgb(27, 27, 27)",
+     "background": "rgb(237, 52, 145)",
+     "border": "rgb(237, 52, 145)",
+     "w": 246,
+     "h": 53,
+     "hex": {
+      "color": "#1B1B1B",
+      "background": "#ED3491",
+      "border": "#ED3491"
+     }
+    },
+    "[data-account-action=signup]": {
+     "color": "rgb(255, 255, 255)",
+     "background": "rgb(27, 27, 27)",
+     "border": "rgb(112, 131, 131)",
+     "w": 246,
+     "h": 53,
+     "hex": {
+      "color": "#FFFFFF",
+      "background": "#1B1B1B",
+      "border": "#708383"
+     }
+    }
+   },
+   "errors": [],
+   "shot": "/home/le-rif/Bureau/Transcendence/work/visualizations/horizon-welcome/checks/20261015-dark-secondary-text/captures/compte-sombre-apres.png"
+  },
+  "pixelsDiffer": {
+   "count": 612,
+   "box": [
+    1193,
+    229,
+    1306,
+    245
+   ]
+  }
+ },
+ "compte-clair": {
+  "avant": {
+   "theme": "light",
+   "probe": {
+    "#entry-login": null,
+    "#entry-guest": null,
+    "[data-account-action=signin]": {
+     "color": "rgb(27, 27, 27)",
+     "background": "rgb(0, 186, 188)",
+     "border": "rgb(0, 186, 188)",
+     "w": 246,
+     "h": 53
+    },
+    "[data-account-action=signup]": {
+     "color": "rgb(27, 27, 27)",
+     "background": "rgb(255, 255, 255)",
+     "border": "rgb(220, 229, 229)",
+     "w": 246,
+     "h": 53
+    }
+   },
+   "errors": [],
+   "shot": "/home/le-rif/Bureau/Transcendence/work/visualizations/horizon-welcome/checks/20261015-dark-secondary-text/captures/compte-clair-avant.png"
+  },
+  "apres": {
+   "theme": "light",
+   "probe": {
+    "#entry-login": null,
+    "#entry-guest": null,
+    "[data-account-action=signin]": {
+     "color": "rgb(27, 27, 27)",
+     "background": "rgb(0, 186, 188)",
+     "border": "rgb(0, 186, 188)",
+     "w": 246,
+     "h": 53
+    },
+    "[data-account-action=signup]": {
+     "color": "rgb(27, 27, 27)",
+     "background": "rgb(255, 255, 255)",
+     "border": "rgb(220, 229, 229)",
+     "w": 246,
+     "h": 53
+    }
+   },
+   "errors": [],
+   "shot": "/home/le-rif/Bureau/Transcendence/work/visualizations/horizon-welcome/checks/20261015-dark-secondary-text/captures/compte-clair-apres.png"
+  },
+  "pixelsDiffer": {
+   "count": 0,
+   "box": null
+  }
+ }
+}

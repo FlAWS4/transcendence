@@ -1,0 +1,121 @@
+[
+ {
+  "board": "Panneau_du_compte_·_visiteur_—_Ordinateur_·_Clair_·_English__account-visitor.png",
+  "zone": "Fermer, Compte · fermer et « À côté du menu »",
+  "problem": "arrivée douteuse",
+  "detail": "Ces trois sorties mènent à « Liste des projets » au lieu de revenir à l'écran précédent. En v1, « Fermer » était un retour. Or le panneau s'ouvre par « Compte » depuis 37 pages visiteur : Explorer · Monde dès la fin de l'entrée, Pays, Campus, fiches, chroniques, profils… Ouvrir puis fermer le panneau envoie donc toujours dans la rubrique Projets. Cause probable : comme « ‹ » des sous-panneaux y revient, le plan applique à toutes ses sorties « l'écran sous la fenêtre ». Ce panneau ne figure pourtant pas dans la règle, et le panneau membre, lui, revient bien en arrière. Piste : faire de « ‹ » un retour et garder le retour ici.",
+  "severity": "bloquant"
+ },
+ {
+  "board": "Signaler_—_Ordinateur_·_Clair_·_English__report.png",
+  "zone": "Fermer, Cancel et voile",
+  "problem": "arrivée douteuse",
+  "detail": "Les trois sorties mènent à « Fiche projet » (ft_transcendence), quelle que soit l'origine. « Signaler » s'ouvre depuis 18 écrans : la chronique « Sharing work… » et ses onglets, la fiche de minishell et ses onglets, les états de commentaires, Chronique · membre, Fiche projet · membre et le menu ⋮. Annuler un signalement depuis la chronique ou minishell envoie donc sur ft_transcendence, et fait sortir du parcours membre. Seul le chemin par le menu ⋮ justifiait ce choix, et même là on arrive sur ft_transcendence au lieu des commentaires de minishell. Le retour de la v1, qui rouvrait le menu (défaut mineur), était préférable.",
+  "severity": "bloquant"
+ },
+ {
+  "board": "Visionneuse_de_médias_—_Ordinateur_·_Clair_·_English__viewer.png",
+  "zone": "Fermer le média et voile",
+  "problem": "arrivée douteuse",
+  "detail": "La fermeture mène à « Fiche projet · projet à campus unique » (minishell) depuis les 17 entrées : portraits de Leïla, Inès et Noé (fiches, onglets, fiche membre, compte), illustrations de ft_transcendence et de la chronique, galeries Médias, photo de la fiche campus. Fermer le portrait de Leïla mène donc à minishell. Cause : la visionneuse s'ouvre aussi depuis la fiche campus. Or même dans ce cas, le retour vers la fiche campus serait juste.",
+  "severity": "bloquant"
+ },
+ {
+  "board": "Fenêtre_Autour_du_campus_—_Ordinateur_·_Clair_·_English__campus-window.png",
+  "zone": "Fermer la carte et voile",
+  "problem": "arrivée douteuse",
+  "detail": "La fermeture mène à « Fiche projet · projet à campus unique », quelle que soit l'origine parmi les 21 entrées : chronique de 42 Tokyo et ses onglets, fiches de Leïla, Inès et Noé, Compte et fiches membre, onglets de minishell (qui retombent sur « Overview »). Depuis « Choisir un campus » de ft_transcendence, on retombe aussi sur minishell, au lieu de ft_transcendence. Cette fenêtre n'est pas une fiche campus déployée : la règle demande un retour.",
+  "severity": "bloquant"
+ },
+ {
+  "board": "_Où_veux-tu_aller_—_Ordinateur_·_Clair_·_English__scope-popover.png",
+  "zone": "Fermer et « À côté du menu »",
+  "problem": "arrivée douteuse",
+  "detail": "Les deux mènent à « Explorer · Monde », quelle que soit l'origine. Fermer la fenêtre ouverte depuis Explorer · Pays ou Campus (pastille du pays ou du campus), depuis les listes Projets, Profils ou Chroniques, depuis les panneaux du compte ou depuis la recherche ramène donc au globe. Sur le site, fermer laisse la page en place ; depuis une liste, choisir un pays filtre même la liste sans aller au globe (setContentScope). Cause probable : le menu ⋮, dont le calque de menu n'a pas été détecté, porte une zone « Portée » vers cette fenêtre.",
+  "severity": "bloquant"
+ },
+ {
+  "board": "Chronique_—_Ordinateur_·_Clair_·_English__article.png",
+  "zone": "Portée ⇢",
+  "problem": "arrivée douteuse",
+  "detail": "C'est une zone nouvelle en v2, présente sur les 26 cadres de fiche : chronique, projets et profils avec leurs onglets, états de commentaires, menu ⋮, Compte et fiches membre. Elle ouvre « Où veux-tu aller ? ». Sur le site, la pastille ne réagit pas pendant la lecture : reading-scope.mjs rend le chemin inerte et onOpen, dans welcome.mjs, renvoie false. La capture la montre d'ailleurs sans chevron (« World » au lieu de « World ▾ » sur les listes). Combiné au défaut précédent, un clic sur ce libellé fait quitter la fiche pour le globe. La zone ne devrait exister que sur les listes et dans Explorer.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Menu_à_trois_points_d_un_commentaire_—_Ordinateur_·_Clair_·_English__comment-menu.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Le menu ⋮ ouvert n'a pas de bandes « à côté du menu ». Il n'a pas non plus de zones pour le logo, le compte, le menu du bas, la recherche, le dé, « Back to projects », « Report », « Explore 42 Paris » ou l'auteur. Seuls ⋮, « Signaler », les cinq onglets (dont l'onglet actif) et « Portée » répondent. Sur le site, un clic hors du menu le ferme (pointerdown dans comments.mjs). Le calque du menu n'a pas été détecté : il n'y a ni découpe ni bandes, contrairement à « Commentaires · tri ouvert ».",
+  "severity": "gênant"
+ },
+ {
+  "board": "Commentaires_·_avec_un_fil_—_Ordinateur_·_Clair_·_English__project-comments-thread.png",
+  "zone": "Lien · Comments (onglet actif)",
+  "problem": "arrivée douteuse",
+  "detail": "Ce défaut de la v1 est toujours là et s'étend. L'onglet actif garde une zone « Lien · … » dans plusieurs états. « Lien · Comments » mène à « Commentaires » sans le fil sur les deux planches « avec un fil » (projet et chronique), sur « tri ouvert », sur « suggestions de mention » et sur le menu ⋮. « Lien · Try the project » ramène au formulaire vide sur « Tester le projet · lien enregistré ». « Lien · Overview » mène à « Fiche profil · membre » sur « Compte de Leïla Mansour · membre ». La règle qui ajoute ces liens ne retire pas l'onglet en cours.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Parcours_—_Ordinateur_·_Clair_·_English__profile-journey.png",
+  "zone": "Dé ⇢",
+  "problem": "arrivée douteuse",
+  "detail": "Sur les onglets d'une fiche, le dé ramène à la même fiche. Sur Projets, Parcours et Contribution de Leïla, il mène à « Fiche profil » (Leïla). Sur Médias, Auteurs, Commentaires et Commentaires · avec un fil de la chronique, il mène à « Chronique », la même chronique. Sur « Compte de Leïla Mansour · membre », il mène à « Fiche profil · membre » (Leïla). Le site en tire toujours une autre. Le dé a été retiré des fiches, mais pas de leurs onglets.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Paramètres_—_Ordinateur_·_Clair_·_English__account-settings.png",
+  "zone": "Compte ⇢",
+  "problem": "arrivée douteuse",
+  "detail": "Dans Paramètres, Thème et Langue, l'avatar mène au « Panneau du compte · visiteur ». Sur le site, un second clic sur l'avatar ferme le menu, quel que soit le sous-panneau affiché (account-menu.mjs). Il devrait donc agir comme « Fermer », c'est-à-dire mener à l'écran sous le panneau.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Liste_des_projets_·_vue_Liste_—_Ordinateur_·_Clair_·_English__projects-list.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "« Sort » n'a toujours pas de zone en vue Liste, ni pour les projets ni pour les profils. Sur les deux dernières pages, « View » et « Sort » n'en ont pas non plus, alors que « Filter » en a une partout et que la vue Liste et le tri ouvert sont relevés.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Liste_des_profils_·_vue_Liste_—_Ordinateur_·_Clair_·_English__people-list.png",
+  "zone": "Page 1",
+  "problem": "arrivée douteuse",
+  "detail": "« 1 » est la page en cours de la vue Liste, mais sa zone mène à la grille (« Liste des profils »). C'est la même chose sur « Liste des projets · vue Liste ». Sur le site, ce lien ne change rien.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Liste_des_profils_·_dernière_page_—_Ordinateur_·_Clair_·_English__people-last-page.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Aucune des six cartes n'a de zone. Sur « Liste des projets · dernière page », les cartes de sujets non relevés mènent pourtant à la fiche relevée (compromis). Ici, une carte pourrait mener à « Fiche profil ».",
+  "severity": "mineur"
+ },
+ {
+  "board": "Choisir_un_campus_—_Ordinateur_·_Clair_·_English__campus-choice.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Seul « 42 Paris » a une zone. 42 Lyon, 42 Tokyo et 42 Rio n'en ont pas, alors qu'ailleurs les autres campus (« Explore 42 Tokyo », « Explore 42 Lyon ») ouvrent « Autour du campus » relevé pour 42 Paris (compromis).",
+  "severity": "mineur"
+ },
+ {
+  "board": "Commentaires_·_avec_un_fil_—_Ordinateur_·_Clair_·_English__article-comments-thread.png",
+  "zone": "Publier, puis l’auteur ou une mention @",
+  "problem": "commande sans zone",
+  "detail": "La zone ne couvre que l'auteur. La mention « @Inès Morel » du commentaire est un lien vers sa fiche, qui est relevée (« Fiche profil · statut Alumni »), mais elle n'a pas de zone. C'est le cas sur les deux planches « avec un fil », sur « tri ouvert » et sur le menu ⋮.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Messagerie_—_Ordinateur_·_Clair_·_English__messages.png",
+  "zone": "Fermer",
+  "problem": "arrivée douteuse",
+  "detail": "Quand la Messagerie est ouverte depuis le panneau du compte membre (icône de l'en-tête) ou depuis Notifications, « Fermer » revient au panneau précédent au lieu de tout fermer. Sur le site, l'icône bascule le même panneau. Le même effet se produit pour Notifications, pour « Une nouvelle façon d'explorer » ouvert depuis « Où veux-tu aller ? », et pour les fenêtres ouvertes par une zone de la page à côté d'un menu ouvert (par exemple Filtrer depuis la recherche ou depuis le panneau du compte). Dans tous ces cas, le retour rouvre le menu, que le site avait fermé.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Commentaires_·_avec_un_fil_—_Ordinateur_·_Clair_·_English.png",
+  "zone": "Onglet · comments ⇢",
+  "problem": "toujours là (v1)",
+  "detail": "L'onglet actif garde une zone, rebaptisée « Lien · Comments », qui mène à « Commentaires » sans le fil. C'est le cas sur « Commentaires · avec un fil » et « Commentaires · tri ouvert ». Sur « Tester le projet · lien enregistré », « Lien · Try the project » ramène au formulaire vide. Il y a aussi de nouveaux cas, signalés avec ce défaut.",
+  "severity": "gênant"
+ }
+]

@@ -1,0 +1,2970 @@
+{
+  "fixture": "100 pages injected into HTTP only, then actual corpus",
+  "sourcesBefore": {
+    "content-pagination.mjs": "f87741911342678e4f0d4afae8266e4b8722ccb0f1a23d3eef13f35bd7fa56fc",
+    "content-pagination-ui.mjs": "d04673417e100a6531b65135953221c7310ba5a275eb6a931154b068bea558dd",
+    "content-pagination.css": "8a86f6806a1bd2ddcbc4638d2fe3c2645befeaa600314b79e2952dd33fd15572"
+  },
+  "sourcesAfter": {
+    "content-pagination.mjs": "f87741911342678e4f0d4afae8266e4b8722ccb0f1a23d3eef13f35bd7fa56fc",
+    "content-pagination-ui.mjs": "d04673417e100a6531b65135953221c7310ba5a275eb6a931154b068bea558dd",
+    "content-pagination.css": "8a86f6806a1bd2ddcbc4638d2fe3c2645befeaa600314b79e2952dd33fd15572"
+  },
+  "cases": [
+    {
+      "case": "resize-fr-1280",
+      "result": {
+        "width": 1280,
+        "dir": "ltr",
+        "hash": "#projects?page=50",
+        "current": "50",
+        "groupWidth": 264,
+        "numbers": [
+          {
+            "page": 1,
+            "left": 40,
+            "right": 68,
+            "cy": 2323.5625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 1",
+            "title": "",
+            "text": "1",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 49,
+            "left": 86,
+            "right": 114,
+            "cy": 2323.5625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 49",
+            "title": "",
+            "text": "49",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 50,
+            "left": 118,
+            "right": 146,
+            "cy": 2323.5625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 50",
+            "title": "",
+            "text": "50",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 51,
+            "left": 150,
+            "right": 178,
+            "cy": 2323.5625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 51",
+            "title": "",
+            "text": "51",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 100,
+            "left": 196,
+            "right": 224,
+            "cy": 2323.5625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 100",
+            "title": "",
+            "text": "100",
+            "disabled": false,
+            "transform": null
+          }
+        ],
+        "previous": {
+          "left": 0,
+          "right": 32,
+          "cy": 2323.5625,
+          "width": 32,
+          "height": 36,
+          "label": "Précédent",
+          "title": "Précédent",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "next": {
+          "left": 232,
+          "right": 264,
+          "cy": 2323.5625,
+          "width": 32,
+          "height": 36,
+          "label": "Suivant",
+          "title": "Suivant",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "centers": [
+          2324
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "resize-fr-841",
+      "result": {
+        "width": 841,
+        "dir": "ltr",
+        "hash": "#projects?page=50",
+        "current": "50",
+        "groupWidth": 264,
+        "numbers": [
+          {
+            "page": 1,
+            "left": 40,
+            "right": 68,
+            "cy": 3207.359375,
+            "width": 28,
+            "height": 36,
+            "label": "Page 1",
+            "title": "",
+            "text": "1",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 49,
+            "left": 86,
+            "right": 114,
+            "cy": 3207.359375,
+            "width": 28,
+            "height": 36,
+            "label": "Page 49",
+            "title": "",
+            "text": "49",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 50,
+            "left": 118,
+            "right": 146,
+            "cy": 3207.359375,
+            "width": 28,
+            "height": 36,
+            "label": "Page 50",
+            "title": "",
+            "text": "50",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 51,
+            "left": 150,
+            "right": 178,
+            "cy": 3207.359375,
+            "width": 28,
+            "height": 36,
+            "label": "Page 51",
+            "title": "",
+            "text": "51",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 100,
+            "left": 196,
+            "right": 224,
+            "cy": 3207.359375,
+            "width": 28,
+            "height": 36,
+            "label": "Page 100",
+            "title": "",
+            "text": "100",
+            "disabled": false,
+            "transform": null
+          }
+        ],
+        "previous": {
+          "left": 0,
+          "right": 32,
+          "cy": 3207.359375,
+          "width": 32,
+          "height": 36,
+          "label": "Précédent",
+          "title": "Précédent",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "next": {
+          "left": 232,
+          "right": 264,
+          "cy": 3207.359375,
+          "width": 32,
+          "height": 36,
+          "label": "Suivant",
+          "title": "Suivant",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "centers": [
+          3207
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "resize-fr-840",
+      "result": {
+        "width": 840,
+        "dir": "ltr",
+        "hash": "#projects?page=50",
+        "current": "50",
+        "groupWidth": 264,
+        "numbers": [
+          {
+            "page": 1,
+            "left": 40,
+            "right": 68,
+            "cy": 3204.875,
+            "width": 28,
+            "height": 36,
+            "label": "Page 1",
+            "title": "",
+            "text": "1",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 49,
+            "left": 86,
+            "right": 114,
+            "cy": 3204.875,
+            "width": 28,
+            "height": 36,
+            "label": "Page 49",
+            "title": "",
+            "text": "49",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 50,
+            "left": 118,
+            "right": 146,
+            "cy": 3204.875,
+            "width": 28,
+            "height": 36,
+            "label": "Page 50",
+            "title": "",
+            "text": "50",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 51,
+            "left": 150,
+            "right": 178,
+            "cy": 3204.875,
+            "width": 28,
+            "height": 36,
+            "label": "Page 51",
+            "title": "",
+            "text": "51",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 100,
+            "left": 196,
+            "right": 224,
+            "cy": 3204.875,
+            "width": 28,
+            "height": 36,
+            "label": "Page 100",
+            "title": "",
+            "text": "100",
+            "disabled": false,
+            "transform": null
+          }
+        ],
+        "previous": {
+          "left": 0,
+          "right": 32,
+          "cy": 3204.875,
+          "width": 32,
+          "height": 36,
+          "label": "Précédent",
+          "title": "Précédent",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "next": {
+          "left": 232,
+          "right": 264,
+          "cy": 3204.875,
+          "width": 32,
+          "height": 36,
+          "label": "Suivant",
+          "title": "Suivant",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "centers": [
+          3205
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "resize-fr-601",
+      "result": {
+        "width": 601,
+        "dir": "ltr",
+        "hash": "#projects?page=50",
+        "current": "50",
+        "groupWidth": 264,
+        "numbers": [
+          {
+            "page": 1,
+            "left": 40,
+            "right": 68,
+            "cy": 2630.984375,
+            "width": 28,
+            "height": 36,
+            "label": "Page 1",
+            "title": "",
+            "text": "1",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 49,
+            "left": 86,
+            "right": 114,
+            "cy": 2630.984375,
+            "width": 28,
+            "height": 36,
+            "label": "Page 49",
+            "title": "",
+            "text": "49",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 50,
+            "left": 118,
+            "right": 146,
+            "cy": 2630.984375,
+            "width": 28,
+            "height": 36,
+            "label": "Page 50",
+            "title": "",
+            "text": "50",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 51,
+            "left": 150,
+            "right": 178,
+            "cy": 2630.984375,
+            "width": 28,
+            "height": 36,
+            "label": "Page 51",
+            "title": "",
+            "text": "51",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 100,
+            "left": 196,
+            "right": 224,
+            "cy": 2630.984375,
+            "width": 28,
+            "height": 36,
+            "label": "Page 100",
+            "title": "",
+            "text": "100",
+            "disabled": false,
+            "transform": null
+          }
+        ],
+        "previous": {
+          "left": 0,
+          "right": 32,
+          "cy": 2630.984375,
+          "width": 32,
+          "height": 36,
+          "label": "Précédent",
+          "title": "Précédent",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "next": {
+          "left": 232,
+          "right": 264,
+          "cy": 2630.984375,
+          "width": 32,
+          "height": 36,
+          "label": "Suivant",
+          "title": "Suivant",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "centers": [
+          2631
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "resize-fr-600",
+      "result": {
+        "width": 600,
+        "dir": "ltr",
+        "hash": "#projects?page=50",
+        "current": "50",
+        "groupWidth": 264,
+        "numbers": [
+          {
+            "page": 1,
+            "left": 40,
+            "right": 68,
+            "cy": 2391.8125,
+            "width": 28,
+            "height": 36,
+            "label": "Page 1",
+            "title": "",
+            "text": "1",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 49,
+            "left": 86,
+            "right": 114,
+            "cy": 2391.8125,
+            "width": 28,
+            "height": 36,
+            "label": "Page 49",
+            "title": "",
+            "text": "49",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 50,
+            "left": 118,
+            "right": 146,
+            "cy": 2391.8125,
+            "width": 28,
+            "height": 36,
+            "label": "Page 50",
+            "title": "",
+            "text": "50",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 51,
+            "left": 150,
+            "right": 178,
+            "cy": 2391.8125,
+            "width": 28,
+            "height": 36,
+            "label": "Page 51",
+            "title": "",
+            "text": "51",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 100,
+            "left": 196,
+            "right": 224,
+            "cy": 2391.8125,
+            "width": 28,
+            "height": 36,
+            "label": "Page 100",
+            "title": "",
+            "text": "100",
+            "disabled": false,
+            "transform": null
+          }
+        ],
+        "previous": {
+          "left": 0,
+          "right": 32,
+          "cy": 2391.8125,
+          "width": 32,
+          "height": 36,
+          "label": "Précédent",
+          "title": "Précédent",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "next": {
+          "left": 232,
+          "right": 264,
+          "cy": 2391.8125,
+          "width": 32,
+          "height": 36,
+          "label": "Suivant",
+          "title": "Suivant",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "centers": [
+          2392
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "resize-fr-390",
+      "result": {
+        "width": 390,
+        "dir": "ltr",
+        "hash": "#projects?page=50",
+        "current": "50",
+        "groupWidth": 264,
+        "numbers": [
+          {
+            "page": 1,
+            "left": 40,
+            "right": 68,
+            "cy": 2171.953125,
+            "width": 28,
+            "height": 36,
+            "label": "Page 1",
+            "title": "",
+            "text": "1",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 49,
+            "left": 86,
+            "right": 114,
+            "cy": 2171.953125,
+            "width": 28,
+            "height": 36,
+            "label": "Page 49",
+            "title": "",
+            "text": "49",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 50,
+            "left": 118,
+            "right": 146,
+            "cy": 2171.953125,
+            "width": 28,
+            "height": 36,
+            "label": "Page 50",
+            "title": "",
+            "text": "50",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 51,
+            "left": 150,
+            "right": 178,
+            "cy": 2171.953125,
+            "width": 28,
+            "height": 36,
+            "label": "Page 51",
+            "title": "",
+            "text": "51",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 100,
+            "left": 196,
+            "right": 224,
+            "cy": 2171.953125,
+            "width": 28,
+            "height": 36,
+            "label": "Page 100",
+            "title": "",
+            "text": "100",
+            "disabled": false,
+            "transform": null
+          }
+        ],
+        "previous": {
+          "left": 0,
+          "right": 32,
+          "cy": 2171.953125,
+          "width": 32,
+          "height": 36,
+          "label": "Précédent",
+          "title": "Précédent",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "next": {
+          "left": 232,
+          "right": 264,
+          "cy": 2171.953125,
+          "width": 32,
+          "height": 36,
+          "label": "Suivant",
+          "title": "Suivant",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "centers": [
+          2172
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "resize-fr-320",
+      "result": {
+        "width": 320,
+        "dir": "ltr",
+        "hash": "#projects?page=50",
+        "current": "50",
+        "groupWidth": 264,
+        "numbers": [
+          {
+            "page": 1,
+            "left": 40,
+            "right": 68,
+            "cy": 2167.90625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 1",
+            "title": "",
+            "text": "1",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 49,
+            "left": 86,
+            "right": 114,
+            "cy": 2167.90625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 49",
+            "title": "",
+            "text": "49",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 50,
+            "left": 118,
+            "right": 146,
+            "cy": 2167.90625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 50",
+            "title": "",
+            "text": "50",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 51,
+            "left": 150,
+            "right": 178,
+            "cy": 2167.90625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 51",
+            "title": "",
+            "text": "51",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 100,
+            "left": 196,
+            "right": 224,
+            "cy": 2167.90625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 100",
+            "title": "",
+            "text": "100",
+            "disabled": false,
+            "transform": null
+          }
+        ],
+        "previous": {
+          "left": 0,
+          "right": 32,
+          "cy": 2167.90625,
+          "width": 32,
+          "height": 36,
+          "label": "Précédent",
+          "title": "Précédent",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "next": {
+          "left": 232,
+          "right": 264,
+          "cy": 2167.90625,
+          "width": 32,
+          "height": 36,
+          "label": "Suivant",
+          "title": "Suivant",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "centers": [
+          2168
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "resize-fr-600",
+      "result": {
+        "width": 600,
+        "dir": "ltr",
+        "hash": "#projects?page=50",
+        "current": "50",
+        "groupWidth": 264,
+        "numbers": [
+          {
+            "page": 1,
+            "left": 40,
+            "right": 68,
+            "cy": 2391.8125,
+            "width": 28,
+            "height": 36,
+            "label": "Page 1",
+            "title": "",
+            "text": "1",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 49,
+            "left": 86,
+            "right": 114,
+            "cy": 2391.8125,
+            "width": 28,
+            "height": 36,
+            "label": "Page 49",
+            "title": "",
+            "text": "49",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 50,
+            "left": 118,
+            "right": 146,
+            "cy": 2391.8125,
+            "width": 28,
+            "height": 36,
+            "label": "Page 50",
+            "title": "",
+            "text": "50",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 51,
+            "left": 150,
+            "right": 178,
+            "cy": 2391.8125,
+            "width": 28,
+            "height": 36,
+            "label": "Page 51",
+            "title": "",
+            "text": "51",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 100,
+            "left": 196,
+            "right": 224,
+            "cy": 2391.8125,
+            "width": 28,
+            "height": 36,
+            "label": "Page 100",
+            "title": "",
+            "text": "100",
+            "disabled": false,
+            "transform": null
+          }
+        ],
+        "previous": {
+          "left": 0,
+          "right": 32,
+          "cy": 2391.8125,
+          "width": 32,
+          "height": 36,
+          "label": "Précédent",
+          "title": "Précédent",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "next": {
+          "left": 232,
+          "right": 264,
+          "cy": 2391.8125,
+          "width": 32,
+          "height": 36,
+          "label": "Suivant",
+          "title": "Suivant",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "centers": [
+          2392
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "resize-fr-1280",
+      "result": {
+        "width": 1280,
+        "dir": "ltr",
+        "hash": "#projects?page=50",
+        "current": "50",
+        "groupWidth": 264,
+        "numbers": [
+          {
+            "page": 1,
+            "left": 40,
+            "right": 68,
+            "cy": 2323.5625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 1",
+            "title": "",
+            "text": "1",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 49,
+            "left": 86,
+            "right": 114,
+            "cy": 2323.5625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 49",
+            "title": "",
+            "text": "49",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 50,
+            "left": 118,
+            "right": 146,
+            "cy": 2323.5625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 50",
+            "title": "",
+            "text": "50",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 51,
+            "left": 150,
+            "right": 178,
+            "cy": 2323.5625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 51",
+            "title": "",
+            "text": "51",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 100,
+            "left": 196,
+            "right": 224,
+            "cy": 2323.5625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 100",
+            "title": "",
+            "text": "100",
+            "disabled": false,
+            "transform": null
+          }
+        ],
+        "previous": {
+          "left": 0,
+          "right": 32,
+          "cy": 2323.5625,
+          "width": 32,
+          "height": 36,
+          "label": "Précédent",
+          "title": "Précédent",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "next": {
+          "left": 232,
+          "right": 264,
+          "cy": 2323.5625,
+          "width": 32,
+          "height": 36,
+          "label": "Suivant",
+          "title": "Suivant",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "centers": [
+          2324
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "fr-100pages-1",
+      "result": {
+        "width": 320,
+        "dir": "ltr",
+        "hash": "#projects",
+        "current": "1",
+        "groupWidth": 264,
+        "numbers": [
+          {
+            "page": 1,
+            "left": 63,
+            "right": 91,
+            "cy": 2207.34375,
+            "width": 28,
+            "height": 36,
+            "label": "Page 1",
+            "title": "",
+            "text": "1",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 2,
+            "left": 95,
+            "right": 123,
+            "cy": 2207.34375,
+            "width": 28,
+            "height": 36,
+            "label": "Page 2",
+            "title": "",
+            "text": "2",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 3,
+            "left": 127,
+            "right": 155,
+            "cy": 2207.34375,
+            "width": 28,
+            "height": 36,
+            "label": "Page 3",
+            "title": "",
+            "text": "3",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 100,
+            "left": 173,
+            "right": 201,
+            "cy": 2207.34375,
+            "width": 28,
+            "height": 36,
+            "label": "Page 100",
+            "title": "",
+            "text": "100",
+            "disabled": false,
+            "transform": null
+          }
+        ],
+        "previous": {
+          "left": 0,
+          "right": 32,
+          "cy": 2207.34375,
+          "width": 32,
+          "height": 36,
+          "label": "Précédent",
+          "title": "Précédent",
+          "text": "",
+          "disabled": true,
+          "transform": "none"
+        },
+        "next": {
+          "left": 232,
+          "right": 264,
+          "cy": 2207.34375,
+          "width": 32,
+          "height": 36,
+          "label": "Suivant",
+          "title": "Suivant",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "centers": [
+          2207
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "fr-100pages-50",
+      "result": {
+        "width": 320,
+        "dir": "ltr",
+        "hash": "#projects?page=50",
+        "current": "50",
+        "groupWidth": 264,
+        "numbers": [
+          {
+            "page": 1,
+            "left": 40,
+            "right": 68,
+            "cy": 2167.90625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 1",
+            "title": "",
+            "text": "1",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 49,
+            "left": 86,
+            "right": 114,
+            "cy": 2167.90625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 49",
+            "title": "",
+            "text": "49",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 50,
+            "left": 118,
+            "right": 146,
+            "cy": 2167.90625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 50",
+            "title": "",
+            "text": "50",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 51,
+            "left": 150,
+            "right": 178,
+            "cy": 2167.90625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 51",
+            "title": "",
+            "text": "51",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 100,
+            "left": 196,
+            "right": 224,
+            "cy": 2167.90625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 100",
+            "title": "",
+            "text": "100",
+            "disabled": false,
+            "transform": null
+          }
+        ],
+        "previous": {
+          "left": 0,
+          "right": 32,
+          "cy": 2167.90625,
+          "width": 32,
+          "height": 36,
+          "label": "Précédent",
+          "title": "Précédent",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "next": {
+          "left": 232,
+          "right": 264,
+          "cy": 2167.90625,
+          "width": 32,
+          "height": 36,
+          "label": "Suivant",
+          "title": "Suivant",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "centers": [
+          2168
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "fr-100pages-100",
+      "result": {
+        "width": 320,
+        "dir": "ltr",
+        "hash": "#projects?page=100",
+        "current": "100",
+        "groupWidth": 264,
+        "numbers": [
+          {
+            "page": 1,
+            "left": 62.78125,
+            "right": 90.78125,
+            "cy": 1949.5625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 1",
+            "title": "",
+            "text": "1",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 98,
+            "left": 108.78125,
+            "right": 136.78125,
+            "cy": 1949.5625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 98",
+            "title": "",
+            "text": "98",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 99,
+            "left": 140.78125,
+            "right": 168.78125,
+            "cy": 1949.5625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 99",
+            "title": "",
+            "text": "99",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 100,
+            "left": 172.78125,
+            "right": 201.203125,
+            "cy": 1949.5625,
+            "width": 28.421875,
+            "height": 36,
+            "label": "Page 100",
+            "title": "",
+            "text": "100",
+            "disabled": false,
+            "transform": null
+          }
+        ],
+        "previous": {
+          "left": 0,
+          "right": 32,
+          "cy": 1949.5625,
+          "width": 32,
+          "height": 36,
+          "label": "Précédent",
+          "title": "Précédent",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "next": {
+          "left": 232,
+          "right": 264,
+          "cy": 1949.5625,
+          "width": 32,
+          "height": 36,
+          "label": "Suivant",
+          "title": "Suivant",
+          "text": "",
+          "disabled": true,
+          "transform": "none"
+        },
+        "centers": [
+          1950
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "fr-pointer-previous",
+      "result": {
+        "width": 320,
+        "dir": "ltr",
+        "hash": "#projects?page=99",
+        "current": "99",
+        "groupWidth": 264,
+        "numbers": [
+          {
+            "page": 1,
+            "left": 63,
+            "right": 91,
+            "cy": 1920.0625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 1",
+            "title": "",
+            "text": "1",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 98,
+            "left": 109,
+            "right": 137,
+            "cy": 1920.0625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 98",
+            "title": "",
+            "text": "98",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 99,
+            "left": 141,
+            "right": 169,
+            "cy": 1920.0625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 99",
+            "title": "",
+            "text": "99",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 100,
+            "left": 173,
+            "right": 201,
+            "cy": 1920.0625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 100",
+            "title": "",
+            "text": "100",
+            "disabled": false,
+            "transform": null
+          }
+        ],
+        "previous": {
+          "left": 0,
+          "right": 32,
+          "cy": 1920.0625,
+          "width": 32,
+          "height": 36,
+          "label": "Précédent",
+          "title": "Précédent",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "next": {
+          "left": 232,
+          "right": 264,
+          "cy": 1920.0625,
+          "width": 32,
+          "height": 36,
+          "label": "Suivant",
+          "title": "Suivant",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "centers": [
+          1920
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "fr-pointer-next",
+      "result": {
+        "width": 320,
+        "dir": "ltr",
+        "hash": "#projects?page=100",
+        "current": "100",
+        "groupWidth": 264,
+        "numbers": [
+          {
+            "page": 1,
+            "left": 62.78125,
+            "right": 90.78125,
+            "cy": 1949.5625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 1",
+            "title": "",
+            "text": "1",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 98,
+            "left": 108.78125,
+            "right": 136.78125,
+            "cy": 1949.5625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 98",
+            "title": "",
+            "text": "98",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 99,
+            "left": 140.78125,
+            "right": 168.78125,
+            "cy": 1949.5625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 99",
+            "title": "",
+            "text": "99",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 100,
+            "left": 172.78125,
+            "right": 201.203125,
+            "cy": 1949.5625,
+            "width": 28.421875,
+            "height": 36,
+            "label": "Page 100",
+            "title": "",
+            "text": "100",
+            "disabled": false,
+            "transform": null
+          }
+        ],
+        "previous": {
+          "left": 0,
+          "right": 32,
+          "cy": 1949.5625,
+          "width": 32,
+          "height": 36,
+          "label": "Précédent",
+          "title": "Précédent",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "next": {
+          "left": 232,
+          "right": 264,
+          "cy": 1949.5625,
+          "width": 32,
+          "height": 36,
+          "label": "Suivant",
+          "title": "Suivant",
+          "text": "",
+          "disabled": true,
+          "transform": "none"
+        },
+        "centers": [
+          1950
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "en-100pages-1",
+      "result": {
+        "width": 320,
+        "dir": "ltr",
+        "hash": "#projects",
+        "current": "1",
+        "groupWidth": 264,
+        "numbers": [
+          {
+            "page": 1,
+            "left": 63,
+            "right": 91,
+            "cy": 2277.515625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 1",
+            "title": "",
+            "text": "1",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 2,
+            "left": 95,
+            "right": 123,
+            "cy": 2277.515625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 2",
+            "title": "",
+            "text": "2",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 3,
+            "left": 127,
+            "right": 155,
+            "cy": 2277.515625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 3",
+            "title": "",
+            "text": "3",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 100,
+            "left": 173,
+            "right": 201,
+            "cy": 2277.515625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 100",
+            "title": "",
+            "text": "100",
+            "disabled": false,
+            "transform": null
+          }
+        ],
+        "previous": {
+          "left": 0,
+          "right": 32,
+          "cy": 2277.515625,
+          "width": 32,
+          "height": 36,
+          "label": "Previous",
+          "title": "Previous",
+          "text": "",
+          "disabled": true,
+          "transform": "none"
+        },
+        "next": {
+          "left": 232,
+          "right": 264,
+          "cy": 2277.515625,
+          "width": 32,
+          "height": 36,
+          "label": "Next",
+          "title": "Next",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "centers": [
+          2278
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "en-100pages-50",
+      "result": {
+        "width": 320,
+        "dir": "ltr",
+        "hash": "#projects?page=50",
+        "current": "50",
+        "groupWidth": 264,
+        "numbers": [
+          {
+            "page": 1,
+            "left": 40,
+            "right": 68,
+            "cy": 2144.515625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 1",
+            "title": "",
+            "text": "1",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 49,
+            "left": 86,
+            "right": 114,
+            "cy": 2144.515625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 49",
+            "title": "",
+            "text": "49",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 50,
+            "left": 118,
+            "right": 146,
+            "cy": 2144.515625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 50",
+            "title": "",
+            "text": "50",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 51,
+            "left": 150,
+            "right": 178,
+            "cy": 2144.515625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 51",
+            "title": "",
+            "text": "51",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 100,
+            "left": 196,
+            "right": 224,
+            "cy": 2144.515625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 100",
+            "title": "",
+            "text": "100",
+            "disabled": false,
+            "transform": null
+          }
+        ],
+        "previous": {
+          "left": 0,
+          "right": 32,
+          "cy": 2144.515625,
+          "width": 32,
+          "height": 36,
+          "label": "Previous",
+          "title": "Previous",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "next": {
+          "left": 232,
+          "right": 264,
+          "cy": 2144.515625,
+          "width": 32,
+          "height": 36,
+          "label": "Next",
+          "title": "Next",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "centers": [
+          2145
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "en-100pages-100",
+      "result": {
+        "width": 320,
+        "dir": "ltr",
+        "hash": "#projects?page=100",
+        "current": "100",
+        "groupWidth": 264,
+        "numbers": [
+          {
+            "page": 1,
+            "left": 62.78125,
+            "right": 90.78125,
+            "cy": 1949.5625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 1",
+            "title": "",
+            "text": "1",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 98,
+            "left": 108.78125,
+            "right": 136.78125,
+            "cy": 1949.5625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 98",
+            "title": "",
+            "text": "98",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 99,
+            "left": 140.78125,
+            "right": 168.78125,
+            "cy": 1949.5625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 99",
+            "title": "",
+            "text": "99",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 100,
+            "left": 172.78125,
+            "right": 201.203125,
+            "cy": 1949.5625,
+            "width": 28.421875,
+            "height": 36,
+            "label": "Page 100",
+            "title": "",
+            "text": "100",
+            "disabled": false,
+            "transform": null
+          }
+        ],
+        "previous": {
+          "left": 0,
+          "right": 32,
+          "cy": 1949.5625,
+          "width": 32,
+          "height": 36,
+          "label": "Previous",
+          "title": "Previous",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "next": {
+          "left": 232,
+          "right": 264,
+          "cy": 1949.5625,
+          "width": 32,
+          "height": 36,
+          "label": "Next",
+          "title": "Next",
+          "text": "",
+          "disabled": true,
+          "transform": "none"
+        },
+        "centers": [
+          1950
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "en-pointer-previous",
+      "result": {
+        "width": 320,
+        "dir": "ltr",
+        "hash": "#projects?page=99",
+        "current": "99",
+        "groupWidth": 264,
+        "numbers": [
+          {
+            "page": 1,
+            "left": 63,
+            "right": 91,
+            "cy": 1920.0625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 1",
+            "title": "",
+            "text": "1",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 98,
+            "left": 109,
+            "right": 137,
+            "cy": 1920.0625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 98",
+            "title": "",
+            "text": "98",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 99,
+            "left": 141,
+            "right": 169,
+            "cy": 1920.0625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 99",
+            "title": "",
+            "text": "99",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 100,
+            "left": 173,
+            "right": 201,
+            "cy": 1920.0625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 100",
+            "title": "",
+            "text": "100",
+            "disabled": false,
+            "transform": null
+          }
+        ],
+        "previous": {
+          "left": 0,
+          "right": 32,
+          "cy": 1920.0625,
+          "width": 32,
+          "height": 36,
+          "label": "Previous",
+          "title": "Previous",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "next": {
+          "left": 232,
+          "right": 264,
+          "cy": 1920.0625,
+          "width": 32,
+          "height": 36,
+          "label": "Next",
+          "title": "Next",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "centers": [
+          1920
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "en-pointer-next",
+      "result": {
+        "width": 320,
+        "dir": "ltr",
+        "hash": "#projects?page=100",
+        "current": "100",
+        "groupWidth": 264,
+        "numbers": [
+          {
+            "page": 1,
+            "left": 62.78125,
+            "right": 90.78125,
+            "cy": 1949.5625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 1",
+            "title": "",
+            "text": "1",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 98,
+            "left": 108.78125,
+            "right": 136.78125,
+            "cy": 1949.5625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 98",
+            "title": "",
+            "text": "98",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 99,
+            "left": 140.78125,
+            "right": 168.78125,
+            "cy": 1949.5625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 99",
+            "title": "",
+            "text": "99",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 100,
+            "left": 172.78125,
+            "right": 201.203125,
+            "cy": 1949.5625,
+            "width": 28.421875,
+            "height": 36,
+            "label": "Page 100",
+            "title": "",
+            "text": "100",
+            "disabled": false,
+            "transform": null
+          }
+        ],
+        "previous": {
+          "left": 0,
+          "right": 32,
+          "cy": 1949.5625,
+          "width": 32,
+          "height": 36,
+          "label": "Previous",
+          "title": "Previous",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "next": {
+          "left": 232,
+          "right": 264,
+          "cy": 1949.5625,
+          "width": 32,
+          "height": 36,
+          "label": "Next",
+          "title": "Next",
+          "text": "",
+          "disabled": true,
+          "transform": "none"
+        },
+        "centers": [
+          1950
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "ar-100pages-1",
+      "result": {
+        "width": 320,
+        "dir": "rtl",
+        "hash": "#projects",
+        "current": "1",
+        "groupWidth": 264,
+        "numbers": [
+          {
+            "page": 1,
+            "left": 173,
+            "right": 201,
+            "cy": 2208.453125,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 1",
+            "title": "",
+            "text": "1",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 2,
+            "left": 141,
+            "right": 169,
+            "cy": 2208.453125,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 2",
+            "title": "",
+            "text": "2",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 3,
+            "left": 109,
+            "right": 137,
+            "cy": 2208.453125,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 3",
+            "title": "",
+            "text": "3",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 100,
+            "left": 63,
+            "right": 91,
+            "cy": 2208.453125,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 100",
+            "title": "",
+            "text": "100",
+            "disabled": false,
+            "transform": null
+          }
+        ],
+        "previous": {
+          "left": 232,
+          "right": 264,
+          "cy": 2208.453125,
+          "width": 32,
+          "height": 36,
+          "label": "السابق",
+          "title": "السابق",
+          "text": "",
+          "disabled": true,
+          "transform": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        "next": {
+          "left": 0,
+          "right": 32,
+          "cy": 2208.453125,
+          "width": 32,
+          "height": 36,
+          "label": "التالي",
+          "title": "التالي",
+          "text": "",
+          "disabled": false,
+          "transform": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        "centers": [
+          2208
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "ar-100pages-50",
+      "result": {
+        "width": 320,
+        "dir": "rtl",
+        "hash": "#projects?page=50",
+        "current": "50",
+        "groupWidth": 264,
+        "numbers": [
+          {
+            "page": 1,
+            "left": 196,
+            "right": 224,
+            "cy": 2167.90625,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 1",
+            "title": "",
+            "text": "1",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 49,
+            "left": 150,
+            "right": 178,
+            "cy": 2167.90625,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 49",
+            "title": "",
+            "text": "49",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 50,
+            "left": 118,
+            "right": 146,
+            "cy": 2167.90625,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 50",
+            "title": "",
+            "text": "50",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 51,
+            "left": 86,
+            "right": 114,
+            "cy": 2167.90625,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 51",
+            "title": "",
+            "text": "51",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 100,
+            "left": 40,
+            "right": 68,
+            "cy": 2167.90625,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 100",
+            "title": "",
+            "text": "100",
+            "disabled": false,
+            "transform": null
+          }
+        ],
+        "previous": {
+          "left": 232,
+          "right": 264,
+          "cy": 2167.90625,
+          "width": 32,
+          "height": 36,
+          "label": "السابق",
+          "title": "السابق",
+          "text": "",
+          "disabled": false,
+          "transform": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        "next": {
+          "left": 0,
+          "right": 32,
+          "cy": 2167.90625,
+          "width": 32,
+          "height": 36,
+          "label": "التالي",
+          "title": "التالي",
+          "text": "",
+          "disabled": false,
+          "transform": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        "centers": [
+          2168
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "ar-100pages-100",
+      "result": {
+        "width": 320,
+        "dir": "rtl",
+        "hash": "#projects?page=100",
+        "current": "100",
+        "groupWidth": 264,
+        "numbers": [
+          {
+            "page": 1,
+            "left": 173.21875,
+            "right": 201.21875,
+            "cy": 1949.5625,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 1",
+            "title": "",
+            "text": "1",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 98,
+            "left": 127.21875,
+            "right": 155.21875,
+            "cy": 1949.5625,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 98",
+            "title": "",
+            "text": "98",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 99,
+            "left": 95.21875,
+            "right": 123.21875,
+            "cy": 1949.5625,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 99",
+            "title": "",
+            "text": "99",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 100,
+            "left": 62.796875,
+            "right": 91.21875,
+            "cy": 1949.5625,
+            "width": 28.421875,
+            "height": 36,
+            "label": "الصفحة 100",
+            "title": "",
+            "text": "100",
+            "disabled": false,
+            "transform": null
+          }
+        ],
+        "previous": {
+          "left": 232,
+          "right": 264,
+          "cy": 1949.5625,
+          "width": 32,
+          "height": 36,
+          "label": "السابق",
+          "title": "السابق",
+          "text": "",
+          "disabled": false,
+          "transform": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        "next": {
+          "left": 0,
+          "right": 32,
+          "cy": 1949.5625,
+          "width": 32,
+          "height": 36,
+          "label": "التالي",
+          "title": "التالي",
+          "text": "",
+          "disabled": true,
+          "transform": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        "centers": [
+          1950
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "ar-pointer-previous",
+      "result": {
+        "width": 320,
+        "dir": "rtl",
+        "hash": "#projects?page=99",
+        "current": "99",
+        "groupWidth": 264,
+        "numbers": [
+          {
+            "page": 1,
+            "left": 173,
+            "right": 201,
+            "cy": 1920.0625,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 1",
+            "title": "",
+            "text": "1",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 98,
+            "left": 127,
+            "right": 155,
+            "cy": 1920.0625,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 98",
+            "title": "",
+            "text": "98",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 99,
+            "left": 95,
+            "right": 123,
+            "cy": 1920.0625,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 99",
+            "title": "",
+            "text": "99",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 100,
+            "left": 63,
+            "right": 91,
+            "cy": 1920.0625,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 100",
+            "title": "",
+            "text": "100",
+            "disabled": false,
+            "transform": null
+          }
+        ],
+        "previous": {
+          "left": 232,
+          "right": 264,
+          "cy": 1920.0625,
+          "width": 32,
+          "height": 36,
+          "label": "السابق",
+          "title": "السابق",
+          "text": "",
+          "disabled": false,
+          "transform": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        "next": {
+          "left": 0,
+          "right": 32,
+          "cy": 1920.0625,
+          "width": 32,
+          "height": 36,
+          "label": "التالي",
+          "title": "التالي",
+          "text": "",
+          "disabled": false,
+          "transform": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        "centers": [
+          1920
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "ar-pointer-next",
+      "result": {
+        "width": 320,
+        "dir": "rtl",
+        "hash": "#projects?page=100",
+        "current": "100",
+        "groupWidth": 264,
+        "numbers": [
+          {
+            "page": 1,
+            "left": 173.21875,
+            "right": 201.21875,
+            "cy": 1949.5625,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 1",
+            "title": "",
+            "text": "1",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 98,
+            "left": 127.21875,
+            "right": 155.21875,
+            "cy": 1949.5625,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 98",
+            "title": "",
+            "text": "98",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 99,
+            "left": 95.21875,
+            "right": 123.21875,
+            "cy": 1949.5625,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 99",
+            "title": "",
+            "text": "99",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 100,
+            "left": 62.796875,
+            "right": 91.21875,
+            "cy": 1949.5625,
+            "width": 28.421875,
+            "height": 36,
+            "label": "الصفحة 100",
+            "title": "",
+            "text": "100",
+            "disabled": false,
+            "transform": null
+          }
+        ],
+        "previous": {
+          "left": 232,
+          "right": 264,
+          "cy": 1949.5625,
+          "width": 32,
+          "height": 36,
+          "label": "السابق",
+          "title": "السابق",
+          "text": "",
+          "disabled": false,
+          "transform": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        "next": {
+          "left": 0,
+          "right": 32,
+          "cy": 1949.5625,
+          "width": 32,
+          "height": 36,
+          "label": "التالي",
+          "title": "التالي",
+          "text": "",
+          "disabled": true,
+          "transform": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        "centers": [
+          1950
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "ar-desktop",
+      "result": {
+        "width": 1280,
+        "dir": "rtl",
+        "hash": "#projects?page=50",
+        "current": "50",
+        "groupWidth": 264,
+        "numbers": [
+          {
+            "page": 1,
+            "left": 196,
+            "right": 224,
+            "cy": 2240.078125,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 1",
+            "title": "",
+            "text": "1",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 49,
+            "left": 150,
+            "right": 178,
+            "cy": 2240.078125,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 49",
+            "title": "",
+            "text": "49",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 50,
+            "left": 118,
+            "right": 146,
+            "cy": 2240.078125,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 50",
+            "title": "",
+            "text": "50",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 51,
+            "left": 86,
+            "right": 114,
+            "cy": 2240.078125,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 51",
+            "title": "",
+            "text": "51",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 100,
+            "left": 40,
+            "right": 68,
+            "cy": 2240.078125,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 100",
+            "title": "",
+            "text": "100",
+            "disabled": false,
+            "transform": null
+          }
+        ],
+        "previous": {
+          "left": 232,
+          "right": 264,
+          "cy": 2240.078125,
+          "width": 32,
+          "height": 36,
+          "label": "السابق",
+          "title": "السابق",
+          "text": "",
+          "disabled": false,
+          "transform": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        "next": {
+          "left": 0,
+          "right": 32,
+          "cy": 2240.078125,
+          "width": 32,
+          "height": 36,
+          "label": "التالي",
+          "title": "التالي",
+          "text": "",
+          "disabled": false,
+          "transform": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        "centers": [
+          2240
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "people-100pages",
+      "result": {
+        "width": 1280,
+        "dir": "rtl",
+        "hash": "#people?page=50",
+        "current": "50",
+        "groupWidth": 264,
+        "numbers": [
+          {
+            "page": 1,
+            "left": 196,
+            "right": 224,
+            "cy": 1853.25,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 1",
+            "title": "",
+            "text": "1",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 49,
+            "left": 150,
+            "right": 178,
+            "cy": 1853.25,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 49",
+            "title": "",
+            "text": "49",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 50,
+            "left": 118,
+            "right": 146,
+            "cy": 1853.25,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 50",
+            "title": "",
+            "text": "50",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 51,
+            "left": 86,
+            "right": 114,
+            "cy": 1853.25,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 51",
+            "title": "",
+            "text": "51",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 100,
+            "left": 40,
+            "right": 68,
+            "cy": 1853.25,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 100",
+            "title": "",
+            "text": "100",
+            "disabled": false,
+            "transform": null
+          }
+        ],
+        "previous": {
+          "left": 232,
+          "right": 264,
+          "cy": 1853.25,
+          "width": 32,
+          "height": 36,
+          "label": "السابق",
+          "title": "السابق",
+          "text": "",
+          "disabled": false,
+          "transform": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        "next": {
+          "left": 0,
+          "right": 32,
+          "cy": 1853.25,
+          "width": 32,
+          "height": 36,
+          "label": "التالي",
+          "title": "التالي",
+          "text": "",
+          "disabled": false,
+          "transform": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        "centers": [
+          1853
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "journal-100pages",
+      "result": {
+        "width": 1280,
+        "dir": "rtl",
+        "hash": "#journal?page=50",
+        "current": "50",
+        "groupWidth": 264,
+        "numbers": [
+          {
+            "page": 1,
+            "left": 196,
+            "right": 224,
+            "cy": 2320.671875,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 1",
+            "title": "",
+            "text": "1",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 49,
+            "left": 150,
+            "right": 178,
+            "cy": 2320.671875,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 49",
+            "title": "",
+            "text": "49",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 50,
+            "left": 118,
+            "right": 146,
+            "cy": 2320.671875,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 50",
+            "title": "",
+            "text": "50",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 51,
+            "left": 86,
+            "right": 114,
+            "cy": 2320.671875,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 51",
+            "title": "",
+            "text": "51",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 100,
+            "left": 40,
+            "right": 68,
+            "cy": 2320.671875,
+            "width": 28,
+            "height": 36,
+            "label": "الصفحة 100",
+            "title": "",
+            "text": "100",
+            "disabled": false,
+            "transform": null
+          }
+        ],
+        "previous": {
+          "left": 232,
+          "right": 264,
+          "cy": 2320.671875,
+          "width": 32,
+          "height": 36,
+          "label": "السابق",
+          "title": "السابق",
+          "text": "",
+          "disabled": false,
+          "transform": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        "next": {
+          "left": 0,
+          "right": 32,
+          "cy": 2320.671875,
+          "width": 32,
+          "height": 36,
+          "label": "التالي",
+          "title": "التالي",
+          "text": "",
+          "disabled": false,
+          "transform": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        "centers": [
+          2321
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "actual-people",
+      "result": {
+        "width": 320,
+        "dir": "ltr",
+        "hash": "#people",
+        "current": "1",
+        "groupWidth": 264,
+        "numbers": [
+          {
+            "page": 1,
+            "left": 70,
+            "right": 98,
+            "cy": 4042.9375,
+            "width": 28,
+            "height": 36,
+            "label": "Page 1",
+            "title": "",
+            "text": "1",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 2,
+            "left": 102,
+            "right": 130,
+            "cy": 4042.9375,
+            "width": 28,
+            "height": 36,
+            "label": "Page 2",
+            "title": "",
+            "text": "2",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 3,
+            "left": 134,
+            "right": 162,
+            "cy": 4042.9375,
+            "width": 28,
+            "height": 36,
+            "label": "Page 3",
+            "title": "",
+            "text": "3",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 4,
+            "left": 166,
+            "right": 194,
+            "cy": 4042.9375,
+            "width": 28,
+            "height": 36,
+            "label": "Page 4",
+            "title": "",
+            "text": "4",
+            "disabled": false,
+            "transform": null
+          }
+        ],
+        "previous": {
+          "left": 0,
+          "right": 32,
+          "cy": 4042.9375,
+          "width": 32,
+          "height": 36,
+          "label": "Précédent",
+          "title": "Précédent",
+          "text": "",
+          "disabled": true,
+          "transform": "none"
+        },
+        "next": {
+          "left": 232,
+          "right": 264,
+          "cy": 4042.9375,
+          "width": 32,
+          "height": 36,
+          "label": "Suivant",
+          "title": "Suivant",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "centers": [
+          4043
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "actual-projects",
+      "result": {
+        "width": 320,
+        "dir": "ltr",
+        "hash": "#projects",
+        "current": "1",
+        "groupWidth": 264,
+        "numbers": [
+          {
+            "page": 1,
+            "left": 63,
+            "right": 91,
+            "cy": 2409.234375,
+            "width": 28,
+            "height": 36,
+            "label": "Page 1",
+            "title": "",
+            "text": "1",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 2,
+            "left": 95,
+            "right": 123,
+            "cy": 2409.234375,
+            "width": 28,
+            "height": 36,
+            "label": "Page 2",
+            "title": "",
+            "text": "2",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 3,
+            "left": 127,
+            "right": 155,
+            "cy": 2409.234375,
+            "width": 28,
+            "height": 36,
+            "label": "Page 3",
+            "title": "",
+            "text": "3",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 7,
+            "left": 173,
+            "right": 201,
+            "cy": 2409.234375,
+            "width": 28,
+            "height": 36,
+            "label": "Page 7",
+            "title": "",
+            "text": "7",
+            "disabled": false,
+            "transform": null
+          }
+        ],
+        "previous": {
+          "left": 0,
+          "right": 32,
+          "cy": 2409.234375,
+          "width": 32,
+          "height": 36,
+          "label": "Précédent",
+          "title": "Précédent",
+          "text": "",
+          "disabled": true,
+          "transform": "none"
+        },
+        "next": {
+          "left": 232,
+          "right": 264,
+          "cy": 2409.234375,
+          "width": 32,
+          "height": 36,
+          "label": "Suivant",
+          "title": "Suivant",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "centers": [
+          2409
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "actual-journal",
+      "result": {
+        "width": 320,
+        "dir": "ltr",
+        "hash": "#journal",
+        "current": "1",
+        "groupWidth": 264,
+        "numbers": [
+          {
+            "page": 1,
+            "left": 63,
+            "right": 91,
+            "cy": 2407.625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 1",
+            "title": "",
+            "text": "1",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 2,
+            "left": 95,
+            "right": 123,
+            "cy": 2407.625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 2",
+            "title": "",
+            "text": "2",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 3,
+            "left": 127,
+            "right": 155,
+            "cy": 2407.625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 3",
+            "title": "",
+            "text": "3",
+            "disabled": false,
+            "transform": null
+          },
+          {
+            "page": 7,
+            "left": 173,
+            "right": 201,
+            "cy": 2407.625,
+            "width": 28,
+            "height": 36,
+            "label": "Page 7",
+            "title": "",
+            "text": "7",
+            "disabled": false,
+            "transform": null
+          }
+        ],
+        "previous": {
+          "left": 0,
+          "right": 32,
+          "cy": 2407.625,
+          "width": 32,
+          "height": 36,
+          "label": "Précédent",
+          "title": "Précédent",
+          "text": "",
+          "disabled": true,
+          "transform": "none"
+        },
+        "next": {
+          "left": 232,
+          "right": 264,
+          "cy": 2407.625,
+          "width": 32,
+          "height": 36,
+          "label": "Suivant",
+          "title": "Suivant",
+          "text": "",
+          "disabled": false,
+          "transform": "none"
+        },
+        "centers": [
+          2408
+        ],
+        "overflow": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "gallery-responsive",
+      "result": true
+    },
+    {
+      "case": "ready-1",
+      "result": {
+        "study": {
+          "variant": "1",
+          "open": false,
+          "pinned": false,
+          "available": true,
+          "reason": "",
+          "hold": false
+        },
+        "canvas": 1,
+        "overflow": false
+      }
+    },
+    {
+      "case": "single-click-zoom",
+      "result": {
+        "before": 2.464962500721156,
+        "after": 3.1088186904958808
+      }
+    },
+    {
+      "case": "single-click-pan",
+      "result": {
+        "before": [
+          6,
+          18
+        ],
+        "after": [
+          11.729009192607691,
+          18.084488859955627
+        ]
+      }
+    },
+    {
+      "case": "escape-focus",
+      "result": true
+    },
+    {
+      "case": "keyboard-open-focus",
+      "result": true
+    },
+    {
+      "case": "pinned-stays-open",
+      "result": true
+    },
+    {
+      "case": "medallion-world",
+      "result": "world"
+    },
+    {
+      "case": "guide-escape-focus",
+      "result": true
+    },
+    {
+      "case": "section-isolation",
+      "result": true
+    },
+    {
+      "case": "ready-2",
+      "result": {
+        "study": {
+          "variant": "2",
+          "open": false,
+          "pinned": false,
+          "available": true,
+          "reason": "",
+          "hold": false
+        },
+        "canvas": 1,
+        "overflow": false
+      }
+    },
+    {
+      "case": "halo-tap-persists",
+      "result": true
+    },
+    {
+      "case": "halo-bounds",
+      "result": {
+        "left": 74,
+        "right": 322,
+        "top": 236.640625,
+        "bottom": 608.640625,
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "case": "halo-hover",
+      "result": {
+        "variant": "2",
+        "open": true,
+        "pinned": false,
+        "available": true,
+        "reason": "hover",
+        "hold": false
+      }
+    },
+    {
+      "case": "ready-3",
+      "result": {
+        "study": {
+          "variant": "3",
+          "open": false,
+          "pinned": false,
+          "available": true,
+          "reason": "",
+          "hold": false
+        },
+        "canvas": 1,
+        "overflow": false
+      }
+    },
+    {
+      "case": "longpress-opens-without-action",
+      "result": true
+    },
+    {
+      "case": "before-second-hold",
+      "result": {
+        "state": {
+          "level": "world",
+          "country": null,
+          "campus": null,
+          "countryName": null,
+          "campusName": null,
+          "worldRender": {
+            "phase": "ready",
+            "zoom": 1.3726826431730412
+          },
+          "inFlight": false,
+          "flightStage": null,
+          "center": [
+            6,
+            18
+          ],
+          "zoom": 1.3726826431730412,
+          "minZoom": 1.3726826431730412,
+          "maxZoom": 3.172682643173041,
+          "campusDistanceKm": null,
+          "detailVisible": false,
+          "detail": {
+            "phase": "local",
+            "opacityTarget": 0
+          },
+          "campusRender": {
+            "mode": "progressive",
+            "phase": "local",
+            "fullyPrepared": false
+          },
+          "campusPreload": {
+            "phase": "idle",
+            "campusId": null,
+            "radiusKm": 3,
+            "total": 0,
+            "completed": 0,
+            "available": 0,
+            "failed": 0,
+            "ready": false,
+            "cacheBytes": 3902789,
+            "cacheLimitBytes": 50331648,
+            "cacheTiles": 26,
+            "networkTiles": 26,
+            "networkBytes": 3902789,
+            "rendererRequests": 0,
+            "rendererCacheHits": 0,
+            "sharedRequests": 0
+          },
+          "randomCampus": {
+            "phase": "ready",
+            "campusId": "rio",
+            "radiusKm": 5,
+            "total": 26,
+            "completed": 26,
+            "available": 26,
+            "failed": 0,
+            "ready": true,
+            "zoom": 14,
+            "cacheBytes": 3902789,
+            "cacheLimitBytes": 50331648,
+            "cacheTiles": 26,
+            "networkTiles": 26,
+            "networkBytes": 3902789,
+            "rendererRequests": 0,
+            "rendererCacheHits": 0,
+            "sharedRequests": 0,
+            "nextCampusId": "rio"
+          },
+          "flightDuration": null,
+          "detailOpacity": 0,
+          "renderedDetail": {
+            "paints": {
+              "h42-land": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-water": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-road-major": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-building-relief": {
+                "opacity": null,
+                "hidden": true
+              }
+            },
+            "evaluatedZoom": 1.3726826431730412,
+            "covered": false,
+            "canvasVisibility": "visible"
+          }
+        },
+        "target": "<canvas class=\"maplibregl-canvas\" tabindex=\"-1\" aria-label=\"Map\" role=\"region\" width=\"390\" height=\"844\" style=\"width: 390px; height: 844px;\" aria-hidden=\"true\"></canvas>"
+      }
+    },
+    {
+      "case": "hold-escape-cancels",
+      "result": true
+    },
+    {
+      "case": "ordinary-drag-not-intercepted",
+      "result": true
+    },
+    {
+      "case": "press-slide-select",
+      "result": true
+    },
+    {
+      "case": "arabic-mobile",
+      "result": true
+    },
+    {
+      "case": "landscape-world-control",
+      "result": true
+    }
+  ],
+  "sources": {
+    "study.mjs": "62b0681938fada3eb538b3a0311366ae0dab844b2b42453687a2ee3d484983a1",
+    "study.css": "7e0b82cb75831de8e6073dab932c2b58bf7e7c3b896fc6cdc1985d1f84cb85c7",
+    "press-gesture.mjs": "8cd4604022dee043f760d9677f520994d8a7ef20bb296f12b352469c7065044c"
+  }
+}

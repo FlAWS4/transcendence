@@ -1,0 +1,130 @@
+{
+ "id": "pseudo-manquant",
+ "groupe": "Pile flottante, cartes et petits écrans",
+ "titre": "Sans « pseudo à renseigner »",
+ "resume": "Les profils fictifs sans pseudo Intra n’affichent plus « Pseudo Intra à renseigner » (ni « Intra login to be added », ni « اسم مستخدم Intra غير محدد »), ni dans l’annuaire en grille ou en liste, ni sur leur fiche. Les vrais pseudos (@lmansour…) restent affichés et aucun pseudo n’est inventé.",
+ "probleme": "Dans l’annuaire, 72 des 78 profils n’ont pas de pseudo Intra et affichent « Pseudo Intra à renseigner » ; sur la première page, cela concerne 18 des 24 cartes dès les premières rangées : Lucía Roca, Emma De Smet, Tomás Vieira, Léa Rakoto, Amir Keller… La fiche de ces profils répète la mention sous le nom, et le nom accessible de la carte l’annonce (« Pseudo Intra: Pseudo Intra à renseigner »). À 320 px, en français et en arabe, la mention tient sur deux lignes : le campus de ces cartes se trouve 21 px plus bas que celui de la carte voisine qui a un pseudo (4 rangées décalées sur la première page).",
+ "changement": "essai.css masque la ligne de pseudo provisoire, c’est-à-dire p.cp-profile-login sans attribut dir (profile-ui.mjs donne dir=\"ltr\" à tout vrai pseudo). Dans la liste et sur la fiche, la ligne est retirée (display:none) et le contenu remonte. Dans la grille de l’annuaire, si une autre carte de la même rangée montre un vrai pseudo, la ligne garde, invisible, la hauteur d’un pseudo sur une ligne (visibility:hidden, sans retour à la ligne) : campus, rentrée et promotion restent au même niveau. Dans une rangée sans aucun vrai pseudo, essai.mjs marque la ligne « replie » et elle disparaît. essai.mjs regroupe les cartes par rangée affichée (même offsetTop). Il suit les re-rendus de la base (MutationObserver : langue, tri, filtre, pagination, présentation, retour depuis une fiche) et les changements de largeur (ResizeObserver). Aucun texte n’est ajouté ; les vrais pseudos, les autres composants et les autres pages ne changent pas.",
+ "decisionConcernee": "",
+ "alternativeDe": "",
+ "vues": [
+  {
+   "libelle": "Annuaire, ordinateur clair (premières rangées)",
+   "page": "content-preview.html",
+   "route": "people",
+   "viewport": "ordinateur",
+   "theme": "light",
+   "lang": "fr"
+  },
+  {
+   "libelle": "Fiche de Lucía Roca, sans pseudo, ordinateur clair",
+   "page": "content-preview.html",
+   "route": "people/profile-lucia-roca?tab=overview",
+   "viewport": "ordinateur",
+   "theme": "light",
+   "lang": "fr"
+  },
+  {
+   "libelle": "Annuaire, petit écran 320 px (descendre jusqu’à Lucía Roca)",
+   "page": "content-preview.html",
+   "route": "people",
+   "viewport": "petit",
+   "theme": "light",
+   "lang": "fr"
+  },
+  {
+   "libelle": "Annuaire, mobile sombre en arabe",
+   "page": "content-preview.html",
+   "route": "people",
+   "viewport": "mobile",
+   "theme": "dark",
+   "lang": "ar"
+  }
+ ],
+ "verifications": [
+  "Texte absent : sur les 4 pages de l’annuaire (78 profils, dont 72 sans pseudo), parcourues sans rechargement, 72 mentions visibles sans l’essai et 0 avec (texte rendu et nœuds de texte visibles). Grille à 1440 px (FR), à 390 px (FR, et AR sombre) et à 320 px (FR, EN et AR) ; liste à 1440 px (FR), 390 px (EN) et 320 px (FR et AR) ; fiche de Lucía Roca en FR, EN et AR.",
+  "Grille, dans ces 6 configurations et sur les 4 pages : hauteurs égales dans chaque rangée (0 rangée inégale) et état attendu partout. Une rangée qui a un vrai pseudo garde la ligne invisible, à la hauteur exacte du vrai pseudo ; les autres rangées la retirent. Même résultat sans recharger à 1280, 1100, 900 (4 colonnes), 768 (3 colonnes), 601, 600 et 480 px.",
+  "Hauteurs de la première page : à 1440 px, les rangées 1 à 3, qui contiennent un vrai pseudo, gardent 271 px ; les rangées 4 et 5 passent de 271 à 244 px. À 390 px, les rangées gardent 243 px ou passent à 216 px. À 320 px en FR et AR, elles passaient à 288 px à cause de la mention sur deux lignes ; elles font 266 px avec un vrai pseudo et 239 px sans.",
+  "Alignement : sans l’essai, à 320 px en FR et en AR, 4 rangées ont un campus et une rentrée décalés de 21 px. Avec l’essai, 0 rangée décalée dans les 6 configurations, et aucune n’est ajoutée ailleurs. En anglais, 0 avant comme après.",
+  "Pixels des captures citées, mesurés exactement (seuil 0). Première vue à 1440 px : 10 452 pixels changent ; 6 274 dans les boîtes des 18 mentions, 4 178 sous les surfaces translucides de la pile flottante, dont le flou reflète le texte retiré (écart maximal de 6 sur 765, invisible), et 0 ailleurs. Mobile arabe sombre (défilé de 200 px) : 4 074 pixels ; 3 457 dans les mentions, 617 sous le flou du dock (écart maximal de 2 sur 765), et 0 ailleurs.",
+  "Liste, 4 pages : la hauteur des lignes ne change pas (137 px sur ordinateur, 113 px sur mobile). À 320 px en FR et AR, les cartes dont la mention tenait sur deux lignes passent de 127 à 113 px, comme les autres. Le campus remonte sous le nom, sans aucun texte sous le cœur favori (chevauchement 0) et sans débordement horizontal.",
+  "Fiche de Lucía Roca : mention retirée. Sur ordinateur, le bloc d’identité passe de 297 à 276 px et les actions et le menu de la fiche remontent de 21 px. Sur mobile, à 390 px (EN), la mise en page ne change pas, car le portrait fixe la hauteur ; à 320 px (AR), le bloc perd 5 px. En fenêtre basse (1280 × 640), le menu reste en densité « compact », avant comme après.",
+  "Identique au pixel près avec et sans l’essai : la fiche de Leïla Mansour (@lmansour) à 1440 px en FR et à 390 px en AR sombre ; Projets (ordinateur, et mobile AR sombre) ; Chroniques (liste sur ordinateur, article à 320 px) ; Explorer avec le module du globe bloqué. Explorer avec le vrai globe : 0 pixel différent entre l’essai et la copie (et 0 entre deux ouvertures de la copie). Les règles de l’essai n’y touchent aucun élément.",
+  "Accessibilité (arbre complet de Chrome). Sans l’essai, la mention figure dans 72 nœuds en FR et 54 en AR sur la première page de l’annuaire, et dans 3 sur la fiche ; avec l’essai, dans 0. Le nom de la carte de Lucía Roca devient « Transcender Lucía Roca 42 Barcelona Rentrée 2023 Promotion 6 » ; celui de Leïla Mansour garde « Pseudo Intra: lmansour ». Clavier : 56 éléments focalisables dans le même ordre. La carte de Lucía Roca s’atteint en 17 tabulations, avec et sans l’essai, avec le même anneau de focus (2 px, décalage 3 px).",
+  "Re-rendus sans rechargement. Pagination sur 4 pages ; filtre de l’annuaire (rentrée 2024, statut cadet, rentrées 2022 et 2023, puis tous les profils) ; langue et thème par le menu du compte (AR clair, EN sombre, FR clair), sur l’annuaire et sur la fiche ; tris ; largeurs ; liste puis grille ; fiche puis retour ; arrivée depuis Explorer. À chaque étape : 0 mention visible, état attendu, hauteurs égales.",
+  "Chargement (API Layout Instability), sur ordinateur et sur mobile, avec le tri par défaut et le tri « plus anciens », où les premières rangées se replient : aucun décalage dont la source est dans la grille, y compris à l’arrivée depuis Explorer. Seul apparaît le décalage déjà présent dans la copie (content-sheet), avec la même valeur (0,0776 sur ordinateur, 0,0954 sur mobile).",
+  "Combinaison avec les essais qui retouchent les cartes (lisibilite-textes, titres-forts, echelle-unifiee, une-colonne-320), sur la première page : 0 mention visible, état attendu et hauteurs égales à 1440 px (FR), 390 px (FR sombre) et 320 px (AR). Sans cet essai, la même combinaison montre 18 mentions et 4 rangées décalées à 320 px en AR. Avec lui, 1 seule rangée reste décalée : le nom d’Emma De Smet passe sur deux lignes avec ces autres essais. L’espace réservé y a la hauteur exacte du vrai pseudo voisin (23 px).",
+  "Aucune erreur dans la console sur l’ensemble des contrôles, y compris sur la page d’arrivée (index.html), où l’essai se charge sans rien afficher. Copie de référence intacte : les 137 fichiers sont conformes aux empreintes du manifeste (contrôle en lecture seule).",
+  "Captures avant/après regardées, réduites en planches : agrandissement des cartes de Leïla Mansour et Lucía Roca, haut et bas de la grille sur ordinateur, liste sur ordinateur (défilée jusqu’à Lucía Roca) et sur mobile, grille à 320 px, mobile en arabe sombre, fiche sur ordinateur et sur mobile en anglais, et fiche témoin de Leïla Mansour."
+ ],
+ "limites": [
+  "La règle repose sur un détail du code de la base : un vrai pseudo porte dir=\"ltr\", la mention provisoire non. Si profile-ui.mjs changeait sur ce point, la mention réapparaîtrait, ou un vrai pseudo sans dir serait masqué.",
+  "La consigne « garder l’espace si l’alignement en dépend, sinon replier » est appliquée rangée par rangée. Dans la grille, une carte sans pseudo placée à côté d’une carte à pseudo garde donc une ligne vide entre le nom et le campus. Les rangées sans aucun pseudo deviennent plus compactes (27 px de moins à 1440 px). La hauteur des rangées dépend ainsi de la largeur, du tri et des filtres, qui changent leur composition. Réserver ou replier partout serait plus simple (une seule règle CSS), mais désalignerait les rangées mixtes ou laisserait un vide dans toutes les cartes.",
+  "L’espace réservé fait une seule ligne, comme un vrai pseudo. À 320 px en FR et en AR, la mention en occupait deux, si bien que le décalage de 21 px qui existait dans la base disparaît. Ce n’est pas une retouche séparée : c’est la conséquence de la réserve d’une ligne de pseudo.",
+  "Le regroupement en rangées passe par essai.mjs. Sans JavaScript, toutes les lignes de la grille gardent leur espace, sans texte visible. Après un changement de largeur, le nouvel état s’applique à l’image suivante (requestAnimationFrame).",
+  "L’essai s’installe après le premier rendu de la base. L’absence de décalage des cartes au chargement n’a été mesurée que dans Chrome sans interface, sur ordinateur et sur mobile, avec deux tris.",
+  "L’URL de la galerie ne permet pas de choisir la présentation en liste : il faut la choisir dans le menu « Affichage » de l’annuaire.",
+  "D’après le code, les autres endroits qui citent un pseudo (menu du compte, sélecteur de mentions des commentaires, destinataire d’un message) n’affichent déjà rien quand il manque. Ils ne sont pas modifiés et n’ont pas été contrôlés dans Chrome. La recherche continue d’indexer les vrais pseudos.",
+  "Non vérifié : un vrai lecteur d’écran (seul l’arbre d’accessibilité de Chrome a été lu) et les navigateurs autres que Chrome. La combinaison avec les autres essais n’a été mesurée que sur la première page de l’annuaire, avec les versions de ces essais présentes le 14 octobre vers 19 h 30 ; elles peuvent encore changer."
+ ],
+ "fichiers": [
+  "essais/pseudo-manquant/essai.css",
+  "essais/pseudo-manquant/essai.mjs",
+  "checks/pseudo-manquant/check.py",
+  "checks/pseudo-manquant/results.json",
+  "checks/pseudo-manquant/contre-verification.py",
+  "checks/pseudo-manquant/contre-verification.json"
+ ],
+ "captures": [
+  {
+   "vue": "ordinateur-zoom (×2 : Leïla Mansour et Lucía Roca)",
+   "avant": "checks/pseudo-manquant/avant-ordinateur-zoom.png",
+   "apres": "checks/pseudo-manquant/apres-ordinateur-zoom.png"
+  },
+  {
+   "vue": "ordinateur",
+   "avant": "checks/pseudo-manquant/avant-ordinateur.png",
+   "apres": "checks/pseudo-manquant/apres-ordinateur.png"
+  },
+  {
+   "vue": "ordinateur-bas (rangées 3 à 5)",
+   "avant": "checks/pseudo-manquant/avant-ordinateur-bas.png",
+   "apres": "checks/pseudo-manquant/apres-ordinateur-bas.png"
+  },
+  {
+   "vue": "fiche-ordinateur",
+   "avant": "checks/pseudo-manquant/avant-fiche-ordinateur.png",
+   "apres": "checks/pseudo-manquant/apres-fiche-ordinateur.png"
+  },
+  {
+   "vue": "liste-ordinateur-milieu (défilée jusqu’à Lucía Roca)",
+   "avant": "checks/pseudo-manquant/avant-liste-ordinateur-milieu.png",
+   "apres": "checks/pseudo-manquant/apres-liste-ordinateur-milieu.png"
+  },
+  {
+   "vue": "liste-mobile",
+   "avant": "checks/pseudo-manquant/avant-liste-mobile.png",
+   "apres": "checks/pseudo-manquant/apres-liste-mobile.png"
+  },
+  {
+   "vue": "petit",
+   "avant": "checks/pseudo-manquant/avant-petit.png",
+   "apres": "checks/pseudo-manquant/apres-petit.png"
+  },
+  {
+   "vue": "sombre-ar-mobile",
+   "avant": "checks/pseudo-manquant/avant-sombre-ar-mobile.png",
+   "apres": "checks/pseudo-manquant/apres-sombre-ar-mobile.png"
+  },
+  {
+   "vue": "fiche-en-mobile",
+   "avant": "checks/pseudo-manquant/avant-fiche-en-mobile.png",
+   "apres": "checks/pseudo-manquant/apres-fiche-en-mobile.png"
+  },
+  {
+   "vue": "temoin-fiche-avec-pseudo (inchangée)",
+   "avant": "checks/pseudo-manquant/temoin-avant-fiche-avec-pseudo.png",
+   "apres": "checks/pseudo-manquant/temoin-apres-fiche-avec-pseudo.png"
+  }
+ ]
+}

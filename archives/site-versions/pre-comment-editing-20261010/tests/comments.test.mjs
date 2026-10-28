@@ -1,0 +1,85 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {normalizeCommentsState,updateCommentsState,insertCommentEmoji,COMMENT_LIMIT} from '../comments.mjs';
+
+const created=Date.parse('2026-10-10T12:00:00Z');
+const add=(state,id,text,replyToId=null)=>updateCommentsState(state,{type:'add',id,text,replyToId,created});
+const get=(state,id)=>state.comments.find(item=>item.id===id);
+
+test('existing comments and draft survive migration and a JSON round trip',()=>{
+ const legacy={draft:'Un brouillon 🙂',comments:[{id:'old',text:'<img src=x> est du texte, et ليس كودًا.',created}]};
+ const current=normalizeCommentsState(legacy),restored=normalizeCommentsState(JSON.parse(JSON.stringify(current)));
+ assert.equal(current.version,2);assert.equal(current.draft,legacy.draft);
+ assert.equal(get(current,'old').text,legacy.comments[0].text);assert.equal(get(current,'old').created,created);
+ assert.equal(get(current,'old').parentId,null);assert.equal(get(current,'old').reaction,null);
+ assert.deepEqual(restored,current);assert.deepEqual(legacy.comments[0],{id:'old',text:'<img src=x> est du texte, et ليس كودًا.',created});
+});
+
+test('replies to replies keep the same thread and retain their target context',()=>{
+ let state=add({},'a','Premier commentaire');state=add(state,'b','Première réponse','a');state=add(state,'c','Réponse à la réponse','b');
+ assert.equal(get(state,'a').parentId,null);assert.equal(get(state,'b').parentId,'a');assert.equal(get(state,'c').parentId,'a');assert.equal(get(state,'c').replyToId,'b');
+ const restored=normalizeCommentsState(JSON.parse(JSON.stringify(state)));
+ assert.deepEqual(restored,state);
+ const unchanged=add(state,'bad','Réponse à une cible absente','missing');assert.equal(unchanged.comments.length,3);
+});
+
+test('reply drafts belong to their thread and sending one leaves every other draft intact',()=>{
+ let state=add({},'a','Un fil');state=add(state,'b','Un autre fil');
+ state=updateCommentsState(state,{type:'draft',text:'Mon prochain commentaire'});
+ state=updateCommentsState(state,{type:'reply-draft',threadId:'a',targetId:'a',text:'Réponse A ✨'});
+ state=updateCommentsState(state,{type:'reply-draft',threadId:'b',targetId:'b',text:'Réponse B'});
+ state=normalizeCommentsState(JSON.parse(JSON.stringify(state)));
+ assert.equal(state.replyDrafts.a.text,'Réponse A ✨');assert.equal(state.replyDrafts.b.text,'Réponse B');
+ state=add(state,'reply-a',state.replyDrafts.a.text,'a');
+ assert.equal(state.replyDrafts.a,undefined);assert.equal(state.replyDrafts.b.text,'Réponse B');assert.equal(state.draft,'Mon prochain commentaire');
+});
+
+test('deleting a parent preserves replies and deleting a reply preserves its siblings and unrelated threads',()=>{
+ let state=add({},'a','À supprimer');state=add(state,'b','Réponse conservée','a');state=add(state,'c','Autre réponse conservée','b');state=add(state,'other','Un autre fil');
+ state=updateCommentsState(state,{type:'react',id:'a',reaction:'like'});
+ state=updateCommentsState(state,{type:'remove',id:'a'});
+ assert.equal(state.comments.length,4);assert.equal(get(state,'a').deleted,true);assert.equal(get(state,'a').text,'');assert.equal(get(state,'a').reaction,null);
+ assert.equal(get(state,'b').text,'Réponse conservée');assert.equal(get(state,'c').parentId,'a');
+ state=updateCommentsState(state,{type:'remove',id:'b'});
+ assert.equal(get(state,'b'),undefined);assert.equal(get(state,'c').text,'Autre réponse conservée');assert.equal(get(state,'c').replyToId,'b');assert.equal(get(state,'other').text,'Un autre fil');
+ state=normalizeCommentsState(JSON.parse(JSON.stringify(state)));assert.equal(get(state,'a').deleted,true);assert.equal(get(state,'c').parentId,'a');
+ state=updateCommentsState(state,{type:'remove',id:'other'});assert.equal(get(state,'other'),undefined);assert.ok(get(state,'c'));
+});
+
+test('like and dislike are exclusive, can be cancelled, and remain independent for each message',()=>{
+ let state=add({},'a','Commentaire');state=add(state,'b','Réponse','a');
+ state=updateCommentsState(state,{type:'react',id:'a',reaction:'like'});assert.equal(get(state,'a').reaction,'like');
+ state=updateCommentsState(state,{type:'react',id:'a',reaction:'dislike'});assert.equal(get(state,'a').reaction,'dislike');
+ state=updateCommentsState(state,{type:'react',id:'b',reaction:'like'});assert.equal(get(state,'a').reaction,'dislike');assert.equal(get(state,'b').reaction,'like');
+ state=normalizeCommentsState(JSON.parse(JSON.stringify(state)));assert.equal(get(state,'b').reaction,'like');
+ state=updateCommentsState(state,{type:'react',id:'a',reaction:'dislike'});assert.equal(get(state,'a').reaction,null);assert.equal(get(state,'b').reaction,'like');
+ state=updateCommentsState(state,{type:'remove',id:'a'});state=updateCommentsState(state,{type:'react',id:'a',reaction:'like'});assert.equal(get(state,'a').reaction,null);
+ const legacy=normalizeCommentsState({comments:[{id:'old',text:'Ancien like',created,liked:true}]});assert.equal(get(legacy,'old').reaction,'like');
+});
+
+test('emoji insertion replaces the selected text and restores the cursor after the complete emoji',()=>{
+ assert.deepEqual(insertCommentEmoji('Bonjour monde','🚀',8,13),{value:'Bonjour 🚀',caret:10,inserted:true});
+ assert.deepEqual(insertCommentEmoji('Bonjour','✨',0,0),{value:'✨Bonjour',caret:1,inserted:true});
+ assert.deepEqual(insertCommentEmoji('مرحبا','❤️'),{value:'مرحبا❤️',caret:7,inserted:true});
+});
+
+test('emoji insertion respects the textarea limit without truncating emoji or losing selected text',()=>{
+ const almostFull='x'.repeat(COMMENT_LIMIT-1);
+ assert.deepEqual(insertCommentEmoji(almostFull,'🚀'),{value:almostFull,caret:almostFull.length,inserted:false});
+ const full='x'.repeat(COMMENT_LIMIT);
+ const replaced=insertCommentEmoji(full,'🚀',COMMENT_LIMIT-2,COMMENT_LIMIT);
+ assert.equal(replaced.inserted,true);assert.equal(replaced.value.length,COMMENT_LIMIT);assert.ok(replaced.value.endsWith('🚀'));
+ assert.equal(insertCommentEmoji(full,'✨',0,0).value,full);
+});
+
+test('invalid records, missing parents and cycles cannot conceal otherwise valid message text',()=>{
+ const state=normalizeCommentsState({comments:[
+  {id:'a',text:'A',created,parentId:'b'},{id:'b',text:'B',created,parentId:'a'},
+  {id:'orphan',text:'Conservé',created,parentId:'missing'},
+  {id:'a',text:'Doublon',created},{id:'date',text:'Date invalide',created:Infinity},
+ ]});
+ assert.deepEqual(state.comments.map(item=>item.text),['A','B','Conservé']);
+ assert.ok(state.comments.every(item=>item.parentId===null));
+ assert.equal(add(state,'empty','  ').comments.length,3);
+ assert.equal(add(state,'long','x'.repeat(COMMENT_LIMIT+1)).comments.length,3);
+});

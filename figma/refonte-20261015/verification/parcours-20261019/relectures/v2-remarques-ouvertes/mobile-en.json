@@ -1,0 +1,240 @@
+[
+ {
+  "board": "_Où_veux-tu_aller_—_Mobile_·_Clair_·_English__scope-popover.png",
+  "zone": "Fermer et « À côté du menu »",
+  "problem": "arrivée douteuse",
+  "severity": "bloquant",
+  "detail": "La croix et les quatre bandes « à côté du menu » mènent à Explorer · Monde au lieu de l'écran précédent. Or « Portée » ouvre ce menu depuis toutes les listes (projets, profils, chroniques, vues Liste, dernières pages, tris ouverts, état vide, recherche ouverte, versions membre) : le refermer fait quitter la liste pour le globe. Cause probable : le « Menu à trois points » n'a pas été reconnu comme menu (aucune bande « à côté ») et garde sa zone « Portée », si bien que ce menu a été compté comme ouvert depuis un autre. (Le plan.json de 09 h 51 revient à l'écran précédent.)"
+ },
+ {
+  "board": "Fiche_projet_—_Mobile_·_Clair_·_English__project.png",
+  "zone": "Portée",
+  "problem": "arrivée douteuse",
+  "severity": "gênant",
+  "detail": "Sur 26 écrans de fiche, la pastille « World » sans chevron porte « Portée → « Où veux-tu aller ? » ». Sont touchés les projets, minishell, le profil, la chronique et leurs onglets, les versions membre, le Compte de Leïla, les sélecteurs ouverts, le tri des commentaires, les suggestions de mention et le menu à trois points. Pendant la lecture d'une fiche, le site rend cette barre inerte (reading-scope.mjs, trail.inert) et le menu refuse de s'ouvrir : le clic ne fait rien, alors qu'ici il ouvre le menu sur le globe. (Ces zones ont disparu du plan.json de 09 h 51.)"
+ },
+ {
+  "board": "Fiche_projet_·_projet_à_campus_unique_—_Mobile_·_Clair_·_English__project-single.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "severity": "gênant",
+  "detail": "Le sélecteur « In this project · Overview ▾ » (y 423–494) n'a pas de zone. Réalisation, Médias, Tester et Commentaires, relevés justement pour minishell, ne s'atteignent donc que par le sélecteur de ft_transcendence. Le cadre « sélecteur « Dans ce projet » ouvert », dont les options mènent aux onglets de minishell, peut servir d'arrivée."
+ },
+ {
+  "board": "Réalisation_—_Mobile_·_Clair_·_English__project-implementation.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "severity": "gênant",
+  "detail": "Le sélecteur « In this project · … ▾ » (y 423–494) reste sans zone sur les six onglets de minishell : Réalisation, Médias, Tester le projet, Tester · lien enregistré, Commentaires et Commentaires · avec un fil. On ne peut pas changer d'onglet, et la vue d'ensemble ne s'atteint que par Back to projects puis la carte."
+ },
+ {
+  "board": "Projets_—_Mobile_·_Clair_·_English__profile-projects.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "severity": "gênant",
+  "detail": "Le sélecteur « In this profile · … ▾ » (y 447–518) reste sans zone sur Projets, Parcours et Contribution. Pourtant, le sélecteur ouvert de cette même fiche (Leïla) est relevé : « Fiche profil · sélecteur de rubriques ouvert » conviendrait comme arrivée."
+ },
+ {
+  "board": "Liste_des_profils_·_dernière_page_—_Mobile_·_Clair_·_English__people-last-page.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "severity": "gênant",
+  "detail": "Aucune des six cartes (d'Idris Madi à Nadia Selim) n'a de zone, pas plus que View et Sort. Sur la dernière page des projets, les cartes du haut mènent à la fiche relevée ; le même compromis ferait mener celles-ci à la fiche de Leïla. (Le plan.json de 09 h 51 ajoute une carte, View et Sort.)"
+ },
+ {
+  "board": "Menu_à_trois_points_d_un_commentaire_—_Mobile_·_Clair_·_English__comment-menu.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "severity": "mineur",
+  "detail": "Ce menu n'a aucune bande « à côté du menu » : un clic hors du menu ne fait rien, alors que le site le referme (comments.mjs, pointerdown hors du menu). Le logo, l'avatar, la recherche, le dé, le menu du bas et le bouton ↑, pourtant visibles, n'ont pas de zone non plus ; seule « Portée » en a une. (Le plan.json de 09 h 51 ajoute les bandes et les zones globales.)"
+ },
+ {
+  "board": "Auteurs_—_Mobile_·_Clair_·_English__article-authors.png",
+  "zone": "Dé",
+  "problem": "arrivée douteuse",
+  "severity": "mineur",
+  "detail": "Sur plusieurs onglets, le dé mène à la vue d'ensemble de la même fiche : Auteurs, Médias, Commentaires et Commentaires · avec un fil de la chronique vers Chronique ; Projets, Parcours, Contribution et le sélecteur ouvert de Leïla vers Fiche profil ; le sélecteur ouvert de ft_transcendence vers Fiche projet ; le Compte de Leïla vers Fiche profil · membre. Le site tire une autre fiche, non relevée : selon la règle, ces dés n'ont pas de zone. (Retirés dans le plan.json de 09 h 51.)"
+ },
+ {
+  "board": "Panneau_du_compte_·_visiteur_—_Mobile_·_Clair_·_English__account-visitor.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "severity": "mineur",
+  "detail": "Le dé (x 277–321, y 710–754) est visible mais sans zone sur les sept écrans du compte : panneaux visiteur et membre, Thème, Langue, Paramètres, Messagerie et Notifications. La recherche voisine en a une ; sur le dé, la bande « à côté du menu » se contente de refermer le panneau. Sur le site, le clic ferme le panneau puis tire un projet (« Dé → Fiche projet » sur la liste)."
+ },
+ {
+  "board": "Thème_—_Mobile_·_Clair_·_English__account-theme.png",
+  "zone": "Compte",
+  "problem": "arrivée douteuse",
+  "severity": "mineur",
+  "detail": "Sur Thème, Langue et Paramètres, l'avatar mène au premier panneau du compte. Sur le site, un second clic sur ce bouton referme le panneau (account-menu.mjs), et le panneau visiteur a bien « Compte · fermer ». (Devenu « Compte · fermer » dans le plan.json de 09 h 51.)"
+ },
+ {
+  "board": "Recherche_·_ouverte_—_Mobile_·_Clair_·_English__search-open.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "severity": "mineur",
+  "detail": "Sous la recherche ouverte, « View » et « Sort » de la liste sont visibles sans zone, alors que « Filtrer » en a une et que la vue Liste et le tri ouvert sont relevés. De même, « View » n'a pas de zone sur Liste des projets · tri ouvert ni sur Liste des profils · tri ouvert."
+ },
+ {
+  "board": "Liste_des_projets_·_dernière_page_—_Mobile_·_Clair_·_English__projects-last-page.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "severity": "mineur",
+  "detail": "« View » et « Sort » restent sans zone sur les deux dernières pages (projets et profils), et « Sort » sur les deux vues Liste. (Ajoutés dans le plan.json de 09 h 51.)"
+ },
+ {
+  "board": "Liste_des_projets_·_vue_Liste_—_Mobile_·_Clair_·_English__projects-list.png",
+  "zone": "Page 1",
+  "problem": "arrivée douteuse",
+  "severity": "mineur",
+  "detail": "« 1 » est la page en cours (pastille verte), mais sa zone mène à la vue grille ; c'est pareil sur Liste des profils · vue Liste. Sur le site, ce lien ne change ni la page ni la vue. (Retirée dans le plan.json de 09 h 51.)"
+ },
+ {
+  "board": "Choisir_un_campus_—_Mobile_·_Clair_·_English__campus-choice.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "severity": "mineur",
+  "detail": "Seul 42 Paris a une zone ; 42 Lyon, 42 Tokyo et 42 Rio n'en ont pas. Pourtant, le compromis « Autour du campus = 42 Paris » fait déjà mener « Explore 42 Tokyo » à cette fenêtre. (Ajoutés dans le plan.json de 09 h 51.)"
+ },
+ {
+  "board": "Commentaires_·_suggestions_de_mention_—_Mobile_·_Clair_·_English__mention-picker.png",
+  "zone": "Signaler",
+  "problem": "élément caché",
+  "severity": "mineur",
+  "detail": "La page est défilée de 250 px, et « Report » est passé sous l'en-tête. Sa zone (x 136–234, y 68–104) reste pourtant active sur le médaillon du globe et le bord de la pastille. Sur le site, ce clic tombe sur l'en-tête et referme seulement les suggestions."
+ },
+ {
+  "board": "Commentaires_·_suggestions_de_mention_—_Mobile_·_Clair_·_English__mention-picker.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "severity": "mineur",
+  "detail": "La barre « Search Horizon » et le dé, dessinés par-dessus la liste des suggestions (y 710–754), n'ont pas de zone : la découpe autour du menu les a retirés. Sur le site, ils restent au-dessus de la liste et répondent."
+ },
+ {
+  "board": "Commentaires_·_avec_un_fil_—_Mobile_·_Clair_·_English__project-comments-thread.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "severity": "mineur",
+  "detail": "Dans la réponse, le nom « Leïla Mansour (you) » (x 42–215, y ≈ 1244–1288) n'a pas de zone, alors que celui du premier commentaire mène à sa fiche. Le même manque existe sur le fil de la chronique. (Ajouté dans le plan.json de 09 h 51.)"
+ },
+ {
+  "board": "Commentaires_·_avec_un_fil_—_Mobile_·_Clair_·_English__article-comments-thread.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "severity": "mineur",
+  "detail": "« Newest first ▾ » (x 246–366, y 924–968) n'a pas de zone sur le fil de la chronique. Sur le fil du projet, il mène à « Commentaires · tri ouvert », et le ⋮ de ce même fil mène déjà au menu relevé sur le projet."
+ },
+ {
+  "board": "Liste_des_projets_—_Mobile_·_Clair_·_English__projects.png",
+  "zone": "Carte d'un projet",
+  "problem": "sur un autre élément",
+  "severity": "mineur",
+  "detail": "Les zones d'image des cartes englobent le cœur des favoris (environ 40 × 40, en haut à droite). Un clic sur le cœur ouvre donc la fiche, alors que sur le site il enregistre un favori sans quitter la liste. Les cartes de profils, de chroniques et de Projets du profil ont le même défaut, dans toutes les vues et les versions membre."
+ },
+ {
+  "board": "Fiche_campus_·_déployée_—_Mobile_·_Clair_·_English__campus-sheet-expanded.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "severity": "mineur",
+  "detail": "La poignée de la fiche déployée (y ≈ 40) n'a pas de zone, alors que sur la fiche repliée « Déployer la fiche » est posée sur la même poignée. Une fois déployée, la fiche ne peut donc que se fermer, alors que sur le site on la replie en glissant la poignée vers le bas."
+ },
+ {
+  "board": "Explorer_·_Monde_—_Mobile_·_Clair_·_English__explore.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "severity": "mineur",
+  "detail": "Les crédits de carte en bas d'écran (Natural Earth · OpenFreeMap · © OpenMapTiles · OpenStreetMap, y ≈ 830–840) sont des liens externes sur le site (integrated-globe.mjs), mais n'ont pas de zone. C'est le cas sur Explorer (monde, monde membre, pays, campus, « Où veux-tu aller ? ») comme dans « Autour du campus »."
+ },
+ {
+  "board": "Fiche_projet_·_projet_à_campus_unique_—_Mobile_·_Clair_·_English.png",
+  "zone": "(aucune)",
+  "problem": "toujours là (v1)",
+  "detail": "Le sélecteur « In this project · Overview ▾ » (y 423–494) n'a toujours pas de zone : depuis la fiche de minishell, ses onglets relevés restent inaccessibles.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Réalisation_—_Mobile_·_Clair_·_English.png",
+  "zone": "(aucune)",
+  "problem": "toujours là (v1)",
+  "detail": "Back to projects, Explore 42 Paris et Report ont désormais une zone, mais pas le sélecteur « In this project · Development ▾ » : on ne peut ni changer d'onglet ni revenir à la vue d'ensemble de minishell.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Médias_—_Mobile_·_Clair_·_English.png",
+  "zone": "(aucune)",
+  "problem": "toujours là (v1)",
+  "detail": "Version projet : le retour à la liste, le lien du campus et Report sont corrigés, mais le sélecteur « Media ▾ » n'a toujours pas de zone.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Tester_le_projet_—_Mobile_·_Clair_·_English.png",
+  "zone": "(aucune)",
+  "problem": "toujours là (v1)",
+  "detail": "Le retour à la liste, le lien du campus et Report sont corrigés, mais le sélecteur « Try the project ▾ » n'a toujours pas de zone.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Tester_le_projet_·_lien_enregistré_—_Mobile_·_Clair_·_English.png",
+  "zone": "(aucune)",
+  "problem": "toujours là (v1)",
+  "detail": "Le retour à la liste, le lien du campus et Report sont corrigés, mais le sélecteur « Try the project ▾ » n'a toujours pas de zone.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Commentaires_—_Mobile_·_Clair_·_English.png",
+  "zone": "(aucune)",
+  "problem": "toujours là (v1)",
+  "detail": "Version projet : le retour à la liste, le lien du campus et Report sont corrigés, mais le sélecteur « Comments ▾ » n'a toujours pas de zone.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Commentaires_·_avec_un_fil_—_Mobile_·_Clair_·_English.png",
+  "zone": "(aucune)",
+  "problem": "toujours là (v1)",
+  "detail": "Back to projects a une zone, pas le sélecteur du fil. Sur « tri ouvert » et « suggestions de mention », le sélecteur collant est désormais sous la bande « à côté du menu », qui referme le menu.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Projets_—_Mobile_·_Clair_·_English.png",
+  "zone": "(aucune)",
+  "problem": "toujours là (v1)",
+  "detail": "Back to profiles, le portrait, Send a message et Report ont une zone ; le sélecteur « In this profile · Projects ▾ » n'en a toujours pas.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Parcours_—_Mobile_·_Clair_·_English.png",
+  "zone": "(aucune)",
+  "problem": "toujours là (v1)",
+  "detail": "Parcours a reçu les mêmes zones que Projets ; le sélecteur « Journey ▾ » reste sans zone.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Contribution_—_Mobile_·_Clair_·_English.png",
+  "zone": "(aucune)",
+  "problem": "toujours là (v1)",
+  "detail": "Contribution a reçu les mêmes zones que Projets ; le sélecteur « Contribution ▾ » reste sans zone.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Liste_des_projets_·_dernière_page_—_Mobile_·_Clair_·_English.png",
+  "zone": "(aucune)",
+  "problem": "toujours là (v1)",
+  "detail": "Les images des deux cartes du haut, un auteur, un « +1 » et la page « 1 » ont maintenant une zone, mais « View » et « Sort » toujours pas.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Liste_des_profils_·_dernière_page_—_Mobile_·_Clair_·_English.png",
+  "zone": "(aucune)",
+  "problem": "toujours là (v1)",
+  "detail": "La page « 1 » a maintenant une zone, mais aucune des six cartes n'en a, ni View ni Sort : on ne peut pas ouvrir de fiche depuis cette page.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Liste_des_projets_·_vue_Liste_—_Mobile_·_Clair_·_English.png",
+  "zone": "(aucune)",
+  "problem": "toujours là (v1)",
+  "detail": "« View » (vers la grille) et la pagination ont une zone en vue Liste, mais « Sort » toujours pas, ici comme sur Liste des profils · vue Liste.",
+  "severity": "gênant"
+ }
+]

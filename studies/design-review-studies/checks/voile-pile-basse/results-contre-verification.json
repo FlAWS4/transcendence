@@ -1,0 +1,3080 @@
+{
+ "id": "voile-pile-basse",
+ "errors": {
+  "focus": [],
+  "coverage": [],
+  "coverage2": [],
+  "ends": [],
+  "ends2": [],
+  "ends3": [],
+  "menus": [],
+  "scroll": [],
+  "motion": [],
+  "runtime": [],
+  "sidebar": [],
+  "explorer": [],
+  "globe": [],
+  "awards": [],
+  "combined": [],
+  "extra": [],
+  "zindex": [],
+  "zindex2": [],
+  "zindex3": [],
+  "toolbar": []
+ },
+ "focus": {
+  "sourisDockChroniques": {
+   "section": "journal",
+   "host": "app::before",
+   "opacity": "1",
+   "focus": {
+    "el": "h1#section-title.sr-only",
+    "visible": false,
+    "inSheet": true
+   },
+   "scrollY": 0
+  },
+  "sourisCarteVersArticle": {
+   "section": "journal",
+   "host": "content-sheet::after",
+   "opacity": "1",
+   "focus": {
+    "el": "h1#journal-title",
+    "visible": false,
+    "inSheet": true
+   },
+   "scrollY": 0
+  },
+  "retourHistorique": {
+   "section": "journal",
+   "host": "app::before",
+   "opacity": "1",
+   "focus": {
+    "el": "h1#section-title.sr-only",
+    "visible": false,
+    "inSheet": true
+   },
+   "scrollY": 0
+  },
+  "toucherDockProfils": {
+   "section": "people",
+   "host": "app::before",
+   "opacity": "1",
+   "focus": {
+    "el": "h1#section-title.sr-only",
+    "visible": false,
+    "inSheet": true
+   },
+   "scrollY": 0
+  },
+  "toucherCarteVersProfil": {
+   "section": "people",
+   "host": "app::before",
+   "opacity": "1",
+   "focus": null,
+   "scrollY": 0
+  },
+  "clavierDockChroniques": {
+   "section": "journal",
+   "host": "app::before",
+   "opacity": "0",
+   "focus": {
+    "el": "h1#section-title.sr-only",
+    "visible": true,
+    "inSheet": true
+   },
+   "scrollY": 0
+  },
+  "tab": {
+   "steps": 22,
+   "underVeil": [
+    {
+     "el": "a.cp-card-title-link",
+     "text": "Une porte vers la troisi",
+     "top": 762,
+     "bottom": 812,
+     "veilTop": 686,
+     "veilOpacity": "0",
+     "focusVisible": true,
+     "inSheet": true,
+     "visibleAboveVeil": 0,
+     "step": 9
+    },
+    {
+     "el": "a.cp-author-link",
+     "text": "Inès Morel. Chef de proj",
+     "top": 804,
+     "bottom": 844,
+     "veilTop": 686,
+     "veilOpacity": "0",
+     "focusVisible": true,
+     "inSheet": true,
+     "visibleAboveVeil": 0,
+     "step": 10
+    },
+    {
+     "el": "a.cp-card-title-link",
+     "text": "Ce qui relie nos message",
+     "top": 726,
+     "bottom": 776,
+     "veilTop": 686,
+     "veilOpacity": "0",
+     "focusVisible": true,
+     "inSheet": true,
+     "visibleAboveVeil": 0,
+     "step": 12
+    },
+    {
+     "el": "a.cp-author-link",
+     "text": "Haru Mizuno. Chef de pro",
+     "top": 804,
+     "bottom": 844,
+     "veilTop": 686,
+     "veilOpacity": "0",
+     "focusVisible": true,
+     "inSheet": true,
+     "visibleAboveVeil": 0,
+     "step": 13
+    }
+   ],
+   "hiddenUnderOpaqueVeil": [],
+   "opacities": [
+    "0"
+   ],
+   "afterBlur": "1"
+  }
+ },
+ "coverage": [
+  {
+   "vue": "ordinateur",
+   "route": "projects",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "target": {
+    "scroll": 72,
+    "cls": "cp-cover",
+    "tag": "div"
+   },
+   "veil": {
+    "host": "app::before",
+    "height": 173,
+    "top": 727,
+    "opacity": "1",
+    "pointerEvents": "none",
+    "bg": "rgb(247, 250, 250)",
+    "scrollY": 72
+   },
+   "capsuleTop": 751,
+   "rampAboveCapsule": 24,
+   "sampled": 10736,
+   "coveredShare": 1.0,
+   "contentPixels": 927,
+   "hiddenShare": 1.0,
+   "effectiveOpacity": 0.9999
+  },
+  {
+   "vue": "sombre-mobile",
+   "route": "journal",
+   "theme": "dark",
+   "lang": "fr",
+   "viewport": [
+    390,
+    844
+   ],
+   "target": {
+    "scroll": 235,
+    "cls": "cp-cover",
+    "tag": "div"
+   },
+   "veil": {
+    "host": "app::before",
+    "height": 158,
+    "top": 686,
+    "opacity": "1",
+    "pointerEvents": "none",
+    "bg": "rgb(27, 27, 27)",
+    "scrollY": 235
+   },
+   "capsuleTop": 710,
+   "rampAboveCapsule": 24,
+   "sampled": 42944,
+   "coveredShare": 1.0,
+   "contentPixels": 37065,
+   "hiddenShare": 1.0,
+   "effectiveOpacity": 1.0
+  },
+  {
+   "vue": "petit",
+   "route": "projects",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    320,
+    640
+   ],
+   "target": {
+    "scroll": 104,
+    "cls": "cp-cover",
+    "tag": "div"
+   },
+   "veil": {
+    "host": "app::before",
+    "height": 158,
+    "top": 482,
+    "opacity": "1",
+    "pointerEvents": "none",
+    "bg": "rgb(247, 250, 250)",
+    "scrollY": 104
+   },
+   "capsuleTop": 506,
+   "rampAboveCapsule": 24,
+   "sampled": 42944,
+   "coveredShare": 1.0,
+   "contentPixels": 22024,
+   "hiddenShare": 1.0,
+   "effectiveOpacity": 0.9998
+  }
+ ],
+ "coverage2": [
+  {
+   "vue": "ar-sombre-mobile",
+   "route": "people",
+   "theme": "dark",
+   "lang": "ar",
+   "viewport": [
+    390,
+    844
+   ],
+   "target": {
+    "scroll": 88,
+    "cls": "cp-person-avatar",
+    "tag": "img"
+   },
+   "veil": {
+    "host": "app::before",
+    "height": 158,
+    "top": 686,
+    "opacity": "1",
+    "pointerEvents": "none",
+    "bg": "rgb(27, 27, 27)",
+    "scrollY": 88
+   },
+   "capsuleTop": 710,
+   "rampAboveCapsule": 24,
+   "sampled": 42944,
+   "coveredShare": 1.0,
+   "contentPixels": 16280,
+   "hiddenShare": 1.0,
+   "effectiveOpacity": 1.0
+  },
+  {
+   "vue": "paysage",
+   "route": "projects",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    667,
+    375
+   ],
+   "target": {
+    "scroll": 442,
+    "cls": "cp-cover",
+    "tag": "div"
+   },
+   "veil": {
+    "host": "app::before",
+    "height": 150,
+    "top": 225,
+    "opacity": "1",
+    "pointerEvents": "none",
+    "bg": "rgb(247, 250, 250)",
+    "scrollY": 442
+   },
+   "capsuleTop": 249,
+   "rampAboveCapsule": 24,
+   "sampled": 42944,
+   "coveredShare": 1.0,
+   "contentPixels": 20332,
+   "hiddenShare": 1.0,
+   "effectiveOpacity": 0.9999
+  },
+  {
+   "vue": "fiche-ordinateur",
+   "route": "projects/ft-transcendence-building-together?tab=overview",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "target": {
+    "scroll": 435,
+    "cls": "cp-person-avatar",
+    "tag": "img"
+   },
+   "veil": {
+    "host": "content-sheet::after",
+    "height": 173,
+    "top": 727,
+    "opacity": "1",
+    "pointerEvents": "none",
+    "bg": "rgb(247, 250, 250)",
+    "scrollY": 435
+   },
+   "capsuleTop": 751,
+   "rampAboveCapsule": 24,
+   "sampled": 10736,
+   "coveredShare": 1.0,
+   "contentPixels": 2097,
+   "hiddenShare": 1.0,
+   "effectiveOpacity": 0.9998
+  }
+ ],
+ "ends": [
+  {
+   "vue": "ordinateur",
+   "route": "projects",
+   "viewport": [
+    1440,
+    900
+   ],
+   "veil": {
+    "host": "app::before",
+    "height": 173,
+    "top": 727,
+    "opacity": "1",
+    "visibility": "visible",
+    "pointerEvents": "none",
+    "bg": "rgb(247, 250, 250)",
+    "image": "linear-gradient(to top, rgb(247, 250, 250) 0px, rgb(247, 250, 250) 149",
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr",
+    "section": "projects",
+    "toggle": {
+     "x": 594,
+     "y": 751,
+     "w": 200,
+     "h": 44
+    },
+    "die": {
+     "x": 802,
+     "y": 751,
+     "w": 44,
+     "h": 44
+    },
+    "dock": {
+     "x": 402,
+     "y": 808,
+     "w": 636,
+     "h": 60
+    },
+    "scrollY": 0,
+    "scrolling": null,
+    "focus": null
+   },
+   "gridApres": [
+    [
+     8,
+     724,
+     "main#main",
+     false
+    ],
+    [
+     166,
+     724,
+     "main#main",
+     false
+    ],
+    [
+     324,
+     724,
+     "p.cp-summary",
+     true
+    ],
+    [
+     483,
+     724,
+     "p.cp-summary",
+     true
+    ],
+    [
+     641,
+     724,
+     "p.cp-summary",
+     true
+    ],
+    [
+     799,
+     724,
+     "p.cp-summary",
+     true
+    ],
+    [
+     957,
+     724,
+     "p.cp-summary",
+     true
+    ],
+    [
+     1116,
+     724,
+     "p.cp-summary",
+     true
+    ],
+    [
+     1274,
+     724,
+     "main#main",
+     false
+    ],
+    [
+     1432,
+     724,
+     "main#main",
+     false
+    ],
+    [
+     8,
+     735,
+     "main#main",
+     false
+    ],
+    [
+     166,
+     735,
+     "main#main",
+     false
+    ],
+    [
+     324,
+     735,
+     "p.cp-summary",
+     true
+    ],
+    [
+     483,
+     735,
+     "p.cp-summary",
+     true
+    ],
+    [
+     641,
+     735,
+     "p.cp-summary",
+     true
+    ],
+    [
+     799,
+     735,
+     "p.cp-summary",
+     true
+    ],
+    [
+     957,
+     735,
+     "p.cp-summary",
+     true
+    ],
+    [
+     1116,
+     735,
+     "p.cp-summary",
+     true
+    ],
+    [
+     1274,
+     735,
+     "main#main",
+     false
+    ],
+    [
+     1432,
+     735,
+     "main#main",
+     false
+    ],
+    [
+     8,
+     787,
+     "main#main",
+     false
+    ],
+    [
+     166,
+     787,
+     "main#main",
+     false
+    ],
+    [
+     324,
+     787,
+     "div#content-list.cp-grid",
+     true
+    ],
+    [
+     483,
+     787,
+     "div#content-list.cp-grid",
+     true
+    ],
+    [
+     957,
+     787,
+     "div#content-list.cp-grid",
+     true
+    ],
+    [
+     1116,
+     787,
+     "div#content-list.cp-grid",
+     true
+    ],
+    [
+     1274,
+     787,
+     "main#main",
+     false
+    ],
+    [
+     1432,
+     787,
+     "main#main",
+     false
+    ]
+   ],
+   "apres": {
+    "best": {
+     "bottom": 688.3,
+     "tag": "nav",
+     "text": "Page 1 sur 7123…7"
+    },
+    "scrollY": 1778,
+    "maxScroll": 1778,
+    "docHeight": 2678
+   },
+   "apresVeilAtEnd": "1",
+   "gridAvant": [
+    [
+     8,
+     724,
+     "main#main",
+     false
+    ],
+    [
+     166,
+     724,
+     "main#main",
+     false
+    ],
+    [
+     324,
+     724,
+     "p.cp-summary",
+     true
+    ],
+    [
+     483,
+     724,
+     "p.cp-summary",
+     true
+    ],
+    [
+     641,
+     724,
+     "p.cp-summary",
+     true
+    ],
+    [
+     799,
+     724,
+     "p.cp-summary",
+     true
+    ],
+    [
+     957,
+     724,
+     "p.cp-summary",
+     true
+    ],
+    [
+     1116,
+     724,
+     "p.cp-summary",
+     true
+    ],
+    [
+     1274,
+     724,
+     "main#main",
+     false
+    ],
+    [
+     1432,
+     724,
+     "main#main",
+     false
+    ],
+    [
+     8,
+     735,
+     "main#main",
+     false
+    ],
+    [
+     166,
+     735,
+     "main#main",
+     false
+    ],
+    [
+     324,
+     735,
+     "p.cp-summary",
+     true
+    ],
+    [
+     483,
+     735,
+     "p.cp-summary",
+     true
+    ],
+    [
+     641,
+     735,
+     "p.cp-summary",
+     true
+    ],
+    [
+     799,
+     735,
+     "p.cp-summary",
+     true
+    ],
+    [
+     957,
+     735,
+     "p.cp-summary",
+     true
+    ],
+    [
+     1116,
+     735,
+     "p.cp-summary",
+     true
+    ],
+    [
+     1274,
+     735,
+     "main#main",
+     false
+    ],
+    [
+     1432,
+     735,
+     "main#main",
+     false
+    ],
+    [
+     8,
+     787,
+     "main#main",
+     false
+    ],
+    [
+     166,
+     787,
+     "main#main",
+     false
+    ],
+    [
+     324,
+     787,
+     "div#content-list.cp-grid",
+     true
+    ],
+    [
+     483,
+     787,
+     "div#content-list.cp-grid",
+     true
+    ],
+    [
+     957,
+     787,
+     "div#content-list.cp-grid",
+     true
+    ],
+    [
+     1116,
+     787,
+     "div#content-list.cp-grid",
+     true
+    ],
+    [
+     1274,
+     787,
+     "main#main",
+     false
+    ],
+    [
+     1432,
+     787,
+     "main#main",
+     false
+    ]
+   ],
+   "avant": {
+    "best": {
+     "bottom": 688.3,
+     "tag": "nav",
+     "text": "Page 1 sur 7123…7"
+    },
+    "scrollY": 1778,
+    "maxScroll": 1778,
+    "docHeight": 2678
+   },
+   "avantVeilAtEnd": null,
+   "sameLayout": true,
+   "margin": 38.7,
+   "hitsIdentical": true,
+   "hitsOnContent": [
+    16,
+    28
+   ],
+   "pixelsAboveVeil": {
+    "pixels": 0,
+    "box": null
+   },
+   "pixelsAll": {
+    "pixels": 174594,
+    "box": [
+     0.0,
+     727.0,
+     1440.0,
+     900.0
+    ]
+   }
+  },
+  {
+   "vue": "mobile",
+   "route": "projects",
+   "viewport": [
+    390,
+    844
+   ],
+   "veil": {
+    "host": "app::before",
+    "height": 158,
+    "top": 686,
+    "opacity": "1",
+    "visibility": "visible",
+    "pointerEvents": "none",
+    "bg": "rgb(247, 250, 250)",
+    "image": "linear-gradient(to top, rgb(247, 250, 250) 0px, rgb(247, 250, 250) 134",
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr",
+    "section": "projects",
+    "toggle": {
+     "x": 69,
+     "y": 710,
+     "w": 200,
+     "h": 44
+    },
+    "die": {
+     "x": 277,
+     "y": 710,
+     "w": 44,
+     "h": 44
+    },
+    "dock": {
+     "x": 16,
+     "y": 767,
+     "w": 358,
+     "h": 60
+    },
+    "scrollY": 0,
+    "scrolling": null,
+    "focus": null
+   },
+   "gridApres": [
+    [
+     8,
+     683,
+     "main#main",
+     false
+    ],
+    [
+     50,
+     683,
+     "path",
+     true
+    ],
+    [
+     91,
+     683,
+     "rect",
+     true
+    ],
+    [
+     133,
+     683,
+     "path",
+     true
+    ],
+    [
+     174,
+     683,
+     "path",
+     true
+    ],
+    [
+     216,
+     683,
+     "rect",
+     true
+    ],
+    [
+     257,
+     683,
+     "rect",
+     true
+    ],
+    [
+     299,
+     683,
+     "rect",
+     true
+    ],
+    [
+     340,
+     683,
+     "rect",
+     true
+    ],
+    [
+     382,
+     683,
+     "main#main",
+     false
+    ],
+    [
+     8,
+     694,
+     "main#main",
+     false
+    ],
+    [
+     50,
+     694,
+     "path",
+     true
+    ],
+    [
+     91,
+     694,
+     "path",
+     true
+    ],
+    [
+     133,
+     694,
+     "path",
+     true
+    ],
+    [
+     174,
+     694,
+     "path",
+     true
+    ],
+    [
+     216,
+     694,
+     "rect",
+     true
+    ],
+    [
+     257,
+     694,
+     "rect",
+     true
+    ],
+    [
+     299,
+     694,
+     "rect",
+     true
+    ],
+    [
+     340,
+     694,
+     "rect",
+     true
+    ],
+    [
+     382,
+     694,
+     "main#main",
+     false
+    ],
+    [
+     8,
+     746,
+     "main#main",
+     false
+    ],
+    [
+     50,
+     746,
+     "bdi",
+     true
+    ],
+    [
+     340,
+     746,
+     "p.cp-meta",
+     true
+    ],
+    [
+     382,
+     746,
+     "main#main",
+     false
+    ]
+   ],
+   "apres": {
+    "best": {
+     "bottom": 646.5,
+     "tag": "nav",
+     "text": "Page 1 sur 7123…7"
+    },
+    "scrollY": 1822,
+    "maxScroll": 1822,
+    "docHeight": 2666
+   },
+   "apresVeilAtEnd": "1",
+   "gridAvant": [
+    [
+     8,
+     683,
+     "main#main",
+     false
+    ],
+    [
+     50,
+     683,
+     "path",
+     true
+    ],
+    [
+     91,
+     683,
+     "rect",
+     true
+    ],
+    [
+     133,
+     683,
+     "path",
+     true
+    ],
+    [
+     174,
+     683,
+     "path",
+     true
+    ],
+    [
+     216,
+     683,
+     "rect",
+     true
+    ],
+    [
+     257,
+     683,
+     "rect",
+     true
+    ],
+    [
+     299,
+     683,
+     "rect",
+     true
+    ],
+    [
+     340,
+     683,
+     "rect",
+     true
+    ],
+    [
+     382,
+     683,
+     "main#main",
+     false
+    ],
+    [
+     8,
+     694,
+     "main#main",
+     false
+    ],
+    [
+     50,
+     694,
+     "path",
+     true
+    ],
+    [
+     91,
+     694,
+     "path",
+     true
+    ],
+    [
+     133,
+     694,
+     "path",
+     true
+    ],
+    [
+     174,
+     694,
+     "path",
+     true
+    ],
+    [
+     216,
+     694,
+     "rect",
+     true
+    ],
+    [
+     257,
+     694,
+     "rect",
+     true
+    ],
+    [
+     299,
+     694,
+     "rect",
+     true
+    ],
+    [
+     340,
+     694,
+     "rect",
+     true
+    ],
+    [
+     382,
+     694,
+     "main#main",
+     false
+    ],
+    [
+     8,
+     746,
+     "main#main",
+     false
+    ],
+    [
+     50,
+     746,
+     "bdi",
+     true
+    ],
+    [
+     340,
+     746,
+     "p.cp-meta",
+     true
+    ],
+    [
+     382,
+     746,
+     "main#main",
+     false
+    ]
+   ],
+   "avant": {
+    "best": {
+     "bottom": 646.5,
+     "tag": "nav",
+     "text": "Page 1 sur 7123…7"
+    },
+    "scrollY": 1822,
+    "maxScroll": 1822,
+    "docHeight": 2666
+   },
+   "avantVeilAtEnd": null,
+   "sameLayout": true,
+   "margin": 39.5,
+   "hitsIdentical": true,
+   "hitsOnContent": [
+    18,
+    24
+   ],
+   "pixelsAboveVeil": {
+    "pixels": 0,
+    "box": null
+   },
+   "pixelsAll": {
+    "pixels": 239441,
+    "box": [
+     0.0,
+     686.0,
+     390.0,
+     844.0
+    ]
+   }
+  }
+ ],
+ "ends2": [
+  {
+   "vue": "petit",
+   "route": "projects",
+   "viewport": [
+    320,
+    640
+   ],
+   "veil": {
+    "host": "app::before",
+    "height": 158,
+    "top": 482,
+    "opacity": "1",
+    "visibility": "visible",
+    "pointerEvents": "none",
+    "bg": "rgb(247, 250, 250)",
+    "image": "linear-gradient(to top, rgb(247, 250, 250) 0px, rgb(247, 250, 250) 134",
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr",
+    "section": "projects",
+    "toggle": {
+     "x": 34,
+     "y": 506,
+     "w": 200,
+     "h": 44
+    },
+    "die": {
+     "x": 242,
+     "y": 506,
+     "w": 44,
+     "h": 44
+    },
+    "dock": {
+     "x": 12,
+     "y": 563,
+     "w": 296,
+     "h": 60
+    },
+    "scrollY": 0,
+    "scrolling": null,
+    "focus": null
+   },
+   "gridApres": [
+    [
+     8,
+     479,
+     "main#main",
+     false
+    ],
+    [
+     42,
+     479,
+     "p.cp-authors-label",
+     true
+    ],
+    [
+     76,
+     479,
+     "p.cp-authors-label",
+     true
+    ],
+    [
+     109,
+     479,
+     "p.cp-authors-label",
+     true
+    ],
+    [
+     143,
+     479,
+     "p.cp-authors-label",
+     true
+    ],
+    [
+     177,
+     479,
+     "img.cp-person-avatar",
+     true
+    ],
+    [
+     211,
+     479,
+     "strong",
+     true
+    ],
+    [
+     244,
+     479,
+     "span.cp-author-name",
+     true
+    ],
+    [
+     278,
+     479,
+     "a.cp-author-more",
+     true
+    ],
+    [
+     312,
+     479,
+     "main#main",
+     false
+    ],
+    [
+     8,
+     490,
+     "main#main",
+     false
+    ],
+    [
+     42,
+     490,
+     "a.cp-author-link",
+     true
+    ],
+    [
+     76,
+     490,
+     "a.cp-author-link",
+     true
+    ],
+    [
+     109,
+     490,
+     "ul.cp-author-list",
+     true
+    ],
+    [
+     143,
+     490,
+     "li.cp-author-item",
+     true
+    ],
+    [
+     177,
+     490,
+     "div.cp-card-copy",
+     true
+    ],
+    [
+     211,
+     490,
+     "div.cp-card-copy",
+     true
+    ],
+    [
+     244,
+     490,
+     "div.cp-card-copy",
+     true
+    ],
+    [
+     278,
+     490,
+     "div.cp-card-copy",
+     true
+    ],
+    [
+     312,
+     490,
+     "main#main",
+     false
+    ],
+    [
+     8,
+     542,
+     "main#main",
+     false
+    ],
+    [
+     312,
+     542,
+     "main#main",
+     false
+    ]
+   ],
+   "apres": {
+    "best": {
+     "bottom": 443.1,
+     "tag": "a",
+     "text": "Suivant"
+    },
+    "scrollY": 1988,
+    "maxScroll": 1988,
+    "docHeight": 2628
+   },
+   "apresVeilAtEnd": "1",
+   "gridAvant": [
+    [
+     8,
+     479,
+     "main#main",
+     false
+    ],
+    [
+     42,
+     479,
+     "p.cp-authors-label",
+     true
+    ],
+    [
+     76,
+     479,
+     "p.cp-authors-label",
+     true
+    ],
+    [
+     109,
+     479,
+     "p.cp-authors-label",
+     true
+    ],
+    [
+     143,
+     479,
+     "p.cp-authors-label",
+     true
+    ],
+    [
+     177,
+     479,
+     "img.cp-person-avatar",
+     true
+    ],
+    [
+     211,
+     479,
+     "strong",
+     true
+    ],
+    [
+     244,
+     479,
+     "span.cp-author-name",
+     true
+    ],
+    [
+     278,
+     479,
+     "a.cp-author-more",
+     true
+    ],
+    [
+     312,
+     479,
+     "main#main",
+     false
+    ],
+    [
+     8,
+     490,
+     "main#main",
+     false
+    ],
+    [
+     42,
+     490,
+     "a.cp-author-link",
+     true
+    ],
+    [
+     76,
+     490,
+     "a.cp-author-link",
+     true
+    ],
+    [
+     109,
+     490,
+     "ul.cp-author-list",
+     true
+    ],
+    [
+     143,
+     490,
+     "li.cp-author-item",
+     true
+    ],
+    [
+     177,
+     490,
+     "div.cp-card-copy",
+     true
+    ],
+    [
+     211,
+     490,
+     "div.cp-card-copy",
+     true
+    ],
+    [
+     244,
+     490,
+     "div.cp-card-copy",
+     true
+    ],
+    [
+     278,
+     490,
+     "div.cp-card-copy",
+     true
+    ],
+    [
+     312,
+     490,
+     "main#main",
+     false
+    ],
+    [
+     8,
+     542,
+     "main#main",
+     false
+    ],
+    [
+     312,
+     542,
+     "main#main",
+     false
+    ]
+   ],
+   "avant": {
+    "best": {
+     "bottom": 443.1,
+     "tag": "a",
+     "text": "Suivant"
+    },
+    "scrollY": 1988,
+    "maxScroll": 1988,
+    "docHeight": 2628
+   },
+   "avantVeilAtEnd": null,
+   "sameLayout": true,
+   "margin": 38.9,
+   "hitsIdentical": true,
+   "hitsOnContent": [
+    16,
+    22
+   ]
+  },
+  {
+   "vue": "commentaires-petit",
+   "route": "projects/ft-transcendence-building-together?tab=comments",
+   "viewport": [
+    320,
+    640
+   ],
+   "veil": {
+    "host": "app::before",
+    "height": 158,
+    "top": 482,
+    "opacity": "1",
+    "visibility": "visible",
+    "pointerEvents": "none",
+    "bg": "rgb(247, 250, 250)",
+    "image": "linear-gradient(to top, rgb(247, 250, 250) 0px, rgb(247, 250, 250) 134",
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr",
+    "section": "projects",
+    "toggle": {
+     "x": 34,
+     "y": 506,
+     "w": 200,
+     "h": 44
+    },
+    "die": {
+     "x": 242,
+     "y": 506,
+     "w": 44,
+     "h": 44
+    },
+    "dock": {
+     "x": 12,
+     "y": 563,
+     "w": 296,
+     "h": 60
+    },
+    "scrollY": 0,
+    "scrolling": null,
+    "focus": null
+   },
+   "gridApres": [
+    [
+     8,
+     479,
+     "main#main",
+     false
+    ],
+    [
+     42,
+     479,
+     "path",
+     true
+    ],
+    [
+     76,
+     479,
+     "span",
+     true
+    ],
+    [
+     109,
+     479,
+     "span",
+     true
+    ],
+    [
+     143,
+     479,
+     "span",
+     true
+    ],
+    [
+     177,
+     479,
+     "span.cp-project-switch-choice",
+     true
+    ],
+    [
+     211,
+     479,
+     "span.cp-project-switch-choice",
+     true
+    ],
+    [
+     244,
+     479,
+     "span.cp-project-switch-choice",
+     true
+    ],
+    [
+     278,
+     479,
+     "svg.cp-project-icon",
+     true
+    ],
+    [
+     312,
+     479,
+     "main#main",
+     false
+    ],
+    [
+     8,
+     490,
+     "main#main",
+     false
+    ],
+    [
+     42,
+     490,
+     "span.cp-project-switch-choice",
+     true
+    ],
+    [
+     76,
+     490,
+     "span",
+     true
+    ],
+    [
+     109,
+     490,
+     "span",
+     true
+    ],
+    [
+     143,
+     490,
+     "span",
+     true
+    ],
+    [
+     177,
+     490,
+     "span.cp-project-switch-choice",
+     true
+    ],
+    [
+     211,
+     490,
+     "span.cp-project-switch-choice",
+     true
+    ],
+    [
+     244,
+     490,
+     "span.cp-project-switch-choice",
+     true
+    ],
+    [
+     278,
+     490,
+     "summary#project-section-picker.cp-project-section-trigger",
+     true
+    ],
+    [
+     312,
+     490,
+     "main#main",
+     false
+    ],
+    [
+     8,
+     542,
+     "main#main",
+     false
+    ],
+    [
+     312,
+     542,
+     "main#main",
+     false
+    ]
+   ],
+   "apres": {
+    "best": {
+     "bottom": 420.7,
+     "tag": "p",
+     "text": "Ouvrez la discussion en partageant votre"
+    },
+    "scrollY": 764,
+    "maxScroll": 764,
+    "docHeight": 1404
+   },
+   "apresVeilAtEnd": "1",
+   "gridAvant": [
+    [
+     8,
+     479,
+     "main#main",
+     false
+    ],
+    [
+     42,
+     479,
+     "path",
+     true
+    ],
+    [
+     76,
+     479,
+     "span",
+     true
+    ],
+    [
+     109,
+     479,
+     "span",
+     true
+    ],
+    [
+     143,
+     479,
+     "span",
+     true
+    ],
+    [
+     177,
+     479,
+     "span.cp-project-switch-choice",
+     true
+    ],
+    [
+     211,
+     479,
+     "span.cp-project-switch-choice",
+     true
+    ],
+    [
+     244,
+     479,
+     "span.cp-project-switch-choice",
+     true
+    ],
+    [
+     278,
+     479,
+     "svg.cp-project-icon",
+     true
+    ],
+    [
+     312,
+     479,
+     "main#main",
+     false
+    ],
+    [
+     8,
+     490,
+     "main#main",
+     false
+    ],
+    [
+     42,
+     490,
+     "span.cp-project-switch-choice",
+     true
+    ],
+    [
+     76,
+     490,
+     "span",
+     true
+    ],
+    [
+     109,
+     490,
+     "span",
+     true
+    ],
+    [
+     143,
+     490,
+     "span",
+     true
+    ],
+    [
+     177,
+     490,
+     "span.cp-project-switch-choice",
+     true
+    ],
+    [
+     211,
+     490,
+     "span.cp-project-switch-choice",
+     true
+    ],
+    [
+     244,
+     490,
+     "span.cp-project-switch-choice",
+     true
+    ],
+    [
+     278,
+     490,
+     "summary#project-section-picker.cp-project-section-trigger",
+     true
+    ],
+    [
+     312,
+     490,
+     "main#main",
+     false
+    ],
+    [
+     8,
+     542,
+     "main#main",
+     false
+    ],
+    [
+     312,
+     542,
+     "main#main",
+     false
+    ]
+   ],
+   "avant": {
+    "best": {
+     "bottom": 420.7,
+     "tag": "p",
+     "text": "Ouvrez la discussion en partageant votre"
+    },
+    "scrollY": 764,
+    "maxScroll": 764,
+    "docHeight": 1404
+   },
+   "avantVeilAtEnd": null,
+   "sameLayout": true,
+   "margin": 61.3,
+   "hitsIdentical": true,
+   "hitsOnContent": [
+    16,
+    22
+   ]
+  }
+ ],
+ "ends3": [
+  {
+   "vue": "article-mobile",
+   "route": "journal/journal-an-evening-debugging?tab=article",
+   "viewport": [
+    390,
+    844
+   ],
+   "veil": {
+    "host": "app::before",
+    "height": 158,
+    "top": 686,
+    "opacity": "1",
+    "visibility": "visible",
+    "pointerEvents": "none",
+    "bg": "rgb(247, 250, 250)",
+    "image": "linear-gradient(to top, rgb(247, 250, 250) 0px, rgb(247, 250, 250) 134",
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr",
+    "section": "journal",
+    "toggle": {
+     "x": 69,
+     "y": 710,
+     "w": 200,
+     "h": 44
+    },
+    "die": {
+     "x": 277,
+     "y": 710,
+     "w": 44,
+     "h": 44
+    },
+    "dock": {
+     "x": 16,
+     "y": 767,
+     "w": 358,
+     "h": 60
+    },
+    "scrollY": 0,
+    "scrolling": null,
+    "focus": null
+   },
+   "gridApres": [
+    [
+     8,
+     683,
+     "main#main",
+     false
+    ],
+    [
+     50,
+     683,
+     "path",
+     true
+    ],
+    [
+     91,
+     683,
+     "path",
+     true
+    ],
+    [
+     133,
+     683,
+     "path",
+     true
+    ],
+    [
+     174,
+     683,
+     "path",
+     true
+    ],
+    [
+     216,
+     683,
+     "path",
+     true
+    ],
+    [
+     257,
+     683,
+     "path",
+     true
+    ],
+    [
+     299,
+     683,
+     "path",
+     true
+    ],
+    [
+     340,
+     683,
+     "path",
+     true
+    ],
+    [
+     382,
+     683,
+     "main#main",
+     false
+    ],
+    [
+     8,
+     694,
+     "main#main",
+     false
+    ],
+    [
+     50,
+     694,
+     "figure.cp-project-media",
+     true
+    ],
+    [
+     91,
+     694,
+     "figure.cp-project-media",
+     true
+    ],
+    [
+     133,
+     694,
+     "figure.cp-project-media",
+     true
+    ],
+    [
+     174,
+     694,
+     "figure.cp-project-media",
+     true
+    ],
+    [
+     216,
+     694,
+     "figure.cp-project-media",
+     true
+    ],
+    [
+     257,
+     694,
+     "figure.cp-project-media",
+     true
+    ],
+    [
+     299,
+     694,
+     "figure.cp-project-media",
+     true
+    ],
+    [
+     340,
+     694,
+     "figure.cp-project-media",
+     true
+    ],
+    [
+     382,
+     694,
+     "main#main",
+     false
+    ],
+    [
+     8,
+     746,
+     "main#main",
+     false
+    ],
+    [
+     50,
+     746,
+     "p",
+     true
+    ],
+    [
+     340,
+     746,
+     "p",
+     true
+    ],
+    [
+     382,
+     746,
+     "main#main",
+     false
+    ]
+   ],
+   "apres": {
+    "best": {
+     "bottom": 634.4,
+     "tag": "p",
+     "text": "Un journal de campus peut garder ces mom"
+    },
+    "scrollY": 838,
+    "maxScroll": 838,
+    "docHeight": 1682
+   },
+   "apresVeilAtEnd": "1",
+   "gridAvant": [
+    [
+     8,
+     683,
+     "main#main",
+     false
+    ],
+    [
+     50,
+     683,
+     "path",
+     true
+    ],
+    [
+     91,
+     683,
+     "path",
+     true
+    ],
+    [
+     133,
+     683,
+     "path",
+     true
+    ],
+    [
+     174,
+     683,
+     "path",
+     true
+    ],
+    [
+     216,
+     683,
+     "path",
+     true
+    ],
+    [
+     257,
+     683,
+     "path",
+     true
+    ],
+    [
+     299,
+     683,
+     "path",
+     true
+    ],
+    [
+     340,
+     683,
+     "path",
+     true
+    ],
+    [
+     382,
+     683,
+     "main#main",
+     false
+    ],
+    [
+     8,
+     694,
+     "main#main",
+     false
+    ],
+    [
+     50,
+     694,
+     "figure.cp-project-media",
+     true
+    ],
+    [
+     91,
+     694,
+     "figure.cp-project-media",
+     true
+    ],
+    [
+     133,
+     694,
+     "figure.cp-project-media",
+     true
+    ],
+    [
+     174,
+     694,
+     "figure.cp-project-media",
+     true
+    ],
+    [
+     216,
+     694,
+     "figure.cp-project-media",
+     true
+    ],
+    [
+     257,
+     694,
+     "figure.cp-project-media",
+     true
+    ],
+    [
+     299,
+     694,
+     "figure.cp-project-media",
+     true
+    ],
+    [
+     340,
+     694,
+     "figure.cp-project-media",
+     true
+    ],
+    [
+     382,
+     694,
+     "main#main",
+     false
+    ],
+    [
+     8,
+     746,
+     "main#main",
+     false
+    ],
+    [
+     50,
+     746,
+     "p",
+     true
+    ],
+    [
+     340,
+     746,
+     "p",
+     true
+    ],
+    [
+     382,
+     746,
+     "main#main",
+     false
+    ]
+   ],
+   "avant": {
+    "best": {
+     "bottom": 634.4,
+     "tag": "p",
+     "text": "Un journal de campus peut garder ces mom"
+    },
+    "scrollY": 838,
+    "maxScroll": 838,
+    "docHeight": 1682
+   },
+   "avantVeilAtEnd": null,
+   "sameLayout": true,
+   "margin": 51.6,
+   "hitsIdentical": true,
+   "hitsOnContent": [
+    18,
+    24
+   ]
+  },
+  {
+   "vue": "profil-petit",
+   "route": "people/profile-leila-mansour?tab=overview",
+   "viewport": [
+    320,
+    640
+   ],
+   "veil": {
+    "host": "app::before",
+    "height": 158,
+    "top": 482,
+    "opacity": "1",
+    "visibility": "visible",
+    "pointerEvents": "none",
+    "bg": "rgb(247, 250, 250)",
+    "image": "linear-gradient(to top, rgb(247, 250, 250) 0px, rgb(247, 250, 250) 134",
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr",
+    "section": "people",
+    "toggle": {
+     "x": 34,
+     "y": 506,
+     "w": 200,
+     "h": 44
+    },
+    "die": {
+     "x": 242,
+     "y": 506,
+     "w": 44,
+     "h": 44
+    },
+    "dock": {
+     "x": 12,
+     "y": 563,
+     "w": 296,
+     "h": 60
+    },
+    "scrollY": 0,
+    "scrolling": null,
+    "focus": null
+   },
+   "gridApres": [
+    [
+     8,
+     479,
+     "main#main",
+     false
+    ],
+    [
+     42,
+     479,
+     "summary#profile-section-picker.cp-profile-section-trigger",
+     true
+    ],
+    [
+     76,
+     479,
+     "summary#profile-section-picker.cp-profile-section-trigger",
+     true
+    ],
+    [
+     109,
+     479,
+     "summary#profile-section-picker.cp-profile-section-trigger",
+     true
+    ],
+    [
+     143,
+     479,
+     "summary#profile-section-picker.cp-profile-section-trigger",
+     true
+    ],
+    [
+     177,
+     479,
+     "summary#profile-section-picker.cp-profile-section-trigger",
+     true
+    ],
+    [
+     211,
+     479,
+     "summary#profile-section-picker.cp-profile-section-trigger",
+     true
+    ],
+    [
+     244,
+     479,
+     "summary#profile-section-picker.cp-profile-section-trigger",
+     true
+    ],
+    [
+     278,
+     479,
+     "summary#profile-section-picker.cp-profile-section-trigger",
+     true
+    ],
+    [
+     312,
+     479,
+     "main#main",
+     false
+    ],
+    [
+     8,
+     490,
+     "main#main",
+     false
+    ],
+    [
+     42,
+     490,
+     "div.cp-profile-reading-pane",
+     true
+    ],
+    [
+     76,
+     490,
+     "div.cp-profile-reading-pane",
+     true
+    ],
+    [
+     109,
+     490,
+     "div.cp-profile-reading-pane",
+     true
+    ],
+    [
+     143,
+     490,
+     "div.cp-profile-reading-pane",
+     true
+    ],
+    [
+     177,
+     490,
+     "div.cp-profile-reading-pane",
+     true
+    ],
+    [
+     211,
+     490,
+     "div.cp-profile-reading-pane",
+     true
+    ],
+    [
+     244,
+     490,
+     "div.cp-profile-reading-pane",
+     true
+    ],
+    [
+     278,
+     490,
+     "div.cp-profile-reading-pane",
+     true
+    ],
+    [
+     312,
+     490,
+     "main#main",
+     false
+    ],
+    [
+     8,
+     542,
+     "main#main",
+     false
+    ],
+    [
+     312,
+     542,
+     "main#main",
+     false
+    ]
+   ],
+   "apres": {
+    "best": {
+     "bottom": 450.5,
+     "tag": "p",
+     "text": "Profils et pseudos fictifs · portraits i"
+    },
+    "scrollY": 1247,
+    "maxScroll": 1247,
+    "docHeight": 1887
+   },
+   "apresVeilAtEnd": "1",
+   "gridAvant": [
+    [
+     8,
+     479,
+     "main#main",
+     false
+    ],
+    [
+     42,
+     479,
+     "summary#profile-section-picker.cp-profile-section-trigger",
+     true
+    ],
+    [
+     76,
+     479,
+     "summary#profile-section-picker.cp-profile-section-trigger",
+     true
+    ],
+    [
+     109,
+     479,
+     "summary#profile-section-picker.cp-profile-section-trigger",
+     true
+    ],
+    [
+     143,
+     479,
+     "summary#profile-section-picker.cp-profile-section-trigger",
+     true
+    ],
+    [
+     177,
+     479,
+     "summary#profile-section-picker.cp-profile-section-trigger",
+     true
+    ],
+    [
+     211,
+     479,
+     "summary#profile-section-picker.cp-profile-section-trigger",
+     true
+    ],
+    [
+     244,
+     479,
+     "summary#profile-section-picker.cp-profile-section-trigger",
+     true
+    ],
+    [
+     278,
+     479,
+     "summary#profile-section-picker.cp-profile-section-trigger",
+     true
+    ],
+    [
+     312,
+     479,
+     "main#main",
+     false
+    ],
+    [
+     8,
+     490,
+     "main#main",
+     false
+    ],
+    [
+     42,
+     490,
+     "div.cp-profile-reading-pane",
+     true
+    ],
+    [
+     76,
+     490,
+     "div.cp-profile-reading-pane",
+     true
+    ],
+    [
+     109,
+     490,
+     "div.cp-profile-reading-pane",
+     true
+    ],
+    [
+     143,
+     490,
+     "div.cp-profile-reading-pane",
+     true
+    ],
+    [
+     177,
+     490,
+     "div.cp-profile-reading-pane",
+     true
+    ],
+    [
+     211,
+     490,
+     "div.cp-profile-reading-pane",
+     true
+    ],
+    [
+     244,
+     490,
+     "div.cp-profile-reading-pane",
+     true
+    ],
+    [
+     278,
+     490,
+     "div.cp-profile-reading-pane",
+     true
+    ],
+    [
+     312,
+     490,
+     "main#main",
+     false
+    ],
+    [
+     8,
+     542,
+     "main#main",
+     false
+    ],
+    [
+     312,
+     542,
+     "main#main",
+     false
+    ]
+   ],
+   "avant": {
+    "best": {
+     "bottom": 450.5,
+     "tag": "p",
+     "text": "Profils et pseudos fictifs · portraits i"
+    },
+    "scrollY": 1247,
+    "maxScroll": 1247,
+    "docHeight": 1887
+   },
+   "avantVeilAtEnd": null,
+   "sameLayout": true,
+   "margin": 31.5,
+   "hitsIdentical": true,
+   "hitsOnContent": [
+    16,
+    22
+   ]
+  }
+ ],
+ "menus": {
+  "triOuvert": {
+   "section": "projects",
+   "host": "app::before",
+   "opacity": "0",
+   "focus": {
+    "el": "button",
+    "visible": false,
+    "inSheet": true
+   },
+   "scrollY": 0
+  },
+  "triFerme": {
+   "section": "projects",
+   "host": "app::before",
+   "opacity": "0",
+   "focus": {
+    "el": "button#content-sort-button.cp-control-trigger",
+    "visible": true,
+    "inSheet": true
+   },
+   "scrollY": 0
+  },
+  "triFermeSansFocus": {
+   "section": "projects",
+   "host": "app::before",
+   "opacity": "1",
+   "focus": null,
+   "scrollY": 0
+  },
+  "sectionsOuvert": {
+   "section": "projects",
+   "host": "app::before",
+   "opacity": "0",
+   "focus": {
+    "el": "summary#project-section-picker.cp-project-section-trigger",
+    "visible": false,
+    "inSheet": true
+   },
+   "scrollY": 0,
+   "open": true
+  },
+  "sectionsFerme": {
+   "section": "projects",
+   "host": "app::before",
+   "opacity": "1",
+   "focus": null,
+   "scrollY": 0,
+   "open": false
+  }
+ },
+ "scroll": {
+  "repos": {
+   "section": "projects",
+   "host": "app::before",
+   "opacity": "1",
+   "focus": null,
+   "scrollY": 0
+  },
+  "pendantDefilement": [
+   [
+    "true",
+    "0",
+    120
+   ],
+   [
+    "true",
+    "0",
+    240
+   ],
+   [
+    "true",
+    "0",
+    360
+   ],
+   [
+    "true",
+    "0",
+    480
+   ],
+   [
+    "true",
+    "0",
+    600
+   ],
+   [
+    "true",
+    "0",
+    720
+   ]
+  ],
+  "apresDefilement": [
+   null,
+   "1",
+   720
+  ]
+ },
+ "motion": {
+  "versFiche": {
+   "frames": 57,
+   "hosts": [
+    1,
+    2
+   ],
+   "framesWithoutVeilOrMisplaced": 0,
+   "firstBad": [],
+   "minOpacity": 1.0
+  },
+  "versFicheEtat": {
+   "section": "projects",
+   "host": "content-sheet::after",
+   "opacity": "1",
+   "focus": {
+    "el": "h1#project-title",
+    "visible": false,
+    "inSheet": true
+   },
+   "scrollY": 0
+  },
+  "retourListe": {
+   "frames": 56,
+   "hosts": [
+    1,
+    2
+   ],
+   "framesWithoutVeilOrMisplaced": 0,
+   "firstBad": [],
+   "minOpacity": 1
+  },
+  "retourListeEtat": {
+   "section": "projects",
+   "host": "app::before",
+   "opacity": "1",
+   "focus": {
+    "el": "h1#section-title.sr-only",
+    "visible": false,
+    "inSheet": true
+   },
+   "scrollY": 0
+  }
+ },
+ "runtime": {
+  "start": {
+   "host": "app::before",
+   "height": 158,
+   "top": 686,
+   "opacity": "1",
+   "bg": "rgb(247, 250, 250)",
+   "image": "linear-gradient(to top, rgb(247, 250, 250) 0px, rgb(247, 250, 250) 134",
+   "theme": "light",
+   "lang": "fr",
+   "dir": "ltr"
+  },
+  "arDark": {
+   "host": "app::before",
+   "height": 158,
+   "top": 686,
+   "opacity": "1",
+   "bg": "rgb(27, 27, 27)",
+   "image": "linear-gradient(to top, rgb(27, 27, 27) 0px, rgb(27, 27, 27) 134px, co",
+   "theme": "dark",
+   "lang": "ar",
+   "dir": "rtl"
+  },
+  "enLight": {
+   "host": "app::before",
+   "height": 158,
+   "top": 686,
+   "opacity": "1",
+   "bg": "rgb(247, 250, 250)",
+   "image": "linear-gradient(to top, rgb(247, 250, 250) 0px, rgb(247, 250, 250) 134",
+   "theme": "light",
+   "lang": "en",
+   "dir": "ltr"
+  }
+ },
+ "sidebar": {
+  "avant": {
+   "veil": {
+    "host": null,
+    "height": 0,
+    "top": 900,
+    "opacity": null,
+    "visibility": null,
+    "pointerEvents": null,
+    "bg": "rgb(247, 250, 250)",
+    "image": null,
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr",
+    "section": "projects",
+    "toggle": {
+     "x": 594,
+     "y": 751,
+     "w": 200,
+     "h": 44
+    },
+    "die": {
+     "x": 802,
+     "y": 751,
+     "w": 44,
+     "h": 44
+    },
+    "dock": {
+     "x": 402,
+     "y": 808,
+     "w": 636,
+     "h": 60
+    },
+    "scrollY": 0,
+    "scrolling": null,
+    "focus": null
+   },
+   "sidebar": [
+    170,
+    236,
+    268,
+    648
+   ]
+  },
+  "apres": {
+   "veil": {
+    "host": "content-sheet::after",
+    "height": 173,
+    "top": 727,
+    "opacity": "1",
+    "visibility": "visible",
+    "pointerEvents": "none",
+    "bg": "rgb(247, 250, 250)",
+    "image": "linear-gradient(to top, rgb(247, 250, 250) 0px, rgb(247, 250, 250) 149",
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr",
+    "section": "projects",
+    "toggle": {
+     "x": 594,
+     "y": 751,
+     "w": 200,
+     "h": 44
+    },
+    "die": {
+     "x": 802,
+     "y": 751,
+     "w": 44,
+     "h": 44
+    },
+    "dock": {
+     "x": 402,
+     "y": 808,
+     "w": 636,
+     "h": 60
+    },
+    "scrollY": 0,
+    "scrolling": null,
+    "focus": null
+   },
+   "sidebar": [
+    170,
+    236,
+    268,
+    648
+   ]
+  },
+  "pixelsSidebarInVeil": {
+   "pixels": 44083,
+   "box": [
+    170.0,
+    727.0,
+    438.0,
+    900.0
+   ],
+   "maxDelta": 6
+  },
+  "pixelsAboveVeil": {
+   "pixels": 0,
+   "box": null,
+   "maxDelta": 0
+  },
+  "pixelsAll": {
+   "pixels": 133211,
+   "box": [
+    0.0,
+    727.0,
+    1440.0,
+    900.0
+   ],
+   "maxDelta": 468
+  }
+ },
+ "explorer": {
+  "ordinateur-avant-veil": {
+   "host": null,
+   "opacity": null,
+   "visibility": null
+  },
+  "ordinateur-apres-veil": {
+   "host": "app::before",
+   "opacity": "0",
+   "visibility": "hidden"
+  },
+  "ordinateur-pixels": {
+   "pixels": 0,
+   "box": null
+  },
+  "mobile-avant-veil": {
+   "host": null,
+   "opacity": null,
+   "visibility": null
+  },
+  "mobile-apres-veil": {
+   "host": "app::before",
+   "opacity": "0",
+   "visibility": "hidden"
+  },
+  "mobile-pixels": {
+   "pixels": 0,
+   "box": null
+  }
+ },
+ "globe": {
+  "ordinateur-avant-ready": true,
+  "ordinateur-avant-veil": {
+   "host": null,
+   "opacity": null,
+   "visibility": null
+  },
+  "ordinateur-apres-ready": true,
+  "ordinateur-apres-veil": {
+   "host": "app::before",
+   "opacity": "0",
+   "visibility": "hidden"
+  },
+  "ordinateur-pixels": {
+   "pixels": 0,
+   "box": null
+  }
+ },
+ "awards": {
+  "ordinateur-avant-veil": {
+   "host": null,
+   "opacity": null,
+   "visibility": null
+  },
+  "ordinateur-apres-veil": {
+   "host": "app::before",
+   "opacity": "0",
+   "visibility": "hidden"
+  },
+  "ordinateur-pixels": {
+   "pixels": 0,
+   "box": null
+  },
+  "mobile-avant-veil": {
+   "host": null,
+   "opacity": null,
+   "visibility": null
+  },
+  "mobile-apres-veil": {
+   "host": "app::before",
+   "opacity": "0",
+   "visibility": "hidden"
+  },
+  "mobile-pixels": {
+   "pixels": 0,
+   "box": null
+  }
+ },
+ "combined": {
+  "mobile": {
+   "active": [
+    "recherche-repliee",
+    "voile-pile-basse"
+   ],
+   "toggle": {
+    "x": 147,
+    "y": 710,
+    "w": 44,
+    "h": 44
+   },
+   "veilTop": 686,
+   "rampAboveMagnifier": 24,
+   "opacity": "1"
+  },
+  "petit": {
+   "active": [
+    "recherche-repliee",
+    "voile-pile-basse"
+   ],
+   "toggle": {
+    "x": 112,
+    "y": 506,
+    "w": 44,
+    "h": 44
+   },
+   "veilTop": 482,
+   "rampAboveMagnifier": 24,
+   "opacity": "1"
+  }
+ },
+ "extra": {
+  "reduced": [
+   "none",
+   "0s"
+  ],
+  "motion": [
+   "opacity, visibility",
+   "0.35s, 0s"
+  ],
+  "zones": [
+   "sidebar:cp-project-sidebar",
+   "menu:cp-project-sidebar-nav"
+  ],
+  "lecture": {
+   "section": "projects",
+   "host": "content-sheet::after",
+   "opacity": "0",
+   "focus": {
+    "el": "a.cp-author-link",
+    "visible": true,
+    "inSheet": true
+   },
+   "scrollY": 727,
+   "inReading": true,
+   "inSidebar": false
+  },
+  "menuLateral": {
+   "section": "projects",
+   "host": "content-sheet::after",
+   "opacity": "1",
+   "focus": {
+    "el": "a",
+    "visible": true,
+    "inSheet": true
+   },
+   "scrollY": 727,
+   "inSidebar": true
+  }
+ },
+ "zindex": {
+  "projects/ft-transcendence-building-together?tab=overview": {
+   "host": "content-sheet::after",
+   "raised": []
+  },
+  "projects/ft-transcendence-building-together?tab=implementation": {
+   "host": "content-sheet::after",
+   "raised": []
+  },
+  "projects/ft-transcendence-building-together?tab=media": {
+   "host": "content-sheet::after",
+   "raised": []
+  },
+  "projects/ft-transcendence-building-together?tab=test": {
+   "host": "content-sheet::after",
+   "raised": []
+  },
+  "projects/ft-transcendence-building-together?tab=comments": {
+   "host": "content-sheet::after",
+   "raised": []
+  }
+ },
+ "zindex2": {
+  "journal/journal-an-evening-debugging?tab=article": {
+   "host": "content-sheet::after",
+   "raised": []
+  },
+  "journal/journal-an-evening-debugging?tab=media": {
+   "host": "content-sheet::after",
+   "raised": []
+  },
+  "journal/journal-an-evening-debugging?tab=authors": {
+   "host": "content-sheet::after",
+   "raised": []
+  },
+  "journal/journal-an-evening-debugging?tab=comments": {
+   "host": "content-sheet::after",
+   "raised": []
+  }
+ },
+ "zindex3": {
+  "people/profile-leila-mansour?tab=overview": {
+   "host": "content-sheet::after",
+   "raised": []
+  },
+  "people/profile-leila-mansour?tab=projects": {
+   "host": "content-sheet::after",
+   "raised": [
+    [
+     "div.cp-profile-project-toolbar",
+     "relative",
+     4,
+     null
+    ]
+   ]
+  },
+  "people/profile-leila-mansour?tab=path": {
+   "host": "content-sheet::after",
+   "raised": []
+  },
+  "people/profile-leila-mansour?tab=contribution": {
+   "host": "content-sheet::after",
+   "raised": []
+  }
+ },
+ "toolbar": {
+  "1440x900": {
+   "docTop": 240,
+   "docBottom": 284,
+   "zIndex": "4",
+   "veilTop": 727,
+   "host": "block"
+  },
+  "1280x720": {
+   "docTop": 240,
+   "docBottom": 284,
+   "zIndex": "4",
+   "veilTop": 547,
+   "host": "block"
+  },
+  "1024x600": {
+   "docTop": 224,
+   "docBottom": 268,
+   "zIndex": "4",
+   "veilTop": 427,
+   "host": "block"
+  },
+  "841x520": {
+   "docTop": 192,
+   "docBottom": 236,
+   "zIndex": "4",
+   "veilTop": 370,
+   "host": "block"
+  }
+ },
+ "criteres": {
+  "coverage": true,
+  "ends": true,
+  "onlyVeilBandChanges": true,
+  "sidebarUnchanged": true,
+  "pointerNavigationKeepsVeil": true,
+  "keyboardFocusNeverHidden": true,
+  "menus": true,
+  "scrollFollowsDock": true,
+  "motion": true,
+  "reducedMotion": true,
+  "runtime": true,
+  "explorerAwards": true,
+  "combined": true,
+  "raisedInSheet": true,
+  "noErrors": true
+ },
+ "passed": true
+}

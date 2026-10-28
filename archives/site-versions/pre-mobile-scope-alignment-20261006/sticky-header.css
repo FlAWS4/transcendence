@@ -1,0 +1,119 @@
+/* Persistent header, filter and world context, 5 October 2026.
+   Sticky keeps the header's natural height in the document; the geographic
+   filter retains its responsive top/left values from globe-framing.css. */
+:root .app[data-navigation=dock] > .header {
+  position: sticky;
+  top: 0;
+  pointer-events: none;
+}
+:root .app[data-navigation=dock] > .header > * {
+  pointer-events: auto;
+}
+:root .app[data-navigation=dock] .scope-bar {
+  position: fixed;
+  z-index: 8;
+}
+
+/* The shared map uses viewport coordinates just like its fixed anchor.
+   The portal owns a different parent and therefore does not match this rule.
+   Keep the layer constant through the full globe <-> medallion transition. */
+:root .app[data-navigation=dock] #main > .globe-stage {
+  position: fixed;
+  z-index: 7;
+}
+
+/* Keep the Explorer controls above the same map layer as before. */
+:root .app[data-navigation=dock] :is(.globe-footer, .loading-status, .prototype-note) {
+  z-index: 8;
+}
+
+/* The page fades behind the header without a scroll timer or an opaque panel.
+   This paint-only layer sits above content (5), below map/filter (7/8) and
+   header (10). It cannot intercept clicks or create a backdrop root for menus. */
+:root .app[data-navigation=dock] {
+  --header-fade-solid: 136px;
+  --header-fade-end: 188px;
+}
+:root .app[data-navigation=dock]::after {
+  content: '';
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 6;
+  height: var(--header-fade-end);
+  pointer-events: none;
+  background: linear-gradient(to bottom,
+    var(--h42-color-bg) 0,
+    var(--h42-color-bg) var(--header-fade-solid),
+    color-mix(in srgb, var(--h42-color-bg) 82%, transparent) calc(var(--header-fade-solid) + (var(--header-fade-end) - var(--header-fade-solid)) * .35),
+    transparent 100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .25s ease, visibility 0s .25s;
+}
+body[data-entry=welcome] .app[data-navigation=dock]:not([data-section=explore])::after,
+body[data-entry=welcome] .app[data-navigation=dock][data-content-exiting=true]::after {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+/* Reading uses a raised context badge; the fade follows its compact header. */
+:root .app[data-navigation=dock][data-reading=true] {
+  --header-fade-solid: 84px;
+  --header-fade-end: 124px;
+}
+@media (max-width: 1050px) and (min-width: 701px) {
+  :root .app[data-navigation=dock][data-reading=true] {
+    --header-fade-solid: 76px;
+    --header-fade-end: 108px;
+  }
+}
+@media (max-width: 700px) {
+  :root .app[data-navigation=dock] {
+    --header-fade-solid: 118px;
+    --header-fade-end: 154px;
+  }
+  :root .app[data-navigation=dock][data-reading=true] {
+    --header-fade-solid: 124px;
+    --header-fade-end: 158px;
+  }
+}
+@media (max-width: 360px) {
+  :root .app[data-navigation=dock][data-reading=true] {
+    --header-fade-solid: 120px;
+    --header-fade-end: 154px;
+  }
+}
+@media (max-height: 720px) and (max-width: 700px) {
+  :root .app[data-navigation=dock] {
+    --header-fade-solid: 111px;
+    --header-fade-end: 146px;
+  }
+  :root .app[data-navigation=dock][data-reading=true] {
+    --header-fade-solid: 118px;
+    --header-fade-end: 152px;
+  }
+}
+@media (max-height: 520px) {
+  :root .app[data-navigation=dock] {
+    --header-fade-solid: 122px;
+    --header-fade-end: 148px;
+  }
+  :root .app[data-navigation=dock][data-reading=true] {
+    --header-fade-solid: 88px;
+    --header-fade-end: 124px;
+  }
+}
+@media (max-height: 520px) and (max-width: 700px) {
+  :root .app[data-navigation=dock] {
+    --header-fade-solid: 108px;
+    --header-fade-end: 132px;
+  }
+  :root .app[data-navigation=dock][data-reading=true] {
+    --header-fade-solid: 110px;
+    --header-fade-end: 144px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  :root .app[data-navigation=dock]::after { transition: none; }
+}

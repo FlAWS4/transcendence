@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-07",
+  "reason": "Avant retrait du CTA Découvrir des cartes de projets (rubrique globale et volet Projets des profils).",
+  "files": [
+    {
+      "path": "welcome.mjs",
+      "sha256": "4350470cbbf300e8e630bd6929230c2b4d8d124a74a414bd6d5cc59b5f0689e3"
+    },
+    {
+      "path": "profile-ui.mjs",
+      "sha256": "1d684fd800102175f760aa373e4bd5e66da822ce499847f7c95b55bd94645c71"
+    },
+    {
+      "path": "index.html",
+      "sha256": "48bdc89b43f456c3a79d0c17f305a95d46be2f0c5b938d8483d7bdb768f4b140"
+    },
+    {
+      "path": "content-preview.html",
+      "sha256": "8c84283c71c862c0e52c10b5a6918fa7724374400b66c7321a3865edc7d92a58"
+    },
+    {
+      "path": "content-preview.mjs",
+      "sha256": "ca84debd6fad0211933217b4719962588059cd5e9b40e54b8ecf1abb28fae7d0"
+    }
+  ],
+  "dependencies": "Styles, données et autres dépendances conservés dans horizon-welcome. Copie de sources ; profiles.css volontairement absent, changement visuel indépendant en cours."
+}

@@ -1,0 +1,98 @@
+{
+  "date": "2026-10-13",
+  "scenario": "Corrected entrance failure layout French desktop and Arabic320 then continue",
+  "initial_sha256": {
+    "welcome.mjs": "fc719f96cdb94546829246ea654399bbca10177074e82ae0babad2cb8b61ad1e",
+    "entrance.mjs": "089512e24ea8590bcf12771d82b3d5e4ad1a43e2578901447d4175ee795c243d",
+    "entrance.css": "ab4ba565727dd98920512ca362b6322327f432a57d730a77ab1eaca77737accb"
+  },
+  "results": [
+    {
+      "case": "error-layout-fr",
+      "result": {
+        "status": {
+          "top": 433,
+          "bottom": 457
+        },
+        "actions": {
+          "top": 481,
+          "bottom": 535,
+          "left": 260,
+          "right": 1020
+        },
+        "width": 1280,
+        "height": 900,
+        "buttons": [
+          {
+            "text": "Réessayer",
+            "top": 481,
+            "bottom": 535
+          },
+          {
+            "text": "Revenir au message",
+            "top": 481,
+            "bottom": 535
+          },
+          {
+            "text": "Continuer sans le globe",
+            "top": 481,
+            "bottom": 535
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "error-layout-ar",
+      "result": {
+        "status": {
+          "top": 222,
+          "bottom": 246
+        },
+        "actions": {
+          "top": 270,
+          "bottom": 486,
+          "left": 24,
+          "right": 296
+        },
+        "width": 320,
+        "height": 640,
+        "buttons": [
+          {
+            "text": "إعادة المحاولة",
+            "top": 270,
+            "bottom": 334
+          },
+          {
+            "text": "العودة إلى الرسالة",
+            "top": 346,
+            "bottom": 410
+          },
+          {
+            "text": "المتابعة دون الكرة الأرضية",
+            "top": 422,
+            "bottom": 486
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "arabic-continue-filtered",
+      "result": {
+        "hash": "#projects?country=FRA&campus=lyon",
+        "count": 2,
+        "disabled": false,
+        "dir": "rtl",
+        "overflow": false,
+        "active": "section-title"
+      }
+    }
+  ],
+  "passed": true,
+  "final_sha256": {
+    "welcome.mjs": "fc719f96cdb94546829246ea654399bbca10177074e82ae0babad2cb8b61ad1e",
+    "entrance.mjs": "089512e24ea8590bcf12771d82b3d5e4ad1a43e2578901447d4175ee795c243d",
+    "entrance.css": "ab4ba565727dd98920512ca362b6322327f432a57d730a77ab1eaca77737accb"
+  }
+}

@@ -1,0 +1,58 @@
+/* Right-hand reading stays in the document. Identity and actions never scroll;
+   only the section menu owns a desktop scroll area. */
+@media(min-width:841px){
+ :root .app[data-navigation=dock] [data-detail-back-pinned]{
+  position:fixed;left:var(--detail-back-x);top:var(--detail-back-top);z-index:1;margin:0;
+ }
+ .cp-detail-back-spacer{display:block;pointer-events:none}
+ :root .app[data-navigation=dock] :is(.cp-profile-reading-pane,.cp-project-reading-pane){grid-column:2}
+ :root .app[data-navigation=dock] [data-detail-scroll=sidebar]{
+  position:fixed;left:var(--detail-sidebar-x);top:var(--detail-sidebar-top);width:var(--detail-sidebar-width);
+  height:var(--detail-sidebar-height);min-height:0;display:flex;flex-direction:column;overflow:visible;
+ }
+ [data-detail-scroll=sidebar]>header{flex:none}
+ .cp-detail-menu{position:relative;box-sizing:border-box;flex:none;min-height:0;max-width:100%}
+ :root .app[data-navigation=dock] [data-detail-scroll=menu]{
+  box-sizing:border-box;height:100%;min-height:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior-y:contain;
+  align-content:start;scrollbar-width:thin;scrollbar-gutter:stable;scroll-padding-block:4px;padding-inline:4px;
+ }
+ .cp-detail-menu[data-overflow=true]{padding-block:20px;border-top:1px solid var(--cp-line)}
+ :root .app[data-navigation=dock] .cp-detail-menu[data-overflow=true]>[data-detail-scroll=menu]{border:0;padding-block:4px}
+ :root .app[data-navigation=dock] [data-detail-scroll=menu]:focus-visible{
+  outline:2px solid var(--h42-color-focus);outline-offset:3px;border-radius:4px;
+ }
+ .cp-detail-menu-arrow{position:absolute;left:calc(50% - 12px);display:grid;place-items:center;width:24px;height:24px;padding:0;border:0;border-radius:50%;background:var(--h42-color-surface);color:var(--cp-accent);z-index:1;cursor:pointer}
+ .cp-detail-menu-arrow[hidden]{display:none}
+ .cp-detail-menu-arrow[data-direction=up]{top:-3px}
+ .cp-detail-menu-arrow[data-direction=down]{bottom:-3px}
+ .cp-detail-menu-arrow svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;animation:detail-menu-hint-down 1.4s ease-in-out infinite}
+ .cp-detail-menu-arrow[data-direction=up] svg{animation-name:detail-menu-hint-up}
+ .cp-detail-menu-arrow:hover{background:var(--h42-color-soft)}
+ .cp-detail-menu-arrow:focus-visible{outline:2px solid var(--h42-color-focus);outline-offset:2px}
+ :root .app[data-navigation=dock] .content-sheet:has(:is(#profile-detail,#project-detail,#journal-detail):not([hidden]) [data-detail-scroll=sidebar])>.sample-note{
+  margin-inline-start:var(--detail-reading-inset,0px);
+ }
+ /* Applied only when the measured identity would leave too little menu space. */
+ :root .app [data-detail-density]>.cp-profile-hero,
+ :root .app [data-detail-density]>.cp-project-identity{display:grid;grid-template-columns:56px minmax(0,1fr);gap:10px;align-items:start;margin:0 0 14px}
+ :root .app [data-detail-density] .cp-profile-hero-portrait{width:56px;height:56px;border-radius:15px}
+ :root .app [data-detail-density] .cp-project-thumbnail{width:56px;border-radius:9px}
+ :root .app [data-detail-density] .cp-profile-heading h1{font-size:25px;line-height:1.15;margin:0 0 5px;overflow-wrap:anywhere}
+ :root .app [data-detail-density] .cp-project-heading h1{font-size:20px;line-height:1.2;margin:0 0 7px}
+ :root .app [data-detail-density] .cp-project-eyebrow{font-size:10px;margin-bottom:5px}
+ :root .app [data-detail-density] .cp-profile-login{font-size:12px}
+ :root .app [data-detail-density] :is(.cp-profile-actions,.cp-project-actions){grid-column:1/-1;gap:6px;margin:0}
+ :root .app [data-detail-density] :is(.cp-favorite,.cp-profile-message,.cp-project-campus){font-size:11px;min-height:32px;padding:5px 7px}
+ :root .app [data-detail-density=dense]>.cp-profile-hero,
+ :root .app [data-detail-density=dense]>.cp-project-identity{grid-template-columns:32px minmax(0,1fr);gap:7px;margin-bottom:9px}
+ :root .app [data-detail-density=dense] .cp-profile-hero-portrait{width:32px;height:32px;border-radius:9px}
+ :root .app [data-detail-density=dense] .cp-project-thumbnail{width:32px;border-radius:5px}
+ :root .app [data-detail-density=dense] .cp-profile-heading h1{font-size:18px;line-height:1.15;margin-bottom:3px}
+ :root .app [data-detail-density=dense] .cp-project-heading h1{font-size:16px;line-height:1.2;margin-bottom:4px}
+ :root .app [data-detail-density=dense] .cp-project-facts{font-size:10px;gap:2px 8px}
+ :root .app [data-detail-density=dense] :is(.cp-favorite,.cp-profile-message,.cp-project-campus){font-size:10px;min-height:28px;padding:4px 6px;gap:5px}
+ :root .app [data-detail-density=dense] [data-detail-scroll=menu] a{min-height:38px;padding-block:7px;font-size:12px}
+}
+@keyframes detail-menu-hint-up{0%,100%{transform:translateY(1px)}50%{transform:translateY(-1px)}}
+@keyframes detail-menu-hint-down{0%,100%{transform:translateY(-1px)}50%{transform:translateY(1px)}}
+@media(prefers-reduced-motion:reduce){.cp-detail-menu-arrow svg{animation:none}}

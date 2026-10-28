@@ -1,0 +1,2523 @@
+{
+ "arrivee-1440x900-sombre": {
+  "view": {
+   "name": "arrivee-1440x900-sombre",
+   "route": "",
+   "page": "index.html",
+   "theme": "dark",
+   "vp": [
+    1440,
+    900,
+    false
+   ],
+   "settle": 3
+  },
+  "steps": [
+   "initial"
+  ],
+  "sides": {
+   "archive": {
+    "url": "/work/visualizations/horizon-welcome/archive/pre-design-review-selection-20261015/baseline/index.html?qa=design-review",
+    "entry": true,
+    "globe": null,
+    "globeAttempts": 1,
+    "installed": null,
+    "setup": [],
+    "states": [
+     {
+      "step": "initial",
+      "shot": "captures/avant/arrivee-1440x900-sombre-archive-initial.png",
+      "stableAfter": null,
+      "steady": [
+       true,
+       true
+      ],
+      "presence": {
+       "links": 0,
+       "modules": 0,
+       "lastSheet": "content-report.css?v=3",
+       "notes": 0,
+       "started": false
+      },
+      "probes": {
+       "signup": null,
+       "login": null,
+       "guest": {
+        "color": "rgb(237, 52, 145)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderTopColor": "rgba(0, 0, 0, 0)",
+        "borderTopWidth": "1px",
+        "fontSize": "17px",
+        "borderTopLeftRadius": "14px",
+        "boxShadow": "none",
+        "box": [
+         732,
+         605,
+         159.58,
+         52
+        ]
+       },
+       "entryLogin": {
+        "color": "rgb(27, 27, 27)",
+        "backgroundColor": "rgb(237, 52, 145)",
+        "borderTopColor": "rgb(237, 52, 145)",
+        "borderTopWidth": "1px",
+        "fontSize": "17px",
+        "borderTopLeftRadius": "14px",
+        "boxShadow": "none",
+        "box": [
+         548.42,
+         605,
+         159.58,
+         52
+        ]
+       },
+       "sortPanel": null,
+       "awardsNote": null,
+       "globe": null,
+       "marker": null,
+       "grid": null,
+       "meta": null,
+       "count": null,
+       "card": null
+      },
+      "account": {
+       "visible": false
+      },
+      "arrival": {
+       "guest": {
+        "box": [
+         732,
+         605,
+         159.58,
+         52
+        ],
+        "color": "rgb(237, 52, 145)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "rgba(0, 0, 0, 0) 1px",
+        "font": "17px",
+        "radius": "14px",
+        "shadow": "none",
+        "lang": "fr"
+       },
+       "login": {
+        "box": [
+         548.42,
+         605,
+         159.58,
+         52
+        ],
+        "color": "rgb(27, 27, 27)",
+        "background": "rgb(237, 52, 145)",
+        "border": "rgb(237, 52, 145) 1px",
+        "font": "17px",
+        "radius": "14px",
+        "shadow": "none",
+        "lang": "fr"
+       },
+       "entry": "encrypted",
+       "theme": "dark",
+       "account": "none"
+      },
+      "sort": null,
+      "errors": [],
+      "overflow": false,
+      "lang": "fr",
+      "dir": "ltr",
+      "theme": "dark",
+      "section": "explore",
+      "main": [
+       "div.dock-shell",
+       "div#scope-bar.scope-bar",
+       "div#globe.globe-stage",
+       "section#content-sheet.content-sheet",
+       "p#loading.loading-status"
+      ],
+      "note": null,
+      "logins": [],
+      "globeVars": {
+       "hgRadius": ".425",
+       "fit": [
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       "names": {
+        "essai": "",
+        "paquet": ""
+       }
+      },
+      "elements": 360
+     }
+    ]
+   },
+   "original": {
+    "url": "/work/visualizations/horizon-welcome/index.html?qa=design-review",
+    "entry": true,
+    "globe": null,
+    "globeAttempts": 1,
+    "installed": null,
+    "setup": [],
+    "states": [
+     {
+      "step": "initial",
+      "shot": "captures/avant/arrivee-1440x900-sombre-original-initial.png",
+      "stableAfter": null,
+      "steady": [
+       true,
+       true
+      ],
+      "presence": {
+       "links": 0,
+       "modules": 0,
+       "lastSheet": "content-report.css?v=3",
+       "notes": 0,
+       "started": false
+      },
+      "probes": {
+       "signup": null,
+       "login": null,
+       "guest": {
+        "color": "rgb(237, 52, 145)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderTopColor": "rgba(0, 0, 0, 0)",
+        "borderTopWidth": "1px",
+        "fontSize": "17px",
+        "borderTopLeftRadius": "14px",
+        "boxShadow": "none",
+        "box": [
+         732,
+         605,
+         159.58,
+         52
+        ]
+       },
+       "entryLogin": {
+        "color": "rgb(27, 27, 27)",
+        "backgroundColor": "rgb(237, 52, 145)",
+        "borderTopColor": "rgb(237, 52, 145)",
+        "borderTopWidth": "1px",
+        "fontSize": "17px",
+        "borderTopLeftRadius": "14px",
+        "boxShadow": "none",
+        "box": [
+         548.42,
+         605,
+         159.58,
+         52
+        ]
+       },
+       "sortPanel": null,
+       "awardsNote": null,
+       "globe": null,
+       "marker": null,
+       "grid": null,
+       "meta": null,
+       "count": null,
+       "card": null
+      },
+      "account": {
+       "visible": false
+      },
+      "arrival": {
+       "guest": {
+        "box": [
+         732,
+         605,
+         159.58,
+         52
+        ],
+        "color": "rgb(237, 52, 145)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "rgba(0, 0, 0, 0) 1px",
+        "font": "17px",
+        "radius": "14px",
+        "shadow": "none",
+        "lang": "fr"
+       },
+       "login": {
+        "box": [
+         548.42,
+         605,
+         159.58,
+         52
+        ],
+        "color": "rgb(27, 27, 27)",
+        "background": "rgb(237, 52, 145)",
+        "border": "rgb(237, 52, 145) 1px",
+        "font": "17px",
+        "radius": "14px",
+        "shadow": "none",
+        "lang": "fr"
+       },
+       "entry": "encrypted",
+       "theme": "dark",
+       "account": "none"
+      },
+      "sort": null,
+      "errors": [],
+      "overflow": false,
+      "lang": "fr",
+      "dir": "ltr",
+      "theme": "dark",
+      "section": "explore",
+      "main": [
+       "div.dock-shell",
+       "div#scope-bar.scope-bar",
+       "div#globe.globe-stage",
+       "section#content-sheet.content-sheet",
+       "p#loading.loading-status"
+      ],
+      "note": null,
+      "logins": [],
+      "globeVars": {
+       "hgRadius": ".425",
+       "fit": [
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       "names": {
+        "essai": "",
+        "paquet": ""
+       }
+      },
+      "elements": 360
+     }
+    ]
+   }
+  },
+  "comparisons": [
+   {
+    "step": "initial",
+    "archiveVsOriginal": {
+     "from": "captures/avant/arrivee-1440x900-sombre-archive-initial.png",
+     "to": "captures/avant/arrivee-1440x900-sombre-original-initial.png",
+     "pixelsDiffer": 0,
+     "elements": [
+      360,
+      360
+     ],
+     "extrasEqual": true,
+     "identical": true,
+     "onlyFromCount": 0,
+     "onlyFrom": [],
+     "onlyToCount": 0,
+     "onlyTo": [],
+     "styleChangedCount": 0,
+     "styleChanged": []
+    }
+   }
+  ],
+  "planches": [
+   "planches/avant/arrivee-1440x900-sombre-initial.png"
+  ],
+  "errors": {
+   "archive": [
+    []
+   ],
+   "original": [
+    []
+   ]
+  },
+  "overflow": {
+   "archive": [
+    false
+   ],
+   "original": [
+    false
+   ]
+  },
+  "presence": {
+   "archive": {
+    "links": 0,
+    "modules": 0,
+    "lastSheet": "content-report.css?v=3",
+    "notes": 0,
+    "started": false
+   },
+   "original": {
+    "links": 0,
+    "modules": 0,
+    "lastSheet": "content-report.css?v=3",
+    "notes": 0,
+    "started": false
+   }
+  }
+ },
+ "explorer-1440x900-clair-fr": {
+  "view": {
+   "name": "explorer-1440x900-clair-fr",
+   "route": "explore",
+   "theme": "light",
+   "vp": [
+    1440,
+    900,
+    false
+   ],
+   "block": false
+  },
+  "steps": [
+   "initial"
+  ],
+  "sides": {
+   "archive": {
+    "url": "/work/visualizations/horizon-welcome/archive/pre-design-review-selection-20261015/baseline/content-preview.html?qa=design-review#explore",
+    "entry": true,
+    "globe": true,
+    "globeAttempts": 1,
+    "installed": null,
+    "setup": [],
+    "states": [
+     {
+      "step": "initial",
+      "shot": "captures/avant/explorer-1440x900-clair-fr-archive-initial.png",
+      "stableAfter": 1,
+      "steady": null,
+      "presence": {
+       "links": 0,
+       "modules": 0,
+       "lastSheet": "content-report.css?v=3",
+       "notes": 0,
+       "started": false
+      },
+      "probes": {
+       "signup": null,
+       "login": null,
+       "guest": null,
+       "entryLogin": null,
+       "sortPanel": null,
+       "awardsNote": null,
+       "globe": {
+        "--hg-radius": ".425",
+        "box": [
+         0,
+         0,
+         1440,
+         900
+        ]
+       },
+       "marker": {
+        "fontFamily": "\"Helvetica Neue\", Arial, Helvetica, sans-serif",
+        "fontSize": "14px",
+        "box": [
+         795,
+         259,
+         14,
+         14
+        ]
+       },
+       "grid": null,
+       "meta": null,
+       "count": null,
+       "card": null
+      },
+      "account": {
+       "visible": false
+      },
+      "arrival": null,
+      "sort": null,
+      "errors": [],
+      "overflow": false,
+      "lang": "fr",
+      "dir": "ltr",
+      "theme": "light",
+      "section": "explore",
+      "main": [
+       "div.dock-shell",
+       "div#scope-bar.scope-bar",
+       "div#globe.globe-stage.hg-integrated",
+       "section#content-sheet.content-sheet",
+       "p#loading.loading-status",
+       "div.map-credit"
+      ],
+      "note": null,
+      "logins": [],
+      "globeVars": {
+       "hgRadius": ".425",
+       "fit": [
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       "names": {
+        "essai": "",
+        "paquet": ""
+       }
+      },
+      "elements": 480
+     }
+    ]
+   },
+   "original": {
+    "url": "/work/visualizations/horizon-welcome/content-preview.html?qa=design-review#explore",
+    "entry": true,
+    "globe": true,
+    "globeAttempts": 1,
+    "installed": null,
+    "setup": [],
+    "states": [
+     {
+      "step": "initial",
+      "shot": "captures/avant/explorer-1440x900-clair-fr-original-initial.png",
+      "stableAfter": 1,
+      "steady": null,
+      "presence": {
+       "links": 0,
+       "modules": 0,
+       "lastSheet": "content-report.css?v=3",
+       "notes": 0,
+       "started": false
+      },
+      "probes": {
+       "signup": null,
+       "login": null,
+       "guest": null,
+       "entryLogin": null,
+       "sortPanel": null,
+       "awardsNote": null,
+       "globe": {
+        "--hg-radius": ".425",
+        "box": [
+         0,
+         0,
+         1440,
+         900
+        ]
+       },
+       "marker": {
+        "fontFamily": "\"Helvetica Neue\", Arial, Helvetica, sans-serif",
+        "fontSize": "14px",
+        "box": [
+         795,
+         259,
+         14,
+         14
+        ]
+       },
+       "grid": null,
+       "meta": null,
+       "count": null,
+       "card": null
+      },
+      "account": {
+       "visible": false
+      },
+      "arrival": null,
+      "sort": null,
+      "errors": [],
+      "overflow": false,
+      "lang": "fr",
+      "dir": "ltr",
+      "theme": "light",
+      "section": "explore",
+      "main": [
+       "div.dock-shell",
+       "div#scope-bar.scope-bar",
+       "div#globe.globe-stage.hg-integrated",
+       "section#content-sheet.content-sheet",
+       "p#loading.loading-status",
+       "div.map-credit"
+      ],
+      "note": null,
+      "logins": [],
+      "globeVars": {
+       "hgRadius": ".425",
+       "fit": [
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       "names": {
+        "essai": "",
+        "paquet": ""
+       }
+      },
+      "elements": 480
+     }
+    ]
+   }
+  },
+  "comparisons": [
+   {
+    "step": "initial",
+    "archiveVsOriginal": {
+     "from": "captures/avant/explorer-1440x900-clair-fr-archive-initial.png",
+     "to": "captures/avant/explorer-1440x900-clair-fr-original-initial.png",
+     "pixelsDiffer": 0,
+     "elements": [
+      480,
+      480
+     ],
+     "extrasEqual": true,
+     "identical": true,
+     "onlyFromCount": 0,
+     "onlyFrom": [],
+     "onlyToCount": 0,
+     "onlyTo": [],
+     "styleChangedCount": 0,
+     "styleChanged": []
+    }
+   }
+  ],
+  "planches": [
+   "planches/avant/explorer-1440x900-clair-fr-initial.png"
+  ],
+  "errors": {
+   "archive": [
+    []
+   ],
+   "original": [
+    []
+   ]
+  },
+  "overflow": {
+   "archive": [
+    false
+   ],
+   "original": [
+    false
+   ]
+  },
+  "presence": {
+   "archive": {
+    "links": 0,
+    "modules": 0,
+    "lastSheet": "content-report.css?v=3",
+    "notes": 0,
+    "started": false
+   },
+   "original": {
+    "links": 0,
+    "modules": 0,
+    "lastSheet": "content-report.css?v=3",
+    "notes": 0,
+    "started": false
+   }
+  }
+ },
+ "menu-compte-1440x900-sombre": {
+  "view": {
+   "name": "menu-compte-1440x900-sombre",
+   "route": "projects",
+   "theme": "dark",
+   "vp": [
+    1440,
+    900,
+    false
+   ],
+   "keep_focus": true
+  },
+  "steps": [
+   "initial"
+  ],
+  "sides": {
+   "archive": {
+    "url": "/work/visualizations/horizon-welcome/archive/pre-design-review-selection-20261015/baseline/content-preview.html?qa=design-review#projects",
+    "entry": true,
+    "globe": null,
+    "globeAttempts": 1,
+    "installed": null,
+    "setup": [],
+    "states": [
+     {
+      "step": "initial",
+      "shot": "captures/avant/menu-compte-1440x900-sombre-archive-initial.png",
+      "stableAfter": 1,
+      "steady": null,
+      "presence": {
+       "links": 0,
+       "modules": 0,
+       "lastSheet": "content-report.css?v=3",
+       "notes": 0,
+       "started": false
+      },
+      "probes": {
+       "signup": {
+        "color": "rgb(237, 52, 145)",
+        "backgroundColor": "rgb(27, 27, 27)",
+        "borderTopColor": "rgba(0, 0, 0, 0)",
+        "borderTopWidth": "1px",
+        "fontSize": "17px",
+        "borderTopLeftRadius": "14px",
+        "boxShadow": "none",
+        "box": [
+         1127,
+         211,
+         246,
+         54
+        ]
+       },
+       "login": null,
+       "guest": null,
+       "entryLogin": null,
+       "sortPanel": null,
+       "awardsNote": null,
+       "globe": {
+        "--hg-radius": ".425",
+        "box": [
+         641.45,
+         90.22,
+         56.89,
+         35.56
+        ]
+       },
+       "marker": null,
+       "grid": {
+        "gridTemplateColumns": "348px 348px 348px",
+        "box": [
+         170,
+         272,
+         1100,
+         2069.77
+        ]
+       },
+       "meta": {
+        "fontSize": "12px",
+        "color": "rgb(237, 52, 145)",
+        "box": [
+         172,
+         524,
+         344,
+         21.8
+        ]
+       },
+       "count": {
+        "fontSize": "12px",
+        "box": [
+         170,
+         217,
+         61.55,
+         18
+        ]
+       },
+       "card": {
+        "borderTopLeftRadius": "22px",
+        "box": [
+         170,
+         272,
+         348,
+         510.64
+        ]
+       }
+      },
+      "account": {
+       "visible": true,
+       "box": [
+        1127,
+        211,
+        1373,
+        265
+       ],
+       "text": [
+        1189.09375,
+        226,
+        1310.90625,
+        250
+       ],
+       "label": "Créer un compte",
+       "color": "rgb(237, 52, 145)",
+       "background": "rgb(27, 27, 27)",
+       "border": "rgba(0, 0, 0, 0)",
+       "borderWidth": "1px",
+       "font": "17px 400",
+       "radius": "14px",
+       "shadow": "none",
+       "login": null,
+       "menu": {
+        "background": "color(srgb 0.160784 0.160784 0.180392 / 0.82)",
+        "radius": "20px",
+        "shadow": "rgba(0, 0, 0, 0.2) 0px 12px 26px 0px, rgba(255, 255, 255, 0.19) 0px 1px 0px 0px inset, rgb"
+       },
+       "entry": "welcome",
+       "theme": "dark"
+      },
+      "arrival": null,
+      "sort": null,
+      "errors": [],
+      "overflow": false,
+      "lang": "fr",
+      "dir": "ltr",
+      "theme": "dark",
+      "section": "projects",
+      "main": [
+       "div.dock-shell",
+       "div#scope-bar.scope-bar",
+       "div#globe.globe-stage",
+       "section#content-sheet.content-sheet",
+       "p#loading.loading-status"
+      ],
+      "note": null,
+      "logins": [],
+      "globeVars": {
+       "hgRadius": ".425",
+       "fit": [
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       "names": {
+        "essai": "",
+        "paquet": ""
+       }
+      },
+      "elements": 1127
+     }
+    ]
+   },
+   "original": {
+    "url": "/work/visualizations/horizon-welcome/content-preview.html?qa=design-review#projects",
+    "entry": true,
+    "globe": null,
+    "globeAttempts": 1,
+    "installed": null,
+    "setup": [],
+    "states": [
+     {
+      "step": "initial",
+      "shot": "captures/avant/menu-compte-1440x900-sombre-original-initial.png",
+      "stableAfter": 1,
+      "steady": null,
+      "presence": {
+       "links": 0,
+       "modules": 0,
+       "lastSheet": "content-report.css?v=3",
+       "notes": 0,
+       "started": false
+      },
+      "probes": {
+       "signup": {
+        "color": "rgb(237, 52, 145)",
+        "backgroundColor": "rgb(27, 27, 27)",
+        "borderTopColor": "rgba(0, 0, 0, 0)",
+        "borderTopWidth": "1px",
+        "fontSize": "17px",
+        "borderTopLeftRadius": "14px",
+        "boxShadow": "none",
+        "box": [
+         1127,
+         211,
+         246,
+         54
+        ]
+       },
+       "login": null,
+       "guest": null,
+       "entryLogin": null,
+       "sortPanel": null,
+       "awardsNote": null,
+       "globe": {
+        "--hg-radius": ".425",
+        "box": [
+         641.45,
+         90.22,
+         56.89,
+         35.56
+        ]
+       },
+       "marker": null,
+       "grid": {
+        "gridTemplateColumns": "348px 348px 348px",
+        "box": [
+         170,
+         272,
+         1100,
+         2069.77
+        ]
+       },
+       "meta": {
+        "fontSize": "12px",
+        "color": "rgb(237, 52, 145)",
+        "box": [
+         172,
+         524,
+         344,
+         21.8
+        ]
+       },
+       "count": {
+        "fontSize": "12px",
+        "box": [
+         170,
+         217,
+         61.55,
+         18
+        ]
+       },
+       "card": {
+        "borderTopLeftRadius": "22px",
+        "box": [
+         170,
+         272,
+         348,
+         510.64
+        ]
+       }
+      },
+      "account": {
+       "visible": true,
+       "box": [
+        1127,
+        211,
+        1373,
+        265
+       ],
+       "text": [
+        1189.09375,
+        226,
+        1310.90625,
+        250
+       ],
+       "label": "Créer un compte",
+       "color": "rgb(237, 52, 145)",
+       "background": "rgb(27, 27, 27)",
+       "border": "rgba(0, 0, 0, 0)",
+       "borderWidth": "1px",
+       "font": "17px 400",
+       "radius": "14px",
+       "shadow": "none",
+       "login": null,
+       "menu": {
+        "background": "color(srgb 0.160784 0.160784 0.180392 / 0.82)",
+        "radius": "20px",
+        "shadow": "rgba(0, 0, 0, 0.2) 0px 12px 26px 0px, rgba(255, 255, 255, 0.19) 0px 1px 0px 0px inset, rgb"
+       },
+       "entry": "welcome",
+       "theme": "dark"
+      },
+      "arrival": null,
+      "sort": null,
+      "errors": [],
+      "overflow": false,
+      "lang": "fr",
+      "dir": "ltr",
+      "theme": "dark",
+      "section": "projects",
+      "main": [
+       "div.dock-shell",
+       "div#scope-bar.scope-bar",
+       "div#globe.globe-stage",
+       "section#content-sheet.content-sheet",
+       "p#loading.loading-status"
+      ],
+      "note": null,
+      "logins": [],
+      "globeVars": {
+       "hgRadius": ".425",
+       "fit": [
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       "names": {
+        "essai": "",
+        "paquet": ""
+       }
+      },
+      "elements": 1127
+     }
+    ]
+   }
+  },
+  "comparisons": [
+   {
+    "step": "initial",
+    "archiveVsOriginal": {
+     "from": "captures/avant/menu-compte-1440x900-sombre-archive-initial.png",
+     "to": "captures/avant/menu-compte-1440x900-sombre-original-initial.png",
+     "pixelsDiffer": 0,
+     "elements": [
+      1127,
+      1127
+     ],
+     "extrasEqual": true,
+     "identical": true,
+     "onlyFromCount": 0,
+     "onlyFrom": [],
+     "onlyToCount": 0,
+     "onlyTo": [],
+     "styleChangedCount": 0,
+     "styleChanged": []
+    }
+   }
+  ],
+  "planches": [
+   "planches/avant/menu-compte-1440x900-sombre-initial.png"
+  ],
+  "errors": {
+   "archive": [
+    []
+   ],
+   "original": [
+    []
+   ]
+  },
+  "overflow": {
+   "archive": [
+    false
+   ],
+   "original": [
+    false
+   ]
+  },
+  "presence": {
+   "archive": {
+    "links": 0,
+    "modules": 0,
+    "lastSheet": "content-report.css?v=3",
+    "notes": 0,
+    "started": false
+   },
+   "original": {
+    "links": 0,
+    "modules": 0,
+    "lastSheet": "content-report.css?v=3",
+    "notes": 0,
+    "started": false
+   }
+  }
+ },
+ "profils-grille-340x640-clair-fr": {
+  "view": {
+   "name": "profils-grille-340x640-clair-fr",
+   "route": "people",
+   "theme": "light",
+   "vp": [
+    340,
+    640,
+    true
+   ]
+  },
+  "steps": [
+   "initial"
+  ],
+  "sides": {
+   "archive": {
+    "url": "/work/visualizations/horizon-welcome/archive/pre-design-review-selection-20261015/baseline/content-preview.html?qa=design-review#people",
+    "entry": true,
+    "globe": null,
+    "globeAttempts": 1,
+    "installed": null,
+    "setup": [],
+    "states": [
+     {
+      "step": "initial",
+      "shot": "captures/avant/profils-grille-340x640-clair-fr-archive-initial.png",
+      "stableAfter": 1,
+      "steady": null,
+      "presence": {
+       "links": 0,
+       "modules": 0,
+       "lastSheet": "content-report.css?v=3",
+       "notes": 0,
+       "started": false
+      },
+      "probes": {
+       "signup": null,
+       "login": null,
+       "guest": null,
+       "entryLogin": null,
+       "sortPanel": null,
+       "awardsNote": null,
+       "globe": {
+        "--hg-radius": ".46",
+        "box": [
+         112.63,
+         67.54,
+         35.56,
+         66.93
+        ]
+       },
+       "marker": null,
+       "grid": {
+        "gridTemplateColumns": "143px 143px",
+        "box": [
+         20,
+         228.06,
+         300,
+         3716.44
+        ]
+       },
+       "meta": {
+        "fontSize": "12px",
+        "color": "rgb(0, 142, 144)",
+        "box": [
+         22,
+         422.89,
+         37.67,
+         19.8
+        ]
+       },
+       "count": {
+        "fontSize": "12px",
+        "box": [
+         20,
+         175,
+         149.55,
+         18
+        ]
+       },
+       "card": {
+        "borderTopLeftRadius": "22px",
+        "box": [
+         20,
+         228.06,
+         143,
+         266.22
+        ]
+       }
+      },
+      "account": {
+       "visible": false
+      },
+      "arrival": null,
+      "sort": null,
+      "errors": [],
+      "overflow": false,
+      "lang": "fr",
+      "dir": "ltr",
+      "theme": "light",
+      "section": "people",
+      "main": [
+       "div.dock-shell",
+       "div#scope-bar.scope-bar",
+       "div#globe.globe-stage",
+       "section#content-sheet.content-sheet",
+       "p#loading.loading-status"
+      ],
+      "note": null,
+      "logins": [
+       [
+        "real",
+        null,
+        "block",
+        "visible",
+        21.44
+       ],
+       [
+        "real",
+        null,
+        "block",
+        "visible",
+        21.44
+       ],
+       [
+        "real",
+        null,
+        "block",
+        "visible",
+        21.44
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "real",
+        null,
+        "block",
+        "visible",
+        21.44
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "real",
+        null,
+        "block",
+        "visible",
+        21.44
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "real",
+        null,
+        "block",
+        "visible",
+        21.44
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ]
+      ],
+      "globeVars": {
+       "hgRadius": ".46",
+       "fit": [
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       "names": {
+        "essai": "",
+        "paquet": ""
+       }
+      },
+      "elements": 864
+     }
+    ]
+   },
+   "original": {
+    "url": "/work/visualizations/horizon-welcome/content-preview.html?qa=design-review#people",
+    "entry": true,
+    "globe": null,
+    "globeAttempts": 1,
+    "installed": null,
+    "setup": [],
+    "states": [
+     {
+      "step": "initial",
+      "shot": "captures/avant/profils-grille-340x640-clair-fr-original-initial.png",
+      "stableAfter": 1,
+      "steady": null,
+      "presence": {
+       "links": 0,
+       "modules": 0,
+       "lastSheet": "content-report.css?v=3",
+       "notes": 0,
+       "started": false
+      },
+      "probes": {
+       "signup": null,
+       "login": null,
+       "guest": null,
+       "entryLogin": null,
+       "sortPanel": null,
+       "awardsNote": null,
+       "globe": {
+        "--hg-radius": ".46",
+        "box": [
+         112.63,
+         67.54,
+         35.56,
+         66.93
+        ]
+       },
+       "marker": null,
+       "grid": {
+        "gridTemplateColumns": "143px 143px",
+        "box": [
+         20,
+         228.06,
+         300,
+         3716.44
+        ]
+       },
+       "meta": {
+        "fontSize": "12px",
+        "color": "rgb(0, 142, 144)",
+        "box": [
+         22,
+         422.89,
+         37.67,
+         19.8
+        ]
+       },
+       "count": {
+        "fontSize": "12px",
+        "box": [
+         20,
+         175,
+         149.55,
+         18
+        ]
+       },
+       "card": {
+        "borderTopLeftRadius": "22px",
+        "box": [
+         20,
+         228.06,
+         143,
+         266.22
+        ]
+       }
+      },
+      "account": {
+       "visible": false
+      },
+      "arrival": null,
+      "sort": null,
+      "errors": [],
+      "overflow": false,
+      "lang": "fr",
+      "dir": "ltr",
+      "theme": "light",
+      "section": "people",
+      "main": [
+       "div.dock-shell",
+       "div#scope-bar.scope-bar",
+       "div#globe.globe-stage",
+       "section#content-sheet.content-sheet",
+       "p#loading.loading-status"
+      ],
+      "note": null,
+      "logins": [
+       [
+        "real",
+        null,
+        "block",
+        "visible",
+        21.44
+       ],
+       [
+        "real",
+        null,
+        "block",
+        "visible",
+        21.44
+       ],
+       [
+        "real",
+        null,
+        "block",
+        "visible",
+        21.44
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "real",
+        null,
+        "block",
+        "visible",
+        21.44
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "real",
+        null,
+        "block",
+        "visible",
+        21.44
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "real",
+        null,
+        "block",
+        "visible",
+        21.44
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ],
+       [
+        "pending",
+        null,
+        "block",
+        "visible",
+        42.88
+       ]
+      ],
+      "globeVars": {
+       "hgRadius": ".46",
+       "fit": [
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       "names": {
+        "essai": "",
+        "paquet": ""
+       }
+      },
+      "elements": 864
+     }
+    ]
+   }
+  },
+  "comparisons": [
+   {
+    "step": "initial",
+    "archiveVsOriginal": {
+     "from": "captures/avant/profils-grille-340x640-clair-fr-archive-initial.png",
+     "to": "captures/avant/profils-grille-340x640-clair-fr-original-initial.png",
+     "pixelsDiffer": 0,
+     "elements": [
+      864,
+      864
+     ],
+     "extrasEqual": true,
+     "identical": true,
+     "onlyFromCount": 0,
+     "onlyFrom": [],
+     "onlyToCount": 0,
+     "onlyTo": [],
+     "styleChangedCount": 0,
+     "styleChanged": []
+    }
+   }
+  ],
+  "planches": [
+   "planches/avant/profils-grille-340x640-clair-fr-initial.png"
+  ],
+  "errors": {
+   "archive": [
+    []
+   ],
+   "original": [
+    []
+   ]
+  },
+  "overflow": {
+   "archive": [
+    false
+   ],
+   "original": [
+    false
+   ]
+  },
+  "presence": {
+   "archive": {
+    "links": 0,
+    "modules": 0,
+    "lastSheet": "content-report.css?v=3",
+    "notes": 0,
+    "started": false
+   },
+   "original": {
+    "links": 0,
+    "modules": 0,
+    "lastSheet": "content-report.css?v=3",
+    "notes": 0,
+    "started": false
+   }
+  }
+ },
+ "tri-commentaires-bas-390x844-clair": {
+  "view": {
+   "name": "tri-commentaires-bas-390x844-clair",
+   "route": "projects/minishell-under-the-prompt?tab=comments",
+   "theme": "light",
+   "vp": [
+    390,
+    844,
+    true
+   ],
+   "seed": true,
+   "keep_focus": true
+  },
+  "steps": [
+   "initial"
+  ],
+  "sides": {
+   "archive": {
+    "url": "/work/visualizations/horizon-welcome/archive/pre-design-review-selection-20261015/baseline/content-preview.html?qa=design-review#projects/minishell-under-the-prompt?tab=comments",
+    "entry": true,
+    "globe": null,
+    "globeAttempts": 1,
+    "installed": null,
+    "setup": [],
+    "states": [
+     {
+      "step": "initial",
+      "shot": "captures/avant/tri-commentaires-bas-390x844-clair-archive-initial.png",
+      "stableAfter": 1,
+      "steady": null,
+      "presence": {
+       "links": 0,
+       "modules": 0,
+       "lastSheet": "content-report.css?v=3",
+       "notes": 0,
+       "started": false
+      },
+      "probes": {
+       "signup": null,
+       "login": null,
+       "guest": null,
+       "entryLogin": null,
+       "sortPanel": {
+        "borderTopLeftRadius": "20px",
+        "boxShadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px, rgba(255, 255, 255, 0.7) 0px 1px 0px 0px inset, rgba(24, 61, 60, 0.043) 0px -1px 0px 0px inset",
+        "fontSize": "16px",
+        "box": [
+         114.81,
+         492.69,
+         251.19,
+         140
+        ]
+       },
+       "awardsNote": null,
+       "globe": {
+        "--hg-radius": ".46",
+        "box": [
+         146.96,
+         64.53,
+         35.56,
+         76.95
+        ]
+       },
+       "marker": null,
+       "grid": null,
+       "meta": null,
+       "count": null,
+       "card": null
+      },
+      "account": {
+       "visible": false
+      },
+      "arrival": null,
+      "sort": {
+       "open": true,
+       "button": {
+        "x": 173.59,
+        "y": 641.69,
+        "right": 366,
+        "bottom": 685.69
+       },
+       "panel": {
+        "x": 114.81,
+        "y": 492.69,
+        "right": 366,
+        "bottom": 632.69
+       },
+       "direction": "haut",
+       "floating": {
+        "search": {
+         "x": 69,
+         "y": 710,
+         "right": 269,
+         "bottom": 754
+        },
+        "nav": {
+         "x": 16,
+         "y": 767,
+         "right": 374,
+         "bottom": 827
+        },
+        "btt": null,
+        "header": {
+         "x": 0,
+         "y": 0,
+         "right": 390,
+         "bottom": 92
+        },
+        "scope": {
+         "x": 141.73,
+         "y": 84,
+         "right": 248.27,
+         "bottom": 122
+        }
+       },
+       "overlaps": {
+        "search": false,
+        "nav": false,
+        "backToTop": false,
+        "header": false
+       },
+       "inViewport": true,
+       "panelStyle": {
+        "radius": "20px",
+        "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px, rgba(255, 255, 255,",
+        "font": "13px",
+        "scroll": [
+         138,
+         138
+        ]
+       },
+       "triggerFont": "11.2414px",
+       "scrollY": 248
+      },
+      "errors": [],
+      "overflow": false,
+      "lang": "fr",
+      "dir": "ltr",
+      "theme": "light",
+      "section": "projects",
+      "main": [
+       "div.dock-shell",
+       "div#scope-bar.scope-bar",
+       "div#globe.globe-stage",
+       "section#content-sheet.content-sheet",
+       "p#loading.loading-status"
+      ],
+      "note": null,
+      "logins": [],
+      "globeVars": {
+       "hgRadius": ".46",
+       "fit": [
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       "names": {
+        "essai": "",
+        "paquet": ""
+       }
+      },
+      "elements": 778
+     }
+    ]
+   },
+   "original": {
+    "url": "/work/visualizations/horizon-welcome/content-preview.html?qa=design-review#projects/minishell-under-the-prompt?tab=comments",
+    "entry": true,
+    "globe": null,
+    "globeAttempts": 1,
+    "installed": null,
+    "setup": [],
+    "states": [
+     {
+      "step": "initial",
+      "shot": "captures/avant/tri-commentaires-bas-390x844-clair-original-initial.png",
+      "stableAfter": 1,
+      "steady": null,
+      "presence": {
+       "links": 0,
+       "modules": 0,
+       "lastSheet": "content-report.css?v=3",
+       "notes": 0,
+       "started": false
+      },
+      "probes": {
+       "signup": null,
+       "login": null,
+       "guest": null,
+       "entryLogin": null,
+       "sortPanel": {
+        "borderTopLeftRadius": "20px",
+        "boxShadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px, rgba(255, 255, 255, 0.7) 0px 1px 0px 0px inset, rgba(24, 61, 60, 0.043) 0px -1px 0px 0px inset",
+        "fontSize": "16px",
+        "box": [
+         114.81,
+         492.69,
+         251.19,
+         140
+        ]
+       },
+       "awardsNote": null,
+       "globe": {
+        "--hg-radius": ".46",
+        "box": [
+         146.96,
+         64.53,
+         35.56,
+         76.95
+        ]
+       },
+       "marker": null,
+       "grid": null,
+       "meta": null,
+       "count": null,
+       "card": null
+      },
+      "account": {
+       "visible": false
+      },
+      "arrival": null,
+      "sort": {
+       "open": true,
+       "button": {
+        "x": 173.59,
+        "y": 641.69,
+        "right": 366,
+        "bottom": 685.69
+       },
+       "panel": {
+        "x": 114.81,
+        "y": 492.69,
+        "right": 366,
+        "bottom": 632.69
+       },
+       "direction": "haut",
+       "floating": {
+        "search": {
+         "x": 69,
+         "y": 710,
+         "right": 269,
+         "bottom": 754
+        },
+        "nav": {
+         "x": 16,
+         "y": 767,
+         "right": 374,
+         "bottom": 827
+        },
+        "btt": null,
+        "header": {
+         "x": 0,
+         "y": 0,
+         "right": 390,
+         "bottom": 92
+        },
+        "scope": {
+         "x": 141.73,
+         "y": 84,
+         "right": 248.27,
+         "bottom": 122
+        }
+       },
+       "overlaps": {
+        "search": false,
+        "nav": false,
+        "backToTop": false,
+        "header": false
+       },
+       "inViewport": true,
+       "panelStyle": {
+        "radius": "20px",
+        "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px, rgba(255, 255, 255,",
+        "font": "13px",
+        "scroll": [
+         138,
+         138
+        ]
+       },
+       "triggerFont": "11.2414px",
+       "scrollY": 248
+      },
+      "errors": [],
+      "overflow": false,
+      "lang": "fr",
+      "dir": "ltr",
+      "theme": "light",
+      "section": "projects",
+      "main": [
+       "div.dock-shell",
+       "div#scope-bar.scope-bar",
+       "div#globe.globe-stage",
+       "section#content-sheet.content-sheet",
+       "p#loading.loading-status"
+      ],
+      "note": null,
+      "logins": [],
+      "globeVars": {
+       "hgRadius": ".46",
+       "fit": [
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       "names": {
+        "essai": "",
+        "paquet": ""
+       }
+      },
+      "elements": 778
+     }
+    ]
+   }
+  },
+  "comparisons": [
+   {
+    "step": "initial",
+    "archiveVsOriginal": {
+     "from": "captures/avant/tri-commentaires-bas-390x844-clair-archive-initial.png",
+     "to": "captures/avant/tri-commentaires-bas-390x844-clair-original-initial.png",
+     "pixelsDiffer": 0,
+     "elements": [
+      778,
+      778
+     ],
+     "extrasEqual": true,
+     "identical": true,
+     "onlyFromCount": 0,
+     "onlyFrom": [],
+     "onlyToCount": 0,
+     "onlyTo": [],
+     "styleChangedCount": 0,
+     "styleChanged": []
+    }
+   }
+  ],
+  "planches": [
+   "planches/avant/tri-commentaires-bas-390x844-clair-initial.png"
+  ],
+  "errors": {
+   "archive": [
+    []
+   ],
+   "original": [
+    []
+   ]
+  },
+  "overflow": {
+   "archive": [
+    false
+   ],
+   "original": [
+    false
+   ]
+  },
+  "presence": {
+   "archive": {
+    "links": 0,
+    "modules": 0,
+    "lastSheet": "content-report.css?v=3",
+    "notes": 0,
+    "started": false
+   },
+   "original": {
+    "links": 0,
+    "modules": 0,
+    "lastSheet": "content-report.css?v=3",
+    "notes": 0,
+    "started": false
+   }
+  }
+ },
+ "awards-1440x900-clair": {
+  "view": {
+   "name": "awards-1440x900-clair",
+   "route": "awards",
+   "theme": "light",
+   "vp": [
+    1440,
+    900,
+    false
+   ]
+  },
+  "steps": [
+   "initial",
+   "langue-ar"
+  ],
+  "sides": {
+   "archive": {
+    "url": "/work/visualizations/horizon-welcome/archive/pre-design-review-selection-20261015/baseline/content-preview.html?qa=design-review#awards",
+    "entry": true,
+    "globe": null,
+    "globeAttempts": 1,
+    "installed": null,
+    "setup": [],
+    "states": [
+     {
+      "step": "initial",
+      "shot": "captures/avant/awards-1440x900-clair-archive-initial.png",
+      "stableAfter": 1,
+      "steady": null,
+      "presence": {
+       "links": 0,
+       "modules": 0,
+       "lastSheet": "content-report.css?v=3",
+       "notes": 0,
+       "started": false
+      },
+      "probes": {
+       "signup": null,
+       "login": null,
+       "guest": null,
+       "entryLogin": null,
+       "sortPanel": null,
+       "awardsNote": null,
+       "globe": null,
+       "marker": null,
+       "grid": null,
+       "meta": null,
+       "count": null,
+       "card": null
+      },
+      "account": {
+       "visible": false
+      },
+      "arrival": null,
+      "sort": null,
+      "errors": [],
+      "overflow": false,
+      "lang": "fr",
+      "dir": "ltr",
+      "theme": "light",
+      "section": "awards",
+      "main": [
+       "div.dock-shell",
+       "div#scope-bar.scope-bar",
+       "div#globe.globe-stage",
+       "section#content-sheet.content-sheet",
+       "p#loading.loading-status"
+      ],
+      "note": null,
+      "logins": [],
+      "globeVars": {
+       "hgRadius": ".425",
+       "fit": [
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       "names": {
+        "essai": "",
+        "paquet": ""
+       }
+      },
+      "elements": 346
+     },
+     {
+      "step": "langue-ar",
+      "shot": "captures/avant/awards-1440x900-clair-archive-langue-ar.png",
+      "stableAfter": 1,
+      "steady": null,
+      "presence": {
+       "links": 0,
+       "modules": 0,
+       "lastSheet": "content-report.css?v=3",
+       "notes": 0,
+       "started": false
+      },
+      "probes": {
+       "signup": null,
+       "login": null,
+       "guest": null,
+       "entryLogin": null,
+       "sortPanel": null,
+       "awardsNote": null,
+       "globe": null,
+       "marker": null,
+       "grid": null,
+       "meta": null,
+       "count": null,
+       "card": null
+      },
+      "account": {
+       "visible": false
+      },
+      "arrival": null,
+      "sort": null,
+      "errors": [],
+      "overflow": false,
+      "lang": "ar",
+      "dir": "rtl",
+      "theme": "light",
+      "section": "awards",
+      "main": [
+       "div.dock-shell",
+       "div#scope-bar.scope-bar",
+       "div#globe.globe-stage",
+       "section#content-sheet.content-sheet",
+       "p#loading.loading-status"
+      ],
+      "note": null,
+      "logins": [],
+      "globeVars": {
+       "hgRadius": ".425",
+       "fit": [
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       "names": {
+        "essai": "",
+        "paquet": ""
+       }
+      },
+      "elements": 373
+     }
+    ]
+   },
+   "original": {
+    "url": "/work/visualizations/horizon-welcome/content-preview.html?qa=design-review#awards",
+    "entry": true,
+    "globe": null,
+    "globeAttempts": 1,
+    "installed": null,
+    "setup": [],
+    "states": [
+     {
+      "step": "initial",
+      "shot": "captures/avant/awards-1440x900-clair-original-initial.png",
+      "stableAfter": 1,
+      "steady": null,
+      "presence": {
+       "links": 0,
+       "modules": 0,
+       "lastSheet": "content-report.css?v=3",
+       "notes": 0,
+       "started": false
+      },
+      "probes": {
+       "signup": null,
+       "login": null,
+       "guest": null,
+       "entryLogin": null,
+       "sortPanel": null,
+       "awardsNote": null,
+       "globe": null,
+       "marker": null,
+       "grid": null,
+       "meta": null,
+       "count": null,
+       "card": null
+      },
+      "account": {
+       "visible": false
+      },
+      "arrival": null,
+      "sort": null,
+      "errors": [],
+      "overflow": false,
+      "lang": "fr",
+      "dir": "ltr",
+      "theme": "light",
+      "section": "awards",
+      "main": [
+       "div.dock-shell",
+       "div#scope-bar.scope-bar",
+       "div#globe.globe-stage",
+       "section#content-sheet.content-sheet",
+       "p#loading.loading-status"
+      ],
+      "note": null,
+      "logins": [],
+      "globeVars": {
+       "hgRadius": ".425",
+       "fit": [
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       "names": {
+        "essai": "",
+        "paquet": ""
+       }
+      },
+      "elements": 346
+     },
+     {
+      "step": "langue-ar",
+      "shot": "captures/avant/awards-1440x900-clair-original-langue-ar.png",
+      "stableAfter": 1,
+      "steady": null,
+      "presence": {
+       "links": 0,
+       "modules": 0,
+       "lastSheet": "content-report.css?v=3",
+       "notes": 0,
+       "started": false
+      },
+      "probes": {
+       "signup": null,
+       "login": null,
+       "guest": null,
+       "entryLogin": null,
+       "sortPanel": null,
+       "awardsNote": null,
+       "globe": null,
+       "marker": null,
+       "grid": null,
+       "meta": null,
+       "count": null,
+       "card": null
+      },
+      "account": {
+       "visible": false
+      },
+      "arrival": null,
+      "sort": null,
+      "errors": [],
+      "overflow": false,
+      "lang": "ar",
+      "dir": "rtl",
+      "theme": "light",
+      "section": "awards",
+      "main": [
+       "div.dock-shell",
+       "div#scope-bar.scope-bar",
+       "div#globe.globe-stage",
+       "section#content-sheet.content-sheet",
+       "p#loading.loading-status"
+      ],
+      "note": null,
+      "logins": [],
+      "globeVars": {
+       "hgRadius": ".425",
+       "fit": [
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       "names": {
+        "essai": "",
+        "paquet": ""
+       }
+      },
+      "elements": 373
+     }
+    ]
+   }
+  },
+  "comparisons": [
+   {
+    "step": "initial",
+    "archiveVsOriginal": {
+     "from": "captures/avant/awards-1440x900-clair-archive-initial.png",
+     "to": "captures/avant/awards-1440x900-clair-original-initial.png",
+     "pixelsDiffer": 0,
+     "elements": [
+      346,
+      346
+     ],
+     "extrasEqual": true,
+     "identical": true,
+     "onlyFromCount": 0,
+     "onlyFrom": [],
+     "onlyToCount": 0,
+     "onlyTo": [],
+     "styleChangedCount": 0,
+     "styleChanged": []
+    }
+   },
+   {
+    "step": "langue-ar",
+    "archiveVsOriginal": {
+     "from": "captures/avant/awards-1440x900-clair-archive-langue-ar.png",
+     "to": "captures/avant/awards-1440x900-clair-original-langue-ar.png",
+     "pixelsDiffer": 0,
+     "elements": [
+      373,
+      373
+     ],
+     "extrasEqual": true,
+     "identical": true,
+     "onlyFromCount": 0,
+     "onlyFrom": [],
+     "onlyToCount": 0,
+     "onlyTo": [],
+     "styleChangedCount": 0,
+     "styleChanged": []
+    }
+   }
+  ],
+  "planches": [
+   "planches/avant/awards-1440x900-clair-initial.png",
+   "planches/avant/awards-1440x900-clair-langue-ar.png"
+  ],
+  "errors": {
+   "archive": [
+    [],
+    []
+   ],
+   "original": [
+    [],
+    []
+   ]
+  },
+  "overflow": {
+   "archive": [
+    false,
+    false
+   ],
+   "original": [
+    false,
+    false
+   ]
+  },
+  "presence": {
+   "archive": {
+    "links": 0,
+    "modules": 0,
+    "lastSheet": "content-report.css?v=3",
+    "notes": 0,
+    "started": false
+   },
+   "original": {
+    "links": 0,
+    "modules": 0,
+    "lastSheet": "content-report.css?v=3",
+    "notes": 0,
+    "started": false
+   }
+  }
+ },
+ "welcome-panels-1440x900-clair": {
+  "view": {
+   "name": "welcome-panels-1440x900-clair",
+   "route": "",
+   "page": "welcome-panels.html",
+   "theme": "light",
+   "vp": [
+    1440,
+    900,
+    false
+   ],
+   "only": [
+    "original"
+   ]
+  },
+  "steps": [
+   "initial"
+  ],
+  "sides": {
+   "original": {
+    "url": "/work/visualizations/horizon-welcome/welcome-panels.html?qa=design-review",
+    "entry": true,
+    "globe": null,
+    "globeAttempts": 1,
+    "installed": null,
+    "setup": [],
+    "states": [
+     {
+      "step": "initial",
+      "shot": "captures/avant/welcome-panels-1440x900-clair-original-initial.png",
+      "stableAfter": 1,
+      "steady": null,
+      "presence": {
+       "links": 0,
+       "modules": 0,
+       "lastSheet": "entrance.css?v=circle-globe-15",
+       "notes": 0,
+       "started": false
+      },
+      "probes": {
+       "signup": null,
+       "login": null,
+       "guest": {
+        "color": "rgb(27, 27, 27)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderTopColor": "rgb(220, 229, 229)",
+        "borderTopWidth": "1px",
+        "fontSize": "17px",
+        "borderTopLeftRadius": "14px",
+        "boxShadow": "rgba(24, 61, 60, 0.024) 0px 3px 12px 0px",
+        "box": [
+         732,
+         605,
+         151.98,
+         54
+        ]
+       },
+       "entryLogin": {
+        "color": "rgb(27, 27, 27)",
+        "backgroundColor": "rgb(0, 186, 188)",
+        "borderTopColor": "rgb(0, 186, 188)",
+        "borderTopWidth": "1px",
+        "fontSize": "17px",
+        "borderTopLeftRadius": "14px",
+        "boxShadow": "rgba(27, 27, 27, 0.07) 0px 7px 20px 0px",
+        "box": [
+         556.02,
+         605,
+         151.98,
+         54
+        ]
+       },
+       "sortPanel": null,
+       "awardsNote": null,
+       "globe": null,
+       "marker": null,
+       "grid": null,
+       "meta": null,
+       "count": null,
+       "card": null
+      },
+      "account": {
+       "visible": false
+      },
+      "arrival": null,
+      "sort": null,
+      "errors": [],
+      "overflow": false,
+      "lang": "fr",
+      "dir": "ltr",
+      "theme": "light",
+      "section": "explore",
+      "main": [
+       "nav#main-nav.main-nav",
+       "div#scope-bar.scope-bar",
+       "div#globe.globe-stage",
+       "div.globe-footer",
+       "section#content-sheet.content-sheet",
+       "p#loading.loading-status"
+      ],
+      "note": null,
+      "logins": [],
+      "globeVars": {
+       "hgRadius": ".425",
+       "fit": [
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       "names": {
+        "essai": "",
+        "paquet": ""
+       }
+      },
+      "elements": 169
+     }
+    ]
+   }
+  },
+  "comparisons": [
+   {
+    "step": "initial"
+   }
+  ],
+  "planches": [
+   "planches/avant/welcome-panels-1440x900-clair-initial.png"
+  ],
+  "errors": {
+   "original": [
+    []
+   ]
+  },
+  "overflow": {
+   "original": [
+    false
+   ]
+  },
+  "presence": {
+   "original": {
+    "links": 0,
+    "modules": 0,
+    "lastSheet": "entrance.css?v=circle-globe-15",
+    "notes": 0,
+    "started": false
+   }
+  }
+ }
+}

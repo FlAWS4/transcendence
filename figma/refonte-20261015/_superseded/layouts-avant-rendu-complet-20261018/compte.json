@@ -1,0 +1,529 @@
+{
+ "area": "shell",
+ "key": "compte",
+ "page": "07 · Compte et réglages",
+ "sections": [
+  {
+   "id": "account-visitor",
+   "title": "Panneau du compte · visiteur",
+   "note": "",
+   "route": "",
+   "main": false,
+   "y": 0,
+   "w": 4180,
+   "h": 3166,
+   "rows": [
+    [
+     {
+      "state": "account-visitor",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Panneau du compte · visiteur — Ordinateur · Clair",
+      "w": 1440,
+      "h": 2566,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "account-visitor",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Panneau du compte · visiteur — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 2566,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "account-visitor",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Panneau du compte · visiteur — Mobile · Clair",
+      "w": 390,
+      "h": 2826,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "account-visitor",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Panneau du compte · visiteur — Mobile · Sombre",
+      "w": 390,
+      "h": 2826,
+      "x": 3710,
+      "y": 260
+     }
+    ]
+   ]
+  },
+  {
+   "id": "settings",
+   "title": "Paramètres",
+   "note": "Thème et Langue réunis. Retour ramène à l’accueil du panneau.",
+   "route": "",
+   "main": false,
+   "y": 3366,
+   "w": 4180,
+   "h": 3166,
+   "rows": [
+    [
+     {
+      "state": "account-settings",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Paramètres — Ordinateur · Clair",
+      "w": 1440,
+      "h": 2566,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "account-settings",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Paramètres — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 2566,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "account-settings",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Paramètres — Mobile · Clair",
+      "w": 390,
+      "h": 2826,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "account-settings",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Paramètres — Mobile · Sombre",
+      "w": 390,
+      "h": 2826,
+      "x": 3710,
+      "y": 260
+     }
+    ]
+   ]
+  },
+  {
+   "id": "theme",
+   "title": "Thème",
+   "note": "Clair, Sombre, Système : appliqué tout de suite et mémorisé.",
+   "route": "",
+   "main": false,
+   "y": 6732,
+   "w": 4180,
+   "h": 3166,
+   "rows": [
+    [
+     {
+      "state": "account-theme",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Thème — Ordinateur · Clair",
+      "w": 1440,
+      "h": 2566,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "account-theme",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Thème — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 2566,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "account-theme",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Thème — Mobile · Clair",
+      "w": 390,
+      "h": 2826,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "account-theme",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Thème — Mobile · Sombre",
+      "w": 390,
+      "h": 2826,
+      "x": 3710,
+      "y": 260
+     }
+    ]
+   ]
+  },
+  {
+   "id": "language",
+   "title": "Langue",
+   "note": "Français, English, العربية : appliquée tout de suite, pas mémorisée au rechargement.",
+   "route": "",
+   "main": false,
+   "y": 10098,
+   "w": 4180,
+   "h": 3166,
+   "rows": [
+    [
+     {
+      "state": "account-language",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Langue — Ordinateur · Clair",
+      "w": 1440,
+      "h": 2566,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "account-language",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Langue — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 2566,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "account-language",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Langue — Mobile · Clair",
+      "w": 390,
+      "h": 2826,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "account-language",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Langue — Mobile · Sombre",
+      "w": 390,
+      "h": 2826,
+      "x": 3710,
+      "y": 260
+     }
+    ]
+   ]
+  },
+  {
+   "id": "signin-dialog",
+   "title": "Connexion simulée",
+   "note": "Passe en membre sur la même page, sans rejouer le déchiffrement.",
+   "route": "",
+   "main": false,
+   "y": 13464,
+   "w": 4180,
+   "h": 3166,
+   "rows": [
+    [
+     {
+      "state": "signin-dialog",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Connexion simulée — Ordinateur · Clair",
+      "w": 1440,
+      "h": 2566,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "signin-dialog",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Connexion simulée — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 2566,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "signin-dialog",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Connexion simulée — Mobile · Clair",
+      "w": 390,
+      "h": 2826,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "signin-dialog",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Connexion simulée — Mobile · Sombre",
+      "w": 390,
+      "h": 2826,
+      "x": 3710,
+      "y": 260
+     }
+    ]
+   ]
+  },
+  {
+   "id": "signup-dialog",
+   "title": "Création de compte simulée",
+   "note": "Même effet que la connexion simulée.",
+   "route": "",
+   "main": false,
+   "y": 16830,
+   "w": 4180,
+   "h": 3166,
+   "rows": [
+    [
+     {
+      "state": "signup-dialog",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Création de compte simulée — Ordinateur · Clair",
+      "w": 1440,
+      "h": 2566,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "signup-dialog",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Création de compte simulée — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 2566,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "signup-dialog",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Création de compte simulée — Mobile · Clair",
+      "w": 390,
+      "h": 2826,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "signup-dialog",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Création de compte simulée — Mobile · Sombre",
+      "w": 390,
+      "h": 2826,
+      "x": 3710,
+      "y": 260
+     }
+    ]
+   ]
+  },
+  {
+   "id": "account-member",
+   "title": "Panneau du compte · membre",
+   "note": "Profil fictif de Leïla Mansour. Se déconnecter ferme le panneau et repasse en visiteur sur la même page.",
+   "route": "",
+   "main": false,
+   "y": 20196,
+   "w": 4180,
+   "h": 3168,
+   "rows": [
+    [
+     {
+      "state": "account-member",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Panneau du compte · membre — Ordinateur · Clair",
+      "w": 1440,
+      "h": 2568,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "account-member",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Panneau du compte · membre — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 2568,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "account-member",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Panneau du compte · membre — Mobile · Clair",
+      "w": 390,
+      "h": 2828,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "account-member",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Panneau du compte · membre — Mobile · Sombre",
+      "w": 390,
+      "h": 2828,
+      "x": 3710,
+      "y": 260
+     }
+    ]
+   ]
+  },
+  {
+   "id": "messages",
+   "title": "Messagerie",
+   "note": "Aucune conversation : la messagerie n’est pas connectée.",
+   "route": "",
+   "main": false,
+   "y": 23564,
+   "w": 4180,
+   "h": 3168,
+   "rows": [
+    [
+     {
+      "state": "messages",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Messagerie — Ordinateur · Clair",
+      "w": 1440,
+      "h": 2568,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "messages",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Messagerie — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 2568,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "messages",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Messagerie — Mobile · Clair",
+      "w": 390,
+      "h": 2828,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "messages",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Messagerie — Mobile · Sombre",
+      "w": 390,
+      "h": 2828,
+      "x": 3710,
+      "y": 260
+     }
+    ]
+   ]
+  },
+  {
+   "id": "notifications",
+   "title": "Notifications",
+   "note": "Aucune notification : le service n’est pas connecté.",
+   "route": "",
+   "main": false,
+   "y": 26932,
+   "w": 4180,
+   "h": 3168,
+   "rows": [
+    [
+     {
+      "state": "notifications",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Notifications — Ordinateur · Clair",
+      "w": 1440,
+      "h": 2568,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "notifications",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Notifications — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 2568,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "notifications",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Notifications — Mobile · Clair",
+      "w": 390,
+      "h": 2828,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "notifications",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Notifications — Mobile · Sombre",
+      "w": 390,
+      "h": 2828,
+      "x": 3710,
+      "y": 260
+     }
+    ]
+   ]
+  }
+ ]
+}

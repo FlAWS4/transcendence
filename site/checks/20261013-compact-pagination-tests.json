@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-13",
+  "scope": "compact pagination and24 profiles/page; targeted tests executed directly with Node",
+  "cases": 30,
+  "passed": 30,
+  "failed": 0,
+  "tests": [
+    {
+      "file": "tests/content-pagination.test.mjs",
+      "cases": 8,
+      "passed": 8,
+      "sha256": "0259cbf71bb9087461f6b2b7ef02c4e9d47fc9eda871ad04acd524d4c18e27c7"
+    },
+    {
+      "file": "tests/demo-content.test.mjs",
+      "cases": 7,
+      "passed": 7,
+      "sha256": "d9d0080bd3176a5b88226b8b53d9542d19d8af642dfc30d72492909822529cc9"
+    },
+    {
+      "file": "tests/content-pagination-history.test.mjs",
+      "cases": 3,
+      "passed": 3,
+      "sha256": "223c2d7351b71627259170f0c272a6a274edefb1cba7605030ac5f188a60839b"
+    },
+    {
+      "file": "tests/project-team-routing.test.mjs",
+      "cases": 5,
+      "passed": 5,
+      "sha256": "98d739f757804b3ab6218f0d40553282142567942f66f7c2c08178ebe54ca89a"
+    },
+    {
+      "file": "tests/map-independent-filter.test.mjs",
+      "cases": 7,
+      "passed": 7,
+      "sha256": "594278c6b9c8b16fc0a0b8b84ab9301108c4d6e40ddbe6c9bac9c89734108444"
+    }
+  ],
+  "sourceHashes": {
+    "content-pagination.mjs": "f87741911342678e4f0d4afae8266e4b8722ccb0f1a23d3eef13f35bd7fa56fc",
+    "content-pagination-ui.mjs": "1aeab7721936054538428ed72e39023d82341e507af0c8caa98214d369c3505d",
+    "welcome.mjs": "c9c96d579187074020f1ee65f8d7d0c3a00bdfb0a3e03068b12abaf3061265ca"
+  },
+  "browser": "20261013-compact-pagination-browser.json",
+  "note": "Back-to-top interactions are verified separately in the real browser."
+}

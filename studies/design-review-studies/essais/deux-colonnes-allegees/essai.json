@@ -1,0 +1,90 @@
+{
+  "id": "deux-colonnes-allegees",
+  "groupe": "Pile flottante, cartes et petits écrans",
+  "titre": "Deux colonnes allégées à 320 px",
+  "resume": "Sous 360 px, Projets et Chroniques gardent deux cartes par ligne, mais leur rangée d’auteurs s’allège : le nom tient sur une ligne avec des points de suspension, et la couronne devient une petite pastille sur l’avatar du responsable. Avatars, +N, titres et couleurs ne changent pas.",
+  "probleme": "À 320 px, deux cartes de 133 px par ligne ne laissent que 23 px au nom de l’auteur, entre l’avatar, la couronne et la pastille +N (en français, la couronne n’est qu’à 12 px du +N). Sur les 12 cartes de la première page de Projets, 5 noms sont coupés au milieu du mot (« Luiz|a », « Leïl|a », « Cai|o », « Ar|un », « Tom|ás »), en français comme en anglais ; en Chroniques, 2 sur 12, en français comme en arabe. À 340 et 360 px, 5 noms sur 12 passent encore sur deux lignes, et en arabe à 340 px un nom de Projets (« توماس فييرا ») est encore coupé au milieu du mot. Les rectangles ne se chevauchent pas dans la référence : le défaut tient au manque de place.",
+  "changement": "essais/deux-colonnes-allegees/essai.css, sous @media (max-width:360px) et seulement dans la rangée d’auteurs des cartes Projets et Chroniques en vue Grille (.cp-authors[data-compact=true]). Le nom (.cp-author-name > strong) tient sur une ligne avec des points de suspension, au lieu de deux lignes coupables n’importe où. La couronne (.cp-author-responsibility) quitte la ligne du nom : elle est posée sur le coin supérieur de l’avatar, du côté du nom, dans un disque de 16 px au fond de la page (--h42-color-bg) avec le contour de l’avatar (--cp-line) ; l’icône passe de 18 à 11 px avec la même épaisseur de trait rendue. Le côté est choisi par :dir(rtl) sur le lien, car la ligne du nom est toujours en dir=ltr. Avatars, pastille +N, repli mesuré des auteurs, titres (déjà limités à 3 lignes) et couleurs sont inchangés ; essai.mjs ne fait rien.",
+  "decisionConcernee": "11 oct. 2026 : « couronne à droite du nom », « nom et couronne sont réunis sur la même ligne », « placement à droite également en arabe », « tailles et raccourcissement conservés ». Sous 360 px seulement, l’essai sort la couronne de la ligne du nom pour la poser sur l’avatar : en arabe, elle reste à droite du nom ; en français et en anglais, elle passe à sa gauche. La couronne passe aussi de 18 à 11 px et le nom tient sur une ligne au lieu de deux. En revanche, l’essai respecte le choix du 8 oct. 2026 : « deux cartes par ligne sur mobile à 320 px ».",
+  "alternativeDe": "une-colonne-320",
+  "vues": [
+    {
+      "libelle": "Petit écran clair — Projets",
+      "page": "content-preview.html",
+      "route": "projects",
+      "viewport": "petit",
+      "theme": "light",
+      "lang": "fr"
+    },
+    {
+      "libelle": "Petit écran sombre — Projets",
+      "page": "content-preview.html",
+      "route": "projects",
+      "viewport": "petit",
+      "theme": "dark",
+      "lang": "fr"
+    },
+    {
+      "libelle": "Petit écran sombre — Chroniques en arabe",
+      "page": "content-preview.html",
+      "route": "journal",
+      "viewport": "petit",
+      "theme": "dark",
+      "lang": "ar"
+    }
+  ],
+  "verifications": [
+    "Contre-vérification indépendante (contre-verification.py : toutes les cartes de la page et tous les auteurs visibles). Deux colonnes conservées dans 8 vues : 320×640 (Projets en français clair et sombre, Projets en anglais, Chroniques en français clair et en arabe sombre), 340×720 (Projets en arabe sombre, Chroniques en français) et 360×780 (Projets). Sur les 12 cartes de chaque vue, tous les noms tiennent sur une ligne et aucun mot n’est coupé ; 1 à 5 noms sur 12 sont raccourcis par des points de suspension, avec au moins 47 px de nom visible à 320 px, 57 px à 340 px et 67 px à 360 px.",
+    "Aucune intersection de rectangles entre l’intitulé « Créé par », les avatars, les noms, la couronne et la pastille +N, hormis la pastille sur son propre avatar, voulue : elle reste du côté du nom, à 2 px de lui et à l’intérieur du lien, dans les 8 vues, arabe compris. Aucun élément ne sort de sa carte, aucun défilement horizontal. Titres à 3 lignes au plus : la limite de 3 lignes de la référence est conservée, et les mêmes titres qu’avant prennent 3 lignes.",
+    "Les mêmes personnes restent affichées, comme dans la référence : nombre d’avatars, état de repli, texte et nom accessible du +N (« Voir les 5 auteurs »), noms complets, nom accessible du lien (« Luiza Costa. Chef de projet ») et infobulle, dans les 8 vues. Redimensionnement à chaud de 300 à 390 px (10 largeurs) : le contrôleur du +N, qui mesure aussi la sonde clonée atteinte par les sélecteurs de l’essai, garde exactement les états de la référence.",
+    "Aucune couleur nouvelle : la couronne garde la couleur de la référence (rgb(0,142,144) en clair, rgb(237,52,145) en sombre). Le disque prend exactement le fond mesuré derrière les cartes (rgb(247,250,250) en clair, rgb(27,27,27) en sombre) et son contour de 1 px reprend celui de l’avatar (--cp-line). Icône de 11 px dans un disque de 16 px, trait de 2,78 pour la même épaisseur rendue (environ 1,27 px) que la couronne de 18 px.",
+    "Hauteur inchangée : à 320 px, les 8 premières cartes occupent 1390 px avec ou sans l’essai.",
+    "États que l’essai ne doit pas toucher : 390×844 (Projets en français clair, Chroniques en arabe sombre), 361×780 (juste au-dessus du seuil), 1440×900 et paysage 667×375 ; à 320 px, la grille Profils, une fiche projet, l’onglet Auteurs d’un article et l’onglet Projets d’un profil. Captures identiques au pixel exact (0 pixel différent, sans tolérance) et même mise en page de toute la page, sous la ligne de flottaison comprise ; la règle de l’essai n’y atteint aucun élément affiché.",
+    "Bascule Grille → Liste → Grille à 320 px : la Liste est identique au pixel exact à celle de la référence, et le retour en Grille redonne deux colonnes de 133 px sans aucun problème mesuré.",
+    "Langue et thème changés sans rechargement, par le menu du compte : français clair → arabe sombre → anglais clair. Sens rtl puis ltr, 12 couronnes sur leur avatar du côté du nom, disque au fond de chaque thème, aucun problème mesuré ; dans les mêmes états, la référence garde 5 à 6 noms coupés ou sur deux lignes.",
+    "Clavier : la touche Tab atteint le lien du premier auteur (« Luiza Costa. Chef de projet »), avec l’anneau de focus visible de 2 px (:focus-visible, décalage de 5 px) ; la pastille reste à l’intérieur du lien et de l’anneau.",
+    "Explorer à 320 px avec le vrai globe : 0 pixel différent entre la copie et l’essai (0 aussi entre deux chargements de la copie) ; la règle de l’essai n’y atteint aucun élément.",
+    "Aucune erreur JavaScript ni console. Captures regardées : 320 px clair et sombre, arabe sombre (chargé et basculé à chaud), gros plans des rangées d’auteurs, focus clavier et Explorer avec le globe."
+  ],
+  "limites": [
+    "Les noms raccourcis (« Luiza … », « Leïla … ») ne se lisent plus en entier sur la carte. Le nom complet reste dans le nom accessible, dans l’infobulle au survol et sur la fiche ; sur téléphone, sans survol, il faut ouvrir la fiche.",
+    "Le repli « nom masqué visuellement quand la place manque » n’a pas été ajouté : entre 320 et 360 px, le nom garde au moins 47 px, soit environ 5 lettres et « … ». À 300 px, sous la plage testée, il en reste au moins 37 px (13 px dans la référence), et le titre « ft_transcendence · Construire à cinq » y est coupé au milieu d’un mot, comme dans la référence : l’essai ne touche pas aux titres.",
+    "La couronne est plus petite (11 px dans un disque de 16 px, contre 18 px avant). Elle reste lisible à l’écran, mais n’a pas été testée sur un téléphone réel.",
+    "Le placement de la pastille suppose l’avatar de 24 px de la référence à cette largeur. Si un autre essai change la taille de l’avatar, il faudra la recaler.",
+    "Le seuil suit la largeur de l’écran (360 px inclus) ; 360 px est une largeur courante de téléphones Android. Au-delà, rien ne change : de 361 à 389 px, la référence garde ses noms parfois sur deux lignes.",
+    "Combinaison avec les autres essais non vérifiée ici. L’essai est exclusif avec une-colonne-320 : le premier listé dans l’URL l’emporte.",
+    "Vérifié uniquement dans Chrome 155 sans interface, avec le mouvement réduit émulé ; pas sur un téléphone réel."
+  ],
+  "fichiers": [
+    "essais/deux-colonnes-allegees/essai.css",
+    "essais/deux-colonnes-allegees/essai.mjs",
+    "checks/deux-colonnes-allegees/check.py",
+    "checks/deux-colonnes-allegees/results.json",
+    "checks/deux-colonnes-allegees/contre-verification.py",
+    "checks/deux-colonnes-allegees/contre-verification.json",
+    "checks/deux-colonnes-allegees/bascule-grille.py",
+    "checks/deux-colonnes-allegees/bascule-grille.json"
+  ],
+  "captures": [
+    {
+      "vue": "petit-auteurs",
+      "avant": "checks/deux-colonnes-allegees/avant-petit-auteurs.png",
+      "apres": "checks/deux-colonnes-allegees/apres-petit-auteurs.png"
+    },
+    {
+      "vue": "sombre-petit-auteurs",
+      "avant": "checks/deux-colonnes-allegees/avant-sombre-petit-auteurs.png",
+      "apres": "checks/deux-colonnes-allegees/apres-sombre-petit-auteurs.png"
+    },
+    {
+      "vue": "ar-sombre-petit-auteurs",
+      "avant": "checks/deux-colonnes-allegees/avant-ar-sombre-petit-auteurs.png",
+      "apres": "checks/deux-colonnes-allegees/apres-ar-sombre-petit-auteurs.png"
+    },
+    {
+      "vue": "direct-ar-sombre-petit",
+      "avant": "checks/deux-colonnes-allegees/avant-direct-ar-sombre-petit.png",
+      "apres": "checks/deux-colonnes-allegees/apres-direct-ar-sombre-petit.png"
+    }
+  ]
+}

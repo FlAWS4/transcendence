@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>42 Horizon — Déchiffrement</title>
+  <link rel="stylesheet" href="../../../shared/brand/tokens.css">
+  <link rel="stylesheet" href="../../../shared/assets/jost.css">
+  <link rel="stylesheet" href="horizon-decryption.css">
+  <script type="module" src="horizon-decryption.mjs"></script>
+</head>
+<body data-stage="encrypted">
+  <header id="utilities" class="utilities" aria-label="Préférences">
+    <label class="sr-only" for="language" data-copy="language">Langue</label>
+    <select id="language" aria-label="Langue">
+      <option value="fr" lang="fr">FR</option>
+      <option value="en" lang="en">EN</option>
+      <option value="ar" lang="ar">ع</option>
+    </select>
+    <button id="theme" class="icon-button" type="button" aria-label="Activer le thème sombre" aria-pressed="false"><span class="moon" aria-hidden="true"></span></button>
+  </header>
+  <main>
+    <div id="message" class="message" role="img" aria-label="Message chiffré">
+      <div id="phrase" class="phrase" aria-hidden="true" dir="ltr"></div>
+    </div>
+    <div id="guest-scene" class="guest-scene" hidden><img src="../../../shared/brand/logo-42.svg" width="172" height="121" alt="42"></div>
+    <div id="access" class="access">
+      <button id="login" class="primary" type="button" data-copy="login">Se connecter</button>
+      <button id="guest" class="quiet" type="button" data-copy="guest">Explorer en visiteur</button>
+    </div>
+    <div id="replay-area" class="access" hidden><button id="replay" class="quiet" type="button">Rejouer</button></div>
+    <p id="announcement" class="sr-only" aria-live="polite"></p>
+  </main>
+  <dialog id="connection" aria-labelledby="dialog-title" aria-describedby="dialog-description">
+    <div class="wordmark" dir="ltr"><span id="arabic-name" lang="ar" dir="rtl" hidden>أفق</span><span>HORIZON</span></div>
+    <h1 id="dialog-title" data-copy="dialogTitle">Connexion — prototype</h1>
+    <p id="dialog-description" data-copy="dialogDescription">Cette maquette simule la connexion pour montrer la révélation. Aucune authentification réelle n’est effectuée.</p>
+    <button id="confirm" class="primary" type="button" data-copy="confirm">Simuler une connexion réussie</button>
+    <button id="cancel" class="quiet" type="button" data-copy="cancel">Annuler</button>
+  </dialog>
+</body>
+</html>

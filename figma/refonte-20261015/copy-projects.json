@@ -1,0 +1,1388 @@
+{
+ "_meta": {
+  "fr": "Textes d’interface de la zone Projets, relevés dans le code source du prototype actif (non traduits par l’outil).",
+  "en": "",
+  "ar": "",
+  "where": "figma/refonte-20261015/scripts/extract_copy_projects.mjs, 15 oct. 2026 ; contenus de démonstration (titres, résumés, noms) : voir spec-projects.md § Textes"
+ },
+ "card.authorsLabel": {
+  "fr": "Créé par",
+  "en": "Created by",
+  "ar": "من إعداد",
+  "where": "profile-ui.mjs copy.authors — libellé des auteurs sur les cartes (la fiche utilise project.detail.authors, même texte)"
+ },
+ "card.datesTitle": {
+  "fr": "Dates illustratives des contenus.",
+  "en": "Illustrative dates for the content.",
+  "ar": "تواريخ توضيحية للمحتوى.",
+  "where": "welcome.mjs dateElement() — infobulle (title) de la date des cartes et des fiches ; date au format Intl {day:numeric, month:short, year:numeric}"
+ },
+ "card.leadRole": {
+  "fr": "Chef de projet",
+  "en": "Project lead",
+  "ar": "المسؤول عن المشروع",
+  "where": "profile-ui.mjs `authorResponsibilityCopy.project` — infobulle de la couronne et nom accessible"
+ },
+ "card.moreAuthors": {
+  "fr": "Voir les {count} auteurs",
+  "en": "View all {count} authors",
+  "ar": "عرض جميع الكتّاب ({count})",
+  "where": "profile-ui.mjs createAuthorByline() — nom accessible et infobulle de la pastille « +N »"
+ },
+ "comments.actions.newest": {
+  "fr": "Du plus récent au plus ancien",
+  "en": "Newest first",
+  "ar": "من الأحدث إلى الأقدم",
+  "where": "comments.mjs `actionCopy` — menu ⋮ et tri des commentaires — choix (affiché dans le bouton)"
+ },
+ "comments.actions.oldest": {
+  "fr": "Du plus ancien au plus récent",
+  "en": "Oldest first",
+  "ar": "من الأقدم إلى الأحدث",
+  "where": "comments.mjs `actionCopy` — menu ⋮ et tri des commentaires — choix"
+ },
+ "comments.actions.popular": {
+  "fr": "Les plus populaires",
+  "en": "Most popular",
+  "ar": "الأكثر إعجابًا",
+  "where": "comments.mjs `actionCopy` — menu ⋮ et tri des commentaires — choix"
+ },
+ "comments.actions.report": {
+  "fr": "Signaler",
+  "en": "Report",
+  "ar": "إبلاغ",
+  "where": "comments.mjs `actionCopy` — menu ⋮ et tri des commentaires — entrée du menu ⋮"
+ },
+ "comments.actions.reportLabel": {
+  "fr": "Signaler ce commentaire",
+  "en": "Report this comment",
+  "ar": "الإبلاغ عن هذا التعليق",
+  "where": "comments.mjs `actionCopy` — menu ⋮ et tri des commentaires"
+ },
+ "comments.actions.sort": {
+  "fr": "Trier les commentaires",
+  "en": "Sort comments",
+  "ar": "ترتيب التعليقات",
+  "where": "comments.mjs `actionCopy` — menu ⋮ et tri des commentaires — libellé à gauche du tri et nom du bouton"
+ },
+ "comments.add": {
+  "fr": "Ajouter",
+  "en": "Add",
+  "ar": "إضافة",
+  "where": "comments.mjs `copy` — onglet Commentaires — bouton principal"
+ },
+ "comments.author.mentionHint": {
+  "fr": "Tapez @ pour mentionner un profil.",
+  "en": "Type @ to mention a profile.",
+  "ar": "اكتب @ للإشارة إلى ملف شخصي.",
+  "where": "comments.mjs `authorCopy` — identité locale et mentions — aide sous le champ (2e phrase)"
+ },
+ "comments.author.mentionLimit": {
+  "fr": "Il ne reste pas assez de place pour cette mention.",
+  "en": "There is not enough room for this mention.",
+  "ar": "لا توجد مساحة كافية لهذه الإشارة.",
+  "where": "comments.mjs `authorCopy` — identité locale et mentions"
+ },
+ "comments.author.own": {
+  "fr": "vous",
+  "en": "you",
+  "ar": "أنت",
+  "where": "comments.mjs `authorCopy` — identité locale et mentions — « (vous) » après son nom"
+ },
+ "comments.author.unavailable": {
+  "fr": "Auteur indisponible",
+  "en": "Author unavailable",
+  "ar": "الكاتب غير متاح",
+  "where": "comments.mjs `authorCopy` — identité locale et mentions"
+ },
+ "comments.author.using": {
+  "fr": "Pour cet essai, vous utilisez le profil fictif {name}.",
+  "en": "You are using the fictional profile {name}.",
+  "ar": "في هذا العرض، تستخدم الملف الخيالي {name}.",
+  "where": "comments.mjs `authorCopy` — identité locale et mentions — aide sous le champ (1re phrase, {name} = Leïla Mansour)"
+ },
+ "comments.cancel": {
+  "fr": "Annuler",
+  "en": "Cancel",
+  "ar": "إلغاء",
+  "where": "comments.mjs `copy` — onglet Commentaires"
+ },
+ "comments.count": {
+  "fr": "{count} / 2 000 caractères",
+  "en": "{count} / 2,000 characters",
+  "ar": "{count} / ٢٠٠٠ حرف",
+  "where": "comments.mjs `copy` — onglet Commentaires — compteur sous le champ"
+ },
+ "comments.deleted": {
+  "fr": "Ce commentaire a été supprimé. Les réponses sont conservées.",
+  "en": "This comment was deleted. Its replies are preserved.",
+  "ar": "حُذف هذا التعليق مع الاحتفاظ بالردود.",
+  "where": "comments.mjs `copy` — onglet Commentaires"
+ },
+ "comments.deletedTarget": {
+  "fr": "un message supprimé",
+  "en": "a deleted message",
+  "ar": "رسالة محذوفة",
+  "where": "comments.mjs `copy` — onglet Commentaires"
+ },
+ "comments.dislike": {
+  "fr": "Je n’aime pas",
+  "en": "Dislike",
+  "ar": "لم يعجبني",
+  "where": "comments.mjs `copy` — onglet Commentaires — infobulle du pouce baissé"
+ },
+ "comments.draft": {
+  "fr": "Brouillon",
+  "en": "Draft",
+  "ar": "مسودة",
+  "where": "comments.mjs `copy` — onglet Commentaires — pastille sur Répondre"
+ },
+ "comments.draftKept": {
+  "fr": "Brouillon de réponse conservé dans cet onglet.",
+  "en": "Reply draft kept in this tab.",
+  "ar": "حُفظت مسودة الرد في علامة التبويب هذه.",
+  "where": "comments.mjs `copy` — onglet Commentaires"
+ },
+ "comments.edit.actions": {
+  "fr": "Actions du commentaire",
+  "en": "Comment actions",
+  "ar": "إجراءات التعليق",
+  "where": "comments.mjs `editingCopy` — édition et menu ⋮ — nom du bouton ⋮ et du menu"
+ },
+ "comments.edit.edit": {
+  "fr": "Modifier",
+  "en": "Edit",
+  "ar": "تعديل",
+  "where": "comments.mjs `editingCopy` — édition et menu ⋮ — entrée du menu ⋮"
+ },
+ "comments.edit.editCancelled": {
+  "fr": "Modification annulée.",
+  "en": "Edit cancelled.",
+  "ar": "أُلغي التعديل.",
+  "where": "comments.mjs `editingCopy` — édition et menu ⋮"
+ },
+ "comments.edit.edited": {
+  "fr": "Commentaire modifié dans cet essai.",
+  "en": "Comment updated.",
+  "ar": "عُدّل التعليق.",
+  "where": "comments.mjs `editingCopy` — édition et menu ⋮"
+ },
+ "comments.edit.editedMark": {
+  "fr": "modifié",
+  "en": "edited",
+  "ar": "معدّل",
+  "where": "comments.mjs `editingCopy` — édition et menu ⋮ — mention sous la date"
+ },
+ "comments.edit.editLabel": {
+  "fr": "Modifier votre commentaire",
+  "en": "Edit your comment",
+  "ar": "تعديل تعليقك",
+  "where": "comments.mjs `editingCopy` — édition et menu ⋮"
+ },
+ "comments.edit.saveEdit": {
+  "fr": "Enregistrer",
+  "en": "Save",
+  "ar": "حفظ",
+  "where": "comments.mjs `editingCopy` — édition et menu ⋮"
+ },
+ "comments.emoji": {
+  "fr": "Emoji",
+  "en": "Emoji",
+  "ar": "رمز تعبيري",
+  "where": "comments.mjs `copy` — onglet Commentaires — bouton « ☺ Emoji »"
+ },
+ "comments.emoji.✨": {
+  "fr": "Étincelles",
+  "en": "Sparkles",
+  "ar": "بريق",
+  "where": "comments.mjs `emojiOptions` — nom accessible de l’emoji ✨ de la palette"
+ },
+ "comments.emoji.❤️": {
+  "fr": "Cœur",
+  "en": "Heart",
+  "ar": "قلب",
+  "where": "comments.mjs `emojiOptions` — nom accessible de l’emoji ❤️ de la palette"
+ },
+ "comments.emoji.🎉": {
+  "fr": "Fête",
+  "en": "Celebration",
+  "ar": "احتفال",
+  "where": "comments.mjs `emojiOptions` — nom accessible de l’emoji 🎉 de la palette"
+ },
+ "comments.emoji.👍": {
+  "fr": "Pouce levé",
+  "en": "Thumbs up",
+  "ar": "إبهام مرفوع",
+  "where": "comments.mjs `emojiOptions` — nom accessible de l’emoji 👍 de la palette"
+ },
+ "comments.emoji.👏": {
+  "fr": "Applaudissements",
+  "en": "Applause",
+  "ar": "تصفيق",
+  "where": "comments.mjs `emojiOptions` — nom accessible de l’emoji 👏 de la palette"
+ },
+ "comments.emoji.💡": {
+  "fr": "Idée",
+  "en": "Idea",
+  "ar": "فكرة",
+  "where": "comments.mjs `emojiOptions` — nom accessible de l’emoji 💡 de la palette"
+ },
+ "comments.emoji.🔥": {
+  "fr": "Feu",
+  "en": "Fire",
+  "ar": "نار",
+  "where": "comments.mjs `emojiOptions` — nom accessible de l’emoji 🔥 de la palette"
+ },
+ "comments.emoji.😀": {
+  "fr": "Sourire",
+  "en": "Smile",
+  "ar": "ابتسامة",
+  "where": "comments.mjs `emojiOptions` — nom accessible de l’emoji 😀 de la palette"
+ },
+ "comments.emoji.😂": {
+  "fr": "Rire",
+  "en": "Laugh",
+  "ar": "ضحك",
+  "where": "comments.mjs `emojiOptions` — nom accessible de l’emoji 😂 de la palette"
+ },
+ "comments.emoji.😍": {
+  "fr": "Admiration",
+  "en": "Love",
+  "ar": "إعجاب",
+  "where": "comments.mjs `emojiOptions` — nom accessible de l’emoji 😍 de la palette"
+ },
+ "comments.emoji.🙏": {
+  "fr": "Merci",
+  "en": "Thanks",
+  "ar": "شكر",
+  "where": "comments.mjs `emojiOptions` — nom accessible de l’emoji 🙏 de la palette"
+ },
+ "comments.emoji.🚀": {
+  "fr": "Fusée",
+  "en": "Rocket",
+  "ar": "صاروخ",
+  "where": "comments.mjs `emojiOptions` — nom accessible de l’emoji 🚀 de la palette"
+ },
+ "comments.emojiPicker": {
+  "fr": "Choisir un emoji",
+  "en": "Choose an emoji",
+  "ar": "اختر رمزًا تعبيريًا",
+  "where": "comments.mjs `copy` — onglet Commentaires"
+ },
+ "comments.empty": {
+  "fr": "Aucun commentaire pour le moment.",
+  "en": "No comments yet.",
+  "ar": "لا توجد تعليقات بعد.",
+  "where": "comments.mjs `copy` — onglet Commentaires — titre de l’état vide"
+ },
+ "comments.first": {
+  "fr": "Ouvrez la discussion en partageant votre premier retour.",
+  "en": "Start the discussion with your first thoughts.",
+  "ar": "ابدأ النقاش بمشاركة رأيك.",
+  "where": "comments.mjs `copy` — onglet Commentaires — texte de l’état vide"
+ },
+ "comments.hint": {
+  "fr": "Commentaires, réponses et réactions restent dans cet onglet. Les compteurs 0 ou 1 reflètent uniquement votre choix local.",
+  "en": "Comments, replies and reactions stay in this tab. Counts of 0 or 1 reflect only your local choice.",
+  "ar": "تبقى التعليقات والردود والتفاعلات في علامة التبويب هذه. يعكس العدد ٠ أو ١ اختيارك المحلي فقط.",
+  "where": "comments.mjs `copy` — onglet Commentaires — aide sous le champ (3e phrase)"
+ },
+ "comments.intro": {
+  "fr": "Une question, une idée ou un retour à partager ?",
+  "en": "Have a question, an idea or some feedback?",
+  "ar": "هل لديك سؤال أو فكرة أو ملاحظة؟",
+  "where": "comments.mjs `copy` — onglet Commentaires — phrase d’introduction"
+ },
+ "comments.label": {
+  "fr": "Votre commentaire",
+  "en": "Your comment",
+  "ar": "تعليقك",
+  "where": "comments.mjs `copy` — onglet Commentaires — libellé du champ"
+ },
+ "comments.like": {
+  "fr": "J’aime",
+  "en": "Like",
+  "ar": "أعجبني",
+  "where": "comments.mjs `copy` — onglet Commentaires — infobulle du pouce levé"
+ },
+ "comments.limitReached": {
+  "fr": "Il ne reste pas assez de place pour cet emoji.",
+  "en": "There is not enough room for this emoji.",
+  "ar": "لا توجد مساحة كافية لهذا الرمز التعبيري.",
+  "where": "comments.mjs `copy` — onglet Commentaires"
+ },
+ "comments.list": {
+  "fr": "Commentaires de cet essai",
+  "en": "Comments",
+  "ar": "التعليقات",
+  "where": "comments.mjs `copy` — onglet Commentaires — nom accessible de la liste"
+ },
+ "comments.localReaction": {
+  "fr": "Réaction locale",
+  "en": "Local reaction",
+  "ar": "تفاعل محلي",
+  "where": "comments.mjs `copy` — onglet Commentaires"
+ },
+ "comments.mentions.empty": {
+  "fr": "Aucun profil trouvé.",
+  "en": "No profile found.",
+  "ar": "لم يُعثر على ملف.",
+  "where": "comment-mention-picker.mjs `copy` — suggestions de mention @"
+ },
+ "comments.mentions.label": {
+  "fr": "Profils à mentionner",
+  "en": "Profiles to mention",
+  "ar": "ملفات للإشارة إليها",
+  "where": "comment-mention-picker.mjs `copy` — suggestions de mention @"
+ },
+ "comments.mentions.results": {
+  "fr": "{count} profil(s) · ↑ ↓ pour choisir, Entrée pour insérer, Échap pour fermer.",
+  "en": "{count} profile(s) · ↑ ↓ to choose, Enter to insert, Escape to close.",
+  "ar": "{count} ملف · ↑ ↓ للاختيار، Enter للإدراج، Escape للإغلاق.",
+  "where": "comment-mention-picker.mjs `copy` — suggestions de mention @"
+ },
+ "comments.placeholder": {
+  "fr": "Écrivez votre commentaire…",
+  "en": "Write your comment…",
+  "ar": "اكتب تعليقك…",
+  "where": "comments.mjs `copy` — onglet Commentaires — texte indicatif"
+ },
+ "comments.remove": {
+  "fr": "Supprimer",
+  "en": "Delete",
+  "ar": "حذف",
+  "where": "comments.mjs `copy` — onglet Commentaires"
+ },
+ "comments.removeLabel": {
+  "fr": "Supprimer votre commentaire",
+  "en": "Delete your comment",
+  "ar": "حذف تعليقك",
+  "where": "comments.mjs `copy` — onglet Commentaires"
+ },
+ "comments.replies": {
+  "fr": "Réponses à ce commentaire",
+  "en": "Replies to this comment",
+  "ar": "الردود على هذا التعليق",
+  "where": "comments.mjs `copy` — onglet Commentaires"
+ },
+ "comments.reply": {
+  "fr": "Répondre",
+  "en": "Reply",
+  "ar": "رد",
+  "where": "comments.mjs `copy` — onglet Commentaires — action sous un commentaire"
+ },
+ "comments.replyLabel": {
+  "fr": "Votre réponse",
+  "en": "Your reply",
+  "ar": "ردك",
+  "where": "comments.mjs `copy` — onglet Commentaires"
+ },
+ "comments.replyPlaceholder": {
+  "fr": "Écrivez votre réponse…",
+  "en": "Write your reply…",
+  "ar": "اكتب ردك…",
+  "where": "comments.mjs `copy` — onglet Commentaires"
+ },
+ "comments.replySaved": {
+  "fr": "Réponse ajoutée.",
+  "en": "Reply added.",
+  "ar": "أُضيف الرد.",
+  "where": "comments.mjs `copy` — onglet Commentaires"
+ },
+ "comments.replyTo": {
+  "fr": "En réponse à",
+  "en": "In reply to",
+  "ar": "ردًا على",
+  "where": "comments.mjs `copy` — onglet Commentaires — contexte « En réponse à … »"
+ },
+ "comments.required": {
+  "fr": "Écrivez quelques mots avant d’envoyer.",
+  "en": "Write a few words before sending.",
+  "ar": "اكتب بضع كلمات قبل الإرسال.",
+  "where": "comments.mjs `copy` — onglet Commentaires"
+ },
+ "comments.saved": {
+  "fr": "Commentaire ajouté.",
+  "en": "Comment added.",
+  "ar": "أُضيف التعليق.",
+  "where": "comments.mjs `copy` — onglet Commentaires"
+ },
+ "comments.sendReply": {
+  "fr": "Répondre",
+  "en": "Reply",
+  "ar": "رد",
+  "where": "comments.mjs `copy` — onglet Commentaires — bouton du formulaire de réponse"
+ },
+ "comments.you": {
+  "fr": "Vous",
+  "en": "You",
+  "ar": "أنت",
+  "where": "comments.mjs `copy` — onglet Commentaires"
+ },
+ "detail.back.fallback": {
+  "fr": "Retour à la liste",
+  "en": "Back to the list",
+  "ar": "العودة إلى القائمة",
+  "where": "welcome.mjs editorialCopy.back — repli"
+ },
+ "detail.back.toList": {
+  "fr": "Retour aux projets",
+  "en": "Back to projects",
+  "ar": "العودة إلى المشاريع",
+  "where": "welcome.mjs contentBackLabel() — bouton Retour d’une fiche ouverte depuis la liste ou un lien direct"
+ },
+ "detail.back.toProfile": {
+  "fr": "Retour au profil",
+  "en": "Back to the profile",
+  "ar": "العودة إلى الملف الشخصي",
+  "where": "welcome.mjs contentBackLabel() — fiche projet ouverte depuis un profil (onglet Projets)"
+ },
+ "detail.back.toProfileList": {
+  "fr": "Retour aux profils",
+  "en": "Back to profiles",
+  "ar": "العودة إلى الأعضاء",
+  "where": "welcome.mjs contentBackLabel() — fiche projet ouverte depuis la carte d’un profil (« Créé par »)… puis retour"
+ },
+ "detail.back.toProject": {
+  "fr": "Retour au projet",
+  "en": "Back to the project",
+  "ar": "العودة إلى المشروع",
+  "where": "welcome.mjs contentBackLabel() — fiche ouverte depuis une autre fiche projet"
+ },
+ "detail.menuArrowDown": {
+  "fr": "Faire défiler les rubriques vers le bas",
+  "en": "Scroll sections down",
+  "ar": "تمرير الأقسام إلى الأسفل",
+  "where": "detail-scroll.mjs — nom de la flèche ↓"
+ },
+ "detail.menuArrowUp": {
+  "fr": "Faire défiler les rubriques vers le haut",
+  "en": "Scroll sections up",
+  "ar": "تمرير الأقسام إلى الأعلى",
+  "where": "detail-scroll.mjs — nom de la flèche ↑ du menu des onglets (fenêtres basses)"
+ },
+ "filter.categories.allCommonCore": {
+  "fr": "Tous les projets du tronc commun",
+  "en": "All common-core projects",
+  "ar": "جميع مشاريع الجذع المشترك",
+  "where": "content-filters.mjs `copy` — libellés des groupes et options — libellé collectif (mode menu, non affiché dans la fenêtre)"
+ },
+ "filter.categories.allProjects": {
+  "fr": "Tous les projets",
+  "en": "All projects",
+  "ar": "جميع المشاريع",
+  "where": "content-filters.mjs `copy` — libellés des groupes et options — option « tous » (mode menu, non affichée)"
+ },
+ "filter.categories.allSpecialization": {
+  "fr": "Tous les projets de spécialisation",
+  "en": "All specialization projects",
+  "ar": "جميع مشاريع التخصص",
+  "where": "content-filters.mjs `copy` — libellés des groupes et options — libellé collectif (mode menu, non affiché)"
+ },
+ "filter.categories.commonCore": {
+  "fr": "Tronc commun",
+  "en": "Common core",
+  "ar": "الجذع المشترك",
+  "where": "content-filters.mjs `copy` — libellés des groupes et options — sous-groupe de Projets"
+ },
+ "filter.categories.personalProjects": {
+  "fr": "Projets personnels",
+  "en": "Personal projects",
+  "ar": "المشاريع الشخصية",
+  "where": "content-filters.mjs `copy` — libellés des groupes et options — choix direct dans Projets"
+ },
+ "filter.categories.skills": {
+  "fr": "Savoir-faire",
+  "en": "Skills",
+  "ar": "المهارات",
+  "where": "content-filters.mjs `copy` — libellés des groupes et options — catégorie de la fenêtre (« Savoir-faire »)"
+ },
+ "filter.categories.specialization": {
+  "fr": "Spécialisation",
+  "en": "Specialisation",
+  "ar": "التخصّص",
+  "where": "content-filters.mjs `copy` — libellés des groupes et options — sous-groupe de Projets"
+ },
+ "filter.categories.technologies": {
+  "fr": "Technologies",
+  "en": "Technologies",
+  "ar": "التقنيات",
+  "where": "content-filters.mjs `copy` — libellés des groupes et options — catégorie de la fenêtre"
+ },
+ "filter.dialog.all": {
+  "fr": "Aucun critère sélectionné",
+  "en": "No criteria selected",
+  "ar": "لم تُحدَّد معايير",
+  "where": "project-filter-dialog.mjs `copy` — écran filter-projects — compteur du pied sans sélection"
+ },
+ "filter.dialog.apply": {
+  "fr": "Appliquer",
+  "en": "Apply",
+  "ar": "تطبيق",
+  "where": "project-filter-dialog.mjs `copy` — écran filter-projects — bouton principal"
+ },
+ "filter.dialog.cancel": {
+  "fr": "Annuler",
+  "en": "Cancel",
+  "ar": "إلغاء",
+  "where": "project-filter-dialog.mjs `copy` — écran filter-projects — bouton"
+ },
+ "filter.dialog.close": {
+  "fr": "Fermer les filtres",
+  "en": "Close filters",
+  "ar": "إغلاق المرشحات",
+  "where": "project-filter-dialog.mjs `copy` — écran filter-projects — nom accessible de la croix"
+ },
+ "filter.dialog.deselectAll": {
+  "fr": "Tout désélectionner",
+  "en": "Deselect all",
+  "ar": "إلغاء تحديد الكل",
+  "where": "project-filter-dialog.mjs `copy` — écran filter-projects — bouton collectif quand tout est coché"
+ },
+ "filter.dialog.empty": {
+  "fr": "Aucun choix disponible.",
+  "en": "No options available.",
+  "ar": "لا توجد خيارات متاحة.",
+  "where": "project-filter-dialog.mjs `copy` — écran filter-projects — catégorie sans choix"
+ },
+ "filter.dialog.filter": {
+  "fr": "Filtrer",
+  "en": "Filter",
+  "ar": "تصفية",
+  "where": "project-filter-dialog.mjs `copy` — écran filter-projects — bouton de la barre (toujours « Filtrer »)"
+ },
+ "filter.dialog.intro": {
+  "fr": "Sélectionnez une catégorie entière ou dépliez-la pour choisir ses critères.",
+  "en": "Select a whole category or expand it to choose individual criteria.",
+  "ar": "اختر فئة كاملة أو افتحها لاختيار المعايير بشكل فردي.",
+  "where": "project-filter-dialog.mjs `copy` — écran filter-projects — texte sous le titre"
+ },
+ "filter.dialog.projects": {
+  "fr": "Projets",
+  "en": "Projects",
+  "ar": "المشاريع",
+  "where": "project-filter-dialog.mjs `copy` — écran filter-projects — catégorie"
+ },
+ "filter.dialog.reset": {
+  "fr": "Réinitialiser",
+  "en": "Reset",
+  "ar": "إعادة ضبط",
+  "where": "project-filter-dialog.mjs `copy` — écran filter-projects — lien du pied"
+ },
+ "filter.dialog.resetNotice": {
+  "fr": "La sélection est réinitialisée. Appliquez pour confirmer.",
+  "en": "Selection reset. Apply to confirm.",
+  "ar": "أُعيد ضبط الاختيارات. اضغط تطبيق للتأكيد.",
+  "where": "project-filter-dialog.mjs `copy` — écran filter-projects — message après Réinitialiser"
+ },
+ "filter.dialog.selectAll": {
+  "fr": "Tout sélectionner",
+  "en": "Select all",
+  "ar": "تحديد الكل",
+  "where": "project-filter-dialog.mjs `copy` — écran filter-projects — bouton collectif"
+ },
+ "filter.dialog.selected": {
+  "fr": "{count} critères sélectionnés",
+  "en": "{count} criteria selected",
+  "ar": "عدد المعايير المحددة: {count}",
+  "where": "project-filter-dialog.mjs `copy` — écran filter-projects — compteur du pied ({count})"
+ },
+ "filter.dialog.selectedOne": {
+  "fr": "1 critère sélectionné",
+  "en": "1 criterion selected",
+  "ar": "",
+  "where": "project-filter-dialog.mjs `copy` — écran filter-projects — compteur du pied (1) — absent en arabe : le modèle {count} est utilisé"
+ },
+ "filter.dialog.skills": {
+  "fr": "Savoir-faire",
+  "en": "Skills",
+  "ar": "المهارات",
+  "where": "project-filter-dialog.mjs `copy` — écran filter-projects — catégorie (repli)"
+ },
+ "filter.dialog.technologies": {
+  "fr": "Technologies",
+  "en": "Technologies",
+  "ar": "التقنيات",
+  "where": "project-filter-dialog.mjs `copy` — écran filter-projects — catégorie (repli si le contrôleur ne fournit pas de libellé)"
+ },
+ "filter.dialog.title": {
+  "fr": "Filtrer les projets",
+  "en": "Filter projects",
+  "ar": "تصفية المشاريع",
+  "where": "project-filter-dialog.mjs `copy` — écran filter-projects — titre de la fenêtre"
+ },
+ "filter.projectType.born2beroot": {
+  "fr": "Born2beroot",
+  "en": "Born2beroot",
+  "ar": "Born2beroot",
+  "where": "content-filters.mjs projectFilterOptions() — choix des sous-groupes Tronc commun / Spécialisation (identifiants 42, non traduits)"
+ },
+ "filter.projectType.cub3d": {
+  "fr": "cub3d",
+  "en": "cub3d",
+  "ar": "cub3d",
+  "where": "content-filters.mjs projectFilterOptions() — choix des sous-groupes Tronc commun / Spécialisation (identifiants 42, non traduits)"
+ },
+ "filter.projectType.ft_irc": {
+  "fr": "ft_irc",
+  "en": "ft_irc",
+  "ar": "ft_irc",
+  "where": "content-filters.mjs projectFilterOptions() — choix des sous-groupes Tronc commun / Spécialisation (identifiants 42, non traduits)"
+ },
+ "filter.projectType.ft_linear_regression": {
+  "fr": "ft_linear_regression",
+  "en": "ft_linear_regression",
+  "ar": "ft_linear_regression",
+  "where": "content-filters.mjs projectFilterOptions() — choix des sous-groupes Tronc commun / Spécialisation (identifiants 42, non traduits)"
+ },
+ "filter.projectType.ft_transcendence": {
+  "fr": "ft_transcendence",
+  "en": "ft_transcendence",
+  "ar": "ft_transcendence",
+  "where": "content-filters.mjs projectFilterOptions() — choix des sous-groupes Tronc commun / Spécialisation (identifiants 42, non traduits)"
+ },
+ "filter.projectType.libft": {
+  "fr": "libft",
+  "en": "libft",
+  "ar": "libft",
+  "where": "content-filters.mjs projectFilterOptions() — choix des sous-groupes Tronc commun / Spécialisation (identifiants 42, non traduits)"
+ },
+ "filter.projectType.minishell": {
+  "fr": "minishell",
+  "en": "minishell",
+  "ar": "minishell",
+  "where": "content-filters.mjs projectFilterOptions() — choix des sous-groupes Tronc commun / Spécialisation (identifiants 42, non traduits)"
+ },
+ "filter.projectType.so_long": {
+  "fr": "so_long",
+  "en": "so_long",
+  "ar": "so_long",
+  "where": "content-filters.mjs projectFilterOptions() — choix des sous-groupes Tronc commun / Spécialisation (identifiants 42, non traduits)"
+ },
+ "filter.skill.accessibility": {
+  "fr": "Accessibilité",
+  "en": "Accessibility",
+  "ar": "إمكانية الوصول",
+  "where": "content-filters.mjs `skillNames` — choix de la catégorie Savoir-faire"
+ },
+ "filter.skill.collaboration": {
+  "fr": "Collaboration",
+  "en": "Collaboration",
+  "ar": "التعاون",
+  "where": "content-filters.mjs `skillNames` — choix de la catégorie Savoir-faire"
+ },
+ "filter.skill.irc": {
+  "fr": "IRC",
+  "en": "IRC",
+  "ar": "IRC",
+  "where": "content-filters.mjs `skillNames` — choix de la catégorie Savoir-faire"
+ },
+ "filter.skill.parsing": {
+  "fr": "Analyse syntaxique",
+  "en": "Parsing",
+  "ar": "التحليل النحوي",
+  "where": "content-filters.mjs `skillNames` — choix de la catégorie Savoir-faire"
+ },
+ "filter.skill.raycasting": {
+  "fr": "Raycasting",
+  "en": "Raycasting",
+  "ar": "إلقاء الأشعة",
+  "where": "content-filters.mjs `skillNames` — choix de la catégorie Savoir-faire"
+ },
+ "filter.skill.textures": {
+  "fr": "Textures",
+  "en": "Textures",
+  "ar": "إكساء السطوح",
+  "where": "content-filters.mjs `skillNames` — choix de la catégorie Savoir-faire"
+ },
+ "filter.skill.web": {
+  "fr": "Développement web",
+  "en": "Web development",
+  "ar": "تطوير الويب",
+  "where": "content-filters.mjs `skillNames` — choix de la catégorie Savoir-faire"
+ },
+ "filter.technology.c": {
+  "fr": "C",
+  "en": "C",
+  "ar": "C",
+  "where": "content-filters.mjs `technologyNames` — choix de la catégorie Technologies (identiques dans les trois langues)"
+ },
+ "filter.technology.cpp": {
+  "fr": "C++",
+  "en": "C++",
+  "ar": "C++",
+  "where": "content-filters.mjs `technologyNames` — choix de la catégorie Technologies (identiques dans les trois langues)"
+ },
+ "filter.technology.css": {
+  "fr": "CSS",
+  "en": "CSS",
+  "ar": "CSS",
+  "where": "content-filters.mjs `technologyNames` — choix de la catégorie Technologies (identiques dans les trois langues)"
+ },
+ "filter.technology.posix": {
+  "fr": "POSIX",
+  "en": "POSIX",
+  "ar": "POSIX",
+  "where": "content-filters.mjs `technologyNames` — choix de la catégorie Technologies (identiques dans les trois langues)"
+ },
+ "filter.technology.sockets": {
+  "fr": "Sockets",
+  "en": "Sockets",
+  "ar": "Sockets",
+  "where": "content-filters.mjs `technologyNames` — choix de la catégorie Technologies (identiques dans les trois langues)"
+ },
+ "filter.technology.typescript": {
+  "fr": "TypeScript",
+  "en": "TypeScript",
+  "ar": "TypeScript",
+  "where": "content-filters.mjs `technologyNames` — choix de la catégorie Technologies (identiques dans les trois langues)"
+ },
+ "filter.triggerLabel": {
+  "fr": "Filtrer",
+  "en": "Filter",
+  "ar": "تصفية",
+  "where": "welcome.mjs contentCategoryFilter() — nom de la facette passé au bouton"
+ },
+ "filter.triggerSelection": {
+  "fr": "{n} filtres",
+  "en": "{n} filters",
+  "ar": "{n} مرشحات",
+  "where": "welcome.mjs contentCategoryFilter() selectionLabel — fourni mais non affiché (le bouton garde « Filtrer »)"
+ },
+ "list.controls.add": {
+  "fr": "Ajouter aux favoris",
+  "en": "Add to favorites",
+  "ar": "إضافة إلى المفضلة",
+  "where": "content-controls.mjs `contentControlCopy` — barre Affichage/Trier, cœurs, état vide des favoris — nom accessible du cœur (non actif)"
+ },
+ "list.controls.categorySelectionCount": {
+  "fr": "{n} sélections",
+  "en": "{n} selected",
+  "ar": "{n} اختيارات",
+  "where": "content-controls.mjs refresh() — repli du libellé de sélection (mode menu, inutilisé par la fenêtre Filtrer)"
+ },
+ "list.controls.dates": {
+  "fr": "Dates illustratives des contenus.",
+  "en": "Illustrative dates for the content.",
+  "ar": "تواريخ توضيحية للمحتوى.",
+  "where": "content-controls.mjs `contentControlCopy` — barre Affichage/Trier, cœurs, état vide des favoris — note du panneau Trier (2e partie) et infobulle des dates"
+ },
+ "list.controls.emptyText": {
+  "fr": "Enregistre un contenu avec le cœur, ou affiche tous les contenus.",
+  "en": "Save a story using its heart, or show all content.",
+  "ar": "احفظ محتوى باستخدام القلب، أو اعرض كل المحتوى.",
+  "where": "content-controls.mjs `contentControlCopy` — barre Affichage/Trier, cœurs, état vide des favoris — texte de l’état vide"
+ },
+ "list.controls.emptyTitle": {
+  "fr": "Aucun favori dans ce périmètre",
+  "en": "No favorites in this location",
+  "ar": "لا توجد مفضلة ضمن هذا النطاق",
+  "where": "content-controls.mjs `contentControlCopy` — barre Affichage/Trier, cœurs, état vide des favoris — titre de l’état vide « Mes favoris uniquement »"
+ },
+ "list.controls.favorites": {
+  "fr": "Le plus de favoris",
+  "en": "Most favorites",
+  "ar": "الأكثر تفضيلًا",
+  "where": "content-controls.mjs `contentControlCopy` — barre Affichage/Trier, cœurs, état vide des favoris — choix de tri"
+ },
+ "list.controls.favoritesOnly": {
+  "fr": "Mes favoris uniquement",
+  "en": "My favorites only",
+  "ar": "المفضلة فقط",
+  "where": "content-controls.mjs `contentControlCopy` — barre Affichage/Trier, cœurs, état vide des favoris — case du panneau Trier"
+ },
+ "list.controls.grid": {
+  "fr": "Grille",
+  "en": "Grid",
+  "ar": "شبكة",
+  "where": "content-controls.mjs `contentControlCopy` — barre Affichage/Trier, cœurs, état vide des favoris — choix"
+ },
+ "list.controls.layout": {
+  "fr": "Affichage",
+  "en": "View",
+  "ar": "العرض",
+  "where": "content-controls.mjs `contentControlCopy` — barre Affichage/Trier, cœurs, état vide des favoris — bouton Affichage"
+ },
+ "list.controls.list": {
+  "fr": "Liste",
+  "en": "List",
+  "ar": "قائمة",
+  "where": "content-controls.mjs `contentControlCopy` — barre Affichage/Trier, cœurs, état vide des favoris — choix"
+ },
+ "list.controls.local": {
+  "fr": "Favoris conservés dans ce navigateur. Le tri utilise vos favoris, sans compteur public.",
+  "en": "Favorites stay in this browser. Sorting uses your favorites, without a public count.",
+  "ar": "تُحفظ المفضلة في هذا المتصفح. يعتمد الترتيب على مفضلتك، دون عدّاد عام.",
+  "where": "content-controls.mjs `contentControlCopy` — barre Affichage/Trier, cœurs, état vide des favoris — note du panneau Trier (1re partie)"
+ },
+ "list.controls.newest": {
+  "fr": "Du plus récent au plus ancien",
+  "en": "Newest first",
+  "ar": "من الأحدث إلى الأقدم",
+  "where": "content-controls.mjs `contentControlCopy` — barre Affichage/Trier, cœurs, état vide des favoris — choix de tri"
+ },
+ "list.controls.oldest": {
+  "fr": "Du plus ancien au plus récent",
+  "en": "Oldest first",
+  "ar": "من الأقدم إلى الأحدث",
+  "where": "content-controls.mjs `contentControlCopy` — barre Affichage/Trier, cœurs, état vide des favoris — choix de tri"
+ },
+ "list.controls.remove": {
+  "fr": "Retirer des favoris",
+  "en": "Remove from favorites",
+  "ar": "إزالة من المفضلة",
+  "where": "content-controls.mjs `contentControlCopy` — barre Affichage/Trier, cœurs, état vide des favoris — nom accessible du cœur (actif)"
+ },
+ "list.controls.removedNotice": {
+  "fr": "Retiré des favoris.",
+  "en": "Removed from favorites.",
+  "ar": "أُزيل من المفضلة.",
+  "where": "content-controls.mjs `contentControlCopy` — barre Affichage/Trier, cœurs, état vide des favoris — annonce lecteur d’écran"
+ },
+ "list.controls.save": {
+  "fr": "Favoris",
+  "en": "Favorites",
+  "ar": "المفضلة",
+  "where": "content-controls.mjs `contentControlCopy` — barre Affichage/Trier, cœurs, état vide des favoris — libellé du bouton Favoris (fiche)"
+ },
+ "list.controls.saved": {
+  "fr": "Favoris",
+  "en": "Favorites",
+  "ar": "المفضلة",
+  "where": "content-controls.mjs `contentControlCopy` — barre Affichage/Trier, cœurs, état vide des favoris — libellé du bouton Favoris actif (fiche)"
+ },
+ "list.controls.savedNotice": {
+  "fr": "Ajouté aux favoris dans ce navigateur.",
+  "en": "Saved to favorites in this browser.",
+  "ar": "حُفظ في المفضلة في هذا المتصفح.",
+  "where": "content-controls.mjs `contentControlCopy` — barre Affichage/Trier, cœurs, état vide des favoris — annonce lecteur d’écran"
+ },
+ "list.controls.showAll": {
+  "fr": "Afficher tous les contenus",
+  "en": "Show all content",
+  "ar": "عرض كل المحتوى",
+  "where": "content-controls.mjs `contentControlCopy` — barre Affichage/Trier, cœurs, état vide des favoris — bouton de l’état vide"
+ },
+ "list.controls.sort": {
+  "fr": "Trier",
+  "en": "Sort",
+  "ar": "الترتيب",
+  "where": "content-controls.mjs `contentControlCopy` — barre Affichage/Trier, cœurs, état vide des favoris — bouton Trier"
+ },
+ "list.count": {
+  "fr": "{n} contenus (1 contenu)",
+  "en": "{count} stories",
+  "ar": "عدد المحتويات: {count}",
+  "where": "welcome.mjs renderContentView() #content-count — FR construit en code (`${total} contenu${total===1?'':'s'}`), EN/AR via editorialCopy.count"
+ },
+ "list.countTemplate": {
+  "fr": "{count} contenus",
+  "en": "{count} stories",
+  "ar": "عدد المحتويات: {count}",
+  "where": "welcome.mjs `editorialCopy.count` (le FR n’est pas utilisé pour Projets)"
+ },
+ "list.discovery.current": {
+  "fr": "Seul résultat déjà découvert",
+  "en": "Only result already discovered",
+  "ar": "اكتُشفت النتيجة الوحيدة بالفعل",
+  "where": "welcome.mjs `discoveryCopy` — nom et infobulle du dé à côté de « Chercher dans Horizon » — suffixe quand le seul résultat est déjà ouvert"
+ },
+ "list.discovery.empty": {
+  "fr": "Aucun contenu avec ces filtres",
+  "en": "No content with these filters",
+  "ar": "لا يوجد محتوى بهذه المرشحات",
+  "where": "welcome.mjs `discoveryCopy` — nom et infobulle du dé à côté de « Chercher dans Horizon » — suffixe « · … » quand aucun résultat"
+ },
+ "list.discovery.projects": {
+  "fr": "Découvrir un projet",
+  "en": "Discover a project",
+  "ar": "اكتشف مشروعًا",
+  "where": "welcome.mjs `discoveryCopy` — nom et infobulle du dé à côté de « Chercher dans Horizon » — libellé du dé dans Projets"
+ },
+ "list.discovery.selected": {
+  "fr": "Découverte : ",
+  "en": "Discovery: ",
+  "ar": "اكتشاف: ",
+  "where": "welcome.mjs `discoveryCopy` — nom et infobulle du dé à côté de « Chercher dans Horizon » — annonce"
+ },
+ "list.emptyFiltered.text": {
+  "fr": "Aucun contenu ne correspond à cette combinaison. Essaie un autre choix ou élargis le pays ou le campus.",
+  "en": "No content matches this combination. Try another choice or broaden the country or campus.",
+  "ar": "لا يطابق أي محتوى هذا الجمع من المرشحات. جرّب اختيارًا آخر أو وسّع نطاق الدولة أو الحرم.",
+  "where": "welcome.mjs — état vide filtré (texte) ; bouton = libellé de l’option « tous » (filter.categories.allProjects)"
+ },
+ "list.emptyFiltered.title": {
+  "fr": "Aucun résultat avec ces filtres",
+  "en": "No results with these filters",
+  "ar": "لا توجد نتائج لهذه المرشحات",
+  "where": "welcome.mjs — état vide quand un filtre est actif"
+ },
+ "list.emptyScope.text": {
+  "fr": "Aucun contenu n’a été ajouté pour ce périmètre du réseau.",
+  "en": "No content has been added for this part of the network.",
+  "ar": "لم يُضف محتوى لهذا النطاق من الشبكة بعد.",
+  "where": "welcome.mjs copy.emptyText"
+ },
+ "list.emptyScope.title": {
+  "fr": "Pas encore de contenu dans cet aperçu",
+  "en": "No content in this preview yet",
+  "ar": "لا يوجد محتوى في هذا التصوّر بعد",
+  "where": "welcome.mjs copy.emptyTitle — aucun projet dans le pays/campus choisi"
+ },
+ "list.pagination.label": {
+  "fr": "Pagination des contenus",
+  "en": "Content pagination",
+  "ar": "صفحات المحتوى",
+  "where": "content-pagination-ui.mjs `copy` — rangée de pagination — nom accessible de la navigation"
+ },
+ "list.pagination.next": {
+  "fr": "Suivant",
+  "en": "Next",
+  "ar": "التالي",
+  "where": "content-pagination-ui.mjs `copy` — rangée de pagination — nom accessible/infobulle de la flèche"
+ },
+ "list.pagination.page": {
+  "fr": "Page {page}",
+  "en": "Page {page}",
+  "ar": "الصفحة {page}",
+  "where": "content-pagination-ui.mjs `copy` — rangée de pagination — nom accessible d’un numéro"
+ },
+ "list.pagination.previous": {
+  "fr": "Précédent",
+  "en": "Previous",
+  "ar": "السابق",
+  "where": "content-pagination-ui.mjs `copy` — rangée de pagination — nom accessible/infobulle de la flèche"
+ },
+ "list.pagination.summary": {
+  "fr": "Page {page} sur {pages}",
+  "en": "Page {page} of {pages}",
+  "ar": "الصفحة {page} من {pages}",
+  "where": "content-pagination-ui.mjs `copy` — rangée de pagination — texte au-dessus des numéros"
+ },
+ "list.sectionTitle": {
+  "fr": "Projets",
+  "en": "Projects",
+  "ar": "المشاريع",
+  "where": "welcome.mjs `copy.*.projects` — titre accessible h1 #section-title (masqué visuellement) et libellé du menu du bas"
+ },
+ "list.viewGroupLabel": {
+  "fr": "Présentation des contenus",
+  "en": "",
+  "ar": "",
+  "where": "content-preview.html / index.html — aria-label initial de #content-views, retiré par mountContentControls() (non traduit, n’apparaît plus)"
+ },
+ "project.campusChoice.close": {
+  "fr": "Fermer",
+  "en": "Close",
+  "ar": "إغلاق",
+  "where": "project-ui.mjs `campusChoiceCopy` — écran campus-choice — bouton texte de fermeture"
+ },
+ "project.campusChoice.explore": {
+  "fr": "Explorer un campus",
+  "en": "Explore a campus",
+  "ar": "استكشف أحد الفروع",
+  "where": "project-ui.mjs `campusChoiceCopy` — écran campus-choice — bouton d’action d’un projet multicampus"
+ },
+ "project.campusChoice.title": {
+  "fr": "Choisir un campus",
+  "en": "Choose a campus",
+  "ar": "اختر فرعًا",
+  "where": "project-ui.mjs `campusChoiceCopy` — écran campus-choice — titre de la fenêtre"
+ },
+ "project.detail.about": {
+  "fr": "À propos du projet",
+  "en": "About the project",
+  "ar": "عن المشروع",
+  "where": "project-ui.mjs `copy` — fiche projet — titre de bloc (Vue d’ensemble)"
+ },
+ "project.detail.authors": {
+  "fr": "Créé par",
+  "en": "Created by",
+  "ar": "من إعداد",
+  "where": "project-ui.mjs `copy` — fiche projet — libellé au-dessus de l’équipe"
+ },
+ "project.detail.back": {
+  "fr": "Retour aux projets",
+  "en": "Back to projects",
+  "ar": "العودة إلى المشاريع",
+  "where": "project-ui.mjs `copy` — fiche projet — bouton Retour (repli)"
+ },
+ "project.detail.campus": {
+  "fr": "Explorer {campus}",
+  "en": "Explore {campus}",
+  "ar": "استكشف {campus}",
+  "where": "project-ui.mjs `copy` — fiche projet — bouton d’action, projet à un seul campus ({campus} = nom du campus)"
+ },
+ "project.detail.comments": {
+  "fr": "Commentaires",
+  "en": "Comments",
+  "ar": "التعليقات",
+  "where": "project-ui.mjs `copy` — fiche projet — onglet"
+ },
+ "project.detail.implementation": {
+  "fr": "Réalisation",
+  "en": "Development",
+  "ar": "التنفيذ",
+  "where": "project-ui.mjs `copy` — fiche projet — onglet"
+ },
+ "project.detail.inProject": {
+  "fr": "Dans ce projet",
+  "en": "In this project",
+  "ar": "في هذا المشروع",
+  "where": "project-ui.mjs `copy` — fiche projet — légende du sélecteur mobile"
+ },
+ "project.detail.media": {
+  "fr": "Médias",
+  "en": "Media",
+  "ar": "الوسائط",
+  "where": "project-ui.mjs `copy` — fiche projet — onglet"
+ },
+ "project.detail.mediaCaption": {
+  "fr": "Illustration",
+  "en": "Illustration",
+  "ar": "رسم توضيحي",
+  "where": "project-ui.mjs `copy` — fiche projet — légende de l’illustration principale"
+ },
+ "project.detail.mediaNote": {
+  "fr": "Ce visuel accompagne le projet fictif. Il ne s’agit pas d’une capture de sa réalisation.",
+  "en": "This illustration accompanies the fictional project. It is not a screenshot of its implementation.",
+  "ar": "يرافق هذا الرسم المشروع الخيالي، وليس لقطة شاشة لتنفيذه.",
+  "where": "project-ui.mjs `copy` — fiche projet — texte sous la légende de l’illustration"
+ },
+ "project.detail.noAuthors": {
+  "fr": "Aucun auteur renseigné.",
+  "en": "No authors listed.",
+  "ar": "لم يُحدَّد مؤلفون.",
+  "where": "project-ui.mjs `copy` — fiche projet — équipe vide"
+ },
+ "project.detail.overview": {
+  "fr": "Vue d’ensemble",
+  "en": "Overview",
+  "ar": "نظرة عامة",
+  "where": "project-ui.mjs `copy` — fiche projet — onglet (par défaut)"
+ },
+ "project.detail.sections": {
+  "fr": "Rubriques du projet",
+  "en": "Project sections",
+  "ar": "أقسام المشروع",
+  "where": "project-ui.mjs `copy` — fiche projet — nom accessible de la navigation des onglets"
+ },
+ "project.detail.team": {
+  "fr": "Équipe",
+  "en": "Team",
+  "ar": "الفريق",
+  "where": "project-ui.mjs `copy` — fiche projet — titre du bloc Équipe (Vue d’ensemble)"
+ },
+ "project.detail.teamIntro": {
+  "fr": "Les personnes à l’origine de ce projet.",
+  "en": "The people behind this project.",
+  "ar": "الأشخاص الذين أنشؤوا هذا المشروع.",
+  "where": "project-ui.mjs `copy` — fiche projet — non affiché pour les projets (onglet Auteurs des Chroniques)"
+ },
+ "project.detail.technologies": {
+  "fr": "Technologies et savoir-faire",
+  "en": "Technologies and skills",
+  "ar": "التقنيات والمهارات",
+  "where": "project-ui.mjs `copy` — fiche projet — titre de bloc des étiquettes"
+ },
+ "project.detail.test": {
+  "fr": "Tester le projet",
+  "en": "Try the project",
+  "ar": "تجربة المشروع",
+  "where": "project-ui.mjs `copy` — fiche projet — onglet, sélecteur mobile"
+ },
+ "project.mediaButton.illustration": {
+  "fr": "Agrandir l’illustration",
+  "en": "Enlarge illustration",
+  "ar": "تكبير الرسم التوضيحي",
+  "where": "project-ui.mjs `mediaCopy` — nom accessible des médias cliquables (suivi de « : titre »)"
+ },
+ "project.mediaButton.image": {
+  "fr": "Agrandir l’image",
+  "en": "Enlarge image",
+  "ar": "تكبير الصورة",
+  "where": "project-ui.mjs `mediaCopy` — nom accessible des médias cliquables (suivi de « : titre »)"
+ },
+ "project.mediaButton.video": {
+  "fr": "Agrandir et lire la vidéo",
+  "en": "Enlarge and play video",
+  "ar": "تكبير الفيديو وتشغيله",
+  "where": "project-ui.mjs `mediaCopy` — nom accessible des médias cliquables (suivi de « : titre »)"
+ },
+ "report.action": {
+  "fr": "Signaler",
+  "en": "Report",
+  "ar": "إبلاغ",
+  "where": "content-report.mjs `copy` — bouton Signaler et écran report — libellé du bouton de la fiche"
+ },
+ "report.already": {
+  "fr": "Vous avez déjà signalé ce contenu.",
+  "en": "You have already reported this content.",
+  "ar": "لقد أبلغت عن هذا المحتوى.",
+  "where": "content-report.mjs `copy` — bouton Signaler et écran report — confirmation d’un doublon"
+ },
+ "report.article": {
+  "fr": "Signaler cet article",
+  "en": "Report this article",
+  "ar": "الإبلاغ عن هذا المقال",
+  "where": "content-report.mjs `copy` — bouton Signaler et écran report"
+ },
+ "report.cancel": {
+  "fr": "Annuler",
+  "en": "Cancel",
+  "ar": "إلغاء",
+  "where": "content-report.mjs `copy` — bouton Signaler et écran report"
+ },
+ "report.choose": {
+  "fr": "Choisissez un motif",
+  "en": "Choose a reason",
+  "ar": "اختر سببًا",
+  "where": "content-report.mjs `copy` — bouton Signaler et écran report — première option"
+ },
+ "report.close": {
+  "fr": "Fermer",
+  "en": "Close",
+  "ar": "إغلاق",
+  "where": "content-report.mjs `copy` — bouton Signaler et écran report"
+ },
+ "report.comment": {
+  "fr": "Signaler ce commentaire",
+  "en": "Report this comment",
+  "ar": "الإبلاغ عن هذا التعليق",
+  "where": "content-report.mjs `copy` — bouton Signaler et écran report — titre depuis le menu ⋮"
+ },
+ "report.details": {
+  "fr": "Précisions (facultatif)",
+  "en": "Details (optional)",
+  "ar": "تفاصيل (اختياري)",
+  "where": "content-report.mjs `copy` — bouton Signaler et écran report — libellé du champ"
+ },
+ "report.intro": {
+  "fr": "Ce signalement reste dans cet onglet, sans envoi à une équipe de modération.",
+  "en": "This report stays in this tab and is not sent to a moderation team.",
+  "ar": "يبقى البلاغ في علامة التبويب هذه ولا يُرسل إلى فريق الإشراف.",
+  "where": "content-report.mjs `copy` — bouton Signaler et écran report — texte sous le titre"
+ },
+ "report.placeholder": {
+  "fr": "Expliquez ce qui pose problème…",
+  "en": "Explain what is wrong…",
+  "ar": "وضّح المشكلة…",
+  "where": "content-report.mjs `copy` — bouton Signaler et écran report — texte indicatif"
+ },
+ "report.profile": {
+  "fr": "Signaler ce profil",
+  "en": "Report this profile",
+  "ar": "الإبلاغ عن هذا الملف",
+  "where": "content-report.mjs `copy` — bouton Signaler et écran report"
+ },
+ "report.project": {
+  "fr": "Signaler ce projet",
+  "en": "Report this project",
+  "ar": "الإبلاغ عن هذا المشروع",
+  "where": "content-report.mjs `copy` — bouton Signaler et écran report — titre de la fenêtre et nom accessible du bouton"
+ },
+ "report.reason": {
+  "fr": "Motif du signalement",
+  "en": "Reason for reporting",
+  "ar": "سبب الإبلاغ",
+  "where": "content-report.mjs `copy` — bouton Signaler et écran report — libellé du menu déroulant"
+ },
+ "report.reasons.harassment": {
+  "fr": "Harcèlement ou intimidation",
+  "en": "Harassment or bullying",
+  "ar": "مضايقة أو تنمّر",
+  "where": "content-report.mjs `copy` — bouton Signaler et écran report"
+ },
+ "report.reasons.hate": {
+  "fr": "Contenu haineux ou violent",
+  "en": "Hateful or violent content",
+  "ar": "محتوى يحض على الكراهية أو العنف",
+  "where": "content-report.mjs `copy` — bouton Signaler et écran report"
+ },
+ "report.reasons.impersonation": {
+  "fr": "Usurpation d’identité",
+  "en": "Impersonation",
+  "ar": "انتحال الهوية",
+  "where": "content-report.mjs `copy` — bouton Signaler et écran report"
+ },
+ "report.reasons.other": {
+  "fr": "Autre motif",
+  "en": "Another reason",
+  "ar": "سبب آخر",
+  "where": "content-report.mjs `copy` — bouton Signaler et écran report"
+ },
+ "report.reasons.privacy": {
+  "fr": "Atteinte à la vie privée",
+  "en": "Privacy violation",
+  "ar": "انتهاك الخصوصية",
+  "where": "content-report.mjs `copy` — bouton Signaler et écran report"
+ },
+ "report.reasons.spam": {
+  "fr": "Spam ou publicité indésirable",
+  "en": "Spam or unwanted advertising",
+  "ar": "رسائل مزعجة أو إعلانات غير مرغوبة",
+  "where": "content-report.mjs `copy` — bouton Signaler et écran report"
+ },
+ "report.required": {
+  "fr": "Choisissez un motif pour continuer.",
+  "en": "Choose a reason to continue.",
+  "ar": "اختر سببًا للمتابعة.",
+  "where": "content-report.mjs `copy` — bouton Signaler et écran report"
+ },
+ "report.saved": {
+  "fr": "Signalement enregistré.",
+  "en": "Report saved.",
+  "ar": "حُفظ البلاغ.",
+  "where": "content-report.mjs `copy` — bouton Signaler et écran report — confirmation"
+ },
+ "report.submit": {
+  "fr": "Enregistrer le signalement",
+  "en": "Save report",
+  "ar": "حفظ البلاغ",
+  "where": "content-report.mjs `copy` — bouton Signaler et écran report — bouton principal"
+ },
+ "report.tooLong": {
+  "fr": "Limitez les précisions à 1 000 caractères.",
+  "en": "Keep details within 1,000 characters.",
+  "ar": "يجب ألا تتجاوز التفاصيل ١٠٠٠ حرف.",
+  "where": "content-report.mjs `copy` — bouton Signaler et écran report"
+ },
+ "test.add": {
+  "fr": "Ajouter un lien",
+  "en": "Add a link",
+  "ar": "إضافة رابط",
+  "where": "project-trial.mjs `copy` — onglet Tester le projet — bouton de l’état vide"
+ },
+ "test.cancel": {
+  "fr": "Annuler",
+  "en": "Cancel",
+  "ar": "إلغاء",
+  "where": "project-trial.mjs `copy` — onglet Tester le projet — bouton"
+ },
+ "test.edit": {
+  "fr": "Modifier le lien",
+  "en": "Edit link",
+  "ar": "تعديل الرابط",
+  "where": "project-trial.mjs `copy` — onglet Tester le projet — bouton après enregistrement"
+ },
+ "test.empty": {
+  "fr": "Aucun dépôt renseigné",
+  "en": "No repository added",
+  "ar": "لم يُضف مستودع بعد",
+  "where": "project-trial.mjs `copy` — onglet Tester le projet — titre de l’état vide"
+ },
+ "test.emptyHint": {
+  "fr": "L’auteur n’a pas encore partagé de lien pour tester ce projet.",
+  "en": "The author has not shared a link to try this project yet.",
+  "ar": "لم يشارك المؤلف رابطًا لتجربة هذا المشروع بعد.",
+  "where": "project-trial.mjs `copy` — onglet Tester le projet — texte de l’état vide"
+ },
+ "test.instructions": {
+  "fr": "Instructions pour tester",
+  "en": "How to try the project",
+  "ar": "طريقة تجربة المشروع",
+  "where": "project-trial.mjs `copy` — onglet Tester le projet — sous-titre h4"
+ },
+ "test.invalid": {
+  "fr": "Saisissez une adresse HTTP ou HTTPS valide, sans identifiant ni mot de passe.",
+  "en": "Enter a valid HTTP or HTTPS address without a username or password.",
+  "ar": "أدخل عنوان HTTP أو HTTPS صالحًا بدون اسم مستخدم أو كلمة مرور.",
+  "where": "project-trial.mjs `copy` — onglet Tester le projet — erreur"
+ },
+ "test.newTab": {
+  "fr": "nouvel onglet",
+  "en": "new tab",
+  "ar": "علامة تبويب جديدة",
+  "where": "project-trial.mjs `copy` — onglet Tester le projet — complément du nom accessible"
+ },
+ "test.note": {
+  "fr": "Essai auteur : les modifications restent dans cet onglet.",
+  "en": "Author trial: changes stay in this tab.",
+  "ar": "تجربة للمؤلف: تبقى التعديلات في علامة التبويب هذه.",
+  "where": "project-trial.mjs `copy` — onglet Tester le projet — note en tête du formulaire"
+ },
+ "test.open": {
+  "fr": "Voir le dépôt",
+  "en": "View repository",
+  "ar": "عرض المستودع",
+  "where": "project-trial.mjs `copy` — onglet Tester le projet — bouton lien externe (+ « ↗ »)"
+ },
+ "test.optional": {
+  "fr": "Instructions pour tester (facultatif)",
+  "en": "Instructions to try the project (optional)",
+  "ar": "تعليمات تجربة المشروع (اختياري)",
+  "where": "project-trial.mjs `copy` — onglet Tester le projet — libellé du champ"
+ },
+ "test.remove": {
+  "fr": "Retirer le lien",
+  "en": "Remove link",
+  "ar": "إزالة الرابط",
+  "where": "project-trial.mjs `copy` — onglet Tester le projet — bouton (si un lien existe)"
+ },
+ "test.repository": {
+  "fr": "Dépôt du projet",
+  "en": "Project repository",
+  "ar": "مستودع المشروع",
+  "where": "project-trial.mjs `copy` — onglet Tester le projet — titre du bloc après enregistrement"
+ },
+ "test.save": {
+  "fr": "Enregistrer",
+  "en": "Save",
+  "ar": "حفظ",
+  "where": "project-trial.mjs `copy` — onglet Tester le projet — bouton principal"
+ },
+ "test.tooLong": {
+  "fr": "Les instructions sont limitées à 5 000 caractères.",
+  "en": "Instructions are limited to 5,000 characters.",
+  "ar": "الحد الأقصى للتعليمات هو 5000 حرف.",
+  "where": "project-trial.mjs `copy` — onglet Tester le projet — erreur"
+ },
+ "test.url": {
+  "fr": "Lien du dépôt",
+  "en": "Repository link",
+  "ar": "رابط المستودع",
+  "where": "project-trial.mjs `copy` — onglet Tester le projet — libellé du champ"
+ },
+ "test.urlHint": {
+  "fr": "Adresse complète commençant par https:// ou http://.",
+  "en": "Full address starting with https:// or http://.",
+  "ar": "عنوان كامل يبدأ بـ https:// أو http://.",
+  "where": "project-trial.mjs `copy` — onglet Tester le projet — aide du champ"
+ },
+ "viewer.close": {
+  "fr": "Fermer le média",
+  "en": "Close media",
+  "ar": "إغلاق الوسائط",
+  "where": "media-viewer.mjs `copy` — écran viewer — nom accessible de ×"
+ },
+ "viewer.error": {
+  "fr": "Ce média ne peut pas être affiché.",
+  "en": "This media could not be displayed.",
+  "ar": "تعذّر عرض هذا الوسيط.",
+  "where": "media-viewer.mjs `copy` — écran viewer"
+ },
+ "viewer.loading": {
+  "fr": "Chargement du média…",
+  "en": "Loading media…",
+  "ar": "جارٍ تحميل الوسائط…",
+  "where": "media-viewer.mjs `copy` — écran viewer"
+ },
+ "viewer.next": {
+  "fr": "Média suivant",
+  "en": "Next media",
+  "ar": "الوسيط التالي",
+  "where": "media-viewer.mjs `copy` — écran viewer — nom de ›"
+ },
+ "viewer.previous": {
+  "fr": "Média précédent",
+  "en": "Previous media",
+  "ar": "الوسيط السابق",
+  "where": "media-viewer.mjs `copy` — écran viewer — nom de ‹"
+ },
+ "viewer.title": {
+  "fr": "Médias",
+  "en": "Media",
+  "ar": "الوسائط",
+  "where": "media-viewer.mjs `copy` — écran viewer — titre de la fenêtre"
+ }
+}

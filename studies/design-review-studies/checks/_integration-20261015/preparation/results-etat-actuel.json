@@ -1,0 +1,2818 @@
+{
+ "menu-compte-1440x900-sombre": {
+  "view": {
+   "name": "menu-compte-1440x900-sombre",
+   "route": "projects",
+   "theme": "dark",
+   "vp": [
+    1440,
+    900,
+    false
+   ]
+  },
+  "originalState": {
+   "controller": "audit-fixes-146",
+   "preview": "113",
+   "entranceCss": "audit-fixes-24",
+   "sha256": {
+    "index.html": "6c8776d6e72876a1483c2d39ab52dbefeef9f7df583913c0c17d5a6d394e5343",
+    "content-preview.html": "4ae91c5ca5251f1734c03d3ed0daf0bc5713bdc6ccc44bbab137b29bf03aaf03",
+    "content-preview.mjs": "92e9daa82910e2186f2516daf99cf35842fe8658f27fec579b62e0e67d206757",
+    "welcome.mjs": "58f5b152e47f70407205c7094e5a29a4368c2ca24fca0aed8450e25841c214c2",
+    "entrance.css": "e5f9b6205d7a5fd0cba85e666eee48539fcbaf74944f94f4f25637cc369bd312",
+    "entrance.mjs": "d2426b872e48813fba3df998d3512d2c32acdbbc013c2a33a13f461bc61c82e8",
+    "comments.mjs": "24dd71a770b072f6aeade8ba16addb4e3023fb3b5d9a8713fe0cd8869423854b",
+    "account-menu.css": "8f6da743782fb50abad856317bcb3292d8babcd96b51e8b6a13c7ff28d266540",
+    "account-menu.mjs": "b839d5c2c1c44e19d75d6d84fc89ff9cb5b91909b53cb093f7bbea338e9ef105"
+   }
+  },
+  "originalUnchangedDuringView": true,
+  "sides": {
+   "copie-essais": {
+    "mode": "copie-essais",
+    "installed": true,
+    "notes": [],
+    "shot": "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_integration-20261015/preparation/captures/actuel-menu-compte-1440x900-sombre-copie-essais.png",
+    "account": {
+     "visible": true,
+     "box": [
+      1127,
+      210,
+      1373,
+      263
+     ],
+     "text": [
+      1192.671875,
+      225,
+      1307.3125,
+      248
+     ],
+     "label": "Créer un compte",
+     "color": "rgb(237, 52, 145)",
+     "background": "rgba(0, 0, 0, 0)",
+     "border": "rgb(112, 131, 131)",
+     "borderWidth": "1px",
+     "font": "16px 400",
+     "radius": "12px",
+     "shadow": "none",
+     "login": null,
+     "menu": {
+      "background": "color(srgb 0.160784 0.160784 0.180392 / 0.82)",
+      "radius": "20px",
+      "shadow": "rgba(0, 0, 0, 0.2) 0px 16px 48px 0px, rgba(255, 255, 255, 0.19) 0px 1px 0px 0px inset, rgb"
+     },
+     "entry": "welcome",
+     "theme": "dark"
+    },
+    "arrival": null,
+    "sort": null,
+    "presence": {
+     "links": 0,
+     "modules": 0,
+     "lastSheet": "../essais/awards-a-venir/essai.css?v=1",
+     "notes": 0,
+     "started": false
+    },
+    "errors": [],
+    "theme": "dark",
+    "lang": "fr",
+    "main": [
+     "div.dock-shell",
+     "div#scope-bar.scope-bar",
+     "div#globe.globe-stage",
+     "section#content-sheet.content-sheet",
+     "p#loading.loading-status",
+     "div.essai-awards-a-venir"
+    ],
+    "sheets": [
+     "/work/visualizations/design-review-studies/essais/globe-espace-libre/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/police-etiquettes-globe/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/une-colonne-320/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/roles-couleur/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/visiter-contour-sombre/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/lisibilite-textes/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/echelle-unifiee/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/pseudo-manquant/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/awards-a-venir/essai.css?v=1"
+    ]
+   },
+   "original": {
+    "mode": "original",
+    "installed": null,
+    "notes": [],
+    "shot": "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_integration-20261015/preparation/captures/actuel-menu-compte-1440x900-sombre-original.png",
+    "account": {
+     "visible": true,
+     "box": [
+      1127,
+      211,
+      1373,
+      265
+     ],
+     "text": [
+      1189.09375,
+      226,
+      1310.90625,
+      250
+     ],
+     "label": "Créer un compte",
+     "color": "rgb(237, 52, 145)",
+     "background": "rgb(27, 27, 27)",
+     "border": "rgba(0, 0, 0, 0)",
+     "borderWidth": "1px",
+     "font": "17px 400",
+     "radius": "14px",
+     "shadow": "none",
+     "login": null,
+     "menu": {
+      "background": "color(srgb 0.160784 0.160784 0.180392 / 0.82)",
+      "radius": "20px",
+      "shadow": "rgba(0, 0, 0, 0.2) 0px 12px 26px 0px, rgba(255, 255, 255, 0.19) 0px 1px 0px 0px inset, rgb"
+     },
+     "entry": "welcome",
+     "theme": "dark"
+    },
+    "arrival": null,
+    "sort": null,
+    "presence": {
+     "links": 0,
+     "modules": 0,
+     "lastSheet": "content-report.css?v=3",
+     "notes": 0,
+     "started": false
+    },
+    "errors": [],
+    "theme": "dark",
+    "lang": "fr",
+    "main": [
+     "div.dock-shell",
+     "div#scope-bar.scope-bar",
+     "div#globe.globe-stage",
+     "section#content-sheet.content-sheet",
+     "p#loading.loading-status"
+    ],
+    "sheets": []
+   },
+   "original-paquet": {
+    "mode": "original-paquet",
+    "installed": true,
+    "notes": [],
+    "shot": "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_integration-20261015/preparation/captures/actuel-menu-compte-1440x900-sombre-original-paquet.png",
+    "account": {
+     "visible": true,
+     "box": [
+      1127,
+      210,
+      1373,
+      263
+     ],
+     "text": [
+      1192.671875,
+      225,
+      1307.3125,
+      248
+     ],
+     "label": "Créer un compte",
+     "color": "rgb(237, 52, 145)",
+     "background": "rgb(27, 27, 27)",
+     "border": "rgb(112, 131, 131)",
+     "borderWidth": "1px",
+     "font": "16px 400",
+     "radius": "12px",
+     "shadow": "none",
+     "login": null,
+     "menu": {
+      "background": "color(srgb 0.160784 0.160784 0.180392 / 0.82)",
+      "radius": "20px",
+      "shadow": "rgba(0, 0, 0, 0.2) 0px 16px 48px 0px, rgba(255, 255, 255, 0.19) 0px 1px 0px 0px inset, rgb"
+     },
+     "entry": "welcome",
+     "theme": "dark"
+    },
+    "arrival": null,
+    "sort": null,
+    "presence": {
+     "links": 1,
+     "modules": 1,
+     "lastSheet": "../design-review-studies/integration-20261015/design-review-selection.css?v=1",
+     "notes": 1,
+     "started": true
+    },
+    "errors": [],
+    "theme": "dark",
+    "lang": "fr",
+    "main": [
+     "div.dock-shell",
+     "div#scope-bar.scope-bar",
+     "div#globe.globe-stage",
+     "section#content-sheet.content-sheet",
+     "p#loading.loading-status",
+     "div.essai-awards-a-venir"
+    ],
+    "sheets": [
+     "/work/visualizations/design-review-studies/integration-20261015/design-review-selection.css?v=1"
+    ]
+   }
+  },
+  "contrasts": {
+   "copie-essais": {
+    "fillPixel": [
+     40,
+     40,
+     45
+    ],
+    "glassOutside": [
+     41,
+     41,
+     46
+    ],
+    "text": 3.84,
+    "outlineVsFill": 3.68,
+    "outlineVsGlass": 3.63,
+    "fillVsGlass": 1.01
+   },
+   "original": {
+    "fillPixel": [
+     27,
+     27,
+     27
+    ],
+    "glassOutside": [
+     41,
+     42,
+     46
+    ],
+    "text": 4.51,
+    "fillVsGlass": 1.2
+   },
+   "original-paquet": {
+    "fillPixel": [
+     27,
+     27,
+     27
+    ],
+    "glassOutside": [
+     41,
+     41,
+     46
+    ],
+    "text": 4.51,
+    "outlineVsFill": 4.32,
+    "outlineVsGlass": 3.63,
+    "fillVsGlass": 1.19
+   }
+  },
+  "paquetVsEssais": {
+   "pixelsDiffer": 12301,
+   "diffBox": [
+    671,
+    123,
+    1372,
+    262
+   ],
+   "maxChannelDelta": 21,
+   "elements": [
+    1131,
+    1131
+   ],
+   "domMismatches": 0,
+   "styleMismatches": 1,
+   "firstDom": [],
+   "firstStyle": [
+    [
+     139,
+     "button.account-auth-action.entrance-action.secondary"
+    ]
+   ],
+   "extrasEqual": false,
+   "extrasDiff": {
+    "ready": [
+     "true",
+     null
+    ]
+   }
+  },
+  "paquetVsOriginal": {
+   "pixelsDiffer": 200150,
+   "diffBox": [
+    170,
+    62,
+    1437,
+    899
+   ],
+   "maxChannelDelta": 245,
+   "elements": [
+    1127,
+    1131
+   ],
+   "domMismatches": 48,
+   "styleMismatches": 324,
+   "firstDom": [
+    [
+     1083,
+     "button#about.prototype-note",
+     "div.essai-awards-a-venir"
+    ],
+    [
+     1084,
+     "p#announcement.sr-only",
+     "svg"
+    ],
+    [
+     1085,
+     "button#back-to-top.back-to-top",
+     "use"
+    ],
+    [
+     1086,
+     "svg",
+     "p"
+    ],
+    [
+     1087,
+     "path",
+     "button#about.prototype-note"
+    ]
+   ],
+   "firstStyle": [
+    [
+     0,
+     "html"
+    ],
+    [
+     1,
+     "body"
+    ],
+    [
+     53,
+     "div#app.app"
+    ],
+    [
+     82,
+     "div#language-menu.language-menu"
+    ],
+    [
+     99,
+     "div#theme-menu.theme-menu"
+    ],
+    [
+     130,
+     "section#account-menu.account-menu"
+    ],
+    [
+     132,
+     "h2#account-menu-title.sr-only"
+    ],
+    [
+     137,
+     "div.account-auth-actions"
+    ]
+   ],
+   "extrasEqual": false,
+   "extrasDiff": {
+    "globeVars": [
+     {
+      "hgRadius": ".425",
+      "fit": [
+       "",
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     {
+      "hgRadius": "0.253574",
+      "fit": [
+       "0.253574",
+       "168.3px",
+       "196px",
+       "max(16px, min(50svh - 168.3px, 50svh - 196px) - 17px)",
+       "tan(atan2(max(16px, min(50svh - 168.3px, 50svh - 196px) - 17px), 150svh))"
+      ]
+     }
+    ],
+    "note": [
+     null,
+     {
+      "text": "Les 42 Awards arrivent bientôt.",
+      "lang": "fr",
+      "dir": "ltr",
+      "display": "none",
+      "rect": [
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "rootVars": [
+     {
+      "scale": {
+       "--eu-caption": "",
+       "--eu-action": "",
+       "--eu-label": "",
+       "--eu-body": "",
+       "--eu-title-3": "",
+       "--eu-ramp": "",
+       "--eu-radius-control": "",
+       "--eu-radius-surface": "",
+       "--eu-shadow-2": "",
+       "--eu-glass-edge": ""
+      },
+      "accent": ""
+     },
+     {
+      "scale": {
+       "--eu-caption": "13px",
+       "--eu-action": "14px",
+       "--eu-label": "14px",
+       "--eu-body": "16px",
+       "--eu-title-3": "20px",
+       "--eu-ramp": "calc((100vw - 390px) / 634)",
+       "--eu-radius-control": "12px",
+       "--eu-radius-surface": "20px",
+       "--eu-shadow-2": "0 16px 48px #0003",
+       "--eu-glass-edge": "inset 0 1px 0 #ffffff30,inset 0 -1px 0 #0002"
+      },
+      "accent": "#F485BD"
+     }
+    ],
+    "main": [
+     [
+      "div.dock-shell",
+      "div#scope-bar.scope-bar",
+      "div#globe.globe-stage",
+      "section#content-sheet.content-sheet",
+      "p#loading.loading-status"
+     ],
+     [
+      "div.dock-shell",
+      "div#scope-bar.scope-bar",
+      "div#globe.globe-stage",
+      "section#content-sheet.content-sheet",
+      "p#loading.loading-status",
+      "div.essai-awards-a-venir"
+     ]
+    ]
+   }
+  }
+ },
+ "menu-compte-390x844-sombre": {
+  "view": {
+   "name": "menu-compte-390x844-sombre",
+   "route": "projects",
+   "theme": "dark",
+   "vp": [
+    390,
+    844,
+    true
+   ]
+  },
+  "originalState": {
+   "controller": "audit-fixes-146",
+   "preview": "113",
+   "entranceCss": "audit-fixes-24",
+   "sha256": {
+    "index.html": "6c8776d6e72876a1483c2d39ab52dbefeef9f7df583913c0c17d5a6d394e5343",
+    "content-preview.html": "4ae91c5ca5251f1734c03d3ed0daf0bc5713bdc6ccc44bbab137b29bf03aaf03",
+    "content-preview.mjs": "92e9daa82910e2186f2516daf99cf35842fe8658f27fec579b62e0e67d206757",
+    "welcome.mjs": "58f5b152e47f70407205c7094e5a29a4368c2ca24fca0aed8450e25841c214c2",
+    "entrance.css": "e5f9b6205d7a5fd0cba85e666eee48539fcbaf74944f94f4f25637cc369bd312",
+    "entrance.mjs": "d2426b872e48813fba3df998d3512d2c32acdbbc013c2a33a13f461bc61c82e8",
+    "comments.mjs": "24dd71a770b072f6aeade8ba16addb4e3023fb3b5d9a8713fe0cd8869423854b",
+    "account-menu.css": "8f6da743782fb50abad856317bcb3292d8babcd96b51e8b6a13c7ff28d266540",
+    "account-menu.mjs": "b839d5c2c1c44e19d75d6d84fc89ff9cb5b91909b53cb093f7bbea338e9ef105"
+   }
+  },
+  "originalUnchangedDuringView": true,
+  "sides": {
+   "copie-essais": {
+    "mode": "copie-essais",
+    "installed": true,
+    "notes": [],
+    "shot": "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_integration-20261015/preparation/captures/actuel-menu-compte-390x844-sombre-copie-essais.png",
+    "account": {
+     "visible": true,
+     "box": [
+      103,
+      194,
+      349,
+      247
+     ],
+     "text": [
+      168.671875,
+      209,
+      283.3125,
+      232
+     ],
+     "label": "Créer un compte",
+     "color": "rgb(237, 52, 145)",
+     "background": "rgba(0, 0, 0, 0)",
+     "border": "rgb(112, 131, 131)",
+     "borderWidth": "1px",
+     "font": "16px 400",
+     "radius": "12px",
+     "shadow": "none",
+     "login": null,
+     "menu": {
+      "background": "color(srgb 0.160784 0.160784 0.180392 / 0.82)",
+      "radius": "20px",
+      "shadow": "rgba(0, 0, 0, 0.2) 0px 16px 48px 0px, rgba(255, 255, 255, 0.19) 0px 1px 0px 0px inset, rgb"
+     },
+     "entry": "welcome",
+     "theme": "dark"
+    },
+    "arrival": null,
+    "sort": null,
+    "presence": {
+     "links": 0,
+     "modules": 0,
+     "lastSheet": "../essais/awards-a-venir/essai.css?v=1",
+     "notes": 0,
+     "started": false
+    },
+    "errors": [],
+    "theme": "dark",
+    "lang": "fr",
+    "main": [
+     "div.dock-shell",
+     "div#scope-bar.scope-bar",
+     "div#globe.globe-stage",
+     "section#content-sheet.content-sheet",
+     "p#loading.loading-status",
+     "div.essai-awards-a-venir"
+    ],
+    "sheets": [
+     "/work/visualizations/design-review-studies/essais/globe-espace-libre/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/police-etiquettes-globe/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/une-colonne-320/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/roles-couleur/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/visiter-contour-sombre/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/lisibilite-textes/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/echelle-unifiee/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/pseudo-manquant/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/awards-a-venir/essai.css?v=1"
+    ]
+   },
+   "original": {
+    "mode": "original",
+    "installed": null,
+    "notes": [],
+    "shot": "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_integration-20261015/preparation/captures/actuel-menu-compte-390x844-sombre-original.png",
+    "account": {
+     "visible": true,
+     "box": [
+      103,
+      194,
+      349,
+      247
+     ],
+     "text": [
+      168.671875,
+      209,
+      283.3125,
+      232
+     ],
+     "label": "Créer un compte",
+     "color": "rgb(237, 52, 145)",
+     "background": "rgb(27, 27, 27)",
+     "border": "rgba(0, 0, 0, 0)",
+     "borderWidth": "1px",
+     "font": "16px 400",
+     "radius": "14px",
+     "shadow": "none",
+     "login": null,
+     "menu": {
+      "background": "color(srgb 0.160784 0.160784 0.180392 / 0.82)",
+      "radius": "20px",
+      "shadow": "rgba(0, 0, 0, 0.2) 0px 12px 26px 0px, rgba(255, 255, 255, 0.19) 0px 1px 0px 0px inset, rgb"
+     },
+     "entry": "welcome",
+     "theme": "dark"
+    },
+    "arrival": null,
+    "sort": null,
+    "presence": {
+     "links": 0,
+     "modules": 0,
+     "lastSheet": "content-report.css?v=3",
+     "notes": 0,
+     "started": false
+    },
+    "errors": [],
+    "theme": "dark",
+    "lang": "fr",
+    "main": [
+     "div.dock-shell",
+     "div#scope-bar.scope-bar",
+     "div#globe.globe-stage",
+     "section#content-sheet.content-sheet",
+     "p#loading.loading-status"
+    ],
+    "sheets": []
+   },
+   "original-paquet": {
+    "mode": "original-paquet",
+    "installed": true,
+    "notes": [],
+    "shot": "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_integration-20261015/preparation/captures/actuel-menu-compte-390x844-sombre-original-paquet.png",
+    "account": {
+     "visible": true,
+     "box": [
+      103,
+      194,
+      349,
+      247
+     ],
+     "text": [
+      168.671875,
+      209,
+      283.3125,
+      232
+     ],
+     "label": "Créer un compte",
+     "color": "rgb(237, 52, 145)",
+     "background": "rgb(27, 27, 27)",
+     "border": "rgb(112, 131, 131)",
+     "borderWidth": "1px",
+     "font": "16px 400",
+     "radius": "12px",
+     "shadow": "none",
+     "login": null,
+     "menu": {
+      "background": "color(srgb 0.160784 0.160784 0.180392 / 0.82)",
+      "radius": "20px",
+      "shadow": "rgba(0, 0, 0, 0.2) 0px 16px 48px 0px, rgba(255, 255, 255, 0.19) 0px 1px 0px 0px inset, rgb"
+     },
+     "entry": "welcome",
+     "theme": "dark"
+    },
+    "arrival": null,
+    "sort": null,
+    "presence": {
+     "links": 1,
+     "modules": 1,
+     "lastSheet": "../design-review-studies/integration-20261015/design-review-selection.css?v=1",
+     "notes": 1,
+     "started": true
+    },
+    "errors": [],
+    "theme": "dark",
+    "lang": "fr",
+    "main": [
+     "div.dock-shell",
+     "div#scope-bar.scope-bar",
+     "div#globe.globe-stage",
+     "section#content-sheet.content-sheet",
+     "p#loading.loading-status",
+     "div.essai-awards-a-venir"
+    ],
+    "sheets": [
+     "/work/visualizations/design-review-studies/integration-20261015/design-review-selection.css?v=1"
+    ]
+   }
+  },
+  "contrasts": {
+   "copie-essais": {
+    "fillPixel": [
+     44,
+     45,
+     49
+    ],
+    "glassOutside": [
+     47,
+     46,
+     50
+    ],
+    "text": 3.6,
+    "outlineVsFill": 3.45,
+    "outlineVsGlass": 3.38,
+    "fillVsGlass": 1.02
+   },
+   "original": {
+    "fillPixel": [
+     27,
+     27,
+     27
+    ],
+    "glassOutside": [
+     46,
+     46,
+     50
+    ],
+    "text": 4.51,
+    "fillVsGlass": 1.27
+   },
+   "original-paquet": {
+    "fillPixel": [
+     27,
+     27,
+     27
+    ],
+    "glassOutside": [
+     47,
+     46,
+     50
+    ],
+    "text": 4.51,
+    "outlineVsFill": 4.32,
+    "outlineVsGlass": 3.38,
+    "fillVsGlass": 1.28
+   }
+  },
+  "paquetVsEssais": {
+   "pixelsDiffer": 48633,
+   "diffBox": [
+    208,
+    390,
+    695,
+    491
+   ],
+   "maxChannelDelta": 34,
+   "elements": [
+    1131,
+    1131
+   ],
+   "domMismatches": 0,
+   "styleMismatches": 1,
+   "firstDom": [],
+   "firstStyle": [
+    [
+     139,
+     "button.account-auth-action.entrance-action.secondary"
+    ]
+   ],
+   "extrasEqual": false,
+   "extrasDiff": {
+    "ready": [
+     "true",
+     null
+    ]
+   }
+  },
+  "paquetVsOriginal": {
+   "pixelsDiffer": 476210,
+   "diffBox": [
+    32,
+    91,
+    779,
+    1687
+   ],
+   "maxChannelDelta": 245,
+   "elements": [
+    1127,
+    1131
+   ],
+   "domMismatches": 48,
+   "styleMismatches": 445,
+   "firstDom": [
+    [
+     1083,
+     "button#about.prototype-note",
+     "div.essai-awards-a-venir"
+    ],
+    [
+     1084,
+     "p#announcement.sr-only",
+     "svg"
+    ],
+    [
+     1085,
+     "button#back-to-top.back-to-top",
+     "use"
+    ],
+    [
+     1086,
+     "svg",
+     "p"
+    ],
+    [
+     1087,
+     "path",
+     "button#about.prototype-note"
+    ]
+   ],
+   "firstStyle": [
+    [
+     0,
+     "html"
+    ],
+    [
+     1,
+     "body"
+    ],
+    [
+     53,
+     "div#app.app"
+    ],
+    [
+     82,
+     "div#language-menu.language-menu"
+    ],
+    [
+     99,
+     "div#theme-menu.theme-menu"
+    ],
+    [
+     130,
+     "section#account-menu.account-menu"
+    ],
+    [
+     138,
+     "button.account-auth-action.entrance-action"
+    ],
+    [
+     139,
+     "button.account-auth-action.entrance-action.secondary"
+    ]
+   ],
+   "extrasEqual": false,
+   "extrasDiff": {
+    "globeVars": [
+     {
+      "hgRadius": ".46",
+      "fit": [
+       "",
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     {
+      "hgRadius": ".46",
+      "fit": [
+       "0.425",
+       "",
+       "",
+       "",
+       ""
+      ]
+     }
+    ],
+    "note": [
+     null,
+     {
+      "text": "Les 42 Awards arrivent bientôt.",
+      "lang": "fr",
+      "dir": "ltr",
+      "display": "none",
+      "rect": [
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "rootVars": [
+     {
+      "scale": {
+       "--eu-caption": "",
+       "--eu-action": "",
+       "--eu-label": "",
+       "--eu-body": "",
+       "--eu-title-3": "",
+       "--eu-ramp": "",
+       "--eu-radius-control": "",
+       "--eu-radius-surface": "",
+       "--eu-shadow-2": "",
+       "--eu-glass-edge": ""
+      },
+      "accent": ""
+     },
+     {
+      "scale": {
+       "--eu-caption": "13px",
+       "--eu-action": "14px",
+       "--eu-label": "14px",
+       "--eu-body": "16px",
+       "--eu-title-3": "20px",
+       "--eu-ramp": "calc((100vw - 390px) / 634)",
+       "--eu-radius-control": "12px",
+       "--eu-radius-surface": "20px",
+       "--eu-shadow-2": "0 16px 48px #0003",
+       "--eu-glass-edge": "inset 0 1px 0 #ffffff30,inset 0 -1px 0 #0002"
+      },
+      "accent": "#F485BD"
+     }
+    ],
+    "main": [
+     [
+      "div.dock-shell",
+      "div#scope-bar.scope-bar",
+      "div#globe.globe-stage",
+      "section#content-sheet.content-sheet",
+      "p#loading.loading-status"
+     ],
+     [
+      "div.dock-shell",
+      "div#scope-bar.scope-bar",
+      "div#globe.globe-stage",
+      "section#content-sheet.content-sheet",
+      "p#loading.loading-status",
+      "div.essai-awards-a-venir"
+     ]
+    ]
+   }
+  }
+ },
+ "menu-compte-1440x900-clair": {
+  "view": {
+   "name": "menu-compte-1440x900-clair",
+   "route": "projects",
+   "theme": "light",
+   "vp": [
+    1440,
+    900,
+    false
+   ]
+  },
+  "originalState": {
+   "controller": "audit-fixes-146",
+   "preview": "113",
+   "entranceCss": "audit-fixes-24",
+   "sha256": {
+    "index.html": "6c8776d6e72876a1483c2d39ab52dbefeef9f7df583913c0c17d5a6d394e5343",
+    "content-preview.html": "4ae91c5ca5251f1734c03d3ed0daf0bc5713bdc6ccc44bbab137b29bf03aaf03",
+    "content-preview.mjs": "92e9daa82910e2186f2516daf99cf35842fe8658f27fec579b62e0e67d206757",
+    "welcome.mjs": "58f5b152e47f70407205c7094e5a29a4368c2ca24fca0aed8450e25841c214c2",
+    "entrance.css": "e5f9b6205d7a5fd0cba85e666eee48539fcbaf74944f94f4f25637cc369bd312",
+    "entrance.mjs": "d2426b872e48813fba3df998d3512d2c32acdbbc013c2a33a13f461bc61c82e8",
+    "comments.mjs": "24dd71a770b072f6aeade8ba16addb4e3023fb3b5d9a8713fe0cd8869423854b",
+    "account-menu.css": "8f6da743782fb50abad856317bcb3292d8babcd96b51e8b6a13c7ff28d266540",
+    "account-menu.mjs": "b839d5c2c1c44e19d75d6d84fc89ff9cb5b91909b53cb093f7bbea338e9ef105"
+   }
+  },
+  "originalUnchangedDuringView": true,
+  "sides": {
+   "copie-essais": {
+    "mode": "copie-essais",
+    "installed": true,
+    "notes": [],
+    "shot": "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_integration-20261015/preparation/captures/actuel-menu-compte-1440x900-clair-copie-essais.png",
+    "account": {
+     "visible": true,
+     "box": [
+      1127,
+      210,
+      1373,
+      263
+     ],
+     "text": [
+      1192.671875,
+      225,
+      1307.3125,
+      248
+     ],
+     "label": "Créer un compte",
+     "color": "rgb(27, 27, 27)",
+     "background": "rgb(255, 255, 255)",
+     "border": "rgb(220, 229, 229)",
+     "borderWidth": "1px",
+     "font": "16px 400",
+     "radius": "12px",
+     "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+     "login": null,
+     "menu": {
+      "background": "color(srgb 1 1 1 / 0.82)",
+      "radius": "20px",
+      "shadow": "rgba(24, 61, 60, 0.07) 0px 22px 64px 0px, rgba(24, 61, 60, 0.024) 0px 3px 12px 0px, rgba(2"
+     },
+     "entry": "welcome",
+     "theme": "light"
+    },
+    "arrival": null,
+    "sort": null,
+    "presence": {
+     "links": 0,
+     "modules": 0,
+     "lastSheet": "../essais/awards-a-venir/essai.css?v=1",
+     "notes": 0,
+     "started": false
+    },
+    "errors": [],
+    "theme": "light",
+    "lang": "fr",
+    "main": [
+     "div.dock-shell",
+     "div#scope-bar.scope-bar",
+     "div#globe.globe-stage",
+     "section#content-sheet.content-sheet",
+     "p#loading.loading-status",
+     "div.essai-awards-a-venir"
+    ],
+    "sheets": [
+     "/work/visualizations/design-review-studies/essais/globe-espace-libre/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/police-etiquettes-globe/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/une-colonne-320/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/roles-couleur/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/visiter-contour-sombre/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/lisibilite-textes/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/echelle-unifiee/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/pseudo-manquant/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/awards-a-venir/essai.css?v=1"
+    ]
+   },
+   "original": {
+    "mode": "original",
+    "installed": null,
+    "notes": [],
+    "shot": "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_integration-20261015/preparation/captures/actuel-menu-compte-1440x900-clair-original.png",
+    "account": {
+     "visible": true,
+     "box": [
+      1127,
+      211,
+      1373,
+      265
+     ],
+     "text": [
+      1189.09375,
+      226,
+      1310.90625,
+      250
+     ],
+     "label": "Créer un compte",
+     "color": "rgb(27, 27, 27)",
+     "background": "rgb(255, 255, 255)",
+     "border": "rgb(220, 229, 229)",
+     "borderWidth": "1px",
+     "font": "17px 400",
+     "radius": "14px",
+     "shadow": "rgba(24, 61, 60, 0.024) 0px 3px 12px 0px",
+     "login": null,
+     "menu": {
+      "background": "color(srgb 1 1 1 / 0.82)",
+      "radius": "20px",
+      "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px, rgba(255, 255, 255, 0.7) 0px 1px 0px 0px inset, r"
+     },
+     "entry": "welcome",
+     "theme": "light"
+    },
+    "arrival": null,
+    "sort": null,
+    "presence": {
+     "links": 0,
+     "modules": 0,
+     "lastSheet": "content-report.css?v=3",
+     "notes": 0,
+     "started": false
+    },
+    "errors": [],
+    "theme": "light",
+    "lang": "fr",
+    "main": [
+     "div.dock-shell",
+     "div#scope-bar.scope-bar",
+     "div#globe.globe-stage",
+     "section#content-sheet.content-sheet",
+     "p#loading.loading-status"
+    ],
+    "sheets": []
+   },
+   "original-paquet": {
+    "mode": "original-paquet",
+    "installed": true,
+    "notes": [],
+    "shot": "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_integration-20261015/preparation/captures/actuel-menu-compte-1440x900-clair-original-paquet.png",
+    "account": {
+     "visible": true,
+     "box": [
+      1127,
+      210,
+      1373,
+      263
+     ],
+     "text": [
+      1192.671875,
+      225,
+      1307.3125,
+      248
+     ],
+     "label": "Créer un compte",
+     "color": "rgb(27, 27, 27)",
+     "background": "rgb(255, 255, 255)",
+     "border": "rgb(220, 229, 229)",
+     "borderWidth": "1px",
+     "font": "16px 400",
+     "radius": "12px",
+     "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px",
+     "login": null,
+     "menu": {
+      "background": "color(srgb 1 1 1 / 0.82)",
+      "radius": "20px",
+      "shadow": "rgba(24, 61, 60, 0.07) 0px 22px 64px 0px, rgba(24, 61, 60, 0.024) 0px 3px 12px 0px, rgba(2"
+     },
+     "entry": "welcome",
+     "theme": "light"
+    },
+    "arrival": null,
+    "sort": null,
+    "presence": {
+     "links": 1,
+     "modules": 1,
+     "lastSheet": "../design-review-studies/integration-20261015/design-review-selection.css?v=1",
+     "notes": 1,
+     "started": true
+    },
+    "errors": [],
+    "theme": "light",
+    "lang": "fr",
+    "main": [
+     "div.dock-shell",
+     "div#scope-bar.scope-bar",
+     "div#globe.globe-stage",
+     "section#content-sheet.content-sheet",
+     "p#loading.loading-status",
+     "div.essai-awards-a-venir"
+    ],
+    "sheets": [
+     "/work/visualizations/design-review-studies/integration-20261015/design-review-selection.css?v=1"
+    ]
+   }
+  },
+  "contrasts": {
+   "copie-essais": {
+    "fillPixel": [
+     255,
+     255,
+     255
+    ],
+    "glassOutside": [
+     245,
+     247,
+     247
+    ],
+    "text": 17.22,
+    "outlineVsFill": 1.28,
+    "outlineVsGlass": 1.19,
+    "fillVsGlass": 1.08
+   },
+   "original": {
+    "fillPixel": [
+     255,
+     255,
+     255
+    ],
+    "glassOutside": [
+     249,
+     250,
+     250
+    ],
+    "text": 17.22,
+    "outlineVsFill": 1.28,
+    "outlineVsGlass": 1.23,
+    "fillVsGlass": 1.05
+   },
+   "original-paquet": {
+    "fillPixel": [
+     255,
+     255,
+     255
+    ],
+    "glassOutside": [
+     245,
+     247,
+     247
+    ],
+    "text": 17.22,
+    "outlineVsFill": 1.28,
+    "outlineVsGlass": 1.19,
+    "fillVsGlass": 1.08
+   }
+  },
+  "paquetVsEssais": {
+   "pixelsDiffer": 0,
+   "diffBox": null,
+   "maxChannelDelta": null,
+   "elements": [
+    1131,
+    1131
+   ],
+   "domMismatches": 0,
+   "styleMismatches": 0,
+   "firstDom": [],
+   "firstStyle": [],
+   "extrasEqual": false,
+   "extrasDiff": {
+    "ready": [
+     "true",
+     null
+    ]
+   }
+  },
+  "paquetVsOriginal": {
+   "pixelsDiffer": 213751,
+   "diffBox": [
+    170,
+    65,
+    1439,
+    899
+   ],
+   "maxChannelDelta": 249,
+   "elements": [
+    1127,
+    1131
+   ],
+   "domMismatches": 48,
+   "styleMismatches": 324,
+   "firstDom": [
+    [
+     1083,
+     "button#about.prototype-note",
+     "div.essai-awards-a-venir"
+    ],
+    [
+     1084,
+     "p#announcement.sr-only",
+     "svg"
+    ],
+    [
+     1085,
+     "button#back-to-top.back-to-top",
+     "use"
+    ],
+    [
+     1086,
+     "svg",
+     "p"
+    ],
+    [
+     1087,
+     "path",
+     "button#about.prototype-note"
+    ]
+   ],
+   "firstStyle": [
+    [
+     0,
+     "html"
+    ],
+    [
+     1,
+     "body"
+    ],
+    [
+     53,
+     "div#app.app"
+    ],
+    [
+     82,
+     "div#language-menu.language-menu"
+    ],
+    [
+     99,
+     "div#theme-menu.theme-menu"
+    ],
+    [
+     130,
+     "section#account-menu.account-menu"
+    ],
+    [
+     132,
+     "h2#account-menu-title.sr-only"
+    ],
+    [
+     137,
+     "div.account-auth-actions"
+    ]
+   ],
+   "extrasEqual": false,
+   "extrasDiff": {
+    "globeVars": [
+     {
+      "hgRadius": ".425",
+      "fit": [
+       "",
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     {
+      "hgRadius": "0.253574",
+      "fit": [
+       "0.253574",
+       "168.3px",
+       "196px",
+       "max(16px, min(50svh - 168.3px, 50svh - 196px) - 17px)",
+       "tan(atan2(max(16px, min(50svh - 168.3px, 50svh - 196px) - 17px), 150svh))"
+      ]
+     }
+    ],
+    "note": [
+     null,
+     {
+      "text": "Les 42 Awards arrivent bientôt.",
+      "lang": "fr",
+      "dir": "ltr",
+      "display": "none",
+      "rect": [
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "rootVars": [
+     {
+      "scale": {
+       "--eu-caption": "",
+       "--eu-action": "",
+       "--eu-label": "",
+       "--eu-body": "",
+       "--eu-title-3": "",
+       "--eu-ramp": "",
+       "--eu-radius-control": "",
+       "--eu-radius-surface": "",
+       "--eu-shadow-2": "",
+       "--eu-glass-edge": ""
+      },
+      "accent": ""
+     },
+     {
+      "scale": {
+       "--eu-caption": "13px",
+       "--eu-action": "14px",
+       "--eu-label": "14px",
+       "--eu-body": "16px",
+       "--eu-title-3": "20px",
+       "--eu-ramp": "calc((100vw - 390px) / 634)",
+       "--eu-radius-control": "12px",
+       "--eu-radius-surface": "20px",
+       "--eu-shadow-2": "0 22px 64px #183D3C12,0 3px 12px #183D3C06",
+       "--eu-glass-edge": "inset 0 1px 0 #ffffffb3,inset 0 -1px 0 #183D3C0B"
+      },
+      "accent": "#0C7677"
+     }
+    ],
+    "main": [
+     [
+      "div.dock-shell",
+      "div#scope-bar.scope-bar",
+      "div#globe.globe-stage",
+      "section#content-sheet.content-sheet",
+      "p#loading.loading-status"
+     ],
+     [
+      "div.dock-shell",
+      "div#scope-bar.scope-bar",
+      "div#globe.globe-stage",
+      "section#content-sheet.content-sheet",
+      "p#loading.loading-status",
+      "div.essai-awards-a-venir"
+     ]
+    ]
+   }
+  }
+ },
+ "arrivee-1440x900-sombre": {
+  "view": {
+   "name": "arrivee-1440x900-sombre",
+   "route": "",
+   "page": "index.html",
+   "theme": "dark",
+   "vp": [
+    1440,
+    900,
+    false
+   ]
+  },
+  "originalState": {
+   "controller": "audit-fixes-146",
+   "preview": "113",
+   "entranceCss": "audit-fixes-24",
+   "sha256": {
+    "index.html": "6c8776d6e72876a1483c2d39ab52dbefeef9f7df583913c0c17d5a6d394e5343",
+    "content-preview.html": "4ae91c5ca5251f1734c03d3ed0daf0bc5713bdc6ccc44bbab137b29bf03aaf03",
+    "content-preview.mjs": "92e9daa82910e2186f2516daf99cf35842fe8658f27fec579b62e0e67d206757",
+    "welcome.mjs": "58f5b152e47f70407205c7094e5a29a4368c2ca24fca0aed8450e25841c214c2",
+    "entrance.css": "e5f9b6205d7a5fd0cba85e666eee48539fcbaf74944f94f4f25637cc369bd312",
+    "entrance.mjs": "d2426b872e48813fba3df998d3512d2c32acdbbc013c2a33a13f461bc61c82e8",
+    "comments.mjs": "24dd71a770b072f6aeade8ba16addb4e3023fb3b5d9a8713fe0cd8869423854b",
+    "account-menu.css": "8f6da743782fb50abad856317bcb3292d8babcd96b51e8b6a13c7ff28d266540",
+    "account-menu.mjs": "b839d5c2c1c44e19d75d6d84fc89ff9cb5b91909b53cb093f7bbea338e9ef105"
+   }
+  },
+  "originalUnchangedDuringView": true,
+  "sides": {
+   "copie-essais": {
+    "mode": "copie-essais",
+    "installed": true,
+    "notes": [],
+    "steady": true,
+    "shot": "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_integration-20261015/preparation/captures/actuel-arrivee-1440x900-sombre-copie-essais.png",
+    "account": {
+     "visible": false
+    },
+    "arrival": {
+     "guest": {
+      "box": [
+       732,
+       605,
+       153.61,
+       52
+      ],
+      "color": "rgb(237, 52, 145)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(112, 131, 131) 1px",
+      "font": "16px",
+      "radius": "12px",
+      "shadow": "none",
+      "lang": "fr"
+     },
+     "login": {
+      "box": [
+       554.39,
+       605,
+       153.61,
+       52
+      ],
+      "color": "rgb(27, 27, 27)",
+      "background": "rgb(237, 52, 145)",
+      "border": "rgb(237, 52, 145) 1px",
+      "font": "16px",
+      "radius": "12px",
+      "shadow": "none",
+      "lang": "fr"
+     },
+     "entry": "encrypted",
+     "theme": "dark",
+     "account": "none"
+    },
+    "sort": null,
+    "presence": {
+     "links": 0,
+     "modules": 0,
+     "lastSheet": "../essais/awards-a-venir/essai.css?v=1",
+     "notes": 0,
+     "started": false
+    },
+    "errors": [],
+    "theme": "dark",
+    "lang": "fr",
+    "main": [
+     "div.dock-shell",
+     "div#scope-bar.scope-bar",
+     "div#globe.globe-stage",
+     "section#content-sheet.content-sheet",
+     "p#loading.loading-status",
+     "div.essai-awards-a-venir"
+    ],
+    "sheets": [
+     "/work/visualizations/design-review-studies/essais/globe-espace-libre/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/police-etiquettes-globe/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/une-colonne-320/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/roles-couleur/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/visiter-contour-sombre/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/lisibilite-textes/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/echelle-unifiee/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/pseudo-manquant/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/awards-a-venir/essai.css?v=1"
+    ]
+   },
+   "original": {
+    "mode": "original",
+    "installed": null,
+    "notes": [],
+    "steady": true,
+    "shot": "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_integration-20261015/preparation/captures/actuel-arrivee-1440x900-sombre-original.png",
+    "account": {
+     "visible": false
+    },
+    "arrival": {
+     "guest": {
+      "box": [
+       732,
+       605,
+       159.58,
+       52
+      ],
+      "color": "rgb(237, 52, 145)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgba(0, 0, 0, 0) 1px",
+      "font": "17px",
+      "radius": "14px",
+      "shadow": "none",
+      "lang": "fr"
+     },
+     "login": {
+      "box": [
+       548.42,
+       605,
+       159.58,
+       52
+      ],
+      "color": "rgb(27, 27, 27)",
+      "background": "rgb(237, 52, 145)",
+      "border": "rgb(237, 52, 145) 1px",
+      "font": "17px",
+      "radius": "14px",
+      "shadow": "none",
+      "lang": "fr"
+     },
+     "entry": "encrypted",
+     "theme": "dark",
+     "account": "none"
+    },
+    "sort": null,
+    "presence": {
+     "links": 0,
+     "modules": 0,
+     "lastSheet": "content-report.css?v=3",
+     "notes": 0,
+     "started": false
+    },
+    "errors": [],
+    "theme": "dark",
+    "lang": "fr",
+    "main": [
+     "div.dock-shell",
+     "div#scope-bar.scope-bar",
+     "div#globe.globe-stage",
+     "section#content-sheet.content-sheet",
+     "p#loading.loading-status"
+    ],
+    "sheets": []
+   },
+   "original-paquet": {
+    "mode": "original-paquet",
+    "installed": true,
+    "notes": [],
+    "steady": true,
+    "shot": "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_integration-20261015/preparation/captures/actuel-arrivee-1440x900-sombre-original-paquet.png",
+    "account": {
+     "visible": false
+    },
+    "arrival": {
+     "guest": {
+      "box": [
+       732,
+       605,
+       153.61,
+       52
+      ],
+      "color": "rgb(237, 52, 145)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(112, 131, 131) 1px",
+      "font": "16px",
+      "radius": "12px",
+      "shadow": "none",
+      "lang": "fr"
+     },
+     "login": {
+      "box": [
+       554.39,
+       605,
+       153.61,
+       52
+      ],
+      "color": "rgb(27, 27, 27)",
+      "background": "rgb(237, 52, 145)",
+      "border": "rgb(237, 52, 145) 1px",
+      "font": "16px",
+      "radius": "12px",
+      "shadow": "none",
+      "lang": "fr"
+     },
+     "entry": "encrypted",
+     "theme": "dark",
+     "account": "none"
+    },
+    "sort": null,
+    "presence": {
+     "links": 1,
+     "modules": 1,
+     "lastSheet": "../design-review-studies/integration-20261015/design-review-selection.css?v=1",
+     "notes": 1,
+     "started": true
+    },
+    "errors": [],
+    "theme": "dark",
+    "lang": "fr",
+    "main": [
+     "div.dock-shell",
+     "div#scope-bar.scope-bar",
+     "div#globe.globe-stage",
+     "section#content-sheet.content-sheet",
+     "p#loading.loading-status",
+     "div.essai-awards-a-venir"
+    ],
+    "sheets": [
+     "/work/visualizations/design-review-studies/integration-20261015/design-review-selection.css?v=1"
+    ]
+   }
+  },
+  "contrasts": {
+   "copie-essais": null,
+   "original": null,
+   "original-paquet": null
+  },
+  "paquetVsEssais": {
+   "pixelsDiffer": 0,
+   "diffBox": null,
+   "maxChannelDelta": null,
+   "elements": [
+    364,
+    364
+   ],
+   "domMismatches": 0,
+   "styleMismatches": 0,
+   "firstDom": [],
+   "firstStyle": [],
+   "extrasEqual": false,
+   "extrasDiff": {
+    "ready": [
+     "true",
+     null
+    ]
+   }
+  },
+  "paquetVsOriginal": {
+   "pixelsDiffer": 2057,
+   "diffBox": [
+    548,
+    605,
+    885,
+    656
+   ],
+   "maxChannelDelta": 210,
+   "elements": [
+    360,
+    364
+   ],
+   "domMismatches": 48,
+   "styleMismatches": 106,
+   "firstDom": [
+    [
+     316,
+     "button#about.prototype-note",
+     "div.essai-awards-a-venir"
+    ],
+    [
+     317,
+     "p#announcement.sr-only",
+     "svg"
+    ],
+    [
+     318,
+     "button#back-to-top.back-to-top",
+     "use"
+    ],
+    [
+     319,
+     "svg",
+     "p"
+    ],
+    [
+     320,
+     "path",
+     "button#about.prototype-note"
+    ]
+   ],
+   "firstStyle": [
+    [
+     59,
+     "div#entrance-access.entrance-access"
+    ],
+    [
+     60,
+     "button#entry-login.entrance-action"
+    ],
+    [
+     61,
+     "span.entrance-action-labels"
+    ],
+    [
+     62,
+     "span.entrance-action-measure"
+    ],
+    [
+     63,
+     "span.entrance-action-measure"
+    ],
+    [
+     64,
+     "span.entrance-action-measure"
+    ],
+    [
+     65,
+     "span.entrance-action-label"
+    ],
+    [
+     66,
+     "button#entry-guest.entrance-action.secondary"
+    ]
+   ],
+   "extrasEqual": false,
+   "extrasDiff": {
+    "globeVars": [
+     {
+      "hgRadius": ".425",
+      "fit": [
+       "",
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     {
+      "hgRadius": "0.253574",
+      "fit": [
+       "0.253574",
+       "168.3px",
+       "196px",
+       "max(16px, min(50svh - 168.3px, 50svh - 196px) - 17px)",
+       "tan(atan2(max(16px, min(50svh - 168.3px, 50svh - 196px) - 17px), 150svh))"
+      ]
+     }
+    ],
+    "note": [
+     null,
+     {
+      "text": "Les 42 Awards arrivent bientôt.",
+      "lang": "fr",
+      "dir": "ltr",
+      "display": "none",
+      "rect": [
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "rootVars": [
+     {
+      "scale": {
+       "--eu-caption": "",
+       "--eu-action": "",
+       "--eu-label": "",
+       "--eu-body": "",
+       "--eu-title-3": "",
+       "--eu-ramp": "",
+       "--eu-radius-control": "",
+       "--eu-radius-surface": "",
+       "--eu-shadow-2": "",
+       "--eu-glass-edge": ""
+      },
+      "accent": ""
+     },
+     {
+      "scale": {
+       "--eu-caption": "13px",
+       "--eu-action": "14px",
+       "--eu-label": "14px",
+       "--eu-body": "16px",
+       "--eu-title-3": "20px",
+       "--eu-ramp": "calc((100vw - 390px) / 634)",
+       "--eu-radius-control": "12px",
+       "--eu-radius-surface": "20px",
+       "--eu-shadow-2": "0 16px 48px #0003",
+       "--eu-glass-edge": "inset 0 1px 0 #ffffff30,inset 0 -1px 0 #0002"
+      },
+      "accent": "#F485BD"
+     }
+    ],
+    "main": [
+     [
+      "div.dock-shell",
+      "div#scope-bar.scope-bar",
+      "div#globe.globe-stage",
+      "section#content-sheet.content-sheet",
+      "p#loading.loading-status"
+     ],
+     [
+      "div.dock-shell",
+      "div#scope-bar.scope-bar",
+      "div#globe.globe-stage",
+      "section#content-sheet.content-sheet",
+      "p#loading.loading-status",
+      "div.essai-awards-a-venir"
+     ]
+    ]
+   }
+  }
+ },
+ "ecran-erreur-compte-1440x900-sombre": {
+  "view": {
+   "name": "ecran-erreur-compte-1440x900-sombre",
+   "route": "",
+   "page": "index.html",
+   "theme": "dark",
+   "vp": [
+    1440,
+    900,
+    false
+   ],
+   "error": true
+  },
+  "originalState": {
+   "controller": "audit-fixes-146",
+   "preview": "113",
+   "entranceCss": "audit-fixes-24",
+   "sha256": {
+    "index.html": "6c8776d6e72876a1483c2d39ab52dbefeef9f7df583913c0c17d5a6d394e5343",
+    "content-preview.html": "4ae91c5ca5251f1734c03d3ed0daf0bc5713bdc6ccc44bbab137b29bf03aaf03",
+    "content-preview.mjs": "92e9daa82910e2186f2516daf99cf35842fe8658f27fec579b62e0e67d206757",
+    "welcome.mjs": "58f5b152e47f70407205c7094e5a29a4368c2ca24fca0aed8450e25841c214c2",
+    "entrance.css": "e5f9b6205d7a5fd0cba85e666eee48539fcbaf74944f94f4f25637cc369bd312",
+    "entrance.mjs": "d2426b872e48813fba3df998d3512d2c32acdbbc013c2a33a13f461bc61c82e8",
+    "comments.mjs": "24dd71a770b072f6aeade8ba16addb4e3023fb3b5d9a8713fe0cd8869423854b",
+    "account-menu.css": "8f6da743782fb50abad856317bcb3292d8babcd96b51e8b6a13c7ff28d266540",
+    "account-menu.mjs": "b839d5c2c1c44e19d75d6d84fc89ff9cb5b91909b53cb093f7bbea338e9ef105"
+   }
+  },
+  "originalUnchangedDuringView": true,
+  "sides": {
+   "copie-essais": {
+    "mode": "copie-essais",
+    "installed": true,
+    "notes": [
+     "missing/hidden #profile"
+    ],
+    "shot": "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_integration-20261015/preparation/captures/actuel-ecran-erreur-compte-1440x900-sombre-copie-essais.png",
+    "account": {
+     "visible": false
+    },
+    "arrival": {
+     "guest": null,
+     "login": null,
+     "entry": "error",
+     "theme": "dark",
+     "account": "none"
+    },
+    "sort": null,
+    "presence": {
+     "links": 0,
+     "modules": 0,
+     "lastSheet": "../essais/awards-a-venir/essai.css?v=1",
+     "notes": 0,
+     "started": false
+    },
+    "errors": [],
+    "theme": "dark",
+    "lang": "fr",
+    "main": [
+     "div.dock-shell",
+     "div#scope-bar.scope-bar",
+     "div#globe.globe-stage",
+     "section#content-sheet.content-sheet",
+     "p#loading.loading-status",
+     "div.essai-awards-a-venir"
+    ],
+    "sheets": [
+     "/work/visualizations/design-review-studies/essais/globe-espace-libre/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/police-etiquettes-globe/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/une-colonne-320/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/roles-couleur/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/visiter-contour-sombre/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/lisibilite-textes/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/echelle-unifiee/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/pseudo-manquant/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/awards-a-venir/essai.css?v=1"
+    ]
+   },
+   "original": {
+    "mode": "original",
+    "installed": null,
+    "notes": [],
+    "shot": "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_integration-20261015/preparation/captures/actuel-ecran-erreur-compte-1440x900-sombre-original.png",
+    "account": {
+     "visible": true,
+     "box": [
+      1127,
+      211,
+      1373,
+      265
+     ],
+     "text": [
+      1189.09375,
+      226,
+      1310.90625,
+      250
+     ],
+     "label": "Créer un compte",
+     "color": "rgb(237, 52, 145)",
+     "background": "rgb(27, 27, 27)",
+     "border": "rgba(0, 0, 0, 0)",
+     "borderWidth": "1px",
+     "font": "17px 400",
+     "radius": "14px",
+     "shadow": "none",
+     "login": null,
+     "menu": {
+      "background": "color(srgb 0.160784 0.160784 0.180392 / 0.82)",
+      "radius": "20px",
+      "shadow": "rgba(0, 0, 0, 0.2) 0px 12px 26px 0px, rgba(255, 255, 255, 0.19) 0px 1px 0px 0px inset, rgb"
+     },
+     "entry": "error",
+     "theme": "dark"
+    },
+    "arrival": {
+     "guest": null,
+     "login": null,
+     "entry": "error",
+     "theme": "dark",
+     "account": "block"
+    },
+    "sort": null,
+    "presence": {
+     "links": 0,
+     "modules": 0,
+     "lastSheet": "content-report.css?v=3",
+     "notes": 0,
+     "started": false
+    },
+    "errors": [],
+    "theme": "dark",
+    "lang": "fr",
+    "main": [
+     "div.dock-shell",
+     "div#scope-bar.scope-bar",
+     "div#globe.globe-stage",
+     "section#content-sheet.content-sheet",
+     "p#loading.loading-status"
+    ],
+    "sheets": []
+   },
+   "original-paquet": {
+    "mode": "original-paquet",
+    "installed": true,
+    "notes": [],
+    "shot": "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_integration-20261015/preparation/captures/actuel-ecran-erreur-compte-1440x900-sombre-original-paquet.png",
+    "account": {
+     "visible": true,
+     "box": [
+      1127,
+      210,
+      1373,
+      263
+     ],
+     "text": [
+      1192.671875,
+      225,
+      1307.3125,
+      248
+     ],
+     "label": "Créer un compte",
+     "color": "rgb(237, 52, 145)",
+     "background": "rgb(27, 27, 27)",
+     "border": "rgb(112, 131, 131)",
+     "borderWidth": "1px",
+     "font": "16px 400",
+     "radius": "12px",
+     "shadow": "none",
+     "login": null,
+     "menu": {
+      "background": "color(srgb 0.160784 0.160784 0.180392 / 0.82)",
+      "radius": "20px",
+      "shadow": "rgba(0, 0, 0, 0.2) 0px 16px 48px 0px, rgba(255, 255, 255, 0.19) 0px 1px 0px 0px inset, rgb"
+     },
+     "entry": "error",
+     "theme": "dark"
+    },
+    "arrival": {
+     "guest": null,
+     "login": null,
+     "entry": "error",
+     "theme": "dark",
+     "account": "block"
+    },
+    "sort": null,
+    "presence": {
+     "links": 1,
+     "modules": 1,
+     "lastSheet": "../design-review-studies/integration-20261015/design-review-selection.css?v=1",
+     "notes": 1,
+     "started": true
+    },
+    "errors": [],
+    "theme": "dark",
+    "lang": "fr",
+    "main": [
+     "div.dock-shell",
+     "div#scope-bar.scope-bar",
+     "div#globe.globe-stage",
+     "section#content-sheet.content-sheet",
+     "p#loading.loading-status",
+     "div.essai-awards-a-venir"
+    ],
+    "sheets": [
+     "/work/visualizations/design-review-studies/integration-20261015/design-review-selection.css?v=1"
+    ]
+   }
+  },
+  "contrasts": {
+   "copie-essais": null,
+   "original": {
+    "fillPixel": [
+     27,
+     27,
+     27
+    ],
+    "glassOutside": [
+     38,
+     38,
+     42
+    ],
+    "text": 4.51,
+    "fillVsGlass": 1.14
+   },
+   "original-paquet": {
+    "fillPixel": [
+     27,
+     27,
+     27
+    ],
+    "glassOutside": [
+     38,
+     38,
+     42
+    ],
+    "text": 4.51,
+    "outlineVsFill": 4.32,
+    "outlineVsGlass": 3.78,
+    "fillVsGlass": 1.14
+   }
+  },
+  "paquetVsEssais": {
+   "pixelsDiffer": 148771,
+   "diffBox": [
+    457,
+    29,
+    1437,
+    517
+   ],
+   "maxChannelDelta": 228,
+   "elements": [
+    355,
+    382
+   ],
+   "domMismatches": 238,
+   "styleMismatches": 17,
+   "firstDom": [
+    [
+     135,
+     "main#main",
+     "div.account-menu-top.account-menu-top-home"
+    ],
+    [
+     136,
+     "div.dock-shell",
+     "h2#account-menu-title.sr-only"
+    ],
+    [
+     137,
+     "nav#main-nav.has-dock-search.main-nav",
+     "button.account-menu-close.account-option"
+    ],
+    [
+     138,
+     "span.nav-indicator",
+     "svg"
+    ],
+    [
+     139,
+     "button",
+     "path"
+    ]
+   ],
+   "firstStyle": [
+    [
+     70,
+     "header.header"
+    ],
+    [
+     83,
+     "div.utilities"
+    ],
+    [
+     129,
+     "div.account-switcher"
+    ],
+    [
+     130,
+     "button#profile.profile.utility"
+    ],
+    [
+     131,
+     "svg"
+    ],
+    [
+     132,
+     "circle"
+    ],
+    [
+     133,
+     "path"
+    ],
+    [
+     134,
+     "section#account-menu.account-menu"
+    ]
+   ],
+   "extrasEqual": false,
+   "extrasDiff": {
+    "ready": [
+     "true",
+     null
+    ],
+    "accountOpen": [
+     false,
+     true
+    ]
+   }
+  },
+  "paquetVsOriginal": {
+   "pixelsDiffer": 54038,
+   "diffBox": [
+    417,
+    62,
+    1437,
+    534
+   ],
+   "maxChannelDelta": 217,
+   "elements": [
+    378,
+    382
+   ],
+   "domMismatches": 48,
+   "styleMismatches": 107,
+   "firstDom": [
+    [
+     334,
+     "button#about.prototype-note",
+     "div.essai-awards-a-venir"
+    ],
+    [
+     335,
+     "p#announcement.sr-only",
+     "svg"
+    ],
+    [
+     336,
+     "button#back-to-top.back-to-top",
+     "use"
+    ],
+    [
+     337,
+     "svg",
+     "p"
+    ],
+    [
+     338,
+     "path",
+     "button#about.prototype-note"
+    ]
+   ],
+   "firstStyle": [
+    [
+     59,
+     "div#entrance-access.entrance-access"
+    ],
+    [
+     60,
+     "button.entrance-action"
+    ],
+    [
+     61,
+     "button.entrance-action.secondary"
+    ],
+    [
+     62,
+     "button.entrance-action.secondary"
+    ],
+    [
+     86,
+     "div#language-menu.language-menu"
+    ],
+    [
+     103,
+     "div#theme-menu.theme-menu"
+    ],
+    [
+     134,
+     "section#account-menu.account-menu"
+    ],
+    [
+     136,
+     "h2#account-menu-title.sr-only"
+    ]
+   ],
+   "extrasEqual": false,
+   "extrasDiff": {
+    "globeVars": [
+     {
+      "hgRadius": ".425",
+      "fit": [
+       "",
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     {
+      "hgRadius": "0.253574",
+      "fit": [
+       "0.253574",
+       "168.3px",
+       "196px",
+       "max(16px, min(50svh - 168.3px, 50svh - 196px) - 17px)",
+       "tan(atan2(max(16px, min(50svh - 168.3px, 50svh - 196px) - 17px), 150svh))"
+      ]
+     }
+    ],
+    "note": [
+     null,
+     {
+      "text": "Les 42 Awards arrivent bientôt.",
+      "lang": "fr",
+      "dir": "ltr",
+      "display": "none",
+      "rect": [
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "rootVars": [
+     {
+      "scale": {
+       "--eu-caption": "",
+       "--eu-action": "",
+       "--eu-label": "",
+       "--eu-body": "",
+       "--eu-title-3": "",
+       "--eu-ramp": "",
+       "--eu-radius-control": "",
+       "--eu-radius-surface": "",
+       "--eu-shadow-2": "",
+       "--eu-glass-edge": ""
+      },
+      "accent": ""
+     },
+     {
+      "scale": {
+       "--eu-caption": "13px",
+       "--eu-action": "14px",
+       "--eu-label": "14px",
+       "--eu-body": "16px",
+       "--eu-title-3": "20px",
+       "--eu-ramp": "calc((100vw - 390px) / 634)",
+       "--eu-radius-control": "12px",
+       "--eu-radius-surface": "20px",
+       "--eu-shadow-2": "0 16px 48px #0003",
+       "--eu-glass-edge": "inset 0 1px 0 #ffffff30,inset 0 -1px 0 #0002"
+      },
+      "accent": "#F485BD"
+     }
+    ],
+    "main": [
+     [
+      "div.dock-shell",
+      "div#scope-bar.scope-bar",
+      "div#globe.globe-stage",
+      "section#content-sheet.content-sheet",
+      "p#loading.loading-status"
+     ],
+     [
+      "div.dock-shell",
+      "div#scope-bar.scope-bar",
+      "div#globe.globe-stage",
+      "section#content-sheet.content-sheet",
+      "p#loading.loading-status",
+      "div.essai-awards-a-venir"
+     ]
+    ]
+   }
+  }
+ },
+ "tri-commentaires-bas-390x844-clair": {
+  "view": {
+   "name": "tri-commentaires-bas-390x844-clair",
+   "route": "projects/minishell-under-the-prompt?tab=comments",
+   "theme": "light",
+   "vp": [
+    390,
+    844,
+    true
+   ],
+   "seed": true
+  },
+  "originalState": {
+   "controller": "audit-fixes-146",
+   "preview": "113",
+   "entranceCss": "audit-fixes-24",
+   "sha256": {
+    "index.html": "6c8776d6e72876a1483c2d39ab52dbefeef9f7df583913c0c17d5a6d394e5343",
+    "content-preview.html": "4ae91c5ca5251f1734c03d3ed0daf0bc5713bdc6ccc44bbab137b29bf03aaf03",
+    "content-preview.mjs": "92e9daa82910e2186f2516daf99cf35842fe8658f27fec579b62e0e67d206757",
+    "welcome.mjs": "58f5b152e47f70407205c7094e5a29a4368c2ca24fca0aed8450e25841c214c2",
+    "entrance.css": "e5f9b6205d7a5fd0cba85e666eee48539fcbaf74944f94f4f25637cc369bd312",
+    "entrance.mjs": "d2426b872e48813fba3df998d3512d2c32acdbbc013c2a33a13f461bc61c82e8",
+    "comments.mjs": "24dd71a770b072f6aeade8ba16addb4e3023fb3b5d9a8713fe0cd8869423854b",
+    "account-menu.css": "8f6da743782fb50abad856317bcb3292d8babcd96b51e8b6a13c7ff28d266540",
+    "account-menu.mjs": "b839d5c2c1c44e19d75d6d84fc89ff9cb5b91909b53cb093f7bbea338e9ef105"
+   }
+  },
+  "originalUnchangedDuringView": true,
+  "sides": {
+   "copie-essais": {
+    "mode": "copie-essais",
+    "installed": true,
+    "notes": [],
+    "shot": "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_integration-20261015/preparation/captures/actuel-tri-commentaires-bas-390x844-clair-copie-essais.png",
+    "account": {
+     "visible": false
+    },
+    "arrival": null,
+    "sort": {
+     "open": true,
+     "button": {
+      "x": 138.88,
+      "y": 642.31,
+      "right": 366,
+      "bottom": 686.31
+     },
+     "panel": {
+      "x": 102.27,
+      "y": 695.31,
+      "right": 366,
+      "bottom": 709.31
+     },
+     "direction": "bas",
+     "floating": {
+      "search": {
+       "x": 69,
+       "y": 710,
+       "right": 269,
+       "bottom": 754
+      },
+      "nav": {
+       "x": 16,
+       "y": 767,
+       "right": 374,
+       "bottom": 827
+      },
+      "btt": null,
+      "header": {
+       "x": 0,
+       "y": 0,
+       "right": 390,
+       "bottom": 92
+      },
+      "scope": {
+       "x": 140.44,
+       "y": 84,
+       "right": 249.56,
+       "bottom": 122
+      }
+     },
+     "overlaps": {
+      "search": false,
+      "nav": false,
+      "backToTop": false,
+      "header": false
+     },
+     "inViewport": true,
+     "panelStyle": {
+      "radius": "20px",
+      "shadow": "rgba(24, 61, 60, 0.07) 0px 22px 64px 0px, rgba(24, 61, 60, 0",
+      "font": "14px",
+      "scroll": [
+       138,
+       12
+      ]
+     },
+     "triggerFont": "14px",
+     "scrollY": 288
+    },
+    "presence": {
+     "links": 0,
+     "modules": 0,
+     "lastSheet": "../essais/awards-a-venir/essai.css?v=1",
+     "notes": 0,
+     "started": false
+    },
+    "errors": [],
+    "theme": "light",
+    "lang": "fr",
+    "main": [
+     "div.dock-shell",
+     "div#scope-bar.scope-bar",
+     "div#globe.globe-stage",
+     "section#content-sheet.content-sheet",
+     "p#loading.loading-status",
+     "div.essai-awards-a-venir"
+    ],
+    "sheets": [
+     "/work/visualizations/design-review-studies/essais/globe-espace-libre/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/police-etiquettes-globe/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/une-colonne-320/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/roles-couleur/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/visiter-contour-sombre/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/lisibilite-textes/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/echelle-unifiee/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/pseudo-manquant/essai.css?v=1",
+     "/work/visualizations/design-review-studies/essais/awards-a-venir/essai.css?v=1"
+    ]
+   },
+   "original": {
+    "mode": "original",
+    "installed": null,
+    "notes": [],
+    "shot": "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_integration-20261015/preparation/captures/actuel-tri-commentaires-bas-390x844-clair-original.png",
+    "account": {
+     "visible": false
+    },
+    "arrival": null,
+    "sort": {
+     "open": true,
+     "button": {
+      "x": 173.59,
+      "y": 641.69,
+      "right": 366,
+      "bottom": 685.69
+     },
+     "panel": {
+      "x": 114.81,
+      "y": 492.69,
+      "right": 366,
+      "bottom": 632.69
+     },
+     "direction": "haut",
+     "floating": {
+      "search": {
+       "x": 69,
+       "y": 710,
+       "right": 269,
+       "bottom": 754
+      },
+      "nav": {
+       "x": 16,
+       "y": 767,
+       "right": 374,
+       "bottom": 827
+      },
+      "btt": null,
+      "header": {
+       "x": 0,
+       "y": 0,
+       "right": 390,
+       "bottom": 92
+      },
+      "scope": {
+       "x": 141.73,
+       "y": 84,
+       "right": 248.27,
+       "bottom": 122
+      }
+     },
+     "overlaps": {
+      "search": false,
+      "nav": false,
+      "backToTop": false,
+      "header": false
+     },
+     "inViewport": true,
+     "panelStyle": {
+      "radius": "20px",
+      "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px, rgba(255, 255, 255,",
+      "font": "13px",
+      "scroll": [
+       138,
+       138
+      ]
+     },
+     "triggerFont": "11.2414px",
+     "scrollY": 248
+    },
+    "presence": {
+     "links": 0,
+     "modules": 0,
+     "lastSheet": "content-report.css?v=3",
+     "notes": 0,
+     "started": false
+    },
+    "errors": [],
+    "theme": "light",
+    "lang": "fr",
+    "main": [
+     "div.dock-shell",
+     "div#scope-bar.scope-bar",
+     "div#globe.globe-stage",
+     "section#content-sheet.content-sheet",
+     "p#loading.loading-status"
+    ],
+    "sheets": []
+   },
+   "original-paquet": {
+    "mode": "original-paquet",
+    "installed": true,
+    "notes": [],
+    "shot": "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/_integration-20261015/preparation/captures/actuel-tri-commentaires-bas-390x844-clair-original-paquet.png",
+    "account": {
+     "visible": false
+    },
+    "arrival": null,
+    "sort": {
+     "open": true,
+     "button": {
+      "x": 138.88,
+      "y": 642.31,
+      "right": 366,
+      "bottom": 686.31
+     },
+     "panel": {
+      "x": 102.27,
+      "y": 493.31,
+      "right": 366,
+      "bottom": 633.31
+     },
+     "direction": "haut",
+     "floating": {
+      "search": {
+       "x": 69,
+       "y": 710,
+       "right": 269,
+       "bottom": 754
+      },
+      "nav": {
+       "x": 16,
+       "y": 767,
+       "right": 374,
+       "bottom": 827
+      },
+      "btt": null,
+      "header": {
+       "x": 0,
+       "y": 0,
+       "right": 390,
+       "bottom": 92
+      },
+      "scope": {
+       "x": 140.44,
+       "y": 84,
+       "right": 249.56,
+       "bottom": 122
+      }
+     },
+     "overlaps": {
+      "search": false,
+      "nav": false,
+      "backToTop": false,
+      "header": false
+     },
+     "inViewport": true,
+     "panelStyle": {
+      "radius": "20px",
+      "shadow": "rgba(24, 61, 60, 0.07) 0px 22px 64px 0px, rgba(24, 61, 60, 0",
+      "font": "14px",
+      "scroll": [
+       138,
+       138
+      ]
+     },
+     "triggerFont": "14px",
+     "scrollY": 288
+    },
+    "presence": {
+     "links": 1,
+     "modules": 1,
+     "lastSheet": "../design-review-studies/integration-20261015/design-review-selection.css?v=1",
+     "notes": 1,
+     "started": true
+    },
+    "errors": [],
+    "theme": "light",
+    "lang": "fr",
+    "main": [
+     "div.dock-shell",
+     "div#scope-bar.scope-bar",
+     "div#globe.globe-stage",
+     "section#content-sheet.content-sheet",
+     "p#loading.loading-status",
+     "div.essai-awards-a-venir"
+    ],
+    "sheets": [
+     "/work/visualizations/design-review-studies/integration-20261015/design-review-selection.css?v=1"
+    ]
+   }
+  },
+  "contrasts": {
+   "copie-essais": null,
+   "original": null,
+   "original-paquet": null
+  },
+  "paquetVsEssais": {
+   "pixelsDiffer": 359966,
+   "diffBox": [
+    106,
+    932,
+    779,
+    1653
+   ],
+   "maxChannelDelta": 244,
+   "elements": [
+    782,
+    782
+   ],
+   "domMismatches": 0,
+   "styleMismatches": 1,
+   "firstDom": [],
+   "firstStyle": [
+    [
+     431,
+     "div#project-comment-sort-menu.cp-control-panel"
+    ]
+   ],
+   "extrasEqual": false,
+   "extrasDiff": {
+    "ready": [
+     "true",
+     null
+    ]
+   }
+  },
+  "paquetVsOriginal": {
+   "pixelsDiffer": 529117,
+   "diffBox": [
+    14,
+    152,
+    779,
+    1687
+   ],
+   "maxChannelDelta": 242,
+   "elements": [
+    778,
+    782
+   ],
+   "domMismatches": 48,
+   "styleMismatches": 341,
+   "firstDom": [
+    [
+     734,
+     "button#about.prototype-note",
+     "div.essai-awards-a-venir"
+    ],
+    [
+     735,
+     "p#announcement.sr-only",
+     "svg"
+    ],
+    [
+     736,
+     "button#back-to-top.back-to-top",
+     "use"
+    ],
+    [
+     737,
+     "svg",
+     "p"
+    ],
+    [
+     738,
+     "path",
+     "button#about.prototype-note"
+    ]
+   ],
+   "firstStyle": [
+    [
+     0,
+     "html"
+    ],
+    [
+     1,
+     "body"
+    ],
+    [
+     53,
+     "div#app.app"
+    ],
+    [
+     82,
+     "div#language-menu.language-menu"
+    ],
+    [
+     99,
+     "div#theme-menu.theme-menu"
+    ],
+    [
+     130,
+     "section#account-menu.account-menu"
+    ],
+    [
+     131,
+     "main#main"
+    ],
+    [
+     164,
+     "section.dock-search-panel"
+    ]
+   ],
+   "extrasEqual": false,
+   "extrasDiff": {
+    "globeVars": [
+     {
+      "hgRadius": ".46",
+      "fit": [
+       "",
+       "",
+       "",
+       "",
+       ""
+      ]
+     },
+     {
+      "hgRadius": ".46",
+      "fit": [
+       "0.425",
+       "",
+       "",
+       "",
+       ""
+      ]
+     }
+    ],
+    "note": [
+     null,
+     {
+      "text": "Les 42 Awards arrivent bientôt.",
+      "lang": "fr",
+      "dir": "ltr",
+      "display": "none",
+      "rect": [
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "rootVars": [
+     {
+      "scale": {
+       "--eu-caption": "",
+       "--eu-action": "",
+       "--eu-label": "",
+       "--eu-body": "",
+       "--eu-title-3": "",
+       "--eu-ramp": "",
+       "--eu-radius-control": "",
+       "--eu-radius-surface": "",
+       "--eu-shadow-2": "",
+       "--eu-glass-edge": ""
+      },
+      "accent": ""
+     },
+     {
+      "scale": {
+       "--eu-caption": "13px",
+       "--eu-action": "14px",
+       "--eu-label": "14px",
+       "--eu-body": "16px",
+       "--eu-title-3": "20px",
+       "--eu-ramp": "calc((100vw - 390px) / 634)",
+       "--eu-radius-control": "12px",
+       "--eu-radius-surface": "20px",
+       "--eu-shadow-2": "0 22px 64px #183D3C12,0 3px 12px #183D3C06",
+       "--eu-glass-edge": "inset 0 1px 0 #ffffffb3,inset 0 -1px 0 #183D3C0B"
+      },
+      "accent": "#0C7677"
+     }
+    ],
+    "main": [
+     [
+      "div.dock-shell",
+      "div#scope-bar.scope-bar",
+      "div#globe.globe-stage",
+      "section#content-sheet.content-sheet",
+      "p#loading.loading-status"
+     ],
+     [
+      "div.dock-shell",
+      "div#scope-bar.scope-bar",
+      "div#globe.globe-stage",
+      "section#content-sheet.content-sheet",
+      "p#loading.loading-status",
+      "div.essai-awards-a-venir"
+     ]
+    ],
+    "scrollY": [
+     248,
+     288
+    ]
+   }
+  }
+ }
+}

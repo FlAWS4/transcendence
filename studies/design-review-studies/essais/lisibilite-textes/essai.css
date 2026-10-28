@@ -1,0 +1,49 @@
+/* Trial lisibilite-textes (14 Oct 2026): readable small text, without layout redesign.
+   1. Size floors: 13 px for useful small text (metadata, campus names, chips, counters,
+      captions, "Créé par"), 14 px for small action buttons. Excluded on purpose: map
+      attribution (.map-credit), globe labels (.hg-marker), dock labels (no room at 320 px),
+      the compact sidebar densities chosen by detail-scroll for short windows, and the status
+      chip of the Profiles list view below 1200 px (its 88-96 px thumbnail clips it at 13 px).
+   2. Small accent text uses the site's existing readable accent (--readable-glass-accent
+      values): #0C7677 in light (5.17:1 on #F7FAFA, 5.42:1 on #FFFFFF, 4.87:1 on #EAF5F4)
+      and #F485BD in dark (6.90:1 on #202026, 7.33:1 on #1B1B1B, 6.16:1 on #29292E).
+      Surfaces, borders and large text keep their colours; the icons drawn in currentColor
+      inside the campus and message buttons follow their label. */
+:root{--essai-lt-accent:#0C7677}
+:root[data-theme=dark]{--essai-lt-accent:#F485BD}
+
+/* 13 px: metadata, campus names, dates, chips, tags, counters and captions in content pages.
+   Two ids outrank the baseline's #content-index grid rules; :not() keeps short-window densities. */
+:root #app #content-sheet :is(.cp-meta,.cp-eyebrow,.cp-published,.cp-authors-label,.cp-author-role,.cp-author-more,.cp-profile-status:not([data-view=list] .cp-profile-portrait>*),.cp-profile-tags li,.cp-project-tags li,.cp-profile-cohort,.cp-profile-feature-copy small,.cp-profile-feature-copy strong,.cp-profile-heading-note,.cp-profile-milestone-date,.cp-profile-campus-stop>time,.cp-profile-campus-step,.cp-profile-project-count,.cp-project-switch-caption,.cp-profile-switch-caption,.cp-control-note,.cp-filter-group-count,.cp-comments-hint,.cp-comments-count,.cp-comments-status,.cp-comment-own,.cp-comment-identity time,.cp-comment-edited,.cp-comment-draft,.cp-reply-context),
+:root #app #content-sheet :is(.cp-project-eyebrow,.cp-project-facts):not([data-detail-density] *),
+:root #app #content-count,:root #app #content-sheet>.sample-note{font-size:13px}
+:root #app #content-sheet .cp-authors[data-compact=true] .cp-author-name>strong{font-size:13px}
+/* Profiles list view: "Transcender" needs 83 px at 13 px; the clipping thumbnail
+   (clamp(88px, 72px + 2vw, 104px), 10 px padding) leaves 86 px from 1200 px wide. */
+@media (min-width:1200px){:root #app #content-sheet [data-view=list] .cp-profile-portrait>.cp-profile-status{font-size:13px}}
+/* Favorite, report, message and campus actions: 14 px, outside the compact densities. */
+:root #app #content-sheet :is(.cp-favorite:not(.cp-favorite-compact),.cp-report-trigger,.cp-profile-message,.cp-project-campus,.cp-profile-campus):not([data-detail-density] *),
+:root #app #content-sheet :is(.cp-comment-actions button,.cp-comments-cancel,.cp-comments-emoji-toggle){font-size:14px}
+/* View, filter and sort triggers grow with the viewport; they never go below 13 px. */
+:root #app .cp-content-controls .cp-control-trigger{font-size:max(13px,calc(.6875rem + 2 * var(--cp-control-fluid)))}
+
+/* Explorer and dock search: counters, captions and result labels (attribution excluded). The globe stats
+   line is 14 px above 700 px wide in the baseline: only its 12 px phone size is raised. */
+:root #app[data-navigation=dock] .prototype-note{font-size:13px}
+@media(max-width:700px){:root #app[data-navigation=dock] .globe-status p{font-size:13px}}
+:root #app .main-nav :is(.dock-search-scope,.dock-search-status,.dock-search-result-subtitle,.dock-search-result-type){font-size:13px}
+
+/* Dialogs appended to the body: filter, report, message, campus choice and campus map. */
+:root dialog :is(.cp-project-filter-header p,.cp-project-filter-section-count,.cp-project-filter-count,.cp-project-filter-status,.cp-report-intro,.cp-report-count,.cp-profile-message-hint,.cp-profile-message-recipient>bdi+bdi,.cp-profile-message-preview h3,.cp-project-campus-country,.campus-map-header p),:root #campus-map-dialog #campus-map-hint{font-size:13px}
+:root dialog :is(.cp-project-filter-footer button,.cp-project-filter-all,.cp-report-footer button,.cp-profile-message-controls button,.cp-project-campus-dismiss,.campus-map-retry){font-size:14px}
+/* Campus sheet in Explorer and media viewer credit. */
+:root #dialog .campus-details :is(.campus-details-facts dt,.campus-details-copy-status,.campus-details-link-note,.campus-details-photos>h4,.campus-details-photo-caption,.campus-details-photo-status,.campus-details-contact-label,.campus-details-source,.campus-details-stat dt,.campus-details-stat-date,.campus-details-stats>.campus-details-empty,.campus-details-piscine-state,.campus-details-piscine-note,.campus-details-verified,.campus-details-stat-note){font-size:13px}
+:root #dialog .campus-details :is(.campus-details-copy,.campus-details-directions,.campus-details-photo-controls button){font-size:14px}
+:root .media-viewer .media-viewer-credit{font-size:13px}
+/* Account menu captions. */
+:root :is(.account-option small,.account-identity small,.account-choice-group legend){font-size:13px}
+
+/* Accent text below the large-text size takes the readable accent; hover states included. */
+:root #app #content-sheet :is(.cp-meta,.cp-eyebrow,.cp-profile-status,.cp-project-campus,.cp-profile-campus,.cp-profile-message,.cp-card-link,.cp-related-link,.cp-profile-milestone-date,.cp-comment-mention,.cp-back:hover,.cp-author-more:hover,.cp-author-link:hover .cp-author-name>strong,.cp-view-controls button[aria-pressed=true]),
+:root #app #content-sheet .cp-pagination-link:is([aria-current=page],:hover:not(:disabled)),
+:root dialog .cp-profile-message-status{color:var(--essai-lt-accent)}

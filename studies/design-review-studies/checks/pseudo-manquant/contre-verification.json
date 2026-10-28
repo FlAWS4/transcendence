@@ -1,0 +1,1674 @@
+{
+ "essai": "pseudo-manquant",
+ "date": "2026-10-14",
+ "role": "contre-vérification indépendante de check.py",
+ "page": "baseline/content-preview.html",
+ "cases": [
+  {
+   "case": "toutes-pages-ordinateur-fr",
+   "pages": 4,
+   "cards": 78,
+   "lang": "fr",
+   "theme": "light",
+   "apres": {
+    "wrongState": 0,
+    "shownPlaceholders": 0,
+    "unequalHeights": 0,
+    "unlevelCampus": 0,
+    "unlevelCohort": 0,
+    "reserveNotOneLoginLine": 0
+   },
+   "avant": {
+    "unequalHeights": 0,
+    "unlevelCampus": 0,
+    "unlevelCohort": 0
+   },
+   "texteVisibleAvant": 72,
+   "texteVisibleApres": 0,
+   "innerTextAvant": 72,
+   "innerTextApres": 0,
+   "rangeesAvantApres": [
+    [
+     5,
+     5
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "colonnes": [
+    5
+   ],
+   "hauteursPage1": {
+    "avant": [
+     271,
+     271,
+     271,
+     271,
+     271
+    ],
+    "apres": [
+     271,
+     271,
+     271,
+     244,
+     244
+    ]
+   },
+   "overflowApres": false,
+   "errors": []
+  },
+  {
+   "case": "arbre-accessibilite-et-texte",
+   "avant people fr": {
+    "ax": {
+     "nodes": 956,
+     "hits": 72,
+     "sample": [
+      "Transcender Lucía Roca Pseudo Intra: Pseudo Intra à renseigner 42 Barcelona Rentrée 2023 P",
+      "Cadet Emma De Smet Pseudo Intra: Pseudo Intra à renseigner 42 Brussels Rentrée 2024 Promot"
+     ]
+    },
+    "texte": {
+     "nodes": 18,
+     "visible": 18,
+     "where": [
+      "profile-lucia-roca",
+      "profile-emma-de-smet",
+      "profile-tomas-vieira",
+      "profile-lea-rakoto"
+     ],
+     "innerText": 18
+    }
+   },
+   "avant people ar": {
+    "ax": {
+     "nodes": 1045,
+     "hits": 54,
+     "sample": [
+      "Transcender لوسيا روكا اسم المستخدم في Intra: اسم مستخدم Intra غير محدد 42 Barcelona سنة ا",
+      "كاديت إيما دي سميت اسم المستخدم في Intra: اسم مستخدم Intra غير محدد 42 Brussels سنة الالتح"
+     ]
+    },
+    "texte": {
+     "nodes": 18,
+     "visible": 18,
+     "where": [
+      "profile-lucia-roca",
+      "profile-emma-de-smet",
+      "profile-tomas-vieira",
+      "profile-lea-rakoto"
+     ],
+     "innerText": 18
+    }
+   },
+   "avant people/profile-lucia-roca fr": {
+    "ax": {
+     "nodes": 270,
+     "hits": 3,
+     "sample": [
+      "Pseudo Intra: Pseudo Intra à renseigner",
+      "Pseudo Intra à renseigner"
+     ]
+    },
+    "texte": {
+     "nodes": 1,
+     "visible": 1,
+     "where": [
+      "cp-profile-login"
+     ],
+     "innerText": 1
+    }
+   },
+   "avant people/profile-lucia-roca en": {
+    "ax": {
+     "nodes": 270,
+     "hits": 3,
+     "sample": [
+      "Intra login: Intra login to be added",
+      "Intra login to be added"
+     ]
+    },
+    "texte": {
+     "nodes": 1,
+     "visible": 1,
+     "where": [
+      "cp-profile-login"
+     ],
+     "innerText": 1
+    }
+   },
+   "apres people fr": {
+    "ax": {
+     "nodes": 902,
+     "hits": 0,
+     "sample": []
+    },
+    "texte": {
+     "nodes": 18,
+     "visible": 0,
+     "where": [],
+     "innerText": 0
+    }
+   },
+   "apres people ar": {
+    "ax": {
+     "nodes": 955,
+     "hits": 0,
+     "sample": []
+    },
+    "texte": {
+     "nodes": 18,
+     "visible": 0,
+     "where": [],
+     "innerText": 0
+    }
+   },
+   "apres people/profile-lucia-roca fr": {
+    "ax": {
+     "nodes": 267,
+     "hits": 0,
+     "sample": []
+    },
+    "texte": {
+     "nodes": 1,
+     "visible": 0,
+     "where": [],
+     "innerText": 0
+    }
+   },
+   "apres people/profile-lucia-roca en": {
+    "ax": {
+     "nodes": 267,
+     "hits": 0,
+     "sample": []
+    },
+    "texte": {
+     "nodes": 1,
+     "visible": 0,
+     "where": [],
+     "innerText": 0
+    }
+   },
+   "errors": []
+  },
+  {
+   "case": "arrivee-depuis-explorer-tri-plus-anciens",
+   "avant": {
+    "route": "#people",
+    "grille": {
+     "wrongState": 5,
+     "shownPlaceholders": 5,
+     "unequalHeights": 0,
+     "unlevelCampus": 0
+    },
+    "etatsPremieresRangees": [
+     "visible"
+    ],
+    "decalagesGrille": [],
+    "decalages": 1
+   },
+   "apres": {
+    "route": "#people",
+    "grille": {
+     "wrongState": 0,
+     "shownPlaceholders": 0,
+     "unequalHeights": 0,
+     "unlevelCampus": 0
+    },
+    "etatsPremieresRangees": [
+     "replie"
+    ],
+    "decalagesGrille": [],
+    "decalages": 1
+   },
+   "errors": []
+  },
+  {
+   "case": "filtre-statut-sans-recharger",
+   "optionsStatut": [
+    "student",
+    "transcender",
+    "alumni"
+   ],
+   "etapes": [
+    {
+     "filtre": "arrivee-2024",
+     "compte": "29 profils",
+     "cards": 24,
+     "rows": 5,
+     "wrongState": 0,
+     "shownPlaceholders": 0,
+     "unequalHeights": 0,
+     "unlevelCampus": 0,
+     "unlevelCohort": 0,
+     "reserveNotOneLoginLine": 0,
+     "overflow": false,
+     "texteVisible": 0
+    },
+    {
+     "filtre": "statut-student",
+     "compte": "28 profils",
+     "cards": 24,
+     "rows": 5,
+     "wrongState": 0,
+     "shownPlaceholders": 0,
+     "unequalHeights": 0,
+     "unlevelCampus": 0,
+     "unlevelCohort": 0,
+     "reserveNotOneLoginLine": 0,
+     "overflow": false,
+     "texteVisible": 0
+    },
+    {
+     "filtre": "arrivee-2022-et-2023",
+     "compte": "49 profils",
+     "cards": 24,
+     "rows": 5,
+     "wrongState": 0,
+     "shownPlaceholders": 0,
+     "unequalHeights": 0,
+     "unlevelCampus": 0,
+     "unlevelCohort": 0,
+     "reserveNotOneLoginLine": 0,
+     "overflow": false,
+     "texteVisible": 0
+    },
+    {
+     "filtre": "tous",
+     "compte": "78 profils",
+     "cards": 24,
+     "rows": 5,
+     "wrongState": 0,
+     "shownPlaceholders": 0,
+     "unequalHeights": 0,
+     "unlevelCampus": 0,
+     "unlevelCohort": 0,
+     "reserveNotOneLoginLine": 0,
+     "overflow": false,
+     "texteVisible": 0
+    }
+   ],
+   "errors": []
+  },
+  {
+   "case": "langue-et-theme-par-le-menu-du-compte",
+   "etapes": [
+    {
+     "vue": "annuaire",
+     "lang": "ar",
+     "theme": "light",
+     "dir": "rtl",
+     "texte": {
+      "nodes": 18,
+      "visible": 0,
+      "where": [],
+      "innerText": 0
+     },
+     "grille": {
+      "wrongState": 0,
+      "shownPlaceholders": 0,
+      "unequalHeights": 0,
+      "unlevelCampus": 0,
+      "overflow": false
+     }
+    },
+    {
+     "vue": "annuaire",
+     "lang": "en",
+     "theme": "dark",
+     "dir": "ltr",
+     "texte": {
+      "nodes": 18,
+      "visible": 0,
+      "where": [],
+      "innerText": 0
+     },
+     "grille": {
+      "wrongState": 0,
+      "shownPlaceholders": 0,
+      "unequalHeights": 0,
+      "unlevelCampus": 0,
+      "overflow": false
+     }
+    },
+    {
+     "vue": "annuaire",
+     "lang": "fr",
+     "theme": "light",
+     "dir": "ltr",
+     "texte": {
+      "nodes": 18,
+      "visible": 0,
+      "where": [],
+      "innerText": 0
+     },
+     "grille": {
+      "wrongState": 0,
+      "shownPlaceholders": 0,
+      "unequalHeights": 0,
+      "unlevelCampus": 0,
+      "overflow": false
+     }
+    },
+    {
+     "vue": "fiche Lucía Roca",
+     "detail": {
+      "lang": "ar",
+      "theme": "dark",
+      "title": "لوسيا روكا",
+      "loginShown": false,
+      "loginText": "اسم مستخدم Intra غير محدد",
+      "overflow": false
+     },
+     "texte": {
+      "nodes": 19,
+      "visible": 0,
+      "where": [],
+      "innerText": 0
+     }
+    },
+    {
+     "vue": "fiche Lucía Roca",
+     "detail": {
+      "lang": "en",
+      "theme": "light",
+      "title": "Lucía Roca",
+      "loginShown": false,
+      "loginText": "Intra login to be added",
+      "overflow": false
+     },
+     "texte": {
+      "nodes": 19,
+      "visible": 0,
+      "where": [],
+      "innerText": 0
+     }
+    },
+    {
+     "vue": "fiche Lucía Roca",
+     "detail": {
+      "lang": "fr",
+      "theme": "light",
+      "title": "Lucía Roca",
+      "loginShown": false,
+      "loginText": "Pseudo Intra à renseigner",
+      "overflow": false
+     },
+     "texte": {
+      "nodes": 19,
+      "visible": 0,
+      "where": [],
+      "innerText": 0
+     }
+    }
+   ],
+   "errors": []
+  },
+  {
+   "case": "largeurs-intermediaires-sans-recharger",
+   "etapes": [
+    {
+     "largeur": 1280,
+     "columns": 5,
+     "rows": 5,
+     "wrongState": 0,
+     "shownPlaceholders": 0,
+     "unequalHeights": 0,
+     "unlevelCampus": 0,
+     "overflow": false
+    },
+    {
+     "largeur": 1100,
+     "columns": 5,
+     "rows": 5,
+     "wrongState": 0,
+     "shownPlaceholders": 0,
+     "unequalHeights": 0,
+     "unlevelCampus": 0,
+     "overflow": false
+    },
+    {
+     "largeur": 900,
+     "columns": 4,
+     "rows": 6,
+     "wrongState": 0,
+     "shownPlaceholders": 0,
+     "unequalHeights": 0,
+     "unlevelCampus": 0,
+     "overflow": false
+    },
+    {
+     "largeur": 768,
+     "columns": 3,
+     "rows": 8,
+     "wrongState": 0,
+     "shownPlaceholders": 0,
+     "unequalHeights": 0,
+     "unlevelCampus": 0,
+     "overflow": false
+    },
+    {
+     "largeur": 601,
+     "columns": 2,
+     "rows": 12,
+     "wrongState": 0,
+     "shownPlaceholders": 0,
+     "unequalHeights": 0,
+     "unlevelCampus": 0,
+     "overflow": false
+    },
+    {
+     "largeur": 600,
+     "columns": 2,
+     "rows": 12,
+     "wrongState": 0,
+     "shownPlaceholders": 0,
+     "unequalHeights": 0,
+     "unlevelCampus": 0,
+     "overflow": false
+    },
+    {
+     "largeur": 480,
+     "columns": 2,
+     "rows": 12,
+     "wrongState": 0,
+     "shownPlaceholders": 0,
+     "unequalHeights": 0,
+     "unlevelCampus": 0,
+     "overflow": false
+    },
+    {
+     "largeur": 1440,
+     "columns": 5,
+     "rows": 5,
+     "wrongState": 0,
+     "shownPlaceholders": 0,
+     "unequalHeights": 0,
+     "unlevelCampus": 0,
+     "overflow": false
+    }
+   ],
+   "errors": []
+  },
+  {
+   "case": "focus-clavier-carte-sans-pseudo",
+   "avant": {
+    "tabulations": 17,
+    "focus": {
+     "tag": "BUTTON",
+     "cls": "cp-favorite cp-favorite-compact",
+     "visible": true,
+     "outline": "solid 2px rgb(0, 142, 144)",
+     "offset": "3px",
+     "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px, rgba(255, 255, 255, 0.7) 0px 1px 0px 0p"
+    },
+    "carte": {
+     "x": 842,
+     "y": 272,
+     "w": 204,
+     "h": 271.390625
+    }
+   },
+   "apres": {
+    "tabulations": 17,
+    "focus": {
+     "tag": "BUTTON",
+     "cls": "cp-favorite cp-favorite-compact",
+     "visible": true,
+     "outline": "solid 2px rgb(0, 142, 144)",
+     "offset": "3px",
+     "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px, rgba(255, 255, 255, 0.7) 0px 1px 0px 0p"
+    },
+    "carte": {
+     "x": 842,
+     "y": 272,
+     "w": 204,
+     "h": 271.390625
+    }
+   },
+   "errors": []
+  },
+  {
+   "case": "page-arrivee-index",
+   "pret": "true",
+   "essais": "pseudo-manquant",
+   "feuille": true,
+   "texte": {
+    "nodes": 0,
+    "visible": 0,
+    "where": [],
+    "innerText": 0
+   },
+   "errors": []
+  },
+  {
+   "case": "toutes-pages-mobile-fr",
+   "pages": 4,
+   "cards": 78,
+   "lang": "fr",
+   "theme": "light",
+   "apres": {
+    "wrongState": 0,
+    "shownPlaceholders": 0,
+    "unequalHeights": 0,
+    "unlevelCampus": 0,
+    "unlevelCohort": 0,
+    "reserveNotOneLoginLine": 0
+   },
+   "avant": {
+    "unequalHeights": 0,
+    "unlevelCampus": 0,
+    "unlevelCohort": 0
+   },
+   "texteVisibleAvant": 72,
+   "texteVisibleApres": 0,
+   "innerTextAvant": 72,
+   "innerTextApres": 0,
+   "rangeesAvantApres": [
+    [
+     12,
+     12
+    ],
+    [
+     12,
+     12
+    ],
+    [
+     12,
+     12
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "colonnes": [
+    2
+   ],
+   "hauteursPage1": {
+    "avant": [
+     243,
+     243,
+     243,
+     243,
+     243,
+     243,
+     243,
+     243,
+     243,
+     243,
+     243,
+     243
+    ],
+    "apres": [
+     243,
+     243,
+     243,
+     216,
+     243,
+     216,
+     243,
+     216,
+     216,
+     216,
+     216,
+     216
+    ]
+   },
+   "overflowApres": false,
+   "errors": []
+  },
+  {
+   "case": "toutes-pages-petit-fr",
+   "pages": 4,
+   "cards": 78,
+   "lang": "fr",
+   "theme": "light",
+   "apres": {
+    "wrongState": 0,
+    "shownPlaceholders": 0,
+    "unequalHeights": 0,
+    "unlevelCampus": 0,
+    "unlevelCohort": 0,
+    "reserveNotOneLoginLine": 0
+   },
+   "avant": {
+    "unequalHeights": 0,
+    "unlevelCampus": 4,
+    "unlevelCohort": 4
+   },
+   "texteVisibleAvant": 72,
+   "texteVisibleApres": 0,
+   "innerTextAvant": 72,
+   "innerTextApres": 0,
+   "rangeesAvantApres": [
+    [
+     12,
+     12
+    ],
+    [
+     12,
+     12
+    ],
+    [
+     12,
+     12
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "colonnes": [
+    2
+   ],
+   "hauteursPage1": {
+    "avant": [
+     266,
+     288,
+     288,
+     288,
+     288,
+     288,
+     288,
+     288,
+     288,
+     288,
+     288,
+     288
+    ],
+    "apres": [
+     266,
+     266,
+     266,
+     239,
+     266,
+     239,
+     266,
+     239,
+     239,
+     239,
+     239,
+     239
+    ]
+   },
+   "overflowApres": false,
+   "errors": []
+  },
+  {
+   "case": "toutes-pages-petit-en",
+   "pages": 4,
+   "cards": 78,
+   "lang": "en",
+   "theme": "light",
+   "apres": {
+    "wrongState": 0,
+    "shownPlaceholders": 0,
+    "unequalHeights": 0,
+    "unlevelCampus": 0,
+    "unlevelCohort": 0,
+    "reserveNotOneLoginLine": 0
+   },
+   "avant": {
+    "unequalHeights": 0,
+    "unlevelCampus": 0,
+    "unlevelCohort": 0
+   },
+   "texteVisibleAvant": 72,
+   "texteVisibleApres": 0,
+   "innerTextAvant": 72,
+   "innerTextApres": 0,
+   "rangeesAvantApres": [
+    [
+     12,
+     12
+    ],
+    [
+     12,
+     12
+    ],
+    [
+     12,
+     12
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "colonnes": [
+    2
+   ],
+   "hauteursPage1": {
+    "avant": [
+     266,
+     266,
+     266,
+     266,
+     266,
+     266,
+     266,
+     266,
+     266,
+     266,
+     266,
+     266
+    ],
+    "apres": [
+     266,
+     266,
+     266,
+     239,
+     266,
+     239,
+     266,
+     239,
+     239,
+     239,
+     239,
+     239
+    ]
+   },
+   "overflowApres": false,
+   "errors": []
+  },
+  {
+   "case": "toutes-pages-petit-ar",
+   "pages": 4,
+   "cards": 78,
+   "lang": "ar",
+   "theme": "light",
+   "apres": {
+    "wrongState": 0,
+    "shownPlaceholders": 0,
+    "unequalHeights": 0,
+    "unlevelCampus": 0,
+    "unlevelCohort": 0,
+    "reserveNotOneLoginLine": 0
+   },
+   "avant": {
+    "unequalHeights": 0,
+    "unlevelCampus": 4,
+    "unlevelCohort": 4
+   },
+   "texteVisibleAvant": 72,
+   "texteVisibleApres": 0,
+   "innerTextAvant": 72,
+   "innerTextApres": 0,
+   "rangeesAvantApres": [
+    [
+     12,
+     12
+    ],
+    [
+     12,
+     12
+    ],
+    [
+     12,
+     12
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "colonnes": [
+    2
+   ],
+   "hauteursPage1": {
+    "avant": [
+     266,
+     288,
+     288,
+     288,
+     288,
+     288,
+     288,
+     288,
+     288,
+     288,
+     288,
+     288
+    ],
+    "apres": [
+     266,
+     266,
+     266,
+     239,
+     266,
+     239,
+     266,
+     239,
+     239,
+     239,
+     239,
+     239
+    ]
+   },
+   "overflowApres": false,
+   "errors": []
+  },
+  {
+   "case": "toutes-pages-mobile-ar-sombre",
+   "pages": 4,
+   "cards": 78,
+   "lang": "ar",
+   "theme": "dark",
+   "apres": {
+    "wrongState": 0,
+    "shownPlaceholders": 0,
+    "unequalHeights": 0,
+    "unlevelCampus": 0,
+    "unlevelCohort": 0,
+    "reserveNotOneLoginLine": 0
+   },
+   "avant": {
+    "unequalHeights": 0,
+    "unlevelCampus": 0,
+    "unlevelCohort": 0
+   },
+   "texteVisibleAvant": 72,
+   "texteVisibleApres": 0,
+   "innerTextAvant": 72,
+   "innerTextApres": 0,
+   "rangeesAvantApres": [
+    [
+     12,
+     12
+    ],
+    [
+     12,
+     12
+    ],
+    [
+     12,
+     12
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "colonnes": [
+    2
+   ],
+   "hauteursPage1": {
+    "avant": [
+     243,
+     243,
+     243,
+     243,
+     243,
+     243,
+     243,
+     243,
+     243,
+     243,
+     243,
+     243
+    ],
+    "apres": [
+     243,
+     243,
+     243,
+     216,
+     243,
+     216,
+     243,
+     216,
+     216,
+     216,
+     216,
+     216
+    ]
+   },
+   "overflowApres": false,
+   "errors": []
+  },
+  {
+   "case": "liste-toutes-pages",
+   "resume": {
+    "avant-petit-fr": {
+     "pages": 4,
+     "cards": 78,
+     "heartOverlap": 0,
+     "shownPlaceholders": 72,
+     "heights": [
+      113,
+      127
+     ],
+     "overflow": false
+    },
+    "apres-petit-fr": {
+     "pages": 4,
+     "cards": 78,
+     "heartOverlap": 0,
+     "shownPlaceholders": 0,
+     "heights": [
+      113
+     ],
+     "overflow": false
+    },
+    "avant-petit-ar": {
+     "pages": 4,
+     "cards": 78,
+     "heartOverlap": 0,
+     "shownPlaceholders": 72,
+     "heights": [
+      113,
+      127
+     ],
+     "overflow": false
+    },
+    "apres-petit-ar": {
+     "pages": 4,
+     "cards": 78,
+     "heartOverlap": 0,
+     "shownPlaceholders": 0,
+     "heights": [
+      113
+     ],
+     "overflow": false
+    },
+    "avant-mobile-en": {
+     "pages": 4,
+     "cards": 78,
+     "heartOverlap": 0,
+     "shownPlaceholders": 72,
+     "heights": [
+      113
+     ],
+     "overflow": false
+    },
+    "apres-mobile-en": {
+     "pages": 4,
+     "cards": 78,
+     "heartOverlap": 0,
+     "shownPlaceholders": 0,
+     "heights": [
+      113
+     ],
+     "overflow": false
+    },
+    "avant-ordinateur-fr": {
+     "pages": 4,
+     "cards": 78,
+     "heartOverlap": 0,
+     "shownPlaceholders": 72,
+     "heights": [
+      137
+     ],
+     "overflow": false
+    },
+    "apres-ordinateur-fr": {
+     "pages": 4,
+     "cards": 78,
+     "heartOverlap": 0,
+     "shownPlaceholders": 0,
+     "heights": [
+      137
+     ],
+     "overflow": false
+    }
+   },
+   "errors": []
+  },
+  {
+   "case": "explorer-vrai-globe",
+   "avant": {
+    "globe": true
+   },
+   "apres": {
+    "globe": true
+   },
+   "portee": {
+    "loaded": true,
+    "rules": [
+     {
+      "rule": ":root .app :is(#content-index .cp-profile-card .cp-card-copy",
+      "matched": 0,
+      "rendered": 0
+     },
+     {
+      "rule": ":root .app #content-index[data-view=\"grid\"] .cp-profile-card",
+      "matched": 0,
+      "rendered": 0
+     }
+    ],
+    "rendered": 0,
+    "marked": 0,
+    "markedOutsideIndex": 0
+   },
+   "avant-bis": {
+    "globe": true
+   },
+   "pixelsEssaiContreBase": 0,
+   "pixelsBaseContreBase": 0,
+   "errors": []
+  },
+  {
+   "case": "pages-non-concernees-pixels-exacts",
+   "pixelsDifferents": {
+    "fiche-leila-mobile-ar-sombre": 0,
+    "projets-mobile-ar-sombre": 0,
+    "chronique-petit-fr": 0,
+    "explorer-bloque-mobile-en": 0
+   },
+   "errors": []
+  },
+  {
+   "case": "combinaison-essais-des-cartes",
+   "essais": [
+    "lisibilite-textes",
+    "titres-forts",
+    "echelle-unifiee",
+    "une-colonne-320"
+   ],
+   "mesures": {
+    "sans-ordinateur-fr": {
+     "actifs": "une-colonne-320 lisibilite-textes titres-forts echelle-unifiee",
+     "cards": 24,
+     "rows": 5,
+     "wrongState": 5,
+     "shownPlaceholders": 5,
+     "unequalHeights": 0,
+     "unlevelCampus": 0,
+     "unlevelCohort": 0,
+     "reserveNotOneLoginLine": 0,
+     "overflow": false,
+     "texteVisible": 18,
+     "colonnes": 5,
+     "rangeesDecalees": []
+    },
+    "avec-ordinateur-fr": {
+     "actifs": "une-colonne-320 lisibilite-textes titres-forts echelle-unifiee pseudo-manquant",
+     "cards": 24,
+     "rows": 5,
+     "wrongState": 0,
+     "shownPlaceholders": 0,
+     "unequalHeights": 0,
+     "unlevelCampus": 0,
+     "unlevelCohort": 0,
+     "reserveNotOneLoginLine": 0,
+     "overflow": false,
+     "texteVisible": 0,
+     "colonnes": 5,
+     "rangeesDecalees": []
+    },
+    "sans-petit-ar": {
+     "actifs": "une-colonne-320 lisibilite-textes titres-forts echelle-unifiee",
+     "cards": 24,
+     "rows": 12,
+     "wrongState": 11,
+     "shownPlaceholders": 11,
+     "unequalHeights": 0,
+     "unlevelCampus": 4,
+     "unlevelCohort": 4,
+     "reserveNotOneLoginLine": 0,
+     "overflow": false,
+     "texteVisible": 18,
+     "colonnes": 2,
+     "rangeesDecalees": [
+      {
+       "rangee": 2,
+       "cartes": [
+        {
+         "id": "profile-leila-mansour",
+         "nom": [
+          141,
+          26
+         ],
+         "pseudo": [
+          173,
+          23
+         ],
+         "etat": "vrai",
+         "campus": [
+          202,
+          21
+         ]
+        },
+        {
+         "id": "profile-lucia-roca",
+         "nom": [
+          141,
+          26
+         ],
+         "pseudo": [
+          173,
+          46
+         ],
+         "etat": "visible",
+         "campus": [
+          225,
+          21
+         ]
+        }
+       ]
+      },
+      {
+       "rangee": 3,
+       "cartes": [
+        {
+         "id": "profile-noe-laurent",
+         "nom": [
+          141,
+          26
+         ],
+         "pseudo": [
+          173,
+          23
+         ],
+         "etat": "vrai",
+         "campus": [
+          202,
+          21
+         ]
+        },
+        {
+         "id": "profile-emma-de-smet",
+         "nom": [
+          141,
+          52
+         ],
+         "pseudo": [
+          199,
+          46
+         ],
+         "etat": "visible",
+         "campus": [
+          251,
+          21
+         ]
+        }
+       ]
+      },
+      {
+       "rangee": 5,
+       "cartes": [
+        {
+         "id": "profile-haru-mizuno",
+         "nom": [
+          141,
+          26
+         ],
+         "pseudo": [
+          173,
+          23
+         ],
+         "etat": "vrai",
+         "campus": [
+          202,
+          21
+         ]
+        },
+        {
+         "id": "profile-amir-keller",
+         "nom": [
+          141,
+          26
+         ],
+         "pseudo": [
+          173,
+          46
+         ],
+         "etat": "visible",
+         "campus": [
+          225,
+          21
+         ]
+        }
+       ]
+      },
+      {
+       "rangee": 7,
+       "cartes": [
+        {
+         "id": "profile-mei-tan",
+         "nom": [
+          141,
+          26
+         ],
+         "pseudo": [
+          173,
+          46
+         ],
+         "etat": "visible",
+         "campus": [
+          225,
+          21
+         ]
+        },
+        {
+         "id": "profile-caio-mendes",
+         "nom": [
+          141,
+          26
+         ],
+         "pseudo": [
+          173,
+          23
+         ],
+         "etat": "vrai",
+         "campus": [
+          202,
+          21
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    "avec-petit-ar": {
+     "actifs": "une-colonne-320 lisibilite-textes titres-forts echelle-unifiee pseudo-manquant",
+     "cards": 24,
+     "rows": 12,
+     "wrongState": 0,
+     "shownPlaceholders": 0,
+     "unequalHeights": 0,
+     "unlevelCampus": 1,
+     "unlevelCohort": 1,
+     "reserveNotOneLoginLine": 0,
+     "overflow": false,
+     "texteVisible": 0,
+     "colonnes": 2,
+     "rangeesDecalees": [
+      {
+       "rangee": 3,
+       "cartes": [
+        {
+         "id": "profile-noe-laurent",
+         "nom": [
+          141,
+          26
+         ],
+         "pseudo": [
+          173,
+          23
+         ],
+         "etat": "vrai",
+         "campus": [
+          202,
+          21
+         ]
+        },
+        {
+         "id": "profile-emma-de-smet",
+         "nom": [
+          141,
+          52
+         ],
+         "pseudo": [
+          199,
+          23
+         ],
+         "etat": "reserve",
+         "campus": [
+          228,
+          21
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    "sans-mobile-fr-sombre": {
+     "actifs": "une-colonne-320 lisibilite-textes titres-forts echelle-unifiee",
+     "cards": 24,
+     "rows": 12,
+     "wrongState": 11,
+     "shownPlaceholders": 11,
+     "unequalHeights": 0,
+     "unlevelCampus": 0,
+     "unlevelCohort": 0,
+     "reserveNotOneLoginLine": 0,
+     "overflow": false,
+     "texteVisible": 18,
+     "colonnes": 2,
+     "rangeesDecalees": []
+    },
+    "avec-mobile-fr-sombre": {
+     "actifs": "une-colonne-320 lisibilite-textes titres-forts echelle-unifiee pseudo-manquant",
+     "cards": 24,
+     "rows": 12,
+     "wrongState": 0,
+     "shownPlaceholders": 0,
+     "unequalHeights": 0,
+     "unlevelCampus": 0,
+     "unlevelCohort": 0,
+     "reserveNotOneLoginLine": 0,
+     "overflow": false,
+     "texteVisible": 0,
+     "colonnes": 2,
+     "rangeesDecalees": []
+    }
+   },
+   "errors": []
+  },
+  {
+   "case": "masques-exacts-des-captures",
+   "ordinateur": {
+    "captureAvantReproduite": true,
+    "changed": 10452,
+    "insideLines": 6274,
+    "underGlassOnly": 4178,
+    "elsewhere": 0,
+    "elsewhereBeyondMargin": {
+     "4": 0,
+     "6": 0,
+     "8": 0
+    },
+    "elsewhereBox": null,
+    "maxDeltaElsewhere": 0,
+    "maxDeltaUnderGlass": 6,
+    "lineBoxes": 18,
+    "glassBoxes": 23,
+    "lines": [
+     [
+      844,
+      467,
+      140,
+      21
+     ],
+     [
+      172,
+      769,
+      140,
+      21
+     ],
+     [
+      396,
+      769,
+      140,
+      21
+     ],
+     [
+      620,
+      769,
+      140,
+      21
+     ],
+     [
+      1068,
+      769,
+      140,
+      21
+     ],
+     [
+      172,
+      1070,
+      140,
+      21
+     ],
+     [
+      396,
+      1070,
+      140,
+      21
+     ],
+     [
+      620,
+      1070,
+      140,
+      21
+     ],
+     [
+      1068,
+      1070,
+      140,
+      21
+     ],
+     [
+      172,
+      1372,
+      140,
+      21
+     ],
+     [
+      396,
+      1372,
+      140,
+      21
+     ],
+     [
+      620,
+      1372,
+      140,
+      21
+     ],
+     [
+      844,
+      1372,
+      140,
+      21
+     ],
+     [
+      1068,
+      1372,
+      140,
+      21
+     ],
+     [
+      172,
+      1673,
+      140,
+      21
+     ],
+     [
+      396,
+      1673,
+      140,
+      21
+     ],
+     [
+      620,
+      1673,
+      140,
+      21
+     ],
+     [
+      844,
+      1673,
+      140,
+      21
+     ]
+    ]
+   },
+   "sombre-ar-mobile": {
+    "captureAvantReproduite": true,
+    "changed": 4074,
+    "insideLines": 3457,
+    "underGlassOnly": 617,
+    "elsewhere": 0,
+    "elsewhereBeyondMargin": {
+     "4": 0,
+     "6": 0,
+     "8": 0
+    },
+    "elsewhereBox": null,
+    "maxDeltaElsewhere": 0,
+    "maxDeltaUnderGlass": 2,
+    "lineBoxes": 18,
+    "glassBoxes": 14,
+    "lines": [
+     [
+      74,
+      958,
+      298,
+      43
+     ],
+     [
+      74,
+      1497,
+      298,
+      43
+     ],
+     [
+      430,
+      2036,
+      298,
+      43
+     ],
+     [
+      74,
+      2036,
+      298,
+      43
+     ],
+     [
+      74,
+      2575,
+      298,
+      43
+     ],
+     [
+      430,
+      3113,
+      298,
+      43
+     ],
+     [
+      74,
+      3113,
+      298,
+      43
+     ],
+     [
+      430,
+      3652,
+      298,
+      43
+     ],
+     [
+      430,
+      4191,
+      298,
+      43
+     ],
+     [
+      74,
+      4191,
+      298,
+      43
+     ],
+     [
+      430,
+      4730,
+      298,
+      43
+     ],
+     [
+      74,
+      4730,
+      298,
+      43
+     ],
+     [
+      430,
+      5269,
+      298,
+      43
+     ],
+     [
+      74,
+      5269,
+      298,
+      43
+     ],
+     [
+      430,
+      5808,
+      298,
+      43
+     ],
+     [
+      74,
+      5808,
+      298,
+      43
+     ],
+     [
+      430,
+      6347,
+      298,
+      43
+     ],
+     [
+      74,
+      6347,
+      298,
+      43
+     ]
+    ]
+   },
+   "errors": []
+  },
+  {
+   "case": "capture-liste-ordinateur-milieu",
+   "avant": {
+    "scrollY": 605,
+    "mentionsVisibles": 18,
+    "heartOverlap": 0,
+    "shownPlaceholders": 18,
+    "heights": [
+     137
+    ],
+    "overflow": false
+   },
+   "apres": {
+    "scrollY": 605,
+    "mentionsVisibles": 0,
+    "heartOverlap": 0,
+    "shownPlaceholders": 0,
+    "heights": [
+     137
+    ],
+    "overflow": false
+   },
+   "errors": []
+  }
+ ],
+ "empreintesCopie": {
+  "fichiers": 137,
+  "differents": []
+ },
+ "acceptation": {
+  "exceptions": [],
+  "balayages": 6,
+  "toutesPagesSansMention": true,
+  "toutesPagesMentionPresenteAvant": true,
+  "toutesPagesEtatAttendu": true,
+  "toutesPagesHauteursEgales": true,
+  "aucuneRangeeDesaligneeAjoutee": true,
+  "espaceReserveEgalAUneLigneDePseudo": true,
+  "aucunDebordement": true,
+  "arbreAccessibleSansMention": true,
+  "arbreAccessibleAvantAvecMention": true,
+  "arriveeDepuisExplorerSansDecalageGrille": true,
+  "filtreSuivi": true,
+  "menuDuCompteLangueEtTheme": true,
+  "largeursIntermediaires": true,
+  "focusClavierIdentique": true,
+  "pageArriveeSansErreur": true,
+  "listeToutesPages": true,
+  "explorerVraiGlobeIdentique": true,
+  "bruitGlobeBaseContreBase": 0,
+  "pagesNonConcerneesIdentiques": true,
+  "combinaisonCartesSansMention": true,
+  "masquesExactsSansPixelAilleurs": true,
+  "captureListeMilieu": true,
+  "copieDeReferenceIntacte": true,
+  "aucuneErreur": true
+ }
+}

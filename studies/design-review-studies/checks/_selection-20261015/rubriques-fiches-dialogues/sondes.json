@@ -1,0 +1,280 @@
+{
+ "globe": {
+  "base": {
+   "geo": {
+    "center": {
+     "x": 720,
+     "y": 450
+    },
+    "radius": 362.72876929568247,
+    "rect": {
+     "left": 0,
+     "top": 0,
+     "width": 1440,
+     "height": 900
+    }
+   },
+   "hgRadius": ".425",
+   "markers": 25,
+   "markerFont": "\"Helvetica Neue\", Arial, Helvetica, sans-serif",
+   "labelFont": "\"Helvetica Neue\", Arial, Helvetica, sans-serif",
+   "labelSize": "14px",
+   "labelText": "",
+   "errors": [],
+   "state": {
+    "essais": "",
+    "ready": "true",
+    "sheets": [],
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr",
+    "view": "grid",
+    "section": null,
+    "hash": "#explore",
+    "w": 1440,
+    "h": 900
+   }
+  },
+  "globe-espace-libre": {
+   "geo": {
+    "center": {
+     "x": 720,
+     "y": 450
+    },
+    "radius": 240.01103468031363,
+    "rect": {
+     "left": 0,
+     "top": 0,
+     "width": 1440,
+     "height": 900
+    }
+   },
+   "hgRadius": "0.257347",
+   "markers": 25,
+   "markerFont": "\"Helvetica Neue\", Arial, Helvetica, sans-serif",
+   "labelFont": "\"Helvetica Neue\", Arial, Helvetica, sans-serif",
+   "labelSize": "14px",
+   "labelText": "",
+   "errors": [],
+   "state": {
+    "essais": "globe-espace-libre",
+    "ready": "true",
+    "sheets": [
+     "globe-espace-libre"
+    ],
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr",
+    "view": "grid",
+    "section": null,
+    "hash": "#explore",
+    "w": 1440,
+    "h": 900
+   }
+  },
+  "police-etiquettes-globe": {
+   "geo": {
+    "center": {
+     "x": 720,
+     "y": 450
+    },
+    "radius": 362.72876929568247,
+    "rect": {
+     "left": 0,
+     "top": 0,
+     "width": 1440,
+     "height": 900
+    }
+   },
+   "hgRadius": ".425",
+   "markers": 25,
+   "markerFont": "Jost, sans-serif",
+   "labelFont": "Jost, sans-serif",
+   "labelSize": "14px",
+   "labelText": "",
+   "errors": [],
+   "state": {
+    "essais": "police-etiquettes-globe",
+    "ready": "true",
+    "sheets": [
+     "police-etiquettes-globe"
+    ],
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr",
+    "view": "grid",
+    "section": null,
+    "hash": "#explore",
+    "w": 1440,
+    "h": 900
+   }
+  },
+  "combo": {
+   "geo": {
+    "center": {
+     "x": 720,
+     "y": 450
+    },
+    "radius": 240.01103468031363,
+    "rect": {
+     "left": 0,
+     "top": 0,
+     "width": 1440,
+     "height": 900
+    }
+   },
+   "hgRadius": "0.257347",
+   "markers": 25,
+   "markerFont": "Jost, sans-serif",
+   "labelFont": "Jost, sans-serif",
+   "labelSize": "14px",
+   "labelText": "",
+   "errors": [],
+   "state": {
+    "essais": "globe-espace-libre police-etiquettes-globe une-colonne-320 roles-couleur visiter-contour-sombre lisibilite-textes echelle-unifiee pseudo-manquant awards-a-venir",
+    "ready": "true",
+    "sheets": [
+     "globe-espace-libre",
+     "police-etiquettes-globe",
+     "une-colonne-320",
+     "roles-couleur",
+     "visiter-contour-sombre",
+     "lisibilite-textes",
+     "echelle-unifiee",
+     "pseudo-manquant",
+     "awards-a-venir"
+    ],
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr",
+    "view": "grid",
+    "section": null,
+    "hash": "#explore",
+    "w": 1440,
+    "h": 900
+   }
+  }
+ },
+ "awards": {
+  "ordinateur": {
+   "awards-a-venir": {
+    "visible": true,
+    "text": "Les 42 Awards arrivent bientôt.",
+    "fs": "20px",
+    "lh": "28px",
+    "color": "rgb(27, 27, 27)",
+    "p": [
+     585.1,
+     456,
+     854.9,
+     484
+    ],
+    "svg": [
+     706,
+     416,
+     734,
+     444
+    ],
+    "fadeEnd": 188,
+    "dock": [
+     402,
+     808,
+     1038,
+     868
+    ],
+    "h": 900,
+    "errors": [],
+    "overflow": false
+   },
+   "combo": {
+    "visible": true,
+    "text": "Les 42 Awards arrivent bientôt.",
+    "fs": "20px",
+    "lh": "28px",
+    "color": "rgb(27, 27, 27)",
+    "p": [
+     585.1,
+     456,
+     854.9,
+     484
+    ],
+    "svg": [
+     706,
+     416,
+     734,
+     444
+    ],
+    "fadeEnd": 188,
+    "dock": [
+     402,
+     808,
+     1038,
+     868
+    ],
+    "h": 900,
+    "errors": [],
+    "overflow": false
+   }
+  },
+  "mobile-sombre": {
+   "awards-a-venir": {
+    "visible": true,
+    "text": "Les 42 Awards arrivent bientôt.",
+    "fs": "20px",
+    "lh": "28px",
+    "color": "rgb(255, 255, 255)",
+    "p": [
+     60.1,
+     428,
+     329.9,
+     456
+    ],
+    "svg": [
+     181,
+     388,
+     209,
+     416
+    ],
+    "fadeEnd": 166,
+    "dock": [
+     16,
+     767,
+     374,
+     827
+    ],
+    "h": 844,
+    "errors": [],
+    "overflow": false
+   },
+   "combo": {
+    "visible": true,
+    "text": "Les 42 Awards arrivent bientôt.",
+    "fs": "20px",
+    "lh": "28px",
+    "color": "rgb(255, 255, 255)",
+    "p": [
+     60.1,
+     428,
+     329.9,
+     456
+    ],
+    "svg": [
+     181,
+     388,
+     209,
+     416
+    ],
+    "fadeEnd": 166,
+    "dock": [
+     16,
+     767,
+     374,
+     827
+    ],
+    "h": 844,
+    "errors": [],
+    "overflow": false
+   }
+  }
+ }
+}

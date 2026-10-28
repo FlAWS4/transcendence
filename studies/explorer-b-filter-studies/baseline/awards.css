@@ -1,0 +1,45 @@
+/* Awards is deliberately empty: retain the shared header, dock and backdrop.
+   Load after floating-search.css, contextual-discovery.css and detail-scroll.css.
+   The controller closes overlays/search and makes the hidden context inert. */
+html:has(.app[data-navigation=dock][data-section=awards]) {
+  overflow-y:hidden;
+}
+:root .app[data-navigation=dock][data-section=awards] {
+  height:100svh;
+  min-height:100svh;
+  overflow:hidden;
+}
+/* Keep the map and its destination anchor measurable. display:none would
+   collapse the shared MapLibre viewport or the globe-to-medallion target. */
+:root .app[data-navigation=dock][data-section=awards] #main > .globe-stage,
+:root .app[data-navigation=dock][data-section=awards] .scope-bar {
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+}
+:root #app[data-navigation=dock][data-section=awards] :is(
+  .content-sheet,.globe-footer,.loading-status,.prototype-note,
+  .arabic-brand,
+  .dock-search-toggle,.dock-random-toggle,.dock-search-form,.dock-search-panel
+) {
+  display:none;
+}
+/* The scope popover lives outside the app; account/language dialogs stay usable. */
+body:has(.app[data-navigation=dock][data-section=awards]) > .scope-popover {
+  display:none;
+}
+
+/* A fifth destination receives the same desktop breathing room as the first
+   four. No rule below applies to a retained four-destination dock. */
+:root .app[data-navigation=dock] .dock-shell:not([data-search-open=true]):has(.main-nav > button[data-section=awards]) {
+  width:min(636px,calc(100vw - 32px));
+}
+:root .app[data-navigation=dock] .main-nav.has-dock-search:has(> button[data-section=awards]) .nav-indicator {
+  width:calc((100% - 28px) / 5);
+}
+
+@media(max-width:360px) {
+  :root .app[data-navigation=dock] .dock-shell:not([data-search-open=true]):has(.main-nav > button[data-section=awards]) {
+    width:calc(100vw - 24px);
+  }
+}

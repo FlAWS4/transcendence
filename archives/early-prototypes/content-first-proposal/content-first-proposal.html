@@ -1,0 +1,122 @@
+<style>
+#horizon-content-proposal{--hp-bg:light-dark(#fff,#1b1b1b);--hp-ink:light-dark(#1b1b1b,#f5f8f8);--hp-muted:light-dark(#617174,#b4c3c6);--hp-accent:light-dark(#008e90,#ec3391);--hp-soft:light-dark(#e9f6f5,#34232e);--hp-line:light-dark(#e0e8e8,#384043);--hp-cover:light-dark(#eef5f5,#232e31);color:var(--hp-ink);font-family:Jost,Arial,sans-serif;container-type:inline-size}
+#horizon-content-proposal *{box-sizing:border-box}
+#horizon-content-proposal button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
+#horizon-content-proposal [hidden]{display:none!important}
+#horizon-content-proposal .hp-window{background:var(--hp-bg);padding:24px;border:1px solid var(--hp-line);border-radius:20px}
+#horizon-content-proposal .hp-header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-bottom:24px}
+#horizon-content-proposal .hp-brand{font-weight:500;letter-spacing:.08em;display:flex;align-items:center;gap:12px}
+#horizon-content-proposal .hp-logo{width:39px;height:auto;fill:currentColor;flex-shrink:0}
+#horizon-content-proposal .hp-context{color:var(--hp-muted);display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+#horizon-content-proposal .hp-shell{display:grid;grid-template-columns:152px minmax(0,1fr);gap:32px}
+#horizon-content-proposal .hp-nav{display:flex;flex-direction:column;gap:8px;padding-top:12px}
+#horizon-content-proposal .hp-nav-item{display:flex;align-items:center;gap:12px;min-height:44px;padding:12px;border-radius:15px;color:var(--hp-muted);text-align:start}
+#horizon-content-proposal .hp-nav-item[aria-current=page]{background:var(--hp-soft);color:var(--hp-accent)}
+#horizon-content-proposal .hp-main{min-width:0}
+#horizon-content-proposal h2,#horizon-content-proposal h3{font-weight:500;letter-spacing:-.025em;margin:0}
+#horizon-content-proposal .hp-intro{display:flex;align-items:end;justify-content:space-between;flex-wrap:wrap;gap:12px;margin:8px 0 28px}
+#horizon-content-proposal .hp-intro p{margin:8px 0 0;color:var(--hp-muted)}
+#horizon-content-proposal .hp-caption{color:var(--hp-muted);margin:0 0 8px}
+#horizon-content-proposal .hp-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+#horizon-content-proposal .hp-project{display:block;text-align:start;padding:0;width:100%}
+#horizon-content-proposal .hp-cover{height:176px;border-radius:18px;background:var(--hp-cover);display:grid;place-content:center;overflow:hidden;transition:transform .35s cubic-bezier(.22,1,.36,1)}
+#horizon-content-proposal .hp-project:hover .hp-cover{transform:translateY(-3px)}
+#horizon-content-proposal .hp-terminal{padding:22px;color:var(--hp-ink)}
+#horizon-content-proposal .hp-terminal pre{margin:0;white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;font-family:monospace}
+#horizon-content-proposal .hp-terminal em{color:var(--hp-accent);font-style:normal}
+#horizon-content-proposal .hp-word{letter-spacing:.15em;color:var(--hp-accent)}
+#horizon-content-proposal .hp-project h3{margin-top:16px}
+#horizon-content-proposal .hp-project p{color:var(--hp-muted);margin:8px 0 12px}
+#horizon-content-proposal .hp-read{display:flex;align-items:center;gap:8px;color:var(--hp-accent)}
+#horizon-content-proposal .hp-note{margin:30px 0 0;color:var(--hp-muted)}
+#horizon-content-proposal .hp-back{display:inline-flex;align-items:center;gap:8px;padding:10px 0;color:var(--hp-muted);margin-bottom:22px;min-height:44px}
+#horizon-content-proposal .hp-article{max-width:760px}
+#horizon-content-proposal .hp-article .hp-cover{height:210px;margin:24px 0}
+#horizon-content-proposal .hp-article p{max-width:62ch;color:var(--hp-muted)}
+#horizon-content-proposal .hp-article h3{margin-top:24px}
+#horizon-content-proposal .hp-main.hp-enter{animation:hp-page-in .38s cubic-bezier(.22,1,.36,1)}
+#horizon-content-proposal[data-nav=top] .hp-shell{display:block}
+#horizon-content-proposal[data-nav=top] .hp-nav{flex-direction:row;flex-wrap:wrap;padding:0 0 24px}
+#horizon-content-proposal[data-nav=top] .hp-nav-item{flex:0 1 auto}
+@keyframes hp-page-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@container(max-width:650px){
+ #horizon-content-proposal .hp-window{padding:20px 16px}
+ #horizon-content-proposal .hp-header{align-items:start;flex-direction:column;gap:14px;padding-bottom:20px}
+ #horizon-content-proposal .hp-shell{display:flex;flex-direction:column;gap:24px}
+ #horizon-content-proposal .hp-nav,#horizon-content-proposal[data-nav=top] .hp-nav{order:2;flex-direction:row;gap:0;padding:6px;border:1px solid var(--hp-line);border-radius:24px;justify-content:space-around}
+ #horizon-content-proposal .hp-nav-item,#horizon-content-proposal[data-nav=top] .hp-nav-item{flex:1;min-width:0;padding:8px 3px;gap:7px;flex-direction:column;justify-content:center;text-align:center}
+ #horizon-content-proposal .hp-grid{grid-template-columns:1fr;gap:28px}
+ #horizon-content-proposal .hp-cover{height:156px}
+}
+@media(prefers-reduced-motion:reduce){#horizon-content-proposal .hp-main.hp-enter{animation:none}#horizon-content-proposal .hp-cover{transition:none}}
+</style>
+<div id="horizon-content-proposal" data-nav="side" aria-label="Proposition de pages de contenu Horizon">
+ <div class="hp-window">
+  <header class="hp-header">
+   <div class="hp-brand"><svg class="hp-logo" viewBox="0 0 31.144531 21.855468" role="img" aria-label="42"><path d="M17.210938 0H11.472656L0 11.476562V16.121093H11.472656V21.855468H17.210938V11.476562H5.738281Z M19.667969 5.738281L25.40625 0H19.667969Z M31.144531 5.738281V0H25.40625V5.738281L19.667969 11.476562V17.210937H25.40625V11.476562Z M31.144531 11.476562L25.40625 17.210937H31.144531Z"/></svg> HORIZON</div>
+   <div class="hp-context" aria-label="Périmètre actuel : 42 Paris"><span>Monde</span><span aria-hidden="true">›</span><span>France</span><span aria-hidden="true">›</span><span>42 Paris</span></div>
+  </header>
+  <div class="hp-shell">
+   <nav class="hp-nav" aria-label="Rubriques illustrées">
+    <span class="hp-nav-item"><i data-lucide="globe-2" aria-hidden="true"></i><span>Explorer</span></span>
+    <button class="hp-nav-item" type="button" data-list aria-current="page"><i data-lucide="layers-2" aria-hidden="true"></i><span>Projets</span></button>
+    <span class="hp-nav-item"><i data-lucide="users" aria-hidden="true"></i><span>Parcours</span></span>
+    <span class="hp-nav-item"><i data-lucide="book-open" aria-hidden="true"></i><span>Journal</span></span>
+   </nav>
+   <main class="hp-main">
+    <section data-page="list" aria-label="Projets à Paris">
+     <div class="hp-intro"><div><h2>Les projets, au premier plan.</h2><p>Ce que l’on imagine. Ce que l’on construit.</p></div></div>
+     <div class="hp-grid">
+      <button class="hp-project" type="button" data-project="shell">
+       <div class="hp-cover hp-terminal" aria-hidden="true"><pre><em>➜</em> minishell
+$ echo "beyond the code"
+beyond the code
+$ <em>▌</em></pre></div>
+       <h3>Minishell</h3><p>Construire un interpréteur de commandes, du premier prompt aux processus.</p><span class="hp-read">Découvrir le projet <i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+      </button>
+      <button class="hp-project" type="button" data-project="cube">
+       <div class="hp-cover" aria-hidden="true"><span class="hp-word">cub3D</span></div>
+       <h3>cub3D</h3><p>Comprendre la perspective en construisant un moteur de raycasting.</p><span class="hp-read">Découvrir le projet <i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+      </button>
+     </div>
+     <p class="hp-note">Exemples de contenu</p>
+    </section>
+    <article class="hp-article" data-page="detail" aria-label="Détail du projet" hidden>
+     <button class="hp-back" data-list type="button"><i data-lucide="arrow-left" aria-hidden="true"></i> Tous les projets</button>
+     <p class="hp-caption">Projet · 42 Paris</p>
+     <h2 data-title>Minishell</h2>
+     <p data-summary>Construire un interpréteur de commandes, du premier prompt aux processus.</p>
+     <div class="hp-cover" aria-hidden="true"><span class="hp-word" data-cover>minishell</span></div>
+     <h3 data-section-title>De la saisie à l’exécution</h3>
+     <p data-body>Une commande paraît simple lorsqu’on la tape. Il faut pourtant analyser les arguments, relier les processus et gérer les erreurs. Le travail commence par un prompt, puis s’étend aux redirections, aux pipes et aux signaux.</p>
+     <p class="hp-note">Exemple de contenu</p>
+    </article>
+   </main>
+  </div>
+ </div>
+</div>
+<script>
+(()=>{
+ const root=document.getElementById('horizon-content-proposal');
+ const main=root.querySelector('.hp-main');
+ const state={navigation:'side'};
+ const projects={
+  shell:{title:'Minishell',summary:'Construire un interpréteur de commandes, du premier prompt aux processus.',section:'De la saisie à l’exécution',body:'Une commande paraît simple lorsqu’on la tape. Il faut pourtant analyser les arguments, relier les processus et gérer les erreurs. Le travail commence par un prompt, puis s’étend aux redirections, aux pipes et aux signaux.'},
+  cube:{title:'cub3D',summary:'Comprendre la perspective en construisant un moteur de raycasting.',section:'Donner de la profondeur à une grille',body:'À partir d’un plan en deux dimensions, chaque rayon permet de calculer ce que le joueur voit. Cette page peut accueillir le principe du moteur, les essais visuels, une démonstration et les choix faits pendant le développement.'}
+ };
+ function show(view){
+  root.querySelectorAll('[data-page]').forEach(el=>el.hidden=el.dataset.page!==view);
+  main.classList.remove('hp-enter');void main.offsetWidth;main.classList.add('hp-enter');
+ }
+ root.querySelectorAll('[data-project]').forEach(button=>button.addEventListener('click',()=>{
+  const p=projects[button.dataset.project];
+  root.querySelector('[data-title]').textContent=p.title;root.querySelector('[data-cover]').textContent=p.title;
+  root.querySelector('[data-summary]').textContent=p.summary;root.querySelector('[data-section-title]').textContent=p.section;root.querySelector('[data-body]').textContent=p.body;
+  show('detail');root.querySelector('.hp-back').focus();
+ }));
+ root.querySelectorAll('[data-list]').forEach(button=>button.addEventListener('click',()=>{show('list');root.querySelector('[data-project]').focus();}));
+ function render(){root.dataset.nav=state.navigation;}
+ render();
+ if(globalThis.Tweak){const tweaks=new Tweak({container:root,onChange:render});tweaks.addSelect(state,'navigation',{label:'Navigation sur ordinateur',options:[{label:'Latérale compacte',value:'side'},{label:'Horizontale',value:'top'}]});}
+})();
+</script>

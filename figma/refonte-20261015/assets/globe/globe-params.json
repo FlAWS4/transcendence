@@ -1,0 +1,10383 @@
+{
+ "generated": "2026-10-18",
+ "script": "figma/refonte-20261015/scripts/globe_svg.py",
+ "projection": {
+  "type": "MapLibre GL 5.24 « globe » = perspective verticale (vertical-perspective) jusqu’au zoom 11",
+  "sphereRadiusPx": "512 * 2^zoom / (2π cos(latitude du centre))",
+  "cameraDistancePx": "0.5 / tan(fov / 2) * hauteur = 1.5 * hauteur (fov 0.6435011 rad = 36.87°)",
+  "discRadiusPx": "R / sqrt(1 + 2R / f)",
+  "screen": "x = cx + s·cosφ·sin(λ−λ0), y = cy − s·(cosφ0·sinφ − sinφ0·cosφ·cos(λ−λ0)), s = f·R / (R + f − R·cos c), visible si cos c > R / (R + f)",
+  "sources": [
+   "vendor/maplibre-gl.js 5.24.0 (_fovInRadians, cameraToCenterDistance, gi())",
+   "integrated-globe.mjs readLayout() worldZoom, countryZoom(), center [6,18]",
+   "design-review-selection.css --globe-fit-radius, globe-framing.css --horizon-globe-radius"
+  ]
+ },
+ "geography": {
+  "source": "site/geography/world-countries.topo.json (Natural Earth 1:10m 5.1.1, voir PROVENANCE.md)",
+  "land": "union des 258 pays (arcs utilisés une seule fois)",
+  "borders": "maillage TopoJSON complet comme le site (frontières partagées + côtes), coutures antarctiques retirées (polar-geometry.mjs)"
+ },
+ "colors": {
+  "sphere": {
+   "light": "#D9EEEE",
+   "dark": "#25232B",
+   "cssVar": null,
+   "source": "globe-style.mjs palettes.*.waterWorld (couche h42-world-water, fond du globe)"
+  },
+  "land": {
+   "light": "#19B8B5",
+   "dark": "#256967",
+   "cssVar": null,
+   "source": "globe-style.mjs palettes.*.landWorld (couche h42-world-land, uniforme jusqu’au zoom 5)"
+  },
+  "borders": {
+   "light": "#C4F3EF",
+   "dark": "#A5DBD2",
+   "cssVar": null,
+   "source": "globe-style.mjs palettes.*.border (couche h42-world-border)",
+   "width": "zoom(0, .4, 5, .75, 10, 1.1) px",
+   "opacity": "zoom(0, .72, 7, .75, 11, .25, 14, 0)"
+  },
+  "outline": {
+   "light": null,
+   "dark": null,
+   "cssVar": null,
+   "source": "aucun contour dessiné : le bord du disque est l’antialiasing de la sphère, sans ciel ni atmosphère (style sans « sky »)"
+  },
+  "edgeBlur": {
+   "desktop": "12px",
+   "mobile": "8px",
+   "cssVar": null,
+   "source": "globe-framing.css .hg-map::after backdrop-filter blur(12px) / 8px sous 701 px",
+   "mask": "radial-gradient(ellipse closest-side at 50% var(--hg-focus-y,50%), transparent 52%, #0003 72%, #0009 88%, #000 100%)"
+  },
+  "edgeFade": {
+   "light": "#F7FAFA",
+   "dark": "#1B1B1B",
+   "cssVar": "--h42-color-bg",
+   "source": "integrated-globe.css .hg-map.hg-faded mask-image (vue Pays) : le fond de page apparaît ; dégradés fade-x / fade-y de ce SVG"
+  },
+  "pageBackground": {
+   "light": "linear-gradient(145deg, #FFFFFF 8%, #F7FAFA 70%) + radial-gradient(at 77% 42%, rgba(0,186,188,.07), transparent 44%) + radial-gradient(at 8% 97%, rgba(236,51,145,.043), transparent 36%)",
+   "dark": null,
+   "note": "fond de la page sous le globe (#app > div:1), hors SVG"
+  },
+  "markerDot": {
+   "light": "#ED3491",
+   "dark": "#ED3491",
+   "cssVar": "--h42-pink"
+  },
+  "markerHalo": {
+   "light": "#ED3491",
+   "dark": "#ED3491",
+   "opacity": 0.12,
+   "cssVar": "--h42-pink",
+   "source": "box-shadow 0 0 0 5px color-mix(--h42-pink 12%)"
+  },
+  "markerPill": {
+   "light": "#FFFFFF",
+   "dark": "#202026",
+   "cssVar": "--h42-color-surface"
+  },
+  "markerPillBorder": {
+   "light": "#FFFFFF",
+   "dark": "#412030",
+   "cssVar": "--warm-line (sombre) ; #FFFFFF codé en dur en clair (welcome.css:107)"
+  },
+  "markerLabel": {
+   "light": "#1B1B1B",
+   "dark": "#FFFFFF",
+   "cssVar": "--h42-color-text",
+   "font": "Jost 500, 14px/20px ordinateur, 12px/20px sous 701 px"
+  },
+  "markerShadow": {
+   "light": "0 5px 18px rgba(24,61,60,.09), 0 0 0 1px rgba(24,61,60,.03)",
+   "dark": "0 8px 26px rgba(237,52,145,.10)",
+   "cssVar": null,
+   "source": "welcome.css:107 (clair), integrated-globe.css .hg-marker (sombre) ; non inclus dans le SVG"
+  }
+ },
+ "views": {
+  "monde--desktop": {
+   "file": "globe-monde--desktop.svg",
+   "chars": 285840,
+   "bytes": 285842,
+   "viewport": [
+    1440,
+    960
+   ],
+   "captureScale": 1,
+   "reference": "reference/explorer/explore--desktop--fr-light.png",
+   "center": [
+    6.0,
+    18.0
+   ],
+   "zoom": 1.905859,
+   "hgRadius": 0.270429,
+   "countryBounds": null,
+   "sphereRadiusPx": 321.074,
+   "cameraDistancePx": 1440.0,
+   "discCenterPx": [
+    720.0,
+    480.0
+   ],
+   "discRadiusPx": 267.012,
+   "horizonDeg": 79.4953,
+   "borderWidthPx": 0.5334,
+   "borderOpacity": 0.7282,
+   "landColorAtZoom": {
+    "light": "#19B8B5",
+    "dark": "#256967"
+   },
+   "edgeFadePx": null,
+   "edgeBlurPx": 12,
+   "simplification": {
+    "rejoinAnomalies": 0,
+    "closedRings": 1123,
+    "degenerateRings": 603,
+    "collapsedRings": 107,
+    "isletRings": 862,
+    "landPathChars": 77115,
+    "isletPathChars": 17829,
+    "borderClasses": 9,
+    "borderPathChars": 183432,
+    "tileZoom": 1,
+    "geojsonTolerancePx": 0.2,
+    "ringsKept": 2500,
+    "ringsDropped": 1567,
+    "islandCoastsDropped": 388,
+    "landOutlinePx": 0.3,
+    "isletOutlinePx": 0.5,
+    "isletMaxSidePx": 1.0,
+    "mapPixelRatio": 1.0,
+    "borderInkStep": 0.05,
+    "borderStrokePx": 0.5,
+    "figmaStrokeGain": 0.0
+   },
+   "markerProjectionMaxErrorPx": 0.276,
+   "orthographicMarkerErrorPx": {
+    "max": 24.45,
+    "mean": 21.66
+   },
+   "markers": {
+    "fr-light": [
+     {
+      "id": "ALB",
+      "name": "Albania",
+      "anchor": [
+       776.5,
+       353.5
+      ],
+      "compact": false,
+      "label": "Albanie",
+      "labelBox": [
+       791.5,
+       343.5,
+       47.33
+      ],
+      "pillBox": [
+       763.5,
+       331.5,
+       92.33,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       777.5,
+       353.5
+      ],
+      "box": [
+       763.5,
+       331.5,
+       92.33,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.212
+     },
+     {
+      "id": "AGO",
+      "name": "Angola",
+      "anchor": [
+       758.5,
+       621
+      ],
+      "compact": false,
+      "label": "Angola",
+      "labelBox": [
+       773.5,
+       611,
+       43.89
+      ],
+      "pillBox": [
+       745.5,
+       599,
+       88.89,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       759.5,
+       621
+      ],
+      "box": [
+       745.5,
+       599,
+       88.89,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.17
+     },
+     {
+      "id": "ARM",
+      "name": "Armenia",
+      "anchor": [
+       865,
+       349
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       865,
+       349
+      ],
+      "box": [
+       858,
+       342,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.103
+     },
+     {
+      "id": "AUT",
+      "name": "Austria",
+      "anchor": [
+       753,
+       322.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       753,
+       322.5
+      ],
+      "box": [
+       746,
+       315.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.196
+     },
+     {
+      "id": "BEL",
+      "name": "Belgium",
+      "anchor": [
+       714.5,
+       311
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       714.5,
+       311
+      ],
+      "box": [
+       707.5,
+       304,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.069
+     },
+     {
+      "id": "BRA",
+      "name": "Brazil",
+      "anchor": [
+       515.5,
+       634
+      ],
+      "compact": false,
+      "label": "Brésil",
+      "labelBox": [
+       530.5,
+       624,
+       34.06
+      ],
+      "pillBox": [
+       502.5,
+       612,
+       79.06,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       516.5,
+       634
+      ],
+      "box": [
+       502.5,
+       612,
+       79.06,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.243
+     },
+     {
+      "id": "CAN",
+      "name": "Canada",
+      "anchor": [
+       532,
+       298
+      ],
+      "compact": false,
+      "label": "Canada",
+      "labelBox": [
+       547,
+       288,
+       46.72
+      ],
+      "pillBox": [
+       519,
+       276,
+       91.72,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       533,
+       298
+      ],
+      "box": [
+       519,
+       276,
+       91.72,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.125
+     },
+     {
+      "id": "CZE",
+      "name": "Czech Republic",
+      "anchor": [
+       749.5,
+       314.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       749.5,
+       314.5
+      ],
+      "box": [
+       742.5,
+       307.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.053
+     },
+     {
+      "id": "FRA",
+      "name": "France",
+      "anchor": [
+       711.5,
+       333.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       711.5,
+       333.5
+      ],
+      "box": [
+       704.5,
+       326.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.238
+     },
+     {
+      "id": "DEU",
+      "name": "Germany",
+      "anchor": [
+       737,
+       309.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       737,
+       309.5
+      ],
+      "box": [
+       730,
+       302.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.183
+     },
+     {
+      "id": "ITA",
+      "name": "Italy",
+      "anchor": [
+       740,
+       343.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       740,
+       343.5
+      ],
+      "box": [
+       733,
+       336.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.149
+     },
+     {
+      "id": "JOR",
+      "name": "Jordan",
+      "anchor": [
+       851.5,
+       392.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       851.5,
+       392.5
+      ],
+      "box": [
+       844.5,
+       385.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.246
+     },
+     {
+      "id": "LBN",
+      "name": "Lebanon",
+      "anchor": [
+       847.5,
+       384.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       847.5,
+       384.5
+      ],
+      "box": [
+       840.5,
+       377.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.249
+     },
+     {
+      "id": "LUX",
+      "name": "Luxembourg",
+      "anchor": [
+       720,
+       317.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       720,
+       317.5
+      ],
+      "box": [
+       713,
+       310.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.199
+     },
+     {
+      "id": "MDG",
+      "name": "Madagascar",
+      "anchor": [
+       904,
+       634.5
+      ],
+      "compact": false,
+      "label": "Madagascar",
+      "labelBox": [
+       919,
+       624.5,
+       74.39
+      ],
+      "pillBox": [
+       891,
+       612.5,
+       119.39,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       905,
+       634.5
+      ],
+      "box": [
+       891,
+       612.5,
+       119.39,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.146
+     },
+     {
+      "id": "MAR",
+      "name": "Morocco",
+      "anchor": [
+       661.5,
+       392.5
+      ],
+      "compact": false,
+      "label": "Maroc",
+      "labelBox": [
+       676.5,
+       382.5,
+       38.52
+      ],
+      "pillBox": [
+       648.5,
+       370.5,
+       83.52,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       662.5,
+       392.5
+      ],
+      "box": [
+       648.5,
+       370.5,
+       83.52,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.273
+     },
+     {
+      "id": "PSE",
+      "name": "Palestine",
+      "anchor": [
+       849,
+       393
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       849,
+       393
+      ],
+      "box": [
+       842,
+       386,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.079
+     },
+     {
+      "id": "POL",
+      "name": "Poland",
+      "anchor": [
+       768.5,
+       305
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       768.5,
+       305
+      ],
+      "box": [
+       761.5,
+       298,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.276
+     },
+     {
+      "id": "PRT",
+      "name": "Portugal",
+      "anchor": [
+       658,
+       360
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       658,
+       360
+      ],
+      "box": [
+       651,
+       353,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.202
+     },
+     {
+      "id": "ESP",
+      "name": "Spain",
+      "anchor": [
+       685.5,
+       358.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       685.5,
+       358.5
+      ],
+      "box": [
+       678.5,
+       351.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.11
+     },
+     {
+      "id": "CHE",
+      "name": "Switzerland",
+      "anchor": [
+       726,
+       328.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       726,
+       328.5
+      ],
+      "box": [
+       719,
+       321.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.236
+     },
+     {
+      "id": "NLD",
+      "name": "The Netherlands",
+      "anchor": [
+       716.5,
+       305.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       716.5,
+       305.5
+      ],
+      "box": [
+       709.5,
+       298.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.071
+     },
+     {
+      "id": "TUR",
+      "name": "Turkey",
+      "anchor": [
+       813,
+       352.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       813,
+       352.5
+      ],
+      "box": [
+       806,
+       345.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.182
+     },
+     {
+      "id": "ARE",
+      "name": "United Arab Emirates",
+      "anchor": [
+       925,
+       417.5
+      ],
+      "compact": false,
+      "label": "Émirats arabes unis",
+      "labelBox": [
+       940,
+       407.5,
+       119.23
+      ],
+      "pillBox": [
+       912,
+       395.5,
+       164.23,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       926,
+       417.5
+      ],
+      "box": [
+       912,
+       395.5,
+       164.23,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.248
+     },
+     {
+      "id": "GBR",
+      "name": "United Kingdom",
+      "anchor": [
+       699.5,
+       309
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       699.5,
+       309
+      ],
+      "box": [
+       692.5,
+       302,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.223
+     }
+    ],
+    "fr-dark": [
+     {
+      "id": "ALB",
+      "name": "Albania",
+      "anchor": [
+       776.5,
+       353.5
+      ],
+      "compact": false,
+      "label": "Albanie",
+      "labelBox": [
+       791.5,
+       343.5,
+       47.33
+      ],
+      "pillBox": [
+       763.5,
+       331.5,
+       92.33,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       777.5,
+       353.5
+      ],
+      "box": [
+       763.5,
+       331.5,
+       92.33,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.212
+     },
+     {
+      "id": "AGO",
+      "name": "Angola",
+      "anchor": [
+       758.5,
+       621
+      ],
+      "compact": false,
+      "label": "Angola",
+      "labelBox": [
+       773.5,
+       611,
+       43.89
+      ],
+      "pillBox": [
+       745.5,
+       599,
+       88.89,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       759.5,
+       621
+      ],
+      "box": [
+       745.5,
+       599,
+       88.89,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.17
+     },
+     {
+      "id": "ARM",
+      "name": "Armenia",
+      "anchor": [
+       865,
+       349
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       865,
+       349
+      ],
+      "box": [
+       858,
+       342,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.103
+     },
+     {
+      "id": "AUT",
+      "name": "Austria",
+      "anchor": [
+       753,
+       322.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       753,
+       322.5
+      ],
+      "box": [
+       746,
+       315.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.196
+     },
+     {
+      "id": "BEL",
+      "name": "Belgium",
+      "anchor": [
+       714.5,
+       311
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       714.5,
+       311
+      ],
+      "box": [
+       707.5,
+       304,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.069
+     },
+     {
+      "id": "BRA",
+      "name": "Brazil",
+      "anchor": [
+       515.5,
+       634
+      ],
+      "compact": false,
+      "label": "Brésil",
+      "labelBox": [
+       530.5,
+       624,
+       34.06
+      ],
+      "pillBox": [
+       502.5,
+       612,
+       79.06,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       516.5,
+       634
+      ],
+      "box": [
+       502.5,
+       612,
+       79.06,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.243
+     },
+     {
+      "id": "CAN",
+      "name": "Canada",
+      "anchor": [
+       532,
+       298
+      ],
+      "compact": false,
+      "label": "Canada",
+      "labelBox": [
+       547,
+       288,
+       46.72
+      ],
+      "pillBox": [
+       519,
+       276,
+       91.72,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       533,
+       298
+      ],
+      "box": [
+       519,
+       276,
+       91.72,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.125
+     },
+     {
+      "id": "CZE",
+      "name": "Czech Republic",
+      "anchor": [
+       749.5,
+       314.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       749.5,
+       314.5
+      ],
+      "box": [
+       742.5,
+       307.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.053
+     },
+     {
+      "id": "FRA",
+      "name": "France",
+      "anchor": [
+       711.5,
+       333.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       711.5,
+       333.5
+      ],
+      "box": [
+       704.5,
+       326.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.238
+     },
+     {
+      "id": "DEU",
+      "name": "Germany",
+      "anchor": [
+       737,
+       309.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       737,
+       309.5
+      ],
+      "box": [
+       730,
+       302.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.183
+     },
+     {
+      "id": "ITA",
+      "name": "Italy",
+      "anchor": [
+       740,
+       343.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       740,
+       343.5
+      ],
+      "box": [
+       733,
+       336.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.149
+     },
+     {
+      "id": "JOR",
+      "name": "Jordan",
+      "anchor": [
+       851.5,
+       392.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       851.5,
+       392.5
+      ],
+      "box": [
+       844.5,
+       385.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.246
+     },
+     {
+      "id": "LBN",
+      "name": "Lebanon",
+      "anchor": [
+       847.5,
+       384.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       847.5,
+       384.5
+      ],
+      "box": [
+       840.5,
+       377.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.249
+     },
+     {
+      "id": "LUX",
+      "name": "Luxembourg",
+      "anchor": [
+       720,
+       317.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       720,
+       317.5
+      ],
+      "box": [
+       713,
+       310.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.199
+     },
+     {
+      "id": "MDG",
+      "name": "Madagascar",
+      "anchor": [
+       904,
+       634.5
+      ],
+      "compact": false,
+      "label": "Madagascar",
+      "labelBox": [
+       919,
+       624.5,
+       74.39
+      ],
+      "pillBox": [
+       891,
+       612.5,
+       119.39,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       905,
+       634.5
+      ],
+      "box": [
+       891,
+       612.5,
+       119.39,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.146
+     },
+     {
+      "id": "MAR",
+      "name": "Morocco",
+      "anchor": [
+       661.5,
+       392.5
+      ],
+      "compact": false,
+      "label": "Maroc",
+      "labelBox": [
+       676.5,
+       382.5,
+       38.52
+      ],
+      "pillBox": [
+       648.5,
+       370.5,
+       83.52,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       662.5,
+       392.5
+      ],
+      "box": [
+       648.5,
+       370.5,
+       83.52,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.273
+     },
+     {
+      "id": "PSE",
+      "name": "Palestine",
+      "anchor": [
+       849,
+       393
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       849,
+       393
+      ],
+      "box": [
+       842,
+       386,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.079
+     },
+     {
+      "id": "POL",
+      "name": "Poland",
+      "anchor": [
+       768.5,
+       305
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       768.5,
+       305
+      ],
+      "box": [
+       761.5,
+       298,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.276
+     },
+     {
+      "id": "PRT",
+      "name": "Portugal",
+      "anchor": [
+       658,
+       360
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       658,
+       360
+      ],
+      "box": [
+       651,
+       353,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.202
+     },
+     {
+      "id": "ESP",
+      "name": "Spain",
+      "anchor": [
+       685.5,
+       358.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       685.5,
+       358.5
+      ],
+      "box": [
+       678.5,
+       351.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.11
+     },
+     {
+      "id": "CHE",
+      "name": "Switzerland",
+      "anchor": [
+       726,
+       328.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       726,
+       328.5
+      ],
+      "box": [
+       719,
+       321.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.236
+     },
+     {
+      "id": "NLD",
+      "name": "The Netherlands",
+      "anchor": [
+       716.5,
+       305.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       716.5,
+       305.5
+      ],
+      "box": [
+       709.5,
+       298.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.071
+     },
+     {
+      "id": "TUR",
+      "name": "Turkey",
+      "anchor": [
+       813,
+       352.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       813,
+       352.5
+      ],
+      "box": [
+       806,
+       345.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.182
+     },
+     {
+      "id": "ARE",
+      "name": "United Arab Emirates",
+      "anchor": [
+       925,
+       417.5
+      ],
+      "compact": false,
+      "label": "Émirats arabes unis",
+      "labelBox": [
+       940,
+       407.5,
+       119.23
+      ],
+      "pillBox": [
+       912,
+       395.5,
+       164.23,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       926,
+       417.5
+      ],
+      "box": [
+       912,
+       395.5,
+       164.23,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.248
+     },
+     {
+      "id": "GBR",
+      "name": "United Kingdom",
+      "anchor": [
+       699.5,
+       309
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       699.5,
+       309
+      ],
+      "box": [
+       692.5,
+       302,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.223
+     }
+    ],
+    "en-light": [
+     {
+      "id": "ALB",
+      "name": "Albania",
+      "anchor": [
+       776.5,
+       353.5
+      ],
+      "compact": false,
+      "label": "Albania",
+      "labelBox": [
+       791.5,
+       343.5,
+       46.84
+      ],
+      "pillBox": [
+       763.5,
+       331.5,
+       91.84,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       777.5,
+       353.5
+      ],
+      "box": [
+       763.5,
+       331.5,
+       91.84,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.212
+     },
+     {
+      "id": "AGO",
+      "name": "Angola",
+      "anchor": [
+       758.5,
+       621
+      ],
+      "compact": false,
+      "label": "Angola",
+      "labelBox": [
+       773.5,
+       611,
+       43.89
+      ],
+      "pillBox": [
+       745.5,
+       599,
+       88.89,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       759.5,
+       621
+      ],
+      "box": [
+       745.5,
+       599,
+       88.89,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.17
+     },
+     {
+      "id": "ARM",
+      "name": "Armenia",
+      "anchor": [
+       865,
+       349
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       865,
+       349
+      ],
+      "box": [
+       858,
+       342,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.103
+     },
+     {
+      "id": "AUT",
+      "name": "Austria",
+      "anchor": [
+       753,
+       322.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       753,
+       322.5
+      ],
+      "box": [
+       746,
+       315.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.196
+     },
+     {
+      "id": "BEL",
+      "name": "Belgium",
+      "anchor": [
+       714.5,
+       311
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       714.5,
+       311
+      ],
+      "box": [
+       707.5,
+       304,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.069
+     },
+     {
+      "id": "BRA",
+      "name": "Brazil",
+      "anchor": [
+       515.5,
+       634
+      ],
+      "compact": false,
+      "label": "Brazil",
+      "labelBox": [
+       530.5,
+       624,
+       34.64
+      ],
+      "pillBox": [
+       502.5,
+       612,
+       79.64,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       516.5,
+       634
+      ],
+      "box": [
+       502.5,
+       612,
+       79.64,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.243
+     },
+     {
+      "id": "CAN",
+      "name": "Canada",
+      "anchor": [
+       532,
+       298
+      ],
+      "compact": false,
+      "label": "Canada",
+      "labelBox": [
+       547,
+       288,
+       46.72
+      ],
+      "pillBox": [
+       519,
+       276,
+       91.72,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       533,
+       298
+      ],
+      "box": [
+       519,
+       276,
+       91.72,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.125
+     },
+     {
+      "id": "CZE",
+      "name": "Czech Republic",
+      "anchor": [
+       749.5,
+       314.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       749.5,
+       314.5
+      ],
+      "box": [
+       742.5,
+       307.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.053
+     },
+     {
+      "id": "FRA",
+      "name": "France",
+      "anchor": [
+       711.5,
+       333.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       711.5,
+       333.5
+      ],
+      "box": [
+       704.5,
+       326.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.238
+     },
+     {
+      "id": "DEU",
+      "name": "Germany",
+      "anchor": [
+       737,
+       309.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       737,
+       309.5
+      ],
+      "box": [
+       730,
+       302.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.183
+     },
+     {
+      "id": "ITA",
+      "name": "Italy",
+      "anchor": [
+       740,
+       343.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       740,
+       343.5
+      ],
+      "box": [
+       733,
+       336.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.149
+     },
+     {
+      "id": "JOR",
+      "name": "Jordan",
+      "anchor": [
+       851.5,
+       392.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       851.5,
+       392.5
+      ],
+      "box": [
+       844.5,
+       385.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.246
+     },
+     {
+      "id": "LBN",
+      "name": "Lebanon",
+      "anchor": [
+       847.5,
+       384.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       847.5,
+       384.5
+      ],
+      "box": [
+       840.5,
+       377.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.249
+     },
+     {
+      "id": "LUX",
+      "name": "Luxembourg",
+      "anchor": [
+       720,
+       317.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       720,
+       317.5
+      ],
+      "box": [
+       713,
+       310.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.199
+     },
+     {
+      "id": "MDG",
+      "name": "Madagascar",
+      "anchor": [
+       904,
+       634.5
+      ],
+      "compact": false,
+      "label": "Madagascar",
+      "labelBox": [
+       919,
+       624.5,
+       74.39
+      ],
+      "pillBox": [
+       891,
+       612.5,
+       119.39,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       905,
+       634.5
+      ],
+      "box": [
+       891,
+       612.5,
+       119.39,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.146
+     },
+     {
+      "id": "MAR",
+      "name": "Morocco",
+      "anchor": [
+       661.5,
+       392.5
+      ],
+      "compact": false,
+      "label": "Morocco",
+      "labelBox": [
+       676.5,
+       382.5,
+       54.03
+      ],
+      "pillBox": [
+       648.5,
+       370.5,
+       99.03,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       662.5,
+       392.5
+      ],
+      "box": [
+       648.5,
+       370.5,
+       99.03,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.273
+     },
+     {
+      "id": "PSE",
+      "name": "Palestine",
+      "anchor": [
+       849,
+       393
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       849,
+       393
+      ],
+      "box": [
+       842,
+       386,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.079
+     },
+     {
+      "id": "POL",
+      "name": "Poland",
+      "anchor": [
+       768.5,
+       305
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       768.5,
+       305
+      ],
+      "box": [
+       761.5,
+       298,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.276
+     },
+     {
+      "id": "PRT",
+      "name": "Portugal",
+      "anchor": [
+       658,
+       360
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       658,
+       360
+      ],
+      "box": [
+       651,
+       353,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.202
+     },
+     {
+      "id": "ESP",
+      "name": "Spain",
+      "anchor": [
+       685.5,
+       358.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       685.5,
+       358.5
+      ],
+      "box": [
+       678.5,
+       351.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.11
+     },
+     {
+      "id": "CHE",
+      "name": "Switzerland",
+      "anchor": [
+       726,
+       328.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       726,
+       328.5
+      ],
+      "box": [
+       719,
+       321.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.236
+     },
+     {
+      "id": "NLD",
+      "name": "The Netherlands",
+      "anchor": [
+       716.5,
+       305.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       716.5,
+       305.5
+      ],
+      "box": [
+       709.5,
+       298.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.071
+     },
+     {
+      "id": "TUR",
+      "name": "Turkey",
+      "anchor": [
+       813,
+       352.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       813,
+       352.5
+      ],
+      "box": [
+       806,
+       345.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.182
+     },
+     {
+      "id": "ARE",
+      "name": "United Arab Emirates",
+      "anchor": [
+       925,
+       417.5
+      ],
+      "compact": false,
+      "label": "United Arab Emirates",
+      "labelBox": [
+       940,
+       407.5,
+       131.11
+      ],
+      "pillBox": [
+       912,
+       395.5,
+       176.11,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       926,
+       417.5
+      ],
+      "box": [
+       912,
+       395.5,
+       176.11,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.248
+     },
+     {
+      "id": "GBR",
+      "name": "United Kingdom",
+      "anchor": [
+       699.5,
+       309
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       699.5,
+       309
+      ],
+      "box": [
+       692.5,
+       302,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.223
+     }
+    ],
+    "ar-light": [
+     {
+      "id": "ALB",
+      "name": "Albania",
+      "anchor": [
+       776.5,
+       353.5
+      ],
+      "compact": false,
+      "label": "ألبانيا",
+      "labelBox": [
+       791.5,
+       343.5,
+       28.88
+      ],
+      "pillBox": [
+       763.5,
+       331.5,
+       73.88,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       777.5,
+       353.5
+      ],
+      "box": [
+       763.5,
+       331.5,
+       73.88,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.212
+     },
+     {
+      "id": "AGO",
+      "name": "Angola",
+      "anchor": [
+       758.5,
+       621
+      ],
+      "compact": false,
+      "label": "أنغولا",
+      "labelBox": [
+       773.5,
+       611,
+       29.11
+      ],
+      "pillBox": [
+       745.5,
+       599,
+       74.11,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       759.5,
+       621
+      ],
+      "box": [
+       745.5,
+       599,
+       74.11,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.17
+     },
+     {
+      "id": "ARM",
+      "name": "Armenia",
+      "anchor": [
+       865,
+       349
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       865,
+       349
+      ],
+      "box": [
+       858,
+       342,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.103
+     },
+     {
+      "id": "AUT",
+      "name": "Austria",
+      "anchor": [
+       753,
+       322.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       753,
+       322.5
+      ],
+      "box": [
+       746,
+       315.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.196
+     },
+     {
+      "id": "BEL",
+      "name": "Belgium",
+      "anchor": [
+       714.5,
+       311
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       714.5,
+       311
+      ],
+      "box": [
+       707.5,
+       304,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.069
+     },
+     {
+      "id": "BRA",
+      "name": "Brazil",
+      "anchor": [
+       515.5,
+       634
+      ],
+      "compact": false,
+      "label": "البرازيل",
+      "labelBox": [
+       530.5,
+       624,
+       39.86
+      ],
+      "pillBox": [
+       502.5,
+       612,
+       84.86,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       516.5,
+       634
+      ],
+      "box": [
+       502.5,
+       612,
+       84.86,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.243
+     },
+     {
+      "id": "CAN",
+      "name": "Canada",
+      "anchor": [
+       532,
+       298
+      ],
+      "compact": false,
+      "label": "كندا",
+      "labelBox": [
+       547,
+       288,
+       21.36
+      ],
+      "pillBox": [
+       519,
+       276,
+       66.36,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       533,
+       298
+      ],
+      "box": [
+       519,
+       276,
+       66.36,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.125
+     },
+     {
+      "id": "CZE",
+      "name": "Czech Republic",
+      "anchor": [
+       749.5,
+       314.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       749.5,
+       314.5
+      ],
+      "box": [
+       742.5,
+       307.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.053
+     },
+     {
+      "id": "FRA",
+      "name": "France",
+      "anchor": [
+       711.5,
+       333.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       711.5,
+       333.5
+      ],
+      "box": [
+       704.5,
+       326.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.238
+     },
+     {
+      "id": "DEU",
+      "name": "Germany",
+      "anchor": [
+       737,
+       309.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       737,
+       309.5
+      ],
+      "box": [
+       730,
+       302.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.183
+     },
+     {
+      "id": "ITA",
+      "name": "Italy",
+      "anchor": [
+       740,
+       343.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       740,
+       343.5
+      ],
+      "box": [
+       733,
+       336.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.149
+     },
+     {
+      "id": "JOR",
+      "name": "Jordan",
+      "anchor": [
+       851.5,
+       392.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       851.5,
+       392.5
+      ],
+      "box": [
+       844.5,
+       385.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.246
+     },
+     {
+      "id": "LBN",
+      "name": "Lebanon",
+      "anchor": [
+       847.5,
+       384.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       847.5,
+       384.5
+      ],
+      "box": [
+       840.5,
+       377.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.249
+     },
+     {
+      "id": "LUX",
+      "name": "Luxembourg",
+      "anchor": [
+       720,
+       317.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       720,
+       317.5
+      ],
+      "box": [
+       713,
+       310.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.199
+     },
+     {
+      "id": "MDG",
+      "name": "Madagascar",
+      "anchor": [
+       904,
+       634.5
+      ],
+      "compact": false,
+      "label": "مدغشقر",
+      "labelBox": [
+       919,
+       624.5,
+       46.22
+      ],
+      "pillBox": [
+       891,
+       612.5,
+       91.22,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       905,
+       634.5
+      ],
+      "box": [
+       891,
+       612.5,
+       91.22,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.146
+     },
+     {
+      "id": "MAR",
+      "name": "Morocco",
+      "anchor": [
+       661.5,
+       392.5
+      ],
+      "compact": false,
+      "label": "المغرب",
+      "labelBox": [
+       676.5,
+       382.5,
+       41.81
+      ],
+      "pillBox": [
+       648.5,
+       370.5,
+       86.81,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       662.5,
+       392.5
+      ],
+      "box": [
+       648.5,
+       370.5,
+       86.81,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.273
+     },
+     {
+      "id": "PSE",
+      "name": "Palestine",
+      "anchor": [
+       849,
+       393
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       849,
+       393
+      ],
+      "box": [
+       842,
+       386,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.079
+     },
+     {
+      "id": "POL",
+      "name": "Poland",
+      "anchor": [
+       768.5,
+       305
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       768.5,
+       305
+      ],
+      "box": [
+       761.5,
+       298,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.276
+     },
+     {
+      "id": "PRT",
+      "name": "Portugal",
+      "anchor": [
+       658,
+       360
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       658,
+       360
+      ],
+      "box": [
+       651,
+       353,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.202
+     },
+     {
+      "id": "ESP",
+      "name": "Spain",
+      "anchor": [
+       685.5,
+       358.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       685.5,
+       358.5
+      ],
+      "box": [
+       678.5,
+       351.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.11
+     },
+     {
+      "id": "CHE",
+      "name": "Switzerland",
+      "anchor": [
+       726,
+       328.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       726,
+       328.5
+      ],
+      "box": [
+       719,
+       321.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.236
+     },
+     {
+      "id": "NLD",
+      "name": "The Netherlands",
+      "anchor": [
+       716.5,
+       305.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       716.5,
+       305.5
+      ],
+      "box": [
+       709.5,
+       298.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.071
+     },
+     {
+      "id": "TUR",
+      "name": "Turkey",
+      "anchor": [
+       813,
+       352.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       813,
+       352.5
+      ],
+      "box": [
+       806,
+       345.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.182
+     },
+     {
+      "id": "ARE",
+      "name": "United Arab Emirates",
+      "anchor": [
+       925,
+       417.5
+      ],
+      "compact": false,
+      "label": "الإمارات العربية المتحدة",
+      "labelBox": [
+       940,
+       407.5,
+       131.25
+      ],
+      "pillBox": [
+       912,
+       395.5,
+       176.25,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       926,
+       417.5
+      ],
+      "box": [
+       912,
+       395.5,
+       176.25,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.248
+     },
+     {
+      "id": "GBR",
+      "name": "United Kingdom",
+      "anchor": [
+       699.5,
+       309
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       699.5,
+       309
+      ],
+      "box": [
+       692.5,
+       302,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.223
+     }
+    ],
+    "ar-dark": [
+     {
+      "id": "ALB",
+      "name": "Albania",
+      "anchor": [
+       776.5,
+       353.5
+      ],
+      "compact": false,
+      "label": "ألبانيا",
+      "labelBox": [
+       791.5,
+       343.5,
+       28.88
+      ],
+      "pillBox": [
+       763.5,
+       331.5,
+       73.88,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       777.5,
+       353.5
+      ],
+      "box": [
+       763.5,
+       331.5,
+       73.88,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.212
+     },
+     {
+      "id": "AGO",
+      "name": "Angola",
+      "anchor": [
+       758.5,
+       621
+      ],
+      "compact": false,
+      "label": "أنغولا",
+      "labelBox": [
+       773.5,
+       611,
+       29.11
+      ],
+      "pillBox": [
+       745.5,
+       599,
+       74.11,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       759.5,
+       621
+      ],
+      "box": [
+       745.5,
+       599,
+       74.11,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.17
+     },
+     {
+      "id": "ARM",
+      "name": "Armenia",
+      "anchor": [
+       865,
+       349
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       865,
+       349
+      ],
+      "box": [
+       858,
+       342,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.103
+     },
+     {
+      "id": "AUT",
+      "name": "Austria",
+      "anchor": [
+       753,
+       322.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       753,
+       322.5
+      ],
+      "box": [
+       746,
+       315.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.196
+     },
+     {
+      "id": "BEL",
+      "name": "Belgium",
+      "anchor": [
+       714.5,
+       311
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       714.5,
+       311
+      ],
+      "box": [
+       707.5,
+       304,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.069
+     },
+     {
+      "id": "BRA",
+      "name": "Brazil",
+      "anchor": [
+       515.5,
+       634
+      ],
+      "compact": false,
+      "label": "البرازيل",
+      "labelBox": [
+       530.5,
+       624,
+       39.86
+      ],
+      "pillBox": [
+       502.5,
+       612,
+       84.86,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       516.5,
+       634
+      ],
+      "box": [
+       502.5,
+       612,
+       84.86,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.243
+     },
+     {
+      "id": "CAN",
+      "name": "Canada",
+      "anchor": [
+       532,
+       298
+      ],
+      "compact": false,
+      "label": "كندا",
+      "labelBox": [
+       547,
+       288,
+       21.36
+      ],
+      "pillBox": [
+       519,
+       276,
+       66.36,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       533,
+       298
+      ],
+      "box": [
+       519,
+       276,
+       66.36,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.125
+     },
+     {
+      "id": "CZE",
+      "name": "Czech Republic",
+      "anchor": [
+       749.5,
+       314.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       749.5,
+       314.5
+      ],
+      "box": [
+       742.5,
+       307.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.053
+     },
+     {
+      "id": "FRA",
+      "name": "France",
+      "anchor": [
+       711.5,
+       333.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       711.5,
+       333.5
+      ],
+      "box": [
+       704.5,
+       326.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.238
+     },
+     {
+      "id": "DEU",
+      "name": "Germany",
+      "anchor": [
+       737,
+       309.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       737,
+       309.5
+      ],
+      "box": [
+       730,
+       302.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.183
+     },
+     {
+      "id": "ITA",
+      "name": "Italy",
+      "anchor": [
+       740,
+       343.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       740,
+       343.5
+      ],
+      "box": [
+       733,
+       336.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.149
+     },
+     {
+      "id": "JOR",
+      "name": "Jordan",
+      "anchor": [
+       851.5,
+       392.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       851.5,
+       392.5
+      ],
+      "box": [
+       844.5,
+       385.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.246
+     },
+     {
+      "id": "LBN",
+      "name": "Lebanon",
+      "anchor": [
+       847.5,
+       384.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       847.5,
+       384.5
+      ],
+      "box": [
+       840.5,
+       377.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.249
+     },
+     {
+      "id": "LUX",
+      "name": "Luxembourg",
+      "anchor": [
+       720,
+       317.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       720,
+       317.5
+      ],
+      "box": [
+       713,
+       310.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.199
+     },
+     {
+      "id": "MDG",
+      "name": "Madagascar",
+      "anchor": [
+       904,
+       634.5
+      ],
+      "compact": false,
+      "label": "مدغشقر",
+      "labelBox": [
+       919,
+       624.5,
+       46.22
+      ],
+      "pillBox": [
+       891,
+       612.5,
+       91.22,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       905,
+       634.5
+      ],
+      "box": [
+       891,
+       612.5,
+       91.22,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.146
+     },
+     {
+      "id": "MAR",
+      "name": "Morocco",
+      "anchor": [
+       661.5,
+       392.5
+      ],
+      "compact": false,
+      "label": "المغرب",
+      "labelBox": [
+       676.5,
+       382.5,
+       41.81
+      ],
+      "pillBox": [
+       648.5,
+       370.5,
+       86.81,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       662.5,
+       392.5
+      ],
+      "box": [
+       648.5,
+       370.5,
+       86.81,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.273
+     },
+     {
+      "id": "PSE",
+      "name": "Palestine",
+      "anchor": [
+       849,
+       393
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       849,
+       393
+      ],
+      "box": [
+       842,
+       386,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.079
+     },
+     {
+      "id": "POL",
+      "name": "Poland",
+      "anchor": [
+       768.5,
+       305
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       768.5,
+       305
+      ],
+      "box": [
+       761.5,
+       298,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.276
+     },
+     {
+      "id": "PRT",
+      "name": "Portugal",
+      "anchor": [
+       658,
+       360
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       658,
+       360
+      ],
+      "box": [
+       651,
+       353,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.202
+     },
+     {
+      "id": "ESP",
+      "name": "Spain",
+      "anchor": [
+       685.5,
+       358.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       685.5,
+       358.5
+      ],
+      "box": [
+       678.5,
+       351.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.11
+     },
+     {
+      "id": "CHE",
+      "name": "Switzerland",
+      "anchor": [
+       726,
+       328.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       726,
+       328.5
+      ],
+      "box": [
+       719,
+       321.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.236
+     },
+     {
+      "id": "NLD",
+      "name": "The Netherlands",
+      "anchor": [
+       716.5,
+       305.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       716.5,
+       305.5
+      ],
+      "box": [
+       709.5,
+       298.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.071
+     },
+     {
+      "id": "TUR",
+      "name": "Turkey",
+      "anchor": [
+       813,
+       352.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       813,
+       352.5
+      ],
+      "box": [
+       806,
+       345.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.182
+     },
+     {
+      "id": "ARE",
+      "name": "United Arab Emirates",
+      "anchor": [
+       925,
+       417.5
+      ],
+      "compact": false,
+      "label": "الإمارات العربية المتحدة",
+      "labelBox": [
+       940,
+       407.5,
+       131.25
+      ],
+      "pillBox": [
+       912,
+       395.5,
+       176.25,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       926,
+       417.5
+      ],
+      "box": [
+       912,
+       395.5,
+       176.25,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.248
+     },
+     {
+      "id": "GBR",
+      "name": "United Kingdom",
+      "anchor": [
+       699.5,
+       309
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       699.5,
+       309
+      ],
+      "box": [
+       692.5,
+       302,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.223
+     }
+    ]
+   },
+   "comparison": {
+    "light": {
+     "all": {
+      "pixels": 169273,
+      "landAgreement": 0.9897,
+      "bestShiftPx": [
+       0.0,
+       0.0
+      ],
+      "agreementAtBestShift": 0.9897,
+      "coastCaptureToSvgPx": {
+       "mean": 0.918,
+       "p95": 4.0,
+       "within1px": 0.8886,
+       "within2px": 0.9292
+      },
+      "coastSvgToCapturePx": {
+       "mean": 0.634,
+       "p95": 2.0,
+       "within1px": 0.9262,
+       "within2px": 0.9686
+      }
+     },
+     "sharp": {
+      "pixels": 159573,
+      "landAgreement": 0.992,
+      "bestShiftPx": [
+       0.0,
+       0.0
+      ],
+      "agreementAtBestShift": 0.992,
+      "coastCaptureToSvgPx": {
+       "mean": 0.772,
+       "p95": 2.0,
+       "within1px": 0.9236,
+       "within2px": 0.9526
+      },
+      "coastSvgToCapturePx": {
+       "mean": 0.479,
+       "p95": 1.0,
+       "within1px": 0.9671,
+       "within2px": 0.9901
+      }
+     },
+     "disc": {
+      "expected": [
+       720.0,
+       480.0,
+       267.01
+      ],
+      "capture": [
+       720.04,
+       479.87,
+       267.11
+      ],
+      "captureRays": 380,
+      "svg": [
+       720.0,
+       479.92,
+       267.12
+      ],
+      "svgRays": 424
+     }
+    },
+    "dark": {
+     "all": {
+      "pixels": 169273,
+      "landAgreement": 0.9945,
+      "bestShiftPx": [
+       0.0,
+       0.0
+      ],
+      "agreementAtBestShift": 0.9945,
+      "coastCaptureToSvgPx": {
+       "mean": 0.787,
+       "p95": 6.0,
+       "within1px": 0.8929,
+       "within2px": 0.9194
+      },
+      "coastSvgToCapturePx": {
+       "mean": 0.289,
+       "p95": 1.0,
+       "within1px": 0.9839,
+       "within2px": 0.9958
+      }
+     },
+     "sharp": {
+      "pixels": 159573,
+      "landAgreement": 0.9952,
+      "bestShiftPx": [
+       0.0,
+       0.0
+      ],
+      "agreementAtBestShift": 0.9952,
+      "coastCaptureToSvgPx": {
+       "mean": 0.78,
+       "p95": 6.0,
+       "within1px": 0.9,
+       "within2px": 0.9225
+      },
+      "coastSvgToCapturePx": {
+       "mean": 0.273,
+       "p95": 1.0,
+       "within1px": 0.9881,
+       "within2px": 0.9987
+      }
+     },
+     "disc": {
+      "expected": [
+       720.0,
+       480.0,
+       267.01
+      ],
+      "capture": [
+       719.97,
+       479.83,
+       267.07
+      ],
+      "captureRays": 332,
+      "svg": [
+       720.0,
+       479.92,
+       267.12
+      ],
+      "svgRays": 424
+     }
+    }
+   }
+  },
+  "monde--mobile": {
+   "file": "globe-monde--mobile.svg",
+   "chars": 246711,
+   "bytes": 246711,
+   "viewport": [
+    390,
+    844
+   ],
+   "captureScale": 2,
+   "reference": "reference/explorer/explore--mobile--fr-light.png",
+   "center": [
+    6.0,
+    18.0
+   ],
+   "zoom": 1.372683,
+   "hgRadius": 0.46,
+   "countryBounds": null,
+   "sphereRadiusPx": 221.872,
+   "cameraDistancePx": 1266.0,
+   "discCenterPx": [
+    195.0,
+    422.0
+   ],
+   "discRadiusPx": 190.921,
+   "horizonDeg": 81.424,
+   "borderWidthPx": 0.4961,
+   "borderOpacity": 0.7259,
+   "landColorAtZoom": {
+    "light": "#19B8B5",
+    "dark": "#256967"
+   },
+   "edgeFadePx": null,
+   "edgeBlurPx": 8,
+   "simplification": {
+    "rejoinAnomalies": 0,
+    "closedRings": 1144,
+    "degenerateRings": 726,
+    "collapsedRings": 173,
+    "isletRings": 971,
+    "landPathChars": 64603,
+    "isletPathChars": 19289,
+    "borderClasses": 7,
+    "borderPathChars": 156320,
+    "tileZoom": 1,
+    "geojsonTolerancePx": 0.2,
+    "ringsKept": 2500,
+    "ringsDropped": 1567,
+    "islandCoastsDropped": 388,
+    "landOutlinePx": 0.1,
+    "isletOutlinePx": 0.3,
+    "isletMaxSidePx": 1.0,
+    "mapPixelRatio": 1.5,
+    "borderInkStep": 0.05,
+    "borderStrokePx": 0.5,
+    "figmaStrokeGain": 0.0
+   },
+   "markerProjectionMaxErrorPx": 0.31,
+   "orthographicMarkerErrorPx": {
+    "max": 14.41,
+    "mean": 12.54
+   },
+   "markers": {
+    "fr-light": [
+     {
+      "id": "ALB",
+      "name": "Albania",
+      "anchor": [
+       234,
+       334
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       234,
+       334
+      ],
+      "box": [
+       227,
+       327,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.263
+     },
+     {
+      "id": "AGO",
+      "name": "Angola",
+      "anchor": [
+       222,
+       520
+      ],
+      "compact": false,
+      "label": "Angola",
+      "labelBox": [
+       235,
+       510,
+       37.63
+      ],
+      "pillBox": [
+       209,
+       498,
+       80.63,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       223,
+       520
+      ],
+      "box": [
+       209,
+       498,
+       80.63,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.143
+     },
+     {
+      "id": "ARM",
+      "name": "Armenia",
+      "anchor": [
+       296.5,
+       330.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       296.5,
+       330.5
+      ],
+      "box": [
+       289.5,
+       323.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.166
+     },
+     {
+      "id": "AUT",
+      "name": "Austria",
+      "anchor": [
+       218,
+       312.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       218,
+       312.5
+      ],
+      "box": [
+       211,
+       305.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.057
+     },
+     {
+      "id": "BEL",
+      "name": "Belgium",
+      "anchor": [
+       191,
+       304.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       191,
+       304.5
+      ],
+      "box": [
+       184,
+       297.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.22
+     },
+     {
+      "id": "BRA",
+      "name": "Brazil",
+      "anchor": [
+       50.5,
+       531
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       50.5,
+       531
+      ],
+      "box": [
+       43.5,
+       524,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.24
+     },
+     {
+      "id": "CAN",
+      "name": "Canada",
+      "anchor": [
+       61.5,
+       293
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       61.5,
+       293
+      ],
+      "box": [
+       54.5,
+       286,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.247
+     },
+     {
+      "id": "CZE",
+      "name": "Czech Republic",
+      "anchor": [
+       215.5,
+       307
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       215.5,
+       307
+      ],
+      "box": [
+       208.5,
+       300,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.2
+     },
+     {
+      "id": "FRA",
+      "name": "France",
+      "anchor": [
+       189,
+       320
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       189,
+       320
+      ],
+      "box": [
+       182,
+       313,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.25
+     },
+     {
+      "id": "DEU",
+      "name": "Germany",
+      "anchor": [
+       207,
+       303.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       207,
+       303.5
+      ],
+      "box": [
+       200,
+       296.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.214
+     },
+     {
+      "id": "ITA",
+      "name": "Italy",
+      "anchor": [
+       209,
+       327
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       209,
+       327
+      ],
+      "box": [
+       202,
+       320,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.31
+     },
+     {
+      "id": "JOR",
+      "name": "Jordan",
+      "anchor": [
+       286.5,
+       361
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       286.5,
+       361
+      ],
+      "box": [
+       279.5,
+       354,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.298
+     },
+     {
+      "id": "LBN",
+      "name": "Lebanon",
+      "anchor": [
+       283.5,
+       355.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       283.5,
+       355.5
+      ],
+      "box": [
+       276.5,
+       348.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.025
+     },
+     {
+      "id": "LUX",
+      "name": "Luxembourg",
+      "anchor": [
+       195,
+       309
+      ],
+      "compact": false,
+      "label": "Luxembourg",
+      "labelBox": [
+       208,
+       299,
+       65.19
+      ],
+      "pillBox": [
+       182,
+       287,
+       108.19,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       196,
+       309
+      ],
+      "box": [
+       182,
+       287,
+       108.19,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.133
+     },
+     {
+      "id": "MDG",
+      "name": "Madagascar",
+      "anchor": [
+       324.5,
+       530.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       324.5,
+       530.5
+      ],
+      "box": [
+       317.5,
+       523.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.239
+     },
+     {
+      "id": "MAR",
+      "name": "Morocco",
+      "anchor": [
+       154.5,
+       361
+      ],
+      "compact": false,
+      "label": "Maroc",
+      "labelBox": [
+       167.5,
+       351,
+       33.02
+      ],
+      "pillBox": [
+       141.5,
+       339,
+       76.02,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       155.5,
+       361
+      ],
+      "box": [
+       141.5,
+       339,
+       76.02,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.238
+     },
+     {
+      "id": "PSE",
+      "name": "Palestine",
+      "anchor": [
+       284.5,
+       361.5
+      ],
+      "compact": false,
+      "label": "Palestine",
+      "labelBox": [
+       297.5,
+       351.5,
+       46.61
+      ],
+      "pillBox": [
+       271.5,
+       339.5,
+       89.61,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       285.5,
+       361.5
+      ],
+      "box": [
+       271.5,
+       339.5,
+       89.61,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.143
+     },
+     {
+      "id": "POL",
+      "name": "Poland",
+      "anchor": [
+       229,
+       300
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       229,
+       300
+      ],
+      "box": [
+       222,
+       293,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.124
+     },
+     {
+      "id": "PRT",
+      "name": "Portugal",
+      "anchor": [
+       152,
+       339
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       152,
+       339
+      ],
+      "box": [
+       145,
+       332,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.263
+     },
+     {
+      "id": "ESP",
+      "name": "Spain",
+      "anchor": [
+       171,
+       337.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       171,
+       337.5
+      ],
+      "box": [
+       164,
+       330.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.198
+     },
+     {
+      "id": "CHE",
+      "name": "Switzerland",
+      "anchor": [
+       199,
+       317
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       199,
+       317
+      ],
+      "box": [
+       192,
+       310,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.189
+     },
+     {
+      "id": "NLD",
+      "name": "The Netherlands",
+      "anchor": [
+       192.5,
+       300.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       192.5,
+       300.5
+      ],
+      "box": [
+       185.5,
+       293.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.055
+     },
+     {
+      "id": "TUR",
+      "name": "Turkey",
+      "anchor": [
+       259.5,
+       333.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       259.5,
+       333.5
+      ],
+      "box": [
+       252.5,
+       326.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.12
+     },
+     {
+      "id": "ARE",
+      "name": "United Arab Emirates",
+      "anchor": [
+       338.5,
+       378
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       338.5,
+       378
+      ],
+      "box": [
+       331.5,
+       371,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.172
+     },
+     {
+      "id": "GBR",
+      "name": "United Kingdom",
+      "anchor": [
+       181,
+       303
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       181,
+       303
+      ],
+      "box": [
+       174,
+       296,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.271
+     }
+    ],
+    "fr-dark": [
+     {
+      "id": "ALB",
+      "name": "Albania",
+      "anchor": [
+       234,
+       334
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       234,
+       334
+      ],
+      "box": [
+       227,
+       327,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.263
+     },
+     {
+      "id": "AGO",
+      "name": "Angola",
+      "anchor": [
+       222,
+       520
+      ],
+      "compact": false,
+      "label": "Angola",
+      "labelBox": [
+       235,
+       510,
+       37.63
+      ],
+      "pillBox": [
+       209,
+       498,
+       80.63,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       223,
+       520
+      ],
+      "box": [
+       209,
+       498,
+       80.63,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.143
+     },
+     {
+      "id": "ARM",
+      "name": "Armenia",
+      "anchor": [
+       296.5,
+       330.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       296.5,
+       330.5
+      ],
+      "box": [
+       289.5,
+       323.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.166
+     },
+     {
+      "id": "AUT",
+      "name": "Austria",
+      "anchor": [
+       218,
+       312.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       218,
+       312.5
+      ],
+      "box": [
+       211,
+       305.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.057
+     },
+     {
+      "id": "BEL",
+      "name": "Belgium",
+      "anchor": [
+       191,
+       304.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       191,
+       304.5
+      ],
+      "box": [
+       184,
+       297.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.22
+     },
+     {
+      "id": "BRA",
+      "name": "Brazil",
+      "anchor": [
+       50.5,
+       531
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       50.5,
+       531
+      ],
+      "box": [
+       43.5,
+       524,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.24
+     },
+     {
+      "id": "CAN",
+      "name": "Canada",
+      "anchor": [
+       61.5,
+       293
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       61.5,
+       293
+      ],
+      "box": [
+       54.5,
+       286,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.247
+     },
+     {
+      "id": "CZE",
+      "name": "Czech Republic",
+      "anchor": [
+       215.5,
+       307
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       215.5,
+       307
+      ],
+      "box": [
+       208.5,
+       300,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.2
+     },
+     {
+      "id": "FRA",
+      "name": "France",
+      "anchor": [
+       189,
+       320
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       189,
+       320
+      ],
+      "box": [
+       182,
+       313,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.25
+     },
+     {
+      "id": "DEU",
+      "name": "Germany",
+      "anchor": [
+       207,
+       303.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       207,
+       303.5
+      ],
+      "box": [
+       200,
+       296.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.214
+     },
+     {
+      "id": "ITA",
+      "name": "Italy",
+      "anchor": [
+       209,
+       327
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       209,
+       327
+      ],
+      "box": [
+       202,
+       320,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.31
+     },
+     {
+      "id": "JOR",
+      "name": "Jordan",
+      "anchor": [
+       286.5,
+       361
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       286.5,
+       361
+      ],
+      "box": [
+       279.5,
+       354,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.298
+     },
+     {
+      "id": "LBN",
+      "name": "Lebanon",
+      "anchor": [
+       283.5,
+       355.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       283.5,
+       355.5
+      ],
+      "box": [
+       276.5,
+       348.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.025
+     },
+     {
+      "id": "LUX",
+      "name": "Luxembourg",
+      "anchor": [
+       195,
+       309
+      ],
+      "compact": false,
+      "label": "Luxembourg",
+      "labelBox": [
+       208,
+       299,
+       65.19
+      ],
+      "pillBox": [
+       182,
+       287,
+       108.19,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       196,
+       309
+      ],
+      "box": [
+       182,
+       287,
+       108.19,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.133
+     },
+     {
+      "id": "MDG",
+      "name": "Madagascar",
+      "anchor": [
+       324.5,
+       530.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       324.5,
+       530.5
+      ],
+      "box": [
+       317.5,
+       523.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.239
+     },
+     {
+      "id": "MAR",
+      "name": "Morocco",
+      "anchor": [
+       154.5,
+       361
+      ],
+      "compact": false,
+      "label": "Maroc",
+      "labelBox": [
+       167.5,
+       351,
+       33.02
+      ],
+      "pillBox": [
+       141.5,
+       339,
+       76.02,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       155.5,
+       361
+      ],
+      "box": [
+       141.5,
+       339,
+       76.02,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.238
+     },
+     {
+      "id": "PSE",
+      "name": "Palestine",
+      "anchor": [
+       284.5,
+       361.5
+      ],
+      "compact": false,
+      "label": "Palestine",
+      "labelBox": [
+       297.5,
+       351.5,
+       46.61
+      ],
+      "pillBox": [
+       271.5,
+       339.5,
+       89.61,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       285.5,
+       361.5
+      ],
+      "box": [
+       271.5,
+       339.5,
+       89.61,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.143
+     },
+     {
+      "id": "POL",
+      "name": "Poland",
+      "anchor": [
+       229,
+       300
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       229,
+       300
+      ],
+      "box": [
+       222,
+       293,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.124
+     },
+     {
+      "id": "PRT",
+      "name": "Portugal",
+      "anchor": [
+       152,
+       339
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       152,
+       339
+      ],
+      "box": [
+       145,
+       332,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.263
+     },
+     {
+      "id": "ESP",
+      "name": "Spain",
+      "anchor": [
+       171,
+       337.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       171,
+       337.5
+      ],
+      "box": [
+       164,
+       330.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.198
+     },
+     {
+      "id": "CHE",
+      "name": "Switzerland",
+      "anchor": [
+       199,
+       317
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       199,
+       317
+      ],
+      "box": [
+       192,
+       310,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.189
+     },
+     {
+      "id": "NLD",
+      "name": "The Netherlands",
+      "anchor": [
+       192.5,
+       300.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       192.5,
+       300.5
+      ],
+      "box": [
+       185.5,
+       293.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.055
+     },
+     {
+      "id": "TUR",
+      "name": "Turkey",
+      "anchor": [
+       259.5,
+       333.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       259.5,
+       333.5
+      ],
+      "box": [
+       252.5,
+       326.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.12
+     },
+     {
+      "id": "ARE",
+      "name": "United Arab Emirates",
+      "anchor": [
+       338.5,
+       378
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       338.5,
+       378
+      ],
+      "box": [
+       331.5,
+       371,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.172
+     },
+     {
+      "id": "GBR",
+      "name": "United Kingdom",
+      "anchor": [
+       181,
+       303
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       181,
+       303
+      ],
+      "box": [
+       174,
+       296,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.271
+     }
+    ],
+    "en-light": [
+     {
+      "id": "ALB",
+      "name": "Albania",
+      "anchor": [
+       234,
+       334
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       234,
+       334
+      ],
+      "box": [
+       227,
+       327,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.263
+     },
+     {
+      "id": "AGO",
+      "name": "Angola",
+      "anchor": [
+       222,
+       520
+      ],
+      "compact": false,
+      "label": "Angola",
+      "labelBox": [
+       235,
+       510,
+       37.63
+      ],
+      "pillBox": [
+       209,
+       498,
+       80.63,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       223,
+       520
+      ],
+      "box": [
+       209,
+       498,
+       80.63,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.143
+     },
+     {
+      "id": "ARM",
+      "name": "Armenia",
+      "anchor": [
+       296.5,
+       330.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       296.5,
+       330.5
+      ],
+      "box": [
+       289.5,
+       323.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.166
+     },
+     {
+      "id": "AUT",
+      "name": "Austria",
+      "anchor": [
+       218,
+       312.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       218,
+       312.5
+      ],
+      "box": [
+       211,
+       305.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.057
+     },
+     {
+      "id": "BEL",
+      "name": "Belgium",
+      "anchor": [
+       191,
+       304.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       191,
+       304.5
+      ],
+      "box": [
+       184,
+       297.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.22
+     },
+     {
+      "id": "BRA",
+      "name": "Brazil",
+      "anchor": [
+       50.5,
+       531
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       50.5,
+       531
+      ],
+      "box": [
+       43.5,
+       524,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.24
+     },
+     {
+      "id": "CAN",
+      "name": "Canada",
+      "anchor": [
+       61.5,
+       293
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       61.5,
+       293
+      ],
+      "box": [
+       54.5,
+       286,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.247
+     },
+     {
+      "id": "CZE",
+      "name": "Czech Republic",
+      "anchor": [
+       215.5,
+       307
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       215.5,
+       307
+      ],
+      "box": [
+       208.5,
+       300,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.2
+     },
+     {
+      "id": "FRA",
+      "name": "France",
+      "anchor": [
+       189,
+       320
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       189,
+       320
+      ],
+      "box": [
+       182,
+       313,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.25
+     },
+     {
+      "id": "DEU",
+      "name": "Germany",
+      "anchor": [
+       207,
+       303.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       207,
+       303.5
+      ],
+      "box": [
+       200,
+       296.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.214
+     },
+     {
+      "id": "ITA",
+      "name": "Italy",
+      "anchor": [
+       209,
+       327
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       209,
+       327
+      ],
+      "box": [
+       202,
+       320,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.31
+     },
+     {
+      "id": "JOR",
+      "name": "Jordan",
+      "anchor": [
+       286.5,
+       361
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       286.5,
+       361
+      ],
+      "box": [
+       279.5,
+       354,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.298
+     },
+     {
+      "id": "LBN",
+      "name": "Lebanon",
+      "anchor": [
+       283.5,
+       355.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       283.5,
+       355.5
+      ],
+      "box": [
+       276.5,
+       348.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.025
+     },
+     {
+      "id": "LUX",
+      "name": "Luxembourg",
+      "anchor": [
+       195,
+       309
+      ],
+      "compact": false,
+      "label": "Luxembourg",
+      "labelBox": [
+       208,
+       299,
+       65.19
+      ],
+      "pillBox": [
+       182,
+       287,
+       108.19,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       196,
+       309
+      ],
+      "box": [
+       182,
+       287,
+       108.19,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.133
+     },
+     {
+      "id": "MDG",
+      "name": "Madagascar",
+      "anchor": [
+       324.5,
+       530.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       324.5,
+       530.5
+      ],
+      "box": [
+       317.5,
+       523.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.239
+     },
+     {
+      "id": "MAR",
+      "name": "Morocco",
+      "anchor": [
+       154.5,
+       361
+      ],
+      "compact": false,
+      "label": "Morocco",
+      "labelBox": [
+       167.5,
+       351,
+       46.31
+      ],
+      "pillBox": [
+       141.5,
+       339,
+       89.31,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       155.5,
+       361
+      ],
+      "box": [
+       141.5,
+       339,
+       89.31,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.238
+     },
+     {
+      "id": "PSE",
+      "name": "Palestine",
+      "anchor": [
+       284.5,
+       361.5
+      ],
+      "compact": false,
+      "label": "Palestine",
+      "labelBox": [
+       297.5,
+       351.5,
+       46.61
+      ],
+      "pillBox": [
+       271.5,
+       339.5,
+       89.61,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       285.5,
+       361.5
+      ],
+      "box": [
+       271.5,
+       339.5,
+       89.61,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.143
+     },
+     {
+      "id": "POL",
+      "name": "Poland",
+      "anchor": [
+       229,
+       300
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       229,
+       300
+      ],
+      "box": [
+       222,
+       293,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.124
+     },
+     {
+      "id": "PRT",
+      "name": "Portugal",
+      "anchor": [
+       152,
+       339
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       152,
+       339
+      ],
+      "box": [
+       145,
+       332,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.263
+     },
+     {
+      "id": "ESP",
+      "name": "Spain",
+      "anchor": [
+       171,
+       337.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       171,
+       337.5
+      ],
+      "box": [
+       164,
+       330.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.198
+     },
+     {
+      "id": "CHE",
+      "name": "Switzerland",
+      "anchor": [
+       199,
+       317
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       199,
+       317
+      ],
+      "box": [
+       192,
+       310,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.189
+     },
+     {
+      "id": "NLD",
+      "name": "The Netherlands",
+      "anchor": [
+       192.5,
+       300.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       192.5,
+       300.5
+      ],
+      "box": [
+       185.5,
+       293.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.055
+     },
+     {
+      "id": "TUR",
+      "name": "Turkey",
+      "anchor": [
+       259.5,
+       333.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       259.5,
+       333.5
+      ],
+      "box": [
+       252.5,
+       326.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.12
+     },
+     {
+      "id": "ARE",
+      "name": "United Arab Emirates",
+      "anchor": [
+       338.5,
+       378
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       338.5,
+       378
+      ],
+      "box": [
+       331.5,
+       371,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.172
+     },
+     {
+      "id": "GBR",
+      "name": "United Kingdom",
+      "anchor": [
+       181,
+       303
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       181,
+       303
+      ],
+      "box": [
+       174,
+       296,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.271
+     }
+    ],
+    "ar-light": [
+     {
+      "id": "ALB",
+      "name": "Albania",
+      "anchor": [
+       234,
+       334
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       234,
+       334
+      ],
+      "box": [
+       227,
+       327,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.263
+     },
+     {
+      "id": "AGO",
+      "name": "Angola",
+      "anchor": [
+       222,
+       520
+      ],
+      "compact": false,
+      "label": "أنغولا",
+      "labelBox": [
+       235,
+       510,
+       24.95
+      ],
+      "pillBox": [
+       209,
+       498,
+       67.95,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       223,
+       520
+      ],
+      "box": [
+       209,
+       498,
+       67.95,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.143
+     },
+     {
+      "id": "ARM",
+      "name": "Armenia",
+      "anchor": [
+       296.5,
+       330.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       296.5,
+       330.5
+      ],
+      "box": [
+       289.5,
+       323.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.166
+     },
+     {
+      "id": "AUT",
+      "name": "Austria",
+      "anchor": [
+       218,
+       312.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       218,
+       312.5
+      ],
+      "box": [
+       211,
+       305.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.057
+     },
+     {
+      "id": "BEL",
+      "name": "Belgium",
+      "anchor": [
+       191,
+       304.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       191,
+       304.5
+      ],
+      "box": [
+       184,
+       297.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.22
+     },
+     {
+      "id": "BRA",
+      "name": "Brazil",
+      "anchor": [
+       50.5,
+       531
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       50.5,
+       531
+      ],
+      "box": [
+       43.5,
+       524,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.24
+     },
+     {
+      "id": "CAN",
+      "name": "Canada",
+      "anchor": [
+       61.5,
+       293
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       61.5,
+       293
+      ],
+      "box": [
+       54.5,
+       286,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.247
+     },
+     {
+      "id": "CZE",
+      "name": "Czech Republic",
+      "anchor": [
+       215.5,
+       307
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       215.5,
+       307
+      ],
+      "box": [
+       208.5,
+       300,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.2
+     },
+     {
+      "id": "FRA",
+      "name": "France",
+      "anchor": [
+       189,
+       320
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       189,
+       320
+      ],
+      "box": [
+       182,
+       313,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.25
+     },
+     {
+      "id": "DEU",
+      "name": "Germany",
+      "anchor": [
+       207,
+       303.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       207,
+       303.5
+      ],
+      "box": [
+       200,
+       296.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.214
+     },
+     {
+      "id": "ITA",
+      "name": "Italy",
+      "anchor": [
+       209,
+       327
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       209,
+       327
+      ],
+      "box": [
+       202,
+       320,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.31
+     },
+     {
+      "id": "JOR",
+      "name": "Jordan",
+      "anchor": [
+       286.5,
+       361
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       286.5,
+       361
+      ],
+      "box": [
+       279.5,
+       354,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.298
+     },
+     {
+      "id": "LBN",
+      "name": "Lebanon",
+      "anchor": [
+       283.5,
+       355.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       283.5,
+       355.5
+      ],
+      "box": [
+       276.5,
+       348.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.025
+     },
+     {
+      "id": "LUX",
+      "name": "Luxembourg",
+      "anchor": [
+       195,
+       309
+      ],
+      "compact": false,
+      "label": "لوكسمبورغ",
+      "labelBox": [
+       208,
+       299,
+       51.14
+      ],
+      "pillBox": [
+       182,
+       287,
+       94.14,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       196,
+       309
+      ],
+      "box": [
+       182,
+       287,
+       94.14,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.133
+     },
+     {
+      "id": "MDG",
+      "name": "Madagascar",
+      "anchor": [
+       324.5,
+       530.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       324.5,
+       530.5
+      ],
+      "box": [
+       317.5,
+       523.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.239
+     },
+     {
+      "id": "MAR",
+      "name": "Morocco",
+      "anchor": [
+       154.5,
+       361
+      ],
+      "compact": false,
+      "label": "المغرب",
+      "labelBox": [
+       167.5,
+       351,
+       35.84
+      ],
+      "pillBox": [
+       141.5,
+       339,
+       78.84,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       155.5,
+       361
+      ],
+      "box": [
+       141.5,
+       339,
+       78.84,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.238
+     },
+     {
+      "id": "PSE",
+      "name": "Palestine",
+      "anchor": [
+       284.5,
+       361.5
+      ],
+      "compact": false,
+      "label": "فلسطين",
+      "labelBox": [
+       297.5,
+       351.5,
+       40.92
+      ],
+      "pillBox": [
+       271.5,
+       339.5,
+       83.92,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       285.5,
+       361.5
+      ],
+      "box": [
+       271.5,
+       339.5,
+       83.92,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.143
+     },
+     {
+      "id": "POL",
+      "name": "Poland",
+      "anchor": [
+       229,
+       300
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       229,
+       300
+      ],
+      "box": [
+       222,
+       293,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.124
+     },
+     {
+      "id": "PRT",
+      "name": "Portugal",
+      "anchor": [
+       152,
+       339
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       152,
+       339
+      ],
+      "box": [
+       145,
+       332,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.263
+     },
+     {
+      "id": "ESP",
+      "name": "Spain",
+      "anchor": [
+       171,
+       337.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       171,
+       337.5
+      ],
+      "box": [
+       164,
+       330.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.198
+     },
+     {
+      "id": "CHE",
+      "name": "Switzerland",
+      "anchor": [
+       199,
+       317
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       199,
+       317
+      ],
+      "box": [
+       192,
+       310,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.189
+     },
+     {
+      "id": "NLD",
+      "name": "The Netherlands",
+      "anchor": [
+       192.5,
+       300.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       192.5,
+       300.5
+      ],
+      "box": [
+       185.5,
+       293.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.055
+     },
+     {
+      "id": "TUR",
+      "name": "Turkey",
+      "anchor": [
+       259.5,
+       333.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       259.5,
+       333.5
+      ],
+      "box": [
+       252.5,
+       326.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.12
+     },
+     {
+      "id": "ARE",
+      "name": "United Arab Emirates",
+      "anchor": [
+       338.5,
+       378
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       338.5,
+       378
+      ],
+      "box": [
+       331.5,
+       371,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.172
+     },
+     {
+      "id": "GBR",
+      "name": "United Kingdom",
+      "anchor": [
+       181,
+       303
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       181,
+       303
+      ],
+      "box": [
+       174,
+       296,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.271
+     }
+    ],
+    "ar-dark": [
+     {
+      "id": "ALB",
+      "name": "Albania",
+      "anchor": [
+       234,
+       334
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       234,
+       334
+      ],
+      "box": [
+       227,
+       327,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.263
+     },
+     {
+      "id": "AGO",
+      "name": "Angola",
+      "anchor": [
+       222,
+       520
+      ],
+      "compact": false,
+      "label": "أنغولا",
+      "labelBox": [
+       235,
+       510,
+       24.95
+      ],
+      "pillBox": [
+       209,
+       498,
+       67.95,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       223,
+       520
+      ],
+      "box": [
+       209,
+       498,
+       67.95,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.143
+     },
+     {
+      "id": "ARM",
+      "name": "Armenia",
+      "anchor": [
+       296.5,
+       330.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       296.5,
+       330.5
+      ],
+      "box": [
+       289.5,
+       323.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.166
+     },
+     {
+      "id": "AUT",
+      "name": "Austria",
+      "anchor": [
+       218,
+       312.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       218,
+       312.5
+      ],
+      "box": [
+       211,
+       305.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.057
+     },
+     {
+      "id": "BEL",
+      "name": "Belgium",
+      "anchor": [
+       191,
+       304.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       191,
+       304.5
+      ],
+      "box": [
+       184,
+       297.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.22
+     },
+     {
+      "id": "BRA",
+      "name": "Brazil",
+      "anchor": [
+       50.5,
+       531
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       50.5,
+       531
+      ],
+      "box": [
+       43.5,
+       524,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.24
+     },
+     {
+      "id": "CAN",
+      "name": "Canada",
+      "anchor": [
+       61.5,
+       293
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       61.5,
+       293
+      ],
+      "box": [
+       54.5,
+       286,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.247
+     },
+     {
+      "id": "CZE",
+      "name": "Czech Republic",
+      "anchor": [
+       215.5,
+       307
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       215.5,
+       307
+      ],
+      "box": [
+       208.5,
+       300,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.2
+     },
+     {
+      "id": "FRA",
+      "name": "France",
+      "anchor": [
+       189,
+       320
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       189,
+       320
+      ],
+      "box": [
+       182,
+       313,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.25
+     },
+     {
+      "id": "DEU",
+      "name": "Germany",
+      "anchor": [
+       207,
+       303.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       207,
+       303.5
+      ],
+      "box": [
+       200,
+       296.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.214
+     },
+     {
+      "id": "ITA",
+      "name": "Italy",
+      "anchor": [
+       209,
+       327
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       209,
+       327
+      ],
+      "box": [
+       202,
+       320,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.31
+     },
+     {
+      "id": "JOR",
+      "name": "Jordan",
+      "anchor": [
+       286.5,
+       361
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       286.5,
+       361
+      ],
+      "box": [
+       279.5,
+       354,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.298
+     },
+     {
+      "id": "LBN",
+      "name": "Lebanon",
+      "anchor": [
+       283.5,
+       355.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       283.5,
+       355.5
+      ],
+      "box": [
+       276.5,
+       348.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.025
+     },
+     {
+      "id": "LUX",
+      "name": "Luxembourg",
+      "anchor": [
+       195,
+       309
+      ],
+      "compact": false,
+      "label": "لوكسمبورغ",
+      "labelBox": [
+       208,
+       299,
+       51.14
+      ],
+      "pillBox": [
+       182,
+       287,
+       94.14,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       196,
+       309
+      ],
+      "box": [
+       182,
+       287,
+       94.14,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.133
+     },
+     {
+      "id": "MDG",
+      "name": "Madagascar",
+      "anchor": [
+       324.5,
+       530.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       324.5,
+       530.5
+      ],
+      "box": [
+       317.5,
+       523.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.239
+     },
+     {
+      "id": "MAR",
+      "name": "Morocco",
+      "anchor": [
+       154.5,
+       361
+      ],
+      "compact": false,
+      "label": "المغرب",
+      "labelBox": [
+       167.5,
+       351,
+       35.84
+      ],
+      "pillBox": [
+       141.5,
+       339,
+       78.84,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       155.5,
+       361
+      ],
+      "box": [
+       141.5,
+       339,
+       78.84,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.238
+     },
+     {
+      "id": "PSE",
+      "name": "Palestine",
+      "anchor": [
+       284.5,
+       361.5
+      ],
+      "compact": false,
+      "label": "فلسطين",
+      "labelBox": [
+       297.5,
+       351.5,
+       40.92
+      ],
+      "pillBox": [
+       271.5,
+       339.5,
+       83.92,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       285.5,
+       361.5
+      ],
+      "box": [
+       271.5,
+       339.5,
+       83.92,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.143
+     },
+     {
+      "id": "POL",
+      "name": "Poland",
+      "anchor": [
+       229,
+       300
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       229,
+       300
+      ],
+      "box": [
+       222,
+       293,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.124
+     },
+     {
+      "id": "PRT",
+      "name": "Portugal",
+      "anchor": [
+       152,
+       339
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       152,
+       339
+      ],
+      "box": [
+       145,
+       332,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.263
+     },
+     {
+      "id": "ESP",
+      "name": "Spain",
+      "anchor": [
+       171,
+       337.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       171,
+       337.5
+      ],
+      "box": [
+       164,
+       330.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.198
+     },
+     {
+      "id": "CHE",
+      "name": "Switzerland",
+      "anchor": [
+       199,
+       317
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       199,
+       317
+      ],
+      "box": [
+       192,
+       310,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.189
+     },
+     {
+      "id": "NLD",
+      "name": "The Netherlands",
+      "anchor": [
+       192.5,
+       300.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       192.5,
+       300.5
+      ],
+      "box": [
+       185.5,
+       293.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.055
+     },
+     {
+      "id": "TUR",
+      "name": "Turkey",
+      "anchor": [
+       259.5,
+       333.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       259.5,
+       333.5
+      ],
+      "box": [
+       252.5,
+       326.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.12
+     },
+     {
+      "id": "ARE",
+      "name": "United Arab Emirates",
+      "anchor": [
+       338.5,
+       378
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       338.5,
+       378
+      ],
+      "box": [
+       331.5,
+       371,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.172
+     },
+     {
+      "id": "GBR",
+      "name": "United Kingdom",
+      "anchor": [
+       181,
+       303
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       181,
+       303
+      ],
+      "box": [
+       174,
+       296,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.271
+     }
+    ]
+   },
+   "comparison": {
+    "light": {
+     "all": {
+      "pixels": 315362,
+      "landAgreement": 0.9859,
+      "bestShiftPx": [
+       0.0,
+       0.0
+      ],
+      "agreementAtBestShift": 0.9859,
+      "coastCaptureToSvgPx": {
+       "mean": 0.333,
+       "p95": 1.0,
+       "within1px": 0.9673,
+       "within2px": 0.9822
+      },
+      "coastSvgToCapturePx": {
+       "mean": 0.391,
+       "p95": 1.5,
+       "within1px": 0.9433,
+       "within2px": 0.972
+      }
+     },
+     "sharp": {
+      "pixels": 164168,
+      "landAgreement": 0.985,
+      "bestShiftPx": [
+       0.0,
+       0.0
+      ],
+      "agreementAtBestShift": 0.985,
+      "coastCaptureToSvgPx": {
+       "mean": 0.351,
+       "p95": 1.0,
+       "within1px": 0.9551,
+       "within2px": 0.9744
+      },
+      "coastSvgToCapturePx": {
+       "mean": 0.372,
+       "p95": 1.5,
+       "within1px": 0.948,
+       "within2px": 0.9752
+      }
+     },
+     "disc": {
+      "expected": [
+       195.0,
+       422.0,
+       190.92
+      ],
+      "capture": [
+       194.79,
+       421.9,
+       191.01
+      ],
+      "captureRays": 203,
+      "svg": [
+       194.95,
+       421.97,
+       190.94
+      ],
+      "svgRays": 311
+     }
+    },
+    "dark": {
+     "all": {
+      "pixels": 315362,
+      "landAgreement": 0.9932,
+      "bestShiftPx": [
+       0.0,
+       0.0
+      ],
+      "agreementAtBestShift": 0.9932,
+      "coastCaptureToSvgPx": {
+       "mean": 0.591,
+       "p95": 4.0,
+       "within1px": 0.8821,
+       "within2px": 0.9186
+      },
+      "coastSvgToCapturePx": {
+       "mean": 0.347,
+       "p95": 1.0,
+       "within1px": 0.9577,
+       "within2px": 0.9759
+      }
+     },
+     "sharp": {
+      "pixels": 164168,
+      "landAgreement": 0.9924,
+      "bestShiftPx": [
+       0.0,
+       0.0
+      ],
+      "agreementAtBestShift": 0.9924,
+      "coastCaptureToSvgPx": {
+       "mean": 0.666,
+       "p95": 4.0,
+       "within1px": 0.8606,
+       "within2px": 0.9072
+      },
+      "coastSvgToCapturePx": {
+       "mean": 0.394,
+       "p95": 1.5,
+       "within1px": 0.9487,
+       "within2px": 0.9685
+      }
+     },
+     "disc": {
+      "expected": [
+       195.0,
+       422.0,
+       190.92
+      ],
+      "capture": [
+       195.01,
+       421.91,
+       190.92
+      ],
+      "captureRays": 169,
+      "svg": [
+       194.95,
+       421.97,
+       190.94
+      ],
+      "svgRays": 311
+     }
+    }
+   }
+  },
+  "pays-france--desktop": {
+   "file": "globe-pays-france--desktop.svg",
+   "chars": 109768,
+   "bytes": 109769,
+   "viewport": [
+    1440,
+    960
+   ],
+   "captureScale": 1,
+   "reference": "reference/explorer/explore-country--desktop--fr-light.png",
+   "center": [
+    3.8111310148,
+    45.9366646601
+   ],
+   "zoom": 4.949058,
+   "hgRadius": null,
+   "countryBounds": [
+    [
+     -4.78489,
+     42.32566
+    ],
+    [
+     8.20031,
+     51.08755
+    ]
+   ],
+   "sphereRadiusPx": 3619.406,
+   "cameraDistancePx": 1440.0,
+   "discCenterPx": [
+    720.0,
+    480.0
+   ],
+   "discRadiusPx": 1474.309,
+   "horizonDeg": 44.3255,
+   "borderWidthPx": 0.7464,
+   "borderOpacity": 0.7412,
+   "landColorAtZoom": {
+    "light": "#19B8B5",
+    "dark": "#256967"
+   },
+   "edgeFadePx": {
+    "x": 180,
+    "y": 150
+   },
+   "edgeBlurPx": 12,
+   "simplification": {
+    "rejoinAnomalies": 0,
+    "closedRings": 97,
+    "degenerateRings": 2,
+    "collapsedRings": 0,
+    "isletRings": 3,
+    "landPathChars": 27796,
+    "isletPathChars": 67,
+    "borderClasses": 5,
+    "borderPathChars": 77531,
+    "tileZoom": 4,
+    "geojsonTolerancePx": 0.2,
+    "ringsKept": 3773,
+    "ringsDropped": 294,
+    "islandCoastsDropped": 17,
+    "landOutlinePx": 0.3,
+    "isletOutlinePx": 0.5,
+    "isletMaxSidePx": 1.0,
+    "mapPixelRatio": 1.0,
+    "borderInkStep": 0.05,
+    "borderStrokePx": 0.5,
+    "figmaStrokeGain": 0.0
+   },
+   "markerProjectionMaxErrorPx": 0.327,
+   "orthographicMarkerErrorPx": {
+    "max": 159.89,
+    "mean": 107.57
+   },
+   "markers": {
+    "fr-light": [
+     {
+      "id": "angouleme",
+      "name": "42 Angoulême",
+      "anchor": [
+       559.5,
+       494
+      ],
+      "compact": false,
+      "label": "42 Angoulême",
+      "labelBox": [
+       574.5,
+       484,
+       92.17
+      ],
+      "pillBox": [
+       546.5,
+       472,
+       137.17,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       560.5,
+       494
+      ],
+      "box": [
+       546.5,
+       472,
+       137.17,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.254
+     },
+     {
+      "id": "le-havre",
+      "name": "42 Le Havre",
+      "anchor": [
+       570,
+       254
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       570,
+       254
+      ],
+      "box": [
+       563,
+       247,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.183
+     },
+     {
+      "id": "lyon",
+      "name": "42 Lyon",
+      "anchor": [
+       761.5,
+       489.5
+      ],
+      "compact": false,
+      "label": "42 Lyon",
+      "labelBox": [
+       776.5,
+       479.5,
+       49.44
+      ],
+      "pillBox": [
+       748.5,
+       467.5,
+       94.44,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       762.5,
+       489.5
+      ],
+      "box": [
+       748.5,
+       467.5,
+       94.44,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.256
+     },
+     {
+      "id": "marseille",
+      "name": "42 Marseille",
+      "anchor": [
+       791.5,
+       645.5
+      ],
+      "compact": false,
+      "label": "42 Marseille",
+      "labelBox": [
+       806.5,
+       635.5,
+       77.17
+      ],
+      "pillBox": [
+       778.5,
+       623.5,
+       122.17,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       792.5,
+       645.5
+      ],
+      "box": [
+       778.5,
+       623.5,
+       122.17,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.152
+     },
+     {
+      "id": "mulhouse",
+      "name": "42 Mulhouse",
+      "anchor": [
+       869,
+       363.5
+      ],
+      "compact": false,
+      "label": "42 Mulhouse",
+      "labelBox": [
+       884,
+       353.5,
+       80.95
+      ],
+      "pillBox": [
+       856,
+       341.5,
+       125.95,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       870,
+       363.5
+      ],
+      "box": [
+       856,
+       341.5,
+       125.95,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.293
+     },
+     {
+      "id": "nice",
+      "name": "42 Nice",
+      "anchor": [
+       874,
+       618
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       874,
+       618
+      ],
+      "box": [
+       867,
+       611,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.081
+     },
+     {
+      "id": "paris",
+      "name": "42 Paris",
+      "anchor": [
+       658,
+       293
+      ],
+      "compact": false,
+      "label": "42 Paris",
+      "labelBox": [
+       673,
+       283,
+       51.06
+      ],
+      "pillBox": [
+       645,
+       271,
+       96.06,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       659,
+       293
+      ],
+      "box": [
+       645,
+       271,
+       96.06,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.327
+     },
+     {
+      "id": "perpignan",
+      "name": "42 Perpignan",
+      "anchor": [
+       677.5,
+       683.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       677.5,
+       683.5
+      ],
+      "box": [
+       670.5,
+       676.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.223
+     }
+    ],
+    "fr-dark": [
+     {
+      "id": "angouleme",
+      "name": "42 Angoulême",
+      "anchor": [
+       559.5,
+       494
+      ],
+      "compact": false,
+      "label": "42 Angoulême",
+      "labelBox": [
+       574.5,
+       484,
+       92.17
+      ],
+      "pillBox": [
+       546.5,
+       472,
+       137.17,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       560.5,
+       494
+      ],
+      "box": [
+       546.5,
+       472,
+       137.17,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.254
+     },
+     {
+      "id": "le-havre",
+      "name": "42 Le Havre",
+      "anchor": [
+       570,
+       254
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       570,
+       254
+      ],
+      "box": [
+       563,
+       247,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.183
+     },
+     {
+      "id": "lyon",
+      "name": "42 Lyon",
+      "anchor": [
+       761.5,
+       489.5
+      ],
+      "compact": false,
+      "label": "42 Lyon",
+      "labelBox": [
+       776.5,
+       479.5,
+       49.44
+      ],
+      "pillBox": [
+       748.5,
+       467.5,
+       94.44,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       762.5,
+       489.5
+      ],
+      "box": [
+       748.5,
+       467.5,
+       94.44,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.256
+     },
+     {
+      "id": "marseille",
+      "name": "42 Marseille",
+      "anchor": [
+       791.5,
+       645.5
+      ],
+      "compact": false,
+      "label": "42 Marseille",
+      "labelBox": [
+       806.5,
+       635.5,
+       77.17
+      ],
+      "pillBox": [
+       778.5,
+       623.5,
+       122.17,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       792.5,
+       645.5
+      ],
+      "box": [
+       778.5,
+       623.5,
+       122.17,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.152
+     },
+     {
+      "id": "mulhouse",
+      "name": "42 Mulhouse",
+      "anchor": [
+       869,
+       363.5
+      ],
+      "compact": false,
+      "label": "42 Mulhouse",
+      "labelBox": [
+       884,
+       353.5,
+       80.95
+      ],
+      "pillBox": [
+       856,
+       341.5,
+       125.95,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       870,
+       363.5
+      ],
+      "box": [
+       856,
+       341.5,
+       125.95,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.293
+     },
+     {
+      "id": "nice",
+      "name": "42 Nice",
+      "anchor": [
+       874,
+       618
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       874,
+       618
+      ],
+      "box": [
+       867,
+       611,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.081
+     },
+     {
+      "id": "paris",
+      "name": "42 Paris",
+      "anchor": [
+       658,
+       293
+      ],
+      "compact": false,
+      "label": "42 Paris",
+      "labelBox": [
+       673,
+       283,
+       51.06
+      ],
+      "pillBox": [
+       645,
+       271,
+       96.06,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       659,
+       293
+      ],
+      "box": [
+       645,
+       271,
+       96.06,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.327
+     },
+     {
+      "id": "perpignan",
+      "name": "42 Perpignan",
+      "anchor": [
+       677.5,
+       683.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       677.5,
+       683.5
+      ],
+      "box": [
+       670.5,
+       676.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.223
+     }
+    ],
+    "en-light": [
+     {
+      "id": "angouleme",
+      "name": "42 Angoulême",
+      "anchor": [
+       559.5,
+       494
+      ],
+      "compact": false,
+      "label": "42 Angoulême",
+      "labelBox": [
+       574.5,
+       484,
+       92.17
+      ],
+      "pillBox": [
+       546.5,
+       472,
+       137.17,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       560.5,
+       494
+      ],
+      "box": [
+       546.5,
+       472,
+       137.17,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.254
+     },
+     {
+      "id": "le-havre",
+      "name": "42 Le Havre",
+      "anchor": [
+       570,
+       254
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       570,
+       254
+      ],
+      "box": [
+       563,
+       247,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.183
+     },
+     {
+      "id": "lyon",
+      "name": "42 Lyon",
+      "anchor": [
+       761.5,
+       489.5
+      ],
+      "compact": false,
+      "label": "42 Lyon",
+      "labelBox": [
+       776.5,
+       479.5,
+       49.44
+      ],
+      "pillBox": [
+       748.5,
+       467.5,
+       94.44,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       762.5,
+       489.5
+      ],
+      "box": [
+       748.5,
+       467.5,
+       94.44,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.256
+     },
+     {
+      "id": "marseille",
+      "name": "42 Marseille",
+      "anchor": [
+       791.5,
+       645.5
+      ],
+      "compact": false,
+      "label": "42 Marseille",
+      "labelBox": [
+       806.5,
+       635.5,
+       77.17
+      ],
+      "pillBox": [
+       778.5,
+       623.5,
+       122.17,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       792.5,
+       645.5
+      ],
+      "box": [
+       778.5,
+       623.5,
+       122.17,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.152
+     },
+     {
+      "id": "mulhouse",
+      "name": "42 Mulhouse",
+      "anchor": [
+       869,
+       363.5
+      ],
+      "compact": false,
+      "label": "42 Mulhouse",
+      "labelBox": [
+       884,
+       353.5,
+       80.95
+      ],
+      "pillBox": [
+       856,
+       341.5,
+       125.95,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       870,
+       363.5
+      ],
+      "box": [
+       856,
+       341.5,
+       125.95,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.293
+     },
+     {
+      "id": "nice",
+      "name": "42 Nice",
+      "anchor": [
+       874,
+       618
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       874,
+       618
+      ],
+      "box": [
+       867,
+       611,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.081
+     },
+     {
+      "id": "paris",
+      "name": "42 Paris",
+      "anchor": [
+       658,
+       293
+      ],
+      "compact": false,
+      "label": "42 Paris",
+      "labelBox": [
+       673,
+       283,
+       51.06
+      ],
+      "pillBox": [
+       645,
+       271,
+       96.06,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       659,
+       293
+      ],
+      "box": [
+       645,
+       271,
+       96.06,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.327
+     },
+     {
+      "id": "perpignan",
+      "name": "42 Perpignan",
+      "anchor": [
+       677.5,
+       683.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       677.5,
+       683.5
+      ],
+      "box": [
+       670.5,
+       676.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.223
+     }
+    ],
+    "ar-light": [
+     {
+      "id": "angouleme",
+      "name": "42 Angoulême",
+      "anchor": [
+       559.5,
+       494
+      ],
+      "compact": false,
+      "label": "42 Angoulême",
+      "labelBox": [
+       574.5,
+       484,
+       92.17
+      ],
+      "pillBox": [
+       546.5,
+       472,
+       137.17,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       560.5,
+       494
+      ],
+      "box": [
+       546.5,
+       472,
+       137.17,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.254
+     },
+     {
+      "id": "le-havre",
+      "name": "42 Le Havre",
+      "anchor": [
+       570,
+       254
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       570,
+       254
+      ],
+      "box": [
+       563,
+       247,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.183
+     },
+     {
+      "id": "lyon",
+      "name": "42 Lyon",
+      "anchor": [
+       761.5,
+       489.5
+      ],
+      "compact": false,
+      "label": "42 Lyon",
+      "labelBox": [
+       776.5,
+       479.5,
+       49.44
+      ],
+      "pillBox": [
+       748.5,
+       467.5,
+       94.44,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       762.5,
+       489.5
+      ],
+      "box": [
+       748.5,
+       467.5,
+       94.44,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.256
+     },
+     {
+      "id": "marseille",
+      "name": "42 Marseille",
+      "anchor": [
+       791.5,
+       645.5
+      ],
+      "compact": false,
+      "label": "42 Marseille",
+      "labelBox": [
+       806.5,
+       635.5,
+       77.17
+      ],
+      "pillBox": [
+       778.5,
+       623.5,
+       122.17,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       792.5,
+       645.5
+      ],
+      "box": [
+       778.5,
+       623.5,
+       122.17,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.152
+     },
+     {
+      "id": "mulhouse",
+      "name": "42 Mulhouse",
+      "anchor": [
+       869,
+       363.5
+      ],
+      "compact": false,
+      "label": "42 Mulhouse",
+      "labelBox": [
+       884,
+       353.5,
+       80.95
+      ],
+      "pillBox": [
+       856,
+       341.5,
+       125.95,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       870,
+       363.5
+      ],
+      "box": [
+       856,
+       341.5,
+       125.95,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.293
+     },
+     {
+      "id": "nice",
+      "name": "42 Nice",
+      "anchor": [
+       874,
+       618
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       874,
+       618
+      ],
+      "box": [
+       867,
+       611,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.081
+     },
+     {
+      "id": "paris",
+      "name": "42 Paris",
+      "anchor": [
+       658,
+       293
+      ],
+      "compact": false,
+      "label": "42 Paris",
+      "labelBox": [
+       673,
+       283,
+       51.06
+      ],
+      "pillBox": [
+       645,
+       271,
+       96.06,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       659,
+       293
+      ],
+      "box": [
+       645,
+       271,
+       96.06,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.327
+     },
+     {
+      "id": "perpignan",
+      "name": "42 Perpignan",
+      "anchor": [
+       677.5,
+       683.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       677.5,
+       683.5
+      ],
+      "box": [
+       670.5,
+       676.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.223
+     }
+    ],
+    "ar-dark": [
+     {
+      "id": "angouleme",
+      "name": "42 Angoulême",
+      "anchor": [
+       559.5,
+       494
+      ],
+      "compact": false,
+      "label": "42 Angoulême",
+      "labelBox": [
+       574.5,
+       484,
+       92.17
+      ],
+      "pillBox": [
+       546.5,
+       472,
+       137.17,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       560.5,
+       494
+      ],
+      "box": [
+       546.5,
+       472,
+       137.17,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.254
+     },
+     {
+      "id": "le-havre",
+      "name": "42 Le Havre",
+      "anchor": [
+       570,
+       254
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       570,
+       254
+      ],
+      "box": [
+       563,
+       247,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.183
+     },
+     {
+      "id": "lyon",
+      "name": "42 Lyon",
+      "anchor": [
+       761.5,
+       489.5
+      ],
+      "compact": false,
+      "label": "42 Lyon",
+      "labelBox": [
+       776.5,
+       479.5,
+       49.44
+      ],
+      "pillBox": [
+       748.5,
+       467.5,
+       94.44,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       762.5,
+       489.5
+      ],
+      "box": [
+       748.5,
+       467.5,
+       94.44,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.256
+     },
+     {
+      "id": "marseille",
+      "name": "42 Marseille",
+      "anchor": [
+       791.5,
+       645.5
+      ],
+      "compact": false,
+      "label": "42 Marseille",
+      "labelBox": [
+       806.5,
+       635.5,
+       77.17
+      ],
+      "pillBox": [
+       778.5,
+       623.5,
+       122.17,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       792.5,
+       645.5
+      ],
+      "box": [
+       778.5,
+       623.5,
+       122.17,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.152
+     },
+     {
+      "id": "mulhouse",
+      "name": "42 Mulhouse",
+      "anchor": [
+       869,
+       363.5
+      ],
+      "compact": false,
+      "label": "42 Mulhouse",
+      "labelBox": [
+       884,
+       353.5,
+       80.95
+      ],
+      "pillBox": [
+       856,
+       341.5,
+       125.95,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       870,
+       363.5
+      ],
+      "box": [
+       856,
+       341.5,
+       125.95,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.293
+     },
+     {
+      "id": "nice",
+      "name": "42 Nice",
+      "anchor": [
+       874,
+       618
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       874,
+       618
+      ],
+      "box": [
+       867,
+       611,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.081
+     },
+     {
+      "id": "paris",
+      "name": "42 Paris",
+      "anchor": [
+       658,
+       293
+      ],
+      "compact": false,
+      "label": "42 Paris",
+      "labelBox": [
+       673,
+       283,
+       51.06
+      ],
+      "pillBox": [
+       645,
+       271,
+       96.06,
+       44
+      ],
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       659,
+       293
+      ],
+      "box": [
+       645,
+       271,
+       96.06,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.327
+     },
+     {
+      "id": "perpignan",
+      "name": "42 Perpignan",
+      "anchor": [
+       677.5,
+       683.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 14.0,
+      "lineHeight": 20.0,
+      "dot": [
+       677.5,
+       683.5
+      ],
+      "box": [
+       670.5,
+       676.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.223
+     }
+    ]
+   },
+   "comparison": {
+    "light": {
+     "all": {
+      "pixels": 653823,
+      "landAgreement": 0.9957,
+      "bestShiftPx": [
+       0.0,
+       0.0
+      ],
+      "agreementAtBestShift": 0.9957,
+      "coastCaptureToSvgPx": {
+       "mean": 0.346,
+       "p95": 1.0,
+       "within1px": 0.9883,
+       "within2px": 0.9951
+      },
+      "coastSvgToCapturePx": {
+       "mean": 0.343,
+       "p95": 1.0,
+       "within1px": 0.9831,
+       "within2px": 0.9937
+      }
+     },
+     "sharp": {
+      "pixels": 224718,
+      "landAgreement": 0.9962,
+      "bestShiftPx": [
+       0.0,
+       0.0
+      ],
+      "agreementAtBestShift": 0.9962,
+      "coastCaptureToSvgPx": {
+       "mean": 0.325,
+       "p95": 1.0,
+       "within1px": 0.9904,
+       "within2px": 0.9922
+      },
+      "coastSvgToCapturePx": {
+       "mean": 0.285,
+       "p95": 1.0,
+       "within1px": 0.9867,
+       "within2px": 0.9956
+      }
+     }
+    },
+    "dark": {
+     "all": {
+      "pixels": 653823,
+      "landAgreement": 0.9977,
+      "bestShiftPx": [
+       0.0,
+       0.0
+      ],
+      "agreementAtBestShift": 0.9977,
+      "coastCaptureToSvgPx": {
+       "mean": 0.358,
+       "p95": 1.0,
+       "within1px": 0.9818,
+       "within2px": 0.9846
+      },
+      "coastSvgToCapturePx": {
+       "mean": 0.263,
+       "p95": 1.0,
+       "within1px": 0.996,
+       "within2px": 0.9978
+      }
+     },
+     "sharp": {
+      "pixels": 224718,
+      "landAgreement": 0.9989,
+      "bestShiftPx": [
+       0.0,
+       0.0
+      ],
+      "agreementAtBestShift": 0.9989,
+      "coastCaptureToSvgPx": {
+       "mean": 0.206,
+       "p95": 1.0,
+       "within1px": 1.0,
+       "within2px": 1.0
+      },
+      "coastSvgToCapturePx": {
+       "mean": 0.2,
+       "p95": 1.0,
+       "within1px": 1.0,
+       "within2px": 1.0
+      }
+     }
+    }
+   }
+  },
+  "pays-france--mobile": {
+   "file": "globe-pays-france--mobile.svg",
+   "chars": 129891,
+   "bytes": 129891,
+   "viewport": [
+    390,
+    844
+   ],
+   "captureScale": 2,
+   "reference": "reference/explorer/explore-country--mobile--fr-light.png",
+   "center": [
+    3.8111310148,
+    45.9366646601
+   ],
+   "zoom": 3.649498,
+   "hgRadius": null,
+   "countryBounds": [
+    [
+     -4.78489,
+     42.32566
+    ],
+    [
+     8.20031,
+     51.08755
+    ]
+   ],
+   "sphereRadiusPx": 1470.384,
+   "cameraDistancePx": 1266.0,
+   "discCenterPx": [
+    195.0,
+    422.0
+   ],
+   "discRadiusPx": 806.628,
+   "horizonDeg": 57.4969,
+   "borderWidthPx": 0.6555,
+   "borderOpacity": 0.7356,
+   "landColorAtZoom": {
+    "light": "#19B8B5",
+    "dark": "#256967"
+   },
+   "edgeFadePx": {
+    "x": 55,
+    "y": 150
+   },
+   "edgeBlurPx": 8,
+   "simplification": {
+    "rejoinAnomalies": 0,
+    "closedRings": 224,
+    "degenerateRings": 13,
+    "collapsedRings": 0,
+    "isletRings": 38,
+    "landPathChars": 40496,
+    "isletPathChars": 855,
+    "borderClasses": 5,
+    "borderPathChars": 84406,
+    "tileZoom": 3,
+    "geojsonTolerancePx": 0.2,
+    "ringsKept": 3619,
+    "ringsDropped": 448,
+    "islandCoastsDropped": 87,
+    "landOutlinePx": 0.1,
+    "isletOutlinePx": 0.3,
+    "isletMaxSidePx": 1.0,
+    "mapPixelRatio": 1.5,
+    "borderInkStep": 0.05,
+    "borderStrokePx": 0.5,
+    "figmaStrokeGain": 0.0
+   },
+   "markerProjectionMaxErrorPx": 0.31,
+   "orthographicMarkerErrorPx": {
+    "max": 49.46,
+    "mean": 33.37
+   },
+   "markers": {
+    "fr-light": [
+     {
+      "id": "angouleme",
+      "name": "42 Angoulême",
+      "anchor": [
+       129.5,
+       427.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       129.5,
+       427.5
+      ],
+      "box": [
+       122.5,
+       420.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.242
+     },
+     {
+      "id": "le-havre",
+      "name": "42 Le Havre",
+      "anchor": [
+       134,
+       330
+      ],
+      "compact": false,
+      "label": "42 Le Havre",
+      "labelBox": [
+       147,
+       320,
+       65.59
+      ],
+      "pillBox": [
+       121,
+       308,
+       108.59,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       135,
+       330
+      ],
+      "box": [
+       121,
+       308,
+       108.59,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.31
+     },
+     {
+      "id": "lyon",
+      "name": "42 Lyon",
+      "anchor": [
+       212,
+       426
+      ],
+      "compact": false,
+      "label": "42 Lyon",
+      "labelBox": [
+       225,
+       416,
+       42.38
+      ],
+      "pillBox": [
+       199,
+       404,
+       85.38,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       213,
+       426
+      ],
+      "box": [
+       199,
+       404,
+       85.38,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.246
+     },
+     {
+      "id": "marseille",
+      "name": "42 Marseille",
+      "anchor": [
+       224,
+       489.5
+      ],
+      "compact": false,
+      "label": "42 Marseille",
+      "labelBox": [
+       237,
+       479.5,
+       66.16
+      ],
+      "pillBox": [
+       211,
+       467.5,
+       109.16,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       225,
+       489.5
+      ],
+      "box": [
+       211,
+       467.5,
+       109.16,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.238
+     },
+     {
+      "id": "mulhouse",
+      "name": "42 Mulhouse",
+      "anchor": [
+       255.5,
+       374.5
+      ],
+      "compact": false,
+      "label": "42 Mulhouse",
+      "labelBox": [
+       268.5,
+       364.5,
+       69.39
+      ],
+      "pillBox": [
+       242.5,
+       352.5,
+       112.39,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       256.5,
+       374.5
+      ],
+      "box": [
+       242.5,
+       352.5,
+       112.39,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.054
+     },
+     {
+      "id": "nice",
+      "name": "42 Nice",
+      "anchor": [
+       257.5,
+       478
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       257.5,
+       478
+      ],
+      "box": [
+       250.5,
+       471,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.284
+     },
+     {
+      "id": "paris",
+      "name": "42 Paris",
+      "anchor": [
+       170,
+       346
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       170,
+       346
+      ],
+      "box": [
+       163,
+       339,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.142
+     },
+     {
+      "id": "perpignan",
+      "name": "42 Perpignan",
+      "anchor": [
+       177.5,
+       505
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       177.5,
+       505
+      ],
+      "box": [
+       170.5,
+       498,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.243
+     }
+    ],
+    "fr-dark": [
+     {
+      "id": "angouleme",
+      "name": "42 Angoulême",
+      "anchor": [
+       129.5,
+       427.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       129.5,
+       427.5
+      ],
+      "box": [
+       122.5,
+       420.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.242
+     },
+     {
+      "id": "le-havre",
+      "name": "42 Le Havre",
+      "anchor": [
+       134,
+       330
+      ],
+      "compact": false,
+      "label": "42 Le Havre",
+      "labelBox": [
+       147,
+       320,
+       65.59
+      ],
+      "pillBox": [
+       121,
+       308,
+       108.59,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       135,
+       330
+      ],
+      "box": [
+       121,
+       308,
+       108.59,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.31
+     },
+     {
+      "id": "lyon",
+      "name": "42 Lyon",
+      "anchor": [
+       212,
+       426
+      ],
+      "compact": false,
+      "label": "42 Lyon",
+      "labelBox": [
+       225,
+       416,
+       42.38
+      ],
+      "pillBox": [
+       199,
+       404,
+       85.38,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       213,
+       426
+      ],
+      "box": [
+       199,
+       404,
+       85.38,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.246
+     },
+     {
+      "id": "marseille",
+      "name": "42 Marseille",
+      "anchor": [
+       224,
+       489.5
+      ],
+      "compact": false,
+      "label": "42 Marseille",
+      "labelBox": [
+       237,
+       479.5,
+       66.16
+      ],
+      "pillBox": [
+       211,
+       467.5,
+       109.16,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       225,
+       489.5
+      ],
+      "box": [
+       211,
+       467.5,
+       109.16,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.238
+     },
+     {
+      "id": "mulhouse",
+      "name": "42 Mulhouse",
+      "anchor": [
+       255.5,
+       374.5
+      ],
+      "compact": false,
+      "label": "42 Mulhouse",
+      "labelBox": [
+       268.5,
+       364.5,
+       69.39
+      ],
+      "pillBox": [
+       242.5,
+       352.5,
+       112.39,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       256.5,
+       374.5
+      ],
+      "box": [
+       242.5,
+       352.5,
+       112.39,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.054
+     },
+     {
+      "id": "nice",
+      "name": "42 Nice",
+      "anchor": [
+       257.5,
+       478
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       257.5,
+       478
+      ],
+      "box": [
+       250.5,
+       471,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.284
+     },
+     {
+      "id": "paris",
+      "name": "42 Paris",
+      "anchor": [
+       170,
+       346
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       170,
+       346
+      ],
+      "box": [
+       163,
+       339,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.142
+     },
+     {
+      "id": "perpignan",
+      "name": "42 Perpignan",
+      "anchor": [
+       177.5,
+       505
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       177.5,
+       505
+      ],
+      "box": [
+       170.5,
+       498,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.243
+     }
+    ],
+    "en-light": [
+     {
+      "id": "angouleme",
+      "name": "42 Angoulême",
+      "anchor": [
+       129.5,
+       427.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       129.5,
+       427.5
+      ],
+      "box": [
+       122.5,
+       420.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.242
+     },
+     {
+      "id": "le-havre",
+      "name": "42 Le Havre",
+      "anchor": [
+       134,
+       330
+      ],
+      "compact": false,
+      "label": "42 Le Havre",
+      "labelBox": [
+       147,
+       320,
+       65.59
+      ],
+      "pillBox": [
+       121,
+       308,
+       108.59,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       135,
+       330
+      ],
+      "box": [
+       121,
+       308,
+       108.59,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.31
+     },
+     {
+      "id": "lyon",
+      "name": "42 Lyon",
+      "anchor": [
+       212,
+       426
+      ],
+      "compact": false,
+      "label": "42 Lyon",
+      "labelBox": [
+       225,
+       416,
+       42.38
+      ],
+      "pillBox": [
+       199,
+       404,
+       85.38,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       213,
+       426
+      ],
+      "box": [
+       199,
+       404,
+       85.38,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.246
+     },
+     {
+      "id": "marseille",
+      "name": "42 Marseille",
+      "anchor": [
+       224,
+       489.5
+      ],
+      "compact": false,
+      "label": "42 Marseille",
+      "labelBox": [
+       237,
+       479.5,
+       66.16
+      ],
+      "pillBox": [
+       211,
+       467.5,
+       109.16,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       225,
+       489.5
+      ],
+      "box": [
+       211,
+       467.5,
+       109.16,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.238
+     },
+     {
+      "id": "mulhouse",
+      "name": "42 Mulhouse",
+      "anchor": [
+       255.5,
+       374.5
+      ],
+      "compact": false,
+      "label": "42 Mulhouse",
+      "labelBox": [
+       268.5,
+       364.5,
+       69.39
+      ],
+      "pillBox": [
+       242.5,
+       352.5,
+       112.39,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       256.5,
+       374.5
+      ],
+      "box": [
+       242.5,
+       352.5,
+       112.39,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.054
+     },
+     {
+      "id": "nice",
+      "name": "42 Nice",
+      "anchor": [
+       257.5,
+       478
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       257.5,
+       478
+      ],
+      "box": [
+       250.5,
+       471,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.284
+     },
+     {
+      "id": "paris",
+      "name": "42 Paris",
+      "anchor": [
+       170,
+       346
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       170,
+       346
+      ],
+      "box": [
+       163,
+       339,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.142
+     },
+     {
+      "id": "perpignan",
+      "name": "42 Perpignan",
+      "anchor": [
+       177.5,
+       505
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       177.5,
+       505
+      ],
+      "box": [
+       170.5,
+       498,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.243
+     }
+    ],
+    "ar-light": [
+     {
+      "id": "angouleme",
+      "name": "42 Angoulême",
+      "anchor": [
+       129.5,
+       427.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       129.5,
+       427.5
+      ],
+      "box": [
+       122.5,
+       420.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.242
+     },
+     {
+      "id": "le-havre",
+      "name": "42 Le Havre",
+      "anchor": [
+       134,
+       330
+      ],
+      "compact": false,
+      "label": "42 Le Havre",
+      "labelBox": [
+       147,
+       320,
+       65.59
+      ],
+      "pillBox": [
+       121,
+       308,
+       108.59,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       135,
+       330
+      ],
+      "box": [
+       121,
+       308,
+       108.59,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.31
+     },
+     {
+      "id": "lyon",
+      "name": "42 Lyon",
+      "anchor": [
+       212,
+       426
+      ],
+      "compact": false,
+      "label": "42 Lyon",
+      "labelBox": [
+       225,
+       416,
+       42.38
+      ],
+      "pillBox": [
+       199,
+       404,
+       85.38,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       213,
+       426
+      ],
+      "box": [
+       199,
+       404,
+       85.38,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.246
+     },
+     {
+      "id": "marseille",
+      "name": "42 Marseille",
+      "anchor": [
+       224,
+       489.5
+      ],
+      "compact": false,
+      "label": "42 Marseille",
+      "labelBox": [
+       237,
+       479.5,
+       66.16
+      ],
+      "pillBox": [
+       211,
+       467.5,
+       109.16,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       225,
+       489.5
+      ],
+      "box": [
+       211,
+       467.5,
+       109.16,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.238
+     },
+     {
+      "id": "mulhouse",
+      "name": "42 Mulhouse",
+      "anchor": [
+       255.5,
+       374.5
+      ],
+      "compact": false,
+      "label": "42 Mulhouse",
+      "labelBox": [
+       268.5,
+       364.5,
+       69.39
+      ],
+      "pillBox": [
+       242.5,
+       352.5,
+       112.39,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       256.5,
+       374.5
+      ],
+      "box": [
+       242.5,
+       352.5,
+       112.39,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.054
+     },
+     {
+      "id": "nice",
+      "name": "42 Nice",
+      "anchor": [
+       257.5,
+       478
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       257.5,
+       478
+      ],
+      "box": [
+       250.5,
+       471,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.284
+     },
+     {
+      "id": "paris",
+      "name": "42 Paris",
+      "anchor": [
+       170,
+       346
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       170,
+       346
+      ],
+      "box": [
+       163,
+       339,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.142
+     },
+     {
+      "id": "perpignan",
+      "name": "42 Perpignan",
+      "anchor": [
+       177.5,
+       505
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       177.5,
+       505
+      ],
+      "box": [
+       170.5,
+       498,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.243
+     }
+    ],
+    "ar-dark": [
+     {
+      "id": "angouleme",
+      "name": "42 Angoulême",
+      "anchor": [
+       129.5,
+       427.5
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       129.5,
+       427.5
+      ],
+      "box": [
+       122.5,
+       420.5,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.242
+     },
+     {
+      "id": "le-havre",
+      "name": "42 Le Havre",
+      "anchor": [
+       134,
+       330
+      ],
+      "compact": false,
+      "label": "42 Le Havre",
+      "labelBox": [
+       147,
+       320,
+       65.59
+      ],
+      "pillBox": [
+       121,
+       308,
+       108.59,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       135,
+       330
+      ],
+      "box": [
+       121,
+       308,
+       108.59,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.31
+     },
+     {
+      "id": "lyon",
+      "name": "42 Lyon",
+      "anchor": [
+       212,
+       426
+      ],
+      "compact": false,
+      "label": "42 Lyon",
+      "labelBox": [
+       225,
+       416,
+       42.38
+      ],
+      "pillBox": [
+       199,
+       404,
+       85.38,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       213,
+       426
+      ],
+      "box": [
+       199,
+       404,
+       85.38,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.246
+     },
+     {
+      "id": "marseille",
+      "name": "42 Marseille",
+      "anchor": [
+       224,
+       489.5
+      ],
+      "compact": false,
+      "label": "42 Marseille",
+      "labelBox": [
+       237,
+       479.5,
+       66.16
+      ],
+      "pillBox": [
+       211,
+       467.5,
+       109.16,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       225,
+       489.5
+      ],
+      "box": [
+       211,
+       467.5,
+       109.16,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.238
+     },
+     {
+      "id": "mulhouse",
+      "name": "42 Mulhouse",
+      "anchor": [
+       255.5,
+       374.5
+      ],
+      "compact": false,
+      "label": "42 Mulhouse",
+      "labelBox": [
+       268.5,
+       364.5,
+       69.39
+      ],
+      "pillBox": [
+       242.5,
+       352.5,
+       112.39,
+       44
+      ],
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       256.5,
+       374.5
+      ],
+      "box": [
+       242.5,
+       352.5,
+       112.39,
+       44
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.054
+     },
+     {
+      "id": "nice",
+      "name": "42 Nice",
+      "anchor": [
+       257.5,
+       478
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       257.5,
+       478
+      ],
+      "box": [
+       250.5,
+       471,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.284
+     },
+     {
+      "id": "paris",
+      "name": "42 Paris",
+      "anchor": [
+       170,
+       346
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       170,
+       346
+      ],
+      "box": [
+       163,
+       339,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.142
+     },
+     {
+      "id": "perpignan",
+      "name": "42 Perpignan",
+      "anchor": [
+       177.5,
+       505
+      ],
+      "compact": true,
+      "label": null,
+      "labelBox": null,
+      "pillBox": null,
+      "fontSize": 12.0,
+      "lineHeight": 20.0,
+      "dot": [
+       177.5,
+       505
+      ],
+      "box": [
+       170.5,
+       498,
+       14,
+       14
+      ],
+      "fontWeight": 500,
+      "projectionErrorPx": 0.243
+     }
+    ]
+   },
+   "comparison": {
+    "light": {
+     "all": {
+      "pixels": 448409,
+      "landAgreement": 0.9901,
+      "bestShiftPx": [
+       0.0,
+       0.0
+      ],
+      "agreementAtBestShift": 0.9901,
+      "coastCaptureToSvgPx": {
+       "mean": 0.278,
+       "p95": 0.5,
+       "within1px": 0.9898,
+       "within2px": 0.9961
+      },
+      "coastSvgToCapturePx": {
+       "mean": 0.319,
+       "p95": 1.0,
+       "within1px": 0.9733,
+       "within2px": 0.9868
+      }
+     },
+     "sharp": {
+      "pixels": 152163,
+      "landAgreement": 0.9922,
+      "bestShiftPx": [
+       0.0,
+       0.0
+      ],
+      "agreementAtBestShift": 0.9922,
+      "coastCaptureToSvgPx": {
+       "mean": 0.329,
+       "p95": 1.0,
+       "within1px": 0.9746,
+       "within2px": 0.9854
+      },
+      "coastSvgToCapturePx": {
+       "mean": 0.271,
+       "p95": 0.5,
+       "within1px": 0.9886,
+       "within2px": 0.9992
+      }
+     }
+    },
+    "dark": {
+     "all": {
+      "pixels": 448409,
+      "landAgreement": 0.9904,
+      "bestShiftPx": [
+       0.0,
+       0.0
+      ],
+      "agreementAtBestShift": 0.9904,
+      "coastCaptureToSvgPx": {
+       "mean": 0.325,
+       "p95": 1.0,
+       "within1px": 0.9637,
+       "within2px": 0.9836
+      },
+      "coastSvgToCapturePx": {
+       "mean": 0.394,
+       "p95": 1.5,
+       "within1px": 0.9442,
+       "within2px": 0.9702
+      }
+     },
+     "sharp": {
+      "pixels": 152163,
+      "landAgreement": 0.9944,
+      "bestShiftPx": [
+       0.0,
+       0.0
+      ],
+      "agreementAtBestShift": 0.9944,
+      "coastCaptureToSvgPx": {
+       "mean": 0.329,
+       "p95": 1.0,
+       "within1px": 0.9705,
+       "within2px": 0.9877
+      },
+      "coastSvgToCapturePx": {
+       "mean": 0.284,
+       "p95": 0.5,
+       "within1px": 0.9917,
+       "within2px": 1.0
+      }
+     }
+    }
+   }
+  }
+ },
+ "medallion": {
+  "file": "globe-medaillon.svg",
+  "chars": 10809,
+  "bytes": 10809,
+  "sizePx": 32,
+  "viewBox": [
+   0,
+   0,
+   320,
+   320
+  ],
+  "source": "span.scope-medallion (32 px, bordure 1 px --control-glass-edge) ; dock-navigation.mjs : la scène Monde ordinateur au repos, mise à l’échelle 32 / (2 × rayon du disque) et découpée au disque",
+  "camera": "vue monde--desktop (centre [6, 18], zoom 1.905859), échelle 0.059923",
+  "simplification": {
+   "tolerancePxAt32": 0.05,
+   "minIslandAreaPx2At32": 0.02,
+   "rejoinAnomalies": 0
+  },
+  "groups": "sphere, land, outline (bordure du médaillon) ; ni frontières (0,03 px une fois réduites) ni repères",
+  "capture": "medaillon-capture/ (python3 globe_svg.py --capture-medallion) : la page montre aussi les 25 repères réduits à des points (pastilles de 5 à 10 × 2,6 px, points roses ≈ 0,5 px), non repris ici",
+  "outline": {
+   "light": "rgba(255,255,255,.72)",
+   "dark": "rgba(255,255,255,.25)",
+   "cssVar": "--control-glass-edge"
+  },
+  "comparison": {
+   "light": {
+    "source": "capture du médaillon ancré",
+    "landAgreementX8": 0.9924,
+    "pixelsX8": 28481,
+    "meanAbsDiff32px0to255": 6.46,
+    "pixels32px": 453,
+    "note": "hors repères réduits du site et hors bordure"
+   },
+   "dark": {
+    "source": "capture du médaillon ancré",
+    "landAgreementX8": 0.9969,
+    "pixelsX8": 27082,
+    "meanAbsDiff32px0to255": 5.15,
+    "pixels32px": 453,
+    "note": "hors repères réduits du site et hors bordure"
+   }
+  }
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "essai": "pseudo-manquant",
+ "date": "2026-10-14",
+ "role": "contre-vérification indépendante de check.py",
+ "page": "baseline/content-preview.html",
+ "cases": [
+  {
+   "case": "explorer-vrai-globe",
+   "avant": {
+    "globe": true
+   },
+   "apres": {
+    "globe": true
+   },
+   "portee": {
+    "loaded": true,
+    "rules": [
+     {
+      "rule": ":root .app :is(#content-index .cp-profile-card .cp-card-copy",
+      "matched": 0,
+      "rendered": 0
+     },
+     {
+      "rule": ":root .app #content-index[data-view=\"grid\"] .cp-profile-card",
+      "matched": 0,
+      "rendered": 0
+     }
+    ],
+    "rendered": 0,
+    "marked": 0,
+    "markedOutsideIndex": 0
+   },
+   "avant-bis": {
+    "globe": true
+   },
+   "pixelsEssaiContreBase": 0,
+   "pixelsBaseContreBase": 0,
+   "errors": []
+  }
+ ]
+}

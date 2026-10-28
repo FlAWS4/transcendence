@@ -1,0 +1,97 @@
+/* Four stages, driven by the dock's available content width. The outer dock
+   stays 60px high; its buttons and selection stay 48px high in every stage.
+   Desktop keeps the existing horizontal composition. */
+/* Derive the selection from its final slot at every width. Measuring during
+   a resize can otherwise leave the old flex animation's intermediate width. */
+:root .app[data-navigation=dock] .main-nav.has-dock-search .nav-indicator {
+  --dock-last-slot:3;
+  --dock-indicator-slot:0;
+  --dock-slot-gap:4px;
+  --dock-inline-padding:5px;
+  --dock-slot-step:calc((100cqw + var(--dock-slot-gap)) / (var(--dock-last-slot) + 1));
+  width:calc(var(--dock-slot-step) - var(--dock-slot-gap)) !important;
+  left:calc(var(--dock-inline-padding) + var(--dock-indicator-slot) * var(--dock-slot-step));
+  transform:translateY(-50%) !important;
+  transition:left .45s var(--ease),width .45s var(--ease),opacity .22s ease;
+}
+:root .app[data-navigation=dock] .main-nav.has-dock-search:has(> button[data-section=awards]) .nav-indicator { --dock-last-slot:4; }
+:root .app[data-navigation=dock][data-section=projects] .main-nav.has-dock-search .nav-indicator { --dock-indicator-slot:1; }
+:root .app[data-navigation=dock][data-section=people] .main-nav.has-dock-search .nav-indicator { --dock-indicator-slot:2; }
+:root .app[data-navigation=dock][data-section=journal] .main-nav.has-dock-search .nav-indicator { --dock-indicator-slot:3; }
+:root .app[data-navigation=dock][data-section=awards] .main-nav.has-dock-search .nav-indicator { --dock-indicator-slot:4; }
+:root[dir=rtl] .app[data-navigation=dock] .main-nav.has-dock-search .nav-indicator {
+  left:calc(var(--dock-inline-padding) + (var(--dock-last-slot) - var(--dock-indicator-slot)) * var(--dock-slot-step));
+}
+@media(max-width:700px) {
+  :root .app[data-navigation=dock] .main-nav.has-dock-search .nav-indicator {
+    --dock-slot-gap:2px;
+    --dock-inline-padding:6px;
+  }
+}
+
+@container (max-width:560px) {
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section] {
+    flex-direction:column;
+    gap:2px;
+    padding-inline:2px;
+    font-size:11px;
+    line-height:18px;
+  }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section] > svg {
+    width:20px;
+    height:20px;
+    flex:0 0 20px;
+  }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section] > span {
+    min-width:0;
+    max-inline-size:100%;
+    block-size:18px;
+    flex-shrink:0;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    transition:opacity .2s,block-size .35s var(--ease);
+  }
+}
+
+@container (max-width:440px) {
+  /* Keep each icon centred while the selected button receives label space.
+     The controller also reads this token to compact the geographic path. */
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section] {
+    --dock-compact-item:48px;
+    flex:0 0 var(--dock-compact-item);
+    gap:0;
+    transition:opacity .2s ease,transform .36s var(--ease),color .25s,flex-grow .35s var(--ease),gap .35s var(--ease);
+    transition-delay:calc(150ms + var(--dock-menu-order,0) * 24ms),calc(150ms + var(--dock-menu-order,0) * 24ms),0s,0s,0s;
+  }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section][aria-current] {
+    flex-grow:1;
+    gap:2px;
+  }
+  /* A zero-height, transparent label retains the button's accessible name. */
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section]:not([aria-current]) > span {
+    block-size:0;
+    opacity:0;
+  }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search .nav-indicator {
+    --dock-compact-item:48px;
+    --dock-slot-step:calc(var(--dock-compact-item) + var(--dock-slot-gap));
+    width:calc(100cqw - var(--dock-last-slot) * var(--dock-slot-step)) !important;
+    transition:left .35s var(--ease),width .35s var(--ease),opacity .22s ease;
+  }
+}
+
+@container (max-width:300px) {
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section],
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section][aria-current] {
+    flex:1 1 0;
+    gap:0;
+  }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section] > span {
+    block-size:0;
+    opacity:0;
+  }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search .nav-indicator {
+    --dock-slot-step:calc((100cqw + var(--dock-slot-gap)) / (var(--dock-last-slot) + 1));
+    width:calc(var(--dock-slot-step) - var(--dock-slot-gap)) !important;
+  }
+}

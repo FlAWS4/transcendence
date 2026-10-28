@@ -1,0 +1,132 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "arrival-account-hidden",
+      "result": {
+        "width": 151.984375,
+        "height": 54,
+        "lang": "fr",
+        "labels": [
+          "Se connecter",
+          "Visiter"
+        ]
+      }
+    },
+    {
+      "case": "background-click-theme",
+      "result": "dark"
+    },
+    {
+      "case": "automatic-language-cycle",
+      "result": [
+        {
+          "lang": "fr",
+          "t": 1161.2999999970198
+        },
+        {
+          "lang": "en",
+          "t": 5016
+        },
+        {
+          "lang": "ar",
+          "t": 9061.5
+        },
+        {
+          "lang": "fr",
+          "t": 13061.40000000596
+        }
+      ]
+    },
+    {
+      "case": "hover-pauses-language",
+      "result": "fr"
+    },
+    {
+      "case": "keyboard-focus-pauses-language",
+      "result": "fr"
+    },
+    {
+      "case": "dialog-pauses-language",
+      "result": "fr"
+    },
+    {
+      "case": "gap-changes-theme",
+      "result": "light"
+    },
+    {
+      "case": "keyboard-background-theme",
+      "result": {
+        "theme": "dark",
+        "focusVisible": true
+      }
+    },
+    {
+      "case": "mobile-arabic-equal-pair",
+      "result": {
+        "width": 272,
+        "height": 64,
+        "lang": "ar",
+        "labels": [
+          "تسجيل الدخول",
+          "زيارة"
+        ]
+      }
+    },
+    {
+      "case": "landscape-equal-pair",
+      "result": {
+        "width": 304.5,
+        "height": 56,
+        "lang": "ar",
+        "labels": [
+          "تسجيل الدخول",
+          "زيارة"
+        ]
+      }
+    },
+    {
+      "case": "touch-background-theme",
+      "result": "dark"
+    },
+    {
+      "case": "visit-freezes-language-and-restores-account",
+      "result": "ar"
+    },
+    {
+      "case": "world-icon-light",
+      "result": {
+        "background": "rgba(0, 0, 0, 0)",
+        "icon": "rgb(0, 186, 188)",
+        "target": 44
+      }
+    },
+    {
+      "case": "world-icon-dark",
+      "result": {
+        "background": "rgba(0, 0, 0, 0)",
+        "icon": "rgb(237, 52, 145)",
+        "target": 44
+      }
+    }
+  ],
+  "sourcesBefore": {
+    "index.html": "61ce9fa325c0f25c11e1fda27e1357e8c99576484ec5d836096127e3b9b12d68",
+    "content-preview.html": "f311bc6feb23729a436e85888d501724b9ddac94e18d2924a581a5416f82c8e9",
+    "welcome.mjs": "25d3f8bac7e223ac264251e4eb13757cd881cd974d6df7f800a761a4342c9efe",
+    "content-preview.mjs": "22299abf6faef06e7ab91e805f3ba65d04a41937b3214a3950218ab01db14a61",
+    "entrance.mjs": "8b28594b995b906c17be4e578a7f701c6fa7e97ac0074867fe264d7347a037b6",
+    "entrance.css": "b5f10c49c8d745578165c792b65f732751762918e4b2fd0da11b07ec8dc12038",
+    "dock-navigation.css": "174ea265d6a863f906a945747e8b3056e071056a0f84832f4f695711547b998c"
+  },
+  "sourcesAfter": {
+    "index.html": "61ce9fa325c0f25c11e1fda27e1357e8c99576484ec5d836096127e3b9b12d68",
+    "content-preview.html": "f311bc6feb23729a436e85888d501724b9ddac94e18d2924a581a5416f82c8e9",
+    "welcome.mjs": "25d3f8bac7e223ac264251e4eb13757cd881cd974d6df7f800a761a4342c9efe",
+    "content-preview.mjs": "22299abf6faef06e7ab91e805f3ba65d04a41937b3214a3950218ab01db14a61",
+    "entrance.mjs": "8b28594b995b906c17be4e578a7f701c6fa7e97ac0074867fe264d7347a037b6",
+    "entrance.css": "b5f10c49c8d745578165c792b65f732751762918e4b2fd0da11b07ec8dc12038",
+    "dock-navigation.css": "174ea265d6a863f906a945747e8b3056e071056a0f84832f4f695711547b998c"
+  },
+  "limits": "Isolated Chrome, real 4-second timers, keyboard/mouse/touch events, reduced motion. Mobile and landscape emulated. No physical phone or real screen reader. Globe positioning verified independently."
+}

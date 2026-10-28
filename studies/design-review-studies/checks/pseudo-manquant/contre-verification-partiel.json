@@ -1,0 +1,482 @@
+{
+ "essai": "pseudo-manquant",
+ "date": "2026-10-14",
+ "role": "contre-vérification indépendante de check.py",
+ "page": "baseline/content-preview.html",
+ "cases": [
+  {
+   "case": "toutes-pages-ordinateur-fr",
+   "pages": 4,
+   "cards": 78,
+   "lang": "fr",
+   "apres": {
+    "wrongState": 0,
+    "shownPlaceholders": 0,
+    "unequalHeights": 0,
+    "unlevelCampus": 0,
+    "unlevelCohort": 0,
+    "reserveNotOneLoginLine": 0
+   },
+   "avant": {
+    "unequalHeights": 0,
+    "unlevelCampus": 0,
+    "unlevelCohort": 0
+   },
+   "texteVisibleAvant": 72,
+   "texteVisibleApres": 0,
+   "innerTextAvant": 72,
+   "innerTextApres": 0,
+   "rangeesAvantApres": [
+    [
+     5,
+     5
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "colonnes": [
+    5
+   ],
+   "overflowApres": false,
+   "errors": []
+  },
+  {
+   "case": "arbre-accessibilite-et-texte",
+   "avant people fr": {
+    "ax": {
+     "nodes": 956,
+     "hits": 72,
+     "sample": [
+      "Transcender Lucía Roca Pseudo Intra: Pseudo Intra à renseigner 42 Barcelona Rentrée 2023 P",
+      "Cadet Emma De Smet Pseudo Intra: Pseudo Intra à renseigner 42 Brussels Rentrée 2024 Promot"
+     ]
+    },
+    "texte": {
+     "nodes": 18,
+     "visible": 18,
+     "where": [
+      "profile-lucia-roca",
+      "profile-emma-de-smet",
+      "profile-tomas-vieira",
+      "profile-lea-rakoto"
+     ],
+     "innerText": 18
+    }
+   },
+   "avant people ar": {
+    "ax": {
+     "nodes": 1045,
+     "hits": 54,
+     "sample": [
+      "Transcender لوسيا روكا اسم المستخدم في Intra: اسم مستخدم Intra غير محدد 42 Barcelona سنة ا",
+      "كاديت إيما دي سميت اسم المستخدم في Intra: اسم مستخدم Intra غير محدد 42 Brussels سنة الالتح"
+     ]
+    },
+    "texte": {
+     "nodes": 18,
+     "visible": 18,
+     "where": [
+      "profile-lucia-roca",
+      "profile-emma-de-smet",
+      "profile-tomas-vieira",
+      "profile-lea-rakoto"
+     ],
+     "innerText": 18
+    }
+   },
+   "avant people/profile-lucia-roca fr": {
+    "ax": {
+     "nodes": 270,
+     "hits": 3,
+     "sample": [
+      "Pseudo Intra: Pseudo Intra à renseigner",
+      "Pseudo Intra à renseigner"
+     ]
+    },
+    "texte": {
+     "nodes": 1,
+     "visible": 1,
+     "where": [
+      "cp-profile-login"
+     ],
+     "innerText": 1
+    }
+   },
+   "avant people/profile-lucia-roca en": {
+    "ax": {
+     "nodes": 270,
+     "hits": 3,
+     "sample": [
+      "Intra login: Intra login to be added",
+      "Intra login to be added"
+     ]
+    },
+    "texte": {
+     "nodes": 1,
+     "visible": 1,
+     "where": [
+      "cp-profile-login"
+     ],
+     "innerText": 1
+    }
+   },
+   "apres people fr": {
+    "ax": {
+     "nodes": 902,
+     "hits": 0,
+     "sample": []
+    },
+    "texte": {
+     "nodes": 18,
+     "visible": 0,
+     "where": [],
+     "innerText": 0
+    }
+   },
+   "apres people ar": {
+    "ax": {
+     "nodes": 955,
+     "hits": 0,
+     "sample": []
+    },
+    "texte": {
+     "nodes": 18,
+     "visible": 0,
+     "where": [],
+     "innerText": 0
+    }
+   },
+   "apres people/profile-lucia-roca fr": {
+    "ax": {
+     "nodes": 267,
+     "hits": 0,
+     "sample": []
+    },
+    "texte": {
+     "nodes": 1,
+     "visible": 0,
+     "where": [],
+     "innerText": 0
+    }
+   },
+   "apres people/profile-lucia-roca en": {
+    "ax": {
+     "nodes": 267,
+     "hits": 0,
+     "sample": []
+    },
+    "texte": {
+     "nodes": 1,
+     "visible": 0,
+     "where": [],
+     "innerText": 0
+    }
+   },
+   "errors": []
+  },
+  {
+   "case": "arrivee-depuis-explorer-tri-plus-anciens",
+   "avant": {
+    "route": "#people",
+    "grille": {
+     "wrongState": 5,
+     "shownPlaceholders": 5,
+     "unequalHeights": 0,
+     "unlevelCampus": 0
+    },
+    "etatsPremieresRangees": [
+     "visible"
+    ],
+    "decalagesGrille": [],
+    "decalages": 1
+   },
+   "apres": {
+    "route": "#people",
+    "grille": {
+     "wrongState": 0,
+     "shownPlaceholders": 0,
+     "unequalHeights": 0,
+     "unlevelCampus": 0
+    },
+    "etatsPremieresRangees": [
+     "replie"
+    ],
+    "decalagesGrille": [],
+    "decalages": 1
+   },
+   "errors": []
+  },
+  {
+   "case": "filtre-statut-sans-recharger",
+   "exception": "IndexError('list index out of range')",
+   "errors": []
+  },
+  {
+   "case": "langue-et-theme-par-le-menu-du-compte",
+   "etapes": [
+    {
+     "vue": "annuaire",
+     "lang": "ar",
+     "dir": "rtl",
+     "texte": {
+      "nodes": 18,
+      "visible": 0,
+      "where": [],
+      "innerText": 0
+     },
+     "grille": {
+      "wrongState": 0,
+      "shownPlaceholders": 0,
+      "unequalHeights": 0,
+      "unlevelCampus": 0,
+      "overflow": false
+     }
+    },
+    {
+     "vue": "annuaire",
+     "lang": "en",
+     "dir": "ltr",
+     "texte": {
+      "nodes": 18,
+      "visible": 0,
+      "where": [],
+      "innerText": 0
+     },
+     "grille": {
+      "wrongState": 0,
+      "shownPlaceholders": 0,
+      "unequalHeights": 0,
+      "unlevelCampus": 0,
+      "overflow": false
+     }
+    },
+    {
+     "vue": "annuaire",
+     "lang": "fr",
+     "dir": "ltr",
+     "texte": {
+      "nodes": 18,
+      "visible": 0,
+      "where": [],
+      "innerText": 0
+     },
+     "grille": {
+      "wrongState": 0,
+      "shownPlaceholders": 0,
+      "unequalHeights": 0,
+      "unlevelCampus": 0,
+      "overflow": false
+     }
+    },
+    {
+     "vue": "fiche Lucía Roca",
+     "detail": {
+      "lang": "ar",
+      "theme": "dark",
+      "title": "لوسيا روكا",
+      "loginShown": false,
+      "loginText": "اسم مستخدم Intra غير محدد",
+      "overflow": false
+     },
+     "texte": {
+      "nodes": 19,
+      "visible": 0,
+      "where": [],
+      "innerText": 0
+     }
+    },
+    {
+     "vue": "fiche Lucía Roca",
+     "detail": {
+      "lang": "en",
+      "theme": "light",
+      "title": "Lucía Roca",
+      "loginShown": false,
+      "loginText": "Intra login to be added",
+      "overflow": false
+     },
+     "texte": {
+      "nodes": 19,
+      "visible": 0,
+      "where": [],
+      "innerText": 0
+     }
+    },
+    {
+     "vue": "fiche Lucía Roca",
+     "detail": {
+      "lang": "fr",
+      "theme": "light",
+      "title": "Lucía Roca",
+      "loginShown": false,
+      "loginText": "Pseudo Intra à renseigner",
+      "overflow": false
+     },
+     "texte": {
+      "nodes": 19,
+      "visible": 0,
+      "where": [],
+      "innerText": 0
+     }
+    }
+   ],
+   "errors": []
+  },
+  {
+   "case": "largeurs-intermediaires-sans-recharger",
+   "etapes": [
+    {
+     "largeur": 1280,
+     "columns": 5,
+     "rows": 5,
+     "wrongState": 0,
+     "shownPlaceholders": 0,
+     "unequalHeights": 0,
+     "unlevelCampus": 0,
+     "overflow": false
+    },
+    {
+     "largeur": 1100,
+     "columns": 5,
+     "rows": 5,
+     "wrongState": 0,
+     "shownPlaceholders": 0,
+     "unequalHeights": 0,
+     "unlevelCampus": 0,
+     "overflow": false
+    },
+    {
+     "largeur": 900,
+     "columns": 4,
+     "rows": 6,
+     "wrongState": 0,
+     "shownPlaceholders": 0,
+     "unequalHeights": 0,
+     "unlevelCampus": 0,
+     "overflow": false
+    },
+    {
+     "largeur": 768,
+     "columns": 3,
+     "rows": 8,
+     "wrongState": 0,
+     "shownPlaceholders": 0,
+     "unequalHeights": 0,
+     "unlevelCampus": 0,
+     "overflow": false
+    },
+    {
+     "largeur": 601,
+     "columns": 2,
+     "rows": 12,
+     "wrongState": 0,
+     "shownPlaceholders": 0,
+     "unequalHeights": 0,
+     "unlevelCampus": 0,
+     "overflow": false
+    },
+    {
+     "largeur": 600,
+     "columns": 2,
+     "rows": 12,
+     "wrongState": 0,
+     "shownPlaceholders": 0,
+     "unequalHeights": 0,
+     "unlevelCampus": 0,
+     "overflow": false
+    },
+    {
+     "largeur": 480,
+     "columns": 2,
+     "rows": 12,
+     "wrongState": 0,
+     "shownPlaceholders": 0,
+     "unequalHeights": 0,
+     "unlevelCampus": 0,
+     "overflow": false
+    },
+    {
+     "largeur": 1440,
+     "columns": 5,
+     "rows": 5,
+     "wrongState": 0,
+     "shownPlaceholders": 0,
+     "unequalHeights": 0,
+     "unlevelCampus": 0,
+     "overflow": false
+    }
+   ],
+   "errors": []
+  },
+  {
+   "case": "focus-clavier-carte-sans-pseudo",
+   "avant": {
+    "tabulations": 17,
+    "focus": {
+     "tag": "BUTTON",
+     "cls": "cp-favorite cp-favorite-compact",
+     "visible": true,
+     "outline": "solid 2px rgb(0, 142, 144)",
+     "offset": "3px",
+     "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px, rgba(255, 255, 255, 0.7) 0px 1px 0px 0p"
+    },
+    "carte": {
+     "x": 842,
+     "y": 272,
+     "w": 204,
+     "h": 271.390625
+    }
+   },
+   "apres": {
+    "tabulations": 17,
+    "focus": {
+     "tag": "BUTTON",
+     "cls": "cp-favorite cp-favorite-compact",
+     "visible": true,
+     "outline": "solid 2px rgb(0, 142, 144)",
+     "offset": "3px",
+     "shadow": "rgba(24, 61, 60, 0.07) 0px 9px 22px 0px, rgba(255, 255, 255, 0.7) 0px 1px 0px 0p"
+    },
+    "carte": {
+     "x": 842,
+     "y": 272,
+     "w": 204,
+     "h": 271.390625
+    }
+   },
+   "errors": []
+  }
+ ],
+ "acceptation": {
+  "exceptions": [
+   "filtre-statut-sans-recharger"
+  ],
+  "toutesPagesSansMention": true,
+  "toutesPagesMentionPresenteAvant": true,
+  "toutesPagesEtatAttendu": true,
+  "toutesPagesHauteursEgales": true,
+  "aucuneRangeeDesaligneeAjoutee": true,
+  "espaceReserveEgalAUneLigneDePseudo": true,
+  "aucunDebordement": true,
+  "arbreAccessibleSansMention": true,
+  "arbreAccessibleAvantAvecMention": true,
+  "arriveeDepuisExplorerSansDecalageGrille": true,
+  "filtreStatutSuivi": false,
+  "menuDuCompteLangueEtTheme": true,
+  "largeursIntermediaires": true,
+  "focusClavierIdentique": true,
+  "listeToutesPages": false,
+  "explorerVraiGlobeIdentique": false,
+  "aucuneErreur": true
+ }
+}

@@ -1,0 +1,587 @@
+{
+  "date": "2026-10-08",
+  "state": "chronicles-96 / content-preview64, before clickable media and wheel expansion",
+  "preview": "preview.html#projects",
+  "reason": "Preserve photos, illustrations and main portraits as non-clickable detail media, with the tactile campus sheet and complete Paris/Mulhouse data.",
+  "originalFiles": [
+    {
+      "file": "campus-details.css",
+      "sha256": "7b9e0d929a5d65e0c4ba95c230cc918b0a1391cf702eca29784dbea4fc545f5f"
+    },
+    {
+      "file": "campus-details.mjs",
+      "sha256": "f13ca048b7855824a48a1c812f4071653dce2f524e377c1ec6169559ed8f4c7b"
+    },
+    {
+      "file": "campus-details.test.mjs",
+      "sha256": "608683918c96bb87cacc40546336d852bd57542615e4824e8585dbf9f43f3c9b"
+    },
+    {
+      "file": "content-preview.html",
+      "sha256": "e86fdd8ec02c8967e033d9f5db3a520e62bbd7e0efe9a3e16cdc8b1758c46277"
+    },
+    {
+      "file": "content-preview.mjs",
+      "sha256": "d8370c8f1b0514b911e0b0eac92729535e72d2fbd7374c3be3e26d02083b62b7"
+    },
+    {
+      "file": "index.html",
+      "sha256": "630c3057dd69ef1014d827c2d4e57e7bf8cf8cf84714df11fd070d091add5afc"
+    },
+    {
+      "file": "profile-ui.mjs",
+      "sha256": "0ca2fbb18199ed138d6d655d28d4cf88760be884457b9cb8d2b75f8d1d9f2876"
+    },
+    {
+      "file": "profiles.css",
+      "sha256": "045deb77ea6aae5703bbd85bfd4a5aecbb5e705a6ecacc6470b1be4eb02500a4"
+    },
+    {
+      "file": "project-ui.mjs",
+      "sha256": "5fd59f02e630be4bb6c4beb85579ecf0623edee0b08e2ef8f370778b1d319d6f"
+    },
+    {
+      "file": "projects.css",
+      "sha256": "66d5ee3487e07045d6e9281cf6a47d24e3d3bd2b197136c9dbe8fe5b115cd746"
+    },
+    {
+      "file": "welcome.mjs",
+      "sha256": "c2249c7e70df0c43a367215b1e941126ca5bee5de8a51c5d7838409064ffc05a"
+    }
+  ],
+  "supplementarySources": {
+    "journal-ui.mjs": {
+      "source": "journal-ui.mjs",
+      "sourceSha256": "6e3785be0597d253af37de1478f50737d3215194e14fed409b1fad1dc118dc2a"
+    },
+    "campus-sheet.mjs": {
+      "source": "archive/pre-chronicles-label-20261008/runtime/campus-sheet.mjs",
+      "sourceSha256": "433187f48dacdf1641cda6bc27bc198e67c4c5edbace110a4d69c2752f2b55b4"
+    }
+  },
+  "journalSourceNote": "Exact current journal-ui source retained after its sole project-ui cache bump; runtime pins that import to the old project implementation. Chronicles labels are preserved.",
+  "runtime": [
+    {
+      "file": "runtime/brand-wordmark.mjs",
+      "source": "brand-wordmark.mjs",
+      "sourceSha256": "a057685c6e438dcff6850891487bd0d1862e91aa7547b70c634e105a789a77f9",
+      "sha256": "bc66f69a5409548f506f4283e397066288ec2ef79b149bf019f60616e0067e83",
+      "adapted": true
+    },
+    {
+      "file": "runtime/campus-details.mjs",
+      "source": "archive/pre-clickable-media-20261008/campus-details.mjs",
+      "sourceSha256": "f13ca048b7855824a48a1c812f4071653dce2f524e377c1ec6169559ed8f4c7b",
+      "sha256": "f13ca048b7855824a48a1c812f4071653dce2f524e377c1ec6169559ed8f4c7b",
+      "adapted": false
+    },
+    {
+      "file": "runtime/campus-direction.mjs",
+      "source": "campus-direction.mjs",
+      "sourceSha256": "383b1ca089924dc5d66f340b0dc167635b1c7b2157594481e071754a3ebbc3c3",
+      "sha256": "4f01c6e1f41ded4dcf7ff19bd3826cee7e9149357cd5e286e8395da638563765",
+      "adapted": true
+    },
+    {
+      "file": "runtime/campus-map-dialog.mjs",
+      "source": "campus-map-dialog.mjs",
+      "sourceSha256": "f509460ec8524033bd9900d6aaf044d50a98575d1a33a9afbe12e521c03b0093",
+      "sha256": "ef68639fd6af7f876df3152053a5692a6e3e5215e60c0817c11298ef9e74e8c0",
+      "adapted": true
+    },
+    {
+      "file": "runtime/campus-outbound.mjs",
+      "source": "campus-outbound.mjs",
+      "sourceSha256": "e452bb28cb34784de25c3eb1807b947fba906d8aeee4134ece96951c576ea840",
+      "sha256": "e452bb28cb34784de25c3eb1807b947fba906d8aeee4134ece96951c576ea840",
+      "adapted": false
+    },
+    {
+      "file": "runtime/campus-preload.mjs",
+      "source": "campus-preload.mjs",
+      "sourceSha256": "1184a4329cb2119cd804e07a14e77ad96d141da96f2011d22c823699d3bae4cc",
+      "sha256": "1184a4329cb2119cd804e07a14e77ad96d141da96f2011d22c823699d3bae4cc",
+      "adapted": false
+    },
+    {
+      "file": "runtime/campus-sheet.mjs",
+      "source": "archive/pre-clickable-media-20261008/campus-sheet.mjs",
+      "sourceSha256": "433187f48dacdf1641cda6bc27bc198e67c4c5edbace110a4d69c2752f2b55b4",
+      "sha256": "433187f48dacdf1641cda6bc27bc198e67c4c5edbace110a4d69c2752f2b55b4",
+      "adapted": false
+    },
+    {
+      "file": "runtime/campus-website.mjs",
+      "source": "campus-website.mjs",
+      "sourceSha256": "79edb1a8461605b471b8e307a50c65ca4251a9dc8666d503ceedcaca8f374e04",
+      "sha256": "79edb1a8461605b471b8e307a50c65ca4251a9dc8666d503ceedcaca8f374e04",
+      "adapted": false
+    },
+    {
+      "file": "runtime/content-controls.mjs",
+      "source": "content-controls.mjs",
+      "sourceSha256": "1895553ae52ac4f4bbc176864ebd867c1eaa6912a7477b9c74793c8596556744",
+      "sha256": "1895553ae52ac4f4bbc176864ebd867c1eaa6912a7477b9c74793c8596556744",
+      "adapted": false
+    },
+    {
+      "file": "runtime/content-filters.mjs",
+      "source": "content-filters.mjs",
+      "sourceSha256": "2a5b89a8df3948846e04a778ff30c32889138c9220ef104fcba507b76451191a",
+      "sha256": "2a5b89a8df3948846e04a778ff30c32889138c9220ef104fcba507b76451191a",
+      "adapted": false
+    },
+    {
+      "file": "runtime/content-preferences.mjs",
+      "source": "content-preferences.mjs",
+      "sourceSha256": "0ddc07b2ceeea4209177204609eba24dc3faf726faec6a9f8d56719c26956310",
+      "sha256": "0ddc07b2ceeea4209177204609eba24dc3faf726faec6a9f8d56719c26956310",
+      "adapted": false
+    },
+    {
+      "file": "runtime/content-preview-art.mjs",
+      "source": "content-preview-art.mjs",
+      "sourceSha256": "6c62c48e772bf24496f57de9220f710ba91828c7ae708e65fa1851a1c03e40f1",
+      "sha256": "6c62c48e772bf24496f57de9220f710ba91828c7ae708e65fa1851a1c03e40f1",
+      "adapted": false
+    },
+    {
+      "file": "runtime/content-preview-data.mjs",
+      "source": "content-preview-data.mjs",
+      "sourceSha256": "54b78c63d5ffffdfda3aea20e06c9308afeea946b6284c16343158fd3af0a998",
+      "sha256": "54b78c63d5ffffdfda3aea20e06c9308afeea946b6284c16343158fd3af0a998",
+      "adapted": false
+    },
+    {
+      "file": "runtime/content-transitions.mjs",
+      "source": "content-transitions.mjs",
+      "sourceSha256": "f60f2b1928815bb256d073cdf9a5614e02813ba411aba665544d50e6ecc6d533",
+      "sha256": "f60f2b1928815bb256d073cdf9a5614e02813ba411aba665544d50e6ecc6d533",
+      "adapted": false
+    },
+    {
+      "file": "runtime/detail-gate.mjs",
+      "source": "detail-gate.mjs",
+      "sourceSha256": "3ea851da71d99cc26a1cdd43a47f2af7363c27b409829ae5ef36a2749dba2d74",
+      "sha256": "3ea851da71d99cc26a1cdd43a47f2af7363c27b409829ae5ef36a2749dba2d74",
+      "adapted": false
+    },
+    {
+      "file": "runtime/detail-scroll.mjs",
+      "source": "detail-scroll.mjs",
+      "sourceSha256": "6d34289d73a5ca9a1141e1311fd85ceb5b3650e47f95a6502abcb0083c2de72c",
+      "sha256": "6d34289d73a5ca9a1141e1311fd85ceb5b3650e47f95a6502abcb0083c2de72c",
+      "adapted": false
+    },
+    {
+      "file": "runtime/dock-navigation.mjs",
+      "source": "dock-navigation.mjs",
+      "sourceSha256": "76d27ce114a554a64f33f1ee47b7af0b565d1eff27677afeb0a14181e60ce97e",
+      "sha256": "76d27ce114a554a64f33f1ee47b7af0b565d1eff27677afeb0a14181e60ce97e",
+      "adapted": false
+    },
+    {
+      "file": "runtime/dock-search-data.mjs",
+      "source": "dock-search-data.mjs",
+      "sourceSha256": "24048cb690e33da039c33698de7adaf25e4b8b1558ecc9fe9c8c8d83299bbef7",
+      "sha256": "24048cb690e33da039c33698de7adaf25e4b8b1558ecc9fe9c8c8d83299bbef7",
+      "adapted": false
+    },
+    {
+      "file": "runtime/dock-search.mjs",
+      "source": "dock-search.mjs",
+      "sourceSha256": "86307c70481ccb303a9fcea634344d0baf3302093acb7eabedcd7c4377e3849a",
+      "sha256": "86307c70481ccb303a9fcea634344d0baf3302093acb7eabedcd7c4377e3849a",
+      "adapted": false
+    },
+    {
+      "file": "runtime/entrance.mjs",
+      "source": "entrance.mjs",
+      "sourceSha256": "1b67405d60e5fadcf7997e41449c1c9ac109f4f3095d9ce7b351a4924b2d4ea0",
+      "sha256": "e9bceab9a3e483955172d98e66a167c1febdd9a4bc6c0cbdce6e2c26f2830509",
+      "adapted": true
+    },
+    {
+      "file": "runtime/geography-loader.mjs",
+      "source": "geography-loader.mjs",
+      "sourceSha256": "16b6c4205c9bfc45ae7649411146fc7164f44c293ea2eefd70111c3852fb35b0",
+      "sha256": "16b6c4205c9bfc45ae7649411146fc7164f44c293ea2eefd70111c3852fb35b0",
+      "adapted": false
+    },
+    {
+      "file": "runtime/geography-worker.mjs",
+      "source": "geography-worker.mjs",
+      "sourceSha256": "a319c9ca1e7d3cd7a3548f551f133ef8202e70ad5e747ca7b9af9084fb841d7b",
+      "sha256": "9659d0c6c3b6ce2f8df54337cf84d4dfa407aac9273e1a093b4c3a43bbb91116",
+      "adapted": true
+    },
+    {
+      "file": "runtime/globe-layout.mjs",
+      "source": "globe-layout.mjs",
+      "sourceSha256": "77cb50797dccdffbbe7d171f204142199149bd1f179f797064553c3e1604cd68",
+      "sha256": "77cb50797dccdffbbe7d171f204142199149bd1f179f797064553c3e1604cd68",
+      "adapted": false
+    },
+    {
+      "file": "runtime/globe-style.mjs",
+      "source": "globe-style.mjs",
+      "sourceSha256": "5833157316df2fd12b68d0ff1f63bcc14002e613fe5c49a473f12c8b71f1c313",
+      "sha256": "5833157316df2fd12b68d0ff1f63bcc14002e613fe5c49a473f12c8b71f1c313",
+      "adapted": false
+    },
+    {
+      "file": "runtime/integrated-globe.mjs",
+      "source": "integrated-globe.mjs",
+      "sourceSha256": "bf4dc9fdf7bd398e95389202ea0742e1cb9187cb066bc354d8b4aa7867ecc158",
+      "sha256": "bf4dc9fdf7bd398e95389202ea0742e1cb9187cb066bc354d8b4aa7867ecc158",
+      "adapted": false
+    },
+    {
+      "file": "runtime/journal-ui.mjs",
+      "source": "archive/pre-clickable-media-20261008/journal-ui.mjs",
+      "sourceSha256": "6e3785be0597d253af37de1478f50737d3215194e14fed409b1fad1dc118dc2a",
+      "sha256": "c49459bbbcc670ef95ad71b8b30cf33e3e7c62cfcf2748a35d871ff23ac98506",
+      "adapted": true
+    },
+    {
+      "file": "runtime/navigation-policy.mjs",
+      "source": "navigation-policy.mjs",
+      "sourceSha256": "4db9e09e09038370ed0f5a1ee2d8eee992fb6103b2987cbf3d9eec75dedf1524",
+      "sha256": "4db9e09e09038370ed0f5a1ee2d8eee992fb6103b2987cbf3d9eec75dedf1524",
+      "adapted": false
+    },
+    {
+      "file": "runtime/perf-diagnostics.mjs",
+      "source": "perf-diagnostics.mjs",
+      "sourceSha256": "4016591e20323f7c65fedbc43c80357625eb17f63557fc4a88402e647c9df1a3",
+      "sha256": "4016591e20323f7c65fedbc43c80357625eb17f63557fc4a88402e647c9df1a3",
+      "adapted": false
+    },
+    {
+      "file": "runtime/polar-cap-layer.mjs",
+      "source": "polar-cap-layer.mjs",
+      "sourceSha256": "c42cfcb4f41641cf71b633ced5fc608aa1a7f8f1013d0928178f401507613899",
+      "sha256": "c42cfcb4f41641cf71b633ced5fc608aa1a7f8f1013d0928178f401507613899",
+      "adapted": false
+    },
+    {
+      "file": "runtime/polar-geometry.mjs",
+      "source": "polar-geometry.mjs",
+      "sourceSha256": "783b6ed5d1ac98b1a51ae73d30c4c4497c79ccb0029df258274c1b60a5788ee1",
+      "sha256": "783b6ed5d1ac98b1a51ae73d30c4c4497c79ccb0029df258274c1b60a5788ee1",
+      "adapted": false
+    },
+    {
+      "file": "runtime/profile-data.mjs",
+      "source": "profile-data.mjs",
+      "sourceSha256": "d57756d01f5fba20dea308b3e3103fdcca7ce1d4db83caa2b8386042ab3258bf",
+      "sha256": "d57756d01f5fba20dea308b3e3103fdcca7ce1d4db83caa2b8386042ab3258bf",
+      "adapted": false
+    },
+    {
+      "file": "runtime/profile-sections.mjs",
+      "source": "profile-sections.mjs",
+      "sourceSha256": "463ca890b6fe5c0c352e8d59690f49d3e2140d3e91adf03f92b6311dd736a7ab",
+      "sha256": "463ca890b6fe5c0c352e8d59690f49d3e2140d3e91adf03f92b6311dd736a7ab",
+      "adapted": false
+    },
+    {
+      "file": "runtime/profile-ui.mjs",
+      "source": "archive/pre-clickable-media-20261008/profile-ui.mjs",
+      "sourceSha256": "0ca2fbb18199ed138d6d655d28d4cf88760be884457b9cb8d2b75f8d1d9f2876",
+      "sha256": "0ca2fbb18199ed138d6d655d28d4cf88760be884457b9cb8d2b75f8d1d9f2876",
+      "adapted": false
+    },
+    {
+      "file": "runtime/project-ui.mjs",
+      "source": "archive/pre-clickable-media-20261008/project-ui.mjs",
+      "sourceSha256": "5fd59f02e630be4bb6c4beb85579ecf0623edee0b08e2ef8f370778b1d319d6f",
+      "sha256": "5fd59f02e630be4bb6c4beb85579ecf0623edee0b08e2ef8f370778b1d319d6f",
+      "adapted": false
+    },
+    {
+      "file": "runtime/random-campus.mjs",
+      "source": "random-campus.mjs",
+      "sourceSha256": "649a4ce5da9271f9edcc7b028005ae6b7bf0a969087ba9eed585f234b17ce744",
+      "sha256": "649a4ce5da9271f9edcc7b028005ae6b7bf0a969087ba9eed585f234b17ce744",
+      "adapted": false
+    },
+    {
+      "file": "runtime/random-discovery.mjs",
+      "source": "random-discovery.mjs",
+      "sourceSha256": "104005642da690db2551d3a0a1a22bef55a2ace1f232b4f850522335d5aa893e",
+      "sha256": "104005642da690db2551d3a0a1a22bef55a2ace1f232b4f850522335d5aa893e",
+      "adapted": false
+    },
+    {
+      "file": "runtime/reading-scope.mjs",
+      "source": "reading-scope.mjs",
+      "sourceSha256": "cabd899895487c7f7c69ca879cfb83db59d2f507bcda2863577ecf7cc5238ca4",
+      "sha256": "cabd899895487c7f7c69ca879cfb83db59d2f507bcda2863577ecf7cc5238ca4",
+      "adapted": false
+    },
+    {
+      "file": "runtime/scope-popover.mjs",
+      "source": "scope-popover.mjs",
+      "sourceSha256": "af6c72a4bd8d0d9277ebc4ef9189b6248d883b906b1a495951b25354fe36fc4a",
+      "sha256": "af6c72a4bd8d0d9277ebc4ef9189b6248d883b906b1a495951b25354fe36fc4a",
+      "adapted": false
+    },
+    {
+      "file": "runtime/scope-selectors.mjs",
+      "source": "scope-selectors.mjs",
+      "sourceSha256": "37bd969fef32bc03b95ef471fe57ca544786e916b2d1c8890244467134eeb1bd",
+      "sha256": "37bd969fef32bc03b95ef471fe57ca544786e916b2d1c8890244467134eeb1bd",
+      "adapted": false
+    },
+    {
+      "file": "runtime/world-render-preparation.mjs",
+      "source": "world-render-preparation.mjs",
+      "sourceSha256": "5a8e50649b4e281524c69af6c3c481483e39a662114a2dddc357f4121059ca08",
+      "sha256": "5a8e50649b4e281524c69af6c3c481483e39a662114a2dddc357f4121059ca08",
+      "adapted": false
+    },
+    {
+      "file": "runtime/awards.css",
+      "source": "awards.css",
+      "sourceSha256": "2c0156f4d833c22e309ff32d7c77da54a898bffb846d3ce1a8446b498b2d877d",
+      "sha256": "2c0156f4d833c22e309ff32d7c77da54a898bffb846d3ce1a8446b498b2d877d",
+      "adapted": false
+    },
+    {
+      "file": "runtime/brand-wordmark.css",
+      "source": "brand-wordmark.css",
+      "sourceSha256": "fef9e79d5f0ab056d58ec458c774c5477cf9a5c605d85c39bf8082431cfe211b",
+      "sha256": "fef9e79d5f0ab056d58ec458c774c5477cf9a5c605d85c39bf8082431cfe211b",
+      "adapted": false
+    },
+    {
+      "file": "runtime/campus-details.css",
+      "source": "archive/pre-clickable-media-20261008/campus-details.css",
+      "sourceSha256": "7b9e0d929a5d65e0c4ba95c230cc918b0a1391cf702eca29784dbea4fc545f5f",
+      "sha256": "7b9e0d929a5d65e0c4ba95c230cc918b0a1391cf702eca29784dbea4fc545f5f",
+      "adapted": false
+    },
+    {
+      "file": "runtime/campus-map-dialog.css",
+      "source": "campus-map-dialog.css",
+      "sourceSha256": "6198f760ddffdaa6ccd2d1bfba38f52261aa17db985c532f9496e6f01b412c12",
+      "sha256": "6198f760ddffdaa6ccd2d1bfba38f52261aa17db985c532f9496e6f01b412c12",
+      "adapted": false
+    },
+    {
+      "file": "runtime/content-controls.css",
+      "source": "content-controls.css",
+      "sourceSha256": "496f870d9f52152c9e116a366adaa93672f4da213cd31455d928ac3875896f43",
+      "sha256": "496f870d9f52152c9e116a366adaa93672f4da213cd31455d928ac3875896f43",
+      "adapted": false
+    },
+    {
+      "file": "runtime/content-layout.css",
+      "source": "content-layout.css",
+      "sourceSha256": "a96bf6a639bbe0ec2e58372999f68ff96d35d34bf19989b721918bfe8846807d",
+      "sha256": "a96bf6a639bbe0ec2e58372999f68ff96d35d34bf19989b721918bfe8846807d",
+      "adapted": false
+    },
+    {
+      "file": "runtime/content-preview.css",
+      "source": "content-preview.css",
+      "sourceSha256": "6df3c25b15bb9a2c017885ac88da8c17adc6256daef8f895ea1fd5bc2fd05d07",
+      "sha256": "6df3c25b15bb9a2c017885ac88da8c17adc6256daef8f895ea1fd5bc2fd05d07",
+      "adapted": false
+    },
+    {
+      "file": "runtime/contextual-discovery.css",
+      "source": "contextual-discovery.css",
+      "sourceSha256": "859cc23c2ff1504b5c5b61684a5bcd7868f3ac91c025a95741607eca74e3f607",
+      "sha256": "859cc23c2ff1504b5c5b61684a5bcd7868f3ac91c025a95741607eca74e3f607",
+      "adapted": false
+    },
+    {
+      "file": "runtime/control-glass.css",
+      "source": "control-glass.css",
+      "sourceSha256": "042bb6e05f163cfd198d5cfc98f3576877a1bf1ddb6093fda64c456bc7eda50d",
+      "sha256": "042bb6e05f163cfd198d5cfc98f3576877a1bf1ddb6093fda64c456bc7eda50d",
+      "adapted": false
+    },
+    {
+      "file": "runtime/detail-scroll.css",
+      "source": "detail-scroll.css",
+      "sourceSha256": "79316cad6e73cecd0312fe9994da3041334e6a800bf68d5f4c865e0ca7b035b6",
+      "sha256": "79316cad6e73cecd0312fe9994da3041334e6a800bf68d5f4c865e0ca7b035b6",
+      "adapted": false
+    },
+    {
+      "file": "runtime/dock-navigation.css",
+      "source": "dock-navigation.css",
+      "sourceSha256": "a650cdea446b15c3ec47fb8ca4fe145d27dadb43286e48f31450d6fee972dbfe",
+      "sha256": "a650cdea446b15c3ec47fb8ca4fe145d27dadb43286e48f31450d6fee972dbfe",
+      "adapted": false
+    },
+    {
+      "file": "runtime/dock-search.css",
+      "source": "dock-search.css",
+      "sourceSha256": "2ac9c079d5142898615a98955fe1881af016f719e06c879727bc72ea583962fc",
+      "sha256": "2ac9c079d5142898615a98955fe1881af016f719e06c879727bc72ea583962fc",
+      "adapted": false
+    },
+    {
+      "file": "runtime/entrance.css",
+      "source": "entrance.css",
+      "sourceSha256": "ccfc3492d7dcf1d4ec4b0d0b45c7dfd0535e2ffd2f80bf381a9921b5740a944e",
+      "sha256": "ccfc3492d7dcf1d4ec4b0d0b45c7dfd0535e2ffd2f80bf381a9921b5740a944e",
+      "adapted": false
+    },
+    {
+      "file": "runtime/floating-search.css",
+      "source": "floating-search.css",
+      "sourceSha256": "223a0592f6c1ae63c5bd0a2988efdd8392ab8745d1430c8424a3929106c1122b",
+      "sha256": "223a0592f6c1ae63c5bd0a2988efdd8392ab8745d1430c8424a3929106c1122b",
+      "adapted": false
+    },
+    {
+      "file": "runtime/globe-framing.css",
+      "source": "globe-framing.css",
+      "sourceSha256": "b900b965dd49e68fc865b2022450aa7e1b8a361021595bf64756a72872a830d5",
+      "sha256": "b900b965dd49e68fc865b2022450aa7e1b8a361021595bf64756a72872a830d5",
+      "adapted": false
+    },
+    {
+      "file": "runtime/integrated-globe.css",
+      "source": "integrated-globe.css",
+      "sourceSha256": "63f1ecc932b9fc0f9b4f037a93d08ccf53b48ae647f1ef5a7bf6917ed81faf27",
+      "sha256": "63f1ecc932b9fc0f9b4f037a93d08ccf53b48ae647f1ef5a7bf6917ed81faf27",
+      "adapted": false
+    },
+    {
+      "file": "runtime/journal.css",
+      "source": "journal.css",
+      "sourceSha256": "7c93f3be7197f2418e30444f3636ff5dd677f18e4b0dadccc87b466fd0d99858",
+      "sha256": "7c93f3be7197f2418e30444f3636ff5dd677f18e4b0dadccc87b466fd0d99858",
+      "adapted": false
+    },
+    {
+      "file": "runtime/profiles.css",
+      "source": "archive/pre-clickable-media-20261008/profiles.css",
+      "sourceSha256": "045deb77ea6aae5703bbd85bfd4a5aecbb5e705a6ecacc6470b1be4eb02500a4",
+      "sha256": "045deb77ea6aae5703bbd85bfd4a5aecbb5e705a6ecacc6470b1be4eb02500a4",
+      "adapted": false
+    },
+    {
+      "file": "runtime/projects.css",
+      "source": "archive/pre-clickable-media-20261008/projects.css",
+      "sourceSha256": "66d5ee3487e07045d6e9281cf6a47d24e3d3bd2b197136c9dbe8fe5b115cd746",
+      "sha256": "66d5ee3487e07045d6e9281cf6a47d24e3d3bd2b197136c9dbe8fe5b115cd746",
+      "adapted": false
+    },
+    {
+      "file": "runtime/readable-glass.css",
+      "source": "readable-glass.css",
+      "sourceSha256": "922f0c523f48bb5f066c6d440df92734df7afff6bce332ada5b2c96e02a87687",
+      "sha256": "922f0c523f48bb5f066c6d440df92734df7afff6bce332ada5b2c96e02a87687",
+      "adapted": false
+    },
+    {
+      "file": "runtime/responsive-content.css",
+      "source": "responsive-content.css",
+      "sourceSha256": "8525f7cf6d3347add722ca9da33fe600027b65cc59ba096a93ed7efb4dab8d3b",
+      "sha256": "8525f7cf6d3347add722ca9da33fe600027b65cc59ba096a93ed7efb4dab8d3b",
+      "adapted": false
+    },
+    {
+      "file": "runtime/responsive-dock.css",
+      "source": "responsive-dock.css",
+      "sourceSha256": "d4ec6eee38c2474e3985fdac2b86bd5b218ed0a2b0e2d4edafdc66934a9b2206",
+      "sha256": "d4ec6eee38c2474e3985fdac2b86bd5b218ed0a2b0e2d4edafdc66934a9b2206",
+      "adapted": false
+    },
+    {
+      "file": "runtime/scope-popover.css",
+      "source": "scope-popover.css",
+      "sourceSha256": "832b7cbf482dd63200ef1d2e550f4b3eeb18e971a914bb86325a6c413502b991",
+      "sha256": "832b7cbf482dd63200ef1d2e550f4b3eeb18e971a914bb86325a6c413502b991",
+      "adapted": false
+    },
+    {
+      "file": "runtime/scrollbars.css",
+      "source": "scrollbars.css",
+      "sourceSha256": "5e4b6edbf78abd360fa7f777f55c5b2032ff78fffaee53744532de066ee8f1d0",
+      "sha256": "5e4b6edbf78abd360fa7f777f55c5b2032ff78fffaee53744532de066ee8f1d0",
+      "adapted": false
+    },
+    {
+      "file": "runtime/sticky-header.css",
+      "source": "sticky-header.css",
+      "sourceSha256": "26410015e1d9fa5aa2d837e66a3231bdabdf27c72d54d55f938e83e96b7c3298",
+      "sha256": "26410015e1d9fa5aa2d837e66a3231bdabdf27c72d54d55f938e83e96b7c3298",
+      "adapted": false
+    },
+    {
+      "file": "runtime/welcome.css",
+      "source": "welcome.css",
+      "sourceSha256": "5b009f8a719890faa460f36d87b09863e44ffd5e7529c1c30d912220e3a9b1d9",
+      "sha256": "5b009f8a719890faa460f36d87b09863e44ffd5e7529c1c30d912220e3a9b1d9",
+      "adapted": false
+    },
+    {
+      "file": "runtime/campuses.json",
+      "source": "campuses.json",
+      "sourceSha256": "0e6a49a0867443efd80ab1f0831e56c3a061beb136d6dc8642a462db6e41c850",
+      "sha256": "0e6a49a0867443efd80ab1f0831e56c3a061beb136d6dc8642a462db6e41c850",
+      "adapted": false
+    },
+    {
+      "file": "runtime/campus-location-overrides.json",
+      "source": "campus-location-overrides.json",
+      "sourceSha256": "13d3e1afac34bc0c5fe0ca7eafc21f917b4af8f0c524a642d525bf3e303f2b76",
+      "sha256": "13d3e1afac34bc0c5fe0ca7eafc21f917b4af8f0c524a642d525bf3e303f2b76",
+      "adapted": false
+    },
+    {
+      "file": "runtime/campus-websites.json",
+      "source": "campus-websites.json",
+      "sourceSha256": "cbb2f7193fe404b7b57e5c5b7dadee7163e54cb90743583b4c2347f4882aa512",
+      "sha256": "cbb2f7193fe404b7b57e5c5b7dadee7163e54cb90743583b4c2347f4882aa512",
+      "adapted": false
+    },
+    {
+      "file": "runtime/campus-website-locales.json",
+      "source": "campus-website-locales.json",
+      "sourceSha256": "2f3079b16cd05291a8387023ef2ed80855219ac0f61cbf7919ec6311c9572159",
+      "sha256": "2f3079b16cd05291a8387023ef2ed80855219ac0f61cbf7919ec6311c9572159",
+      "adapted": false
+    },
+    {
+      "file": "runtime/campus-profiles.json",
+      "source": "campus-profiles.json",
+      "sourceSha256": "bf7994d97cb2ad8310af013809aab5d2ffcc4b3dfc4bc580d36380bbd8c32b17",
+      "sha256": "bf7994d97cb2ad8310af013809aab5d2ffcc4b3dfc4bc580d36380bbd8c32b17",
+      "adapted": false
+    }
+  ],
+  "readerFiles": [
+    {
+      "file": "preview.html",
+      "sha256": "7a2a354e96fe25b82540fd938be744a77b81c4f51411af84dccd338756195751"
+    },
+    {
+      "file": "viewer-entry.mjs",
+      "sha256": "e2067dd495dc92650419f58f868ad09f337a404a37544bc95e52d185fe95bf30"
+    },
+    {
+      "file": "viewer-welcome.mjs",
+      "sha256": "67d0ab90c9726d9e1b12e63b1342ee21a1fa54133b053859b8152432ad4c2e78"
+    }
+  ],
+  "sharedDependencies": "Original campus photos/logos, profile SVG portraits, official 42 symbol, Jost fonts, vendor libraries, geographic datasets and the unchanged decryption study remain shared within the repository.",
+  "history": "Reader URL captures explicit location.pathname plus location.search before any history mutation. routeURL and SVG fragments target this captured page despite the parent asset base.",
+  "verification": {
+    "originalFilesUnchanged": true,
+    "browserReplayed": false,
+    "syntax": "42 reader/runtime modules passed node --check.",
+    "paths": "HTML, SVG fragments, local imports, import.meta URLs and campus media paths resolve.",
+    "data": "Paris and Mulhouse profiles present; Chronicles copy and non-clickable media preserved.",
+    "tactileSheet": "Original touch-only campus-sheet; no wheel listener.",
+    "routeURLs": "Five extracted routeURL cases preserve explicit reader pathname and search under the parent asset base: project media, profile filters, journal authors, Awards and campus Explorer."
+  }
+}

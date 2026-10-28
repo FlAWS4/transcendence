@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-15",
+  "scope": "Vérification propre de l’archive (snapshot.py --verify) et reproduction hors dépôt depuis ses octets conservés ; empreintes de l’archive avant/après. Écrit seulement ce fichier.",
+  "verifyCommand": "python3 -I /home/le-rif/Bureau/Transcendence/work/visualizations/horizon-welcome/archive/pre-codex-audit-fixes-20261015/snapshot.py --verify",
+  "verifyExitCode": 0,
+  "verifyStdout": "{\"verified\": 137, \"adaptedOriginals\": 11, \"runtimeBytes\": 12190836}",
+  "verifyStderr": "",
+  "reproductionCommand": "python3 -I /home/le-rif/Bureau/Transcendence/work/visualizations/horizon-welcome/archive/pre-codex-audit-fixes-20261015/snapshot.py --output /tmp/claude-1000/-home-le-rif-Bureau-Transcendence/18d0b8f6-9491-4e02-9948-0bc4168cb89e/scratchpad/verif-perimetre/reproduction",
+  "reproductionExitCode": 0,
+  "reproductionStdout": "{\"verified\": 137, \"adaptedOriginals\": 11, \"runtimeBytes\": 12190836}",
+  "reproductionStderr": "",
+  "archiveFiles": 155,
+  "archiveUnchangedByTheseCommands": true,
+  "reproducedFiles": 149,
+  "expectedFiles": 149,
+  "reproductionByteIdentical": true,
+  "differences": [],
+  "testOriginalsNotProducedByScript": [
+    "originals/entrance.test.mjs",
+    "originals/tests/comments-actions.test.mjs"
+  ]
+}

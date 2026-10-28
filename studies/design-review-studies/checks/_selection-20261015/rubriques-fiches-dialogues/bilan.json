@@ -1,0 +1,54 @@
+{
+ "zone": "rubriques-fiches-dialogues",
+ "date": "2026-10-15",
+ "selection": [
+  "globe-espace-libre",
+  "police-etiquettes-globe",
+  "une-colonne-320",
+  "roles-couleur",
+  "visiter-contour-sombre",
+  "lisibilite-textes",
+  "echelle-unifiee",
+  "pseudo-manquant",
+  "awards-a-venir"
+ ],
+ "methode": [
+  "Chargements frais (about:blank puis la page), copie sans essai et neuf essais ; détecteurs repris en lecture seule des contrôles des essais (CLIP/SHAPE/SPILL/WORDS d’echelle-unifiee, AUDIT/BREAKS d’une-colonne-320, GRID/LIST/UNLEVEL de pseudo-manquant).",
+  "Traçage par feuille (CASCADE_JS et TOGGLE_JS, lib.py) : dans la page des neuf, chaque élément visible est relu avec toutes les feuilles, aucune, puis chaque feuille seule (data-essais suivi, transitions coupées) ; chaque propriété calculée doit valoir celle de l’unique essai qui la change seul.",
+  "Contraste des boutons mesuré sur les pixels de la capture (fond peint dominant) ; contour mesuré contre l’anneau extérieur."
+ ],
+ "compteurs": {
+  "etatsDePage": 108,
+  "erreursConsole": 0,
+  "debordementsHorizontaux": 0,
+  "boutonsMesuresDansLaCombinaison": 115,
+  "libellesCoupes": 0,
+  "tracage": {
+   "lisibilite-textes": [
+    12987,
+    12974
+   ],
+   "echelle-unifiee": [
+    12854,
+    9528
+   ],
+   "une-colonne-320": [
+    91,
+    91
+   ],
+   "roles-couleur": [
+    81,
+    81
+   ],
+   "visiter-contour-sombre": [
+    2,
+    2
+   ]
+  },
+  "tracageNote": "[valeurs changées seul, valeurs identiques dans la combinaison] ; les 3326 valeurs d’echelle-unifiee non reprises sont 1650 tailles relevées aux planchers 13/14 px de lisibilite-textes (règle :root[data-essais~=lisibilite-textes] d’echelle-unifiee), 1368 interlignes qui en découlent, 305 pistes de grille et 3 interlettrages en em calculés ; aucune couleur, aucun rayon, aucune ombre perdus."
+ },
+ "copieIntacte": {
+  "fichiers": 137,
+  "differents": []
+ }
+}

@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-13",
+  "scenario": "Globe import blocked then unblocked before entrance Retry",
+  "initial_sha256": {
+    "welcome.mjs": "772cd14b7eb8d6488ec3c7938f122bf9f8159c20acb446b7d8f4dad397480cfe",
+    "entrance.mjs": "089512e24ea8590bcf12771d82b3d5e4ad1a43e2578901447d4175ee795c243d",
+    "entrance.css": "ab4ba565727dd98920512ca362b6322327f432a57d730a77ab1eaca77737accb"
+  },
+  "results": [
+    {
+      "case": "first-error",
+      "result": {
+        "hash": "#projects?country=FRA&campus=lyon",
+        "entry": "error",
+        "scope": "",
+        "disabled": false,
+        "count": 0,
+        "phase": "error",
+        "canvas": false,
+        "errors": [],
+        "loading": ""
+      }
+    },
+    {
+      "case": "retry-result",
+      "result": {
+        "ready": true,
+        "state": {
+          "hash": "#projects?country=FRA&campus=lyon",
+          "entry": "welcome",
+          "scope": "42 Lyon",
+          "disabled": false,
+          "count": 2,
+          "phase": "ready",
+          "canvas": true,
+          "errors": [],
+          "loading": "Le monde se prépare…"
+        }
+      }
+    },
+    {
+      "case": "retried-module-urls",
+      "result": [
+        "http://127.0.0.1:8765/work/visualizations/horizon-welcome/integrated-globe.mjs?v=32",
+        "http://127.0.0.1:8765/work/visualizations/horizon-welcome/integrated-globe.mjs?v=32&attempt=2",
+        "http://127.0.0.1:8765/work/visualizations/horizon-welcome/integrated-globe.mjs?v=32&attempt=3"
+      ]
+    },
+    {
+      "case": "reset-after-retry",
+      "result": {
+        "hash": "#projects",
+        "entry": "welcome",
+        "scope": "Monde",
+        "disabled": false,
+        "count": 5,
+        "phase": "ready",
+        "canvas": true,
+        "errors": [],
+        "loading": "Le monde se prépare…"
+      }
+    },
+    {
+      "case": "world-after-retry",
+      "result": {
+        "hash": "#explore",
+        "entry": "welcome",
+        "scope": "Monde",
+        "disabled": false,
+        "count": 5,
+        "phase": "ready",
+        "canvas": true,
+        "errors": [],
+        "loading": "Le monde se prépare…"
+      }
+    }
+  ],
+  "passed": true,
+  "final_sha256": {
+    "welcome.mjs": "772cd14b7eb8d6488ec3c7938f122bf9f8159c20acb446b7d8f4dad397480cfe",
+    "entrance.mjs": "089512e24ea8590bcf12771d82b3d5e4ad1a43e2578901447d4175ee795c243d",
+    "entrance.css": "ab4ba565727dd98920512ca362b6322327f432a57d730a77ab1eaca77737accb"
+  }
+}

@@ -1,0 +1,358 @@
+{
+  "date": "2026-10-13",
+  "scenario": "Globe module blocked; local campus catalogue available",
+  "initial_sha256": {
+    "welcome.mjs": "0e07161f34ef4a534ce75dfdd04d948c385376854ecd1d05857138b378f55c19",
+    "entrance.mjs": "089512e24ea8590bcf12771d82b3d5e4ad1a43e2578901447d4175ee795c243d",
+    "index.html": "4c200690a9e726941901b5add3caa1f87a0c596f2e8f9907d8ba61b58855445b",
+    "content-preview.html": "184d6acb99f16aba3aa12b7e15cec2c54c7ac0432f17d6a786590b6c54bdf7cb",
+    "content-preview.mjs": "dfdbbffa680d5eb3a1a7ab9fc76f7e6888dca17c022c8e8b870597875bba4f84"
+  },
+  "results": [
+    {
+      "case": "world-projects-module-blocked",
+      "result": {
+        "hash": "#projects",
+        "entry": "welcome",
+        "section": "projects",
+        "scope": "Monde",
+        "count": 5,
+        "summary": "5 contenus",
+        "disabled": false,
+        "overflow": false,
+        "errors": [],
+        "loading": "",
+        "globePhase": "prepared"
+      }
+    },
+    {
+      "case": "all-options-available",
+      "result": {
+        "country": {
+          "count": 30,
+          "value": ""
+        },
+        "campus": {
+          "count": 58,
+          "value": ""
+        }
+      }
+    },
+    {
+      "case": "select-france",
+      "result": {
+        "hash": "#projects?country=FRA",
+        "entry": "welcome",
+        "section": "projects",
+        "scope": "France",
+        "count": 3,
+        "summary": "3 contenus",
+        "disabled": false,
+        "overflow": false,
+        "errors": [],
+        "loading": "",
+        "globePhase": "prepared"
+      }
+    },
+    {
+      "case": "france-campus-options",
+      "result": [
+        {
+          "id": "",
+          "label": "Tous les campus · France"
+        },
+        {
+          "id": "angouleme",
+          "label": "42 Angoulême"
+        },
+        {
+          "id": "le-havre",
+          "label": "42 Le Havre"
+        },
+        {
+          "id": "lyon",
+          "label": "42 Lyon"
+        },
+        {
+          "id": "marseille",
+          "label": "42 Marseille"
+        },
+        {
+          "id": "mulhouse",
+          "label": "42 Mulhouse"
+        },
+        {
+          "id": "nice",
+          "label": "42 Nice"
+        },
+        {
+          "id": "paris",
+          "label": "42 Paris"
+        },
+        {
+          "id": "perpignan",
+          "label": "42 Perpignan"
+        }
+      ]
+    },
+    {
+      "case": "select-lyon-projects",
+      "result": {
+        "hash": "#projects?country=FRA&campus=lyon",
+        "entry": "welcome",
+        "section": "projects",
+        "scope": "42 Lyon",
+        "count": 2,
+        "summary": "2 contenus",
+        "disabled": false,
+        "overflow": false,
+        "errors": [],
+        "loading": "",
+        "globePhase": "prepared"
+      }
+    },
+    {
+      "case": "lyon-people",
+      "result": {
+        "hash": "#people?country=FRA&campus=lyon",
+        "entry": "welcome",
+        "section": "people",
+        "scope": "42 Lyon",
+        "count": 1,
+        "summary": "1 profil",
+        "disabled": false,
+        "overflow": false,
+        "errors": [],
+        "loading": "",
+        "globePhase": "prepared"
+      }
+    },
+    {
+      "case": "lyon-journal",
+      "result": {
+        "hash": "#journal?country=FRA&campus=lyon",
+        "entry": "welcome",
+        "section": "journal",
+        "scope": "42 Lyon",
+        "count": 1,
+        "summary": "1 contenu",
+        "disabled": false,
+        "overflow": false,
+        "errors": [],
+        "loading": "",
+        "globePhase": "prepared"
+      }
+    },
+    {
+      "case": "lyon-projects",
+      "result": {
+        "hash": "#projects?country=FRA&campus=lyon",
+        "entry": "welcome",
+        "section": "projects",
+        "scope": "42 Lyon",
+        "count": 2,
+        "summary": "2 contenus",
+        "disabled": false,
+        "overflow": false,
+        "errors": [],
+        "loading": "",
+        "globePhase": "prepared"
+      }
+    },
+    {
+      "case": "world-after-country-reset",
+      "result": {
+        "hash": "#projects",
+        "entry": "welcome",
+        "section": "projects",
+        "scope": "Monde",
+        "count": 5,
+        "summary": "5 contenus",
+        "disabled": false,
+        "overflow": false,
+        "errors": [],
+        "loading": "",
+        "globePhase": "prepared"
+      }
+    },
+    {
+      "case": "tokyo-infers-japan",
+      "result": {
+        "hash": "#projects?country=JPN&campus=tokyo",
+        "entry": "welcome",
+        "section": "projects",
+        "scope": "42 Tokyo",
+        "count": 2,
+        "summary": "2 contenus",
+        "disabled": false,
+        "overflow": false,
+        "errors": [],
+        "loading": "",
+        "globePhase": "prepared"
+      }
+    },
+    {
+      "case": "back-to-japan",
+      "result": {
+        "hash": "#projects?country=JPN",
+        "entry": "welcome",
+        "section": "projects",
+        "scope": "Japon",
+        "count": 2,
+        "summary": "2 contenus",
+        "disabled": false,
+        "overflow": false,
+        "errors": [],
+        "loading": "",
+        "globePhase": "prepared"
+      }
+    },
+    {
+      "case": "breadcrumb-world",
+      "result": {
+        "hash": "#projects",
+        "entry": "welcome",
+        "section": "projects",
+        "scope": "Monde",
+        "count": 5,
+        "summary": "5 contenus",
+        "disabled": false,
+        "overflow": false,
+        "errors": [],
+        "loading": "",
+        "globePhase": "prepared"
+      }
+    },
+    {
+      "case": "direct-route-tokyo-journal",
+      "result": {
+        "hash": "#journal?country=JPN&campus=tokyo",
+        "entry": "welcome",
+        "section": "journal",
+        "scope": "42 Tokyo",
+        "count": 1,
+        "summary": "1 contenu",
+        "disabled": false,
+        "overflow": false,
+        "errors": [],
+        "loading": "",
+        "globePhase": "prepared"
+      }
+    },
+    {
+      "case": "arabic-320-picker",
+      "result": {
+        "dir": "rtl",
+        "selectorDir": "rtl",
+        "x": 12,
+        "right": 293,
+        "width": 320,
+        "overflow": false,
+        "labels": [
+          "الدولة",
+          "الفرع"
+        ]
+      }
+    },
+    {
+      "case": "arabic-320-lyon-journal",
+      "result": {
+        "hash": "#journal?country=FRA&campus=lyon",
+        "entry": "welcome",
+        "section": "journal",
+        "scope": "42 Lyon",
+        "count": 1,
+        "summary": "عدد المحتويات: 1",
+        "disabled": false,
+        "overflow": false,
+        "errors": [],
+        "loading": "",
+        "globePhase": "prepared"
+      }
+    },
+    {
+      "case": "explorer-failed-map-keeps-filter",
+      "result": {
+        "hash": "#explore?country=FRA&campus=lyon",
+        "entry": "welcome",
+        "section": "explore",
+        "scope": "42 Lyon",
+        "count": 1,
+        "summary": "عدد المحتويات: 1",
+        "disabled": false,
+        "overflow": false,
+        "errors": [],
+        "loading": "تعذّر تحميل الكرة الأرضية. أعد تحميل الصفحة للمحاولة مجددًا.",
+        "globePhase": "prepared"
+      }
+    },
+    {
+      "case": "explorer-selection-applies-to-content",
+      "result": {
+        "hash": "#projects?country=BRA&campus=rio",
+        "entry": "welcome",
+        "section": "projects",
+        "scope": "42 Rio",
+        "count": 2,
+        "summary": "عدد المحتويات: 2",
+        "disabled": false,
+        "overflow": false,
+        "errors": [],
+        "loading": "",
+        "globePhase": "prepared"
+      }
+    },
+    {
+      "case": "entrance-error-actions",
+      "result": [
+        "Réessayer",
+        "Revenir au message",
+        "Continuer sans le globe"
+      ]
+    },
+    {
+      "case": "entrance-continue-direct-route",
+      "result": {
+        "hash": "#projects?country=FRA&campus=lyon",
+        "entry": "welcome",
+        "section": "projects",
+        "scope": "42 Lyon",
+        "count": 2,
+        "summary": "2 contenus",
+        "disabled": false,
+        "overflow": false,
+        "errors": [],
+        "loading": "",
+        "globePhase": "error"
+      }
+    },
+    {
+      "case": "entrance-filter-brazil-sao",
+      "result": {
+        "hash": "#projects?country=BRA&campus=sao",
+        "entry": "welcome",
+        "section": "projects",
+        "scope": "42 São Paulo",
+        "count": 1,
+        "summary": "1 contenu",
+        "disabled": false,
+        "overflow": false,
+        "errors": [],
+        "loading": "",
+        "globePhase": "error"
+      }
+    },
+    {
+      "case": "successful-cases",
+      "result": 20
+    }
+  ],
+  "passed": true,
+  "final_sha256": {
+    "welcome.mjs": "0e07161f34ef4a534ce75dfdd04d948c385376854ecd1d05857138b378f55c19",
+    "entrance.mjs": "089512e24ea8590bcf12771d82b3d5e4ad1a43e2578901447d4175ee795c243d",
+    "index.html": "4c200690a9e726941901b5add3caa1f87a0c596f2e8f9907d8ba61b58855445b",
+    "content-preview.html": "184d6acb99f16aba3aa12b7e15cec2c54c7ac0432f17d6a786590b6c54bdf7cb",
+    "content-preview.mjs": "dfdbbffa680d5eb3a1a7ab9fc76f7e6888dca17c022c8e8b870597875bba4f84"
+  }
+}

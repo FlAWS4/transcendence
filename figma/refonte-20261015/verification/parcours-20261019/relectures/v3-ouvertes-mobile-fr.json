@@ -1,0 +1,128 @@
+[
+ {
+  "board": "Filtrer_les_profils_—_Mobile_·_Clair__filter-people.png",
+  "zone": "Fermer les filtres",
+  "problem": "décalée",
+  "detail": "La zone ne garde que les 14 px du bas du bouton (y 288–302). La croix (y 275–284) est hors zone : cliquer dessus ne ferme rien. Cause : la zone, sans conteneur, est découpée autour du cœur d'une carte de la liste cachée sous la fenêtre (x 320–360, y 248–288). Même découpe sur « Annuler » (trou x 142–182) et « Appliquer » (coupé à x 320), au-dessus des cœurs de la 2e rangée.",
+  "severity": "gênant"
+ },
+ {
+  "board": "Filtrer_les_projets_—_Mobile_·_Clair__filter-projects.png",
+  "zone": "Fermer les filtres",
+  "problem": "trop petite ou trop grande",
+  "detail": "Zone réduite aux 24 px du haut du bouton (y 224,5–248,2) : la moitié basse et le bas de la croix sont inertes. Elle est découpée autour du cœur de la carte minishell, sous la fenêtre. Même cause, mais 2,7 px seulement, sur « Appliquer » de Projets · filtre local ouvert.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Liste_des_profils_·_dernière_page_—_Mobile_·_Clair__people-last-page.png",
+  "zone": "Menu du bas · projects ; Menu du bas · awards",
+  "problem": "trop petite ou trop grande",
+  "detail": "Les deux onglets sont entaillés en bas à droite (Projets : x 142–159 ; 42 Awards : x 320–367 ; y 798–821). Ils sont découpés autour des cœurs de la 3e rangée de cartes, qui passent sous le menu fixe. Le libellé « 42 Awards » est presque entièrement inerte.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Liste_des_profils_·_vue_Liste_—_Mobile_·_Clair__people-list.png",
+  "zone": "Menu du bas · awards",
+  "problem": "trop petite ou trop grande",
+  "detail": "Même découpe autour d'un cœur de la liste passant sous le menu fixe : l'onglet perd x 326–367 sur y 794–821. Sur Liste des projets · vue Liste, l'onglet Explorer perd de même ses 2 px du haut.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Recherche_·_ouverte_—_Mobile_·_Clair__search-open.png",
+  "zone": "Résultat · Des salons partagés… ; Résultat « Chroniques »",
+  "problem": "trop petite ou trop grande",
+  "detail": "Deux trous dans ces résultats (x 142–182 et x 320–363, y 641–681). Ces zones du panneau sont découpées autour des cœurs de la 2e rangée de cartes, cachés sous le panneau. Un clic sur « événement » ou au bout de la ligne ne fait rien.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Paramètres_—_Mobile_·_Clair__account-settings.png",
+  "zone": "Retour",
+  "problem": "arrivée douteuse",
+  "detail": "« ‹ Retour » navigue vers Panneau du compte · visiteur au lieu de revenir en arrière. Ensuite, « Fermer », l'avatar ou un clic à côté du panneau (retour à l'écran précédent) rouvrent Paramètres : il faut fermer deux fois. Même chose depuis Thème et Langue. C'est proche du compromis inscrit pour l'en-tête, mais ce chemin n'y figure pas. Un simple retour en arrière ne convient pas non plus, car Paramètres et Langue s'ouvrent aussi depuis l'anglais.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Fiche_campus_·_déployée_—_Mobile_·_Clair__campus-sheet-expanded.png",
+  "zone": "Replier la fiche",
+  "problem": "arrivée douteuse",
+  "detail": "« Replier la fiche » navigue vers Fiche campus. Après Déployer puis Replier, « Fermer » et le voile de la fiche repliée (retour à l'écran précédent) rouvrent donc la fiche déployée : il faut fermer deux fois. La fiche déployée ne s'ouvre que depuis la fiche repliée : un retour en arrière conviendrait ici.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Fiche_campus_·_déployée_—_Mobile_·_Clair__campus-sheet-expanded.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "La fiche déployée n'a aucune zone ⇕ : elle n'est pas traitée comme un conteneur qui défile. Les liens situés sous « Contacts » (Site officiel du campus, Sources, Consulter les dates officielles), qui ont leurs zones dans la fiche repliée, sont inaccessibles une fois la fiche déployée.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Menu_à_trois_points_d_un_commentaire_—_Mobile_·_Clair__comment-menu.png",
+  "zone": "Remonter en haut",
+  "problem": "arrivée douteuse",
+  "detail": "Zone grise (action « haut de page », absente de la légende) posée sur un écran fixe de 844 px : dans Figma, il n'y a rien à faire défiler. Sur le site, le bouton remonte le fil et le menu se ferme : mener à Commentaires · avec un fil serait plus juste.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Liste_des_chroniques_—_Mobile_·_Clair__journal.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Sur la carte relevée « Montrer ce qui n'est pas encore fini », l'auteure « Inès Morel » n'a pas de zone. La même auteure, sur la 1re carte (non relevée), mène à Fiche profil, et sur ordinateur les deux liens existent. Même chose sur Liste des chroniques · membre.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Fiche_projet_—_Mobile_·_Clair__project.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Dans l'équipe de ft_transcendence, Noé Laurent et Inès Morel n'ont pas de zone (sur ordinateur, ils mènent à leurs fiches). Pourtant, Noé Laurent mène à la fiche de Leïla sur minishell, selon le compromis « sujet non relevé → fiche relevée ». Même chose sur Fiche projet · membre.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Commentaires_·_avec_un_fil_—_Mobile_·_Clair__project-comments-thread.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Le ⋮ de la réponse n'a pas de zone, alors que Menu à trois points est relevé (le ⋮ du premier commentaire y mène). La mention « @Inès Morel » n'en a pas non plus. Même chose sur le fil de la chronique, sur Commentaires · tri ouvert et sur Menu à trois points.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Médias_—_Mobile_·_Clair__project-media.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "La 2e image de la galerie (schéma MINISHELL, y ≈ 815–1025) n'a pas de zone. Sur le site, elle ouvre aussi la visionneuse (bouton de média), et la même image a sa zone dans Réalisation.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Liste_des_projets_·_dernière_page_—_Mobile_·_Clair__projects-last-page.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "Les titres des deux cartes aux places relevées (« Des salons partagés… », « Le serveur reproductible… ») n'ont pas de zone. Leurs images en ont, et en page 1 les titres mènent aux fiches.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Liste_des_chroniques_—_Mobile_·_Clair__journal.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "« Affichage » et « Trier » des chroniques n'ont pas de zone, ici comme sur la liste membre. Aucun écran relevé ne leur correspond, et les compromis ne citent que la pagination : il faut une capture, ou les inscrire aux compromis.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Liste_des_profils_·_tri_ouvert_—_Mobile_·_Clair__people-sort-open.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "detail": "« Mes favoris uniquement » n'a pas de zone, contrairement au tri des projets, faute d'état vide relevé pour les profils. Le compromis annonce une zone pour cette option : à préciser.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Fiche_projet_·_projet_à_campus_unique_—_Mobile_·_Clair__project-single.png",
+  "zone": "Dé",
+  "problem": "autre",
+  "detail": "Le dé de minishell, de ses rubriques et des états de commentaires mène à ft_transcendence. Or la règle veut le dé d'une fiche sans zone, et celui de ft_transcendence n'en a pas. Si c'est voulu (l'autre projet relevé), le dé de ft_transcendence pourrait mener à minishell ; sinon, il faut retirer ces zones.",
+  "severity": "mineur"
+ },
+ {
+  "board": "Commentaires_·_suggestions_de_mention_—_Mobile_·_Clair__mention-picker.png",
+  "zone": "Signaler ; Explorer + nom du campus",
+  "problem": "sur un autre élément",
+  "detail": "Sur cet écran défilé de 207 px, ces zones (y 111–147) passent sous la pastille « Monde » fixe (y 84–122), inerte sur une fiche. Le bas de la pastille déclenche donc Signaler. Elles pourraient être découpées sous la barre de périmètre.",
+  "severity": "mineur"
+ }
+]

@@ -1,0 +1,520 @@
+{
+  "date": "2026-10-13",
+  "sources": {
+    "content-pagination-ui.mjs": "d04673417e100a6531b65135953221c7310ba5a275eb6a931154b068bea558dd",
+    "content-pagination.css": "f5303c7e5b41d603d4693dfb98fc247845b0754cf19355fec7523706c446d190",
+    "welcome.mjs": "4a4fda63ed0c8cc0f70c37c016562e314c061cc07bc2779167a18852a7025b68"
+  },
+  "cases": [
+    {
+      "case": "fr1280-first",
+      "result": {
+        "hash": "#projects",
+        "current": "1",
+        "previousDisabled": true,
+        "nextDisabled": false,
+        "buttons": [
+          {
+            "text": "",
+            "label": "Précédent",
+            "title": "Précédent",
+            "svg": true,
+            "transform": "none",
+            "size": [
+              44,
+              44
+            ]
+          },
+          {
+            "text": "",
+            "label": "Suivant",
+            "title": "Suivant",
+            "svg": true,
+            "transform": "none",
+            "size": [
+              44,
+              44
+            ]
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "fr1280-next",
+      "result": {
+        "hash": "#projects?page=2",
+        "current": "2",
+        "previousDisabled": false,
+        "nextDisabled": false,
+        "buttons": [
+          {
+            "text": "",
+            "label": "Précédent",
+            "title": "Précédent",
+            "svg": true,
+            "transform": "none",
+            "size": [
+              44,
+              44
+            ]
+          },
+          {
+            "text": "",
+            "label": "Suivant",
+            "title": "Suivant",
+            "svg": true,
+            "transform": "none",
+            "size": [
+              44,
+              44
+            ]
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "fr1280-previous",
+      "result": {
+        "hash": "#projects",
+        "current": "1",
+        "previousDisabled": true,
+        "nextDisabled": false,
+        "buttons": [
+          {
+            "text": "",
+            "label": "Précédent",
+            "title": "Précédent",
+            "svg": true,
+            "transform": "none",
+            "size": [
+              44,
+              44
+            ]
+          },
+          {
+            "text": "",
+            "label": "Suivant",
+            "title": "Suivant",
+            "svg": true,
+            "transform": "none",
+            "size": [
+              44,
+              44
+            ]
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "fr1280-last",
+      "result": {
+        "hash": "#projects?page=7",
+        "current": "7",
+        "previousDisabled": false,
+        "nextDisabled": true,
+        "buttons": [
+          {
+            "text": "",
+            "label": "Précédent",
+            "title": "Précédent",
+            "svg": true,
+            "transform": "none",
+            "size": [
+              44,
+              44
+            ]
+          },
+          {
+            "text": "",
+            "label": "Suivant",
+            "title": "Suivant",
+            "svg": true,
+            "transform": "none",
+            "size": [
+              44,
+              44
+            ]
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "fr1280-last-previous",
+      "result": {
+        "hash": "#projects?page=6",
+        "current": "6",
+        "previousDisabled": false,
+        "nextDisabled": false,
+        "buttons": [
+          {
+            "text": "",
+            "label": "Précédent",
+            "title": "Précédent",
+            "svg": true,
+            "transform": "none",
+            "size": [
+              44,
+              44
+            ]
+          },
+          {
+            "text": "",
+            "label": "Suivant",
+            "title": "Suivant",
+            "svg": true,
+            "transform": "none",
+            "size": [
+              44,
+              44
+            ]
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "fr320-first",
+      "result": {
+        "hash": "#projects",
+        "current": "1",
+        "previousDisabled": true,
+        "nextDisabled": false,
+        "buttons": [
+          {
+            "text": "",
+            "label": "Précédent",
+            "title": "Précédent",
+            "svg": true,
+            "transform": "none",
+            "size": [
+              44,
+              44
+            ]
+          },
+          {
+            "text": "",
+            "label": "Suivant",
+            "title": "Suivant",
+            "svg": true,
+            "transform": "none",
+            "size": [
+              44,
+              44
+            ]
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "fr320-next",
+      "result": {
+        "hash": "#projects?page=2",
+        "current": "2",
+        "previousDisabled": false,
+        "nextDisabled": false,
+        "buttons": [
+          {
+            "text": "",
+            "label": "Précédent",
+            "title": "Précédent",
+            "svg": true,
+            "transform": "none",
+            "size": [
+              44,
+              44
+            ]
+          },
+          {
+            "text": "",
+            "label": "Suivant",
+            "title": "Suivant",
+            "svg": true,
+            "transform": "none",
+            "size": [
+              44,
+              44
+            ]
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "fr320-previous",
+      "result": {
+        "hash": "#projects",
+        "current": "1",
+        "previousDisabled": true,
+        "nextDisabled": false,
+        "buttons": [
+          {
+            "text": "",
+            "label": "Précédent",
+            "title": "Précédent",
+            "svg": true,
+            "transform": "none",
+            "size": [
+              44,
+              44
+            ]
+          },
+          {
+            "text": "",
+            "label": "Suivant",
+            "title": "Suivant",
+            "svg": true,
+            "transform": "none",
+            "size": [
+              44,
+              44
+            ]
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "fr320-last",
+      "result": {
+        "hash": "#projects?page=7",
+        "current": "7",
+        "previousDisabled": false,
+        "nextDisabled": true,
+        "buttons": [
+          {
+            "text": "",
+            "label": "Précédent",
+            "title": "Précédent",
+            "svg": true,
+            "transform": "none",
+            "size": [
+              44,
+              44
+            ]
+          },
+          {
+            "text": "",
+            "label": "Suivant",
+            "title": "Suivant",
+            "svg": true,
+            "transform": "none",
+            "size": [
+              44,
+              44
+            ]
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "fr320-last-previous",
+      "result": {
+        "hash": "#projects?page=6",
+        "current": "6",
+        "previousDisabled": false,
+        "nextDisabled": false,
+        "buttons": [
+          {
+            "text": "",
+            "label": "Précédent",
+            "title": "Précédent",
+            "svg": true,
+            "transform": "none",
+            "size": [
+              44,
+              44
+            ]
+          },
+          {
+            "text": "",
+            "label": "Suivant",
+            "title": "Suivant",
+            "svg": true,
+            "transform": "none",
+            "size": [
+              44,
+              44
+            ]
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "ar320-first",
+      "result": {
+        "hash": "#projects",
+        "current": "1",
+        "previousDisabled": true,
+        "nextDisabled": false,
+        "buttons": [
+          {
+            "text": "",
+            "label": "السابق",
+            "title": "السابق",
+            "svg": true,
+            "transform": "matrix(-1, 0, 0, 1, 0, 0)",
+            "size": [
+              44,
+              44
+            ]
+          },
+          {
+            "text": "",
+            "label": "التالي",
+            "title": "التالي",
+            "svg": true,
+            "transform": "matrix(-1, 0, 0, 1, 0, 0)",
+            "size": [
+              44,
+              44
+            ]
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "ar320-next",
+      "result": {
+        "hash": "#projects?page=2",
+        "current": "2",
+        "previousDisabled": false,
+        "nextDisabled": false,
+        "buttons": [
+          {
+            "text": "",
+            "label": "السابق",
+            "title": "السابق",
+            "svg": true,
+            "transform": "matrix(-1, 0, 0, 1, 0, 0)",
+            "size": [
+              44,
+              44
+            ]
+          },
+          {
+            "text": "",
+            "label": "التالي",
+            "title": "التالي",
+            "svg": true,
+            "transform": "matrix(-1, 0, 0, 1, 0, 0)",
+            "size": [
+              44,
+              44
+            ]
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "ar320-previous",
+      "result": {
+        "hash": "#projects",
+        "current": "1",
+        "previousDisabled": true,
+        "nextDisabled": false,
+        "buttons": [
+          {
+            "text": "",
+            "label": "السابق",
+            "title": "السابق",
+            "svg": true,
+            "transform": "matrix(-1, 0, 0, 1, 0, 0)",
+            "size": [
+              44,
+              44
+            ]
+          },
+          {
+            "text": "",
+            "label": "التالي",
+            "title": "التالي",
+            "svg": true,
+            "transform": "matrix(-1, 0, 0, 1, 0, 0)",
+            "size": [
+              44,
+              44
+            ]
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "ar320-last",
+      "result": {
+        "hash": "#projects?page=7",
+        "current": "7",
+        "previousDisabled": false,
+        "nextDisabled": true,
+        "buttons": [
+          {
+            "text": "",
+            "label": "السابق",
+            "title": "السابق",
+            "svg": true,
+            "transform": "matrix(-1, 0, 0, 1, 0, 0)",
+            "size": [
+              44,
+              44
+            ]
+          },
+          {
+            "text": "",
+            "label": "التالي",
+            "title": "التالي",
+            "svg": true,
+            "transform": "matrix(-1, 0, 0, 1, 0, 0)",
+            "size": [
+              44,
+              44
+            ]
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "ar320-last-previous",
+      "result": {
+        "hash": "#projects?page=6",
+        "current": "6",
+        "previousDisabled": false,
+        "nextDisabled": false,
+        "buttons": [
+          {
+            "text": "",
+            "label": "السابق",
+            "title": "السابق",
+            "svg": true,
+            "transform": "matrix(-1, 0, 0, 1, 0, 0)",
+            "size": [
+              44,
+              44
+            ]
+          },
+          {
+            "text": "",
+            "label": "التالي",
+            "title": "التالي",
+            "svg": true,
+            "transform": "matrix(-1, 0, 0, 1, 0, 0)",
+            "size": [
+              44,
+              44
+            ]
+          }
+        ],
+        "overflow": false
+      }
+    }
+  ]
+}

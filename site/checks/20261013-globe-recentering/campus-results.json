@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "fr-1280",
+      "borrowed": {
+        "parent": "campus-map-viewport",
+        "responsive": "",
+        "x": ".5",
+        "y": ".5",
+        "radius": ".43",
+        "transform": "none",
+        "viewport": {
+          "x": 101,
+          "y": 158,
+          "width": 1078,
+          "height": 577.40625
+        },
+        "stage": {
+          "x": 101,
+          "y": 158,
+          "width": 1078,
+          "height": 577.40625
+        },
+        "canvasCount": 1
+      },
+      "restored": {
+        "x": 640,
+        "y": 450
+      }
+    },
+    {
+      "case": "ar-390",
+      "borrowed": {
+        "parent": "campus-map-viewport",
+        "responsive": "",
+        "x": ".5",
+        "y": ".5",
+        "radius": ".43",
+        "transform": "none",
+        "viewport": {
+          "x": 13,
+          "y": 106,
+          "width": 364,
+          "height": 596.8125
+        },
+        "stage": {
+          "x": 13,
+          "y": 106,
+          "width": 364,
+          "height": 596.8125
+        },
+        "canvasCount": 1
+      },
+      "restored": {
+        "x": 195,
+        "y": 422
+      }
+    }
+  ],
+  "globeFramingSha256": "a544a2e08a7697a44aa3c0cd5334a976a04fd9797934d27bb13c4d3ec7177ae6",
+  "limits": "Real single canvas borrowed and restored in isolated Chrome, reduced motion, emulated mobile width. The check covers viewport geometry; detailed remote street readiness is not asserted."
+}

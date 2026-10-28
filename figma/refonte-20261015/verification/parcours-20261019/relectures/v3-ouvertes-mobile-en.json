@@ -1,0 +1,93 @@
+[
+ {
+  "board": "Filtrer_les_profils_—_Mobile_·_Clair_·_English__filter-people.png",
+  "zone": "Fermer les filtres, Cancel, Apply",
+  "problem": "trop petite ou trop grande",
+  "severity": "gênant",
+  "detail": "Les cœurs des cartes cachés sous le voile ont été découpés dans les zones de la fenêtre. « Fermer les filtres » ne garde que ses 14 px du bas (x 321–365, y 288–302), sous la croix : le cœur d'Inès Morel (y 248–288) lui a pris le reste, et la croix n'a pratiquement plus de zone. « Cancel » a un trou de 40 px (x 142–182, cœur de Leïla). « Apply » s'arrête à x 320 au lieu de 365 (cœur de Lucía Roca). Les deux boutons perdent aussi leurs 4 px du haut."
+ },
+ {
+  "board": "Filtrer_les_projets_—_Mobile_·_Clair_·_English__filter-projects.png",
+  "zone": "Fermer les filtres",
+  "problem": "trop petite ou trop grande",
+  "severity": "mineur",
+  "detail": "Même découpe : la zone de la croix s'arrête à y 248 et mesure 44 × 23,7 au lieu de 44 × 44. Le cœur de la carte minishell (x 320–366, y 248–288), sous le voile, l'a coupée, et la moitié basse de la croix est sans zone. Même cause sur « Apply » de Projets · filtre local ouvert, sans effet visible (2,7 px perdus en bas, par le cœur d'une carte du profil)."
+ },
+ {
+  "board": "Recherche_·_ouverte_—_Mobile_·_Clair_·_English__search-open.png",
+  "zone": "Résultat · Shared chat rooms et Résultat « Chroniques »",
+  "problem": "trop petite ou trop grande",
+  "severity": "mineur",
+  "detail": "Deux trous sans zone d'environ 40 × 40 (x 142–182 et 320–363, y 640,7–680,7) amputent le bas du résultat « Shared chat rooms » et le haut de « Following an event · What we pass on ». Ce sont les cœurs de la 2e rangée de cartes, cachés sous le panneau, découpés à tort dans des zones du panneau."
+ },
+ {
+  "board": "Liste_des_profils_·_vue_Liste_—_Mobile_·_Clair_·_English__people-list.png",
+  "zone": "Menu du bas · awards",
+  "problem": "trop petite ou trop grande",
+  "severity": "mineur",
+  "detail": "L'onglet « 42 Awards » du menu du bas fixe a une encoche sans zone de 41 × 27 (x 326–367, y 794–821). Le cœur de la ligne de Noé Laurent, qui passe sous le menu à l'ouverture, a été découpé dans une zone fixe qui doit rester au-dessus de la page."
+ },
+ {
+  "board": "Liste_des_profils_·_dernière_page_—_Mobile_·_Clair_·_English__people-last-page.png",
+  "zone": "Menu du bas · projects et Menu du bas · awards",
+  "problem": "trop petite ou trop grande",
+  "severity": "mineur",
+  "detail": "Même défaut : des encoches sans zone dans « Projects » (x 142–159, y 798–821) et « 42 Awards » (x 320–367, y 798–821), découpées par les cœurs des cartes d'Adam Karim et de Nadia Selim, qui passent sous le menu du bas."
+ },
+ {
+  "board": "Commentaires_·_suggestions_de_mention_—_Mobile_·_Clair_·_English__mention-picker.png",
+  "zone": "Signaler",
+  "problem": "élément caché",
+  "severity": "mineur",
+  "detail": "Reste de la remarque précédente. La zone, rognée au bas de l'en-tête (x 136–234, y 92–104), est posée sur la pastille « World » (x 143–247, y 84–122) et le médaillon du globe, qui cachent le bouton Report. Seule une bande de 7 px à gauche échappe à la pastille. Sur le site, ce clic tombe sur la barre de portée et referme seulement les suggestions ; ici, il ouvre Signaler."
+ },
+ {
+  "board": "Fiche_projet_·_sélecteur_Dans_ce_projet_ouvert_—_Mobile_·_Clair_·_English__project-local-menu.png",
+  "zone": "Lien · Overview",
+  "problem": "arrivée douteuse",
+  "severity": "mineur",
+  "detail": "« Overview » mène à la vue d'ensemble de ft_transcendence, alors que les quatre autres options mènent aux onglets de minishell (compromis). Ce sélecteur s'ouvre depuis minishell et ses onglets dans 10 des 12 cas : depuis Réalisation, Médias ou Commentaires, « Overview » fait changer de projet. « Fiche projet · projet à campus unique » serait l'arrivée cohérente avec le compromis « les onglets de ft_transcendence mènent à ceux de minishell »."
+ },
+ {
+  "board": "Fiche_projet_—_Mobile_·_Clair_·_English__project.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "severity": "mineur",
+  "detail": "Dans l'équipe de ft_transcendence, seule la carte de Leïla a une zone. Celles de Noé Laurent et d'Inès Morel n'en ont pas, alors que sur minishell la carte de Noé Laurent mène à la fiche de Leïla (sujet non relevé, compromis). Même manque sur Fiche projet · membre. La mention « @Inès Morel » du premier commentaire, sur les deux fils (projet et chronique), est aussi sans zone : sur ordinateur, elle mène à la fiche d'Inès."
+ },
+ {
+  "board": "Liste_des_chroniques_—_Mobile_·_Clair_·_English__journal.png",
+  "zone": "Auteur d'une carte (« Rédigé par »)",
+  "problem": "commande sans zone",
+  "severity": "mineur",
+  "detail": "La seule zone d'auteur est sur la 1re carte, « A bug becomes a conversation », qui n'est pas relevée. L'auteur de la carte relevée (Inès Morel sur la 2e carte, dont l'image, le titre et « +3 » ont une zone) n'en a pas. Cela contredit « seules les cartes relevées ont une zone en page 1 ». Même chose sur Liste des chroniques · membre."
+ },
+ {
+  "board": "Liste_des_projets_·_dernière_page_—_Mobile_·_Clair_·_English__projects-last-page.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "severity": "mineur",
+  "detail": "Les titres des deux cartes du haut, « Shared chat rooms · The first experiment » (y ≈ 432–510) et « The reproducible server · The first experiment » (y ≈ 385–460), n'ont pas de zone. Leurs images en ont une, et en page 1 les titres aux mêmes places mènent aux fiches."
+ },
+ {
+  "board": "Médias_—_Mobile_·_Clair_·_English__project-media.png",
+  "zone": "(aucune)",
+  "problem": "commande sans zone",
+  "severity": "mineur",
+  "detail": "Le second média de la galerie, le schéma MINISHELL (y ≈ 855–1070), est un bouton qui ouvre la visionneuse sur le site, mais il n'a pas de zone. La même image ouvre la visionneuse depuis Réalisation (« Image du récit »), et la visionneuse relevée sert à toutes les images (compromis)."
+ },
+ {
+  "board": "Menu_à_trois_points_d_un_commentaire_—_Mobile_·_Clair_·_English__comment-menu.png",
+  "zone": "Remonter en haut",
+  "problem": "arrivée douteuse",
+  "severity": "mineur",
+  "detail": "Le bouton ↑ (x 330–374, y 654–698) a pour seule action « remonter en haut », dessinée en gris hors légende, sur un écran fixe de 844 px qui ne défile pas : le clic ne produira rien dans Figma. Sur le site, il referme le menu et ramène en haut du fil : « Commentaires · avec un fil » (projet) conviendrait, comme le retour."
+ },
+ {
+  "board": "Commentaires_·_suggestions_de_mention_—_Mobile_·_Clair_·_English__mention-picker.png",
+  "zone": "Signaler",
+  "problem": "toujours là (v2)",
+  "detail": "La zone a été rognée au bord bas de l'en-tête (x 136–234, y 92–104). Elle reste sur la pastille « World » et le médaillon du globe, qui cachent entièrement le bouton.",
+  "severity": "mineur"
+ }
+]

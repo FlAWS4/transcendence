@@ -1,0 +1,135 @@
+{
+  "id": "textes-sur-pastilles",
+  "groupe": "Explorer et globe",
+  "titre": "Textes du globe sur pastilles",
+  "resume": "Le globe reste tel quel ; la ligne sous le filtre (« 58 campus · 30 pays » et ses variantes Pays et Campus) et la ligne « Exploration · 42 Horizon » reçoivent chacune une pastille opaque et compacte, avec le bord et l’ombre du filtre. Rien ne bouge.",
+  "probleme": "Ces deux textes sont dessinés directement sur la carte. Contraste mesuré au pixel avant l’essai (pire pixel de glyphe) : 2,6:1 sur les terres à 1440 × 900 en clair et 1,2:1 en sombre (5e centile 2,2:1) ; au niveau France sur mobile, 2,6:1 en clair et 1,2:1 en sombre ; en arabe, 1,19:1 ; au niveau du campus 42 Paris, 1,9:1 en clair pour la ligne d’aide et 1,02:1 en sombre pour « Exploration · 42 Horizon ». AA demande 4,5:1.",
+  "changement": "essai.css, en Explorer seulement, ajoute derrière #globe-hint et #about un pseudo-élément ::before : fond --h42-color-surface (opaque), bord 1 px --control-glass-edge et ombre --control-glass-shadow, comme le filtre ; rayon 16 px et marge de 2 × 8 px, celle de la pastille que la copie applique déjà aux fenêtres basses. La pastille est dessinée hors de la boîte du texte : ni texte, ni boîte, ni zone cliquable ne bouge. Dans les fenêtres de moins de 521 px de haut, la pastille opaque reprend exactement la boîte de la pastille existante à 96 %. Le bouton Réessayer a déjà un fond opaque et le texte du filtre reste au-dessus de 4,5:1 sur les terres dans les deux thèmes : ils ne changent pas. Le globe n’est pas modifié ; essai.mjs ne fait rien.",
+  "decisionConcernee": "",
+  "alternativeDe": "globe-espace-libre",
+  "vues": [
+    {
+      "libelle": "Ordinateur sombre",
+      "page": "content-preview.html",
+      "route": "explore",
+      "viewport": "ordinateur",
+      "theme": "dark",
+      "lang": "fr"
+    },
+    {
+      "libelle": "Ordinateur clair, France",
+      "page": "content-preview.html",
+      "route": "explore?country=FRA",
+      "viewport": "ordinateur",
+      "theme": "light",
+      "lang": "fr"
+    },
+    {
+      "libelle": "Mobile sombre, France",
+      "page": "content-preview.html",
+      "route": "explore?country=FRA",
+      "viewport": "mobile",
+      "theme": "dark",
+      "lang": "fr"
+    },
+    {
+      "libelle": "Mobile sombre arabe, France",
+      "page": "content-preview.html",
+      "route": "explore?country=FRA",
+      "viewport": "mobile",
+      "theme": "dark",
+      "lang": "ar"
+    }
+  ],
+  "verifications": [
+    "Méthode : une capture avec le texte, une autre avec ce seul texte rendu transparent ; chaque pixel de glyphe est comparé à la couleur du fond derrière lui. Vrai globe, niveaux Monde puis France, puis campus 42 Paris.",
+    "Après : 6,45:1 en clair et 7,03:1 en sombre pour les deux textes, au pire pixel comme au 5e centile, à 1440 × 900 et 390 × 844, aux niveaux Monde et France (avant, au pire pixel : 2,55 et 1,22:1 sur ordinateur, 2,63 et 1,2:1 sur mobile).",
+    "Niveau Campus (42 Paris, 1440 × 900) : « Explore les alentours du campus. » 1,91 → 6,45:1 en clair et 1,43 → 7,03:1 en sombre ; « Exploration · 42 Horizon » 3,57 → 6,45:1 et 1,02 → 7,03:1. Le thème sombre a été appliqué sans rechargement.",
+    "Arabe, mobile sombre : « اختر فرعًا لاستكشافه عن قرب. » 1,19 → 7,03:1 et « تصوّر أولي · 42 Horizon » 2,73 → 7,03:1 au niveau France ; chaîne de statistiques « 58 فرعًا · 30 دولة » à 7,03:1.",
+    "Changement de langue et de thème sans rechargement (réglages du compte : français clair → arabe sombre → anglais clair) : la pastille suit le thème (fond blanc puis rgb(32, 32, 38)) et le texte ; 6,45 / 7,03 / 6,45:1 ; dir=rtl en arabe ; aucune erreur.",
+    "Fenêtre basse 667 × 375 : la pastille opaque remplace celle à 96 % de la copie (6,1 → 6,45:1).",
+    "Filtre mesuré de la même façon : 13,1 à 17,2:1 aux niveaux Monde et France, 12,6 à 15,4:1 au niveau Campus (« France » dans le chemin : 7,4 à 8,1:1), avant comme après ; aucun changement nécessaire. Bouton Réessayer (état d’échec simulé dans la page) : 15,1 à 15,6:1.",
+    "Positions identiques : écart maximal 0,0 px sur la ligne d’aide, le statut, leur conteneur, le filtre, la barre, la recherche et le dé, en FR, EN et AR à 1440 × 900, 390 × 844, 320 × 640 et 667 × 375 ; dir=rtl en arabe ; aucun débordement horizontal.",
+    "Focus clavier : « Exploration · 42 Horizon » atteint à la touche Tab, contour 2 px rgb(0, 142, 144) visible autour de la pastille (captures avant/apres-focus-statut.png), nom accessible inchangé.",
+    "Aucune erreur console ; captures avant/après examinées en clair, sombre, mobile, paysage, arabe et au niveau Campus."
+  ],
+  "limites": [
+    "Les autres états du niveau Campus (« Préparation des alentours… », message d’échec) utilisent le même élément et la même pastille opaque ; leur contraste n’a pas été mesuré séparément.",
+    "La pastille de la ligne d’aide passe au-dessus des repères du globe, comme le filtre : un repère proche peut y être partiellement caché.",
+    "Le contraste « avant » cité est le pire pixel de glyphe ; il dépend de la position de la carte au moment de la capture.",
+    "Pas d’essai sur téléphone physique ; la pastille n’a pas été combinée avec les essais de typographie."
+  ],
+  "fichiers": [
+    "essais/textes-sur-pastilles/essai.css",
+    "essais/textes-sur-pastilles/essai.mjs",
+    "checks/textes-sur-pastilles/check.py",
+    "checks/textes-sur-pastilles/results.json"
+  ],
+  "captures": [
+    {
+      "vue": "sombre-ordinateur-france (zoom ×3)",
+      "avant": "checks/textes-sur-pastilles/avant-sombre-ordinateur-zoom.png",
+      "apres": "checks/textes-sur-pastilles/apres-sombre-ordinateur-zoom.png"
+    },
+    {
+      "vue": "sombre-ordinateur",
+      "avant": "checks/textes-sur-pastilles/avant-sombre-ordinateur-monde.png",
+      "apres": "checks/textes-sur-pastilles/apres-sombre-ordinateur-monde.png"
+    },
+    {
+      "vue": "ordinateur",
+      "avant": "checks/textes-sur-pastilles/avant-ordinateur-monde.png",
+      "apres": "checks/textes-sur-pastilles/apres-ordinateur-monde.png"
+    },
+    {
+      "vue": "ordinateur-france",
+      "avant": "checks/textes-sur-pastilles/avant-ordinateur-pays.png",
+      "apres": "checks/textes-sur-pastilles/apres-ordinateur-pays.png"
+    },
+    {
+      "vue": "sombre-ordinateur-france",
+      "avant": "checks/textes-sur-pastilles/avant-sombre-ordinateur-pays.png",
+      "apres": "checks/textes-sur-pastilles/apres-sombre-ordinateur-pays.png"
+    },
+    {
+      "vue": "campus-paris-clair",
+      "avant": "checks/textes-sur-pastilles/avant-campus-clair.png",
+      "apres": "checks/textes-sur-pastilles/apres-campus-clair.png"
+    },
+    {
+      "vue": "campus-paris-sombre",
+      "avant": "checks/textes-sur-pastilles/avant-campus-sombre.png",
+      "apres": "checks/textes-sur-pastilles/apres-campus-sombre.png"
+    },
+    {
+      "vue": "mobile",
+      "avant": "checks/textes-sur-pastilles/avant-mobile-monde.png",
+      "apres": "checks/textes-sur-pastilles/apres-mobile-monde.png"
+    },
+    {
+      "vue": "mobile-france",
+      "avant": "checks/textes-sur-pastilles/avant-mobile-pays.png",
+      "apres": "checks/textes-sur-pastilles/apres-mobile-pays.png"
+    },
+    {
+      "vue": "sombre-mobile-france",
+      "avant": "checks/textes-sur-pastilles/avant-sombre-mobile-pays.png",
+      "apres": "checks/textes-sur-pastilles/apres-sombre-mobile-pays.png"
+    },
+    {
+      "vue": "ar-mobile-france",
+      "avant": "checks/textes-sur-pastilles/avant-ar-mobile-pays.png",
+      "apres": "checks/textes-sur-pastilles/apres-ar-mobile-pays.png"
+    },
+    {
+      "vue": "paysage",
+      "avant": "checks/textes-sur-pastilles/avant-paysage-monde.png",
+      "apres": "checks/textes-sur-pastilles/apres-paysage-monde.png"
+    },
+    {
+      "vue": "focus-statut (zoom ×3)",
+      "avant": "checks/textes-sur-pastilles/avant-focus-statut.png",
+      "apres": "checks/textes-sur-pastilles/apres-focus-statut.png"
+    }
+  ]
+}

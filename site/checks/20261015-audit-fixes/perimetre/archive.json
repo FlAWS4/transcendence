@@ -1,0 +1,139 @@
+{
+  "date": "2026-10-15",
+  "scope": "Contrôle en lecture seule de l’archive pre-codex-audit-fixes-20261015 contre son README et snapshot-verification.json ; écrit seulement ce fichier.",
+  "claims": {
+    "137 runtime sources (manifest)": true,
+    "137 runtime hashes match": true,
+    "baseline holds exactly the 137 manifest files": true,
+    "eleven adaptations with originals": true,
+    "adaptations limited to dependency paths or isolated storage": true,
+    "non-adapted baseline files equal their source bytes": true,
+    "two test originals match": true,
+    "originals/ holds 11 runtime + 2 test originals only": true,
+    "no local reference resolves outside the archive": true,
+    "entry import graph has no missing file": true,
+    "storage keys isolated (no unprefixed key left)": true,
+    "README states 192 references": true,
+    "192 references reproduced (html/mjs/js/css sources)": true,
+    "verification json states 192 references": true,
+    "README cache identifiers present in baseline": true,
+    "README links resolve": true,
+    "entry files answer HTTP 200 with archive bytes": true,
+    "archived code is the 144 code (five defects present)": true
+  },
+  "allClaimsHold": true,
+  "referenceCounts": {
+    "quotedReferencesResolvedInsideArchive": 200,
+    "importGraphReferences": 159,
+    "importGraphFiles": 95,
+    "unresolvedQuotedCandidates": 0,
+    "statedInReadme": 192
+  },
+  "changeKinds": [
+    "dependency-url",
+    "isolated-storage"
+  ],
+  "cacheIdentifiers144": {
+    "controller 144 (index.html → welcome.mjs?v=animated-entry-144)": true,
+    "content-preview.mjs?v=111 (content-preview.html)": true,
+    "content-preview.mjs → welcome.mjs?v=animated-entry-144": true,
+    "entrance.mjs?v=animated-labels-13 (welcome.mjs)": true,
+    "entrance.css?v=animated-labels-23 (index.html, content-preview.html)": true,
+    "comments.mjs?v=15 (project-ui.mjs)": true,
+    "comments.css?v=9 (index.html)": true,
+    "project-ui.mjs?v=39 (welcome.mjs, journal-ui.mjs)": true,
+    "journal-ui.mjs?v=38 (welcome.mjs)": true
+  },
+  "code144": {
+    "noCycleLabelsOption": true,
+    "noModifierFilter": true,
+    "commentsSortAlwaysDown": true,
+    "accountHiddenOnError": true,
+    "noDarkSignupInk": true
+  },
+  "readmeLinks": [
+    {
+      "link": "baseline/index.html",
+      "exists": true
+    },
+    {
+      "link": "baseline/content-preview.html#explore",
+      "exists": true
+    },
+    {
+      "link": "baseline/content-preview.html#projects/minishell-under-the-prompt?tab=comments",
+      "exists": true
+    },
+    {
+      "link": "snapshot-manifest.json",
+      "exists": true
+    },
+    {
+      "link": "test-source-manifest.json",
+      "exists": true
+    },
+    {
+      "link": "snapshot-verification.json",
+      "exists": true
+    },
+    {
+      "link": "../pre-animated-button-labels-20261013/README.md",
+      "exists": true
+    }
+  ],
+  "http": [
+    {
+      "url": "baseline/index.html",
+      "status": 200,
+      "identical": true
+    },
+    {
+      "url": "baseline/content-preview.html",
+      "status": 200,
+      "identical": true
+    },
+    {
+      "url": "baseline/welcome.mjs?v=animated-entry-144",
+      "status": 200,
+      "identical": true
+    },
+    {
+      "url": "baseline/content-preview.mjs?v=111",
+      "status": 200,
+      "identical": true
+    },
+    {
+      "url": "baseline/entrance.mjs?v=animated-labels-13",
+      "status": 200,
+      "identical": true
+    },
+    {
+      "url": "baseline/entrance.css?v=animated-labels-23",
+      "status": 200,
+      "identical": true
+    },
+    {
+      "url": "baseline/comments.mjs?v=15",
+      "status": 200,
+      "identical": true
+    },
+    {
+      "url": "README.md",
+      "status": 200,
+      "identical": true
+    }
+  ],
+  "storageLeftover": [],
+  "outside": [],
+  "unresolvedSample": [],
+  "verificationJson": {
+    "date": "2026-10-15",
+    "verified": 137,
+    "adaptedOriginals": 11,
+    "testOriginals": 2,
+    "references": 192,
+    "missing": [],
+    "outsideArchive": [],
+    "storagePrefix": "horizon-archive-pre-codex-audit-fixes-20261015-"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "passed": false,
+  "cases": [
+    {
+      "case": "ready-1",
+      "result": {
+        "study": {
+          "variant": "1",
+          "open": false,
+          "pinned": false,
+          "available": true,
+          "reason": "",
+          "hold": false
+        },
+        "canvas": 1,
+        "overflow": false
+      }
+    },
+    {
+      "case": "failure-dom",
+      "result": {
+        "errors": [],
+        "state": {
+          "variant": "1",
+          "open": true,
+          "pinned": false,
+          "available": true,
+          "reason": "manual",
+          "hold": false
+        },
+        "body": "H\nO\nR\nI\nZ\nO\nN\nExplorer\nProjets\nProfils\nChroniques\n42 Awards\nChercher dans Horizon\nMonde\nAngola\nMaroc\nPalestine\nPologne\n\n58 campus · 30 pays\n\nNatural Earth\n·\nOpenFreeMap\n· ©\nOpenMapTiles\n·\nOpenStreetMap\n\nExplorer · Le monde\n\n⋮\nCommandes du globe\nCommandes du globe\n×\n\nDéplacer sans glisser\n\n←\n↑\n↓\n→\nToujours afficher les commandes\n\nEntrée ouvre les commandes du globe. Les gestes ont des alternatives par simple clic.\n\nEssai 1 · Mode d’emploi"
+      }
+    }
+  ],
+  "sources": {
+    "study.mjs": "da86f7cb63bb063098f1f6b517b3e164fcedce014f8b4465716f358b65d7226f",
+    "study.css": "6386d8003160e26ead8d964c8e290b4969b6f29b614ffab4e4af17209386ed36",
+    "press-gesture.mjs": "5f3014317ac97f2d17c8d81a2cc6e75638b760acb60b105332e58681aa4b52d1"
+  }
+}

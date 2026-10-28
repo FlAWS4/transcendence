@@ -1,0 +1,82 @@
+{
+  "date": "2026-09-27",
+  "fileKey": "yFrdllVm6nrKZJ2c99MMjT",
+  "pageId": "115:2",
+  "phase": "applied-native-arrival-scan-and-circle-globe-verified",
+  "applied": true,
+  "entryIds": [
+    "115:3",
+    "123:145"
+  ],
+  "source": "studies/decryption-examples/scanner-return-random.mjs",
+  "nativePlan": {
+    "variant": 22,
+    "originalDecoderSeconds": 6.8,
+    "arrivalScanSeconds": 3.65,
+    "decipherAfterConfirmationSeconds": 3.15,
+    "readableSloganHoldSeconds": 1.3,
+    "phraseToLogoSeconds": 0.6,
+    "ringDrawSeconds": 0.8,
+    "circleToGlobeSeconds": 1.2,
+    "letters": 13,
+    "substitutionsPerLetter": 42,
+    "behaviour": "Arrival scan rests encrypted; confirmation starts decipher; visitor skips decipher and slogan."
+  },
+  "preserved": [
+    "entry IDs and original language/theme controls",
+    "member and visitor routes",
+    "eight home destinations, including RTL",
+    "all historical birth-frame children retained hidden",
+    "original home frames unchanged by transition refinement",
+    "shared components and variables"
+  ],
+  "verification": {
+    "planTests": "4 source/chronology assertions pass in entrance-sync-plan.test.mjs",
+    "buildSyntax": "additive build compiled; 11723 characters for mobile",
+    "figmaMutation": "initial desktop/mobile construction plus additive refinement applied",
+    "structuralAudit": "14 phase frames: durations, routes, arrival without timeout, original birth children hidden, four LTR/RTL pairs",
+    "renderInspection": "five native timeline exports sampled and visually inspected",
+    "prototypePlayback": "Connected mobile FR light replayed: arrival scan 123:145 → login simulation → decipher 128:371 → home 123:162; Projects selected in bottom bar. Visitor and full matrix not replayed.",
+    "temporaryModes": "144:678 exported with AR/dark, then explicit modes restored to {}"
+  },
+  "limits": [
+    "The Figma globe is the exact static vector destination, without WebGL manipulation or campus preloading.",
+    "Cousine substitutes platform-dependent system monospace; native glyph rendering differs slightly from Canvas.",
+    "Scanner cosine is sampled every 50 ms.",
+    "Figma confirmation immediately starts deciphering; the web waits if the arrival scan has not finished.",
+    "Video samples validate the visible phases, not interactive prototype timing, browser FPS, or physical-device performance.",
+    "Export MP4 duration includes endpoint frame padding at 5 fps; authored timeline and navigation hold are 1.3 seconds."
+  ],
+  "scripts": [
+    "entrance-sync-plan.mjs",
+    "entrance-sync-plan.test.mjs",
+    "entrance-sync-refine.mjs",
+    "entrance-sync-build.mjs"
+  ],
+  "proofs": {
+    "initialTransactions": [
+      "entrance-desktop-result.json",
+      "entrance-mobile-result.json"
+    ],
+    "refinements": [
+      "entrance-desktop-refinement.json",
+      "entrance-mobile-refinement.json"
+    ],
+    "routeAudit": "entrance-route-audit.json",
+    "videos": [
+      "entrance-proof/arrivalMobile.mp4",
+      "entrance-proof/logoMobile.mp4",
+      "entrance-proof/holdMobile.mp4",
+      "entrance-proof/birthDesktop.mp4",
+      "entrance-proof/birthMobileAR.mp4"
+    ],
+    "contactSheets": [
+      "entrance-proof/arrivalMobile-sheet.png",
+      "entrance-proof/logoMobile-sheet.png",
+      "entrance-proof/holdMobile-sheet.png",
+      "entrance-proof/birthDesktop-sheet.png",
+      "entrance-proof/birthMobileAR-sheet.png"
+    ]
+  },
+  "historicalConstructionScript": "entrance-sync-apply.mjs; guarded against rebuilding an already-existing n22 entrance"
+}

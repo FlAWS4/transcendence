@@ -1,0 +1,118 @@
+/* Awards is deliberately empty: retain the shared header, dock and backdrop.
+   Load after floating-search.css, contextual-discovery.css and detail-scroll.css.
+   The controller closes overlays/search and makes the hidden context inert. */
+html:has(.app[data-navigation=dock][data-section=awards]) {
+  overflow-y:hidden;
+}
+:root .app[data-navigation=dock][data-section=awards] {
+  height:100svh;
+  min-height:100svh;
+  overflow:hidden;
+}
+/* Keep the map and its destination anchor measurable. display:none would
+   collapse the shared MapLibre viewport or the globe-to-medallion target. */
+:root .app[data-navigation=dock][data-section=awards] #main > .globe-stage,
+:root .app[data-navigation=dock][data-section=awards] .scope-bar {
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+}
+:root #app[data-navigation=dock][data-section=awards] :is(
+  .content-sheet,.globe-footer,.loading-status,.prototype-note,
+  .arabic-brand,
+  .dock-search-toggle,.dock-random-toggle,.dock-search-form,.dock-search-panel
+) {
+  display:none;
+}
+/* The scope popover lives outside the app; account/language dialogs stay usable. */
+body:has(.app[data-navigation=dock][data-section=awards]) > .scope-popover {
+  display:none;
+}
+
+/* A fifth destination receives the same desktop breathing room as the first
+   four. No rule below applies to a retained four-destination dock. */
+:root .app[data-navigation=dock] .dock-shell:not([data-search-open=true]):has(.main-nav > button[data-section=awards]) {
+  width:min(636px,calc(100vw - 32px));
+}
+:root .app[data-navigation=dock] .main-nav.has-dock-search:has(> button[data-section=awards]) .nav-indicator {
+  width:calc((100% - 28px) / 5);
+}
+
+/* Show only the selected label as soon as five complete labels would crowd.
+   --dock-compact-item is also read by the existing geographic filter controller. */
+@container(max-width:560px) {
+  :root .app[data-navigation=dock] .main-nav.has-dock-search:has(> button[data-section=awards]) > button[data-section] {
+    --dock-compact-item:48px;
+    flex:0 0 var(--dock-compact-item);
+    gap:0;
+    padding-inline:8px;
+    transition:opacity .2s ease,transform .36s var(--ease),color .25s,flex-grow .35s var(--ease);
+    transition-delay:calc(150ms + var(--dock-menu-order,0) * 24ms),calc(150ms + var(--dock-menu-order,0) * 24ms),0s,0s;
+  }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search:has(> button[data-section=awards]) > button[data-section][aria-current] {
+    flex-grow:1;
+  }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search:has(> button[data-section=awards]) > button[data-section] > svg {
+    flex:0 0 21px;
+  }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search:has(> button[data-section=awards]) > button[data-section] > span {
+    min-width:0;
+    max-width:0;
+    margin-inline-start:0;
+    opacity:0;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    font-weight:500;
+    transition:opacity .2s,max-width .35s var(--ease),margin-inline-start .35s var(--ease);
+  }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search:has(> button[data-section=awards]) > button[data-section][aria-current] > span {
+    max-width:150px;
+    margin-inline-start:8px;
+    opacity:1;
+  }
+  @supports(interpolate-size:allow-keywords) {
+    :root .app[data-navigation=dock] .main-nav.has-dock-search:has(> button[data-section=awards]) > button[data-section] > span {
+      interpolate-size:allow-keywords;
+      inline-size:0;
+      max-width:none;
+      transition:opacity .2s,inline-size .35s var(--ease),margin-inline-start .35s var(--ease);
+    }
+    :root .app[data-navigation=dock] .main-nav.has-dock-search:has(> button[data-section=awards]) > button[data-section][aria-current] > span {
+      inline-size:max-content;
+      max-width:none;
+    }
+  }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search:has(> button[data-section=awards]) .nav-indicator {
+    --dock-compact-item:48px;
+    --dock-indicator-slot:0;
+    width:calc(100cqw - 4 * (var(--dock-compact-item) + 2px)) !important;
+    left:calc(6px + var(--dock-indicator-slot) * (var(--dock-compact-item) + 2px));
+    top:50%;
+    transform:translateY(-50%) !important;
+    transition:left .35s var(--ease),width .35s var(--ease),opacity .22s ease;
+  }
+  :root .app[data-navigation=dock][data-section=projects] .main-nav.has-dock-search:has(> button[data-section=awards]) .nav-indicator { --dock-indicator-slot:1; }
+  :root .app[data-navigation=dock][data-section=people] .main-nav.has-dock-search:has(> button[data-section=awards]) .nav-indicator { --dock-indicator-slot:2; }
+  :root .app[data-navigation=dock][data-section=journal] .main-nav.has-dock-search:has(> button[data-section=awards]) .nav-indicator { --dock-indicator-slot:3; }
+  :root .app[data-navigation=dock][data-section=awards] .main-nav.has-dock-search:has(> button[data-section=awards]) .nav-indicator { --dock-indicator-slot:4; }
+  :root[dir=rtl] .app[data-navigation=dock] .main-nav.has-dock-search:has(> button[data-section=awards]) .nav-indicator {
+    left:calc(6px + (4 - var(--dock-indicator-slot)) * (var(--dock-compact-item) + 2px));
+  }
+}
+@container(max-width:300px) {
+  :root .app[data-navigation=dock] .main-nav.has-dock-search:has(> button[data-section=awards]) > button[data-section],
+  :root .app[data-navigation=dock] .main-nav.has-dock-search:has(> button[data-section=awards]) .nav-indicator {
+    --dock-compact-item:44px;
+  }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search:has(> button[data-section=awards]) > button[data-section][aria-current] {
+    padding-inline:4px;
+  }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search:has(> button[data-section=awards]) > button[data-section][aria-current] > span {
+    margin-inline-start:6px;
+  }
+}
+@media(max-width:360px) {
+  :root .app[data-navigation=dock] .dock-shell:not([data-search-open=true]):has(.main-nav > button[data-section=awards]) {
+    width:calc(100vw - 24px);
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "id": "titre-fiche-campus",
+  "groupe": "Explorer et globe",
+  "titre": "Nom du campus en tête de fiche",
+  "resume": "Quand le logo officiel d’une fiche campus ne contient pas le nom du campus (42 Paris, réduit au sigle 42), ce nom apparaît en titre entre le logo et la ligne du pays. Les fiches sans logo (42 Lyon) et celle dont le logo écrit déjà le nom (42 Mulhouse) ne changent pas.",
+  "probleme": "Dans la fiche de 42 Paris (Explorer → France → 42 Paris, puis clic sur le repère), l’en-tête montre le logo officiel, qui n’est que le sigle 42 : aucun nom de campus n’est visible en haut, seulement « France » sous le logo. Une fois le logo chargé, campus-details.mjs masque le titre texte ; le titre du dialogue n’est lu que par les lecteurs d’écran.",
+  "changement": "essai.mjs observe le dialogue #dialog (MutationObserver, sans effet en double). Dans chaque en-tête de fiche, si l’image du logo est affichée, que le titre texte du campus a été masqué et que ce logo n’est pas dans la courte liste des logos qui écrivent déjà le nom (aujourd’hui le seul logo de Mulhouse, « 42 | MULHOUSE Grand Est »), il insère juste après l’emplacement du logo une copie de ce titre : h3.campus-details-name, même texte et même typographie (32 px sur ordinateur, 28 px sur mobile, graisse 500, interligne arabe). Il la retire si le logo échoue et que le nom réapparaît dans l’emplacement. Le titre reste hors de la plaque sombre du logo. Aucun nouveau texte à traduire : c’est le nom propre du campus. essai.css ne contient aucune règle.",
+  "decisionConcernee": "8 octobre : « Fiches campus : logo officiel en tête, sinon nom texte (également si l’image échoue) » ; demande de l’utilisateur : « Si aucun logo ne s’affiche, le nom doit prendre sa place. » L’essai affiche aussi le nom sous un logo qui ne le contient pas (42 Paris).",
+  "alternativeDe": "",
+  "vues": [
+    {"libelle": "42 Paris, ordinateur clair (cliquer le repère pour ouvrir la fiche)", "page": "content-preview.html", "route": "explore?country=FRA&campus=paris", "viewport": "ordinateur", "theme": "light", "lang": "fr"},
+    {"libelle": "42 Paris, mobile sombre arabe (cliquer le repère)", "page": "content-preview.html", "route": "explore?country=FRA&campus=paris", "viewport": "mobile", "theme": "dark", "lang": "ar"},
+    {"libelle": "Contrôle : 42 Mulhouse, logo qui écrit déjà le nom, inchangé (cliquer le repère)", "page": "content-preview.html", "route": "explore?country=FRA&campus=mulhouse", "viewport": "ordinateur", "theme": "light", "lang": "fr"},
+    {"libelle": "Contrôle : 42 Lyon, sans logo, inchangé (cliquer le repère)", "page": "content-preview.html", "route": "explore?country=FRA&campus=lyon", "viewport": "ordinateur", "theme": "light", "lang": "fr"}
+  ],
+  "verifications": [
+    "campus-profiles.json : seuls paris et mulhouse ont un logo ; lyon sert de campus sans logo. Logos regardés : celui de Paris est le sigle seul (source « 42-Final-sigle-seul.svg »), celui de Mulhouse écrit « MULHOUSE Grand Est ».",
+    "Fiches ouvertes par clic sur le repère du campus sélectionné, vrai globe : Paris, Mulhouse et Lyon sur ordinateur en français clair et sur mobile 390 × 844 en arabe sombre ; Paris aussi sur ordinateur en arabe clair et sur mobile en français clair.",
+    "Nom visible en texte dans l’en-tête : Paris 0 avant → 1 après, dans les 4 vues ; Mulhouse 0 → 0 (le nom reste celui du logo) ; Lyon 1 → 1. Aucun nom en double.",
+    "Mulhouse et Lyon identiques à la copie : 0 pixel différent dans la zone de la fiche, sur ordinateur en français et sur mobile en arabe sombre ; même géométrie de l’en-tête.",
+    "Ordre à l’écran pour Paris sur ordinateur : bas du logo à y 241, titre de 251 à 288,1, ligne du pays à 298,1 (251 avant). Mobile français : titre de 430,5 à 462,9.",
+    "Typographie du titre ajouté identique au nom de Lyon dans la même vue : Jost 32 px, graisse 500, interligne 37,12 px, approche −0,8 px sur ordinateur ; 28 px, interligne 42 px, approche normale sur mobile arabe.",
+    "Accessibilité : nom du dialogue inchangé dans l’arbre d’accessibilité de Chrome (« 42 Paris », « 42 Mulhouse », « 42 Lyon ») ; mêmes éléments focalisables dans le même ordre (17 pour Paris, 16 pour Mulhouse, 5 pour Lyon) ; le titre ajouté n’est pas focalisable.",
+    "Changement de langue et de thème sans rechargement (réglages du compte : français clair → arabe sombre → anglais clair, fiche de Paris rouverte à chaque fois) : un seul titre « 42 Paris », dir=rtl en arabe, aucune erreur (capture apres-paris-ordinateur-ar-sombre-sans-rechargement.png).",
+    "Échec du logo simulé (requête du logo de Paris bloquée) : la copie retombe sur le nom dans l’emplacement du logo et l’essai n’ajoute pas de second titre (1 nom visible).",
+    "Aucun débordement, aucune erreur console ; captures avant/après examinées pour Paris, Mulhouse et Lyon, sur ordinateur et sur mobile, en français et en arabe."
+  ],
+  "limites": [
+    "Le classement « logo qui écrit déjà le nom » est fait à l’œil sur les deux logos existants et inscrit dans essai.mjs (seul celui de Mulhouse). campus-profiles.json n’a pas de champ pour le dire : un nouveau logo non classé recevrait le titre, même s’il contient le nom.",
+    "Le titre ajoute de la hauteur en haut des fiches à logo sans nom : environ 47 px sur ordinateur en français, 58 px en arabe (interligne 1,5), 42 px sur mobile en français et 52 px en arabe. La ligne du pays et le reste du contenu descendent d’autant ; sur mobile, la fiche repliée montre un peu moins de contenu.",
+    "Le titre est placé sous la plaque du logo, pas dedans, pour ne pas imiter le logotype officiel « 42 + nom » de la charte ; il n’occupe donc pas la place du nom dans les fiches sans logo.",
+    "Lecteur d’écran : l’alternative du logo (« Logo officiel de 42 Paris ») puis le titre annoncent deux fois le nom ; l’essai ne modifie pas l’alternative.",
+    "Dans la galerie, la fiche ne s’ouvre pas d’elle-même : il faut cliquer le repère du campus dans chaque vue."
+  ],
+  "fichiers": [
+    "essais/titre-fiche-campus/essai.mjs",
+    "essais/titre-fiche-campus/essai.css",
+    "checks/titre-fiche-campus/check.py",
+    "checks/titre-fiche-campus/results.json"
+  ],
+  "captures": [
+    {"vue": "paris-ordinateur", "avant": "checks/titre-fiche-campus/avant-paris-ordinateur-fr.png", "apres": "checks/titre-fiche-campus/apres-paris-ordinateur-fr.png"},
+    {"vue": "paris-ar-mobile-sombre", "avant": "checks/titre-fiche-campus/avant-paris-mobile-ar-sombre.png", "apres": "checks/titre-fiche-campus/apres-paris-mobile-ar-sombre.png"},
+    {"vue": "paris-mobile", "avant": "checks/titre-fiche-campus/avant-paris-mobile-fr.png", "apres": "checks/titre-fiche-campus/apres-paris-mobile-fr.png"},
+    {"vue": "paris-ar-ordinateur", "avant": "checks/titre-fiche-campus/avant-paris-ordinateur-ar.png", "apres": "checks/titre-fiche-campus/apres-paris-ordinateur-ar.png"},
+    {"vue": "mulhouse-ordinateur (inchangé)", "avant": "checks/titre-fiche-campus/avant-mulhouse-ordinateur-fr.png", "apres": "checks/titre-fiche-campus/apres-mulhouse-ordinateur-fr.png"},
+    {"vue": "mulhouse-ar-mobile-sombre (inchangé)", "avant": "checks/titre-fiche-campus/avant-mulhouse-mobile-ar-sombre.png", "apres": "checks/titre-fiche-campus/apres-mulhouse-mobile-ar-sombre.png"},
+    {"vue": "lyon-ordinateur (inchangé)", "avant": "checks/titre-fiche-campus/avant-lyon-ordinateur-fr.png", "apres": "checks/titre-fiche-campus/apres-lyon-ordinateur-fr.png"},
+    {"vue": "lyon-ar-mobile-sombre (inchangé)", "avant": "checks/titre-fiche-campus/avant-lyon-mobile-ar-sombre.png", "apres": "checks/titre-fiche-campus/apres-lyon-mobile-ar-sombre.png"},
+    {"vue": "paris-logo-bloque", "avant": "checks/titre-fiche-campus/avant-paris-logo-bloque-ordinateur-fr.png", "apres": "checks/titre-fiche-campus/apres-paris-logo-bloque-ordinateur-fr.png"}
+  ]
+}

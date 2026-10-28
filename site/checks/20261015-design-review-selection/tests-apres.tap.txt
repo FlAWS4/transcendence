@@ -1,0 +1,3321 @@
+TAP version 13
+# Subtest: the click launches its camera synchronously while the raw radius remains pending
+ok 1 - the click launches its camera synchronously while the raw radius remains pending
+  ---
+  duration_ms: 3.936193
+  ...
+# Subtest: a late raw completion cannot revive the previous destination or replay its descent
+ok 2 - a late raw completion cannot revive the previous destination or replay its descent
+  ---
+  duration_ms: 6.910384
+  ...
+# Subtest: a ready moving reveal completes at arrival while the raw radius can still be pending
+ok 3 - a ready moving reveal completes at arrival while the raw radius can still be pending
+  ---
+  duration_ms: 1.637012
+  ...
+# Subtest: reduced motion jumps directly, releases controls and lets the actual view become ready later
+ok 4 - reduced motion jumps directly, releases controls and lets the actual view become ready later
+  ---
+  duration_ms: 1.080539
+  ...
+# Subtest: repeating the current in-flight destination keeps its flight while reduced motion can finish it directly
+ok 5 - repeating the current in-flight destination keeps its flight while reduced motion can finish it directly
+  ---
+  duration_ms: 1.020099
+  ...
+# Subtest: selecting the current campus recenters without reloading even while its raw radius is incomplete
+ok 6 - selecting the current campus recenters without reloading even while its raw radius is incomplete
+  ---
+  duration_ms: 0.984485
+  ...
+# Subtest: an explicit retry resumes a partial raw radius without restarting a successful view or its camera
+ok 7 - an explicit retry resumes a partial raw radius without restarting a successful view or its camera
+  ---
+  duration_ms: 0.827615
+  ...
+# Subtest: retrying a failed visible source refreshes its gate in place without another flight
+ok 8 - retrying a failed visible source refreshes its gate in place without another flight
+  ---
+  duration_ms: 0.976279
+  ...
+# Subtest: manual zoom out and back in restores the same inclination at each height
+ok 9 - manual zoom out and back in restores the same inclination at each height
+  ---
+  duration_ms: 3.518461
+  ...
+# Subtest: free campus zoom matches the existing approach from overhead to 34 degrees
+ok 10 - free campus zoom matches the existing approach from overhead to 34 degrees
+  ---
+  duration_ms: 0.796146
+  ...
+# Subtest: panning at unchanged zoom keeps inclination stable regardless of previous zoom direction
+ok 11 - panning at unchanged zoom keeps inclination stable regardless of previous zoom direction
+  ---
+  duration_ms: 0.638369
+  ...
+# Subtest: travel, approach, retreat and world preparation retain their existing camera choreography
+ok 12 - travel, approach, retreat and world preparation retain their existing camera choreography
+  ---
+  duration_ms: 0.71565
+  ...
+# Subtest: world and country stay flat without inheriting an incline from campus
+ok 13 - world and country stay flat without inheriting an incline from campus
+  ---
+  duration_ms: 0.665608
+  ...
+# Subtest: zoom buttons complete repeated round trips without losing inclination or escaping campus bounds
+ok 14 - zoom buttons complete repeated round trips without losing inclination or escaping campus bounds
+  ---
+  duration_ms: 1.271684
+  ...
+# Subtest: campus photos open the complete gallery at the selected photo and release their viewer
+ok 15 - campus photos open the complete gallery at the selected photo and release their viewer
+  ---
+  duration_ms: 30.176959
+  ...
+# Subtest: Explorer and content-map marker clicks keep the selected official website language
+ok 16 - Explorer and content-map marker clicks keep the selected official website language
+  ---
+  duration_ms: 11.014213
+  ...
+# Subtest: verified English, local and network-profile fallbacks remain available
+ok 17 - verified English, local and network-profile fallbacks remain available
+  ---
+  duration_ms: 4.11963
+  ...
+# Subtest: missing campus facts remain explicit and never become fictional photos, dates or student counts
+ok 18 - missing campus facts remain explicit and never become fictional photos, dates or student counts
+  ---
+  duration_ms: 2.168373
+  ...
+# Subtest: directions use the official address and campus name, not approximate coordinates
+ok 19 - directions use the official address and campus name, not approximate coordinates
+  ---
+  duration_ms: 1.032447
+  ...
+# Subtest: campus name remains the fallback until an official logo loads and returns on failure
+ok 20 - campus name remains the fallback until an official logo loads and returns on failure
+  ---
+  duration_ms: 1.952318
+  ...
+# Subtest: verified photo assets keep localized alternative text, credits and sources with keyboard-operable navigation
+ok 21 - verified photo assets keep localized alternative text, credits and sources with keyboard-operable navigation
+  ---
+  duration_ms: 1.499162
+  ...
+# Subtest: contact labels are translated and unsafe contact links stay plain text
+ok 22 - contact labels are translated and unsafe contact links stay plain text
+  ---
+  duration_ms: 0.641637
+  ...
+# Subtest: year-only opening information never acquires a month or day
+ok 23 - year-only opening information never acquires a month or day
+  ---
+  duration_ms: 0.824447
+  ...
+# Subtest: finished Piscines disappear, an ongoing final day remains, and invalid or unspecified days are not invented
+ok 24 - finished Piscines disappear, an ongoing final day remains, and invalid or unspecified days are not invented
+  ---
+  duration_ms: 2.609149
+  ...
+# Subtest: when all Piscines have ended, the official schedule link replaces stale dates
+ok 25 - when all Piscines have ended, the official schedule link replaces stale dates
+  ---
+  duration_ms: 0.632456
+  ...
+# Subtest: statistics use only supplied values, keep a real zero and attach dates and sources to the right measure
+ok 26 - statistics use only supplied values, keep a real zero and attach dates and sources to the right measure
+  ---
+  duration_ms: 1.208946
+  ...
+# Subtest: practical headings remain localized in French, English and Arabic
+ok 27 - practical headings remain localized in French, English and Arabic
+  ---
+  duration_ms: 1.038932
+  ...
+# Subtest: address copying announces success and preserves the official address
+ok 28 - address copying announces success and preserves the official address
+  ---
+  duration_ms: 10.100832
+  ...
+# Subtest: clipboard denial and missing clipboard give manual-copy instructions instead of false success
+ok 29 - clipboard denial and missing clipboard give manual-copy instructions instead of false success
+  ---
+  duration_ms: 1.621059
+  ...
+# Subtest: a destroyed campus component cannot announce a late clipboard result
+ok 30 - a destroyed campus component cannot announce a late clipboard result
+  ---
+  duration_ms: 0.983916
+  ...
+# Subtest: the active welcome callback renders the sourced Paris profile and dates its published statistic
+ok 31 - the active welcome callback renders the sourced Paris profile and dates its published statistic
+  ---
+  duration_ms: 9.659524
+  ...
+# Subtest: Mulhouse preserves the opening month, the historical student count and an undated future schedule
+ok 32 - Mulhouse preserves the opening month, the historical student count and an undated future schedule
+  ---
+  duration_ms: 2.204954
+  ...
+# Subtest: a visible campus keeps its reticle at its actual projected position
+ok 33 - a visible campus keeps its reticle at its actual projected position
+  ---
+  duration_ms: 1.72886
+  ...
+# Subtest: cardinal offscreen bearings match an arrow whose drawing points up
+ok 34 - cardinal offscreen bearings match an arrow whose drawing points up
+  ---
+  duration_ms: 0.353782
+  ...
+# Subtest: diagonal projection follows the centre-to-campus ray rather than clamping axes independently
+ok 35 - diagonal projection follows the centre-to-campus ray rather than clamping axes independently
+  ---
+  duration_ms: 1.085242
+  ...
+# Subtest: exact corner directions reach that corner without distorting the bearing
+ok 36 - exact corner directions reach that corner without distorting the bearing
+  ---
+  duration_ms: 0.345789
+  ...
+# Subtest: desktop, portrait and landscape projections stay on the inset rectangle and the same forward ray
+ok 37 - desktop, portrait and landscape projections stay on the inset rectangle and the same forward ray
+  ---
+  duration_ms: 0.749331
+  ...
+# Subtest: different horizontal and vertical fade margins retain the extra 36px inset
+ok 38 - different horizontal and vertical fade margins retain the extra 36px inset
+  ---
+  duration_ms: 0.244291
+  ...
+# Subtest: the arrow appears before the campus enters the viewport fade margin
+ok 39 - the arrow appears before the campus enters the viewport fade margin
+  ---
+  duration_ms: 0.215605
+  ...
+# Subtest: six-pixel return hysteresis prevents flicker at all four edges
+ok 40 - six-pixel return hysteresis prevents flicker at all four edges
+  ---
+  duration_ms: 0.344948
+  ...
+# Subtest: custom hysteresis changes only the return threshold
+ok 41 - custom hysteresis changes only the return threshold
+  ---
+  duration_ms: 0.308009
+  ...
+# Subtest: non-finite campus projections do not produce a misplaced arrow
+ok 42 - non-finite campus projections do not produce a misplaced arrow
+  ---
+  duration_ms: 0.315494
+  ...
+# Subtest: viewports smaller than the minimum target hide the indicator
+ok 43 - viewports smaller than the minimum target hide the indicator
+  ---
+  duration_ms: 0.262207
+  ...
+# Subtest: bearing crosses north by the short route without a full revolution
+ok 44 - bearing crosses north by the short route without a full revolution
+  ---
+  duration_ms: 0.237487
+  ...
+# Subtest: bearing remains continuous after accumulated turns and repeated changes
+ok 45 - bearing remains continuous after accumulated turns and repeated changes
+  ---
+  duration_ms: 0.289011
+  ...
+# Subtest: the retreat preserves full detail through zoom16.6 and only hands off after the fade reaches zero at14.5
+ok 46 - the retreat preserves full detail through zoom16.6 and only hands off after the fade reaches zero at14.5
+  ---
+  duration_ms: 6.85699
+  ...
+# Subtest: elapsed time alone cannot fade a stalled view, and a cancelled approach keeps its current partial opacity
+ok 47 - elapsed time alone cannot fade a stalled view, and a cancelled approach keeps its current partial opacity
+  ---
+  duration_ms: 2.985898
+  ...
+# Subtest: a low retreat without a valid origin keeps the conservative existing limit
+ok 48 - a low retreat without a valid origin keeps the conservative existing limit
+  ---
+  duration_ms: 8.823576
+  ...
+# Subtest: the manual minimum still retreats with full detail initially, recentres and stays above source zoom14
+ok 49 - the manual minimum still retreats with full detail initially, recentres and stays above source zoom14
+  ---
+  duration_ms: 6.690399
+  ...
+# Subtest: relative low-zoom retreat retains the shorter campus duration and high-zoom framing remains unchanged
+ok 50 - relative low-zoom retreat retains the shorter campus duration and high-zoom framing remains unchanged
+  ---
+  duration_ms: 3.063011
+  ...
+# Subtest: recentring low retreats fits inside the existing raw disk even when starting at its 3km navigation edge
+ok 51 - recentring low retreats fits inside the existing raw disk even when starting at its 3km navigation edge
+  ---
+  duration_ms: 987.432486
+  ...
+# Subtest: replacement removes all old listeners and no late move can resume the old destination
+ok 52 - replacement removes all old listeners and no late move can resume the old destination
+  ---
+  duration_ms: 1.11619
+  ...
+# Subtest: resize conceals synchronously before handing control back without extending preload radius
+ok 53 - resize conceals synchronously before handing control back without extending preload radius
+  ---
+  duration_ms: 0.681469
+  ...
+# Subtest: reduced motion hides before returning and destruction never leaves a delayed callback
+ok 54 - reduced motion hides before returning and destruction never leaves a delayed callback
+  ---
+  duration_ms: 0.723522
+  ...
+# Subtest: campus-to-campus may use a shorter retreat without changing the accepted filter return
+ok 55 - campus-to-campus may use a shorter retreat without changing the accepted filter return
+  ---
+  duration_ms: 1.177421
+  ...
+# Subtest: engine keeps raw coverage protected during retreat and ignores the old moveend when onward flight begins
+ok 56 - engine keeps raw coverage protected during retreat and ignores the old moveend when onward flight begins
+  ---
+  duration_ms: 1.562581
+  ...
+# Subtest: the real engine starts a retreat at minimum manual zoom with the departing campus coordinates
+ok 57 - the real engine starts a retreat at minimum manual zoom with the departing campus coordinates
+  ---
+  duration_ms: 0.753706
+  ...
+# Subtest: a newly selected destination invalidates the old outbound continuation before its completion microtask
+ok 58 - a newly selected destination invalidates the old outbound continuation before its completion microtask
+  ---
+  duration_ms: 0.68053
+  ...
+# Subtest: a different campus starts its real retreat before any selected preload or renderer preparation
+ok 59 - a different campus starts its real retreat before any selected preload or renderer preparation
+  ---
+  duration_ms: 0.743462
+  ...
+# Subtest: spherical footprint matches all 58 independently estimated campus counts and centre tiles
+ok 60 - spherical footprint matches all 58 independently estimated campus counts and centre tiles
+  ---
+  duration_ms: 7.515731
+  ...
+# Subtest: footprint crosses the antimeridian without a world-size download and rejects oversized polar requests
+ok 61 - footprint crosses the antimeridian without a world-size download and rejects oversized polar requests
+  ---
+  duration_ms: 0.613419
+  ...
+# Subtest: coverage includes camera displacement and the worst visible corner on desktop and mobile
+ok 62 - coverage includes camera displacement and the worst visible corner on desktop and mobile
+  ---
+  duration_ms: 0.715022
+  ...
+# Subtest: coverage rejects an unbounded or oversized view without clipping its radius
+ok 63 - coverage rejects an unbounded or oversized view without clipping its radius
+  ---
+  duration_ms: 0.303874
+  ...
+# Subtest: changing the selected radius extends the existing footprint and only fetches missing tiles
+ok 64 - changing the selected radius extends the existing footprint and only fetches missing tiles
+  ---
+  duration_ms: 36.691053
+  ...
+# Subtest: disk is fetched once, reused by MapLibre, and cached buffers survive worker transfer
+ok 65 - disk is fetched once, reused by MapLibre, and cached buffers survive worker transfer
+  ---
+  duration_ms: 11.653267
+  ...
+# Subtest: renderer and select share the in-flight TileJSON and tile requests
+ok 66 - renderer and select share the in-flight TileJSON and tile requests
+  ---
+  duration_ms: 18.189198
+  ...
+# Subtest: queued renderer work gets priority and prefetch concurrency leaves renderer capacity
+ok 67 - queued renderer work gets priority and prefetch concurrency leaves renderer capacity
+  ---
+  duration_ms: 12.487813
+  ...
+# Subtest: leaving campus cancels queued/running work and a replacement cannot be marked ready by stale completions
+ok 68 - leaving campus cancels queued/running work and a replacement cannot be marked ready by stale completions
+  ---
+  duration_ms: 10.296695
+  ...
+# Subtest: hard memory limit never reports full readiness for an evicted footprint
+ok 69 - hard memory limit never reports full readiness for an evicted footprint
+  ---
+  duration_ms: 11.096937
+  ...
+# Subtest: failed tiles are reported and an explicit retry only fetches missing tiles
+ok 70 - failed tiles are reported and an explicit retry only fetches missing tiles
+  ---
+  duration_ms: 3.035022
+  ...
+# Subtest: stalled requests time out and destruction removes the protocol and frees the cache
+ok 71 - stalled requests time out and destruction removes the protocol and frees the cache
+  ---
+  duration_ms: 7.67427
+  ...
+# Subtest: anticipation is a distinct single-request queue and promotes the exact in-flight job without a duplicate
+ok 72 - anticipation is a distinct single-request queue and promotes the exact in-flight job without a duplicate
+  ---
+  duration_ms: 6.856099
+  ...
+# Subtest: promotion after a viewport change shares overlapping requests before cancelling the previous footprint
+ok 73 - promotion after a viewport change shares overlapping requests before cancelling the previous footprint
+  ---
+  duration_ms: 11.857518
+  ...
+# Subtest: replacement anticipation cancels obsolete work and cannot overwrite the selected state
+ok 74 - replacement anticipation cancels obsolete work and cannot overwrite the selected state
+  ---
+  duration_ms: 3.395104
+  ...
+# Subtest: background caching never evicts the selected footprint to pretend that two dense campuses fit
+ok 75 - background caching never evicts the selected footprint to pretend that two dense campuses fit
+  ---
+  duration_ms: 4.389149
+  ...
+# Subtest: a completed candidate uses only cached data after selection and can be replaced by the next candidate
+ok 76 - a completed candidate uses only cached data after selection and can be replaced by the next candidate
+  ---
+  duration_ms: 9.290309
+  ...
+# Subtest: manual destination takes priority over another candidate and next-candidate cancellation cannot abort a promoted request
+ok 77 - manual destination takes priority over another candidate and next-candidate cancellation cannot abort a promoted request
+  ---
+  duration_ms: 7.790631
+  ...
+# Subtest: the portal replays the approach for the current campus and restores its exact explored camera
+ok 78 - the portal replays the approach for the current campus and restores its exact explored camera
+  ---
+  duration_ms: 4.695606
+  ...
+# Subtest: closing during either flight leg restores the world and late moveend cannot restart the campus descent
+ok 79 - closing during either flight leg restores the world and late moveend cannot restart the campus descent
+  ---
+  duration_ms: 2.337697
+  ...
+# Subtest: a captured original flight restores its legal destination instead of the intermediate camera
+ok 80 - a captured original flight restores its legal destination instead of the intermediate camera
+  ---
+  duration_ms: 2.063647
+  ...
+# Subtest: world, country, other campuses, random and Home stay locked while Escape belongs to the dialog
+ok 81 - world, country, other campuses, random and Home stay locked while Escape belongs to the dialog
+  ---
+  duration_ms: 1.448261
+  ...
+# Subtest: capture/start failures leave a restorable session and concurrent sessions are refused
+ok 82 - capture/start failures leave a restorable session and concurrent sessions are refused
+  ---
+  duration_ms: 0.846399
+  ...
+# Subtest: reduced motion uses the same bounded destination without an animated segment
+ok 83 - reduced motion uses the same bounded destination without an animated segment
+  ---
+  duration_ms: 1.231993
+  ...
+# Subtest: a changed host viewport restores a legal world camera and the new layout padding
+ok 84 - a changed host viewport restores a legal world camera and the new layout padding
+  ---
+  duration_ms: 1.049603
+  ...
+# Subtest: only the locked campus gets a marker, while its normal click still opens its information
+ok 85 - only the locked campus gets a marker, while its normal click still opens its information
+  ---
+  duration_ms: 1.178518
+  ...
+# Subtest: the same hidden renderer prepares intermediate approach zooms before restoring the safe view
+ok 86 - the same hidden renderer prepares intermediate approach zooms before restoring the safe view
+  ---
+  duration_ms: 16.98239
+  ...
+# Subtest: cancelling an intermediate zoom restores the safe camera and prevents later poses
+ok 87 - cancelling an intermediate zoom restores the safe camera and prevents later poses
+  ---
+  duration_ms: 1.958818
+  ...
+# Subtest: preflight restoration conceals the remote source before returning to the departure camera
+ok 88 - preflight restoration conceals the remote source before returning to the departure camera
+  ---
+  duration_ms: 1.727974
+  ...
+# Subtest: batch prepares the complete disk with two loaded frames and a <=1024px backing buffer
+ok 89 - batch prepares the complete disk with two loaded frames and a <=1024px backing buffer
+  ---
+  duration_ms: 2.09735
+  ...
+# Subtest: batch cancellation restores inline dimensions, ratio and camera before uncovering
+ok 90 - batch cancellation restores inline dimensions, ratio and camera before uncovering
+  ---
+  duration_ms: 1.396226
+  ...
+# Subtest: batch timeout restores viewport and reports an error instead of prepared data
+ok 91 - batch timeout restores viewport and reports an error instead of prepared data
+  ---
+  duration_ms: 6.917412
+  ...
+# Subtest: cancelling reentrantly during batch resize cannot subsequently move to a probe
+ok 92 - cancelling reentrantly during batch resize cannot subsequently move to a probe
+  ---
+  duration_ms: 0.681941
+  ...
+# Subtest: waits for a fresh rendered, loaded pose and restores a rendered arrival before reveal
+ok 93 - waits for a fresh rendered, loaded pose and restores a rendered arrival before reveal
+  ---
+  duration_ms: 7.317415
+  ...
+# Subtest: cancel synchronously restores the camera before thaw and prevents stale frames reviving work
+ok 94 - cancel synchronously restores the camera before thaw and prevents stale frames reviving work
+  ---
+  duration_ms: 4.934174
+  ...
+# Subtest: deduplicates only a running preparation and retests completed cache on the next arrival
+ok 95 - deduplicates only a running preparation and retests completed cache on the next arrival
+  ---
+  duration_ms: 3.228491
+  ...
+# Subtest: source errors fail closed, unrelated source errors are ignored, and cleanup is complete
+ok 96 - source errors fail closed, unrelated source errors are ignored, and cleanup is complete
+  ---
+  duration_ms: 4.489789
+  ...
+# Subtest: per-pose and global timeouts restore camera without claiming readiness
+ok 97 - per-pose and global timeouts restore camera without claiming readiness
+  ---
+  duration_ms: 11.958078
+  ...
+# Subtest: external abort and same-turn cancellation do not leave hooks or listeners attached
+ok 98 - external abort and same-turn cancellation do not leave hooks or listeners attached
+  ---
+  duration_ms: 1.398555
+  ...
+# Subtest: reentrant freeze cancellation cannot enable opaque rendering or move the camera afterwards
+ok 99 - reentrant freeze cancellation cannot enable opaque rendering or move the camera afterwards
+  ---
+  duration_ms: 0.537385
+  ...
+# Subtest: a replacement run requested during thaw waits until previous camera cleanup has finished
+ok 100 - a replacement run requested during thaw waits until previous camera cleanup has finished
+  ---
+  duration_ms: 3.161315
+  ...
+# Subtest: destroy inside a notification cancels cleanly and never notifies again
+ok 101 - destroy inside a notification cancels cleanly and never notifies again
+  ---
+  duration_ms: 0.507466
+  ...
+# Subtest: the selected language takes precedence over English and local
+ok 102 - the selected language takes precedence over English and local
+  ---
+  duration_ms: 1.861774
+  ...
+# Subtest: an unavailable Arabic version falls back to a verified English URL
+ok 103 - an unavailable Arabic version falls back to a verified English URL
+  ---
+  duration_ms: 0.807012
+  ...
+# Subtest: without English the verified local version is kept
+ok 104 - without English the verified local version is kept
+  ---
+  duration_ms: 0.292471
+  ...
+# Subtest: a default page in the selected language precedes translated English
+ok 105 - a default page in the selected language precedes translated English
+  ---
+  duration_ms: 0.257718
+  ...
+# Subtest: unsafe locale links are skipped, never turned into invented paths
+ok 106 - unsafe locale links are skipped, never turned into invented paths
+  ---
+  duration_ms: 1.672229
+  ...
+# Subtest: a campus without a published site retains its official network profile
+ok 107 - a campus without a published site retains its official network profile
+  ---
+  duration_ms: 0.264026
+  ...
+# Subtest: no valid URL leaves the link absent
+ok 108 - no valid URL leaves the link absent
+  ---
+  duration_ms: 0.269712
+  ...
+# Subtest: English requiring a site menu is disclosed instead of fabricating a locale URL
+ok 109 - English requiring a site menu is disclosed instead of fabricating a locale URL
+  ---
+  duration_ms: 0.34101
+  ...
+# Subtest: a prepared zoom fade remains camera-driven until explicit completion, with no timed reveal
+ok 110 - a prepared zoom fade remains camera-driven until explicit completion, with no timed reveal
+  ---
+  duration_ms: 9.491383
+  ...
+# Subtest: cancellation or source error cannot complete or revive a zoom-driven approach
+ok 111 - cancellation or source error cannot complete or revive a zoom-driven approach
+  ---
+  duration_ms: 0.640207
+  ...
+# Subtest: preparation hides opacity before enabling layers; idle alone cannot reveal stale cache
+ok 112 - preparation hides opacity before enabling layers; idle alone cannot reveal stale cache
+  ---
+  duration_ms: 0.357925
+  ...
+# Subtest: render reveals without waiting for idle only after movement, tile and source loading complete
+ok 113 - render reveals without waiting for idle only after movement, tile and source loading complete
+  ---
+  duration_ms: 0.264843
+  ...
+# Subtest: defer and hide invalidate a waiting reveal; a new prepare needs a fresh render
+ok 114 - defer and hide invalidate a waiting reveal; a new prepare needs a fresh render
+  ---
+  duration_ms: 0.377271
+  ...
+# Subtest: repeated prepare cancels the prior readiness generation without losing the next render
+ok 115 - repeated prepare cancels the prior readiness generation without losing the next render
+  ---
+  duration_ms: 0.30927
+  ...
+# Subtest: source errors keep the local view and stay sticky even when errored tiles report loaded
+ok 116 - source errors keep the local view and stay sticky even when errored tiles report loaded
+  ---
+  duration_ms: 0.510155
+  ...
+# Subtest: metadata/glyph errors without sourceId are remembered before preparation
+ok 117 - metadata/glyph errors without sourceId are remembered before preparation
+  ---
+  duration_ms: 0.311005
+  ...
+# Subtest: an explicitly unrelated source error does not block remote detail
+ok 118 - an explicitly unrelated source error does not block remote detail
+  ---
+  duration_ms: 0.392302
+  ...
+# Subtest: an already detailed view survives prepare/defer without opacity reset
+ok 119 - an already detailed view survives prepare/defer without opacity reset
+  ---
+  duration_ms: 0.360932
+  ...
+# Subtest: a 450 ms reveal continues across defer/prepare, while hide cancels its final state
+ok 120 - a 450 ms reveal continues across defer/prepare, while hide cancels its final state
+  ---
+  duration_ms: 479.99594
+  ...
+# Subtest: destroy detaches events and cancels a pending reveal without further callbacks
+ok 121 - destroy detaches events and cancels a pending reveal without further callbacks
+  ---
+  duration_ms: 480.680352
+  ...
+# Subtest: fade to local waits before hiding an already revealed map and resolving true
+ok 122 - fade to local waits before hiding an already revealed map and resolving true
+  ---
+  duration_ms: 25.504757
+  ...
+# Subtest: fade cancels an in-progress reveal; reduced motion exposes local immediately
+ok 123 - fade cancels an in-progress reveal; reduced motion exposes local immediately
+  ---
+  duration_ms: 0.549808
+  ...
+# Subtest: local, waiting and error views hide immediately without waiting for fade duration
+ok 124 - local, waiting and error views hide immediately without waiting for fade duration
+  ---
+  duration_ms: 0.612216
+  ...
+# Subtest: prepare, defer, hide and destroy each settle an interrupted fade as false
+ok 125 - prepare, defer, hide and destroy each settle an interrupted fade as false
+  ---
+  duration_ms: 122.69252
+  ...
+# Subtest: a newer fade settles the previous promise and alone completes the return
+ok 126 - a newer fade settles the previous promise and alone completes the return
+  ---
+  duration_ms: 16.249362
+  ...
+# Subtest: reentrant opacity callbacks cancel registered timers without hiding a new preparation
+ok 127 - reentrant opacity callbacks cancel registered timers without hiding a new preparation
+  ---
+  duration_ms: 24.997865
+  ...
+# Subtest: reentrant completion notification can cancel a fade without leaving its promise pending
+ok 128 - reentrant completion notification can cancel a fade without leaving its promise pending
+  ---
+  duration_ms: 10.678554
+  ...
+# Subtest: idle remains a fallback after a fresh frame whose source was not ready yet
+ok 129 - idle remains a fallback after a fresh frame whose source was not ready yet
+  ---
+  duration_ms: 0.297459
+  ...
+# Subtest: errors emitted while checking render readiness prevent revealing an errored source
+ok 130 - errors emitted while checking render readiness prevent revealing an errored source
+  ---
+  duration_ms: 0.178953
+  ...
+# Subtest: external area preparation blocks ready view until refresh and a fresh rendered frame
+ok 131 - external area preparation blocks ready view until refresh and a fresh rendered frame
+  ---
+  duration_ms: 0.162693
+  ...
+# Subtest: external refresh before first render cannot reveal a stale cached view
+ok 132 - external refresh before first render cannot reveal a stale cached view
+  ---
+  duration_ms: 0.096799
+  ...
+# Subtest: late external completions cannot revive hidden, deferred or destroyed preparations
+ok 133 - late external completions cannot revive hidden, deferred or destroyed preparations
+  ---
+  duration_ms: 0.163228
+  ...
+# Subtest: refresh from an older destination still tests the current destination preparation
+ok 134 - refresh from an older destination still tests the current destination preparation
+  ---
+  duration_ms: 0.120039
+  ...
+# Subtest: reentrant external readiness cannot reveal a newly prepared destination from the old frame
+ok 135 - reentrant external readiness cannot reveal a newly prepared destination from the old frame
+  ---
+  duration_ms: 0.119923
+  ...
+# Subtest: external readiness emitting a source error cannot reveal the errored view
+ok 136 - external readiness emitting a source error cannot reveal the errored view
+  ---
+  duration_ms: 0.110023
+  ...
+# Subtest: explicit retry clears old source failure but still requires current external preparation and render
+ok 137 - explicit retry clears old source failure but still requires current external preparation and render
+  ---
+  duration_ms: 0.142941
+  ...
+# Subtest: progressive approach requires a fresh ready urban frame but does not wait for the world or raw radius
+ok 138 - progressive approach requires a fresh ready urban frame but does not wait for the world or raw radius
+  ---
+  duration_ms: 0.173364
+  ...
+# Subtest: a later ready frame starts at zero alpha at its actual approach zoom instead of popping
+ok 139 - a later ready frame starts at zero alpha at its actual approach zoom instead of popping
+  ---
+  duration_ms: 0.212549
+  ...
+# Subtest: a late view during a pan uses a timed fade instead of a zero-alpha zoom ramp that never advances
+ok 140 - a late view during a pan uses a timed fade instead of a zero-alpha zoom ramp that never advances
+  ---
+  duration_ms: 480.915837
+  ...
+# Subtest: a cancelled streaming destination cannot reveal from a late render or source completion
+ok 141 - a cancelled streaming destination cannot reveal from a late render or source completion
+  ---
+  duration_ms: 0.323732
+  ...
+# Subtest: arrival plays both scanner passes, keeps access available, then holds the cipher
+ok 142 - arrival plays both scanner passes, keeps access available, then holds the cipher
+  ---
+  duration_ms: 24.36996
+  ...
+# Subtest: late sign-in starts only final resolution, holds the slogan, then joins circle to the prepared globe
+ok 143 - late sign-in starts only final resolution, holds the slogan, then joins circle to the prepared globe
+  ---
+  duration_ms: 10.888078
+  ...
+# Subtest: early sign-in waits for the existing scan and never replays it
+ok 144 - early sign-in waits for the existing scan and never replays it
+  ---
+  duration_ms: 10.449758
+  ...
+# Subtest: visitor interrupts the scan and follows the common logo-circle-globe path without decryption or slogan
+ok 145 - visitor interrupts the scan and follows the common logo-circle-globe path without decryption or slogan
+  ---
+  duration_ms: 7.776421
+  ...
+# Subtest: hidden tabs pause the scan rather than skipping it when shown
+ok 146 - hidden tabs pause the scan rather than skipping it when shown
+  ---
+  duration_ms: 3.302283
+  ...
+# Subtest: reduced motion holds the cipher until confirmation, then completes without timed animation
+ok 147 - reduced motion holds the cipher until confirmation, then completes without timed animation
+  ---
+  duration_ms: 1.319581
+  ...
+# Subtest: enabling reduced motion during an early confirmed scan finishes the pending sign-in
+ok 148 - enabling reduced motion during an early confirmed scan finishes the pending sign-in
+  ---
+  duration_ms: 2.990501
+  ...
+# Subtest: map failure returns to the same scan position and a finished scan is never replayed
+ok 149 - map failure returns to the same scan position and a finished scan is never replayed
+  ---
+  duration_ms: 10.970653
+  ...
+# Subtest: a failed globe can be skipped in all locales without decrypting the visitor message
+ok 150 - a failed globe can be skipped in all locales without decrypting the visitor message
+  ---
+  duration_ms: 4.264003
+  ...
+# Subtest: retry still prepares and reveals the globe after a failed attempt
+ok 151 - retry still prepares and reveals the globe after a failed attempt
+  ---
+  duration_ms: 1.330822
+  ...
+# Subtest: continuing without a globe preserves the simulated member identity
+ok 152 - continuing without a globe preserves the simulated member identity
+  ---
+  duration_ms: 1.264453
+  ...
+# Subtest: a delayed first visible frame still starts at the initial binary message
+ok 153 - a delayed first visible frame still starts at the initial binary message
+  ---
+  duration_ms: 2.067974
+  ...
+# Subtest: font loading and the font layout barrier cannot consume either scanner pass
+ok 154 - font loading and the font layout barrier cannot consume either scanner pass
+  ---
+  duration_ms: 8.241802
+  ...
+# Subtest: a blocked main thread cannot skip the visible scanner passes
+ok 155 - a blocked main thread cannot skip the visible scanner passes
+  ---
+  duration_ms: 10.940542
+  ...
+# Subtest: sign-in confirmed before fonts are ready waits for the full visible scan
+ok 156 - sign-in confirmed before fonts are ready waits for the full visible scan
+  ---
+  duration_ms: 14.604217
+  ...
+# Subtest: a visitor can leave before font readiness without the scan restarting later
+ok 157 - a visitor can leave before font readiness without the scan restarting later
+  ---
+  duration_ms: 1.776298
+  ...
+# Subtest: fonts becoming ready in a hidden tab wait for the first visible frame
+ok 158 - fonts becoming ready in a hidden tab wait for the first visible frame
+  ---
+  duration_ms: 3.973957
+  ...
+# Subtest: failed fonts use fallback rather than preventing the initial scan
+ok 159 - failed fonts use fallback rather than preventing the initial scan
+  ---
+  duration_ms: 14.753801
+  ...
+# Subtest: reduced motion during pending fonts completes sign-in without a late restart
+ok 160 - reduced motion during pending fonts completes sign-in without a late restart
+  ---
+  duration_ms: 1.687184
+  ...
+# Subtest: only entry labels cycle every four seconds without replacing the two actions
+ok 161 - only entry labels cycle every four seconds without replacing the two actions
+  ---
+  duration_ms: 1.574231
+  ...
+# Subtest: scanner completion does not restart the independent four-second language clock
+ok 162 - scanner completion does not restart the independent four-second language clock
+  ---
+  duration_ms: 7.497367
+  ...
+# Subtest: hover and action focus pause language changes and resume with a full interval
+ok 163 - hover and action focus pause language changes and resume with a full interval
+  ---
+  duration_ms: 1.829096
+  ...
+# Subtest: hidden tabs never catch up missed entry languages
+ok 164 - hidden tabs never catch up missed entry languages
+  ---
+  duration_ms: 5.704335
+  ...
+# Subtest: an open access dialog holds its language and cancelling resumes from that language
+ok 165 - an open access dialog holds its language and cancelling resumes from that language
+  ---
+  duration_ms: 1.411457
+  ...
+# Subtest: early sign-in stops the label cycle while fonts, scan and decryption complete
+ok 166 - early sign-in stops the label cycle while fonts, scan and decryption complete
+  ---
+  duration_ms: 7.568565
+  ...
+# Subtest: visiting leaves the site language unchanged and no label timer behind
+ok 167 - visiting leaves the site language unchanged and no label timer behind
+  ---
+  duration_ms: 1.549915
+  ...
+# Subtest: background theme activation is named, pauses for keyboard focus and never runs during opening
+ok 168 - background theme activation is named, pauses for keyboard focus and never runs during opening
+  ---
+  duration_ms: 1.6736
+  ...
+# Subtest: Arabic entry labels neither change the site direction nor translate its sign-in dialog
+ok 169 - Arabic entry labels neither change the site direction nor translate its sign-in dialog
+  ---
+  duration_ms: 1.246839
+  ...
+# Subtest: the label cycle starts in the site language and keeps other entry controls in that language
+ok 170 - the label cycle starts in the site language and keeps other entry controls in that language
+  ---
+  duration_ms: 1.259565
+  ...
+# Subtest: only the label text animates, settles on focus, and respects reduced motion
+ok 171 - only the label text animates, settles on focus, and respects reduced motion
+  ---
+  duration_ms: 1.441733
+  ...
+# Subtest: cancelling sign-in with the pointer returns focus to its button without stopping the labels
+ok 172 - cancelling sign-in with the pointer returns focus to its button without stopping the labels
+  ---
+  duration_ms: 1.409417
+  ...
+# Subtest: keyboard focus restored after a dialog still holds the labels until it leaves the actions
+ok 173 - keyboard focus restored after a dialog still holds the labels until it leaves the actions
+  ---
+  duration_ms: 5.512307
+  ...
+# Subtest: modifier, lock, function keys and shortcuts do not hold the labels after a pointer action
+ok 174 - modifier, lock, function keys and shortcuts do not hold the labels after a pointer action
+  ---
+  duration_ms: 1.526997
+  ...
+# Subtest: a page that does not opt in keeps plain site-language labels without rotation
+ok 175 - a page that does not opt in keeps plain site-language labels without rotation
+  ---
+  duration_ms: 2.748781
+  ...
+# Subtest: Escape after a pointer-opened sign-in closes it without holding the labels
+ok 176 - Escape after a pointer-opened sign-in closes it without holding the labels
+  ---
+  duration_ms: 1.350116
+  ...
+# Subtest: focus moved without keys or pointer, as by assistive technology, holds the labels
+ok 177 - focus moved without keys or pointer, as by assistive technology, holds the labels
+  ---
+  duration_ms: 1.454101
+  ...
+# Subtest: background preparation and entry reuse one request and result
+ok 178 - background preparation and entry reuse one request and result
+  ---
+  duration_ms: 2.417291
+  ...
+# Subtest: download failure is bounded and an explicit retry uses a fresh worker
+ok 179 - download failure is bounded and an explicit retry uses a fresh worker
+  ---
+  duration_ms: 0.955941
+  ...
+# Subtest: a silent worker times out and can be retried
+ok 180 - a silent worker times out and can be retried
+  ---
+  duration_ms: 18.512093
+  ...
+# Subtest: worker construction failure does not poison subsequent calls
+ok 181 - worker construction failure does not poison subsequent calls
+  ---
+  duration_ms: 0.644237
+  ...
+# Subtest: desktop framing and its horizontal centre stay unchanged
+ok 182 - desktop framing and its horizontal centre stay unchanged
+  ---
+  duration_ms: 1.455028
+  ...
+# Subtest: portrait framing rises progressively as the available width shrinks
+ok 183 - portrait framing rises progressively as the available width shrinks
+  ---
+  duration_ms: 0.272141
+  ...
+# Subtest: width ramp stays continuous at its bounds and existing layout thresholds
+ok 184 - width ramp stays continuous at its bounds and existing layout thresholds
+  ---
+  duration_ms: 0.129238
+  ...
+# Subtest: short landscape keeps its centre, with a continuous height ramp
+ok 185 - short landscape keeps its centre, with a continuous height ramp
+  ---
+  duration_ms: 0.140618
+  ...
+# Subtest: campus portals and historical layouts do not opt in implicitly
+ok 186 - campus portals and historical layouts do not opt in implicitly
+  ---
+  duration_ms: 1.277508
+  ...
+# Subtest: missing dimensions and CSS values keep a finite fallback centre
+ok 187 - missing dimensions and CSS values keep a finite fallback centre
+  ---
+  duration_ms: 0.173553
+  ...
+# Subtest: a real resize redraws only after the final camera update and preserves world zoom offset
+ok 188 - a real resize redraws only after the final camera update and preserves world zoom offset
+  ---
+  duration_ms: 4.346453
+  ...
+# Subtest: same layout performs no work and padding-only changes never clear the canvas
+ok 189 - same layout performs no work and padding-only changes never clear the canvas
+  ---
+  duration_ms: 1.130973
+  ...
+# Subtest: campus resize keeps the explored zoom and ordinary moveend does not prepare it again
+ok 190 - campus resize keeps the explored zoom and ordinary moveend does not prepare it again
+  ---
+  duration_ms: 1.049271
+  ...
+# Subtest: a campus padding change extends raw coverage without clearing the backing buffer or restarting a flight
+ok 191 - a campus padding change extends raw coverage without clearing the backing buffer or restarting a flight
+  ---
+  duration_ms: 1.786589
+  ...
+# Subtest: a country resize preserves zoom when legal and clamps it when its fit range changes
+ok 192 - a country resize preserves zoom when legal and clamps it when its fit range changes
+  ---
+  duration_ms: 2.307704
+  ...
+# Subtest: resizing a flight keeps its destination and deadline without another loading lifecycle
+ok 193 - resizing a flight keeps its destination and deadline without another loading lifecycle
+  ---
+  duration_ms: 1.254072
+  ...
+# Subtest: an expired travel segment starts its approach immediately after resize without waiting for raw data
+ok 194 - an expired travel segment starts its approach immediately after resize without waiting for raw data
+  ---
+  duration_ms: 1.129401
+  ...
+# Subtest: an expired approach releases controls even if its first detailed frame is still waiting
+ok 195 - an expired approach releases controls even if its first detailed frame is still waiting
+  ---
+  duration_ms: 1.249463
+  ...
+# Subtest: resizing during a departure fade leaves that phase and camera zoom intact
+ok 196 - resizing during a departure fade leaves that phase and camera zoom intact
+  ---
+  duration_ms: 1.193471
+  ...
+# Subtest: retargeting a cross-campus flight keeps its progressive easing and original deadline
+ok 197 - retargeting a cross-campus flight keeps its progressive easing and original deadline
+  ---
+  duration_ms: 1.382721
+  ...
+# Subtest: resize during outbound hides the old detail before clearing the buffer and never jumps to the far destination
+ok 198 - resize during outbound hides the old detail before clearing the buffer and never jumps to the far destination
+  ---
+  duration_ms: 1.041126
+  ...
+# Subtest: resize during a visible approach keeps the live view, ramp and remaining deadline
+ok 199 - resize during a visible approach keeps the live view, ramp and remaining deadline
+  ---
+  duration_ms: 1.000456
+  ...
+# Subtest: entry geometry measures the public projected sphere in viewport CSS pixels, including padding
+ok 200 - entry geometry measures the public projected sphere in viewport CSS pixels, including padding
+  ---
+  duration_ms: 4.185354
+  ...
+# Subtest: the progressive engine has no hidden campus render preparation or temporary snapshot canvas
+ok 201 - the progressive engine has no hidden campus render preparation or temporary snapshot canvas
+  ---
+  duration_ms: 0.286424
+  ...
+# Subtest: campus popup restoration reprojects and clips markers after the globe render
+ok 202 - campus popup restoration reprojects and clips markers after the globe render
+  ---
+  duration_ms: 6.703238
+  ...
+# Subtest: campus popup restoration reprojects and clips markers after the globe render with a changed host size
+ok 203 - campus popup restoration reprojects and clips markers after the globe render with a changed host size
+  ---
+  duration_ms: 1.609859
+  ...
+# Subtest: world: wrap longitude, limit polar latitude, preserve apparent globe size
+ok 204 - world: wrap longitude, limit polar latitude, preserve apparent globe size
+  ---
+  duration_ms: 2.37774
+  ...
+# Subtest: world: limits also respect the absolute zoom envelope
+ok 205 - world: limits also respect the absolute zoom envelope
+  ---
+  duration_ms: 0.814517
+  ...
+# Subtest: France: country rectangle, 3% margins and local zoom range
+ok 206 - France: country rectangle, 3% margins and local zoom range
+  ---
+  duration_ms: 2.350347
+  ...
+# Subtest: USA: include all members outside the main polygon bounding box
+ok 207 - USA: include all members outside the main polygon bounding box
+  ---
+  duration_ms: 0.430134
+  ...
+# Subtest: country: crossing the antimeridian stays a narrow continuous interval
+ok 208 - country: crossing the antimeridian stays a narrow continuous interval
+  ---
+  duration_ms: 0.490664
+  ...
+# Subtest: country: minimum margin covers tiny countries and zoom is capped at 9.5
+ok 209 - country: minimum margin covers tiny countries and zoom is capped at 9.5
+  ---
+  duration_ms: 0.235836
+  ...
+# Subtest: flight: ignore all local constraints while retaining global safety bounds
+ok 210 - flight: ignore all local constraints while retaining global safety bounds
+  ---
+  duration_ms: 0.35479
+  ...
+# Subtest: campus: preserve nearby points and clamp distant points to a 3 km circle
+ok 211 - campus: preserve nearby points and clamp distant points to a 3 km circle
+  ---
+  duration_ms: 0.513881
+  ...
+# Subtest: campus: radial limit crosses the antimeridian without a longitude jump
+ok 212 - campus: radial limit crosses the antimeridian without a longitude jump
+  ---
+  duration_ms: 0.407901
+  ...
+# Subtest: policy functions leave caller data unchanged
+ok 213 - policy functions leave caller data unchanged
+  ---
+  duration_ms: 0.539836
+  ...
+# Subtest: cap vertices lie on the sphere and entirely south of 85.23 degrees
+ok 214 - cap vertices lie on the sphere and entirely south of 85.23 degrees
+  ---
+  duration_ms: 9.240726
+  ...
+# Subtest: triangles have consistent outward orientation and no degenerate pole
+ok 215 - triangles have consistent outward orientation and no degenerate pole
+  ---
+  duration_ms: 1.882301
+  ...
+# Subtest: the cap covers only real Antarctic interior in the current source
+ok 216 - the cap covers only real Antarctic interior in the current source
+  ---
+  duration_ms: 615.657665
+  ...
+# Subtest: layer exposes the MapLibre custom-layer contract and inert setters before attach
+ok 217 - layer exposes the MapLibre custom-layer contract and inert setters before attach
+  ---
+  duration_ms: 1.716764
+  ...
+# Subtest: draw gating, GL capability restoration, theme and GPU cleanup
+ok 218 - draw gating, GL capability restoration, theme and GPU cleanup
+  ---
+  duration_ms: 2.422415
+  ...
+# Subtest: removes the artificial polar cap and dateline legs, preserving the coast
+ok 219 - removes the artificial polar cap and dateline legs, preserving the coast
+  ---
+  duration_ms: 2.676345
+  ...
+# Subtest: keeps genuine coastline near the south pole and dateline
+ok 220 - keeps genuine coastline near the south pole and dateline
+  ---
+  duration_ms: 0.524595
+  ...
+# Subtest: splits an open line without joining over a removed seam
+ok 221 - splits an open line without joining over a removed seam
+  ---
+  duration_ms: 0.349465
+  ...
+# Subtest: drops all-artificial lines and obsolete bounding boxes
+ok 222 - drops all-artificial lines and obsolete bounding boxes
+  ---
+  duration_ms: 0.35566
+  ...
+# Subtest: current Natural Earth mesh loses exactly its 748 Antarctic closing segments
+ok 223 - current Natural Earth mesh loses exactly its 748 Antarctic closing segments
+  ---
+  duration_ms: 815.827933
+  ...
+# Subtest: all 58 campuses are eligible and the candidate consumed is the one chosen before clicking
+ok 224 - all 58 campuses are eligible and the candidate consumed is the one chosen before clicking
+  ---
+  duration_ms: 8.967176
+  ...
+# Subtest: manual navigation only redraws when it would repeat the current campus
+ok 225 - manual navigation only redraws when it would repeat the current campus
+  ---
+  duration_ms: 0.371817
+  ...
+# Subtest: empty catalogues and a sole current campus have no false destination
+ok 226 - empty catalogues and a sole current campus have no false destination
+  ---
+  duration_ms: 0.179168
+  ...
+# Subtest: cross-campus duration is bounded and easing has gradual endpoints
+ok 227 - cross-campus duration is bounded and easing has gradual endpoints
+  ---
+  duration_ms: 0.37303
+  ...
+# Subtest: engine anticipation waits for world, the current flight and selected raw coverage, then uses the unchanged candidate
+ok 228 - engine anticipation waits for world, the current flight and selected raw coverage, then uses the unchanged candidate
+  ---
+  duration_ms: 4.081659
+  ...
+# Subtest: world scope has exactly two native labelled selectors and disambiguated campus options
+ok 229 - world scope has exactly two native labelled selectors and disambiguated campus options
+  ---
+  duration_ms: 16.379854
+  ...
+# Subtest: changing country clears the selected campus, immediately applies the country and keeps controls mounted
+ok 230 - changing country clears the selected campus, immediately applies the country and keeps controls mounted
+  ---
+  duration_ms: 2.243058
+  ...
+# Subtest: a campus chosen globally infers its country and keeps the chosen campus selected
+ok 231 - a campus chosen globally infers its country and keeps the chosen campus selected
+  ---
+  duration_ms: 0.498187
+  ...
+# Subtest: all campuses retains the country, while all countries clears both and restores the full campus list
+ok 232 - all campuses retains the country, while all countries clears both and restores the full campus list
+  ---
+  duration_ms: 0.514901
+  ...
+# Subtest: initial campus determines a coherent country without emitting a selection
+ok 233 - initial campus determines a coherent country without emitting a selection
+  ---
+  duration_ms: 0.46117
+  ...
+# Subtest: English and Arabic labels, direction and unique label associations work across simultaneous mounts
+ok 234 - English and Arabic labels, direction and unique label associations work across simultaneous mounts
+  ---
+  duration_ms: 0.610266
+  ...
+# Subtest: mounting and selecting do not reorder or mutate the shared data or incoming scope
+ok 235 - mounting and selecting do not reorder or mutate the shared data or incoming scope
+  ---
+  duration_ms: 0.595199
+  ...
+# Subtest: destroy removes controls and their selection listeners
+ok 236 - destroy removes controls and their selection listeners
+  ---
+  duration_ms: 0.441847
+  ...
+# Subtest: the real network fits in the campus selector without losing or duplicating campuses
+ok 237 - the real network fits in the campus selector without losing or duplicating campuses
+  ---
+  duration_ms: 2.66578
+  ...
+# Subtest: zero hides all detail paints instantly without changing layout, local base or source
+ok 238 - zero hides all detail paints instantly without changing layout, local base or source
+  ---
+  duration_ms: 5.482455
+  ...
+# Subtest: partial opacity preserves every zoom stop and never compounds successive multipliers
+ok 239 - partial opacity preserves every zoom stop and never compounds successive multipliers
+  ---
+  duration_ms: 6.995662
+  ...
+# Subtest: native reveal transitions cover background, water, text, lines and extrusion
+ok 240 - native reveal transitions cover background, water, text, lines and extrusion
+  ---
+  duration_ms: 3.131489
+  ...
+# Subtest: theme changes keep hidden and partially revealed detail at its current multiplier
+ok 241 - theme changes keep hidden and partially revealed detail at its current multiplier
+  ---
+  duration_ms: 15.683563
+  ...
+# Subtest: state is independent per map and captures an initially dark theme
+ok 242 - state is independent per map and captures an initially dark theme
+  ---
+  duration_ms: 3.230711
+  ...
+# Subtest: compatibility visibility setter leaves opacity and local world layers intact
+ok 243 - compatibility visibility setter leaves opacity and local world layers intact
+  ---
+  duration_ms: 2.345394
+  ...
+# Subtest: out-of-range inputs stay bounded and unloaded styles return false
+ok 244 - out-of-range inputs stay bounded and unloaded styles return false
+  ---
+  duration_ms: 2.152976
+  ...
+# Subtest: world and country initial style have no remote source, glyph URL or symbol layer
+ok 245 - world and country initial style have no remote source, glyph URL or symbol layer
+  ---
+  duration_ms: 0.462062
+  ...
+# Subtest: theme changes before visiting a campus update the local map without installing remote detail
+ok 246 - theme changes before visiting a campus update the local map without installing remote detail
+  ---
+  duration_ms: 1.089886
+  ...
+# Subtest: first campus installs hidden transparent detail once and keeps the loaded local source
+ok 247 - first campus installs hidden transparent detail once and keeps the loaded local source
+  ---
+  duration_ms: 3.158095
+  ...
+# Subtest: lazy detail installation refuses an unloaded local style without mutations
+ok 248 - lazy detail installation refuses an unloaded local style without mutations
+  ---
+  duration_ms: 0.242211
+  ...
+# Subtest: optional topology mesh draws borders once without replacing country fill data or loading remote detail
+ok 249 - optional topology mesh draws borders once without replacing country fill data or loading remote detail
+  ---
+  duration_ms: 0.487127
+  ...
+# Subtest: all detail paints reveal with camera height and preserve their base opacity without per-frame setters
+ok 250 - all detail paints reveal with camera height and preserve their base opacity without per-frame setters
+  ---
+  duration_ms: 30.933486
+  ...
+# Subtest: the outgoing zoom curve is fully opaque down to16.6 and fades to zero at14.5, including theme changes
+ok 251 - the outgoing zoom curve is fully opaque down to16.6 and fades to zero at14.5, including theme changes
+  ---
+  duration_ms: 13.608404
+  ...
+# Subtest: the actual MapLibre 5.24 layout visibility path reloads its source and clears decoded offscreen tiles
+ok 252 - the actual MapLibre 5.24 layout visibility path reloads its source and clears decoded offscreen tiles
+  ---
+  duration_ms: 21.736634
+  ...
+# Subtest: the engine conceals and re-enters a campus without toggling layout or invalidating its actual decoded cache
+ok 253 - the engine conceals and re-enters a campus without toggling layout or invalidating its actual decoded cache
+  ---
+  duration_ms: 81.719545
+  ...
+# Subtest: real constant and zoom-only paint changes retain decoded parent tiles across both themes
+ok 254 - real constant and zoom-only paint changes retain decoded parent tiles across both themes
+  ---
+  duration_ms: 68.544228
+  ...
+# Subtest: visitor has one generic account access and theme/language settings, without member utilities
+ok 255 - visitor has one generic account access and theme/language settings, without member utilities
+  ---
+  duration_ms: 5.627456
+  ...
+# Subtest: settings update shared preferences and keep the selected control focused across refresh
+ok 256 - settings update shared preferences and keep the selected control focused across refresh
+  ---
+  duration_ms: 2.645198
+  ...
+# Subtest: Theme and Language each open only their category for visitor and member, with focused return
+ok 257 - Theme and Language each open only their category for visitor and member, with focused return
+  ---
+  duration_ms: 4.417322
+  ...
+# Subtest: dedicated preferences retain their screen and focused selection through updates in all locales
+ok 258 - dedicated preferences retain their screen and focused selection through updates in all locales
+  ---
+  duration_ms: 3.131748
+  ...
+# Subtest: simulated member receives the supplied avatar and account action, and signs out locally
+ok 259 - simulated member receives the supplied avatar and account action, and signs out locally
+  ---
+  duration_ms: 1.074871
+  ...
+# Subtest: messages and notifications open truthful empty panels and Escape restores the associated trigger
+ok 260 - messages and notifications open truthful empty panels and Escape restores the associated trigger
+  ---
+  duration_ms: 0.451655
+  ...
+# Subtest: keyboard arrows move focus, external focus and pointer close without stealing focus
+ok 261 - keyboard arrows move focus, external focus and pointer close without stealing focus
+  ---
+  duration_ms: 0.516352
+  ...
+# Subtest: guest sign-in is delegated without inventing an authenticated identity
+ok 262 - guest sign-in is delegated without inventing an authenticated identity
+  ---
+  duration_ms: 0.438417
+  ...
+# Subtest: destroy removes member utilities and returns the original trigger to the header
+ok 263 - destroy removes member utilities and returns the original trigger to the header
+  ---
+  duration_ms: 0.579129
+  ...
+# Subtest: full project and article bylines preserve arbitrary team sizes and every profile link
+ok 264 - full project and article bylines preserve arbitrary team sizes and every profile link
+  ---
+  duration_ms: 7.552883
+  ...
+# Subtest: large compact bylines show a bounded preview and a localized real link to every author
+ok 265 - large compact bylines show a bounded preview and a localized real link to every author
+  ---
+  duration_ms: 21.186301
+  ...
+# Subtest: a compact byline without a complete-list destination never hides people, and solo teams need no extra link
+ok 266 - a compact byline without a complete-list destination never hides people, and solo teams need no extra link
+  ---
+  duration_ms: 4.16959
+  ...
+# Subtest: narrow card previews keep the first author and one complete-list link counting every remaining person
+ok 267 - narrow card previews keep the first author and one complete-list link counting every remaining person
+  ---
+  duration_ms: 25.344388
+  ...
+# Subtest: an explicit lead beyond the preview is displayed first everywhere without reordering source collaborators
+ok 268 - an explicit lead beyond the preview is displayed first everywhere without reordering source collaborators
+  ---
+  duration_ms: 1.185078
+  ...
+# Subtest: crowns replace visible responsibility text while profile links retain the precise localized role
+ok 269 - crowns replace visible responsibility text while profile links retain the precise localized role
+  ---
+  duration_ms: 2.33143
+  ...
+# Subtest: missing or invalid responsibility never labels the first author, including a solo contribution
+ok 270 - missing or invalid responsibility never labels the first author, including a solo contribution
+  ---
+  duration_ms: 1.213708
+  ...
+# Subtest: each card is measured against a full-width invisible probe, independently of the viewport and current collapse
+ok 271 - each card is measured against a full-width invisible probe, independently of the viewport and current collapse
+  ---
+  duration_ms: 7.285623
+  ...
+# Subtest: the normal extra-author counter remains in the measurement, while solo, full and unroutable lists are untouched
+ok 272 - the normal extra-author counter remains in the measurement, while solo, full and unroutable lists are untouched
+  ---
+  duration_ms: 4.436755
+  ...
+# Subtest: resizing moves focus from the disappearing second author to +N, then from disappearing +1 back to that author
+ok 273 - resizing moves focus from the disappearing second author to +N, then from disappearing +1 back to that author
+  ---
+  duration_ms: 3.362272
+  ...
+# Subtest: font completion and viewport changes remeasure intrinsic width once per scheduled frame
+ok 274 - font completion and viewport changes remeasure intrinsic width once per scheduled frame
+  ---
+  duration_ms: 1.338424
+  ...
+# Subtest: subpixel tolerance ignores noise without losing the accumulation of successive width changes
+ok 275 - subpixel tolerance ignores noise without losing the accumulation of successive width changes
+  ---
+  duration_ms: 0.89995
+  ...
+# Subtest: sync replaces stale probes and releases removed cards; hidden cards wait for useful geometry
+ok 276 - sync replaces stale probes and releases removed cards; hidden cards wait for useful geometry
+  ---
+  duration_ms: 1.496652
+  ...
+# Subtest: abort destroys probes, observers and scheduled work, and late font completion cannot revive the controller
+ok 277 - abort destroys probes, observers and scheduled work, and late font completion cannot revive the controller
+  ---
+  duration_ms: 1.532238
+  ...
+# Subtest: the selected cascade exactly matches study08, keeping every letter literal in both directions
+ok 278 - the selected cascade exactly matches study08, keeping every letter literal in both directions
+  ---
+  duration_ms: 21.126698
+  ...
+# Subtest: the word cascades into exact six and seven character endpoints, with natural measured widths
+ok 279 - the word cascades into exact six and seven character endpoints, with natural measured widths
+  ---
+  duration_ms: 7.838612
+  ...
+# Subtest: the outgoing N fades as a literal letter before AWARDS appears; the two words never overlap
+ok 280 - the outgoing N fades as a literal letter before AWARDS appears; the two words never overlap
+  ---
+  duration_ms: 9.4087
+  ...
+# Subtest: inverting halfway retraces the existing cascade without changing any visible pose
+ok 281 - inverting halfway retraces the existing cascade without changing any visible pose
+  ---
+  duration_ms: 3.836886
+  ...
+# Subtest: immediate and rapid reversals cancel stale frames and honor the latest request without restarting repeated targets
+ok 282 - immediate and rapid reversals cancel stale frames and honor the latest request without restarting repeated targets
+  ---
+  duration_ms: 8.510758
+  ...
+# Subtest: direct-route setup, reduced motion and visibility changes finish immediately without pending frames
+ok 283 - direct-route setup, reduced motion and visibility changes finish immediately without pending frames
+  ---
+  duration_ms: 4.248771
+  ...
+# Subtest: responsive metrics and late fonts preserve progress; destroy cancels all work and leaves a readable word
+ok 284 - responsive metrics and late fonts preserve progress; destroy cancels all work and leaves a readable word
+  ---
+  duration_ms: 3.519896
+  ...
+# Subtest: an upward mobile drag follows the finger, stays bounded and expands on release
+ok 285 - an upward mobile drag follows the finger, stays bounded and expands on release
+  ---
+  duration_ms: 4.318572
+  ...
+# Subtest: a downward drag from the reading start collapses without dismissing the dialog
+ok 286 - a downward drag from the reading start collapses without dismissing the dialog
+  ---
+  duration_ms: 0.674113
+  ...
+# Subtest: reading stays native at full height and reaching the top requires a fresh collapse gesture
+ok 287 - reading stays native at full height and reaching the top requires a fresh collapse gesture
+  ---
+  duration_ms: 0.683539
+  ...
+# Subtest: the handle collapses from any reading position without resetting the scroll
+ok 288 - the handle collapses from any reading position without resetting the scroll
+  ---
+  duration_ms: 0.447053
+  ...
+# Subtest: an upward gesture at full height is native even when reading starts at the top
+ok 289 - an upward gesture at full height is native even when reading starts at the top
+  ---
+  duration_ms: 0.334916
+  ...
+# Subtest: links, photo buttons and fields retain native taps and touch gestures
+ok 290 - links, photo buttons and fields retain native taps and touch gestures
+  ---
+  duration_ms: 0.6638
+  ...
+# Subtest: horizontal and multitouch gestures are never taken over after changing direction
+ok 291 - horizontal and multitouch gestures are never taken over after changing direction
+  ---
+  duration_ms: 0.517763
+  ...
+# Subtest: short or reversed drags snap back to their initial resting height
+ok 292 - short or reversed drags snap back to their initial resting height
+  ---
+  duration_ms: 0.739831
+  ...
+# Subtest: cancel, native takeover, resize, close and destroy clear transient heights
+ok 293 - cancel, native takeover, resize, close and destroy clear transient heights
+  ---
+  duration_ms: 2.342706
+  ...
+# Subtest: desktop ignores gestures and leaving mobile cleans up expansion and event listeners
+ok 294 - desktop ignores gestures and leaving mobile cleans up expansion and event listeners
+  ---
+  duration_ms: 0.368864
+  ...
+# Subtest: wheel grows the whole sheet before handing subsequent movement to native reading
+ok 295 - wheel grows the whole sheet before handing subsequent movement to native reading
+  ---
+  duration_ms: 0.826722
+  ...
+# Subtest: small wheel bursts snap, line/page deltas normalize and native controls keep their behavior
+ok 296 - small wheel bursts snap, line/page deltas normalize and native controls keep their behavior
+  ---
+  duration_ms: 0.407508
+  ...
+# Subtest: returning to the top within one wheel burst cannot collapse; a fresh burst can
+ok 297 - returning to the top within one wheel burst cannot collapse; a fresh burst can
+  ---
+  duration_ms: 0.308788
+  ...
+# Subtest: horizontal wheel, pinch, non-cancelable and desktop input remain native for their burst
+ok 298 - horizontal wheel, pinch, non-cancelable and desktop input remain native for their burst
+  ---
+  duration_ms: 0.632317
+  ...
+# Subtest: mouse and pen drag only the handle, follow height and release pointer capture
+ok 299 - mouse and pen drag only the handle, follow height and release pointer capture
+  ---
+  duration_ms: 0.617889
+  ...
+# Subtest: touch pointer events are ignored to avoid duplicate touch handling, and pointer cancellation snaps back
+ok 300 - touch pointer events are ignored to avoid duplicate touch handling, and pointer cancellation snaps back
+  ---
+  duration_ms: 0.305621
+  ...
+# Subtest: marked media buttons accept vertical swipes without opening, but taps still activate
+ok 301 - marked media buttons accept vertical swipes without opening, but taps still activate
+  ---
+  duration_ms: 0.448569
+  ...
+# Subtest: wheel timers and pointer capture cannot change the sheet after resize, close or destroy
+ok 302 - wheel timers and pointer capture cannot change the sheet after resize, close or destroy
+  ---
+  duration_ms: 0.659748
+  ...
+# Subtest: typing @ progressively filters profiles, and the login inserts the accented full name
+ok 303 - typing @ progressively filters profiles, and the login inserts the accented full name
+  ---
+  duration_ms: 28.67683
+  ...
+# Subtest: new demonstration profiles can also be mentioned by their full name
+ok 304 - new demonstration profiles can also be mentioned by their full name
+  ---
+  duration_ms: 3.121893
+  ...
+# Subtest: accented and unaccented hyphenated names can be picked with a pointer inside surrounding text
+ok 305 - accented and unaccented hyphenated names can be picked with a pointer inside surrounding text
+  ---
+  duration_ms: 5.237177
+  ...
+# Subtest: keyboard selection keeps focus in the multiline field and Escape dismisses without inserting
+ok 306 - keyboard selection keeps focus in the multiline field and Escape dismisses without inserting
+  ---
+  duration_ms: 3.881212
+  ...
+# Subtest: composition, modified Enter and an empty result never choose a profile accidentally
+ok 307 - composition, modified Enter and an empty result never choose a profile accidentally
+  ---
+  duration_ms: 9.763107
+  ...
+# Subtest: a mention that cannot fit is refused in full and leaves the text and selection intact
+ok 308 - a mention that cannot fit is refused in full and leaves the text and selection intact
+  ---
+  duration_ms: 3.847893
+  ...
+# Subtest: an existing mention does not reopen suggestions inside its visible full name
+ok 309 - an existing mention does not reopen suggestions inside its visible full name
+  ---
+  duration_ms: 2.026373
+  ...
+# Subtest: selecting text or moving to a stale token leaves Enter available for native text editing
+ok 310 - selecting text or moving to a stale token leaves Enter available for native text editing
+  ---
+  duration_ms: 6.111614
+  ...
+# Subtest: progressive login and accented or unaccented hyphenated names find the same real sample profile
+ok 311 - progressive login and accented or unaccented hyphenated names find the same real sample profile
+  ---
+  duration_ms: 26.459172
+  ...
+# Subtest: search spans localized names and explicit aliases, orders matches, limits and never mutates records
+ok 312 - search spans localized names and explicit aliases, orders matches, limits and never mutates records
+  ---
+  duration_ms: 1.355585
+  ...
+# Subtest: token detection respects caret, Unicode names, delimiters and selection without capturing emails or URLs
+ok 313 - token detection respects caret, Unicode names, delimiters and selection without capturing emails or URLs
+  ---
+  duration_ms: 1.034784
+  ...
+# Subtest: existing selected mentions never reopen suggestions while moving through their display name
+ok 314 - existing selected mentions never reopen suggestions while moving through their display name
+  ---
+  duration_ms: 0.420576
+  ...
+# Subtest: insertion in the middle replaces the complete token and preserves punctuation, other ranges and Unicode offsets
+ok 315 - insertion in the middle replaces the complete token and preserves punctuation, other ranges and Unicode offsets
+  ---
+  duration_ms: 0.694938
+  ...
+# Subtest: insertion rejects overflow atomically but fits an exact 2000-unit name without a trailing space
+ok 316 - insertion rejects overflow atomically but fits an exact 2000-unit name without a trailing space
+  ---
+  duration_ms: 0.298651
+  ...
+# Subtest: normalization validates exact text and non-overlapping positional identities independently of the catalog
+ok 317 - normalization validates exact text and non-overlapping positional identities independently of the catalog
+  ---
+  duration_ms: 0.32529
+  ...
+# Subtest: editing outside ranges moves them while modification, partial deletion or name extension removes only the affected link
+ok 318 - editing outside ranges moves them while modification, partial deletion or name extension removes only the affected link
+  ---
+  duration_ms: 0.773949
+  ...
+# Subtest: explicit edit positions preserve the intended identity when duplicate display names occur
+ok 319 - explicit edit positions preserve the intended identity when duplicate display names occur
+  ---
+  duration_ms: 0.488168
+  ...
+# Subtest: unselected duplicate text never gains a link and uncertain edits cannot transfer a link to it
+ok 320 - unselected duplicate text never gains a link and uncertain edits cannot transfer a link to it
+  ---
+  duration_ms: 0.39782
+  ...
+# Subtest: known emoji insertion and trim preserve correct UTF-16 positions and untouched literal text
+ok 321 - known emoji insertion and trim preserve correct UTF-16 positions and untouched literal text
+  ---
+  duration_ms: 0.476299
+  ...
+# Subtest: all known single-range replacements keep only unchanged, unambiguous selected names
+ok 322 - all known single-range replacements keep only unchanged, unambiguous selected names
+  ---
+  duration_ms: 47.239822
+  ...
+# Subtest: owner menus are unique, localized and keyboard accessible on comments and replies
+ok 323 - owner menus are unique, localized and keyboard accessible on comments and replies
+  ---
+  duration_ms: 92.492896
+  ...
+# Subtest: outside interaction, page movement and abort close the menu without a hidden focus target
+ok 324 - outside interaction, page movement and abort close the menu without a hidden focus target
+  ---
+  duration_ms: 19.228434
+  ...
+# Subtest: edit cancellation and save return to the visible opener, retaining the main and reply drafts
+ok 325 - edit cancellation and save return to the visible opener, retaining the main and reply drafts
+  ---
+  duration_ms: 29.051921
+  ...
+# Subtest: deleting a reply while its parent is edited restores that editor, then pruning the thread reaches the main composer
+ok 326 - deleting a reply while its parent is edited restores that editor, then pruning the thread reaches the main composer
+  ---
+  duration_ms: 22.209677
+  ...
+# Subtest: report is available to every non-deleted author without granting edit or delete, and passes a detached value plus visible opener
+ok 327 - report is available to every non-deleted author without granting edit or delete, and passes a detached value plus visible opener
+  ---
+  duration_ms: 12.693606
+  ...
+# Subtest: sorting persists across reconstruction without losing an edit or a reply draft; replies stay chronological
+ok 328 - sorting persists across reconstruction without losing an edit or a reply draft; replies stay chronological
+  ---
+  duration_ms: 57.810178
+  ...
+# Subtest: the three comment sort choices retain selection, keyboard focus and exclusive menu dismissal
+ok 329 - the three comment sort choices retain selection, keyboard focus and exclusive menu dismissal
+  ---
+  duration_ms: 90.807181
+  ...
+# Subtest: supplied narrow RTL/LTR geometry keeps the menu within the viewport and opens upward near its bottom
+ok 330 - supplied narrow RTL/LTR geometry keeps the menu within the viewport and opens upward near its bottom
+  ---
+  duration_ms: 7.660743
+  ...
+# Subtest: keyboard navigation reveals each item inside a height-limited menu without closing it
+ok 331 - keyboard navigation reveals each item inside a height-limited menu without closing it
+  ---
+  duration_ms: 4.992362
+  ...
+# Subtest: the comment sort panel opens upward when its button is low, keeping its three choices visible
+ok 332 - the comment sort panel opens upward when its button is low, keeping its three choices visible
+  ---
+  duration_ms: 9.815224
+  ...
+# Subtest: on mobile the comment sort panel stays clear of the back-to-top button
+ok 333 - on mobile the comment sort panel stays clear of the back-to-top button
+  ---
+  duration_ms: 9.041135
+  ...
+# Subtest: a sort button partly under the floating controls keeps its panel above them
+ok 334 - a sort button partly under the floating controls keeps its panel above them
+  ---
+  duration_ms: 4.997759
+  ...
+# Subtest: comment sorting migrates to newest and persists with the same drafts and thread data
+ok 335 - comment sorting migrates to newest and persists with the same drafts and thread data
+  ---
+  duration_ms: 5.65306
+  ...
+# Subtest: thread order uses dates or local likes with recent ties, never reorders the input or promotes replies
+ok 336 - thread order uses dates or local likes with recent ties, never reorders the input or promotes replies
+  ---
+  duration_ms: 1.162498
+  ...
+# Subtest: existing comments and draft survive migration and a JSON round trip
+ok 337 - existing comments and draft survive migration and a JSON round trip
+  ---
+  duration_ms: 0.426288
+  ...
+# Subtest: replies to replies keep the same thread and retain their target context
+ok 338 - replies to replies keep the same thread and retain their target context
+  ---
+  duration_ms: 0.41426
+  ...
+# Subtest: reply drafts belong to their thread and sending one leaves every other draft intact
+ok 339 - reply drafts belong to their thread and sending one leaves every other draft intact
+  ---
+  duration_ms: 0.517102
+  ...
+# Subtest: deleting a parent preserves replies and deleting a reply preserves its siblings and unrelated threads
+ok 340 - deleting a parent preserves replies and deleting a reply preserves its siblings and unrelated threads
+  ---
+  duration_ms: 0.640353
+  ...
+# Subtest: like and dislike are exclusive, can be cancelled, and remain independent for each message
+ok 341 - like and dislike are exclusive, can be cancelled, and remain independent for each message
+  ---
+  duration_ms: 0.564072
+  ...
+# Subtest: editing a comment or reply preserves identity, initial date, reactions and thread context
+ok 342 - editing a comment or reply preserves identity, initial date, reactions and thread context
+  ---
+  duration_ms: 0.697467
+  ...
+# Subtest: empty, oversized and deleted-message edits cannot replace existing text
+ok 343 - empty, oversized and deleted-message edits cannot replace existing text
+  ---
+  duration_ms: 1.409581
+  ...
+# Subtest: a deleted parent disappears exactly when its final reply is removed, without removing another thread
+ok 344 - a deleted parent disappears exactly when its final reply is removed, without removing another thread
+  ---
+  duration_ms: 0.667689
+  ...
+# Subtest: emoji insertion replaces the selected text and restores the cursor after the complete emoji
+ok 345 - emoji insertion replaces the selected text and restores the cursor after the complete emoji
+  ---
+  duration_ms: 0.333654
+  ...
+# Subtest: emoji insertion respects the textarea limit without truncating emoji or losing selected text
+ok 346 - emoji insertion respects the textarea limit without truncating emoji or losing selected text
+  ---
+  duration_ms: 0.279789
+  ...
+# Subtest: invalid records, missing parents and cycles cannot conceal otherwise valid message text
+ok 347 - invalid records, missing parents and cycles cannot conceal otherwise valid message text
+  ---
+  duration_ms: 0.396903
+  ...
+# Subtest: new comments and replies retain their own author across edits, reactions and JSON restoration
+ok 348 - new comments and replies retain their own author across edits, reactions and JSON restoration
+  ---
+  duration_ms: 0.530254
+  ...
+# Subtest: legacy author fallback is only a display decision and never rewrites stored text, date or author
+ok 349 - legacy author fallback is only a display decision and never rewrites stored text, date or author
+  ---
+  duration_ms: 0.481993
+  ...
+# Subtest: other and unavailable authors never become the current profile or gain its edit controls
+ok 350 - other and unavailable authors never become the current profile or gain its edit controls
+  ---
+  duration_ms: 0.416204
+  ...
+# Subtest: selected mentions survive separate drafts, submission trimming, replies and a JSON round trip
+ok 351 - selected mentions survive separate drafts, submission trimming, replies and a JSON round trip
+  ---
+  duration_ms: 2.699395
+  ...
+# Subtest: editing or inserting an emoji before a selected mention retains its target, but editing inside makes it plain text
+ok 352 - editing or inserting an emoji before a selected mention retains its target, but editing inside makes it plain text
+  ---
+  duration_ms: 1.366605
+  ...
+# Subtest: typed text never invents mentions and deleting a parent clears only its mention metadata
+ok 353 - typed text never invents mentions and deleting a parent clears only its mention metadata
+  ---
+  duration_ms: 0.463182
+  ...
+# Subtest: changing a selected target with the same visible name is an edit without changing author or creation date
+ok 354 - changing a selected target with the same visible name is an edit without changing author or creation date
+  ---
+  duration_ms: 0.402803
+  ...
+# Subtest: bulk common core selection fills the group, becomes mixed after a removal, and preserves independent choices
+ok 355 - bulk common core selection fills the group, becomes mixed after a removal, and preserves independent choices
+  ---
+  duration_ms: 2.261834
+  ...
+# Subtest: specialization bulk selection is independent and global reset clears all group states
+ok 356 - specialization bulk selection is independent and global reset clears all group states
+  ---
+  duration_ms: 0.247686
+  ...
+# Subtest: personal projects are a direct checkbox; only project categories request a bulk option
+ok 357 - personal projects are a direct checkbox; only project categories request a bulk option
+  ---
+  duration_ms: 0.568178
+  ...
+# Subtest: the same bulk criteria scope global and author projects without inventing missing types
+ok 358 - the same bulk criteria scope global and author projects without inventing missing types
+  ---
+  duration_ms: 0.58101
+  ...
+# Subtest: project bulk choices preserve technologies and skills as independent facets
+ok 359 - project bulk choices preserve technologies and skills as independent facets
+  ---
+  duration_ms: 0.59205
+  ...
+# Subtest: filter options expose stable canonical values and localized labels in all three languages
+ok 360 - filter options expose stable canonical values and localized labels in all three languages
+  ---
+  duration_ms: 2.112388
+  ...
+# Subtest: each existing project belongs to its requested project type
+ok 361 - each existing project belongs to its requested project type
+  ---
+  duration_ms: 0.628362
+  ...
+# Subtest: new projects use an explicit valid type and never infer it from tags or a malformed field
+ok 362 - new projects use an explicit valid type and never infer it from tags or a malformed field
+  ---
+  duration_ms: 0.468488
+  ...
+# Subtest: so_long and Born2beroot stay empty until real demonstration entries exist
+ok 363 - so_long and Born2beroot stay empty until real demonstration entries exist
+  ---
+  duration_ms: 0.359378
+  ...
+# Subtest: student, transcender and alumni are distinct profile filters
+ok 364 - student, transcender and alumni are distinct profile filters
+  ---
+  duration_ms: 0.719672
+  ...
+# Subtest: all preserves the section and selections from other sections cannot hide its content
+ok 365 - all preserves the section and selections from other sections cannot hide its content
+  ---
+  duration_ms: 0.502858
+  ...
+# Subtest: category composes with campus, favorite-only and chronological sorting
+ok 366 - category composes with campus, favorite-only and chronological sorting
+  ---
+  duration_ms: 0.391483
+  ...
+# Subtest: invalid restored selections safely fall back to all without cross-section filtering
+ok 367 - invalid restored selections safely fall back to all without cross-section filtering
+  ---
+  duration_ms: 0.40512
+  ...
+# Subtest: filtering preserves source order, record identity, and the untouched source corpus
+ok 368 - filtering preserves source order, record identity, and the untouched source corpus
+  ---
+  duration_ms: 1.102615
+  ...
+# Subtest: the Transcender example has a completed common core before an ongoing specialisation
+ok 369 - the Transcender example has a completed common core before an ongoing specialisation
+  ---
+  duration_ms: 0.545892
+  ...
+# Subtest: multiple project or status selections form a union without changing source order
+ok 370 - multiple project or status selections form a union without changing source order
+  ---
+  duration_ms: 0.28147
+  ...
+# Subtest: empty, all and unknown-only choices retain all records of the requested section
+ok 371 - empty, all and unknown-only choices retain all records of the requested section
+  ---
+  duration_ms: 0.276832
+  ...
+# Subtest: duplicate and unknown selections are ignored without masking recognized selections
+ok 372 - duplicate and unknown selections are ignored without masking recognized selections
+  ---
+  duration_ms: 0.156081
+  ...
+# Subtest: multiple category choices still intersect campus and favorites, and never filter journal
+ok 373 - multiple category choices still intersect campus and favorites, and never filter journal
+  ---
+  duration_ms: 0.220728
+  ...
+# Subtest: project options keep two localized groups with bulk labels and a direct personal choice
+ok 374 - project options keep two localized groups with bulk labels and a direct personal choice
+  ---
+  duration_ms: 0.717182
+  ...
+# Subtest: new grouped project types stay empty and compose with existing selections without invented records
+ok 375 - new grouped project types stay empty and compose with existing selections without invented records
+  ---
+  duration_ms: 0.568008
+  ...
+# Subtest: profile groups expose statuses and existing arrival years, never promotion numbers
+ok 376 - profile groups expose statuses and existing arrival years, never promotion numbers
+  ---
+  duration_ms: 17.777707
+  ...
+# Subtest: profile filters union choices within a facet and intersect status with arrival year
+ok 377 - profile filters union choices within a facet and intersect status with arrival year
+  ---
+  duration_ms: 0.447686
+  ...
+# Subtest: arrival filters compose with geography and favorites without filtering other sections
+ok 378 - arrival filters compose with geography and favorites without filtering other sections
+  ---
+  duration_ms: 0.256519
+  ...
+# Subtest: profile filter validator rejects malformed years and never enables promotion filtering
+ok 379 - profile filter validator rejects malformed years and never enables promotion filtering
+  ---
+  duration_ms: 0.240988
+  ...
+# Subtest: technology and skill catalogs have stable values while options use explicit available project metadata
+ok 380 - technology and skill catalogs have stable values while options use explicit available project metadata
+  ---
+  duration_ms: 1.590407
+  ...
+# Subtest: project types, technologies and skills union within each facet and intersect all three facets
+ok 381 - project types, technologies and skills union within each facet and intersect all three facets
+  ---
+  duration_ms: 0.37324
+  ...
+# Subtest: three-facet project filtering composes with campus and favorites without changing the corpus
+ok 382 - three-facet project filtering composes with campus and favorites without changing the corpus
+  ---
+  duration_ms: 0.660933
+  ...
+# Subtest: project associations are explicit, normalized and independent of historical campus
+ok 383 - project associations are explicit, normalized and independent of historical campus
+  ---
+  duration_ms: 2.010833
+  ...
+# Subtest: older projects remain compatible while articles and profiles keep their own campus
+ok 384 - older projects remain compatible while articles and profiles keep their own campus
+  ---
+  duration_ms: 0.393689
+  ...
+# Subtest: world, every participating campus and the union of their countries contain one shared project
+ok 385 - world, every participating campus and the union of their countries contain one shared project
+  ---
+  duration_ms: 0.626484
+  ...
+# Subtest: unknown or unassigned places remain visible worldwide without matching an unrelated country
+ok 386 - unknown or unassigned places remain visible worldwide without matching an unrelated country
+  ---
+  duration_ms: 0.222822
+  ...
+# Subtest: fictional project campus snapshots cover their original teams without changing the articles
+ok 387 - fictional project campus snapshots cover their original teams without changing the articles
+  ---
+  duration_ms: 0.301871
+  ...
+# Subtest: campus changes and project responsibility do not rewrite publication geography
+ok 388 - campus changes and project responsibility do not rewrite publication geography
+  ---
+  duration_ms: 1.488215
+  ...
+# Subtest: display labels preserve association order with a readable fallback
+ok 389 - display labels preserve association order with a readable fallback
+  ---
+  duration_ms: 0.281754
+  ...
+# Subtest: the Arabic mobile sort menu unfolds below and scrolls before reaching the dock
+ok 390 - the Arabic mobile sort menu unfolds below and scrolls before reaching the dock
+  ---
+  duration_ms: 1.968941
+  ...
+# Subtest: a compact menu stays below the trigger when it fits
+ok 391 - a compact menu stays below the trigger when it fits
+  ---
+  duration_ms: 0.208196
+  ...
+# Subtest: forced downward sorting never flips above a low trigger
+ok 392 - forced downward sorting never flips above a low trigger
+  ---
+  duration_ms: 0.196023
+  ...
+# Subtest: an entire menu fits above a low trigger without internal clipping
+ok 393 - an entire menu fits above a low trigger without internal clipping
+  ---
+  duration_ms: 0.17299
+  ...
+# Subtest: a trigger near the header uses the available lower space with scrolling
+ok 394 - a trigger near the header uses the available lower space with scrolling
+  ---
+  duration_ms: 0.208344
+  ...
+# Subtest: desktop keeps a fully expanded dropdown below the toolbar
+ok 395 - desktop keeps a fully expanded dropdown below the toolbar
+  ---
+  duration_ms: 0.167434
+  ...
+# Subtest: header and dock bounds also support a shifted visual viewport
+ok 396 - header and dock bounds also support a shifted visual viewport
+  ---
+  duration_ms: 0.251818
+  ...
+# Subtest: equal constrained spaces prefer below; no negative height is emitted
+ok 397 - equal constrained spaces prefer below; no negative height is emitted
+  ---
+  duration_ms: 0.17452
+  ...
+# Subtest: arbitrary bounded triggers never let the panel overlap the trigger or reserved UI
+ok 398 - arbitrary bounded triggers never let the panel overlap the trigger or reserved UI
+  ---
+  duration_ms: 0.645721
+  ...
+# Subtest: a spurious document scroll event without movement keeps an open menu
+ok 399 - a spurious document scroll event without movement keeps an open menu
+  ---
+  duration_ms: 0.300823
+  ...
+# Subtest: subpixel scroll noise is ignored but a real change from the opening position closes
+ok 400 - subpixel scroll noise is ignored but a real change from the opening position closes
+  ---
+  duration_ms: 0.267217
+  ...
+# Subtest: return from a detail resets page and scroll if favorites changed the originating list
+ok 401 - return from a detail resets page and scroll if favorites changed the originating list
+  ---
+  duration_ms: 9.328849
+  ...
+# Subtest: ordinary return and a favorite unrelated to the current order preserve page2 and scroll
+ok 402 - ordinary return and a favorite unrelated to the current order preserve page2 and scroll
+  ---
+  duration_ms: 1.914843
+  ...
+# Subtest: view changes preserve the originating page while an actual filter change resets it
+ok 403 - view changes preserve the originating page while an actual filter change resets it
+  ---
+  duration_ms: 1.918093
+  ...
+# Subtest: URL page accepts only positive decimal integers safe to index
+ok 404 - URL page accepts only positive decimal integers safe to index
+  ---
+  duration_ms: 1.83798
+  ...
+# Subtest: 35 records are partitioned into 12,12,11 without omission or overlap
+ok 405 - 35 records are partitioned into 12,12,11 without omission or overlap
+  ---
+  duration_ms: 1.229312
+  ...
+# Subtest: empty, single-page and excessive page requests have consistent bounds
+ok 406 - empty, single-page and excessive page requests have consistent bounds
+  ---
+  duration_ms: 0.347755
+  ...
+# Subtest: shared campus publications are filtered and deduplicated before page boundaries
+ok 407 - shared campus publications are filtered and deduplicated before page boundaries
+  ---
+  duration_ms: 0.757586
+  ...
+# Subtest: category and favorites filters and date sorting all precede pagination
+ok 408 - category and favorites filters and date sorting all precede pagination
+  ---
+  duration_ms: 0.894866
+  ...
+# Subtest: profiles use 24 slots while Chronicles retain 12, without missing or repeating a record
+ok 409 - profiles use 24 slots while Chronicles retain 12, without missing or repeating a record
+  ---
+  duration_ms: 1.685736
+  ...
+# Subtest: page controls retain the current page and both ends with at most five numeric targets
+ok 410 - page controls retain the current page and both ends with at most five numeric targets
+  ---
+  duration_ms: 17.856124
+  ...
+# Subtest: page status is localized in French, English and Arabic
+ok 411 - page status is localized in French, English and Arabic
+  ---
+  duration_ms: 19.328997
+  ...
+# Subtest: projects, profiles and chronicles retain independent layouts across reloads
+ok 412 - projects, profiles and chronicles retain independent layouts across reloads
+  ---
+  duration_ms: 1.980393
+  ...
+# Subtest: migration seeds all layouts from the existing choice and preserves other preferences and old keys
+ok 413 - migration seeds all layouts from the existing choice and preserves other preferences and old keys
+  ---
+  duration_ms: 1.114403
+  ...
+# Subtest: layout changes leave shared sorting, filters and favorites intact in every section
+ok 414 - layout changes leave shared sorting, filters and favorites intact in every section
+  ---
+  duration_ms: 0.416359
+  ...
+# Subtest: invalid section layouts are ignored without corrupting independent valid choices
+ok 415 - invalid section layouts are ignored without corrupting independent valid choices
+  ---
+  duration_ms: 0.295827
+  ...
+# Subtest: storage restoration refreshes each section layout without conflating them
+ok 416 - storage restoration refreshes each section layout without conflating them
+  ---
+  duration_ms: 1.257585
+  ...
+# Subtest: legacy list preference is retained and new changes reload together
+ok 417 - legacy list preference is retained and new changes reload together
+  ---
+  duration_ms: 0.369987
+  ...
+# Subtest: adding and removing a favorite persist exactly once without duplicate IDs
+ok 418 - adding and removing a favorite persist exactly once without duplicate IDs
+  ---
+  duration_ms: 0.276347
+  ...
+# Subtest: malformed or unknown saved settings never add unknown content
+ok 419 - malformed or unknown saved settings never add unknown content
+  ---
+  duration_ms: 0.232329
+  ...
+# Subtest: corrupt JSON and blocked localStorage keep the page usable
+ok 420 - corrupt JSON and blocked localStorage keep the page usable
+  ---
+  duration_ms: 0.316609
+  ...
+# Subtest: snapshots cannot mutate the favorite store
+ok 421 - snapshots cannot mutate the favorite store
+  ---
+  duration_ms: 0.292838
+  ...
+# Subtest: restore reflects a favorite changed in another tab and a cleared storage
+ok 422 - restore reflects a favorite changed in another tab and a cleared storage
+  ---
+  duration_ms: 0.281747
+  ...
+# Subtest: newest and oldest use publication dates and keep input order unchanged
+ok 423 - newest and oldest use publication dates and keep input order unchanged
+  ---
+  duration_ms: 0.397617
+  ...
+# Subtest: local favorites sort first; dates break ties without inventing public scores
+ok 424 - local favorites sort first; dates break ties without inventing public scores
+  ---
+  duration_ms: 0.256532
+  ...
+# Subtest: favorites-only narrows the already scoped collection and may be empty
+ok 425 - favorites-only narrows the already scoped collection and may be empty
+  ---
+  duration_ms: 0.279269
+  ...
+# Subtest: missing dates remain last in both directions, tied dates stay stable
+ok 426 - missing dates remain last in both directions, tied dates stay stable
+  ---
+  duration_ms: 0.225743
+  ...
+# Subtest: all samples have explicit illustrative dates, with the original dates kept separately
+ok 427 - all samples have explicit illustrative dates, with the original dates kept separately
+  ---
+  duration_ms: 0.575841
+  ...
+# Subtest: saved journey favorites migrate to their public profiles without duplication
+ok 428 - saved journey favorites migrate to their public profiles without duplication
+  ---
+  duration_ms: 0.348205
+  ...
+# Subtest: project and status filters persist independently with other preferences
+ok 429 - project and status filters persist independently with other preferences
+  ---
+  duration_ms: 0.409777
+  ...
+# Subtest: unknown category values restore safely without losing favorites or views
+ok 430 - unknown category values restore safely without losing favorites or views
+  ---
+  duration_ms: 0.316091
+  ...
+# Subtest: multiple choices persist, snapshots are isolated, and all clears every choice
+ok 431 - multiple choices persist, snapshots are isolated, and all clears every choice
+  ---
+  duration_ms: 0.38651
+  ...
+# Subtest: single-choice category settings migrate to multiple selections
+ok 432 - single-choice category settings migrate to multiple selections
+  ---
+  duration_ms: 0.211683
+  ...
+# Subtest: status and arrival selections persist together and All resets both facets
+ok 433 - status and arrival selections persist together and All resets both facets
+  ---
+  duration_ms: 0.280452
+  ...
+# Subtest: old status preferences and saved years restore without accepting promotion or malformed tokens
+ok 434 - old status preferences and saved years restore without accepting promotion or malformed tokens
+  ---
+  duration_ms: 0.22642
+  ...
+# Subtest: all three project filter facets survive persistence and restoration without affecting other preferences
+ok 435 - all three project filter facets survive persistence and restoration without affecting other preferences
+  ---
+  duration_ms: 0.294478
+  ...
+# Subtest: comment reports identify both the local comment and its parent, without collisions between content kinds
+ok 436 - comment reports identify both the local comment and its parent, without collisions between content kinds
+  ---
+  duration_ms: 2.038784
+  ...
+# Subtest: a saved report survives a reload, is deduplicated, and returned objects cannot modify stored evidence
+ok 437 - a saved report survives a reload, is deduplicated, and returned objects cannot modify stored evidence
+  ---
+  duration_ms: 1.463195
+  ...
+# Subtest: invalid requests and malformed persisted records are rejected without preventing valid reports
+ok 438 - invalid requests and malformed persisted records are rejected without preventing valid reports
+  ---
+  duration_ms: 0.756611
+  ...
+# Subtest: denied or exhausted session storage retains usable in-memory deduplication
+ok 439 - denied or exhausted session storage retains usable in-memory deduplication
+  ---
+  duration_ms: 0.524998
+  ...
+# Subtest: local report retention is bounded while the most recent distinct targets survive a reload
+ok 440 - local report retention is bounded while the most recent distinct targets survive a reload
+  ---
+  duration_ms: 15.42734
+  ...
+# Subtest: dialog submission requires a valid reason, caps details, and saves locally without a network request
+ok 441 - dialog submission requires a valid reason, caps details, and saves locally without a network request
+  ---
+  duration_ms: 22.760303
+  ...
+# Subtest: reopening an existing report shows its recorded reason without allowing a second report
+ok 442 - reopening an existing report shows its recorded reason without allowing a second report
+  ---
+  duration_ms: 1.264069
+  ...
+# Subtest: Escape/cancel, explicit cancellation and replacing a dialog discard unsaved changes and restore the appropriate focus
+ok 443 - Escape/cancel, explicit cancellation and replacing a dialog discard unsaved changes and restore the appropriate focus
+  ---
+  duration_ms: 2.536226
+  ...
+# Subtest: aborting a route removes the dialog and listeners, without refocusing a removed or hidden trigger
+ok 444 - aborting a route removes the dialog and listeners, without refocusing a removed or hidden trigger
+  ---
+  duration_ms: 1.602231
+  ...
+# Subtest: backdrop dismissal requires a gesture starting and ending outside the dialog
+ok 445 - backdrop dismissal requires a gesture starting and ending outside the dialog
+  ---
+  duration_ms: 1.167001
+  ...
+# Subtest: report buttons preserve translated accessible names and open the targeted local dialog
+ok 446 - report buttons preserve translated accessible names and open the targeted local dialog
+  ---
+  duration_ms: 3.957504
+  ...
+# Subtest: an exit captures the visible rect and opacity before cancelling an entrance
+ok 447 - an exit captures the visible rect and opacity before cancelling an entrance
+  ---
+  duration_ms: 3.001778
+  ...
+# Subtest: enter uses the existing upward fade without leaving an exit overlay
+ok 448 - enter uses the existing upward fade without leaving an exit overlay
+  ---
+  duration_ms: 1.449242
+  ...
+# Subtest: pinned identity sidebars keep their viewport during entry and exit fades
+ok 449 - pinned identity sidebars keep their viewport during entry and exit fades
+  ---
+  duration_ms: 0.70865
+  ...
+# Subtest: exit keeps a scrolled article in its viewport position while fading down
+ok 450 - exit keeps a scrolled article in its viewport position while fading down
+  ---
+  duration_ms: 0.753873
+  ...
+# Subtest: exit retains the fixed height of split detail columns until the fade finishes
+ok 451 - exit retains the fixed height of split detail columns until the fade finishes
+  ---
+  duration_ms: 0.63384
+  ...
+# Subtest: an interrupted exit cannot clean or cancel the following entrance
+ok 452 - an interrupted exit cannot clean or cancel the following entrance
+  ---
+  duration_ms: 0.622782
+  ...
+# Subtest: a queued finish from an old exit cannot remove a newer exit snapshot
+ok 453 - a queued finish from an old exit cannot remove a newer exit snapshot
+  ---
+  duration_ms: 0.623581
+  ...
+# Subtest: cancel restores the final layout immediately and is safe to repeat
+ok 454 - cancel restores the final layout immediately and is safe to repeat
+  ---
+  duration_ms: 0.562306
+  ...
+# Subtest: enabling reduced motion during an exit removes its temporary layout
+ok 455 - enabling reduced motion during an exit removes its temporary layout
+  ---
+  duration_ms: 0.578125
+  ...
+# Subtest: reduced motion starts no animation or temporary exit layout
+ok 456 - reduced motion starts no animation or temporary exit layout
+  ---
+  duration_ms: 1.794838
+  ...
+# Subtest: enrichment preserves every original record, author relation and complete journey
+ok 457 - enrichment preserves every original record, author relation and complete journey
+  ---
+  duration_ms: 2.772657
+  ...
+# Subtest: the actual corpus has four profile pages of 24 and seven editorial pages of 12 after sorting
+ok 458 - the actual corpus has four profile pages of 24 and seven editorial pages of 12 after sorting
+  ---
+  duration_ms: 6.447982
+  ...
+# Subtest: new demo content has complete translations, explicit valid dates and local art
+ok 459 - new demo content has complete translations, explicit valid dates and local art
+  ---
+  duration_ms: 9.459558
+  ...
+# Subtest: every new author has a project and an article, explicit leads belong to their teams
+ok 460 - every new author has a project and an article, explicit leads belong to their teams
+  ---
+  duration_ms: 5.844477
+  ...
+# Subtest: new project types, technologies and skills are valid and participate in real filters
+ok 461 - new project types, technologies and skills are valid and participate in real filters
+  ---
+  duration_ms: 3.400385
+  ...
+# Subtest: multicampus projects filter into every author campus and country without duplicating pages
+ok 462 - multicampus projects filter into every author campus and country without duplicating pages
+  ---
+  duration_ms: 61.030051
+  ...
+# Subtest: the three-page intermediate corpus is preserved exactly when expanding to seven pages
+ok 463 - the three-page intermediate corpus is preserved exactly when expanding to seven pages
+  ---
+  duration_ms: 4.091954
+  ...
+# (node:2101961) MaxListenersExceededWarning: Possible EventTarget memory leak detected. 11 abort listeners added to [AbortSignal]. MaxListeners is 10. Use events.setMaxListeners() to increase limit
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# (node:2101961) MaxListenersExceededWarning: Possible EventTarget memory leak detected. 11 abort listeners added to [AbortSignal]. MaxListeners is 10. Use events.setMaxListeners() to increase limit
+# (node:2101961) MaxListenersExceededWarning: Possible EventTarget memory leak detected. 11 abort listeners added to [AbortSignal]. MaxListeners is 10. Use events.setMaxListeners() to increase limit
+# (node:2101961) MaxListenersExceededWarning: Possible EventTarget memory leak detected. 11 abort listeners added to [AbortSignal]. MaxListeners is 10. Use events.setMaxListeners() to increase limit
+# Subtest: provided media retain order and localized attribution without accepting executable or unsupported sources
+ok 464 - provided media retain order and localized attribution without accepting executable or unsupported sources
+  ---
+  duration_ms: 1.605946
+  ...
+# Subtest: media collection deduplicates resolved sources while retaining body placement and local captions
+ok 465 - media collection deduplicates resolved sources while retaining body placement and local captions
+  ---
+  duration_ms: 0.493132
+  ...
+# Subtest: body media use the same URL validation and never replace an absent primary image
+ok 466 - body media use the same URL validation and never replace an absent primary image
+  ---
+  duration_ms: 0.239527
+  ...
+# Subtest: project overview keeps its main illustration when realization only has inline media
+ok 467 - project overview keeps its main illustration when realization only has inline media
+  ---
+  duration_ms: 5.863945
+  ...
+# Subtest: realization and chronicle articles place media after their own text, while the gallery lists each source once
+ok 468 - realization and chronicle articles place media after their own text, while the gallery lists each source once
+  ---
+  duration_ms: 5.758049
+  ...
+# Subtest: project and chronicle media expose image and video buttons without loading an inline video player
+ok 469 - project and chronicle media expose image and video buttons without loading an inline video player
+  ---
+  duration_ms: 8.013504
+  ...
+# Subtest: existing illustrative covers keep their caption and gain native zoom buttons
+ok 470 - existing illustrative covers keep their caption and gain native zoom buttons
+  ---
+  duration_ms: 1.767393
+  ...
+# Subtest: only the main profile portrait becomes a zoom button; profile cards and author portraits retain route links
+ok 471 - only the main profile portrait becomes a zoom button; profile cards and author portraits retain route links
+  ---
+  duration_ms: 1.93164
+  ...
+# Subtest: project overview contains the entire team with its designated lead and profile links
+ok 472 - project overview contains the entire team with its designated lead and profile links
+  ---
+  duration_ms: 25.628308
+  ...
+# Subtest: chronicle authors remain a separate complete section and the article does not acquire a project team or trial
+ok 473 - chronicle authors remain a separate complete section and the article does not acquire a project team or trial
+  ---
+  duration_ms: 1.868668
+  ...
+# Subtest: only the section menu owns an inner scroll, leaving identity and reading untouched
+ok 474 - only the section menu owns an inner scroll, leaving identity and reading untouched
+  ---
+  duration_ms: 18.008841
+  ...
+# Subtest: a favorite, language or section render preserves only the same identity menu offset
+ok 475 - a favorite, language or section render preserves only the same identity menu offset
+  ---
+  duration_ms: 5.105711
+  ...
+# Subtest: history restores the matching menu and ignores former whole-sidebar and reading offsets
+ok 476 - history restores the matching menu and ignores former whole-sidebar and reading offsets
+  ---
+  duration_ms: 1.003854
+  ...
+# Subtest: desktop to mobile to desktop removes the menu shell and scroll region, without altering mobile navigation
+ok 477 - desktop to mobile to desktop removes the menu shell and scroll region, without altering mobile navigation
+  ---
+  duration_ms: 1.47712
+  ...
+# Subtest: only needed arrows appear, scroll buttons are accessible and reduced motion avoids smooth scrolling
+ok 478 - only needed arrows appear, scroll buttons are accessible and reduced motion avoids smooth scrolling
+  ---
+  duration_ms: 10.012782
+  ...
+# Subtest: explicit activation centers the selected section inside the menu without moving identity or document
+ok 479 - explicit activation centers the selected section inside the menu without moving identity or document
+  ---
+  duration_ms: 1.19921
+  ...
+# Subtest: first and last activated sections clamp to natural menu edges and update the arrows
+ok 480 - first and last activated sections clamp to natural menu edges and update the arrows
+  ---
+  duration_ms: 0.76048
+  ...
+# Subtest: centering respects reduced motion and leaves history, ordinary rendering, mobile and fitting menus alone
+ok 481 - centering respects reduced motion and leaves history, ordinary rendering, mobile and fitting menus alone
+  ---
+  duration_ms: 1.346456
+  ...
+# Subtest: sidebar positioning is unchanged at document bottom, and short windows compact identity without scrolling it
+ok 482 - sidebar positioning is unchanged at document bottom, and short windows compact identity without scrolling it
+  ---
+  duration_ms: 0.836244
+  ...
+# Subtest: dock clearance only limits menu space when the dock overlaps its width, and footer stays in the reading column
+ok 483 - dock clearance only limits menu space when the dock overlaps its width, and footer stays in the reading column
+  ---
+  duration_ms: 0.941442
+  ...
+# Subtest: pinned Back reserves its document space, remains fixed at document bottom and returns to mobile flow
+ok 484 - pinned Back reserves its document space, remains fixed at document bottom and returns to mobile flow
+  ---
+  duration_ms: 1.219781
+  ...
+# Subtest: the expanded public corpus has 78 results per section and every new title is searchable in all three languages
+ok 485 - the expanded public corpus has 78 results per section and every new title is searchable in all three languages
+  ---
+  duration_ms: 6446.031828
+  ...
+# Subtest: empty queries and omitted corpora do not reveal unrelated suggestions
+ok 486 - empty queries and omitted corpora do not reveal unrelated suggestions
+  ---
+  duration_ms: 0.592602
+  ...
+# Subtest: campus names match accents, Unicode decomposition and casing
+ok 487 - campus names match accents, Unicode decomposition and casing
+  ---
+  duration_ms: 1.971901
+  ...
+# Subtest: countries are searchable and displayed in the current interface language
+ok 488 - countries are searchable and displayed in the current interface language
+  ---
+  duration_ms: 1.259101
+  ...
+# Subtest: Arabic harakat, hamza decomposition and tatweel do not prevent title matches
+ok 489 - Arabic harakat, hamza decomposition and tatweel do not prevent title matches
+  ---
+  duration_ms: 2.167702
+  ...
+# Subtest: editorial titles and searchable body copy follow the selected language
+ok 490 - editorial titles and searchable body copy follow the selected language
+  ---
+  duration_ms: 2.780987
+  ...
+# Subtest: all query words must occur, and can span a campus and technical tags
+ok 491 - all query words must occur, and can span a campus and technical tags
+  ---
+  duration_ms: 4.292672
+  ...
+# Subtest: a whole campus name returns its campus and every attached story, not address mentions
+ok 492 - a whole campus name returns its campus and every attached story, not address mentions
+  ---
+  duration_ms: 3.890182
+  ...
+# Subtest: whole localized country names and ISO codes return only their campuses and attached stories
+ok 493 - whole localized country names and ISO codes return only their campuses and attached stories
+  ---
+  duration_ms: 2.225676
+  ...
+# Subtest: exact campus IDs use relationships, while incomplete names keep lexical matching
+ok 494 - exact campus IDs use relationships, while incomplete names keep lexical matching
+  ---
+  duration_ms: 1.878579
+  ...
+# Subtest: search stays global when the caller also carries a current route or geographic context
+ok 495 - search stays global when the caller also carries a current route or geographic context
+  ---
+  duration_ms: 0.563184
+  ...
+# Subtest: only the records supplied by the caller are exposed
+ok 496 - only the records supplied by the caller are exposed
+  ---
+  duration_ms: 0.301453
+  ...
+# Subtest: results are bounded, deterministic and report omitted matches accurately
+ok 497 - results are bounded, deterministic and report omitted matches accurately
+  ---
+  duration_ms: 4.876403
+  ...
+# Subtest: search and result edits never mutate the catalogue or source stories
+ok 498 - search and result edits never mutate the catalogue or source stories
+  ---
+  duration_ms: 1.053455
+  ...
+# Subtest: geographic results paginate without omissions, duplicates or unrelated matches
+ok 499 - geographic results paginate without omissions, duplicates or unrelated matches
+  ---
+  duration_ms: 2.682042
+  ...
+# Subtest: profile biography, role, timeline and embedded journey participate in global search
+ok 500 - profile biography, role, timeline and embedded journey participate in global search
+  ---
+  duration_ms: 4.714063
+  ...
+# Subtest: author names connect a visible profile to its project and journal without changing destinations
+ok 501 - author names connect a visible profile to its project and journal without changing destinations
+  ---
+  duration_ms: 2.274359
+  ...
+# Subtest: an author omitted from the public corpus adds no searchable identity to a project
+ok 502 - an author omitted from the public corpus adds no searchable identity to a project
+  ---
+  duration_ms: 0.314051
+  ...
+# Subtest: profile result type and route keep the technical people key
+ok 503 - profile result type and route keep the technical people key
+  ---
+  duration_ms: 0.789532
+  ...
+# Subtest: the original corpus retains five projects, two articles and six profiles without duplicate journeys
+ok 504 - the original corpus retains five projects, two articles and six profiles without duplicate journeys
+  ---
+  duration_ms: 6.405358
+  ...
+# Subtest: Paris and Tokyo return the campus and all attached active content including profiles
+ok 505 - Paris and Tokyo return the campus and all attached active content including profiles
+  ---
+  duration_ms: 3.341492
+  ...
+# Subtest: the original journeys remain searchable inside their profile destination in every language
+ok 506 - the original journeys remain searchable inside their profile destination in every language
+  ---
+  duration_ms: 8.698734
+  ...
+# Subtest: active French geography paginates all fifteen results without changing their campus scope
+ok 507 - active French geography paginates all fifteen results without changing their campus scope
+  ---
+  duration_ms: 1.948122
+  ...
+# Subtest: each participating campus opens the same project once at the queried place
+ok 508 - each participating campus opens the same project once at the queried place
+  ---
+  duration_ms: 4.734672
+  ...
+# Subtest: text search combines any associated campus or localized country with project terms
+ok 509 - text search combines any associated campus or localized country with project terms
+  ---
+  duration_ms: 7.060222
+  ...
+# Subtest: multi-campus matches and repeated supplied records never duplicate project IDs
+ok 510 - multi-campus matches and repeated supplied records never duplicate project IDs
+  ---
+  duration_ms: 1.330689
+  ...
+# Subtest: an explicit empty project association neither falls back to the old campus nor its authors
+ok 511 - an explicit empty project association neither falls back to the old campus nor its authors
+  ---
+  duration_ms: 1.262222
+  ...
+# Subtest: project search associations remain stable when its lead or authors move campus
+ok 512 - project search associations remain stable when its lead or authors move campus
+  ---
+  duration_ms: 4.304352
+  ...
+# Subtest: explicit reading-column movement follows the shared dock fade and routing suspension
+ok 513 - explicit reading-column movement follows the shared dock fade and routing suspension
+  ---
+  duration_ms: 3.886484
+  ...
+# Subtest: typing a new query then immediately submitting never selects the previous query
+ok 514 - typing a new query then immediately submitting never selects the previous query
+  ---
+  duration_ms: 1.854819
+  ...
+# Subtest: a late answer from a closed search cannot overwrite a reopened query
+ok 515 - a late answer from a closed search cannot overwrite a reopened query
+  ---
+  duration_ms: 0.940154
+  ...
+# Subtest: keyboard navigation, Escape and rapid reopening keep focus and inert state coherent
+ok 516 - keyboard navigation, Escape and rapid reopening keep focus and inert state coherent
+  ---
+  duration_ms: 2.910672
+  ...
+# Subtest: an old asynchronous query resolving between input and refresh is not the new query
+ok 517 - an old asynchronous query resolving between input and refresh is not the new query
+  ---
+  duration_ms: 0.905861
+  ...
+# Subtest: a delayed submit cannot choose from a search reopened after cancellation
+ok 518 - a delayed submit cannot choose from a search reopened after cancellation
+  ---
+  duration_ms: 0.790019
+  ...
+# Subtest: show more appends the next page and exposes its first result to the keyboard
+ok 519 - show more appends the next page and exposes its first result to the keyboard
+  ---
+  duration_ms: 6.06064
+  ...
+# Subtest: typing another query invalidates an outstanding page before the next frame
+ok 520 - typing another query invalidates an outstanding page before the next frame
+  ---
+  duration_ms: 1.129688
+  ...
+# Subtest: a page resolving after close and reopen cannot append to the new search session
+ok 521 - a page resolving after close and reopen cannot append to the new search session
+  ---
+  duration_ms: 1.004883
+  ...
+# Subtest: document movement lowers the glass until 400 ms of rest, including the search state
+ok 522 - document movement lowers the glass until 400 ms of rest, including the search state
+  ---
+  duration_ms: 0.822461
+  ...
+# Subtest: an idle scroll cancels a delayed animation frame instead of leaving the glass transparent
+ok 523 - an idle scroll cancels a delayed animation frame instead of leaving the glass transparent
+  ---
+  duration_ms: 0.37325
+  ...
+# Subtest: destroy removes document scrolling work and its listener
+ok 524 - destroy removes document scrolling work and its listener
+  ---
+  duration_ms: 0.387148
+  ...
+# Subtest: short pauses keep the glass transparent, and resumed movement rearms the final rest period
+ok 525 - short pauses keep the glass transparent, and resumed movement rearms the final rest period
+  ---
+  duration_ms: 0.518366
+  ...
+# Subtest: navigation clears the active fade and ignores document clamping and delayed restoration events
+ok 526 - navigation clears the active fade and ignores document clamping and delayed restoration events
+  ---
+  duration_ms: 0.446698
+  ...
+# Subtest: navigation cancels a queued scrolling frame before it can hide the new page menu
+ok 527 - navigation cancels a queued scrolling frame before it can hide the new page menu
+  ---
+  duration_ms: 0.32916
+  ...
+# Subtest: only the latest navigation can resume document scrolling and destroy makes pending resumes inert
+ok 528 - only the latest navigation can resume document scrolling and destroy makes pending resumes inert
+  ---
+  duration_ms: 0.424677
+  ...
+# Subtest: profile result labels and search invitations follow all three UI languages
+ok 529 - profile result labels and search invitations follow all three UI languages
+  ---
+  duration_ms: 1.290526
+  ...
+# Subtest: journal direct links keep Article as the default and expose its four sections
+ok 530 - journal direct links keep Article as the default and expose its four sections
+  ---
+  duration_ms: 2.517829
+  ...
+# Subtest: journal Back leaves the article visit without using depths from a profile or project
+ok 531 - journal Back leaves the article visit without using depths from a profile or project
+  ---
+  duration_ms: 0.40149
+  ...
+# Subtest: the complete local catalogue enables country/campus filtering while map preparation stays pending
+ok 532 - the complete local catalogue enables country/campus filtering while map preparation stays pending
+  ---
+  duration_ms: 6.755707
+  ...
+# Subtest: all three content lists keep their country and campus filters after the map fails
+ok 533 - all three content lists keep their country and campus filters after the map fails
+  ---
+  duration_ms: 6.551389
+  ...
+# Subtest: direct links and history restore normalize geography without waiting for WebGL
+ok 534 - direct links and history restore normalize geography without waiting for WebGL
+  ---
+  duration_ms: 1.759523
+  ...
+# Subtest: initial and retried map callbacks cannot erase a filter; readiness synchronizes the selected destination once
+ok 535 - initial and retried map callbacks cannot erase a filter; readiness synchronizes the selected destination once
+  ---
+  duration_ms: 2.293318
+  ...
+# Subtest: filter changes made before entrance completion are restored only after entry opens
+ok 536 - filter changes made before entrance completion are restored only after entry opens
+  ---
+  duration_ms: 1.490501
+  ...
+# Subtest: a failed catalogue request can be retried independently of the map
+ok 537 - a failed catalogue request can be retried independently of the map
+  ---
+  duration_ms: 1.506611
+  ...
+# Subtest: incidental catalogue completion, matching map callbacks and map failure preserve an open filter draft
+ok 538 - incidental catalogue completion, matching map callbacks and map failure preserve an open filter draft
+  ---
+  duration_ms: 1.598676
+  ...
+# Subtest: module is safe without a document and creates one modal per document only when opened
+ok 539 - module is safe without a document and creates one modal per document only when opened
+  ---
+  duration_ms: 21.957356
+  ...
+# Subtest: image navigation wraps, clamps the initial position, keeps captions and translates controls
+ok 540 - image navigation wraps, clamps the initial position, keeps captions and translates controls
+  ---
+  duration_ms: 3.525781
+  ...
+# Subtest: Escape and native cancel close only the viewer; queued close cannot destroy a reopened session
+ok 541 - Escape and native cancel close only the viewer; queued close cannot destroy a reopened session
+  ---
+  duration_ms: 0.835731
+  ...
+# Subtest: backdrop clicks close the viewer while interior whitespace does not, and disconnected triggers are not focused
+ok 542 - backdrop clicks close the viewer while interior whitespace does not, and disconnected triggers are not focused
+  ---
+  duration_ms: 0.638513
+  ...
+# Subtest: safe image URLs load; unsafe URLs, HTML strings, unsupported formats and empty items render a translated error
+ok 543 - safe image URLs load; unsafe URLs, HTML strings, unsupported formats and empty items render a translated error
+  ---
+  duration_ms: 2.292333
+  ...
+# Subtest: video has native controls without autoplay and releases playback and resources on navigation and close
+ok 544 - video has native controls without autoplay and releases playback and resources on navigation and close
+  ---
+  duration_ms: 0.956765
+  ...
+# Subtest: illustration DOM is cloned and contained without altering the original or accepting markup strings
+ok 545 - illustration DOM is cloned and contained without altering the original or accepting markup strings
+  ---
+  duration_ms: 0.472572
+  ...
+# Subtest: the six existing profiles gain no invented transfers or current-campus field
+ok 546 - the six existing profiles gain no invented transfers or current-campus field
+  ---
+  duration_ms: 12.162706
+  ...
+# Subtest: A to B retains the first campus, enrollment year and cohort without mutating discovery campus
+ok 547 - A to B retains the first campus, enrollment year and cohort without mutating discovery campus
+  ---
+  duration_ms: 4.141711
+  ...
+# Subtest: A to B to A still has changes and shows Current campus even when current equals origin
+ok 548 - A to B to A still has changes and shows Current campus even when current equals origin
+  ---
+  duration_ms: 20.393637
+  ...
+# Subtest: consecutive repeats are not transfers; missing dates and malformed input do not invent chronology
+ok 549 - consecutive repeats are not transfers; missing dates and malformed input do not invent chronology
+  ---
+  duration_ms: 0.867607
+  ...
+# Subtest: FR EN AR labels and dates cover the conditional overview and supplied transfer history
+ok 550 - FR EN AR labels and dates cover the conditional overview and supplied transfer history
+  ---
+  duration_ms: 3.727238
+  ...
+# Subtest: Explore opens the first campus without changes and the current campus after any recorded transfer
+ok 551 - Explore opens the first campus without changes and the current campus after any recorded transfer
+  ---
+  duration_ms: 1.034465
+  ...
+# Subtest: the directory has 78 distinct fictional people and preserves the six original campus assignments
+ok 552 - the directory has 78 distinct fictional people and preserves the six original campus assignments
+  ---
+  duration_ms: 2.864784
+  ...
+# Subtest: every profile has localized identity, introduction and before/during/current-or-after milestones
+ok 553 - every profile has localized identity, introduction and before/during/current-or-after milestones
+  ---
+  duration_ms: 2.950667
+  ...
+# Subtest: portraits reuse the six local standalone SVG assets without remote resources
+ok 554 - portraits reuse the six local standalone SVG assets without remote resources
+  ---
+  duration_ms: 6.111611
+  ...
+# Subtest: all original editorial samples have known unique authors and at least one author from their campus
+ok 555 - all original editorial samples have known unique authors and at least one author from their campus
+  ---
+  duration_ms: 2.998376
+  ...
+# Subtest: each directory profile has a project and reverse relations retain source ordering
+ok 556 - each directory profile has a project and reverse relations retain source ordering
+  ---
+  duration_ms: 10.312232
+  ...
+# Subtest: the collective project and article retain every author in discovery and reverse contributions
+ok 557 - the collective project and article retain every author in discovery and reverse contributions
+  ---
+  duration_ms: 0.686155
+  ...
+# Subtest: sample responsibilities are explicit author references and survive discovery without changing collaboration order
+ok 558 - sample responsibilities are explicit author references and survive discovery without changing collaboration order
+  ---
+  duration_ms: 2.00671
+  ...
+# Subtest: legacy journey IDs resolve once to their author profile without a route cycle
+ok 559 - legacy journey IDs resolve once to their author profile without a route cycle
+  ---
+  duration_ms: 0.294711
+  ...
+# Subtest: discovery keeps 78 records per list and both original journeys inside their profiles
+ok 560 - discovery keeps 78 records per list and both original journeys inside their profiles
+  ---
+  duration_ms: 2.621881
+  ...
+# Subtest: discovery construction and relationship lookups do not mutate source entries
+ok 561 - discovery construction and relationship lookups do not mutate source entries
+  ---
+  duration_ms: 10.111611
+  ...
+# Subtest: missing records and unknown identifiers fail closed without leaking unrelated authors
+ok 562 - missing records and unknown identifiers fail closed without leaking unrelated authors
+  ---
+  duration_ms: 1.122186
+  ...
+# Subtest: profile links from projects and chronicles preserve world, country and campus filters
+ok 563 - profile links from projects and chronicles preserve world, country and campus filters
+  ---
+  duration_ms: 9.032609
+  ...
+# Subtest: normal and modified clicks share the preserved destination without breaking native link actions
+ok 564 - normal and modified clicks share the preserved destination without breaking native link actions
+  ---
+  duration_ms: 1.311494
+  ...
+# Subtest: the targeted profile fix leaves existing project and article destinations unchanged
+ok 565 - the targeted profile fix leaves existing project and article destinations unchanged
+  ---
+  duration_ms: 1.158519
+  ...
+# Subtest: a shared project keeps a matching world, country or campus context without choosing a lead campus
+ok 566 - a shared project keeps a matching world, country or campus context without choosing a lead campus
+  ---
+  duration_ms: 4.417721
+  ...
+# Subtest: a shared project opened from an unrelated profile returns to world scope and retains one identity
+ok 567 - a shared project opened from an unrelated profile returns to world scope and retains one identity
+  ---
+  duration_ms: 1.075985
+  ...
+# Subtest: old journal links and former journey links remain meaningful; unknown sections use overview
+ok 568 - old journal links and former journey links remain meaningful; unknown sections use overview
+  ---
+  duration_ms: 1.380962
+  ...
+# Subtest: direct project filter links accept multiple known categories, reset with all and ignore unknown values
+ok 569 - direct project filter links accept multiple known categories, reset with all and ignore unknown values
+  ---
+  duration_ms: 0.582423
+  ...
+# Subtest: profile filtering cannot introduce projects by another author and empty demo types remain empty
+ok 570 - profile filtering cannot introduce projects by another author and empty demo types remain empty
+  ---
+  duration_ms: 0.456658
+  ...
+# Subtest: visible Back leaves the entire profile visit while direct links fall back to the directory
+ok 571 - visible Back leaves the entire profile visit while direct links fall back to the directory
+  ---
+  duration_ms: 0.143428
+  ...
+# Subtest: profile project URLs preserve technology and skill facets and keep the author scope
+ok 572 - profile project URLs preserve technology and skill facets and keep the author scope
+  ---
+  duration_ms: 0.678138
+  ...
+# Subtest: fictional profiles do not claim social accounts; absent or empty lists stay empty
+ok 573 - fictional profiles do not claim social accounts; absent or empty lists stay empty
+  ---
+  duration_ms: 1.999148
+  ...
+# Subtest: only absolute HTTP(S) destinations without credentials become links
+ok 574 - only absolute HTTP(S) destinations without credentials become links
+  ---
+  duration_ms: 0.971139
+  ...
+# Subtest: known networks and custom sites render separate named external links without HTML interpolation
+ok 575 - known networks and custom sites render separate named external links without HTML interpolation
+  ---
+  duration_ms: 0.433906
+  ...
+# Subtest: custom and unknown platforms use a supplied label or safe hostname; interface copy covers FR EN AR
+ok 576 - custom and unknown platforms use a supplied label or safe hostname; interface copy covers FR EN AR
+  ---
+  duration_ms: 0.373053
+  ...
+# Subtest: a shared project names every associated campus once and chooses a destination without changing its identity
+ok 577 - a shared project names every associated campus once and chooses a destination without changing its identity
+  ---
+  duration_ms: 9.787333
+  ...
+# Subtest: native Escape/cancel and the dismiss action restore the original trigger without opening a campus
+ok 578 - native Escape/cancel and the dismiss action restore the original trigger without opening a campus
+  ---
+  duration_ms: 3.429274
+  ...
+# Subtest: a pointer gesture inside then outside does not dismiss; a backdrop gesture does
+ok 579 - a pointer gesture inside then outside does not dismiss; a backdrop gesture does
+  ---
+  duration_ms: 1.951182
+  ...
+# Subtest: changing a section removes its dialog and prevents stale choices from navigating
+ok 580 - changing a section removes its dialog and prevents stale choices from navigating
+  ---
+  duration_ms: 5.706318
+  ...
+# Subtest: one-campus projects keep a direct Explore action, including the legacy single-campus field
+ok 581 - one-campus projects keep a direct Explore action, including the legacy single-campus field
+  ---
+  duration_ms: 5.802619
+  ...
+# Subtest: a project with no associated or resolvable campus never gets a misleading Explore action
+ok 582 - a project with no associated or resolvable campus never gets a misleading Explore action
+  ---
+  duration_ms: 5.574463
+  ...
+# Subtest: campus choices are localized in English and Arabic and names retain their own writing direction
+ok 583 - campus choices are localized in English and Arabic and names retain their own writing direction
+  ---
+  duration_ms: 6.849183
+  ...
+# Subtest: articles ignore project campus associations and retain the existing event callback
+ok 584 - articles ignore project campus associations and retain the existing event callback
+  ---
+  duration_ms: 2.497851
+  ...
+# Subtest: profile project cards list all publication campuses while article contribution cards stay unchanged
+ok 585 - profile project cards list all publication campuses while article contribution cards stay unchanged
+  ---
+  duration_ms: 3.462072
+  ...
+# Subtest: both kinds preserve facet order, supplied labels and unique choices
+ok 586 - both kinds preserve facet order, supplied labels and unique choices
+  ---
+  duration_ms: 22.906916
+  ...
+# Subtest: profile criteria remain a draft until Apply and reopen from applied values
+ok 587 - profile criteria remain a draft until Apply and reopen from applied values
+  ---
+  duration_ms: 6.683093
+  ...
+# Subtest: Cancel, Escape and dismissal discard profile edits and restore keyboard focus
+ok 588 - Cancel, Escape and dismissal discard profile edits and restore keyboard focus
+  ---
+  duration_ms: 8.820768
+  ...
+# Subtest: Reset remains a draft for profiles and projects; Apply commits an empty selection
+ok 589 - Reset remains a draft for profiles and projects; Apply commits an empty selection
+  ---
+  duration_ms: 14.462602
+  ...
+# Subtest: project bulk selection and indeterminate state preserve technology and skill drafts
+ok 590 - project bulk selection and indeterminate state preserve technology and skill drafts
+  ---
+  duration_ms: 4.429758
+  ...
+# Subtest: every project and profile category can select and deselect all while remaining folded
+ok 591 - every project and profile category can select and deselect all while remaining folded
+  ---
+  duration_ms: 20.545997
+  ...
+# Subtest: expanding, choosing individually and folding preserves drafts and all ancestor mixed states
+ok 592 - expanding, choosing individually and folding preserves drafts and all ancestor mixed states
+  ---
+  duration_ms: 4.38913
+  ...
+# Subtest: profile facet bulk actions stay independent and a partial selection becomes full on its next collective click
+ok 593 - profile facet bulk actions stay independent and a partial selection becomes full on its next collective click
+  ---
+  duration_ms: 1.756286
+  ...
+# Subtest: profile modal labels, sections and direction follow all three interface languages
+ok 594 - profile modal labels, sections and direction follow all three interface languages
+  ---
+  duration_ms: 3.878549
+  ...
+# Subtest: one selected criterion uses singular French and English copy
+ok 595 - one selected criterion uses singular French and English copy
+  ---
+  duration_ms: 1.627429
+  ...
+# Subtest: a closed or replaced modal cannot apply stale changes
+ok 596 - a closed or replaced modal cannot apply stale changes
+  ---
+  duration_ms: 1.012721
+  ...
+# Subtest: only a gesture starting and ending on the backdrop dismisses the modal
+ok 597 - only a gesture starting and ending on the backdrop dismisses the modal
+  ---
+  duration_ms: 0.547216
+  ...
+# Subtest: project direct links use the five project sections and safely default to overview
+ok 598 - project direct links use the five project sections and safely default to overview
+  ---
+  duration_ms: 1.926867
+  ...
+# Subtest: project Back leaves its section visit while profile and project history depths stay independent
+ok 599 - project Back leaves its section visit while profile and project history depths stay independent
+  ---
+  duration_ms: 0.245574
+  ...
+# Subtest: legacy team links become overview links targeting the team without dropping geographic scope
+ok 600 - legacy team links become overview links targeting the team without dropping geographic scope
+  ---
+  duration_ms: 6.985237
+  ...
+# Subtest: actual card destinations send project +N to overview/team and chronicle +N to its authors section
+ok 601 - actual card destinations send project +N to overview/team and chronicle +N to its authors section
+  ---
+  duration_ms: 2.701615
+  ...
+# Subtest: changing project sections clears the team target while preserving its history depth and origin
+ok 602 - changing project sections clears the team target while preserving its history depth and origin
+  ---
+  duration_ms: 1.56088
+  ...
+# Subtest: opening another content or an author does not carry the project team anchor into that destination
+ok 603 - opening another content or an author does not carry the project team anchor into that destination
+  ---
+  duration_ms: 2.834537
+  ...
+# Subtest: a fresh team destination focuses its heading, but Back restores even a deliberately saved scroll position of zero
+ok 604 - a fresh team destination focuses its heading, but Back restores even a deliberately saved scroll position of zero
+  ---
+  duration_ms: 11.133076
+  ...
+# Subtest: repository normalization accepts only explicit HTTP(S) URLs without credentials
+ok 605 - repository normalization accepts only explicit HTTP(S) URLs without credentials
+  ---
+  duration_ms: 2.474034
+  ...
+# Subtest: fictional projects have no invented repository, frame, or demo launch link
+ok 606 - fictional projects have no invented repository, frame, or demo launch link
+  ---
+  duration_ms: 3.41896
+  ...
+# Subtest: valid data render safe external links and literal localized instructions without changing the source
+ok 607 - valid data render safe external links and literal localized instructions without changing the source
+  ---
+  duration_ms: 1.948946
+  ...
+# Subtest: inline author form validates, saves locally and restores after a module reload for the correct project
+ok 608 - inline author form validates, saves locally and restores after a module reload for the correct project
+  ---
+  duration_ms: 11.012006
+  ...
+# Subtest: cancel discards changes and removal persists a tombstone instead of reviving supplied data
+ok 609 - cancel discards changes and removal persists a tombstone instead of reviving supplied data
+  ---
+  duration_ms: 4.045801
+  ...
+# Subtest: draft text survives a locale rerender; cancel restores the saved value without writing the draft
+ok 610 - draft text survives a locale rerender; cancel restores the saved value without writing the draft
+  ---
+  duration_ms: 0.780243
+  ...
+# Subtest: blocked storage falls back to memory for saved values and removals within this tab
+ok 611 - blocked storage falls back to memory for saved values and removals within this tab
+  ---
+  duration_ms: 0.85149
+  ...
+# Subtest: malformed stored URLs never become links and oversized instructions cannot be saved
+ok 612 - malformed stored URLs never become links and oversized instructions cannot be saved
+  ---
+  duration_ms: 0.565855
+  ...
+# Subtest: cancelled render and disposed controls cannot open editors or write saved data
+ok 613 - cancelled render and disposed controls cannot open editors or write saved data
+  ---
+  duration_ms: 0.28593
+  ...
+# Subtest: unsupported locales fall back to French and omitted instructions do not add an empty section
+ok 614 - unsupported locales fall back to French and omitted instructions do not add an empty section
+  ---
+  duration_ms: 0.215233
+  ...
+# Subtest: empty sources have no destination and a current singleton can be drawn only once
+ok 615 - empty sources have no destination and a current singleton can be drawn only once
+  ---
+  duration_ms: 2.14772
+  ...
+# Subtest: one distinct available record can be selected and source identity is retained
+ok 616 - one distinct available record can be selected and source identity is retained
+  ---
+  duration_ms: 0.360067
+  ...
+# Subtest: a context visits every candidate before starting a new cycle
+ok 617 - a context visits every candidate before starting a new cycle
+  ---
+  duration_ms: 0.668466
+  ...
+# Subtest: cycle boundaries do not immediately repeat the previous draw when another record exists
+ok 618 - cycle boundaries do not immediately repeat the previous draw when another record exists
+  ---
+  duration_ms: 0.506056
+  ...
+# Subtest: the displayed record is excluded and can be visited later when it is no longer current
+ok 619 - the displayed record is excluded and can be visited later when it is no longer current
+  ---
+  duration_ms: 0.508746
+  ...
+# Subtest: an unavailable current record at the end of a bag does not stall discovery
+ok 620 - an unavailable current record at the end of a bag does not stall discovery
+  ---
+  duration_ms: 0.281713
+  ...
+# Subtest: candidate changes preserve unvisited records, admit new ones and never return removed records
+ok 621 - candidate changes preserve unvisited records, admit new ones and never return removed records
+  ---
+  duration_ms: 0.430394
+  ...
+# Subtest: reordering or refreshing the same records preserves the bag and returns fresh objects
+ok 622 - reordering or refreshing the same records preserves the bag and returns fresh objects
+  ---
+  duration_ms: 0.247088
+  ...
+# Subtest: keys keep independent cycles and reset can target one context or all contexts
+ok 623 - keys keep independent cycles and reset can target one context or all contexts
+  ---
+  duration_ms: 0.473059
+  ...
+# Subtest: random boundaries and invalid samples always select an eligible record
+ok 624 - random boundaries and invalid samples always select an eligible record
+  ---
+  duration_ms: 1.211431
+  ...
+# Subtest: duplicate or malformed candidates do not bias bags and are never mutated
+ok 625 - duplicate or malformed candidates do not bias bags and are never mutated
+  ---
+  duration_ms: 0.384365
+  ...
+# Subtest: changes caused by filters never escape the currently supplied candidates
+ok 626 - changes caused by filters never escape the currently supplied candidates
+  ---
+  duration_ms: 0.659794
+  ...
+# Subtest: readiness is read-only and a singleton stays disabled after its first draw on its detail
+ok 627 - readiness is read-only and a singleton stays disabled after its first draw on its detail
+  ---
+  duration_ms: 0.232224
+  ...
+# Subtest: singleton readiness follows the current ID and keeps contexts independent
+ok 628 - singleton readiness follows the current ID and keeps contexts independent
+  ---
+  duration_ms: 0.292228
+  ...
+# Subtest: reading locks only the commands while preserving a plain accessible context
+ok 629 - reading locks only the commands while preserving a plain accessible context
+  ---
+  duration_ms: 2.571572
+  ...
+# Subtest: returning to a list restores interactive commands and hides the reading summary
+ok 630 - returning to a list restores interactive commands and hides the reading summary
+  ---
+  duration_ms: 1.259491
+  ...
+# Subtest: the globe destination stays at the final anchor throughout horizontal and vertical movement
+ok 631 - the globe destination stays at the final anchor throughout horizontal and vertical movement
+  ---
+  duration_ms: 0.719585
+  ...
+# Subtest: reversing an unfinished move starts from its displayed position without a jump
+ok 632 - reversing an unfinished move starts from its displayed position without a jump
+  ---
+  duration_ms: 0.488536
+  ...
+# Subtest: a queued completion from an older move cannot cancel its replacement
+ok 633 - a queued completion from an older move cannot cancel its replacement
+  ---
+  duration_ms: 0.672575
+  ...
+# Subtest: reapplying the same reading state cancels temporary movement without replaying it
+ok 634 - reapplying the same reading state cancels temporary movement without replaying it
+  ---
+  duration_ms: 0.505534
+  ...
+# Subtest: reduced motion applies both states immediately without creating an animation
+ok 635 - reduced motion applies both states immediately without creating an animation
+  ---
+  duration_ms: 0.31984
+  ...
+# Subtest: enabling reduced motion mid-move reveals the final layout and keeps the reading lock
+ok 636 - enabling reduced motion mid-move reveals the final layout and keeps the reading lock
+  ---
+  duration_ms: 0.660207
+  ...
+# Subtest: a later move can animate after reduced motion is disabled without an old rejection cancelling it
+ok 637 - a later move can animate after reduced motion is disabled without an old rejection cancelling it
+  ---
+  duration_ms: 1.716402
+  ...
+# Subtest: resize cancels the old visual offset and exposes the new final geometry
+ok 638 - resize cancels the old visual offset and exposes the new final geometry
+  ---
+  duration_ms: 0.955927
+  ...
+# Subtest: browsers without Element.animate still get an accessible locked context and correct return state
+ok 639 - browsers without Element.animate still get an accessible locked context and correct return state
+  ---
+  duration_ms: 0.405315
+  ...
+# (node:2102165) MaxListenersExceededWarning: Possible EventTarget memory leak detected. 11 abort listeners added to [AbortSignal]. MaxListeners is 10. Use events.setMaxListeners() to increase limit
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# (node:2102165) MaxListenersExceededWarning: Possible EventTarget memory leak detected. 11 abort listeners added to [AbortSignal]. MaxListeners is 10. Use events.setMaxListeners() to increase limit
+# (node:2102165) MaxListenersExceededWarning: Possible EventTarget memory leak detected. 11 abort listeners added to [AbortSignal]. MaxListeners is 10. Use events.setMaxListeners() to increase limit
+# (node:2102165) MaxListenersExceededWarning: Possible EventTarget memory leak detected. 11 abort listeners added to [AbortSignal]. MaxListeners is 10. Use events.setMaxListeners() to increase limit
+# (node:2102165) MaxListenersExceededWarning: Possible EventTarget memory leak detected. 11 abort listeners added to [AbortSignal]. MaxListeners is 10. Use events.setMaxListeners() to increase limit
+# Subtest: the menu opens on its current preference and one selection updates appearance, labels and focus
+ok 640 - the menu opens on its current preference and one selection updates appearance, labels and focus
+  ---
+  duration_ms: 7.850696
+  ...
+# Subtest: arrows, Home, End and Escape navigate the three choices without changing a preference prematurely
+ok 641 - arrows, Home, End and Escape navigate the three choices without changing a preference prematurely
+  ---
+  duration_ms: 1.359603
+  ...
+# Subtest: Tab closes before native traversal and outside pointer/focus dismiss without stealing focus
+ok 642 - Tab closes before native traversal and outside pointer/focus dismiss without stealing focus
+  ---
+  duration_ms: 1.116987
+  ...
+# Subtest: the selected System option and menu names are localized independently of the effective appearance
+ok 643 - the selected System option and menu names are localized independently of the effective appearance
+  ---
+  duration_ms: 0.902861
+  ...
+# Subtest: destroy closes the popup and removes its event handlers
+ok 644 - destroy closes the popup and removes its event handlers
+  ---
+  duration_ms: 0.883611
+  ...
+# Subtest: the established light default ignores the OS until System is explicitly chosen
+ok 645 - the established light default ignores the OS until System is explicitly chosen
+  ---
+  duration_ms: 1.769555
+  ...
+# Subtest: Light, Dark and System survive reloading without modifying study or archive preferences
+ok 646 - Light, Dark and System survive reloading without modifying study or archive preferences
+  ---
+  duration_ms: 0.313067
+  ...
+# Subtest: system changes update only the effective theme while the saved preference stays System
+ok 647 - system changes update only the effective theme while the saved preference stays System
+  ---
+  duration_ms: 0.995031
+  ...
+# Subtest: a preference change is observable even when the effective appearance is unchanged
+ok 648 - a preference change is observable even when the effective appearance is unchanged
+  ---
+  duration_ms: 0.216151
+  ...
+# Subtest: corrupt storage, unavailable storage and invalid choices do not break theme selection
+ok 649 - corrupt storage, unavailable storage and invalid choices do not break theme selection
+  ---
+  duration_ms: 0.336775
+  ...
+# Subtest: storage changes from another tab restore the shared preference and a cleared key restores light
+ok 650 - storage changes from another tab restore the shared preference and a cleared key restores light
+  ---
+  duration_ms: 0.311725
+  ...
+# Subtest: destroy releases OS and storage listeners, including legacy matchMedia listeners
+ok 651 - destroy releases OS and storage listeners, including legacy matchMedia listeners
+  ---
+  duration_ms: 0.218646
+  ...
+# Subtest: the pre-style bootstrap matches the model for all choices, OS states and invalid storage
+ok 652 - the pre-style bootstrap matches the model for all choices, OS states and invalid storage
+  ---
+  duration_ms: 7.06231
+  ...
+# Subtest: parents, opposite hemisphere and final view each need a fresh rendered and loaded frame
+ok 653 - parents, opposite hemisphere and final view each need a fresh rendered and loaded frame
+  ---
+  duration_ms: 6.779536
+  ...
+# Subtest: movement and source readiness still block after rendering
+ok 654 - movement and source readiness still block after rendering
+  ---
+  duration_ms: 1.252689
+  ...
+# Subtest: final camera is read again after parents so a resized layout is restored
+ok 655 - final camera is read again after parents so a resized layout is restored
+  ---
+  duration_ms: 1.507284
+  ...
+# Subtest: camera writes use the supplied navigation guard and never another map
+ok 656 - camera writes use the supplied navigation guard and never another map
+  ---
+  duration_ms: 0.91138
+  ...
+# Subtest: a resize during the final render prepares the new camera before ready
+ok 657 - a resize during the final render prepares the new camera before ready
+  ---
+  duration_ms: 0.908352
+  ...
+# Subtest: abort, local error and timeout clean every listener without advancing
+ok 658 - abort, local error and timeout clean every listener without advancing
+  ---
+  duration_ms: 10.156379
+  ...
+# Subtest: an unrelated source error does not fail local preparation
+ok 659 - an unrelated source error does not fail local preparation
+  ---
+  duration_ms: 0.717698
+  ...
+# Subtest: camera exceptions and synchronous readiness errors reject rather than publish ready
+ok 660 - camera exceptions and synchronous readiness errors reject rather than publish ready
+  ---
+  duration_ms: 1.650119
+  ...
+1..660
+# tests 660
+# suites 0
+# pass 660
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 6992.796061

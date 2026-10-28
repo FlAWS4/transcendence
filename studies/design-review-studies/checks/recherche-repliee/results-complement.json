@@ -1,0 +1,318 @@
+{
+ "id": "recherche-repliee",
+ "keyboard": {
+  "focusOnToggle": true,
+  "focusVisible": true,
+  "outline": "solid 2px 5px",
+  "opened": true,
+  "focusInField": true,
+  "closed": true,
+  "focusBack": true
+ },
+ "initial": {
+  "section": "projects",
+  "lang": "fr",
+  "dir": "ltr",
+  "theme": "light",
+  "toggle": {
+   "x": 672,
+   "y": 751,
+   "w": 44,
+   "h": 44
+  },
+  "die": {
+   "x": 724,
+   "y": 751,
+   "w": 44,
+   "h": 44
+  },
+  "name": "Rechercher dans Horizon",
+  "title": "Rechercher dans Horizon",
+  "label": "Chercher dans Horizon",
+  "labelDisplay": "none",
+  "icons": 1,
+  "iconDisplay": "block",
+  "color": "color(srgb 0.0455294 0.461294 0.465765)",
+  "dieColor": "color(srgb 0.0455294 0.461294 0.465765)",
+  "bg": "color(srgb 1 1 1 / 0.82)",
+  "dieBg": "color(srgb 1 1 1 / 0.82)",
+  "border": "color(srgb 1 1 1 / 0.72)",
+  "dieBorder": "color(srgb 1 1 1 / 0.72)",
+  "transitions": {
+   "toggle": "0s",
+   "die": "0s",
+   "icon": "0s"
+  }
+ },
+ "runtimeAr": {
+  "section": "projects",
+  "lang": "ar",
+  "dir": "rtl",
+  "theme": "light",
+  "toggle": {
+   "x": 724,
+   "y": 751,
+   "w": 44,
+   "h": 44
+  },
+  "die": {
+   "x": 672,
+   "y": 751,
+   "w": 44,
+   "h": 44
+  },
+  "name": "البحث في أفق",
+  "title": "البحث في أفق",
+  "label": "ابحث في أفق",
+  "labelDisplay": "none",
+  "icons": 1,
+  "iconDisplay": "block",
+  "color": "color(srgb 0.0455294 0.461294 0.465765)",
+  "dieColor": "color(srgb 0.0455294 0.461294 0.465765)",
+  "bg": "color(srgb 1 1 1 / 0.82)",
+  "dieBg": "color(srgb 1 1 1 / 0.82)",
+  "border": "color(srgb 1 1 1 / 0.72)",
+  "dieBorder": "color(srgb 1 1 1 / 0.72)",
+  "transitions": {
+   "toggle": "0s",
+   "die": "0s",
+   "icon": "0s"
+  }
+ },
+ "runtimeEnDark": {
+  "section": "projects",
+  "lang": "en",
+  "dir": "ltr",
+  "theme": "dark",
+  "toggle": {
+   "x": 672,
+   "y": 751,
+   "w": 44,
+   "h": 44
+  },
+  "die": {
+   "x": 724,
+   "y": 751,
+   "w": 44,
+   "h": 44
+  },
+  "name": "Search Horizon",
+  "title": "Search Horizon",
+  "label": "Search Horizon",
+  "labelDisplay": "none",
+  "icons": 1,
+  "iconDisplay": "block",
+  "color": "color(srgb 0.957647 0.522353 0.741176)",
+  "dieColor": "color(srgb 0.957647 0.522353 0.741176)",
+  "bg": "color(srgb 0.160784 0.160784 0.180392 / 0.82)",
+  "dieBg": "color(srgb 0.160784 0.160784 0.180392 / 0.82)",
+  "border": "color(srgb 1 1 1 / 0.25)",
+  "dieBorder": "color(srgb 1 1 1 / 0.25)",
+  "transitions": {
+   "toggle": "0s",
+   "die": "0s",
+   "icon": "0s"
+  }
+ },
+ "explorerAfterHash": {
+  "section": "explore",
+  "lang": "en",
+  "dir": "ltr",
+  "theme": "dark",
+  "toggle": {
+   "x": 594,
+   "y": 751,
+   "w": 200,
+   "h": 44
+  },
+  "die": {
+   "x": 802,
+   "y": 751,
+   "w": 44,
+   "h": 44
+  },
+  "name": "Search Horizon",
+  "title": "Search Horizon",
+  "label": "Search Horizon",
+  "labelDisplay": "block",
+  "icons": 1,
+  "iconDisplay": "none",
+  "color": "color(srgb 0.771373 0.829608 0.829608)",
+  "dieColor": "color(srgb 0.957647 0.522353 0.741176)",
+  "bg": "color(srgb 0.160784 0.160784 0.180392 / 0.82)",
+  "dieBg": "color(srgb 0.160784 0.160784 0.180392 / 0.82)",
+  "border": "color(srgb 1 1 1 / 0.25)",
+  "dieBorder": "color(srgb 1 1 1 / 0.25)",
+  "transitions": {
+   "toggle": "0s",
+   "die": "0s",
+   "icon": "0s"
+  }
+ },
+ "peopleAfterHash": {
+  "section": "people",
+  "lang": "en",
+  "dir": "ltr",
+  "theme": "dark",
+  "toggle": {
+   "x": 672,
+   "y": 751,
+   "w": 44,
+   "h": 44
+  },
+  "die": {
+   "x": 724,
+   "y": 751,
+   "w": 44,
+   "h": 44
+  },
+  "name": "Search Horizon",
+  "title": "Search Horizon",
+  "label": "Search Horizon",
+  "labelDisplay": "none",
+  "icons": 1,
+  "iconDisplay": "block",
+  "color": "color(srgb 0.957647 0.522353 0.741176)",
+  "dieColor": "color(srgb 0.957647 0.522353 0.741176)",
+  "bg": "color(srgb 0.160784 0.160784 0.180392 / 0.82)",
+  "dieBg": "color(srgb 0.160784 0.160784 0.180392 / 0.82)",
+  "border": "color(srgb 1 1 1 / 0.25)",
+  "dieBorder": "color(srgb 1 1 1 / 0.25)",
+  "transitions": {
+   "toggle": "0s",
+   "die": "0s",
+   "icon": "0s"
+  }
+ },
+ "reducedMotion": {
+  "toggle": "0s",
+  "die": "0s",
+  "icon": "0s"
+ },
+ "errorsRuntime": [],
+ "morph": {
+  "frames": 80,
+  "minGap": 8,
+  "maxGap": 8,
+  "widths": [
+   200,
+   44
+  ],
+  "samples": [
+   {
+    "t": 0,
+    "toggleW": 200,
+    "gap": 8
+   },
+   {
+    "t": 53,
+    "toggleW": 176.3,
+    "gap": 8
+   },
+   {
+    "t": 119,
+    "toggleW": 104.1,
+    "gap": 8
+   },
+   {
+    "t": 186,
+    "toggleW": 68,
+    "gap": 8
+   },
+   {
+    "t": 252,
+    "toggleW": 52.8,
+    "gap": 8
+   },
+   {
+    "t": 319,
+    "toggleW": 46.8,
+    "gap": 8
+   },
+   {
+    "t": 385,
+    "toggleW": 44.6,
+    "gap": 8
+   },
+   {
+    "t": 452,
+    "toggleW": 44,
+    "gap": 8
+   },
+   {
+    "t": 519,
+    "toggleW": 44,
+    "gap": 8
+   },
+   {
+    "t": 585,
+    "toggleW": 44,
+    "gap": 8
+   },
+   {
+    "t": 652,
+    "toggleW": 44,
+    "gap": 8
+   },
+   {
+    "t": 718,
+    "toggleW": 44,
+    "gap": 8
+   },
+   {
+    "t": 785,
+    "toggleW": 44,
+    "gap": 8
+   },
+   {
+    "t": 852,
+    "toggleW": 44,
+    "gap": 8
+   },
+   {
+    "t": 918,
+    "toggleW": 44,
+    "gap": 8
+   },
+   {
+    "t": 985,
+    "toggleW": 44,
+    "gap": 8
+   },
+   {
+    "t": 1052,
+    "toggleW": 44,
+    "gap": 8
+   },
+   {
+    "t": 1118,
+    "toggleW": 44,
+    "gap": 8
+   },
+   {
+    "t": 1185,
+    "toggleW": 44,
+    "gap": 8
+   },
+   {
+    "t": 1252,
+    "toggleW": 44,
+    "gap": 8
+   }
+  ],
+  "transitions": {
+   "toggle": "0.48s, 0.48s, 0.48s, 0.48s, 0.35s, 0.35s, 0.35s, 0.35s, 0.35s, 0.35s, 0.2s",
+   "die": "0.48s, 0.35s, 0.3s, 0.2s, 0.35s, 0.35s, 0.35s, 0.35s, 0.35s, 0s",
+   "icon": "0.16s, 0.4s"
+  }
+ },
+ "rtlSearch": {
+  "focusInField": true,
+  "results": 8,
+  "status": "عدد النتائج: 8",
+  "closed": true,
+  "focusBack": true
+ },
+ "errors": [],
+ "passed": true
+}

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="fr" data-theme="light">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <base href="../">
+ <title>Fiche Paris — fixture mobile</title>
+ <link rel="stylesheet" href="../shared/brand/tokens.css">
+ <link rel="stylesheet" href="../shared/assets/jost.css">
+ <link rel="stylesheet" href="welcome.css?v=b7">
+ <link rel="stylesheet" href="campus-details.css?v=7">
+ <link rel="stylesheet" href="scrollbars.css?v=1">
+</head>
+<body>
+ <dialog id="dialog" data-kind="campus" aria-labelledby="dialog-title">
+  <div class="dialog-top">
+   <span class="campus-sheet-handle" data-campus-sheet-handle aria-hidden="true"></span>
+   <h2 id="dialog-title">42 Paris</h2>
+   <button class="icon-button" id="close-dialog" aria-label="Fermer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+  </div>
+  <div id="dialog-content"></div>
+ </dialog>
+ <script type="module">
+  import {mountCampusDetails} from './campus-details.mjs?v=6';
+  const dialog=document.querySelector('#dialog');
+  const content=document.querySelector('#dialog-content');
+  const pause=milliseconds=>new Promise(resolve=>setTimeout(resolve,milliseconds));
+  let mounted=null;
+  const notify=(type,details)=>parent.postMessage({type,...details},location.origin);
+  const metrics=()=>{
+   const style=getComputedStyle(dialog),rect=dialog.getBoundingClientRect();
+   return {
+    viewport:`${innerWidth}×${innerHeight}`,open:dialog.open,
+    height:Number(rect.height.toFixed(2)),minHeight:style.minHeight,maxHeight:style.maxHeight,
+    expanded:dialog.dataset.expanded,dragging:dialog.dataset.dragging||null,
+    dragHeight:dialog.style.getPropertyValue('--campus-sheet-drag-height')||null,
+    scrollTop:dialog.scrollTop,scrollHeight:dialog.scrollHeight,
+   };
+  };
+  const clean=()=>!dialog.dataset.dragging&&!dialog.style.getPropertyValue('--campus-sheet-drag-height');
+  function touch(target,type,y,{x=150,count=type==='touchend'||type==='touchcancel'?0:1}={}) {
+   const point=new Touch({identifier:1,target,clientX:x,clientY:y,pageX:x,pageY:y,screenX:x,screenY:y});
+   const touches=count?[point]:[];
+   const event=new TouchEvent(type,{bubbles:true,cancelable:true,touches,targetTouches:touches,changedTouches:[point]});
+   target.dispatchEvent(event);
+   return event.defaultPrevented;
+  }
+  try {
+   const [network,sites,locales,profiles]=await Promise.all(['campuses.json','campus-websites.json','campus-website-locales.json','campus-profiles.json'].map(async path=>{
+    const response=await fetch(path);if(!response.ok)throw new Error(`${path}: HTTP ${response.status}`);return response.json();
+   }));
+   const campus={...network.campuses.find(item=>item.id==='paris'),websiteUrl:sites.campuses.paris.url,websiteLocales:locales.campuses.paris};
+   function open() {
+    mounted?.destroy();content.replaceChildren();
+    mounted=mountCampusDetails({container:content,campus,countryName:'France',locale:'fr',profile:profiles.campuses.paris,now:new Date('2026-10-08T12:00:00Z')});
+    if(!dialog.open)dialog.showModal();dialog.scrollTop=0;
+   }
+   dialog.addEventListener('close',()=>{mounted?.destroy();mounted=null;});
+   document.querySelector('#close-dialog').addEventListener('click',()=>dialog.close());
+   async function reset(expanded=false,scrollTop=0) {
+    open();dialog.dataset.expanded=String(expanded);await pause(420);dialog.scrollTop=scrollTop;await pause(30);
+   }
+   async function gesture(target,delta,{cancel=false}={}) {
+    touch(target,'touchstart',350);
+    await pause(50);
+    const prevented=touch(target,'touchmove',350+delta);
+    await pause(60);
+    const during=metrics();
+    touch(target,cancel?'touchcancel':'touchend',350+delta);
+    await pause(430);
+    return {prevented,during,after:metrics()};
+   }
+   window.campusSheetHarness={metrics,async run(name) {
+    let before,result,checks;
+    if(name==='expand'||name==='collapse'||name==='cancel'||name==='handle') {
+     const initialExpanded=name==='collapse'||name==='handle';
+     await reset(initialExpanded,name==='handle'?220:0);before=metrics();
+     const target=name==='handle'?dialog.querySelector('[data-campus-sheet-handle]'):dialog.querySelector('.campus-details-logo-slot');
+     result=await gesture(target,initialExpanded?80:-80,{cancel:name==='cancel'});
+     const expected=name==='expand';
+     checks={
+      intercepted:result.prevented,
+      followsFinger:Math.abs(result.during.height-(before.height+(initialExpanded?-80:80)))<2,
+      expectedExpanded:result.after.expanded===String(expected),
+      temporaryStylesRemoved:clean(),
+      scrollPreserved:name!=='handle'||result.after.scrollTop===before.scrollTop,
+     };
+    } else if(name==='reading') {
+     await reset(true,220);before=metrics();
+     const target=dialog.querySelector('.campus-details-contacts');
+     touch(target,'touchstart',350);
+     const first=touch(target,'touchmove',410);
+     // Synthetic TouchEvents do not perform native scrolling. Set the reading
+     // position explicitly to test that the same gesture is never seized.
+     dialog.scrollTop=0;
+     const second=touch(target,'touchmove',480);
+     const during=metrics();touch(target,'touchend',480);await pause(430);
+     result={prevented:[first,second],during,after:metrics()};
+     checks={nativeEventsNotPrevented:!first&&!second,stillExpanded:dialog.dataset.expanded==='true',sameHeight:Math.abs(result.after.height-before.height)<2,temporaryStylesRemoved:clean()};
+    } else if(name==='reopen') {
+     await reset(true,220);before=metrics();dialog.close();await pause(50);open();await pause(430);
+     result={after:metrics()};checks={open:dialog.open,collapsed:dialog.dataset.expanded==='false',readingStartsAtTop:dialog.scrollTop===0,temporaryStylesRemoved:clean()};
+    } else if(name==='photo') {
+     await reset();before=metrics();const button=dialog.querySelector('.campus-details-photo-next');
+     const previous=dialog.querySelector('.campus-details-photo-status').textContent;
+     result=await gesture(button,-80);button.click();
+     const next=dialog.querySelector('.campus-details-photo-status').textContent;
+     result.photoBefore=previous;result.photoAfter=next;
+     checks={touchNotIntercepted:!result.prevented,stillCollapsed:dialog.dataset.expanded==='false',buttonChangesPhoto:previous!==next,temporaryStylesRemoved:clean()};
+    } else throw new Error(`Scénario inconnu : ${name}`);
+    return {passed:Object.values(checks).every(Boolean),checks,before,...result};
+   }};
+   open();await pause(450);notify('campus-sheet-ready',{metrics:metrics()});
+  } catch(error) {notify('campus-sheet-error',{message:String(error.stack||error)});}
+ </script>
+</body>
+</html>

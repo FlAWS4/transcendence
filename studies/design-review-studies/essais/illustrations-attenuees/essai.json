@@ -1,0 +1,105 @@
+{
+ "id": "illustrations-attenuees",
+ "groupe": "Couleurs, thème sombre et illustrations",
+ "titre": "Illustrations atténuées en sombre",
+ "resume": "Alternative plus simple à « Illustrations adaptées au sombre » : en thème sombre seulement, les six illustrations fictives sont atténuées d’un bloc (luminosité 0,8, saturation 0,9) sans changer leurs couleurs ; portraits et photos restent intacts.",
+ "probleme": "En sombre, les couvertures restent claires et forment de grands blocs lumineux : luminance relative moyenne des zones d’illustration de 0,44 sur la liste Projets (1440 px), 0,77 sur la fiche ft_transcendence et 0,70 dans la visionneuse, pour un fond de page à 0,011.",
+ "changement": "essai.css : :root[data-theme=dark] svg[viewBox=\"0 0 800 500\"] { filter: brightness(.8) saturate(.9) }. Ce sélecteur ne vise que les six illustrations en ligne de content-preview-art.mjs (seuls SVG de 800 × 500), donc les cartes Projets et Chroniques, les grilles de projets des profils, les médias des fiches et la visionneuse. Les portraits, photos de campus, logos et images de médias sont des fichiers image et ne sont pas touchés. Aucun changement en clair.",
+ "decisionConcernee": "",
+ "alternativeDe": "illustrations-sombres",
+ "vues": [
+  {
+   "libelle": "Projets, ordinateur sombre",
+   "page": "content-preview.html",
+   "route": "projects",
+   "viewport": "ordinateur",
+   "theme": "dark",
+   "lang": "fr"
+  },
+  {
+   "libelle": "Fiche projet, ordinateur sombre",
+   "page": "content-preview.html",
+   "route": "projects/ft-transcendence-building-together",
+   "viewport": "ordinateur",
+   "theme": "dark",
+   "lang": "fr"
+  },
+  {
+   "libelle": "Chroniques, mobile sombre arabe",
+   "page": "content-preview.html",
+   "route": "journal",
+   "viewport": "mobile",
+   "theme": "dark",
+   "lang": "ar"
+  }
+ ],
+ "verifications": [
+  "Luminance relative moyenne des zones d’illustration en sombre, avant → après (contrôle rejoué le 14 octobre) : Projets ordinateur 0,445 → 0,272 ; Projets mobile 390 px 0,464 → 0,283 ; Projets 320 px 0,420 → 0,259 ; Chroniques ordinateur 0,276 → 0,169 ; Chroniques mobile arabe 0,255 → 0,156 ; fiche ft_transcendence 0,770 → 0,467 ; article 0,302 → 0,183 ; visionneuse 0,696 → 0,423 ; projets du profil de Leïla 0,581 → 0,353 (baisse d’environ 39 % partout).",
+  "Portraits et photos inchangés en sombre, au pixel près dans leurs rectangles et avec le même filtre calculé avant/après : 15 portraits de la liste Profils (page entière identique), portrait du profil de Leïla (page identique), schéma image des médias de minishell, et photo de 42 Paris dans la fiche campus ouverte depuis le vrai globe d’Explorer.",
+  "Thème clair identique au pixel près (0 pixel différent) sur Projets ordinateur, Chroniques mobile arabe, fiche ft_transcendence, visionneuse et projets du profil.",
+  "Changements sans rechargement par le menu du compte : filtre calculé brightness(0.8) saturate(0.9) → none en clair → brightness(0.8) saturate(0.9) au retour en sombre ; après le passage du français à l’arabe, les 12 couvertures reconstruites de Chroniques restent atténuées.",
+  "Aucun débordement horizontal (y compris à 320 × 640) ni erreur de console ; images, icônes et canevas gardent les mêmes filtres qu’avant l’essai sur Profils, le profil de Leïla et les médias de minishell ; captures sombres examinées (listes, fiche, visionneuse, profils, fiche campus)."
+ ],
+ "limites": [
+  "L’atténuation agit sur toute l’illustration : les accents 42 Blue et Royal Pink sont eux aussi assombris (composantes de couleur multipliées par 0,8) et légèrement désaturés, contrairement à illustrations-sombres qui les conserve.",
+  "Les couvertures restent nettement plus claires que le fond de page (luminance 0,27 à 0,47 contre 0,011) : c’est l’écart attendu entre cette variante légère et la variante recolorée (0,04 à 0,14).",
+  "Dans la fiche et la visionneuse, le fin contour hérité du socle est atténué avec l’illustration ; aucune autre différence.",
+  "Valeurs 0,8 et 0,9 reprises de la proposition de la revue, sans réglage fin ; pas d’écran physique."
+ ],
+ "fichiers": [
+  "essais/illustrations-attenuees/essai.css",
+  "essais/illustrations-attenuees/essai.mjs",
+  "essais/illustrations-attenuees/essai.json",
+  "checks/illustrations-attenuees/check.py",
+  "checks/illustrations-attenuees/results.json",
+  "checks/illustrations-attenuees/contre-verification.py",
+  "checks/illustrations-attenuees/contre-verification.json"
+ ],
+ "captures": [
+  {
+   "vue": "sombre-ordinateur",
+   "avant": "checks/illustrations-attenuees/avant-sombre-ordinateur.png",
+   "apres": "checks/illustrations-attenuees/apres-sombre-ordinateur.png"
+  },
+  {
+   "vue": "sombre-mobile",
+   "avant": "checks/illustrations-attenuees/avant-sombre-mobile.png",
+   "apres": "checks/illustrations-attenuees/apres-sombre-mobile.png"
+  },
+  {
+   "vue": "petit-sombre",
+   "avant": "checks/illustrations-attenuees/avant-petit-sombre.png",
+   "apres": "checks/illustrations-attenuees/apres-petit-sombre.png"
+  },
+  {
+   "vue": "chroniques-sombre-ordinateur",
+   "avant": "checks/illustrations-attenuees/avant-chroniques-sombre-ordinateur.png",
+   "apres": "checks/illustrations-attenuees/apres-chroniques-sombre-ordinateur.png"
+  },
+  {
+   "vue": "ar-mobile",
+   "avant": "checks/illustrations-attenuees/avant-ar-mobile.png",
+   "apres": "checks/illustrations-attenuees/apres-ar-mobile.png"
+  },
+  {
+   "vue": "fiche-sombre-ordinateur",
+   "avant": "checks/illustrations-attenuees/avant-fiche-sombre-ordinateur.png",
+   "apres": "checks/illustrations-attenuees/apres-fiche-sombre-ordinateur.png"
+  },
+  {
+   "vue": "visionneuse-sombre",
+   "avant": "checks/illustrations-attenuees/avant-visionneuse-sombre.png",
+   "apres": "checks/illustrations-attenuees/apres-visionneuse-sombre.png"
+  },
+  {
+   "vue": "profils-sombre",
+   "avant": "checks/illustrations-attenuees/avant-profils-sombre.png",
+   "apres": "checks/illustrations-attenuees/apres-profils-sombre.png"
+  },
+  {
+   "vue": "campus-sombre",
+   "avant": "checks/illustrations-attenuees/avant-campus-sombre.png",
+   "apres": "checks/illustrations-attenuees/apres-campus-sombre.png"
+  }
+ ]
+}

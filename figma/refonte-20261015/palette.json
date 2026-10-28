@@ -1,0 +1,1882 @@
+{
+ "source": "paires clair/sombre observées dans dom/*/ (234 états appariés)",
+ "vars": [
+  {
+   "name": "Contrôles/glass-edge",
+   "light": "#FFFFFFB8",
+   "dark": "#FFFFFF40",
+   "css": "--control-glass-edge",
+   "kinds": {
+    "bordure": 10656
+   },
+   "uses": 10656,
+   "areas": [
+    "_pipeline",
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "Contenus/line",
+   "light": "#1B1B1B1F",
+   "dark": "#FFFFFF1F",
+   "css": "--cp-line",
+   "kinds": {
+    "bordure": 9811,
+    "fond": 4
+   },
+   "uses": 9815,
+   "areas": [
+    "_pipeline",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "Rôles/logo",
+   "light": "#1B1B1B",
+   "dark": "#FFFFFF",
+   "css": "--h42-color-logo",
+   "kinds": {
+    "texte": 7723,
+    "icône": 899
+   },
+   "uses": 8622,
+   "areas": [
+    "_pipeline",
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "Rôles/muted",
+   "light": "#536163",
+   "dark": "#95B0B0",
+   "css": "--h42-color-muted",
+   "kinds": {
+    "texte": 5151,
+    "icône": 663,
+    "bordure": 152
+   },
+   "uses": 5966,
+   "areas": [
+    "_pipeline",
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "Primitives/pink",
+   "light": "#ED3491",
+   "dark": "#ED3491",
+   "css": "--h42-pink",
+   "kinds": {
+    "fond": 4193,
+    "bordure": 48,
+    "ombre": 12
+   },
+   "uses": 4253,
+   "areas": [
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/ombre/ED34911F-ED34911F",
+   "light": "#ED34911F",
+   "dark": "#ED34911F",
+   "css": null,
+   "kinds": {
+    "ombre": 4157
+   },
+   "uses": 4157,
+   "areas": [
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/bordure/FFFFFF-411F30",
+   "light": "#FFFFFF",
+   "dark": "#411F30",
+   "css": null,
+   "kinds": {
+    "bordure": 3800
+   },
+   "uses": 3800,
+   "areas": [
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "Verre lisible/text-accent",
+   "light": "#0C7677",
+   "dark": "#F485BD",
+   "css": "--readable-text-accent",
+   "kinds": {
+    "texte": 2348,
+    "icône": 576,
+    "bordure": 88,
+    "fond": 20
+   },
+   "uses": 3032,
+   "areas": [
+    "_pipeline",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "Rôles/surface",
+   "light": "#FFFFFF",
+   "dark": "#202026",
+   "css": "--h42-color-surface",
+   "kinds": {
+    "bordure": 1440,
+    "fond": 1432
+   },
+   "uses": 2872,
+   "areas": [
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/ombre/183D3C12-00000033",
+   "light": "#183D3C12",
+   "dark": "#00000033",
+   "css": null,
+   "kinds": {
+    "ombre": 2546
+   },
+   "uses": 2546,
+   "areas": [
+    "_pipeline",
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "Contrôles/glass-surface",
+   "light": "#FFFFFFD1",
+   "dark": "#29292ED1",
+   "css": "--control-glass-surface",
+   "kinds": {
+    "fond": 2516
+   },
+   "uses": 2516,
+   "areas": [
+    "_pipeline",
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/ombre/183D3C0B-00000022",
+   "light": "#183D3C0B",
+   "dark": "#00000022",
+   "css": null,
+   "kinds": {
+    "ombre": 2506
+   },
+   "uses": 2506,
+   "areas": [
+    "_pipeline",
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/ombre/FFFFFFB2-FFFFFF30",
+   "light": "#FFFFFFB2",
+   "dark": "#FFFFFF30",
+   "css": null,
+   "kinds": {
+    "ombre": 2506
+   },
+   "uses": 2506,
+   "areas": [
+    "_pipeline",
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "Verre lisible/glass-muted",
+   "light": "#455051",
+   "dark": "#C5D4D4",
+   "css": "--readable-glass-muted",
+   "kinds": {
+    "texte": 968,
+    "icône": 882
+   },
+   "uses": 1850,
+   "areas": [
+    "_pipeline",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/bordure/00BABC24-00BABC24",
+   "light": "#00BABC24",
+   "dark": "#00BABC24",
+   "css": null,
+   "kinds": {
+    "bordure": 1296
+   },
+   "uses": 1296,
+   "areas": [
+    "profiles",
+    "shell"
+   ]
+  },
+  {
+   "name": "Horizon/favorite-heart",
+   "light": "#E53935",
+   "dark": "#E53935",
+   "css": "--horizon-favorite-heart",
+   "kinds": {
+    "icône": 1210,
+    "texte": 18
+   },
+   "uses": 1228,
+   "areas": [
+    "_pipeline",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "Contrôles/glass-selection-edge",
+   "light": "#00BABC52",
+   "dark": "#ED349152",
+   "css": "--control-glass-selection-edge",
+   "kinds": {
+    "bordure": 920,
+    "ombre": 74
+   },
+   "uses": 994,
+   "areas": [
+    "_pipeline",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/ombre/183D3C08-1B1B1B00",
+   "light": "#183D3C08",
+   "dark": "#1B1B1B00",
+   "css": null,
+   "kinds": {
+    "ombre": 921
+   },
+   "uses": 921,
+   "areas": [
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/ombre/183D3C17-ED34911A",
+   "light": "#183D3C17",
+   "dark": "#ED34911A",
+   "css": null,
+   "kinds": {
+    "ombre": 920
+   },
+   "uses": 920,
+   "areas": [
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "Contenus/accent",
+   "light": "#008E90",
+   "dark": "#ED3491",
+   "css": "--cp-accent",
+   "kinds": {
+    "icône": 791,
+    "fond": 6
+   },
+   "uses": 797,
+   "areas": [
+    "_pipeline",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/icône/163E3D-163E3D",
+   "light": "#163E3D",
+   "dark": "#163E3D",
+   "css": null,
+   "kinds": {
+    "icône": 764
+   },
+   "uses": 764,
+   "areas": [
+    "_pipeline",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "Rôles/bg",
+   "light": "#F7FAFA",
+   "dark": "#1B1B1B",
+   "css": "--h42-color-bg",
+   "kinds": {
+    "dégradé": 468,
+    "bordure": 28,
+    "texte": 28,
+    "fond": 20
+   },
+   "uses": 544,
+   "areas": [
+    "_pipeline",
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "Rôles/access-accent",
+   "light": "#00BABC",
+   "dark": "#ED3491",
+   "css": "--h42-access-accent",
+   "kinds": {
+    "bordure": 264,
+    "fond": 76,
+    "icône": 26
+   },
+   "uses": 366,
+   "areas": [
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "Chaleur/soft",
+   "light": "#EAF5F4",
+   "dark": "#341E29",
+   "css": "--warm-soft",
+   "kinds": {
+    "fond": 349
+   },
+   "uses": 349,
+   "areas": [
+    "_pipeline",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/fond/EDFAFA-1E2B30",
+   "light": "#EDFAFA",
+   "dark": "#1E2B30",
+   "css": null,
+   "kinds": {
+    "fond": 348
+   },
+   "uses": 348,
+   "areas": [
+    "profiles",
+    "shell"
+   ]
+  },
+  {
+   "name": "Contrôles/glass-selection",
+   "light": "#00BABC30",
+   "dark": "#ED349138",
+   "css": "--control-glass-selection",
+   "kinds": {
+    "fond": 298
+   },
+   "uses": 298,
+   "areas": [
+    "_pipeline",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/bordure/AFBFBE-FFFFFF40",
+   "light": "#AFBFBE",
+   "dark": "#FFFFFF40",
+   "css": null,
+   "kinds": {
+    "bordure": 296
+   },
+   "uses": 296,
+   "areas": [
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/fond/F8E6EC-F8E6EC",
+   "light": "#F8E6EC",
+   "dark": "#F8E6EC",
+   "css": null,
+   "kinds": {
+    "fond": 290
+   },
+   "uses": 290,
+   "areas": [
+    "_pipeline",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/dégradé/00BABC00-1B1B1B00",
+   "light": "#00BABC00",
+   "dark": "#1B1B1B00",
+   "css": null,
+   "kinds": {
+    "dégradé": 280
+   },
+   "uses": 280,
+   "areas": [
+    "_pipeline",
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/dégradé/EC339100-1B1B1B00",
+   "light": "#EC339100",
+   "dark": "#1B1B1B00",
+   "css": null,
+   "kinds": {
+    "dégradé": 280
+   },
+   "uses": 280,
+   "areas": [
+    "_pipeline",
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/dégradé/FFFFFF-1B1B1B00",
+   "light": "#FFFFFF",
+   "dark": "#1B1B1B00",
+   "css": null,
+   "kinds": {
+    "dégradé": 280
+   },
+   "uses": 280,
+   "areas": [
+    "_pipeline",
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "Chaleur/line",
+   "light": "#DCE5E5",
+   "dark": "#411F30",
+   "css": "--warm-line",
+   "kinds": {
+    "bordure": 248,
+    "fond": 6
+   },
+   "uses": 254,
+   "areas": [
+    "explorer",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/dégradé/00000000-00BABC00",
+   "light": "#00000000",
+   "dark": "#00BABC00",
+   "css": null,
+   "kinds": {
+    "dégradé": 234
+   },
+   "uses": 234,
+   "areas": [
+    "_pipeline",
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/dégradé/00000000-ED349100",
+   "light": "#00000000",
+   "dark": "#ED349100",
+   "css": null,
+   "kinds": {
+    "dégradé": 234
+   },
+   "uses": 234,
+   "areas": [
+    "_pipeline",
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/dégradé/F7FAFA00-1B1B1B00",
+   "light": "#F7FAFA00",
+   "dark": "#1B1B1B00",
+   "css": null,
+   "kinds": {
+    "dégradé": 234
+   },
+   "uses": 234,
+   "areas": [
+    "_pipeline",
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/dégradé/F7FAFAD1-1B1B1BD1",
+   "light": "#F7FAFAD1",
+   "dark": "#1B1B1BD1",
+   "css": null,
+   "kinds": {
+    "dégradé": 234
+   },
+   "uses": 234,
+   "areas": [
+    "_pipeline",
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/fond/DAECE8-DAECE8",
+   "light": "#DAECE8",
+   "dark": "#DAECE8",
+   "css": null,
+   "kinds": {
+    "fond": 226
+   },
+   "uses": 226,
+   "areas": [
+    "_pipeline",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/icône/000000-FFFFFF",
+   "light": "#000000",
+   "dark": "#FFFFFF",
+   "css": null,
+   "kinds": {
+    "icône": 200
+   },
+   "uses": 200,
+   "areas": [
+    "_pipeline",
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/dégradé/F7FAFA-1B1B1B00",
+   "light": "#F7FAFA",
+   "dark": "#1B1B1B00",
+   "css": null,
+   "kinds": {
+    "dégradé": 162
+   },
+   "uses": 162,
+   "areas": [
+    "_pipeline",
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/ombre/183D3C06-1B1B1B00",
+   "light": "#183D3C06",
+   "dark": "#1B1B1B00",
+   "css": null,
+   "kinds": {
+    "ombre": 127
+   },
+   "uses": 127,
+   "areas": [
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "Rôles/soft",
+   "light": "#EAF5F4",
+   "dark": "#29292E",
+   "css": "--h42-color-soft",
+   "kinds": {
+    "fond": 123
+   },
+   "uses": 123,
+   "areas": [
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/dégradé/00000000-00BABC17",
+   "light": "#00000000",
+   "dark": "#00BABC17",
+   "css": null,
+   "kinds": {
+    "dégradé": 118
+   },
+   "uses": 118,
+   "areas": [
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/dégradé/00000000-ED349114",
+   "light": "#00000000",
+   "dark": "#ED349114",
+   "css": null,
+   "kinds": {
+    "dégradé": 118
+   },
+   "uses": 118,
+   "areas": [
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/dégradé/00BABC14-1B1B1B00",
+   "light": "#00BABC14",
+   "dark": "#1B1B1B00",
+   "css": null,
+   "kinds": {
+    "dégradé": 118
+   },
+   "uses": 118,
+   "areas": [
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/dégradé/EC33910D-1B1B1B00",
+   "light": "#EC33910D",
+   "dark": "#1B1B1B00",
+   "css": null,
+   "kinds": {
+    "dégradé": 118
+   },
+   "uses": 118,
+   "areas": [
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/dégradé/F4F8F8-1B1B1B00",
+   "light": "#F4F8F8",
+   "dark": "#1B1B1B00",
+   "css": null,
+   "kinds": {
+    "dégradé": 118
+   },
+   "uses": 118,
+   "areas": [
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/fond/DBECE7-DBECE7",
+   "light": "#DBECE7",
+   "dark": "#DBECE7",
+   "css": null,
+   "kinds": {
+    "fond": 118
+   },
+   "uses": 118,
+   "areas": [
+    "_pipeline",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/dégradé/00000000-00BABC14",
+   "light": "#00000000",
+   "dark": "#00BABC14",
+   "css": null,
+   "kinds": {
+    "dégradé": 116
+   },
+   "uses": 116,
+   "areas": [
+    "_pipeline",
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/dégradé/00000000-ED349112",
+   "light": "#00000000",
+   "dark": "#ED349112",
+   "css": null,
+   "kinds": {
+    "dégradé": 116
+   },
+   "uses": 116,
+   "areas": [
+    "_pipeline",
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/dégradé/00BABC12-1B1B1B00",
+   "light": "#00BABC12",
+   "dark": "#1B1B1B00",
+   "css": null,
+   "kinds": {
+    "dégradé": 116
+   },
+   "uses": 116,
+   "areas": [
+    "_pipeline",
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/dégradé/EC33910B-1B1B1B00",
+   "light": "#EC33910B",
+   "dark": "#1B1B1B00",
+   "css": null,
+   "kinds": {
+    "dégradé": 116
+   },
+   "uses": 116,
+   "areas": [
+    "_pipeline",
+    "entrance",
+    "explorer",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/bordure/DCE5E5-708383",
+   "light": "#DCE5E5",
+   "dark": "#708383",
+   "css": null,
+   "kinds": {
+    "bordure": 104
+   },
+   "uses": 104,
+   "areas": [
+    "entrance",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/ombre/183D3C12-1B1B1B00",
+   "light": "#183D3C12",
+   "dark": "#1B1B1B00",
+   "css": null,
+   "kinds": {
+    "ombre": 80
+   },
+   "uses": 80,
+   "areas": [
+    "entrance",
+    "shell"
+   ]
+  },
+  {
+   "name": "Primitives/ink",
+   "light": "#1B1B1B",
+   "dark": "#1B1B1B",
+   "css": "--h42-ink",
+   "kinds": {
+    "texte": 76
+   },
+   "uses": 76,
+   "areas": [
+    "entrance",
+    "journal",
+    "profiles",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/fond/203C40-203C40",
+   "light": "#203C40",
+   "dark": "#203C40",
+   "css": null,
+   "kinds": {
+    "fond": 72
+   },
+   "uses": 72,
+   "areas": [
+    "journal",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/fond/1A262D-1A262D",
+   "light": "#1A262D",
+   "dark": "#1A262D",
+   "css": null,
+   "kinds": {
+    "fond": 58
+   },
+   "uses": 58,
+   "areas": [
+    "_pipeline",
+    "projects",
+    "shell"
+   ]
+  },
+  {
+   "name": "Rôles/input-border",
+   "light": "#AFBFBE",
+   "dark": "#95B0B0",
+   "css": "--h42-color-input-border",
+   "kinds": {
+    "bordure": 48
+   },
+   "uses": 48,
+   "areas": [
+    "profiles",
+    "projects"
+   ]
+  },
+  {
+   "name": "dérivées/dégradé/00BABC0B-1B1B1B00",
+   "light": "#00BABC0B",
+   "dark": "#1B1B1B00",
+   "css": null,
+   "kinds": {
+    "dégradé": 46
+   },
+   "uses": 46,
+   "areas": [
+    "entrance"
+   ]
+  },
+  {
+   "name": "dérivées/dégradé/EC339108-1B1B1B00",
+   "light": "#EC339108",
+   "dark": "#1B1B1B00",
+   "css": null,
+   "kinds": {
+    "dégradé": 46
+   },
+   "uses": 46,
+   "areas": [
+    "entrance"
+   ]
+  },
+  {
+   "name": "dérivées/fond/00000000-1B1B1B",
+   "light": "#00000000",
+   "dark": "#1B1B1B",
+   "css": null,
+   "kinds": {
+    "fond": 46
+   },
+   "uses": 46,
+   "areas": [
+    "entrance"
+   ]
+  },
+  {
+   "name": "dérivées/bordure/FFFFFF-FFFFFF40",
+   "light": "#FFFFFF",
+   "dark": "#FFFFFF40",
+   "css": null,
+   "kinds": {
+    "bordure": 40
+   },
+   "uses": 40,
+   "areas": [
+    "profiles",
+    "projects"
+   ]
+  },
+  {
+   "name": "dérivées/fond/FFFFFF-1B1B1B00",
+   "light": "#FFFFFF",
+   "dark": "#1B1B1B00",
+   "css": null,
+   "kinds": {
+    "fond": 39
+   },
+   "uses": 39,
+   "areas": [
+    "entrance",
+    "projects"
+   ]
+  },
+  {
+   "name": "dérivées/bordure/00BABC-1B1B1B00",
+   "light": "#00BABC",
+   "dark": "#1B1B1B00",
+   "css": null,
+   "kinds": {
+    "bordure": 32
+   },
+   "uses": 32,
+   "areas": [
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/bordure/DCE5E5-1B1B1B00",
+   "light": "#DCE5E5",
+   "dark": "#1B1B1B00",
+   "css": null,
+   "kinds": {
+    "bordure": 32
+   },
+   "uses": 32,
+   "areas": [
+    "entrance"
+   ]
+  },
+  {
+   "name": "dérivées/bordure/DCE5E5-FFFFFF1F",
+   "light": "#DCE5E5",
+   "dark": "#FFFFFF1F",
+   "css": null,
+   "kinds": {
+    "bordure": 32
+   },
+   "uses": 32,
+   "areas": [
+    "entrance"
+   ]
+  },
+  {
+   "name": "dérivées/bordure/E7EEEE-1B1B1B00",
+   "light": "#E7EEEE",
+   "dark": "#1B1B1B00",
+   "css": null,
+   "kinds": {
+    "bordure": 32
+   },
+   "uses": 32,
+   "areas": [
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/bordure/FFFFFF-FFFFFF1F",
+   "light": "#FFFFFF",
+   "dark": "#FFFFFF1F",
+   "css": null,
+   "kinds": {
+    "bordure": 24
+   },
+   "uses": 24,
+   "areas": [
+    "profiles",
+    "projects"
+   ]
+  },
+  {
+   "name": "dérivées/icône/00000099-00000099",
+   "light": "#00000099",
+   "dark": "#00000099",
+   "css": null,
+   "kinds": {
+    "icône": 24
+   },
+   "uses": 24,
+   "areas": [
+    "journal",
+    "profiles",
+    "projects"
+   ]
+  },
+  {
+   "name": "dérivées/icône/2563EB-2563EB",
+   "light": "#2563EB",
+   "dark": "#2563EB",
+   "css": null,
+   "kinds": {
+    "icône": 24
+   },
+   "uses": 24,
+   "areas": [
+    "journal",
+    "projects"
+   ]
+  },
+  {
+   "name": "dérivées/icône/FFFFFF99-FFFFFF99",
+   "light": "#FFFFFF99",
+   "dark": "#FFFFFF99",
+   "css": null,
+   "kinds": {
+    "icône": 24
+   },
+   "uses": 24,
+   "areas": [
+    "journal",
+    "profiles",
+    "projects"
+   ]
+  },
+  {
+   "name": "dérivées/fond/17393829-1B1B1B38",
+   "light": "#17393829",
+   "dark": "#1B1B1B38",
+   "css": null,
+   "kinds": {
+    "fond": 20
+   },
+   "uses": 20,
+   "areas": [
+    "entrance",
+    "explorer",
+    "profiles",
+    "shell"
+   ]
+  },
+  {
+   "name": "Primitives/teal",
+   "light": "#00BABC",
+   "dark": "#00BABC",
+   "css": "--h42-teal",
+   "kinds": {
+    "icône": 16
+   },
+   "uses": 16,
+   "areas": [
+    "entrance"
+   ]
+  },
+  {
+   "name": "dérivées/bordure/00BABC4C-ED34914C",
+   "light": "#00BABC4C",
+   "dark": "#ED34914C",
+   "css": null,
+   "kinds": {
+    "bordure": 16
+   },
+   "uses": 16,
+   "areas": [
+    "explorer"
+   ]
+  },
+  {
+   "name": "dérivées/bordure/1B1B1B-00BABC",
+   "light": "#1B1B1B",
+   "dark": "#00BABC",
+   "css": null,
+   "kinds": {
+    "bordure": 16
+   },
+   "uses": 16,
+   "areas": [
+    "entrance"
+   ]
+  },
+  {
+   "name": "dérivées/fond/17393829-08101680",
+   "light": "#17393829",
+   "dark": "#08101680",
+   "css": null,
+   "kinds": {
+    "fond": 16
+   },
+   "uses": 16,
+   "areas": [
+    "profiles",
+    "projects"
+   ]
+  },
+  {
+   "name": "dérivées/texte/2563EB-2563EB",
+   "light": "#2563EB",
+   "dark": "#2563EB",
+   "css": null,
+   "kinds": {
+    "texte": 16
+   },
+   "uses": 16,
+   "areas": [
+    "journal",
+    "projects"
+   ]
+  },
+  {
+   "name": "dérivées/fond/ED349114-ED349114",
+   "light": "#ED349114",
+   "dark": "#ED349114",
+   "css": null,
+   "kinds": {
+    "fond": 12
+   },
+   "uses": 12,
+   "areas": [
+    "explorer",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/ombre/ED349112-ED349112",
+   "light": "#ED349112",
+   "dark": "#ED349112",
+   "css": null,
+   "kinds": {
+    "ombre": 12
+   },
+   "uses": 12,
+   "areas": [
+    "explorer",
+    "shell"
+   ]
+  },
+  {
+   "name": "Rôles/onInverse",
+   "light": "#FFFFFF",
+   "dark": "#1B1B1B",
+   "css": "--h42-color-onInverse",
+   "kinds": {
+    "texte": 4,
+    "fond": 4
+   },
+   "uses": 8,
+   "areas": [
+    "entrance",
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/fond/00000000-ED349138",
+   "light": "#00000000",
+   "dark": "#ED349138",
+   "css": null,
+   "kinds": {
+    "fond": 8
+   },
+   "uses": 8,
+   "areas": [
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/fond/00BABC30-1B1B1B00",
+   "light": "#00BABC30",
+   "dark": "#1B1B1B00",
+   "css": null,
+   "kinds": {
+    "fond": 8
+   },
+   "uses": 8,
+   "areas": [
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/fond/F2F7F7-29292E",
+   "light": "#F2F7F7",
+   "dark": "#29292E",
+   "css": null,
+   "kinds": {
+    "fond": 8
+   },
+   "uses": 8,
+   "areas": [
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/ombre/00000000-FFFFFF1F",
+   "light": "#00000000",
+   "dark": "#FFFFFF1F",
+   "css": null,
+   "kinds": {
+    "ombre": 8
+   },
+   "uses": 8,
+   "areas": [
+    "shell"
+   ]
+  },
+  {
+   "name": "dérivées/ombre/183D3C0A-1B1B1B00",
+   "light": "#183D3C0A",
+   "dark": "#1B1B1B00",
+   "css": null,
+   "kinds": {
+    "ombre": 8
+   },
+   "uses": 8,
+   "areas": [
+    "explorer"
+   ]
+  },
+  {
+   "name": "dérivées/texte/1B1B1B-00BABC",
+   "light": "#1B1B1B",
+   "dark": "#00BABC",
+   "css": null,
+   "kinds": {
+    "texte": 8
+   },
+   "uses": 8,
+   "areas": [
+    "entrance"
+   ]
+  },
+  {
+   "name": "dérivées/ombre/183D3C24-00000033",
+   "light": "#183D3C24",
+   "dark": "#00000033",
+   "css": null,
+   "kinds": {
+    "ombre": 6
+   },
+   "uses": 6,
+   "areas": [
+    "explorer"
+   ]
+  },
+  {
+   "name": "Contrôles/field-surface",
+   "light": "#FFFFFF24",
+   "dark": "#29292E24",
+   "css": "--control-field-surface",
+   "kinds": {
+    "fond": 4
+   },
+   "uses": 4,
+   "areas": [
+    "explorer"
+   ]
+  },
+  {
+   "name": "dérivées/bordure/00000000-411F30",
+   "light": "#00000000",
+   "dark": "#411F30",
+   "css": null,
+   "kinds": {
+    "bordure": 4
+   },
+   "uses": 4,
+   "areas": [
+    "projects"
+   ]
+  },
+  {
+   "name": "dérivées/bordure/FFFFFF-1B1B1B00",
+   "light": "#FFFFFF",
+   "dark": "#1B1B1B00",
+   "css": null,
+   "kinds": {
+    "bordure": 4
+   },
+   "uses": 4,
+   "areas": [
+    "projects"
+   ]
+  },
+  {
+   "name": "dérivées/fond/17393829-1B1B1B1F",
+   "light": "#17393829",
+   "dark": "#1B1B1B1F",
+   "css": null,
+   "kinds": {
+    "fond": 4
+   },
+   "uses": 4,
+   "areas": [
+    "explorer"
+   ]
+  },
+  {
+   "name": "dérivées/fond/1B1B1B-00BABC",
+   "light": "#1B1B1B",
+   "dark": "#00BABC",
+   "css": null,
+   "kinds": {
+    "fond": 4
+   },
+   "uses": 4,
+   "areas": [
+    "entrance"
+   ]
+  },
+  {
+   "name": "dérivées/fond/1D1D1F-1D1D1F",
+   "light": "#1D1D1F",
+   "dark": "#1D1D1F",
+   "css": null,
+   "kinds": {
+    "fond": 4
+   },
+   "uses": 4,
+   "areas": [
+    "explorer"
+   ]
+  },
+  {
+   "name": "dérivées/fond/E8F9F9-322230",
+   "light": "#E8F9F9",
+   "dark": "#322230",
+   "css": null,
+   "kinds": {
+    "fond": 4
+   },
+   "uses": 4,
+   "areas": [
+    "explorer"
+   ]
+  },
+  {
+   "name": "dérivées/ombre/00000011-00000011",
+   "light": "#00000011",
+   "dark": "#00000011",
+   "css": null,
+   "kinds": {
+    "ombre": 4
+   },
+   "uses": 4,
+   "areas": [
+    "projects"
+   ]
+  },
+  {
+   "name": "dérivées/ombre/FFFFFF14-FFFFFF14",
+   "light": "#FFFFFF14",
+   "dark": "#FFFFFF14",
+   "css": null,
+   "kinds": {
+    "ombre": 4
+   },
+   "uses": 4,
+   "areas": [
+    "explorer"
+   ]
+  },
+  {
+   "name": "dérivées/texte/007F81-ED3491",
+   "light": "#007F81",
+   "dark": "#ED3491",
+   "css": null,
+   "kinds": {
+    "texte": 4
+   },
+   "uses": 4,
+   "areas": [
+    "explorer"
+   ]
+  },
+  {
+   "name": "Rôles/link",
+   "light": "#04809F",
+   "dark": "#00BABC",
+   "css": "--h42-color-link",
+   "kinds": {
+    "texte": 2
+   },
+   "uses": 2,
+   "areas": [
+    "explorer"
+   ]
+  },
+  {
+   "name": "dérivées/fond/17393829-081016B8",
+   "light": "#17393829",
+   "dark": "#081016B8",
+   "css": null,
+   "kinds": {
+    "fond": 2
+   },
+   "uses": 2,
+   "areas": [
+    "projects"
+   ]
+  },
+  {
+   "name": "dérivées/fond/1B1B1B61-1B1B1B61",
+   "light": "#1B1B1B61",
+   "dark": "#1B1B1B61",
+   "css": null,
+   "kinds": {
+    "fond": 2
+   },
+   "uses": 2,
+   "areas": [
+    "explorer"
+   ]
+  },
+  {
+   "name": "dérivées/fond/FFFFFF-202026CC",
+   "light": "#FFFFFF",
+   "dark": "#202026CC",
+   "css": null,
+   "kinds": {
+    "fond": 2
+   },
+   "uses": 2,
+   "areas": [
+    "explorer"
+   ]
+  },
+  {
+   "name": "dérivées/ombre/183D3C0D-1B1B1B00",
+   "light": "#183D3C0D",
+   "dark": "#1B1B1B00",
+   "css": null,
+   "kinds": {
+    "ombre": 2
+   },
+   "uses": 2,
+   "areas": [
+    "explorer"
+   ]
+  },
+  {
+   "name": "dérivées/fond/00000000-202026",
+   "light": "#00000000",
+   "dark": "#202026",
+   "css": null,
+   "kinds": {
+    "fond": 1
+   },
+   "uses": 1,
+   "areas": [
+    "projects"
+   ]
+  },
+  {
+   "name": "dérivées/ombre/00000000-ED34911A",
+   "light": "#00000000",
+   "dark": "#ED34911A",
+   "css": null,
+   "kinds": {
+    "ombre": 1
+   },
+   "uses": 1,
+   "areas": [
+    "projects"
+   ]
+  },
+  {
+   "name": "dérivées/ombre/183D3C17-1B1B1B00",
+   "light": "#183D3C17",
+   "dark": "#1B1B1B00",
+   "css": null,
+   "kinds": {
+    "ombre": 1
+   },
+   "uses": 1,
+   "areas": [
+    "projects"
+   ]
+  }
+ ],
+ "map": {
+  "bordure|#FFFFFFB8|#FFFFFF40": "Contrôles/glass-edge",
+  "bordure|#1B1B1B1F|#FFFFFF1F": "Contenus/line",
+  "texte|#1B1B1B|#FFFFFF": "Rôles/logo",
+  "texte|#536163|#95B0B0": "Rôles/muted",
+  "fond|#ED3491|#ED3491": "Primitives/pink",
+  "ombre|#ED34911F|#ED34911F": "dérivées/ombre/ED34911F-ED34911F",
+  "bordure|#FFFFFF|#411F30": "dérivées/bordure/FFFFFF-411F30",
+  "ombre|#183D3C12|#00000033": "dérivées/ombre/183D3C12-00000033",
+  "fond|#FFFFFFD1|#29292ED1": "Contrôles/glass-surface",
+  "ombre|#FFFFFFB2|#FFFFFF30": "dérivées/ombre/FFFFFFB2-FFFFFF30",
+  "ombre|#183D3C0B|#00000022": "dérivées/ombre/183D3C0B-00000022",
+  "texte|#0C7677|#F485BD": "Verre lisible/text-accent",
+  "bordure|#FFFFFF|#202026": "Rôles/surface",
+  "fond|#FFFFFF|#202026": "Rôles/surface",
+  "bordure|#00BABC24|#00BABC24": "dérivées/bordure/00BABC24-00BABC24",
+  "icône|#E53935|#E53935": "Horizon/favorite-heart",
+  "texte|#455051|#C5D4D4": "Verre lisible/glass-muted",
+  "ombre|#183D3C08|#1B1B1B00": "dérivées/ombre/183D3C08-1B1B1B00",
+  "bordure|#00BABC52|#ED349152": "Contrôles/glass-selection-edge",
+  "ombre|#183D3C17|#ED34911A": "dérivées/ombre/183D3C17-ED34911A",
+  "icône|#1B1B1B|#FFFFFF": "Rôles/logo",
+  "icône|#455051|#C5D4D4": "Verre lisible/glass-muted",
+  "icône|#008E90|#ED3491": "Contenus/accent",
+  "icône|#163E3D|#163E3D": "dérivées/icône/163E3D-163E3D",
+  "icône|#536163|#95B0B0": "Rôles/muted",
+  "icône|#0C7677|#F485BD": "Verre lisible/text-accent",
+  "dégradé|#F7FAFA|#1B1B1B": "Rôles/bg",
+  "fond|#EAF5F4|#341E29": "Chaleur/soft",
+  "fond|#EDFAFA|#1E2B30": "dérivées/fond/EDFAFA-1E2B30",
+  "fond|#00BABC30|#ED349138": "Contrôles/glass-selection",
+  "bordure|#AFBFBE|#FFFFFF40": "dérivées/bordure/AFBFBE-FFFFFF40",
+  "fond|#F8E6EC|#F8E6EC": "dérivées/fond/F8E6EC-F8E6EC",
+  "dégradé|#00BABC00|#1B1B1B00": "dérivées/dégradé/00BABC00-1B1B1B00",
+  "dégradé|#EC339100|#1B1B1B00": "dérivées/dégradé/EC339100-1B1B1B00",
+  "dégradé|#FFFFFF|#1B1B1B00": "dérivées/dégradé/FFFFFF-1B1B1B00",
+  "bordure|#00BABC|#ED3491": "Rôles/access-accent",
+  "bordure|#DCE5E5|#411F30": "Chaleur/line",
+  "dégradé|#F7FAFAD1|#1B1B1BD1": "dérivées/dégradé/F7FAFAD1-1B1B1BD1",
+  "dégradé|#F7FAFA00|#1B1B1B00": "dérivées/dégradé/F7FAFA00-1B1B1B00",
+  "dégradé|#00000000|#ED349100": "dérivées/dégradé/00000000-ED349100",
+  "dégradé|#00000000|#00BABC00": "dérivées/dégradé/00000000-00BABC00",
+  "fond|#DAECE8|#DAECE8": "dérivées/fond/DAECE8-DAECE8",
+  "icône|#000000|#FFFFFF": "dérivées/icône/000000-FFFFFF",
+  "dégradé|#F7FAFA|#1B1B1B00": "dérivées/dégradé/F7FAFA-1B1B1B00",
+  "bordure|#536163|#95B0B0": "Rôles/muted",
+  "ombre|#183D3C06|#1B1B1B00": "dérivées/ombre/183D3C06-1B1B1B00",
+  "fond|#EAF5F4|#29292E": "Rôles/soft",
+  "fond|#DBECE7|#DBECE7": "dérivées/fond/DBECE7-DBECE7",
+  "dégradé|#00BABC14|#1B1B1B00": "dérivées/dégradé/00BABC14-1B1B1B00",
+  "dégradé|#EC33910D|#1B1B1B00": "dérivées/dégradé/EC33910D-1B1B1B00",
+  "dégradé|#F4F8F8|#1B1B1B00": "dérivées/dégradé/F4F8F8-1B1B1B00",
+  "dégradé|#00000000|#ED349114": "dérivées/dégradé/00000000-ED349114",
+  "dégradé|#00000000|#00BABC17": "dérivées/dégradé/00000000-00BABC17",
+  "dégradé|#00BABC12|#1B1B1B00": "dérivées/dégradé/00BABC12-1B1B1B00",
+  "dégradé|#EC33910B|#1B1B1B00": "dérivées/dégradé/EC33910B-1B1B1B00",
+  "dégradé|#00000000|#ED349112": "dérivées/dégradé/00000000-ED349112",
+  "dégradé|#00000000|#00BABC14": "dérivées/dégradé/00000000-00BABC14",
+  "bordure|#DCE5E5|#708383": "dérivées/bordure/DCE5E5-708383",
+  "bordure|#0C7677|#F485BD": "Verre lisible/text-accent",
+  "ombre|#183D3C12|#1B1B1B00": "dérivées/ombre/183D3C12-1B1B1B00",
+  "fond|#00BABC|#ED3491": "Rôles/access-accent",
+  "texte|#1B1B1B|#1B1B1B": "Primitives/ink",
+  "ombre|#00BABC52|#ED349152": "Contrôles/glass-selection-edge",
+  "fond|#203C40|#203C40": "dérivées/fond/203C40-203C40",
+  "fond|#1A262D|#1A262D": "dérivées/fond/1A262D-1A262D",
+  "bordure|#ED3491|#ED3491": "Primitives/pink",
+  "bordure|#AFBFBE|#95B0B0": "Rôles/input-border",
+  "fond|#00000000|#1B1B1B": "dérivées/fond/00000000-1B1B1B",
+  "dégradé|#00BABC0B|#1B1B1B00": "dérivées/dégradé/00BABC0B-1B1B1B00",
+  "dégradé|#EC339108|#1B1B1B00": "dérivées/dégradé/EC339108-1B1B1B00",
+  "bordure|#FFFFFF|#FFFFFF40": "dérivées/bordure/FFFFFF-FFFFFF40",
+  "fond|#FFFFFF|#1B1B1B00": "dérivées/fond/FFFFFF-1B1B1B00",
+  "bordure|#DCE5E5|#1B1B1B00": "dérivées/bordure/DCE5E5-1B1B1B00",
+  "bordure|#DCE5E5|#FFFFFF1F": "dérivées/bordure/DCE5E5-FFFFFF1F",
+  "bordure|#00BABC|#1B1B1B00": "dérivées/bordure/00BABC-1B1B1B00",
+  "bordure|#E7EEEE|#1B1B1B00": "dérivées/bordure/E7EEEE-1B1B1B00",
+  "bordure|#F7FAFA|#1B1B1B": "Rôles/bg",
+  "texte|#F7FAFA|#1B1B1B": "Rôles/bg",
+  "icône|#00BABC|#ED3491": "Rôles/access-accent",
+  "icône|#00000099|#00000099": "dérivées/icône/00000099-00000099",
+  "icône|#FFFFFF99|#FFFFFF99": "dérivées/icône/FFFFFF99-FFFFFF99",
+  "icône|#2563EB|#2563EB": "dérivées/icône/2563EB-2563EB",
+  "bordure|#FFFFFF|#FFFFFF1F": "dérivées/bordure/FFFFFF-FFFFFF1F",
+  "fond|#17393829|#1B1B1B38": "dérivées/fond/17393829-1B1B1B38",
+  "fond|#F7FAFA|#1B1B1B": "Rôles/bg",
+  "fond|#0C7677|#F485BD": "Verre lisible/text-accent",
+  "texte|#E53935|#E53935": "Horizon/favorite-heart",
+  "bordure|#1B1B1B|#00BABC": "dérivées/bordure/1B1B1B-00BABC",
+  "icône|#00BABC|#00BABC": "Primitives/teal",
+  "bordure|#00BABC4C|#ED34914C": "dérivées/bordure/00BABC4C-ED34914C",
+  "texte|#2563EB|#2563EB": "dérivées/texte/2563EB-2563EB",
+  "fond|#17393829|#08101680": "dérivées/fond/17393829-08101680",
+  "fond|#ED349114|#ED349114": "dérivées/fond/ED349114-ED349114",
+  "ombre|#ED349112|#ED349112": "dérivées/ombre/ED349112-ED349112",
+  "ombre|#ED3491|#ED3491": "Primitives/pink",
+  "texte|#1B1B1B|#00BABC": "dérivées/texte/1B1B1B-00BABC",
+  "ombre|#183D3C0A|#1B1B1B00": "dérivées/ombre/183D3C0A-1B1B1B00",
+  "fond|#00BABC30|#1B1B1B00": "dérivées/fond/00BABC30-1B1B1B00",
+  "fond|#00000000|#ED349138": "dérivées/fond/00000000-ED349138",
+  "fond|#F2F7F7|#29292E": "dérivées/fond/F2F7F7-29292E",
+  "ombre|#00000000|#FFFFFF1F": "dérivées/ombre/00000000-FFFFFF1F",
+  "ombre|#183D3C24|#00000033": "dérivées/ombre/183D3C24-00000033",
+  "fond|#DCE5E5|#411F30": "Chaleur/line",
+  "fond|#008E90|#ED3491": "Contenus/accent",
+  "fond|#1B1B1B|#00BABC": "dérivées/fond/1B1B1B-00BABC",
+  "texte|#FFFFFF|#1B1B1B": "Rôles/onInverse",
+  "fond|#17393829|#1B1B1B1F": "dérivées/fond/17393829-1B1B1B1F",
+  "fond|#1D1D1F|#1D1D1F": "dérivées/fond/1D1D1F-1D1D1F",
+  "fond|#E8F9F9|#322230": "dérivées/fond/E8F9F9-322230",
+  "texte|#007F81|#ED3491": "dérivées/texte/007F81-ED3491",
+  "fond|#FFFFFF24|#29292E24": "Contrôles/field-surface",
+  "ombre|#FFFFFF14|#FFFFFF14": "dérivées/ombre/FFFFFF14-FFFFFF14",
+  "fond|#1B1B1B1F|#FFFFFF1F": "Contenus/line",
+  "ombre|#00000011|#00000011": "dérivées/ombre/00000011-00000011",
+  "bordure|#00000000|#411F30": "dérivées/bordure/00000000-411F30",
+  "bordure|#FFFFFF|#1B1B1B00": "dérivées/bordure/FFFFFF-1B1B1B00",
+  "fond|#FFFFFF|#1B1B1B": "Rôles/onInverse",
+  "texte|#04809F|#00BABC": "Rôles/link",
+  "fond|#1B1B1B61|#1B1B1B61": "dérivées/fond/1B1B1B61-1B1B1B61",
+  "fond|#FFFFFF|#202026CC": "dérivées/fond/FFFFFF-202026CC",
+  "ombre|#183D3C0D|#1B1B1B00": "dérivées/ombre/183D3C0D-1B1B1B00",
+  "fond|#17393829|#081016B8": "dérivées/fond/17393829-081016B8",
+  "fond|#00000000|#202026": "dérivées/fond/00000000-202026",
+  "ombre|#00000000|#ED34911A": "dérivées/ombre/00000000-ED34911A",
+  "ombre|#183D3C17|#1B1B1B00": "dérivées/ombre/183D3C17-1B1B1B00"
+ },
+ "fallback": {
+  "dégradé|#F7FAFA": "#1B1B1B",
+  "dégradé|#F7FAFAD1": "#1B1B1BD1",
+  "dégradé|#F7FAFA00": "#1B1B1B00",
+  "dégradé|#00BABC12": "#1B1B1B00",
+  "dégradé|#00BABC00": "#1B1B1B00",
+  "dégradé|#EC33910B": "#1B1B1B00",
+  "dégradé|#EC339100": "#1B1B1B00",
+  "dégradé|#FFFFFF": "#1B1B1B00",
+  "dégradé|#00000000": "#ED349100",
+  "icône|#000000": "#FFFFFF",
+  "texte|#1B1B1B": "#FFFFFF",
+  "fond|#FFFFFFD1": "#29292ED1",
+  "bordure|#FFFFFFB8": "#FFFFFF40",
+  "ombre|#183D3C12": "#00000033",
+  "ombre|#FFFFFFB2": "#FFFFFF30",
+  "ombre|#183D3C0B": "#00000022",
+  "icône|#1B1B1B": "#FFFFFF",
+  "fond|#00BABC30": "#ED349138",
+  "bordure|#00BABC52": "#ED349152",
+  "icône|#455051": "#C5D4D4",
+  "texte|#455051": "#C5D4D4",
+  "icône|#0C7677": "#F485BD",
+  "texte|#536163": "#95B0B0",
+  "fond|#F8E6EC": "#F8E6EC",
+  "icône|#163E3D": "#163E3D",
+  "texte|#0C7677": "#F485BD",
+  "bordure|#1B1B1B1F": "#FFFFFF1F",
+  "icône|#008E90": "#ED3491",
+  "fond|#EAF5F4": "#341E29",
+  "icône|#E53935": "#E53935",
+  "fond|#DBECE7": "#DBECE7",
+  "fond|#1A262D": "#1A262D",
+  "fond|#DAECE8": "#DAECE8",
+  "icône|#536163": "#95B0B0",
+  "fond|#00000000": "#1B1B1B",
+  "dégradé|#00BABC0B": "#1B1B1B00",
+  "dégradé|#EC339108": "#1B1B1B00",
+  "fond|#00BABC": "#ED3491",
+  "bordure|#00BABC": "#ED3491",
+  "fond|#FFFFFF": "#202026",
+  "bordure|#DCE5E5": "#411F30",
+  "dégradé|#00BABC14": "#1B1B1B00",
+  "dégradé|#EC33910D": "#1B1B1B00",
+  "dégradé|#F4F8F8": "#1B1B1B00",
+  "fond|#1B1B1B": "#00BABC",
+  "texte|#FFFFFF": "#1B1B1B",
+  "bordure|#1B1B1B": "#00BABC",
+  "bordure|#FFFFFF": "#411F30",
+  "ombre|#183D3C06": "#1B1B1B00",
+  "fond|#17393829": "#1B1B1B38",
+  "icône|#00BABC": "#ED3491",
+  "ombre|#183D3C17": "#ED34911A",
+  "ombre|#183D3C08": "#1B1B1B00",
+  "fond|#ED3491": "#ED3491",
+  "ombre|#ED34911F": "#ED34911F",
+  "texte|#04809F": "#00BABC",
+  "fond|#ED349114": "#ED349114",
+  "bordure|#ED3491": "#ED3491",
+  "ombre|#ED349112": "#ED349112",
+  "ombre|#ED3491": "#ED3491",
+  "ombre|#183D3C24": "#00000033",
+  "ombre|#183D3C0A": "#1B1B1B00",
+  "fond|#1D1D1F": "#1D1D1F",
+  "fond|#E8F9F9": "#322230",
+  "texte|#007F81": "#ED3491",
+  "bordure|#00BABC4C": "#ED34914C",
+  "fond|#DCE5E5": "#411F30",
+  "bordure|#AFBFBE": "#FFFFFF40",
+  "ombre|#00BABC52": "#ED349152",
+  "fond|#F7FAFA": "#1B1B1B",
+  "fond|#1B1B1B61": "#1B1B1B61",
+  "ombre|#183D3C0D": "#1B1B1B00",
+  "fond|#FFFFFF24": "#29292E24",
+  "ombre|#FFFFFF14": "#FFFFFF14",
+  "icône|#00000099": "#00000099",
+  "icône|#FFFFFF99": "#FFFFFF99",
+  "icône|#2563EB": "#2563EB",
+  "texte|#2563EB": "#2563EB",
+  "texte|#E53935": "#E53935",
+  "fond|#203C40": "#203C40",
+  "fond|#EDFAFA": "#1E2B30",
+  "bordure|#00BABC24": "#00BABC24",
+  "bordure|#536163": "#95B0B0",
+  "fond|#0C7677": "#F485BD",
+  "bordure|#0C7677": "#F485BD",
+  "bordure|#F7FAFA": "#1B1B1B",
+  "texte|#F7FAFA": "#1B1B1B",
+  "fond|#008E90": "#ED3491",
+  "fond|#1B1B1B1F": "#FFFFFF1F",
+  "ombre|#00000011": "#00000011",
+  "bordure|#00000000": "#411F30",
+  "ombre|#00000000": "#FFFFFF1F",
+  "fond|#F2F7F7": "#29292E",
+  "bordure|#E7EEEE": "#1B1B1B00"
+ }
+}

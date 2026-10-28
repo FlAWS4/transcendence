@@ -1,0 +1,68 @@
+{
+  "passed": false,
+  "cases": [
+    {
+      "case": "message-dialog-fr",
+      "result": {
+        "noDemoLabels": true,
+        "noOverflow": true
+      }
+    },
+    {
+      "case": "report-dialog-fr",
+      "result": {
+        "noDemoLabels": true,
+        "noOverflow": true
+      }
+    },
+    {
+      "case": "comments-form-fr",
+      "result": {
+        "noDemoLabels": true,
+        "noOverflow": true
+      }
+    },
+    {
+      "case": "failure",
+      "result": {
+        "errors": [],
+        "text": "H\nO\nR\nI\nZ\nO\nN\nExplorer\nProjets\nProfils\nChroniques\n42 Awards\nChercher dans Horizon\nContexte géographique : Monde\nMonde\nRetour aux projets\nDerrière une ligne de commande\n42 Paris\n3 oct. 2026\nFavoris\nSignaler\nExplorer 42 Paris\nVue d’ensemble\nRéalisation\nMédias\nTester le projet\nCommentaires\nVue d’ensemble\n$ ./minishell\nIllustration du projet\n\nCe visuel accompagne le projet.\n\nÀ propos du projet\n\nUn petit shell, et toutes les questions qui se cachent entre une commande et son résultat.\n\nTechnologies et savoir-faire\nC\nPOSIX\nParsing\nÉquipe\n\nCréé par\n\nLeïla Mansour\nProgrammation système et apprentissage entre pairs\nNoé Laurent\nSpécialisation en cours · Systèmes et outils\n\nProjets · Le monde"
+      }
+    }
+  ],
+  "sourcesBefore": {
+    "index.html": "0ea73df62e32d659c55f01e60e6c5ac1f7cdf62900a1a084aa8301fce0dce177",
+    "content-preview.html": "a9da7763c904db97fc7305cbb327a3014f09eeea466ab96a864af87d6dcdb383",
+    "welcome.mjs": "d7a56728594b5ecdbc0357e943d238c12a76f28bc737ffe7da33bc534924e1d3",
+    "entrance.mjs": "7e5046be82716bdecbb97226e542755591d70c4acc8c75f5fdcfd9cfa70588cc",
+    "entrance.css": "80d4d561f6e19263f394fa6b4307808bfb96da09cdd9659dd83ddbb7f1dd094e",
+    "dock-navigation.css": "68b395258995146cc483beae15fb175bb77a7e6153845bfa2954e654861fdaa3",
+    "account-menu.mjs": "e1ab9b624798ac2ec8a96803fb4143b02e0da740137a7ed6557c13b93439aa6b",
+    "comments.mjs": "c654fa522c6ca33ef6f778ded7ebd37eab3794bfc0f722a30f4c0968199782fa",
+    "content-report.mjs": "2d413c4a5c79ca571e9353e241133f5adbc61ae173cea59d7fdff333534db36d",
+    "content-preview-data.mjs": "6a2e713d810c36509ea2be1b581db2511767d92f01e86883c6a154c64bd16474",
+    "project-trial.mjs": "e64e1f539bea6dc4a179a83c8aaf1c4a052228cb6acedc44978fabd72490ea60",
+    "profile-ui.mjs": "dd97fee7ff693e95197ec9d20e644d1e196a9f58d141257a1f09362e47251701",
+    "project-ui.mjs": "743604c272a630875f7a777b056e6edddbb91b6438216f24067074f252145693",
+    "journal-ui.mjs": "e92541eedd23754f75a81474dfdb72ecb1c2b8fdaa881ffc7a21dead8b596f67",
+    "content-controls.mjs": "8b6ecf298b8cbdeadc8337434bf88192e8a471ec77c2037873b17b2fadd4b0c4"
+  },
+  "sourcesAfter": {
+    "index.html": "0ea73df62e32d659c55f01e60e6c5ac1f7cdf62900a1a084aa8301fce0dce177",
+    "content-preview.html": "a9da7763c904db97fc7305cbb327a3014f09eeea466ab96a864af87d6dcdb383",
+    "welcome.mjs": "d7a56728594b5ecdbc0357e943d238c12a76f28bc737ffe7da33bc534924e1d3",
+    "entrance.mjs": "7e5046be82716bdecbb97226e542755591d70c4acc8c75f5fdcfd9cfa70588cc",
+    "entrance.css": "80d4d561f6e19263f394fa6b4307808bfb96da09cdd9659dd83ddbb7f1dd094e",
+    "dock-navigation.css": "68b395258995146cc483beae15fb175bb77a7e6153845bfa2954e654861fdaa3",
+    "account-menu.mjs": "e1ab9b624798ac2ec8a96803fb4143b02e0da740137a7ed6557c13b93439aa6b",
+    "comments.mjs": "c654fa522c6ca33ef6f778ded7ebd37eab3794bfc0f722a30f4c0968199782fa",
+    "content-report.mjs": "2d413c4a5c79ca571e9353e241133f5adbc61ae173cea59d7fdff333534db36d",
+    "content-preview-data.mjs": "6a2e713d810c36509ea2be1b581db2511767d92f01e86883c6a154c64bd16474",
+    "project-trial.mjs": "e64e1f539bea6dc4a179a83c8aaf1c4a052228cb6acedc44978fabd72490ea60",
+    "profile-ui.mjs": "dd97fee7ff693e95197ec9d20e644d1e196a9f58d141257a1f09362e47251701",
+    "project-ui.mjs": "743604c272a630875f7a777b056e6edddbb91b6438216f24067074f252145693",
+    "journal-ui.mjs": "e92541eedd23754f75a81474dfdb72ecb1c2b8fdaa881ffc7a21dead8b596f67",
+    "content-controls.mjs": "8b6ecf298b8cbdeadc8337434bf88192e8a471ec77c2037873b17b2fadd4b0c4"
+  },
+  "limits": "Map blocked; no message/report/comment sent to any external service."
+}

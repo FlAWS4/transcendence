@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-13",
+  "passed": true,
+  "tests": 47,
+  "pass": 47,
+  "fail": 0,
+  "files": 3,
+  "results": [
+    {
+      "file": "entrance.test.mjs",
+      "exitCode": 0,
+      "tests": 30,
+      "pass": 30,
+      "fail": 0,
+      "sha256": "ac4c9cc93cd9fca95b31ac05918601ea7cd8545d7d122a5882d83f70e3332c30"
+    },
+    {
+      "file": "tests/account-menu.test.mjs",
+      "exitCode": 0,
+      "tests": 9,
+      "pass": 9,
+      "fail": 0,
+      "sha256": "a0452c2824c68fb6b57ec7eb31c81ec2095288d648eb60a4e676cbc6766534a5"
+    },
+    {
+      "file": "tests/theme-preferences.test.mjs",
+      "exitCode": 0,
+      "tests": 8,
+      "pass": 8,
+      "fail": 0,
+      "sha256": "e427b2efb9b0bf25f09dd69ffafbdd879e4b618953795e2cd5880907fa5c974c"
+    }
+  ],
+  "syntaxChecks": {
+    "entrance.mjs": 0,
+    "welcome.mjs": 0
+  },
+  "sources": {
+    "entrance.mjs": "a99899d40a7f8cbaf434fa1cff4654d3abf35bd2c737a99c65bfc2bfd5278984",
+    "entrance.css": "1adda0abf677d2eceea4fbb74619ee5b0416867e65891635ac8f19d873d409ad",
+    "welcome.mjs": "ccc6a24a0cb12437f3dd477de1fcc9d40db24b00dd3e549ade6a4825be55fea0"
+  },
+  "sourceChangedDuringChecks": [],
+  "scope": "Private entrance-label cycle leaves site language and direction unchanged. Existing animation regressions retained; language/pause tests adapted; added Arabic label versus French dialog, site locale initialization and text-only/reduced-motion animation cases. Dimensions are verified separately in a real browser."
+}

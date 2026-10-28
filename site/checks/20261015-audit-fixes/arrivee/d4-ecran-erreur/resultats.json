@@ -1,0 +1,2074 @@
+{
+ "script": "d4_ecran_erreur.py",
+ "runs": {
+  "145-1280-clair": {
+   "arrival": {
+    "account": {
+     "display": "none",
+     "visibility": "visible"
+    },
+    "toggle": {
+     "hidden": false,
+     "display": "block"
+    },
+    "entry": "scanning",
+    "theme": {
+     "theme": "light",
+     "account": "none"
+    }
+   },
+   "phases": [
+    {
+     "why": "start",
+     "entry": "scanning",
+     "account": "none",
+     "profile": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "toggleHidden": false,
+     "dialogOpen": false,
+     "t": 856
+    },
+    {
+     "why": "data-entry",
+     "entry": "opening",
+     "account": "none",
+     "profile": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "toggleHidden": true,
+     "dialogOpen": false,
+     "t": 1183
+    },
+    {
+     "why": "data-entry",
+     "entry": "ring",
+     "account": "none",
+     "profile": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "toggleHidden": true,
+     "dialogOpen": false,
+     "t": 1787
+    },
+    {
+     "why": "data-entry",
+     "entry": "waiting",
+     "account": "none",
+     "profile": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "toggleHidden": true,
+     "dialogOpen": false,
+     "t": 2587
+    },
+    {
+     "why": "data-entry",
+     "entry": "error",
+     "account": "block",
+     "profile": [
+      1188,
+      40,
+      44,
+      44
+     ],
+     "toggleHidden": true,
+     "dialogOpen": false,
+     "t": 2590
+    }
+   ],
+   "error": {
+    "entry": "error",
+    "theme": "light",
+    "preference": "light",
+    "lang": "fr",
+    "dir": "ltr",
+    "status": "Le monde n’a pas pu se préparer.",
+    "buttons": [
+     "Réessayer",
+     "Revenir au message",
+     "Continuer sans le globe"
+    ],
+    "buttonRects": [
+     [
+      337,
+      481,
+      129,
+      54
+     ],
+     [
+      489,
+      481,
+      201,
+      54
+     ],
+     [
+      714,
+      481,
+      229,
+      54
+     ]
+    ],
+    "statusRect": [
+     533,
+     433,
+     213,
+     24
+    ],
+    "account": {
+     "display": "block",
+     "visibility": "visible"
+    },
+    "profile": {
+     "rect": [
+      1188,
+      40,
+      44,
+      44
+     ],
+     "hit": "#profile",
+     "label": "Menu du compte"
+    },
+    "overlapWithErrorContent": false,
+    "toggle": {
+     "hidden": true,
+     "display": "none"
+    },
+    "entrance": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "image": "radial-gradient(at 74% 46%, rgba(0, 186, 188, 0.043), rgba(0",
+     "hidden": false
+    },
+    "menuHidden": true,
+    "active": "Réessayer",
+    "errors": []
+   },
+   "panel": {
+    "home": {
+     "open": true,
+     "rect": [
+      948,
+      92,
+      284,
+      335
+     ],
+     "title": "Menu du compte",
+     "items": [
+      {
+       "text": "Fermer",
+       "action": "close",
+       "hit": true
+      },
+      {
+       "text": "Se connecter",
+       "action": "signin",
+       "hit": true
+      },
+      {
+       "text": "Créer un compte",
+       "action": "signup",
+       "hit": true
+      },
+      {
+       "text": "Paramètres",
+       "action": "settings",
+       "hit": true
+      },
+      {
+       "text": "ThèmeClair",
+       "action": "theme",
+       "hit": true
+      },
+      {
+       "text": "LangueFrançais",
+       "action": "language",
+       "hit": true
+      }
+     ]
+    },
+    "settings": {
+     "open": true,
+     "rect": [
+      948,
+      92,
+      284,
+      409
+     ],
+     "title": "Paramètres",
+     "items": [
+      {
+       "text": "Retour",
+       "action": "back",
+       "hit": true
+      },
+      {
+       "text": "Fermer",
+       "action": "close",
+       "hit": true
+      },
+      {
+       "text": "Clair",
+       "action": "light",
+       "hit": true
+      },
+      {
+       "text": "Sombre",
+       "action": "dark",
+       "hit": true
+      },
+      {
+       "text": "Système",
+       "action": "system",
+       "hit": true
+      },
+      {
+       "text": "Français",
+       "action": "fr",
+       "hit": true
+      },
+      {
+       "text": "English",
+       "action": "en",
+       "hit": true
+      },
+      {
+       "text": "العربية",
+       "action": "ar",
+       "hit": true
+      }
+     ]
+    },
+    "theme-dark": {
+     "entry": "error",
+     "theme": "dark",
+     "preference": "dark",
+     "lang": "fr",
+     "dir": "ltr",
+     "status": "Le monde n’a pas pu se préparer.",
+     "buttons": [
+      "Réessayer",
+      "Revenir au message",
+      "Continuer sans le globe"
+     ],
+     "buttonRects": [
+      [
+       337,
+       481,
+       129,
+       54
+      ],
+      [
+       489,
+       481,
+       201,
+       54
+      ],
+      [
+       714,
+       481,
+       229,
+       54
+      ]
+     ],
+     "statusRect": [
+      533,
+      433,
+      213,
+      24
+     ],
+     "account": {
+      "display": "block",
+      "visibility": "visible"
+     },
+     "profile": {
+      "rect": [
+       1188,
+       40,
+       44,
+       44
+      ],
+      "hit": "#profile",
+      "label": "Menu du compte"
+     },
+     "overlapWithErrorContent": false,
+     "toggle": {
+      "hidden": true,
+      "display": "none"
+     },
+     "entrance": {
+      "bg": "rgb(27, 27, 27)",
+      "image": "none",
+      "hidden": false
+     },
+     "menuHidden": false,
+     "active": "Sombre",
+     "errors": []
+    },
+    "locale-en": {
+     "entry": "error",
+     "theme": "dark",
+     "preference": "dark",
+     "lang": "en",
+     "dir": "ltr",
+     "status": "The world could not be prepared.",
+     "buttons": [
+      "Try again",
+      "Back to the message",
+      "Continue without the globe"
+     ],
+     "buttonRects": [
+      [
+       326,
+       481,
+       123,
+       54
+      ],
+      [
+       473,
+       481,
+       204,
+       54
+      ],
+      [
+       701,
+       481,
+       253,
+       54
+      ]
+     ],
+     "statusRect": [
+      533,
+      433,
+      214,
+      24
+     ],
+     "account": {
+      "display": "block",
+      "visibility": "visible"
+     },
+     "profile": {
+      "rect": [
+       1188,
+       40,
+       44,
+       44
+      ],
+      "hit": "#profile",
+      "label": "Account menu"
+     },
+     "overlapWithErrorContent": false,
+     "toggle": {
+      "hidden": true,
+      "display": "none"
+     },
+     "entrance": {
+      "bg": "rgb(27, 27, 27)",
+      "image": "none",
+      "hidden": false
+     },
+     "menuHidden": false,
+     "active": "English",
+     "errors": []
+    },
+    "settingsAfterLocale": {
+     "open": true,
+     "rect": [
+      948,
+      92,
+      284,
+      409
+     ],
+     "title": "Settings",
+     "items": [
+      {
+       "text": "Back",
+       "action": "back",
+       "hit": true
+      },
+      {
+       "text": "Close",
+       "action": "close",
+       "hit": true
+      },
+      {
+       "text": "Light",
+       "action": "light",
+       "hit": true
+      },
+      {
+       "text": "Dark",
+       "action": "dark",
+       "hit": true
+      },
+      {
+       "text": "System",
+       "action": "system",
+       "hit": true
+      },
+      {
+       "text": "Français",
+       "action": "fr",
+       "hit": true
+      },
+      {
+       "text": "English",
+       "action": "en",
+       "hit": true
+      },
+      {
+       "text": "العربية",
+       "action": "ar",
+       "hit": true
+      }
+     ]
+    },
+    "afterEscape": {
+     "entry": "error",
+     "theme": "dark",
+     "preference": "dark",
+     "lang": "en",
+     "dir": "ltr",
+     "status": "The world could not be prepared.",
+     "buttons": [
+      "Try again",
+      "Back to the message",
+      "Continue without the globe"
+     ],
+     "buttonRects": [
+      [
+       326,
+       481,
+       123,
+       54
+      ],
+      [
+       473,
+       481,
+       204,
+       54
+      ],
+      [
+       701,
+       481,
+       253,
+       54
+      ]
+     ],
+     "statusRect": [
+      533,
+      433,
+      214,
+      24
+     ],
+     "account": {
+      "display": "block",
+      "visibility": "visible"
+     },
+     "profile": {
+      "rect": [
+       1188,
+       40,
+       44,
+       44
+      ],
+      "hit": "#profile",
+      "label": "Account menu"
+     },
+     "overlapWithErrorContent": false,
+     "toggle": {
+      "hidden": true,
+      "display": "none"
+     },
+     "entrance": {
+      "bg": "rgb(27, 27, 27)",
+      "image": "none",
+      "hidden": false
+     },
+     "menuHidden": true,
+     "active": "profile",
+     "errors": []
+    }
+   },
+   "welcome": {
+    "entry": "welcome",
+    "lang": "en",
+    "theme": "dark",
+    "account": "block",
+    "profileHit": true,
+    "errors": []
+   }
+  },
+  "145-1280-panneau-depuis-erreur": {
+   "signin": {
+    "panelButton": "Se connecter",
+    "afterClick": {
+     "entry": "scanning",
+     "dialogOpen": true,
+     "kind": "login",
+     "title": "Connexion — prototype",
+     "buttons": [
+      "Simuler une connexion réussie",
+      "Annuler"
+     ],
+     "account": "none",
+     "menuHidden": true,
+     "toggleHidden": false,
+     "access": [
+      "entry-login",
+      "entry-guest"
+     ],
+     "active": "close-dialog"
+    },
+    "phases": [
+     {
+      "why": "start",
+      "entry": "error",
+      "account": "block",
+      "profile": [
+       1188,
+       40,
+       44,
+       44
+      ],
+      "toggleHidden": true,
+      "dialogOpen": false,
+      "t": 3618
+     },
+     {
+      "why": "data-entry",
+      "entry": "scanning",
+      "account": "none",
+      "profile": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "toggleHidden": false,
+      "dialogOpen": true,
+      "t": 4099
+     },
+     {
+      "why": "data-entry",
+      "entry": "scanning",
+      "account": "none",
+      "profile": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "toggleHidden": false,
+      "dialogOpen": true,
+      "t": 4099
+     },
+     {
+      "why": "data-entry",
+      "entry": "encrypted",
+      "account": "none",
+      "profile": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "toggleHidden": false,
+      "dialogOpen": false,
+      "t": 6423
+     },
+     {
+      "why": "data-entry",
+      "entry": "encrypted",
+      "account": "none",
+      "profile": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "toggleHidden": false,
+      "dialogOpen": false,
+      "t": 6423
+     }
+    ],
+    "afterCancel": {
+     "entry": "scanning",
+     "active": "BODY",
+     "site": "fr",
+     "theme": "light",
+     "toggleHidden": false,
+     "account": "none",
+     "label": "fr"
+    },
+    "labelChangesAfterCancel": [
+     {
+      "dtMs": 3799,
+      "lang": "en",
+      "active": "BODY"
+     }
+    ],
+    "errors": []
+   },
+   "signup": {
+    "panelButton": "Créer un compte",
+    "afterClick": {
+     "entry": "encrypted",
+     "dialogOpen": true,
+     "kind": "signup",
+     "title": "Création de compte simulée",
+     "buttons": [
+      "Simuler la création du compte",
+      "Annuler"
+     ],
+     "account": "none",
+     "menuHidden": true,
+     "toggleHidden": false,
+     "access": [
+      "entry-login",
+      "entry-guest"
+     ],
+     "active": "close-dialog"
+    },
+    "phases": [
+     {
+      "why": "start",
+      "entry": "error",
+      "account": "block",
+      "profile": [
+       1188,
+       40,
+       44,
+       44
+      ],
+      "toggleHidden": true,
+      "dialogOpen": false,
+      "t": 12039
+     },
+     {
+      "why": "data-entry",
+      "entry": "encrypted",
+      "account": "none",
+      "profile": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "toggleHidden": false,
+      "dialogOpen": true,
+      "t": 12514
+     },
+     {
+      "why": "data-entry",
+      "entry": "encrypted",
+      "account": "none",
+      "profile": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "toggleHidden": false,
+      "dialogOpen": true,
+      "t": 12514
+     },
+     {
+      "why": "data-entry",
+      "entry": "encrypted",
+      "account": "none",
+      "profile": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "toggleHidden": false,
+      "dialogOpen": true,
+      "t": 12514
+     },
+     {
+      "why": "data-entry",
+      "entry": "encrypted",
+      "account": "none",
+      "profile": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "toggleHidden": false,
+      "dialogOpen": true,
+      "t": 12514
+     }
+    ],
+    "afterCancel": {
+     "entry": "encrypted",
+     "active": "BODY",
+     "site": "fr",
+     "theme": "light",
+     "toggleHidden": false,
+     "account": "none",
+     "label": "en"
+    },
+    "labelChangesAfterCancel": [
+     {
+      "dtMs": 3801,
+      "lang": "ar",
+      "active": "BODY"
+     }
+    ],
+    "errors": []
+   }
+  },
+  "145-1280-membre": {
+   "phases": [
+    {
+     "why": "start",
+     "entry": "scanning",
+     "account": "none",
+     "profile": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "toggleHidden": false,
+     "dialogOpen": false,
+     "t": 660
+    },
+    {
+     "why": "data-entry",
+     "entry": "decrypting",
+     "account": "none",
+     "profile": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "toggleHidden": true,
+     "dialogOpen": false,
+     "t": 3995
+    },
+    {
+     "why": "data-entry",
+     "entry": "slogan",
+     "account": "none",
+     "profile": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "toggleHidden": true,
+     "dialogOpen": false,
+     "t": 7178
+    },
+    {
+     "why": "data-entry",
+     "entry": "opening",
+     "account": "none",
+     "profile": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "toggleHidden": true,
+     "dialogOpen": false,
+     "t": 8477
+    },
+    {
+     "why": "data-entry",
+     "entry": "ring",
+     "account": "none",
+     "profile": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "toggleHidden": true,
+     "dialogOpen": false,
+     "t": 9077
+    },
+    {
+     "why": "data-entry",
+     "entry": "waiting",
+     "account": "none",
+     "profile": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "toggleHidden": true,
+     "dialogOpen": false,
+     "t": 9894
+    },
+    {
+     "why": "data-entry",
+     "entry": "error",
+     "account": "block",
+     "profile": [
+      1188,
+      40,
+      44,
+      44
+     ],
+     "toggleHidden": true,
+     "dialogOpen": false,
+     "t": 9897
+    }
+   ],
+   "error": {
+    "entry": "error",
+    "theme": "light",
+    "preference": "light",
+    "lang": "fr",
+    "dir": "ltr",
+    "status": "Le monde n’a pas pu se préparer.",
+    "buttons": [
+     "Réessayer",
+     "Revenir au message",
+     "Continuer sans le globe"
+    ],
+    "buttonRects": [
+     [
+      337,
+      481,
+      129,
+      54
+     ],
+     [
+      489,
+      479,
+      201,
+      54
+     ],
+     [
+      714,
+      481,
+      229,
+      54
+     ]
+    ],
+    "statusRect": [
+     533,
+     433,
+     213,
+     24
+    ],
+    "account": {
+     "display": "block",
+     "visibility": "visible"
+    },
+    "profile": {
+     "rect": [
+      1188,
+      40,
+      44,
+      44
+     ],
+     "hit": "#profile",
+     "label": "Menu du compte"
+    },
+    "overlapWithErrorContent": false,
+    "toggle": {
+     "hidden": true,
+     "display": "none"
+    },
+    "entrance": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "image": "radial-gradient(at 74% 46%, rgba(0, 186, 188, 0.043), rgba(0",
+     "hidden": false
+    },
+    "menuHidden": true,
+    "active": "Réessayer",
+    "errors": []
+   },
+   "panel": {
+    "open": true,
+    "rect": [
+     948,
+     92,
+     284,
+     335
+    ],
+    "title": "Menu du compte",
+    "items": [
+     {
+      "text": "Fermer",
+      "action": "close",
+      "hit": true
+     },
+     {
+      "text": "Se connecter",
+      "action": "signin",
+      "hit": true
+     },
+     {
+      "text": "Créer un compte",
+      "action": "signup",
+      "hit": true
+     },
+     {
+      "text": "Paramètres",
+      "action": "settings",
+      "hit": true
+     },
+     {
+      "text": "ThèmeClair",
+      "action": "theme",
+      "hit": true
+     },
+     {
+      "text": "LangueFrançais",
+      "action": "language",
+      "hit": true
+     }
+    ]
+   },
+   "welcome": {
+    "account": "block",
+    "profileLabel": "Compte · Leïla Mansour",
+    "errors": []
+   },
+   "signinFromMemberError": {
+    "entry": "encrypted",
+    "dialogOpen": true,
+    "title": "Connexion — prototype",
+    "scene": "Message chiffré",
+    "access": [
+     "entry-login",
+     "entry-guest"
+    ],
+    "accessHidden": false,
+    "account": "none"
+   },
+   "afterCancelFromMemberError": {
+    "entry": "encrypted",
+    "site": "fr",
+    "dir": "ltr",
+    "theme": "light",
+    "login": {
+     "lang": "en",
+     "text": "Sign in",
+     "buttonLang": "en",
+     "ariaDescription": "Languages rotate automatically. Hovering or focusing the buttons pauses the changes.",
+     "slots": 1,
+     "spans": 5,
+     "rect": [
+      468.421875,
+      605,
+      159.578125,
+      52
+     ],
+     "hover": false
+    },
+    "guest": {
+     "lang": "en",
+     "text": "Visit",
+     "buttonLang": "en",
+     "ariaDescription": "Languages rotate automatically. Hovering or focusing the buttons pauses the changes.",
+     "slots": 1,
+     "spans": 5,
+     "rect": [
+      652,
+      605,
+      159.578125,
+      52
+     ],
+     "hover": false
+    },
+    "active": "BODY",
+    "focusVisible": false,
+    "dialogOpen": false,
+    "accessHover": false,
+    "toggleHidden": false,
+    "account": "none",
+    "errors": [],
+    "now": 16666.40000000596,
+    "labelChanges": [
+     {
+      "dtMs": 3808,
+      "lang": "en",
+      "active": "BODY"
+     }
+    ],
+    "phases": [
+     {
+      "why": "start",
+      "entry": "error",
+      "account": "block",
+      "profile": [
+       1188,
+       40,
+       44,
+       44
+      ],
+      "toggleHidden": true,
+      "dialogOpen": false,
+      "t": 10292
+     },
+     {
+      "why": "data-entry",
+      "entry": "encrypted",
+      "account": "none",
+      "profile": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "toggleHidden": false,
+      "dialogOpen": true,
+      "t": 10781
+     },
+     {
+      "why": "data-entry",
+      "entry": "encrypted",
+      "account": "none",
+      "profile": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "toggleHidden": false,
+      "dialogOpen": true,
+      "t": 10781
+     }
+    ]
+   }
+  },
+  "144-1280-clair": {
+   "arrival": {
+    "account": {
+     "display": "none",
+     "visibility": "visible"
+    },
+    "toggle": {
+     "hidden": false,
+     "display": "block"
+    },
+    "entry": "scanning",
+    "theme": {
+     "theme": "light",
+     "account": "none"
+    }
+   },
+   "phases": [
+    {
+     "why": "start",
+     "entry": "scanning",
+     "account": "none",
+     "profile": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "toggleHidden": false,
+     "dialogOpen": false,
+     "t": 891
+    },
+    {
+     "why": "data-entry",
+     "entry": "opening",
+     "account": "none",
+     "profile": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "toggleHidden": true,
+     "dialogOpen": false,
+     "t": 1082
+    },
+    {
+     "why": "data-entry",
+     "entry": "ring",
+     "account": "none",
+     "profile": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "toggleHidden": true,
+     "dialogOpen": false,
+     "t": 1684
+    },
+    {
+     "why": "data-entry",
+     "entry": "waiting",
+     "account": "none",
+     "profile": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "toggleHidden": true,
+     "dialogOpen": false,
+     "t": 2484
+    },
+    {
+     "why": "data-entry",
+     "entry": "error",
+     "account": "none",
+     "profile": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "toggleHidden": true,
+     "dialogOpen": false,
+     "t": 2486
+    }
+   ],
+   "error": {
+    "entry": "error",
+    "theme": "light",
+    "preference": "light",
+    "lang": "fr",
+    "dir": "ltr",
+    "status": "Le monde n’a pas pu se préparer.",
+    "buttons": [
+     "Réessayer",
+     "Revenir au message",
+     "Continuer sans le globe"
+    ],
+    "buttonRects": [
+     [
+      337,
+      481,
+      129,
+      54
+     ],
+     [
+      489,
+      481,
+      201,
+      54
+     ],
+     [
+      714,
+      481,
+      229,
+      54
+     ]
+    ],
+    "statusRect": [
+     533,
+     433,
+     213,
+     24
+    ],
+    "account": {
+     "display": "none",
+     "visibility": "visible"
+    },
+    "profile": {
+     "rect": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "hit": null,
+     "label": "Menu du compte"
+    },
+    "overlapWithErrorContent": false,
+    "toggle": {
+     "hidden": true,
+     "display": "none"
+    },
+    "entrance": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "image": "radial-gradient(at 74% 46%, rgba(0, 186, 188, 0.043), rgba(0",
+     "hidden": false
+    },
+    "menuHidden": true,
+    "active": "Réessayer",
+    "errors": []
+   },
+   "clickWhereAccountWouldBe": {
+    "menuHidden": true,
+    "theme": "light",
+    "entry": "error"
+   }
+  },
+  "145-390-sombre": {
+   "arrival": {
+    "account": {
+     "display": "none",
+     "visibility": "visible"
+    },
+    "toggle": {
+     "hidden": false,
+     "display": "block"
+    },
+    "entry": "scanning",
+    "theme": {
+     "theme": "dark",
+     "account": "none"
+    }
+   },
+   "phases": [
+    {
+     "why": "start",
+     "entry": "scanning",
+     "account": "none",
+     "profile": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "toggleHidden": false,
+     "dialogOpen": false,
+     "t": 1383
+    },
+    {
+     "why": "data-entry",
+     "entry": "opening",
+     "account": "none",
+     "profile": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "toggleHidden": true,
+     "dialogOpen": false,
+     "t": 1554
+    },
+    {
+     "why": "data-entry",
+     "entry": "ring",
+     "account": "none",
+     "profile": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "toggleHidden": true,
+     "dialogOpen": false,
+     "t": 2165
+    },
+    {
+     "why": "data-entry",
+     "entry": "waiting",
+     "account": "none",
+     "profile": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "toggleHidden": true,
+     "dialogOpen": false,
+     "t": 2965
+    },
+    {
+     "why": "data-entry",
+     "entry": "error",
+     "account": "block",
+     "profile": [
+      324,
+      24,
+      44,
+      44
+     ],
+     "toggleHidden": true,
+     "dialogOpen": false,
+     "t": 2968
+    }
+   ],
+   "error": {
+    "entry": "error",
+    "theme": "dark",
+    "preference": "dark",
+    "lang": "fr",
+    "dir": "ltr",
+    "status": "Le monde n’a pas pu se préparer.",
+    "buttons": [
+     "Réessayer",
+     "Revenir au message",
+     "Continuer sans le globe"
+    ],
+    "buttonRects": [
+     [
+      24,
+      389,
+      342,
+      53
+     ],
+     [
+      24,
+      454,
+      342,
+      53
+     ],
+     [
+      24,
+      519,
+      342,
+      53
+     ]
+    ],
+    "statusRect": [
+     88,
+     341,
+     213,
+     24
+    ],
+    "account": {
+     "display": "block",
+     "visibility": "visible"
+    },
+    "profile": {
+     "rect": [
+      324,
+      24,
+      44,
+      44
+     ],
+     "hit": "#profile",
+     "label": "Menu du compte"
+    },
+    "overlapWithErrorContent": false,
+    "toggle": {
+     "hidden": true,
+     "display": "none"
+    },
+    "entrance": {
+     "bg": "rgb(27, 27, 27)",
+     "image": "none",
+     "hidden": false
+    },
+    "menuHidden": true,
+    "active": "Réessayer",
+    "errors": []
+   },
+   "panel": {
+    "home": {
+     "open": true,
+     "rect": [
+      84,
+      76,
+      284,
+      333
+     ],
+     "title": "Menu du compte",
+     "items": [
+      {
+       "text": "Fermer",
+       "action": "close",
+       "hit": true
+      },
+      {
+       "text": "Se connecter",
+       "action": "signin",
+       "hit": true
+      },
+      {
+       "text": "Créer un compte",
+       "action": "signup",
+       "hit": true
+      },
+      {
+       "text": "Paramètres",
+       "action": "settings",
+       "hit": true
+      },
+      {
+       "text": "ThèmeSombre",
+       "action": "theme",
+       "hit": true
+      },
+      {
+       "text": "LangueFrançais",
+       "action": "language",
+       "hit": true
+      }
+     ]
+    },
+    "settings": {
+     "open": true,
+     "rect": [
+      84,
+      76,
+      284,
+      409
+     ],
+     "title": "Paramètres",
+     "items": [
+      {
+       "text": "Retour",
+       "action": "back",
+       "hit": true
+      },
+      {
+       "text": "Fermer",
+       "action": "close",
+       "hit": true
+      },
+      {
+       "text": "Clair",
+       "action": "light",
+       "hit": true
+      },
+      {
+       "text": "Sombre",
+       "action": "dark",
+       "hit": true
+      },
+      {
+       "text": "Système",
+       "action": "system",
+       "hit": true
+      },
+      {
+       "text": "Français",
+       "action": "fr",
+       "hit": true
+      },
+      {
+       "text": "English",
+       "action": "en",
+       "hit": true
+      },
+      {
+       "text": "العربية",
+       "action": "ar",
+       "hit": true
+      }
+     ]
+    },
+    "theme-light": {
+     "entry": "error",
+     "theme": "light",
+     "preference": "light",
+     "lang": "fr",
+     "dir": "ltr",
+     "status": "Le monde n’a pas pu se préparer.",
+     "buttons": [
+      "Réessayer",
+      "Revenir au message",
+      "Continuer sans le globe"
+     ],
+     "buttonRects": [
+      [
+       24,
+       389,
+       342,
+       53
+      ],
+      [
+       24,
+       454,
+       342,
+       53
+      ],
+      [
+       24,
+       519,
+       342,
+       53
+      ]
+     ],
+     "statusRect": [
+      88,
+      341,
+      213,
+      24
+     ],
+     "account": {
+      "display": "block",
+      "visibility": "visible"
+     },
+     "profile": {
+      "rect": [
+       324,
+       24,
+       44,
+       44
+      ],
+      "hit": "#profile",
+      "label": "Menu du compte"
+     },
+     "overlapWithErrorContent": false,
+     "toggle": {
+      "hidden": true,
+      "display": "none"
+     },
+     "entrance": {
+      "bg": "rgba(0, 0, 0, 0)",
+      "image": "radial-gradient(at 74% 46%, rgba(0, 186, 188, 0.043), rgba(0",
+      "hidden": false
+     },
+     "menuHidden": false,
+     "active": "Clair",
+     "errors": []
+    },
+    "theme-dark": {
+     "entry": "error",
+     "theme": "dark",
+     "preference": "dark",
+     "lang": "fr",
+     "dir": "ltr",
+     "status": "Le monde n’a pas pu se préparer.",
+     "buttons": [
+      "Réessayer",
+      "Revenir au message",
+      "Continuer sans le globe"
+     ],
+     "buttonRects": [
+      [
+       24,
+       389,
+       342,
+       53
+      ],
+      [
+       24,
+       454,
+       342,
+       53
+      ],
+      [
+       24,
+       519,
+       342,
+       53
+      ]
+     ],
+     "statusRect": [
+      88,
+      341,
+      213,
+      24
+     ],
+     "account": {
+      "display": "block",
+      "visibility": "visible"
+     },
+     "profile": {
+      "rect": [
+       324,
+       24,
+       44,
+       44
+      ],
+      "hit": "#profile",
+      "label": "Menu du compte"
+     },
+     "overlapWithErrorContent": false,
+     "toggle": {
+      "hidden": true,
+      "display": "none"
+     },
+     "entrance": {
+      "bg": "rgb(27, 27, 27)",
+      "image": "none",
+      "hidden": false
+     },
+     "menuHidden": false,
+     "active": "Sombre",
+     "errors": []
+    },
+    "locale-en": {
+     "entry": "error",
+     "theme": "dark",
+     "preference": "dark",
+     "lang": "en",
+     "dir": "ltr",
+     "status": "The world could not be prepared.",
+     "buttons": [
+      "Try again",
+      "Back to the message",
+      "Continue without the globe"
+     ],
+     "buttonRects": [
+      [
+       24,
+       389,
+       342,
+       53
+      ],
+      [
+       24,
+       454,
+       342,
+       53
+      ],
+      [
+       24,
+       519,
+       342,
+       53
+      ]
+     ],
+     "statusRect": [
+      88,
+      341,
+      214,
+      24
+     ],
+     "account": {
+      "display": "block",
+      "visibility": "visible"
+     },
+     "profile": {
+      "rect": [
+       324,
+       24,
+       44,
+       44
+      ],
+      "hit": "#profile",
+      "label": "Account menu"
+     },
+     "overlapWithErrorContent": false,
+     "toggle": {
+      "hidden": true,
+      "display": "none"
+     },
+     "entrance": {
+      "bg": "rgb(27, 27, 27)",
+      "image": "none",
+      "hidden": false
+     },
+     "menuHidden": false,
+     "active": "English",
+     "errors": []
+    },
+    "settingsAfterLocale": {
+     "open": true,
+     "rect": [
+      84,
+      76,
+      284,
+      409
+     ],
+     "title": "Settings",
+     "items": [
+      {
+       "text": "Back",
+       "action": "back",
+       "hit": true
+      },
+      {
+       "text": "Close",
+       "action": "close",
+       "hit": true
+      },
+      {
+       "text": "Light",
+       "action": "light",
+       "hit": true
+      },
+      {
+       "text": "Dark",
+       "action": "dark",
+       "hit": true
+      },
+      {
+       "text": "System",
+       "action": "system",
+       "hit": true
+      },
+      {
+       "text": "Français",
+       "action": "fr",
+       "hit": true
+      },
+      {
+       "text": "English",
+       "action": "en",
+       "hit": true
+      },
+      {
+       "text": "العربية",
+       "action": "ar",
+       "hit": true
+      }
+     ]
+    },
+    "afterEscape": {
+     "entry": "error",
+     "theme": "dark",
+     "preference": "dark",
+     "lang": "en",
+     "dir": "ltr",
+     "status": "The world could not be prepared.",
+     "buttons": [
+      "Try again",
+      "Back to the message",
+      "Continue without the globe"
+     ],
+     "buttonRects": [
+      [
+       24,
+       387,
+       342,
+       53
+      ],
+      [
+       24,
+       454,
+       342,
+       53
+      ],
+      [
+       24,
+       519,
+       342,
+       53
+      ]
+     ],
+     "statusRect": [
+      88,
+      341,
+      214,
+      24
+     ],
+     "account": {
+      "display": "block",
+      "visibility": "visible"
+     },
+     "profile": {
+      "rect": [
+       324,
+       24,
+       44,
+       44
+      ],
+      "hit": "#profile",
+      "label": "Account menu"
+     },
+     "overlapWithErrorContent": false,
+     "toggle": {
+      "hidden": true,
+      "display": "none"
+     },
+     "entrance": {
+      "bg": "rgb(27, 27, 27)",
+      "image": "none",
+      "hidden": false
+     },
+     "menuHidden": true,
+     "active": "profile",
+     "errors": []
+    }
+   },
+   "afterPanel": {
+    "entry": "error",
+    "theme": "dark",
+    "preference": "dark",
+    "lang": "en",
+    "dir": "ltr",
+    "status": "The world could not be prepared.",
+    "buttons": [
+     "Try again",
+     "Back to the message",
+     "Continue without the globe"
+    ],
+    "buttonRects": [
+     [
+      24,
+      387,
+      342,
+      53
+     ],
+     [
+      24,
+      454,
+      342,
+      53
+     ],
+     [
+      24,
+      519,
+      342,
+      53
+     ]
+    ],
+    "statusRect": [
+     88,
+     341,
+     214,
+     24
+    ],
+    "account": {
+     "display": "block",
+     "visibility": "visible"
+    },
+    "profile": {
+     "rect": [
+      324,
+      24,
+      44,
+      44
+     ],
+     "hit": "#profile",
+     "label": "Account menu"
+    },
+    "overlapWithErrorContent": false,
+    "toggle": {
+     "hidden": true,
+     "display": "none"
+    },
+    "entrance": {
+     "bg": "rgb(27, 27, 27)",
+     "image": "none",
+     "hidden": false
+    },
+    "menuHidden": true,
+    "active": "profile",
+    "errors": []
+   },
+   "welcome": {
+    "entry": "welcome",
+    "lang": "en",
+    "theme": "dark",
+    "account": "block",
+    "errors": []
+   }
+  },
+  "144-390-sombre": {
+   "arrival": {
+    "account": {
+     "display": "none",
+     "visibility": "visible"
+    },
+    "toggle": {
+     "hidden": false,
+     "display": "block"
+    },
+    "entry": "scanning",
+    "theme": {
+     "theme": "dark",
+     "account": "none"
+    }
+   },
+   "phases": [
+    {
+     "why": "start",
+     "entry": "scanning",
+     "account": "none",
+     "profile": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "toggleHidden": false,
+     "dialogOpen": false,
+     "t": 1374
+    },
+    {
+     "why": "data-entry",
+     "entry": "opening",
+     "account": "none",
+     "profile": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "toggleHidden": true,
+     "dialogOpen": false,
+     "t": 1543
+    },
+    {
+     "why": "data-entry",
+     "entry": "ring",
+     "account": "none",
+     "profile": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "toggleHidden": true,
+     "dialogOpen": false,
+     "t": 2155
+    },
+    {
+     "why": "data-entry",
+     "entry": "waiting",
+     "account": "none",
+     "profile": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "toggleHidden": true,
+     "dialogOpen": false,
+     "t": 2955
+    },
+    {
+     "why": "data-entry",
+     "entry": "error",
+     "account": "none",
+     "profile": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "toggleHidden": true,
+     "dialogOpen": false,
+     "t": 2958
+    }
+   ],
+   "error": {
+    "entry": "error",
+    "theme": "dark",
+    "preference": "dark",
+    "lang": "fr",
+    "dir": "ltr",
+    "status": "Le monde n’a pas pu se préparer.",
+    "buttons": [
+     "Réessayer",
+     "Revenir au message",
+     "Continuer sans le globe"
+    ],
+    "buttonRects": [
+     [
+      24,
+      389,
+      342,
+      53
+     ],
+     [
+      24,
+      454,
+      342,
+      53
+     ],
+     [
+      24,
+      519,
+      342,
+      53
+     ]
+    ],
+    "statusRect": [
+     88,
+     341,
+     213,
+     24
+    ],
+    "account": {
+     "display": "none",
+     "visibility": "visible"
+    },
+    "profile": {
+     "rect": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "hit": null,
+     "label": "Menu du compte"
+    },
+    "overlapWithErrorContent": false,
+    "toggle": {
+     "hidden": true,
+     "display": "none"
+    },
+    "entrance": {
+     "bg": "rgb(27, 27, 27)",
+     "image": "none",
+     "hidden": false
+    },
+    "menuHidden": true,
+    "active": "Réessayer",
+    "errors": []
+   }
+  }
+ },
+ "passed": true,
+ "verdicts": {
+  "145-1280-clair": {
+   "arrivalHidden": true,
+   "phasesHidden": true,
+   "errorVisible": true,
+   "menuOpened": true,
+   "themeChanged": true,
+   "translated": true,
+   "toggleHidden": true,
+   "noOverlap": true,
+   "welcomeAccount": true
+  },
+  "145-390-sombre": {
+   "arrivalHidden": true,
+   "phasesHidden": true,
+   "errorVisible": true,
+   "menuOpened": true,
+   "themeChanged": true,
+   "translated": true,
+   "toggleHidden": true,
+   "noOverlap": true,
+   "welcomeAccount": true
+  },
+  "144-1280-clair": {
+   "arrivalHidden": true,
+   "phasesHidden": true,
+   "errorHidden": true
+  },
+  "144-390-sombre": {
+   "arrivalHidden": true,
+   "phasesHidden": true,
+   "errorHidden": true
+  }
+ },
+ "console": [
+  {
+   "kind": "log.network.error",
+   "text": "Failed to load resource: the server responded with a status of 404 (File not found)",
+   "resource": "http://127.0.0.1:8765/favicon.ico",
+   "page": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/index.html?qa=verif-d4-145-1280"
+  }
+ ],
+ "sourcesUnchanged": true,
+ "sources": {
+  "index.html": "1c917ec3cf69e72818ae48e408d28563ed2fb6dc6bf48c6aac7a1ad1052753c6",
+  "content-preview.html": "8817305bef2eb91cd3c36c76aedb961bd757d398746bfb3c50817ebdc2c3666f",
+  "welcome.mjs": "e1b31b75b8aa4e9b24bb9b3f646f59467a32b72dbaa016d80f6b1ff738aa9e60",
+  "content-preview.mjs": "efba6b21f19d03c587cfc6023972f32d5f14dd792b8191d0e79fb815c4817819",
+  "entrance.mjs": "d9940372d745df7de1bc0a347548b744fadab9a5eb46dcf467c2def1734fe2d4",
+  "entrance.css": "e5f9b6205d7a5fd0cba85e666eee48539fcbaf74944f94f4f25637cc369bd312",
+  "account-menu.mjs": "b839d5c2c1c44e19d75d6d84fc89ff9cb5b91909b53cb093f7bbea338e9ef105",
+  "account-menu.css": "8f6da743782fb50abad856317bcb3292d8babcd96b51e8b6a13c7ff28d266540",
+  "welcome-panels.html": "8ea7fed7eb308dbd12e8c8222f8359536905c549bda63e98f1e89fc4856a1f0e",
+  "welcome-panels.mjs": "325263f40009464e8ef3e950a6e81ec124412c3d5b4f5c5e7f9e0787bb602074",
+  "archive/pre-codex-audit-fixes-20261015/baseline/index.html": "387cfb9cb300fd29fa1f2f58997f9f1f4fa83c16de8d33650a2b3a95edc27d42",
+  "archive/pre-codex-audit-fixes-20261015/baseline/welcome.mjs": "fa65d17e822b1f1f5587c6af43cea7e713eb12efe48c9e9bb210363477b2ae0a",
+  "archive/pre-codex-audit-fixes-20261015/baseline/entrance.mjs": "1ae3cb3b4407290cefaf998c523726a4ad6b9ac5aaedfb99ee02cb9428205b4d",
+  "archive/pre-codex-audit-fixes-20261015/baseline/entrance.css": "1adda0abf677d2eceea4fbb74619ee5b0416867e65891635ac8f19d873d409ad"
+ },
+ "durationS": 67.3
+}

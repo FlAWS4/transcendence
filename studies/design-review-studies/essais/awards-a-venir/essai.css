@@ -1,0 +1,21 @@
+/* Trial awards-a-venir: one discreet, centred "coming soon" note on the otherwise empty 42 Awards page.
+   Hidden in every other section and during the arrival. Pointer-free, below the header fade (z 6),
+   header (10) and dock (20); equal block padding from the baseline's own fade and dock metrics keeps
+   it at the viewport centre, clear of both while the window is at least about 350 px tall. */
+.essai-awards-a-venir{display:none}
+body[data-entry=welcome] .app[data-navigation=dock][data-section=awards] .essai-awards-a-venir{
+ position:fixed;inset:0;z-index:1;display:grid;place-content:center;justify-items:center;gap:12px;
+ padding:max(var(--header-fade-end,188px),calc(var(--dock-bottom,32px) + var(--dock-height,60px) + 16px)) 24px;
+ pointer-events:none;text-align:center;
+}
+/* Same trophy symbol as the dock button; muted like the profile's empty Distinctions block. */
+.essai-awards-a-venir svg{width:28px;height:28px;color:var(--h42-color-muted)}
+.essai-awards-a-venir p{
+ margin:0;max-width:100%;color:var(--h42-color-text);font-size:var(--h42-type-H3-size,20px);font-weight:500;
+ line-height:var(--h42-type-H3-line,28px);letter-spacing:-.01em;text-wrap:balance;
+}
+.essai-awards-a-venir p:lang(ar){line-height:1.6;letter-spacing:0}
+@media (prefers-reduced-motion:no-preference){
+ body[data-entry=welcome] .app[data-navigation=dock][data-section=awards] .essai-awards-a-venir{animation:essai-awards-a-venir-in .45s var(--ease) both}
+}
+@keyframes essai-awards-a-venir-in{from{opacity:0}to{opacity:1}}

@@ -1,0 +1,2694 @@
+{
+  "date": "2026-10-04",
+  "status": "Terminé au repos ; deux essais web de défilement sans choix final",
+  "fileKey": "yFrdllVm6nrKZJ2c99MMjT",
+  "page": "115:2",
+  "decision": "Reprendre l’agencement de la première étude pour Projets, Parcours et Journal, ajouter Grille/Liste, retirer la recherche locale et séparer la loupe du menu. Paris désigne son campus et les contenus rattachés, soit trois résultats illustratifs.",
+  "source": [
+    "site/content-layout.css",
+    "site/dock-search.css"
+  ],
+  "preserved": [
+    "Palette et variables de thème existantes",
+    "Polices et corps des titres, résumés et métadonnées de contenu",
+    "Articles Minishell et fenêtres campus",
+    "IDs des 16 cadres actifs et des raccords",
+    "Trois études et anciennes explorations",
+    "Composants historiques : nouveaux dérivés dédiés"
+  ],
+  "library": {
+    "cards": {
+      "gridDesktop": "409:1631",
+      "gridMobile": "409:1659",
+      "listDesktop": "409:1687",
+      "listMobile": "409:1715"
+    },
+    "viewSwitch": "410:1785",
+    "viewVariants": {
+      "desktopGrid": "410:1729",
+      "desktopList": "410:1743",
+      "mobileGrid": "410:1757",
+      "mobileList": "410:1771"
+    },
+    "viewVariables": {
+      "grid": "VariableID:410:1727",
+      "list": "VariableID:410:1728"
+    },
+    "dockSet": "413:2459",
+    "dockVariants": {
+      "383:1320": "413:1739",
+      "383:1341": "413:1784",
+      "383:1362": "413:1829",
+      "383:1383": "413:1874",
+      "383:1404": "413:1919",
+      "383:1425": "413:1964",
+      "383:1446": "413:2009",
+      "383:1467": "413:2054",
+      "271:982": "413:2099",
+      "271:1010": "413:2144",
+      "271:1038": "413:2189",
+      "271:1066": "413:2234",
+      "271:1094": "413:2279",
+      "271:1122": "413:2324",
+      "271:1150": "413:2369",
+      "271:1178": "413:2414"
+    },
+    "searchResult": "415:1899",
+    "icons": {
+      "search": "410:1711",
+      "close": "410:1715",
+      "grid": "410:1718",
+      "list": "410:1724"
+    }
+  },
+  "layout": {
+    "desktop": {
+      "contentWidth": 1100,
+      "x": 170,
+      "y": 228,
+      "headingWidth": 780,
+      "columns": 3,
+      "cardWidth": 348,
+      "coverHeight": 232,
+      "columnGap": 28,
+      "rowGap": 38,
+      "copyTop": 20
+    },
+    "mobile": {
+      "contentWidth": 342,
+      "x": 24,
+      "y": 174,
+      "columns": 1,
+      "coverHeight": 207.2727,
+      "rowGap": 34,
+      "copyTop": 17
+    },
+    "dockDesktop": {
+      "group": [
+        574,
+        60
+      ],
+      "position": [
+        433,
+        868
+      ],
+      "menu": [
+        510,
+        60
+      ],
+      "searchCircle": 52,
+      "gap": 12,
+      "buttonHeight": 48
+    },
+    "dockMobile": {
+      "group": [
+        358,
+        64
+      ],
+      "position": [
+        16,
+        763
+      ],
+      "menu": [
+        302,
+        64
+      ],
+      "searchCircle": 46,
+      "gap": 10,
+      "buttonHeight": 50
+    },
+    "rtl": "Ordre du cercle et du menu inversé, sans inversion des icônes.",
+    "lists": {
+      "desktopCover": [
+        280,
+        186.6667
+      ],
+      "desktopGap": 32,
+      "mobileCover": [
+        97.2,
+        58.909
+      ],
+      "mobileCopyWidth": 226.8,
+      "mobileGap": 18
+    }
+  },
+  "views": [
+    {
+      "id": "328:4892",
+      "doc": {
+        "x": 170,
+        "y": 228,
+        "w": 1100,
+        "h": 1315
+      },
+      "expectedCount": 4,
+      "cards": [
+        {
+          "id": "328:4932",
+          "name": "project/minishell-under-the-prompt",
+          "w": 348,
+          "h": 438,
+          "master": "409:1631",
+          "reactions": 1
+        },
+        {
+          "id": "328:4980",
+          "name": "project/raycast-find-the-light",
+          "w": 348,
+          "h": 438,
+          "master": "409:1631",
+          "reactions": 0
+        },
+        {
+          "id": "328:5024",
+          "name": "project/network-messages-between-us",
+          "w": 348,
+          "h": 426,
+          "master": "409:1631",
+          "reactions": 0
+        },
+        {
+          "id": "328:5072",
+          "name": "project/garden-small-useful-tools",
+          "w": 348,
+          "h": 426,
+          "master": "409:1631",
+          "reactions": 0
+        }
+      ],
+      "textTruncation": [],
+      "visibleSearchFields": 0,
+      "fixedChildren": 1,
+      "overflow": "VERTICAL"
+    },
+    {
+      "id": "328:5253",
+      "doc": {
+        "x": 24,
+        "y": 174,
+        "w": 342,
+        "h": 2192.0908203125
+      },
+      "expectedCount": 4,
+      "cards": [
+        {
+          "id": "328:5294",
+          "name": "project/minishell-under-the-prompt",
+          "w": 342,
+          "h": 402.272705078125,
+          "master": "409:1659",
+          "reactions": 1
+        },
+        {
+          "id": "328:5343",
+          "name": "project/raycast-find-the-light",
+          "w": 342,
+          "h": 402.272705078125,
+          "master": "409:1659",
+          "reactions": 0
+        },
+        {
+          "id": "328:5387",
+          "name": "project/network-messages-between-us",
+          "w": 342,
+          "h": 394.272705078125,
+          "master": "409:1659",
+          "reactions": 0
+        },
+        {
+          "id": "328:5436",
+          "name": "project/garden-small-useful-tools",
+          "w": 342,
+          "h": 394.272705078125,
+          "master": "409:1659",
+          "reactions": 0
+        }
+      ],
+      "textTruncation": [],
+      "visibleSearchFields": 0,
+      "fixedChildren": 1,
+      "overflow": "VERTICAL"
+    },
+    {
+      "id": "347:4492",
+      "doc": {
+        "x": 170,
+        "y": 228,
+        "w": 1100,
+        "h": 876
+      },
+      "expectedCount": 2,
+      "cards": [
+        {
+          "id": "347:4551",
+          "name": "people/path-learning-to-ask",
+          "w": 348,
+          "h": 463,
+          "master": "409:1631",
+          "reactions": 0
+        },
+        {
+          "id": "347:4596",
+          "name": "people/path-making-room-to-learn",
+          "w": 348,
+          "h": 438,
+          "master": "409:1631",
+          "reactions": 0
+        }
+      ],
+      "textTruncation": [],
+      "visibleSearchFields": 0,
+      "fixedChildren": 1,
+      "overflow": "VERTICAL"
+    },
+    {
+      "id": "347:4696",
+      "doc": {
+        "x": 24,
+        "y": 174,
+        "w": 342,
+        "h": 1327.54541015625
+      },
+      "expectedCount": 2,
+      "cards": [
+        {
+          "id": "347:4758",
+          "name": "people/path-learning-to-ask",
+          "w": 342,
+          "h": 427.272705078125,
+          "master": "409:1659",
+          "reactions": 0
+        },
+        {
+          "id": "347:4804",
+          "name": "people/path-making-room-to-learn",
+          "w": 342,
+          "h": 369.272705078125,
+          "master": "409:1659",
+          "reactions": 0
+        }
+      ],
+      "textTruncation": [],
+      "visibleSearchFields": 0,
+      "fixedChildren": 1,
+      "overflow": "VERTICAL"
+    },
+    {
+      "id": "347:4904",
+      "doc": {
+        "x": 170,
+        "y": 228,
+        "w": 1100,
+        "h": 851
+      },
+      "expectedCount": 2,
+      "cards": [
+        {
+          "id": "347:4963",
+          "name": "journal/journal-an-evening-debugging",
+          "w": 348,
+          "h": 438,
+          "master": "409:1631",
+          "reactions": 0
+        },
+        {
+          "id": "347:5010",
+          "name": "journal/journal-share-the-unfinished",
+          "w": 348,
+          "h": 438,
+          "master": "409:1631",
+          "reactions": 0
+        }
+      ],
+      "textTruncation": [],
+      "visibleSearchFields": 0,
+      "fixedChildren": 1,
+      "overflow": "VERTICAL"
+    },
+    {
+      "id": "347:5112",
+      "doc": {
+        "x": 24,
+        "y": 174,
+        "w": 342,
+        "h": 1335.54541015625
+      },
+      "expectedCount": 2,
+      "cards": [
+        {
+          "id": "347:5174",
+          "name": "journal/journal-an-evening-debugging",
+          "w": 342,
+          "h": 402.272705078125,
+          "master": "409:1659",
+          "reactions": 0
+        },
+        {
+          "id": "347:5222",
+          "name": "journal/journal-share-the-unfinished",
+          "w": 342,
+          "h": 402.272705078125,
+          "master": "409:1659",
+          "reactions": 0
+        }
+      ],
+      "textTruncation": [],
+      "visibleSearchFields": 0,
+      "fixedChildren": 1,
+      "overflow": "VERTICAL"
+    },
+    {
+      "id": "411:7100",
+      "doc": {
+        "x": 170,
+        "y": 228,
+        "w": 1100,
+        "h": 1243.666748046875
+      },
+      "expectedCount": 4,
+      "cards": [
+        {
+          "id": "411:7128",
+          "name": "project/minishell-under-the-prompt",
+          "w": 1100,
+          "h": 186.6666717529297,
+          "master": "409:1687",
+          "reactions": 1
+        },
+        {
+          "id": "411:7129",
+          "name": "project/raycast-find-the-light",
+          "w": 1100,
+          "h": 186.6666717529297,
+          "master": "409:1687",
+          "reactions": 0
+        },
+        {
+          "id": "411:7130",
+          "name": "project/network-messages-between-us",
+          "w": 1100,
+          "h": 186.6666717529297,
+          "master": "409:1687",
+          "reactions": 0
+        },
+        {
+          "id": "411:7132",
+          "name": "project/garden-small-useful-tools",
+          "w": 1100,
+          "h": 186.6666717529297,
+          "master": "409:1687",
+          "reactions": 0
+        }
+      ],
+      "textTruncation": [],
+      "visibleSearchFields": 0,
+      "fixedChildren": 1,
+      "overflow": "VERTICAL"
+    },
+    {
+      "id": "411:7627",
+      "doc": {
+        "x": 24,
+        "y": 174,
+        "w": 342,
+        "h": 1474
+      },
+      "expectedCount": 4,
+      "cards": [
+        {
+          "id": "411:7658",
+          "name": "project/minishell-under-the-prompt",
+          "w": 342,
+          "h": 203,
+          "master": "409:1715",
+          "reactions": 1
+        },
+        {
+          "id": "411:7660",
+          "name": "project/raycast-find-the-light",
+          "w": 342,
+          "h": 236,
+          "master": "409:1715",
+          "reactions": 0
+        },
+        {
+          "id": "411:7662",
+          "name": "project/network-messages-between-us",
+          "w": 342,
+          "h": 227,
+          "master": "409:1715",
+          "reactions": 0
+        },
+        {
+          "id": "411:7664",
+          "name": "project/garden-small-useful-tools",
+          "w": 342,
+          "h": 227,
+          "master": "409:1715",
+          "reactions": 0
+        }
+      ],
+      "textTruncation": [],
+      "visibleSearchFields": 0,
+      "fixedChildren": 1,
+      "overflow": "VERTICAL"
+    }
+  ],
+  "docks": [
+    {
+      "id": "280:3500",
+      "x": 429,
+      "y": 852,
+      "w": 582,
+      "h": 76,
+      "menu": [
+        0,
+        0,
+        510,
+        76
+      ],
+      "search": [
+        522,
+        8,
+        60,
+        60
+      ],
+      "entryTracks": 0,
+      "navActions": [
+        {
+          "name": "nav/explore",
+          "reactions": 0
+        },
+        {
+          "name": "nav/projects",
+          "reactions": 1
+        },
+        {
+          "name": "nav/people",
+          "reactions": 1
+        },
+        {
+          "name": "nav/journal",
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "id": "279:985",
+      "x": 429,
+      "y": 852,
+      "w": 582,
+      "h": 76,
+      "menu": [
+        0,
+        0,
+        510,
+        76
+      ],
+      "search": [
+        522,
+        8,
+        60,
+        60
+      ],
+      "entryTracks": 0,
+      "navActions": [
+        {
+          "name": "nav/explore",
+          "reactions": 0
+        },
+        {
+          "name": "nav/projects",
+          "reactions": 1
+        },
+        {
+          "name": "nav/people",
+          "reactions": 1
+        },
+        {
+          "name": "nav/journal",
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "id": "280:3774",
+      "x": 16,
+      "y": 754,
+      "w": 358,
+      "h": 73,
+      "menu": [
+        0,
+        0,
+        298,
+        73
+      ],
+      "search": [
+        308,
+        11.5,
+        50,
+        50
+      ],
+      "entryTracks": 0,
+      "navActions": [
+        {
+          "name": "nav/explore",
+          "reactions": 0
+        },
+        {
+          "name": "nav/projects",
+          "reactions": 1
+        },
+        {
+          "name": "nav/people",
+          "reactions": 1
+        },
+        {
+          "name": "nav/journal",
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "id": "279:1302",
+      "x": 16,
+      "y": 754,
+      "w": 358,
+      "h": 73,
+      "menu": [
+        0,
+        0,
+        298,
+        73
+      ],
+      "search": [
+        308,
+        11.5,
+        50,
+        50
+      ],
+      "entryTracks": 0,
+      "navActions": [
+        {
+          "name": "nav/explore",
+          "reactions": 0
+        },
+        {
+          "name": "nav/projects",
+          "reactions": 1
+        },
+        {
+          "name": "nav/people",
+          "reactions": 1
+        },
+        {
+          "name": "nav/journal",
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "id": "280:4067",
+      "x": 429,
+      "y": 852,
+      "w": 582,
+      "h": 76,
+      "menu": [
+        72,
+        0,
+        510,
+        76
+      ],
+      "search": [
+        0,
+        8,
+        60,
+        60
+      ],
+      "entryTracks": 0,
+      "navActions": [
+        {
+          "name": "nav/journal",
+          "reactions": 1
+        },
+        {
+          "name": "nav/people",
+          "reactions": 1
+        },
+        {
+          "name": "nav/projects",
+          "reactions": 1
+        },
+        {
+          "name": "nav/explore",
+          "reactions": 0
+        }
+      ]
+    },
+    {
+      "id": "280:7316",
+      "x": 429,
+      "y": 852,
+      "w": 582,
+      "h": 76,
+      "menu": [
+        72,
+        0,
+        510,
+        76
+      ],
+      "search": [
+        0,
+        8,
+        60,
+        60
+      ],
+      "entryTracks": 0,
+      "navActions": [
+        {
+          "name": "nav/journal",
+          "reactions": 1
+        },
+        {
+          "name": "nav/people",
+          "reactions": 1
+        },
+        {
+          "name": "nav/projects",
+          "reactions": 1
+        },
+        {
+          "name": "nav/explore",
+          "reactions": 0
+        }
+      ]
+    },
+    {
+      "id": "280:7590",
+      "x": 16,
+      "y": 754,
+      "w": 358,
+      "h": 73,
+      "menu": [
+        60,
+        0,
+        298,
+        73
+      ],
+      "search": [
+        0,
+        11.5,
+        50,
+        50
+      ],
+      "entryTracks": 0,
+      "navActions": [
+        {
+          "name": "nav/journal",
+          "reactions": 1
+        },
+        {
+          "name": "nav/people",
+          "reactions": 1
+        },
+        {
+          "name": "nav/projects",
+          "reactions": 1
+        },
+        {
+          "name": "nav/explore",
+          "reactions": 0
+        }
+      ]
+    },
+    {
+      "id": "280:7865",
+      "x": 16,
+      "y": 754,
+      "w": 358,
+      "h": 73,
+      "menu": [
+        60,
+        0,
+        298,
+        73
+      ],
+      "search": [
+        0,
+        11.5,
+        50,
+        50
+      ],
+      "entryTracks": 0,
+      "navActions": [
+        {
+          "name": "nav/journal",
+          "reactions": 1
+        },
+        {
+          "name": "nav/people",
+          "reactions": 1
+        },
+        {
+          "name": "nav/projects",
+          "reactions": 1
+        },
+        {
+          "name": "nav/explore",
+          "reactions": 0
+        }
+      ]
+    },
+    {
+      "id": "328:5122",
+      "x": 429,
+      "y": 852,
+      "w": 582,
+      "h": 76,
+      "menu": [
+        0,
+        0,
+        510,
+        76
+      ],
+      "search": [
+        522,
+        8,
+        60,
+        60
+      ],
+      "entryTracks": 0,
+      "navActions": [
+        {
+          "name": "nav/explore",
+          "reactions": 1
+        },
+        {
+          "name": "nav/projects",
+          "reactions": 0
+        },
+        {
+          "name": "nav/people",
+          "reactions": 1
+        },
+        {
+          "name": "nav/journal",
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "id": "328:5223",
+      "x": 429,
+      "y": 852,
+      "w": 582,
+      "h": 76,
+      "menu": [
+        0,
+        0,
+        510,
+        76
+      ],
+      "search": [
+        522,
+        8,
+        60,
+        60
+      ],
+      "entryTracks": 0,
+      "navActions": [
+        {
+          "name": "nav/explore",
+          "reactions": 1
+        },
+        {
+          "name": "nav/projects",
+          "reactions": 1
+        },
+        {
+          "name": "nav/people",
+          "reactions": 1
+        },
+        {
+          "name": "nav/journal",
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "id": "328:5486",
+      "x": 16,
+      "y": 754,
+      "w": 358,
+      "h": 73,
+      "menu": [
+        0,
+        0,
+        298,
+        73
+      ],
+      "search": [
+        308,
+        11.5,
+        50,
+        50
+      ],
+      "entryTracks": 0,
+      "navActions": [
+        {
+          "name": "nav/explore",
+          "reactions": 1
+        },
+        {
+          "name": "nav/projects",
+          "reactions": 0
+        },
+        {
+          "name": "nav/people",
+          "reactions": 1
+        },
+        {
+          "name": "nav/journal",
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "id": "328:5608",
+      "x": 16,
+      "y": 754,
+      "w": 358,
+      "h": 73,
+      "menu": [
+        0,
+        0,
+        298,
+        73
+      ],
+      "search": [
+        308,
+        11.5,
+        50,
+        50
+      ],
+      "entryTracks": 0,
+      "navActions": [
+        {
+          "name": "nav/explore",
+          "reactions": 1
+        },
+        {
+          "name": "nav/projects",
+          "reactions": 1
+        },
+        {
+          "name": "nav/people",
+          "reactions": 1
+        },
+        {
+          "name": "nav/journal",
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "id": "347:4527",
+      "x": 429,
+      "y": 852,
+      "w": 582,
+      "h": 76,
+      "menu": [
+        0,
+        0,
+        510,
+        76
+      ],
+      "search": [
+        522,
+        8,
+        60,
+        60
+      ],
+      "entryTracks": 0,
+      "navActions": [
+        {
+          "name": "nav/explore",
+          "reactions": 1
+        },
+        {
+          "name": "nav/projects",
+          "reactions": 1
+        },
+        {
+          "name": "nav/people",
+          "reactions": 0
+        },
+        {
+          "name": "nav/journal",
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "id": "347:4734",
+      "x": 16,
+      "y": 754,
+      "w": 358,
+      "h": 73,
+      "menu": [
+        0,
+        0,
+        298,
+        73
+      ],
+      "search": [
+        308,
+        11.5,
+        50,
+        50
+      ],
+      "entryTracks": 0,
+      "navActions": [
+        {
+          "name": "nav/explore",
+          "reactions": 1
+        },
+        {
+          "name": "nav/projects",
+          "reactions": 1
+        },
+        {
+          "name": "nav/people",
+          "reactions": 0
+        },
+        {
+          "name": "nav/journal",
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "id": "347:4939",
+      "x": 429,
+      "y": 852,
+      "w": 582,
+      "h": 76,
+      "menu": [
+        0,
+        0,
+        510,
+        76
+      ],
+      "search": [
+        522,
+        8,
+        60,
+        60
+      ],
+      "entryTracks": 0,
+      "navActions": [
+        {
+          "name": "nav/explore",
+          "reactions": 1
+        },
+        {
+          "name": "nav/projects",
+          "reactions": 1
+        },
+        {
+          "name": "nav/people",
+          "reactions": 1
+        },
+        {
+          "name": "nav/journal",
+          "reactions": 0
+        }
+      ]
+    },
+    {
+      "id": "347:5150",
+      "x": 16,
+      "y": 754,
+      "w": 358,
+      "h": 73,
+      "menu": [
+        0,
+        0,
+        298,
+        73
+      ],
+      "search": [
+        308,
+        11.5,
+        50,
+        50
+      ],
+      "entryTracks": 0,
+      "navActions": [
+        {
+          "name": "nav/explore",
+          "reactions": 1
+        },
+        {
+          "name": "nav/projects",
+          "reactions": 1
+        },
+        {
+          "name": "nav/people",
+          "reactions": 1
+        },
+        {
+          "name": "nav/journal",
+          "reactions": 0
+        }
+      ]
+    },
+    {
+      "id": "411:7137",
+      "x": 429,
+      "y": 852,
+      "w": 582,
+      "h": 76,
+      "menu": [
+        0,
+        0,
+        510,
+        76
+      ],
+      "search": [
+        522,
+        8,
+        60,
+        60
+      ],
+      "entryTracks": 0,
+      "navActions": [
+        {
+          "name": "nav/explore",
+          "reactions": 1
+        },
+        {
+          "name": "nav/projects",
+          "reactions": 0
+        },
+        {
+          "name": "nav/people",
+          "reactions": 1
+        },
+        {
+          "name": "nav/journal",
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "id": "411:7668",
+      "x": 16,
+      "y": 754,
+      "w": 358,
+      "h": 73,
+      "menu": [
+        0,
+        0,
+        298,
+        73
+      ],
+      "search": [
+        308,
+        11.5,
+        50,
+        50
+      ],
+      "entryTracks": 0,
+      "navActions": [
+        {
+          "name": "nav/explore",
+          "reactions": 1
+        },
+        {
+          "name": "nav/projects",
+          "reactions": 0
+        },
+        {
+          "name": "nav/people",
+          "reactions": 1
+        },
+        {
+          "name": "nav/journal",
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "id": "306:2768",
+      "x": 429,
+      "y": 852,
+      "w": 582,
+      "h": 76,
+      "menu": [
+        0,
+        0,
+        510,
+        76
+      ],
+      "search": [
+        522,
+        8,
+        60,
+        60
+      ],
+      "entryTracks": 0,
+      "navActions": [
+        {
+          "name": "nav/explore",
+          "reactions": 0
+        },
+        {
+          "name": "nav/projects",
+          "reactions": 1
+        },
+        {
+          "name": "nav/people",
+          "reactions": 1
+        },
+        {
+          "name": "nav/journal",
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "id": "306:3147",
+      "x": 429,
+      "y": 852,
+      "w": 582,
+      "h": 76,
+      "entryTracks": 0,
+      "navActions": []
+    },
+    {
+      "id": "306:3542",
+      "x": 429,
+      "y": 852,
+      "w": 582,
+      "h": 76,
+      "menu": [
+        0,
+        0,
+        510,
+        76
+      ],
+      "search": [
+        522,
+        8,
+        60,
+        60
+      ],
+      "entryTracks": 0,
+      "navActions": [
+        {
+          "name": "nav/explore",
+          "reactions": 0
+        },
+        {
+          "name": "nav/projects",
+          "reactions": 1
+        },
+        {
+          "name": "nav/people",
+          "reactions": 1
+        },
+        {
+          "name": "nav/journal",
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "id": "306:3921",
+      "x": 429,
+      "y": 852,
+      "w": 582,
+      "h": 76,
+      "entryTracks": 0,
+      "navActions": []
+    },
+    {
+      "id": "306:8022",
+      "x": 16,
+      "y": 754,
+      "w": 358,
+      "h": 73,
+      "menu": [
+        0,
+        0,
+        298,
+        73
+      ],
+      "search": [
+        308,
+        11.5,
+        50,
+        50
+      ],
+      "entryTracks": 0,
+      "navActions": [
+        {
+          "name": "nav/explore",
+          "reactions": 0
+        },
+        {
+          "name": "nav/projects",
+          "reactions": 1
+        },
+        {
+          "name": "nav/people",
+          "reactions": 1
+        },
+        {
+          "name": "nav/journal",
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "id": "306:8382",
+      "x": 16,
+      "y": 754,
+      "w": 358,
+      "h": 73,
+      "entryTracks": 0,
+      "navActions": []
+    },
+    {
+      "id": "306:8758",
+      "x": 16,
+      "y": 754,
+      "w": 358,
+      "h": 73,
+      "menu": [
+        0,
+        0,
+        298,
+        73
+      ],
+      "search": [
+        308,
+        11.5,
+        50,
+        50
+      ],
+      "entryTracks": 0,
+      "navActions": [
+        {
+          "name": "nav/explore",
+          "reactions": 0
+        },
+        {
+          "name": "nav/projects",
+          "reactions": 1
+        },
+        {
+          "name": "nav/people",
+          "reactions": 1
+        },
+        {
+          "name": "nav/journal",
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "id": "306:9118",
+      "x": 16,
+      "y": 754,
+      "w": 358,
+      "h": 73,
+      "entryTracks": 0,
+      "navActions": []
+    }
+  ],
+  "search": {
+    "createdNodeIds": [
+      "418:7375",
+      "418:7376",
+      "418:7405",
+      "418:7422",
+      "418:7426",
+      "418:7427",
+      "418:7428",
+      "418:7432",
+      "418:7434",
+      "418:7435",
+      "418:7433",
+      "418:7436",
+      "418:7442",
+      "418:7448",
+      "418:7476",
+      "418:7477",
+      "418:7506",
+      "418:7523",
+      "418:7527",
+      "418:7528",
+      "418:7529",
+      "418:7533",
+      "418:7535",
+      "418:7536",
+      "418:7534",
+      "418:7537",
+      "418:7543",
+      "418:7549"
+    ],
+    "mutatedNodeIds": [
+      "I280:3500;413:1779",
+      "I279:985;413:1779",
+      "I280:3774;413:2139",
+      "I279:1302;413:2139",
+      "I328:5122;413:1824",
+      "I328:5223;413:1824",
+      "I328:5486;413:2184",
+      "I328:5608;413:2184",
+      "I347:4527;413:1869",
+      "I347:4734;413:2229",
+      "I347:4939;413:1914",
+      "I347:5150;413:2274",
+      "I411:7137;413:1824",
+      "I411:7668;413:2184"
+    ],
+    "overlays": [
+      {
+        "id": "418:7375",
+        "mobile": false,
+        "bar": {
+          "id": "418:7405",
+          "x": 380,
+          "y": 852,
+          "w": 680,
+          "h": 76
+        },
+        "panel": {
+          "id": "418:7432",
+          "x": 380,
+          "y": 570,
+          "w": 680,
+          "h": 268
+        },
+        "closeIds": [
+          "418:7376",
+          "418:7427"
+        ],
+        "rows": [
+          {
+            "id": "418:7436",
+            "title": "42 Paris",
+            "height": 66
+          },
+          {
+            "id": "418:7442",
+            "title": "Derrière une ligne de commande",
+            "height": 66
+          },
+          {
+            "id": "418:7448",
+            "title": "Apprendre à poser la bonne question",
+            "height": 66
+          }
+        ],
+        "timelines": [
+          {
+            "id": "418:7375",
+            "duration": 2
+          }
+        ]
+      },
+      {
+        "id": "418:7476",
+        "mobile": true,
+        "bar": {
+          "id": "418:7506",
+          "x": 16,
+          "y": 754,
+          "w": 358,
+          "h": 73
+        },
+        "panel": {
+          "id": "418:7533",
+          "x": 16,
+          "y": 478,
+          "w": 358,
+          "h": 262
+        },
+        "closeIds": [
+          "418:7477",
+          "418:7528"
+        ],
+        "rows": [
+          {
+            "id": "418:7537",
+            "title": "42 Paris",
+            "height": 66
+          },
+          {
+            "id": "418:7543",
+            "title": "Derrière une ligne de commande",
+            "height": 66
+          },
+          {
+            "id": "418:7549",
+            "title": "Apprendre à poser la bonne question",
+            "height": 66
+          }
+        ],
+        "timelines": [
+          {
+            "id": "418:7476",
+            "duration": 2
+          }
+        ]
+      }
+    ],
+    "openers": [
+      {
+        "id": "I280:3500;413:1779",
+        "destination": "418:7375"
+      },
+      {
+        "id": "I279:985;413:1779",
+        "destination": "418:7375"
+      },
+      {
+        "id": "I280:3774;413:2139",
+        "destination": "418:7476"
+      },
+      {
+        "id": "I279:1302;413:2139",
+        "destination": "418:7476"
+      },
+      {
+        "id": "I328:5122;413:1824",
+        "destination": "418:7375"
+      },
+      {
+        "id": "I328:5223;413:1824",
+        "destination": "418:7375"
+      },
+      {
+        "id": "I328:5486;413:2184",
+        "destination": "418:7476"
+      },
+      {
+        "id": "I328:5608;413:2184",
+        "destination": "418:7476"
+      },
+      {
+        "id": "I347:4527;413:1869",
+        "destination": "418:7375"
+      },
+      {
+        "id": "I347:4734;413:2229",
+        "destination": "418:7476"
+      },
+      {
+        "id": "I347:4939;413:1914",
+        "destination": "418:7375"
+      },
+      {
+        "id": "I347:5150;413:2274",
+        "destination": "418:7476"
+      },
+      {
+        "id": "I411:7137;413:1824",
+        "destination": "418:7375"
+      },
+      {
+        "id": "I411:7668;413:2184",
+        "destination": "418:7476"
+      }
+    ],
+    "pageFrameCount": 75,
+    "query": "Paris",
+    "resultCount": 3,
+    "functional": false,
+    "animation": "Expansion bureau, fondu du formulaire, arrivée du panneau ; dernière image clé à 0,48 s. Chronologie existante/default de 2 s conservée.",
+    "frOnly": true
+  },
+  "verification": {
+    "pageFrameCount": 75,
+    "destinationCount": 84,
+    "missingDestinations": [],
+    "entryMotionTracks": [
+      {
+        "id": "306:2768",
+        "fields": [
+          "OPACITY"
+        ]
+      },
+      {
+        "id": "306:3147",
+        "fields": [
+          "OPACITY"
+        ]
+      },
+      {
+        "id": "306:3542",
+        "fields": [
+          "OPACITY"
+        ]
+      },
+      {
+        "id": "306:3921",
+        "fields": [
+          "OPACITY"
+        ]
+      },
+      {
+        "id": "306:8022",
+        "fields": [
+          "OPACITY"
+        ]
+      },
+      {
+        "id": "306:8382",
+        "fields": [
+          "OPACITY"
+        ]
+      },
+      {
+        "id": "306:8758",
+        "fields": [
+          "OPACITY"
+        ]
+      },
+      {
+        "id": "306:9118",
+        "fields": [
+          "OPACITY"
+        ]
+      }
+    ],
+    "oldMasters": [
+      {
+        "id": "389:1611",
+        "w": 606,
+        "h": 522.75
+      },
+      {
+        "id": "326:1523",
+        "w": 342,
+        "h": 411.75
+      }
+    ],
+    "textTruncation": 0,
+    "visibleLocalSearchFields": 0,
+    "gridCounts": [
+      4,
+      4,
+      2,
+      2,
+      2,
+      2
+    ],
+    "fixedDockAndVerticalScroll": true,
+    "screenshotsExamined": [
+      "Grilles Projets/Parcours/Journal ordinateur et mobile",
+      "Projets Liste ordinateur/mobile",
+      "Recherche Paris ordinateur/mobile",
+      "Accueil arabe mobile clair et sombre"
+    ],
+    "visualFixes": [
+      "Séparateurs à 12 % d’opacité",
+      "Contours des nouveaux toggles liés à color/welcome/border existant",
+      "Tracés des icônes Grille/Liste ramenés à 17 px"
+    ],
+    "prototypeReplayed": false,
+    "motionVideoExported": false
+  },
+  "proofs": [
+    "figma/explorations-2026-09/content-layout-proof/projects-fr-desktop.png",
+    "figma/explorations-2026-09/content-layout-proof/home-ar-dark-mobile.png"
+  ],
+  "limitations": [
+    "Recherche Figma illustrée, sans saisie, filtrage, moteur, IA ni pagination. Trois résultats Paris figés.",
+    "Deux états Liste de Projets seulement, reliés aux boutons Grille/Liste ; ceux de Parcours/Journal sont illustratifs.",
+    "Quatorze loupes LTR ouvrent les deux overlays FR ; les quatre accueils RTL gardent leur navigation historique par sélection et une loupe illustrative.",
+    "Compositions de contenu FR/LTR conservées, sans nouvelle matrice complète arabe. Alias FR/EN/AR et thèmes existants préservés.",
+    "Aucun nouveau rejeu du lecteur Figma ; captures statiques et audit des réactions. Animation évaluée par ses valeurs, sans vidéo.",
+    "Les cartes et articles restent des démonstrations. Seul le détail Minishell est raccordé dans Figma."
+  ],
+  "capsuleUpdate20261004": {
+    "date": "2026-10-04",
+    "status": "Terminé au repos ; deux essais web de défilement sans choix final",
+    "decision": "Dock aminci en capsules, verre uniforme clair/sombre menu/loupe au repos95 %, flou22px ; contraste graphite et bordure neutre. Globe centré dans toute la page, filtre remonté/ancré, Voir la carte retiré.",
+    "tokens": {
+      "primitive": [
+        {
+          "id": "VariableID:424:2",
+          "name": "welcome/dock-glass-light"
+        },
+        {
+          "id": "VariableID:425:2",
+          "name": "welcome/dock-glass-dark",
+          "values": {
+            "3:0": {
+              "r": 0.16078431904315948,
+              "g": 0.16078431904315948,
+              "b": 0.18039216101169586,
+              "a": 0.949999988079071
+            }
+          }
+        },
+        {
+          "id": "VariableID:425:3",
+          "name": "welcome/dock-edge-dark",
+          "values": {
+            "3:0": {
+              "r": 0.2782745063304901,
+              "g": 0.2782745063304901,
+              "b": 0.2951372563838959,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:425:4",
+          "name": "welcome/dock-shadow-dark-deep",
+          "values": {
+            "3:0": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.3333333432674408
+            }
+          }
+        },
+        {
+          "id": "VariableID:425:5",
+          "name": "welcome/dock-shadow-dark-near",
+          "values": {
+            "3:0": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.20000000298023224
+            }
+          }
+        }
+      ],
+      "semantic": [
+        {
+          "id": "VariableID:426:2",
+          "name": "color/welcome/dock/surface",
+          "values": {
+            "3:1": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:424:2"
+            },
+            "3:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:425:2"
+            }
+          },
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ]
+        },
+        {
+          "id": "VariableID:426:3",
+          "name": "color/welcome/dock/edge",
+          "values": {
+            "3:1": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:4:2"
+            },
+            "3:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:425:3"
+            }
+          },
+          "scopes": [
+            "STROKE_COLOR"
+          ]
+        },
+        {
+          "id": "VariableID:426:4",
+          "name": "color/welcome/dock/panel-surface",
+          "values": {
+            "3:1": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:4:2"
+            },
+            "3:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:425:2"
+            }
+          },
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ]
+        },
+        {
+          "id": "VariableID:426:5",
+          "name": "color/welcome/dock/panel-edge",
+          "values": {
+            "3:1": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:264:10"
+            },
+            "3:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:425:3"
+            }
+          },
+          "scopes": [
+            "STROKE_COLOR"
+          ]
+        },
+        {
+          "id": "VariableID:426:6",
+          "name": "color/welcome/dock/shadow-light",
+          "values": {
+            "3:1": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:264:52"
+            },
+            "3:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:20:3"
+            }
+          },
+          "scopes": [
+            "EFFECT_COLOR"
+          ]
+        },
+        {
+          "id": "VariableID:426:7",
+          "name": "color/welcome/dock/shadow-dark-deep",
+          "values": {
+            "3:1": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:20:3"
+            },
+            "3:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:425:4"
+            }
+          },
+          "scopes": [
+            "EFFECT_COLOR"
+          ]
+        },
+        {
+          "id": "VariableID:426:8",
+          "name": "color/welcome/dock/shadow-dark-near",
+          "values": {
+            "3:1": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:20:3"
+            },
+            "3:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:425:5"
+            }
+          },
+          "scopes": [
+            "EFFECT_COLOR"
+          ]
+        }
+      ]
+    },
+    "dock": {
+      "desktop": {
+        "group": [
+          574,
+          60
+        ],
+        "position": [
+          433,
+          868
+        ],
+        "menu": [
+          510,
+          60
+        ],
+        "searchCircle": 52,
+        "gap": 12,
+        "buttonHeight": 48
+      },
+      "mobile": {
+        "group": [
+          358,
+          64
+        ],
+        "position": [
+          16,
+          763
+        ],
+        "menu": [
+          302,
+          64
+        ],
+        "searchCircle": 46,
+        "gap": 10,
+        "buttonHeight": 50
+      },
+      "radius": "Capsules : 30/32px menu,24/25px sélections",
+      "glassAlpha": 0.95,
+      "backgroundBlur": 22,
+      "light": "#FFFFFF",
+      "dark": "#29292E",
+      "darkEdge": {
+        "r": 70.96,
+        "g": 70.96,
+        "b": 75.26
+      },
+      "darkShadows": [
+        "0 14px 36px rgba(0,0,0,1/3)",
+        "0 3px 10px rgba(0,0,0,.2)"
+      ],
+      "instances": [
+        {
+          "id": "280:3500",
+          "x": 433,
+          "y": 868,
+          "width": 574,
+          "height": 60
+        },
+        {
+          "id": "279:985",
+          "x": 433,
+          "y": 868,
+          "width": 574,
+          "height": 60
+        },
+        {
+          "id": "280:3774",
+          "x": 16,
+          "y": 763,
+          "width": 358,
+          "height": 64
+        },
+        {
+          "id": "279:1302",
+          "x": 16,
+          "y": 763,
+          "width": 358,
+          "height": 64
+        },
+        {
+          "id": "280:4067",
+          "x": 433,
+          "y": 868,
+          "width": 574,
+          "height": 60
+        },
+        {
+          "id": "280:7316",
+          "x": 433,
+          "y": 868,
+          "width": 574,
+          "height": 60
+        },
+        {
+          "id": "280:7590",
+          "x": 16,
+          "y": 763,
+          "width": 358,
+          "height": 64
+        },
+        {
+          "id": "280:7865",
+          "x": 16,
+          "y": 763,
+          "width": 358,
+          "height": 64
+        },
+        {
+          "id": "328:5122",
+          "x": 433,
+          "y": 868,
+          "width": 574,
+          "height": 60
+        },
+        {
+          "id": "328:5223",
+          "x": 433,
+          "y": 868,
+          "width": 574,
+          "height": 60
+        },
+        {
+          "id": "328:5486",
+          "x": 16,
+          "y": 763,
+          "width": 358,
+          "height": 64
+        },
+        {
+          "id": "328:5608",
+          "x": 16,
+          "y": 763,
+          "width": 358,
+          "height": 64
+        },
+        {
+          "id": "347:4527",
+          "x": 433,
+          "y": 868,
+          "width": 574,
+          "height": 60
+        },
+        {
+          "id": "347:4734",
+          "x": 16,
+          "y": 763,
+          "width": 358,
+          "height": 64
+        },
+        {
+          "id": "347:4939",
+          "x": 433,
+          "y": 868,
+          "width": 574,
+          "height": 60
+        },
+        {
+          "id": "347:5150",
+          "x": 16,
+          "y": 763,
+          "width": 358,
+          "height": 64
+        },
+        {
+          "id": "411:7137",
+          "x": 433,
+          "y": 868,
+          "width": 574,
+          "height": 60
+        },
+        {
+          "id": "411:7668",
+          "x": 16,
+          "y": 763,
+          "width": 358,
+          "height": 64
+        },
+        {
+          "id": "306:2768",
+          "x": 433,
+          "y": 868,
+          "width": 574,
+          "height": 60
+        },
+        {
+          "id": "306:3147",
+          "x": 433,
+          "y": 868,
+          "width": 574,
+          "height": 60
+        },
+        {
+          "id": "306:3542",
+          "x": 433,
+          "y": 868,
+          "width": 574,
+          "height": 60
+        },
+        {
+          "id": "306:3921",
+          "x": 433,
+          "y": 868,
+          "width": 574,
+          "height": 60
+        },
+        {
+          "id": "306:8022",
+          "x": 16,
+          "y": 763,
+          "width": 358,
+          "height": 64
+        },
+        {
+          "id": "306:8382",
+          "x": 16,
+          "y": 763,
+          "width": 358,
+          "height": 64
+        },
+        {
+          "id": "306:8758",
+          "x": 16,
+          "y": 763,
+          "width": 358,
+          "height": 64
+        },
+        {
+          "id": "306:9118",
+          "x": 16,
+          "y": 763,
+          "width": 358,
+          "height": 64
+        }
+      ]
+    },
+    "globe": {
+      "desktop": {
+        "diameter": 816,
+        "center": [
+          720,
+          480
+        ],
+        "radiusRatio": 0.425
+      },
+      "mobile": {
+        "diameter": 358.8,
+        "center": [
+          195,
+          422
+        ],
+        "radiusRatio": 0.46
+      },
+      "frames": [
+        {
+          "id": "115:4",
+          "globe": "280:3263",
+          "x": 312,
+          "y": 72,
+          "diameter": 816.0000610351562,
+          "scopeY": 124,
+          "pinCount": 32
+        },
+        {
+          "id": "119:178",
+          "globe": "279:737",
+          "x": 312,
+          "y": 72,
+          "diameter": 816.0000610351562,
+          "scopeY": 124,
+          "pinCount": 32
+        },
+        {
+          "id": "123:162",
+          "globe": "280:3556",
+          "x": 15.600000381469727,
+          "y": 242.60000610351562,
+          "diameter": 358.79998779296875,
+          "scopeY": 99,
+          "pinCount": 29
+        },
+        {
+          "id": "125:198",
+          "globe": "279:1082",
+          "x": 15.600000381469727,
+          "y": 242.60000610351562,
+          "diameter": 358.79998779296875,
+          "scopeY": 99,
+          "pinCount": 29
+        },
+        {
+          "id": "125:243",
+          "globe": "280:3830",
+          "x": 312,
+          "y": 72,
+          "diameter": 816.0000610351562,
+          "scopeY": 124,
+          "pinCount": 32
+        },
+        {
+          "id": "125:296",
+          "globe": "280:7078",
+          "x": 312,
+          "y": 72,
+          "diameter": 816.0000610351562,
+          "scopeY": 124,
+          "pinCount": 32
+        },
+        {
+          "id": "125:349",
+          "globe": "280:7372",
+          "x": 15.600000381469727,
+          "y": 242.60000610351562,
+          "diameter": 358.79998779296875,
+          "scopeY": 99,
+          "pinCount": 29
+        },
+        {
+          "id": "125:402",
+          "globe": "280:7646",
+          "x": 15.600000381469727,
+          "y": 242.60000610351562,
+          "diameter": 358.79998779296875,
+          "scopeY": 99,
+          "pinCount": 29
+        },
+        {
+          "id": "306:2716",
+          "globe": "306:2727",
+          "x": 312,
+          "y": 72,
+          "diameter": 816.0000610351562,
+          "scopeY": 124,
+          "pinCount": 32
+        },
+        {
+          "id": "306:3095",
+          "globe": "306:3106",
+          "x": 312,
+          "y": 72,
+          "diameter": 816.0000610351562,
+          "scopeY": 124,
+          "pinCount": 32
+        },
+        {
+          "id": "306:3490",
+          "globe": "306:3501",
+          "x": 312,
+          "y": 72,
+          "diameter": 816.0000610351562,
+          "scopeY": 124,
+          "pinCount": 32
+        },
+        {
+          "id": "306:3869",
+          "globe": "306:3880",
+          "x": 312,
+          "y": 72,
+          "diameter": 816.0000610351562,
+          "scopeY": 124,
+          "pinCount": 32
+        },
+        {
+          "id": "306:7976",
+          "globe": "306:7987",
+          "x": 15.600000381469727,
+          "y": 242.60000610351562,
+          "diameter": 358.79998779296875,
+          "scopeY": 99,
+          "pinCount": 29
+        },
+        {
+          "id": "306:8336",
+          "globe": "306:8347",
+          "x": 15.600000381469727,
+          "y": 242.60000610351562,
+          "diameter": 358.79998779296875,
+          "scopeY": 99,
+          "pinCount": 29
+        },
+        {
+          "id": "306:8712",
+          "globe": "306:8723",
+          "x": 15.600000381469727,
+          "y": 242.60000610351562,
+          "diameter": 358.79998779296875,
+          "scopeY": 99,
+          "pinCount": 29
+        },
+        {
+          "id": "306:9072",
+          "globe": "306:9083",
+          "x": 15.600000381469727,
+          "y": 242.60000610351562,
+          "diameter": 358.79998779296875,
+          "scopeY": 99,
+          "pinCount": 29
+        }
+      ],
+      "entry": "Huit copies adaptées ; cercle de départ conservé physiquement et fin centrée ; images clés conservées avec valeurs mises à jour.",
+      "radialBlurReproduced": false
+    },
+    "content": [
+      {
+        "id": "328:4917",
+        "x": 170,
+        "y": 204,
+        "width": 1100,
+        "height": 1315,
+        "firstVisible": "eyebrow"
+      },
+      {
+        "id": "328:5177",
+        "x": 100,
+        "y": 204,
+        "width": 1240,
+        "height": 1546,
+        "firstVisible": "back-to-list"
+      },
+      {
+        "id": "328:5278",
+        "x": 24,
+        "y": 174,
+        "width": 342,
+        "height": 2144.0908203125,
+        "firstVisible": "eyebrow"
+      },
+      {
+        "id": "328:5561",
+        "x": 24,
+        "y": 175,
+        "width": 342,
+        "height": 1461.5,
+        "firstVisible": "back-to-list"
+      },
+      {
+        "id": "347:4504",
+        "x": 170,
+        "y": 204,
+        "width": 1100,
+        "height": 876,
+        "firstVisible": "eyebrow"
+      },
+      {
+        "id": "347:4708",
+        "x": 24,
+        "y": 174,
+        "width": 342,
+        "height": 1279.54541015625,
+        "firstVisible": "eyebrow"
+      },
+      {
+        "id": "347:4916",
+        "x": 170,
+        "y": 204,
+        "width": 1100,
+        "height": 851,
+        "firstVisible": "eyebrow"
+      },
+      {
+        "id": "347:5124",
+        "x": 24,
+        "y": 174,
+        "width": 342,
+        "height": 1287.54541015625,
+        "firstVisible": "eyebrow"
+      },
+      {
+        "id": "411:7112",
+        "x": 170,
+        "y": 204,
+        "width": 1100,
+        "height": 1243.666748046875,
+        "firstVisible": "eyebrow"
+      },
+      {
+        "id": "411:7639",
+        "x": 24,
+        "y": 174,
+        "width": 342,
+        "height": 1426,
+        "firstVisible": "eyebrow"
+      }
+    ],
+    "filter": {
+      "componentSet": "435:1899",
+      "mapping": {
+        "319:810": "435:1900",
+        "323:1376": "435:1906",
+        "323:1405": "435:1915",
+        "323:1429": "435:1921",
+        "323:1458": "435:1930",
+        "323:1487": "435:1939",
+        "319:838": "435:1945",
+        "323:1511": "435:1951",
+        "323:1540": "435:1960",
+        "323:1564": "435:1966",
+        "323:1593": "435:1975",
+        "323:1622": "435:1984",
+        "319:866": "435:1990",
+        "323:1646": "435:1996",
+        "323:1675": "435:2005",
+        "323:1699": "435:2011",
+        "323:1728": "435:2020",
+        "323:1757": "435:2029",
+        "319:894": "435:2035",
+        "323:1781": "435:2041",
+        "323:1810": "435:2050",
+        "323:1834": "435:2056",
+        "323:1863": "435:2065",
+        "323:1892": "435:2074"
+      },
+      "dialogs": [
+        {
+          "id": "325:3489",
+          "x": 649.2294921875,
+          "y": 179.33331298828125,
+          "w": 320,
+          "h": 258
+        },
+        {
+          "id": "325:3627",
+          "x": 470.7705078125,
+          "y": 179.333251953125,
+          "w": 320,
+          "h": 258
+        },
+        {
+          "id": "325:3762",
+          "x": 58,
+          "y": 152.3332977294922,
+          "w": 320,
+          "h": 258
+        },
+        {
+          "id": "325:3897",
+          "x": 12,
+          "y": 152.3332977294922,
+          "w": 320,
+          "h": 258
+        }
+      ],
+      "padding": 16,
+      "radius": 18,
+      "fieldControlHeight": 48,
+      "height": 258,
+      "headingFontPreserved": true,
+      "anchorGapOnExplorer": 8,
+      "sharedOverlayAnchoring": "Placement fixe de référence Explorer ; pas de recalcul selon chaque cadre appelant, contrairement au site.",
+      "translationBindingsRestored": 96,
+      "fieldReactionsMatchedOriginal": true,
+      "historicalVariantsUntouched": true
+    },
+    "verification": {
+      "pageFrameCount": 75,
+      "destinationsAudited": 88,
+      "missingDestinations": [],
+      "filterLibraryDestinationsAudited": 12,
+      "missingFilterDestinations": [],
+      "sharedOriginalVariableValuesUnchanged": true,
+      "activeDockReactionsUnchanged": true,
+      "contentFontsUnchanged": true,
+      "captureModesRestored": true,
+      "screensExamined": [
+        "Accueil arabe sombre mobile",
+        "Recherche FR sombre mobile",
+        "Accueil FR clair ordinateur",
+        "Projets FR mobile après retrait du lien",
+        "Filtre FR mobile corrigé"
+      ],
+      "prototypeReplayed": false,
+      "motionVideoExported": false
+    },
+    "proofs": [
+      "figma/explorations-2026-09/content-layout-proof/home-ar-dark-mobile-capsule.png",
+      "figma/explorations-2026-09/content-layout-proof/search-fr-dark-mobile-capsule.png"
+    ],
+    "limits": [
+      "Flou radial périphérique du globe non reproduit dans Figma ; géographie vectorielle conservée sans copies supplémentaires.",
+      "Les deux effets de transparence au défilement sont des essais web séparés, aucun choix utilisateur final ; Figma montre le repos95 % seulement.",
+      "Filtre partagé avec ancrage fixe de référence Explorer ; son placement n’est pas recalculé par contexte dans Figma. Champs48px et typographie préservée donnent258px de hauteur, contre environ249px dans le web.",
+      "Captures et audit API ; aucun nouveau rejeu du lecteur Figma ni vidéo de l’entrée.",
+      "Limites précédentes de recherche illustrative, vue Liste et RTL conservées."
+    ]
+  },
+  "scrollAndFilter20261005": {
+    "date": "2026-10-05",
+    "decision": "Deuxième essai choisi : effacement complet menu et loupe. Retour après400ms de repos en350ms ; navigation automatique exclue.",
+    "filter": {
+      "desktopY": 118,
+      "mobileY": 95,
+      "centered": true,
+      "mutatedNodeIds": [
+        "280:3520",
+        "279:1024",
+        "280:3794",
+        "279:1341",
+        "280:4087",
+        "280:7336",
+        "280:7610",
+        "280:7885",
+        "328:4908",
+        "328:5168",
+        "328:5269",
+        "328:5552",
+        "347:4503",
+        "347:4707",
+        "347:4915",
+        "347:5123",
+        "411:7111",
+        "411:7638",
+        "306:2769",
+        "306:3148",
+        "306:3543",
+        "306:3922",
+        "306:8023",
+        "306:8383",
+        "306:8759",
+        "306:9119",
+        "325:3489",
+        "325:3627",
+        "325:3762",
+        "325:3897"
+      ],
+      "filters": [
+        {
+          "id": "280:3520",
+          "frame": "115:4",
+          "x": 649.2291259765625,
+          "y": 118,
+          "width": 141.5417022705078,
+          "height": 47.33330154418945
+        },
+        {
+          "id": "279:1024",
+          "frame": "119:178",
+          "x": 649.2291259765625,
+          "y": 118,
+          "width": 141.5417022705078,
+          "height": 47.33330154418945
+        },
+        {
+          "id": "280:3794",
+          "frame": "123:162",
+          "x": 136.3125,
+          "y": 95,
+          "width": 117.375,
+          "height": 45.33330154418945
+        },
+        {
+          "id": "279:1341",
+          "frame": "125:198",
+          "x": 136.3125,
+          "y": 95,
+          "width": 117.375,
+          "height": 45.33330154418945
+        },
+        {
+          "id": "280:4087",
+          "frame": "125:243",
+          "x": 649.2291259765625,
+          "y": 118,
+          "width": 141.5417022705078,
+          "height": 47.33330154418945
+        },
+        {
+          "id": "280:7336",
+          "frame": "125:296",
+          "x": 649.2291259765625,
+          "y": 118,
+          "width": 141.5417022705078,
+          "height": 47.33330154418945
+        },
+        {
+          "id": "280:7610",
+          "frame": "125:349",
+          "x": 136.3125,
+          "y": 95,
+          "width": 117.375,
+          "height": 45.33330154418945
+        },
+        {
+          "id": "280:7885",
+          "frame": "125:402",
+          "x": 136.3125,
+          "y": 95,
+          "width": 117.375,
+          "height": 45.33330154418945
+        },
+        {
+          "id": "328:4908",
+          "frame": "328:4892",
+          "x": 649.2291259765625,
+          "y": 118,
+          "width": 141.5417022705078,
+          "height": 47.33330154418945
+        },
+        {
+          "id": "328:5168",
+          "frame": "328:5152",
+          "x": 649.2291259765625,
+          "y": 118,
+          "width": 141.5417022705078,
+          "height": 47.33330154418945
+        },
+        {
+          "id": "328:5269",
+          "frame": "328:5253",
+          "x": 136.3125,
+          "y": 95,
+          "width": 117.375,
+          "height": 45.33330154418945
+        },
+        {
+          "id": "328:5552",
+          "frame": "328:5536",
+          "x": 136.3125,
+          "y": 95,
+          "width": 117.375,
+          "height": 45.33330154418945
+        },
+        {
+          "id": "347:4503",
+          "frame": "347:4492",
+          "x": 649.2291259765625,
+          "y": 118,
+          "width": 141.5417022705078,
+          "height": 47.33330154418945
+        },
+        {
+          "id": "347:4707",
+          "frame": "347:4696",
+          "x": 136.3125,
+          "y": 95,
+          "width": 117.375,
+          "height": 45.33330154418945
+        },
+        {
+          "id": "347:4915",
+          "frame": "347:4904",
+          "x": 649.2291259765625,
+          "y": 118,
+          "width": 141.5417022705078,
+          "height": 47.33330154418945
+        },
+        {
+          "id": "347:5123",
+          "frame": "347:5112",
+          "x": 136.3125,
+          "y": 95,
+          "width": 117.375,
+          "height": 45.33330154418945
+        },
+        {
+          "id": "411:7111",
+          "frame": "411:7100",
+          "x": 649.2291259765625,
+          "y": 118,
+          "width": 141.5417022705078,
+          "height": 47.33330154418945
+        },
+        {
+          "id": "411:7638",
+          "frame": "411:7627",
+          "x": 136.3125,
+          "y": 95,
+          "width": 117.375,
+          "height": 45.33330154418945
+        },
+        {
+          "id": "306:2769",
+          "frame": "306:2716",
+          "x": 649.2291259765625,
+          "y": 118,
+          "width": 141.5417022705078,
+          "height": 47.33330154418945
+        },
+        {
+          "id": "306:3148",
+          "frame": "306:3095",
+          "x": 649.2291259765625,
+          "y": 118,
+          "width": 141.5417022705078,
+          "height": 47.33330154418945
+        },
+        {
+          "id": "306:3543",
+          "frame": "306:3490",
+          "x": 649.2291259765625,
+          "y": 118,
+          "width": 141.5417022705078,
+          "height": 47.33330154418945
+        },
+        {
+          "id": "306:3922",
+          "frame": "306:3869",
+          "x": 649.2291259765625,
+          "y": 118,
+          "width": 141.5417022705078,
+          "height": 47.33330154418945
+        },
+        {
+          "id": "306:8023",
+          "frame": "306:7976",
+          "x": 136.3125,
+          "y": 95,
+          "width": 117.375,
+          "height": 45.33330154418945
+        },
+        {
+          "id": "306:8383",
+          "frame": "306:8336",
+          "x": 136.3125,
+          "y": 95,
+          "width": 117.375,
+          "height": 45.33330154418945
+        },
+        {
+          "id": "306:8759",
+          "frame": "306:8712",
+          "x": 136.3125,
+          "y": 95,
+          "width": 117.375,
+          "height": 45.33330154418945
+        },
+        {
+          "id": "306:9119",
+          "frame": "306:9072",
+          "x": 136.3125,
+          "y": 95,
+          "width": 117.375,
+          "height": 45.33330154418945
+        }
+      ],
+      "overlays": [
+        {
+          "id": "325:3489",
+          "x": 649.2294921875,
+          "y": 173.3332977294922,
+          "width": 320,
+          "height": 258
+        },
+        {
+          "id": "325:3627",
+          "x": 470.7705078125,
+          "y": 173.3332977294922,
+          "width": 320,
+          "height": 258
+        },
+        {
+          "id": "325:3762",
+          "x": 58,
+          "y": 148.3332977294922,
+          "width": 320,
+          "height": 258
+        },
+        {
+          "id": "325:3897",
+          "x": 12,
+          "y": 148.3332977294922,
+          "width": 320,
+          "height": 258
+        }
+      ]
+    },
+    "verification": {
+      "positionsReturnedByWrite": true,
+      "mobileProjectsScreenshotExamined": true,
+      "prototypeReplayed": false
+    },
+    "limits": [
+      "Figma montre le repos ; le défilement reste web.",
+      "Fenêtres partagées sans repositionnement dynamique."
+    ]
+  }
+}

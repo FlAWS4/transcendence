@@ -1,0 +1,581 @@
+{
+ "note": "Quatrième relecture (23 oct. 2026, planches zones-v4, plan du 23 octobre à 7 h 11 UTC (9 h 11, heure de Paris)) : les quatre relecteurs ont fini. Les remarques restantes sont mineures. « suites » dit ce que chacune est devenue dans le plan final (5 050 zones), vérifié dans parcours/plan.json le 23 octobre.",
+ "resultats": {
+  "desktop/fr": {
+   "boards": 89,
+   "previous": [
+    {
+     "board": "Panneau_du_compte_·_visiteur_—_Ordinateur_·_Clair__account-visitor.png",
+     "zone": "Fermer, Compte · fermer et « À côté du menu »",
+     "status": "corrigé",
+     "detail": "Les trois sorties reviennent maintenant à l'écran précédent, comme sur le panneau membre. « ‹ Retour » des sous-panneaux revient aussi en arrière. Seuls Fermer, l'avatar et le clic à côté des sous-panneaux mènent à « Liste des projets », comme le veut la règle."
+    },
+    {
+     "board": "Signaler_—_Ordinateur_·_Clair__report.png",
+     "zone": "Fermer, Annuler et voile",
+     "status": "corrigé",
+     "detail": "Fermer, Annuler et les quatre bandes du voile reviennent à l'écran précédent, ici comme sur « Signaler · depuis un profil ». On reste sur la chronique, sur minishell ou sur la fiche membre d'origine."
+    },
+    {
+     "board": "Visionneuse_de_médias_—_Ordinateur_·_Clair__viewer.png",
+     "zone": "Fermer le média et voile",
+     "status": "corrigé",
+     "detail": "« Fermer le média » et les quatre bandes du voile reviennent en arrière : fermer un portrait ramène à la fiche du profil."
+    },
+    {
+     "board": "Fenêtre_Autour_du_campus_—_Ordinateur_·_Clair__campus-window.png",
+     "zone": "Fermer la carte et voile",
+     "status": "corrigé",
+     "detail": "« Fermer la carte » et le voile reviennent en arrière. Depuis « Choisir un campus », on retrouve ce choix sur ft_transcendence."
+    },
+    {
+     "board": "_Où_veux-tu_aller_—_Ordinateur_·_Clair__scope-popover.png",
+     "zone": "Fermer et « À côté du menu »",
+     "status": "corrigé",
+     "detail": "La croix, « HORIZON · fermer le menu » et les quatre bandes reviennent en arrière, et le menu ⋮ ne porte plus de zone « Portée ». Il reste le choix d'un pays ou d'un campus depuis une liste, signalé à part."
+    },
+    {
+     "board": "Chronique_—_Ordinateur_·_Clair__article.png",
+     "zone": "Portée ⇢",
+     "status": "corrigé",
+     "detail": "Plus aucune zone « Portée » sur les fiches, leurs onglets, les états de commentaires, le menu ⋮ ou les fiches membre. Elle ne subsiste que sur les listes, sur la recherche et sur les panneaux posés sur la liste des projets."
+    },
+    {
+     "board": "Menu_à_trois_points_d_un_commentaire_—_Ordinateur_·_Clair__comment-menu.png",
+     "zone": "(aucune)",
+     "status": "corrigé",
+     "detail": "Le menu a ses quatre bandes « à côté du menu ». Logo, Compte, menu du bas, recherche, dé, « Retour aux projets », « Signaler », « Explorer 42 Paris », les deux auteurs, « @Inès Morel » et le tri ont leur zone. L'onglet actif ne fait que fermer le menu."
+    },
+    {
+     "board": "Commentaires_·_avec_un_fil_—_Ordinateur_·_Clair__project-comments-thread.png",
+     "zone": "Lien · Commentaires (onglet actif)",
+     "status": "corrigé",
+     "detail": "L'onglet actif n'a plus de zone sur les deux fils, ni sur « Tester le projet · lien enregistré », ni sur « Compte de Leïla Mansour · membre ». Sur le tri ouvert, les suggestions de mention et le menu ⋮, il ferme seulement le menu, comme le veut la règle."
+    },
+    {
+     "board": "Parcours_—_Ordinateur_·_Clair__profile-journey.png",
+     "zone": "Dé ⇢",
+     "status": "corrigé",
+     "detail": "Sur les onglets de Leïla et sur son compte membre, le dé mène à la fiche d'Inès Morel. Sur les onglets de minishell, il mène à ft_transcendence. Les onglets de la chronique n'ont plus de zone de dé, faute d'autre chronique relevée."
+    },
+    {
+     "board": "Paramètres_—_Ordinateur_·_Clair__account-settings.png",
+     "zone": "Compte ⇢",
+     "status": "corrigé",
+     "detail": "Dans Paramètres, Thème et Langue, l'avatar (« Compte · fermer ») mène à « Liste des projets », comme Fermer et le clic à côté."
+    },
+    {
+     "board": "Liste_des_projets_·_vue_Liste_—_Ordinateur_·_Clair__projects-list.png",
+     "zone": "(aucune)",
+     "status": "corrigé",
+     "detail": "« Trier » a sa zone en vue Liste, pour les projets comme pour les profils. Sur les deux dernières pages, « Affichage » et « Trier » ont aussi la leur."
+    },
+    {
+     "board": "Liste_des_profils_·_vue_Liste_—_Ordinateur_·_Clair__people-list.png",
+     "zone": "Page 1",
+     "status": "corrigé",
+     "detail": "Dans les deux vues Liste, la page en cours n'a plus de zone. Seule « Dernière page » en a une."
+    },
+    {
+     "board": "Liste_des_profils_·_dernière_page_—_Ordinateur_·_Clair__people-last-page.png",
+     "zone": "(aucune)",
+     "status": "corrigé",
+     "detail": "Les trois cartes aux places des fiches relevées (Sara El Amr, Rayan Idrissi et Adam Karim) mènent à « Fiche profil ». Les trois autres restent sans zone, selon le compromis."
+    },
+    {
+     "board": "Choisir_un_campus_—_Ordinateur_·_Clair__campus-choice.png",
+     "zone": "(aucune)",
+     "status": "corrigé",
+     "detail": "42 Lyon, 42 Tokyo et 42 Rio ouvrent aussi « Autour du campus », comme 42 Paris."
+    },
+    {
+     "board": "Commentaires_·_avec_un_fil_—_Ordinateur_·_Clair__article-comments-thread.png",
+     "zone": "Publier, puis l'auteur ou une mention @",
+     "status": "corrigé",
+     "detail": "« @Inès Morel » mène à « Fiche profil · statut Alumni » sur les deux fils, sur le tri ouvert et sur le menu ⋮."
+    },
+    {
+     "board": "Messagerie_—_Ordinateur_·_Clair__messages.png",
+     "zone": "Fermer",
+     "status": "compromis documenté",
+     "detail": "Fermer rouvre toujours le panneau précédent. Le compromis est désormais inscrit : passer d'un panneau à l'autre par l'en-tête puis fermer rouvre le premier, et une fenêtre ouverte à côté d'un menu se referme sur ce menu."
+    },
+    {
+     "board": "Commentaires_·_avec_un_fil_—_Ordinateur_·_Clair__project-comments-thread.png",
+     "zone": "Onglet · comments ⇢",
+     "status": "corrigé",
+     "detail": "Même constat qu'au point « Lien · Commentaires » : plus de zone sur l'onglet actif des fils et du tri ouvert, ni de « Lien · Tester le projet » sur le lien enregistré."
+    }
+   ],
+   "issues": [
+    {
+     "board": "_Où_veux-tu_aller_—_Ordinateur_·_Clair__scope-popover.png",
+     "zone": "Choisir un pays ; Choisir un campus",
+     "problem": "arrivée douteuse",
+     "detail": "La fenêtre est relevée sur Explorer · Monde, mais « Portée » l'ouvre aussi depuis 21 cadres hors d'Explorer : listes, vues Liste, dernières pages, tris ouverts, état vide, recherche, panneaux du compte et versions membre. Depuis tous ces cadres, choisir un pays ou un campus mène au globe (Explorer · Pays ou Campus). D'après la relecture précédente, le site filtre la liste sans changer de rubrique. Aucune liste filtrée n'est relevée et la fenêtre est commune : ce cas est à inscrire aux compromis, qui ne le citent pas.",
+     "severity": "mineur"
+    },
+    {
+     "board": "Liste_des_projets_·_dernière_page_—_Ordinateur_·_Clair__projects-last-page.png",
+     "zone": "(aucune)",
+     "problem": "commande sans zone",
+     "detail": "Le titre « Le serveur reproductible · Le premier essai » (x 548–892, y 555–628) n'a pas de zone. Il est à la place du titre de minishell en page 1, qui en a une. L'image et les bords de cette carte mènent pourtant à « Fiche projet », comme le titre de la carte voisine « Des salons partagés ».",
+     "severity": "mineur"
+    },
+    {
+     "board": "Envoyer_un_message_—_Ordinateur_·_Clair__message-dialog.png",
+     "zone": "(aucune)",
+     "problem": "commande sans zone",
+     "detail": "La fenêtre est posée sur un voile flouté, mais elle n'a aucune bande « à côté de la fenêtre » : seuls Fermer et Annuler répondent. Sur Signaler, Filtrer, Choisir un campus ou la connexion, un clic sur le voile revient en arrière. Si le voile ferme aussi cette fenêtre sur le site, il manque les quatre bandes. plan.json montre la même absence en anglais et sur mobile.",
+     "severity": "mineur"
+    },
+    {
+     "board": "Filtrer_les_profils_—_Ordinateur_·_Clair__filter-people.png",
+     "zone": "(aucune)",
+     "problem": "commande sans zone",
+     "detail": "Seule la catégorie « Statut » a sa zone « Déplier une catégorie ». La ligne « Rentrée » (x 406–857, y ≈ 499–543) n'en a pas. Pourtant, l'écran relevé « Filtrer les profils · déployée » montre aussi Rentrée dépliée. Pour les projets, seule « Projets » est dépliée dans le relevé : Technologies et Savoir-faire peuvent rester sans zone.",
+     "severity": "mineur"
+    },
+    {
+     "board": "Liste_des_projets_·_état_vide_—_Ordinateur_·_Clair__projects-empty.png",
+     "zone": "(aucune)",
+     "problem": "commande sans zone",
+     "detail": "« Trier » (x 1169–1270, y 204–248) est actif mais n'a pas de zone. Le tri ouvert relevé (page 1 en grille) sert déjà, par compromis, depuis la vue Liste et la dernière page, et il permettrait de décocher « Mes favoris uniquement ». « Afficher tous les contenus » reste la sortie principale. « Affichage » peut rester sans zone : aucune vue Liste vide n'est relevée.",
+     "severity": "mineur"
+    }
+   ],
+   "notes": "J'ai examiné 89 planches pour 90 cadres. « Déchiffrement · vers le logo (membre) » n'a pas de planche : la capture member-transition--desktop--fr-light.png manque. Son enchaînement automatique (0,45 s vers le logo membre) n'est vérifiable que dans plan.json, où il est juste. J'ai lu plan.json dans sa version du 23 oct. 2026 à 09 h 11 ; les planches datent de 09 h 12.\n\nBilan des 17 remarques précédentes : 16 sont corrigées. Celle de la Messagerie relève désormais d'un compromis inscrit ; la 17e, doublon de la 8e (onglet actif), est corrigée avec elle. Je n'ai trouvé aucun défaut bloquant ni gênant. Les cinq défauts restants sont mineurs.\n\nL'effet de bord relevé sur mobile en v3 n'apparaît pas ici : aucun cœur de carte n'est découpé dans les zones d'une fenêtre ou de la barre fixe. En dehors des cartes, aucune zone n'est fragmentée. La croix des filtres, Annuler, Appliquer, les résultats de la recherche et le menu du bas gardent leur taille normale.\n\nContrôles effectués :\n- liste des zones de chaque cadre, avec les coordonnées de dessin_zones.py ;\n- recherche de recouvrements, entre zones et sur les menus ou fenêtres ouverts : aucun ;\n- tailles anormales, cibles manquantes et enchaînements automatiques ;\n- comparaison des cadres visiteur et membre ;\n- recadrages agrandis, dans /tmp/claude-1000/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/scratchpad/crops.\n\nDeux points vus mais non signalés, à trancher si besoin :\n- Dans « Commentaires · suggestions de mention », seule la première suggestion (Inès Morel) a une zone. Le fil relevé ne montre que cette mention.\n- Le logo n'a pas de zone sur Explorer · Pays et Campus, traité comme un lien vers la page en cours. Les planches ne permettent pas de vérifier ce que fait le site."
+  },
+  "desktop/en": {
+   "boards": 89,
+   "previous": [
+    {
+     "board": "Panneau_du_compte_·_visiteur_—_Ordinateur_·_Clair_·_English__account-visitor.png",
+     "zone": "Fermer, Compte · fermer et « À côté du menu »",
+     "status": "corrigé",
+     "detail": "La croix, l'avatar « Compte · fermer » et les quatre bandes « à côté du menu » sont maintenant des retours à l'écran précédent, comme sur le panneau membre. Elles ne mènent plus à « Liste des projets »."
+    },
+    {
+     "board": "Signaler_—_Ordinateur_·_Clair_·_English__report.png",
+     "zone": "Fermer, Cancel et voile",
+     "status": "corrigé",
+     "detail": "Sur « Signaler » comme sur « Signaler · depuis un profil », Fermer, Cancel et les quatre bandes du voile reviennent à l'écran précédent. Il ne reste qu'un effet mineur, signalé à part : depuis l'entrée « Signaler » du menu ⋮, le retour rouvre ce menu."
+    },
+    {
+     "board": "Visionneuse_de_médias_—_Ordinateur_·_Clair_·_English__viewer.png",
+     "zone": "Fermer le média et voile",
+     "status": "corrigé",
+     "detail": "Le bouton et les quatre bandes du voile reviennent à l'écran précédent, et non plus à minishell."
+    },
+    {
+     "board": "Fenêtre_Autour_du_campus_—_Ordinateur_·_Clair_·_English__campus-window.png",
+     "zone": "Fermer la carte et voile",
+     "status": "corrigé",
+     "detail": "La croix et le voile reviennent à l'écran précédent, quelle que soit l'entrée. Un cas reste à part, signalé en mineur : depuis « Choisir un campus », le retour rouvre la fenêtre de choix."
+    },
+    {
+     "board": "_Où_veux-tu_aller_—_Ordinateur_·_Clair_·_English__scope-popover.png",
+     "zone": "Fermer et « À côté du menu »",
+     "status": "corrigé",
+     "detail": "La croix, les quatre bandes et « HORIZON · fermer le menu » reviennent à l'écran précédent, et le menu ⋮ n'a plus de zone « Portée ». Les sélecteurs de pays et de campus mènent toujours au globe, même depuis une liste ; c'est signalé à part."
+    },
+    {
+     "board": "Chronique_—_Ordinateur_·_Clair_·_English__article.png",
+     "zone": "Portée ⇢",
+     "status": "corrigé",
+     "detail": "Plus aucune fiche, aucun onglet, aucun état de commentaires ni le menu ⋮ n'a de zone « Portée ». Elle ne reste que sur les listes, dans Explorer, sur la recherche ouverte et sur les panneaux du compte, qui sont posés sur la liste des projets."
+    },
+    {
+     "board": "Menu_à_trois_points_d_un_commentaire_—_Ordinateur_·_Clair_·_English__comment-menu.png",
+     "zone": "(aucune)",
+     "status": "corrigé",
+     "detail": "Le menu ⋮ a maintenant ses quatre bandes « à côté du menu », et la page est découpée autour de lui. Le logo, le compte, le menu du bas, la recherche, le dé, « Back to projects », « Report », « Explore 42 Paris », les auteurs, la mention et le tri ont tous une zone."
+    },
+    {
+     "board": "Commentaires_·_avec_un_fil_—_Ordinateur_·_Clair_·_English__project-comments-thread.png",
+     "zone": "Lien · Comments (onglet actif)",
+     "status": "corrigé",
+     "detail": "L'onglet actif n'a plus de zone sur les deux planches « avec un fil » ; « Try the project » n'en a plus sur « lien enregistré », ni « Overview » sur le Compte membre. Sur le tri ouvert, les suggestions de mention et le menu ⋮, il devient « Comments · fermer le menu » (retour), conformément à la règle."
+    },
+    {
+     "board": "Parcours_—_Ordinateur_·_Clair_·_English__profile-journey.png",
+     "zone": "Dé ⇢",
+     "status": "corrigé",
+     "detail": "Sur les onglets de Leïla et sur le Compte membre, le dé mène à Inès (« statut Alumni »). Sur la chronique et ses onglets, il n'a plus de zone, faute d'autre chronique relevée. Sur les états de minishell, il mène à ft_transcendence."
+    },
+    {
+     "board": "Paramètres_—_Ordinateur_·_Clair_·_English__account-settings.png",
+     "zone": "Compte ⇢",
+     "status": "corrigé",
+     "detail": "Dans Paramètres, Thème et Langue, l'avatar (« Compte · fermer ») mène désormais à « Liste des projets », la page sous le panneau, comme « Fermer » et le clic à côté."
+    },
+    {
+     "board": "Liste_des_projets_·_vue_Liste_—_Ordinateur_·_Clair_·_English__projects-list.png",
+     "zone": "(aucune)",
+     "status": "corrigé",
+     "detail": "« Trier » a une zone en vue Liste, pour les projets comme pour les profils. Sur les deux dernières pages, « Affichage » et « Trier » en ont une aussi, vers la vue Liste et le tri relevés sur la page 1 en grille (compromis)."
+    },
+    {
+     "board": "Liste_des_profils_·_vue_Liste_—_Ordinateur_·_Clair_·_English__people-list.png",
+     "zone": "Page 1",
+     "status": "corrigé",
+     "detail": "Le « 1 » de la vue Liste n'a plus de zone, ni pour les profils ni pour les projets."
+    },
+    {
+     "board": "Liste_des_profils_·_dernière_page_—_Ordinateur_·_Clair_·_English__people-last-page.png",
+     "zone": "(aucune)",
+     "status": "corrigé",
+     "detail": "Les trois cartes placées comme les fiches relevées de la page 1 mènent à « Fiche profil » : Sara El Amr, Rayan Idrissi et Adam Karim. Les trois autres restent sans zone, comme le prévoit le compromis, et le cœur est bien découpé."
+    },
+    {
+     "board": "Choisir_un_campus_—_Ordinateur_·_Clair_·_English__campus-choice.png",
+     "zone": "(aucune)",
+     "status": "corrigé",
+     "detail": "42 Lyon, 42 Tokyo et 42 Rio ont maintenant une zone vers « Autour du campus », relevé pour 42 Paris (compromis)."
+    },
+    {
+     "board": "Commentaires_·_avec_un_fil_—_Ordinateur_·_Clair_·_English__article-comments-thread.png",
+     "zone": "Publier, puis l’auteur ou une mention @",
+     "status": "corrigé",
+     "detail": "La mention « @Inès Morel » mène à « Fiche profil · statut Alumni » sur les deux planches « avec un fil », sur le tri ouvert et sur le menu ⋮."
+    },
+    {
+     "board": "Messagerie_—_Ordinateur_·_Clair_·_English__messages.png",
+     "zone": "Fermer",
+     "status": "compromis documenté",
+     "detail": "Fermer peut rouvrir le panneau ou le menu précédent : Messagerie ouverte depuis le compte ou Notifications, « Une nouvelle façon d'explorer » depuis « Où veux-tu aller ? », Filtrer depuis la recherche ou le compte. C'est couvert par deux compromis : une fenêtre ouverte depuis la page à côté d'un menu se referme sur ce menu, et passer d'un panneau du compte à un autre par l'en-tête puis fermer rouvre le premier."
+    },
+    {
+     "board": "Commentaires_·_avec_un_fil_—_Ordinateur_·_Clair_·_English.png",
+     "zone": "Onglet · comments ⇢",
+     "status": "corrigé",
+     "detail": "Même constat que pour « Lien · Comments » : plus de zone sur l'onglet actif des planches « avec un fil » ni de « Lien · Try the project » sur « lien enregistré ». Sur « tri ouvert », l'onglet ferme le menu, comme le veut la règle."
+    }
+   ],
+   "issues": [
+    {
+     "board": "Liste_des_projets_·_dernière_page_—_Ordinateur_·_Clair_·_English__projects-last-page.png",
+     "zone": "(aucune)",
+     "problem": "commande sans zone",
+     "severity": "mineur",
+     "detail": "Le titre de la deuxième carte, « The reproducible server · The first experiment », n'a pas de zone. Pourtant, l'image et la bande supérieure de la même carte mènent à « Fiche projet », et le titre placé au même endroit en page 1 a sa zone (« Lien · Behind a command line »). Cause probable : la reprise des cartes sur la dernière page n'a retenu que les zones nommées « Carte d'un projet ». Il manque une zone d'environ [548, 555, 344 × 73] vers « Fiche projet »."
+    },
+    {
+     "board": "Menu_à_trois_points_d_un_commentaire_—_Ordinateur_·_Clair_·_English__comment-menu.png",
+     "zone": "Signaler (entrée du menu ⋮)",
+     "problem": "arrivée douteuse",
+     "severity": "mineur",
+     "detail": "L'entrée « Signaler » du menu ⋮ ouvre « Signaler ». Fermer, Cancel et le voile y étant des retours, on retombe sur le menu ⋮ ouvert, alors que le site ferme ce menu en ouvrant la fenêtre. Le compromis documenté ne vise qu'une fenêtre ouverte depuis la page à côté d'un menu, pas depuis le menu lui-même. Il suffit d'élargir sa formulation ou d'accepter ce cas."
+    },
+    {
+     "board": "Choisir_un_campus_—_Ordinateur_·_Clair_·_English__campus-choice.png",
+     "zone": "Un campus de la liste ; Campus · 42 Lyon, 42 Tokyo, 42 Rio",
+     "problem": "arrivée douteuse",
+     "severity": "mineur",
+     "detail": "Après le choix d'un campus, « Fermer la carte » et le voile d'« Autour du campus », qui sont des retours, rouvrent « Choisir un campus ». Sur le site, la fenêtre de choix se ferme avant l'ouverture de la carte (close(false) puis onExploreCampus dans project-ui.mjs) : fermer la carte ramène directement à la fiche ft_transcendence. Le parcours demande donc un clic de plus. C'est le même mécanisme que pour le menu ⋮, à documenter."
+    },
+    {
+     "board": "_Où_veux-tu_aller_—_Ordinateur_·_Clair_·_English__scope-popover.png",
+     "zone": "Choisir un pays ; Choisir un campus",
+     "problem": "arrivée douteuse",
+     "severity": "mineur",
+     "detail": "Les deux sélecteurs mènent à « Explorer · Pays » et « Explorer · Campus », quelle que soit l'origine. Quand la fenêtre est ouverte depuis Projets, Profils, Chroniques, la recherche ou un panneau du compte posés sur une liste, le site filtre la liste sur place (selectScope puis setContentScope) et reste dans la rubrique au lieu d'aller au globe. Aucune liste filtrée n'est relevée, donc aucun meilleur écran n'existe. Ce cas est à inscrire parmi les compromis « fenêtre relevée une seule fois »."
+    }
+   ],
+   "notes": "89 planches relues. Il y a 90 cadres desktop|en dans plan.json, mais « Déchiffrement · vers le logo (membre) » n'a pas de planche : sa capture manque. Son enchaînement (0,45 s vers « logo seul » membre) est cohérent dans plan.json.\n\nContrôles automatiques sur la version actuelle de plan.json, sans modifier le dépôt :\n- aucune zone n'en chevauche une autre, bandes exclues ;\n- aucune zone de page ne déborde sur un menu ou une fenêtre ouverts ;\n- toutes les cibles existent ;\n- les 90 cadres sont atteignables depuis l'arrivée ;\n- aucune zone ne sort de son cadre.\n\nNon signalés, car conformes aux règles ou sans écran relevé qui leur corresponde :\n- « View » et « Sort » sans zone sur l'état vide : aucun état relevé n'a « My favorites only » coché, et « Show all content » ramène à la liste.\n- Dé actif mais sans zone sur Explorer · Campus : aucun autre campus n'est relevé, ce qui suit la logique de la règle du dé.\n- Pas de voile cliquable sur « Envoyer un message » : sur le site, cette fenêtre ne se ferme pas d'un clic à côté.\n- Logo sans zone dans Explorer · Pays et Campus : setSection('explore') ne fait rien quand on est déjà dans Explorer.\n- Bouton actif d'une rubrique du menu du bas sans zone sur les fiches : même raison.\n\nRecadrages et outils de lecture : /tmp/claude-1000/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/scratchpad/rv4-desktop-en/"
+  },
+  "mobile/fr": {
+   "boards": 90,
+   "previous": [
+    {
+     "board": "Filtrer_les_profils_—_Mobile_·_Clair__filter-people.png",
+     "zone": "Fermer les filtres",
+     "status": "corrigé",
+     "detail": "La zone couvre tout le bouton, croix comprise (x 321–365, y 258–302). « Annuler » (x 25–191) et « Appliquer » (x 199–365) sont entiers : le cœur de la carte cachée n'est plus découpé dans la fenêtre."
+    },
+    {
+     "board": "Filtrer_les_projets_—_Mobile_·_Clair__filter-projects.png",
+     "zone": "Fermer les filtres",
+     "status": "corrigé",
+     "detail": "La zone fait 44 × 44 px (y 224,5–268,5). « Appliquer » de Projets · filtre local ouvert retrouve aussi ses 44 px de haut."
+    },
+    {
+     "board": "Liste_des_profils_·_dernière_page_—_Mobile_·_Clair__people-last-page.png",
+     "zone": "Menu du bas · projects ; Menu du bas · awards",
+     "status": "corrigé",
+     "detail": "Les deux onglets sont entiers (67,2 × 48 px, y 773–821 dans le cadre). Plus aucune entaille sous les cœurs de la 3e rangée."
+    },
+    {
+     "board": "Liste_des_profils_·_vue_Liste_—_Mobile_·_Clair__people-list.png",
+     "zone": "Menu du bas · awards",
+     "status": "corrigé",
+     "detail": "L'onglet est entier (x 299,8–367, 48 px de haut). Sur Liste des projets · vue Liste, l'onglet Explorer fait lui aussi 48 px (y 773–821)."
+    },
+    {
+     "board": "Recherche_·_ouverte_—_Mobile_·_Clair__search-open.png",
+     "zone": "Résultat · Des salons partagés… ; Résultat « Chroniques »",
+     "status": "corrigé",
+     "detail": "Les deux résultats sont des rectangles pleins de 336 × 84,7 px, sans trou. Les cœurs cachés sous le panneau ne les découpent plus."
+    },
+    {
+     "board": "Paramètres_—_Mobile_·_Clair__account-settings.png",
+     "zone": "Retour",
+     "status": "corrigé",
+     "detail": "« ‹ Retour » revient maintenant à l'écran précédent (zone orange), sur Paramètres comme sur Thème et Langue. Fermer, l'avatar et le clic à côté mènent à Liste des projets, sous le panneau, comme le veut la règle."
+    },
+    {
+     "board": "Fiche_campus_·_déployée_—_Mobile_·_Clair__campus-sheet-expanded.png",
+     "zone": "Replier la fiche",
+     "status": "corrigé",
+     "detail": "« Replier la fiche » revient à l'écran précédent. Fermer et le voile mènent à Explorer · Campus."
+    },
+    {
+     "board": "Fiche_campus_·_déployée_—_Mobile_·_Clair__campus-sheet-expanded.png",
+     "zone": "(aucune)",
+     "status": "corrigé",
+     "detail": "La fiche déployée est devenue un conteneur ⇕ (10, 10, 370 × 824). La photo, Itinéraire, Site officiel, les Sources et « Consulter les dates officielles » y ont leurs zones, aux mêmes positions relatives que dans la fiche repliée."
+    },
+    {
+     "board": "Menu_à_trois_points_d_un_commentaire_—_Mobile_·_Clair__comment-menu.png",
+     "zone": "Remonter en haut",
+     "status": "corrigé",
+     "detail": "Le bouton ↑ est devenu « Remonter en haut · fermer le menu », qui revient à l'écran précédent (zone orange). C'est la règle du bouton ↑ à côté d'un menu ouvert."
+    },
+    {
+     "board": "Liste_des_chroniques_—_Mobile_·_Clair__journal.png",
+     "zone": "(aucune)",
+     "status": "corrigé",
+     "detail": "« Lien · Inès Morel » (x 204–312, y 494–534) mène à Fiche profil. Sur la liste membre, il mène à Fiche profil · membre. Les autres auteurs de la page ont aussi reçu leur zone."
+    },
+    {
+     "board": "Fiche_projet_—_Mobile_·_Clair__project.png",
+     "zone": "(aucune)",
+     "status": "corrigé",
+     "detail": "Noé Laurent et Inès Morel ont leur zone, comme Luiza Costa et Haru Mizuno, et mènent à Fiche profil. Sur Fiche projet · membre, ils mènent à Fiche profil · membre."
+    },
+    {
+     "board": "Commentaires_·_avec_un_fil_—_Mobile_·_Clair__project-comments-thread.png",
+     "zone": "(aucune)",
+     "status": "corrigé",
+     "detail": "Sur les deux fils, le ⋮ de la réponse mène à Menu à trois points, et « @Inès Morel » à Fiche profil. Sur Commentaires · tri ouvert, le ⋮ de la réponse a sa zone ; la mention y est cachée sous le menu. Sur Menu à trois points, la mention a sa zone, et le ⋮ de la réponse, à côté du menu, le referme (lien vers la page en cours)."
+    },
+    {
+     "board": "Médias_—_Mobile_·_Clair__project-media.png",
+     "zone": "(aucune)",
+     "status": "corrigé",
+     "detail": "« Agrandir le média » couvre le schéma MINISHELL (x 24–366, y 812,5–1026,3) et ouvre la visionneuse."
+    },
+    {
+     "board": "Liste_des_projets_·_dernière_page_—_Mobile_·_Clair__projects-last-page.png",
+     "zone": "(aucune)",
+     "status": "toujours là",
+     "detail": "Corrigé à moitié. Le titre de la 1re carte, « Des salons partagés… », mène à Fiche projet (x 26–186, y 431,8–509,8). Le titre de la 2e carte, « Le serveur reproductible · Le premier essai » (x ≈ 204–364, y ≈ 384–462), n'a toujours pas de zone."
+    },
+    {
+     "board": "Liste_des_chroniques_—_Mobile_·_Clair__journal.png",
+     "zone": "(aucune)",
+     "status": "compromis documenté",
+     "detail": "C'est maintenant inscrit aux compromis : l'affichage et le tri des chroniques n'ont pas de zone, ici comme sur la liste membre."
+    },
+    {
+     "board": "Liste_des_profils_·_tri_ouvert_—_Mobile_·_Clair__people-sort-open.png",
+     "zone": "(aucune)",
+     "status": "compromis documenté",
+     "detail": "C'est maintenant inscrit aux compromis : « Mes favoris uniquement » n'a de zone que pour les projets."
+    },
+    {
+     "board": "Fiche_projet_·_projet_à_campus_unique_—_Mobile_·_Clair__project-single.png",
+     "zone": "Dé",
+     "status": "corrigé",
+     "detail": "La règle est explicitée et appliquée. Le dé de ft_transcendence (fiche, fiche membre, sélecteur ouvert) mène à minishell. Celui de minishell et de ses rubriques mène à ft_transcendence. Les fiches sans autre fiche relevée (profils, chronique) n'ont pas de zone de dé."
+    },
+    {
+     "board": "Commentaires_·_suggestions_de_mention_—_Mobile_·_Clair__mention-picker.png",
+     "zone": "Signaler ; Explorer + nom du campus",
+     "status": "corrigé",
+     "detail": "Les deux zones sont découpées autour de la pastille « Monde » (x 140,4–249,5, y 84–122). Il reste des bandes de 11 px de chaque côté, puis toute la largeur sous y 122. La pastille ne déclenche plus Signaler."
+    }
+   ],
+   "issues": [
+    {
+     "board": "Liste_des_projets_·_dernière_page_—_Mobile_·_Clair__projects-last-page.png",
+     "zone": "(aucune)",
+     "problem": "commande sans zone",
+     "detail": "Le titre de la 2e carte, « Le serveur reproductible · Le premier essai » (x ≈ 204–364, y ≈ 384–462), n'a pas de zone. Cette carte est à la place de minishell en page 1. Son image (→ Fiche projet) et son auteure Sara El Amr ont leur zone ; seul le titre de la 1re carte a été ajouté en v4. plan.json montre la même absence en anglais mobile et sur ordinateur.",
+     "severity": "mineur"
+    },
+    {
+     "board": "_Où_veux-tu_aller_—_Mobile_·_Clair__scope-popover.png",
+     "zone": "Choisir un pays ; Choisir un campus (et « Portée » des listes)",
+     "problem": "arrivée douteuse",
+     "detail": "Le panneau a été relevé sur Explorer · Monde. Pourtant, « Portée » l'ouvre depuis 14 cadres de listes : projets, profils, chroniques, versions membre, dernières pages, vues Liste, tris ouverts, état vide et recherche ouverte. Depuis une liste, on voit donc le globe sous le panneau, puis le choix d'un pays ou d'un campus mène à Explorer · Pays ou Campus. Sur le site, ce choix garde la liste et la filtre (welcome.mjs : selectScope → setContentScope ne change pas la section). Aucune liste filtrée n'a été relevée. Ce cas manque donc à la liste « Chaque fenêtre n'a été relevée qu'une fois » : il faudrait l'y inscrire.",
+     "severity": "mineur"
+    },
+    {
+     "board": "Filtrer_les_profils_—_Mobile_·_Clair__filter-people.png",
+     "zone": "(aucune)",
+     "problem": "commande sans zone",
+     "detail": "Seul le chevron « Statut » a la zone « Déplier une catégorie » vers Filtrer les profils · déployée. Le chevron « Rentrée » (x ≈ 23–232, y ≈ 430–474) n'en a pas. Or l'écran déployé relevé montre aussi Rentrée dépliée (2024 cochée) : il correspond aussi bien à ce clic qu'au premier.",
+     "severity": "mineur"
+    },
+    {
+     "board": "Liste_des_projets_—_Mobile_·_Clair__projects.png",
+     "zone": "Carte d’un projet / Carte d’un profil / Carte d’une chronique",
+     "problem": "trop petite ou trop grande",
+     "detail": "La découpe autour du cœur supprime les morceaux de moins de 8 px. Deux bandes de 6 px de chaque carte relevée restent donc inertes : le haut de l'image (y 242–248 ; la carte commence à y 242,2, comme le montre son morceau non découpé sur Paramètres) et la bande à droite du cœur (x 182–188). Cela vaut pour les projets, les chroniques et les profils (Leïla), et pour leurs variantes : dernière page, tri ouvert, recherche, membre. Dans la vue Liste des projets, une bande de 4 px est perdue au-dessus du cœur. Sur le site, ces bandes ouvrent la carte.",
+     "severity": "mineur"
+    }
+   ],
+   "notes": "J'ai examiné les 90 planches de zones-v4/mobile/fr ; les pages hautes, je les ai recadrées en entier ou par tranches. Le cadre « Déchiffrement · vers le logo (membre) » n'a toujours pas de planche, faute de capture member-transition. Son enchaînement automatique (0,45 s vers le logo du parcours membre) n'est vérifiable que dans plan.json.\n\nBilan des 18 remarques précédentes : 15 corrigées, 2 devenues des compromis documentés, 1 encore à moitié présente (le titre de la 2e carte de la dernière page des projets).\n\nContrôles automatiques sur plan.json, tous propres :\n- aucun chevauchement entre zones de la page ;\n- aucune zone hors du cadre, aucun doublon ;\n- toutes les arrivées existent ;\n- aucune zone en bas d'une page haute ne reste sous le menu du bas en fin de défilement ;\n- même structure en français et en anglais mobile, aux écarts de mise en page près.\n\nSeuls chevauchements trouvés : le menu du bas, fixe, passe au-dessus de zones de la page sur les écrans à hauteur d'écran. C'est l'ordre voulu.\n\nLes fichiers ignorés pendant la pause m'ont seulement servi à repérer les changements, sans fonder aucun constat. L'ancien plan (_superseded/parcours-zones-v3-avant-relecture3-20261023/plan-lots-mobile.json) montre ceux de la v4 : auteurs des cartes ajoutés sur toutes les listes, équipe, mention et ⋮ de la réponse, Retour et Replier en retour arrière, fiche déployée en conteneur, découpe du cœur limitée à sa carte, dé de ft_transcendence vers minishell.\n\nConstats non classés comme défauts :\n- La recherche ouverte a elle aussi été relevée une seule fois, sur Liste des projets. Ouverte ailleurs, elle montre cette liste dessous, dont les cartes et les filtres réagissent ; les résultats arrivent juste. Elle pourrait rejoindre les compromis avec « Où veux-tu aller ? ».\n- « Vue d'ensemble » a une zone dans les deux sélecteurs « Dans ce … », bien que ce soit l'option active. C'est utile, puisque ces sélecteurs sont partagés avec les rubriques.\n- Le tri des commentaires vides d'un projet n'a pas de zone : le tri ouvert relevé montre un fil qui n'existe pas encore.\n- « Annuler » de Tester le projet, « Envoyer » du message et « Enregistrer le signalement » n'ont pas de zone : aucun écran relevé ne leur correspond. J'ai vérifié dans project-trial.mjs et profile-ui.mjs.\n- Le logo n'a pas de zone sur Explorer : setSection('explore') n'y fait rien.\n\nJe n'ai modifié aucun fichier du dépôt. Mes outils et recadrages sont dans /tmp/claude-1000/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/scratchpad/mfr-review/ (mz.py liste les zones, mov.py cherche les chevauchements, diff.txt compare à l'ancien plan, crops/ contient les recadrages). Attention : le dossier scratchpad/tools/ est partagé, et un autre relecteur y a écrasé mes premiers scripts. J'ai donc travaillé dans un dossier à part."
+  },
+  "mobile/en": {
+   "boards": 90,
+   "previous": [
+    {
+     "board": "Filtrer_les_profils_—_Mobile_·_Clair_·_English__filter-people.png",
+     "zone": "Fermer les filtres, Cancel, Apply",
+     "status": "corrigé",
+     "detail": "Les trois zones sont maintenant entières. La croix fait 44 × 44 (x 321–365, y 258–302), Cancel et Apply font 166 × 44 (y 546–590), et plus aucun cœur de carte caché sous le voile n'est découpé dans la fenêtre."
+    },
+    {
+     "board": "Filtrer_les_projets_—_Mobile_·_Clair_·_English__filter-projects.png",
+     "zone": "Fermer les filtres",
+     "status": "corrigé",
+     "detail": "La croix fait 44 × 44 (x 321–365, y 224,5–268,5). Apply de « Projets · filtre local ouvert » est aussi entier : 166 × 44, y 579,5–623,5."
+    },
+    {
+     "board": "Recherche_·_ouverte_—_Mobile_·_Clair_·_English__search-open.png",
+     "zone": "Résultat · Shared chat rooms et Résultat « Chroniques »",
+     "status": "corrigé",
+     "detail": "Les deux résultats sont des rectangles pleins de 336 px de large (y 564,8–649,5 et 652,5–717,6), sans aucun trou. Les cœurs des cartes ne sont découpés que dans les zones de leur propre carte, au-dessus du panneau."
+    },
+    {
+     "board": "Liste_des_profils_·_vue_Liste_—_Mobile_·_Clair_·_English__people-list.png",
+     "zone": "Menu du bas · awards",
+     "status": "corrigé",
+     "detail": "« 42 Awards » fait 67,2 × 48 (x 299,8–367, y 773–821), sans encoche. Le cœur de Noé Laurent n'est plus découpé dans le menu fixe."
+    },
+    {
+     "board": "Liste_des_profils_·_dernière_page_—_Mobile_·_Clair_·_English__people-last-page.png",
+     "zone": "Menu du bas · projects et Menu du bas · awards",
+     "status": "corrigé",
+     "detail": "« Projects » et « 42 Awards » font tous deux 67,2 × 48, sans encoche, et sont bien dessinés pleins au bas de la planche."
+    },
+    {
+     "board": "Commentaires_·_suggestions_de_mention_—_Mobile_·_Clair_·_English__mention-picker.png",
+     "zone": "Signaler",
+     "status": "corrigé",
+     "detail": "Il n'y a plus de zone Signaler sur cet écran défilé de 250 px. Ni la pastille « World » ni le médaillon du globe ne portent de zone."
+    },
+    {
+     "board": "Fiche_projet_·_sélecteur_Dans_ce_projet_ouvert_—_Mobile_·_Clair_·_English__project-local-menu.png",
+     "zone": "Lien · Overview",
+     "status": "toujours là",
+     "detail": "« Overview » mène toujours à project (ft_transcendence), alors que Development, Media, Try the project et Comments mènent aux onglets de minishell. Le sélecteur s'ouvre depuis minishell dans 10 cas sur 12 ; depuis ces écrans, « Overview » fait donc changer de projet au lieu d'arriver sur project-single."
+    },
+    {
+     "board": "Fiche_projet_—_Mobile_·_Clair_·_English__project.png",
+     "zone": "(aucune)",
+     "status": "corrigé",
+     "detail": "Les cinq cartes de l'équipe ont maintenant une zone vers la fiche : Noé Laurent (y 1467–1563) et Inès Morel (y 1583–1679) sont inclus. Fiche projet · membre fait de même vers la fiche membre. « @Inès Morel » a une zone vers la fiche sur les deux fils (x 135–218 sur le projet, x 153–236 sur la chronique, y 1088–1111)."
+    },
+    {
+     "board": "Liste_des_chroniques_—_Mobile_·_Clair_·_English__journal.png",
+     "zone": "Auteur d'une carte (« Rédigé par »)",
+     "status": "corrigé",
+     "detail": "L'auteur de la carte relevée (Inès Morel, 2e carte, x 204–312, y 468–508) a maintenant sa zone, sur la liste visiteur comme sur la liste membre. L'auteur de la 1re carte garde la sienne, ce qui relève du compromis « auteur → fiche relevée »."
+    },
+    {
+     "board": "Liste_des_projets_·_dernière_page_—_Mobile_·_Clair_·_English__projects-last-page.png",
+     "zone": "(aucune)",
+     "status": "toujours là",
+     "detail": "Correction partielle. Le titre de la 1re carte, « Shared chat rooms · The first experiment », a maintenant une zone (x 26–186, y 432–510). Celui de la 2e carte, « The reproducible server · The first experiment » (x ≈ 204–364, y ≈ 385–460), n'en a toujours aucune, alors qu'en page 1 le titre à la même place mène à project-single."
+    },
+    {
+     "board": "Médias_—_Mobile_·_Clair_·_English__project-media.png",
+     "zone": "(aucune)",
+     "status": "corrigé",
+     "detail": "La zone « Agrandir le média » couvre le schéma MINISHELL (x 24–366, y 855,5–1069,3) et ouvre la visionneuse."
+    },
+    {
+     "board": "Menu_à_trois_points_d_un_commentaire_—_Mobile_·_Clair_·_English__comment-menu.png",
+     "zone": "Remonter en haut",
+     "status": "corrigé",
+     "detail": "Le bouton ↑ (x 330–374, y 654–698) est devenu « Remonter en haut · fermer le menu », en retour (orange). Il referme le menu et revient au fil, conformément à la règle du bouton ↑ à côté d'un menu ouvert."
+    },
+    {
+     "board": "Commentaires_·_suggestions_de_mention_—_Mobile_·_Clair_·_English__mention-picker.png",
+     "zone": "Signaler",
+     "status": "corrigé",
+     "detail": "Même constat que pour la remarque précédente : la zone Signaler a été retirée, et rien n'est plus posé sur la pastille « World » ni sur le médaillon du globe."
+    }
+   ],
+   "issues": [
+    {
+     "board": "Liste_des_projets_·_dernière_page_—_Mobile_·_Clair_·_English__projects-last-page.png",
+     "zone": "(aucune)",
+     "problem": "commande sans zone",
+     "detail": "Le titre de la 2e carte, « The reproducible server · The first experiment » (x ≈ 204–364, y ≈ 385–460), n'a pas de zone. L'image et l'auteur (Sara El Amr) de cette carte en ont une, comme le titre de la 1re carte. En page 1, le titre à la même place (« Behind a command line », x 204–364, y 384,8–436,8) mène à la fiche.",
+     "severity": "mineur"
+    },
+    {
+     "board": "Fiche_projet_·_sélecteur_Dans_ce_projet_ouvert_—_Mobile_·_Clair_·_English__project-local-menu.png",
+     "zone": "Lien · Overview",
+     "problem": "arrivée douteuse",
+     "detail": "L'option « Overview » (x 32–358, y 509,8–556,8) mène à project (ft_transcendence), alors que les quatre autres options mènent aux onglets de minishell. Le sélecteur s'ouvre depuis 10 écrans minishell sur 12 (project-single, Development, Media, Try the project, Comments, fil, suggestions, tri, menu ⋮). Depuis ces écrans, « Overview » fait changer de projet. project-single serait l'arrivée cohérente avec le compromis « les onglets de ft_transcendence mènent à ceux de minishell ».",
+     "severity": "mineur"
+    },
+    {
+     "board": "Commentaires_·_suggestions_de_mention_—_Mobile_·_Clair_·_English__mention-picker.png",
+     "zone": "Explorer + nom du campus (« Explorer 42 Paris »)",
+     "problem": "élément caché",
+     "detail": "La zone (x 24–144, y 111–147, en deux morceaux découpés autour de la barre de portée) est posée sur le lien « Explore 42 Paris », remonté de 250 px dans le fondu sous l'en-tête. À cette hauteur, le texte est presque effacé : sur le menu ⋮, le texte au même niveau (« tab. Counts of 0 or 1… », y 124–140) ne garde qu'un gris de 211 à 228 sur un fond d'environ 240. La personne voit donc une bande vide sous la pastille « World », mais un clic y ouvre « Autour du campus ». C'est le même cas que l'ancienne zone Signaler, retirée.",
+     "severity": "mineur"
+    }
+   ],
+   "notes": "Les 90 planches de mobile/en ont été examinées une à une, avec des recadrages pour les pages hautes, et confrontées à plan.json (version du 23 octobre, 09 h 11). Le cadre « member-transition » (91e cadre) n'a pas de planche, car index.json signale sa capture comme manquante. C'est un cadre automatique de 0,45 s sans zone.\n\nContrôles automatiques sur plan.json :\n- Aucun chevauchement anormal entre zones. Les seuls recouvrements sont des zones fixes au-dessus de la page ou des options de menu hors conteneur, à atteindre en faisant défiler.\n- Aucune cible absente.\n- Les découpes en plusieurs morceaux ne concernent que les cartes, autour de leur propre cœur, ou la barre de portée.\n- Aucun écran membre ne renvoie vers un écran visiteur qui a un équivalent membre, sauf « Sign out », qui est voulu.\n- Seuls article-media et article-comments n'ont pas d'entrée, ce qui correspond au compromis. arrival-scan-binary n'en a pas non plus, mais c'est le départ du parcours.\n- Les écrans défilés ont été vérifiés avec leurs décalages : mention-picker 250 px, comments-sort-open 525, comment-menu 670, profile-local-menu 8, viewer 206.\n\nSur 13 remarques de v3 : 11 sont corrigées, 2 restent (Overview, titre de la 2e carte de la dernière page des projets).\n\nNouveau point : une zone posée sur un lien effacé par le fondu de l'en-tête. Je ne peux pas vérifier sans le site si ce lien reste cliquable une fois effacé.\n\nNon signalés, car défendables :\n- message-dialog n'a pas de voile cliquable, de façon cohérente entre FR, EN et ordinateur.\n- Sur projects-empty, Affichage et Trier n'ont pas de zone, car les écrans relevés n'ont pas « favoris uniquement » actif.\n\nAucun fichier du dépôt n'a été modifié. Les recadrages sont dans /tmp/claude-1000/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/scratchpad/crops."
+  }
+ },
+ "suites": [
+  {
+   "remarque": "Titre de la 2e carte de la dernière page des projets sans zone (les quatre relecteurs)",
+   "suite": "corrigé : les zones de la page 1 qui mènent à une fiche projet sont reprises à la même place sur la dernière page (zone « Carte · Le serveur reproductible · Le », libellé coupé, sur le titre « Le serveur reproductible · Le premier essai » : [548, 555, 344, 73] sur ordinateur, [204, 385, 160, 78] sur mobile)."
+  },
+  {
+   "remarque": "« Rentrée » sans zone dans Filtrer les profils (ordinateur et mobile, fr)",
+   "suite": "corrigé : les deux catégories dépliées sur l'écran relevé ont leur zone « Déplier une catégorie », dans les quatre cadres."
+  },
+  {
+   "remarque": "« Trier » sans zone sur l'état vide des projets (ordinateur, fr)",
+   "suite": "corrigé dans les quatre cadres, vers le tri ouvert relevé ; « Affichage » reste sans zone, faute de vue Liste vide relevée."
+  },
+  {
+   "remarque": "Bandes de 6 px inertes autour du cœur des cartes (mobile, fr)",
+   "suite": "corrigé : le seuil de découpe passe de 8 à 2 px ; les bandes de 6 px (haut de l'image, droite du cœur) ont leur zone."
+  },
+  {
+   "remarque": "« Où veux-tu aller ? » mène à Explorer même depuis une liste (ordinateur fr et en, mobile fr)",
+   "suite": "compromis inscrit le 23, après cette relecture, dans parcours/LISEZMOI.md et dans le guide de lecture : aucune liste filtrée n'a été relevée."
+  },
+  {
+   "remarque": "Signaler ouvert depuis le menu ⋮ se referme sur le menu ; « Autour du campus » ouvert depuis Choisir un campus se referme sur ce choix (ordinateur, en)",
+   "suite": "compromis élargi le 23, après cette relecture, dans parcours/LISEZMOI.md (« une fenêtre ouverte depuis un menu, depuis une autre fenêtre ou depuis la page à côté d'un menu se referme sur ce menu ou cette fenêtre »)."
+  },
+  {
+   "remarque": "« Overview » du sélecteur « Dans ce projet » mène à ft_transcendence depuis les rubriques de minishell (mobile, en)",
+   "suite": "compromis inscrit le 23, après cette relecture : un seul sélecteur ouvert a été relevé, sur ft_transcendence, et il sert aussi aux rubriques de minishell."
+  },
+  {
+   "remarque": "« Envoyer un message » sans bandes de voile (ordinateur, fr)",
+   "suite": "conforme au site : cette fenêtre ne se ferme pas d'un clic sur le voile ; c'est inscrit dans parcours/LISEZMOI.md."
+  },
+  {
+   "remarque": "Zone « Explore 42 Paris » posée sous le fondu de l'en-tête, sur le sélecteur de mention (mobile, en)",
+   "suite": "conforme au site, gardée : le fondu est une couche peinte en pointer-events: none (work/visualizations/horizon-welcome/sticky-header.css, « It cannot intercept clicks ») ; le lien presque effacé reste cliquable sur le site. Les zones de cet écran restent découpées autour de la pastille « Monde », qui est au-dessus."
+  },
+  {
+   "remarque": "Recherche ouverte relevée une seule fois, sur la liste des projets (constat non classé, mobile fr)",
+   "suite": "compromis ajouté le 23 octobre à la liste « relevée une seule fois » de parcours/LISEZMOI.md."
+  }
+ ]
+}

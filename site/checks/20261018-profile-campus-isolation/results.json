@@ -1,0 +1,126 @@
+{
+ "date": "2026-10-18",
+ "before": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/archive/pre-profile-campus-isolation-20261018/baseline/",
+ "after": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/",
+ "cases": [
+  {
+   "case": "profils-ar-clair-ordinateur",
+   "route": "people",
+   "theme": "light",
+   "lang": "ar",
+   "viewport": [
+    1440,
+    900
+   ],
+   "expected": "campus des cartes dans l’ordre « 42 Rio »",
+   "changedShare": 0.00211,
+   "changedBox": [
+    295,
+    512,
+    1268,
+    828
+   ]
+  },
+  {
+   "case": "profils-ar-sombre-mobile",
+   "route": "people",
+   "theme": "dark",
+   "lang": "ar",
+   "viewport": [
+    390,
+    844
+   ],
+   "expected": "idem, en sombre sur mobile",
+   "changedShare": 0.00352,
+   "changedBox": [
+    220,
+    904,
+    728,
+    1526
+   ]
+  },
+  {
+   "case": "profils-fr-clair-ordinateur",
+   "route": "people",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "expected": "témoin : aucun changement attendu",
+   "changedShare": 0.0,
+   "changedBox": null
+  },
+  {
+   "case": "profil-ar-clair-ordinateur",
+   "route": "people/profile-leila-mansour",
+   "theme": "light",
+   "lang": "ar",
+   "viewport": [
+    1440,
+    900
+   ],
+   "expected": "bouton « استكشف 42 … » dans le bon ordre",
+   "changedShare": 0.00027,
+   "changedBox": [
+    815,
+    539,
+    863,
+    549
+   ]
+  },
+  {
+   "case": "profil-fr-clair-ordinateur",
+   "route": "people/profile-leila-mansour",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "expected": "témoin : bouton « Explorer 42 … » inchangé",
+   "changedShare": 0.0,
+   "changedBox": null
+  },
+  {
+   "case": "parcours-ar-clair-ordinateur",
+   "route": "people/profile-leila-mansour?tab=journey",
+   "theme": "light",
+   "lang": "ar",
+   "viewport": [
+    1440,
+    900
+   ],
+   "expected": "campus du parcours dans l’ordre « 42 … »",
+   "changedShare": 0.0,
+   "changedBox": null
+  },
+  {
+   "case": "parcours-ar-clair-mobile",
+   "route": "people/profile-leila-mansour?tab=journey",
+   "theme": "light",
+   "lang": "ar",
+   "viewport": [
+    390,
+    844
+   ],
+   "expected": "idem sur mobile",
+   "changedShare": 0.0,
+   "changedBox": null
+  },
+  {
+   "case": "parcours-fr-clair-ordinateur",
+   "route": "people/profile-leila-mansour?tab=journey",
+   "theme": "light",
+   "lang": "fr",
+   "viewport": [
+    1440,
+    900
+   ],
+   "expected": "témoin : aucun changement attendu",
+   "changedShare": 0.0,
+   "changedBox": null
+  }
+ ]
+}

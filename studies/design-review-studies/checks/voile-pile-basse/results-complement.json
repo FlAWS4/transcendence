@@ -1,0 +1,357 @@
+{
+ "id": "voile-pile-basse",
+ "ends": [
+  {
+   "vue": "fiche-commentaires-petit",
+   "route": "projects/ft-transcendence-building-together?tab=comments",
+   "viewport": [
+    320,
+    640
+   ],
+   "avant": {
+    "veil": {
+     "host": null,
+     "height": 0,
+     "top": 640,
+     "opacity": "1",
+     "visibility": "visible",
+     "scrolling": null,
+     "dockOpacity": "1"
+    },
+    "end": {
+     "best": {
+      "bottom": 420.7,
+      "tag": "p",
+      "text": "Ouvrez la discussion en partageant votre"
+     },
+     "scrollY": 764,
+     "maxScroll": 764
+    }
+   },
+   "apres": {
+    "veil": {
+     "host": "app::before",
+     "height": 158,
+     "top": 482,
+     "opacity": "1",
+     "visibility": "visible",
+     "scrolling": null,
+     "dockOpacity": "1"
+    },
+    "end": {
+     "best": {
+      "bottom": 420.7,
+      "tag": "p",
+      "text": "Ouvrez la discussion en partageant votre"
+     },
+     "scrollY": 764,
+     "maxScroll": 764
+    }
+   },
+   "sameLayout": true,
+   "veilTop": 482,
+   "lastBottom": 420.7,
+   "margin": 61.3,
+   "clear": true
+  },
+  {
+   "vue": "chronique-petit",
+   "route": "journal/journal-an-evening-debugging?tab=article",
+   "viewport": [
+    320,
+    640
+   ],
+   "avant": {
+    "veil": {
+     "host": null,
+     "height": 0,
+     "top": 640,
+     "opacity": "1",
+     "visibility": "visible",
+     "scrolling": null,
+     "dockOpacity": "1"
+    },
+    "end": {
+     "best": {
+      "bottom": 429.8,
+      "tag": "p",
+      "text": "Un journal de campus peut garder ces mom"
+     },
+     "scrollY": 1196,
+     "maxScroll": 1196
+    }
+   },
+   "apres": {
+    "veil": {
+     "host": "app::before",
+     "height": 158,
+     "top": 482,
+     "opacity": "1",
+     "visibility": "visible",
+     "scrolling": null,
+     "dockOpacity": "1"
+    },
+    "end": {
+     "best": {
+      "bottom": 429.8,
+      "tag": "p",
+      "text": "Un journal de campus peut garder ces mom"
+     },
+     "scrollY": 1196,
+     "maxScroll": 1196
+    }
+   },
+   "sameLayout": true,
+   "veilTop": 482,
+   "lastBottom": 429.8,
+   "margin": 52.2,
+   "clear": true
+  },
+  {
+   "vue": "fiche-commentaires-mobile",
+   "route": "projects/ft-transcendence-building-together?tab=comments",
+   "viewport": [
+    390,
+    844
+   ],
+   "avant": {
+    "veil": {
+     "host": null,
+     "height": 0,
+     "top": 844,
+     "opacity": "1",
+     "visibility": "visible",
+     "scrolling": null,
+     "dockOpacity": "1"
+    },
+    "end": {
+     "best": {
+      "bottom": 625.5,
+      "tag": "p",
+      "text": "Ouvrez la discussion en partageant votre"
+     },
+     "scrollY": 405,
+     "maxScroll": 405
+    }
+   },
+   "apres": {
+    "veil": {
+     "host": "app::before",
+     "height": 158,
+     "top": 686,
+     "opacity": "1",
+     "visibility": "visible",
+     "scrolling": null,
+     "dockOpacity": "1"
+    },
+    "end": {
+     "best": {
+      "bottom": 625.5,
+      "tag": "p",
+      "text": "Ouvrez la discussion en partageant votre"
+     },
+     "scrollY": 405,
+     "maxScroll": 405
+    }
+   },
+   "sameLayout": true,
+   "veilTop": 686,
+   "lastBottom": 625.5,
+   "margin": 60.5,
+   "clear": true
+  }
+ ],
+ "search": {
+  "avant": {
+   "veil": {
+    "host": null,
+    "height": 0,
+    "top": 844,
+    "opacity": "1",
+    "visibility": "visible",
+    "scrolling": null,
+    "dockOpacity": "1"
+   },
+   "points": [
+    {
+     "y": 391,
+     "inVeilZone": false,
+     "hit": true,
+     "target": "button.dock-search-result"
+    },
+    {
+     "y": 458,
+     "inVeilZone": false,
+     "hit": true,
+     "target": "span.dock-search-result-copy"
+    },
+    {
+     "y": 525,
+     "inVeilZone": false,
+     "hit": true,
+     "target": "span.dock-search-result-copy"
+    },
+    {
+     "y": 592,
+     "inVeilZone": false,
+     "hit": true,
+     "target": "span.dock-search-result-copy"
+    },
+    {
+     "y": 669,
+     "inVeilZone": false,
+     "hit": true,
+     "target": "span.dock-search-result-title"
+    },
+    {
+     "y": 745,
+     "inVeilZone": true,
+     "hit": true,
+     "target": "button.dock-search-result"
+    },
+    {
+     "y": 812,
+     "inVeilZone": true,
+     "hit": false,
+     "target": "input.dock-search-input"
+    }
+   ],
+   "closedVeil": "1"
+  },
+  "apres": {
+   "veil": {
+    "host": "app::before",
+    "height": 158,
+    "top": 686,
+    "opacity": "1",
+    "visibility": "visible",
+    "scrolling": null,
+    "dockOpacity": "1"
+   },
+   "points": [
+    {
+     "y": 391,
+     "inVeilZone": false,
+     "hit": true,
+     "target": "button.dock-search-result"
+    },
+    {
+     "y": 458,
+     "inVeilZone": false,
+     "hit": true,
+     "target": "span.dock-search-result-copy"
+    },
+    {
+     "y": 525,
+     "inVeilZone": false,
+     "hit": true,
+     "target": "span.dock-search-result-copy"
+    },
+    {
+     "y": 592,
+     "inVeilZone": false,
+     "hit": true,
+     "target": "span.dock-search-result-copy"
+    },
+    {
+     "y": 669,
+     "inVeilZone": false,
+     "hit": true,
+     "target": "span.dock-search-result-title"
+    },
+    {
+     "y": 745,
+     "inVeilZone": true,
+     "hit": true,
+     "target": "button.dock-search-result"
+    },
+    {
+     "y": 812,
+     "inVeilZone": true,
+     "hit": false,
+     "target": "input.dock-search-input"
+    }
+   ],
+   "closedVeil": "1"
+  },
+  "results": 7,
+  "inVeilZone": 2,
+  "hitsIdentical": true,
+  "veilOpacityOpen": "1",
+  "closedVeil": "1",
+  "pixelShareVsBaselineSearch": 0.02695
+ },
+ "keyboard": {
+  "focus": {
+   "cls": "icon-button random-campus dock-random-toggle",
+   "visible": true
+  },
+  "during": {
+   "host": "app::before",
+   "height": 158,
+   "top": 686,
+   "opacity": "1",
+   "visibility": "visible",
+   "scrolling": "true",
+   "dockOpacity": "1"
+  },
+  "rest": {
+   "host": "app::before",
+   "height": 158,
+   "top": 686,
+   "opacity": "1",
+   "visibility": "visible",
+   "scrolling": null,
+   "dockOpacity": "1"
+  }
+ },
+ "awards": {
+  "awards-ordinateur": {
+   "avant": {
+    "host": null,
+    "height": 0,
+    "top": 900,
+    "opacity": "1",
+    "visibility": "visible",
+    "scrolling": null,
+    "dockOpacity": "1"
+   },
+   "apres": {
+    "host": "app::before",
+    "height": 173,
+    "top": 727,
+    "opacity": "0",
+    "visibility": "hidden",
+    "scrolling": null,
+    "dockOpacity": "1"
+   },
+   "pixelShare": 0.0
+  },
+  "awards-mobile": {
+   "avant": {
+    "host": null,
+    "height": 0,
+    "top": 844,
+    "opacity": "1",
+    "visibility": "visible",
+    "scrolling": null,
+    "dockOpacity": "1"
+   },
+   "apres": {
+    "host": "app::before",
+    "height": 158,
+    "top": 686,
+    "opacity": "0",
+    "visibility": "hidden",
+    "scrolling": null,
+    "dockOpacity": "1"
+   },
+   "pixelShare": 0.0
+  }
+ },
+ "errors": {
+  "ends": [],
+  "other": []
+ },
+ "passed": true
+}

@@ -1,0 +1,1219 @@
+{
+  "measuredAt": "2026-09-27",
+  "status": "estimate-only-no-preloading-implemented-by-this-audit",
+  "units": {
+    "bytes": "HTTP response body only",
+    "KB": 1000,
+    "MB": 1000000
+  },
+  "source": {
+    "tileJsonUrl": "https://tiles.openfreemap.org/planet",
+    "tileTemplate": "https://tiles.openfreemap.org/planet/20260913_164504_pt/{z}/{x}/{y}.pbf",
+    "tileJsonVersion": "3.16.0",
+    "minzoom": 0,
+    "maxzoom": 14
+  },
+  "inputs": [
+    {
+      "file": "campuses.json",
+      "sha256": "0e6a49a0867443efd80ab1f0831e56c3a061beb136d6dc8642a462db6e41c850"
+    },
+    {
+      "file": "campus-location-overrides.json",
+      "sha256": "13d3e1afac34bc0c5fe0ca7eafc21f917b4af8f0c524a642d525bf3e303f2b76"
+    }
+  ],
+  "method": {
+    "radiusKm": 3,
+    "sphereRadiusKm": 6371.0088,
+    "nativeZoom": 14,
+    "tileSelection": "XYZ z14 tile rectangle intersects closed spherical disk; nearest point on longitude/latitude rectangle",
+    "distanceToleranceKm": 1e-07,
+    "countryTotals": "union of tile identifiers, not sum when footprints overlap",
+    "viewportCoverage": "not included; 3 km bounds camera center only",
+    "reference": "PRELOAD_ESTIMATE.md"
+  },
+  "httpObserved": {
+    "contentEncoding": "gzip",
+    "cacheControl": "public, max-age=315360000",
+    "vary": "accept-encoding",
+    "timingAllowOriginPresent": false
+  },
+  "samples": [
+    {
+      "campusId": "paris",
+      "position": "center",
+      "url": "https://tiles.openfreemap.org/planet/20260913_164504_pt/14/8297/5633.pbf",
+      "gzipBodyBytes": 206842,
+      "decompressedProtobufBytes": 340669,
+      "etag": "\"6aa73325-327fa\""
+    },
+    {
+      "campusId": "paris",
+      "position": "east",
+      "url": "https://tiles.openfreemap.org/planet/20260913_164504_pt/14/8298/5633.pbf",
+      "gzipBodyBytes": 218997,
+      "decompressedProtobufBytes": 353602,
+      "etag": "\"6aa73325-35775\""
+    },
+    {
+      "campusId": "paris",
+      "position": "north",
+      "url": "https://tiles.openfreemap.org/planet/20260913_164504_pt/14/8297/5632.pbf",
+      "gzipBodyBytes": 120673,
+      "decompressedProtobufBytes": 198562,
+      "etag": "\"6aa73325-1d761\""
+    },
+    {
+      "campusId": "lyon",
+      "position": "center",
+      "url": "https://tiles.openfreemap.org/planet/20260913_164504_pt/14/8408/5843.pbf",
+      "gzipBodyBytes": 80480,
+      "decompressedProtobufBytes": 126140,
+      "etag": "\"6aa73330-13a60\""
+    },
+    {
+      "campusId": "lyon",
+      "position": "east",
+      "url": "https://tiles.openfreemap.org/planet/20260913_164504_pt/14/8409/5843.pbf",
+      "gzipBodyBytes": 99293,
+      "decompressedProtobufBytes": 155339,
+      "etag": "\"6aa73330-183dd\""
+    },
+    {
+      "campusId": "lyon",
+      "position": "north",
+      "url": "https://tiles.openfreemap.org/planet/20260913_164504_pt/14/8408/5842.pbf",
+      "gzipBodyBytes": 58215,
+      "decompressedProtobufBytes": 89916,
+      "etag": "\"6aa73330-e367\""
+    },
+    {
+      "campusId": "tokyo",
+      "position": "center",
+      "url": "https://tiles.openfreemap.org/planet/20260913_164504_pt/14/14549/6451.pbf",
+      "gzipBodyBytes": 383990,
+      "decompressedProtobufBytes": 642492,
+      "etag": "\"6aa736cc-5dbf6\""
+    },
+    {
+      "campusId": "tokyo",
+      "position": "east",
+      "url": "https://tiles.openfreemap.org/planet/20260913_164504_pt/14/14550/6451.pbf",
+      "gzipBodyBytes": 362127,
+      "decompressedProtobufBytes": 613214,
+      "etag": "\"6aa736cc-5868f\""
+    },
+    {
+      "campusId": "tokyo",
+      "position": "north",
+      "url": "https://tiles.openfreemap.org/planet/20260913_164504_pt/14/14549/6450.pbf",
+      "gzipBodyBytes": 396357,
+      "decompressedProtobufBytes": 669048,
+      "etag": "\"6aa736cc-60c45\""
+    }
+  ],
+  "projections": [
+    {
+      "campusId": "paris",
+      "diskTiles": 21,
+      "sampleCount": 3,
+      "meanSampleGzipBodyBytes": 182170.66666666666,
+      "estimatedDiskGzipBodyBytes": 3825584.0,
+      "sampleMinimumScaledBytes": 2534133,
+      "sampleMaximumScaledBytes": 4598937,
+      "measuredCompleteDisk": false
+    },
+    {
+      "campusId": "lyon",
+      "diskTiles": 16,
+      "sampleCount": 3,
+      "meanSampleGzipBodyBytes": 79329.33333333333,
+      "estimatedDiskGzipBodyBytes": 1269269.3333333333,
+      "sampleMinimumScaledBytes": 931440,
+      "sampleMaximumScaledBytes": 1588688,
+      "measuredCompleteDisk": false
+    },
+    {
+      "campusId": "tokyo",
+      "diskTiles": 14,
+      "sampleCount": 3,
+      "meanSampleGzipBodyBytes": 380824.6666666667,
+      "estimatedDiskGzipBodyBytes": 5331545.333333334,
+      "sampleMinimumScaledBytes": 5069778,
+      "sampleMaximumScaledBytes": 5548998,
+      "measuredCompleteDisk": false
+    },
+    {
+      "countryId": "FRA",
+      "diskTiles": 145,
+      "sampleCampuses": [
+        "paris",
+        "lyon"
+      ],
+      "sampleCount": 6,
+      "sampleMinimumScaledBytes": 8441175,
+      "sampleMaximumScaledBytes": 31754565,
+      "measuredCompleteCountry": false,
+      "warning": "Convenience sample, no guaranteed range or confidence interval."
+    }
+  ],
+  "counts": {
+    "countries": [
+      {
+        "id": "AGO",
+        "campuses": 1,
+        "circleTiles": 12,
+        "bboxTiles": 16
+      },
+      {
+        "id": "ALB",
+        "campuses": 1,
+        "circleTiles": 15,
+        "bboxTiles": 16
+      },
+      {
+        "id": "ARE",
+        "campuses": 1,
+        "circleTiles": 10,
+        "bboxTiles": 12
+      },
+      {
+        "id": "ARM",
+        "campuses": 1,
+        "circleTiles": 14,
+        "bboxTiles": 16
+      },
+      {
+        "id": "AUT",
+        "campuses": 2,
+        "circleTiles": 36,
+        "bboxTiles": 40
+      },
+      {
+        "id": "BEL",
+        "campuses": 2,
+        "circleTiles": 43,
+        "bboxTiles": 50
+      },
+      {
+        "id": "BRA",
+        "campuses": 3,
+        "circleTiles": 36,
+        "bboxTiles": 40
+      },
+      {
+        "id": "CAN",
+        "campuses": 1,
+        "circleTiles": 18,
+        "bboxTiles": 20
+      },
+      {
+        "id": "CHE",
+        "campuses": 2,
+        "circleTiles": 40,
+        "bboxTiles": 50
+      },
+      {
+        "id": "CZE",
+        "campuses": 1,
+        "circleTiles": 22,
+        "bboxTiles": 25
+      },
+      {
+        "id": "DEU",
+        "campuses": 3,
+        "circleTiles": 60,
+        "bboxTiles": 75
+      },
+      {
+        "id": "ESP",
+        "campuses": 4,
+        "circleTiles": 61,
+        "bboxTiles": 68
+      },
+      {
+        "id": "FRA",
+        "campuses": 8,
+        "circleTiles": 145,
+        "bboxTiles": 166
+      },
+      {
+        "id": "GBR",
+        "campuses": 1,
+        "circleTiles": 21,
+        "bboxTiles": 25
+      },
+      {
+        "id": "ITA",
+        "campuses": 3,
+        "circleTiles": 50,
+        "bboxTiles": 56
+      },
+      {
+        "id": "JOR",
+        "campuses": 2,
+        "circleTiles": 26,
+        "bboxTiles": 28
+      },
+      {
+        "id": "JPN",
+        "campuses": 1,
+        "circleTiles": 14,
+        "bboxTiles": 16
+      },
+      {
+        "id": "KOR",
+        "campuses": 2,
+        "circleTiles": 29,
+        "bboxTiles": 32
+      },
+      {
+        "id": "LBN",
+        "campuses": 1,
+        "circleTiles": 14,
+        "bboxTiles": 16
+      },
+      {
+        "id": "LUX",
+        "campuses": 1,
+        "circleTiles": 21,
+        "bboxTiles": 25
+      },
+      {
+        "id": "MAR",
+        "campuses": 4,
+        "circleTiles": 56,
+        "bboxTiles": 64
+      },
+      {
+        "id": "MDG",
+        "campuses": 1,
+        "circleTiles": 13,
+        "bboxTiles": 16
+      },
+      {
+        "id": "MYS",
+        "campuses": 3,
+        "circleTiles": 32,
+        "bboxTiles": 36
+      },
+      {
+        "id": "NLD",
+        "campuses": 1,
+        "circleTiles": 21,
+        "bboxTiles": 25
+      },
+      {
+        "id": "POL",
+        "campuses": 1,
+        "circleTiles": 22,
+        "bboxTiles": 25
+      },
+      {
+        "id": "PRT",
+        "campuses": 2,
+        "circleTiles": 31,
+        "bboxTiles": 32
+      },
+      {
+        "id": "PSE",
+        "campuses": 1,
+        "circleTiles": 11,
+        "bboxTiles": 16
+      },
+      {
+        "id": "SGP",
+        "campuses": 1,
+        "circleTiles": 12,
+        "bboxTiles": 12
+      },
+      {
+        "id": "THA",
+        "campuses": 1,
+        "circleTiles": 10,
+        "bboxTiles": 12
+      },
+      {
+        "id": "TUR",
+        "campuses": 2,
+        "circleTiles": 31,
+        "bboxTiles": 36
+      }
+    ],
+    "campuses": [
+      {
+        "id": "luanda",
+        "country": "AGO",
+        "coordinates": [
+          13.184199,
+          -8.924652
+        ],
+        "circleTiles": 12,
+        "bboxTiles": 16,
+        "centerTile": [
+          14,
+          8792,
+          8599
+        ]
+      },
+      {
+        "id": "tirana",
+        "country": "ALB",
+        "coordinates": [
+          19.821455001831055,
+          41.323001861572266
+        ],
+        "circleTiles": 15,
+        "bboxTiles": 16,
+        "centerTile": [
+          14,
+          9094,
+          6123
+        ]
+      },
+      {
+        "id": "abu-dhabi",
+        "country": "ARE",
+        "coordinates": [
+          54.368035,
+          24.520285
+        ],
+        "circleTiles": 10,
+        "bboxTiles": 12,
+        "centerTile": [
+          14,
+          10666,
+          7040
+        ]
+      },
+      {
+        "id": "yerevan",
+        "country": "ARM",
+        "coordinates": [
+          44.479984,
+          40.196518
+        ],
+        "circleTiles": 14,
+        "bboxTiles": 16,
+        "centerTile": [
+          14,
+          10216,
+          6190
+        ]
+      },
+      {
+        "id": "vienna",
+        "country": "AUT",
+        "coordinates": [
+          16.3683296,
+          48.2484523
+        ],
+        "circleTiles": 18,
+        "bboxTiles": 20,
+        "centerTile": [
+          14,
+          8936,
+          5678
+        ]
+      },
+      {
+        "id": "wels",
+        "country": "AUT",
+        "coordinates": [
+          14.0102873,
+          48.1511453
+        ],
+        "circleTiles": 18,
+        "bboxTiles": 20,
+        "centerTile": [
+          14,
+          8829,
+          5685
+        ]
+      },
+      {
+        "id": "antwerp",
+        "country": "BEL",
+        "coordinates": [
+          4.4218121,
+          51.2129396
+        ],
+        "circleTiles": 22,
+        "bboxTiles": 25,
+        "centerTile": [
+          14,
+          8393,
+          5469
+        ]
+      },
+      {
+        "id": "brussels",
+        "country": "BEL",
+        "coordinates": [
+          4.357563018798828,
+          50.84537887573242
+        ],
+        "circleTiles": 21,
+        "bboxTiles": 25,
+        "centerTile": [
+          14,
+          8390,
+          5496
+        ]
+      },
+      {
+        "id": "belo-horizonte",
+        "country": "BRA",
+        "coordinates": [
+          -43.9344931,
+          -19.9166813
+        ],
+        "circleTiles": 10,
+        "bboxTiles": 12,
+        "centerTile": [
+          14,
+          6192,
+          9117
+        ]
+      },
+      {
+        "id": "rio",
+        "country": "BRA",
+        "coordinates": [
+          -43.19806318899948,
+          -22.909956498767578
+        ],
+        "circleTiles": 12,
+        "bboxTiles": 12,
+        "centerTile": [
+          14,
+          6226,
+          9263
+        ]
+      },
+      {
+        "id": "sao",
+        "country": "BRA",
+        "coordinates": [
+          -46.689493,
+          -23.557359
+        ],
+        "circleTiles": 14,
+        "bboxTiles": 16,
+        "centerTile": [
+          14,
+          6067,
+          9295
+        ]
+      },
+      {
+        "id": "quebec",
+        "country": "CAN",
+        "coordinates": [
+          -71.22382024496463,
+          46.81218664042808
+        ],
+        "circleTiles": 18,
+        "bboxTiles": 20,
+        "centerTile": [
+          14,
+          4950,
+          5775
+        ]
+      },
+      {
+        "id": "lausanne",
+        "country": "CHE",
+        "coordinates": [
+          6.603866,
+          46.517628
+        ],
+        "circleTiles": 19,
+        "bboxTiles": 25,
+        "centerTile": [
+          14,
+          8492,
+          5794
+        ]
+      },
+      {
+        "id": "zurich",
+        "country": "CHE",
+        "coordinates": [
+          8.559128761291504,
+          47.41770935058594
+        ],
+        "circleTiles": 21,
+        "bboxTiles": 25,
+        "centerTile": [
+          14,
+          8581,
+          5734
+        ]
+      },
+      {
+        "id": "prague",
+        "country": "CZE",
+        "coordinates": [
+          14.518224868107842,
+          50.11119312075461
+        ],
+        "circleTiles": 22,
+        "bboxTiles": 25,
+        "centerTile": [
+          14,
+          8852,
+          5548
+        ]
+      },
+      {
+        "id": "berlin",
+        "country": "DEU",
+        "coordinates": [
+          13.4500839,
+          52.4842705
+        ],
+        "circleTiles": 20,
+        "bboxTiles": 25,
+        "centerTile": [
+          14,
+          8804,
+          5375
+        ]
+      },
+      {
+        "id": "heilbronn",
+        "country": "DEU",
+        "coordinates": [
+          9.202188,
+          49.140611
+        ],
+        "circleTiles": 20,
+        "bboxTiles": 25,
+        "centerTile": [
+          14,
+          8610,
+          5616
+        ]
+      },
+      {
+        "id": "wolfsburg",
+        "country": "DEU",
+        "coordinates": [
+          10.789543291562392,
+          52.42683056483372
+        ],
+        "circleTiles": 20,
+        "bboxTiles": 25,
+        "centerTile": [
+          14,
+          8683,
+          5380
+        ]
+      },
+      {
+        "id": "barcelona",
+        "country": "ESP",
+        "coordinates": [
+          2.1703619943206243,
+          41.439213161783535
+        ],
+        "circleTiles": 15,
+        "bboxTiles": 16,
+        "centerTile": [
+          14,
+          8290,
+          6116
+        ]
+      },
+      {
+        "id": "madrid",
+        "country": "ESP",
+        "coordinates": [
+          -3.664176423907283,
+          40.51629809848375
+        ],
+        "circleTiles": 15,
+        "bboxTiles": 16,
+        "centerTile": [
+          14,
+          8025,
+          6171
+        ]
+      },
+      {
+        "id": "malaga",
+        "country": "ESP",
+        "coordinates": [
+          -4.439711332633282,
+          36.69948099191123
+        ],
+        "circleTiles": 14,
+        "bboxTiles": 16,
+        "centerTile": [
+          14,
+          7989,
+          6394
+        ]
+      },
+      {
+        "id": "urduliz",
+        "country": "ESP",
+        "coordinates": [
+          -2.9602571976300367,
+          43.37999240414109
+        ],
+        "circleTiles": 17,
+        "bboxTiles": 20,
+        "centerTile": [
+          14,
+          8057,
+          5996
+        ]
+      },
+      {
+        "id": "angouleme",
+        "country": "FRA",
+        "coordinates": [
+          0.158948,
+          45.655191
+        ],
+        "circleTiles": 17,
+        "bboxTiles": 20,
+        "centerTile": [
+          14,
+          8199,
+          5851
+        ]
+      },
+      {
+        "id": "le-havre",
+        "country": "FRA",
+        "coordinates": [
+          0.1250682,
+          49.4895911
+        ],
+        "circleTiles": 21,
+        "bboxTiles": 25,
+        "centerTile": [
+          14,
+          8197,
+          5592
+        ]
+      },
+      {
+        "id": "lyon",
+        "country": "FRA",
+        "coordinates": [
+          4.7482783,
+          45.7804034
+        ],
+        "circleTiles": 16,
+        "bboxTiles": 16,
+        "centerTile": [
+          14,
+          8408,
+          5843
+        ]
+      },
+      {
+        "id": "marseille",
+        "country": "FRA",
+        "coordinates": [
+          5.3740692138671875,
+          43.297889709472656
+        ],
+        "circleTiles": 17,
+        "bboxTiles": 20,
+        "centerTile": [
+          14,
+          8436,
+          6001
+        ]
+      },
+      {
+        "id": "mulhouse",
+        "country": "FRA",
+        "coordinates": [
+          7.3274918,
+          47.738475
+        ],
+        "circleTiles": 19,
+        "bboxTiles": 20,
+        "centerTile": [
+          14,
+          8525,
+          5713
+        ]
+      },
+      {
+        "id": "nice",
+        "country": "FRA",
+        "coordinates": [
+          7.200040340423584,
+          43.69113540649414
+        ],
+        "circleTiles": 18,
+        "bboxTiles": 20,
+        "centerTile": [
+          14,
+          8519,
+          5977
+        ]
+      },
+      {
+        "id": "paris",
+        "country": "FRA",
+        "coordinates": [
+          2.31838649,
+          48.896685275
+        ],
+        "circleTiles": 21,
+        "bboxTiles": 25,
+        "centerTile": [
+          14,
+          8297,
+          5633
+        ]
+      },
+      {
+        "id": "perpignan",
+        "country": "FRA",
+        "coordinates": [
+          2.8883257,
+          42.6985494
+        ],
+        "circleTiles": 16,
+        "bboxTiles": 20,
+        "centerTile": [
+          14,
+          8323,
+          6039
+        ]
+      },
+      {
+        "id": "london",
+        "country": "GBR",
+        "coordinates": [
+          -0.0673864,
+          51.5168674
+        ],
+        "circleTiles": 21,
+        "bboxTiles": 25,
+        "centerTile": [
+          14,
+          8188,
+          5447
+        ]
+      },
+      {
+        "id": "firenze",
+        "country": "ITA",
+        "coordinates": [
+          11.2428696,
+          43.7709549
+        ],
+        "circleTiles": 18,
+        "bboxTiles": 20,
+        "centerTile": [
+          14,
+          8703,
+          5972
+        ]
+      },
+      {
+        "id": "milano",
+        "country": "ITA",
+        "coordinates": [
+          9.1642787,
+          45.452459
+        ],
+        "circleTiles": 16,
+        "bboxTiles": 20,
+        "centerTile": [
+          14,
+          8609,
+          5864
+        ]
+      },
+      {
+        "id": "roma",
+        "country": "ITA",
+        "coordinates": [
+          12.5490518,
+          41.9037179
+        ],
+        "circleTiles": 16,
+        "bboxTiles": 16,
+        "centerTile": [
+          14,
+          8763,
+          6087
+        ]
+      },
+      {
+        "id": "amman",
+        "country": "JOR",
+        "coordinates": [
+          35.8874267689284,
+          31.954064917842697
+        ],
+        "circleTiles": 14,
+        "bboxTiles": 16,
+        "centerTile": [
+          14,
+          9825,
+          6655
+        ]
+      },
+      {
+        "id": "irbid",
+        "country": "JOR",
+        "coordinates": [
+          35.8713171,
+          32.5040645
+        ],
+        "circleTiles": 12,
+        "bboxTiles": 12,
+        "centerTile": [
+          14,
+          9824,
+          6626
+        ]
+      },
+      {
+        "id": "tokyo",
+        "country": "JPN",
+        "coordinates": [
+          139.68813187116757,
+          35.69044841395869
+        ],
+        "circleTiles": 14,
+        "bboxTiles": 16,
+        "centerTile": [
+          14,
+          14549,
+          6451
+        ]
+      },
+      {
+        "id": "gyeongsan",
+        "country": "KOR",
+        "coordinates": [
+          128.847131,
+          35.90267
+        ],
+        "circleTiles": 14,
+        "bboxTiles": 16,
+        "centerTile": [
+          14,
+          14055,
+          6439
+        ]
+      },
+      {
+        "id": "seoul",
+        "country": "KOR",
+        "coordinates": [
+          127.065101,
+          37.488203
+        ],
+        "circleTiles": 15,
+        "bboxTiles": 16,
+        "centerTile": [
+          14,
+          13974,
+          6349
+        ]
+      },
+      {
+        "id": "beirut",
+        "country": "LBN",
+        "coordinates": [
+          35.5025585,
+          33.8892265
+        ],
+        "circleTiles": 14,
+        "bboxTiles": 16,
+        "centerTile": [
+          14,
+          9807,
+          6550
+        ]
+      },
+      {
+        "id": "luxembourg",
+        "country": "LUX",
+        "coordinates": [
+          5.9462343,
+          49.5032137
+        ],
+        "circleTiles": 21,
+        "bboxTiles": 25,
+        "centerTile": [
+          14,
+          8462,
+          5591
+        ]
+      },
+      {
+        "id": "1337-ben-guerir",
+        "country": "MAR",
+        "coordinates": [
+          -7.939922,
+          32.21987
+        ],
+        "circleTiles": 13,
+        "bboxTiles": 16,
+        "centerTile": [
+          14,
+          7830,
+          6641
+        ]
+      },
+      {
+        "id": "1337-khouribga",
+        "country": "MAR",
+        "coordinates": [
+          -6.897858,
+          32.882134
+        ],
+        "circleTiles": 14,
+        "bboxTiles": 16,
+        "centerTile": [
+          14,
+          7878,
+          6605
+        ]
+      },
+      {
+        "id": "1337-med",
+        "country": "MAR",
+        "coordinates": [
+          -5.3625516,
+          35.5888995
+        ],
+        "circleTiles": 15,
+        "bboxTiles": 16,
+        "centerTile": [
+          14,
+          7947,
+          6456
+        ]
+      },
+      {
+        "id": "1337-rabat",
+        "country": "MAR",
+        "coordinates": [
+          -6.8408929,
+          34.0218454
+        ],
+        "circleTiles": 14,
+        "bboxTiles": 16,
+        "centerTile": [
+          14,
+          7880,
+          6543
+        ]
+      },
+      {
+        "id": "antananarivo",
+        "country": "MDG",
+        "coordinates": [
+          47.50829015,
+          -18.8780753
+        ],
+        "circleTiles": 13,
+        "bboxTiles": 16,
+        "centerTile": [
+          14,
+          10354,
+          9067
+        ]
+      },
+      {
+        "id": "iskandar-puteri",
+        "country": "MYS",
+        "coordinates": [
+          103.6144729,
+          1.4522711
+        ],
+        "circleTiles": 11,
+        "bboxTiles": 12,
+        "centerTile": [
+          14,
+          12907,
+          8125
+        ]
+      },
+      {
+        "id": "kuala-lumpur",
+        "country": "MYS",
+        "coordinates": [
+          101.6060748,
+          3.0665913
+        ],
+        "circleTiles": 10,
+        "bboxTiles": 12,
+        "centerTile": [
+          14,
+          12816,
+          8052
+        ]
+      },
+      {
+        "id": "penang",
+        "country": "MYS",
+        "coordinates": [
+          100.3422899,
+          5.4152454
+        ],
+        "circleTiles": 11,
+        "bboxTiles": 12,
+        "centerTile": [
+          14,
+          12758,
+          7945
+        ]
+      },
+      {
+        "id": "codam",
+        "country": "NLD",
+        "coordinates": [
+          4.91561,
+          52.374485
+        ],
+        "circleTiles": 21,
+        "bboxTiles": 25,
+        "centerTile": [
+          14,
+          8415,
+          5384
+        ]
+      },
+      {
+        "id": "warsaw",
+        "country": "POL",
+        "coordinates": [
+          20.978907,
+          52.2358891
+        ],
+        "circleTiles": 22,
+        "bboxTiles": 25,
+        "centerTile": [
+          14,
+          9146,
+          5394
+        ]
+      },
+      {
+        "id": "lisboa",
+        "country": "PRT",
+        "coordinates": [
+          -9.1058741,
+          38.7311004
+        ],
+        "circleTiles": 15,
+        "bboxTiles": 16,
+        "centerTile": [
+          14,
+          7777,
+          6277
+        ]
+      },
+      {
+        "id": "porto",
+        "country": "PRT",
+        "coordinates": [
+          -8.6129889,
+          41.148894
+        ],
+        "circleTiles": 16,
+        "bboxTiles": 16,
+        "centerTile": [
+          14,
+          7800,
+          6133
+        ]
+      },
+      {
+        "id": "nablus",
+        "country": "PSE",
+        "coordinates": [
+          35.2569374,
+          32.2205316
+        ],
+        "circleTiles": 11,
+        "bboxTiles": 16,
+        "centerTile": [
+          14,
+          9796,
+          6641
+        ]
+      },
+      {
+        "id": "singapore",
+        "country": "SGP",
+        "coordinates": [
+          103.96278104,
+          1.34037192
+        ],
+        "circleTiles": 12,
+        "bboxTiles": 12,
+        "centerTile": [
+          14,
+          12923,
+          8130
+        ]
+      },
+      {
+        "id": "bangkok",
+        "country": "THA",
+        "coordinates": [
+          100.778442,
+          13.727506
+        ],
+        "circleTiles": 10,
+        "bboxTiles": 12,
+        "centerTile": [
+          14,
+          12778,
+          7561
+        ]
+      },
+      {
+        "id": "istanbul",
+        "country": "TUR",
+        "coordinates": [
+          28.984801724834792,
+          41.10347413799488
+        ],
+        "circleTiles": 16,
+        "bboxTiles": 20,
+        "centerTile": [
+          14,
+          9511,
+          6136
+        ]
+      },
+      {
+        "id": "kocaeli",
+        "country": "TUR",
+        "coordinates": [
+          29.5107064,
+          40.7925707
+        ],
+        "circleTiles": 15,
+        "bboxTiles": 16,
+        "centerTile": [
+          14,
+          9535,
+          6155
+        ]
+      }
+    ],
+    "networkUniqueDiskTiles": 926,
+    "networkUniqueBboxTiles": 1066
+  }
+}

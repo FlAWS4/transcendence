@@ -1,0 +1,127 @@
+{
+ "id": "roles-couleur",
+ "groupe": "Couleurs, thème sombre et illustrations",
+ "titre": "Rôles de couleur unifiés",
+ "resume": "Une seule règle de couleur pour les actions : les boutons principaux reprennent le traitement déjà choisi pour Se connecter (42 Blue en clair, Royal Pink en sombre, texte encre), et les « Annuler » encore colorés deviennent neutres. Couleurs seulement.",
+ "probleme": "Les actions principales utilisent des couleurs sans lien entre elles : Appliquer en sarcelle foncée #0C7677 (texte #F7FAFA), Ajouter en teinte menthe translucide, Enregistrer le signalement et Envoyer (message) en #008E90 avec un texte clair à 3,80:1 (sous le seuil de 4,5:1), Enregistrer (lien du dépôt) et Simuler la création du compte avec la même surface que les boutons secondaires (pâle en clair, graphite ou teintée de rose en sombre) ; en sombre, le dialogue de connexion de l’arrivée associe un bouton Royal Pink à un « Annuler » turquoise #00BABC sans contour.",
+ "changement": "essai.css, sans changer tailles, rayons, marges ni disposition. Principal (fond et bordure var(--h42-access-accent) = #00BABC en clair / #ED3491 en sombre, texte #1B1B1B, identiques au survol) : .cp-project-filter-apply (Appliquer), .cp-comments-submit des formulaires de commentaire (Ajouter, Répondre, Enregistrer la modification), .cp-report-submit (Enregistrer le signalement), .cp-profile-message-send (Envoyer), .cp-project-repository-actions button[type=submit] (Enregistrer le lien du dépôt), premier bouton de #dialog[data-kind=signup] (Simuler la création du compte). La confirmation de connexion avait déjà ce traitement. « Fermer », qui remplace « Enregistrer le signalement » une fois le signalement enregistré, porte la même classe et suit donc la même règle (il était déjà coloré comme action principale). Secondaire, en sombre seulement : dans les dialogues de connexion et d’inscription, « Annuler » de l’arrivée passe du texte turquoise au texte blanc avec un trait neutre (couleur du texte à 12 %), et « Annuler » des dialogues du compte passe de la surface teintée de rose #341E29 à la surface neutre #29292E avec le même trait, dessiné à l’intérieur pour ne pas changer la taille. Les secondaires déjà neutres (Annuler et Réinitialiser du filtre, Emoji, Annuler du signalement, du dépôt et du message), les états sélectionnés (dock, menus locaux, choix du filtre) et les liens ne changent pas.",
+ "decisionConcernee": "13 octobre 2026 : après le retour à l’état 139 et la règle de périmètre strict, l’utilisateur a demandé 42 Blue en clair et Royal Pink en sombre pour Se connecter et le retour Monde seulement ; les autres boutons ont gardé leur style (« les autres boutons gardent leur style » ; création de compte, Annuler, Visiter et Réessayer inchangés). Cet essai étend volontairement la règle aux autres actions principales, à titre de comparaison.",
+ "alternativeDe": "",
+ "vues": [
+  {
+   "libelle": "Commentaires (Ajouter, Emoji), ordinateur clair",
+   "page": "content-preview.html",
+   "route": "projects/ft-transcendence-building-together?tab=comments",
+   "viewport": "ordinateur",
+   "theme": "light",
+   "lang": "fr"
+  },
+  {
+   "libelle": "Commentaires, ordinateur sombre",
+   "page": "content-preview.html",
+   "route": "projects/ft-transcendence-building-together?tab=comments",
+   "viewport": "ordinateur",
+   "theme": "dark",
+   "lang": "fr"
+  },
+  {
+   "libelle": "Arrivée sombre : ouvrir Se connecter",
+   "page": "index.html",
+   "route": "",
+   "viewport": "ordinateur",
+   "theme": "dark",
+   "lang": "fr"
+  },
+  {
+   "libelle": "Projets, mobile sombre arabe : ouvrir Filtrer",
+   "page": "content-preview.html",
+   "route": "projects",
+   "viewport": "mobile",
+   "theme": "dark",
+   "lang": "ar"
+  }
+ ],
+ "verifications": [
+  "Inventaire mesuré dans Chrome et rejoué le 14 octobre (results.json, inventaire.csv) : 17 boutons × 4 vues (ordinateur clair FR, ordinateur sombre FR, mobile 390 px clair AR, mobile sombre AR) = 68 relevés avant et après — dialogue Filtrer (Appliquer, Annuler, Réinitialiser), commentaires (Ajouter, Emoji), signalement (Enregistrer le signalement, Annuler), message (Envoyer, Annuler), lien du dépôt de « Tester le projet » (Enregistrer, Annuler), dialogues Se connecter et Créer un compte du menu du compte, dialogue de connexion de l’arrivée.",
+  "Boutons principaux après l’essai : 42 Blue #00BABC + texte #1B1B1B à 7,18:1 en clair, Royal Pink #ED3491 + #1B1B1B à 4,51:1 en sombre, couleur identique au survol. Avant : Appliquer #0C7677/#F7FAFA 5,17:1 en clair et #F485BD/#1B1B1B 7,33:1 en sombre ; Ajouter #C4ECEC/#1B1B1B 13,58:1 (survol #EAF5F4) et #482035/blanc 13,69:1 ; Enregistrer le signalement et Envoyer #008E90/#F7FAFA 3,80:1 en clair (déjà #ED3491 en sombre) ; Enregistrer #E9F5F4/#1B1B1B et #29292E/blanc ; Simuler la création du compte #F1F6F6/#1B1B1B et #341E29/blanc.",
+  "Secondaires en sombre : Annuler de l’arrivée #00BABC sur #202026 (6,75:1, sans contour) → blanc 16,2:1 avec trait neutre ; Annuler des dialogues du compte #341E29 → #29292E, 14,47:1. Les autres secondaires gardent exactement leurs couleurs (de 6,39:1 à 17,08:1).",
+  "Les 68 textes de bouton mesurés après l’essai ont un contraste d’au moins 4,5:1 (minimum 4,51:1 sur Royal Pink) ; aucun n’était désactivé.",
+  "Focus clavier visible sur les 68 boutons après l’essai (:focus-visible, contour 2 px plein inchangé).",
+  "Contre-vérification (contre-verification.json) : le dialogue « Créer un compte » de l’arrivée, inaccessible depuis l’interface, a été ouvert par script : « Simuler la création du compte » passe de l’encre #1B1B1B (texte blanc, 17,22:1) à 42 Blue (7,18:1) en clair, et de #00BABC à Royal Pink (4,51:1) en sombre ; « Annuler » y passe en sombre du turquoise à 6,75:1 au blanc à 16,2:1 avec trait neutre ; tailles, rayons et marges inchangés.",
+  "Boutons atteints après une action : « Fermer » du signalement enregistré passe en clair de #008E90 avec texte clair (3,80:1) à 42 Blue (7,18:1), Royal Pink inchangé en sombre (4,51:1) ; « Répondre » d’un formulaire de réponse passe de la teinte translucide à 42 Blue / Royal Pink, texte encre (7,18:1 / 4,51:1).",
+  "Pages sans ces boutons inchangées : 0 pixel différent sur Projets clair, fiche sombre, profil sombre mobile arabe et arrivée sombre (canevas exclu) ; sur Projets sombre, un seul pixel change d’un niveau (77 → 78) au bord du médaillon de la pastille Monde, exactement comme avec visiter-contour-sombre, dont aucune règle ne s’applique sur cette page : c’est un effet du chargement d’une feuille de style, pas de cet essai.",
+  "Changements sans rechargement : clair → sombre → clair puis français → arabe par le menu du compte ; à chaque étape, « Appliquer » rouvert est 42 Blue (clair) ou Royal Pink (sombre) avec texte encre, y compris en arabe (« تطبيق », dialogue en RTL).",
+  "Taille, rayon, marges intérieures et épaisseur de bordure identiques avant/après pour chaque relevé ; états sélectionnés (élément actif du dock, menu local du projet et du profil) identiques ; aucun débordement horizontal ni erreur de console.",
+  "Captures examinées : Filtrer clair et sombre, commentaires sombres, signalement mobile sombre arabe, lien du dépôt clair, message mobile clair arabe, connexion et inscription du compte en sombre, connexion de l’arrivée sombre (ordinateur et mobile arabe)."
+ ],
+ "limites": [
+  "Le dialogue « Créer un compte » de l’arrivée ne s’ouvre pas depuis l’interface (le compte est masqué sur l’écran d’arrivée) : il n’a été mesuré qu’en l’ouvrant par script.",
+  "Royal Pink #ED3491 avec un texte encre atteint 4,51:1, juste au-dessus du seuil : toute variante plus sombre au survol ferait échouer le contraste, d’où la couleur identique au survol.",
+  "Dans le dialogue de connexion de l’arrivée, les deux boutons se touchent (aucun espace dans le socle) : le trait neutre rend ce contact visible ; l’espacement n’est pas modifié, par périmètre strict.",
+  "« Annuler » du message reste en texte gris sans contour et « Réinitialiser » du filtre reste un texte souligné sans contour : tous deux sont déjà neutres, et un contour demanderait une bordure (changement de taille) ou, pour Réinitialiser, toucherait son texte faute de marge intérieure.",
+  "Hors périmètre et non modifiés : Réessayer, Retour et Continuer de l’écran d’erreur d’arrivée, les boutons Se connecter / Créer un compte du menu, « Afficher tout » des listes vides, les liens #008E90 et les autres actions non listées.",
+  "Mesures en Chrome sans tête avec mouvements réduits ; pas d’écran physique ni de lecteur d’écran."
+ ],
+ "fichiers": [
+  "essais/roles-couleur/essai.css",
+  "essais/roles-couleur/essai.mjs",
+  "essais/roles-couleur/essai.json",
+  "checks/roles-couleur/check.py",
+  "checks/roles-couleur/results.json",
+  "checks/roles-couleur/inventaire.csv",
+  "checks/roles-couleur/contre-verification.py",
+  "checks/roles-couleur/contre-verification.json"
+ ],
+ "captures": [
+  {
+   "vue": "filtre-ordinateur",
+   "avant": "checks/roles-couleur/avant-filtre-ordinateur.png",
+   "apres": "checks/roles-couleur/apres-filtre-ordinateur.png"
+  },
+  {
+   "vue": "filtre-sombre-ordinateur",
+   "avant": "checks/roles-couleur/avant-filtre-sombre-ordinateur.png",
+   "apres": "checks/roles-couleur/apres-filtre-sombre-ordinateur.png"
+  },
+  {
+   "vue": "commentaires-sombre-ordinateur",
+   "avant": "checks/roles-couleur/avant-commentaires-sombre-ordinateur.png",
+   "apres": "checks/roles-couleur/apres-commentaires-sombre-ordinateur.png"
+  },
+  {
+   "vue": "signalement-sombre-ar-mobile",
+   "avant": "checks/roles-couleur/avant-signalement-sombre-ar-mobile.png",
+   "apres": "checks/roles-couleur/apres-signalement-sombre-ar-mobile.png"
+  },
+  {
+   "vue": "depot-ordinateur",
+   "avant": "checks/roles-couleur/avant-depot-ordinateur.png",
+   "apres": "checks/roles-couleur/apres-depot-ordinateur.png"
+  },
+  {
+   "vue": "message-ar-mobile",
+   "avant": "checks/roles-couleur/avant-message-ar-mobile.png",
+   "apres": "checks/roles-couleur/apres-message-ar-mobile.png"
+  },
+  {
+   "vue": "connexion-sombre-ordinateur",
+   "avant": "checks/roles-couleur/avant-connexion-sombre-ordinateur.png",
+   "apres": "checks/roles-couleur/apres-connexion-sombre-ordinateur.png"
+  },
+  {
+   "vue": "inscription-sombre-ordinateur",
+   "avant": "checks/roles-couleur/avant-inscription-sombre-ordinateur.png",
+   "apres": "checks/roles-couleur/apres-inscription-sombre-ordinateur.png"
+  },
+  {
+   "vue": "connexion-arrivee-sombre-ordinateur",
+   "avant": "checks/roles-couleur/avant-connexion-arrivee-sombre-ordinateur.png",
+   "apres": "checks/roles-couleur/apres-connexion-arrivee-sombre-ordinateur.png"
+  },
+  {
+   "vue": "connexion-arrivee-sombre-ar-mobile",
+   "avant": "checks/roles-couleur/avant-connexion-arrivee-sombre-ar-mobile.png",
+   "apres": "checks/roles-couleur/apres-connexion-arrivee-sombre-ar-mobile.png"
+  }
+ ]
+}

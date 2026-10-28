@@ -1,0 +1,3 @@
+# Coursier avant la reprise sur « An unexpected error occurred » (19 octobre 2026)
+
+`courier-workflow.js` tel qu'il était avant l'ajout de « An unexpected error occurred » (erreur générique du serveur Figma) aux erreurs réessayées. Le 19 octobre vers 3 h 03 UTC, trois clones sombres de Profils (1698 à 1700) et une lecture de contrôle de la page Projets ont reçu cette erreur dans la même minute ; ses chaînes se sont arrêtées alors que chaque clone peut être renvoyé sans dommage. Remplacé par la version de `scripts/`, qui la traite comme une coupure de connexion (jamais pour une partie intermédiaire d'un écran découpé).

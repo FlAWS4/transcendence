@@ -1,0 +1,835 @@
+{
+ "area": "projects",
+ "states": [
+  {
+   "name": "projects-grid--desktop--fr-light",
+   "area": "projects",
+   "viewport": "reference/projects/projects-grid--desktop--fr-light.png",
+   "dom": "dom/projects/projects-grid--desktop--fr-light.json.gz",
+   "nodes": 449,
+   "doc": [
+    1440,
+    2566
+   ],
+   "full": "reference/projects/projects-grid--desktop--fr-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "projects",
+   "route": "#projects",
+   "theme": "light",
+   "lang": "fr",
+   "format": "desktop",
+   "globe": "blocked",
+   "note": "Liste en Grille, page 1 (12 projets), globe bloqué.",
+   "checked": {
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr"
+   },
+   "interaction": null,
+   "seconds": 6.3,
+   "platform_fonts": [
+    {
+     "familyName": "Jost Medium",
+     "postScriptName": "Jost-Medium",
+     "isCustomFont": true,
+     "glyphCount": 35
+    }
+   ]
+  },
+  {
+   "name": "projects-grid--desktop--fr-dark",
+   "area": "projects",
+   "viewport": "reference/projects/projects-grid--desktop--fr-dark.png",
+   "dom": "dom/projects/projects-grid--desktop--fr-dark.json.gz",
+   "nodes": 449,
+   "doc": [
+    1440,
+    2566
+   ],
+   "full": "reference/projects/projects-grid--desktop--fr-dark--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "projects",
+   "route": "#projects",
+   "theme": "dark",
+   "lang": "fr",
+   "format": "desktop",
+   "globe": "blocked",
+   "note": "",
+   "checked": {
+    "theme": "dark",
+    "lang": "fr",
+    "dir": "ltr"
+   },
+   "interaction": null,
+   "seconds": 8.4
+  },
+  {
+   "name": "projects-grid--mobile--fr-light",
+   "area": "projects",
+   "viewport": "reference/projects/projects-grid--mobile--fr-light.png",
+   "dom": "dom/projects/projects-grid--mobile--fr-light.json.gz",
+   "nodes": 431,
+   "doc": [
+    390,
+    2826
+   ],
+   "full": "reference/projects/projects-grid--mobile--fr-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "projects",
+   "route": "#projects",
+   "theme": "light",
+   "lang": "fr",
+   "format": "mobile",
+   "globe": "blocked",
+   "note": "",
+   "checked": {
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr"
+   },
+   "interaction": null,
+   "seconds": 6.2
+  },
+  {
+   "name": "projects-grid--mobile--fr-dark",
+   "area": "projects",
+   "viewport": "reference/projects/projects-grid--mobile--fr-dark.png",
+   "dom": "dom/projects/projects-grid--mobile--fr-dark.json.gz",
+   "nodes": 431,
+   "doc": [
+    390,
+    2826
+   ],
+   "full": "reference/projects/projects-grid--mobile--fr-dark--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "projects",
+   "route": "#projects",
+   "theme": "dark",
+   "lang": "fr",
+   "format": "mobile",
+   "globe": "blocked",
+   "note": "",
+   "checked": {
+    "theme": "dark",
+    "lang": "fr",
+    "dir": "ltr"
+   },
+   "interaction": null,
+   "seconds": 9.2
+  },
+  {
+   "name": "projects-grid--desktop--ar-light",
+   "area": "projects",
+   "viewport": "reference/projects/projects-grid--desktop--ar-light.png",
+   "dom": "dom/projects/projects-grid--desktop--ar-light.json.gz",
+   "nodes": 450,
+   "doc": [
+    1440,
+    2511
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "projects",
+   "route": "#projects",
+   "theme": "light",
+   "lang": "ar",
+   "format": "desktop",
+   "globe": "blocked",
+   "note": "",
+   "checked": {
+    "theme": "light",
+    "lang": "ar",
+    "dir": "rtl"
+   },
+   "interaction": null,
+   "seconds": 5.9,
+   "platform_fonts": [
+    {
+     "familyName": "Noto Sans Arabic",
+     "postScriptName": "NotoSansArabic-Regular",
+     "isCustomFont": false,
+     "glyphCount": 18
+    },
+    {
+     "familyName": "Jost Medium",
+     "postScriptName": "Jost-Medium",
+     "isCustomFont": true,
+     "glyphCount": 21
+    }
+   ]
+  },
+  {
+   "name": "projects-grid--mobile--ar-light",
+   "area": "projects",
+   "viewport": "reference/projects/projects-grid--mobile--ar-light.png",
+   "dom": "dom/projects/projects-grid--mobile--ar-light.json.gz",
+   "nodes": 432,
+   "doc": [
+    390,
+    2785
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "projects",
+   "route": "#projects",
+   "theme": "light",
+   "lang": "ar",
+   "format": "mobile",
+   "globe": "blocked",
+   "note": "",
+   "checked": {
+    "theme": "light",
+    "lang": "ar",
+    "dir": "rtl"
+   },
+   "interaction": null,
+   "seconds": 5.7
+  },
+  {
+   "name": "projects-grid--desktop--en-light",
+   "area": "projects",
+   "viewport": "reference/projects/projects-grid--desktop--en-light.png",
+   "dom": "dom/projects/projects-grid--desktop--en-light.json.gz",
+   "nodes": 449,
+   "doc": [
+    1440,
+    2602
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "projects",
+   "route": "#projects",
+   "theme": "light",
+   "lang": "en",
+   "format": "desktop",
+   "globe": "blocked",
+   "note": "",
+   "checked": {
+    "theme": "light",
+    "lang": "en",
+    "dir": "ltr"
+   },
+   "interaction": null,
+   "seconds": 5.6
+  },
+  {
+   "name": "projects-favorite-active--desktop--fr-light",
+   "area": "projects",
+   "viewport": "reference/projects/projects-favorite-active--desktop--fr-light.png",
+   "dom": "dom/projects/projects-favorite-active--desktop--fr-light.json.gz",
+   "nodes": 449,
+   "doc": [
+    1440,
+    2566
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "projects",
+   "route": "#projects",
+   "theme": "light",
+   "lang": "fr",
+   "format": "desktop",
+   "globe": "blocked",
+   "note": "Cœur Favoris activé sur la première carte.",
+   "checked": {
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr"
+   },
+   "interaction": "'true'",
+   "seconds": 4.0
+  },
+  {
+   "name": "projects-empty-favorites--desktop--fr-light",
+   "area": "projects",
+   "viewport": "reference/projects/projects-empty-favorites--desktop--fr-light.png",
+   "dom": "dom/projects/projects-empty-favorites--desktop--fr-light.json.gz",
+   "nodes": 83,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "projects",
+   "route": "#projects",
+   "theme": "light",
+   "lang": "fr",
+   "format": "desktop",
+   "globe": "blocked",
+   "note": "Trier → « Mes favoris uniquement » sans favori : état vide.",
+   "checked": {
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr"
+   },
+   "interaction": null,
+   "seconds": 4.6
+  },
+  {
+   "name": "projects-list--desktop--fr-light",
+   "area": "projects",
+   "viewport": "reference/projects/projects-list--desktop--fr-light.png",
+   "dom": "dom/projects/projects-list--desktop--fr-light.json.gz",
+   "nodes": 449,
+   "doc": [
+    1440,
+    3337
+   ],
+   "full": "reference/projects/projects-list--desktop--fr-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "projects",
+   "route": "#projects",
+   "theme": "light",
+   "lang": "fr",
+   "format": "desktop",
+   "globe": "blocked",
+   "note": "Affichage → Liste.",
+   "checked": {
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr"
+   },
+   "interaction": null,
+   "seconds": 7.4
+  },
+  {
+   "name": "projects-list--mobile--fr-light",
+   "area": "projects",
+   "viewport": "reference/projects/projects-list--mobile--fr-light.png",
+   "dom": "dom/projects/projects-list--mobile--fr-light.json.gz",
+   "nodes": 431,
+   "doc": [
+    390,
+    3210
+   ],
+   "full": "reference/projects/projects-list--mobile--fr-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "projects",
+   "route": "#projects",
+   "theme": "light",
+   "lang": "fr",
+   "format": "mobile",
+   "globe": "blocked",
+   "note": "",
+   "checked": {
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr"
+   },
+   "interaction": null,
+   "seconds": 7.9
+  },
+  {
+   "name": "projects-list--desktop--fr-dark",
+   "area": "projects",
+   "viewport": "reference/projects/projects-list--desktop--fr-dark.png",
+   "dom": "dom/projects/projects-list--desktop--fr-dark.json.gz",
+   "nodes": 449,
+   "doc": [
+    1440,
+    3337
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "projects",
+   "route": "#projects",
+   "theme": "dark",
+   "lang": "fr",
+   "format": "desktop",
+   "globe": "blocked",
+   "note": "",
+   "checked": {
+    "theme": "dark",
+    "lang": "fr",
+    "dir": "ltr"
+   },
+   "interaction": null,
+   "seconds": 6.8
+  },
+  {
+   "name": "projects-sort-open--desktop--fr-light",
+   "area": "projects",
+   "viewport": "reference/projects/projects-sort-open--desktop--fr-light.png",
+   "dom": "dom/projects/projects-sort-open--desktop--fr-light.json.gz",
+   "nodes": 464,
+   "doc": [
+    1440,
+    2566
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "projects",
+   "route": "#projects",
+   "theme": "light",
+   "lang": "fr",
+   "format": "desktop",
+   "globe": "blocked",
+   "note": "Panneau Trier ouvert (focus sur le choix courant).",
+   "checked": {
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr"
+   },
+   "interaction": null,
+   "seconds": 3.7
+  },
+  {
+   "name": "projects-sort-open--mobile--fr-light",
+   "area": "projects",
+   "viewport": "reference/projects/projects-sort-open--mobile--fr-light.png",
+   "dom": "dom/projects/projects-sort-open--mobile--fr-light.json.gz",
+   "nodes": 446,
+   "doc": [
+    390,
+    2826
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "projects",
+   "route": "#projects",
+   "theme": "light",
+   "lang": "fr",
+   "format": "mobile",
+   "globe": "blocked",
+   "note": "",
+   "checked": {
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr"
+   },
+   "interaction": null,
+   "seconds": 3.9
+  },
+  {
+   "name": "projects-layout-open--desktop--fr-light",
+   "area": "projects",
+   "viewport": "reference/projects/projects-layout-open--desktop--fr-light.png",
+   "dom": "dom/projects/projects-layout-open--desktop--fr-light.json.gz",
+   "nodes": 457,
+   "doc": [
+    1440,
+    2566
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "projects",
+   "route": "#projects",
+   "theme": "light",
+   "lang": "fr",
+   "format": "desktop",
+   "globe": "blocked",
+   "note": "Panneau Affichage ouvert.",
+   "checked": {
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr"
+   },
+   "interaction": null,
+   "seconds": 3.4
+  },
+  {
+   "name": "filter-projects--desktop--fr-light",
+   "area": "projects",
+   "viewport": "reference/projects/filter-projects--desktop--fr-light.png",
+   "dom": "dom/projects/filter-projects--desktop--fr-light.json.gz",
+   "nodes": 498,
+   "doc": [
+    1440,
+    2566
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "filter-projects",
+   "route": "#projects",
+   "theme": "light",
+   "lang": "fr",
+   "format": "desktop",
+   "globe": "blocked",
+   "note": "Fenêtre Filtrer, catégories repliées.",
+   "checked": {
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr"
+   },
+   "interaction": null,
+   "seconds": 4.6
+  },
+  {
+   "name": "filter-projects-expanded--desktop--fr-light",
+   "area": "projects",
+   "viewport": "reference/projects/filter-projects-expanded--desktop--fr-light.png",
+   "dom": "dom/projects/filter-projects-expanded--desktop--fr-light.json.gz",
+   "nodes": 548,
+   "doc": [
+    1440,
+    2566
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "filter-projects",
+   "route": "#projects",
+   "theme": "light",
+   "lang": "fr",
+   "format": "desktop",
+   "globe": "blocked",
+   "note": "Projets puis Tronc commun dépliés, minishell + ft_transcendence cochés (état mixte).",
+   "checked": {
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr"
+   },
+   "interaction": "['mixed', 'mixed', 'false', 'false', 'false']",
+   "seconds": 6.5
+  },
+  {
+   "name": "filter-projects--desktop--fr-dark",
+   "area": "projects",
+   "viewport": "reference/projects/filter-projects--desktop--fr-dark.png",
+   "dom": "dom/projects/filter-projects--desktop--fr-dark.json.gz",
+   "nodes": 498,
+   "doc": [
+    1440,
+    2566
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "filter-projects",
+   "route": "#projects",
+   "theme": "dark",
+   "lang": "fr",
+   "format": "desktop",
+   "globe": "blocked",
+   "note": "",
+   "checked": {
+    "theme": "dark",
+    "lang": "fr",
+    "dir": "ltr"
+   },
+   "interaction": null,
+   "seconds": 6.7
+  },
+  {
+   "name": "filter-projects-expanded--desktop--fr-dark",
+   "area": "projects",
+   "viewport": "reference/projects/filter-projects-expanded--desktop--fr-dark.png",
+   "dom": "dom/projects/filter-projects-expanded--desktop--fr-dark.json.gz",
+   "nodes": 548,
+   "doc": [
+    1440,
+    2566
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "filter-projects",
+   "route": "#projects",
+   "theme": "dark",
+   "lang": "fr",
+   "format": "desktop",
+   "globe": "blocked",
+   "note": "",
+   "checked": {
+    "theme": "dark",
+    "lang": "fr",
+    "dir": "ltr"
+   },
+   "interaction": "['mixed', 'mixed', 'false', 'false', 'false']",
+   "seconds": 9.3
+  },
+  {
+   "name": "filter-projects--mobile--fr-light",
+   "area": "projects",
+   "viewport": "reference/projects/filter-projects--mobile--fr-light.png",
+   "dom": "dom/projects/filter-projects--mobile--fr-light.json.gz",
+   "nodes": 480,
+   "doc": [
+    390,
+    2826
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "filter-projects",
+   "route": "#projects",
+   "theme": "light",
+   "lang": "fr",
+   "format": "mobile",
+   "globe": "blocked",
+   "note": "",
+   "checked": {
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr"
+   },
+   "interaction": null,
+   "seconds": 6.2
+  },
+  {
+   "name": "filter-projects-expanded--mobile--fr-light",
+   "area": "projects",
+   "viewport": "reference/projects/filter-projects-expanded--mobile--fr-light.png",
+   "dom": "dom/projects/filter-projects-expanded--mobile--fr-light.json.gz",
+   "nodes": 530,
+   "doc": [
+    390,
+    2826
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "filter-projects",
+   "route": "#projects",
+   "theme": "light",
+   "lang": "fr",
+   "format": "mobile",
+   "globe": "blocked",
+   "note": "",
+   "checked": {
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr"
+   },
+   "interaction": "['mixed', 'mixed', 'false', 'false', 'false']",
+   "seconds": 6.3
+  },
+  {
+   "name": "filter-projects--mobile--fr-dark",
+   "area": "projects",
+   "viewport": "reference/projects/filter-projects--mobile--fr-dark.png",
+   "dom": "dom/projects/filter-projects--mobile--fr-dark.json.gz",
+   "nodes": 480,
+   "doc": [
+    390,
+    2826
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "filter-projects",
+   "route": "#projects",
+   "theme": "dark",
+   "lang": "fr",
+   "format": "mobile",
+   "globe": "blocked",
+   "note": "",
+   "checked": {
+    "theme": "dark",
+    "lang": "fr",
+    "dir": "ltr"
+   },
+   "interaction": null,
+   "seconds": 6.6
+  },
+  {
+   "name": "filter-projects-expanded--mobile--fr-dark",
+   "area": "projects",
+   "viewport": "reference/projects/filter-projects-expanded--mobile--fr-dark.png",
+   "dom": "dom/projects/filter-projects-expanded--mobile--fr-dark.json.gz",
+   "nodes": 530,
+   "doc": [
+    390,
+    2826
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "filter-projects",
+   "route": "#projects",
+   "theme": "dark",
+   "lang": "fr",
+   "format": "mobile",
+   "globe": "blocked",
+   "note": "",
+   "checked": {
+    "theme": "dark",
+    "lang": "fr",
+    "dir": "ltr"
+   },
+   "interaction": "['mixed', 'mixed', 'false', 'false', 'false']",
+   "seconds": 8.9
+  },
+  {
+   "name": "projects-filtered--desktop--fr-light",
+   "area": "projects",
+   "viewport": "reference/projects/projects-filtered--desktop--fr-light.png",
+   "dom": "dom/projects/projects-filtered--desktop--fr-light.json.gz",
+   "nodes": 439,
+   "doc": [
+    1440,
+    2654
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "projects",
+   "route": "#projects",
+   "theme": "light",
+   "lang": "fr",
+   "format": "desktop",
+   "globe": "blocked",
+   "note": "Après Appliquer : 2 critères, bouton Filtrer marqué, compteur réduit.",
+   "checked": {
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr"
+   },
+   "interaction": null,
+   "seconds": 7.0
+  },
+  {
+   "name": "projects-last-page--desktop--fr-light",
+   "area": "projects",
+   "viewport": "reference/projects/projects-last-page--desktop--fr-light.png",
+   "dom": "dom/projects/projects-last-page--desktop--fr-light.json.gz",
+   "nodes": 262,
+   "doc": [
+    1440,
+    1653
+   ],
+   "full": "reference/projects/projects-last-page--desktop--fr-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "projects",
+   "route": "#projects?page=7",
+   "theme": "light",
+   "lang": "fr",
+   "format": "desktop",
+   "globe": "blocked",
+   "note": "Page 7 sur 7 (6 projets), flèche Suivant désactivée.",
+   "checked": {
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr"
+   },
+   "interaction": null,
+   "seconds": 5.9
+  },
+  {
+   "name": "projects-pagination--mobile--fr-light",
+   "area": "projects",
+   "viewport": "reference/projects/projects-pagination--mobile--fr-light.png",
+   "dom": "dom/projects/projects-pagination--mobile--fr-light.json.gz",
+   "nodes": 433,
+   "doc": [
+    390,
+    2826
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "projects",
+   "route": "#projects",
+   "theme": "light",
+   "lang": "fr",
+   "format": "mobile",
+   "globe": "blocked",
+   "note": "Bas de la page 1 : rangée de pagination au-dessus du menu.",
+   "checked": {
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr"
+   },
+   "interaction": null,
+   "seconds": 5.5
+  },
+  {
+   "name": "projects-pagination--desktop--fr-light",
+   "area": "projects",
+   "viewport": "reference/projects/projects-pagination--desktop--fr-light.png",
+   "dom": "dom/projects/projects-pagination--desktop--fr-light.json.gz",
+   "nodes": 449,
+   "doc": [
+    1440,
+    2566
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "projects",
+   "route": "#projects",
+   "theme": "light",
+   "lang": "fr",
+   "format": "desktop",
+   "globe": "blocked",
+   "note": "Bas de la page 1 sur ordinateur.",
+   "checked": {
+    "theme": "light",
+    "lang": "fr",
+    "dir": "ltr"
+   },
+   "interaction": null,
+   "seconds": 5.5
+  }
+ ],
+ "zone": "Projets",
+ "sources_last_run": {
+  "content-preview.html": "7e070de5f092b400",
+  "index.html": "939a371ddccd6bd5",
+  "welcome.mjs": "58f5b152e47f7040",
+  "project-ui.mjs": "8cb26fbdadbc6c74",
+  "projects.css": "957f5fe27f99b3f3",
+  "content-preview.css": "6df3c25b15bb9a2c",
+  "content-layout.css": "618738d403bdd445",
+  "responsive-content.css": "31210d835f68cc59",
+  "content-controls.mjs": "58ac9a724ba2168a",
+  "content-controls.css": "cc14237d5d978a62",
+  "project-filter-dialog.mjs": "9908ac8570d61e89",
+  "project-filter-dialog.css": "d5643f9687585525",
+  "content-pagination-ui.mjs": "d04673417e100a65",
+  "content-pagination.css": "8a86f6806a1bd2dd",
+  "comments.mjs": "24dd71a770b072f6",
+  "comments.css": "9f93b003d8e2cc5d",
+  "content-report.mjs": "e81b69e60f00b336",
+  "content-report.css": "98ced8e773ef4d80",
+  "media-viewer.mjs": "3ca844c67266cb60",
+  "media-viewer.css": "4890ab241379ea3b",
+  "project-trial.mjs": "9cf60282a01c5b85",
+  "detail-scroll.mjs": "6d34289d73a5ca9a",
+  "detail-scroll.css": "9aa6d69e112e1fae",
+  "design-review-selection.css": "68c9986bf451fc95",
+  "design-review-selection.mjs": "0200f2ff846812a1",
+  "profiles.css": "f4346993852c2412",
+  "content-preview-data.mjs": "f4a5ae6be75fdc54"
+ },
+ "site_map_ids": [
+  "projects",
+  "filter-projects",
+  "project",
+  "project-overview",
+  "project-implementation",
+  "project-media",
+  "project-test",
+  "project-comments",
+  "campus-choice",
+  "repo-link",
+  "viewer",
+  "report",
+  "comment-menu"
+ ]
+}

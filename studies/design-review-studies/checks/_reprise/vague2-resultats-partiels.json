@@ -1,0 +1,683 @@
+{
+ "réalisation:typo-awards": {
+  "group": "Typographie, lisibilité et pages",
+  "trials": [
+   {
+    "id": "awards-a-venir",
+    "status": "réalisé",
+    "resume": "Sur la page 42 Awards, aujourd’hui vide, l’essai ajoute une seule phrase au centre de la fenêtre : « Les 42 Awards arrivent bientôt. », « 42 Awards are coming soon. » et « جوائز 42 قادمة قريبًا. » (nom arabe repris du dock). Elle est placée sous le trophée du dock (#i-awards, 28 px, gris secondaire du thème). L’essai n’ajoute ni lien ni contenu, et ne modifie ni l’animation HORIZON → AWARDS, ni le dock, ni l’en-tête. Le brouillon de 10 h 27 a été repris : la logique JS est conservée. L’icône passe du turquoise au gris secondaire, plus discret et cohérent avec le bloc vide « Distinctions » des profils, et de 32 à 28 px. Les marges verticales sont désormais calculées à partir de la fin du fondu de l’en-tête et de la hauteur du dock : en paysage, l’icône du brouillon commençait à 136 px, avant la fin du fondu à 140 px. Le texte utilise les jetons H3. Le contrôle a été entièrement réécrit.",
+    "fichiers": [
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/awards-a-venir/essai.css",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/awards-a-venir/essai.mjs",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/awards-a-venir/essai.json",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/awards-a-venir/check.py",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/awards-a-venir/vignettes.py",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/awards-a-venir/results.json",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/awards-a-venir/ (captures avant-*/apres-* des 10 vues, avant/apres-centre-mobile.png, apres-reglages-*-mobile.png, apres-arrivee-sans-globe-ordinateur.png, combinaison-tous-essais-ordinateur.png)"
+    ],
+    "verifications": [
+     "14 critères sur 14 réussis dans Chrome (results.json écrit à 18 h 17 min 58, après les fichiers de l’essai écrits à 18 h 12 min 44).",
+     "10 vues : ordinateur en clair et en sombre (FR), en sombre (EN), en clair (AR) ; mobile 390 px en clair et en sombre (FR), en clair (EN), en sombre (AR) ; 320 px ; paysage 667×375. Sans l’essai, aucun texte n’est visible en dehors de l’en-tête et du dock. Avec l’essai, seule la phrase attendue apparaît, avec les bons attributs lang et dir (de droite à gauche en arabe), sur une ligne et sans troncature.",
+     "Aucun autre pixel ne change : 0 pixel différent hors du bloc du message dans les 10 vues, y compris 0 dans l’en-tête et 0 dans la bande du dock. Seul le bloc change (de 1 231 à 6 773 pixels).",
+     "Le centre du message est exactement au centre de la fenêtre (écart de 0 px). Il se trouve de 13,5 px (paysage) à 228 px (ordinateur) sous la fin du fondu de l’en-tête, et au moins 79,5 px au-dessus du dock. Aucun défilement horizontal.",
+     "Contraste du texte de 16,3:1 à 17,3:1, en clair comme en sombre ; icône décorative de 6,1:1 à 7,5:1.",
+     "Avec et sans l’essai, sont identiques : l’ordre de tabulation, la position et la taille du dock, la pastille active et le logo AWARDS. Le bloc ne contient aucun élément focalisable, son icône est aria-hidden et il ne capte pas le pointeur.",
+     "Message masqué sur les 9 autres pages : Explorer (monde et Paris), Projets, Profils, Chroniques, fiche projet, commentaires, parcours d’un profil, article. Sur 7 clics successifs dans le dock, il n’est visible que sur Awards.",
+     "Changement de langue et de thème en direct (Mon espace → Réglages) : en anglais clair, en arabe sombre puis en français clair, le texte, le sens d’écriture et les couleurs suivent sans rechargement.",
+     "Animation du logo, mouvement activé : la suite des états est identique avec et sans l’essai (16 relevés à l’aller, 15 au retour). Durées sans / avec l’essai : 1 270 / 1 241 ms à l’aller, 1 256 / 1 246 ms au retour (valeur prévue : 1 250 ms). La pastille du dock reste aux mêmes coordonnées. Le message apparaît en fondu (opacité de 0 à 1 en 0,4 s environ) et disparaît dès la première image après le départ d’Awards.",
+     "Arrivée par index.html#awards : le message reste masqué à chaque étape (chiffrée, ouverture, anneau, attente, erreur avec globe bloqué puis « Continuer »). Il l’est aussi pendant l’ouverture réelle avec le globe et le mouvement, dont la révélation dure environ 19 s. Il n’apparaît qu’une fois l’accueil ouvert.",
+     "Avec le mouvement réduit, le message s’affiche immédiatement, sans animation. Aucune erreur dans la console.",
+     "Avec tous les essais actifs (17 retenus), le message reste au même endroit, sans erreur. Contrôle indicatif ; la capture a été examinée.",
+     "Copie figée intacte : les 137 fichiers sont conformes au manifeste (contrôle en lecture seule)."
+    ],
+    "limites": [
+     "La phrase n’est pas annoncée automatiquement aux lecteurs d’écran : en arrivant sur Awards, la copie annonce toujours « 42 Awards » et place le focus sur le bouton du dock. La phrase se lit dans le contenu principal, après le menu. Aucun lecteur d’écran réel n’a été essayé.",
+     "La traduction arabe « جوائز 42 قادمة قريبًا. » a été rédigée par l’assistant à partir du nom du dock ; elle n’a pas été relue par un arabophone.",
+     "Le gris secondaire de l’icône est un choix de discrétion de l’essai ; le brouillon utilisait le turquoise 42.",
+     "Si la fenêtre fait moins d’environ 350 px de haut (365 px au-delà de 700 px de large), l’icône commencerait à passer sous la fin du fondu de l’en-tête. Rien n’a été mesuré sous 375 px.",
+     "Combinaisons : seule celle de tous les essais a été ouverte, à titre indicatif, alors que d’autres essais évoluaient encore. Le contraste élevé (forced-colors) et l’impression n’ont pas été contrôlés."
+    ],
+    "decisionConcernee": "7 octobre : « un bouton 42 Award dans le menu principal, avec une page vide en dehors du header et du menu » (page ne contenant que l’en-tête et le menu). L’essai y ajoute une phrase d’attente."
+   }
+  ],
+  "notesForMain": "Essai awards-a-venir terminé et vérifié : 14 critères sur 14 dans /home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/awards-a-venir/results.json (18:17:58, plus récent que essai.css et essai.mjs, 18:12:44). essai.json est rempli, avec 4 vues (ordinateur clair FR, ordinateur sombre EN, mobile clair FR, mobile sombre AR) et 11 paires de captures.\n\nPoint à connaître pour la galerie : captures[0] n’est pas une capture pleine page. C’est un recadrage 16:10 au centre de la capture mobile, produit par checks/awards-a-venir/vignettes.py, sans Chrome. La carte affiche captures[0] en object-fit:cover, calé en haut : une capture mobile entière n’y montrerait que l’en-tête, identique avant et après, et la phrase de 20 px serait illisible sur une capture d’ordinateur réduite.\n\nChangements par rapport au brouillon de 10 h 27 :\n- icône en gris secondaire au lieu du turquoise, et 28 px au lieu de 32 ;\n- marges calculées à partir de --header-fade-end et de --dock-bottom + --dock-height (en paysage, l’icône du brouillon débordait de 4 px sur la fin du fondu) ;\n- texte sur les jetons H3, avec text-wrap:balance ;\n- sélecteur limité à [data-navigation=dock].\n\nJe n’ai pas lancé snapshot.py --verify, parce qu’il réécrit snapshot-verification.json, et la consigne interdit de modifier snapshot*. J’ai refait le même contrôle d’empreintes en lecture seule : 137 fichiers, 0 écart.\n\nCombinaison de tous les essais (17 actifs, 18:17) : aucun conflit observé. Le message est au même endroit, sans erreur ; titres-marque change le logo AWARDS de l’en-tête, sans toucher au message.\n\nCaptures enregistrées hors de essai.json : apres-reglages-{en-light,ar-dark,fr-light}-mobile.png, apres-arrivee-sans-globe-ordinateur.png et combinaison-tous-essais-ordinateur.png. La dernière a été examinée.\n\nL’ancien avant-ordinateur.png, une copie de la capture de la revue, a été remplacé par une nouvelle capture de la copie, de même taille (350 367 octets).\n\nÀ la fin, mes sessions Chrome étaient toutes fermées ; les trois profils présents à 18:21 appartiennent à d’autres agents.\n\nRien n’a été modifié en dehors de essais/awards-a-venir/, de checks/awards-a-venir/ et du scratchpad. Rien n’a été commité.\n\nPour le journal : l’essai revient sur la décision du 7 octobre (page Awards vide en dehors de l’en-tête et du menu). La traduction arabe n’a pas été relue par un arabophone."
+ },
+ "réalisation:pile-recherche-voile": {
+  "group": "Pile flottante, cartes et petits écrans",
+  "trials": [
+   {
+    "id": "recherche-repliee",
+    "status": "réalisé",
+    "resume": "Sur les pages de contenu (Projets, Profils, Chroniques et leurs fiches), la capsule « Chercher dans Horizon » se replie en un bouton rond de 44 px à loupe, à 8 px du dé : la ligne flottante passe de 252 × 44 à 96 × 44 px. C'est le même bouton, restylé, avec une loupe ajoutée une seule fois par essai.mjs, et il ouvre la même recherche. Explorer garde la capsule ; Awards la masque déjà. Le code de l'essai (13 h 00) est conservé tel quel : il est conforme à la consigne. Les résultats de 13 h 06 et de 14 h 28, plus récents que le code, ont été réutilisés. Un contrôle complémentaire a été ajouté (check-etapes.py), puis la fiche essai.json a été écrite.",
+    "fichiers": [
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/recherche-repliee/essai.css",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/recherche-repliee/essai.mjs",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/recherche-repliee/essai.json",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/recherche-repliee/check.py",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/recherche-repliee/check-complement.py",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/recherche-repliee/check-etapes.py",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/recherche-repliee/results.json",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/recherche-repliee/results-complement.json",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/recherche-repliee/results-etapes.json"
+    ],
+    "verifications": [
+     "Ligne flottante (boîte englobant la capsule et le dé) : 11 088 → 4 224 px² (−62 %) à 1440 × 900, 390 × 844 et 320 × 640, ainsi qu'à 300 × 640 et 667 × 375. Surface couverte par toute la pile basse (capsule, dé et dock) : 48 896 → 42 032 px² à 1440 × 900, 32 216 → 25 352 px² à 390 × 844 et 28 496 → 21 632 px² à 320 × 640.",
+     "Lignes de texte sous les boutons au repos : 2 757 → 624 px² dans Projets à 390 × 844, 6 227 → 2 012 px² à 320 × 640, 4 636 → 1 672 px² sur la fiche projet à 1440 × 900.",
+     "Un clic sur la loupe ouvre la recherche, focus dans le champ ; « Paris » donne 8 résultats ; Échap ferme et rend le focus visible à la loupe. Testé sur ordinateur, sur mobile, en arabe sur mobile et au clavier (Maj+Tab depuis le dé, Entrée, Échap).",
+     "La recherche ouverte est identique à celle du site actuel : même surface, mêmes résultats, 0 pixel d'écart à 1440 × 900 et 390 × 844.",
+     "La loupe fait 44 × 44 px, avec le fond, le bord et la couleur du dé en clair et en sombre. Nom accessible et info-bulle sont localisés en FR, EN et AR ; en arabe, l'ordre est inversé comme dans le site actuel. Après un changement de langue ou de thème sans rechargement, il n'y a toujours qu'une seule loupe. Le repli dure 0,48 s avec un écart constant de 8 px ; aucune transition sous mouvement réduit.",
+     "Les libellés du dock sont identiques avec et sans l'essai dans ses 4 étapes de largeur (fenêtres de 1440, 390, 320 et 300 px, plus le paysage).",
+     "Explorer : 0 pixel d'écart, avec et sans le vrai globe. 42 Awards : 0 pixel d'écart. Aucune erreur dans la console. Les captures citées ont été regardées."
+    ],
+    "limites": [
+     "Le libellé visible disparaît sur les pages de contenu. L'info-bulle native n'apparaît qu'au survol de la souris, jamais sur écran tactile.",
+     "La hauteur de la pile ne change pas, seule sa largeur diminue. Les deux boutons masquent encore un peu de texte, par exemple la phrase de l'onglet Commentaires sur ordinateur.",
+     "Revient sur le choix de la capsule du 5 octobre : elle n'est plus conservée que dans Explorer.",
+     "Contrôles faits dans Chrome sans interface, en formats émulés : ni téléphone physique, ni lecteur d'écran réel, ni zone de sécurité d'un téléphone à encoche."
+    ],
+    "decisionConcernee": "5 octobre 2026 : choix explicite de la capsule flottante (« Je choisis la capsule flottante »), intégrée au-dessus du dock sans prendre sa largeur."
+   },
+   {
+    "id": "voile-pile-basse",
+    "status": "réalisé",
+    "resume": "Sur les pages de contenu (sauf Explorer et Awards), un voile pleine largeur, de la couleur du fond de page, passe derrière la capsule, le dé et le dock. Il est plein jusqu'au haut de la capsule, puis s'efface sur 24 px. Il n'intercepte pas les clics (pointer-events:none). Il reprend la recette du fondu sous l'en-tête, sans empiler un second fondu. Il s'efface avec le dock pendant le défilement et s'écarte quand un menu de la page est ouvert. Sur les fiches d'ordinateur à menu latéral fixe, il passe sous ce menu. Le code de 14 h 21 est conservé tel quel ; ses résultats, plus récents, ont été réutilisés. Un contrôle complémentaire a été ajouté (check-complement.py), puis la fiche essai.json a été écrite.",
+    "fichiers": [
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/voile-pile-basse/essai.css",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/voile-pile-basse/essai.mjs",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/voile-pile-basse/essai.json",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/voile-pile-basse/check.py",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/voile-pile-basse/check-menus.py",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/voile-pile-basse/check-bande.py",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/voile-pile-basse/check-complement.py",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/voile-pile-basse/results.json",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/voile-pile-basse/results-menus.json",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/voile-pile-basse/results-bande.json",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/voile-pile-basse/results-complement.json"
+    ],
+    "verifications": [
+     "Couverture derrière la capsule et le dé au repos : 99,98 à 100 %, et 100 % des pixels lus comme le fond, dans 11 vues. Elles couvrent le clair et le sombre, FR, EN et AR, les formats 1440 × 900, 1280 × 720, 390 × 844, 320 × 640 et 667 × 375, les listes et les fiches.",
+     "Fin des pages lisible au-dessus du voile, à 31–62 px de son bord, mise en page identique au site actuel et sans marge ajoutée. Vérifié sur les listes, les fiches, l'onglet Commentaires et l'article à 320 × 640 et 390 × 844.",
+     "Clics : les grilles elementFromPoint (38 à 44 points) sont identiques avec et sans l'essai. Un vrai clic sur une carte située sous le voile ouvre le projet. La recherche ouverte reste au-dessus du voile, avec les mêmes cibles qu'aujourd'hui.",
+     "Le voile prend une opacité de 0 pendant le défilement et revient à 1 au repos ; il reste à 1 quand le focus clavier garde le dock visible. Il s'écarte pendant l'ouverture des menus de la page, sans quoi le bas du dernier choix serait voilé à 18–42 %.",
+     "Menu latéral fixe des fiches d'ordinateur : 0 pixel modifié par le voile. Le changement de thème sans rechargement met à jour la couleur du voile. Transition de 0,35 s, aucune sous mouvement réduit. L'essai se combine avec la recherche repliée.",
+     "Explorer : 0 pixel d'écart, avec et sans le vrai globe. 42 Awards : 0 pixel d'écart. Aucune erreur dans la console. Les captures citées ont été regardées."
+    ],
+    "limites": [
+     "Au repos, le voile cache 19 % de l'écran sur ordinateur et sur mobile, 25 % à 320 × 640 et 40 % en paysage 667 × 375. Dans ce dernier format, la bande nette sous le fondu de l'en-tête ne mesure que 85 px et les cartes sont presque entièrement voilées.",
+     "Le contenu sous la pile n'est plus coupé, mais il est invisible au repos : il faut faire défiler pour le lire. Le fondu de 24 px est plus court que celui de l'en-tête (36 à 52 px).",
+     "Le voile disparaît pendant qu'un menu de la page est ouvert. Ses apparitions animées n'ont pas été mesurées image par image.",
+     "Contrôles faits dans Chrome sans interface, en formats émulés : la zone de sécurité d'un téléphone à encoche n'a pas été vérifiée sur un appareil réel."
+    ],
+    "decisionConcernee": ""
+   }
+  ],
+  "notesForMain": "The code of both trials was left untouched (essai.css and essai.mjs, timestamps 13:00 and 14:21). Changes in this run:\n- written: essais/recherche-repliee/essai.json and essais/voile-pile-basse/essai.json, both valid JSON with every listed path checked;\n- added: check-etapes.py and results-etapes.json in checks/recherche-repliee/, plus their new screenshots;\n- added: check-complement.py and results-complement.json in checks/voile-pile-basse/, plus their new screenshots.\n\nBoth new checks passed. The existing results.json files are newer than the trial files and cover the acceptance criteria, so they were left as they were.\n\nPoints for the combination and integration pass:\n1. voile-pile-basse adds `.app::before` and `#content-sheet::after`, and sets `z-index:2` on the pinned detail sidebar. Another trial that uses these pseudo-elements or changes that sidebar would conflict.\n2. The veil is hidden while page menus are open. Its selectors are `#content-sheet [role=menu]` and the open project/profile section switchers; articles reuse `.cp-project-section-switch`.\n3. recherche-repliee only acts when the `.dock-shell` has `data-has-discovery=true`, which the baseline always sets. The two trials together were checked at 390×844 only: the magnifier is 44 px and the veil starts 24 px above it.\n4. The end-of-page rule (LAST_JS) has a flaw: the panel inside a closed `<details>` section switcher still reports a box. The new complement fixes it with `checkVisibility()`. The earlier results are not affected, because the last elements they found were real (pagination, sample note, author list).\n\nGallery smoke test, outside the study folders: both cards render with title, summary, badge (\"Revient sur une décision\" / \"Compatible avec vos choix\"), loaded first capture pair, alternative link and own views. No console errors.\n\n`snapshot.py --verify` still reports 137 files and 0 missing. All my Chrome sessions were closed. The profiles still present in ~/.cache/horizon-design-review-chrome/ were being created during this run, so they belong to other agents' active sessions."
+ },
+ "réalisation:pile-colonnes": {
+  "group": "Pile flottante, cartes et petits écrans",
+  "trials": [
+   {
+    "id": "une-colonne-320",
+    "status": "réalisé",
+    "resume": "Sous 360 px de largeur d'écran, les grilles Projets et Chroniques passent à une carte par ligne. C'est une seule règle CSS, grid-template-columns:minmax(0,1fr) sur #content-index[data-section=projects|journal][data-view=grid] .cp-grid, inchangée depuis 13 h 22. Le check.py modifié à 14 h 38 a été relancé en entier (résultats et captures de 18 h 07–18 h 08) et passe. essai.json est rédigé.",
+    "fichiers": [
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/une-colonne-320/essai.css",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/une-colonne-320/essai.mjs",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/une-colonne-320/essai.json",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/une-colonne-320/check.py",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/une-colonne-320/results.json"
+    ],
+    "verifications": [
+     "Une colonne au lieu de deux à 320×640 (Projets en FR et EN, Chroniques en FR clair et en AR sombre), à 340×720 (Projets et Chroniques) et à 360×780. Dans chaque vue, les 8 noms tiennent sur une ligne et aucun mot n'est coupé ; avant, 4 noms sur 8 étaient coupés en Projets et 2 sur 8 en Chroniques et en arabe à 320 px.",
+     "Aucune intersection de rectangles entre l'avatar, le nom, la couronne et le +N, aucun élément hors de sa carte, aucun défilement horizontal.",
+     "Titres à 320 px : 1 à 2 lignes, contre 3 lignes pour 3 cartes sur 8 avant.",
+     "390×844, Projets et Chroniques : 0 pixel différent de la copie sans essai.",
+     "Bascule Grille/Liste à 320 px : la Liste est identique à la référence (64 + 204 px) et le retour en Grille redonne une colonne.",
+     "Profils à 320 et 340 px : deux colonnes, ni nom coupé ni collision mesurés, donc rien n'a été modifié. L'onglet Projets d'un profil (.cp-profile-related-grid) est déjà en une colonne sous 700 px dans la référence. Explorer à 320 px, globe bloqué : 0 pixel différent.",
+     "Aucune erreur JavaScript ni console. Captures regardées : 320 px auteurs, 340 px auteurs, AR sombre, Liste."
+    ],
+    "limites": [
+     "À 320 px, les 8 premières cartes occupent 3073 px au lieu de 1390 px (×2,2) : il faut défiler bien plus.",
+     "Le seuil suit la largeur de l'écran (360 px inclus). De 361 à 389 px, la référence reste en deux colonnes, avec des noms parfois sur deux lignes.",
+     "Explorer vérifié uniquement avec le module du globe bloqué.",
+     "Combinaisons avec les autres essais non vérifiées ici. L'essai est exclusif avec deux-colonnes-allegees (boot.js).",
+     "Uniquement Chrome 155 sans interface, mouvement réduit émulé."
+    ],
+    "decisionConcernee": "8 oct. 2026 : « Projets et Chroniques : deux cartes par ligne sur mobile à 320 px » ; 6 oct. 2026 : « adapter d'abord les tailles des textes et éléments avant d'imposer une grille mobile »."
+   },
+   {
+    "id": "deux-colonnes-allegees",
+    "status": "réalisé",
+    "resume": "Sous 360 px, les deux cartes par ligne sont gardées et seule la rangée d'auteurs (cartes Projets et Chroniques en Grille) change. Le nom tient sur une ligne avec des points de suspension. La couronne devient une pastille de 16 px sur le coin supérieur de l'avatar du responsable, du côté du nom, avec le fond de page --h42-color-bg et le contour --cp-line ; l'icône fait 11 px, trait recalé à l'épaisseur rendue de la référence. Le brouillon de 13 h 23 avait deux défauts, corrigés. En arabe, la pastille tombait au bout du nom (collision mesurée) parce que la ligne du nom est en dir=ltr : le côté est maintenant choisi par :dir(rtl) sur le lien, avec left/right physiques. Le disque utilisait --h42-color-surface (blanc ou anthracite), alors que le fond derrière les cartes est --h42-color-bg. Le titre, déjà limité à 3 lignes dans la référence, est conservé tel quel. check.py, results.json et essai.json sont créés.",
+    "fichiers": [
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/deux-colonnes-allegees/essai.css",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/deux-colonnes-allegees/essai.mjs",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/deux-colonnes-allegees/essai.json",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/deux-colonnes-allegees/check.py",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/deux-colonnes-allegees/results.json"
+    ],
+    "verifications": [
+     "Deux colonnes conservées dans 8 vues de 320 à 360 px (FR clair et sombre, EN, Chroniques FR, AR sombre). Les 64 noms mesurés tiennent sur une ligne, aucun mot n'est coupé, et 28 sont raccourcis par des points de suspension : au moins 47 px de nom visible à 320 px, 57 px à 340 px et 67 px à 360 px.",
+     "Aucune intersection de rectangles entre avatars, noms, couronne et +N. La couronne ne recouvre que son propre avatar, du côté du nom, dans les 8 vues, arabe compris. Aucun élément hors de sa carte, aucun défilement horizontal. Titres à 3 lignes au plus.",
+     "Les mêmes personnes restent visibles, comme dans la référence : nombre d'avatars, texte et nom accessible du +N (« Voir les 5 auteurs »), nom complet, nom accessible (« Luiza Costa. Chef de projet ») et infobulle.",
+     "Aucune couleur nouvelle : couronne en --cp-accent. Le disque prend le fond mesuré derrière les cartes (rgb(247,250,250) en clair, rgb(27,27,27) en sombre).",
+     "390×844, Projets et Chroniques : 0 pixel différent. À 320 px, la Liste, la grille Profils et Explorer (globe bloqué) sont identiques au pixel près. Grille → Liste → Grille revient à deux colonnes de 133 px. Hauteur inchangée : 8 cartes occupent 1390 px.",
+     "Focus clavier : anneau de 2 px visible, avec la pastille à l'intérieur du lien. Passage de FR à AR sans rechargement : sens rtl et 8 couronnes sur leur avatar.",
+     "Aucune erreur JavaScript ni console. Captures regardées : 320 px clair et sombre, AR sombre, gros plans des rangées, focus."
+    ],
+    "limites": [
+     "Les noms raccourcis (« Luiza … ») ne se lisent plus en entier sur la carte. Le nom complet reste dans le nom accessible, dans l'infobulle et sur la fiche ; sur téléphone, sans survol, il faut ouvrir la fiche.",
+     "Le repli « nom masqué visuellement » n'a pas été ajouté : il n'est pas nécessaire entre 320 et 360 px (au moins 47 px de nom). Sous 320 px, ce n'est pas testé.",
+     "La pastille est placée pour l'avatar de 24 px de la référence : il faudra la recaler si un autre essai change cette taille.",
+     "La couronne passe de 18 à 11 px. Elle reste lisible en capture, mais n'a pas été vue sur un vrai téléphone.",
+     "Combinaisons non vérifiées ici. L'essai est exclusif avec une-colonne-320.",
+     "Uniquement Chrome 155 sans interface, mouvement réduit émulé."
+    ],
+    "decisionConcernee": "11 oct. 2026 : « couronne à droite du nom », « nom et couronne sont réunis sur la même ligne », « placement à droite également en arabe », « tailles et raccourcissement conservés ». Sous 360 px, la couronne quitte la ligne du nom : en arabe, elle reste à droite du nom ; en FR et en EN, elle passe à sa gauche, sur l'avatar. Le choix du 8 oct. (deux cartes par ligne à 320 px) est respecté."
+   }
+  ],
+  "notesForMain": "1) Conflit de décision à signaler au propriétaire. La consigne indiquait « DECISION REVISITED: none » pour deux-colonnes-allegees. Or PROJECT_CONTEXT.md, ligne 70, consigne une précision explicite du 11 octobre : « couronne à droite du nom », nom et couronne sur la même ligne, « placement à droite également en arabe », « tailles et raccourcissement conservés ». En posant la couronne sur l'avatar (comme le demande la consigne), l'essai revient sur cette décision sous 360 px : en arabe, la couronne reste à droite du nom, mais en FR et en EN elle passe à sa gauche. Je l'ai écrit dans decisionConcernee, sans changer le comportement demandé ; l'essai reste optionnel.\n2) une-colonne-320 : CSS inchangé depuis 13 h 22. Le check.py de 14 h 38 a été relancé en entier : results.json et captures datent de 18 h 07–18 h 08, passed=true, avec en plus les vues en-petit, petit-chroniques, petit-340-projets et la comparaison Explorer. La référence ne montre aucune intersection de rectangles à 320 px : la « collision » relevée par la revue est un manque de place (23 px pour le nom, couronne à 12 px du +N). Je l'ai formulé ainsi dans « probleme ».\n3) deux-colonnes-allegees : le brouillon de 13 h 23 n'avait jamais été vérifié. Défauts corrigés : pastille mal placée en arabe (la ligne du nom est en dir=ltr, donc inset-inline-start se résolvait côté gauche ; corrigé avec :dir(rtl) sur le lien et left/right physiques) et fond --h42-color-surface au lieu du fond de page --h42-color-bg. check.py a été créé à partir de la méthode de une-colonne-320, étendue à toutes les pastilles de la rangée d'auteurs, plus le focus clavier et un passage de langue à chaud. Il tient en trois sessions Chrome successives, globe toujours bloqué ; passed=true (results.json à 18 h 20, après le CSS final de 18 h 14).\n4) Pour les contrôles de combinaison : la pastille suppose l'avatar de 24 px de la référence sous 360 px. Si echelle-unifiee ou lisibilite-textes changent la taille de l'avatar ou du nom dans les cartes à cette largeur, il faut regarder la rangée d'auteurs. Le contrôleur du +N (author-preview-fit.mjs) mesure aussi la sonde clonée, que mes sélecteurs atteignent. L'état de repli est resté identique dans les 8 vues (sameAuthors=true).\n5) Effets de bord : `snapshot.py --verify` réécrit lui-même snapshot-verification.json à chaque contrôle (comportement prévu ; 137 vérifiés, 0 manquant). Aucun autre fichier n'a été modifié hors de mes quatre dossiers. Fichiers de travail dans scratchpad/agents/pile-colonnes/. 11 images ouvertes au total. Rien n'a été commité ni poussé."
+ },
+ "réalisation:pile-pseudo": {
+  "group": "Pile flottante, cartes et petits écrans",
+  "trials": [
+   {
+    "id": "pseudo-manquant",
+    "status": "réalisé",
+    "resume": "Les profils fictifs sans pseudo Intra n’affichent plus « Pseudo Intra à renseigner », ni ses versions anglaise et arabe, dans l’annuaire (grille et liste) ni sur la fiche. Les vrais pseudos restent affichés et aucun pseudo n’est inventé. essai.css masque la ligne p.cp-profile-login sans attribut dir : dans la base, tout vrai pseudo porte dir=\"ltr\". En liste et sur la fiche, la ligne est retirée et le contenu remonte. Dans la grille, la règle s’applique rangée par rangée. Si une autre carte de la rangée montre un vrai pseudo, la ligne garde, invisible, la hauteur d’une seule ligne de pseudo, et campus et promotion restent au même niveau. Si la rangée n’a aucun vrai pseudo, essai.mjs marque la ligne « replie » et elle disparaît. Il regroupe les cartes par offsetTop et suit les re-rendus avec un MutationObserver et les largeurs avec un ResizeObserver. Aucun texte n’est ajouté.",
+    "fichiers": [
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/pseudo-manquant/essai.css",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/pseudo-manquant/essai.mjs",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/pseudo-manquant/essai.json",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/pseudo-manquant/check.py",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/pseudo-manquant/results.json",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/pseudo-manquant/ (10 paires avant/après, dont avant/apres-ordinateur-zoom.png en tête pour la vignette de la galerie, et 4 paires témoins temoin-*.png)"
+    ],
+    "verifications": [
+     "Texte absent : 0 occurrence visible des trois mentions FR/EN/AR avec l’essai, contre 165 dans les mêmes vues sans l’essai (texte rendu de la page). Vues : grille à 1440, 390 et 320 px ; liste à 1440, 390 et 320 px ; fiche de Lucía Roca à 1440 px en français, 390 px en anglais et 320 px en arabe.",
+     "Hauteurs égales dans chaque rangée, avant comme après, à 1440 px (5 colonnes), 1024 px (4), 390 et 320 px (2). À 1440 px, les rangées 1 à 3, qui contiennent un vrai pseudo, gardent 271 px et un campus à 223 px. Les rangées 4 et 5, sans pseudo, passent de 271 à 244 px.",
+     "Première vue à 1440 px : 2 300 pixels changent, tous dans les 18 boîtes des mentions (0 en dehors). Mobile arabe sombre : 3 200 pixels, 0 en dehors.",
+     "À 320 px, en français et en arabe, la mention tenait sur deux lignes : sans l’essai, 4 rangées ont un campus décalé de 21 px ; avec l’essai, 0, car l’espace réservé ne fait qu’une ligne. En anglais, 0 avant comme après.",
+     "Liste : hauteur des lignes inchangée (137 px sur ordinateur, 113 px sur mobile ; en arabe à 320 px, les cartes de 127 px passent à 113 px). Le campus remonte de 28 px. Aucun texte sous le cœur favori (chevauchement 0) et la page ne déborde pas en largeur.",
+     "Fiche de Lucía Roca sur ordinateur : bloc d’identité de 297 à 276 px, actions et menu remontés de 21 px. Sur mobile 390 px, mise en page inchangée ; à 320 px en arabe, 5 px de moins. En fenêtre basse 1280 × 640, la densité du menu reste « compact ».",
+     "Vrais pseudos : la fiche de Leïla Mansour (@lmansour) est identique au pixel près avec et sans l’essai. Projets, Chroniques et Explorer (globe bloqué) aussi.",
+     "Accessibilité (arbre de Chrome) : le nom de la carte de Lucía Roca n’annonce plus « Pseudo Intra: Pseudo Intra à renseigner », et celui de Leïla Mansour garde « Pseudo Intra: lmansour ». Sur la fiche, la ligne masquée sort de l’arbre. L’ordre clavier de l’annuaire est identique (56 éléments).",
+     "Re-rendus sans rechargement : langue FR → EN → AR → FR, deux tris, largeurs 390, 320, 1024 et 1440 px, fiche puis retour, liste puis grille, thème sombre par le menu du compte. À chaque étape, 0 mention, état attendu dans chaque rangée, hauteurs égales, aucun campus décalé.",
+     "Chargement : aucun décalage de mise en page dont la source est dans la grille, y compris avec le tri « plus anciens », où les premières rangées se replient. Seul le décalage déjà présent dans la base (content-sheet) apparaît, avec la même valeur.",
+     "Aucune erreur dans la console. La copie de référence est intacte : empreintes des 137 fichiers vérifiées en lecture seule. results.json date de 18:43 et est plus récent que essai.css (18:19) et essai.mjs (18:12). Captures examinées sous forme de planches avant/après réduites."
+    ],
+    "limites": [
+     "La règle repose sur un détail du code de la base (vrai pseudo = dir=\"ltr\", mention provisoire sans dir). Si profile-ui.mjs changeait sur ce point, la mention réapparaîtrait.",
+     "Dans la grille, une carte sans pseudo voisine d’une carte à pseudo garde une ligne vide. Les rangées sans aucun pseudo sont plus compactes (27 px de moins à 1440 px), donc la hauteur des rangées dépend de la largeur, du tri et des filtres.",
+     "Le regroupement en rangées passe par JavaScript. Sans script, toutes les lignes de la grille gardent leur espace, sans texte. Après un changement de largeur, le nouvel état s’applique à l’image suivante.",
+     "L’essai s’installe après le premier rendu de la base. L’absence de décalage des cartes n’a été mesurée que dans Chrome sans interface, avec deux tris.",
+     "L’URL de la galerie ne permet pas de choisir la présentation en liste : il faut la choisir dans le menu « Affichage ».",
+     "Autres endroits qui citent un pseudo (menu du compte, mentions des commentaires, destinataire d’un message) : d’après le code, ils n’affichent rien quand il manque. Non modifiés et non contrôlés dans Chrome.",
+     "Non vérifié : la combinaison avec les autres essais, un vrai lecteur d’écran, les autres navigateurs et le vrai globe (Explorer a été comparé avec le module du globe bloqué)."
+    ],
+    "decisionConcernee": "Aucune : la règle « sans comptes Intra inventés » reste respectée, aucun pseudo n’est inventé. Dans essai.json, decisionConcernee et alternativeDe sont vides."
+   }
+  ],
+  "notesForMain": "pseudo-manquant est réalisé et vérifié : tous les critères d'acceptation de results.json sont vrais, sans exception ni erreur dans la console.\n\n1. **Lecture de la consigne.** Avec un repli partout, les hauteurs restent égales (la grille étire les cartes), mais à 1440 px le campus des cartes sans pseudo se décalait de 28 px dans les rangées 1 à 3, où il côtoie un vrai pseudo. Avec un espace réservé partout, chaque carte sans pseudo gardait un vide. J'ai donc appliqué « garder l'espace si l'alignement en dépend, sinon replier » rangée par rangée :\n   - une rangée qui contient un vrai pseudo réserve une ligne invisible ;\n   - une rangée sans pseudo replie la ligne ;\n   - la liste et la fiche replient toujours.\n   C'est écrit dans les limites. L'utilisateur peut préférer l'une des deux versions simples, qui seraient une variante d'une seule règle CSS.\n\n2. **Effet à 320 px.** En français et en arabe, la mention tient sur deux lignes, et la base a 4 rangées dont le campus est décalé de 21 px. Avec l'essai, il n'y en a plus aucune, car l'espace réservé ne fait qu'une ligne (white-space:nowrap). Ce n'est pas une amélioration ajoutée : c'est ce qu'il faut pour que l'espace réservé aligne vraiment la rangée.\n\n3. **Contrôle.** `python3 -I checks/pseudo-manquant/check.py` lance 4 sessions Chrome courtes, l'une après l'autre, avec le globe bloqué, en environ 2 min 10. Passer des numéros de session en argument écrit `results-partiel.json` au lieu de `results.json`.\n\n4. **Vignette de la galerie.** La première capture est un agrandissement ×2 des cartes de Leïla Mansour et Lucía Roca, tiré des captures d'ordinateur. En vignette 16:10, la capture entière ne laisserait pas voir la différence.\n\n5. **Vue en liste.** L'URL ne permet pas de la fixer : dans la galerie, il faut la choisir dans le menu « Affichage ».\n\n6. **Empreintes de la copie.** Je n'ai pas lancé `snapshot.py --verify`, parce qu'il réécrit `snapshot-verification.json`. Les empreintes des 137 fichiers ont été vérifiées en lecture seule et sont conformes. `snapshot-verification.json` a quand même été modifié après 18:12, par un autre agent et non par moi.\n\n7. **Fichiers modifiés.** Je n'ai écrit que dans `essais/pseudo-manquant/` et `checks/pseudo-manquant/`, plus des brouillons dans le scratchpad (`agents/pseudo-manquant`). Je n'ai touché à aucun document, à aucun dossier d'un autre agent, ni à la base.\n\n8. **Combinaisons à prévoir.** Aucun autre essai ne cible `.cp-profile-login`. En revanche, titres-forts change la taille des noms des cartes (h2) : à vérifier dans le contrôle des combinaisons, des noms sur deux lignes pourraient décaler les rangées comme dans la base."
+ },
+ "vérification:typo-awards": {
+  "group": "Typographie, lisibilité et pages",
+  "trials": [
+   {
+    "id": "awards-a-venir",
+    "verdict": "corrigé",
+    "problemesTrouves": [
+     "Le comportement de l'essai est conforme à la spécification : une seule phrase en FR, EN et AR (« جوائز 42 » est bien le libellé du dock arabe), le trophée #i-awards du site, aucun lien ni contenu ajouté, et des sélecteurs limités à .essai-awards-a-venir. Aucun défaut de comportement trouvé.",
+     "Le commentaire de essai.css affirmait que le bloc n'atteint « jamais » ni le fondu de l'en-tête ni le dock. C'est faux sous environ 350 px de hauteur : à 568×320, le haut du trophée passe 14 px sous la fin du fondu (126 px pour une fin de fondu à 140 px).",
+     "Limite inexacte dans essai.json : « rien n'a été mesuré sous 375 px ». Les durées de l'animation et de la révélation du globe dataient du passage précédent.",
+     "Le contrôle d'origine ne testait ni la vraie navigation au clavier (seulement une liste statique d'éléments focalisables), ni le menu du compte ouvert au-dessus du message, ni l'identité au pixel des autres pages, ni l'arbre d'accessibilité. En mouvement réduit, il relevait seulement l'opacité 1,2 s après le chargement, ce qui ne prouve pas l'absence d'animation.",
+     "Observation, pas un défaut : sur mobile 390×844, le panneau en verre du menu du compte recouvre le haut du trophée sur 21 px, et l'icône se devine à travers. Le verre se comporte de la même façon au-dessus des contenus des autres rubriques.",
+     "Au premier passage, un pixel isolé (659, 97) différait sur Explorer. Il différait aussi entre deux chargements de la copie sans l'essai : c'est un bruit de la copie, qui ne vient pas de l'essai."
+    ],
+    "corrections": [
+     "essai.css : seul le commentaire est corrigé (« clear of both while the window is at least about 350 px tall »). Aucune règle n'est modifiée, pour ne pas sortir du périmètre ; le cas des fenêtres basses est mesuré et noté dans les limites.",
+     "checks/awards-a-venir/check.py : script conservé et complété, avec la possibilité de relancer une seule partie (`check.py <partie>`). Contrôles ajoutés : zone englobant tous les pixels modifiés, calculée indépendamment ; 9 appuis réels sur Tab avec capture de l'anneau de focus (FR clair sur ordinateur, AR sombre sur mobile) ; menu du compte ouvert ; identité au pixel de 5 autres pages, avec comparaison à un second chargement de la copie en cas de bruit ; fenêtres de 568×320 et 280×653 ; arbre d'accessibilité de Chrome ; nom de l'animation selon la préférence de mouvement.",
+     "results.json : entièrement régénéré, 19 critères sur 19 (18 h 43, plus récent que essai.css de 18 h 33 et essai.mjs de 18 h 12). Une note (clé notes) consigne le pixel de bruit du premier passage sur Explorer.",
+     "essai.json : chiffres remesurés ; nouvelles vérifications (clavier, menu du compte, autres pages, arbre d'accessibilité, état après un changement en direct identique au pixel près à un chargement direct, arrivée identique à l'aperçu) ; limites mises à jour avec les mesures à 568×320 et 280 px, le chevauchement du menu du compte et le contenu des Awards demandé le 8 octobre, qui reste à concevoir ; 3 paires de captures ajoutées (focus ×2, menu du compte), soit 14 paires, toutes présentes.",
+     "vignettes.py relancé : les recadrages avant-centre-mobile.png et apres-centre-mobile.png correspondent aux nouvelles captures mobiles."
+    ],
+    "verificationsRejouees": [
+     "10 vues (1440×900 en clair FR, sombre FR, sombre EN et clair AR ; 390×844 en clair FR, sombre FR, clair EN et sombre AR ; 320×640 ; 667×375) : sans l'essai, aucun texte en dehors de l'en-tête et du dock. Avec l'essai, seule la phrase attendue, sur une ligne, sans troncature, avec les bons lang et dir. 0 pixel différent hors du bloc, dans l'en-tête et dans la bande du dock ; de 1 231 à 6 773 pixels changent dans le bloc, et la zone des pixels modifiés reste dans le trophée et la phrase (marge de 4 px).",
+     "Placement : centre du message à 0 px du centre de la fenêtre. Le message commence de 13,5 à 228 px sous la fin du fondu et reste au moins 79,5 px au-dessus du dock. Contraste du texte de 16,34 à 17,31:1, de l'icône de 6,12 à 7,51:1. Aucun défilement horizontal ni erreur dans la console.",
+     "Clavier : même suite avec et sans l'essai (marque, Mon compte, les 5 boutons du dock), et le focus n'entre jamais dans le bloc. Anneau de focus visible (2 px, rgb(0,142,144) sur ordinateur, rgb(150,163,235) en arabe sombre) et 0 pixel différent hors du bloc.",
+     "Absent ailleurs : masqué et checkVisibility() faux sur 9 pages, et visible seulement sur Awards au fil de 7 clics dans le dock. Projets, profil, Chroniques (arabe, 320 px), commentaires (anglais, mobile) et Explorer (sombre) : 0 pixel différent avec et sans l'essai.",
+     "Langue et thème changés en direct (EN clair, AR sombre, FR clair) : chaque capture est identique au pixel près (0 pixel) à un chargement direct dans la même langue et le même thème.",
+     "Logo HORIZON → AWARDS avec le mouvement : même suite d'états (16 à l'aller, 15 au retour) ; durées de 1 255 / 1 252 ms à l'aller et 1 244 / 1 236 ms au retour, sans / avec l'essai ; pastille du dock inchangée. Le fondu atteint 0,94 en 200 ms et 1 en 400 ms ; le message est masqué dès la première image après le départ d'Awards.",
+     "Arrivée par index.html#awards : message masqué à chaque étape, globe bloqué puis « Continuer ». Il l'est aussi avec le vrai globe et le mouvement (révélation de 2,5 à 25,1 s), puis s'affiche avec AWARDS. L'état final est identique au pixel près à l'aperçu direct.",
+     "Mouvement réduit : animation-name à none. Sans cette préférence : essai-awards-a-venir-in, 0,45 s. Arbre d'accessibilité : la phrase est exposée (StaticText) sur Awards en FR et en AR, et absente sur Projets ; l'icône est sous aria-hidden.",
+     "Menu du compte (mobile) : même position et même taille (84,76 – 284×333) avec et sans l'essai, 0 pixel différent ailleurs ; 12 327 pixels du panneau changent, car le trophée apparaît à travers le verre (capture examinée).",
+     "Tous les essais ensemble (17 actifs, 18 h 34) : 0 pixel différent dans le bloc par rapport à l'essai seul ; les écarts se limitent au logo de l'en-tête et à la zone du dock (autres essais). Aucune erreur. Capture examinée.",
+     "Fenêtres extrêmes : à 568×320, l'icône passe 14 px sous la fin du fondu ; la phrase est à 26 px du fondu et à 52 px du dock. À 280×653, la phrase tient sur 2 lignes, sans troncature ni débordement.",
+     "Copie figée : 137 fichiers conformes au manifeste, contrôle en lecture seule refait au début et à la fin. snapshot.py n'a pas été lancé."
+    ],
+    "reservesRestantes": [
+     "Traduction arabe « جوائز 42 قادمة قريبًا. » non relue par un arabophone. Elle est grammaticalement correcte et reprend le libellé du dock ; le rendu bidi a été vérifié sur capture.",
+     "La phrase n'est pas annoncée automatiquement ; aucun lecteur d'écran réel n'a été essayé (arbre d'accessibilité de Chrome seulement).",
+     "Sous environ 350 px de hauteur (365 px au-delà de 700 px de large), le trophée passe sous le fondu de l'en-tête. Comportement laissé tel quel : ces fenêtres sont hors des vues demandées et la règle de périmètre s'applique.",
+     "Combinaisons seulement indicatives (tous les essais à 18 h 34) ; contraste élevé (forced-colors) et impression non contrôlés."
+    ]
+   }
+  ],
+  "notesForMain": "J'ai vérifié awards-a-venir et je n'y ai trouvé aucun défaut de comportement : essai.mjs n'a pas changé. Dans essai.css, seul un commentaire inexact a été corrigé. Le contrôle passe 19 critères sur 19 dans /home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/awards-a-venir/results.json (écrit à 18 h 43, après essai.css à 18 h 33 et essai.mjs à 18 h 12).\n\nCe que j'ai modifié, uniquement dans essais/awards-a-venir/ et checks/awards-a-venir/ :\n- essai.css : commentaire seulement.\n- check.py : complété (navigation réelle au clavier, menu du compte ouvert, identité au pixel de 5 autres pages, arbre d'accessibilité, mouvement réduit, fenêtres 568×320 et 280×653). On peut relancer une seule partie avec `python3 -I checks/awards-a-venir/check.py <partie>`.\n- results.json : régénéré.\n- essai.json : rempli et valide. Il garde 4 vues sur la route awards et compte 14 paires de captures, toutes présentes. captures[0] reste le recadrage 16:10 au centre de l'écran mobile, produit par vignettes.py (aucune autre capture ne montre le changement dans la vignette de la galerie).\n\nCaptures examinées : composites des 10 vues et des recadrages de la phrase (rendu bidi arabe correct), anneau de focus, menu du compte, combinaison de tous les essais et vignette de la galerie.\n\nPour le journal et la décision :\n- l'essai revient sur la décision du 7 octobre (« page vide en dehors du header et du menu ») ;\n- le contenu des Awards demandé le 8 octobre reste à concevoir, et l'essai n'en réalise rien ;\n- la traduction arabe n'a pas été relue par un arabophone ;\n- sur mobile, le menu du compte ouvert recouvre le haut du trophée sur 21 px, et l'icône se devine à travers le verre (comme les contenus des autres rubriques).\n\nPoint à connaître : /home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/snapshot-verification.json a été réécrit à 18 h 24 par un autre processus, pas par moi (je n'ai jamais lancé snapshot.py). Mon contrôle d'empreintes en lecture seule donne 137 fichiers sur 137 conformes.\n\nToutes mes sessions Chrome sont fermées. Le profil encore présent dans ~/.cache/horizon-design-review-chrome/ appartient à un autre agent. Rien n'a été commité ni poussé."
+ },
+ "vérification:pile-colonnes": {
+  "group": "Pile flottante, cartes et petits écrans",
+  "trials": [
+   {
+    "id": "une-colonne-320",
+    "verdict": "corrigé",
+    "problemesTrouves": [
+     "Aucun défaut dans essai.css ni essai.mjs. C'est une seule règle, dans le périmètre : sous @media (max-width:360px), grid-template-columns:minmax(0,1fr) sur #content-index[data-section=projects|journal][data-view=grid] .cp-grid. Sa spécificité est égale à la règle de la référence et il passe après elle.",
+     "essai.json, « probleme » : l'affirmation « À 340 et 360 px … sans coupure au milieu d'un mot » est fausse en arabe. À 340 px, en Projets arabe sombre, la référence coupe encore « توماس فييرا » au milieu du mot (mesuré).",
+     "Les chiffres portaient sur les 8 premières cartes, alors que la page en affiche 12. En Projets à 320 px, 5 noms sont coupés sur 12 (« Tom|ás » manquait), 3 titres font 3 lignes en Projets et 4 en Chroniques. « La couronne à 12 px du +N » ne vaut qu'en français (41 px en arabe).",
+     "Le check.py d'origine laissait des trous de couverture. Il ne mesurait que le premier auteur de chaque carte, alors qu'en une colonne le contrôleur affiche un deuxième auteur dans 4 à 5 cartes sur 12. Il ne testait ni le changement de langue ou de thème sans rechargement, ni le clavier, ni l'identité au pixel exact (image_diff tolère 24), ni Explorer avec le vrai globe."
+    ],
+    "corrections": [
+     "essais/une-colonne-320/essai.json réécrit en JSON valide, avec tous les champs. « probleme » corrigé (12 cartes, coupure arabe à 340 px, « en français » pour les 12 px). « verifications » reposent désormais sur la contre-vérification. « limites » mises à jour : Explorer est maintenant vérifié avec le vrai globe, et 360 px est une largeur Android courante. « fichiers » complétés avec contre-verification.py et .json, capture direct-ar-sombre-petit ajoutée. Titre, résumé, changement, decisionConcernee, alternativeDe et vues conservés après contrôle.",
+     "Ajout de checks/une-colonne-320/contre-verification.py, une mesure indépendante, et de contre-verification.json (passed=true, 18 h 46). S'y ajoutent les captures avant/après ordinateur, paysage, limite-361, mobile, mobile-chroniques, profils-petit, profils-340, fiche-projet-petit, profil-projets-petit, cv-liste-petit, direct-ar-sombre-petit et explorer-globe-petit (avec avant-bis).",
+     "essai.css, essai.mjs, check.py et results.json d'origine inchangés : results.json (18 h 08) est plus récent que l'essai (13 h 22) et reste valable."
+    ],
+    "verificationsRejouees": [
+     "Chrome 155 via helper.py, une session à la fois, globe bloqué sauf pour Explorer. Lancé deux fois, résultats identiques.",
+     "À 320×640 (Projets FR et EN, Chroniques FR clair et AR sombre), 340×720 (Projets AR sombre, Chroniques FR) et 360×780 : 1 colonne. Sur 12 cartes, les 16 à 17 noms visibles tiennent sur 1 ligne, 0 mot coupé, 0 intersection (intitulé, avatars, noms, couronne, +N), 0 élément hors carte, 0 défilement horizontal. Titres sur 1 à 2 lignes, contre 3 lignes pour 3 ou 4 cartes avant. Les 8 premières cartes passent de 1390 à 3073 px.",
+     "Pixel exact, sans seuil : 0 pixel différent et même signature de mise en page de toute la page (environ 1 100 éléments) à 390×844 FR clair (Projets), 390×844 AR sombre (Chroniques), 361×780, 1440×900 et 667×375. REACH : la règle n'atteint aucun élément affiché.",
+     "À 320 px, 0 pixel différent et même mise en page pour Profils à 320 et 340 px, la fiche projet et l'onglet Projets d'un profil. Profils remesurés : 2 colonnes, aucun mot coupé (nom, identifiant, rôle, statut, étiquettes), aucune collision statut/cœur. Ils ne présentent donc pas le même défaut et n'ont pas été modifiés.",
+     "Grille → Liste → Grille à 320 px : la Liste est identique au pixel près à la référence, le retour en Grille donne 1 colonne de 280 px.",
+     "Sans rechargement, par le menu du compte, FR clair → AR sombre → EN clair : 1 colonne, rtl puis ltr, 0 problème. La référence, dans le même état, garde 5 ou 6 noms coupés ou sur 2 lignes.",
+     "Tab sur une page FR fraîchement chargée : le lien de titre de la première carte prend le focus, :focus-visible actif, contour plein de 2 px.",
+     "Explorer à 320 px avec le vrai globe : 0 pixel entre l'essai et la référence, et 0 entre deux chargements de la référence. La règle atteint 0 élément. Aucune erreur JavaScript ni console.",
+     "Captures regardées (assemblées) : 320 px avant/après, 340 px Chroniques, AR sombre chargé et basculé à chaud, Liste, Explorer avec globe (deux passages)."
+    ],
+    "reservesRestantes": [
+     "Combinaisons avec les autres essais non vérifiées. Un essai placé plus loin dans ORDER qui fixerait grid-template-columns sur la même grille l'emporterait.",
+     "Seuil 360 px inclus, largeur Android courante : ces téléphones passent aussi en une colonne, et les pages sont 2,2 fois plus hautes. C'est au propriétaire de choisir, comme le prévoient les décisions des 6 et 8 octobre, que l'essai remet en cause.",
+     "Pas de téléphone réel, uniquement Chrome sans interface avec mouvement réduit émulé."
+    ]
+   },
+   {
+    "id": "deux-colonnes-allegees",
+    "verdict": "corrigé",
+    "problemesTrouves": [
+     "Aucun défaut dans essai.css ni essai.mjs. Les sélecteurs se limitent à la rangée d'auteurs compacte des grilles Projets et Chroniques, sous 360 px. Je juge nécessaires le disque de la pastille (tokens --h42-color-bg et --cp-line, aucune couleur nouvelle) et le trait recalé à 2,78 (même épaisseur rendue). Les corrections de l'implémenteur, côté :dir(rtl) et fond --h42-color-bg, sont confirmées par la mesure.",
+     "essai.json, « probleme » : même omission de la coupure arabe à 340 px (« توماس فييرا »), et chiffres calculés sur 8 cartes au lieu de 12.",
+     "« decisionConcernee » incomplète : la décision du 11 octobre dit aussi « tailles … conservés », or l'essai réduit la couronne de 18 à 11 px. C'est ajouté.",
+     "Conflit avec la consigne calculée, qui indiquait « DECISION REVISITED: none ». PROJECT_CONTEXT.md, ligne 70, consigne une précision explicite du 11 octobre : couronne à droite du nom, sur la même ligne, placement à droite aussi en arabe, tailles et raccourcissement conservés. Sous 360 px, l'essai y revient. Le texte de l'implémenteur était juste : il est conservé et complété.",
+     "Pendant la contre-vérification, deux faux positifs de méthode, sans lien avec l'essai, ont été écartés. Une coupure après trait d'union (« au-|delà ») était comptée comme un mot coupé. Après Grille → Liste → Grille, l'illustration .cp-art paraissait sortir de sa carte : c'est le zoom de survol scale(1.035) de la carte restée sous le pointeur, identique dans la référence et disparu une fois le pointeur écarté (bascule-grille.json)."
+    ],
+    "corrections": [
+     "essais/deux-colonnes-allegees/essai.json mis à jour en JSON valide. « probleme » corrigé (12 cartes, coupure arabe à 340 px). « decisionConcernee » complétée : couronne de 18 à 11 px, nom sur une ligne. « verifications » réécrites avec les mesures indépendantes. « limites » complétées : chiffres à 300 px, largeur 360 px courante. « fichiers » complétés avec contre-verification.py/.json et bascule-grille.py/.json, capture direct-ar-sombre-petit ajoutée.",
+     "Ajout de checks/deux-colonnes-allegees/contre-verification.py et .json (passed=true, 18 h 49), de bascule-grille.py et .json, et de captures : identités, pages, cv-liste-petit, direct-ar-sombre-petit, cv-focus-petit, explorer-globe-petit, bascule-grille-petit.",
+     "essai.css, essai.mjs, check.py et results.json d'origine inchangés : results.json (18 h 20) est plus récent que l'essai.css final (18 h 14) et reste valable."
+    ],
+    "verificationsRejouees": [
+     "Huit vues, 12 cartes chacune, tous les auteurs : 320×640 (Projets FR clair et sombre, EN, Chroniques FR, Chroniques AR sombre), 340×720 (Projets AR sombre, Chroniques FR) et 360×780. Partout 2 colonnes, tous les noms sur 1 ligne, 0 mot coupé. 1 à 5 noms sur 12 se terminent par des points de suspension, avec au moins 47 px visibles à 320 px, 57 px à 340 px et 67 px à 360 px.",
+     "Seule intersection mesurée : la couronne sur son propre avatar, comme voulu. Elle reste du côté du nom, à 2 px de lui, dans le lien, arabe compris. 0 élément hors carte, 0 défilement horizontal. Titres sur 3 lignes au plus, pour les mêmes cartes que dans la référence. Les 8 premières cartes gardent leur hauteur (1390 px).",
+     "Mêmes personnes dans les 8 vues : avatars, état de repli, +N (« Voir les 5 auteurs »), noms complets, nom accessible « Luiza Costa. Chef de projet » et infobulle. Redimensionnement à chaud sur 10 largeurs, de 300 à 390 px : les états de repli du contrôleur +N, sonde comprise, sont identiques à ceux de la référence.",
+     "Couleurs : la couronne reste rgb(0,142,144) en clair et rgb(237,52,145) en sombre, comme avant. Le disque prend la couleur du fond mesuré, rgb(247,250,250) en clair et rgb(27,27,27) en sombre, avec un contour de 1 px de la couleur de celui de l'avatar. Icône de 11 px dans un disque de 16 px, trait de 2,78.",
+     "Pixel exact et même mise en page de toute la page à 390×844 (FR clair, AR sombre), 361×780, 1440×900 et 667×375, et, à 320 px, sur Profils, la fiche projet, l'onglet Auteurs d'un article et l'onglet Projets d'un profil. La règle n'y atteint aucun élément.",
+     "Grille → Liste → Grille à 320 px : la Liste est identique au pixel près, le retour donne 2 colonnes de 133 px, sans problème mesuré une fois le pointeur écarté.",
+     "Sans rechargement, FR clair → AR sombre → EN clair : rtl puis ltr, les 12 couronnes sur leur avatar du côté du nom, disque au fond de chaque thème, 0 problème.",
+     "Tab sur une page fraîchement chargée : le focus arrive sur le lien de Luiza Costa, :focus-visible actif, contour de 2 px décalé de 5 px, pastille à l'intérieur.",
+     "Explorer à 320 px avec le vrai globe : 0 pixel différent, et 0 entre deux chargements de la référence. Aucune erreur JavaScript ni console.",
+     "Captures regardées : 320 px avant/après, gros plans des rangées en clair, en sombre et en AR sombre, AR basculé à chaud, focus, Explorer avec globe."
+    ],
+    "reservesRestantes": [
+     "Décision à soumettre au propriétaire : l'essai revient sur la précision explicite du 11 octobre sur la couronne. La galerie affichera « Revient sur une décision ».",
+     "Noms raccourcis : le nom complet reste accessible, dans l'infobulle et sur la fiche, mais pas sans survol sur téléphone. La couronne de 11 px n'a pas été vue sur un vrai téléphone.",
+     "La pastille suppose l'avatar de 24 px sous 360 px. À regarder en combinaison avec echelle-unifiee ou lisibilite-textes s'ils changent l'avatar ou le nom à cette largeur.",
+     "À 300 px, sous la plage testée : il reste au moins 37 px de nom (13 px dans la référence), et le titre « ft_transcendence · Construire à cinq » est coupé au milieu d'un mot, comme dans la référence.",
+     "Combinaisons non vérifiées. Pas de téléphone réel."
+    ]
+   }
+  ],
+  "notesForMain": "1) Les deux essais sont validés sur le code : je n'ai trouvé aucun défaut dans essai.css ni essai.mjs, que je n'ai pas modifiés. Seuls les deux essai.json ont été corrigés : affirmation fausse sur l'arabe à 340 px, chiffres calculés sur 8 cartes au lieu des 12 de la page, et vérifications réécrites à partir de mesures indépendantes. Mes contre-vérifications passent : une-colonne-320 à 18 h 46, deux-colonnes-allegees à 18 h 49. Les check.py et results.json d'origine sont conservés tels quels.\n\n2) Conflit de décision à signaler au propriétaire, à confirmer avec l'implémenteur. La consigne calculée indiquait « DECISION REVISITED: none » pour deux-colonnes-allegees. Or PROJECT_CONTEXT.md, ligne 70, consigne une précision explicite du 11 octobre : couronne à droite du nom, sur la même ligne, placement à droite aussi en arabe, tailles et raccourcissement conservés. Sous 360 px, l'essai y revient : couronne posée sur l'avatar (donc à gauche du nom en FR et en EN), réduite de 18 à 11 px, nom sur une ligne. Le champ decisionConcernee le dit, et la galerie affichera « Revient sur une décision ».\n\n3) Pièges de méthode utiles aux contrôles de combinaison :\n- (a) helper.open() vers l'URL exacte déjà ouverte ne recharge pas la page (navigation sur la même page, fragment compris), et l'état précédent reste en place. Naviguer d'abord vers about:blank.\n- (b) Après un clic dans le menu Affichage, le pointeur reste sur une carte. Le zoom de survol `.cp-card:hover .cp-art{transform:scale(1.035)}` fait alors sortir l'illustration de la carte : faux « hors carte ». Appeler s.away() avant de mesurer.\n- (c) Pour détecter un mot coupé, admettre la coupure après un trait d'union (« au-delà »).\n- (d) image_diff applique un seuil de 24 : mes comparaisons « au pixel près » sont faites en exact (0 pixel), avec en plus une signature de mise en page de toute la page.\n\n4) Constats sur la référence, sans lien avec les essais :\n- En arabe à 340 px (Projets), « توماس فييرا » est encore coupé au milieu du mot.\n- À 300 px, le titre « ft_transcendence · Construire à cinq » est coupé au milieu d'un mot.\n- L'écart entre la couronne et le +N vaut 12 px en français et 41 px en arabe.\n\n5) Combinaisons :\n- une-colonne-320 tient en une seule règle de même spécificité que la grille de la référence. Un essai placé plus loin dans ORDER qui fixerait grid-template-columns sur #content-index .cp-grid l'emporterait.\n- La pastille de deux-colonnes-allegees suppose un avatar de 24 px sous 360 px. Ses sélecteurs atteignent aussi la sonde du contrôleur +N ; les états de repli sont identiques sur 10 largeurs.\n\n6) Copie figée : contrôle des empreintes en lecture seule, 137 fichiers, 0 écart. Je n'ai pas lancé snapshot.py --verify, pour ne pas réécrire snapshot-verification.json. Rien n'a été écrit dans horizon-welcome ni dans checks/__pycache__.\n\n7) Fichiers modifiés :\n- /home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/une-colonne-320/essai.json\n- /home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/deux-colonnes-allegees/essai.json\n\n8) Fichiers créés :\n- /home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/une-colonne-320/contre-verification.py et .json\n- /home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/deux-colonnes-allegees/contre-verification.py et .json\n- /home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/deux-colonnes-allegees/bascule-grille.py et .json\n- les nouvelles captures avant-/apres-* de ces deux dossiers.\n\nMes fichiers de travail sont dans scratchpad/agents/verif-colonnes/. J'ai ouvert 9 images, assemblées pour la plupart. Toutes mes sessions Chrome sont fermées. Rien n'a été commité ni poussé."
+ },
+ "réalisation:typo-lisibilite-marque-forts": {
+  "group": "Typographie, lisibilité et pages",
+  "trials": [
+   {
+    "id": "lisibilite-textes",
+    "status": "réalisé",
+    "resume": "Confirmé, rien n'a été refait. essai.json (14:29) et results.json (13:15, plus récent que essai.css de 12:59) sont des JSON valides et concordent : textes sous 13 px 343/811 (42,3 %) → 23/810 (2,8 %), les 23 restants étant les libellés du dock et la ligne arabe du logotype ; échecs de contraste 94 → 12, les 12 restants venant des glyphes SVG décoratifs des Chroniques ; « passed »: true. Tous les fichiers et toutes les captures cités existent.",
+    "fichiers": [
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/lisibilite-textes/essai.css",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/lisibilite-textes/essai.mjs",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/lisibilite-textes/essai.json",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/lisibilite-textes/check.py",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/lisibilite-textes/results.json"
+    ],
+    "verifications": [
+     "essai.json valide : 13 champs, 4 vues, 15 paires de captures, tous les chemins présents sur le disque.",
+     "results.json concorde avec essai.json : 17 vues (1440, 390 et 320 px ; FR, EN, AR ; clair et sombre), totaux 343 → 23 textes sous 13 px, textes utiles 320 → 0, contraste 94 → 12 (82 → 0 hors illustrations SVG).",
+     "Aucun débordement horizontal (layout.overflow false dans les 17 vues, les 4 surcouches et la fiche campus), aucune erreur de console.",
+     "Horodatages : results.json (13:15) postérieur à essai.css et essai.mjs (12:59)."
+    ],
+    "limites": [
+     "Contrôle documentaire seulement : le contrôle Chrome n'a pas été rejoué ni les captures rouvertes, comme demandé.",
+     "Les limites déjà notées dans essai.json restent valables : dock mobile à 11 px, ligne arabe du logotype non touchée, modes compacts des fenêtres basses non mesurés, vue Liste des Profils et dialogues Signaler et Envoyer un message non vérifiés visuellement."
+    ],
+    "decisionConcernee": ""
+   },
+   {
+    "id": "titres-marque",
+    "status": "réalisé",
+    "resume": "Confirmé, rien n'a été refait. essai.json (14:29) et results.json (13:28, plus récent que essai.css de 13:21 et que early.js et essai.mjs de 13:22) sont des JSON valides et concordent : mot-symbole en Jost 800 italique, largeur posée = largeur mise en page à 0,01 px près, cascade HORIZON ↔ AWARDS conforme au socle, slogan « BEYOND THE CODE » rendu dans le nouveau style. « passed »: true, avec les contrôles header, transition et arrival vrais.",
+    "fichiers": [
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/titres-marque/essai.css",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/titres-marque/early.js",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/titres-marque/essai.mjs",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/titres-marque/essai.json",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/titres-marque/check.py",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/titres-marque/results.json"
+    ],
+    "verifications": [
+     "essai.json valide : 3 vues (en-tête FR clair ordinateur, en-tête AR sombre mobile, arrivée index.html), 12 paires de captures, tous les chemins présents.",
+     "results.json : 5 en-têtes (FR, AR, EN ; clair et sombre ; 1440, 390 et 320 px) en « italic 800 », largeurs HORIZON 112,10/112,11 px, 74,82/74,83 px et 71,74/71,75 px, restDiff 0 partout.",
+     "Transitions : 20 relevés par sens à 1440 px FR et à 390 px AR sombre, mot-symbole toujours dans l'écran, jamais sur les boutons, aucun débordement, aucune erreur.",
+     "Arrivée : message chiffré identique (scanDiff 0), slogan rendu « BEYOND THE CODE » avec 4,2 % et 5,3 % des pixels du canevas changés."
+    ],
+    "limites": [
+     "Contrôle documentaire seulement : le contrôle Chrome n'a pas été rejoué ni les captures rouvertes, comme demandé.",
+     "Les limites déjà notées restent valables : Jost n'est qu'un substitut du Futura PT Heavy Oblique ; le symbole 42 se décale de 3 à 5 px en arabe ; gras arabe seulement si Noto Sans Arabic Bold est installée ; espacement du slogan calculé sur Jost Medium."
+    ],
+    "decisionConcernee": "Point en attente de PROJECT_CONTEXT.md : « Futura PT Heavy Oblique reste en attente ; HORIZON reste provisoirement en Jost Medium ». L'essai propose Jost 800 italique comme substitut, sans trancher ce point."
+   },
+   {
+    "id": "titres-forts",
+    "status": "réalisé",
+    "resume": "L'essai.css existant (18:53) a été repris tel quel : il est conforme et ne sort pas du périmètre. Titres des fiches, nom du profil, titres des cartes, intertitres des fiches et titres du Parcours passent en graisse 700 réelle (Jost Bold), droite, à taille inchangée, avec un interlettrage resserré de 0,02 em. En arabe, la liste des familles nomme Noto Sans Arabic pour obtenir sa face grasse réelle, sans gras simulé. Les étapes lists et details (18:54–18:58) étaient valides ; j'ai lancé les étapes sweep et extras qui manquaient, plus une nouvelle étape fallback qui justifie la famille arabe, puis rédigé essai.json. Les 20 contrôles passent et results.json indique « passed »: true.",
+    "fichiers": [
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/titres-forts/essai.css",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/titres-forts/early.js",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/titres-forts/essai.mjs",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/titres-forts/essai.json",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/titres-forts/check.py",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/titres-forts/results.json"
+    ],
+    "verifications": [
+     "Listes : 198 pages et 2 574 titres de cartes à 1440, 390 et 320 px, en FR, EN et AR, en clair, en sombre et en vue Liste. Aucun titre ne perd de ligne. Ont gagné une ligne : 24 titres sur 1 716 en latin (1,4 %, aucun parmi les Projets et Profils en français) et 73 sur 858 en arabe (8,5 %). 0 troncature nouvelle par la limite de 3 lignes, 0 mot nouvellement coupé, aucun débordement, aucune erreur.",
+     "Fiches : 31 vues et 148 titres, graisse 500 → 700, tailles identiques. Un seul changement de ligne : « ft_transcendence · Construire à cinq » à 390 px passe de 1 à 2 lignes (en-tête 109 → 137 px). Densités de detail-scroll inchangées.",
+     "Balayage de 12 fiches par rubrique (180 titres) à 1440, 1280 × 720, 390 et 320 px en FR et à 390 px en AR : seul le même titre gagne une ligne, aucune densité modifiée, aucun débordement.",
+     "Périmètre testé en coupant puis rétablissant la feuille sur 11 pages : seuls les titres visés changent, uniquement en graisse et en interlettrage (et en famille en arabe). Taille, hauteur de ligne, couleur, casse et affichage sont identiques. Les titres masqués le 13 octobre restent masqués (1 × 1 px). L'en-tête est identique au pixel près sur 15 captures et la page d'arrivée aussi (diff 0).",
+     "Polices relevées par CSS.getPlatformFontsForNode : Jost-Bold (fonte web) au lieu de Jost-Medium, NotoSansArabic-Bold au lieu de Regular. Avec la famille du socle en 700, l'arabe reste en NotoSansArabic-Regular (étape fallback), d'où la famille nommée.",
+     "Interlettrage : cartes −1,085 → −1,705 px à 31 px. Jost Bold est 5 à 6 % plus large que le Medium (mesuré dans les fichiers de police) ; le resserrement ramène l'écart à 1 à 2 %. « ft_transcendence » tient dans la colonne de 129 px à 320 px.",
+     "Combinaison avec lisibilite-textes et titres-marque sur 6 vues : même nombre de lignes de titres que l'essai seul, mot-symbole en italique 800, métadonnées à au moins 13 px, aucun débordement, aucune erreur.",
+     "Captures examinées (avant/après en planches réduites) : Projets à 1440 px en clair et en sombre, à 320 px et à 390 px en arabe ; Chroniques à 390 px ; fiche projet à 1440 px, 1280 × 720 et 390 px en arabe ; profil et Parcours à 1440 px ; combinaisons."
+    ],
+    "limites": [
+     "Jost Bold (700) n'est qu'un substitut du Futura PT Heavy de la charte, toujours indisponible.",
+     "Retours à la ligne plus fréquents, sans débordement ni troncature : 8 titres de Chroniques sur 78 en français à 1440 px, jusqu'à 19 sur 78 en arabe à 390 px (l'interlettrage n'y a presque pas d'effet). Au total, 94 cartes deviennent plus hautes, jusqu'à +41 px.",
+     "Le gras arabe dépend de la présence de Noto Sans Arabic Bold sur l'appareil (police système ici). macOS, Windows et Android n'ont pas été testés.",
+     "L'Historique des campus n'a été vérifié que sur un élément injecté, et « Dépôt du projet » qu'avec un dépôt fictif.",
+     "Les fenêtres basses autres que 1280 × 720 n'ont pas été mesurées. Les dialogues, la fiche campus, les menus, les états vides et 42 Awards sont hors périmètre. La combinaison avec echelle-unifiee n'a pas été vérifiée."
+    ],
+    "decisionConcernee": ""
+   }
+  ],
+  "notesForMain": "Mes 3 essais sont prêts. Je n'ai modifié que essais/titres-forts/essai.json (le placeholder est remplacé) et checks/titres-forts/check.py, auquel j'ai ajouté une étape « fallback » (lettres arabes en 700 avec la famille du socle → NotoSansArabic-Regular ; c'est ce qui justifie que essai.css nomme Noto Sans Arabic). checks/titres-forts/results.json contient désormais les étapes lists, details, sweep, extras et fallback : 20 contrôles, tous vrais, « passed »: true.\n\nL'essai.css de titres-forts (18:53) n'a pas changé. Le dossier contenait aussi des captures de combinaison datées de 18:46, prises avec une ancienne version de l'essai.css ; elles ont été écrasées par des captures fraîches (19:19–19:20).\n\nJe n'ai relu et confirmé que les JSON de lisibilite-textes et titres-marque, sans rien relancer.\n\nPoints utiles pour la galerie :\n- Une vue de titres-forts a pour route « people/profile-leila-mansour?tab=journey ». L'onglet canonique est « journey » (profile-sections.mjs) et non « path » comme l'indiquait la consigne.\n- Le champ « captures » de titres-forts ne liste que les 12 paires que j'ai examinées. D'autres paires existent dans checks/titres-forts (article-mobile, fiche-petit, profils-ordinateur-en, ar-sombre-mobile, sombre-profil-ordinateur, combine-profil-ordinateur) mais je ne les ai pas ouvertes.\n\nLa combinaison lisibilite-textes + titres-marque + titres-forts a été vérifiée sur 6 vues, sans conflit. Le commentaire d'echelle-unifiee annonce qu'il ne touche ni aux graisses ni à l'interlettrage, mais la combinaison avec titres-forts n'a pas été testée.\n\nsnapshot.py --verify passe (137 fichiers vérifiés, 0 manquant). Toutes mes sessions Chrome sont fermées ; les deux profils qui restent dans ~/.cache/horizon-design-review-chrome appartiennent à d'autres agents. J'ai ouvert 8 images (planches réduites), qui se trouvent dans /tmp/claude-1000/-home-le-rif-Bureau-Transcendence/2cf0c114-786b-4a24-866f-57822e04403f/scratchpad/agents/titres/compo/."
+ },
+ "vérification:pile-pseudo": {
+  "group": "Pile flottante, cartes et petits écrans",
+  "trials": [
+   {
+    "id": "pseudo-manquant",
+    "verdict": "corrigé",
+    "problemesTrouves": [
+     "Code conforme et dans le périmètre : essai.css ne vise que p.cp-profile-login sans dir (la mention provisoire) dans #content-index et #profile-detail ; essai.mjs ne fait que poser ou retirer data-pseudo-manquant sur ces lignes. Aucun défaut trouvé dans essai.css (18:19) ni dans essai.mjs (18:12), qui n'ont pas été modifiés.",
+     "essai.json, chiffre inexact : « 0 occurrence visible contre 165 dans les mêmes vues ». Ce total comptait deux fois la même page à 1440 px (haut et bas du même DOM) et ne portait que sur la première page. Remplacé par les mesures sur les 4 pages : 72 mentions avant, 0 après, 78 profils, dans chacune des 6 configurations.",
+     "essai.json, affirmation trop forte : « 2 300 pixels changent, tous dans les 18 boîtes des mentions (0 en dehors) ». Elle n'était vraie qu'avec une tolérance (> 24). En pixels exacts, la première vue à 1440 px change de 10 452 pixels, dont 4 178 hors des boîtes, sous les surfaces translucides de la pile flottante dont le flou reflète le texte retiré (écart maximal de 6 sur 765). Sur mobile arabe sombre, 617 pixels changent sous le flou du ::before de #main-nav (écart maximal de 2 sur 765). Reformulé avec ce décompte exact : 0 pixel ailleurs.",
+     "Capture liste-ordinateur trop faible : une seule carte sans pseudo (Lucía Roca) y est visible, en partie sous la pile flottante.",
+     "Libellé de la première capture (« ordinateur (zoom ×2)… ») : il commençait comme celui de la deuxième (« ordinateur ») alors que le fichier est avant/apres-ordinateur-zoom.png.",
+     "Limites périmées : « non vérifié : combinaison avec les autres essais, vrai globe ». Ces deux points sont maintenant mesurés.",
+     "Script de contre-vérification de 18:56, cas du filtre : il échouait (IndexError) parce que le filtre de l'annuaire est une boîte de dialogue modale (presentation 'dialog'), pas un menu. C'est un défaut du script, pas de l'essai.",
+     "Mon premier passage sur mobile : le clic pointeur sur « suivant » de la pagination tombait à côté (pile flottante au-dessus), si bien que la même page était mesurée 13 fois (312 cartes au lieu de 78). Défaut du script corrigé."
+    ],
+    "corrections": [
+     "essai.json réécrit en français, JSON valide, tous les champs présents :\n- problème précisé (72 des 78 profils sans pseudo, 18 des 24 cartes sur la première page) ;\n- changement complété (filtre et pagination suivis) ;\n- 14 vérifications refaites à partir des mesures ;\n- 8 limites mises à jour : lecture « rangée par rangée » de la consigne explicitée ; disparition du décalage de 21 px à 320 px présentée comme conséquence de la réserve d'une ligne ; combinaison mesurée seulement en première page.",
+     "essai.json, fichiers et captures :\n- ajout de checks/pseudo-manquant/contre-verification.py et contre-verification.json ;\n- la capture liste-ordinateur est remplacée par liste-ordinateur-milieu (nouvelles captures avant/apres-liste-ordinateur-milieu.png, défilées jusqu'à Lucía Roca : 4 cartes sans pseudo et Noé Laurent avec @nlaurent) ;\n- la première capture s'appelle maintenant « ordinateur-zoom (×2 : Leïla Mansour et Lucía Roca) ».\nVues (4), decisionConcernee (\"\") et alternativeDe (\"\") inchangées et correctes.",
+     "checks/pseudo-manquant/contre-verification.py corrigé et étendu :\n- filtre piloté par sa boîte de dialogue ;\n- pagination activée par script, avec vérification que le numéro de page avance ;\n- session 4 : pixels exacts des pages non concernées, et combinaison avec les essais qui retouchent les cartes, avec le détail des rangées décalées ;\n- session 5 : masques exacts des captures citées (verre des pseudo-éléments compris) et nouvelle capture de la liste ;\n- contrôle des empreintes de la copie en lecture seule ;\n- fusion des sessions dans contre-verification.json (fichiers de session -s1 à -s5 conservés, contre-verification-partiel.json de 18:56 conservé)."
+    ],
+    "verificationsRejouees": [
+     "Annuaire, 4 pages parcourues sans rechargement (78 profils, 72 sans pseudo), en grille à 1440 FR, 390 FR, 390 AR sombre, 320 FR, 320 EN et 320 AR :\n- mentions visibles : 72 avant, 0 après (texte rendu et nœuds de texte, checkVisibility) ;\n- 0 rangée de hauteur inégale, 0 état inattendu, espace réservé égal à un vrai pseudo, 0 débordement.",
+     "Alignement à 320 px : 4 rangées ont un campus décalé avant l'essai (FR et AR), 0 après, et aucune rangée décalée n'est ajoutée ailleurs.",
+     "Hauteurs de la première page :\n- 1440 px : 271 → 271/271/271/244/244 ;\n- 390 px : 243 → 243 ou 216 ;\n- 320 px FR/AR : 266/288 → 266 ou 239.",
+     "Largeurs sans rechargement 1280, 1100, 900, 768, 601, 600, 480 puis 1440 px (5, 4, 3 et 2 colonnes) : tout est conforme.",
+     "Liste, 4 pages, à 320 FR, 320 AR, 390 EN et 1440 FR :\n- 0 mention visible après (72 avant) ;\n- cœur favori : 0 chevauchement ;\n- hauteurs 137 px sur ordinateur et 113 px sur mobile ; les cartes à 127 px de 320 px FR/AR passent à 113 px ;\n- aucun débordement.",
+     "Arbre d'accessibilité complet de Chrome : nœuds contenant la mention, avant → après :\n- annuaire FR : 72 → 0 ;\n- annuaire AR : 54 → 0 ;\n- fiche FR et EN : 3 → 0.\nNom de la carte : « Transcender Lucía Roca 42 Barcelona Rentrée 2023 Promotion 6 ».",
+     "Clavier : 17 tabulations jusqu'à la carte de Lucía Roca avant comme après, même anneau de focus (2 px, décalage 3 px).",
+     "Re-rendus sans rechargement :\n- filtre de l'annuaire (rentrée 2024, statut cadet, rentrées 2022 et 2023, puis tous) : 0 mention, 0 état inattendu ;\n- langue et thème par le menu du compte (AR clair, EN sombre, FR clair), sur l'annuaire puis sur la fiche de Lucía Roca : 0 mention, direction rtl en arabe ;\n- arrivée depuis Explorer avec le tri « plus anciens » : rangées repliées, aucun décalage de mise en page venant de la grille.",
+     "Explorer avec le vrai globe : 0 pixel différent entre l'essai et la base, 0 entre deux ouvertures de la base. Les règles de l'essai y touchent 0 élément rendu.",
+     "Pages non concernées, identiques au pixel près (seuil 0) :\n- fiche de Leïla Mansour à 390 px AR sombre ;\n- Projets à 390 px AR sombre ;\n- article de Chroniques à 320 px FR ;\n- Explorer bloqué à 390 px EN ;\n- les 4 paires témoins existantes à 1440 px (Explorer, fiche avec pseudo, Chroniques, Projets) : 0 pixel aussi.",
+     "Masques exacts des captures citées :\n- ordinateur : 10 452 pixels = 6 274 dans les mentions + 4 178 sous le verre (écart max 6/765) + 0 ailleurs ;\n- mobile AR sombre, défilé de 200 px : 4 074 = 3 457 + 617 (écart max 2/765) + 0 ;\n- les deux captures « avant » ont été reproduites à l'identique.",
+     "Combinaison avec lisibilite-textes, titres-forts, echelle-unifiee et une-colonne-320 :\n- à 1440 FR, 390 FR sombre et 320 AR : 0 mention, 0 état inattendu, hauteurs égales (sans cet essai : 18 mentions) ;\n- à 320 AR, 1 rangée reste décalée (4 sans cet essai) : le nom d'Emma De Smet fait 52 px (deux lignes) et la ligne réservée 23 px, la hauteur du vrai pseudo voisin.",
+     "Page d'arrivée index.html avec l'essai : essaisReady, feuille chargée, 0 erreur.",
+     "Aucune erreur de console dans les 5 sessions. Copie de référence : 137 fichiers conformes au manifeste (contrôle en lecture seule, sans réécrire snapshot-verification.json). Les 25 critères de contre-verification.json sont vrais.",
+     "Captures regardées en 7 planches réduites :\n- agrandissement ×2 et première vue sur ordinateur ;\n- bas de la grille et liste sur ordinateur, ancienne et nouvelle capture ;\n- fiche sur ordinateur et fiche témoin de Leïla Mansour ;\n- grille à 320 px ;\n- mobile AR sombre et liste sur mobile ;\n- fiche sur mobile en anglais.\nChaque paire montre le changement attendu, et le témoin est identique."
+    ],
+    "reservesRestantes": [
+     "Lecture rangée par rangée de « garder l'espace si l'alignement en dépend, sinon replier » : une carte sans pseudo voisine d'un vrai pseudo garde une ligne vide, et la hauteur des rangées varie avec la largeur, le tri et les filtres. Réserver partout ou replier partout serait une variante d'une seule règle CSS ; c'est le choix du propriétaire.",
+     "La règle dépend d'un détail de la base : vrai pseudo = dir=\"ltr\".",
+     "Menu du compte, sélecteur de mentions et destinataire d'un message : d'après le code, rien n'y est affiché sans pseudo, mais ce n'est pas contrôlé dans Chrome.",
+     "Non vérifié : un vrai lecteur d'écran et les navigateurs autres que Chrome. Décalages au chargement mesurés seulement dans Chrome sans interface.",
+     "Combinaison mesurée seulement sur la première page, avec les versions des autres essais présentes vers 19 h 30 ; echelle-unifiee a encore changé à 19:28.",
+     "L'URL de la galerie ne permet pas de choisir la présentation en liste."
+    ]
+   }
+  ],
+  "notesForMain": "pseudo-manquant : verdict « corrigé ». Les corrections portent sur les preuves et sur essai.json, pas sur le code : essai.css (18:19) et essai.mjs (18:12) sont inchangés, dans le périmètre, et ne contiennent aucun défaut.\n\n1. **Corrigé dans essai.json.**\n   - « 165 occurrences » comptait deux fois la même page : remplacé par 72 → 0 sur les 4 pages (78 profils) dans 6 configurations.\n   - « 0 pixel hors des mentions » n'était vrai qu'avec une tolérance. En pixels exacts, des pixels changent aussi sous le verre de la pile flottante et du dock, dont le flou reflète le texte retiré (écart de 6 sur 765 au plus, invisible).\n   - La capture de liste sur ordinateur montrait une seule carte sans pseudo : elle est remplacée par avant/apres-liste-ordinateur-milieu.png.\n   - La première capture s'appelle maintenant « ordinateur-zoom (×2 : Leïla Mansour et Lucía Roca) ». C'est elle que la galerie affiche en vignette.\n   - Les limites sont mises à jour.\n\n2. **Preuves.**\n   - checks/pseudo-manquant/contre-verification.py (sessions 1 à 5, puis « fusion ») écrit contre-verification.json : 25 critères d'acceptation, tous vrais, 0 erreur de console.\n   - Le vrai globe sur Explorer donne 0 pixel différent ; la base contre elle-même aussi.\n   - results.json (18:43) de check.py reste valable et n'a pas été touché.\n   - Le run interrompu de 18:56 est conservé dans contre-verification-partiel.json.\n\n3. **À trancher par le propriétaire.** Dans la grille, la ligne est réservée dans les rangées qui ont un vrai pseudo et retirée ailleurs. Réserver ou replier partout serait une variante d'une seule règle. À 320 px en FR et AR, le décalage de 21 px de la base disparaît, parce que la réserve ne fait qu'une ligne : c'est dit dans les limites.\n\n4. **Combinaisons.** Avec lisibilite-textes, titres-forts, echelle-unifiee et une-colonne-320, il ne reste aucune mention visible. À 320 px en AR, une rangée reste décalée parce que le nom d'Emma De Smet passe sur deux lignes avec ces autres essais. pseudo-manquant n'en est pas la cause : la ligne réservée a exactement la hauteur du vrai pseudo voisin (23 px).\n\n5. **Pièges de mesure pour les autres vérificateurs.**\n   - Le filtre de l'annuaire est une boîte de dialogue modale : #content-category-dialog, avec des cases à cocher et .cp-project-filter-apply.\n   - Sur téléphone, un clic pointeur sur la pagination peut tomber sur la pile flottante : activer le lien par script et vérifier que le numéro de page avance.\n   - Je n'ai pas lancé snapshot.py --verify, qui réécrit snapshot-verification.json (chemin interdit). J'ai fait un contrôle d'empreintes en lecture seule : 137 fichiers conformes.\n\n6. **Observation hors périmètre (base, identique avant et après).** Le lien de carte a.cp-card-open est en display:contents (content-controls.css:94). Avec la touche Tab, le premier arrêt dans la carte de Lucía Roca est le bouton favori, jamais le lien. Le lien de profil semble donc inaccessible au clavier dans Chrome. Constaté sur une seule carte, non approfondi.\n\n7. **Classement.** Dans essais/boot.js, ORDER range pseudo-manquant sous le commentaire « Typographie, lisibilité et pages ». essai.json dit « Pile flottante, cartes et petits écrans », comme la consigne. Je n'ai pas touché à boot.js.\n\nJe n'ai écrit que dans essais/pseudo-manquant/ et checks/pseudo-manquant/, plus des brouillons dans le scratchpad (agents/pseudo-manquant-verif). Aucun commit, aucun document modifié, et toutes les sessions Chrome sont fermées."
+ },
+ "vérification:pile-recherche-voile": {
+  "group": "Pile flottante, cartes et petits écrans",
+  "trials": [
+   {
+    "id": "recherche-repliee",
+    "verdict": "validé",
+    "problemesTrouves": [
+     "Aucun défaut dans essai.css ni dans essai.mjs (13 h 00). Tout reste dans le périmètre : capsule repliée en bouton de 44 px sur les pages de contenu seulement, loupe ajoutée une seule fois au bouton existant (pas de seconde recherche), dé rapproché (+104 → +26 px, inversé en RTL) pour garder la paire centrée comme la rangée de la référence, transition du dé synchronisée sur le repli, couleur et survol copiés du dé. Les modules de la référence qui mesurent le bouton (back-to-top, menus, commentaires, sélecteurs) n'utilisent que son bord haut, qui ne change pas. detail-scroll.mjs teste le chevauchement horizontal : mesuré sans effet.",
+     "Écart de mesure mineur dans essai.json : les lignes de texte sous les boutons à 320 × 640 donnent 6 306 → 2 091 px² avec ma méthode, contre 6 227 → 2 012 px² annoncés. La réduction est la même (4 215 px²) ; seul le filtre des nœuds de texte diffère. Le chiffre d'origine est conservé et ma mesure est ajoutée.",
+     "Le border-radius calculé vaut 22px pour la loupe et 50% pour le dé : c'est le même cercle à 44 px, sans effet visible."
+    ],
+    "corrections": [
+     "essai.css et essai.mjs non modifiés.",
+     "essais/recherche-repliee/essai.json : deux lignes de contre-vérification ajoutées à « verifications » ; check-contre-verification.py et results-contre-verification.json ajoutés à « fichiers ». Titre, résumé, problème, changement, decisionConcernee (5 octobre, « Je choisis la capsule flottante », phrase vérifiée dans BOARDING_JOURNAL.md), alternativeDe, vues et captures vérifiés et conservés. JSON valide, tous les chemins existent.",
+     "Ajoutés : checks/recherche-repliee/check-contre-verification.py (python3 -I, parties rows/search/runtime/sidebar/explorer/globe/summary, une session Chrome courte par partie), results-contre-verification.json (passed=true, 13 critères) et deux recadrages regardés : contre-verification-mobile-petit.png et contre-verification-commentaires-focus-ar.png."
+    ],
+    "verificationsRejouees": [
+     "Ligne flottante (boîte englobant capsule et dé) : 11 088 → 4 224 px² à 1440 × 900, 390 × 844, 320 × 640 et 300 × 640. Loupe de 44 × 44 px, une seule icône, pas de débordement.",
+     "Dock : boutons, libellés, opacités, pastille et dimensions identiques avec et sans l'essai aux 4 étapes de largeur (1440, 390, 320 et 300 px).",
+     "Pixels : hors de la pile (capsule, dé, dock et leurs ombres), 0 pixel d'écart avec la référence sur Projets à 1440 × 900 (zone modifiée 545–868 × 743–868), 390 × 844 et 320 × 640, ainsi que sur l'onglet Commentaires (579–861 × 743–808).",
+     "Texte caché sous les boutons au repos : 1 316 → 628 (1440 × 900), 2 757 → 624 (390 × 844), 6 306 → 2 091 (320 × 640), Commentaires 2 619 → 945 px².",
+     "Recherche par toucher (FR mobile), puis au clavier (AR sombre ordinateur : Maj+Tab depuis le dé, puis Entrée). Le focus va dans le champ et « Paris » donne 8 résultats, 42 Paris en tête. Surface (356 × 440 et 678 × 440) et panneau identiques à la référence ; recherche ouverte à 0 pixel d'écart sur mobile. Échap ferme et rend le focus à la loupe avec :focus-visible (contour de 2 px, décalage de 5 px), vu sur capture.",
+     "Survol : couleur, fond, bord et ombre identiques à ceux du dé, en clair comme en sombre.",
+     "Sans rechargement, FR puis AR sombre puis EN clair via le menu du compte : une seule loupe, noms et info-bulles « Rechercher dans Horizon », « البحث في أفق » et « Search Horizon », loupe à droite du dé en arabe. Explorer par le dock : capsule de 200 px et libellé rétablis, loupe masquée. Chroniques et Profils : de nouveau repliée. Awards : masquée. Mouvement réduit : transitions à 0 s.",
+     "Menu latéral fixe des fiches : propriétés, densité et cadre du menu identiques avec et sans l'essai à 841 px (de gauche à droite et en arabe) et à 1100 px (arabe).",
+     "Explorer : 0 pixel d'écart sans globe (1440 × 900 et 390 × 844) et avec le vrai globe (1440 × 900, prêt des deux côtés). 42 Awards : 0 pixel d'écart (ordinateur et mobile). Console vide dans toutes les parties.",
+     "Les 12 captures existantes comparées (mobile, petit, ordinateur, Commentaires, explorer-globe, awards-mobile, avant et après) sont identiques au pixel près aux nouvelles captures. Recadrages avant/après regardés."
+    ],
+    "reservesRestantes": [
+     "Le libellé visible « Chercher dans Horizon » disparaît sur les pages de contenu. L'info-bulle native n'apparaît qu'au survol de la souris, jamais au toucher.",
+     "La hauteur de la pile ne change pas, seule sa largeur diminue. Les deux boutons masquent encore un peu de texte, par exemple la phrase de l'onglet Commentaires sur ordinateur, vue sur capture.",
+     "Revient sur le choix explicite du 5 octobre (capsule flottante) : la capsule n'est gardée que dans Explorer. C'est à l'utilisateur de trancher.",
+     "Au changement de langue sans rechargement, avec les animations actives, la loupe et le dé se croisent pendant 0,48 s ; la référence fait de même. Mesure du passage précédent, non rejouée.",
+     "Format paysage 667 × 375 : il n'est couvert que par le passage précédent (results-etapes.json, 18 h 12). Chrome sans interface en formats émulés : ni téléphone réel, ni lecteur d'écran, ni zone de sécurité à encoche."
+    ]
+   },
+   {
+    "id": "voile-pile-basse",
+    "verdict": "corrigé",
+    "problemesTrouves": [
+     "Changement de 18 h 42 (vérification interrompue) : une seule règle ajoutée dans essai.css, rien d'autre. Le voile passe à opacité 0 tant qu'un :focus-visible est dans #content-sheet, hors menu latéral fixe. Raison : à 390 × 844, 4 positions de tabulation (2 à 320 × 640) étaient entièrement cachées sous la bande pleine, ce qui viole la règle « focus visible ». Je le juge correct et dans le périmètre : c'est un ajustement technique indispensable, en une règle CSS. Les 17 captures au repos antérieures restent identiques au pixel près, ce qui prouve que rien d'autre n'a changé.",
+     "Risque examiné et écarté : après chaque navigation, la référence place le focus par script sur le titre de la page (welcome.mjs). Après un clic de souris sur le dock ou sur une carte, un retour d'historique ou un toucher sur le dock, ce titre ne prend pas :focus-visible : le voile reste à 1 (mesuré). Seule la touche Entrée sur le dock l'écarte, ce qui est attendu.",
+     "essai.json affirmait « 0 pixel modifié » dans la partie du menu latéral fixe située sous le voile. C'est inexact au pixel près : 44 083 pixels diffèrent, avec un écart maximal de 6/765 en somme RVB. Le fond transparent du menu montre la couleur unie du voile au lieu du léger dégradé .atmosphere ; liens et boutons ne sont pas voilés. L'écart est invisible mais la phrase était fausse.",
+     "La limite « apparitions animées non mesurées image par image » n'était plus exacte : j'ai mesuré le passage liste → fiche d'ordinateur et le retour. La limite clavier était incomplète : Entrée sur le dock (focus sur le titre) et Échap dans un menu de la page (focus rendu au bouton) écartent aussi le voile, jusqu'au clic suivant.",
+     "Point d'intégration sans effet aujourd'hui : sur les fiches d'ordinateur, le voile est dessiné dans la feuille (z-index 1) et un seul élément de page passe au-dessus : la barre d'outils des projets d'un profil (z-index 4). Elle reste toujours au-dessus de la bande (bas à 236–294 px, haut du voile à 370–727 px, de 841 × 520 à 1440 × 900). Un défilement ne fait que remonter le contenu, elle ne peut donc pas y entrer."
+    ],
+    "corrections": [
+     "essai.css (18 h 42) et essai.mjs conservés tels quels après contrôle.",
+     "essais/voile-pile-basse/essai.json : la vérification sur le menu latéral est reformulée (écart ≤ 6/765, fond transparent, contenu non voilé). La limite clavier est complétée (Entrée sur le dock, Échap dans un menu ; souris et toucher gardent le voile). La limite sur les animations est réécrite (57 et 56 images mesurées, arrivée depuis Explorer et onglets non mesurés). Deux lignes de contre-vérification sont ajoutées, ainsi que les nouveaux fichiers. Le JSON reste valide, avec tous les champs et chemins ; decisionConcernee reste vide, comme le prévoit la consigne. alternativeDe, vues et captures sont vérifiés et conservés.",
+     "Ajoutés : checks/voile-pile-basse/check-contre-verification.py (python3 -I, 20 parties avec une session courte chacune et un résumé automatique), results-contre-verification.json (passed=true, 15 critères) et deux recadrages regardés : contre-verification-mobile-sombre-fin.png et contre-verification-fiche-paysage.png."
+    ],
+    "verificationsRejouees": [
+     "Couverture au repos derrière la capsule et le dé : 100 % des pixels lus comme le fond, opacité effective de 0,9998 à 1, sur 6 vues : Projets à 1440 × 900, 320 × 640 et 667 × 375 ; Chroniques mobile sombre ; Profils mobile en arabe sombre ; fiche projet à 1440 × 900 (voile dans la feuille). Fondu partout 24 px au-dessus de la capsule, pointer-events:none.",
+     "Fin des pages au-dessus du voile, avec la même mise en page que la référence et sans marge ajoutée : Projets à 38,7, 39,5 et 38,9 px (1440 × 900, 390 × 844, 320 × 640), Commentaires à 61,3 px et profil à 31,5 px (320 × 640), article à 51,6 px (390 × 844). Voile à 1 en fin de page.",
+     "Clics : grilles elementFromPoint de 22 à 28 points (juste au-dessus du voile, dans le fondu, dans la partie pleine) identiques à la référence.",
+     "Au-dessus du voile, 0 pixel d'écart sur Projets (1440 × 900, 390 × 844) et sur la fiche projet. Sous le voile, menu latéral fixe à 6/765 d'écart au plus.",
+     "Focus : clic de souris sur le dock, une carte, un retour d'historique, et toucher sur le dock donnent un voile à 1. Entrée sur le dock donne 0. Sur 22 tabulations en mobile, 4 positions sont sous la zone du voile : voile alors à 0, aucun focus caché, retour à 1 après sortie du focus. Fiche d'ordinateur : focus clavier dans la lecture → 0, dans le menu latéral → 1.",
+     "Menus : Trier ouvert → 0, fermé sans focus → 1. Sélecteur de section mobile : 0 ouvert, 1 fermé. Défilement à la molette : data-document-scrolling=true et voile à 0 sur 6 mesures, puis 1 au repos.",
+     "Mouvement actif : passage liste → fiche d'ordinateur (57 images) et retour (56 images), voile présent et bien placé à chaque image (aucune transformation de la feuille quand le voile y est dessiné). Mouvement réduit : transition none, sinon 0,35 s.",
+     "Sans rechargement, AR sombre puis EN clair : voile rgb(27, 27, 27) puis rgb(247, 250, 250), hauteur de 158 px conservée, RTL correct.",
+     "Explorer : 0 pixel d'écart sans globe (1440 × 900, 390 × 844) et avec le vrai globe (1440 × 900). 42 Awards : 0 pixel. Combiné avec recherche-repliee à 390 × 844 et 320 × 640 : loupe de 44 px, fondu 24 px au-dessus. Balayage des 13 onglets de fiches d'ordinateur : seul élément surélevé, la barre d'outils des projets de profil, hors de la bande. Console vide partout.",
+     "Les 17 captures existantes comparées sont identiques au pixel près aux nouvelles, celles de 14 h 24 comprises, malgré le changement de 18 h 42. Recadrages avant/après regardés (mobile, Chroniques sombre, fin à 320 px, fiche d'ordinateur, paysage)."
+    ],
+    "reservesRestantes": [
+     "Au repos, le voile masque 173 px sur ordinateur (19 % de l'écran), 158 px sur mobile (19 %) et à 320 × 640 (25 %), et 150 px en paysage 667 × 375 (40 % ; il ne reste que 85 px nets entre les deux fondus). Le contenu sous la pile n'est plus coupé, mais il est invisible tant qu'on ne fait pas défiler.",
+     "Au clavier, ou après Échap dans un menu, le voile s'écarte et la page redevient celle de la référence. Il réapparaît dès que le focus quitte la page.",
+     "Le contenu caché sous la partie pleine du voile reste cliquable, comme le veut pointer-events:none. Le voile disparaît pendant l'ouverture des menus de la page.",
+     "Le voile est de couleur unie (--h42-color-bg), comme le fondu de l'en-tête : le léger dégradé d'ambiance du bas de page disparaît dessous (≤ 3 par canal, invisible).",
+     "Non mesurés image par image : l'arrivée depuis Explorer et les changements d'onglet. Chrome sans interface en formats émulés : zone de sécurité à encoche non vérifiée sur appareil réel."
+    ]
+   }
+  ],
+  "notesForMain": "Both trials are verified. No trial code was changed in this run.\n\n**What changed**\n- `essais/recherche-repliee/essai.json`: verification lines and file entries added.\n- `essais/voile-pile-basse/essai.json`:\n  - The pinned-sidebar claim \"0 pixel modifié\" was wrong pixel-for-pixel. 44,083 px differ, by at most 6/765 summed RGB, because the sidebar's transparent background shows the veil's flat colour instead of the `.atmosphere` gradient. It is reworded.\n  - The keyboard and animation limits are rewritten.\n  - Verification lines and file entries added.\n- New evidence files, all under `/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/`:\n  - `recherche-repliee/check-contre-verification.py` and `results-contre-verification.json` (passed=true, 13 criteria).\n  - `voile-pile-basse/check-contre-verification.py` and `results-contre-verification.json` (passed=true, 15 criteria).\n  - Four composed crops I looked at: `recherche-repliee/contre-verification-mobile-petit.png`, `recherche-repliee/contre-verification-commentaires-focus-ar.png`, `voile-pile-basse/contre-verification-mobile-sombre-fin.png`, `voile-pile-basse/contre-verification-fiche-paysage.png`.\n- Raw screenshots are only in the scratchpad (`agents/verif-pile-recherche-voile/`).\n\n**The 18:42 change to `voile-pile-basse/essai.css`**\n- It adds one rule: the veil steps aside (opacity 0) while `:focus-visible` is inside `#content-sheet`, outside the pinned sidebar.\n- Reason: before it, Tab could land on links fully hidden under the solid band (4 positions at 390×844, 2 at 320×640).\n- I judge it correct and in scope.\n- Risk I checked: the baseline focuses the page heading by script after every navigation. After mouse clicks (dock, card), history back and touch taps, that heading does not match `:focus-visible`, so the veil stays. Only keyboard Enter on the dock, and Escape closing a page menu, hide it until the next click. This is now stated in the limits.\n- All 17 earlier veil captures, including the 14:24 ones, are still pixel-identical. So the gallery captures are valid.\n\n**Points for the integration pass**\n1. `voile-pile-basse` owns `.app::before` and `#content-sheet::after`, and sets `z-index:2` on the pinned sidebar `[data-detail-scroll=sidebar]`. No other trial uses these today (grep done).\n2. On desktop details the veil is painted inside the sheet at z-index 1. The only raised page element there is `.cp-profile-project-toolbar` (z-index 4). It always sits above the veil band (bottom 236–294 px vs veil top 370–727 px), so there is no effect today. Anything raised to z-index 2 or more and placed lower would paint over the veil.\n3. `recherche-repliee` acts on `.dock-search-toggle`, `.dock-random-toggle` and `--dock-discovery-offset`. `echelle-unifiee` also targets `.dock-search-toggle` (font-size, open-state radius and shadow). There is no visible conflict with the folded state, since its label is hidden, but the pair was not tested together.\n4. The two trials combined were checked at 390×844 and 320×640: magnifier 44 px, ramp 24 px above it.\n\n**Practical notes**\n- Chrome died ('Chrome pipe closed') after about 6–7 content-page loads in one session, even with the globe blocked. Pages kept in the back/forward cache probably add up under the 2.6 GB cap. Keep sessions to about 4 loads; my scripts open one session per part.\n- `snapshot.py --verify`: 137 verified, 0 missing. All my Chrome sessions are closed and no profile is left in `~/.cache/horizon-design-review-chrome/`.\n- I did not touch the gallery, any docs, other trials, `baseline/` or `horizon-welcome/`."
+ },
+ "réalisation:typo-echelle": {
+  "group": "Typographie, lisibilité et pages",
+  "trials": [
+   {
+    "id": "echelle-unifiee",
+    "status": "réalisé",
+    "resume": "Démonstrateur d’un système consolidé, en CSS uniquement (essai.css chargé après les feuilles de la copie, jetons --eu-*). Les principaux composants passent sur une échelle courte : 12, 14, 16, 20, 28 et 35 px, alignée sur les titres d’interface de la charte. L’essai utilise aussi trois rayons (12, 20 et 999 px) et deux niveaux d’ombre, tous deux repris de la base : l’ombre verre des commandes et l’ombre --shadow des surfaces ouvertes. Couleurs, disposition, graisses et interlettrages ne changent pas. Les tailles progressives du 6 octobre sont gardées, mais varient désormais entre deux paliers. À la reprise, j’ai corrigé quatre défauts du brouillon. (1) À 320 px, le titre de carte à 20 px coupait « ft_transcendence » : sous 390 px, la grille garde maintenant la taille de la base. (2) Le titre de fiche fixé à 28 px passait sur deux lignes sur mobile, au lieu de 22,66 px sur une ligne : la rampe de la base (22 à 28 px) est conservée. (3) Le dialogue générique (connexion à l’arrivée, connexion simulée) gardait son titre à 24 px, et ses boutons, placés hors de #app, gardaient 17 px et un rayon de 14 px : les deux sont maintenant sur l’échelle. (4) Le dialogue Filtrer perdait ses reflets intérieurs en clair : ils sont rétablis. J’ai ensuite relancé toutes les mesures après la dernière modification du CSS et écrit essai.json, avec une table de correspondance mesurée.",
+    "fichiers": [
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/echelle-unifiee/essai.css",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/echelle-unifiee/essai.mjs",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/echelle-unifiee/early.js",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/essais/echelle-unifiee/essai.json",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/echelle-unifiee/check.py",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/echelle-unifiee/results.json",
+     "/home/le-rif/Bureau/Transcendence/work/visualizations/design-review-studies/checks/echelle-unifiee/ (16 paires avant-/apres-*.png, plus apres-trois-ordinateur.png et apres-trois-ar-sombre-mobile.png)"
+    ],
+    "verifications": [
+     "Six vues clés (Projets ordinateur clair FR, fiche projet, profil ordinateur sombre, chronique, Profils mobile sombre AR, Projets mobile clair) : on passe de 17 à 6 tailles de texte d’interface au total (12, 14, 16, 20, 28 et 35 px, toutes sur l’échelle) et de 8 à 3 rayons. Par vue : de 6–10 tailles à 3–5, et de 3–4 rayons à 2–3.",
+     "Douze vues de menus et dialogues, dont la connexion simulée en FR et en AR sombre : de 21 à 6 tailles, de 13 à 5 rayons (les 4 et 5 px restants sont des cases à cocher, exclues) et de 6 à 4 ombres (niveaux 1 et 2, en clair et en sombre). Toutes les superpositions s’ouvrent, avant comme après.",
+     "Vingt-deux vues supplémentaires (320, 390, 667 × 375, 834 et 1024 px, onglets, vue Liste, Explorer) : de 30 à 13 tailles et de 14 à 4 rayons. Les valeurs restantes hors paliers viennent des rampes conservées ou des tailles de la base gardées volontairement.",
+     "Sur les 40 vues avant/après : aucun débordement, aucun libellé nouvellement rogné, aucune erreur console. Aucune cible de 44 × 44 px perdue ; seuls des liens de titres de cartes passent à 36,4 px de haut, parce que leur titre tient sur une ligne au lieu de deux.",
+     "Sur 17 vues, dont 320 px : aucun mot coupé, aucun titre tronqué par la limite de 3 lignes, aucun titre plus large que sa boîte. Le focus clavier est identique avant et après (12 arrêts de tabulation, mêmes contours) sur trois vues.",
+     "Arrivée : boutons de 17 à 16 px et rayon de 14 à 12 px, hauteur de 52 px conservée. Dialogue de connexion : titre de 24 à 20 px, rayon de 28 à 20 px. Mesuré en FR clair et en AR sombre.",
+     "Combinaisons (13 vues chacune, versions lisibilite-textes 12:59 et titres-forts 18:53) : 1 134 contrôles des planchers 13/14 px de lisibilite-textes, 0 échec ; 512 contrôles de graisse 700 et d’interlettrage de titres-forts, 0 échec. Avec les trois essais ensemble : 0 débordement, 0 erreur, 0 mot coupé, 0 titre tronqué.",
+     "Captures avant/après regardées côte à côte (ordinateur, mobile, sombre, AR, dialogues, arrivée, trois essais combinés) : couleurs et disposition identiques. De 0,02 à 9,8 % de pixels changent, surtout parce que le texte se recompose. snapshot.py --verify : 137 fichiers intacts. results.json (19:48) est plus récent que essai.css (19:28) et passed = true."
+    ],
+    "limites": [
+     "Démonstrateur seulement : la vraie consolidation est un travail structurel qu’un essai ne peut pas montrer (jetons comme source unique, moins de feuilles, suppression des surcharges). Les 67 valeurs de font-size et 39 de border-radius restent déclarées dessous ; la revue en annonçait 85 et 48.",
+     "L’échelle n’est exacte qu’à 390 px et à partir de 1024 px. Entre les deux, les rampes donnent des valeurs intermédiaires (13,4, 25,6 et 32,9 px à 834 px). Exceptions volontaires : titres de cartes à 18–19 px sous 390 px, titres de fiche en rampe 22 → 28 px.",
+     "Exclus volontairement : logotype, libellés du dock (11 à 14 px), illustrations SVG, globe, fiche campus, densités compactes (non mesurées), cases à cocher, focus, emoji.",
+     "Changements visibles à juger : titres de cartes de 31 à 28 px sur ordinateur, ce qui raccourcit certaines cartes ; un titre de plus sur trois lignes à 390 px ; nom du profil de 38 à 35 px ; en clair, ombre de « Visiter » plus marquée et ombre du dialogue de connexion plus légère.",
+     "titres-forts était encore en cours chez un autre agent : la passe finale doit retester les trois essais ensemble. Non vérifiés : la police Futura PT, la version anglaise, le vrai globe, un téléphone physique."
+    ],
+    "decisionConcernee": ""
+   }
+  ],
+  "notesForMain": "Ce que j’ai modifié dans echelle-unifiee :\n- essai.css : (a) sous 390 px, les titres des cartes de la grille gardent la taille de la base ; la vue Liste garde sa rampe à toutes les largeurs ; (b) la règle qui fixait à 28 px les titres de fiche projet et chronique est supprimée, donc la rampe de la base 22 → 28 px s’applique ; (c) nouvelle règle « dialog:not([data-kind=campus]) .dialog-top h2 » à 20 px ; (d) le sélecteur « #app .entrance-action » devient « :is(#app,#dialog) .entrance-action » pour la taille, le rayon et l’ombre claire ; (e) les reflets intérieurs du dialogue Filtrer s’appliquent dans les deux thèmes, plus seulement en sombre.\n- essai.mjs et early.js n’ont pas changé (aucun comportement ajouté).\n\nLancer les contrôles :\n- Le script se lance par phases : `python3 -I checks/echelle-unifiee/check.py [key overlays extra arrival combinations mapping diffs]`.\n- Toutes les phases prennent environ 15 minutes. `combinations mapping` seules prennent environ 5 minutes et suffisent pour la passe finale de combinaison ; elles mesurent aussi titres-forts seul (« ref-titres-forts ») comme référence.\n- `diffs` ne lance pas Chrome : elle recalcule seulement les totaux et les différences de pixels des captures.\n\nPour la galerie :\n- essai.json contient, en plus des clés demandées, une clé « correspondance » : la table détaillée, sous forme de tableau d’objets {jeton, palier, base, composants}. Elle est aussi résumée en prose dans « changement ». Affichez-la si la galerie le permet.\n- 4 vues sont proposées : Projets mobile clair, Projets ordinateur clair, Profil ordinateur sombre, Profils mobile sombre AR.\n- 16 paires de captures sont listées. Les captures des trois essais combinés (apres-trois-*.png) sont citées dans « verifications » mais pas dans « captures », pour ne pas les présenter comme un « avant ».\n\nDivers :\n- La revue annonçait 85 font-size et 48 border-radius ; mon recomptage strict des 35 feuilles propres au prototype donne 67 et 39. essai.json cite les deux chiffres.\n- Aucun document, aucun dossier d’un autre agent ni la copie de référence n’ont été modifiés ; rien n’a été commité.\n- Fichiers temporaires : /tmp/claude-1000/-home-le-rif-Bureau-Transcendence/2cf0c114-786b-4a24-866f-57822e04403f/scratchpad/agents/echelle-unifiee/."
+ },
+ "vérification:typo-lisibilite-marque-forts": {
+  "group": "Typographie, lisibilité et pages",
+  "trials": [
+   {
+    "id": "lisibilite-textes",
+    "verdict": "corrigé",
+    "problemesTrouves": [
+     "Défaut visible non détecté jusqu'ici : dans la vue Liste des Profils, de 320 à 1199 px, la pastille de statut passée à 13 px (« Transcender », 83,4 px) dépassait sa vignette de 88 px, qui a overflow:hidden. Son bord droit était donc rogné (pastille de 30 à 113,4 px pour une vignette de 24 à 112 px, à 390 px). Je l'ai vu sur les captures. En arabe, « خريج / خريجة » passait sur deux lignes.",
+     "La documentation ne correspondait pas à ce que j'ai mesuré. Le commentaire de essai.css et essai.json disaient que les icônes gardaient leur couleur ; or les icônes en currentColor des boutons campus et message suivent la couleur de leur libellé. essai.json citait aussi des liens « Lire » (.cp-card-link), qui n'existent pas dans cette version.",
+     "Un échec de contraste restant n'était pas signalé : les boutons pleins des dialogues (Enregistrer le signalement, Envoyer) ont un texte clair sur #008E90, soit 3,8:1. Ce sont des surfaces, laissées hors de l'essai comme le demande la consigne.",
+     "Vérifications absentes : vue Liste des Profils, dialogues Signaler et Envoyer un message, changement de langue et de thème sans rechargement, densités de detail-scroll en fenêtre basse, contrôle sur le même DOM que seules les tailles augmentent et que seules les deux couleurs d'accent changent."
+    ],
+    "corrections": [
+     "essai.css, règle des 13 px : .cp-profile-status devient .cp-profile-status:not([data-view=list] .cp-profile-portrait>*). J'ai ajouté @media (min-width:1200px){… [data-view=list] .cp-profile-portrait>.cp-profile-status{font-size:13px}}. Sous 1200 px, la pastille de la vue Liste garde ses 11 px d'origine ; à partir de 1200 px, la vignette lui laisse 86 px. Commentaire d'en-tête corrigé : exception de la vue Liste, et icônes des boutons campus et message qui suivent leur libellé.",
+     "check.py : ajout des étapes scope, listView (liste et grille), dialogs (avec les exemples d'échecs de contraste), runtime et densities, et d'un choix d'étapes en argument. Tout rejoué ; results.json régénéré : passed true, 5 contrôles supplémentaires vrais.",
+     "essai.json : textes de « changement » corrigés (exception de la vue Liste, icônes, liens « Lire » retirés), 6 vérifications ajoutées, puis des limites mises à jour (vue Liste, boutons pleins, paysage, visionneuse et dialogues sombres non mesurés), et 2 paires de captures ajoutées (liste-puce-ordinateur, signaler-mobile). Nouvelle image de preuve : checks/lisibilite-textes/defaut-releve-puce-liste-rognee.png."
+    ],
+    "verificationsRejouees": [
+     "check.py complet rejoué après correction (19 h 56–20 h 05) sur 17 vues. Textes sous 13 px : 343/811 (42,3 %) → 23/810 (2,8 %) ; textes utiles : 320 → 0, les 23 restants étant les libellés du dock et la ligne arabe du logotype. Contraste : 94 → 12, soit 82 → 0 hors glyphes SVG décoratifs. Aucun débordement, aucune erreur, dock et en-tête non tronqués.",
+     "Surcouches : recherche à 390 et 1440 px (26 → 0, 16 → 0), dialogue Filtrer à 390 px (37 → 0), menu du compte (18 → 0), fiche campus avec le vrai globe (9 → 0, attribution exclue à 9 px).",
+     "Périmètre sur 14 pages (même DOM, feuille coupée puis rétablie ; FR, EN, AR ; clair et sombre) : aucune taille en baisse ni au-dessus de 14 px. Seules couleurs changées : #008E90 → #0C7677 en clair et #ED3491 → #F485BD en sombre. Boîtes des icônes inchangées.",
+     "Vue Liste des Profils à 320, 390, 1024 et 1199 px (FR et AR sombre) : pastilles à 11 px, aucune rognée. À 1200 et 1440 px : 13 px, aucune rognée. Vue Grille à 320 et 390 px (FR et AR) : 13 px, aucune rognée. 24 pastilles par vue. Captures vues.",
+     "Dialogues Signaler (390 px FR, 1440 px AR) et Envoyer un message (390 et 320 px FR) : petits textes utiles 6 (9 en arabe) → 0, aucun débordement. Seul échec de contraste restant : le bouton plein du dialogue.",
+     "Langue et thème changés par le menu du compte sans rechargement (FR clair → AR sombre → fiche → EN clair) : pastilles et métadonnées à 13 px en #0C7677 ou #F485BD, lien campus, Favoris et Signaler à 14 px.",
+     "Densités detail-scroll identiques avant et après dans 15 fenêtres basses (1280×720, 1366×768, 1024×768 et 900×600 en FR ; 1280×720 en AR).",
+     "Contrastes calculés. #0C7677 : 5,17:1 sur #F7FAFA, 5,42:1 sur #FFFFFF, 4,87:1 sur #EAF5F4, 4,64:1 sur le fond rosé de la pagination. #F485BD : 6,90:1 sur #202026, 7,33:1 sur #1B1B1B, 6,16:1 sur #29292E. Pour comparaison, CG Blue #04809F ne donne que 4,36:1 sur #F7FAFA."
+    ],
+    "reservesRestantes": [
+     "Libellés du dock mobile à 11 px et ligne arabe du logotype (أفق) non touchés.",
+     "Vue Liste des Profils sous 1200 px : la pastille reste à 11 px, ce qui est une exception à la règle des 13 px.",
+     "Boutons pleins des dialogues à 3,8:1 en clair (surfaces laissées hors de l'essai, comme demandé).",
+     "Modes compacts des fiches : densités inchangées, mais pas d'audit ni de capture. Non mesurés : téléphone en paysage, visionneuse des médias, dialogues en thème sombre ; survols et mentions non capturés.",
+     "Les sélecteurs inertes .cp-card-link et .cp-eyebrow (classes jamais générées dans cette version) sont restés dans essai.css, sans aucun effet."
+    ]
+   },
+   {
+    "id": "titres-marque",
+    "verdict": "corrigé",
+    "problemesTrouves": [
+     "Le slogan « BEYOND THE CODE » était rogné. Les jumelles en Jost 800 italique étaient dessinées dans des images de la taille des lettres droites, et l'italique gras dépasse leur marge : Y de 6,8 px et T de 5 px à 192 px (measureText). Le bras du Y et la barre du T étaient coupés net ; je l'ai vu sur un agrandissement.",
+     "Juste après « Simuler une connexion réussie », le message chiffré « ru%43t 9xu s4tu » passait en Jost 800 italique pendant la pause chiffrée (≈ 250 ms à 60 images/s), avant que les lettres tournent. J'ai capté cette image sur le canevas ; essai.json affirmait le contraire.",
+     "check.py ne couvrait ni ces deux cas, ni le mouvement réduit, ni le changement de langue et de thème sans rechargement."
+    ],
+    "corrections": [
+     "early.js réécrit. Un compteur de dessins par image, remis à zéro par clearRect sur le canevas de la scène, est comparé au texte chiffré (data-ciphertext) : une lettre chiffrée n'est jamais remplacée, seules les lettres claires résolues le sont.",
+     "Les jumelles ont 40 px de marge de plus de chaque côté et sont dessinées dans un rectangle élargi dans la même proportion : même échelle, même centre, plus de lettre coupée. essai.css et essai.mjs n'ont pas changé.",
+     "check.py : relevé de chaque dessin sur le canevas (wrappers sous et sur early.js), comparaison pixel de la première image après la connexion, encre sur les colonnes de bord des jumelles, échelle et centre, passe en mouvement réduit, nouvelle étape runtime, choix d'étapes. results.json régénéré : passed true, 4 contrôles vrais.",
+     "essai.json : « changement », vérifications et limites mis à jour (lettres serrées, mouvement réduit). Images de preuve : checks/titres-marque/defaut-releve-chiffre-apres-connexion.png et defaut-releve-slogan-rogne-ordinateur.png."
+    ],
+    "verificationsRejouees": [
+     "En-tête sur 5 vues (FR clair 1440, FR sombre 390, AR clair 390, AR sombre 1440, EN 320) : police Jost-ExtraBoldItalic. Largeur posée = largeur DOM à 0,01 px près (HORIZON 112,10/112,11, 74,82/74,83, 71,74/71,75 ; avant : 107,08, 71,47, 68,53). restDiff 0, aucun débordement, aucun contact avec les boutons. أفق en NotoSansArabic-Bold, contre Regular avant.",
+     "Transitions HORIZON → AWARDS → HORIZON à 1440 px FR et 390 px AR sombre : fin sur AWARDS (103,03/103,03 ; 68,76/68,77) puis HORIZON, toujours dans l'écran, sans erreur. Images à mi-parcours vues, aucune lettre coupée.",
+     "Arrivée en mouvement réel, à 1440 px clair et 390 px sombre. Chiffre avant connexion identique (écart 0). Première image après connexion identique (écart 0, aucune lettre remplacée). Ensuite, 377 dessins de lettres résolues remplacés : aucune encre sur les colonnes de bord, échelle et centre conservés. Slogan rendu « BEYOND THE CODE » ; pixels du canevas changés 4,2 % et 5,3 % ; encre 5,5 → 8,1 % et 7,1 → 10,5 %. Agrandissement vu : Y et T entiers.",
+     "Mouvement réduit : les 13 lettres de l'image finale sont remplacées, aucune dans le chiffre.",
+     "Premier chargement direct, passage en AR sombre, réduction à 390 px, 42 Awards, retour en FR clair, sans rechargement : largeur juste à 0,01 px près ; أفق en 700, affichée seulement à côté de HORIZON en arabe."
+    ],
+    "reservesRestantes": [
+     "Jost 800 italique n'est qu'un substitut du Futura PT Heavy Oblique ; le point en attente de PROJECT_CONTEXT.md n'est pas tranché.",
+     "L'espacement reste calculé sur Jost Medium : les lettres grasses sont serrées (le Y et le T frôlent la lettre suivante).",
+     "En arabe, le symbole 42 se décale de 4 à 5 px.",
+     "Le gras de أفق dépend de la présence de Noto Sans Arabic Bold sur l'appareil.",
+     "En mouvement réduit, le site ne tient pas le slogan à l'écran (déjà le cas sans l'essai).",
+     "Le comptage des dessins suppose qu'aucune lettre du slogan n'est égale à sa lettre chiffrée ; c'est vrai pour la phrase figée de l'arrivée."
+    ]
+   },
+   {
+    "id": "titres-forts",
+    "verdict": "validé",
+    "problemesTrouves": [
+     "Code conforme et dans le périmètre : graisse 700 réelle, tailles inchangées, interlettrage resserré de 0,02 em, Noto Sans Arabic nommée seulement en arabe, titres retirés le 13 octobre toujours masqués. Inventaire des titres visibles sur 22 pages : tous les titres de fiches, de cartes et les intertitres sont visés ; seuls les états vides restent à 500, comme documenté.",
+     "Documentation à préciser : la ligne « Captures examinées » reprenait des captures non revues, et la combinaison avec echelle-unifiee était déclarée non vérifiée."
+    ],
+    "corrections": [
+     "essai.css, early.js et essai.mjs inchangés.",
+     "check.py : nouvelle étape review (contre-vérification indépendante, ajoutée aux étapes par défaut) et étape echelle (sur demande).",
+     "Étape extras rejouée avec les versions corrigées de lisibilite-textes et titres-marque ; results.json : passed true, 22 contrôles vrais.",
+     "essai.json : ajout de la contre-vérification et de la combinaison avec echelle-unifiee, ligne « Captures examinées » rendue exacte, limite sur echelle-unifiee mise à jour."
+    ],
+    "verificationsRejouees": [
+     "Totaux de results.json recalculés, conformes à essai.json : 198 pages et 2 574 titres. Latin : 24/1 716 gagnent une ligne ; arabe : 73/858 ; aucun n'en perd ; aucune troncature nouvelle. 94 cartes plus hautes, jusqu'à +41 px. Chroniques à 1440 px FR : 7 titres passent de 2 à 3 lignes, 1 de 1 à 2. Fiches : seul « ft_transcendence » passe de 1 à 2 lignes à 390 px.",
+     "Étape review, par une autre méthode (lignes de la plage de texte, même DOM, feuille coupée puis rétablie) : 23 vues, 306 titres. 11 gagnent une ligne (3/177 en latin, 8/129 en arabe), aucun n'en perd. Graisse 500 → 700, tailles identiques, Noto Sans Arabic seulement en arabe. En-tête identique au pixel près, aucun débordement ni erreur. Après changement de langue et de thème sans rechargement, la graisse 700 reste.",
+     "Étape extras rejouée (20 h 07) : combinaison avec lisibilite-textes et titres-marque sur 6 vues, mêmes lignes de titres que l'essai seul, mot-symbole en italique 800, métadonnées à 13 px minimum, aucun débordement. Périmètre, faces réelles (Jost-Bold, NotoSansArabic-Bold) et page d'arrivée identique (écart 0) : tous vrais.",
+     "Étape echelle : combinaison avec echelle-unifiee (sa feuille de 19 h 28) sur 6 vues et 70 titres. Tailles données par echelle-unifiee, graisse 700, seul « ft_transcendence » gagne une ligne à 390 px, aucun débordement ni erreur.",
+     "Captures vues : cartes Projets à 1440 px, Projets AR à 390 px, et les combinaisons régénérées."
+    ],
+    "reservesRestantes": [
+     "Jost Bold n'est qu'un substitut du Futura PT Heavy.",
+     "Plus de retours à la ligne en arabe : 8,5 %, jusqu'à 19 titres sur 78 dans les Chroniques à 390 px.",
+     "Le gras arabe dépend de la police installée sur l'appareil ; macOS, Windows et Android non testés.",
+     "Historique des campus vérifié seulement sur un élément injecté.",
+     "Fenêtres basses autres que 1280×720 mesurées en partie seulement.",
+     "Combinaison avec echelle-unifiee à revérifier si cet essai change."
+    ]
+   }
+  ],
+  "notesForMain": "Les 3 essais passent après relecture. lisibilite-textes et titres-marque avaient de vrais défauts, corrigés ; titres-forts était correct. Je n'ai écrit que dans essais/<id> et checks/<id> de ces 3 essais, plus mon dossier de travail dans le scratchpad. Rien n'a été commité. snapshot.py --verify passe (137 fichiers vérifiés, 0 manquant). Toutes mes sessions Chrome sont fermées et aucun profil n'est resté dans ~/.cache/horizon-design-review-chrome.\n\nFichiers modifiés :\n- essais/lisibilite-textes/essai.css : exception pour la vue Liste des Profils sous 1200 px, et commentaire corrigé.\n- essais/titres-marque/early.js : réécrit.\n- Les 3 essai.json.\n- Les 3 check.py : étapes nouvelles et choix d'étapes en argument ; leurs results.json ont été régénérés.\n\nImages de preuve des défauts (non référencées dans essai.json, utiles pour le journal) :\n- checks/lisibilite-textes/defaut-releve-puce-liste-rognee.png : ancienne version de l'essai, pastille « Transcender » rognée à 390 et 320 px.\n- checks/titres-marque/defaut-releve-chiffre-apres-connexion.png : le message chiffré passait en italique gras juste après la connexion.\n- checks/titres-marque/defaut-releve-slogan-rogne-ordinateur.png : de haut en bas, le site actuel, l'ancien essai (Y et T rognés), l'essai corrigé.\nJ'ai corrigé les deux essais sur place, comme la consigne le demande, sans archiver leurs anciennes versions.\n\nConflit entre essais, à signaler dans la galerie ou dans boot.js (je n'ai pas touché boot.js) : lisibilite-textes et echelle-unifiee donnent des tailles différentes aux mêmes petits textes (13 et 14 px contre 12 px). Combinés, lisibilite-textes l'emporte grâce à ses sélecteurs à deux id : métadonnées à 13 px, Favoris et Signaler à 14 px. Mesuré sur 4 vues, sans débordement ni erreur. On peut en faire une paire EXCLUSIVE ou le documenter.\n\nCompatibilité vérifiée :\n- titres-forts avec echelle-unifiee : vérifié sur l'état de cette feuille à 19 h 28.\n- lisibilite-textes, titres-marque et titres-forts ensemble : revérifié à 20 h 07 avec les versions corrigées.\n\nPoints pour la galerie et la documentation :\n- La vue « Parcours » de titres-forts utilise ?tab=journey.\n- titres-marque : sa vue d'arrivée se joue sur index.html (route vide) ; la différence apparaît au slogan, après « Simuler une connexion réussie ». En mouvement réduit, le site ne tient pas le slogan à l'écran.\n- J'ai ouvert 13 images, toutes des planches réduites."
+ }
+}

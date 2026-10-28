@@ -1,0 +1,167 @@
+{
+  "id": "voile-pile-basse",
+  "groupe": "Pile flottante, cartes et petits écrans",
+  "titre": "Voile sous la pile basse",
+  "resume": "Sur les pages de contenu, un voile pleine largeur, de la couleur du fond de page, passe derrière la capsule, le dé et le dock : le contenu s’efface en 24 px au-dessus de la capsule au lieu d’être coupé par les pastilles. Capsule, dé et dock restent inchangés.",
+  "probleme": "Au repos, la capsule (200 × 44 px), le dé et le dock flottent sur le contenu sans fond commun : textes et images restent visibles entre les pastilles et autour d’elles, puis sont coupés net par elles (légende d’une fiche projet, résumés des cartes, phrase « Ouvrez la discussion en partageant votre premier retour » de l’onglet Commentaires). Selon l’avis, l’en-tête et la pile basse occupent au repos environ 45 % de l’écran à 390 × 844 et plus de 50 % à 320 × 640. Mesuré sur la copie : 2 757 px² de lignes de texte sous la capsule et le dé dans Projets à 390 × 844, 6 227 px² à 320 × 640.",
+  "changement": "Feuille essai.css seule (essai.mjs ne fait rien). Sur Projets, Profils, Chroniques et leurs fiches (pas sur Explorer, ni sur 42 Awards, qui n’a ni capsule ni contenu défilant), un pseudo-élément fixe et sans pointeur (pointer-events:none) couvre le bas de l’écran sur toute la largeur. Il est plein, de la couleur de fond du thème (--h42-color-bg), du bord inférieur jusqu’au haut de la capsule, puis s’efface sur 24 px (82 % au tiers, comme le fondu de l’en-tête) : 173 px de haut sur ordinateur, 158 px sur mobile, 150 px en paysage. C’est le pendant du fondu existant sous l’en-tête (même couche peinte, même couleur, mêmes pages), sans second fondu empilé. Il s’efface avec le dock pendant le défilement et reste quand le focus clavier garde le dock visible. Il s’écarte aussi pendant qu’un menu de la page est ouvert, car ces menus s’arrêtent 8 à 12 px au-dessus de la capsule, dans le fondu. Il s’écarte de même tant que le focus clavier est dans la page, ou qu’un champ de saisie y est actif : sans cela, un lien atteint avec Tab pouvait rester caché sous le voile (correction de la vérification contradictoire). Sur les fiches d’ordinateur à menu latéral fixe, il est dessiné dans la couche de la page, sous ce menu (z-index 2 ajouté au menu latéral). Aucune marge n’est ajoutée : la fin des pages passait déjà au-dessus.",
+  "decisionConcernee": "",
+  "alternativeDe": "recherche-repliee",
+  "vues": [
+    {
+      "libelle": "Mobile clair · Projets",
+      "page": "content-preview.html",
+      "route": "projects",
+      "viewport": "mobile",
+      "theme": "light",
+      "lang": "fr"
+    },
+    {
+      "libelle": "Mobile sombre · Chroniques",
+      "page": "content-preview.html",
+      "route": "journal",
+      "viewport": "mobile",
+      "theme": "dark",
+      "lang": "fr"
+    },
+    {
+      "libelle": "Ordinateur · fiche projet",
+      "page": "content-preview.html",
+      "route": "projects/ft-transcendence-building-together?tab=overview",
+      "viewport": "ordinateur",
+      "theme": "light",
+      "lang": "fr"
+    },
+    {
+      "libelle": "Paysage · Projets",
+      "page": "content-preview.html",
+      "route": "projects",
+      "viewport": "paysage",
+      "theme": "light",
+      "lang": "fr"
+    }
+  ],
+  "verifications": [
+    "Couverture derrière la capsule et le dé au repos, avec une image ou un texte placé derrière : 99,98 à 100 % (opacité effective mesurée entre deux images avec et sans voile, commandes masquées, sur 144 à 37 065 pixels de contenu) et 100 % des pixels lus comme le fond, dans 11 vues : Projets à 1440 × 900, 390 × 844, 320 × 640 et 667 × 375 ; Chroniques mobile sombre ; Profils ordinateur sombre en anglais ; fiche projet à 1440 × 900 et à 1280 × 720 ; profil mobile en arabe ; article et profil sombre à 1440 × 900.",
+    "Fin des pages entièrement lisible au-dessus du voile après défilement jusqu’en bas, avec une mise en page identique au site actuel : pagination de Projets à 39 px du haut du voile à 1440 × 900, 390 × 844 et 320 × 640, à 44 px en paysage ; fiches, article et profils à 31–62 px sur ordinateur et mobile ; onglet Commentaires et article à 320 × 640 à 61 et 52 px, Commentaires à 390 × 844 à 60 px.",
+    "Clics non bloqués : grilles de 38 à 44 points (elementFromPoint dans le voile et juste au-dessus) identiques avec et sans l’essai dans les 11 vues ; un vrai clic sur une carte située sous le voile (1440 × 900, y ≈ 827) ouvre le projet. Recherche ouverte dessinée au-dessus du voile, avec les mêmes cibles qu’aujourd’hui.",
+    "Défilement : le voile s’efface avec le dock (opacité 0) puis revient au repos (1) dans les 11 vues ; il reste à 1 pendant le défilement quand le focus clavier sur le dé garde le dock visible.",
+    "Menus de la page (Affichage et Trier en paysage et sur mobile, tri des commentaires, sélecteur de section mobile) : le voile s’écarte pendant l’ouverture, sans quoi le bas du dernier choix serait voilé à 18–42 %, et revient à la fermeture. Menu Trier ouvert en paysage : 0 pixel d’écart avec le site actuel.",
+    "Fiches d’ordinateur à menu latéral fixe : le menu latéral reste au-dessus du voile. Dans la partie de son cadre située dans la zone du voile (157 px de haut à 1440 × 900), aucun pixel ne s’écarte de plus de 6 sur 765 (somme RVB) du site actuel : seul son fond transparent laisse voir la couleur unie du voile au lieu du léger dégradé d’ambiance de la page ; liens et boutons du menu ne sont pas voilés.",
+    "Thèmes : voile rgb(247, 250, 250) en clair et rgb(27, 27, 27) en sombre, mis à jour lors d’un changement de thème sans rechargement. Transition de 0,35 s, aucune sous mouvement réduit.",
+    "Combinable avec la recherche repliée : loupe de 44 px et voile commençant 24 px au-dessus d’elle.",
+    "Explorer inchangé : 0 pixel d’écart sans globe (1440 × 900 et 390 × 844) et avec le vrai globe (1440 × 900). 42 Awards : 0 pixel d’écart, voile masqué.",
+    "Aucune erreur dans la console pendant les contrôles.",
+    "Focus clavier (correction de la vérification contradictoire) : sur 22 tabulations dans Projets, 4 positions à 390 × 844 (titres et auteurs de la deuxième rangée de cartes) et 2 à 320 × 640 (auteurs de la première rangée) se trouvaient entièrement sous le voile, fondu compris, alors affiché ; le voile s’écarte désormais (opacité 0) tant que le focus clavier est dans la page, et revient à 1 quand il la quitte. Aucune position touchée à 1440 × 900. Un clic de souris sur un bouton de la page garde le voile ; un clic dans le champ de commentaire l’écarte, puis il revient ; le focus clavier dans le dock ou dans le menu latéral fixe d’une fiche le garde.",
+    "Revérifié par un second agent, chaque état rechargé à neuf : couverture derrière la capsule et le dé de 100 % des pixels de contenu à 1440 × 900 (clair), 390 × 844 (Chroniques sombre) et 320 × 640 ; fin des pages 38,7 à 61,3 px au-dessus du voile, mise en page identique au site actuel ; grilles elementFromPoint identiques avec et sans l’essai, et au-dessus du voile sur le contenu ; arabe sombre puis anglais clair depuis le menu du compte sans rechargement (couleur du voile mise à jour, même hauteur) ; combiné à la recherche repliée, fondu 24 px au-dessus de la loupe ; Explorer identique au pixel près, sans globe et avec le vrai globe ; aucune erreur dans la console.",
+    "Contre-vérification indépendante (troisième passage, après la coupure de 19 h), chaque état rechargé à neuf : derrière la capsule et le dé, 100 % des pixels échantillonnés lus comme le fond (opacité effective 0,9998 à 1) dans 6 vues : Projets à 1440 × 900, 320 × 640 et 667 × 375, Chroniques mobile sombre, Profils mobile en arabe sombre, fiche projet à 1440 × 900 ; fondu commençant 24 px au-dessus de la capsule dans chacune. Fin des pages au-dessus du voile, mise en page identique au site actuel : Projets à 38,7, 39,5 et 38,9 px (1440 × 900, 390 × 844, 320 × 640), onglet Commentaires à 61,3 px et profil à 31,5 px (320 × 640), article à 51,6 px (390 × 844). Au-dessus du voile, 0 pixel d’écart avec le site actuel sur Projets (1440 × 900, 390 × 844) et sur la fiche projet ; grilles elementFromPoint identiques.",
+    "Contre-vérification du focus et des états : un clic de souris sur le dock, sur une carte ou un retour dans l’historique, et un toucher sur le dock gardent le voile (le titre de page reçoit le focus sans :focus-visible) ; Entrée sur le dock l’écarte ; 22 tabulations sur mobile : 4 positions sous la zone du voile, voile alors à 0, aucun focus caché ; sur une fiche d’ordinateur, le focus clavier dans la lecture l’écarte et dans le menu latéral le garde. Menus Trier et sélecteur de section : 0 à l’ouverture, 1 à la fermeture ; défilement à la molette : 0 pendant, 1 au repos ; mouvement réduit : aucune transition (0,35 s sinon). Arabe sombre puis anglais clair sans rechargement : couleur mise à jour, même hauteur. Avec la recherche repliée à 390 × 844 et 320 × 640 : loupe de 44 px, fondu 24 px au-dessus. Explorer (sans globe et avec le vrai globe) et 42 Awards : 0 pixel d’écart. Aucune erreur dans la console."
+  ],
+  "limites": [
+    "Au repos, le voile masque le bas de l’écran sur 173 px sur ordinateur (19 % de l’écran), 158 px sur mobile (19 %) et à 320 × 640 (25 %), 150 px en paysage 667 × 375 (40 %) : plein sur 149, 134 et 126 px, puis fondu sur les 24 px du haut. Entre le fondu de l’en-tête et le voile, la bande nette mesure 539 px (60 %) sur ordinateur, 520 px (62 %) sur mobile, 323 px (50 %) à 320 × 640 et seulement 85 px (23 %) en paysage, où les cartes sont presque entièrement voilées au repos.",
+    "Le contenu situé sous la pile n’est plus coupé, mais il n’est plus visible du tout au repos : il faut faire défiler pour le lire. Le fondu de 24 px est plus court que celui de l’en-tête (36 à 52 px).",
+    "Au clavier, le voile s’écarte dès que le focus est dans la page, y compris après un changement de rubrique au clavier par le dock, qui place le focus sur le titre de la page : une personne qui navigue au clavier voit la page comme aujourd’hui, avec les pastilles qui coupent le contenu, et le voile disparaît puis revient quand le focus entre dans la page ou la quitte. À la souris et au toucher, le voile reste ; mais une fermeture de menu par Échap rend le focus visible à son bouton, et le voile reste alors écarté jusqu’au clic suivant.",
+    "Le contenu caché sous la partie pleine du voile reste cliquable, comme le demande la consigne (pointer-events:none) : un clic ou un toucher à côté du dock peut ouvrir une carte que l’on ne voit pas.",
+    "Pendant qu’un menu de la page est ouvert, le voile disparaît (en 0,22 s) pour laisser lisible le bas du menu.",
+    "Apparitions animées : le passage d’une liste à une fiche d’ordinateur et le retour ont été mesurés image par image (57 et 56 images, voile présent et à sa place à chaque image) ; l’arrivée depuis Explorer et les changements d’onglet ne l’ont pas été.",
+    "Contrôles faits dans Chrome sans interface, en formats émulés : la zone de sécurité d’un téléphone à encoche, incluse dans la hauteur du dock, n’est pas vérifiée sur un appareil réel."
+  ],
+  "fichiers": [
+    "essais/voile-pile-basse/essai.css",
+    "essais/voile-pile-basse/essai.mjs",
+    "checks/voile-pile-basse/check.py",
+    "checks/voile-pile-basse/check-menus.py",
+    "checks/voile-pile-basse/check-bande.py",
+    "checks/voile-pile-basse/check-complement.py",
+    "checks/voile-pile-basse/results.json",
+    "checks/voile-pile-basse/results-menus.json",
+    "checks/voile-pile-basse/results-bande.json",
+    "checks/voile-pile-basse/results-complement.json",
+    "checks/voile-pile-basse/check-verification.py",
+    "checks/voile-pile-basse/results-verification.json",
+    "checks/voile-pile-basse/check-contre-verification.py",
+    "checks/voile-pile-basse/results-contre-verification.json"
+  ],
+  "captures": [
+    {
+      "vue": "mobile",
+      "avant": "checks/voile-pile-basse/avant-mobile.png",
+      "apres": "checks/voile-pile-basse/apres-mobile.png"
+    },
+    {
+      "vue": "petit",
+      "avant": "checks/voile-pile-basse/avant-petit.png",
+      "apres": "checks/voile-pile-basse/apres-petit.png"
+    },
+    {
+      "vue": "sombre-mobile",
+      "avant": "checks/voile-pile-basse/avant-sombre-mobile.png",
+      "apres": "checks/voile-pile-basse/apres-sombre-mobile.png"
+    },
+    {
+      "vue": "ordinateur",
+      "avant": "checks/voile-pile-basse/avant-ordinateur.png",
+      "apres": "checks/voile-pile-basse/apres-ordinateur.png"
+    },
+    {
+      "vue": "sombre-ordinateur",
+      "avant": "checks/voile-pile-basse/avant-sombre-ordinateur.png",
+      "apres": "checks/voile-pile-basse/apres-sombre-ordinateur.png"
+    },
+    {
+      "vue": "paysage",
+      "avant": "checks/voile-pile-basse/avant-paysage.png",
+      "apres": "checks/voile-pile-basse/apres-paysage.png"
+    },
+    {
+      "vue": "fiche-ordinateur",
+      "avant": "checks/voile-pile-basse/avant-fiche-ordinateur.png",
+      "apres": "checks/voile-pile-basse/apres-fiche-ordinateur.png"
+    },
+    {
+      "vue": "ar-mobile",
+      "avant": "checks/voile-pile-basse/avant-ar-mobile.png",
+      "apres": "checks/voile-pile-basse/apres-ar-mobile.png"
+    },
+    {
+      "vue": "fin-mobile",
+      "avant": "checks/voile-pile-basse/avant-fin-mobile.png",
+      "apres": "checks/voile-pile-basse/apres-fin-mobile.png"
+    },
+    {
+      "vue": "focus-clavier-mobile",
+      "avant": "checks/voile-pile-basse/avant-focus-clavier-mobile.png",
+      "apres": "checks/voile-pile-basse/apres-focus-clavier-mobile.png"
+    },
+    {
+      "vue": "fin-petit",
+      "avant": "checks/voile-pile-basse/avant-fin-petit.png",
+      "apres": "checks/voile-pile-basse/apres-fin-petit.png"
+    },
+    {
+      "vue": "fin-fiche-commentaires-petit",
+      "avant": "checks/voile-pile-basse/avant-fin-fiche-commentaires-petit.png",
+      "apres": "checks/voile-pile-basse/apres-fin-fiche-commentaires-petit.png"
+    },
+    {
+      "vue": "menu-paysage",
+      "avant": "checks/voile-pile-basse/avant-menu-paysage.png",
+      "apres": "checks/voile-pile-basse/apres-menu-paysage.png"
+    },
+    {
+      "vue": "recherche-ouverte-mobile",
+      "avant": "checks/recherche-repliee/avant-recherche-ouverte-mobile.png",
+      "apres": "checks/voile-pile-basse/apres-recherche-ouverte-mobile.png"
+    },
+    {
+      "vue": "explorer-globe",
+      "avant": "checks/voile-pile-basse/avant-explorer-globe.png",
+      "apres": "checks/voile-pile-basse/apres-explorer-globe.png"
+    },
+    {
+      "vue": "awards-mobile",
+      "avant": "checks/voile-pile-basse/avant-awards-mobile.png",
+      "apres": "checks/voile-pile-basse/apres-awards-mobile.png"
+    }
+  ]
+}

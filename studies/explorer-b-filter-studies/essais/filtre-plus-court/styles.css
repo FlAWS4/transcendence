@@ -1,0 +1,47 @@
+/* Trial « Un filtre plus court » (filtre-plus-court) of the version B filter study, 26 Oct 2026. Loaded after every
+   stylesheet of the copy. The pill shows only the current place's name, centred, at the fixed width of the longest
+   single name (scope-pill.mjs); at the campus level the country stands under the pill, where the counts stand at the
+   other levels. Every rule of the pill itself uses classes, so that the invisible copies scope-pill.mjs measures get the
+   same layout. */
+
+/* The bar: the ← at the start and, at the end, an empty box as wide as the ← (38 px on phones, as welcome.css sets
+   it), after the bar's own gap. The pill is then the bar's middle, and the copy centres the bar on the page's axis
+   (the column beside the side rail when it shows). Reading drops the ← (globe-framing.css): the box goes with it. */
+:root .app[data-navigation=dock] .scope-bar::after{content:'';flex:0 0 44px;height:1px}
+@media(max-width:700px){
+ :root .app[data-navigation=dock] .scope-bar::after{flex-basis:38px}
+}
+:root .app[data-navigation=dock][data-reading=true] .scope-bar::after{display:none}
+
+/* The pill: the globe's seat at the start (6 + 32 + 6 px, dock-navigation.css), the same room at the end, and the
+   place's name with its chevron centred between them. The picker takes the whole middle, and the whole height that
+   scope-pill.mjs fixes on the tallest name (in Arabic, the Latin campus names lay out lower than the Arabic names): its
+   box, its hover and the popover's anchor stay put when the name changes. */
+:root .app[data-navigation=dock] .scope-bar .scope-path{padding-inline-end:44px}
+:root .app[data-navigation=dock] .scope-bar :is(.scope-trail,.scope-current,.scope-picker){flex:1 1 auto;align-self:stretch}
+:root .app[data-navigation=dock] .scope-bar .scope-picker{justify-content:center}
+/* No ancestor inside the pill. */
+:root .app[data-navigation=dock] .scope-bar .scope-trail .scope-ancestor{display:none}
+
+/* The country before a campus, on the Explorer: the pill's own ancestor (same list, same button and handler, so it
+   still goes back to the country), placed under the pill, centred, where the counts stand at the other levels (the copy
+   hides them at the campus level: welcome.mjs updateScope()), with their size and colour. Out of the flow, it leaves the
+   bar's box, and so the Explorer's band (explorer-band.mjs), as they are in the copy. The content pages have no line
+   under the pill: there the pill shows the campus alone, as the compact form already does. */
+:root .app[data-navigation=dock] #scope-bar{--filtre-court-ligne:var(--h42-color-muted)}
+:root .app[data-navigation=dock][data-section=explore] #scope-bar #scope-country-item:not([hidden]){
+ display:flex;position:absolute;top:calc(100% + 5px);left:50%;translate:-50% 0;
+ width:max-content;max-width:calc(100vw - 32px);
+}
+:root .app[data-navigation=dock][data-section=explore] #scope-bar #scope-country-item .scope-separator{display:none}
+:root .app[data-navigation=dock][data-section=explore] #scope-bar #scope-country{
+ min-height:0;padding:6px 10px;font-size:14px;line-height:1.45;color:var(--filtre-court-ligne);
+}
+@media(max-width:700px){
+ :root .app[data-navigation=dock][data-section=explore] #scope-bar #scope-country{font-size:13px}
+}
+/* Low viewports pad the counts by 2 px (globe-framing.css): the country follows, so that its text stays on their line. */
+@media(max-height:520px){
+ :root .app[data-navigation=dock][data-section=explore] #scope-bar #scope-country-item:not([hidden]){top:calc(100% + 7px)}
+}
+:root .app[data-navigation=dock][data-section=explore] #scope-bar #scope-country:hover{color:var(--h42-color-text)}

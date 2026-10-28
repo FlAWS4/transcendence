@@ -1,0 +1,21 @@
+/* The document is the reading scroller, exactly as before the split-pane study.
+   Only the identity column is pinned and independently scrollable on desktop. */
+@media(min-width:841px){
+ :root .app[data-navigation=dock] [data-detail-back-pinned]{
+  position:fixed;left:var(--detail-back-x);top:var(--detail-back-top);z-index:1;margin:0;
+ }
+ .cp-detail-back-spacer{display:block;pointer-events:none}
+ :root .app[data-navigation=dock] :is(.cp-profile-reading-pane,.cp-project-reading-pane){grid-column:2}
+ :root .app[data-navigation=dock] [data-detail-scroll=sidebar]{
+  position:fixed;left:var(--detail-sidebar-x);top:var(--detail-sidebar-top);width:var(--detail-sidebar-width);
+  max-height:var(--detail-sidebar-height);min-height:0;
+  overflow-y:auto;overflow-x:hidden;overscroll-behavior-y:contain;
+  scrollbar-gutter:stable;scroll-padding-block:8px;padding-inline-end:8px;padding-block-end:var(--detail-sidebar-clearance,12px);
+ }
+ :root .app[data-navigation=dock] [data-detail-scroll=sidebar]:focus-visible{
+  outline:2px solid var(--h42-color-focus);outline-offset:3px;border-radius:4px;
+ }
+ :root .app[data-navigation=dock] .content-sheet:has(:is(#profile-detail,#project-detail,#journal-detail):not([hidden]) [data-detail-scroll=sidebar])>.sample-note{
+  margin-inline-start:var(--detail-reading-inset,0px);
+ }
+}

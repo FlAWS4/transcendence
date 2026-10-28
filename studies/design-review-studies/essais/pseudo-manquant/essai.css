@@ -1,0 +1,9 @@
+/* Essai pseudo-manquant: profiles without an Intra login no longer show the pending placeholder.
+   Baseline intraLogin() gives every real login dir="ltr"; the placeholder line has none, so real
+   logins stay untouched and re-rendered cards, languages and themes keep the rule.
+   List rows and the profile page have nothing to line up with: the line collapses. */
+:root .app :is(#content-index .cp-profile-card .cp-card-copy,#profile-detail .cp-profile-heading) > .cp-profile-login:not([dir]) { display:none; }
+/* Directory grid: the line keeps the height of one real login, unseen, while a card of the same
+   row shows one, so names, campuses and cohorts stay level (no wrapped two-line gap at 320 px);
+   essai.mjs marks the lines of the other rows "replie". */
+:root .app #content-index[data-view=grid] .cp-profile-card .cp-card-copy > .cp-profile-login:not([dir]):not([data-pseudo-manquant=replie]) { display:block; visibility:hidden; white-space:nowrap; overflow:hidden; }

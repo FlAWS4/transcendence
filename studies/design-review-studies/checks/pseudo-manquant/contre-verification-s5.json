@@ -1,0 +1,290 @@
+{
+ "essai": "pseudo-manquant",
+ "date": "2026-10-14",
+ "role": "contre-vérification indépendante de check.py",
+ "page": "baseline/content-preview.html",
+ "cases": [
+  {
+   "case": "masques-exacts-des-captures",
+   "ordinateur": {
+    "captureAvantReproduite": true,
+    "changed": 10452,
+    "insideLines": 6274,
+    "underGlassOnly": 4178,
+    "elsewhere": 0,
+    "elsewhereBeyondMargin": {
+     "4": 0,
+     "6": 0,
+     "8": 0
+    },
+    "elsewhereBox": null,
+    "maxDeltaElsewhere": 0,
+    "maxDeltaUnderGlass": 6,
+    "lineBoxes": 18,
+    "glassBoxes": 23,
+    "lines": [
+     [
+      844,
+      467,
+      140,
+      21
+     ],
+     [
+      172,
+      769,
+      140,
+      21
+     ],
+     [
+      396,
+      769,
+      140,
+      21
+     ],
+     [
+      620,
+      769,
+      140,
+      21
+     ],
+     [
+      1068,
+      769,
+      140,
+      21
+     ],
+     [
+      172,
+      1070,
+      140,
+      21
+     ],
+     [
+      396,
+      1070,
+      140,
+      21
+     ],
+     [
+      620,
+      1070,
+      140,
+      21
+     ],
+     [
+      1068,
+      1070,
+      140,
+      21
+     ],
+     [
+      172,
+      1372,
+      140,
+      21
+     ],
+     [
+      396,
+      1372,
+      140,
+      21
+     ],
+     [
+      620,
+      1372,
+      140,
+      21
+     ],
+     [
+      844,
+      1372,
+      140,
+      21
+     ],
+     [
+      1068,
+      1372,
+      140,
+      21
+     ],
+     [
+      172,
+      1673,
+      140,
+      21
+     ],
+     [
+      396,
+      1673,
+      140,
+      21
+     ],
+     [
+      620,
+      1673,
+      140,
+      21
+     ],
+     [
+      844,
+      1673,
+      140,
+      21
+     ]
+    ]
+   },
+   "sombre-ar-mobile": {
+    "captureAvantReproduite": true,
+    "changed": 4074,
+    "insideLines": 3457,
+    "underGlassOnly": 617,
+    "elsewhere": 0,
+    "elsewhereBeyondMargin": {
+     "4": 0,
+     "6": 0,
+     "8": 0
+    },
+    "elsewhereBox": null,
+    "maxDeltaElsewhere": 0,
+    "maxDeltaUnderGlass": 2,
+    "lineBoxes": 18,
+    "glassBoxes": 14,
+    "lines": [
+     [
+      74,
+      958,
+      298,
+      43
+     ],
+     [
+      74,
+      1497,
+      298,
+      43
+     ],
+     [
+      430,
+      2036,
+      298,
+      43
+     ],
+     [
+      74,
+      2036,
+      298,
+      43
+     ],
+     [
+      74,
+      2575,
+      298,
+      43
+     ],
+     [
+      430,
+      3113,
+      298,
+      43
+     ],
+     [
+      74,
+      3113,
+      298,
+      43
+     ],
+     [
+      430,
+      3652,
+      298,
+      43
+     ],
+     [
+      430,
+      4191,
+      298,
+      43
+     ],
+     [
+      74,
+      4191,
+      298,
+      43
+     ],
+     [
+      430,
+      4730,
+      298,
+      43
+     ],
+     [
+      74,
+      4730,
+      298,
+      43
+     ],
+     [
+      430,
+      5269,
+      298,
+      43
+     ],
+     [
+      74,
+      5269,
+      298,
+      43
+     ],
+     [
+      430,
+      5808,
+      298,
+      43
+     ],
+     [
+      74,
+      5808,
+      298,
+      43
+     ],
+     [
+      430,
+      6347,
+      298,
+      43
+     ],
+     [
+      74,
+      6347,
+      298,
+      43
+     ]
+    ]
+   },
+   "errors": []
+  },
+  {
+   "case": "capture-liste-ordinateur-milieu",
+   "avant": {
+    "scrollY": 605,
+    "mentionsVisibles": 18,
+    "heartOverlap": 0,
+    "shownPlaceholders": 18,
+    "heights": [
+     137
+    ],
+    "overflow": false
+   },
+   "apres": {
+    "scrollY": 605,
+    "mentionsVisibles": 0,
+    "heartOverlap": 0,
+    "shownPlaceholders": 0,
+    "heights": [
+     137
+    ],
+    "overflow": false
+   },
+   "errors": []
+  }
+ ]
+}

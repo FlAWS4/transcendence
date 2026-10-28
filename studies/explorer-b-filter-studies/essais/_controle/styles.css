@@ -1,0 +1,4 @@
+/* Loader fixture: the copy's own rule (dock-navigation.css), same selector, the same white written differently. The
+ * computed --scope-fill is « rgb(255 255 255) » only if this sheet comes after every stylesheet of the copy; the pill
+ * looks the same. */
+:root[data-theme=light] .app[data-navigation=dock] .scope-path{--scope-fill:rgb(255 255 255)}

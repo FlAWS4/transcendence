@@ -1,0 +1,907 @@
+{
+ "date": "2026-10-15",
+ "cases": [
+  {
+   "case": "mouvement-fr390-145-reglages",
+   "t": 2.7,
+   "result": {
+    "lang": "fr",
+    "dir": "ltr",
+    "theme": "light"
+   }
+  },
+  {
+   "case": "mouvement-fr390-145-media",
+   "t": 2.7,
+   "result": {
+    "reduce": false
+   }
+  },
+  {
+   "case": "mouvement-fr390-145",
+   "t": 12.4,
+   "result": {
+    "directionProjets": "below",
+    "directionCentre": "below",
+    "panneauCentre": {
+     "x": 90.14,
+     "y": 452.69,
+     "w": 266.19,
+     "h": 140,
+     "right": 356.33,
+     "bottom": 592.69
+    },
+    "animationsProjets": [
+     {
+      "name": "cp-control-open",
+      "state": "finished",
+      "duration": 180,
+      "fill": "both",
+      "easing": "linear",
+      "keyframes": [
+       {
+        "offset": 0,
+        "opacity": "0",
+        "transform": "translateY(-5px) scale(0.98)",
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)"
+       },
+       {
+        "offset": 1,
+        "opacity": "1",
+        "transform": "none",
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)"
+       }
+      ]
+     }
+    ],
+    "animationsProjetsDebut": [
+     {
+      "name": "cp-control-open",
+      "state": "running",
+      "duration": 180,
+      "fill": "both",
+      "easing": "linear",
+      "keyframes": [
+       {
+        "offset": 0,
+        "opacity": "0",
+        "transform": "translateY(-5px) scale(0.98)",
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)"
+       },
+       {
+        "offset": 1,
+        "opacity": "1",
+        "transform": "none",
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)"
+       }
+      ]
+     }
+    ],
+    "animationsCentre": [
+     {
+      "name": "cp-control-open",
+      "state": "finished",
+      "duration": 180,
+      "fill": "both",
+      "easing": "linear",
+      "keyframes": [
+       {
+        "offset": 0,
+        "opacity": "0",
+        "transform": "translateY(-5px) scale(0.98)",
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)"
+       },
+       {
+        "offset": 1,
+        "opacity": "1",
+        "transform": "none",
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)"
+       }
+      ]
+     }
+    ],
+    "animationsCentreDebut": [
+     {
+      "name": "cp-control-open",
+      "state": "running",
+      "duration": 180,
+      "fill": "both",
+      "easing": "linear",
+      "keyframes": [
+       {
+        "offset": 0,
+        "opacity": "0",
+        "transform": "translateY(-5px) scale(0.98)",
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)"
+       },
+       {
+        "offset": 1,
+        "opacity": "1",
+        "transform": "none",
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)"
+       }
+      ]
+     }
+    ],
+    "bas_vs_projets": {
+     "repos": {
+      "autres": {},
+      "personnalisees": [
+       "--card-excerpt-lines",
+       "--header-fade-end",
+       "--header-fade-solid"
+      ],
+      "geometrie": [
+       "inline-size",
+       "perspective-origin",
+       "transform-origin",
+       "width"
+      ],
+      "proprietes": 660
+     },
+     "libelle": {
+      "autres": {},
+      "personnalisees": [
+       "--card-excerpt-lines",
+       "--header-fade-end",
+       "--header-fade-solid"
+      ],
+      "geometrie": [
+       "inline-size",
+       "perspective-origin",
+       "transform-origin",
+       "width"
+      ],
+      "proprietes": 660
+     },
+     "icone1": {
+      "autres": {},
+      "personnalisees": [
+       "--card-excerpt-lines",
+       "--header-fade-end",
+       "--header-fade-solid"
+      ],
+      "geometrie": [],
+      "proprietes": 660
+     },
+     "icone2": {
+      "autres": {},
+      "personnalisees": [
+       "--card-excerpt-lines",
+       "--header-fade-end",
+       "--header-fade-solid"
+      ],
+      "geometrie": [],
+      "proprietes": 660
+     },
+     "survol": {
+      "autres": {},
+      "personnalisees": [
+       "--card-excerpt-lines",
+       "--header-fade-end",
+       "--header-fade-solid"
+      ],
+      "geometrie": [
+       "inline-size",
+       "perspective-origin",
+       "transform-origin",
+       "width"
+      ],
+      "proprietes": 660
+     },
+     "ouvert": {
+      "autres": {},
+      "personnalisees": [
+       "--card-excerpt-lines",
+       "--header-fade-end",
+       "--header-fade-solid"
+      ],
+      "geometrie": [
+       "inline-size",
+       "perspective-origin",
+       "transform-origin",
+       "width"
+      ],
+      "proprietes": 660
+     },
+     "panneau": {
+      "autres": {},
+      "personnalisees": [
+       "--card-excerpt-lines",
+       "--header-fade-end",
+       "--header-fade-solid"
+      ],
+      "geometrie": [
+       "block-size",
+       "bottom",
+       "height",
+       "inline-size",
+       "inset",
+       "inset-block-end",
+       "inset-inline-end",
+       "inset-inline-start",
+       "left",
+       "max-block-size",
+       "max-height",
+       "perspective-origin",
+       "right",
+       "transform-origin",
+       "width"
+      ],
+      "proprietes": 660
+     },
+     "optionNonCochee": {
+      "autres": {},
+      "personnalisees": [
+       "--card-excerpt-lines",
+       "--header-fade-end",
+       "--header-fade-solid"
+      ],
+      "geometrie": [
+       "inline-size",
+       "perspective-origin",
+       "transform-origin",
+       "width"
+      ],
+      "proprietes": 660
+     },
+     "optionCochee": {
+      "autres": {},
+      "personnalisees": [
+       "--card-excerpt-lines",
+       "--header-fade-end",
+       "--header-fade-solid"
+      ],
+      "geometrie": [
+       "inline-size",
+       "perspective-origin",
+       "transform-origin",
+       "width"
+      ],
+      "proprietes": 660
+     }
+    },
+    "directionBasse": "above",
+    "panneauBas": {
+     "x": 90.14,
+     "y": 459.5,
+     "w": 266.19,
+     "h": 140,
+     "right": 356.33,
+     "bottom": 599.5
+    },
+    "animationsHaut": [
+     {
+      "name": "cp-control-open",
+      "state": "finished",
+      "duration": 180,
+      "fill": "both",
+      "easing": "linear",
+      "keyframes": [
+       {
+        "offset": 0,
+        "opacity": "0",
+        "transform": "translateY(-5px) scale(0.98)",
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)"
+       },
+       {
+        "offset": 1,
+        "opacity": "1",
+        "transform": "none",
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)"
+       }
+      ]
+     }
+    ],
+    "animationsHautDebut": [
+     {
+      "name": "cp-control-open",
+      "state": "running",
+      "duration": 180,
+      "fill": "both",
+      "easing": "linear",
+      "keyframes": [
+       {
+        "offset": 0,
+        "opacity": "0",
+        "transform": "translateY(-5px) scale(0.98)",
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)"
+       },
+       {
+        "offset": 1,
+        "opacity": "1",
+        "transform": "none",
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)"
+       }
+      ]
+     }
+    ],
+    "haut_vs_projets": {
+     "repos": {
+      "autres": {},
+      "personnalisees": [
+       "--card-excerpt-lines",
+       "--header-fade-end",
+       "--header-fade-solid"
+      ],
+      "geometrie": [
+       "inline-size",
+       "perspective-origin",
+       "transform-origin",
+       "width"
+      ],
+      "proprietes": 660
+     },
+     "libelle": {
+      "autres": {},
+      "personnalisees": [
+       "--card-excerpt-lines",
+       "--header-fade-end",
+       "--header-fade-solid"
+      ],
+      "geometrie": [
+       "inline-size",
+       "perspective-origin",
+       "transform-origin",
+       "width"
+      ],
+      "proprietes": 660
+     },
+     "icone1": {
+      "autres": {},
+      "personnalisees": [
+       "--card-excerpt-lines",
+       "--header-fade-end",
+       "--header-fade-solid"
+      ],
+      "geometrie": [],
+      "proprietes": 660
+     },
+     "icone2": {
+      "autres": {},
+      "personnalisees": [
+       "--card-excerpt-lines",
+       "--header-fade-end",
+       "--header-fade-solid"
+      ],
+      "geometrie": [],
+      "proprietes": 660
+     },
+     "survol": {
+      "autres": {},
+      "personnalisees": [
+       "--card-excerpt-lines",
+       "--header-fade-end",
+       "--header-fade-solid"
+      ],
+      "geometrie": [
+       "inline-size",
+       "perspective-origin",
+       "transform-origin",
+       "width"
+      ],
+      "proprietes": 660
+     },
+     "ouvert": {
+      "autres": {},
+      "personnalisees": [
+       "--card-excerpt-lines",
+       "--header-fade-end",
+       "--header-fade-solid"
+      ],
+      "geometrie": [
+       "inline-size",
+       "perspective-origin",
+       "transform-origin",
+       "width"
+      ],
+      "proprietes": 660
+     },
+     "panneau": {
+      "autres": {},
+      "personnalisees": [
+       "--card-excerpt-lines",
+       "--header-fade-end",
+       "--header-fade-solid"
+      ],
+      "geometrie": [
+       "block-size",
+       "bottom",
+       "height",
+       "inline-size",
+       "inset",
+       "inset-block-end",
+       "inset-block-start",
+       "inset-inline-end",
+       "inset-inline-start",
+       "left",
+       "max-block-size",
+       "max-height",
+       "perspective-origin",
+       "right",
+       "top",
+       "transform-origin",
+       "width"
+      ],
+      "proprietes": 660
+     },
+     "optionNonCochee": {
+      "autres": {},
+      "personnalisees": [
+       "--card-excerpt-lines",
+       "--header-fade-end",
+       "--header-fade-solid"
+      ],
+      "geometrie": [
+       "inline-size",
+       "perspective-origin",
+       "transform-origin",
+       "width"
+      ],
+      "proprietes": 660
+     },
+     "optionCochee": {
+      "autres": {},
+      "personnalisees": [
+       "--card-excerpt-lines",
+       "--header-fade-end",
+       "--header-fade-solid"
+      ],
+      "geometrie": [
+       "inline-size",
+       "perspective-origin",
+       "transform-origin",
+       "width"
+      ],
+      "proprietes": 660
+     }
+    },
+    "haut_vs_bas": {
+     "repos": {
+      "autres": {},
+      "personnalisees": [],
+      "geometrie": [],
+      "proprietes": 659
+     },
+     "libelle": {
+      "autres": {},
+      "personnalisees": [],
+      "geometrie": [],
+      "proprietes": 659
+     },
+     "icone1": {
+      "autres": {},
+      "personnalisees": [],
+      "geometrie": [],
+      "proprietes": 659
+     },
+     "icone2": {
+      "autres": {},
+      "personnalisees": [],
+      "geometrie": [],
+      "proprietes": 659
+     },
+     "survol": {
+      "autres": {},
+      "personnalisees": [],
+      "geometrie": [],
+      "proprietes": 659
+     },
+     "ouvert": {
+      "autres": {},
+      "personnalisees": [],
+      "geometrie": [],
+      "proprietes": 659
+     },
+     "panneau": {
+      "autres": {},
+      "personnalisees": [],
+      "geometrie": [
+       "bottom",
+       "inset",
+       "inset-block-end",
+       "inset-block-start",
+       "max-block-size",
+       "max-height",
+       "top"
+      ],
+      "proprietes": 659
+     },
+     "optionNonCochee": {
+      "autres": {},
+      "personnalisees": [],
+      "geometrie": [],
+      "proprietes": 659
+     },
+     "optionCochee": {
+      "autres": {},
+      "personnalisees": [],
+      "geometrie": [],
+      "proprietes": 659
+     }
+    },
+    "memesImagesCles": true
+   }
+  },
+  {
+   "case": "mouvement-fr390-144-reglages",
+   "t": 14.7,
+   "result": {
+    "lang": "fr",
+    "dir": "ltr",
+    "theme": "light"
+   }
+  },
+  {
+   "case": "mouvement-fr390-144-media",
+   "t": 14.7,
+   "result": {
+    "reduce": false
+   }
+  },
+  {
+   "case": "mouvement-fr390-144",
+   "t": 20.9,
+   "result": {
+    "directionProjets": "below",
+    "directionCentre": "below",
+    "panneauCentre": {
+     "x": 90.14,
+     "y": 452.69,
+     "w": 266.19,
+     "h": 140,
+     "right": 356.33,
+     "bottom": 592.69
+    },
+    "animationsProjets": [
+     {
+      "name": "cp-control-open",
+      "state": "finished",
+      "duration": 180,
+      "fill": "both",
+      "easing": "linear",
+      "keyframes": [
+       {
+        "offset": 0,
+        "opacity": "0",
+        "transform": "translateY(-5px) scale(0.98)",
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)"
+       },
+       {
+        "offset": 1,
+        "opacity": "1",
+        "transform": "none",
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)"
+       }
+      ]
+     }
+    ],
+    "animationsProjetsDebut": [
+     {
+      "name": "cp-control-open",
+      "state": "running",
+      "duration": 180,
+      "fill": "both",
+      "easing": "linear",
+      "keyframes": [
+       {
+        "offset": 0,
+        "opacity": "0",
+        "transform": "translateY(-5px) scale(0.98)",
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)"
+       },
+       {
+        "offset": 1,
+        "opacity": "1",
+        "transform": "none",
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)"
+       }
+      ]
+     }
+    ],
+    "animationsCentre": [
+     {
+      "name": "cp-control-open",
+      "state": "finished",
+      "duration": 180,
+      "fill": "both",
+      "easing": "linear",
+      "keyframes": [
+       {
+        "offset": 0,
+        "opacity": "0",
+        "transform": "translateY(-5px) scale(0.98)",
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)"
+       },
+       {
+        "offset": 1,
+        "opacity": "1",
+        "transform": "none",
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)"
+       }
+      ]
+     }
+    ],
+    "animationsCentreDebut": [
+     {
+      "name": "cp-control-open",
+      "state": "running",
+      "duration": 180,
+      "fill": "both",
+      "easing": "linear",
+      "keyframes": [
+       {
+        "offset": 0,
+        "opacity": "0",
+        "transform": "translateY(-5px) scale(0.98)",
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)"
+       },
+       {
+        "offset": 1,
+        "opacity": "1",
+        "transform": "none",
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)"
+       }
+      ]
+     }
+    ],
+    "bas_vs_projets": {
+     "repos": {
+      "autres": {},
+      "personnalisees": [
+       "--card-excerpt-lines",
+       "--header-fade-end",
+       "--header-fade-solid"
+      ],
+      "geometrie": [
+       "inline-size",
+       "perspective-origin",
+       "transform-origin",
+       "width"
+      ],
+      "proprietes": 660
+     },
+     "libelle": {
+      "autres": {},
+      "personnalisees": [
+       "--card-excerpt-lines",
+       "--header-fade-end",
+       "--header-fade-solid"
+      ],
+      "geometrie": [
+       "inline-size",
+       "perspective-origin",
+       "transform-origin",
+       "width"
+      ],
+      "proprietes": 660
+     },
+     "icone1": {
+      "autres": {},
+      "personnalisees": [
+       "--card-excerpt-lines",
+       "--header-fade-end",
+       "--header-fade-solid"
+      ],
+      "geometrie": [],
+      "proprietes": 660
+     },
+     "icone2": {
+      "autres": {},
+      "personnalisees": [
+       "--card-excerpt-lines",
+       "--header-fade-end",
+       "--header-fade-solid"
+      ],
+      "geometrie": [],
+      "proprietes": 660
+     },
+     "survol": {
+      "autres": {},
+      "personnalisees": [
+       "--card-excerpt-lines",
+       "--header-fade-end",
+       "--header-fade-solid"
+      ],
+      "geometrie": [
+       "inline-size",
+       "perspective-origin",
+       "transform-origin",
+       "width"
+      ],
+      "proprietes": 660
+     },
+     "ouvert": {
+      "autres": {},
+      "personnalisees": [
+       "--card-excerpt-lines",
+       "--header-fade-end",
+       "--header-fade-solid"
+      ],
+      "geometrie": [
+       "inline-size",
+       "perspective-origin",
+       "transform-origin",
+       "width"
+      ],
+      "proprietes": 660
+     },
+     "panneau": {
+      "autres": {},
+      "personnalisees": [
+       "--card-excerpt-lines",
+       "--header-fade-end",
+       "--header-fade-solid"
+      ],
+      "geometrie": [
+       "block-size",
+       "bottom",
+       "height",
+       "inline-size",
+       "inset",
+       "inset-block-end",
+       "inset-inline-end",
+       "inset-inline-start",
+       "left",
+       "max-block-size",
+       "max-height",
+       "perspective-origin",
+       "right",
+       "transform-origin",
+       "width"
+      ],
+      "proprietes": 660
+     },
+     "optionNonCochee": {
+      "autres": {},
+      "personnalisees": [
+       "--card-excerpt-lines",
+       "--header-fade-end",
+       "--header-fade-solid"
+      ],
+      "geometrie": [
+       "inline-size",
+       "perspective-origin",
+       "transform-origin",
+       "width"
+      ],
+      "proprietes": 660
+     },
+     "optionCochee": {
+      "autres": {},
+      "personnalisees": [
+       "--card-excerpt-lines",
+       "--header-fade-end",
+       "--header-fade-solid"
+      ],
+      "geometrie": [
+       "inline-size",
+       "perspective-origin",
+       "transform-origin",
+       "width"
+      ],
+      "proprietes": 660
+     }
+    }
+   }
+  },
+  {
+   "case": "mouvement-fr390-144-vs-145-bas",
+   "t": 20.9,
+   "result": {
+    "repos": {
+     "differences": {},
+     "proprietes": 659
+    },
+    "libelle": {
+     "differences": {},
+     "proprietes": 659
+    },
+    "icone1": {
+     "differences": {},
+     "proprietes": 659
+    },
+    "icone2": {
+     "differences": {},
+     "proprietes": 659
+    },
+    "survol": {
+     "differences": {},
+     "proprietes": 659
+    },
+    "ouvert": {
+     "differences": {},
+     "proprietes": 659
+    },
+    "panneau": {
+     "differences": {},
+     "proprietes": 659
+    },
+    "optionNonCochee": {
+     "differences": {},
+     "proprietes": 659
+    },
+    "optionCochee": {
+     "differences": {},
+     "proprietes": 659
+    }
+   }
+  },
+  {
+   "case": "mouvement-fr390-144-vs-145-ref",
+   "t": 20.9,
+   "result": {
+    "repos": {
+     "differences": {},
+     "proprietes": 660
+    },
+    "libelle": {
+     "differences": {},
+     "proprietes": 660
+    },
+    "icone1": {
+     "differences": {},
+     "proprietes": 660
+    },
+    "icone2": {
+     "differences": {},
+     "proprietes": 660
+    },
+    "survol": {
+     "differences": {},
+     "proprietes": 660
+    },
+    "ouvert": {
+     "differences": {},
+     "proprietes": 660
+    },
+    "panneau": {
+     "differences": {},
+     "proprietes": 660
+    },
+    "optionNonCochee": {
+     "differences": {},
+     "proprietes": 660
+    },
+    "optionCochee": {
+     "differences": {},
+     "proprietes": 660
+    }
+   }
+  }
+ ],
+ "phaseErrors": [],
+ "failure": null,
+ "sourcesUnchanged": true,
+ "sourceHashes": {
+  "145": {
+   "comments.mjs": "7cd542685536b244",
+   "comments.css": "9f93b003d8e2cc5d",
+   "content-controls.mjs": "58ac9a724ba2168a",
+   "content-controls.css": "cc14237d5d978a62",
+   "project-ui.mjs": "a4bff6110875d436",
+   "journal-ui.mjs": "f5b76c927851a1c8",
+   "back-to-top.css": "917add7417209c47",
+   "back-to-top.mjs": "6e1cb92805b3236b",
+   "dock-search.css": "2ac9c079d5142898",
+   "content-preview.html": "8817305bef2eb91c",
+   "content-preview.mjs": "efba6b21f19d03c5",
+   "welcome.mjs": "e1b31b75b8aa4e9b"
+  },
+  "144": {
+   "comments.mjs": "65076bfb8130434e",
+   "comments.css": "9f93b003d8e2cc5d",
+   "content-controls.mjs": "58ac9a724ba2168a",
+   "content-controls.css": "cc14237d5d978a62",
+   "project-ui.mjs": "866115f8eebe5dbd",
+   "journal-ui.mjs": "68466b09bbaad881",
+   "back-to-top.css": "917add7417209c47",
+   "back-to-top.mjs": "6e1cb92805b3236b",
+   "dock-search.css": "2ac9c079d5142898",
+   "content-preview.html": "470bf471e88250d9",
+   "content-preview.mjs": "d0ae536f7a101511",
+   "welcome.mjs": "fa65d17e822b1f1f"
+  }
+ },
+ "durationSeconds": 20.9
+}

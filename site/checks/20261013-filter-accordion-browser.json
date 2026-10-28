@@ -1,0 +1,958 @@
+{
+  "date": "2026-10-13",
+  "scenario": "Final accordion filters in Chrome, including deferred globe readiness",
+  "initial_sha256": {
+    "welcome.mjs": "084f62a49f97c9d8220747b2939f4214fd44ed4acbe371d1bad0288c03e68e59",
+    "project-filter-dialog.mjs": "9908ac8570d61e8964b7b0f73dcfbb18875a85075c1fe376ce13e8ade82bacd0",
+    "project-filter-dialog.css": "d5643f96875855256998462c896cdfbe86d29681196efff635333d57584ac559",
+    "content-controls.mjs": "1c29cfe9f46ded0a0a826685e91089e8e721df3e72ba794d307d44816d9e68b1",
+    "content-filters.mjs": "b494e148b4689c8cd8ccf9800496962f2d32517b092190b1a2ab15ccf571b3f7",
+    "content-preview-data.mjs": "dea7cc9253756ce37d2632eec6125614cb139640b3278a2930b8171d6c4bae52",
+    "profile-data.mjs": "652648c36b77105d32d303adcecd39b6e8852bb64ce2698075b746b5fd2bb378",
+    "demo-content-seed.mjs": "2b25388d3469a55803325b2b17b729ba4eb250d864ffa21c9c8215520771a734"
+  },
+  "results": [
+    {
+      "case": "projects-initially-folded",
+      "result": {
+        "hash": "#projects",
+        "kind": "projects",
+        "open": true,
+        "count": "26 contenus",
+        "filtered": "false",
+        "criteria": "Aucun critère sélectionné",
+        "checked": [],
+        "groups": [
+          {
+            "key": "projects",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "common-core",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "specialization",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "technologies",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "skills",
+            "expanded": "false",
+            "pressed": "false"
+          }
+        ],
+        "bounds": [
+          300,
+          246.40625,
+          980,
+          653.59375
+        ],
+        "footerBottom": 652.59375,
+        "bodyScrollable": false,
+        "overflow": false,
+        "active": "content-category-dialog-title",
+        "errors": []
+      }
+    },
+    {
+      "case": "select-all-technologies-without-expanding",
+      "result": {
+        "hash": "#projects",
+        "kind": "projects",
+        "open": true,
+        "count": "26 contenus",
+        "filtered": "false",
+        "criteria": "6 critères sélectionnés",
+        "checked": [
+          "tech:c",
+          "tech:cpp",
+          "tech:typescript",
+          "tech:css",
+          "tech:posix",
+          "tech:sockets"
+        ],
+        "groups": [
+          {
+            "key": "projects",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "common-core",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "specialization",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "technologies",
+            "expanded": "false",
+            "pressed": "true"
+          },
+          {
+            "key": "skills",
+            "expanded": "false",
+            "pressed": "false"
+          }
+        ],
+        "bounds": [
+          300,
+          246.40625,
+          980,
+          653.59375
+        ],
+        "footerBottom": 652.59375,
+        "bodyScrollable": false,
+        "overflow": false,
+        "active": "content-category-dialog-title",
+        "errors": []
+      }
+    },
+    {
+      "case": "individual-technology-makes-category-mixed",
+      "result": {
+        "hash": "#projects",
+        "kind": "projects",
+        "open": true,
+        "count": "26 contenus",
+        "filtered": "false",
+        "criteria": "5 critères sélectionnés",
+        "checked": [
+          "tech:cpp",
+          "tech:typescript",
+          "tech:css",
+          "tech:posix",
+          "tech:sockets"
+        ],
+        "groups": [
+          {
+            "key": "projects",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "common-core",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "specialization",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "technologies",
+            "expanded": "true",
+            "pressed": "mixed"
+          },
+          {
+            "key": "skills",
+            "expanded": "false",
+            "pressed": "false"
+          }
+        ],
+        "bounds": [
+          300,
+          166.90625,
+          980,
+          733.09375
+        ],
+        "footerBottom": 732.09375,
+        "bodyScrollable": false,
+        "overflow": false,
+        "active": "content-category-dialog-title",
+        "errors": []
+      }
+    },
+    {
+      "case": "keyboard-enter-fold-preserves-five-choices",
+      "result": {
+        "hash": "#projects",
+        "kind": "projects",
+        "open": true,
+        "count": "26 contenus",
+        "filtered": "false",
+        "criteria": "5 critères sélectionnés",
+        "checked": [
+          "tech:cpp",
+          "tech:typescript",
+          "tech:css",
+          "tech:posix",
+          "tech:sockets"
+        ],
+        "groups": [
+          {
+            "key": "projects",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "common-core",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "specialization",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "technologies",
+            "expanded": "false",
+            "pressed": "mixed"
+          },
+          {
+            "key": "skills",
+            "expanded": "false",
+            "pressed": "false"
+          }
+        ],
+        "bounds": [
+          300,
+          246.40625,
+          980,
+          653.59375
+        ],
+        "footerBottom": 652.59375,
+        "bodyScrollable": false,
+        "overflow": false,
+        "active": "content-category-dialog-toggle-4",
+        "errors": []
+      }
+    },
+    {
+      "case": "nested-individual-propagates-mixed-to-project-and-common-core",
+      "result": {
+        "hash": "#projects",
+        "kind": "projects",
+        "open": true,
+        "count": "26 contenus",
+        "filtered": "false",
+        "criteria": "13 critères sélectionnés",
+        "checked": [
+          "libft",
+          "cub3d",
+          "so_long",
+          "born2beroot",
+          "ft_irc",
+          "ft_transcendence",
+          "ft_linear_regression",
+          "personal",
+          "tech:cpp",
+          "tech:typescript",
+          "tech:css",
+          "tech:posix",
+          "tech:sockets"
+        ],
+        "groups": [
+          {
+            "key": "projects",
+            "expanded": "true",
+            "pressed": "mixed"
+          },
+          {
+            "key": "common-core",
+            "expanded": "true",
+            "pressed": "mixed"
+          },
+          {
+            "key": "specialization",
+            "expanded": "false",
+            "pressed": "true"
+          },
+          {
+            "key": "technologies",
+            "expanded": "false",
+            "pressed": "mixed"
+          },
+          {
+            "key": "skills",
+            "expanded": "false",
+            "pressed": "false"
+          }
+        ],
+        "bounds": [
+          300,
+          47.40625,
+          980,
+          852.59375
+        ],
+        "footerBottom": 851.59375,
+        "bodyScrollable": false,
+        "overflow": false,
+        "active": "content-category-dialog-toggle-4",
+        "errors": []
+      }
+    },
+    {
+      "case": "cancel-discards-all-drafts",
+      "result": {
+        "hash": "#projects",
+        "open": false,
+        "count": "26 contenus",
+        "filtered": "false",
+        "checked": [],
+        "groups": [],
+        "bodyScrollable": false,
+        "overflow": false,
+        "active": "content-category-button",
+        "errors": []
+      }
+    },
+    {
+      "case": "single-criterion-singular-fr",
+      "result": {
+        "hash": "#projects",
+        "kind": "projects",
+        "open": true,
+        "count": "26 contenus",
+        "filtered": "false",
+        "criteria": "1 critère sélectionné",
+        "checked": [
+          "tech:c"
+        ],
+        "groups": [
+          {
+            "key": "projects",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "common-core",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "specialization",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "technologies",
+            "expanded": "true",
+            "pressed": "mixed"
+          },
+          {
+            "key": "skills",
+            "expanded": "false",
+            "pressed": "false"
+          }
+        ],
+        "bounds": [
+          300,
+          166.90625,
+          980,
+          733.09375
+        ],
+        "footerBottom": 732.09375,
+        "bodyScrollable": false,
+        "overflow": false,
+        "active": "content-category-dialog-title",
+        "errors": []
+      }
+    },
+    {
+      "case": "apply-technology-filter",
+      "result": {
+        "hash": "#projects",
+        "open": false,
+        "count": "11 contenus",
+        "filtered": "true",
+        "checked": [],
+        "groups": [],
+        "bodyScrollable": false,
+        "overflow": false,
+        "active": "content-category-button",
+        "errors": []
+      }
+    },
+    {
+      "case": "reset-cancel-keeps-applied-filter",
+      "result": {
+        "hash": "#projects",
+        "open": false,
+        "count": "11 contenus",
+        "filtered": "true",
+        "checked": [],
+        "groups": [],
+        "bodyScrollable": false,
+        "overflow": false,
+        "active": "content-category-button",
+        "errors": []
+      }
+    },
+    {
+      "case": "reset-apply-restores-list",
+      "result": {
+        "hash": "#projects",
+        "open": false,
+        "count": "26 contenus",
+        "filtered": "false",
+        "checked": [],
+        "groups": [],
+        "bodyScrollable": false,
+        "overflow": false,
+        "active": "content-category-button",
+        "errors": []
+      }
+    },
+    {
+      "case": "profiles-initially-folded",
+      "result": {
+        "hash": "#people",
+        "kind": "people",
+        "open": true,
+        "count": "26 profils",
+        "filtered": "false",
+        "criteria": "Aucun critère sélectionné",
+        "checked": [],
+        "groups": [
+          {
+            "key": "status",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "arrival",
+            "expanded": "false",
+            "pressed": "false"
+          }
+        ],
+        "bounds": [
+          300,
+          279.90625,
+          980,
+          620.09375
+        ],
+        "footerBottom": 619.09375,
+        "bodyScrollable": false,
+        "overflow": false,
+        "active": "content-category-dialog-title",
+        "errors": []
+      }
+    },
+    {
+      "case": "profiles-bulk-then-individual-mixed",
+      "result": {
+        "hash": "#people",
+        "kind": "people",
+        "open": true,
+        "count": "26 profils",
+        "filtered": "false",
+        "criteria": "2 critères sélectionnés",
+        "checked": [
+          "student",
+          "transcender"
+        ],
+        "groups": [
+          {
+            "key": "status",
+            "expanded": "true",
+            "pressed": "mixed"
+          },
+          {
+            "key": "arrival",
+            "expanded": "false",
+            "pressed": "false"
+          }
+        ],
+        "bounds": [
+          300,
+          225.40625,
+          980,
+          674.59375
+        ],
+        "footerBottom": 673.59375,
+        "bodyScrollable": false,
+        "overflow": false,
+        "active": "content-category-dialog-title",
+        "errors": []
+      }
+    },
+    {
+      "case": "profiles-apply-two-statuses",
+      "result": {
+        "hash": "#people",
+        "open": false,
+        "count": "18 profils",
+        "filtered": "true",
+        "checked": [],
+        "groups": [],
+        "bodyScrollable": false,
+        "overflow": false,
+        "active": "content-category-button",
+        "errors": []
+      }
+    },
+    {
+      "case": "profile-status-and-arrival-draft",
+      "result": {
+        "hash": "#people",
+        "kind": "people",
+        "open": true,
+        "count": "26 profils",
+        "filtered": "false",
+        "criteria": "2 critères sélectionnés",
+        "checked": [
+          "student",
+          "arrival:2024"
+        ],
+        "groups": [
+          {
+            "key": "status",
+            "expanded": "true",
+            "pressed": "mixed"
+          },
+          {
+            "key": "arrival",
+            "expanded": "true",
+            "pressed": "mixed"
+          }
+        ],
+        "bounds": [
+          300,
+          170.90625,
+          980,
+          729.09375
+        ],
+        "footerBottom": 728.09375,
+        "bodyScrollable": false,
+        "overflow": false,
+        "active": "content-category-dialog-title",
+        "errors": []
+      }
+    },
+    {
+      "case": "profile-status-and-arrival-applied",
+      "result": {
+        "hash": "#people",
+        "open": false,
+        "count": "10 profils",
+        "filtered": "true",
+        "checked": [],
+        "groups": [],
+        "bodyScrollable": false,
+        "overflow": false,
+        "active": "content-category-button",
+        "errors": []
+      }
+    },
+    {
+      "case": "projects-ar320-folded",
+      "result": {
+        "hash": "#projects",
+        "kind": "projects",
+        "open": true,
+        "count": "عدد المحتويات: 26",
+        "filtered": "false",
+        "criteria": "لم تُحدَّد معايير",
+        "checked": [],
+        "groups": [
+          {
+            "key": "projects",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "common-core",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "specialization",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "technologies",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "skills",
+            "expanded": "false",
+            "pressed": "false"
+          }
+        ],
+        "bounds": [
+          8,
+          104.328125,
+          312,
+          535.671875
+        ],
+        "footerBottom": 534.671875,
+        "bodyScrollable": false,
+        "overflow": false,
+        "active": "content-category-dialog-title",
+        "errors": []
+      }
+    },
+    {
+      "case": "projects-ar320-expanded",
+      "result": {
+        "hash": "#projects",
+        "kind": "projects",
+        "open": true,
+        "count": "عدد المحتويات: 26",
+        "filtered": "false",
+        "criteria": "لم تُحدَّد معايير",
+        "checked": [],
+        "groups": [
+          {
+            "key": "projects",
+            "expanded": "true",
+            "pressed": "false"
+          },
+          {
+            "key": "common-core",
+            "expanded": "true",
+            "pressed": "false"
+          },
+          {
+            "key": "specialization",
+            "expanded": "true",
+            "pressed": "false"
+          },
+          {
+            "key": "technologies",
+            "expanded": "true",
+            "pressed": "false"
+          },
+          {
+            "key": "skills",
+            "expanded": "true",
+            "pressed": "false"
+          }
+        ],
+        "bounds": [
+          8,
+          8,
+          312,
+          632
+        ],
+        "footerBottom": 631,
+        "bodyScrollable": true,
+        "overflow": false,
+        "active": "content-category-dialog-title",
+        "errors": []
+      }
+    },
+    {
+      "case": "projects-space-selects-all",
+      "result": {
+        "hash": "#projects",
+        "kind": "projects",
+        "open": true,
+        "count": "عدد المحتويات: 26",
+        "filtered": "false",
+        "criteria": "عدد المعايير المحددة: 9",
+        "checked": [
+          "libft",
+          "minishell",
+          "cub3d",
+          "so_long",
+          "born2beroot",
+          "ft_irc",
+          "ft_transcendence",
+          "ft_linear_regression",
+          "personal"
+        ],
+        "groups": [
+          {
+            "key": "projects",
+            "expanded": "true",
+            "pressed": "true"
+          },
+          {
+            "key": "common-core",
+            "expanded": "true",
+            "pressed": "true"
+          },
+          {
+            "key": "specialization",
+            "expanded": "true",
+            "pressed": "true"
+          },
+          {
+            "key": "technologies",
+            "expanded": "true",
+            "pressed": "false"
+          },
+          {
+            "key": "skills",
+            "expanded": "true",
+            "pressed": "false"
+          }
+        ],
+        "bounds": [
+          8,
+          8,
+          312,
+          632
+        ],
+        "footerBottom": 631,
+        "bodyScrollable": true,
+        "overflow": false,
+        "active": "",
+        "errors": []
+      }
+    },
+    {
+      "case": "people-ar320-folded",
+      "result": {
+        "hash": "#people",
+        "kind": "people",
+        "open": true,
+        "count": "عدد الأعضاء: 26",
+        "filtered": "false",
+        "criteria": "لم تُحدَّد معايير",
+        "checked": [],
+        "groups": [
+          {
+            "key": "status",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "arrival",
+            "expanded": "false",
+            "pressed": "false"
+          }
+        ],
+        "bounds": [
+          8,
+          137.828125,
+          312,
+          502.171875
+        ],
+        "footerBottom": 501.171875,
+        "bodyScrollable": false,
+        "overflow": false,
+        "active": "content-category-dialog-title",
+        "errors": []
+      }
+    },
+    {
+      "case": "people-ar320-expanded",
+      "result": {
+        "hash": "#people",
+        "kind": "people",
+        "open": true,
+        "count": "عدد الأعضاء: 26",
+        "filtered": "false",
+        "criteria": "لم تُحدَّد معايير",
+        "checked": [],
+        "groups": [
+          {
+            "key": "status",
+            "expanded": "true",
+            "pressed": "false"
+          },
+          {
+            "key": "arrival",
+            "expanded": "true",
+            "pressed": "false"
+          }
+        ],
+        "bounds": [
+          8,
+          8,
+          312,
+          632
+        ],
+        "footerBottom": 631,
+        "bodyScrollable": true,
+        "overflow": false,
+        "active": "content-category-dialog-title",
+        "errors": []
+      }
+    },
+    {
+      "case": "people-space-selects-all",
+      "result": {
+        "hash": "#people",
+        "kind": "people",
+        "open": true,
+        "count": "عدد الأعضاء: 26",
+        "filtered": "false",
+        "criteria": "عدد المعايير المحددة: 3",
+        "checked": [
+          "student",
+          "transcender",
+          "alumni"
+        ],
+        "groups": [
+          {
+            "key": "status",
+            "expanded": "true",
+            "pressed": "true"
+          },
+          {
+            "key": "arrival",
+            "expanded": "true",
+            "pressed": "false"
+          }
+        ],
+        "bounds": [
+          8,
+          8,
+          312,
+          632
+        ],
+        "footerBottom": 631,
+        "bodyScrollable": true,
+        "overflow": false,
+        "active": "",
+        "errors": []
+      }
+    },
+    {
+      "case": "short-landscape-footer-reachable",
+      "result": {
+        "hash": "#projects",
+        "kind": "projects",
+        "open": true,
+        "count": "عدد المحتويات: 26",
+        "filtered": "false",
+        "criteria": "لم تُحدَّد معايير",
+        "checked": [],
+        "groups": [
+          {
+            "key": "projects",
+            "expanded": "true",
+            "pressed": "false"
+          },
+          {
+            "key": "common-core",
+            "expanded": "true",
+            "pressed": "false"
+          },
+          {
+            "key": "specialization",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "technologies",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "skills",
+            "expanded": "false",
+            "pressed": "false"
+          }
+        ],
+        "bounds": [
+          16,
+          16,
+          624,
+          344
+        ],
+        "footerBottom": 343,
+        "bodyScrollable": true,
+        "overflow": false,
+        "active": "content-category-dialog-title",
+        "errors": []
+      }
+    },
+    {
+      "case": "draft-open-while-map-pending",
+      "result": {
+        "hash": "#people",
+        "kind": "people",
+        "open": true,
+        "count": "26 profils",
+        "filtered": "false",
+        "criteria": "1 critère sélectionné",
+        "checked": [
+          "student"
+        ],
+        "groups": [
+          {
+            "key": "status",
+            "expanded": "true",
+            "pressed": "mixed"
+          },
+          {
+            "key": "arrival",
+            "expanded": "false",
+            "pressed": "false"
+          }
+        ],
+        "bounds": [
+          300,
+          225.40625,
+          980,
+          674.59375
+        ],
+        "footerBottom": 673.59375,
+        "bodyScrollable": false,
+        "overflow": false,
+        "active": "content-category-dialog-title",
+        "errors": []
+      }
+    },
+    {
+      "case": "draft-after-map-completion",
+      "result": {
+        "hash": "#people",
+        "kind": "people",
+        "open": true,
+        "count": "26 profils",
+        "filtered": "false",
+        "criteria": "1 critère sélectionné",
+        "checked": [
+          "student"
+        ],
+        "groups": [
+          {
+            "key": "status",
+            "expanded": "true",
+            "pressed": "mixed"
+          },
+          {
+            "key": "arrival",
+            "expanded": "false",
+            "pressed": "false"
+          }
+        ],
+        "bounds": [
+          300,
+          225.40625,
+          980,
+          674.59375
+        ],
+        "footerBottom": 673.59375,
+        "bodyScrollable": false,
+        "overflow": false,
+        "active": "content-category-dialog-title",
+        "errors": []
+      }
+    }
+  ],
+  "real_globe_ready": true,
+  "passed": true,
+  "final_sha256": {
+    "welcome.mjs": "084f62a49f97c9d8220747b2939f4214fd44ed4acbe371d1bad0288c03e68e59",
+    "project-filter-dialog.mjs": "9908ac8570d61e8964b7b0f73dcfbb18875a85075c1fe376ce13e8ade82bacd0",
+    "project-filter-dialog.css": "d5643f96875855256998462c896cdfbe86d29681196efff635333d57584ac559",
+    "content-controls.mjs": "1c29cfe9f46ded0a0a826685e91089e8e721df3e72ba794d307d44816d9e68b1",
+    "content-filters.mjs": "b494e148b4689c8cd8ccf9800496962f2d32517b092190b1a2ab15ccf571b3f7",
+    "content-preview-data.mjs": "dea7cc9253756ce37d2632eec6125614cb139640b3278a2930b8171d6c4bae52",
+    "profile-data.mjs": "652648c36b77105d32d303adcecd39b6e8852bb64ce2698075b746b5fd2bb378",
+    "demo-content-seed.mjs": "2b25388d3469a55803325b2b17b729ba4eb250d864ffa21c9c8215520771a734"
+  },
+  "source_unchanged": true
+}

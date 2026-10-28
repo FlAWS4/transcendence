@@ -1,0 +1,623 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><base href="http://127.0.0.1:8765/work/visualizations/site-map/"><style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style></head><body><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Plan du site Horizon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Jost:wght@400;500;600&display=swap">
+<style>
+/* Layout: the entrance flow runs left to right on top, the always-present controls sit in one band,
+   then one tree column per section of the site; the inspector follows the selected screen. */
+:root{
+  --bg:#f3f7f6; --surface:#ffffff; --soft:#e6f4f1; --ink:#1b1b1b; --muted:#56615f; --line:#d3dfdd; --line-strong:#9fb3b0;
+  --out:#04809f; --in:#c4237a; --flow:#56615f; --focus:#6000bc;
+  --c-entry:#1b1b1b; --c-global:#56615f; --c-explore:#00babc; --c-projects:#6000bc; --c-people:#ed3491; --c-journal:#173d7a; --c-awards:#c26a12; --c-account:#04809f;
+  --font:"Jost","Futura","Avenir Next","Century Gothic",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+  --radius:10px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121315; --surface:#1d1e23; --soft:#1d2a2a; --ink:#f2f6f6; --muted:#95b0b0; --line:#30403f; --line-strong:#5d7674;
+  --out:#00babc; --in:#f05aa6; --flow:#95b0b0; --focus:#96a3eb;
+  --c-entry:#f2f6f6; --c-global:#95b0b0; --c-explore:#00babc; --c-projects:#96a3eb; --c-people:#ed3491; --c-journal:#7fb0ec; --c-awards:#e89a4c; --c-account:#00babc;
+  color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --bg:#121315; --surface:#1d1e23; --soft:#1d2a2a; --ink:#f2f6f6; --muted:#95b0b0; --line:#30403f; --line-strong:#5d7674;
+  --out:#00babc; --in:#f05aa6; --flow:#95b0b0; --focus:#96a3eb;
+  --c-entry:#f2f6f6; --c-global:#95b0b0; --c-explore:#00babc; --c-projects:#96a3eb; --c-people:#ed3491; --c-journal:#7fb0ec; --c-awards:#e89a4c; --c-account:#00babc;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+/* Also when the page is opened from the repository, outside the published skeleton. */
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+.page{padding-inline:clamp(16px,3vw,40px);padding-block:28px 48px;max-width:1720px;margin-inline:auto}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+code,.mono{font-family:var(--mono);font-size:.82em}
+
+/* Header */
+.top{display:grid;gap:14px;margin-block-end:22px}
+.eyebrow{margin:0;font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{margin:0;font-size:clamp(30px,4vw,44px);line-height:1.05;font-weight:600;letter-spacing:-.02em;text-wrap:balance}
+.lede{margin:0;max-width:68ch;color:var(--muted);font-size:16px}
+.stats{margin:0;font-variant-numeric:tabular-nums;font-size:14px}
+.stats strong{font-weight:600}
+.toolbar{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+.seg{display:inline-flex;border:1px solid var(--line-strong);border-radius:999px;padding:3px;background:var(--surface)}
+.seg button{border:0;background:transparent;border-radius:999px;padding:5px 14px;font-size:14px;cursor:pointer;color:var(--muted)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;margin:0;padding:0;list-style:none;font-size:13px;color:var(--muted)}
+.legend li{display:inline-flex;align-items:center;gap:7px}
+.sw{display:inline-block;width:22px;height:14px;border-radius:5px;background:var(--surface);border:1.5px solid var(--line-strong)}
+.sw.k-page{border-color:var(--ink)}
+.sw.k-tab{background:var(--soft);border-color:transparent;border-radius:999px}
+.sw.k-overlay{border-style:dashed}
+.sw.k-step{background:transparent;border-style:dotted}
+.sw.k-external{border-color:var(--line)}
+.sw.e-out,.sw.e-in{height:0;border:0;border-top:2px solid var(--out);border-radius:0;background:none}
+.sw.e-in{border-top-color:var(--in)}
+.sw.e-back{height:0;border:0;border-top:2px dashed var(--flow);border-radius:0;background:none}
+.legend-note{margin:0;font-size:13px;color:var(--muted)}
+.muted{color:var(--muted)}
+.depth-sw{font-family:var(--mono);font-size:11px;min-width:18px;height:18px;display:inline-grid;place-items:center;border-radius:999px;border:1px solid var(--line-strong);color:var(--muted)}
+
+/* Layout */
+.layout{display:grid;gap:20px;align-items:start}
+@media (min-width:1180px){.layout.has-inspector{grid-template-columns:minmax(0,1fr) 340px}}
+.board{position:relative;overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:var(--surface)}
+.board-inner{position:relative;min-width:980px;padding:18px;display:grid;gap:18px}
+.wires{position:absolute;inset:0 auto auto 0;pointer-events:none;overflow:visible}
+.wires path{fill:none;stroke-width:1.6}
+.wires .w-flow{stroke:var(--flow);stroke-width:1.3}
+.wires .w-out{stroke:var(--out)}
+.wires .w-in{stroke:var(--in)}
+.wires .w-back{stroke-dasharray:5 4}
+.wires marker path{stroke:none}
+.wires .m-flow{fill:var(--flow)} .wires .m-out{fill:var(--out)} .wires .m-in{fill:var(--in)}
+
+.band{display:grid;gap:10px;padding:14px;border-radius:12px;background:var(--bg)}
+.band-head,.col-head{display:flex;align-items:baseline;gap:8px;margin:0;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.band-head small,.col-head small{font-weight:400;letter-spacing:0;text-transform:none;color:var(--muted);font-size:13px}
+.col-head{flex-wrap:wrap;row-gap:2px}.col-head small{flex-basis:100%;padding-inline-start:17px}
+.dot{width:9px;height:9px;border-radius:50%;flex:none;background:var(--c, var(--muted));align-self:center}
+.flow{display:grid;gap:12px 34px;align-items:center;justify-content:start}
+.global-row{display:flex;flex-wrap:wrap;gap:10px}
+.global-row .node{width:auto;max-width:300px;flex:1 1 200px}
+.cols{display:grid;grid-template-columns:repeat(var(--cols,6),minmax(168px,1fr));gap:16px}
+.col{display:grid;align-content:start;gap:26px;min-width:0}
+.group{display:grid;align-content:start;gap:10px;min-width:0}
+
+/* Trees */
+.tree,.tree ul{list-style:none;margin:0;padding:0}
+.tree ul{margin-inline-start:8px;padding-inline-start:10px;border-inline-start:1px solid var(--line-strong)}
+.tree li{position:relative;padding-block:4px}
+.tree ul>li::before{content:"";position:absolute;inset-inline-start:-10px;top:21px;width:8px;border-top:1px solid var(--line-strong)}
+.tree ul>li:last-child::after{content:"";position:absolute;inset-inline-start:-11px;top:22px;bottom:0;border-inline-start:3px solid var(--surface)}
+.tree>ul{margin:0;padding:0;border:0}
+.tree>ul>li::before,.tree>ul>li::after{display:none}
+
+/* Nodes */
+.node{position:relative;display:grid;gap:2px;width:100%;text-align:start;cursor:pointer;background:var(--surface);border:1.5px solid var(--line-strong);border-radius:var(--radius);padding:8px 30px 8px 10px;font-size:13.5px;line-height:1.3;transition:opacity .18s,box-shadow .18s}
+.node .nm{font-weight:500;text-wrap:pretty}
+.node .rt{font-family:var(--mono);font-size:11px;color:var(--muted);overflow-wrap:anywhere}
+.node .dp{position:absolute;inset-inline-end:7px;top:7px;font-family:var(--mono);font-size:10.5px;min-width:18px;height:18px;padding-inline:3px;display:grid;place-items:center;border-radius:999px;border:1px solid var(--line-strong);color:var(--muted);font-variant-numeric:tabular-nums}
+.node .tg{justify-self:start;margin-block-start:3px;font-size:10.5px;font-weight:500;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line-strong);border-radius:999px;padding:0 7px}
+.node .to{font-size:12px;color:var(--muted)}
+.node.k-page{border-color:var(--ink)}
+.node.k-page .nm{font-weight:600}
+.node.k-tab{background:var(--soft);border-color:transparent;border-radius:999px;padding-block:5px;padding-inline-start:12px}
+.node.k-overlay{border-style:dashed}
+.node.k-step{background:transparent;border-style:dotted}
+.node.k-external{border-color:var(--line);color:var(--muted)}
+.node.k-external .nm::after{content:" ↗"}
+.node.k-global{background:var(--surface);border-color:var(--line-strong)}
+.node:hover{box-shadow:0 0 0 1px var(--line-strong)}
+.has-selection .node{opacity:.5}
+.has-selection .node[data-rel]{opacity:1}
+.node[data-rel="self"]{box-shadow:0 0 0 2.5px var(--ink);opacity:1}
+.node[data-rel="out"]{box-shadow:0 0 0 2px var(--out)}
+.node[data-rel="in"]{box-shadow:0 0 0 2px var(--in)}
+.node[data-rel="both"]{box-shadow:0 0 0 2px var(--out),0 0 0 4.5px var(--in)}
+
+/* Inspector */
+.inspector{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px 18px 20px;display:grid;gap:14px;min-width:0}
+@media (min-width:1180px){.inspector{position:sticky;top:calc(env(safe-area-inset-top,0px) + 16px);max-height:calc(100vh - 32px);overflow:auto}}
+@media (max-width:1179px){
+  .inspector{position:fixed;inset-inline:0;bottom:0;z-index:5;max-height:min(52vh,520px);overflow:auto;border-radius:16px 16px 0 0;border-inline:0;border-bottom:0;padding-bottom:calc(20px + env(safe-area-inset-bottom,0px));box-shadow:0 -12px 32px rgb(0 0 0 / .14)}
+  body.sheet-open .page{padding-block-end:min(54vh,540px)}
+}
+.insp-head{display:flex;gap:10px;align-items:start;justify-content:space-between}
+.inspector h2{margin:2px 0 0;font-size:22px;line-height:1.15;font-weight:600;text-wrap:balance}
+.close{border:1px solid var(--line-strong);background:transparent;border-radius:999px;width:32px;height:32px;flex:none;cursor:pointer;font-size:18px;line-height:1}
+.inspector p{margin:0}
+.inspector .note{color:var(--ink)}
+.facts{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 12px;margin:0;font-size:13.5px}
+.facts dt{color:var(--muted)}
+.facts dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.inspector h3{margin:0 0 6px;font-size:12.5px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.links{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:14px}
+.links li{display:grid;gap:1px}
+.links .via{color:var(--muted);font-size:13px}
+.jump{border:0;background:none;padding:0;cursor:pointer;text-align:start;font-weight:500;text-decoration:underline;text-decoration-color:var(--line-strong);text-underline-offset:3px}
+.jump:hover{text-decoration-color:currentColor}
+.links.out .jump{color:var(--out)} .links.in .jump{color:var(--in)}
+.path{list-style:none;margin:0;padding:0;display:grid;gap:2px;font-size:14px}
+.path li{display:grid;gap:1px;padding-inline-start:14px;border-inline-start:2px solid var(--line)}
+.path li:first-child{border-color:transparent}
+.path .act{color:var(--muted);font-size:12.5px}
+.path .act::before{content:"↓ "}
+.open-local{font-size:13.5px;color:var(--out)}
+.empty{color:var(--muted);font-size:14px}
+
+/* List view */
+.listing{display:grid;gap:28px}
+.listing section{display:grid;gap:10px}
+.listing h2{margin:0;display:flex;gap:8px;align-items:center;font-size:18px;font-weight:600}
+.row{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:grid;gap:6px;min-width:0;scroll-margin-block:16px}
+.row.flash{box-shadow:0 0 0 2px var(--out)}
+.row-head{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}
+.row-head strong{font-size:15.5px;font-weight:600}
+.row .kind{font-size:11px;font-weight:500;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.row .meta{font-size:13px;color:var(--muted);overflow-wrap:anywhere}
+.row .line{font-size:13.5px;margin:0}
+.row .line b{font-weight:500;color:var(--muted)}
+.row .jump{font-weight:400}
+.row[data-level="1"]{margin-inline-start:14px}.row[data-level="2"]{margin-inline-start:28px}.row[data-level="3"]{margin-inline-start:42px}.row[data-level="4"]{margin-inline-start:56px}
+@media (max-width:560px){.row[data-level]{margin-inline-start:0}}
+
+/* Footer */
+.foot{margin-block-start:34px;display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));font-size:14px;color:var(--muted)}
+.foot h2{margin:0 0 6px;font-size:13px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--ink)}
+.foot p,.foot ol{margin:0;max-width:68ch}
+.foot ol{padding-inline-start:20px;display:grid;gap:4px}
+.error{padding:20px;color:var(--in)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<div class="page">
+  <header class="top">
+    <p class="eyebrow" id="eyebrow">42 Horizon · prototype actif</p>
+    <h1 id="title">Plan du site</h1>
+    <p class="lede" id="lede"></p>
+    <p class="stats" id="stats"></p>
+    <div class="toolbar">
+      <div class="seg" role="group" id="view-switch" aria-label="Vue">
+        <button type="button" id="view-map" data-view="map">Schéma</button>
+        <button type="button" id="view-list" data-view="list">Liste</button>
+      </div>
+      <div class="seg" role="group" id="lang-switch" aria-label="Langue">
+        <button type="button" id="lang-fr" data-lang="fr" lang="fr">FR</button>
+        <button type="button" id="lang-en" data-lang="en" lang="en">EN</button>
+      </div>
+    </div>
+    <ul class="legend" id="legend"></ul>
+    <p class="legend-note" id="legend-note"></p>
+  </header>
+
+  <div class="layout" id="layout">
+    <section class="board" id="board" aria-labelledby="title">
+      <div class="board-inner" id="board-inner"></div>
+    </section>
+    <div class="listing" id="listing" hidden></div>
+    <aside class="inspector" id="inspector" aria-live="polite" hidden></aside>
+  </div>
+
+  <footer class="foot" id="foot"></footer>
+</div>
+
+<script src="site-map-data.js"></script>
+<script>
+(() => {
+  'use strict';
+  const DATA = window.HORIZON_SITE_MAP;
+  const $ = id => document.getElementById(id);
+  if (!DATA) { $('board-inner').innerHTML = '<p class="error">site-map-data.js n’a pas pu être chargé.</p>'; return; }
+
+  const UI = {
+    fr: {
+      eyebrow: '42 Horizon · prototype actif',
+      title: 'Plan du site',
+      lede: 'Tous les écrans du prototype, de l’arrivée chiffrée jusqu’aux fenêtres les plus profondes. Sélectionner un écran pour voir d’où on y arrive, où il mène et le chemin le plus court depuis l’arrivée.',
+      stats: (n, e, d) => `<strong>${n}</strong> écrans · <strong>${e}</strong> liens · jusqu’à <strong>${d}</strong> actions depuis l’arrivée`,
+      view: 'Vue', map: 'Schéma', list: 'Liste', lang: 'Langue',
+      kinds: { page: 'Page', tab: 'Onglet', overlay: 'Fenêtre ou panneau', step: 'Étape automatique', external: 'Site externe', global: 'Toujours présent' },
+      kindsLegend: { page: 'Page', tab: 'Onglet d’une fiche', overlay: 'Fenêtre ou panneau par-dessus', step: 'Étape automatique', external: 'Site externe' },
+      status: { simulated: 'simulé', empty: 'vide' },
+      eOut: 'mène vers', eIn: 'vient de', eBack: 'retour', depth: 'actions minimales depuis l’arrivée',
+      closeRule: 'Fermer une fenêtre ou un panneau ramène à l’écran du dessous : ces retours ne sont pas dessinés.',
+      path: 'Chemin le plus court depuis l’arrivée', from: 'On y arrive depuis', to: 'Mène vers',
+      route: 'Adresse', example: 'Exemple', when: 'Condition', source: 'Code', kind: 'Type',
+      open: 'Ouvrir dans le prototype local', none: 'Aucun lien.', start: 'Point de départ du site.',
+      pick: 'Sélectionner un écran dans le schéma pour voir d’où on y arrive, où il mène et le chemin depuis l’arrivée. Les flèches grises montrent l’entrée, que toute visite traverse.',
+      deepest: n => `Les plus profonds · ${n} actions`, colon: ' : ', overview: 'Lire ce plan',
+      everywhere: g => `toutes les pages après l’entrée (${g})`,
+      except: list => `sauf ${list}`, only: list => `seulement dans ${list}`,
+      member: 'membre seulement', visitor: 'visiteur seulement',
+      altStart: 'Point d’entrée séparé : aucun chemin depuis l’arrivée.',
+      unreachable: 'Pas encore relié à l’arrivée dans ce plan.',
+      actions: n => n === 0 ? 'point de départ' : n === 1 ? '1 action' : `${n} actions`,
+      auto: 'automatique', defaultTab: 'onglet ouvert par défaut', tab: name => `Onglet « ${name} »`,
+      listFrom: 'Depuis', listTo: 'Vers', listPath: 'Chemin',
+      surveyed: d => `Relevé dans le code le ${d}`,
+      scopeTitle: 'Ce que montre ce plan',
+      scope: 'Le prototype web actif, tel qu’il est dans le dépôt (work/visualizations/horizon-welcome). Ce n’est pas l’application de production : la connexion, les messages et les commentaires y sont simulés dans le navigateur. Les études séparées, comme les essais Awards ou les espaces connectés, n’en font pas partie.',
+      maintainTitle: 'Mettre ce plan à jour',
+      maintain: ['Après chaque changement de navigation du prototype, modifier <code>site-map-data.js</code> dans <code>work/visualizations/site-map/</code> : un écran par entrée de <code>nodes</code>, un lien par entrée de <code>edges</code>.', 'Lancer <code>node work/visualizations/site-map/check-site-map.mjs</code> : il signale les liens cassés, les écrans isolés et les rubriques ou onglets du code absents du plan.', 'Republier la page au même lien et noter la date du relevé.'],
+    },
+    en: {
+      eyebrow: '42 Horizon · active prototype',
+      title: 'Site map',
+      lede: 'Every screen of the prototype, from the encrypted arrival screen down to the deepest windows. Select a screen to see where you reach it from, where it leads and the shortest path from arrival.',
+      stats: (n, e, d) => `<strong>${n}</strong> screens · <strong>${e}</strong> links · up to <strong>${d}</strong> actions from arrival`,
+      view: 'View', map: 'Diagram', list: 'List', lang: 'Language',
+      kinds: { page: 'Page', tab: 'Tab', overlay: 'Window or panel', step: 'Automatic step', external: 'External site', global: 'Always present' },
+      kindsLegend: { page: 'Page', tab: 'Tab of a detail page', overlay: 'Window or panel on top', step: 'Automatic step', external: 'External site' },
+      status: { simulated: 'simulated', empty: 'empty' },
+      eOut: 'leads to', eIn: 'comes from', eBack: 'back', depth: 'minimum actions from arrival',
+      closeRule: 'Closing a window or a panel returns to the screen below it: those returns are not drawn.',
+      path: 'Shortest path from arrival', from: 'Reached from', to: 'Leads to',
+      route: 'Address', example: 'Example', when: 'Condition', source: 'Code', kind: 'Type',
+      open: 'Open in the local prototype', none: 'No link.', start: 'Starting point of the site.',
+      pick: 'Select a screen in the diagram to see where you reach it from, where it leads and the path from arrival. The grey arrows show the entrance, which every visit goes through.',
+      deepest: n => `Deepest · ${n} actions`, colon: ': ', overview: 'Reading this map',
+      everywhere: g => `every page after the entrance (${g})`,
+      except: list => `except ${list}`, only: list => `only in ${list}`,
+      member: 'members only', visitor: 'visitors only',
+      altStart: 'Separate entry point: no path from arrival.',
+      unreachable: 'Not yet connected to arrival in this map.',
+      actions: n => n === 0 ? 'starting point' : n === 1 ? '1 action' : `${n} actions`,
+      auto: 'automatic', defaultTab: 'tab open by default', tab: name => `“${name}” tab`,
+      listFrom: 'From', listTo: 'To', listPath: 'Path',
+      surveyed: d => `Surveyed from the code on ${d}`,
+      scopeTitle: 'What this map shows',
+      scope: 'The active web prototype as it stands in the repository (work/visualizations/horizon-welcome). It is not the production application: sign-in, messages and comments are simulated in the browser. Separate studies, such as the Awards trials or the connected spaces, are not part of it.',
+      maintainTitle: 'Keeping this map up to date',
+      maintain: ['After any navigation change in the prototype, edit <code>site-map-data.js</code> in <code>work/visualizations/site-map/</code>: one screen per <code>nodes</code> entry, one link per <code>edges</code> entry.', 'Run <code>node work/visualizations/site-map/check-site-map.mjs</code>: it reports broken links, isolated screens and sections or tabs present in the code but missing from the map.', 'Republish the page at the same link and update the survey date.'],
+    },
+  };
+
+  const store = {
+    get(k) { try { return localStorage.getItem(k); } catch { return null; } },
+    set(k, v) { try { localStorage.setItem(k, v); } catch { /* storage unavailable */ } },
+  };
+  const narrow = matchMedia('(max-width: 760px)');
+  const wideQuery = matchMedia('(min-width: 1180px)');
+  let lang = store.get('horizon-site-map-lang') || ((navigator.language || '').toLowerCase().startsWith('fr') ? 'fr' : 'en');
+  if (!UI[lang]) lang = 'fr';
+  let view = narrow.matches ? 'list' : 'map';
+  let selected = null;
+
+  const nodes = DATA.nodes;
+  const byId = new Map(nodes.map(n => [n.id, n]));
+  const groupById = new Map(DATA.groups.map(g => [g.id, g]));
+  const t = obj => (obj && typeof obj === 'object') ? (obj[lang] ?? obj.fr ?? '') : (obj ?? '');
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+  // Explicit links, plus one implicit link from each detail page to each of its tabs.
+  const edges = DATA.edges.map(e => ({ ...e }));
+  for (const n of nodes) {
+    if (n.kind !== 'tab' || !n.parent || edges.some(e => e.from === n.parent && e.to === n.id)) continue;
+    edges.push(n.isDefault
+      ? { from: n.parent, to: n.id, implicit: true, kind: 'auto', via: { fr: UI.fr.defaultTab, en: UI.en.defaultTab } }
+      : { from: n.parent, to: n.id, implicit: true, via: { fr: UI.fr.tab(n.name.fr), en: UI.en.tab(n.name.en) } });
+  }
+  const globals = nodes.filter(n => n.group === 'global');
+  const isDirect = id => Boolean(byId.get(id)?.direct);
+  // Pages and tabs after the entrance show the header and the bottom menu.
+  const hasChrome = n => (n.kind === 'page' || n.kind === 'tab') && n.group !== 'entry' && !n.noChrome;
+  const inRule = (rule, n) => rule.includes(n.group) || rule.includes(n.id);
+  const allowed = (item, n) => !(item.notFrom && inRule(item.notFrom, n)) && !(item.onlyFrom && !inRule(item.onlyFrom, n));
+  const outOf = id => edges.filter(e => e.from === id);
+  const into = id => edges.filter(e => e.to === id);
+  const cost = e => e.cost ?? (e.kind === 'auto' ? 0 : 1);
+
+  function stepsFrom(id, who) {
+    const node = byId.get(id), out = [];
+    const push = (e, viaGlobal) => { if (!e.requires || e.requires === who) out.push({ e, to: e.to, who: e.sets || who, viaGlobal }); };
+    for (const e of outOf(id)) push(e);
+    if (node && hasChrome(node)) for (const g of globals) {
+      if (!allowed(g, node)) continue;
+      if (g.direct) { for (const e of outOf(g.id)) if (allowed(e, node)) push(e, g.id); }
+      else push({ from: id, to: g.id, via: g.opener || g.name, opener: true });
+    }
+    return out;
+  }
+  // Shortest paths over (screen, visitor or member): automatic steps cost nothing, each action costs one.
+  function shortestPaths() {
+    const key = (id, who) => `${id}|${who}`;
+    const startKey = key(DATA.start, 'visitor');
+    const best = new Map([[startKey, 0]]), prev = new Map(), open = [startKey], done = new Set();
+    while (open.length) {
+      open.sort((a, b) => best.get(a) - best.get(b));
+      const k = open.shift();
+      if (done.has(k)) continue;
+      done.add(k);
+      const [id, who] = k.split('|');
+      for (const s of stepsFrom(id, who)) {
+        const nk = key(s.to, s.who), d = best.get(k) + cost(s.e);
+        if (!best.has(nk) || d < best.get(nk)) { best.set(nk, d); prev.set(nk, { k, ...s }); open.push(nk); }
+      }
+    }
+    const dist = new Map(), bestKey = new Map();
+    for (const [k, d] of best) {
+      const id = k.split('|')[0];
+      if (!dist.has(id) || d < dist.get(id)) { dist.set(id, d); bestKey.set(id, k); }
+    }
+    return { dist, prev, bestKey, startKey };
+  }
+  const { dist, prev, bestKey, startKey } = shortestPaths();
+  function pathTo(id) {
+    if (!bestKey.has(id)) return null;
+    const out = [];
+    let k = bestKey.get(id);
+    while (k !== startKey) { const p = prev.get(k); out.unshift({ to: p.to, edge: p.e, via: p.viaGlobal }); k = p.k; }
+    return out;
+  }
+  const viaText = (e, viaGlobal) => {
+    if (e.kind === 'auto') return t(e.via) || UI[lang].auto;
+    return viaGlobal ? `${t(byId.get(viaGlobal).name)}${UI[lang].colon}${t(e.via)}` : t(e.via);
+  };
+  const ruleNames = rule => rule.map(x => t(groupById.get(x)?.name || byId.get(x)?.name || x)).join(', ');
+  const scopeText = item => item.notFrom ? UI[lang].except(ruleNames(item.notFrom)) : item.onlyFrom ? UI[lang].only(ruleNames(item.onlyFrom)) : '';
+  const whoText = e => e.requires ? UI[lang][e.requires] : '';
+
+  // Rendering ----------------------------------------------------------------
+  function nodeButton(n) {
+    const d = dist.get(n.id);
+    const status = n.status ? `<span class="tg">${esc(UI[lang].status[n.status])}</span>` : '';
+    const route = n.route ? `<span class="rt">${esc(n.route)}</span>` : '';
+    const targets = n.group === 'global' && outOf(n.id).length ? `<span class="to">→ ${[...new Set(outOf(n.id).map(e => t(byId.get(e.to).name)))].map(esc).join(', ')}</span>` : '';
+    const depth = d === undefined ? '' : `<span class="dp" title="${esc(UI[lang].actions(d))}" aria-hidden="true">${d}</span>`;
+    return `<button type="button" class="node k-${n.kind}" data-id="${n.id}" aria-pressed="false"><span class="nm">${esc(t(n.name))}</span>${route}${targets}${status}${depth}</button>`;
+  }
+  const childrenOf = (id, group) => nodes.filter(n => n.parent === id && n.group === group);
+  const rootsOf = g => nodes.filter(n => n.group === g.id && (!n.parent || byId.get(n.parent).group !== g.id));
+  function tree(list, group) {
+    return '<ul>' + list.map(n => {
+      const kids = childrenOf(n.id, group);
+      return `<li>${nodeButton(n)}${kids.length ? tree(kids, group) : ''}</li>`;
+    }).join('') + '</ul>';
+  }
+  const groupHead = (g, cls) => `<h2 class="${cls}"><span class="dot" style="--c:var(--c-${g.color || g.id})"></span>${esc(t(g.name))}${g.note ? ` <small>${esc(t(g.note))}</small>` : ''}</h2>`;
+  function renderBoard() {
+    const html = [], cols = new Map();
+    for (const g of DATA.groups) {
+      const members = nodes.filter(n => n.group === g.id);
+      if (g.layout === 'flow') {
+        const columns = Math.max(...members.map(n => n.at[1]));
+        const items = members.map(n => `<div style="grid-row:${n.at[0]} / span ${n.at[2] || 1};grid-column:${n.at[1]}">${nodeButton(n)}</div>`).join('');
+        html.push(`<div class="band">${groupHead(g, 'band-head')}<div class="flow" style="grid-template-columns:repeat(${columns},minmax(128px,180px))">${items}</div></div>`);
+      } else if (g.layout === 'band') {
+        html.push(`<div class="band">${groupHead(g, 'band-head')}<div class="global-row">${members.map(nodeButton).join('')}</div></div>`);
+      } else {
+        // Groups that share a column number are stacked in that column.
+        const key = g.col ?? `own-${g.id}`;
+        if (!cols.has(key)) cols.set(key, []);
+        cols.get(key).push(`<div class="group">${groupHead(g, 'col-head')}<div class="tree">${tree(rootsOf(g), g.id)}</div></div>`);
+      }
+    }
+    const ordered = [...cols.entries()].sort(([a], [b]) => (typeof a === 'number' ? a : 99) - (typeof b === 'number' ? b : 99)).map(([, c]) => c);
+    html.push(`<div class="cols" style="--cols:${cols.size}">${ordered.map(c => `<div class="col">${c.join('')}</div>`).join('')}</div>`);
+    $('board-inner').innerHTML = html.join('') + '<svg class="wires" id="wires" aria-hidden="true"></svg>';
+  }
+
+  function linkItem(e, side) {
+    const other = byId.get(side === 'out' ? e.to : e.from);
+    const extras = [viaText(e), e.kind === 'back' ? UI[lang].eBack : '', scopeText(e), whoText(e), e.when ? t(e.when) : ''].filter(Boolean);
+    return `<li><button type="button" class="jump" data-go="${other.id}">${esc(t(other.name))}</button><span class="via">${esc(extras.join(' · '))}</span></li>`;
+  }
+  function incomingItems(n) {
+    const L = UI[lang], items = [];
+    if (n.group === 'global') {
+      const extras = [n.opener ? t(n.opener) : '', scopeText(n)].filter(Boolean);
+      items.push(`<li><span>${esc(L.everywhere(t(n.name)))}</span>${extras.length ? `<span class="via">${esc(extras.join(' · '))}</span>` : ''}</li>`);
+    }
+    for (const e of into(n.id)) {
+      if (!isDirect(e.from)) { items.push(linkItem(e, 'in')); continue; }
+      const g = byId.get(e.from);
+      const extras = [t(e.via), scopeText(g), scopeText(e), whoText(e), e.when ? t(e.when) : ''].filter(Boolean);
+      items.push(`<li><span>${esc(L.everywhere(t(g.name)))}</span><span class="via">${esc(extras.join(' · '))}</span></li>`);
+    }
+    return items;
+  }
+  const outgoingItems = n => outOf(n.id).map(e => linkItem(e, 'out'));
+  function pathHtml(n) {
+    const L = UI[lang];
+    if (n.id === DATA.start) return `<p class="empty">${L.start}</p>`;
+    if (n.altStart) return `<p class="empty">${L.altStart}</p>`;
+    if (n.group === 'global' && n.direct) return `<p class="empty">${esc(L.everywhere(t(n.name)))}</p>`;
+    const path = pathTo(n.id);
+    if (!path) return `<p class="empty">${L.unreachable}</p>`;
+    return `<ol class="path"><li><button type="button" class="jump" data-go="${DATA.start}">${esc(t(byId.get(DATA.start).name))}</button></li>` +
+      path.map(s => `<li><span class="act">${esc(viaText(s.edge, s.via))}</span><button type="button" class="jump" data-go="${s.to}">${esc(t(byId.get(s.to).name))}</button></li>`).join('') + '</ol>';
+  }
+  function renderInspector() {
+    const box = $('inspector');
+    const n = selected && byId.get(selected);
+    const wide = wideQuery.matches;
+    const show = view === 'map' && (Boolean(n) || wide);
+    box.hidden = !show;
+    $('layout').classList.toggle('has-inspector', view === 'map' && wide);
+    document.body.classList.toggle('sheet-open', show && !wide);
+    if (!show) return;
+    const L = UI[lang];
+    if (!n) {
+      const max = Math.max(...dist.values());
+      const deepest = nodes.filter(x => dist.get(x.id) === max);
+      box.innerHTML = `<div><p class="eyebrow">${L.overview}</p><p class="note">${L.pick}</p></div>
+        <div><h3>${L.deepest(max)}</h3><ul class="links out">${deepest.map(x => `<li><button type="button" class="jump" data-go="${x.id}">${esc(t(x.name))}</button><span class="via">${esc(L.kinds[x.kind])}</span></li>`).join('')}</ul></div>`;
+      return;
+    }
+    const facts = [[L.kind, L.kinds[n.kind] + (n.status ? ` · ${L.status[n.status]}` : '')]];
+    if (n.route) facts.push([L.route, `<code>${esc(n.route)}</code>`]);
+    if (n.example) facts.push([L.example, `<code>${esc(n.example)}</code>`]);
+    if (n.when) facts.push([L.when, esc(t(n.when))]);
+    if (n.src) facts.push([L.source, `<code>${esc([].concat(n.src).join(', '))}</code>`]);
+    const local = /^(127\.0\.0\.1|localhost)$/.test(location.hostname) || location.protocol === 'file:';
+    // Screens with an address open in the entrance-free preview; the arrival opens the real entry page.
+    const address = n.example || (n.route && n.route.startsWith('#') && !n.route.includes('<') ? n.route : '');
+    const target = n.open || (address ? 'content-preview.html' + address : '');
+    const openHref = local && target ? DATA.meta.localBase + target : null;
+    const d = dist.get(n.id);
+    const inHtml = incomingItems(n), outHtml = outgoingItems(n);
+    box.innerHTML = `
+      <div class="insp-head"><div><p class="eyebrow">${esc(L.kinds[n.kind])}${d !== undefined ? ` · ${esc(L.actions(d))}` : ''}</p><h2>${esc(t(n.name))}</h2></div>
+      <button type="button" class="close" id="insp-close" aria-label="${L.close}">×</button></div>
+      ${n.note ? `<p class="note">${esc(t(n.note))}</p>` : ''}
+      <dl class="facts">${facts.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join('')}</dl>
+      ${openHref ? `<a class="open-local" href="${esc(openHref)}" target="_blank" rel="noopener">${L.open} ↗</a>` : ''}
+      <div><h3>${L.path}${d ? ` · ${esc(L.actions(d))}` : ''}</h3>${pathHtml(n)}</div>
+      <div><h3>${L.from} (${inHtml.length})</h3>${inHtml.length ? `<ul class="links in">${inHtml.join('')}</ul>` : `<p class="empty">${n.id === DATA.start ? L.start : L.none}</p>`}</div>
+      <div><h3>${L.to} (${outHtml.length})</h3>${outHtml.length ? `<ul class="links out">${outHtml.join('')}</ul>` : `<p class="empty">${L.none}</p>`}</div>`;
+  }
+
+  function markRelations() {
+    const inner = $('board-inner');
+    inner.classList.toggle('has-selection', Boolean(selected));
+    const outs = new Set(selected ? outOf(selected).map(e => e.to) : []);
+    const ins = new Set(selected ? into(selected).map(e => e.from) : []);
+    for (const el of inner.querySelectorAll('.node')) {
+      const id = el.dataset.id;
+      const rel = id === selected ? 'self' : outs.has(id) && ins.has(id) ? 'both' : outs.has(id) ? 'out' : ins.has(id) ? 'in' : null;
+      if (rel) el.dataset.rel = rel; else delete el.dataset.rel;
+      el.setAttribute('aria-pressed', String(id === selected));
+    }
+  }
+
+  function drawWires() {
+    const inner = $('board-inner'), svg = $('wires');
+    if (!svg || view !== 'map') return;
+    const base = inner.getBoundingClientRect();
+    svg.setAttribute('width', inner.scrollWidth); svg.setAttribute('height', inner.scrollHeight);
+    const rect = id => {
+      const el = inner.querySelector(`.node[data-id="${id}"]`);
+      if (!el) return null;
+      const r = el.getBoundingClientRect();
+      return { l: r.left - base.left, r: r.right - base.left, t: r.top - base.top, b: r.bottom - base.top, cx: (r.left + r.right) / 2 - base.left, cy: (r.top + r.bottom) / 2 - base.top };
+    };
+    const curve = (a, b) => {
+      if (b.l > a.r + 8) return `M${a.r},${a.cy} C${a.r + 40},${a.cy} ${b.l - 40},${b.cy} ${b.l - 3},${b.cy}`;
+      if (b.r < a.l - 8) return `M${a.l},${a.cy} C${a.l - 40},${a.cy} ${b.r + 40},${b.cy} ${b.r + 3},${b.cy}`;
+      if (b.t > a.b) return `M${a.cx},${a.b} C${a.cx},${a.b + 24} ${b.cx},${b.t - 24} ${b.cx},${b.t - 3}`;
+      if (b.b < a.t) return `M${a.cx},${a.t} C${a.cx},${a.t - 24} ${b.cx},${b.b + 24} ${b.cx},${b.b + 3}`;
+      const x = Math.max(a.r, b.r);
+      return `M${a.r},${a.cy} C${x + 44},${a.cy} ${x + 44},${b.cy} ${b.r + 3},${b.cy}`;
+    };
+    const marker = cls => `<marker id="m-${cls}" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="m-${cls}" d="M0,0 L10,5 L0,10 z"></path></marker>`;
+    const paths = [];
+    // The forward entrance sequence is always drawn: every visit starts with it.
+    for (const e of edges) {
+      const from = byId.get(e.from), to = byId.get(e.to);
+      if (from.group !== 'entry' || to.group !== 'entry' || e.kind === 'back' || to.at[1] < from.at[1]) continue;
+      const a = rect(e.from), b = rect(e.to);
+      if (a && b) paths.push(`<path class="w-flow" d="${curve(a, b)}" marker-end="url(#m-flow)"></path>`);
+    }
+    if (selected) {
+      for (const e of edges) {
+        if (e.implicit || e.from === e.to || (e.from !== selected && e.to !== selected)) continue;
+        const a = rect(e.from), b = rect(e.to);
+        if (!a || !b) continue;
+        const cls = e.from === selected ? 'out' : 'in';
+        paths.push(`<path class="w-${cls}${e.kind === 'back' ? ' w-back' : ''}" d="${curve(a, b)}" marker-end="url(#m-${cls})"></path>`);
+      }
+    }
+    svg.innerHTML = `<defs>${marker('flow')}${marker('out')}${marker('in')}</defs>${paths.join('')}`;
+  }
+
+  function renderList() {
+    const L = UI[lang], out = [];
+    const level = n => { let d = 0, p = n.parent; while (p && byId.get(p)?.group === n.group) { d++; p = byId.get(p).parent; } return d; };
+    const ordered = g => {
+      if (g.layout !== 'tree') return nodes.filter(n => n.group === g.id);
+      const res = [];
+      const walk = n => { res.push(n); childrenOf(n.id, g.id).forEach(walk); };
+      rootsOf(g).forEach(walk);
+      return res;
+    };
+    for (const g of DATA.groups) {
+      const rows = ordered(g).map(n => {
+        const from = incomingItems(n), to = outgoingItems(n);
+        const p = n.id === DATA.start ? [] : pathTo(n.id);
+        const pathLine = p && p.length ? [t(byId.get(DATA.start).name), ...p.map(s => t(byId.get(s.to).name))].map(esc).join(' › ') : '';
+        const meta = [n.route ? `<code>${esc(n.route)}</code>` : '', n.when ? esc(t(n.when)) : '', dist.has(n.id) ? esc(L.actions(dist.get(n.id))) : ''].filter(Boolean).join(' · ');
+        return `<article class="row" id="row-${n.id}" data-level="${Math.min(level(n), 4)}">
+          <div class="row-head"><strong>${esc(t(n.name))}</strong><span class="kind">${esc(L.kinds[n.kind])}${n.status ? ` · ${esc(L.status[n.status])}` : ''}</span></div>
+          ${meta ? `<div class="meta">${meta}</div>` : ''}
+          ${n.note ? `<p class="line">${esc(t(n.note))}</p>` : ''}
+          ${from.length ? `<div class="line"><b>${L.listFrom}</b><ul class="links in">${from.join('')}</ul></div>` : ''}
+          ${to.length ? `<div class="line"><b>${L.listTo}</b><ul class="links out">${to.join('')}</ul></div>` : ''}
+          ${pathLine ? `<p class="line"><b>${L.listPath} :</b> ${pathLine}</p>` : ''}
+        </article>`;
+      });
+      out.push(`<section><h2><span class="dot" style="--c:var(--c-${g.color || g.id})"></span>${esc(t(g.name))}</h2>${rows.join('')}</section>`);
+    }
+    $('listing').innerHTML = out.join('');
+  }
+
+  function renderChrome() {
+    const L = UI[lang];
+    document.documentElement.lang = lang;
+    $('eyebrow').textContent = L.eyebrow; $('title').textContent = L.title; $('lede').textContent = L.lede;
+    const counted = edges.filter(e => !e.implicit).length;
+    $('stats').innerHTML = `${L.stats(nodes.length, counted, Math.max(...dist.values()))}<br><span class="muted">${esc(L.surveyed(t(DATA.meta.surveyed)))} · ${esc(t(DATA.meta.version))}</span>`;
+    $('view-switch').setAttribute('aria-label', L.view); $('lang-switch').setAttribute('aria-label', L.lang);
+    $('view-map').textContent = L.map; $('view-list').textContent = L.list;
+    for (const b of document.querySelectorAll('[data-view]')) b.setAttribute('aria-pressed', String(b.dataset.view === view));
+    for (const b of document.querySelectorAll('[data-lang]')) b.setAttribute('aria-pressed', String(b.dataset.lang === lang));
+    const kinds = ['page', 'tab', 'overlay', 'step', 'external'];
+    $('legend').innerHTML = kinds.map(k => `<li><span class="sw k-${k}"></span>${L.kindsLegend[k]}</li>`).join('') +
+      `<li><span class="sw e-out"></span>${L.eOut}</li><li><span class="sw e-in"></span>${L.eIn}</li><li><span class="sw e-back"></span>${L.eBack}</li><li><span class="depth-sw">3</span>${L.depth}</li>`;
+    $('legend-note').textContent = L.closeRule;
+    $('foot').innerHTML = `<section><h2>${L.scopeTitle}</h2><p>${esc(L.scope)} ${esc(L.closeRule)}</p></section><section><h2>${L.maintainTitle}</h2><ol>${L.maintain.map(s => `<li>${s}</li>`).join('')}</ol></section>`;
+  }
+
+  function render() {
+    renderChrome();
+    $('board').hidden = view !== 'map';
+    $('listing').hidden = view !== 'list';
+    if (view === 'map') { renderBoard(); markRelations(); renderInspector(); requestAnimationFrame(drawWires); }
+    else { renderList(); renderInspector(); }
+  }
+  function choose(id) {
+    selected = id;
+    markRelations(); renderInspector(); drawWires();
+  }
+  function focusNode(id) { $('board-inner').querySelector(`.node[data-id="${id}"]`)?.focus({ preventScroll: true }); }
+
+  document.addEventListener('click', ev => {
+    const nodeEl = ev.target.closest('.node');
+    if (nodeEl) { choose(selected === nodeEl.dataset.id ? null : nodeEl.dataset.id); return; }
+    const jump = ev.target.closest('[data-go]');
+    if (jump) {
+      const id = jump.dataset.go;
+      if (view === 'map') {
+        choose(id);
+        $('board-inner').querySelector(`.node[data-id="${id}"]`)?.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+        $('inspector').scrollTop = 0;
+      } else {
+        const row = $('row-' + id);
+        if (row) {
+          row.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+          row.classList.add('flash'); setTimeout(() => row.classList.remove('flash'), 1200);
+        }
+      }
+      return;
+    }
+    if (ev.target.closest('#insp-close')) { const was = selected; choose(null); focusNode(was); return; }
+    const vb = ev.target.closest('[data-view]');
+    if (vb) { view = vb.dataset.view; render(); return; }
+    const lb = ev.target.closest('[data-lang]');
+    if (lb) { lang = lb.dataset.lang; store.set('horizon-site-map-lang', lang); render(); }
+  });
+  document.addEventListener('keydown', ev => {
+    if (ev.key === 'Escape' && selected && view === 'map') { const was = selected; choose(null); focusNode(was); }
+  });
+  new ResizeObserver(() => drawWires()).observe($('board-inner'));
+  narrow.addEventListener?.('change', () => render());
+  wideQuery.addEventListener?.('change', () => { renderInspector(); drawWires(); });
+  document.fonts?.ready.then(() => drawWires());
+  render();
+})();
+</script>
+</body></html>

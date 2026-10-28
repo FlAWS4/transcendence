@@ -1,0 +1,15 @@
+const col = await figma.variables.getVariableCollectionByIdAsync('VariableCollectionId:3:2');
+const light = col.modes.find(m => m.name === 'Clair').modeId, dark = col.modes.find(m => m.name === 'Sombre').modeId;
+const have = new Set((await figma.variables.getLocalVariablesAsync('COLOR')).map(v => v.name));
+const hex = h => { const n = h.replace('#', ''); return { r: parseInt(n.slice(0, 2), 16) / 255, g: parseInt(n.slice(2, 4), 16) / 255, b: parseInt(n.slice(4, 6), 16) / 255, a: n.length > 6 ? parseInt(n.slice(6, 8), 16) / 255 : 1 }; };
+const ROWS = [["dérivées/bordure/FFFFFF-411F30","#FFFFFF","#411F30","bordure"],["dérivées/ombre/ED34911F-ED34911F","#ED34911F","#ED34911F","ombre"],["dérivées/bordure/DCE5E5-708383","#DCE5E5","#708383","bordure"],["dérivées/ombre/183D3C0B-00000022","#183D3C0B","#00000022","ombre"],["dérivées/ombre/183D3C12-00000022","#183D3C12","#00000022","ombre"],["dérivées/ombre/FFFFFFB2-00000022","#FFFFFFB2","#00000022","ombre"],["dérivées/ombre/183D3C08-ED34911A","#183D3C08","#ED34911A","ombre"],["dérivées/ombre/183D3C17-ED34911A","#183D3C17","#ED34911A","ombre"],["dérivées/bordure/DCE5E5-FFFFFF1F","#DCE5E5","#FFFFFF1F","bordure"],["dérivées/icône/163E3D-163E3D","#163E3D","#163E3D","icône"],["dérivées/ombre/183D3C06-00000033","#183D3C06","#00000033","ombre"],["dérivées/ombre/183D3C12-00000033","#183D3C12","#00000033","ombre"],["dérivées/fond/F8E6EC-F8E6EC","#F8E6EC","#F8E6EC","fond"],["dérivées/bordure/00BABC4C-ED34914C","#00BABC4C","#ED34914C","bordure"],["dérivées/fond/DAECE8-DAECE8","#DAECE8","#DAECE8","fond"],["dérivées/fond/ED349114-ED349114","#ED349114","#ED349114","fond"],["dérivées/ombre/ED349112-ED349112","#ED349112","#ED349112","ombre"],["dérivées/fond/DBECE7-DBECE7","#DBECE7","#DBECE7","fond"],["dérivées/fond/1A262D-1A262D","#1A262D","#1A262D","fond"],["dérivées/fond/1D1D1F-1D1D1F","#1D1D1F","#1D1D1F","fond"],["dérivées/fond/E8F9F9-322230","#E8F9F9","#322230","fond"],["dérivées/ombre/183D3C0A-00000033","#183D3C0A","#00000033","ombre"],["dérivées/ombre/183D3C24-00000033","#183D3C24","#00000033","ombre"],["dérivées/texte/007F81-ED3491","#007F81","#ED3491","texte"]];
+const made = [];
+for (const [name, l, d, kinds] of ROWS) {
+  if (have.has(name)) continue;
+  const v = figma.variables.createVariable(name, col, 'COLOR');
+  v.setValueForMode(light, hex(l)); v.setValueForMode(dark, hex(d));
+  v.description = 'Couleur peinte par le prototype sans propriété CSS dédiée (souvent un mélange color-mix ou une ombre), relevée en clair et en sombre. Usages : ' + kinds + '.';
+  v.scopes = kinds.includes('ombre') && !kinds.includes('fond') ? ['EFFECT_COLOR'] : (kinds.includes('texte') ? ['TEXT_FILL', 'SHAPE_FILL', 'STROKE_COLOR'] : (kinds.includes('bordure') ? ['STROKE_COLOR'] : ['FRAME_FILL', 'SHAPE_FILL']));
+  made.push(name);
+}
+return { created: made.length, names: made };

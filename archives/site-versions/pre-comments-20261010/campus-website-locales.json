@@ -1,0 +1,1540 @@
+{
+  "verifiedAt": "2026-09-27",
+  "status": "reviewed-with-documented-limits",
+  "policy": "Use the requested verified language, then verified English, then the official default destination. Never infer language URL paths. An omitted language is unknown, not a claim of absence.",
+  "campuses": {
+    "luanda": {
+      "defaultUrl": "https://www.42luanda.com/",
+      "defaultLanguage": "pt",
+      "locales": {},
+      "sourceUrl": "https://www.42network.org/campus/42-luanda/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://www.42luanda.com/",
+          "language": "pt",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": null
+        },
+        {
+          "url": "https://www.42luanda.com/js/main.js",
+          "language": "en",
+          "method": "published language control and initialization script",
+          "httpStatus": 200,
+          "note": "The English control calls changeLanguage(en). The script selects localStorage language or Portuguese and does not read a language URL parameter."
+        },
+        {
+          "url": "https://www.42luanda.com/js/locales/en.js",
+          "language": "en",
+          "method": "published English translation resource linked by the official page",
+          "httpStatus": 200,
+          "note": "English menu, homepage and campus introduction translations were read."
+        }
+      ],
+      "limits": [
+        "English is available through the internal language menu only. No stable language URL was verified, so an external link cannot force English; returning visitors may retain a stored preference.",
+        "The default language follows visible page content; HTML language metadata is missing or inconsistent.",
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ],
+      "manualLocales": [
+        "en"
+      ]
+    },
+    "tirana": {
+      "defaultUrl": "https://42tirana.al/",
+      "defaultLanguage": "en",
+      "locales": {
+        "en": "https://42tirana.al/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-tirana/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://42tirana.al/",
+          "language": "en",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en-GB"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "abu-dhabi": {
+      "defaultUrl": "https://42abudhabi.ae/",
+      "defaultLanguage": "en",
+      "locales": {
+        "en": "https://42abudhabi.ae/",
+        "ar": "https://42abudhabi.ae/ar/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-abu-dhabi/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://42abudhabi.ae/",
+          "language": "en",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en-US"
+        },
+        {
+          "url": "https://42abudhabi.ae/ar/",
+          "language": "ar",
+          "method": "hreflang; destination content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "ar",
+          "discoveredOn": "https://42abudhabi.ae/"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "yerevan": {
+      "defaultUrl": "https://42yerevan.am/",
+      "defaultLanguage": "en",
+      "locales": {
+        "en": "https://42yerevan.am/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-yerevan/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://42yerevan.am/",
+          "language": "en",
+          "method": "official public page text read through web reader",
+          "note": "English campus description and navigation were read. A direct HTTP client received a 403 response."
+        }
+      ],
+      "limits": [
+        "The public web reader exposed English content; the direct HTTP fetch was blocked.",
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "vienna": {
+      "defaultUrl": "https://www.42vienna.com/en/",
+      "defaultLanguage": "en",
+      "locales": {
+        "en": "https://www.42vienna.com/en/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-vienna/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://www.42vienna.com/en/",
+          "language": "en",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en-GB"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "wels": {
+      "defaultUrl": "https://www.42wels.at/en/",
+      "defaultLanguage": "en",
+      "locales": {
+        "en": "https://www.42wels.at/en/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-wels/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://www.42wels.at/en/",
+          "language": "en",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en-GB"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "antwerp": {
+      "defaultUrl": "https://42belgium.be/en/",
+      "defaultLanguage": "en",
+      "locales": {
+        "en": "https://42belgium.be/en/",
+        "fr": "https://42belgium.be/fr/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-antwerp/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://42belgium.be/en/",
+          "language": "en",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en-GB"
+        },
+        {
+          "url": "https://42belgium.be/fr/",
+          "language": "fr",
+          "method": "hreflang; destination content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "fr-FR",
+          "discoveredOn": "https://42belgium.be/en/"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "brussels": {
+      "defaultUrl": "https://42belgium.be/en/",
+      "defaultLanguage": "en",
+      "locales": {
+        "en": "https://42belgium.be/en/",
+        "fr": "https://42belgium.be/fr/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-brussels/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://42belgium.be/en/",
+          "language": "en",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en-GB"
+        },
+        {
+          "url": "https://42belgium.be/fr/",
+          "language": "fr",
+          "method": "hreflang; destination content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "fr-FR",
+          "discoveredOn": "https://42belgium.be/en/"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "belo-horizonte": {
+      "defaultUrl": "https://www.42sp.org.br",
+      "defaultLanguage": "pt",
+      "locales": {
+        "en": "https://42sp.org.br/en"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-belo-horizonte/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://www.42sp.org.br",
+          "language": "pt",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "pt-BR"
+        },
+        {
+          "url": "https://42sp.org.br/en",
+          "language": "en",
+          "method": "language-navigation; destination content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "pt-BR",
+          "discoveredOn": "https://www.42sp.org.br"
+        }
+      ],
+      "limits": [
+        "The published Belo Horizonte URL redirects to 42 São Paulo; the destination and its language links are preserved rather than inventing a new campus URL.",
+        "An alternate has inconsistent HTML language metadata; visible translated content was checked.",
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "rio": {
+      "defaultUrl": "https://42.rio/",
+      "defaultLanguage": "pt",
+      "locales": {},
+      "sourceUrl": "https://www.42network.org/campus/42-rio/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://42.rio/",
+          "language": "pt",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": null
+        }
+      ],
+      "limits": [
+        "The default language follows visible page content; HTML language metadata is missing or inconsistent.",
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "sao": {
+      "defaultUrl": "https://www.42sp.org.br/",
+      "defaultLanguage": "pt",
+      "locales": {
+        "en": "https://42sp.org.br/en"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-sao-paulo/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://www.42sp.org.br/",
+          "language": "pt",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "pt-BR"
+        },
+        {
+          "url": "https://42sp.org.br/en",
+          "language": "en",
+          "method": "language-navigation; destination content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "pt-BR",
+          "discoveredOn": "https://www.42sp.org.br/"
+        }
+      ],
+      "limits": [
+        "An alternate has inconsistent HTML language metadata; visible translated content was checked.",
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "quebec": {
+      "defaultUrl": "https://www.42network.org/campus/42-quebec/",
+      "defaultLanguage": "en",
+      "locales": {
+        "en": "https://www.42network.org/campus/42-quebec/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-quebec/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://www.42network.org/campus/42-quebec/",
+          "language": "en",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en-US"
+        }
+      ],
+      "limits": [
+        "The published destination is the 42 Network campus profile, because no standalone campus site was verified in the source catalogue.",
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "lausanne": {
+      "defaultUrl": "https://42lausanne.ch/en",
+      "defaultLanguage": "en",
+      "locales": {
+        "en": "https://42lausanne.ch/en",
+        "fr": "https://42lausanne.ch/fr"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-lausanne/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://42lausanne.ch/en",
+          "language": "en",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en"
+        },
+        {
+          "url": "https://42lausanne.ch/fr",
+          "language": "fr",
+          "method": "hreflang; destination content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "fr",
+          "discoveredOn": "https://42lausanne.ch/en"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "zurich": {
+      "defaultUrl": "https://42zurich.ch/en/home/",
+      "defaultLanguage": "en",
+      "locales": {
+        "en": "https://42zurich.ch/en/home/",
+        "fr": "https://42zurich.ch/fr/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-zurich/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://42zurich.ch/en/home/",
+          "language": "en",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en-GB"
+        },
+        {
+          "url": "https://42zurich.ch/fr/",
+          "language": "fr",
+          "method": "hreflang; destination content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "fr-FR",
+          "discoveredOn": "https://42zurich.ch/en/home/"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "prague": {
+      "defaultUrl": "https://www.42prague.com/",
+      "defaultLanguage": "en",
+      "locales": {
+        "en": "https://www.42prague.com/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-prague/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://www.42prague.com/",
+          "language": "en",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "berlin": {
+      "defaultUrl": "https://www.42berlin.de/",
+      "defaultLanguage": "en",
+      "locales": {
+        "en": "https://www.42berlin.de/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-berlin/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://www.42berlin.de/",
+          "language": "en",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "heilbronn": {
+      "defaultUrl": "https://www.42heilbronn.de/en/",
+      "defaultLanguage": "en",
+      "locales": {
+        "en": "https://www.42heilbronn.de/en/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-heilbronn-42-network/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://www.42heilbronn.de/en/",
+          "language": "en",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "wolfsburg": {
+      "defaultUrl": "https://www.42wolfsburg.de/",
+      "defaultLanguage": "en",
+      "locales": {
+        "en": "https://www.42wolfsburg.de/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-wolfsburg/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://www.42wolfsburg.de/",
+          "language": "en",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "barcelona": {
+      "defaultUrl": "https://www.42barcelona.com/",
+      "defaultLanguage": "ca",
+      "locales": {
+        "en": "https://www.42barcelona.com/en/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-barcelona/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://www.42barcelona.com/",
+          "language": "ca",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "ca"
+        },
+        {
+          "url": "https://www.42barcelona.com/en/",
+          "language": "en",
+          "method": "hreflang; destination content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en-US",
+          "discoveredOn": "https://www.42barcelona.com/"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "madrid": {
+      "defaultUrl": "https://www.42madrid.com/",
+      "defaultLanguage": "es",
+      "locales": {
+        "en": "https://www.42madrid.com/en/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-madrid/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://www.42madrid.com/",
+          "language": "es",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "es-ES"
+        },
+        {
+          "url": "https://www.42madrid.com/en/",
+          "language": "en",
+          "method": "hreflang; destination content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en-US",
+          "discoveredOn": "https://www.42madrid.com/"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "malaga": {
+      "defaultUrl": "https://www.42malaga.com/",
+      "defaultLanguage": "es",
+      "locales": {
+        "en": "https://www.42malaga.com/en/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-malaga/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://www.42malaga.com/",
+          "language": "es",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "es-ES"
+        },
+        {
+          "url": "https://www.42malaga.com/en/",
+          "language": "en",
+          "method": "hreflang; destination content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en-US",
+          "discoveredOn": "https://www.42malaga.com/"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "urduliz": {
+      "defaultUrl": "https://www.42urduliz.com/",
+      "defaultLanguage": "es",
+      "locales": {
+        "en": "https://www.42urduliz.com/en/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-urduliz/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://www.42urduliz.com/",
+          "language": "es",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "es-ES"
+        },
+        {
+          "url": "https://www.42urduliz.com/en/",
+          "language": "en",
+          "method": "hreflang; destination content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en-US",
+          "discoveredOn": "https://www.42urduliz.com/"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "angouleme": {
+      "defaultUrl": "https://42angouleme.fr/",
+      "defaultLanguage": "fr",
+      "locales": {
+        "fr": "https://42angouleme.fr/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-angouleme/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://42angouleme.fr/",
+          "language": "fr",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "fr"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "le-havre": {
+      "defaultUrl": "https://42lehavre.fr/",
+      "defaultLanguage": "fr",
+      "locales": {
+        "fr": "https://42lehavre.fr/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-le-havre/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://42lehavre.fr/",
+          "language": "fr",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en-US"
+        },
+        {
+          "url": "https://42lehavre.fr/",
+          "language": "fr",
+          "method": "Chrome rendered page, screenshot and read-only DOM geometry",
+          "note": "The campus introduction and navigation render in French. The embedded FR/EN widget has zero-size boxes and is absent from the visible page/accessibility tree; no hidden control was forced."
+        }
+      ],
+      "limits": [
+        "An FR/EN toggle exists in the HTML but is hidden in the rendered desktop page (zero-size boxes); no usable English control or destination was verified.",
+        "The default language follows visible page content; HTML language metadata is missing or inconsistent.",
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "lyon": {
+      "defaultUrl": "https://42lyon.fr/",
+      "defaultLanguage": "fr",
+      "locales": {
+        "fr": "https://42lyon.fr/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-lyon/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://42lyon.fr/",
+          "language": "fr",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "fr_FR"
+        },
+        {
+          "url": "https://42lyon.fr/en/",
+          "language": null,
+          "method": "Chrome rendered page and screenshot",
+          "note": "The English URL still renders only the shared French header, address/footer and cookie banner, with no central campus introduction. The visible language selector offers French only."
+        }
+      ],
+      "limits": [
+        "Published hreflang exists, but the inspected English page contains only the shared French header and cookie settings; no translated campus introduction was verified.",
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "marseille": {
+      "defaultUrl": "https://42marseille.com/",
+      "defaultLanguage": "fr",
+      "locales": {
+        "fr": "https://42marseille.com/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-marseille/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://42marseille.com/",
+          "language": "fr",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "fr-FR"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "mulhouse": {
+      "defaultUrl": "https://www.42mulhouse.fr/",
+      "defaultLanguage": "fr",
+      "locales": {
+        "fr": "https://www.42mulhouse.fr/",
+        "en": "https://www.42mulhouse.fr/en/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-mulhouse/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://www.42mulhouse.fr/",
+          "language": "fr",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "fr"
+        },
+        {
+          "url": "https://www.42mulhouse.fr/en/",
+          "language": "en",
+          "method": "hreflang; destination content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en",
+          "discoveredOn": "https://www.42mulhouse.fr/"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "nice": {
+      "defaultUrl": "https://42nice.fr/",
+      "defaultLanguage": "fr",
+      "locales": {
+        "fr": "https://42nice.fr/",
+        "en": "https://42nice.fr/en/homepage/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-nice/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://42nice.fr/",
+          "language": "fr",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "fr"
+        },
+        {
+          "url": "https://42nice.fr/en/homepage/",
+          "language": "en",
+          "method": "hreflang; destination content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en",
+          "discoveredOn": "https://42nice.fr/"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "paris": {
+      "defaultUrl": "https://42.fr/",
+      "defaultLanguage": "fr",
+      "locales": {
+        "fr": "https://42.fr/",
+        "en": "https://42.fr/en/homepage/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-paris/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://42.fr/",
+          "language": "fr",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "fr"
+        },
+        {
+          "url": "https://42.fr/en/homepage/",
+          "language": "en",
+          "method": "hreflang; destination content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en",
+          "discoveredOn": "https://42.fr/"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "perpignan": {
+      "defaultUrl": "https://42perpignan.fr/",
+      "defaultLanguage": "fr",
+      "locales": {
+        "fr": "https://42perpignan.fr/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-perpignan/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://42perpignan.fr/",
+          "language": "fr",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "fr-FR"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "london": {
+      "defaultUrl": "https://42london.com/",
+      "defaultLanguage": "en",
+      "locales": {
+        "en": "https://42london.com/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-london/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://42london.com/",
+          "language": "en",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en-GB"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "firenze": {
+      "defaultUrl": "https://www.42firenze.it/",
+      "defaultLanguage": "it",
+      "locales": {},
+      "sourceUrl": "https://www.42network.org/campus/42-firenze/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://www.42firenze.it/",
+          "language": "it",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "it-IT"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "milano": {
+      "defaultUrl": "https://www.42milano.it/",
+      "defaultLanguage": "it",
+      "locales": {},
+      "sourceUrl": "https://www.42network.org/campus/42-milano/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://www.42milano.it/",
+          "language": "it",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "it-IT"
+        }
+      ],
+      "limits": [
+        "Declared English alternate retains Italian main content.",
+        "Declared French alternate retains Italian main content.",
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "roma": {
+      "defaultUrl": "https://42roma.it/",
+      "defaultLanguage": "it",
+      "locales": {},
+      "sourceUrl": "https://www.42network.org/campus/42-roma/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://42roma.it/",
+          "language": "it",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en"
+        }
+      ],
+      "limits": [
+        "The default language follows visible page content; HTML language metadata is missing or inconsistent.",
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "amman": {
+      "defaultUrl": "https://42amman.com/",
+      "defaultLanguage": "en",
+      "locales": {
+        "en": "https://42amman.com/",
+        "ar": "https://42amman.com/ar/home-ar/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-amman/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://42amman.com/",
+          "language": "en",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en-GB"
+        },
+        {
+          "url": "https://42amman.com/ar/home-ar/",
+          "language": "ar",
+          "method": "hreflang; destination content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "ar",
+          "discoveredOn": "https://42amman.com/"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "irbid": {
+      "defaultUrl": "https://42irbid.com/",
+      "defaultLanguage": "en",
+      "locales": {
+        "en": "https://42irbid.com/",
+        "ar": "https://42irbid.com/ar/home-ar/"
+      },
+      "sourceUrl": "https://42irbid.com/footer-en/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://42irbid.com/",
+          "language": "en",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en-GB"
+        },
+        {
+          "url": "https://42irbid.com/ar/home-ar/",
+          "language": "ar",
+          "method": "hreflang; destination content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "ar",
+          "discoveredOn": "https://42irbid.com/"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "tokyo": {
+      "defaultUrl": "https://42tokyo.jp/",
+      "defaultLanguage": "ja",
+      "locales": {},
+      "sourceUrl": "https://www.42network.org/campus/42-tokyo/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://42tokyo.jp/",
+          "language": "ja",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "ja-jp"
+        },
+        {
+          "url": "https://42tokyo.jp/",
+          "language": "ja",
+          "method": "official public page text read through web reader",
+          "note": "Japanese campus introduction and navigation were read; no FR/EN/AR alternate was exposed in the inspected navigation."
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "gyeongsan": {
+      "defaultUrl": "https://42gyeongsan.kr/ko/index.do",
+      "defaultLanguage": "ko",
+      "locales": {
+        "en": "https://42gyeongsan.kr/en/main.do"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-gyeongsan/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://42gyeongsan.kr/ko/index.do",
+          "language": "ko",
+          "method": "Chrome rendered page after following the published root URL",
+          "note": "The JavaScript root redirects to the Korean homepage. Korean campus content and the KOR menu were observed."
+        },
+        {
+          "url": "https://42gyeongsan.kr/en/main.do",
+          "language": "en",
+          "method": "Chrome KOR menu opened; published ENG link clicked; destination rendered",
+          "discoveredOn": "https://42gyeongsan.kr/ko/index.do",
+          "note": "The English homepage rendered English campus introduction, curriculum navigation and admissions content. No URL was inferred."
+        }
+      ],
+      "limits": [
+        "The original root is a JavaScript redirect; the rendered Korean and English destinations were verified in Chrome.",
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "seoul": {
+      "defaultUrl": "https://42seoul.kr/seoul42/main/view",
+      "defaultLanguage": "ko",
+      "locales": {
+        "en": "https://42seoul.kr/en/seoul42/default.html"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-seoul/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://42seoul.kr/seoul42/main/view",
+          "language": "ko",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "ko"
+        },
+        {
+          "url": "https://42seoul.kr/en/seoul42/default.html",
+          "language": "en",
+          "method": "language-navigation; destination content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "ko",
+          "discoveredOn": "https://42seoul.kr/seoul42/main/view"
+        }
+      ],
+      "limits": [
+        "An alternate has inconsistent HTML language metadata; visible translated content was checked.",
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "beirut": {
+      "defaultUrl": "https://www.42beirut.com/",
+      "defaultLanguage": "en",
+      "locales": {
+        "en": "https://www.42beirut.com/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-beirut/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://www.42beirut.com/",
+          "language": "en",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "luxembourg": {
+      "defaultUrl": "https://42luxembourg.lu/",
+      "defaultLanguage": "en",
+      "locales": {
+        "en": "https://42luxembourg.lu/",
+        "fr": "https://42luxembourg.lu/fr/accueil/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-luxembourg/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://42luxembourg.lu/",
+          "language": "en",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en-GB"
+        },
+        {
+          "url": "https://42luxembourg.lu/fr/accueil/",
+          "language": "fr",
+          "method": "hreflang; destination content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "fr-FR",
+          "discoveredOn": "https://42luxembourg.lu/"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "1337-ben-guerir": {
+      "defaultUrl": "https://1337.ma/fr/",
+      "defaultLanguage": "fr",
+      "locales": {
+        "fr": "https://1337.ma/fr/",
+        "en": "https://1337.ma/en/",
+        "ar": "https://www.1337.ma/ar/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/1337-ben-guerir/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://1337.ma/fr/",
+          "language": "fr",
+          "method": "official public page text read through web reader",
+          "note": "Published language navigation and translated main content were observed; direct automated HTTP fetch received a protection page."
+        },
+        {
+          "url": "https://1337.ma/en/",
+          "language": "en",
+          "method": "official public page text read through web reader",
+          "note": "Published language navigation and translated main content were observed; direct automated HTTP fetch received a protection page."
+        },
+        {
+          "url": "https://www.1337.ma/ar/",
+          "language": "ar",
+          "method": "official public page text read through web reader",
+          "note": "Published language navigation and translated main content were observed; direct automated HTTP fetch received a protection page."
+        }
+      ],
+      "limits": [
+        "The four campus profiles point to the shared 1337 website. Arabic content uses Moroccan Arabic.",
+        "The public web reader returned the French and English pages freshly fetched; the Arabic page was an available indexed official copy dated approximately two months earlier. Direct HTTP returned a protection page, so live availability can vary.",
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "1337-khouribga": {
+      "defaultUrl": "https://1337.ma/fr/",
+      "defaultLanguage": "fr",
+      "locales": {
+        "fr": "https://1337.ma/fr/",
+        "en": "https://1337.ma/en/",
+        "ar": "https://www.1337.ma/ar/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/1337-khouribga/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://1337.ma/fr/",
+          "language": "fr",
+          "method": "official public page text read through web reader",
+          "note": "Published language navigation and translated main content were observed; direct automated HTTP fetch received a protection page."
+        },
+        {
+          "url": "https://1337.ma/en/",
+          "language": "en",
+          "method": "official public page text read through web reader",
+          "note": "Published language navigation and translated main content were observed; direct automated HTTP fetch received a protection page."
+        },
+        {
+          "url": "https://www.1337.ma/ar/",
+          "language": "ar",
+          "method": "official public page text read through web reader",
+          "note": "Published language navigation and translated main content were observed; direct automated HTTP fetch received a protection page."
+        }
+      ],
+      "limits": [
+        "The four campus profiles point to the shared 1337 website. Arabic content uses Moroccan Arabic.",
+        "The public web reader returned the French and English pages freshly fetched; the Arabic page was an available indexed official copy dated approximately two months earlier. Direct HTTP returned a protection page, so live availability can vary.",
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "1337-med": {
+      "defaultUrl": "https://1337.ma/en/",
+      "defaultLanguage": "en",
+      "locales": {
+        "fr": "https://1337.ma/fr/",
+        "en": "https://1337.ma/en/",
+        "ar": "https://www.1337.ma/ar/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/1337-med/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://1337.ma/fr/",
+          "language": "fr",
+          "method": "official public page text read through web reader",
+          "note": "Published language navigation and translated main content were observed; direct automated HTTP fetch received a protection page."
+        },
+        {
+          "url": "https://1337.ma/en/",
+          "language": "en",
+          "method": "official public page text read through web reader",
+          "note": "Published language navigation and translated main content were observed; direct automated HTTP fetch received a protection page."
+        },
+        {
+          "url": "https://www.1337.ma/ar/",
+          "language": "ar",
+          "method": "official public page text read through web reader",
+          "note": "Published language navigation and translated main content were observed; direct automated HTTP fetch received a protection page."
+        }
+      ],
+      "limits": [
+        "The four campus profiles point to the shared 1337 website. Arabic content uses Moroccan Arabic.",
+        "The public web reader returned the French and English pages freshly fetched; the Arabic page was an available indexed official copy dated approximately two months earlier. Direct HTTP returned a protection page, so live availability can vary.",
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "1337-rabat": {
+      "defaultUrl": "https://1337.ma/",
+      "defaultLanguage": null,
+      "locales": {
+        "fr": "https://1337.ma/fr/",
+        "en": "https://1337.ma/en/",
+        "ar": "https://www.1337.ma/ar/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/1337-rabat/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://1337.ma/fr/",
+          "language": "fr",
+          "method": "official public page text read through web reader",
+          "note": "Published language navigation and translated main content were observed; direct automated HTTP fetch received a protection page."
+        },
+        {
+          "url": "https://1337.ma/en/",
+          "language": "en",
+          "method": "official public page text read through web reader",
+          "note": "Published language navigation and translated main content were observed; direct automated HTTP fetch received a protection page."
+        },
+        {
+          "url": "https://www.1337.ma/ar/",
+          "language": "ar",
+          "method": "official public page text read through web reader",
+          "note": "Published language navigation and translated main content were observed; direct automated HTTP fetch received a protection page."
+        }
+      ],
+      "limits": [
+        "The unlocalized root returned no readable content, so its default language remains unknown; verified English is available as fallback.",
+        "The four campus profiles point to the shared 1337 website. Arabic content uses Moroccan Arabic.",
+        "The public web reader returned the French and English pages freshly fetched; the Arabic page was an available indexed official copy dated approximately two months earlier. Direct HTTP returned a protection page, so live availability can vary.",
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "antananarivo": {
+      "defaultUrl": "https://42antananarivo.mg/",
+      "defaultLanguage": "fr",
+      "locales": {
+        "fr": "https://42antananarivo.mg/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-antananarivo/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://42antananarivo.mg/",
+          "language": "fr",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "fr"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "iskandar-puteri": {
+      "defaultUrl": "https://42malaysia.edu.my",
+      "defaultLanguage": "en",
+      "locales": {
+        "en": "https://42malaysia.edu.my"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-iskandar-puteri/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://42malaysia.edu.my",
+          "language": "en",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en"
+        },
+        {
+          "url": "https://42malaysia.edu.my/",
+          "language": "en",
+          "method": "official public page text read through web reader",
+          "note": "English school overview and the three Malaysian campus sections were read."
+        }
+      ],
+      "limits": [
+        "The campus-specific published URL redirects to the shared 42 Malaysia site, which lists all three campuses.",
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "kuala-lumpur": {
+      "defaultUrl": "https://42malaysia.edu.my",
+      "defaultLanguage": "en",
+      "locales": {
+        "en": "https://42malaysia.edu.my"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-kuala-lumpur/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://42malaysia.edu.my",
+          "language": "en",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en"
+        },
+        {
+          "url": "https://42malaysia.edu.my/",
+          "language": "en",
+          "method": "official public page text read through web reader",
+          "note": "English school overview and the three Malaysian campus sections were read."
+        }
+      ],
+      "limits": [
+        "The campus-specific published URL redirects to the shared 42 Malaysia site, which lists all three campuses.",
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "penang": {
+      "defaultUrl": "https://42malaysia.edu.my",
+      "defaultLanguage": "en",
+      "locales": {
+        "en": "https://42malaysia.edu.my"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-penang/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://42malaysia.edu.my",
+          "language": "en",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en"
+        },
+        {
+          "url": "https://42malaysia.edu.my/",
+          "language": "en",
+          "method": "official public page text read through web reader",
+          "note": "English school overview and the three Malaysian campus sections were read."
+        }
+      ],
+      "limits": [
+        "The campus-specific published URL redirects to the shared 42 Malaysia site, which lists all three campuses.",
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "codam": {
+      "defaultUrl": "https://www.codam.nl/",
+      "defaultLanguage": "nl",
+      "locales": {
+        "en": "https://www.codam.nl/en/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/codam/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://www.codam.nl/",
+          "language": "nl",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "nl-NL"
+        },
+        {
+          "url": "https://www.codam.nl/en/",
+          "language": "en",
+          "method": "hreflang; destination content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en-US",
+          "discoveredOn": "https://www.codam.nl/"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "warsaw": {
+      "defaultUrl": "https://42warsaw.pl/pl/",
+      "defaultLanguage": "pl",
+      "locales": {
+        "en": "https://42warsaw.pl/en/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-warsaw/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://42warsaw.pl/pl/",
+          "language": "pl",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "pl-PL"
+        },
+        {
+          "url": "https://42warsaw.pl/en/",
+          "language": "en",
+          "method": "hreflang; destination content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en-GB",
+          "discoveredOn": "https://42warsaw.pl/pl/"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "lisboa": {
+      "defaultUrl": "https://www.42lisboa.com/",
+      "defaultLanguage": "en",
+      "locales": {
+        "en": "https://www.42lisboa.com/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-lisboa/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://www.42lisboa.com/",
+          "language": "en",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en-GB"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "porto": {
+      "defaultUrl": "https://www.42porto.com/",
+      "defaultLanguage": "en",
+      "locales": {
+        "en": "https://www.42porto.com/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-porto/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://www.42porto.com/",
+          "language": "en",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en-GB"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "nablus": {
+      "defaultUrl": "https://www.42network.org/campus/42-nablus/",
+      "defaultLanguage": "en",
+      "locales": {
+        "en": "https://www.42network.org/campus/42-nablus/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-nablus/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://www.42network.org/campus/42-nablus/",
+          "language": "en",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en-US"
+        }
+      ],
+      "limits": [
+        "The published destination is the 42 Network campus profile, because no standalone campus site was verified in the source catalogue.",
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "singapore": {
+      "defaultUrl": "https://www.42singapore.sg/",
+      "defaultLanguage": "en",
+      "locales": {
+        "en": "https://www.42singapore.sg/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-singapore/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://www.42singapore.sg/",
+          "language": "en",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "bangkok": {
+      "defaultUrl": "https://www.42bangkok.com/",
+      "defaultLanguage": "en",
+      "locales": {
+        "en": "https://www.42bangkok.com/"
+      },
+      "sourceUrl": "https://www.42network.org/campus/42-bangkok/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://www.42bangkok.com/",
+          "language": "en",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "en-US"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "istanbul": {
+      "defaultUrl": "https://42turkiye.com.tr/",
+      "defaultLanguage": "tr",
+      "locales": {},
+      "sourceUrl": "https://www.42network.org/campus/42-istanbul/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://42turkiye.com.tr/",
+          "language": "tr",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "tr"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    },
+    "kocaeli": {
+      "defaultUrl": "https://42turkiye.com.tr/",
+      "defaultLanguage": "tr",
+      "locales": {},
+      "sourceUrl": "https://www.42network.org/campus/42-kocaeli/",
+      "verifiedAt": "2026-09-27",
+      "evidence": [
+        {
+          "url": "https://42turkiye.com.tr/",
+          "language": "tr",
+          "method": "official-published-site; HTML metadata and visible content inspected",
+          "httpStatus": 200,
+          "htmlLanguage": "tr"
+        }
+      ],
+      "limits": [
+        "Languages omitted from locales are unverified, not asserted unavailable. Links and translations may change."
+      ]
+    }
+  },
+  "coverage": {
+    "campuses": 58,
+    "standaloneSiteProfiles": 56,
+    "networkProfileFallbacks": 2,
+    "verifiedUrlLanguages": {
+      "fr": 18,
+      "en": 44,
+      "ar": 7
+    },
+    "manualLanguageOnlyCampuses": [
+      "luanda"
+    ],
+    "unknownEffectiveDefaultLanguage": [
+      "1337-rabat"
+    ],
+    "targetedRenderedBrowserChecks": [
+      "lyon",
+      "le-havre",
+      "gyeongsan"
+    ]
+  }
+}

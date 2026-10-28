@@ -1,0 +1,595 @@
+{
+  "passed": false,
+  "cases": [
+    {
+      "case": "entry-account-fr-light",
+      "result": {
+        "noDemoLabels": true,
+        "noOverflow": true
+      }
+    },
+    {
+      "case": "matching-signin-fr-light",
+      "result": {
+        "backgroundColor": "color(srgb 0 0.729412 0.737255 / 0.19)",
+        "color": "rgb(27, 27, 27)",
+        "borderColor": "color(srgb 0 0.729412 0.737255 / 0.32)",
+        "borderRadius": "14px",
+        "fontSize": "17px",
+        "padding": "14px 28px",
+        "minHeight": "52px",
+        "outlineColor": "rgb(27, 27, 27)",
+        "outlineStyle": "none",
+        "outlineWidth": "3px"
+      }
+    },
+    {
+      "case": "entry-signin-fr-light",
+      "result": {
+        "noDemoLabels": true,
+        "noOverflow": true
+      }
+    },
+    {
+      "case": "entry-signin-fr-light-structure",
+      "result": {
+        "title": "Connexion",
+        "actions": [
+          {
+            "text": "Se connecter",
+            "cls": "entrance-action"
+          },
+          {
+            "text": "Annuler",
+            "cls": "entrance-action secondary"
+          }
+        ],
+        "paragraphs": 0
+      }
+    },
+    {
+      "case": "keyboard-focus-fr-light",
+      "result": {
+        "class": "entrance-action",
+        "visible": true,
+        "outline": "solid",
+        "width": "2px",
+        "color": "color(srgb 0.0455294 0.461294 0.465765)"
+      }
+    },
+    {
+      "case": "entry-signup-fr-light",
+      "result": {
+        "noDemoLabels": true,
+        "noOverflow": true
+      }
+    },
+    {
+      "case": "entry-signup-fr-light-structure",
+      "result": {
+        "title": "Créer un compte",
+        "actions": [
+          {
+            "text": "Créer un compte",
+            "cls": "entrance-action"
+          },
+          {
+            "text": "Annuler",
+            "cls": "entrance-action secondary"
+          }
+        ],
+        "paragraphs": 0
+      }
+    },
+    {
+      "case": "entry-account-fr-dark",
+      "result": {
+        "noDemoLabels": true,
+        "noOverflow": true
+      }
+    },
+    {
+      "case": "matching-signin-fr-dark",
+      "result": {
+        "backgroundColor": "color(srgb 0.929412 0.203922 0.568627 / 0.22)",
+        "color": "rgb(255, 255, 255)",
+        "borderColor": "color(srgb 0.929412 0.203922 0.568627 / 0.32)",
+        "borderRadius": "14px",
+        "fontSize": "17px",
+        "padding": "14px 28px",
+        "minHeight": "52px",
+        "outlineColor": "rgb(255, 255, 255)",
+        "outlineStyle": "none",
+        "outlineWidth": "3px"
+      }
+    },
+    {
+      "case": "entry-signin-fr-dark",
+      "result": {
+        "noDemoLabels": true,
+        "noOverflow": true
+      }
+    },
+    {
+      "case": "entry-signin-fr-dark-structure",
+      "result": {
+        "title": "Connexion",
+        "actions": [
+          {
+            "text": "Se connecter",
+            "cls": "entrance-action"
+          },
+          {
+            "text": "Annuler",
+            "cls": "entrance-action secondary"
+          }
+        ],
+        "paragraphs": 0
+      }
+    },
+    {
+      "case": "keyboard-focus-fr-dark",
+      "result": {
+        "class": "entrance-action",
+        "visible": true,
+        "outline": "solid",
+        "width": "2px",
+        "color": "color(srgb 0.957647 0.522353 0.741176)"
+      }
+    },
+    {
+      "case": "entry-signup-fr-dark",
+      "result": {
+        "noDemoLabels": true,
+        "noOverflow": true
+      }
+    },
+    {
+      "case": "entry-signup-fr-dark-structure",
+      "result": {
+        "title": "Créer un compte",
+        "actions": [
+          {
+            "text": "Créer un compte",
+            "cls": "entrance-action"
+          },
+          {
+            "text": "Annuler",
+            "cls": "entrance-action secondary"
+          }
+        ],
+        "paragraphs": 0
+      }
+    },
+    {
+      "case": "entry-account-en-light",
+      "result": {
+        "noDemoLabels": true,
+        "noOverflow": true
+      }
+    },
+    {
+      "case": "matching-signin-en-light",
+      "result": {
+        "backgroundColor": "color(srgb 0 0.729412 0.737255 / 0.19)",
+        "color": "rgb(27, 27, 27)",
+        "borderColor": "color(srgb 0 0.729412 0.737255 / 0.32)",
+        "borderRadius": "14px",
+        "fontSize": "16px",
+        "padding": "14px 28px",
+        "minHeight": "52px",
+        "outlineColor": "rgb(27, 27, 27)",
+        "outlineStyle": "none",
+        "outlineWidth": "3px"
+      }
+    },
+    {
+      "case": "entry-signin-en-light",
+      "result": {
+        "noDemoLabels": true,
+        "noOverflow": true
+      }
+    },
+    {
+      "case": "entry-signin-en-light-structure",
+      "result": {
+        "title": "Sign in",
+        "actions": [
+          {
+            "text": "Sign in",
+            "cls": "entrance-action"
+          },
+          {
+            "text": "Cancel",
+            "cls": "entrance-action secondary"
+          }
+        ],
+        "paragraphs": 0
+      }
+    },
+    {
+      "case": "keyboard-focus-en-light",
+      "result": {
+        "class": "entrance-action",
+        "visible": true,
+        "outline": "solid",
+        "width": "2px",
+        "color": "color(srgb 0.0455294 0.461294 0.465765)"
+      }
+    },
+    {
+      "case": "entry-signup-en-light",
+      "result": {
+        "noDemoLabels": true,
+        "noOverflow": true
+      }
+    },
+    {
+      "case": "entry-signup-en-light-structure",
+      "result": {
+        "title": "Create an account",
+        "actions": [
+          {
+            "text": "Create an account",
+            "cls": "entrance-action"
+          },
+          {
+            "text": "Cancel",
+            "cls": "entrance-action secondary"
+          }
+        ],
+        "paragraphs": 0
+      }
+    },
+    {
+      "case": "entry-account-en-dark",
+      "result": {
+        "noDemoLabels": true,
+        "noOverflow": true
+      }
+    },
+    {
+      "case": "matching-signin-en-dark",
+      "result": {
+        "backgroundColor": "color(srgb 0.929412 0.203922 0.568627 / 0.22)",
+        "color": "rgb(255, 255, 255)",
+        "borderColor": "color(srgb 0.929412 0.203922 0.568627 / 0.32)",
+        "borderRadius": "14px",
+        "fontSize": "16px",
+        "padding": "14px 28px",
+        "minHeight": "52px",
+        "outlineColor": "rgb(255, 255, 255)",
+        "outlineStyle": "none",
+        "outlineWidth": "3px"
+      }
+    },
+    {
+      "case": "entry-signin-en-dark",
+      "result": {
+        "noDemoLabels": true,
+        "noOverflow": true
+      }
+    },
+    {
+      "case": "entry-signin-en-dark-structure",
+      "result": {
+        "title": "Sign in",
+        "actions": [
+          {
+            "text": "Sign in",
+            "cls": "entrance-action"
+          },
+          {
+            "text": "Cancel",
+            "cls": "entrance-action secondary"
+          }
+        ],
+        "paragraphs": 0
+      }
+    },
+    {
+      "case": "keyboard-focus-en-dark",
+      "result": {
+        "class": "entrance-action",
+        "visible": true,
+        "outline": "solid",
+        "width": "2px",
+        "color": "color(srgb 0.957647 0.522353 0.741176)"
+      }
+    },
+    {
+      "case": "entry-signup-en-dark",
+      "result": {
+        "noDemoLabels": true,
+        "noOverflow": true
+      }
+    },
+    {
+      "case": "entry-signup-en-dark-structure",
+      "result": {
+        "title": "Create an account",
+        "actions": [
+          {
+            "text": "Create an account",
+            "cls": "entrance-action"
+          },
+          {
+            "text": "Cancel",
+            "cls": "entrance-action secondary"
+          }
+        ],
+        "paragraphs": 0
+      }
+    },
+    {
+      "case": "entry-account-ar-light",
+      "result": {
+        "noDemoLabels": true,
+        "noOverflow": true
+      }
+    },
+    {
+      "case": "matching-signin-ar-light",
+      "result": {
+        "backgroundColor": "color(srgb 0 0.729412 0.737255 / 0.19)",
+        "color": "rgb(27, 27, 27)",
+        "borderColor": "color(srgb 0 0.729412 0.737255 / 0.32)",
+        "borderRadius": "14px",
+        "fontSize": "16px",
+        "padding": "14px 28px",
+        "minHeight": "52px",
+        "outlineColor": "rgb(27, 27, 27)",
+        "outlineStyle": "none",
+        "outlineWidth": "3px"
+      }
+    },
+    {
+      "case": "entry-signin-ar-light",
+      "result": {
+        "noDemoLabels": true,
+        "noOverflow": true
+      }
+    },
+    {
+      "case": "entry-signin-ar-light-structure",
+      "result": {
+        "title": "تسجيل الدخول",
+        "actions": [
+          {
+            "text": "تسجيل الدخول",
+            "cls": "entrance-action"
+          },
+          {
+            "text": "إلغاء",
+            "cls": "entrance-action secondary"
+          }
+        ],
+        "paragraphs": 0
+      }
+    },
+    {
+      "case": "keyboard-focus-ar-light",
+      "result": {
+        "class": "entrance-action",
+        "visible": true,
+        "outline": "solid",
+        "width": "2px",
+        "color": "color(srgb 0.0455294 0.461294 0.465765)"
+      }
+    },
+    {
+      "case": "entry-signup-ar-light",
+      "result": {
+        "noDemoLabels": true,
+        "noOverflow": true
+      }
+    },
+    {
+      "case": "entry-signup-ar-light-structure",
+      "result": {
+        "title": "إنشاء حساب",
+        "actions": [
+          {
+            "text": "إنشاء حساب",
+            "cls": "entrance-action"
+          },
+          {
+            "text": "إلغاء",
+            "cls": "entrance-action secondary"
+          }
+        ],
+        "paragraphs": 0
+      }
+    },
+    {
+      "case": "entry-account-ar-dark",
+      "result": {
+        "noDemoLabels": true,
+        "noOverflow": true
+      }
+    },
+    {
+      "case": "matching-signin-ar-dark",
+      "result": {
+        "backgroundColor": "color(srgb 0.929412 0.203922 0.568627 / 0.22)",
+        "color": "rgb(255, 255, 255)",
+        "borderColor": "color(srgb 0.929412 0.203922 0.568627 / 0.32)",
+        "borderRadius": "14px",
+        "fontSize": "16px",
+        "padding": "14px 28px",
+        "minHeight": "52px",
+        "outlineColor": "rgb(255, 255, 255)",
+        "outlineStyle": "none",
+        "outlineWidth": "3px"
+      }
+    },
+    {
+      "case": "entry-signin-ar-dark",
+      "result": {
+        "noDemoLabels": true,
+        "noOverflow": true
+      }
+    },
+    {
+      "case": "entry-signin-ar-dark-structure",
+      "result": {
+        "title": "تسجيل الدخول",
+        "actions": [
+          {
+            "text": "تسجيل الدخول",
+            "cls": "entrance-action"
+          },
+          {
+            "text": "إلغاء",
+            "cls": "entrance-action secondary"
+          }
+        ],
+        "paragraphs": 0
+      }
+    },
+    {
+      "case": "keyboard-focus-ar-dark",
+      "result": {
+        "class": "entrance-action",
+        "visible": true,
+        "outline": "solid",
+        "width": "2px",
+        "color": "color(srgb 0.957647 0.522353 0.741176)"
+      }
+    },
+    {
+      "case": "entry-signup-ar-dark",
+      "result": {
+        "noDemoLabels": true,
+        "noOverflow": true
+      }
+    },
+    {
+      "case": "entry-signup-ar-dark-structure",
+      "result": {
+        "title": "إنشاء حساب",
+        "actions": [
+          {
+            "text": "إنشاء حساب",
+            "cls": "entrance-action"
+          },
+          {
+            "text": "إلغاء",
+            "cls": "entrance-action secondary"
+          }
+        ],
+        "paragraphs": 0
+      }
+    },
+    {
+      "case": "main-signin-member",
+      "result": {
+        "noDemoLabels": true,
+        "noOverflow": true
+      }
+    },
+    {
+      "case": "after-entry-signup",
+      "result": {
+        "noDemoLabels": true,
+        "noOverflow": true
+      }
+    },
+    {
+      "case": "after-entry-signup-structure",
+      "result": {
+        "title": "Créer un compte",
+        "actions": [
+          {
+            "text": "Créer un compte",
+            "cls": "entrance-action"
+          },
+          {
+            "text": "Annuler",
+            "cls": "entrance-action secondary"
+          }
+        ],
+        "paragraphs": 0
+      }
+    },
+    {
+      "case": "after-entry-signin",
+      "result": {
+        "noDemoLabels": true,
+        "noOverflow": true
+      }
+    },
+    {
+      "case": "after-entry-signin-structure",
+      "result": {
+        "title": "Connexion",
+        "actions": [
+          {
+            "text": "Se connecter",
+            "cls": "entrance-action"
+          },
+          {
+            "text": "Annuler",
+            "cls": "entrance-action secondary"
+          }
+        ],
+        "paragraphs": 0
+      }
+    },
+    {
+      "case": "after-entry-member",
+      "result": {
+        "noDemoLabels": true,
+        "noOverflow": true
+      }
+    },
+    {
+      "case": "fr-projects",
+      "result": {
+        "noDemoLabels": true,
+        "noOverflow": true
+      }
+    },
+    {
+      "case": "fr-people",
+      "result": {
+        "noDemoLabels": true,
+        "noOverflow": true
+      }
+    },
+    {
+      "case": "failure",
+      "result": {
+        "errors": [],
+        "text": "e\n\nRédigé par\n\nTheo Vermeer\nJonas Reed\n\nLa dernière note prépare souvent la prochaine séance.\n\n“\n&\n\n42 Berlin\n23 juil. 2026\n\nMontrer une petite étape\n\nRédigé par\n\nLina Moreau\nMara Vogel\n\nUne démonstration courte peut ouvrir une discussion utile.\n\n“\n&\n\n1337 Ben Guérir\n22 juil. 2026\n\nRelire avec le contexte\n\nRédigé par\n\nSami Nasser\nYoussef Amrani\n\nUne modification se comprend mieux avec son exemple de départ.\n\n“\n&\n\n1337 Khouribga\n21 juil. 2026\n\nTravailler entre deux horaires\n\nRédigé par\n\nAya Haddad\nNora Bensaïd\n\nPartager un créneau ne suffit pas toujours entre campus.\n\n“\n&\n\n42 Barcelona\n20 juil. 2026\n\nPréparer une séance à deux\n\nRédigé par\n\nLucía Roca\n\nUne question précise aide à commencer une séance.\n\n“\n&\n\n42 Brussels\n19 juil. 2026\n\nDes repères au-delà de la couleur\n\nRédigé par\n\nEmma De Smet\n\nDeux états ne doivent pas se distinguer seulement par leur teinte.\n\n“\n&\n\n42 Luanda\n18 juil. 2026\n\nUn test est aussi une question\n\nRédigé par\n\nTomás Vieira\n\nNommer un test oblige à dire ce que l’on veut vérifier.\n\n“\n&\n\n42 Antananarivo\n17 juil. 2026\n\nAlléger une page\n\nRédigé par\n\nLéa Rakoto\n\nChaque élément ajouté prend une part de l’attention.\n\n“\n&\n\n42 Heilbronn\n16 juil. 2026\n\nLe message en plusieurs morceaux\n\nRédigé par\n\nAmir Keller\n\nLe réseau ne respecte pas les frontières de nos phrases.\n\n“\n&\n\n42 Prague\n15 juil. 2026\n\nConserver les essais ratés\n\nRédigé par\n\nElena Novák\n\nUne piste abandonnée peut encore expliquer une décision.\n\nPage 1 sur 7\n\n1\n2\n3\n…\n7\n\nChroniques · Le monde · Page 1 sur 7"
+      }
+    }
+  ],
+  "sourcesBefore": {
+    "index.html": "386108ced016657793dc71ecc30635d8fa900427e80e236318e654586bd1928b",
+    "content-preview.html": "d3e13c6702d5e26ca03783e0e0438b4bbe464815e3f61657872958d9c3ffe50e",
+    "welcome.mjs": "d7a56728594b5ecdbc0357e943d238c12a76f28bc737ffe7da33bc534924e1d3",
+    "entrance.mjs": "7e5046be82716bdecbb97226e542755591d70c4acc8c75f5fdcfd9cfa70588cc",
+    "entrance.css": "80d4d561f6e19263f394fa6b4307808bfb96da09cdd9659dd83ddbb7f1dd094e",
+    "dock-navigation.css": "68b395258995146cc483beae15fb175bb77a7e6153845bfa2954e654861fdaa3",
+    "account-menu.mjs": "e1ab9b624798ac2ec8a96803fb4143b02e0da740137a7ed6557c13b93439aa6b",
+    "profile-ui.mjs": "dd97fee7ff693e95197ec9d20e644d1e196a9f58d141257a1f09362e47251701",
+    "project-ui.mjs": "743604c272a630875f7a777b056e6edddbb91b6438216f24067074f252145693",
+    "journal-ui.mjs": "e92541eedd23754f75a81474dfdb72ecb1c2b8fdaa881ffc7a21dead8b596f67",
+    "content-controls.mjs": "8b6ecf298b8cbdeadc8337434bf88192e8a471ec77c2037873b17b2fadd4b0c4"
+  },
+  "sourcesAfter": {
+    "index.html": "386108ced016657793dc71ecc30635d8fa900427e80e236318e654586bd1928b",
+    "content-preview.html": "d3e13c6702d5e26ca03783e0e0438b4bbe464815e3f61657872958d9c3ffe50e",
+    "welcome.mjs": "d7a56728594b5ecdbc0357e943d238c12a76f28bc737ffe7da33bc534924e1d3",
+    "entrance.mjs": "7e5046be82716bdecbb97226e542755591d70c4acc8c75f5fdcfd9cfa70588cc",
+    "entrance.css": "80d4d561f6e19263f394fa6b4307808bfb96da09cdd9659dd83ddbb7f1dd094e",
+    "dock-navigation.css": "68b395258995146cc483beae15fb175bb77a7e6153845bfa2954e654861fdaa3",
+    "account-menu.mjs": "e1ab9b624798ac2ec8a96803fb4143b02e0da740137a7ed6557c13b93439aa6b",
+    "profile-ui.mjs": "dd97fee7ff693e95197ec9d20e644d1e196a9f58d141257a1f09362e47251701",
+    "project-ui.mjs": "743604c272a630875f7a777b056e6edddbb91b6438216f24067074f252145693",
+    "journal-ui.mjs": "e92541eedd23754f75a81474dfdb72ecb1c2b8fdaa881ffc7a21dead8b596f67",
+    "content-controls.mjs": "8b6ecf298b8cbdeadc8337434bf88192e8a471ec77c2037873b17b2fadd4b0c4"
+  },
+  "limits": "Map import deliberately blocked for account/copy checks; real globe interactions verified separately."
+}

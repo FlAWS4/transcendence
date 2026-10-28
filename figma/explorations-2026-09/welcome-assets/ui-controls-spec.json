@@ -1,0 +1,96 @@
+{
+  "date": "2026-09-27",
+  "scope": "Website changes requested during Figma synchronization; not proof of Figma implementation",
+  "sourceVersions": {
+    "css": "language-menu-19",
+    "module": "language-menu-19",
+    "mapEngine": 17
+  },
+  "randomCampus": {
+    "id": "random-campus",
+    "classes": [
+      "icon-button",
+      "random-campus"
+    ],
+    "placement": "fourth globe-control after zoom-in; no current-section change",
+    "buttonSize": {
+      "desktop": [
+        40,
+        40
+      ],
+      "mobile": [
+        44,
+        44
+      ]
+    },
+    "iconSize": [
+      20,
+      20
+    ],
+    "lightColor": "#008E90",
+    "darkColor": "var(--h42-pink) = #ED3491",
+    "copy": {
+      "fr": "Visiter un campus au hasard",
+      "en": "Visit a random campus",
+      "ar": "زيارة فرع عشوائي"
+    },
+    "behavior": "Uniform among all loaded campus records excluding the current campus when more than one exists; normal selectCampus navigation and radius preparation; disabled before globe readiness. A new click can replace a current journey."
+  },
+  "languageMenu": {
+    "triggerId": "language",
+    "containerId": "language-switcher",
+    "menuId": "language-menu",
+    "sharedOnEntranceAndWelcome": true,
+    "placement": "position:absolute; inset-inline-end:0; top:calc(100% + 8px)",
+    "width": 176,
+    "padding": 6,
+    "cornerRadius": 18,
+    "borderWidth": 1,
+    "row": {
+      "minHeight": 42,
+      "padding": [
+        10,
+        12
+      ],
+      "radius": 12,
+      "fontSize": 14,
+      "checkIconSize": [
+        16,
+        16
+      ]
+    },
+    "options": [
+      {
+        "locale": "fr",
+        "label": "Français"
+      },
+      {
+        "locale": "en",
+        "label": "English"
+      },
+      {
+        "locale": "ar",
+        "label": "العربية"
+      }
+    ],
+    "selected": "warm-soft background; teal #008E90 in light, theme pink in dark; check mark visible only for the chosen language.",
+    "openingMotion": {
+      "durationMs": 180,
+      "offsetYPx": -5,
+      "opacity": [
+        0,
+        1
+      ]
+    },
+    "behavior": "Anchored non-modal menu. Selection, outside pointer, Escape or Tab closes it. Arrow keys and Home/End navigate; selected language updates the shared header and interface. Trigger aria-expanded and menuitemradio aria-checked stay synchronized."
+  },
+  "icons": {
+    "dice": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"4\"/><circle cx=\"8\" cy=\"8\" r=\".9\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"16\" cy=\"8\" r=\".9\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"12\" cy=\"12\" r=\".9\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"8\" cy=\"16\" r=\".9\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"16\" cy=\"16\" r=\".9\" fill=\"currentColor\" stroke=\"none\"/></svg>",
+    "check": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m5 12 4 4 10-10\"/></svg>"
+  },
+  "checks": {
+    "syntax": "welcome.mjs and entrance.mjs passed node --check",
+    "selection": "Actual click callback checked against all58 records and all58 current-campus exclusions; boundaries, disabled/unavailable/empty data and single-campus fallback passed.",
+    "visualAndInteraction": "Parent agent owns browser checks; not performed by this local-only subagent."
+  }
+}

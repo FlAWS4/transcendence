@@ -1,0 +1,69 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import vm from 'node:vm';
+import {mountCampusDetails} from './campus-details.mjs';
+
+const read=name=>readFileSync(new URL(name,import.meta.url),'utf8');
+const network=JSON.parse(read('./campuses.json'));
+const sites=JSON.parse(read('./campus-websites.json')).campuses;
+const locales=JSON.parse(read('./campus-website-locales.json')).campuses;
+const campuses=network.campuses.map(campus=>({...campus,
+ ...(sites[campus.id]?.kind==='campus-site'?{websiteUrl:sites[campus.id].url}:{}),
+ websiteLocales:locales[campus.id]}));
+const globeSource=read('./integrated-globe.mjs'),welcomeSource=read('./welcome.mjs');
+const markersCode=globeSource.slice(globeSource.indexOf(' function syncMarkers('),globeSource.indexOf(' function renderMarkers('));
+const callback=welcomeSource.slice(welcomeSource.indexOf('onCampusDetails(campus){'),welcomeSource.indexOf('   formatPlace:'));
+
+class Element extends EventTarget {
+ constructor(tagName,ownerDocument){super();this.tagName=tagName;this.ownerDocument=ownerDocument;this.children=[];this.attributes={};this.classList={add(){},toggle(){}};}
+ append(...children){for(const child of children){child.parentElement=this;this.children.push(child);}}
+ setAttribute(name,value){this.attributes[name]=value;}
+ remove(){this.parentElement.children=this.parentElement.children.filter(child=>child!==this);}
+}
+function fixture(id,{preview=true,locale='fr'}={}){
+ const campus=campuses.find(item=>item.id===id),doc={createElement:tag=>new Element(tag,doc),createElementNS:(_,tag)=>new Element(tag,doc)};
+ const overlay=doc.createElement('div'),details=doc.createElement('div'),markers=new Map();
+ const ctx=vm.createContext({locale,document:doc,markers,scope:{level:'campus',country:campus.country,campus:id,...(preview?{previewCampus:id}:{})},
+  campusById:new Map(campuses.map(item=>[item.id,item])),countries:new Map([[campus.country,{members:[campus]}]]),
+  mountCampusDetails,countryName:()=>campus.country,
+  openDialog(_title,render){details.children=[];render(details);},
+  createCampusDirection:()=>({isOffscreen:()=>false,destroy(){}}),maplibregl:{LngLat:{convert:value=>value}},map:{getCanvasContainer:()=>overlay},
+  renderMarkers(){},markersDirty:false,flight:false,worldPreparing:false,
+  container:{focus(){throw new Error('The campus information view owns focus');}},
+ });
+ vm.runInContext(`options={${callback}};${markersCode}`,ctx);ctx.syncMarkers();
+ return {ctx,open(){markers.get(id).button.dispatchEvent(new Event('click'));return details.children[0];}};
+}
+const link=root=>root.children.find(child=>child.tagName==='a');
+
+test('Explorer and the content map popup use the selected language at each marker click',()=>{
+ for(const preview of [false,true]){
+  const f=fixture('paris',{preview});
+  for(const [locale,url,hreflang] of [['fr','https://42.fr/','fr'],['en','https://42.fr/en/homepage/','en'],['ar','https://42.fr/en/homepage/','en'],['fr','https://42.fr/','fr']]){
+   f.ctx.locale=locale;const root=f.open(),destination=link(root);
+   assert.equal(root.lang,locale);assert.equal(root.dir,locale==='ar'?'rtl':'ltr');
+   assert.equal(destination.href,url);assert.equal(destination.hreflang,hreflang);
+  }
+ }
+});
+
+test('the popup keeps the verified English, local and official-profile fallbacks',()=>{
+ for(const [id,url,hreflang] of [['sao','https://42sp.org.br/en','en'],['lyon','https://42lyon.fr/','fr'],['tokyo','https://42tokyo.jp/','ja'],['rio','https://42.rio/','pt'],['quebec','https://www.42network.org/campus/42-quebec/','en']]){
+  const root=fixture(id,{locale:'ar'}).open(),destination=link(root);
+  assert.equal(destination.href,url,id);assert.equal(destination.hreflang,hreflang,id);
+  assert.equal(destination.target,'_blank');assert.equal(destination.rel,'noopener noreferrer');
+  assert.match(root.children.find(child=>child.className==='campus-details-link-note').textContent,/الموقع باللغة/);
+ }
+});
+
+test('an available Arabic campus site is used inside the content map popup',()=>{
+ const root=fixture('1337-khouribga',{locale:'ar'}).open();
+ assert.equal(link(root).href,'https://www.1337.ma/ar/');assert.equal(link(root).hreflang,'ar');
+});
+
+test('a language that requires the external site menu remains explained in the popup',()=>{
+ const root=fixture('luanda',{locale:'en'}).open();
+ assert.equal(link(root).href,'https://www.42luanda.com/');
+ assert.equal(root.children.at(-1).textContent,'Select English from the website’s language menu.');
+});

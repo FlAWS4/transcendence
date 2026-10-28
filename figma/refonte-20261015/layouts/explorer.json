@@ -1,0 +1,1119 @@
+{
+ "area": "explorer",
+ "key": "explorer",
+ "page": "02 · Explorer",
+ "sections": [
+  {
+   "id": "explore",
+   "title": "Explorer · Monde",
+   "note": "Globe entier, 58 campus dans 30 pays.",
+   "route": "#explore",
+   "main": true,
+   "y": 0,
+   "w": 4180,
+   "h": 3540,
+   "rows": [
+    [
+     {
+      "state": "explore",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Explorer · Monde — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "explore",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Explorer · Monde — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "explore",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Explorer · Monde — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "explore",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Explorer · Monde — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 260
+     }
+    ],
+    [
+     {
+      "state": "explore",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "light",
+      "name": "Explorer · Monde — Ordinateur · Clair · English",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 1380
+     },
+     {
+      "state": "explore",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Explorer · Monde — Ordinateur · Sombre · English",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 1380
+     },
+     {
+      "state": "explore",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "Explorer · Monde — Mobile · Clair · English",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 1380
+     },
+     {
+      "state": "explore",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Explorer · Monde — Mobile · Sombre · English",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 1380
+     }
+    ],
+    [
+     {
+      "state": "explore",
+      "fmt": "desktop",
+      "lang": "ar",
+      "theme": "light",
+      "name": "Explorer · Monde — Ordinateur · Clair · العربية",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 2500
+     },
+     {
+      "state": "explore",
+      "fmt": "desktop",
+      "lang": "ar",
+      "theme": "dark",
+      "name": "Explorer · Monde — Ordinateur · Sombre · العربية",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 2500
+     },
+     {
+      "state": "explore",
+      "fmt": "mobile",
+      "lang": "ar",
+      "theme": "light",
+      "name": "Explorer · Monde — Mobile · Clair · العربية",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 2500
+     },
+     {
+      "state": "explore",
+      "fmt": "mobile",
+      "lang": "ar",
+      "theme": "dark",
+      "name": "Explorer · Monde — Mobile · Sombre · العربية",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 2500
+     }
+    ]
+   ]
+  },
+  {
+   "id": "explore-country",
+   "title": "Explorer · Pays",
+   "note": "Zoom et déplacement limités au pays et à ses campus.",
+   "route": "#explore?country=<pays>",
+   "main": true,
+   "y": 3740,
+   "w": 4180,
+   "h": 3540,
+   "rows": [
+    [
+     {
+      "state": "explore-country",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Explorer · Pays — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "explore-country",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Explorer · Pays — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "explore-country",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Explorer · Pays — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "explore-country",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Explorer · Pays — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 260
+     }
+    ],
+    [
+     {
+      "state": "explore-country",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "light",
+      "name": "Explorer · Pays — Ordinateur · Clair · English",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 1380
+     },
+     {
+      "state": "explore-country",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Explorer · Pays — Ordinateur · Sombre · English",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 1380
+     },
+     {
+      "state": "explore-country",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "Explorer · Pays — Mobile · Clair · English",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 1380
+     },
+     {
+      "state": "explore-country",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Explorer · Pays — Mobile · Sombre · English",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 1380
+     }
+    ],
+    [
+     {
+      "state": "explore-country",
+      "fmt": "desktop",
+      "lang": "ar",
+      "theme": "light",
+      "name": "Explorer · Pays — Ordinateur · Clair · العربية",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 2500
+     },
+     {
+      "state": "explore-country",
+      "fmt": "desktop",
+      "lang": "ar",
+      "theme": "dark",
+      "name": "Explorer · Pays — Ordinateur · Sombre · العربية",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 2500
+     },
+     {
+      "state": "explore-country",
+      "fmt": "mobile",
+      "lang": "ar",
+      "theme": "light",
+      "name": "Explorer · Pays — Mobile · Clair · العربية",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 2500
+     },
+     {
+      "state": "explore-country",
+      "fmt": "mobile",
+      "lang": "ar",
+      "theme": "dark",
+      "name": "Explorer · Pays — Mobile · Sombre · العربية",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 2500
+     }
+    ]
+   ]
+  },
+  {
+   "id": "explore-campus",
+   "title": "Explorer · Campus",
+   "note": "Approche jusqu’aux rues ; déplacement limité au quartier (3 km). Si le campus sort de l’écran, une flèche au bord recentre la carte sans changer d’écran.",
+   "route": "#explore?country=<pays>&campus=<id>",
+   "main": true,
+   "y": 7480,
+   "w": 4180,
+   "h": 3540,
+   "rows": [
+    [
+     {
+      "state": "explore-campus",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Explorer · Campus — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "explore-campus",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Explorer · Campus — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "explore-campus",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Explorer · Campus — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "explore-campus",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Explorer · Campus — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 260
+     }
+    ],
+    [
+     {
+      "state": "explore-campus",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "light",
+      "name": "Explorer · Campus — Ordinateur · Clair · English",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 1380
+     },
+     {
+      "state": "explore-campus",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Explorer · Campus — Ordinateur · Sombre · English",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 1380
+     },
+     {
+      "state": "explore-campus",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "Explorer · Campus — Mobile · Clair · English",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 1380
+     },
+     {
+      "state": "explore-campus",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Explorer · Campus — Mobile · Sombre · English",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 1380
+     }
+    ],
+    [
+     {
+      "state": "explore-campus",
+      "fmt": "desktop",
+      "lang": "ar",
+      "theme": "light",
+      "name": "Explorer · Campus — Ordinateur · Clair · العربية",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 2500
+     },
+     {
+      "state": "explore-campus",
+      "fmt": "desktop",
+      "lang": "ar",
+      "theme": "dark",
+      "name": "Explorer · Campus — Ordinateur · Sombre · العربية",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 2500
+     },
+     {
+      "state": "explore-campus",
+      "fmt": "mobile",
+      "lang": "ar",
+      "theme": "light",
+      "name": "Explorer · Campus — Mobile · Clair · العربية",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 2500
+     },
+     {
+      "state": "explore-campus",
+      "fmt": "mobile",
+      "lang": "ar",
+      "theme": "dark",
+      "name": "Explorer · Campus — Mobile · Sombre · العربية",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 2500
+     }
+    ]
+   ]
+  },
+  {
+   "id": "campus-sheet",
+   "title": "Fiche campus",
+   "note": "Volet à droite sur ordinateur, feuille glissante sur mobile. Logo, photos, adresse et Copier l’adresse, contacts, ouverture, chiffres, Piscines. Seules Paris et Mulhouse sont détaillées ; les autres affichent « Non renseigné ».",
+   "route": "",
+   "main": false,
+   "y": 11220,
+   "w": 4180,
+   "h": 6668,
+   "rows": [
+    [
+     {
+      "state": "campus-sheet",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Fiche campus — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "campus-sheet",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Fiche campus — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "campus-sheet",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Fiche campus — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "campus-sheet",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Fiche campus — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 260
+     }
+    ],
+    [
+     {
+      "state": "campus-sheet",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "light",
+      "name": "Fiche campus — Ordinateur · Clair · English",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 1380
+     },
+     {
+      "state": "campus-sheet",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Fiche campus — Ordinateur · Sombre · English",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 1380
+     },
+     {
+      "state": "campus-sheet",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "Fiche campus — Mobile · Clair · English",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 1380
+     },
+     {
+      "state": "campus-sheet",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Fiche campus — Mobile · Sombre · English",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 1380
+     }
+    ],
+    [
+     {
+      "state": "campus-sheet-expanded",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Fiche campus · déployée — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 80,
+      "y": 2500
+     },
+     {
+      "state": "campus-sheet-expanded",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Fiche campus · déployée — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 590,
+      "y": 2500
+     }
+    ],
+    [
+     {
+      "state": "campus-sheet-expanded",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "Fiche campus · déployée — Mobile · Clair · English",
+      "w": 390,
+      "h": 844,
+      "x": 80,
+      "y": 3504
+     },
+     {
+      "state": "campus-sheet-expanded",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Fiche campus · déployée — Mobile · Sombre · English",
+      "w": 390,
+      "h": 844,
+      "x": 590,
+      "y": 3504
+     }
+    ],
+    [
+     {
+      "state": "campus-sheet-mulhouse",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Fiche campus · 42 Mulhouse — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 4508
+     },
+     {
+      "state": "campus-sheet-mulhouse",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Fiche campus · 42 Mulhouse — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 4508
+     }
+    ],
+    [
+     {
+      "state": "campus-sheet-mulhouse",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "light",
+      "name": "Fiche campus · 42 Mulhouse — Ordinateur · Clair · English",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 5628
+     },
+     {
+      "state": "campus-sheet-mulhouse",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Fiche campus · 42 Mulhouse — Ordinateur · Sombre · English",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 5628
+     }
+    ]
+   ]
+  },
+  {
+   "id": "scope-popover",
+   "title": "« Où veux-tu aller ? »",
+   "note": "Filtre Pays / Campus de l’en-tête. Sur les listes, la même fenêtre filtre la liste sur place. Inerte sur les fiches, masqué sur 42 Awards.",
+   "route": "",
+   "main": false,
+   "y": 18088,
+   "w": 4180,
+   "h": 2420,
+   "rows": [
+    [
+     {
+      "state": "scope-popover",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "« Où veux-tu aller ? » — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "scope-popover",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "« Où veux-tu aller ? » — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "scope-popover",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "« Où veux-tu aller ? » — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "scope-popover",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "« Où veux-tu aller ? » — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 260
+     }
+    ],
+    [
+     {
+      "state": "scope-popover",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "light",
+      "name": "« Où veux-tu aller ? » — Ordinateur · Clair · English",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 1380
+     },
+     {
+      "state": "scope-popover",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "dark",
+      "name": "« Où veux-tu aller ? » — Ordinateur · Sombre · English",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 1380
+     },
+     {
+      "state": "scope-popover",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "« Où veux-tu aller ? » — Mobile · Clair · English",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 1380
+     },
+     {
+      "state": "scope-popover",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "« Où veux-tu aller ? » — Mobile · Sombre · English",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 1380
+     }
+    ]
+   ]
+  },
+  {
+   "id": "about-dialog",
+   "title": "« Une nouvelle façon d’explorer »",
+   "note": "",
+   "route": "",
+   "main": false,
+   "y": 20708,
+   "w": 4180,
+   "h": 2420,
+   "rows": [
+    [
+     {
+      "state": "about-dialog",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "« Une nouvelle façon d’explorer » — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "about-dialog",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "« Une nouvelle façon d’explorer » — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "about-dialog",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "« Une nouvelle façon d’explorer » — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "about-dialog",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "« Une nouvelle façon d’explorer » — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 260
+     }
+    ],
+    [
+     {
+      "state": "about-dialog",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "light",
+      "name": "« Une nouvelle façon d’explorer » — Ordinateur · Clair · English",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 1380
+     },
+     {
+      "state": "about-dialog",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "dark",
+      "name": "« Une nouvelle façon d’explorer » — Ordinateur · Sombre · English",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 1380
+     },
+     {
+      "state": "about-dialog",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "« Une nouvelle façon d’explorer » — Mobile · Clair · English",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 1380
+     },
+     {
+      "state": "about-dialog",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "« Une nouvelle façon d’explorer » — Mobile · Sombre · English",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 1380
+     }
+    ]
+   ]
+  },
+  {
+   "id": "explore-noglobe",
+   "title": "Explorer sans le globe",
+   "note": "Message « Le globe n’a pas pu se charger. Recharge la page pour réessayer. » Le filtre Pays / Campus marche si la liste des campus est chargée ; le dé est grisé.",
+   "route": "#explore",
+   "main": true,
+   "y": 23328,
+   "w": 4180,
+   "h": 3540,
+   "rows": [
+    [
+     {
+      "state": "explore-noglobe",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Explorer sans le globe — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "explore-noglobe",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Explorer sans le globe — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "explore-noglobe",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Explorer sans le globe — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "explore-noglobe",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Explorer sans le globe — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 260
+     }
+    ],
+    [
+     {
+      "state": "explore-noglobe",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "light",
+      "name": "Explorer sans le globe — Ordinateur · Clair · English",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 1380
+     },
+     {
+      "state": "explore-noglobe",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Explorer sans le globe — Ordinateur · Sombre · English",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 1380
+     },
+     {
+      "state": "explore-noglobe",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "Explorer sans le globe — Mobile · Clair · English",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 1380
+     },
+     {
+      "state": "explore-noglobe",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Explorer sans le globe — Mobile · Sombre · English",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 1380
+     }
+    ],
+    [
+     {
+      "state": "explore-noglobe",
+      "fmt": "desktop",
+      "lang": "ar",
+      "theme": "light",
+      "name": "Explorer sans le globe — Ordinateur · Clair · العربية",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 2500
+     },
+     {
+      "state": "explore-noglobe",
+      "fmt": "desktop",
+      "lang": "ar",
+      "theme": "dark",
+      "name": "Explorer sans le globe — Ordinateur · Sombre · العربية",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 2500
+     },
+     {
+      "state": "explore-noglobe",
+      "fmt": "mobile",
+      "lang": "ar",
+      "theme": "light",
+      "name": "Explorer sans le globe — Mobile · Clair · العربية",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 2500
+     },
+     {
+      "state": "explore-noglobe",
+      "fmt": "mobile",
+      "lang": "ar",
+      "theme": "dark",
+      "name": "Explorer sans le globe — Mobile · Sombre · العربية",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 2500
+     }
+    ]
+   ]
+  },
+  {
+   "id": "campus-window",
+   "title": "Fenêtre « Autour du campus »",
+   "note": "La carte du campus s’ouvre par-dessus la fiche, sans changer d’adresse : zoom, recentrer, fermer.",
+   "route": "",
+   "main": false,
+   "y": 27068,
+   "w": 4180,
+   "h": 2420,
+   "rows": [
+    [
+     {
+      "state": "campus-window",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Fenêtre « Autour du campus » — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "campus-window",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Fenêtre « Autour du campus » — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "campus-window",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Fenêtre « Autour du campus » — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "campus-window",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Fenêtre « Autour du campus » — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 260
+     }
+    ],
+    [
+     {
+      "state": "campus-window",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "light",
+      "name": "Fenêtre « Autour du campus » — Ordinateur · Clair · English",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 1380
+     },
+     {
+      "state": "campus-window",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Fenêtre « Autour du campus » — Ordinateur · Sombre · English",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 1380
+     },
+     {
+      "state": "campus-window",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "Fenêtre « Autour du campus » — Mobile · Clair · English",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 1380
+     },
+     {
+      "state": "campus-window",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Fenêtre « Autour du campus » — Mobile · Sombre · English",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 1380
+     }
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,162 @@
+{
+  "passed": false,
+  "cases": [
+    {
+      "case": "entrance-fr-light-1280",
+      "result": {
+        "pair": {
+          "width": 151.984375,
+          "height": 54,
+          "borderRadius": "14px",
+          "fontSize": "17px",
+          "padding": "14px 28px",
+          "minHeight": "52px",
+          "textAlign": "center"
+        },
+        "palette": "light",
+        "otherActionsUnchanged": true
+      }
+    },
+    {
+      "case": "dialogs-fr-light-1280",
+      "result": {
+        "signinColourOnly": true,
+        "signupAndCancelUnchanged": true
+      }
+    },
+    {
+      "case": "entrance-fr-dark-1280",
+      "result": {
+        "pair": {
+          "width": 151.984375,
+          "height": 54,
+          "borderRadius": "14px",
+          "fontSize": "17px",
+          "padding": "14px 28px",
+          "minHeight": "52px",
+          "textAlign": "center"
+        },
+        "palette": "dark",
+        "otherActionsUnchanged": true
+      }
+    },
+    {
+      "case": "dialogs-fr-dark-1280",
+      "result": {
+        "signinColourOnly": true,
+        "signupAndCancelUnchanged": true
+      }
+    },
+    {
+      "case": "entrance-en-light-390",
+      "result": {
+        "pair": {
+          "width": 342,
+          "height": 53,
+          "borderRadius": "14px",
+          "fontSize": "16px",
+          "padding": "14px 28px",
+          "minHeight": "52px",
+          "textAlign": "center"
+        },
+        "palette": "light",
+        "otherActionsUnchanged": true
+      }
+    },
+    {
+      "case": "dialogs-en-light-390",
+      "result": {
+        "signinColourOnly": true,
+        "signupAndCancelUnchanged": true
+      }
+    },
+    {
+      "case": "entrance-ar-dark-320",
+      "result": {
+        "pair": {
+          "width": 272,
+          "height": 64,
+          "borderRadius": "14px",
+          "fontSize": "16px",
+          "padding": "14px 28px",
+          "minHeight": "52px",
+          "textAlign": "center"
+        },
+        "palette": "dark",
+        "otherActionsUnchanged": true
+      }
+    },
+    {
+      "case": "dialogs-ar-dark-320",
+      "result": {
+        "signinColourOnly": true,
+        "signupAndCancelUnchanged": true
+      }
+    },
+    {
+      "case": "entrance-fr-dark-667",
+      "result": {
+        "pair": {
+          "width": 304.5,
+          "height": 45,
+          "borderRadius": "14px",
+          "fontSize": "16px",
+          "padding": "10px 16px",
+          "minHeight": "44px",
+          "textAlign": "center"
+        },
+        "palette": "dark",
+        "otherActionsUnchanged": true
+      }
+    },
+    {
+      "case": "dialogs-fr-dark-667",
+      "result": {
+        "signinColourOnly": true,
+        "signupAndCancelUnchanged": true
+      }
+    },
+    {
+      "case": "preview-light",
+      "result": {
+        "worldTarget": 44,
+        "signinDimensionsPreserved": true,
+        "localNoticeAndCancelUnchanged": true
+      }
+    },
+    {
+      "case": "preview-dark",
+      "result": {
+        "worldTarget": 44,
+        "signinDimensionsPreserved": true,
+        "localNoticeAndCancelUnchanged": true
+      }
+    },
+    {
+      "case": "failure",
+      "result": {
+        "errors": [],
+        "text": "Se connecter\nVisiter\nMenu du compte\nSe connecter\nCréer un compte\nParamètres\nThème\nSombre\nLangue\nFrançais"
+      }
+    }
+  ],
+  "sourcesBefore": {
+    "index.html": "23be344380b177c81266a078d524265f90220f52a028f0e1386762c1dc174c39",
+    "content-preview.html": "a232a09b4deaa2d62458bbef5d9dac1393f17fff4afac06d0e110c017eae7ef4",
+    "welcome.mjs": "e6e7f537154ceffd8b5cd3e18467742b352fff526e634144ea6ac3603122db63",
+    "content-preview.mjs": "9787246ed2470d52ece39bb19d9ddb9a5acd1c4b7c576eb6c21ff7848da3c2ba",
+    "entrance.mjs": "fb8d6cf1167830082ca9b915c8e8c4d9042db2adb450dd7d0294244377e7948c",
+    "entrance.css": "b36dad3459a13e56185fb9b33319c4e873c289fc05eb2cb24059df1051cd9a51",
+    "dock-navigation.css": "efb988c4af2da62083b6cdf30e1bf5cf60ad89d117a2cbdb7980e25dbfed128f"
+  },
+  "sourcesAfter": {
+    "index.html": "23be344380b177c81266a078d524265f90220f52a028f0e1386762c1dc174c39",
+    "content-preview.html": "a232a09b4deaa2d62458bbef5d9dac1393f17fff4afac06d0e110c017eae7ef4",
+    "welcome.mjs": "e6e7f537154ceffd8b5cd3e18467742b352fff526e634144ea6ac3603122db63",
+    "content-preview.mjs": "9787246ed2470d52ece39bb19d9ddb9a5acd1c4b7c576eb6c21ff7848da3c2ba",
+    "entrance.mjs": "fb8d6cf1167830082ca9b915c8e8c4d9042db2adb450dd7d0294244377e7948c",
+    "entrance.css": "b36dad3459a13e56185fb9b33319c4e873c289fc05eb2cb24059df1051cd9a51",
+    "dock-navigation.css": "efb988c4af2da62083b6cdf30e1bf5cf60ad89d117a2cbdb7980e25dbfed128f"
+  },
+  "limits": "Isolated Chrome, reduced motion, desktop/mobile/landscape viewports. Account checks block the map; final Explorer capture waits for the real map. Scanner and decryption checked separately with motion enabled."
+}

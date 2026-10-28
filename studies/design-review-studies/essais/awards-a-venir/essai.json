@@ -1,0 +1,66 @@
+{
+  "id": "awards-a-venir",
+  "groupe": "Typographie, lisibilité et pages",
+  "titre": "Page Awards « à venir »",
+  "resume": "Une seule phrase centrée, « Les 42 Awards arrivent bientôt. » (aussi en anglais et en arabe), sous le trophée du menu en gris discret, sur la page 42 Awards aujourd’hui vide. Rien d’autre ne change : ni lien ni contenu, ni l’animation HORIZON → AWARDS, ni le dock.",
+  "probleme": "La page 42 Awards n’affiche que l’en-tête et le menu : aucun texte visible en dehors (0 dans les 10 vues mesurées). Pour un visiteur extérieur, elle peut passer pour une page cassée ou pas encore chargée.",
+  "changement": "essai.mjs ajoute à la fin de #main un bloc composé du symbole #i-awards du dock (28 px, gris secondaire du thème, décoratif) et d’une phrase de 20/28 px (jeton H3, graisse 500, couleur du texte ; interligne de 32 px en arabe) : FR « Les 42 Awards arrivent bientôt. », EN « 42 Awards are coming soon. », AR « جوائز 42 قادمة قريبًا. » (nom arabe du dock), avec lang et dir mis à jour à chaque changement de langue. essai.css ne l’affiche que lorsque la rubrique active est Awards et que l’arrivée est terminée : bloc fixe centré dans la fenêtre, dont les marges verticales reprennent la fin du fondu de l’en-tête et la hauteur du dock ; placé sous l’en-tête et le dock, sans pointeur ni élément focalisable ; fondu d’apparition de 0,45 s (proche des 0,36 s d’entrée des contenus des autres rubriques), supprimé en mouvement réduit.",
+  "decisionConcernee": "7 octobre : « un bouton 42 Award dans le menu principal, avec une page vide en dehors du header et du menu » (page ne contenant que l’en-tête et le menu). L’essai y ajoute une phrase d’attente.",
+  "alternativeDe": "",
+  "vues": [
+    {"libelle": "Ordinateur clair", "page": "content-preview.html", "route": "awards", "viewport": "ordinateur", "theme": "light", "lang": "fr"},
+    {"libelle": "Ordinateur sombre (anglais)", "page": "content-preview.html", "route": "awards", "viewport": "ordinateur", "theme": "dark", "lang": "en"},
+    {"libelle": "Mobile clair", "page": "content-preview.html", "route": "awards", "viewport": "mobile", "theme": "light", "lang": "fr"},
+    {"libelle": "Mobile sombre (arabe)", "page": "content-preview.html", "route": "awards", "viewport": "mobile", "theme": "dark", "lang": "ar"}
+  ],
+  "verifications": [
+    "19 critères sur 19 réussis dans Chrome (checks/awards-a-venir/results.json, contrôle repris et complété lors de la vérification du 14 octobre, résultats de 18 h 43).",
+    "10 vues (ordinateur 1440×900 clair FR, sombre FR, sombre EN, clair AR ; mobile 390×844 clair FR, sombre FR, clair EN, sombre AR ; 320×640 ; paysage 667×375) : sans l’essai, aucun texte visible hors de l’en-tête et du dock ; avec l’essai, seule la phrase attendue dans la langue de la page (lang et dir corrects, de droite à gauche en arabe), sur une ligne et sans troncature.",
+    "Aucun autre pixel ne change : 0 pixel différent hors du bloc du message dans les 10 vues, dont 0 dans l’en-tête et 0 dans la bande du dock ; seul le bloc change (1 231 à 6 773 pixels). Calcul indépendant : la boîte qui englobe tous les pixels modifiés reste à l’intérieur du trophée et de la phrase (marge de 4 px) dans les 10 vues.",
+    "Placement : centre du message exactement au centre de la fenêtre (écart 0 px) ; de 13,5 px (paysage) à 228 px (ordinateur) sous la fin du fondu de l’en-tête, et au moins 79,5 px au-dessus du dock ; aucun défilement horizontal.",
+    "Contraste du texte de 16,3:1 à 17,3:1, en clair comme en sombre ; icône décorative de 6,1:1 à 7,5:1.",
+    "Clavier : 9 appuis réels sur Tab donnent la même suite avec et sans l’essai (marque, Mon compte, puis les 5 boutons du dock) ; le focus n’entre jamais dans le bloc, qui ne contient aucun élément focalisable ; l’anneau de focus du bouton 42 Awards est identique (0 pixel différent hors du bloc), en français clair sur ordinateur comme en arabe sombre sur mobile. Position et taille du dock, pastille active et logo AWARDS inchangés ; icône aria-hidden, bloc sans pointeur.",
+    "Absent ailleurs : masqué et non visible sur 9 pages (Explorer monde et Paris, Projets, Profils, Chroniques, fiche projet, commentaires d’un projet, parcours d’un profil, article) ; sur 7 passages par le dock (Projets, Awards, Explorer, Awards, Profils, Awards, Chroniques), visible uniquement sur Awards. 5 autres pages sont identiques au pixel près avec et sans l’essai : Projets (ordinateur), profil (mobile sombre), Chroniques (320 px en arabe), commentaires d’un projet (mobile en anglais) et Explorer (ordinateur sombre). Lors d’un premier passage, un pixel isolé de l’Explorer variait, mais il variait aussi entre deux chargements de la copie sans essai ; 0 au passage retenu.",
+    "Langue et thème changés en direct par Mon espace → Réglages (anglais clair, arabe sombre, français clair) : texte, sens et couleurs suivent sans rechargement, et chaque état obtenu est identique au pixel près à un chargement direct dans la même langue et le même thème.",
+    "Animation HORIZON → AWARDS jouée avec le mouvement : suite d’états du logo identique avec et sans l’essai (16 relevés à l’aller, 15 au retour) ; durées sans / avec l’essai de 1 255 / 1 252 ms à l’aller et 1 244 / 1 236 ms au retour (1 250 ms prévus) ; pastille du dock aux mêmes coordonnées. Le message apparaît en fondu (opacité 0,94 après 200 ms, 1 après 400 ms) et disparaît dès la première image après le départ d’Awards.",
+    "Arrivée par index.html#awards : message masqué à chaque étape (chiffrée, ouverture, anneau, attente, erreur avec globe bloqué puis « Continuer ») et pendant l’ouverture réelle avec le globe et le mouvement (révélation de 19 à 23 s selon les passages, dans Chrome sans écran) ; il n’apparaît qu’une fois l’accueil ouvert, avec le logo AWARDS. Après « Continuer », la page est identique au pixel près à l’aperçu direct de la page Awards avec l’essai.",
+    "Mouvement réduit : aucune animation (animation-name none), affichage immédiat ; sans cette préférence, fondu de 0,45 s. Aucune erreur dans la console.",
+    "Accessibilité (arbre de Chrome) : la phrase est exposée comme texte sur Awards, en français comme en arabe, et absente de l’arbre sur Projets ; le trophée est ignoré (aria-hidden).",
+    "Menu du compte ouvert sur Awards (mobile 390×844) : même position et même taille avec et sans l’essai, 0 pixel différent hors du panneau et du bloc.",
+    "Avec tous les essais actifs ensemble (17 retenus, état du 14 octobre à 18 h 34) : message au même endroit, sans erreur, et 0 pixel différent dans son bloc par rapport à l’essai seul ; les écarts viennent du logo de l’en-tête et de la zone du dock, modifiés par d’autres essais (contrôle indicatif).",
+    "Copie figée intacte : 137 fichiers conformes au manifeste (contrôle en lecture seule)."
+  ],
+  "limites": [
+    "La phrase n’est pas annoncée automatiquement : en arrivant sur Awards, la copie annonce toujours « 42 Awards » et place le focus sur le bouton du dock ; la phrase se lit dans le contenu principal, après le menu. Elle figure bien dans l’arbre d’accessibilité de Chrome, mais aucun lecteur d’écran réel n’a été essayé.",
+    "Traduction arabe « جوائز 42 قادمة قريبًا. » rédigée par l’assistant à partir du nom du dock, non relue par un arabophone.",
+    "Icône en gris secondaire, choisie pour la discrétion comme dans le bloc vide « Distinctions » des profils ; le premier brouillon utilisait le turquoise 42.",
+    "Hors des vues demandées, à 568×320, le haut du trophée passe 14 px sous la fin du fondu de l’en-tête ; la phrase reste dégagée (26 px sous le fondu, 52 px au-dessus du dock). Le bloc n’est entièrement dégagé qu’à partir d’environ 350 px de hauteur (365 px au-delà de 700 px de large). À 280 px de large, la phrase passe sur deux lignes équilibrées, sans troncature ni défilement horizontal.",
+    "Menu du compte ouvert sur mobile : son panneau recouvre le haut du trophée sur 21 px, qui se devine à travers le verre, comme les contenus des autres rubriques ; la phrase reste visible sous le menu.",
+    "Le contenu des 42 Awards demandé le 8 octobre (historiques des campus et du Monde, éditions, vote, candidatures, dates importantes) reste à concevoir : l’essai n’en réalise aucune partie et n’annonce aucune date.",
+    "Combinaisons : seule celle de tous les essais a été ouverte, à titre indicatif, alors que d’autres essais pouvaient encore évoluer. Contraste élevé (forced-colors) et impression non contrôlés."
+  ],
+  "fichiers": [
+    "essais/awards-a-venir/essai.css",
+    "essais/awards-a-venir/essai.mjs",
+    "essais/awards-a-venir/essai.json",
+    "checks/awards-a-venir/check.py",
+    "checks/awards-a-venir/vignettes.py",
+    "checks/awards-a-venir/results.json"
+  ],
+  "captures": [
+    {"vue": "mobile, centre de l’écran", "avant": "checks/awards-a-venir/avant-centre-mobile.png", "apres": "checks/awards-a-venir/apres-centre-mobile.png"},
+    {"vue": "ordinateur", "avant": "checks/awards-a-venir/avant-ordinateur.png", "apres": "checks/awards-a-venir/apres-ordinateur.png"},
+    {"vue": "sombre-ordinateur", "avant": "checks/awards-a-venir/avant-sombre-ordinateur.png", "apres": "checks/awards-a-venir/apres-sombre-ordinateur.png"},
+    {"vue": "sombre-ordinateur-en", "avant": "checks/awards-a-venir/avant-sombre-ordinateur-en.png", "apres": "checks/awards-a-venir/apres-sombre-ordinateur-en.png"},
+    {"vue": "ar-ordinateur", "avant": "checks/awards-a-venir/avant-ar-ordinateur.png", "apres": "checks/awards-a-venir/apres-ar-ordinateur.png"},
+    {"vue": "mobile", "avant": "checks/awards-a-venir/avant-mobile.png", "apres": "checks/awards-a-venir/apres-mobile.png"},
+    {"vue": "sombre-mobile", "avant": "checks/awards-a-venir/avant-sombre-mobile.png", "apres": "checks/awards-a-venir/apres-sombre-mobile.png"},
+    {"vue": "en-mobile", "avant": "checks/awards-a-venir/avant-en-mobile.png", "apres": "checks/awards-a-venir/apres-en-mobile.png"},
+    {"vue": "ar-sombre-mobile", "avant": "checks/awards-a-venir/avant-ar-sombre-mobile.png", "apres": "checks/awards-a-venir/apres-ar-sombre-mobile.png"},
+    {"vue": "petit", "avant": "checks/awards-a-venir/avant-petit.png", "apres": "checks/awards-a-venir/apres-petit.png"},
+    {"vue": "paysage", "avant": "checks/awards-a-venir/avant-paysage.png", "apres": "checks/awards-a-venir/apres-paysage.png"},
+    {"vue": "focus clavier, ordinateur", "avant": "checks/awards-a-venir/avant-focus-ordinateur.png", "apres": "checks/awards-a-venir/apres-focus-ordinateur.png"},
+    {"vue": "focus clavier, arabe sombre mobile", "avant": "checks/awards-a-venir/avant-focus-ar-sombre-mobile.png", "apres": "checks/awards-a-venir/apres-focus-ar-sombre-mobile.png"},
+    {"vue": "menu du compte ouvert, mobile", "avant": "checks/awards-a-venir/avant-menu-compte-mobile.png", "apres": "checks/awards-a-venir/apres-menu-compte-mobile.png"}
+  ]
+}

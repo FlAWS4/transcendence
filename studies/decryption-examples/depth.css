@@ -1,0 +1,25 @@
+.horizon-depth { width: 100%; height: 100%; min-height: 250px; container-type: inline-size; overflow: hidden; perspective: 900px; color: var(--h42-color-text); }
+.depth-tunnel { position: relative; width: 100%; height: 100%; min-height: 250px; transform-style: preserve-3d; font: 500 clamp(28px, 5.2cqw, 72px)/1 var(--h42-font-family, Jost), sans-serif; }
+.depth-plane { position: absolute; top: 50%; left: 50%; width: max-content; padding: .46em .5em; border: 1px solid var(--h42-color-border); border-radius: 12px; transform-style: preserve-3d; will-change: transform, opacity; background: var(--h42-color-bg); }
+.depth-plane::before, .depth-plane::after { content: ''; position: absolute; height: 6px; width: 38%; left: 31%; border-block-start: 1px solid var(--h42-color-action-quiet); opacity: .4; }
+.depth-plane::before { top: -1px; }
+.depth-plane::after { bottom: -6px; }
+.depth-words { display: flex; gap: .08em; direction: ltr; unicode-bidi: isolate; transform-style: preserve-3d; }
+.depth-word-group { position: relative; display: flex; gap: .06em; transform-style: preserve-3d; }
+.depth-cell { position: relative; width: .72em; height: 1.4em; flex: none; transform-style: preserve-3d; }
+.depth-cell.space { width: .32em; }
+.horizon-depth .spatial-text { position: absolute; inset: 0; display: grid; place-items: center; }
+.horizon-depth .spatial-ink { display: block; transform-origin: center; }
+.horizon-depth [data-type="glyph"] .spatial-ink { font-size: .9em; line-height: 1; }
+.horizon-depth [data-type="hex"] .spatial-ink { font: 500 .38em/1 ui-monospace, monospace; letter-spacing: -.07em; }
+.horizon-depth .space [data-type="hex"] .spatial-ink { font-size: .23em; }
+.horizon-depth .spatial-bits { display: flex; gap: .3em; font: 500 .19em/1.2 ui-monospace, monospace; }
+.horizon-depth .spatial-bits > span { display: grid; }
+.depth-cell[data-phase="decrypting"] { color: var(--h42-color-action-quiet); }
+@container (max-width: 650px) {
+  .depth-tunnel { font-size: clamp(28px, 9cqw, 44px); }
+  .depth-words { flex-direction: column; align-items: center; gap: .12em; }
+  .depth-plane { padding: .4em; border-radius: 9px; }
+  .depth-word-group.first .line-space { position: absolute; left: calc(100% + .06em); }
+  .horizon-depth .spatial-bits { font-size: .22em; }
+}

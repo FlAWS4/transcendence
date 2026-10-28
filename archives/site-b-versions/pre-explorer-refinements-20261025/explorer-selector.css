@@ -1,0 +1,291 @@
+/* Version B Explorer « Halo » (25 Oct 2026, SPEC-B-HALO §3–5): the level selector and the campus frame in the stage slot
+   of A's globe. Loaded after explorer-art.css. Colours come only from the --hx-* tokens of explorer-art.css and A's
+   --control-glass-* (Prev/Next); --ease is welcome.css's. Literals: #000 as mask stops, transparent, currentColor and
+   system colours in forced colours. C's rules never match .explorer-sheet* (B's sheet). */
+
+/* ---- Stage: A's fixed full-viewport layer (z 7). visibility:inherit keeps it hidden with #main during the arrival
+   until entrance.css reveals it; outside Explorer it fades out, then stops being visible. ---------------------------- */
+:root .app[data-navigation=dock] #main>#explorer{
+ position:fixed;inset:0;z-index:7;opacity:1;visibility:inherit;transition:opacity .36s var(--ease),visibility 0s;
+ display:grid;grid-template:minmax(auto,1fr)/minmax(0,1fr);box-sizing:border-box;
+ /* The free band measured by explorer-band.mjs; the fallbacks are A's desktop band. */
+ padding-block:var(--explorer-top,168.3px) var(--explorer-bottom,calc(196px + env(safe-area-inset-bottom,0px)));
+ padding-inline:var(--horizon-page-gutter,24px);
+}
+:root .app[data-navigation=dock]:not([data-section=explore]) #main>#explorer{opacity:0;visibility:hidden;pointer-events:none;transition:opacity .36s var(--ease),visibility 0s .36s}
+/* Coming from a content page, the selector fades in once the outgoing page has faded (360 ms). */
+:root .app[data-navigation=dock][data-section=explore][data-content-exiting=true] #main>#explorer{transition-delay:.36s,0s}
+html:has(.app[data-navigation=dock][data-section=explore]){overscroll-behavior-x:none}
+/* The empty section takes the focus only without a view (loading or error), as A's stage did. */
+:root .app[data-navigation=dock] #main>#explorer:focus{outline:none}
+:root .app[data-navigation=dock] #main>#explorer:focus-visible{outline:2px solid var(--h42-color-focus);outline-offset:-5px;border-radius:32px}
+/* Bleeds, glows and shadows may reach into the stage's padding without a scrollbar (§3.1). */
+:root #explorer{overflow:clip;color:var(--hx-ink);line-height:1.45}
+:root #explorer:lang(ar){font-family:'Noto Sans Arabic',Jost,sans-serif;line-height:1.6}
+/* Only a level band lower than the compact row's 44 px lets the stage scroll (set by the selector). */
+:root .app[data-navigation=dock] #main>#explorer[data-stage-scroll=true]{overflow:hidden auto;overscroll-behavior:contain;scroll-padding-block:var(--explorer-top,168.3px) var(--explorer-bottom,calc(196px + env(safe-area-inset-bottom,0px)))}
+:root #explorer[data-stage-scroll=true] .explorer-level{min-block-size:60px}
+:root #explorer[data-stage-scroll=true] .explorer-carousel{overflow:clip}
+:root #explorer [data-state=leaving]{pointer-events:none}
+/* C's own paragraphs and fallback heading only (fix 4): B's sheet keeps its own resets. */
+:root #explorer :is(.explorer-prompt,.explorer-hint,.explorer-campus-title){margin:0}
+
+/* ---- Levels: head (steps + prompt), carousel, foot (pager + hint). Levels share one grid cell of the stage, so an
+   outgoing level overlaps the incoming one and never changes its size. ------------------------------------------------ */
+:root #explorer .explorer-level{grid-area:1/1;position:relative;min-inline-size:0;min-block-size:0;display:grid;grid-template-rows:auto minmax(0,1fr) auto;grid-template-columns:minmax(0,1fr)}
+:root #explorer .explorer-head{grid-row:1;position:relative;z-index:2;display:flex;justify-content:center;align-items:center;gap:14px;min-inline-size:0;padding:6px 0 0}
+:root #explorer .explorer-level[data-phone] .explorer-head{gap:10px}
+:root #explorer .explorer-steps{flex:none;display:flex;align-items:center;gap:5px}
+:root #explorer .explorer-step{inline-size:6px;block-size:6px;border-radius:50%;background:var(--hx-hair-strong)}
+:root #explorer .explorer-step[data-state=done]{background:var(--hx-teal)}
+:root #explorer .explorer-step[data-state=current]{inline-size:8px;block-size:8px;background:var(--hx-pink);box-shadow:0 0 0 4px color-mix(in srgb,var(--hx-pink) 16%,transparent)}
+:root #explorer .explorer-step-line{inline-size:14px;block-size:1px;background:var(--hx-hair-strong)}
+:root #explorer .explorer-prompt{min-inline-size:0;color:var(--hx-ink);font-size:16px;font-weight:500;line-height:1.45;letter-spacing:-.005em}
+:root #explorer .explorer-level[data-phone] .explorer-prompt{font-size:15px}
+:root #explorer .explorer-prompt:lang(ar){letter-spacing:0;line-height:1.6}
+/* The carousel is full bleed: its width W is the viewport's; the head and the foot stay inside the band. */
+:root #explorer .explorer-carousel{grid-row:2;position:relative;min-block-size:0;margin-inline:calc(-1 * var(--horizon-page-gutter,24px));touch-action:pan-y pinch-zoom;-webkit-user-select:none;user-select:none}
+/* The track reaches 170 px above and below the carousel so halos are never cut; only its sides fade (--fade). */
+:root #explorer .explorer-track{position:absolute;inset-inline:0;top:-170px;bottom:-170px;pointer-events:none;
+ -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 var(--fade,6%),#000 calc(100% - var(--fade,6%)),transparent 100%);
+ mask-image:linear-gradient(90deg,transparent 0,#000 var(--fade,6%),#000 calc(100% - var(--fade,6%)),transparent 100%)}
+:root #explorer .explorer-items{position:absolute;inset:0;pointer-events:none}
+:root #explorer .explorer-level[data-dragging] .explorer-items{will-change:transform}
+/* The horizon: a long, soft curve of light the silhouettes stand on (the edge of the former globe). */
+:root #explorer .explorer-horizon{position:absolute;left:0;top:0;inline-size:100%;block-size:100%;overflow:visible;pointer-events:none;fill:none;stroke:none}
+:root #explorer .explorer-horizon-glow{fill:none;stroke:url(#hx-horizon-glow-grad);stroke-width:26;filter:blur(14px);opacity:.55}
+:root #explorer .explorer-horizon-line{fill:none;stroke:url(#hx-horizon-line-grad);stroke-width:1.4}
+/* The pool of light at the cursor's feet; it never moves during a glide. */
+:root #explorer .explorer-pool{position:absolute;block-size:30px;border-radius:50%;background:var(--hx-pool);pointer-events:none;transition:opacity .3s}
+
+/* ---- Items: buttons without any background, border, radius or shadow (no block). One transform per item, anchored by
+   its centre; everything inside is laid out at the cursor scale and only its own transforms differ by rank (§4.2). ---- */
+:root #explorer .explorer-item{
+ position:absolute;left:0;top:0;inline-size:var(--w0);display:flex;flex-direction:column;align-items:center;
+ margin:0;padding:0;border:0;border-radius:0;background:none;box-shadow:none;color:var(--hx-ink);font:inherit;text-align:center;
+ transform:translate3d(calc(var(--x) - 50%),var(--y),0) scale(var(--s));transform-origin:50% var(--h0);
+ pointer-events:auto;cursor:pointer;-webkit-tap-highlight-color:transparent;
+}
+:root #explorer .explorer-item *{pointer-events:none}
+:root #explorer .explorer-item[data-off=out]{opacity:0;pointer-events:none}
+:root #explorer .explorer-box{position:relative;flex:none;inline-size:100%;block-size:var(--h0);display:grid;place-items:end center}
+/* Glows (L1/L2, halo's geometry): centred on the box, under the figure; the width factor is a transform. */
+:root #explorer .explorer-glow{position:absolute;left:50%;top:50%;inline-size:calc(1.5 * var(--b0));block-size:calc(1.5 * var(--h0));transform:translate(-50%,-50%) scale(var(--gx),1);border-radius:50%;pointer-events:none;background:radial-gradient(closest-side,var(--hx-glow-quiet),transparent 100%)}
+:root #explorer .explorer-glow-cursor{inline-size:calc(1.9 * var(--b0));block-size:calc(1.75 * var(--h0));background:var(--hx-cursor-glow);opacity:0}
+:root #explorer .explorer-item[data-off="0"] .explorer-glow{opacity:0}
+:root #explorer .explorer-item[data-off="0"] .explorer-glow-cursor{opacity:1}
+:root #explorer .explorer-item[data-kind=campus] .explorer-glow{display:none}
+@media(hover:hover){:root #explorer .explorer-item:not([data-off="0"]):hover .explorer-glow:not(.explorer-glow-cursor){background:radial-gradient(closest-side,var(--hx-glow-hover),transparent)}}
+/* The figure: the silhouette, the name over it, then the campus dots above the name (R2). */
+:root #explorer .explorer-figure{position:relative;display:block;inline-size:var(--fw);block-size:var(--fh)}
+:root #explorer .explorer-figure>.hx-art{position:absolute;inset:0;z-index:0}
+:root #explorer .explorer-figure>.hx-dots{position:absolute;inset:0;z-index:2}
+:root #explorer .explorer-item[data-off="0"] .hx-art{filter:var(--hx-shape-shadow)}
+:root #explorer .explorer-item:not([data-off="0"]) .hx-dots{opacity:.75}
+:root #explorer .explorer-item[data-kind=country]:not([data-off="0"]) .hx-dots{opacity:0}
+/* Names over shapes: a 4 px stroke on screen hugs the glyphs (R1), whatever the rank (--nk). */
+:root #explorer .explorer-item:not([data-kind=campus]) .explorer-name{
+ position:absolute;z-index:1;left:var(--lx);top:var(--ly);
+ transform:translate(calc(-50% + var(--nx, 0px)),-50%) scale(var(--ns));
+ inline-size:max-content;max-inline-size:min(9.5em,var(--nmax,9.5em));
+ font-size:var(--F);font-weight:500;line-height:1.12;letter-spacing:-.01em;color:var(--hx-ink);text-wrap:balance;
+ -webkit-text-stroke-width:calc(var(--hx-name-stroke) / var(--nk));-webkit-text-stroke-color:var(--hx-text-halo);
+ paint-order:stroke fill;
+ text-shadow:0 0 calc(var(--hx-name-core) / var(--nk)) var(--hx-text-halo),0 0 .22em var(--hx-text-glow),0 0 .5em color-mix(in srgb,var(--hx-text-halo) 45%,transparent);
+}
+:root #explorer .explorer-item .explorer-name:lang(ar){letter-spacing:0;line-height:1.4}
+:root #explorer .explorer-level[data-phone] .explorer-item:not([data-off="0"]) .explorer-name{opacity:0}
+/* The count under a shape: 10 px below the box and 14 / 13 px on screen at every rank (--mt, --ms). */
+:root #explorer .explorer-meta{display:block;margin-block-start:10px;font-size:14px;line-height:1.45;color:var(--hx-muted);white-space:nowrap;transform:translateY(var(--mt)) scale(var(--ms));transform-origin:50% 0}
+:root #explorer .explorer-meta:lang(ar){line-height:1.45}
+:root #explorer :is(.explorer-item[data-off="2"],.explorer-item[data-off="-2"],.explorer-item[data-off=out],.explorer-level[data-phone] .explorer-item:not([data-off="0"])) .explorer-meta{opacity:0}
+/* « Valider »: in flow on the cursor only; elsewhere out of the flow and invisible, so it never extends a button (R22). */
+:root #explorer .explorer-go{
+ position:absolute;top:100%;left:50%;translate:-50% 0;display:inline-flex;align-items:center;gap:8px;block-size:36px;margin-block-start:12px;padding:0 16px 0 13px;
+ border-radius:999px;background:var(--hx-go-bg);color:var(--hx-go-ink);font-size:14px;font-weight:500;line-height:1;white-space:nowrap;box-shadow:var(--hx-go-shadow);
+ visibility:hidden;opacity:0;transform:translateY(6px) scale(.96);
+}
+:root #explorer .explorer-item[data-off="0"] .explorer-go{position:relative;top:auto;left:auto;translate:none;visibility:visible;opacity:1;transform:none}
+:root #explorer .explorer-go svg{inline-size:18px;block-size:18px;stroke-width:1.8}
+[dir=rtl] #explorer .explorer-go svg{transform:scaleX(-1)}
+@media(hover:hover){:root #explorer .explorer-item[data-off="0"]:hover .explorer-go{box-shadow:0 10px 26px color-mix(in srgb,var(--hx-go-bg) 42%,transparent)}}
+/* Campuses (L3): the printed logo stands on the page in a lantern of soft light, the name below (§4.10). */
+:root #explorer .explorer-lantern{position:relative;display:grid;place-items:center;inline-size:var(--h0);block-size:var(--h0);border-radius:50%;isolation:isolate}
+:root #explorer .explorer-lantern::before,:root #explorer .explorer-lantern::after{content:'';position:absolute;z-index:-1;border-radius:50%;pointer-events:none}
+:root #explorer .explorer-lantern::before{inset:-14%;background:var(--hx-logo-glow-quiet)}
+:root #explorer .explorer-lantern::after{inset:-42%;background:var(--hx-logo-glow);opacity:0}
+:root #explorer .explorer-item[data-off="0"] .explorer-lantern::before{opacity:0}
+:root #explorer .explorer-item[data-off="0"] .explorer-lantern::after{opacity:1}
+@media(hover:hover){:root #explorer .explorer-item[data-kind=campus]:not([data-off="0"]):hover .explorer-lantern::before{background:radial-gradient(closest-side,var(--hx-glow-hover),transparent)}}
+:root #explorer .explorer-lantern>.hx-logo{transform:scale(var(--lk))}
+/* Phones: only the glow of L3 neighbours peeks into the edge fade (R5); the compact row keeps its mini logos. */
+:root #explorer .explorer-level[data-phone]:not([data-density=compact]) .explorer-item:not([data-off="0"]) .explorer-lantern>.hx-logo{opacity:0}
+:root #explorer .explorer-item[data-kind=campus] .explorer-name{
+ position:relative;display:block;inline-size:max-content;max-inline-size:12em;margin-block-start:10px;
+ font-size:var(--F);font-weight:500;line-height:1.12;color:var(--hx-ink);
+ transform:translateY(var(--mt)) scale(var(--ns));transform-origin:50% 0;
+}
+
+/* ---- Glides (§4.15): transitions only on gliding items; without data-gliding an item and its parts jump. ---------- */
+:root #explorer .explorer-item[data-gliding]{transition:transform .5s var(--ease),opacity .35s;will-change:transform}
+:root #explorer .explorer-item[data-gliding] :is(.explorer-name,.explorer-meta){transition:transform .5s var(--ease)}
+:root #explorer .explorer-item[data-gliding] .explorer-meta{transition:transform .5s var(--ease),opacity .3s}
+:root #explorer .explorer-item[data-gliding] .explorer-glow{transition:opacity .35s,transform .5s var(--ease)}
+:root #explorer .explorer-item[data-gliding] .explorer-go{transition:opacity .25s,transform .35s var(--ease),visibility 0s .25s}
+:root #explorer .explorer-item[data-gliding][data-off="0"] .explorer-go{transition:opacity .25s,transform .35s var(--ease),visibility 0s}
+:root #explorer .explorer-item[data-gliding] .hx-dots{transition:opacity .35s}
+:root #explorer .explorer-item[data-gliding] .explorer-lantern::before,:root #explorer .explorer-item[data-gliding] .explorer-lantern::after{transition:opacity .35s}
+:root #explorer .explorer-item[data-gliding] .explorer-lantern>.hx-logo{transition:transform .5s var(--ease),opacity .35s}
+/* First layout, resize, fonts, language and band changes are instant (the selector removes this on the next frame). */
+:root #explorer .explorer-level[data-instant] :is(.explorer-item,.explorer-item *,.explorer-pool,.explorer-dots>i),
+:root #explorer .explorer-level[data-instant] .explorer-lantern::before,:root #explorer .explorer-level[data-instant] .explorer-lantern::after,
+:root #explorer .explorer-level[data-instant] .explorer-dots::after{transition:none}
+
+/* ---- Foot: Previous / Next around the dots and the position, then the keyboard or touch hint. ------------------- */
+:root #explorer .explorer-foot{grid-row:3;position:relative;z-index:2;display:grid;justify-items:center;gap:6px;min-inline-size:0;padding:4px 0 2px}
+:root #explorer .explorer-pager{display:flex;align-items:center;justify-content:center;gap:12px;max-inline-size:100%}
+:root #explorer .explorer-nav{flex:none;display:grid;place-items:center;inline-size:44px;block-size:44px;padding:0;border:1px solid var(--control-glass-edge);border-radius:50%;background:var(--control-glass-surface);box-shadow:var(--control-glass-shadow);-webkit-backdrop-filter:blur(26px) saturate(1.15);backdrop-filter:blur(26px) saturate(1.15);color:var(--hx-ink)}
+:root #explorer .explorer-nav svg{inline-size:20px;block-size:20px;stroke-width:1.8}
+[dir=rtl] #explorer :is(.explorer-nav,.explorer-campus-back) svg{transform:scaleX(-1)}
+:root #explorer .explorer-nav[aria-disabled=true]{color:var(--hx-muted);opacity:.45;cursor:default}
+@media(hover:hover){:root #explorer .explorer-nav:not([aria-disabled=true]):hover{border-color:var(--control-glass-selection-edge)}}
+:root #explorer .explorer-dots{position:relative;display:flex;align-items:center;gap:6px;padding-inline-end:14px}
+:root #explorer .explorer-dots[hidden]{display:none}
+/* Fix 7 (§9.3, no layout in a glide): the dots keep their size; the current pill (20 × 6) is an indicator translated to
+   the current index (--dot, set by the selector) and the dots after it slide by its extra 14 px, both with transform.
+   The end padding reserves those 14 px, so the bar keeps halo's width. */
+:root #explorer .explorer-dots>i{display:block;inline-size:6px;block-size:6px;border-radius:99px;background:var(--hx-hair-strong);transition:transform .4s var(--ease),background .3s}
+:root #explorer .explorer-dots>i[data-current]{background:var(--hx-pink)}
+:root #explorer .explorer-dots>i[data-current]~i{transform:translateX(14px)}
+:root #explorer .explorer-dots:dir(rtl)>i[data-current]~i{transform:translateX(-14px)}
+:root #explorer .explorer-dots::after{content:'';position:absolute;top:0;inset-inline-start:0;inline-size:20px;block-size:6px;border-radius:99px;background:var(--hx-pink);pointer-events:none;transform:translateX(calc(var(--dot,0) * 12px));transition:transform .4s var(--ease)}
+:root #explorer .explorer-dots:dir(rtl)::after{transform:translateX(calc(var(--dot,0) * -12px))}
+:root #explorer .explorer-dots[data-dense]{gap:4px;padding-inline-end:10px}
+:root #explorer .explorer-dots[data-dense]>i{inline-size:4px;block-size:4px}
+:root #explorer .explorer-dots[data-dense]>i[data-current]~i{transform:translateX(10px)}
+:root #explorer .explorer-dots[data-dense]:dir(rtl)>i[data-current]~i{transform:translateX(-10px)}
+:root #explorer .explorer-dots[data-dense]::after{inline-size:14px;block-size:4px;transform:translateX(calc(var(--dot,0) * 8px))}
+:root #explorer .explorer-dots[data-dense]:dir(rtl)::after{transform:translateX(calc(var(--dot,0) * -8px))}
+:root #explorer .explorer-count{min-inline-size:4.2em;color:var(--hx-muted);font-size:13px;line-height:1.45;font-variant-numeric:tabular-nums;text-align:center;white-space:nowrap;unicode-bidi:isolate}
+:root #explorer .explorer-count:lang(ar){font-size:14px}
+:root #explorer .explorer-hint{max-inline-size:100%;color:var(--hx-muted);font-size:13px;line-height:1.45;text-align:center}
+:root #explorer .explorer-hint:lang(ar){font-size:14px;line-height:1.6}
+:root #explorer .explorer-hint kbd{display:inline-block;min-inline-size:1.9em;padding:0 .45em;border:1px solid var(--hx-hair-strong);border-block-end-width:2px;border-radius:6px;font:inherit;font-size:13px;line-height:1.5;color:var(--hx-ink);background:var(--hx-pill-surface);unicode-bidi:isolate}
+:root #explorer .explorer-hint:lang(ar) kbd{font-size:14px}
+/* Short bands keep the hint as the group's description only. */
+:root #explorer .explorer-level:is([data-density=short],[data-density=compact]) .explorer-hint{position:absolute;inline-size:1px;block-size:1px;margin:-1px;padding:0;border:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+
+/* ---- Compact row (§3.5, R23): one row without scale transforms, every item at least 44 px tall; Previous and Next
+   overlay the row's ends; the head and the hint stay readable by assistive technology. ----------------------------- */
+:root #explorer .explorer-level[data-density=compact] .explorer-head{position:absolute;inline-size:1px;block-size:1px;margin:-1px;padding:0;border:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+:root #explorer .explorer-level[data-density=compact] .explorer-carousel{grid-row:1/-1}
+:root #explorer .explorer-level[data-density=compact] .explorer-foot{grid-row:1/-1;position:absolute;inset:0;display:block;padding:0;pointer-events:none}
+:root #explorer .explorer-level[data-density=compact] .explorer-pager{inline-size:100%;block-size:100%;justify-content:space-between;pointer-events:none}
+:root #explorer .explorer-level[data-density=compact] .explorer-nav{pointer-events:auto}
+:root #explorer .explorer-level[data-density=compact] :is(.explorer-dots,.explorer-count,.explorer-horizon,.explorer-pool,.explorer-glow,.explorer-meta,.hx-dots){display:none}
+:root #explorer .explorer-level[data-density=compact] .explorer-item{flex-direction:row;gap:10px;min-block-size:44px;transform:translate3d(calc(var(--x) - 50%),var(--y),0) scale(1)}
+:root #explorer .explorer-level[data-density=compact] .explorer-box{display:block;inline-size:auto;block-size:auto}
+:root #explorer .explorer-level[data-density=compact] .explorer-figure{display:flex;align-items:center;gap:10px;inline-size:auto;block-size:auto}
+:root #explorer .explorer-level[data-density=compact] .explorer-figure>.hx-art{position:relative;inset:auto;flex:none;inline-size:var(--fw);block-size:var(--fh)}
+:root #explorer .explorer-level[data-density=compact] .explorer-lantern{inline-size:var(--fw);block-size:var(--fh);border-radius:0}
+:root #explorer .explorer-level[data-density=compact] .explorer-lantern::before,:root #explorer .explorer-level[data-density=compact] .explorer-lantern::after{display:none}
+:root #explorer .explorer-level[data-density=compact] .explorer-lantern>.hx-logo{transform:none}
+:root #explorer .explorer-level[data-density=compact] .explorer-item .explorer-name{position:static;inline-size:auto;max-inline-size:none;margin:0;transform:none;font-size:13px;line-height:1.45;white-space:nowrap;-webkit-text-stroke-width:0;text-shadow:none}
+:root #explorer .explorer-level[data-density=compact] .explorer-item .explorer-name:lang(ar){font-size:14px;line-height:1.6}
+:root #explorer .explorer-level[data-density=compact] .explorer-item[data-off="0"] .explorer-name{font-size:15px}
+:root #explorer .explorer-level[data-density=compact][data-phone] .explorer-item:not([data-off="0"]) .explorer-name{display:none}
+:root #explorer .explorer-level[data-density=compact] .explorer-item[data-off="0"] .explorer-go{margin:0}
+:root #explorer .explorer-level[data-density=compact] .explorer-item:not([data-off="0"]) .explorer-go{display:none}
+
+/* ---- Campus screen (§5.1): B's sheet in place of the level, inside the band, without panel or veil; the strip of
+   the other campuses stays outside the scroller. -------------------------------------------------------------------- */
+:root #explorer .explorer-campus{grid-area:1/1;position:relative;display:flex;flex-direction:column;min-inline-size:0;min-block-size:0;margin-inline:calc(-1 * var(--horizon-page-gutter,24px));color:var(--hx-ink)}
+:root #explorer .explorer-campus-body{flex:1 1 0;min-block-size:0;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-gutter:stable;scroll-padding-block:18px 28px}
+/* Scroll-position fades: 18 px at the top, 28 px at the bottom, only where content is hidden. */
+:root #explorer .explorer-campus-body{--explorer-fade-start:0px;--explorer-fade-end:0px}
+:root #explorer .explorer-campus-body[data-fade-start]{--explorer-fade-start:18px}
+:root #explorer .explorer-campus-body[data-fade-end]{--explorer-fade-end:28px}
+:root #explorer .explorer-campus-body:is([data-fade-start],[data-fade-end]){
+ -webkit-mask-image:linear-gradient(180deg,transparent 0,#000 var(--explorer-fade-start),#000 calc(100% - var(--explorer-fade-end)),transparent 100%);
+ mask-image:linear-gradient(180deg,transparent 0,#000 var(--explorer-fade-start),#000 calc(100% - var(--explorer-fade-end)),transparent 100%)}
+/* Fix 3: the heart's glow rises to the scroller's top and was cut there by a straight line. Halo's 18 px top fade over
+   the 360 px heart column only, in every fade state: the second layer, subtracted from the scroll fades (the first,
+   unchanged on the side columns), is the part of halo's fade the scroll fade does not already draw (none once the
+   18 px start fade is on). At normal density, and at short density in the wide layout (B's condition, §5.6: a short
+   band is never tiny there, so wide means min-width 1100px); never where the short heart is one row. */
+:root #explorer .explorer-campus[data-density=normal] .explorer-campus-body{
+ -webkit-mask-image:linear-gradient(180deg,transparent 0,#000 var(--explorer-fade-start),#000 calc(100% - var(--explorer-fade-end)),transparent 100%),linear-gradient(180deg,#000 0,transparent calc(18px - var(--explorer-fade-start)));
+ mask-image:linear-gradient(180deg,transparent 0,#000 var(--explorer-fade-start),#000 calc(100% - var(--explorer-fade-end)),transparent 100%),linear-gradient(180deg,#000 0,transparent calc(18px - var(--explorer-fade-start)));
+ -webkit-mask-size:100% 100%,360px 100%;mask-size:100% 100%,360px 100%;-webkit-mask-position:center top;mask-position:center top;
+ -webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-composite:source-out;mask-composite:subtract}
+@media(min-width:1100px){:root #explorer .explorer-campus[data-density=short] .explorer-campus-body{
+ -webkit-mask-image:linear-gradient(180deg,transparent 0,#000 var(--explorer-fade-start),#000 calc(100% - var(--explorer-fade-end)),transparent 100%),linear-gradient(180deg,#000 0,transparent calc(18px - var(--explorer-fade-start)));
+ mask-image:linear-gradient(180deg,transparent 0,#000 var(--explorer-fade-start),#000 calc(100% - var(--explorer-fade-end)),transparent 100%),linear-gradient(180deg,#000 0,transparent calc(18px - var(--explorer-fade-start)));
+ -webkit-mask-size:100% 100%,360px 100%;mask-size:100% 100%,360px 100%;-webkit-mask-position:center top;mask-position:center top;
+ -webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-composite:source-out;mask-composite:subtract}}
+:root #explorer .explorer-campus-title{padding:16px clamp(16px,4vw,64px);font-size:28px;font-weight:500;line-height:1.15;letter-spacing:-.025em;text-align:center;overflow-wrap:anywhere}
+:root #explorer .explorer-campus-title:lang(ar){letter-spacing:0;line-height:1.4}
+:root #explorer .explorer-campus-title:focus{outline:none}
+/* The strip row (52 px): the back pill, then the other campuses of the country. */
+:root #explorer .explorer-campus-foot{flex:none;display:flex;align-items:center;justify-content:center;gap:6px;min-inline-size:0;padding:6px 16px 2px}
+@media(max-width:699px){:root #explorer .explorer-campus-foot{padding-inline:12px}}
+:root #explorer .explorer-campus-back{flex:none;display:inline-flex;align-items:center;gap:6px;min-block-size:44px;padding-block:0;padding-inline:10px 14px;border:1px solid var(--hx-pill-edge);border-radius:999px;background:var(--hx-pill-solid);color:var(--hx-ink);font-size:14px;line-height:1.45;white-space:nowrap}
+:root #explorer .explorer-campus-back svg{flex:none;inline-size:18px;block-size:18px;stroke-width:1.8}
+:root #explorer .explorer-siblings{flex:0 1 auto;display:flex;min-inline-size:0}
+:root #explorer .explorer-siblings[hidden]{display:none}
+:root #explorer .explorer-siblings-list{display:flex;align-items:center;gap:4px;min-inline-size:0;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;scroll-padding-inline:22px 32px}
+:root #explorer .explorer-siblings-list::-webkit-scrollbar{display:none}
+:root #explorer .explorer-siblings-list{--explorer-fade-start:0px;--explorer-fade-end:0px}
+:root #explorer .explorer-siblings-list[data-fade-start]{--explorer-fade-start:22px}
+:root #explorer .explorer-siblings-list[data-fade-end]{--explorer-fade-end:32px}
+:root #explorer .explorer-siblings-list:is([data-fade-start],[data-fade-end]){
+ -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 var(--explorer-fade-start),#000 calc(100% - var(--explorer-fade-end)),transparent 100%);
+ mask-image:linear-gradient(90deg,transparent 0,#000 var(--explorer-fade-start),#000 calc(100% - var(--explorer-fade-end)),transparent 100%)}
+:root #explorer .explorer-siblings-list:dir(rtl):is([data-fade-start],[data-fade-end]){
+ -webkit-mask-image:linear-gradient(270deg,transparent 0,#000 var(--explorer-fade-start),#000 calc(100% - var(--explorer-fade-end)),transparent 100%);
+ mask-image:linear-gradient(270deg,transparent 0,#000 var(--explorer-fade-start),#000 calc(100% - var(--explorer-fade-end)),transparent 100%)}
+:root #explorer .explorer-sibling{position:relative;flex:none;display:inline-flex;align-items:center;gap:6px;min-block-size:44px;padding:0 12px;border:0;border-radius:999px;background:none;color:var(--hx-muted);font-size:14px;line-height:1.45;white-space:nowrap}
+@media(hover:hover){:root #explorer .explorer-sibling:hover{color:var(--hx-ink)}}
+:root #explorer .explorer-sibling[aria-current=true]{color:var(--hx-ink);font-weight:500;background:var(--hx-sib-current)}
+:root #explorer .explorer-sibling svg{flex:none;inline-size:16px;block-size:16px;stroke-width:2;color:var(--hx-pink-text)}
+:root #explorer .explorer-sibling:not([aria-current=true]) svg{display:none}
+/* The focus outline of a pill stays inside it, never clipped by the list's overflow. */
+:root #explorer .explorer-siblings-list .explorer-sibling:focus-visible{outline-offset:-3px}
+/* Tiny bands (667×375, 640×360): the strip sits on top and the body scrolls clear of the capsule and the dock. Fix 19:
+   no top fade there (the selector never sets data-fade-start in tiny bands); the scroll ends where the capsule begins
+   (the band ends 16 px above it, explorer-band.mjs), and focus lands inside [top + 7 px, capsule − 7 px], so a focused
+   control's 2 px ring and 5 px offset stay inside the body and above the capsule (a control taller than that window
+   gets its top first, from the selector: in Arabic at 640×360 the window is 41 px). */
+:root #explorer .explorer-campus[data-density=tiny]{margin-block-end:calc(-1 * var(--explorer-bottom,0px))}
+:root #explorer .explorer-campus[data-density=tiny] .explorer-campus-foot{padding-block:2px 6px}
+:root #explorer .explorer-campus[data-density=tiny] .explorer-campus-body{padding-block-end:calc(var(--explorer-bottom,0px) - 16px);scroll-padding-block:7px calc(var(--explorer-bottom,0px) - 9px)}
+
+/* Focus cue: user decision A (24 Oct 2026) */
+:root #explorer .explorer-item:focus{outline:none}
+:root #explorer .explorer-item:focus-visible > .explorer-go{outline:var(--hx-focus-ring-width) solid var(--hx-focus);outline-offset:var(--hx-focus-ring-offset)}
+@media (forced-colors: active){:root #explorer .explorer-item:focus-visible > .explorer-go{outline-color:Highlight}}
+/* End of the focus cue. */
+
+/* ---- Reduced motion (§2.6) and forced colours (§2.7) ------------------------------------------------------------- */
+@media(prefers-reduced-motion:reduce){
+ :root #explorer :is(.explorer-item,.explorer-item *,.explorer-pool,.explorer-dots>i,.explorer-sibling,.explorer-campus-foot),
+ :root #explorer .explorer-lantern::before,:root #explorer .explorer-lantern::after,:root #explorer .explorer-dots::after{transition:none!important}
+}
+@media(forced-colors:active){
+ :root #explorer :is(.explorer-glow,.explorer-pool,.explorer-horizon){display:none}
+ :root #explorer .explorer-lantern::before,:root #explorer .explorer-lantern::after{display:none}
+ /* Names keep a Canvas halo that hugs the glyphs instead of the browser's rectangular backplate (no box, D16). */
+ :root #explorer .explorer-item:not([data-kind=campus]) .explorer-name{forced-color-adjust:none;color:CanvasText;-webkit-text-stroke-width:calc(var(--hx-name-stroke) / var(--nk));-webkit-text-stroke-color:Canvas;paint-order:stroke fill;text-shadow:none}
+ :root #explorer :is(.explorer-go,.explorer-nav,.explorer-campus-back,.explorer-sibling,.explorer-hint kbd){border:1px solid ButtonText}
+ :root #explorer .explorer-sibling[aria-current=true]{border:2px solid Highlight}
+ /* Fix 6: the focus ring of the current pill stays clear of its Highlight border (a Canvas gap, a CanvasText ring). */
+ :root #explorer .explorer-siblings-list .explorer-sibling[aria-current=true]:focus-visible{outline:2px solid CanvasText;outline-offset:-6px}
+ /* Fix 5: no drop shadow under the cursor's silhouette. */
+ :root #explorer .explorer-item[data-off] .hx-art{filter:none}
+ :root #explorer .explorer-nav[aria-disabled=true]{color:GrayText;border-color:GrayText}
+ :root #explorer :is(.explorer-step,.explorer-dots>i){forced-color-adjust:none;background:GrayText;box-shadow:none}
+ :root #explorer .explorer-step[data-state=done]{background:CanvasText}
+ :root #explorer :is(.explorer-step[data-state=current],.explorer-dots>i[data-current]){background:Highlight;box-shadow:none}
+ :root #explorer .explorer-dots::after{forced-color-adjust:none;background:Highlight}
+ :root #explorer .explorer-step-line{forced-color-adjust:none;background:GrayText}
+}

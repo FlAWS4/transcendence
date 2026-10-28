@@ -1,0 +1,1 @@
+Lots de Projets dont les avatars des commentaires étaient référencés par une adresse absolue (emplacements « à remplacer ») ; jamais envoyés. Régénérés après normalisation des adresses (16 octobre 2026).

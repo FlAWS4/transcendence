@@ -1,0 +1,70 @@
+{
+  "passed": false,
+  "observations": [
+    {
+      "case": "shared-style-and-bounds-fr-1280",
+      "result": {
+        "button": {
+          "x": 944.3125,
+          "y": 448.734375,
+          "width": 238.1875,
+          "height": 44
+        },
+        "panel": {
+          "x": 916.3125,
+          "y": 501.734375,
+          "right": 1182.5,
+          "bottom": 641.734375,
+          "width": 266.1875,
+          "height": 140,
+          "scrollHeight": 138,
+          "clientHeight": 138
+        },
+        "labelDisplay": "block",
+        "options": [
+          {
+            "value": "newest",
+            "text": "Du plus récent au plus ancien",
+            "checked": "true"
+          },
+          {
+            "value": "oldest",
+            "text": "Du plus ancien au plus récent",
+            "checked": "false"
+          },
+          {
+            "value": "popular",
+            "text": "Les plus populaires",
+            "checked": "false"
+          }
+        ],
+        "active": "newest",
+        "overflow": false,
+        "errors": []
+      }
+    }
+  ],
+  "failure": "{'expanded': 'false', 'focused': True, 'ids': ['qa-middle', 'qa-new', 'qa-old'], 'draft': 'Brouillon conservé · مسودة', 'state': {'version': 2, 'sort': 'popular', 'draft': 'Brouillon conservé · مسودة', 'draftMentions': [], 'comments': [{'id': 'qa-old', 'authorId': None, 'text': 'Premier commentaire chronologique', 'mentions': [], 'created': 1700000000000, 'editedAt': None, 'parentId': None, 'replyToId': None, 'deleted': False, 'reaction': None}, {'id': 'qa-middle', 'authorId': None, 'text': 'Deuxième commentaire · préféré localement', 'mentions': [], 'created': 1700001000000, 'editedAt': None, 'parentId': None, 'replyToId': None, 'deleted': False, 'reaction': 'like'}, {'id': 'qa-new', 'authorId': None, 'text': 'Troisième commentaire chronologique', 'mentions': [], 'created': 1700002000000, 'editedAt': None, 'parentId': None, 'replyToId': None, 'deleted': False, 'reaction': None}], 'replyDrafts': {'qa-middle': {'text': 'Réponse conservée', 'mentions': [], 'targetId': 'qa-middle'}}}}",
+  "fingerprintsBefore": {
+    "comments.mjs": "e2986723a756117fc0adc08d5b475b7adfe36df81b810b7d89c40ea1c650007d",
+    "comments.css": "9f93b003d8e2cc5d33da7324525f30a6353e05c95a371b5b2b9d6031f7aae84a",
+    "content-controls.mjs": "58ac9a724ba2168a3109cf13b3c77e06d457068827074370ec8c5aff1625e2eb",
+    "content-controls.css": "cc14237d5d978a625c8481701d82a6c49300cbde33fedcd8a9fa99d52f8b03e0",
+    "project-ui.mjs": "866115f8eebe5dbdcd34861e2ae2345141247a32b1ac8b5feaf5de62efc5272b",
+    "tests/comments-actions.test.mjs": "f22cc26850ab3ac79940c796d30d612687676ff853c1f2c8b4374509a91cbb30"
+  },
+  "fingerprintsAfter": {
+    "comments.mjs": "e2986723a756117fc0adc08d5b475b7adfe36df81b810b7d89c40ea1c650007d",
+    "comments.css": "9f93b003d8e2cc5d33da7324525f30a6353e05c95a371b5b2b9d6031f7aae84a",
+    "content-controls.mjs": "58ac9a724ba2168a3109cf13b3c77e06d457068827074370ec8c5aff1625e2eb",
+    "content-controls.css": "cc14237d5d978a625c8481701d82a6c49300cbde33fedcd8a9fa99d52f8b03e0",
+    "project-ui.mjs": "866115f8eebe5dbdcd34861e2ae2345141247a32b1ac8b5feaf5de62efc5272b",
+    "tests/comments-actions.test.mjs": "f22cc26850ab3ac79940c796d30d612687676ff853c1f2c8b4374509a91cbb30"
+  },
+  "limitations": [
+    "Isolated desktop Chrome with viewport emulation; no physical phone or screen reader.",
+    "Reduced motion; integrated globe import intentionally blocked to isolate content sorting.",
+    "Only the local isolated comment session is seeded; no real publication.",
+    "Resumed on 14 October after the 13 October attempt failed on its own selector (attempt-1 files kept)."
+  ]
+}

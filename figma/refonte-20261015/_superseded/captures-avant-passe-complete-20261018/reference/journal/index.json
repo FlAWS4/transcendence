@@ -1,0 +1,3458 @@
+{
+ "area": "journal",
+ "states": [
+  {
+   "name": "journal--desktop--fr-light",
+   "area": "journal",
+   "viewport": "reference/journal/journal--desktop--fr-light.png",
+   "dom": "dom/journal/journal--desktop--fr-light.json.gz",
+   "nodes": 434,
+   "doc": [
+    1440,
+    2589
+   ],
+   "full": "reference/journal/journal--desktop--fr-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "state": "journal",
+   "siteMapNodes": [
+    "journal"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal",
+   "route": "#journal",
+   "actions": [
+    "ouvrir content-preview.html#journal (1440x960, module du globe bloqué), stockage vidé",
+    "attendre la liste des chroniques (cartes et portraits chargés)"
+   ],
+   "checks": {
+    "list": {
+     "view": "grid",
+     "count": "78 contenus",
+     "cards": 12,
+     "page": "1",
+     "sort": "newest",
+     "first": [
+      "#journal/journal-an-evening-debugging",
+      "#journal/journal-share-the-unfinished",
+      "#journal/demo-journal-closing-notebook"
+     ]
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "caa67bf3145a49bd",
+   "lib": "c6847e540fcd",
+   "capturedAt": "2026-10-16 22:33:54",
+   "note": "Page 1, tri par défaut (plus récentes d’abord), vue Grille."
+  },
+  {
+   "name": "journal--desktop--fr-dark",
+   "area": "journal",
+   "viewport": "reference/journal/journal--desktop--fr-dark.png",
+   "dom": "dom/journal/journal--desktop--fr-dark.json.gz",
+   "nodes": 434,
+   "doc": [
+    1440,
+    2589
+   ],
+   "full": "reference/journal/journal--desktop--fr-dark--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "state": "journal",
+   "siteMapNodes": [
+    "journal"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal",
+   "route": "#journal",
+   "actions": [
+    "ouvrir content-preview.html#journal (1440x960, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "attendre la liste des chroniques (cartes et portraits chargés)"
+   ],
+   "checks": {
+    "list": {
+     "view": "grid",
+     "count": "78 contenus",
+     "cards": 12,
+     "page": "1",
+     "sort": "newest",
+     "first": [
+      "#journal/journal-an-evening-debugging",
+      "#journal/journal-share-the-unfinished",
+      "#journal/demo-journal-closing-notebook"
+     ]
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "caa67bf3145a49bd",
+   "lib": "c6847e540fcd",
+   "capturedAt": "2026-10-16 22:34:04",
+   "note": "Page 1, tri par défaut (plus récentes d’abord), vue Grille."
+  },
+  {
+   "name": "journal--desktop--en-light",
+   "area": "journal",
+   "viewport": "reference/journal/journal--desktop--en-light.png",
+   "dom": "dom/journal/journal--desktop--en-light.json.gz",
+   "nodes": 434,
+   "doc": [
+    1440,
+    2531
+   ],
+   "full": "reference/journal/journal--desktop--en-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "state": "journal",
+   "siteMapNodes": [
+    "journal"
+   ],
+   "format": "desktop",
+   "lang": "en",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal",
+   "route": "#journal",
+   "actions": [
+    "ouvrir content-preview.html#journal (1440x960, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "attendre la liste des chroniques (cartes et portraits chargés)"
+   ],
+   "checks": {
+    "list": {
+     "view": "grid",
+     "count": "78 stories",
+     "cards": 12,
+     "page": "1",
+     "sort": "newest",
+     "first": [
+      "#journal/journal-an-evening-debugging",
+      "#journal/journal-share-the-unfinished",
+      "#journal/demo-journal-closing-notebook"
+     ]
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "caa67bf3145a49bd",
+   "lib": "c6847e540fcd",
+   "capturedAt": "2026-10-16 22:34:14",
+   "note": "Page 1, tri par défaut (plus récentes d’abord), vue Grille."
+  },
+  {
+   "name": "journal--mobile--fr-light",
+   "area": "journal",
+   "viewport": "reference/journal/journal--mobile--fr-light.png",
+   "dom": "dom/journal/journal--mobile--fr-light.json.gz",
+   "nodes": 420,
+   "doc": [
+    390,
+    2712
+   ],
+   "full": "reference/journal/journal--mobile--fr-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "state": "journal",
+   "siteMapNodes": [
+    "journal"
+   ],
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal",
+   "route": "#journal",
+   "actions": [
+    "ouvrir content-preview.html#journal (390x844 DPR2, module du globe bloqué), stockage vidé",
+    "attendre la liste des chroniques (cartes et portraits chargés)"
+   ],
+   "checks": {
+    "list": {
+     "view": "grid",
+     "count": "78 contenus",
+     "cards": 12,
+     "page": "1",
+     "sort": "newest",
+     "first": [
+      "#journal/journal-an-evening-debugging",
+      "#journal/journal-share-the-unfinished",
+      "#journal/demo-journal-closing-notebook"
+     ]
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "caa67bf3145a49bd",
+   "lib": "c6847e540fcd",
+   "capturedAt": "2026-10-16 22:34:42",
+   "note": "Page 1, tri par défaut (plus récentes d’abord), vue Grille."
+  },
+  {
+   "name": "journal--mobile--fr-dark",
+   "area": "journal",
+   "viewport": "reference/journal/journal--mobile--fr-dark.png",
+   "dom": "dom/journal/journal--mobile--fr-dark.json.gz",
+   "nodes": 420,
+   "doc": [
+    390,
+    2712
+   ],
+   "full": "reference/journal/journal--mobile--fr-dark--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "state": "journal",
+   "siteMapNodes": [
+    "journal"
+   ],
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal",
+   "route": "#journal",
+   "actions": [
+    "ouvrir content-preview.html#journal (390x844 DPR2, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "attendre la liste des chroniques (cartes et portraits chargés)"
+   ],
+   "checks": {
+    "list": {
+     "view": "grid",
+     "count": "78 contenus",
+     "cards": 12,
+     "page": "1",
+     "sort": "newest",
+     "first": [
+      "#journal/journal-an-evening-debugging",
+      "#journal/journal-share-the-unfinished",
+      "#journal/demo-journal-closing-notebook"
+     ]
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "caa67bf3145a49bd",
+   "lib": "c6847e540fcd",
+   "capturedAt": "2026-10-16 22:34:53",
+   "note": "Page 1, tri par défaut (plus récentes d’abord), vue Grille."
+  },
+  {
+   "name": "journal--mobile--en-light",
+   "area": "journal",
+   "viewport": "reference/journal/journal--mobile--en-light.png",
+   "dom": "dom/journal/journal--mobile--en-light.json.gz",
+   "nodes": 420,
+   "doc": [
+    390,
+    2685
+   ],
+   "full": "reference/journal/journal--mobile--en-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "state": "journal",
+   "siteMapNodes": [
+    "journal"
+   ],
+   "format": "mobile",
+   "lang": "en",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal",
+   "route": "#journal",
+   "actions": [
+    "ouvrir content-preview.html#journal (390x844 DPR2, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "attendre la liste des chroniques (cartes et portraits chargés)"
+   ],
+   "checks": {
+    "list": {
+     "view": "grid",
+     "count": "78 stories",
+     "cards": 12,
+     "page": "1",
+     "sort": "newest",
+     "first": [
+      "#journal/journal-an-evening-debugging",
+      "#journal/journal-share-the-unfinished",
+      "#journal/demo-journal-closing-notebook"
+     ]
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "caa67bf3145a49bd",
+   "lib": "c6847e540fcd",
+   "capturedAt": "2026-10-16 22:35:04",
+   "note": "Page 1, tri par défaut (plus récentes d’abord), vue Grille."
+  },
+  {
+   "name": "article--desktop--fr-light",
+   "area": "journal",
+   "viewport": "reference/journal/article--desktop--fr-light.png",
+   "dom": "dom/journal/article--desktop--fr-light.json.gz",
+   "nodes": 120,
+   "doc": [
+    1440,
+    1597
+   ],
+   "full": "reference/journal/article--desktop--fr-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article",
+   "siteMapNodes": [
+    "article",
+    "article-article"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished",
+   "route": "#journal/journal-share-the-unfinished",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished (1440x960, module du globe bloqué), stockage vidé",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Article, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "Montrer ce qui n’est pas encore fini",
+     "section": "article",
+     "tab": "Article",
+     "facts": "42 Tokyo24 sept. 2026",
+     "campus": "Explorer 42 Tokyo",
+     "figures": 1,
+     "media": [
+      "illustration"
+     ],
+     "authors": [],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:38:05",
+   "note": "« Montrer ce qui n’est pas encore fini » (42 Tokyo, quatre auteurs), onglet Article."
+  },
+  {
+   "name": "article--desktop--fr-dark",
+   "area": "journal",
+   "viewport": "reference/journal/article--desktop--fr-dark.png",
+   "dom": "dom/journal/article--desktop--fr-dark.json.gz",
+   "nodes": 120,
+   "doc": [
+    1440,
+    1597
+   ],
+   "full": "reference/journal/article--desktop--fr-dark--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article",
+   "siteMapNodes": [
+    "article",
+    "article-article"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished",
+   "route": "#journal/journal-share-the-unfinished",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished (1440x960, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Article, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "Montrer ce qui n’est pas encore fini",
+     "section": "article",
+     "tab": "Article",
+     "facts": "42 Tokyo24 sept. 2026",
+     "campus": "Explorer 42 Tokyo",
+     "figures": 1,
+     "media": [
+      "illustration"
+     ],
+     "authors": [],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:38:14",
+   "note": "« Montrer ce qui n’est pas encore fini » (42 Tokyo, quatre auteurs), onglet Article."
+  },
+  {
+   "name": "article--desktop--en-light",
+   "area": "journal",
+   "viewport": "reference/journal/article--desktop--en-light.png",
+   "dom": "dom/journal/article--desktop--en-light.json.gz",
+   "nodes": 120,
+   "doc": [
+    1440,
+    1597
+   ],
+   "full": "reference/journal/article--desktop--en-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article",
+   "siteMapNodes": [
+    "article",
+    "article-article"
+   ],
+   "format": "desktop",
+   "lang": "en",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished",
+   "route": "#journal/journal-share-the-unfinished",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished (1440x960, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Article, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "Sharing work before it is finished",
+     "section": "article",
+     "tab": "Article",
+     "facts": "42 TokyoSep 24, 2026",
+     "campus": "Explore 42 Tokyo",
+     "figures": 1,
+     "media": [
+      "illustration"
+     ],
+     "authors": [],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:38:22",
+   "note": "« Montrer ce qui n’est pas encore fini » (42 Tokyo, quatre auteurs), onglet Article."
+  },
+  {
+   "name": "article--desktop--ar-light",
+   "area": "journal",
+   "viewport": "reference/journal/article--desktop--ar-light.png",
+   "dom": "dom/journal/article--desktop--ar-light.json.gz",
+   "nodes": 121,
+   "doc": [
+    1440,
+    1553
+   ],
+   "full": "reference/journal/article--desktop--ar-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article",
+   "siteMapNodes": [
+    "article",
+    "article-article"
+   ],
+   "format": "desktop",
+   "lang": "ar",
+   "theme": "light",
+   "dir": "rtl",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished",
+   "route": "#journal/journal-share-the-unfinished",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished (1440x960, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Article, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "مشاركة العمل قبل اكتماله",
+     "section": "article",
+     "tab": "المقال",
+     "facts": "42 Tokyo24 سبتمبر 2026",
+     "campus": "استكشف 42 Tokyo",
+     "figures": 1,
+     "media": [
+      "illustration"
+     ],
+     "authors": [],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:38:31",
+   "note": "« Montrer ce qui n’est pas encore fini » (42 Tokyo, quatre auteurs), onglet Article."
+  },
+  {
+   "name": "article--desktop--ar-dark",
+   "area": "journal",
+   "viewport": "reference/journal/article--desktop--ar-dark.png",
+   "dom": "dom/journal/article--desktop--ar-dark.json.gz",
+   "nodes": 121,
+   "doc": [
+    1440,
+    1553
+   ],
+   "full": "reference/journal/article--desktop--ar-dark--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article",
+   "siteMapNodes": [
+    "article",
+    "article-article"
+   ],
+   "format": "desktop",
+   "lang": "ar",
+   "theme": "dark",
+   "dir": "rtl",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished",
+   "route": "#journal/journal-share-the-unfinished",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished (1440x960, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue ar, thème dark",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Article, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "مشاركة العمل قبل اكتماله",
+     "section": "article",
+     "tab": "المقال",
+     "facts": "42 Tokyo24 سبتمبر 2026",
+     "campus": "استكشف 42 Tokyo",
+     "figures": 1,
+     "media": [
+      "illustration"
+     ],
+     "authors": [],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:38:40",
+   "note": "« Montrer ce qui n’est pas encore fini » (42 Tokyo, quatre auteurs), onglet Article."
+  },
+  {
+   "name": "article--mobile--fr-light",
+   "area": "journal",
+   "viewport": "reference/journal/article--mobile--fr-light.png",
+   "dom": "dom/journal/article--mobile--fr-light.json.gz",
+   "nodes": 125,
+   "doc": [
+    390,
+    1746
+   ],
+   "full": "reference/journal/article--mobile--fr-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article",
+   "siteMapNodes": [
+    "article",
+    "article-article"
+   ],
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished",
+   "route": "#journal/journal-share-the-unfinished",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished (390x844 DPR2, module du globe bloqué), stockage vidé",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Article, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "Montrer ce qui n’est pas encore fini",
+     "section": "article",
+     "tab": "Article",
+     "facts": "42 Tokyo24 sept. 2026",
+     "campus": "Explorer 42 Tokyo",
+     "figures": 1,
+     "media": [
+      "illustration"
+     ],
+     "authors": [],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:38:46",
+   "note": "« Montrer ce qui n’est pas encore fini » (42 Tokyo, quatre auteurs), onglet Article."
+  },
+  {
+   "name": "article--mobile--fr-dark",
+   "area": "journal",
+   "viewport": "reference/journal/article--mobile--fr-dark.png",
+   "dom": "dom/journal/article--mobile--fr-dark.json.gz",
+   "nodes": 125,
+   "doc": [
+    390,
+    1746
+   ],
+   "full": "reference/journal/article--mobile--fr-dark--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article",
+   "siteMapNodes": [
+    "article",
+    "article-article"
+   ],
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished",
+   "route": "#journal/journal-share-the-unfinished",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished (390x844 DPR2, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Article, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "Montrer ce qui n’est pas encore fini",
+     "section": "article",
+     "tab": "Article",
+     "facts": "42 Tokyo24 sept. 2026",
+     "campus": "Explorer 42 Tokyo",
+     "figures": 1,
+     "media": [
+      "illustration"
+     ],
+     "authors": [],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:38:55",
+   "note": "« Montrer ce qui n’est pas encore fini » (42 Tokyo, quatre auteurs), onglet Article."
+  },
+  {
+   "name": "article--mobile--en-light",
+   "area": "journal",
+   "viewport": "reference/journal/article--mobile--en-light.png",
+   "dom": "dom/journal/article--mobile--en-light.json.gz",
+   "nodes": 125,
+   "doc": [
+    390,
+    1789
+   ],
+   "full": "reference/journal/article--mobile--en-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article",
+   "siteMapNodes": [
+    "article",
+    "article-article"
+   ],
+   "format": "mobile",
+   "lang": "en",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished",
+   "route": "#journal/journal-share-the-unfinished",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished (390x844 DPR2, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Article, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "Sharing work before it is finished",
+     "section": "article",
+     "tab": "Article",
+     "facts": "42 TokyoSep 24, 2026",
+     "campus": "Explore 42 Tokyo",
+     "figures": 1,
+     "media": [
+      "illustration"
+     ],
+     "authors": [],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:39:03",
+   "note": "« Montrer ce qui n’est pas encore fini » (42 Tokyo, quatre auteurs), onglet Article."
+  },
+  {
+   "name": "article--mobile--ar-light",
+   "area": "journal",
+   "viewport": "reference/journal/article--mobile--ar-light.png",
+   "dom": "dom/journal/article--mobile--ar-light.json.gz",
+   "nodes": 126,
+   "doc": [
+    390,
+    1702
+   ],
+   "full": "reference/journal/article--mobile--ar-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article",
+   "siteMapNodes": [
+    "article",
+    "article-article"
+   ],
+   "format": "mobile",
+   "lang": "ar",
+   "theme": "light",
+   "dir": "rtl",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished",
+   "route": "#journal/journal-share-the-unfinished",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished (390x844 DPR2, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Article, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "مشاركة العمل قبل اكتماله",
+     "section": "article",
+     "tab": "المقال",
+     "facts": "42 Tokyo24 سبتمبر 2026",
+     "campus": "استكشف 42 Tokyo",
+     "figures": 1,
+     "media": [
+      "illustration"
+     ],
+     "authors": [],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:39:12",
+   "note": "« Montrer ce qui n’est pas encore fini » (42 Tokyo, quatre auteurs), onglet Article."
+  },
+  {
+   "name": "article--mobile--ar-dark",
+   "area": "journal",
+   "viewport": "reference/journal/article--mobile--ar-dark.png",
+   "dom": "dom/journal/article--mobile--ar-dark.json.gz",
+   "nodes": 126,
+   "doc": [
+    390,
+    1702
+   ],
+   "full": "reference/journal/article--mobile--ar-dark--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article",
+   "siteMapNodes": [
+    "article",
+    "article-article"
+   ],
+   "format": "mobile",
+   "lang": "ar",
+   "theme": "dark",
+   "dir": "rtl",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished",
+   "route": "#journal/journal-share-the-unfinished",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished (390x844 DPR2, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue ar, thème dark",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Article, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "مشاركة العمل قبل اكتماله",
+     "section": "article",
+     "tab": "المقال",
+     "facts": "42 Tokyo24 سبتمبر 2026",
+     "campus": "استكشف 42 Tokyo",
+     "figures": 1,
+     "media": [
+      "illustration"
+     ],
+     "authors": [],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:39:21",
+   "note": "« Montrer ce qui n’est pas encore fini » (42 Tokyo, quatre auteurs), onglet Article."
+  },
+  {
+   "name": "article-media--desktop--fr-light",
+   "area": "journal",
+   "viewport": "reference/journal/article-media--desktop--fr-light.png",
+   "dom": "dom/journal/article-media--desktop--fr-light.json.gz",
+   "nodes": 107,
+   "doc": [
+    1440,
+    977
+   ],
+   "full": "reference/journal/article-media--desktop--fr-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-media",
+   "siteMapNodes": [
+    "article-media"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=media",
+   "route": "#journal/journal-share-the-unfinished?tab=media",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=media (1440x960, module du globe bloqué), stockage vidé",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Médias, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "Montrer ce qui n’est pas encore fini",
+     "section": "media",
+     "tab": "Médias",
+     "facts": "42 Tokyo24 sept. 2026",
+     "campus": "Explorer 42 Tokyo",
+     "figures": 1,
+     "media": [
+      "illustration"
+     ],
+     "authors": [],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:39:27"
+  },
+  {
+   "name": "article-media--desktop--fr-dark",
+   "area": "journal",
+   "viewport": "reference/journal/article-media--desktop--fr-dark.png",
+   "dom": "dom/journal/article-media--desktop--fr-dark.json.gz",
+   "nodes": 107,
+   "doc": [
+    1440,
+    977
+   ],
+   "full": "reference/journal/article-media--desktop--fr-dark--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-media",
+   "siteMapNodes": [
+    "article-media"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=media",
+   "route": "#journal/journal-share-the-unfinished?tab=media",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=media (1440x960, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Médias, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "Montrer ce qui n’est pas encore fini",
+     "section": "media",
+     "tab": "Médias",
+     "facts": "42 Tokyo24 sept. 2026",
+     "campus": "Explorer 42 Tokyo",
+     "figures": 1,
+     "media": [
+      "illustration"
+     ],
+     "authors": [],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:39:35"
+  },
+  {
+   "name": "article-media--desktop--en-light",
+   "area": "journal",
+   "viewport": "reference/journal/article-media--desktop--en-light.png",
+   "dom": "dom/journal/article-media--desktop--en-light.json.gz",
+   "nodes": 107,
+   "doc": [
+    1440,
+    977
+   ],
+   "full": "reference/journal/article-media--desktop--en-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-media",
+   "siteMapNodes": [
+    "article-media"
+   ],
+   "format": "desktop",
+   "lang": "en",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=media",
+   "route": "#journal/journal-share-the-unfinished?tab=media",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=media (1440x960, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Médias, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "Sharing work before it is finished",
+     "section": "media",
+     "tab": "Media",
+     "facts": "42 TokyoSep 24, 2026",
+     "campus": "Explore 42 Tokyo",
+     "figures": 1,
+     "media": [
+      "illustration"
+     ],
+     "authors": [],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:39:44"
+  },
+  {
+   "name": "article-media--desktop--ar-light",
+   "area": "journal",
+   "viewport": "reference/journal/article-media--desktop--ar-light.png",
+   "dom": "dom/journal/article-media--desktop--ar-light.json.gz",
+   "nodes": 108,
+   "doc": [
+    1440,
+    982
+   ],
+   "full": "reference/journal/article-media--desktop--ar-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-media",
+   "siteMapNodes": [
+    "article-media"
+   ],
+   "format": "desktop",
+   "lang": "ar",
+   "theme": "light",
+   "dir": "rtl",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=media",
+   "route": "#journal/journal-share-the-unfinished?tab=media",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=media (1440x960, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Médias, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "مشاركة العمل قبل اكتماله",
+     "section": "media",
+     "tab": "الوسائط",
+     "facts": "42 Tokyo24 سبتمبر 2026",
+     "campus": "استكشف 42 Tokyo",
+     "figures": 1,
+     "media": [
+      "illustration"
+     ],
+     "authors": [],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:39:52"
+  },
+  {
+   "name": "article-media--mobile--fr-light",
+   "area": "journal",
+   "viewport": "reference/journal/article-media--mobile--fr-light.png",
+   "dom": "dom/journal/article-media--mobile--fr-light.json.gz",
+   "nodes": 112,
+   "doc": [
+    390,
+    947
+   ],
+   "full": "reference/journal/article-media--mobile--fr-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-media",
+   "siteMapNodes": [
+    "article-media"
+   ],
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=media",
+   "route": "#journal/journal-share-the-unfinished?tab=media",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=media (390x844 DPR2, module du globe bloqué), stockage vidé",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Médias, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "Montrer ce qui n’est pas encore fini",
+     "section": "media",
+     "tab": "Médias",
+     "facts": "42 Tokyo24 sept. 2026",
+     "campus": "Explorer 42 Tokyo",
+     "figures": 1,
+     "media": [
+      "illustration"
+     ],
+     "authors": [],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:39:58"
+  },
+  {
+   "name": "article-media--mobile--fr-dark",
+   "area": "journal",
+   "viewport": "reference/journal/article-media--mobile--fr-dark.png",
+   "dom": "dom/journal/article-media--mobile--fr-dark.json.gz",
+   "nodes": 112,
+   "doc": [
+    390,
+    947
+   ],
+   "full": "reference/journal/article-media--mobile--fr-dark--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-media",
+   "siteMapNodes": [
+    "article-media"
+   ],
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=media",
+   "route": "#journal/journal-share-the-unfinished?tab=media",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=media (390x844 DPR2, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Médias, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "Montrer ce qui n’est pas encore fini",
+     "section": "media",
+     "tab": "Médias",
+     "facts": "42 Tokyo24 sept. 2026",
+     "campus": "Explorer 42 Tokyo",
+     "figures": 1,
+     "media": [
+      "illustration"
+     ],
+     "authors": [],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:40:07"
+  },
+  {
+   "name": "article-media--mobile--en-light",
+   "area": "journal",
+   "viewport": "reference/journal/article-media--mobile--en-light.png",
+   "dom": "dom/journal/article-media--mobile--en-light.json.gz",
+   "nodes": 112,
+   "doc": [
+    390,
+    990
+   ],
+   "full": "reference/journal/article-media--mobile--en-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-media",
+   "siteMapNodes": [
+    "article-media"
+   ],
+   "format": "mobile",
+   "lang": "en",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=media",
+   "route": "#journal/journal-share-the-unfinished?tab=media",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=media (390x844 DPR2, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Médias, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "Sharing work before it is finished",
+     "section": "media",
+     "tab": "Media",
+     "facts": "42 TokyoSep 24, 2026",
+     "campus": "Explore 42 Tokyo",
+     "figures": 1,
+     "media": [
+      "illustration"
+     ],
+     "authors": [],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:40:16"
+  },
+  {
+   "name": "article-media--mobile--ar-light",
+   "area": "journal",
+   "viewport": "reference/journal/article-media--mobile--ar-light.png",
+   "dom": "dom/journal/article-media--mobile--ar-light.json.gz",
+   "nodes": 113,
+   "doc": [
+    390,
+    1011
+   ],
+   "full": "reference/journal/article-media--mobile--ar-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-media",
+   "siteMapNodes": [
+    "article-media"
+   ],
+   "format": "mobile",
+   "lang": "ar",
+   "theme": "light",
+   "dir": "rtl",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=media",
+   "route": "#journal/journal-share-the-unfinished?tab=media",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=media (390x844 DPR2, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Médias, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "مشاركة العمل قبل اكتماله",
+     "section": "media",
+     "tab": "الوسائط",
+     "facts": "42 Tokyo24 سبتمبر 2026",
+     "campus": "استكشف 42 Tokyo",
+     "figures": 1,
+     "media": [
+      "illustration"
+     ],
+     "authors": [],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:40:24"
+  },
+  {
+   "name": "article-authors--desktop--fr-light",
+   "area": "journal",
+   "viewport": "reference/journal/article-authors--desktop--fr-light.png",
+   "dom": "dom/journal/article-authors--desktop--fr-light.json.gz",
+   "nodes": 133,
+   "doc": [
+    1440,
+    960
+   ],
+   "full": "reference/journal/article-authors--desktop--fr-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-authors",
+   "siteMapNodes": [
+    "article-authors"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=authors",
+   "route": "#journal/journal-share-the-unfinished?tab=authors",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=authors (1440x960, module du globe bloqué), stockage vidé",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Auteurs, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "Montrer ce qui n’est pas encore fini",
+     "section": "authors",
+     "tab": "Auteurs",
+     "facts": "42 Tokyo24 sept. 2026",
+     "campus": "Explorer 42 Tokyo",
+     "figures": 0,
+     "media": [],
+     "authors": [
+      "Inès Morel · Responsable de l’article",
+      "Haru Mizuno",
+      "Luiza Costa",
+      "Caio Mendes"
+     ],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:40:30"
+  },
+  {
+   "name": "article-authors--desktop--fr-dark",
+   "area": "journal",
+   "viewport": "reference/journal/article-authors--desktop--fr-dark.png",
+   "dom": "dom/journal/article-authors--desktop--fr-dark.json.gz",
+   "nodes": 133,
+   "doc": [
+    1440,
+    960
+   ],
+   "full": "reference/journal/article-authors--desktop--fr-dark--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-authors",
+   "siteMapNodes": [
+    "article-authors"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=authors",
+   "route": "#journal/journal-share-the-unfinished?tab=authors",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=authors (1440x960, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Auteurs, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "Montrer ce qui n’est pas encore fini",
+     "section": "authors",
+     "tab": "Auteurs",
+     "facts": "42 Tokyo24 sept. 2026",
+     "campus": "Explorer 42 Tokyo",
+     "figures": 0,
+     "media": [],
+     "authors": [
+      "Inès Morel · Responsable de l’article",
+      "Haru Mizuno",
+      "Luiza Costa",
+      "Caio Mendes"
+     ],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:40:39"
+  },
+  {
+   "name": "article-authors--desktop--en-light",
+   "area": "journal",
+   "viewport": "reference/journal/article-authors--desktop--en-light.png",
+   "dom": "dom/journal/article-authors--desktop--en-light.json.gz",
+   "nodes": 133,
+   "doc": [
+    1440,
+    960
+   ],
+   "full": "reference/journal/article-authors--desktop--en-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-authors",
+   "siteMapNodes": [
+    "article-authors"
+   ],
+   "format": "desktop",
+   "lang": "en",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=authors",
+   "route": "#journal/journal-share-the-unfinished?tab=authors",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=authors (1440x960, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Auteurs, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "Sharing work before it is finished",
+     "section": "authors",
+     "tab": "Authors",
+     "facts": "42 TokyoSep 24, 2026",
+     "campus": "Explore 42 Tokyo",
+     "figures": 0,
+     "media": [],
+     "authors": [
+      "Inès Morel · Article lead",
+      "Haru Mizuno",
+      "Luiza Costa",
+      "Caio Mendes"
+     ],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:40:47"
+  },
+  {
+   "name": "article-authors--desktop--ar-light",
+   "area": "journal",
+   "viewport": "reference/journal/article-authors--desktop--ar-light.png",
+   "dom": "dom/journal/article-authors--desktop--ar-light.json.gz",
+   "nodes": 134,
+   "doc": [
+    1440,
+    960
+   ],
+   "full": "reference/journal/article-authors--desktop--ar-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-authors",
+   "siteMapNodes": [
+    "article-authors"
+   ],
+   "format": "desktop",
+   "lang": "ar",
+   "theme": "light",
+   "dir": "rtl",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=authors",
+   "route": "#journal/journal-share-the-unfinished?tab=authors",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=authors (1440x960, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Auteurs, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "مشاركة العمل قبل اكتماله",
+     "section": "authors",
+     "tab": "الكتّاب",
+     "facts": "42 Tokyo24 سبتمبر 2026",
+     "campus": "استكشف 42 Tokyo",
+     "figures": 0,
+     "media": [],
+     "authors": [
+      "إيناس موريل · المسؤول عن المقال",
+      "هارو ميزونو",
+      "لويزا كوستا",
+      "كايو مينديز"
+     ],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:40:56"
+  },
+  {
+   "name": "article-authors--mobile--fr-light",
+   "area": "journal",
+   "viewport": "reference/journal/article-authors--mobile--fr-light.png",
+   "dom": "dom/journal/article-authors--mobile--fr-light.json.gz",
+   "nodes": 138,
+   "doc": [
+    390,
+    1194
+   ],
+   "full": "reference/journal/article-authors--mobile--fr-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-authors",
+   "siteMapNodes": [
+    "article-authors"
+   ],
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=authors",
+   "route": "#journal/journal-share-the-unfinished?tab=authors",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=authors (390x844 DPR2, module du globe bloqué), stockage vidé",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Auteurs, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "Montrer ce qui n’est pas encore fini",
+     "section": "authors",
+     "tab": "Auteurs",
+     "facts": "42 Tokyo24 sept. 2026",
+     "campus": "Explorer 42 Tokyo",
+     "figures": 0,
+     "media": [],
+     "authors": [
+      "Inès Morel · Responsable de l’article",
+      "Haru Mizuno",
+      "Luiza Costa",
+      "Caio Mendes"
+     ],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:41:02"
+  },
+  {
+   "name": "article-authors--mobile--fr-dark",
+   "area": "journal",
+   "viewport": "reference/journal/article-authors--mobile--fr-dark.png",
+   "dom": "dom/journal/article-authors--mobile--fr-dark.json.gz",
+   "nodes": 138,
+   "doc": [
+    390,
+    1194
+   ],
+   "full": "reference/journal/article-authors--mobile--fr-dark--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-authors",
+   "siteMapNodes": [
+    "article-authors"
+   ],
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=authors",
+   "route": "#journal/journal-share-the-unfinished?tab=authors",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=authors (390x844 DPR2, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Auteurs, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "Montrer ce qui n’est pas encore fini",
+     "section": "authors",
+     "tab": "Auteurs",
+     "facts": "42 Tokyo24 sept. 2026",
+     "campus": "Explorer 42 Tokyo",
+     "figures": 0,
+     "media": [],
+     "authors": [
+      "Inès Morel · Responsable de l’article",
+      "Haru Mizuno",
+      "Luiza Costa",
+      "Caio Mendes"
+     ],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:41:10"
+  },
+  {
+   "name": "article-authors--mobile--en-light",
+   "area": "journal",
+   "viewport": "reference/journal/article-authors--mobile--en-light.png",
+   "dom": "dom/journal/article-authors--mobile--en-light.json.gz",
+   "nodes": 138,
+   "doc": [
+    390,
+    1237
+   ],
+   "full": "reference/journal/article-authors--mobile--en-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-authors",
+   "siteMapNodes": [
+    "article-authors"
+   ],
+   "format": "mobile",
+   "lang": "en",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=authors",
+   "route": "#journal/journal-share-the-unfinished?tab=authors",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=authors (390x844 DPR2, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Auteurs, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "Sharing work before it is finished",
+     "section": "authors",
+     "tab": "Authors",
+     "facts": "42 TokyoSep 24, 2026",
+     "campus": "Explore 42 Tokyo",
+     "figures": 0,
+     "media": [],
+     "authors": [
+      "Inès Morel · Article lead",
+      "Haru Mizuno",
+      "Luiza Costa",
+      "Caio Mendes"
+     ],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:41:19"
+  },
+  {
+   "name": "article-authors--mobile--ar-light",
+   "area": "journal",
+   "viewport": "reference/journal/article-authors--mobile--ar-light.png",
+   "dom": "dom/journal/article-authors--mobile--ar-light.json.gz",
+   "nodes": 139,
+   "doc": [
+    390,
+    1258
+   ],
+   "full": "reference/journal/article-authors--mobile--ar-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-authors",
+   "siteMapNodes": [
+    "article-authors"
+   ],
+   "format": "mobile",
+   "lang": "ar",
+   "theme": "light",
+   "dir": "rtl",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=authors",
+   "route": "#journal/journal-share-the-unfinished?tab=authors",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=authors (390x844 DPR2, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Auteurs, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "مشاركة العمل قبل اكتماله",
+     "section": "authors",
+     "tab": "الكتّاب",
+     "facts": "42 Tokyo24 سبتمبر 2026",
+     "campus": "استكشف 42 Tokyo",
+     "figures": 0,
+     "media": [],
+     "authors": [
+      "إيناس موريل · المسؤول عن المقال",
+      "هارو ميزونو",
+      "لويزا كوستا",
+      "كايو مينديز"
+     ],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:41:28"
+  },
+  {
+   "name": "article-comments--desktop--fr-light",
+   "area": "journal",
+   "viewport": "reference/journal/article-comments--desktop--fr-light.png",
+   "dom": "dom/journal/article-comments--desktop--fr-light.json.gz",
+   "nodes": 123,
+   "doc": [
+    1440,
+    1005
+   ],
+   "full": "reference/journal/article-comments--desktop--fr-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-comments",
+   "siteMapNodes": [
+    "article-comments"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=comments",
+   "route": "#journal/journal-share-the-unfinished?tab=comments",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=comments (1440x960, module du globe bloqué), stockage vidé",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Commentaires, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "Montrer ce qui n’est pas encore fini",
+     "section": "comments",
+     "tab": "Commentaires",
+     "facts": "42 Tokyo24 sept. 2026",
+     "campus": "Explorer 42 Tokyo",
+     "figures": 0,
+     "media": [],
+     "authors": [],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:41:34"
+  },
+  {
+   "name": "article-comments--desktop--fr-dark",
+   "area": "journal",
+   "viewport": "reference/journal/article-comments--desktop--fr-dark.png",
+   "dom": "dom/journal/article-comments--desktop--fr-dark.json.gz",
+   "nodes": 123,
+   "doc": [
+    1440,
+    1005
+   ],
+   "full": "reference/journal/article-comments--desktop--fr-dark--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-comments",
+   "siteMapNodes": [
+    "article-comments"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=comments",
+   "route": "#journal/journal-share-the-unfinished?tab=comments",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=comments (1440x960, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Commentaires, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "Montrer ce qui n’est pas encore fini",
+     "section": "comments",
+     "tab": "Commentaires",
+     "facts": "42 Tokyo24 sept. 2026",
+     "campus": "Explorer 42 Tokyo",
+     "figures": 0,
+     "media": [],
+     "authors": [],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:41:42"
+  },
+  {
+   "name": "article-comments--desktop--en-light",
+   "area": "journal",
+   "viewport": "reference/journal/article-comments--desktop--en-light.png",
+   "dom": "dom/journal/article-comments--desktop--en-light.json.gz",
+   "nodes": 123,
+   "doc": [
+    1440,
+    1005
+   ],
+   "full": "reference/journal/article-comments--desktop--en-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-comments",
+   "siteMapNodes": [
+    "article-comments"
+   ],
+   "format": "desktop",
+   "lang": "en",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=comments",
+   "route": "#journal/journal-share-the-unfinished?tab=comments",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=comments (1440x960, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Commentaires, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "Sharing work before it is finished",
+     "section": "comments",
+     "tab": "Comments",
+     "facts": "42 TokyoSep 24, 2026",
+     "campus": "Explore 42 Tokyo",
+     "figures": 0,
+     "media": [],
+     "authors": [],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:41:51"
+  },
+  {
+   "name": "article-comments--desktop--ar-light",
+   "area": "journal",
+   "viewport": "reference/journal/article-comments--desktop--ar-light.png",
+   "dom": "dom/journal/article-comments--desktop--ar-light.json.gz",
+   "nodes": 124,
+   "doc": [
+    1440,
+    1032
+   ],
+   "full": "reference/journal/article-comments--desktop--ar-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-comments",
+   "siteMapNodes": [
+    "article-comments"
+   ],
+   "format": "desktop",
+   "lang": "ar",
+   "theme": "light",
+   "dir": "rtl",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=comments",
+   "route": "#journal/journal-share-the-unfinished?tab=comments",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=comments (1440x960, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Commentaires, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "مشاركة العمل قبل اكتماله",
+     "section": "comments",
+     "tab": "التعليقات",
+     "facts": "42 Tokyo24 سبتمبر 2026",
+     "campus": "استكشف 42 Tokyo",
+     "figures": 0,
+     "media": [],
+     "authors": [],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:41:59"
+  },
+  {
+   "name": "article-comments--mobile--fr-light",
+   "area": "journal",
+   "viewport": "reference/journal/article-comments--mobile--fr-light.png",
+   "dom": "dom/journal/article-comments--mobile--fr-light.json.gz",
+   "nodes": 128,
+   "doc": [
+    390,
+    1293
+   ],
+   "full": "reference/journal/article-comments--mobile--fr-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-comments",
+   "siteMapNodes": [
+    "article-comments"
+   ],
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=comments",
+   "route": "#journal/journal-share-the-unfinished?tab=comments",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=comments (390x844 DPR2, module du globe bloqué), stockage vidé",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Commentaires, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "Montrer ce qui n’est pas encore fini",
+     "section": "comments",
+     "tab": "Commentaires",
+     "facts": "42 Tokyo24 sept. 2026",
+     "campus": "Explorer 42 Tokyo",
+     "figures": 0,
+     "media": [],
+     "authors": [],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:42:05"
+  },
+  {
+   "name": "article-comments--mobile--fr-dark",
+   "area": "journal",
+   "viewport": "reference/journal/article-comments--mobile--fr-dark.png",
+   "dom": "dom/journal/article-comments--mobile--fr-dark.json.gz",
+   "nodes": 128,
+   "doc": [
+    390,
+    1293
+   ],
+   "full": "reference/journal/article-comments--mobile--fr-dark--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-comments",
+   "siteMapNodes": [
+    "article-comments"
+   ],
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=comments",
+   "route": "#journal/journal-share-the-unfinished?tab=comments",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=comments (390x844 DPR2, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Commentaires, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "Montrer ce qui n’est pas encore fini",
+     "section": "comments",
+     "tab": "Commentaires",
+     "facts": "42 Tokyo24 sept. 2026",
+     "campus": "Explorer 42 Tokyo",
+     "figures": 0,
+     "media": [],
+     "authors": [],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:42:14"
+  },
+  {
+   "name": "article-comments--mobile--en-light",
+   "area": "journal",
+   "viewport": "reference/journal/article-comments--mobile--en-light.png",
+   "dom": "dom/journal/article-comments--mobile--en-light.json.gz",
+   "nodes": 128,
+   "doc": [
+    390,
+    1287
+   ],
+   "full": "reference/journal/article-comments--mobile--en-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-comments",
+   "siteMapNodes": [
+    "article-comments"
+   ],
+   "format": "mobile",
+   "lang": "en",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=comments",
+   "route": "#journal/journal-share-the-unfinished?tab=comments",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=comments (390x844 DPR2, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Commentaires, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "Sharing work before it is finished",
+     "section": "comments",
+     "tab": "Comments",
+     "facts": "42 TokyoSep 24, 2026",
+     "campus": "Explore 42 Tokyo",
+     "figures": 0,
+     "media": [],
+     "authors": [],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:42:22"
+  },
+  {
+   "name": "article-comments--mobile--ar-light",
+   "area": "journal",
+   "viewport": "reference/journal/article-comments--mobile--ar-light.png",
+   "dom": "dom/journal/article-comments--mobile--ar-light.json.gz",
+   "nodes": 129,
+   "doc": [
+    390,
+    1329
+   ],
+   "full": "reference/journal/article-comments--mobile--ar-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-comments",
+   "siteMapNodes": [
+    "article-comments"
+   ],
+   "format": "mobile",
+   "lang": "ar",
+   "theme": "light",
+   "dir": "rtl",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=comments",
+   "route": "#journal/journal-share-the-unfinished?tab=comments",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=comments (390x844 DPR2, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Commentaires, images chargées)"
+   ],
+   "checks": {
+    "detail": {
+     "title": "مشاركة العمل قبل اكتماله",
+     "section": "comments",
+     "tab": "التعليقات",
+     "facts": "42 Tokyo24 سبتمبر 2026",
+     "campus": "استكشف 42 Tokyo",
+     "figures": 0,
+     "media": [],
+     "authors": [],
+     "comments": 0
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:42:31"
+  },
+  {
+   "name": "article-comments-thread--desktop--fr-light",
+   "area": "journal",
+   "viewport": "reference/journal/article-comments-thread--desktop--fr-light.png",
+   "dom": "dom/journal/article-comments-thread--desktop--fr-light.json.gz",
+   "nodes": 175,
+   "doc": [
+    1440,
+    1321
+   ],
+   "full": "reference/journal/article-comments-thread--desktop--fr-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-comments-thread",
+   "siteMapNodes": [
+    "article-comments"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=comments",
+   "route": "#journal/journal-share-the-unfinished?tab=comments",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=comments (1440x960, module du globe bloqué), stockage vidé",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Commentaires, images chargées)",
+    "écrire « Très parlant, merci @ines », choisir Inès Morel (Entrée), compléter, Publier ; Répondre : « Merci ! La prochaine démonstration arrive bientôt. », Publier ; J’aime sur le commentaire"
+   ],
+   "checks": {
+    "thread": {
+     "comments": 2,
+     "mention": "@Inès Morel",
+     "liked": "true"
+    },
+    "detail": {
+     "title": "Montrer ce qui n’est pas encore fini",
+     "section": "comments",
+     "tab": "Commentaires",
+     "facts": "42 Tokyo24 sept. 2026",
+     "campus": "Explorer 42 Tokyo",
+     "figures": 0,
+     "media": [],
+     "authors": [],
+     "comments": 2
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:42:48",
+   "note": "Commentaire, réponse et J’aime ajoutés pour la capture : les commentaires démarrent vides."
+  },
+  {
+   "name": "article-comments-thread--desktop--fr-dark",
+   "area": "journal",
+   "viewport": "reference/journal/article-comments-thread--desktop--fr-dark.png",
+   "dom": "dom/journal/article-comments-thread--desktop--fr-dark.json.gz",
+   "nodes": 175,
+   "doc": [
+    1440,
+    1321
+   ],
+   "full": "reference/journal/article-comments-thread--desktop--fr-dark--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-comments-thread",
+   "siteMapNodes": [
+    "article-comments"
+   ],
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=comments",
+   "route": "#journal/journal-share-the-unfinished?tab=comments",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=comments (1440x960, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Commentaires, images chargées)",
+    "écrire « Très parlant, merci @ines », choisir Inès Morel (Entrée), compléter, Publier ; Répondre : « Merci ! La prochaine démonstration arrive bientôt. », Publier ; J’aime sur le commentaire"
+   ],
+   "checks": {
+    "thread": {
+     "comments": 2,
+     "mention": "@Inès Morel",
+     "liked": "true"
+    },
+    "detail": {
+     "title": "Montrer ce qui n’est pas encore fini",
+     "section": "comments",
+     "tab": "Commentaires",
+     "facts": "42 Tokyo24 sept. 2026",
+     "campus": "Explorer 42 Tokyo",
+     "figures": 0,
+     "media": [],
+     "authors": [],
+     "comments": 2
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:43:05",
+   "note": "Commentaire, réponse et J’aime ajoutés pour la capture : les commentaires démarrent vides."
+  },
+  {
+   "name": "article-comments-thread--desktop--en-light",
+   "area": "journal",
+   "viewport": "reference/journal/article-comments-thread--desktop--en-light.png",
+   "dom": "dom/journal/article-comments-thread--desktop--en-light.json.gz",
+   "nodes": 175,
+   "doc": [
+    1440,
+    1321
+   ],
+   "full": "reference/journal/article-comments-thread--desktop--en-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-comments-thread",
+   "siteMapNodes": [
+    "article-comments"
+   ],
+   "format": "desktop",
+   "lang": "en",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=comments",
+   "route": "#journal/journal-share-the-unfinished?tab=comments",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=comments (1440x960, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Commentaires, images chargées)",
+    "écrire « Très parlant, merci @ines », choisir Inès Morel (Entrée), compléter, Publier ; Répondre : « Merci ! La prochaine démonstration arrive bientôt. », Publier ; J’aime sur le commentaire"
+   ],
+   "checks": {
+    "thread": {
+     "comments": 2,
+     "mention": "@Inès Morel",
+     "liked": "true"
+    },
+    "detail": {
+     "title": "Sharing work before it is finished",
+     "section": "comments",
+     "tab": "Comments",
+     "facts": "42 TokyoSep 24, 2026",
+     "campus": "Explore 42 Tokyo",
+     "figures": 0,
+     "media": [],
+     "authors": [],
+     "comments": 2
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:43:22",
+   "note": "Commentaire, réponse et J’aime ajoutés pour la capture : les commentaires démarrent vides."
+  },
+  {
+   "name": "article-comments-thread--desktop--ar-light",
+   "area": "journal",
+   "viewport": "reference/journal/article-comments-thread--desktop--ar-light.png",
+   "dom": "dom/journal/article-comments-thread--desktop--ar-light.json.gz",
+   "nodes": 176,
+   "doc": [
+    1440,
+    1348
+   ],
+   "full": "reference/journal/article-comments-thread--desktop--ar-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-comments-thread",
+   "siteMapNodes": [
+    "article-comments"
+   ],
+   "format": "desktop",
+   "lang": "ar",
+   "theme": "light",
+   "dir": "rtl",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=comments",
+   "route": "#journal/journal-share-the-unfinished?tab=comments",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=comments (1440x960, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Commentaires, images chargées)",
+    "écrire « Très parlant, merci @ines », choisir Inès Morel (Entrée), compléter, Publier ; Répondre : « Merci ! La prochaine démonstration arrive bientôt. », Publier ; J’aime sur le commentaire"
+   ],
+   "checks": {
+    "thread": {
+     "comments": 2,
+     "mention": "@إيناس موريل",
+     "liked": "true"
+    },
+    "detail": {
+     "title": "مشاركة العمل قبل اكتماله",
+     "section": "comments",
+     "tab": "التعليقات",
+     "facts": "42 Tokyo24 سبتمبر 2026",
+     "campus": "استكشف 42 Tokyo",
+     "figures": 0,
+     "media": [],
+     "authors": [],
+     "comments": 2
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:43:40",
+   "note": "Commentaire, réponse et J’aime ajoutés pour la capture : les commentaires démarrent vides."
+  },
+  {
+   "name": "article-comments-thread--mobile--fr-light",
+   "area": "journal",
+   "viewport": "reference/journal/article-comments-thread--mobile--fr-light.png",
+   "dom": "dom/journal/article-comments-thread--mobile--fr-light.json.gz",
+   "nodes": 180,
+   "doc": [
+    390,
+    1667
+   ],
+   "full": "reference/journal/article-comments-thread--mobile--fr-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-comments-thread",
+   "siteMapNodes": [
+    "article-comments"
+   ],
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=comments",
+   "route": "#journal/journal-share-the-unfinished?tab=comments",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=comments (390x844 DPR2, module du globe bloqué), stockage vidé",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Commentaires, images chargées)",
+    "écrire « Très parlant, merci @ines », choisir Inès Morel (Entrée), compléter, Publier ; Répondre : « Merci ! La prochaine démonstration arrive bientôt. », Publier ; J’aime sur le commentaire"
+   ],
+   "checks": {
+    "thread": {
+     "comments": 2,
+     "mention": "@Inès Morel",
+     "liked": "true"
+    },
+    "detail": {
+     "title": "Montrer ce qui n’est pas encore fini",
+     "section": "comments",
+     "tab": "Commentaires",
+     "facts": "42 Tokyo24 sept. 2026",
+     "campus": "Explorer 42 Tokyo",
+     "figures": 0,
+     "media": [],
+     "authors": [],
+     "comments": 2
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:43:56",
+   "note": "Commentaire, réponse et J’aime ajoutés pour la capture : les commentaires démarrent vides."
+  },
+  {
+   "name": "article-comments-thread--mobile--fr-dark",
+   "area": "journal",
+   "viewport": "reference/journal/article-comments-thread--mobile--fr-dark.png",
+   "dom": "dom/journal/article-comments-thread--mobile--fr-dark.json.gz",
+   "nodes": 180,
+   "doc": [
+    390,
+    1667
+   ],
+   "full": "reference/journal/article-comments-thread--mobile--fr-dark--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-comments-thread",
+   "siteMapNodes": [
+    "article-comments"
+   ],
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=comments",
+   "route": "#journal/journal-share-the-unfinished?tab=comments",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=comments (390x844 DPR2, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Commentaires, images chargées)",
+    "écrire « Très parlant, merci @ines », choisir Inès Morel (Entrée), compléter, Publier ; Répondre : « Merci ! La prochaine démonstration arrive bientôt. », Publier ; J’aime sur le commentaire"
+   ],
+   "checks": {
+    "thread": {
+     "comments": 2,
+     "mention": "@Inès Morel",
+     "liked": "true"
+    },
+    "detail": {
+     "title": "Montrer ce qui n’est pas encore fini",
+     "section": "comments",
+     "tab": "Commentaires",
+     "facts": "42 Tokyo24 sept. 2026",
+     "campus": "Explorer 42 Tokyo",
+     "figures": 0,
+     "media": [],
+     "authors": [],
+     "comments": 2
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:44:15",
+   "note": "Commentaire, réponse et J’aime ajoutés pour la capture : les commentaires démarrent vides."
+  },
+  {
+   "name": "article-comments-thread--mobile--en-light",
+   "area": "journal",
+   "viewport": "reference/journal/article-comments-thread--mobile--en-light.png",
+   "dom": "dom/journal/article-comments-thread--mobile--en-light.json.gz",
+   "nodes": 180,
+   "doc": [
+    390,
+    1661
+   ],
+   "full": "reference/journal/article-comments-thread--mobile--en-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-comments-thread",
+   "siteMapNodes": [
+    "article-comments"
+   ],
+   "format": "mobile",
+   "lang": "en",
+   "theme": "light",
+   "dir": "ltr",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=comments",
+   "route": "#journal/journal-share-the-unfinished?tab=comments",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=comments (390x844 DPR2, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Commentaires, images chargées)",
+    "écrire « Très parlant, merci @ines », choisir Inès Morel (Entrée), compléter, Publier ; Répondre : « Merci ! La prochaine démonstration arrive bientôt. », Publier ; J’aime sur le commentaire"
+   ],
+   "checks": {
+    "thread": {
+     "comments": 2,
+     "mention": "@Inès Morel",
+     "liked": "true"
+    },
+    "detail": {
+     "title": "Sharing work before it is finished",
+     "section": "comments",
+     "tab": "Comments",
+     "facts": "42 TokyoSep 24, 2026",
+     "campus": "Explore 42 Tokyo",
+     "figures": 0,
+     "media": [],
+     "authors": [],
+     "comments": 2
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:44:35",
+   "note": "Commentaire, réponse et J’aime ajoutés pour la capture : les commentaires démarrent vides."
+  },
+  {
+   "name": "article-comments-thread--mobile--ar-light",
+   "area": "journal",
+   "viewport": "reference/journal/article-comments-thread--mobile--ar-light.png",
+   "dom": "dom/journal/article-comments-thread--mobile--ar-light.json.gz",
+   "nodes": 181,
+   "doc": [
+    390,
+    1703
+   ],
+   "full": "reference/journal/article-comments-thread--mobile--ar-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=114 design-review-selection.mjs?v=1",
+   "state": "article-comments-thread",
+   "siteMapNodes": [
+    "article-comments"
+   ],
+   "format": "mobile",
+   "lang": "ar",
+   "theme": "light",
+   "dir": "rtl",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal/journal-share-the-unfinished?tab=comments",
+   "route": "#journal/journal-share-the-unfinished?tab=comments",
+   "actions": [
+    "ouvrir content-preview.html#journal/journal-share-the-unfinished?tab=comments (390x844 DPR2, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "attendre la chronique « Montrer ce qui n’est pas encore fini » (onglet Commentaires, images chargées)",
+    "écrire « Très parlant, merci @ines », choisir Inès Morel (Entrée), compléter, Publier ; Répondre : « Merci ! La prochaine démonstration arrive bientôt. », Publier ; J’aime sur le commentaire"
+   ],
+   "checks": {
+    "thread": {
+     "comments": 2,
+     "mention": "@إيناس موريل",
+     "liked": "true"
+    },
+    "detail": {
+     "title": "مشاركة العمل قبل اكتماله",
+     "section": "comments",
+     "tab": "التعليقات",
+     "facts": "42 Tokyo24 سبتمبر 2026",
+     "campus": "استكشف 42 Tokyo",
+     "figures": 0,
+     "media": [],
+     "authors": [],
+     "comments": 2
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "916fc782e2a0f2b2",
+   "lib": "06514a4e3188",
+   "capturedAt": "2026-10-17 19:44:54",
+   "note": "Commentaire, réponse et J’aime ajoutés pour la capture : les commentaires démarrent vides."
+  },
+  {
+   "name": "journal--desktop--ar-light",
+   "area": "journal",
+   "viewport": "reference/journal/journal--desktop--ar-light.png",
+   "dom": "dom/journal/journal--desktop--ar-light.json.gz",
+   "nodes": 435,
+   "doc": [
+    1440,
+    2448
+   ],
+   "full": "reference/journal/journal--desktop--ar-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "journal",
+   "siteMapNodes": [
+    "journal"
+   ],
+   "format": "desktop",
+   "lang": "ar",
+   "theme": "light",
+   "dir": "rtl",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal",
+   "route": "#journal",
+   "actions": [
+    "ouvrir content-preview.html#journal (1440x960, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "attendre la liste des chroniques (cartes et portraits chargés)"
+   ],
+   "checks": {
+    "list": {
+     "view": "grid",
+     "count": "عدد المحتويات: 78",
+     "cards": 12,
+     "page": "1",
+     "sort": "newest",
+     "first": [
+      "#journal/journal-an-evening-debugging",
+      "#journal/journal-share-the-unfinished",
+      "#journal/demo-journal-closing-notebook"
+     ]
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "37067ce3fd75",
+   "capturedAt": "2026-10-18 05:48:47",
+   "note": "Page 1, tri par défaut (plus récentes d’abord), vue Grille."
+  },
+  {
+   "name": "journal--desktop--ar-dark",
+   "area": "journal",
+   "viewport": "reference/journal/journal--desktop--ar-dark.png",
+   "dom": "dom/journal/journal--desktop--ar-dark.json.gz",
+   "nodes": 435,
+   "doc": [
+    1440,
+    2448
+   ],
+   "full": "reference/journal/journal--desktop--ar-dark--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "journal",
+   "siteMapNodes": [
+    "journal"
+   ],
+   "format": "desktop",
+   "lang": "ar",
+   "theme": "dark",
+   "dir": "rtl",
+   "viewportSize": [
+    1440,
+    960,
+    false
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal",
+   "route": "#journal",
+   "actions": [
+    "ouvrir content-preview.html#journal (1440x960, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue ar, thème dark",
+    "attendre la liste des chroniques (cartes et portraits chargés)"
+   ],
+   "checks": {
+    "list": {
+     "view": "grid",
+     "count": "عدد المحتويات: 78",
+     "cards": 12,
+     "page": "1",
+     "sort": "newest",
+     "first": [
+      "#journal/journal-an-evening-debugging",
+      "#journal/journal-share-the-unfinished",
+      "#journal/demo-journal-closing-notebook"
+     ]
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "37067ce3fd75",
+   "capturedAt": "2026-10-18 05:48:56",
+   "note": "Page 1, tri par défaut (plus récentes d’abord), vue Grille."
+  },
+  {
+   "name": "journal--mobile--ar-light",
+   "area": "journal",
+   "viewport": "reference/journal/journal--mobile--ar-light.png",
+   "dom": "dom/journal/journal--mobile--ar-light.json.gz",
+   "nodes": 421,
+   "doc": [
+    390,
+    2644
+   ],
+   "full": "reference/journal/journal--mobile--ar-light--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "journal",
+   "siteMapNodes": [
+    "journal"
+   ],
+   "format": "mobile",
+   "lang": "ar",
+   "theme": "light",
+   "dir": "rtl",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal",
+   "route": "#journal",
+   "actions": [
+    "ouvrir content-preview.html#journal (390x844 DPR2, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+    "attendre la liste des chroniques (cartes et portraits chargés)"
+   ],
+   "checks": {
+    "list": {
+     "view": "grid",
+     "count": "عدد المحتويات: 78",
+     "cards": 12,
+     "page": "1",
+     "sort": "newest",
+     "first": [
+      "#journal/journal-an-evening-debugging",
+      "#journal/journal-share-the-unfinished",
+      "#journal/demo-journal-closing-notebook"
+     ]
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "37067ce3fd75",
+   "capturedAt": "2026-10-18 05:49:06",
+   "note": "Page 1, tri par défaut (plus récentes d’abord), vue Grille."
+  },
+  {
+   "name": "journal--mobile--ar-dark",
+   "area": "journal",
+   "viewport": "reference/journal/journal--mobile--ar-dark.png",
+   "dom": "dom/journal/journal--mobile--ar-dark.json.gz",
+   "nodes": 421,
+   "doc": [
+    390,
+    2644
+   ],
+   "full": "reference/journal/journal--mobile--ar-dark--full.png",
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=115 design-review-selection.mjs?v=1",
+   "state": "journal",
+   "siteMapNodes": [
+    "journal"
+   ],
+   "format": "mobile",
+   "lang": "ar",
+   "theme": "dark",
+   "dir": "rtl",
+   "viewportSize": [
+    390,
+    844,
+    true
+   ],
+   "page": "content-preview.html",
+   "routeOpened": "#journal",
+   "route": "#journal",
+   "actions": [
+    "ouvrir content-preview.html#journal (390x844 DPR2, module du globe bloqué), stockage vidé, puis Compte > Paramètres : langue ar, thème dark",
+    "attendre la liste des chroniques (cartes et portraits chargés)"
+   ],
+   "checks": {
+    "list": {
+     "view": "grid",
+     "count": "عدد المحتويات: 78",
+     "cards": 12,
+     "page": "1",
+     "sort": "newest",
+     "first": [
+      "#journal/journal-an-evening-debugging",
+      "#journal/journal-share-the-unfinished",
+      "#journal/demo-journal-closing-notebook"
+     ]
+    }
+   },
+   "keptFocus": false,
+   "scrollY": 0,
+   "ui": {
+    "backTop": false,
+    "dialogs": [],
+    "accountMenu": false,
+    "search": false,
+    "scopePopover": false,
+    "menus": [],
+    "dockScrolling": null
+   },
+   "pass": "variants-20261015",
+   "sources": "c94bdf634eaa64b3",
+   "lib": "37067ce3fd75",
+   "capturedAt": "2026-10-18 05:49:16",
+   "note": "Page 1, tri par défaut (plus récentes d’abord), vue Grille."
+  }
+ ],
+ "zone": "Chroniques",
+ "pass": "variants-20261015",
+ "naming": "<state>--<desktop|mobile>--<fr|en|ar>-<light|dark>",
+ "script": "scripts/capture_journal.py (runner scripts/variants.py)",
+ "failures": []
+}

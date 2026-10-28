@@ -1,0 +1,987 @@
+{
+  "date": "2026-09-27",
+  "fileKey": "yFrdllVm6nrKZJ2c99MMjT",
+  "pageId": "115:2",
+  "status": "Implemented, visually inspected, and desktop FR-to-AR prototype selection played.",
+  "components": {
+    "setId": "287:776",
+    "ltr": "287:738",
+    "rtl": "287:757",
+    "size": {
+      "width": 176,
+      "height": 140
+    },
+    "radius": 18,
+    "padding": 6,
+    "stroke": 1,
+    "rowHeight": 42
+  },
+  "foundations": {
+    "createdNodeIds": [],
+    "mutatedNodeIds": [],
+    "createdVariableIds": [
+      "VariableID:286:763",
+      "VariableID:286:764",
+      "VariableID:286:765",
+      "VariableID:286:766",
+      "VariableID:286:767",
+      "VariableID:286:768",
+      "VariableID:286:769",
+      "VariableID:286:770",
+      "VariableID:286:771",
+      "VariableID:286:772",
+      "VariableID:286:773",
+      "VariableID:286:774",
+      "VariableID:286:775",
+      "VariableID:286:776",
+      "VariableID:286:777",
+      "VariableID:286:778",
+      "VariableID:286:779",
+      "VariableID:286:780",
+      "VariableID:286:781",
+      "VariableID:286:782",
+      "VariableID:286:783",
+      "VariableID:286:784",
+      "VariableID:286:785",
+      "VariableID:286:786",
+      "VariableID:286:787",
+      "VariableID:286:788"
+    ],
+    "createdStyleIds": [
+      "S:7b47bc899ed3efb091cfa561eab1f19088b5c576,",
+      "S:eb4f02f5d5898098aa9e093f1a23c25cdd3a4ff1,",
+      "S:4561aa08a1ff36987670cd87226f8d4f9db91269,"
+    ],
+    "variables": {
+      "welcome/transparent": "VariableID:286:763",
+      "welcome/menu-shadow-light": "VariableID:286:764",
+      "welcome/menu-shadow-secondary-light": "VariableID:286:765",
+      "welcome/menu-shadow-dark": "VariableID:286:766",
+      "color/welcome/language-active": "VariableID:286:767",
+      "color/welcome/language-active-background": "VariableID:286:768",
+      "color/welcome/language-border": "VariableID:286:769",
+      "color/welcome/language-shadow-main": "VariableID:286:770",
+      "color/welcome/language-shadow-secondary": "VariableID:286:771",
+      "effect/welcome/language-shadow-y": "VariableID:286:772",
+      "effect/welcome/language-shadow-blur": "VariableID:286:773",
+      "radius/18": "VariableID:286:774",
+      "i18n/welcome/language/fr/background": "VariableID:286:775",
+      "i18n/welcome/language/fr/text": "VariableID:286:776",
+      "i18n/welcome/language/fr/weight": "VariableID:286:777",
+      "i18n/welcome/language/fr/check": "VariableID:286:778",
+      "i18n/welcome/language/en/background": "VariableID:286:779",
+      "i18n/welcome/language/en/text": "VariableID:286:780",
+      "i18n/welcome/language/en/weight": "VariableID:286:781",
+      "i18n/welcome/language/en/check": "VariableID:286:782",
+      "i18n/welcome/language/ar/background": "VariableID:286:783",
+      "i18n/welcome/language/ar/text": "VariableID:286:784",
+      "i18n/welcome/language/ar/weight": "VariableID:286:785",
+      "i18n/welcome/language/ar/check": "VariableID:286:786",
+      "i18n/welcome/language/ltr": "VariableID:286:787",
+      "i18n/welcome/language/rtl": "VariableID:286:788"
+    },
+    "textStyles": {
+      "Latin": "S:7b47bc899ed3efb091cfa561eab1f19088b5c576,",
+      "Arabic": "S:eb4f02f5d5898098aa9e093f1a23c25cdd3a4ff1,"
+    },
+    "effectStyleId": "S:4561aa08a1ff36987670cd87226f8d4f9db91269,",
+    "checks": {
+      "existingValuesPreserved": true,
+      "allScopesExplicit": true,
+      "fontFamilies": [
+        "Jost",
+        "Noto Sans Arabic"
+      ]
+    }
+  },
+  "overlays": [
+    {
+      "id": "288:3092",
+      "rootId": "115:3",
+      "buttonId": "118:48",
+      "width": 1440,
+      "height": 960,
+      "menuIds": [
+        "288:3096",
+        "288:3118"
+      ],
+      "anchor": {
+        "x": 1156,
+        "y": 92,
+        "width": 176,
+        "height": 140
+      },
+      "locales": [
+        {
+          "direction": "Liste des langues · LTR",
+          "id": "I288:3096;287:739",
+          "locale": "Langue · fr",
+          "mode": "95:0",
+          "destination": "CLOSE"
+        },
+        {
+          "direction": "Liste des langues · LTR",
+          "id": "I288:3096;287:745",
+          "locale": "Langue · en",
+          "mode": "95:1",
+          "destination": "CLOSE"
+        },
+        {
+          "direction": "Liste des langues · LTR",
+          "id": "I288:3096;287:751",
+          "locale": "Langue · ar",
+          "mode": "95:2",
+          "destination": "CLOSE"
+        },
+        {
+          "direction": "Liste des langues · RTL",
+          "id": "I288:3118;287:758",
+          "locale": "Langue · fr",
+          "mode": "95:0",
+          "destination": "CLOSE"
+        },
+        {
+          "direction": "Liste des langues · RTL",
+          "id": "I288:3118;287:764",
+          "locale": "Langue · en",
+          "mode": "95:1",
+          "destination": "CLOSE"
+        },
+        {
+          "direction": "Liste des langues · RTL",
+          "id": "I288:3118;287:770",
+          "locale": "Langue · ar",
+          "mode": "95:2",
+          "destination": "CLOSE"
+        }
+      ]
+    },
+    {
+      "id": "288:3138",
+      "rootId": "115:4",
+      "buttonId": "117:26",
+      "width": 1440,
+      "height": 960,
+      "menuIds": [
+        "288:3142",
+        "288:3164"
+      ],
+      "anchor": {
+        "x": 1100,
+        "y": 92,
+        "width": 176,
+        "height": 140
+      },
+      "locales": [
+        {
+          "direction": "Liste des langues · LTR",
+          "id": "I288:3142;287:739",
+          "locale": "Langue · fr",
+          "mode": "95:0",
+          "destination": "115:4"
+        },
+        {
+          "direction": "Liste des langues · LTR",
+          "id": "I288:3142;287:745",
+          "locale": "Langue · en",
+          "mode": "95:1",
+          "destination": "115:4"
+        },
+        {
+          "direction": "Liste des langues · LTR",
+          "id": "I288:3142;287:751",
+          "locale": "Langue · ar",
+          "mode": "95:2",
+          "destination": "125:243"
+        },
+        {
+          "direction": "Liste des langues · RTL",
+          "id": "I288:3164;287:758",
+          "locale": "Langue · fr",
+          "mode": "95:0",
+          "destination": "115:4"
+        },
+        {
+          "direction": "Liste des langues · RTL",
+          "id": "I288:3164;287:764",
+          "locale": "Langue · en",
+          "mode": "95:1",
+          "destination": "115:4"
+        },
+        {
+          "direction": "Liste des langues · RTL",
+          "id": "I288:3164;287:770",
+          "locale": "Langue · ar",
+          "mode": "95:2",
+          "destination": "125:243"
+        }
+      ]
+    },
+    {
+      "id": "288:3184",
+      "rootId": "119:178",
+      "buttonId": "119:188",
+      "width": 1440,
+      "height": 960,
+      "menuIds": [
+        "288:3188",
+        "288:3210"
+      ],
+      "anchor": {
+        "x": 1100,
+        "y": 92,
+        "width": 176,
+        "height": 140
+      },
+      "locales": [
+        {
+          "direction": "Liste des langues · LTR",
+          "id": "I288:3188;287:739",
+          "locale": "Langue · fr",
+          "mode": "95:0",
+          "destination": "119:178"
+        },
+        {
+          "direction": "Liste des langues · LTR",
+          "id": "I288:3188;287:745",
+          "locale": "Langue · en",
+          "mode": "95:1",
+          "destination": "119:178"
+        },
+        {
+          "direction": "Liste des langues · LTR",
+          "id": "I288:3188;287:751",
+          "locale": "Langue · ar",
+          "mode": "95:2",
+          "destination": "125:296"
+        },
+        {
+          "direction": "Liste des langues · RTL",
+          "id": "I288:3210;287:758",
+          "locale": "Langue · fr",
+          "mode": "95:0",
+          "destination": "119:178"
+        },
+        {
+          "direction": "Liste des langues · RTL",
+          "id": "I288:3210;287:764",
+          "locale": "Langue · en",
+          "mode": "95:1",
+          "destination": "119:178"
+        },
+        {
+          "direction": "Liste des langues · RTL",
+          "id": "I288:3210;287:770",
+          "locale": "Langue · ar",
+          "mode": "95:2",
+          "destination": "125:296"
+        }
+      ]
+    },
+    {
+      "id": "288:3230",
+      "rootId": "123:145",
+      "buttonId": "123:156",
+      "width": 390,
+      "height": 844,
+      "menuIds": [
+        "288:3234",
+        "288:3256"
+      ],
+      "anchor": {
+        "x": 138,
+        "y": 76,
+        "width": 176,
+        "height": 140
+      },
+      "locales": [
+        {
+          "direction": "Liste des langues · LTR",
+          "id": "I288:3234;287:739",
+          "locale": "Langue · fr",
+          "mode": "95:0",
+          "destination": "CLOSE"
+        },
+        {
+          "direction": "Liste des langues · LTR",
+          "id": "I288:3234;287:745",
+          "locale": "Langue · en",
+          "mode": "95:1",
+          "destination": "CLOSE"
+        },
+        {
+          "direction": "Liste des langues · LTR",
+          "id": "I288:3234;287:751",
+          "locale": "Langue · ar",
+          "mode": "95:2",
+          "destination": "CLOSE"
+        },
+        {
+          "direction": "Liste des langues · RTL",
+          "id": "I288:3256;287:758",
+          "locale": "Langue · fr",
+          "mode": "95:0",
+          "destination": "CLOSE"
+        },
+        {
+          "direction": "Liste des langues · RTL",
+          "id": "I288:3256;287:764",
+          "locale": "Langue · en",
+          "mode": "95:1",
+          "destination": "CLOSE"
+        },
+        {
+          "direction": "Liste des langues · RTL",
+          "id": "I288:3256;287:770",
+          "locale": "Langue · ar",
+          "mode": "95:2",
+          "destination": "CLOSE"
+        }
+      ]
+    },
+    {
+      "id": "288:3276",
+      "rootId": "123:162",
+      "buttonId": "123:172",
+      "width": 390,
+      "height": 844,
+      "menuIds": [
+        "288:3280",
+        "288:3302"
+      ],
+      "anchor": {
+        "x": 108,
+        "y": 76,
+        "width": 176,
+        "height": 140
+      },
+      "locales": [
+        {
+          "direction": "Liste des langues · LTR",
+          "id": "I288:3280;287:739",
+          "locale": "Langue · fr",
+          "mode": "95:0",
+          "destination": "123:162"
+        },
+        {
+          "direction": "Liste des langues · LTR",
+          "id": "I288:3280;287:745",
+          "locale": "Langue · en",
+          "mode": "95:1",
+          "destination": "123:162"
+        },
+        {
+          "direction": "Liste des langues · LTR",
+          "id": "I288:3280;287:751",
+          "locale": "Langue · ar",
+          "mode": "95:2",
+          "destination": "125:349"
+        },
+        {
+          "direction": "Liste des langues · RTL",
+          "id": "I288:3302;287:758",
+          "locale": "Langue · fr",
+          "mode": "95:0",
+          "destination": "123:162"
+        },
+        {
+          "direction": "Liste des langues · RTL",
+          "id": "I288:3302;287:764",
+          "locale": "Langue · en",
+          "mode": "95:1",
+          "destination": "123:162"
+        },
+        {
+          "direction": "Liste des langues · RTL",
+          "id": "I288:3302;287:770",
+          "locale": "Langue · ar",
+          "mode": "95:2",
+          "destination": "125:349"
+        }
+      ]
+    },
+    {
+      "id": "288:3322",
+      "rootId": "125:198",
+      "buttonId": "125:208",
+      "width": 390,
+      "height": 844,
+      "menuIds": [
+        "288:3326",
+        "288:3348"
+      ],
+      "anchor": {
+        "x": 108,
+        "y": 76,
+        "width": 176,
+        "height": 140
+      },
+      "locales": [
+        {
+          "direction": "Liste des langues · LTR",
+          "id": "I288:3326;287:739",
+          "locale": "Langue · fr",
+          "mode": "95:0",
+          "destination": "125:198"
+        },
+        {
+          "direction": "Liste des langues · LTR",
+          "id": "I288:3326;287:745",
+          "locale": "Langue · en",
+          "mode": "95:1",
+          "destination": "125:198"
+        },
+        {
+          "direction": "Liste des langues · LTR",
+          "id": "I288:3326;287:751",
+          "locale": "Langue · ar",
+          "mode": "95:2",
+          "destination": "125:402"
+        },
+        {
+          "direction": "Liste des langues · RTL",
+          "id": "I288:3348;287:758",
+          "locale": "Langue · fr",
+          "mode": "95:0",
+          "destination": "125:198"
+        },
+        {
+          "direction": "Liste des langues · RTL",
+          "id": "I288:3348;287:764",
+          "locale": "Langue · en",
+          "mode": "95:1",
+          "destination": "125:198"
+        },
+        {
+          "direction": "Liste des langues · RTL",
+          "id": "I288:3348;287:770",
+          "locale": "Langue · ar",
+          "mode": "95:2",
+          "destination": "125:402"
+        }
+      ]
+    },
+    {
+      "id": "288:3368",
+      "rootId": "125:243",
+      "buttonId": "125:253",
+      "width": 1440,
+      "height": 960,
+      "menuIds": [
+        "288:3372",
+        "288:3394"
+      ],
+      "anchor": {
+        "x": 164,
+        "y": 92,
+        "width": 176,
+        "height": 140
+      },
+      "locales": [
+        {
+          "direction": "Liste des langues · LTR",
+          "id": "I288:3372;287:739",
+          "locale": "Langue · fr",
+          "mode": "95:0",
+          "destination": "115:4"
+        },
+        {
+          "direction": "Liste des langues · LTR",
+          "id": "I288:3372;287:745",
+          "locale": "Langue · en",
+          "mode": "95:1",
+          "destination": "115:4"
+        },
+        {
+          "direction": "Liste des langues · LTR",
+          "id": "I288:3372;287:751",
+          "locale": "Langue · ar",
+          "mode": "95:2",
+          "destination": "125:243"
+        },
+        {
+          "direction": "Liste des langues · RTL",
+          "id": "I288:3394;287:758",
+          "locale": "Langue · fr",
+          "mode": "95:0",
+          "destination": "115:4"
+        },
+        {
+          "direction": "Liste des langues · RTL",
+          "id": "I288:3394;287:764",
+          "locale": "Langue · en",
+          "mode": "95:1",
+          "destination": "115:4"
+        },
+        {
+          "direction": "Liste des langues · RTL",
+          "id": "I288:3394;287:770",
+          "locale": "Langue · ar",
+          "mode": "95:2",
+          "destination": "125:243"
+        }
+      ]
+    },
+    {
+      "id": "288:3414",
+      "rootId": "125:296",
+      "buttonId": "125:306",
+      "width": 1440,
+      "height": 960,
+      "menuIds": [
+        "288:3418",
+        "288:3440"
+      ],
+      "anchor": {
+        "x": 164,
+        "y": 92,
+        "width": 176,
+        "height": 140
+      },
+      "locales": [
+        {
+          "direction": "Liste des langues · LTR",
+          "id": "I288:3418;287:739",
+          "locale": "Langue · fr",
+          "mode": "95:0",
+          "destination": "119:178"
+        },
+        {
+          "direction": "Liste des langues · LTR",
+          "id": "I288:3418;287:745",
+          "locale": "Langue · en",
+          "mode": "95:1",
+          "destination": "119:178"
+        },
+        {
+          "direction": "Liste des langues · LTR",
+          "id": "I288:3418;287:751",
+          "locale": "Langue · ar",
+          "mode": "95:2",
+          "destination": "125:296"
+        },
+        {
+          "direction": "Liste des langues · RTL",
+          "id": "I288:3440;287:758",
+          "locale": "Langue · fr",
+          "mode": "95:0",
+          "destination": "119:178"
+        },
+        {
+          "direction": "Liste des langues · RTL",
+          "id": "I288:3440;287:764",
+          "locale": "Langue · en",
+          "mode": "95:1",
+          "destination": "119:178"
+        },
+        {
+          "direction": "Liste des langues · RTL",
+          "id": "I288:3440;287:770",
+          "locale": "Langue · ar",
+          "mode": "95:2",
+          "destination": "125:296"
+        }
+      ]
+    },
+    {
+      "id": "288:3460",
+      "rootId": "125:349",
+      "buttonId": "125:359",
+      "width": 390,
+      "height": 844,
+      "menuIds": [
+        "288:3464",
+        "288:3486"
+      ],
+      "anchor": {
+        "x": 106,
+        "y": 76,
+        "width": 176,
+        "height": 140
+      },
+      "locales": [
+        {
+          "direction": "Liste des langues · LTR",
+          "id": "I288:3464;287:739",
+          "locale": "Langue · fr",
+          "mode": "95:0",
+          "destination": "123:162"
+        },
+        {
+          "direction": "Liste des langues · LTR",
+          "id": "I288:3464;287:745",
+          "locale": "Langue · en",
+          "mode": "95:1",
+          "destination": "123:162"
+        },
+        {
+          "direction": "Liste des langues · LTR",
+          "id": "I288:3464;287:751",
+          "locale": "Langue · ar",
+          "mode": "95:2",
+          "destination": "125:349"
+        },
+        {
+          "direction": "Liste des langues · RTL",
+          "id": "I288:3486;287:758",
+          "locale": "Langue · fr",
+          "mode": "95:0",
+          "destination": "123:162"
+        },
+        {
+          "direction": "Liste des langues · RTL",
+          "id": "I288:3486;287:764",
+          "locale": "Langue · en",
+          "mode": "95:1",
+          "destination": "123:162"
+        },
+        {
+          "direction": "Liste des langues · RTL",
+          "id": "I288:3486;287:770",
+          "locale": "Langue · ar",
+          "mode": "95:2",
+          "destination": "125:349"
+        }
+      ]
+    },
+    {
+      "id": "288:3506",
+      "rootId": "125:402",
+      "buttonId": "125:412",
+      "width": 390,
+      "height": 844,
+      "menuIds": [
+        "288:3510",
+        "288:3532"
+      ],
+      "anchor": {
+        "x": 106,
+        "y": 76,
+        "width": 176,
+        "height": 140
+      },
+      "locales": [
+        {
+          "direction": "Liste des langues · LTR",
+          "id": "I288:3510;287:739",
+          "locale": "Langue · fr",
+          "mode": "95:0",
+          "destination": "125:198"
+        },
+        {
+          "direction": "Liste des langues · LTR",
+          "id": "I288:3510;287:745",
+          "locale": "Langue · en",
+          "mode": "95:1",
+          "destination": "125:198"
+        },
+        {
+          "direction": "Liste des langues · LTR",
+          "id": "I288:3510;287:751",
+          "locale": "Langue · ar",
+          "mode": "95:2",
+          "destination": "125:402"
+        },
+        {
+          "direction": "Liste des langues · RTL",
+          "id": "I288:3532;287:758",
+          "locale": "Langue · fr",
+          "mode": "95:0",
+          "destination": "125:198"
+        },
+        {
+          "direction": "Liste des langues · RTL",
+          "id": "I288:3532;287:764",
+          "locale": "Langue · en",
+          "mode": "95:1",
+          "destination": "125:198"
+        },
+        {
+          "direction": "Liste des langues · RTL",
+          "id": "I288:3532;287:770",
+          "locale": "Langue · ar",
+          "mode": "95:2",
+          "destination": "125:402"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "288:3092",
+      "sameViewport": true,
+      "oneCaller": true,
+      "underButton": true,
+      "insideViewport": true,
+      "compact": true,
+      "transparent": true,
+      "centerViewport": true,
+      "outsideCloses": true,
+      "escCloses": true
+    },
+    {
+      "id": "288:3138",
+      "sameViewport": true,
+      "oneCaller": true,
+      "underButton": true,
+      "insideViewport": true,
+      "compact": true,
+      "transparent": true,
+      "centerViewport": true,
+      "outsideCloses": true,
+      "escCloses": true
+    },
+    {
+      "id": "288:3184",
+      "sameViewport": true,
+      "oneCaller": true,
+      "underButton": true,
+      "insideViewport": true,
+      "compact": true,
+      "transparent": true,
+      "centerViewport": true,
+      "outsideCloses": true,
+      "escCloses": true
+    },
+    {
+      "id": "288:3230",
+      "sameViewport": true,
+      "oneCaller": true,
+      "underButton": true,
+      "insideViewport": true,
+      "compact": true,
+      "transparent": true,
+      "centerViewport": true,
+      "outsideCloses": true,
+      "escCloses": true
+    },
+    {
+      "id": "288:3276",
+      "sameViewport": true,
+      "oneCaller": true,
+      "underButton": true,
+      "insideViewport": true,
+      "compact": true,
+      "transparent": true,
+      "centerViewport": true,
+      "outsideCloses": true,
+      "escCloses": true
+    },
+    {
+      "id": "288:3322",
+      "sameViewport": true,
+      "oneCaller": true,
+      "underButton": true,
+      "insideViewport": true,
+      "compact": true,
+      "transparent": true,
+      "centerViewport": true,
+      "outsideCloses": true,
+      "escCloses": true
+    },
+    {
+      "id": "288:3368",
+      "sameViewport": true,
+      "oneCaller": true,
+      "underButton": true,
+      "insideViewport": true,
+      "compact": true,
+      "transparent": true,
+      "centerViewport": true,
+      "outsideCloses": true,
+      "escCloses": true
+    },
+    {
+      "id": "288:3414",
+      "sameViewport": true,
+      "oneCaller": true,
+      "underButton": true,
+      "insideViewport": true,
+      "compact": true,
+      "transparent": true,
+      "centerViewport": true,
+      "outsideCloses": true,
+      "escCloses": true
+    },
+    {
+      "id": "288:3460",
+      "sameViewport": true,
+      "oneCaller": true,
+      "underButton": true,
+      "insideViewport": true,
+      "compact": true,
+      "transparent": true,
+      "centerViewport": true,
+      "outsideCloses": true,
+      "escCloses": true
+    },
+    {
+      "id": "288:3506",
+      "sameViewport": true,
+      "oneCaller": true,
+      "underButton": true,
+      "insideViewport": true,
+      "compact": true,
+      "transparent": true,
+      "centerViewport": true,
+      "outsideCloses": true,
+      "escCloses": true
+    }
+  ],
+  "visual": [
+    {
+      "mode": "3:1",
+      "locale": "95:0",
+      "size": {
+        "w": 176,
+        "h": 140
+      },
+      "selected": [
+        {
+          "name": "Langue · fr",
+          "check": 1,
+          "text": {
+            "family": "Jost",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 400
+            }
+          }
+        },
+        {
+          "name": "Langue · en",
+          "check": 0,
+          "text": {
+            "family": "Jost",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 400
+            }
+          }
+        },
+        {
+          "name": "Langue · ar",
+          "check": 0,
+          "text": {
+            "family": "Noto Sans Arabic",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 400,
+              "wdth": 100
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "3:1",
+      "locale": "95:1",
+      "size": {
+        "w": 176,
+        "h": 140
+      },
+      "selected": [
+        {
+          "name": "Langue · fr",
+          "check": 0,
+          "text": {
+            "family": "Jost",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 400
+            }
+          }
+        },
+        {
+          "name": "Langue · en",
+          "check": 1,
+          "text": {
+            "family": "Jost",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 400
+            }
+          }
+        },
+        {
+          "name": "Langue · ar",
+          "check": 0,
+          "text": {
+            "family": "Noto Sans Arabic",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 400,
+              "wdth": 100
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "3:2",
+      "locale": "95:2",
+      "size": {
+        "w": 176,
+        "h": 140
+      },
+      "selected": [
+        {
+          "name": "Langue · fr",
+          "check": 0,
+          "text": {
+            "family": "Jost",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 400
+            }
+          }
+        },
+        {
+          "name": "Langue · en",
+          "check": 0,
+          "text": {
+            "family": "Jost",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 400
+            }
+          }
+        },
+        {
+          "name": "Langue · ar",
+          "check": 1,
+          "text": {
+            "family": "Noto Sans Arabic",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 400,
+              "wdth": 100
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Figma uses transparent viewport overlays because overlay anchoring properties are read-only in the API.",
+    "Choice, outside click and Escape actions are wired. FR-to-AR selection was played on desktop; outside/Escape and the complete matrix were not replayed.",
+    "Historical centered overlays remain unreferenced on the active route."
+  ],
+  "notes": [
+    "Opacity variables in the Figma API use percentages: selected check=100, unselected=0.",
+    "Read hidden instance descendants with figma.skipInvisibleInstanceChildren=false; all 60 locale row actions were audited.",
+    "Existing source check icon reused and scaled to 16px; invisible SVG background cleared.",
+    "Historical centered language menus remain preserved and have no callers on page 115:2.",
+    "No welcome or entrance geometry changed; only the 10 original language-button reactions were updated."
+  ],
+  "screenshot": "Final Figma tool screenshot inspected: FR/light, EN/light, AR/dark. Temporary QA nodes removed; no local PNG saved.",
+  "browserVerification": {
+    "date": "2026-09-27",
+    "route": [
+      "115:4",
+      "125:243"
+    ],
+    "steps": "Open anchored list in FR/light, select AR, reach RTL home; choose dark using existing theme selector.",
+    "limits": "Targeted desktop check; complete locale/device matrix not replayed in Figma."
+  }
+}

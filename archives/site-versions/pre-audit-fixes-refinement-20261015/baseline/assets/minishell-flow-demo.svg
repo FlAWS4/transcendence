@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Minishell — illustrative command flow</title>
+  <desc id="desc">An original demonstration diagram: read a command, parse it, run it, then return its output. This is not a screenshot of a real implementation.</desc>
+  <rect width="960" height="600" rx="24" fill="#f3f8f8"/>
+  <g fill="none" stroke="#bfd9d8" stroke-width="1">
+    <path d="M0 100h960M0 200h960M0 300h960M0 400h960M0 500h960M120 0v600M240 0v600M360 0v600M480 0v600M600 0v600M720 0v600M840 0v600" opacity=".4"/>
+  </g>
+  <text x="64" y="68" font-family="monospace" font-size="24" letter-spacing="4" fill="#25363c">MINISHELL</text>
+  <g fill="#fff" stroke="#bad3d2" stroke-width="2">
+    <rect x="64" y="112" width="360" height="156" rx="20"/>
+    <rect x="536" y="112" width="360" height="156" rx="20"/>
+    <rect x="536" y="356" width="360" height="156" rx="20"/>
+    <rect x="64" y="356" width="360" height="156" rx="20"/>
+  </g>
+  <g fill="none" stroke="#078f88" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M446 190h66m-14-14 14 14-14 14M716 290v44m-14-14 14 14 14-14M514 434h-66m14-14-14 14 14 14"/>
+  </g>
+  <g font-family="monospace" fill="#25363c">
+    <g font-size="21" fill="#087b77"><text x="90" y="149">01 · READ</text><text x="562" y="149">02 · PARSE</text><text x="562" y="393">03 · RUN</text><text x="90" y="393">04 · OUTPUT</text></g>
+    <text x="90" y="215" font-size="28">&gt; echo "hello"</text>
+    <text x="90" y="459" font-size="32">hello</text>
+  </g>
+  <g fill="#e0f2f0" stroke="#94c6c2" stroke-width="1.5">
+    <rect x="562" y="176" width="120" height="48" rx="9"/>
+    <rect x="696" y="176" width="173" height="48" rx="9"/>
+  </g>
+  <g font-family="monospace" font-size="24" fill="#25363c"><text x="586" y="208">echo</text><text x="730" y="208">hello</text></g>
+  <g fill="none" stroke="#078f88" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m586 424-16 13 16 13m68-26 16 13-16 13m-28-23-12 46"/>
+    <path d="M710 437h36" stroke="#b770a1"/>
+    <rect x="765" y="411" width="78" height="52" rx="9" stroke="#b770a1"/>
+    <path d="m791 424 23 13-23 13Z" stroke="#b770a1"/>
+  </g>
+  <g fill="#d38cba"><circle cx="856" cy="62" r="7"/><circle cx="879" cy="62" r="7" opacity=".5"/><circle cx="833" cy="62" r="7" opacity=".25"/></g>
+</svg>

@@ -1,0 +1,180 @@
+/* Public profiles and visible project authors. Existing Horizon tokens stay shared. */
+.cp-profile-card .cp-profile-portrait {
+ position:relative; display:grid; place-items:center; aspect-ratio:1.5;
+ overflow:hidden; border-radius:22px; isolation:isolate;
+ background:color-mix(in srgb,var(--h42-teal) 7%,var(--h42-color-surface));
+ border:1px solid var(--cp-line);
+}
+.cp-profile-portrait::before {
+ content:''; position:absolute; width:78%; aspect-ratio:1; border-radius:50%;
+ border:1px solid color-mix(in srgb,var(--h42-teal) 14%,transparent); z-index:-1;
+}
+.cp-profile-portrait .cp-person-avatar {
+ width:48%; height:auto; aspect-ratio:1; max-width:170px; border-radius:50%;
+ object-fit:cover; border:4px solid var(--h42-color-surface);
+ transition:transform .45s var(--ease);
+}
+.cp-profile-card:hover .cp-profile-portrait .cp-person-avatar { transform:translateY(-3px); }
+.cp-profile-status {
+ display:inline-flex; align-items:center; min-height:25px; padding:3px 9px; border-radius:999px;
+ color:var(--cp-accent); background:var(--h42-color-surface); border:1px solid var(--cp-line);
+ font-size:11px; line-height:1.5; font-weight:500;
+}
+.cp-profile-portrait > .cp-profile-status { position:absolute; inset-inline-start:14px; bottom:12px; }
+.cp-profile-card .cp-card-copy > .cp-profile-role { margin:0 0 10px; color:var(--h42-color-text); font-size:14px; line-height:1.5; }
+.cp-profile-tags { display:flex; flex-wrap:wrap; gap:6px; list-style:none; margin:16px 0 0; padding:0; }
+.cp-profile-tags li {
+ padding:4px 8px; border:1px solid var(--cp-line); border-radius:7px;
+ color:var(--h42-color-muted); font-size:11px; line-height:1.4; overflow-wrap:anywhere;
+}
+.cp-profile-feature { display:flex; align-items:center; gap:10px; width:100%; padding-top:17px; margin-top:18px; border-top:1px solid var(--cp-line); }
+.cp-profile-feature-art { position:relative; flex:0 0 62px; width:62px; height:46px; border-radius:9px; overflow:hidden; }
+.cp-profile-feature-copy { display:grid; gap:3px; min-width:0; }
+.cp-profile-feature-copy small { color:var(--h42-color-muted); font-size:10px; line-height:1.4; }
+.cp-profile-feature-copy strong { font-size:12px; line-height:1.5; font-weight:500; }
+:root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-card {
+ grid-template-columns:minmax(0,170px) minmax(0,1fr); gap:28px; align-items:start;
+}
+:root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-portrait { aspect-ratio:1; }
+:root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-portrait .cp-person-avatar { width:72%; }
+:root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-feature { max-width:400px; }
+:root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-card .cp-card-link { margin-top:0; }
+
+/* Separate author links remain usable alongside the card's main link and heart. */
+.cp-card-cover-link { display:block; color:inherit; text-decoration:none; border-radius:20px; }
+.cp-card-title-link { color:inherit; text-decoration:none; border-radius:4px; }
+.cp-card-title-link:hover { color:var(--cp-accent); }
+.cp-card-copy > .cp-authors { width:100%; margin:2px 0 13px; }
+#detail-authors { margin:25px 0 20px; }
+
+.cp-authors { min-width:0; }
+.cp-authors:empty { display:none; }
+.cp-authors-label { margin:0 0 9px; font-size:11px; line-height:1.5; color:var(--h42-color-muted); }
+.cp-author-list { display:flex; flex-wrap:wrap; align-items:start; gap:12px 22px; list-style:none; margin:0; padding:0; }
+.cp-author-item { min-width:0; max-width:100%; }
+.cp-author-link { display:flex; align-items:center; gap:10px; min-width:0; min-height:44px; border-radius:11px; color:inherit; text-decoration:none; }
+.cp-author-link .cp-person-avatar { flex:0 0 42px; width:42px; height:42px; object-fit:cover; border-radius:50%; border:1px solid var(--cp-line); }
+.cp-author-copy { display:grid; min-width:0; gap:2px; }
+.cp-author-copy > strong { font-size:14px; line-height:1.45; font-weight:500; overflow-wrap:anywhere; }
+.cp-author-role { font-size:12px; line-height:1.45; color:var(--h42-color-muted); overflow-wrap:anywhere; }
+.cp-author-link:hover .cp-author-copy > strong { color:var(--cp-accent); }
+.cp-authors[data-compact=true] .cp-author-list { gap:6px 16px; }
+.cp-authors[data-compact=true] .cp-author-link { gap:8px; min-height:40px; }
+.cp-authors[data-compact=true] .cp-person-avatar { width:30px; height:30px; flex-basis:30px; }
+.cp-authors[data-compact=true] .cp-author-copy > strong { font-size:12px; }
+.cp-authors[data-compact=true] .cp-authors-label { margin-bottom:4px; font-size:10px; }
+.cp-card > .cp-authors { margin-top:18px; padding-top:15px; border-top:1px solid var(--cp-line); }
+.cp-detail-header > .cp-authors { margin-top:26px; }
+:root .app[data-navigation=dock] #content-index[data-view=list] .cp-card > .cp-authors { grid-column:2; margin-top:-12px; }
+
+/* The public profile is a full document, not the account panel in the header. */
+:root .app[data-navigation=dock] .content-sheet:has(#profile-detail:not([hidden])) {
+ width:min(1040px,calc(100% - var(--horizon-page-gutter) * 2)); max-width:1040px;
+}
+.cp-profile-detail { min-width:0; }
+.cp-profile-detail[hidden] { display:none; }
+.cp-profile-hero { display:grid; grid-template-columns:minmax(170px,240px) minmax(0,1fr); align-items:center; gap:42px; margin:10px 0 48px; }
+.cp-profile-hero-portrait { aspect-ratio:1; border-radius:32px; overflow:hidden; background:var(--h42-color-surface); border:1px solid var(--cp-line); }
+.cp-profile-hero-portrait .cp-person-avatar { width:100%; height:100%; display:block; object-fit:cover; }
+.cp-profile-heading { min-width:0; }
+/* A route focus announces the document title without framing it like a control. */
+#profile-title:focus { outline:none; }
+
+.content-sheet .cp-profile-heading h1 { margin:10px 0 12px; font-size:clamp(38px,4.7vw,64px); font-weight:500; line-height:1.08; letter-spacing:-.045em; overflow-wrap:anywhere; }
+.cp-profile-hero-role { margin:0 0 12px; font-size:18px; line-height:1.5; }
+.cp-profile-hero-summary { max-width:55ch; margin:0; font-size:17px; line-height:1.65; color:var(--h42-color-muted); }
+.cp-profile-facts { display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin:17px 0 0; font-size:13px; line-height:1.6; color:var(--h42-color-muted); }
+.cp-profile-actions { display:flex; flex-wrap:wrap; gap:10px 16px; align-items:center; margin-top:22px; }
+.cp-profile-campus { display:inline-flex; align-items:center; justify-content:center; gap:8px; min-height:42px; padding:7px 0; background:transparent; font-size:13px; color:var(--cp-accent); }
+.cp-profile-campus > svg { width:16px; height:16px; }
+.cp-profile-section { padding-top:28px; border-top:1px solid var(--cp-line); margin:0 0 42px; }
+.cp-profile-section > h2 { margin:0 0 25px; font-size:27px; font-weight:500; line-height:1.25; letter-spacing:-.025em; }
+.cp-profile-about { display:grid; grid-template-columns:200px minmax(0,1fr); gap:40px; }
+.cp-profile-about > p { max-width:67ch; margin:0; color:var(--h42-color-muted); font-size:17px; line-height:1.8; }
+.cp-profile-empty { margin:0; padding:2px 0 14px; color:var(--h42-color-muted); font-size:15px; line-height:1.65; }
+.cp-profile-related-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:30px; }
+.cp-profile-related-card { min-width:0; position:relative; }
+.cp-profile-related-link { color:inherit; text-decoration:none; display:block; border-radius:20px; }
+.cp-profile-related-link .cp-cover { aspect-ratio:1.7; }
+.cp-profile-related-copy { padding-top:18px; }
+.cp-profile-related-copy h3 { margin:8px 0 10px; font-size:25px; line-height:1.25; letter-spacing:-.025em; font-weight:500; }
+.cp-profile-related-summary { margin:0; color:var(--h42-color-muted); font-size:15px; line-height:1.7; }
+.cp-profile-related-card > .cp-favorite { position:absolute; inset-block-start:10px; inset-inline-end:10px; }
+.cp-profile-related-link:hover .cp-art { transform:scale(1.035); }
+.cp-profile-timeline { list-style:none; margin:0; padding:0; }
+.cp-profile-milestone { display:grid; grid-template-columns:110px minmax(0,1fr); gap:24px; position:relative; padding-bottom:29px; }
+.cp-profile-milestone:last-child { padding-bottom:0; }
+.cp-profile-milestone-date { padding-top:3px; color:var(--cp-accent); font-size:13px; font-weight:500; line-height:1.65; }
+.cp-profile-milestone-copy { position:relative; padding-inline-start:26px; min-width:0; }
+.cp-profile-milestone-copy::before { content:''; position:absolute; inset-inline-start:0; top:10px; width:7px; height:7px; border-radius:50%; background:var(--cp-accent); }
+.cp-profile-milestone:not(:last-child) .cp-profile-milestone-copy::after { content:''; position:absolute; inset-inline-start:3px; top:24px; bottom:-22px; width:1px; background:var(--cp-line); }
+.cp-profile-milestone h3 { margin:0 0 7px; font-size:18px; font-weight:500; line-height:1.5; }
+.cp-profile-milestone p { max-width:65ch; margin:0; color:var(--h42-color-muted); font-size:15px; line-height:1.75; }
+.cp-profile-story { max-width:760px; margin:38px 0 0 auto; padding:26px 28px; border:1px solid var(--cp-line); border-radius:24px; }
+[dir=rtl] .cp-profile-story { margin-inline-start:auto; margin-inline-end:0; }
+.cp-profile-story > h3 { margin:9px 0 15px; font-size:26px; line-height:1.3; font-weight:500; letter-spacing:-.025em; }
+.cp-profile-story > h4 { margin:25px 0 10px; font-size:18px; line-height:1.5; font-weight:500; }
+.cp-profile-story > p:not(.cp-meta) { margin:0; font-size:16px; line-height:1.8; color:var(--h42-color-muted); }
+.cp-profile-story > .cp-profile-story-intro { margin-bottom:24px; }
+[dir=rtl] .cp-profile-campus > svg { transform:scaleX(-1); }
+[lang=ar] .content-sheet :is(.cp-profile-heading h1,.cp-profile-section h2,.cp-profile-story h3) { letter-spacing:0; line-height:1.5; }
+
+@media(max-width:850px) {
+ .cp-profile-hero { grid-template-columns:180px minmax(0,1fr); gap:28px; }
+ .cp-profile-about { grid-template-columns:160px minmax(0,1fr); gap:28px; }
+}
+@media(max-width:700px) {
+ .cp-profile-hero { grid-template-columns:minmax(0,1fr); gap:24px; margin:0 0 34px; }
+ .cp-profile-hero-portrait { width:140px; border-radius:26px; }
+ .content-sheet .cp-profile-heading h1 { font-size:38px; }
+ .cp-profile-heading > .cp-meta { font-size:11px; }
+ .cp-profile-hero-role { font-size:17px; }
+ .cp-profile-hero-summary,.cp-profile-about > p { font-size:16px; }
+ .cp-profile-about { display:block; }
+ .cp-profile-section { padding-top:24px; margin-bottom:34px; }
+ .cp-profile-section > h2 { font-size:24px; margin-bottom:20px; }
+ .cp-profile-related-grid { grid-template-columns:minmax(0,1fr); gap:30px; }
+ .cp-profile-related-copy h3 { font-size:24px; }
+ .cp-profile-milestone { grid-template-columns:70px minmax(0,1fr); gap:13px; }
+ .cp-profile-milestone-copy { padding-inline-start:19px; }
+ .cp-profile-milestone h3 { font-size:17px; }
+ .cp-profile-milestone-date { font-size:12px; }
+ .cp-profile-story { padding:22px 20px; margin-top:30px; }
+ .cp-profile-story > h3 { font-size:23px; }
+ .cp-profile-story > p:not(.cp-meta) { font-size:15px; }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-card { grid-template-columns:86px minmax(0,1fr); gap:17px; }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-portrait { overflow:visible; margin-top:7px; border-radius:50%; }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-portrait::before { display:none; }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-portrait .cp-person-avatar { width:100%; border-width:2px; }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-portrait > .cp-profile-status { bottom:-29px; inset-inline-start:50%; transform:translateX(-50%); font-size:9px; white-space:nowrap; padding:2px 6px; min-height:23px; }
+ :root[dir=rtl] .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-portrait > .cp-profile-status { transform:translateX(50%); }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-card .cp-favorite { inset-block-start:126px; inset-inline-start:26px; inset-inline-end:auto; }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-card h2 { font-size:24px; }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-card .cp-profile-role { font-size:12px; }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-card .cp-summary { font-size:14px; }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-feature { align-items:start; gap:8px; }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-feature-art { flex-basis:42px; width:42px; height:34px; }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-feature-copy strong { font-size:11px; }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-feature-copy small { font-size:9px; }
+}
+@media(max-width:360px) {
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-card { grid-template-columns:68px minmax(0,1fr); gap:14px; }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-card .cp-favorite { inset-block-start:110px; inset-inline-start:17px; }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-card h2 { font-size:22px; }
+ .cp-profile-milestone { grid-template-columns:58px minmax(0,1fr); gap:9px; }
+ .cp-profile-milestone-copy { padding-inline-start:17px; }
+ .cp-profile-story { padding:20px 17px; }
+}
+@media(prefers-reduced-motion:reduce) {
+ .cp-profile-portrait .cp-person-avatar { transition:none; }
+ .cp-profile-card:hover .cp-profile-portrait .cp-person-avatar { transform:none; }
+}
+
+/* Essential directory cards: identity only; full content stays in the profile. */
+.cp-profile-login { margin:0 0 9px; color:var(--h42-color-muted); font-size:clamp(.8125rem,calc(.776rem + .182vw),.9375rem); line-height:1.5; overflow-wrap:anywhere; }
+:root .app[data-navigation=dock] #content-index .cp-profile-card .cp-card-copy { flex:initial; }
+:root .app[data-navigation=dock] #content-index .cp-profile-card .cp-card-copy > h2 { margin-top:0; }
+:root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-card .cp-meta { padding-inline-end:0; }
+@media(max-width:700px) {
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-card .cp-profile-portrait { margin-bottom:34px; }
+}

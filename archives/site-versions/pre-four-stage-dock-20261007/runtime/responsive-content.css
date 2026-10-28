@@ -1,0 +1,172 @@
+/* Continuous responsive sizing, 6 October 2026.
+   Content typography uses rem + viewport ramps at every width. Changing a grid
+   column count must not change the font size through container units. */
+:root .app[data-navigation=dock] {
+ --content-body-size:clamp(1rem,calc(.9545rem + .2273vw),1.125rem);
+ --content-summary-size:clamp(.875rem,calc(.845rem + .15vw),.9375rem);
+ --content-space:clamp(12px,calc(8px + 1.25vw),24px);
+}
+:root .app[data-navigation=dock] .content-sheet :is(.cp-heading h1,.cp-detail-header h1,.cp-profile-heading h1) {
+ font-size:clamp(2rem,calc(1.375rem + 3.125vw),4.125rem);
+}
+:root .app[data-navigation=dock] .content-sheet .cp-detail-header h1 {
+ font-size:clamp(2rem,calc(1.375rem + 3.125vw),4.25rem);
+}
+:root .app[data-navigation=dock] .content-sheet .cp-profile-heading h1 {
+ font-size:clamp(2rem,calc(1.375rem + 3.125vw),4rem);
+}
+:root .app[data-navigation=dock] .content-sheet .cp-heading #section-intro {
+ font-size:var(--content-body-size);line-height:1.65;
+}
+:root .app[data-navigation=dock] .content-sheet .cp-detail-header > p:not(.cp-meta) {
+ font-size:clamp(1.125rem,calc(1.0795rem + .2273vw),1.25rem);
+ line-height:1.6;
+}
+:root .app[data-navigation=dock] .content-sheet :is(.cp-profile-section > h2,.cp-article-body h2) {
+ font-size:clamp(1.375rem,calc(1.1875rem + .95vw),1.8125rem);
+}
+:root .app[data-navigation=dock] .content-sheet :is(.cp-article-body p,.cp-article-body li) {
+ font-size:var(--content-body-size);line-height:1.8;
+}
+:root .app[data-navigation=dock] .content-sheet .cp-article-body blockquote {
+ font-size:clamp(1.375rem,calc(1.284rem + .455vw),1.625rem);
+}
+:root .app[data-navigation=dock] .content-sheet .cp-article-body blockquote p { font-size:inherit;line-height:inherit; }
+:root .app[data-navigation=dock] #content-index[data-view] .cp-card h2 {
+ font-size:clamp(1.4375rem,calc(1.3rem + .7vw),1.9375rem);
+ line-height:1.24;margin-block:clamp(6px,calc(4px + .6vw),10px);
+ overflow-wrap:anywhere;
+}
+:root .app[data-navigation=dock] #content-index[data-view=list] .cp-card h2 {
+ font-size:clamp(1.25rem,calc(1rem + 1.65vw),1.9375rem);
+}
+:root .app[data-navigation=dock] #content-index[data-view] .cp-card-copy > .cp-summary {
+ font-size:var(--content-summary-size);line-height:1.6;
+}
+:root .app[data-navigation=dock] #content-index[data-view] .cp-card-copy > .cp-profile-role {
+ font-size:clamp(.8125rem,calc(.776rem + .182vw),.9375rem);line-height:1.5;
+}
+:root .app[data-navigation=dock] #content-index .cp-card-link {
+ font-size:.8125rem;padding-top:clamp(10px,calc(7px + .9vw),16px);
+}
+:root .app[data-navigation=dock] .content-sheet :is(.cp-meta,.cp-eyebrow,.cp-published),
+:root .app[data-navigation=dock] #content-count {
+ font-size:.75rem;
+}
+:root .app[data-navigation=dock] #content-index[data-view] :is(.cp-profile-status,.cp-profile-tags li),
+:root .app[data-navigation=dock] .content-sheet .cp-authors-label {
+ font-size:.6875rem;
+}
+:root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-portrait > .cp-profile-status { font-size:.6875rem; }
+:root .app[data-navigation=dock] #content-index[data-view] .cp-profile-feature-copy small { font-size:.6875rem; }
+:root .app[data-navigation=dock] #content-index[data-view] .cp-profile-feature-copy strong { font-size:.75rem; }
+:root .app[data-navigation=dock] .cp-authors[data-compact=true] .cp-author-copy > strong { font-size:.8125rem; }
+
+/* Stable small text, and continuous proportions for profile documents. */
+:root .app[data-navigation=dock] .cp-profile-hero {
+ --profile-portrait-size:clamp(104px,calc(56px + 15vw),240px);
+ grid-template-columns:var(--profile-portrait-size) minmax(0,1fr);
+ gap:clamp(18px,calc(10px + 2.2vw),42px);
+ margin-block:0 clamp(34px,calc(28px + 1.8vw),48px);
+}
+:root .app[data-navigation=dock] .cp-profile-hero-portrait {
+ width:var(--profile-portrait-size);max-width:100%;
+ border-radius:clamp(20px,calc(16px + 1.25vw),32px);
+}
+:root .app[data-navigation=dock] .cp-profile-hero-role {
+ font-size:var(--content-body-size);
+}
+:root .app[data-navigation=dock] :is(.cp-profile-hero-summary,.cp-profile-about > p) {
+ font-size:clamp(1rem,calc(.9545rem + .2273vw),1.0625rem);
+}
+:root .app[data-navigation=dock] .cp-profile-related-copy h3 {
+ font-size:clamp(1.375rem,calc(1.3rem + .375vw),1.5625rem);
+}
+:root .app[data-navigation=dock] .cp-profile-related-summary { font-size:var(--content-summary-size); }
+:root .app[data-navigation=dock] .cp-profile-milestone {
+ grid-template-columns:clamp(58px,calc(39px + 6vw),110px) minmax(0,1fr);
+ gap:clamp(10px,calc(5px + 1.6vw),24px);
+}
+:root .app[data-navigation=dock] .cp-profile-milestone-copy {
+ padding-inline-start:clamp(17px,calc(13px + 1.2vw),26px);
+}
+:root .app[data-navigation=dock] .cp-profile-milestone-date { font-size:.75rem; }
+:root .app[data-navigation=dock] .cp-profile-milestone h3 { font-size:clamp(1.0625rem,calc(1rem + .25vw),1.125rem); }
+:root .app[data-navigation=dock] .cp-profile-story {
+ padding:clamp(20px,calc(17px + .9vw),26px) clamp(17px,calc(13px + 1.25vw),28px);
+ margin-top:clamp(30px,calc(26px + 1.25vw),38px);
+}
+:root .app[data-navigation=dock] .cp-profile-story > h3 { font-size:clamp(1.4375rem,calc(1.3625rem + .375vw),1.625rem); }
+:root .app[data-navigation=dock] .cp-profile-story > p:not(.cp-meta) { font-size:1rem;line-height:1.8; }
+
+/* List thumbnails and spacing share one ramp across the old 700/850 cutoffs. */
+:root .app[data-navigation=dock] #content-index[data-view=list] .cp-card {
+ --compact-list-thumb:clamp(64px,calc(-8px + 22.5vw),280px);
+ grid-template-columns:var(--compact-list-thumb) minmax(0,1fr);
+ gap:clamp(12px,calc(6px + 1.875vw),32px);
+ align-items:start;
+}
+:root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-card {
+ --compact-list-thumb:clamp(64px,calc(-8px + 22.5vw),170px);
+}
+:root .app[data-navigation=dock] #content-index[data-view=list] .cp-cover {
+ border-radius:clamp(10px,calc(6px + 1.25vw),20px);
+}
+:root .app[data-navigation=dock] #content-index[data-view=list] .cp-grid {
+ gap:clamp(24px,calc(20px + 1.25vw),32px);
+}
+:root .app[data-navigation=dock] #content-index[data-view=list] .cp-card-copy > .cp-authors { margin-block:2px 10px; }
+:root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-feature {
+ gap:clamp(6px,calc(4px + .625vw),10px);
+ padding-top:clamp(10px,calc(7px + .9375vw),16px);
+ margin-top:clamp(12px,calc(9px + .9375vw),18px);
+}
+:root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-feature-art {
+ flex-basis:clamp(32px,calc(20px + 3.75vw),62px);
+ width:clamp(32px,calc(20px + 3.75vw),62px);
+ height:auto;aspect-ratio:1.35;
+}
+@media(max-width:700px) {
+ :root .app[data-navigation=dock] .cp-profile-hero { grid-template-columns:minmax(0,1fr); }
+ :root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-card .cp-favorite {
+  inset-block-start:calc(var(--compact-list-thumb) + 40px);
+  inset-inline-start:calc((var(--compact-list-thumb) - 34px) / 2);
+  inset-inline-end:auto;
+ }
+}
+
+/* Header sizing stays continuous; the established 44 px target height and
+   mobile filter/header vertical positions are not changed. */
+:root .app[data-navigation=dock] .brand img { width:clamp(39px,calc(32px + 2.2vw),58px); }
+:root .app[data-navigation=dock] .brand { gap:clamp(14px,calc(11px + .95vw),22px); }
+:root .app[data-navigation=dock] .brand-names { font-size:clamp(1rem,calc(.8rem + 1vw),1.5625rem); }
+:root .app[data-navigation=dock] .arabic-brand { font-size:clamp(.6875rem,calc(.625rem + .3vw),.875rem); }
+:root .app[data-navigation=dock] .utilities { gap:clamp(0px,calc(-5px + 1.4vw),14px); }
+:root .app[data-navigation=dock] .utility { width:clamp(36px,calc(30px + 1.5vw),44px); }
+:root .app[data-navigation=dock] .utility svg { width:clamp(20px,calc(17px + .6vw),24px);height:clamp(20px,calc(17px + .6vw),24px); }
+:root .app[data-navigation=dock] #language { font-size:clamp(.75rem,calc(.675rem + .3vw),.875rem); }
+:root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section] { font-size:clamp(.8125rem,calc(.6875rem + .4vw),.875rem); }
+:root .app[data-navigation=dock] :is(.scope-picker,.scope-ancestor button) { font-size:clamp(.8125rem,calc(.7625rem + .25vw),.9375rem); }
+
+/* Finish the continuous spacing and avatar sizing across former breakpoints. */
+:root .app[data-navigation=dock] #content-index .cp-toolbar {
+ margin:clamp(25px,calc(20px + 1.5625vw),34px) 0 clamp(22px,calc(20.9px + .345vw),24px);
+ padding-top:clamp(14px,calc(12.35px + .517vw),17px);
+ gap:clamp(10px,calc(6.69px + 1.0345vw),16px);
+ flex-wrap:wrap;
+}
+:root .app[data-navigation=dock] .cp-profile-about {
+ grid-template-columns:clamp(160px,calc(103px + 8vw),200px) minmax(0,1fr);
+ gap:clamp(24px,calc(8px + 2.8vw),40px);
+}
+:root .app[data-navigation=dock] .cp-profile-section {
+ padding-top:clamp(24px,calc(21.8px + .69vw),28px);
+ margin-bottom:clamp(34px,calc(29.59px + 1.3793vw),42px);
+}
+:root .app[data-navigation=dock] .cp-profile-section > h2 {
+ margin-bottom:clamp(20px,calc(17.24px + .8621vw),25px);
+}
+:root .app[data-navigation=dock] #content-index[data-view=list] .cp-profile-portrait .cp-person-avatar {
+ width:min(100%,clamp(64px,calc(12.8px + 16vw),122.4px));
+ border-width:clamp(2px,calc(.9px + .345vw),4px);
+}

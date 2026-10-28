@@ -1,0 +1,67 @@
+.horizon-rollers {
+  width: 100%;
+  height: 100%;
+  min-height: 260px;
+  container-type: inline-size;
+  display: grid;
+  place-items: center;
+  color: var(--h42-color-text);
+}
+.horizon-rollers * { box-sizing: border-box; }
+.rollers-bank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  direction: ltr;
+  unicode-bidi: isolate;
+  font: 500 clamp(28px, 5.5cqw, 76px)/1 var(--h42-font-family, Jost), sans-serif;
+}
+.rollers-group { display: flex; align-items: center; gap: 4px; position: relative; }
+.roller-reel { position: relative; width: .76em; flex: none; }
+.roller-reel.roller-space { width: .38em; }
+.roller-window {
+  position: relative;
+  width: 100%;
+  height: 1.52em;
+  overflow: hidden;
+  border-block: 1px solid var(--h42-color-border);
+  border-radius: 5px;
+  background: color-mix(in srgb, var(--h42-color-soft) 38%, var(--h42-color-bg));
+  box-shadow: inset 0 7px 8px -9px var(--h42-color-muted), inset 0 -7px 8px -9px var(--h42-color-muted);
+  isolation: isolate;
+}
+.roller-window::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(var(--h42-color-bg), transparent 22%, transparent 78%, var(--h42-color-bg));
+  opacity: .8;
+}
+.roller-face {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  will-change: transform;
+  backface-visibility: hidden;
+}
+.roller-face.roller-glyph { font-size: 1em; }
+.roller-glyph-ink { display: block; transform-origin: center; line-height: 1; }
+.roller-face.roller-hex { font: 500 .41em/1 ui-monospace, monospace; letter-spacing: -.07em; }
+.roller-space .roller-face.roller-hex { font-size: .27em; }
+.roller-face.roller-binary { font: 500 .185em/1.15 ui-monospace, monospace; }
+.roller-bit-pair { display: flex; gap: .35em; }
+.roller-bit-column { display: grid; }
+.roller-reel[data-phase="decrypting"] { color: var(--h42-color-action-quiet); }
+.roller-reel[data-phase="letter"] { color: var(--h42-color-text); }
+@container (max-width: 640px) {
+  .rollers-bank { flex-direction: column; gap: 18px; font-size: clamp(32px, 11cqw, 48px); }
+  .rollers-group { gap: 3px; }
+  .rollers-first .roller-line-space { position: absolute; left: calc(100% + 3px); }
+  .roller-window { height: 1.62em; border-radius: 4px; }
+  .roller-face.roller-binary { font-size: .22em; }
+  .roller-face.roller-hex { font-size: .46em; }
+}

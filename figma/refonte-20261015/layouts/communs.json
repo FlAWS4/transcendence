@@ -1,0 +1,279 @@
+{
+ "area": "shell",
+ "key": "communs",
+ "page": "08 · Éléments communs",
+ "sections": [
+  {
+   "id": "g-search",
+   "title": "Recherche",
+   "note": "Cherche dans tout Horizon : campus, projets, profils, chroniques, 8 résultats à la fois puis Voir plus. Masquée sur 42 Awards.",
+   "route": "",
+   "main": false,
+   "y": 0,
+   "w": 4180,
+   "h": 2420,
+   "rows": [
+    [
+     {
+      "state": "search-open",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Recherche · ouverte — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "search-open",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Recherche · ouverte — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "search-open",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Recherche · ouverte — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "search-open",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Recherche · ouverte — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 260
+     }
+    ],
+    [
+     {
+      "state": "search-open",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "light",
+      "name": "Recherche · ouverte — Ordinateur · Clair · English",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 1380
+     },
+     {
+      "state": "search-open",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Recherche · ouverte — Ordinateur · Sombre · English",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 1380
+     },
+     {
+      "state": "search-open",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "Recherche · ouverte — Mobile · Clair · English",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 1380
+     },
+     {
+      "state": "search-open",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Recherche · ouverte — Mobile · Sombre · English",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 1380
+     }
+    ]
+   ]
+  },
+  {
+   "id": "g-dock",
+   "title": "Menu du bas",
+   "note": "Présent sur chaque page, fiches et 42 Awards compris. Ouvre toujours la liste de la rubrique, page 1, en gardant le filtre Pays / Campus. Le bouton de la rubrique en cours ne fait rien, même depuis une fiche : on en sort par Retour.",
+   "route": "",
+   "main": false,
+   "y": 2620,
+   "w": 1600,
+   "h": 3380,
+   "rows": [
+    [
+     {
+      "state": "dock-300",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Menu du bas · fenêtre de 300 px — Mobile · Clair",
+      "w": 300,
+      "h": 640,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "dock-300",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Menu du bas · fenêtre de 300 px — Mobile · Sombre",
+      "w": 300,
+      "h": 640,
+      "x": 500,
+      "y": 260
+     }
+    ],
+    [
+     {
+      "state": "dock-300",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "Menu du bas · fenêtre de 300 px — Mobile · Clair · English",
+      "w": 300,
+      "h": 640,
+      "x": 80,
+      "y": 1060
+     },
+     {
+      "state": "dock-300",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Menu du bas · fenêtre de 300 px — Mobile · Sombre · English",
+      "w": 300,
+      "h": 640,
+      "x": 500,
+      "y": 1060
+     }
+    ],
+    [
+     {
+      "state": "dock-320",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Menu du bas · téléphone de 320 px — Mobile · Clair",
+      "w": 320,
+      "h": 640,
+      "x": 80,
+      "y": 1860
+     },
+     {
+      "state": "dock-320",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Menu du bas · téléphone de 320 px — Mobile · Sombre",
+      "w": 320,
+      "h": 640,
+      "x": 520,
+      "y": 1860
+     }
+    ],
+    [
+     {
+      "state": "dock-320",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "Menu du bas · téléphone de 320 px — Mobile · Clair · English",
+      "w": 320,
+      "h": 640,
+      "x": 80,
+      "y": 2660
+     },
+     {
+      "state": "dock-320",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Menu du bas · téléphone de 320 px — Mobile · Sombre · English",
+      "w": 320,
+      "h": 640,
+      "x": 520,
+      "y": 2660
+     }
+    ]
+   ]
+  },
+  {
+   "id": "g-back-top",
+   "title": "Remonter en haut",
+   "note": "Remonte en haut de la même page : aucun changement d’écran.",
+   "route": "",
+   "main": false,
+   "y": 6200,
+   "w": 1600,
+   "h": 2188,
+   "rows": [
+    [
+     {
+      "state": "back-to-top",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Remonter en haut — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "back-to-top",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Remonter en haut — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 590,
+      "y": 260
+     }
+    ],
+    [
+     {
+      "state": "back-to-top",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "Remonter en haut — Mobile · Clair · English",
+      "w": 390,
+      "h": 844,
+      "x": 80,
+      "y": 1264
+     },
+     {
+      "state": "back-to-top",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Remonter en haut — Mobile · Sombre · English",
+      "w": 390,
+      "h": 844,
+      "x": 590,
+      "y": 1264
+     }
+    ]
+   ]
+  }
+ ]
+}

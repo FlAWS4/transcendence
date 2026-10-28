@@ -164,7 +164,7 @@ L'idée est de partir de la vanille, produit de base, puis d'évoquer des prépa
 | **Sundae** | Périmètre Cream et au moins un module bonus majeur supplémentaire livré, avec ou sans ajouts mineurs supplémentaires. |
 | **Parfait** | Distinction collective d'une version particulièrement aboutie, avec justification dans les notes de publication. |
 
-Le socle obligatoire inclut les **14 points de modules requis**. Les modules supplémentaires peuvent compter comme bonus ; le sujet attribue 1 point à un mineur et 2 à un majeur, avec un maximum de 5 points de bonus pour l'évaluation. Voir les chapitres IV et VII du [sujet](en.subject.pdf). Ces critères d'évaluation restent distincts de nos noms de version.
+Le socle obligatoire inclut les **14 points de modules requis**. Les modules supplémentaires peuvent compter comme bonus ; le sujet attribue 1 point à un mineur et 2 à un majeur, avec un maximum de 5 points de bonus pour l'évaluation. Voir les chapitres IV et VII du [sujet](docs/en.subject.pdf). Ces critères d'évaluation restent distincts de nos noms de version.
 
 Le PO consigne dans le README les modules retenus pour Vanilla et la liste initiale, non vide, des bonus de Cream. **La liste Cream est figée lors de sa première publication stable** : les ajouts ultérieurs sont comparés à cette référence. Un module majeur déjà inclus dans Cream ne suffit donc pas à déclencher Sundae.
 

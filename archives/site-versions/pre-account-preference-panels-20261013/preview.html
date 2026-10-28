@@ -1,0 +1,14 @@
+<!doctype html><html lang="fr" dir="ltr" data-theme="light"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Archive — compte avant sous-panneaux dédiés</title>
+<link rel="stylesheet" href="./tokens.css"><link rel="stylesheet" href="../../../shared/assets/jost.css"><link rel="stylesheet" href="./runtime-originals/welcome.css"><link rel="stylesheet" href="./runtime-originals/control-glass.css"><link rel="stylesheet" href="./runtime-originals/readable-glass.css"><link rel="stylesheet" href="./account-menu.css">
+<style>.archive-host{padding:24px 16px;display:flex;justify-content:flex-end}.archive-help{padding:16px;max-width:640px;margin:auto;line-height:1.6}.archive-help h1{font-size:22px}.archive-help button{padding:10px 16px;border-radius:12px;background:var(--warm-soft)}.archive-help a{color:var(--h42-color-link)}</style>
+<header class="archive-host"><div class="utilities"><button class="utility profile" id="profile"></button></div></header>
+<main class="archive-help"><h1>Compte avant correction Thème / Langue</h1><p>État du 13 octobre 2026 conservé : les deux entrées ouvrent encore les deux catégories de réglages. Ce lecteur isolé utilise les sources exactes du composant remplacé, sans données de compte ni stockage partagé.</p><button id="simulate">Simuler un membre</button> <a href="../../../site/content-preview.html#projects">Aperçu courant</a><p id="status">Visiteur</p></main>
+<script type="module">
+import {mountAccountMenu} from './account-menu.mjs';
+let identity='visitor',locale='fr',theme='light';const status=document.querySelector('#status');
+const profile={title:{fr:'Leïla Mansour',en:'Leïla Mansour',ar:'ليلى منصور'},avatar:'../../../site/assets/profile-avatars/leila-mansour.svg'};
+const media=matchMedia('(prefers-color-scheme:dark)');
+function update(){document.documentElement.lang=locale;document.documentElement.dir=locale==='ar'?'rtl':'ltr';document.documentElement.dataset.theme=theme==='system'?(media.matches?'dark':'light'):theme;status.textContent=identity==='visitor'?'Visiteur':'Membre simulé — Leïla Mansour';menu.refresh();}
+const menu=mountAccountMenu({trigger:document.querySelector('#profile'),utilities:document.querySelector('.utilities'),getIdentity:()=>identity,getLocale:()=>locale,getTheme:()=>theme,getProfile:()=>profile,onTheme:value=>{theme=value;update();},onLocale:value=>{locale=value;update();},onSignIn:()=>{identity='member';update();},onSignOut:()=>{identity='visitor';update();},onAccount:()=>{status.textContent='Accès au profil simulé (lecteur du composant uniquement).';},onProfiles:()=>{status.textContent='Accès aux profils simulé (lecteur du composant uniquement).';}});
+document.querySelector('#simulate').addEventListener('click',()=>{identity=identity==='member'?'visitor':'member';update();});media.addEventListener('change',update);
+</script></html>

@@ -1,0 +1,236 @@
+{
+  "date": "2026-10-13",
+  "scope": "Final read-only HTTP/source and targeted-cache check for controller142; writes only this evidence file.",
+  "http": [
+    {
+      "url": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/index.html",
+      "local": "work/visualizations/horizon-welcome/index.html",
+      "status": 200,
+      "bytes": 15273,
+      "localSha256": "23be344380b177c81266a078d524265f90220f52a028f0e1386762c1dc174c39",
+      "httpSha256": "23be344380b177c81266a078d524265f90220f52a028f0e1386762c1dc174c39",
+      "identical": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/content-preview.html",
+      "local": "work/visualizations/horizon-welcome/content-preview.html",
+      "status": 200,
+      "bytes": 15277,
+      "localSha256": "a232a09b4deaa2d62458bbef5d9dac1393f17fff4afac06d0e110c017eae7ef4",
+      "httpSha256": "a232a09b4deaa2d62458bbef5d9dac1393f17fff4afac06d0e110c017eae7ef4",
+      "identical": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/entrance.css?v=targeted-colors-20",
+      "local": "work/visualizations/horizon-welcome/entrance.css",
+      "status": 200,
+      "bytes": 5776,
+      "localSha256": "b36dad3459a13e56185fb9b33319c4e873c289fc05eb2cb24059df1051cd9a51",
+      "httpSha256": "b36dad3459a13e56185fb9b33319c4e873c289fc05eb2cb24059df1051cd9a51",
+      "identical": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/dock-navigation.css?v=targeted-colors-7",
+      "local": "work/visualizations/horizon-welcome/dock-navigation.css",
+      "status": 200,
+      "bytes": 3421,
+      "localSha256": "efb988c4af2da62083b6cdf30e1bf5cf60ad89d117a2cbdb7980e25dbfed128f",
+      "httpSha256": "efb988c4af2da62083b6cdf30e1bf5cf60ad89d117a2cbdb7980e25dbfed128f",
+      "identical": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/entrance.mjs?v=visit-11",
+      "local": "work/visualizations/horizon-welcome/entrance.mjs",
+      "status": 200,
+      "bytes": 14589,
+      "localSha256": "fb8d6cf1167830082ca9b915c8e8c4d9042db2adb450dd7d0294244377e7948c",
+      "httpSha256": "fb8d6cf1167830082ca9b915c8e8c4d9042db2adb450dd7d0294244377e7948c",
+      "identical": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/welcome.mjs?v=targeted-colors-142",
+      "local": "work/visualizations/horizon-welcome/welcome.mjs",
+      "status": 200,
+      "bytes": 76056,
+      "localSha256": "e6e7f537154ceffd8b5cd3e18467742b352fff526e634144ea6ac3603122db63",
+      "httpSha256": "e6e7f537154ceffd8b5cd3e18467742b352fff526e634144ea6ac3603122db63",
+      "identical": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/content-preview.mjs?v=109",
+      "local": "work/visualizations/horizon-welcome/content-preview.mjs",
+      "status": 200,
+      "bytes": 653,
+      "localSha256": "9787246ed2470d52ece39bb19d9ddb9a5acd1c4b7c576eb6c21ff7848da3c2ba",
+      "httpSha256": "9787246ed2470d52ece39bb19d9ddb9a5acd1c4b7c576eb6c21ff7848da3c2ba",
+      "identical": true
+    }
+  ],
+  "httpAllIdentical": true,
+  "reachableLocalFiles": 134,
+  "localReferences": 197,
+  "missing": [],
+  "expectedCaches": {
+    "entrance.css": "targeted-colors-20",
+    "dock-navigation.css": "targeted-colors-7",
+    "entrance.mjs": "visit-11",
+    "welcome.mjs": "targeted-colors-142",
+    "content-preview.mjs": "109"
+  },
+  "cacheUses": [
+    {
+      "source": "work/visualizations/horizon-welcome/content-preview.html",
+      "reference": "entrance.css?v=targeted-colors-20",
+      "expected": "targeted-colors-20",
+      "actual": "targeted-colors-20",
+      "matches": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-preview.html",
+      "reference": "dock-navigation.css?v=targeted-colors-7",
+      "expected": "targeted-colors-7",
+      "actual": "targeted-colors-7",
+      "matches": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-preview.html",
+      "reference": "content-preview.mjs?v=109",
+      "expected": "109",
+      "actual": "109",
+      "matches": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-preview.html",
+      "reference": "entrance.css?v=targeted-colors-20",
+      "expected": "targeted-colors-20",
+      "actual": "targeted-colors-20",
+      "matches": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-preview.html",
+      "reference": "dock-navigation.css?v=targeted-colors-7",
+      "expected": "targeted-colors-7",
+      "actual": "targeted-colors-7",
+      "matches": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-preview.html",
+      "reference": "content-preview.mjs?v=109",
+      "expected": "109",
+      "actual": "109",
+      "matches": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/content-preview.mjs",
+      "reference": "./welcome.mjs?v=targeted-colors-142",
+      "expected": "targeted-colors-142",
+      "actual": "targeted-colors-142",
+      "matches": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/welcome.mjs",
+      "reference": "./entrance.mjs?v=visit-11",
+      "expected": "visit-11",
+      "actual": "visit-11",
+      "matches": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/index.html",
+      "reference": "entrance.css?v=targeted-colors-20",
+      "expected": "targeted-colors-20",
+      "actual": "targeted-colors-20",
+      "matches": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/index.html",
+      "reference": "dock-navigation.css?v=targeted-colors-7",
+      "expected": "targeted-colors-7",
+      "actual": "targeted-colors-7",
+      "matches": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/index.html",
+      "reference": "welcome.mjs?v=targeted-colors-142",
+      "expected": "targeted-colors-142",
+      "actual": "targeted-colors-142",
+      "matches": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/index.html",
+      "reference": "entrance.css?v=targeted-colors-20",
+      "expected": "targeted-colors-20",
+      "actual": "targeted-colors-20",
+      "matches": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/index.html",
+      "reference": "dock-navigation.css?v=targeted-colors-7",
+      "expected": "targeted-colors-7",
+      "actual": "targeted-colors-7",
+      "matches": true
+    },
+    {
+      "source": "work/visualizations/horizon-welcome/index.html",
+      "reference": "welcome.mjs?v=targeted-colors-142",
+      "expected": "targeted-colors-142",
+      "actual": "targeted-colors-142",
+      "matches": true
+    }
+  ],
+  "obsoleteCaches": [],
+  "previousTests": {
+    "executionProvenance": "Parent reported successful execution before this check. Counts and current test-source hashes confirmed by reading files; tests were not rerun.",
+    "files": [
+      {
+        "file": "work/visualizations/horizon-welcome/entrance.test.mjs",
+        "sourceSha256": "150b660ae8e5479f0986b9659e685642ecfc0e3a6e7b118c7819296847184f8e",
+        "declaredCases": 19,
+        "caseNames": [
+          "arrival plays both scanner passes, keeps access available, then holds the cipher",
+          "late sign-in starts only final resolution, holds the slogan, then joins circle to the prepared globe",
+          "early sign-in waits for the existing scan and never replays it",
+          "visitor interrupts the scan and follows the common logo-circle-globe path without decryption or slogan",
+          "hidden tabs pause the scan rather than skipping it when shown",
+          "reduced motion holds the cipher until confirmation, then completes without timed animation",
+          "enabling reduced motion during an early confirmed scan finishes the pending sign-in",
+          "map failure returns to the same scan position and a finished scan is never replayed",
+          "a failed globe can be skipped in all locales without decrypting the visitor message",
+          "retry still prepares and reveals the globe after a failed attempt",
+          "continuing without a globe preserves the simulated member identity",
+          "a delayed first visible frame still starts at the initial binary message",
+          "font loading and the font layout barrier cannot consume either scanner pass",
+          "a blocked main thread cannot skip the visible scanner passes",
+          "sign-in confirmed before fonts are ready waits for the full visible scan",
+          "a visitor can leave before font readiness without the scan restarting later",
+          "fonts becoming ready in a hidden tab wait for the first visible frame",
+          "failed fonts use fallback rather than preventing the initial scan",
+          "reduced motion during pending fonts completes sign-in without a late restart"
+        ],
+        "previousResultReportedByParent": "pass",
+        "rerunForThisCheck": false
+      },
+      {
+        "file": "work/visualizations/horizon-welcome/tests/account-menu.test.mjs",
+        "sourceSha256": "a0452c2824c68fb6b57ec7eb31c81ec2095288d648eb60a4e676cbc6766534a5",
+        "declaredCases": 9,
+        "caseNames": [
+          "visitor has one generic account access and theme/language settings, without member utilities",
+          "settings update shared preferences and keep the selected control focused across refresh",
+          "Theme and Language each open only their category for visitor and member, with focused return",
+          "dedicated preferences retain their screen and focused selection through updates in all locales",
+          "simulated member receives the supplied avatar and account action, and signs out locally",
+          "messages and notifications open truthful empty panels and Escape restores the associated trigger",
+          "keyboard arrows move focus, external focus and pointer close without stealing focus",
+          "guest sign-in is delegated without inventing an authenticated identity",
+          "destroy removes member utilities and returns the original trigger to the header"
+        ],
+        "previousResultReportedByParent": "pass",
+        "rerunForThisCheck": false
+      }
+    ],
+    "declaredTotal": 28,
+    "passedTotalReportedByParent": 28
+  },
+  "limitations": "HTTP and static reference checks do not replay browser interactions. Existing browser verification is recorded separately.",
+  "initialHttpAttempt": "Sandbox denied localhost requests (Operation not permitted); repeated as an approved read-only local check."
+}

@@ -1,0 +1,35 @@
+{
+  "checks": [
+    {
+      "file": "checks/browser-results.json",
+      "passed": true,
+      "observations": 22,
+      "currentSources": {
+        "study.mjs": true,
+        "study.css": true,
+        "press-gesture.mjs": true
+      }
+    },
+    {
+      "file": "checks/touch-results.json",
+      "passed": true,
+      "observations": 12,
+      "currentSources": {
+        "study.mjs": true,
+        "study.css": true,
+        "press-gesture.mjs": true
+      }
+    },
+    {
+      "file": "checks/accessibility/browser-results.json",
+      "passed": true,
+      "observations": 11,
+      "currentSources": {
+        "study.mjs": true,
+        "study.css": true,
+        "press-gesture.mjs": true
+      }
+    }
+  ],
+  "missingLocalLinks": []
+}

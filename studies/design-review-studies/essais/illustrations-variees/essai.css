@@ -1,0 +1,44 @@
+/* Essai illustrations-variees (14 Oct 2026): alternative charter palettes for the
+   fictional covers, chosen per entry by essai.mjs (data-essai-palette="1".."3" on the
+   element that carries data-cover; palette 0 = original, no attribute). Only the
+   ground and decor of the three motifs that repeat side by side change: network,
+   garden (projects) and journal (chronicles). Objects and accents are untouched.
+   Colours are sRGB mixes of charter colours with white or noir #1B1B1B. */
+
+/* Palette values. */
+[data-cover=network][data-essai-palette="1"]{--ev-ground:#E7FEFE;--ev-inner:#B2EAEB;--ev-outer:#CCF1F2;--ev-spoke:#68B3C5;--ev-cross:#9BCCD9;--ev-dark:#173333}
+[data-cover=network][data-essai-palette="2"]{--ev-ground:#E5E8FA;--ev-inner:#C5CCF4;--ev-outer:#D5DAF7;--ev-spoke:#7084C9;--ev-cross:#A6B1EE;--ev-dark:#192A46}
+[data-cover=garden][data-essai-palette="1"]{--ev-ground:#FDE7F2;--ev-grid:#FBD2E7;--ev-dot:#F8AED3;--ev-dark:#412030}
+[data-cover=garden][data-essai-palette="2"]{--ev-ground:#ECEEFB;--ev-grid:#DDE2F9;--ev-dot:#C5CCF4;--ev-dark:#192A46}
+[data-cover=journal][data-essai-palette="1"]{--ev-ground:#331253;--ev-band:#3E0E6C}
+[data-cover=journal][data-essai-palette="2"]{--ev-ground:#173D7A;--ev-band:#305191}
+[data-cover=journal][data-essai-palette="3"]{--ev-ground:#5A223E;--ev-band:#6F254A}
+/* network 1: Bubbles ground, 42 Blue 30/20 % rings, CG Blue 60/40 % spokes and crosses.
+   network 2: Light Cobalt Blue 25 % ground, 55/40 % rings, cobalt 70 + Dark Cerulean 30 spokes, cobalt 85 % crosses.
+   garden 1: Royal Pink 12/22/40 % ground, grid and dot. garden 2: Light Cobalt Blue 18/32/55 %.
+   journal 1: Violet 35/50 % + noir; 2: Dark Cerulean, cerulean 80 + cobalt 20; 3: Royal Pink 30/40 % + noir.
+   --ev-dark: ground used only when illustrations-sombres also runs in dark
+   (42 Blue 15 %, Dark Cerulean 45 %, Royal Pink 18 % + noir). */
+
+/* Light palettes, also in dark unless illustrations-sombres remaps these colours. */
+:root:not([data-theme=dark][data-essais~=illustrations-sombres]) [data-cover=network][data-essai-palette] svg[viewBox="0 0 800 500"] [fill="#F5E4EA" i]{fill:var(--ev-ground)}
+:root:not([data-theme=dark][data-essais~=illustrations-sombres]) [data-cover=network][data-essai-palette] svg[viewBox="0 0 800 500"] [stroke="#DDAFC3" i]{stroke:var(--ev-inner)}
+:root:not([data-theme=dark][data-essais~=illustrations-sombres]) [data-cover=network][data-essai-palette] svg[viewBox="0 0 800 500"] [stroke="#E7C6D3" i]{stroke:var(--ev-outer)}
+:root:not([data-theme=dark][data-essais~=illustrations-sombres]) [data-cover=network][data-essai-palette] svg[viewBox="0 0 800 500"] [stroke="#AD839B" i]{stroke:var(--ev-spoke)}
+:root:not([data-theme=dark][data-essais~=illustrations-sombres]) [data-cover=network][data-essai-palette] svg[viewBox="0 0 800 500"] [stroke="#C38CA6" i]{stroke:var(--ev-cross)}
+:root:not([data-theme=dark][data-essais~=illustrations-sombres]) [data-cover=garden][data-essai-palette] svg[viewBox="0 0 800 500"] [fill="#DCEDE7" i]{fill:var(--ev-ground)}
+:root:not([data-theme=dark][data-essais~=illustrations-sombres]) [data-cover=garden][data-essai-palette] svg[viewBox="0 0 800 500"] [stroke="#C5DCD3" i]{stroke:var(--ev-grid)}
+:root:not([data-theme=dark][data-essais~=illustrations-sombres]) [data-cover=garden][data-essai-palette] svg[viewBox="0 0 800 500"] [fill="#A5C7B8" i]{fill:var(--ev-dot)}
+:root:not([data-theme=dark][data-essais~=illustrations-sombres]) :is([data-cover=network][data-essai-palette],[data-cover=garden][data-essai-palette]) .cp-cover,
+:root:not([data-theme=dark][data-essais~=illustrations-sombres]) .cp-cover:is([data-cover=network],[data-cover=garden])[data-essai-palette]{background:var(--ev-ground)}
+
+/* With illustrations-sombres in dark, its decor tones stay and only the ground varies. */
+:root[data-theme=dark][data-essais~=illustrations-sombres] [data-cover=network][data-essai-palette] svg[viewBox="0 0 800 500"] > rect[fill="#F5E4EA" i],
+:root[data-theme=dark][data-essais~=illustrations-sombres] [data-cover=garden][data-essai-palette] svg[viewBox="0 0 800 500"] > rect[fill="#DCEDE7" i]{fill:var(--ev-dark)}
+:root[data-theme=dark][data-essais~=illustrations-sombres] :is([data-cover=network][data-essai-palette],[data-cover=garden][data-essai-palette]) .cp-cover,
+:root[data-theme=dark][data-essais~=illustrations-sombres] .cp-cover:is([data-cover=network],[data-cover=garden])[data-essai-palette]{background:var(--ev-dark)}
+
+/* Chronicles: the dark ground and its lighter band (never remapped by the dark trials). */
+[data-cover=journal][data-essai-palette] svg[viewBox="0 0 800 500"] > rect[fill="#203F42" i]{fill:var(--ev-ground)}
+[data-cover=journal][data-essai-palette] svg[viewBox="0 0 800 500"] > path[fill="#294F4F" i]{fill:var(--ev-band)}
+:is([data-cover=journal][data-essai-palette] .cp-cover,.cp-cover[data-cover=journal][data-essai-palette]){background:var(--ev-ground)}

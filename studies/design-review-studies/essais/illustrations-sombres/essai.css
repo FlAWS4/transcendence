@@ -1,0 +1,57 @@
+/* Essai illustrations-sombres (14 Oct 2026): dark theme only.
+   Remaps the light ground and decor fills of five inline covers
+   (content-preview-art.mjs) to dark tones mixed from charter colours
+   (sRGB mixes of Dark Slate Gray #324B4B, Cadet Gray #95B0B0, Royal Pink #ED3491
+   and noir #1B1B1B; ratios noted per rule). Accents 42 Blue #00BABC, Royal Pink
+   #EC3391/#ED3491 and the content inside dark objects are kept; dark objects
+   that would merge with the new grounds become charter noir. Raycast is already
+   dark and unchanged. Covers are matched by their own fill attributes, so cards,
+   detail media, profile grids and the media viewer follow live theme switches.
+   The thin outline the baseline gives detail/viewer covers is left as it is. */
+
+/* Card and profile containers behind the four light covers (seen at rounded edges). */
+:root[data-theme=dark] :is([data-cover=shell] .cp-cover,.cp-cover[data-cover=shell]){background:#2A3A3A}
+:root[data-theme=dark] :is([data-cover=network] .cp-cover,.cp-cover[data-cover=network]){background:#402B39}
+:root[data-theme=dark] :is([data-cover=garden] .cp-cover,.cp-cover[data-cover=garden]){background:#293838}
+:root[data-theme=dark] :is([data-cover=path] .cp-cover,.cp-cover[data-cover=path]){background:#283535}
+
+/* Shell: mint ground and teal disc to slate, pink disc to plum; terminal to noir. */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"] [fill="#DCECE7" i]{fill:#2A3A3A} /* DSG 65 + noir 35 */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"] [fill="#BBDDD6" i]{fill:#324B4B} /* DSG */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"] [fill="#F2D6E3" i]{fill:#452033} /* pink 20 + noir 80 */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"] [stroke="#86BEB3" i]{stroke:#586666} /* cadet 50 + noir 50 */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"] [fill="#173B38" i]{fill:#1B1B1B} /* noir */
+
+/* Network: pale pink ground, rings and nodes become plum; terminal to noir. */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"] [fill="#F5E4EA" i]{fill:#402B39} /* pink 15 + DSG 25 + noir 60 */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"] [stroke="#DDAFC3" i]{stroke:#6E465E} /* pink 25 + cadet 25 + noir 50 */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"] [stroke="#E7C6D3" i]{stroke:#573A4B} /* pink 18 + cadet 18 + noir 64 */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"] [stroke="#AD839B" i]{stroke:#8F5878} /* pink 35 + cadet 35 + noir 30 */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"] [stroke="#C38CA6" i]{stroke:#7F4F6B} /* pink 30 + cadet 30 + noir 40 */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"] [fill="#242F38" i]{fill:#1B1B1B} /* noir */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"]:has(> rect[fill="#F5E4EA" i]) > circle[fill="#FFFFFF" i]{fill:#644156} /* pink 22 + cadet 22 + noir 56 */
+
+/* Garden: mint ground and grid to slate, paper card raised, pink card to plum. */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"] [fill="#DCEDE7" i]{fill:#293838} /* DSG 60 + noir 40 */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"] [stroke="#C5DCD3" i]{stroke:#2F4444} /* DSG 85 + noir 15 */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"] [fill="#F5F3E9" i]{fill:#415A5A} /* DSG 85 + cadet 15 */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"] [stroke="#27554A" i]{stroke:#1B1B1B} /* noir */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"] [fill="#EFB7CC" i]{fill:#5A223E} /* pink 30 + noir 70 */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"] [stroke="#9F3F70" i]{stroke:#ED3491} /* Royal Pink */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"] [fill="#B3C3B6" i]{fill:#95B0B0} /* cadet */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"] [fill="#DAE0D4" i]{fill:#6D8888} /* cadet 60 + DSG 40 */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"] [fill="#A5C7B8" i]{fill:#506969} /* DSG 70 + cadet 30 */
+
+/* Path: sand ground and road become slate bands; the dark station becomes noir. */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"] [fill="#ECE8DD" i]{fill:#283535} /* DSG 55 + noir 45 */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"] [stroke="#DAD4C6" i]{stroke:#2D4141} /* DSG 80 + noir 20 */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"] [stroke="#F8F6EF" i]{stroke:#415A5A} /* DSG 85 + cadet 15 */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"] [stroke="#B7B6A6" i]{stroke:#708383} /* cadet 70 + noir 30 */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"] [fill="#304F4C" i]{fill:#1B1B1B} /* noir */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"] [stroke="#A5AA96" i]{stroke:#647474} /* cadet 60 + noir 40 */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"] [stroke="#B2BBAC" i]{stroke:#506969} /* DSG 70 + cadet 30 */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"] [fill="#CAD7C7" i]{fill:#304646} /* DSG 90 + noir 10 */
+
+/* Journal: the cream page becomes a slate page with lifted text lines. */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"] [fill="#F1EFDF" i]{fill:#556565} /* cadet 45 + DSG 15 + noir 40 */
+:root[data-theme=dark] svg[viewBox="0 0 800 500"] [fill="#647C70" i]{fill:#95B0B0} /* cadet */

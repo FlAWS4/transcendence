@@ -1,0 +1,49 @@
+/* Keep the map laid out and preparing behind the entrance; never display:none. */
+body:not([data-entry=welcome]) #main{visibility:hidden;pointer-events:none}
+body:not([data-entry=welcome]) .brand,body:not([data-entry=welcome]) #about{visibility:hidden}
+/* Account settings remain available before the simulated sign-in. */
+body:not([data-entry=welcome]) #globe-perf-panel{display:none}
+.entrance{position:fixed;inset:0;z-index:8;background:var(--h42-color-bg);overflow:hidden}
+.entrance-veil{position:absolute;inset:0;background:var(--h42-color-bg);pointer-events:none}
+.entrance-veil[hidden]{display:none}
+body[data-entry=revealing] #main{visibility:visible}
+body[data-entry=revealing] #main>:not(#globe){visibility:hidden}
+.entrance[hidden]{display:none}
+.entrance-scene{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(1100px,calc(100% - 96px));height:320px;direction:ltr}
+.entrance-access{position:absolute;top:calc(50% + 155px);left:50%;transform:translateX(-50%);display:flex;align-items:center;justify-content:center;gap:24px;width:max-content;max-width:calc(100% - 48px)}
+.entrance-access[hidden]{display:none}
+/* Share the navigation's turquoise/light and pink/dark accents. */
+.entrance-action{min-height:52px;padding:14px 28px;border:1px solid var(--control-glass-selection-edge);border-radius:14px;background:var(--control-glass-selection);color:var(--h42-color-text);font-size:17px;transition:transform .2s,background .2s,border-color .2s}
+.entrance-action:hover{transform:translateY(-2px);border-color:var(--readable-glass-accent);background:color-mix(in srgb,var(--control-glass-selection) 80%,var(--readable-glass-accent) 20%)}
+.entrance-action.secondary{background:var(--control-glass-surface);color:var(--h42-color-text);border-color:var(--control-glass-edge)}
+.entrance-action.secondary:hover{background:var(--control-glass-selection);border-color:var(--control-glass-selection-edge)}
+.entrance-action:focus-visible,.account-menu .entrance-action:focus-visible{outline:2px solid var(--readable-glass-accent);outline-offset:3px}
+.account-access-actions{display:grid;gap:8px}
+.entrance-status{position:absolute;top:calc(50% + 150px);inset-inline:24px;text-align:center;color:var(--h42-color-muted);font-size:15px}
+.entrance-status[hidden]{display:none}
+.entrance-symbol{position:absolute;left:50%;top:50%;width:200px;height:200px;transform:translate(-50%,-50%);display:grid;place-items:center}
+.entrance-symbol[hidden]{display:none}
+.entrance-logo{display:grid;place-items:center}
+.entrance-symbol img{width:128px;height:auto}
+[data-theme=dark] .entrance-symbol img{filter:invert(1)}
+.entrance-ring{position:absolute;inset:0;width:100%;height:100%;color:var(--h42-teal);transform:rotate(-90deg)}
+.entrance-ring circle{fill:none;stroke:currentColor;stroke-width:1;stroke-dasharray:100;stroke-dashoffset:100}
+.entry-diagnostics{position:fixed;bottom:8px;inset-inline-start:8px;z-index:30;max-width:calc(100% - 16px);max-height:140px;overflow:auto;font:10px monospace;white-space:pre-wrap;padding:8px;background:var(--h42-color-surface);color:var(--h42-color-text);border:1px solid var(--warm-line);border-radius:8px}
+body[data-entry=welcome] .entry-diagnostics{display:none}
+@media(max-width:700px){
+ .entrance-scene{width:calc(100% - 48px);height:240px}
+ .entrance-access{top:calc(50% + 130px);width:calc(100% - 48px);flex-direction:column;gap:12px}
+ .entrance-action{width:100%;font-size:16px}
+ .entrance-status{top:calc(50% + 115px)}
+ .entrance-symbol{width:174px;height:174px}.entrance-symbol img{width:112px}
+}
+@media(max-height:600px){.entrance-scene{top:43%;height:200px}.entrance-access{top:calc(43% + 100px);flex-direction:row;gap:10px}.entrance-action{min-height:44px;padding:10px 16px}.entrance-status{top:calc(43% + 95px)}}
+@media(prefers-reduced-motion:reduce){.entrance-action{transition:none}}
+
+/* Match the light welcome surfaces without changing the selected animation. */
+:root[data-theme=light] :is(.entrance,.entrance-veil){background:radial-gradient(ellipse at 74% 46%,#00BABC0B,transparent 48%),radial-gradient(ellipse at 22% 86%,#EC339108,transparent 39%),linear-gradient(145deg,#FFFFFF 8%,#F7FAFA 78%)}
+
+/* Failed map loading is a short message followed by three reachable actions. */
+body[data-entry=error] .entrance{display:flex;flex-direction:column;align-items:center;justify-content:safe center;gap:24px;box-sizing:border-box;padding:100px 24px 32px;overflow:auto}
+body[data-entry=error] .entrance-status{position:static;order:0;margin:0;max-width:640px;line-height:1.6}
+body[data-entry=error] .entrance-access{position:static;order:1;transform:none;width:min(760px,100%);max-width:100%;flex-wrap:wrap}

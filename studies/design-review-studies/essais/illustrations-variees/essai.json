@@ -1,0 +1,127 @@
+{
+ "id": "illustrations-variees",
+ "groupe": "Couleurs, thème sombre et illustrations",
+ "titre": "Illustrations variées dans les listes",
+ "resume": "Les contenus fictifs qui répètent le même motif reçoivent une variante de palette tirée de la charte (fond et décor seulement), fixe pour chaque contenu : deux cartes voisines n’affichent plus la même image.",
+ "probleme": "Le corpus fictif (78 projets, 78 chroniques) réutilise six illustrations : en page 1, 5 paires de cartes voisines sur 17 sont identiques dans la grille Projets (1 sur 11 en liste) et les 17 paires de la grille Chroniques le sont toutes (11 sur 11 en liste), dès les trois premières chroniques.",
+ "changement": "essai.mjs calcule, pour chaque contenu de Projets et de Chroniques, son rang parmi les contenus du même motif dans l’ordre par défaut (plus récents d’abord), modulo le nombre de palettes du motif ; il pose data-essai-palette sur l’élément qui porte data-cover (cartes, grilles de projets des profils, médias de la fiche, visionneuse) et le réapplique après chaque nouveau rendu (MutationObserver). Le corpus étant fixe, le choix est stable d’un chargement à l’autre et identique dans la carte et la fiche. Seuls les trois motifs qui se répètent côte à côte varient (3 et 4 = nombre maximal de contenus du même motif sur quatre places consécutives) ; shell et raycast ne se suivent jamais et restent inchangés. essai.css change le fond, les anneaux, les rayons et les croix de network (variante 1 : Bubbles #E7FEFE, 42 Blue à 30/20 %, CG Blue à 60/40 % ; variante 2 : Light Cobalt Blue à 25/55/40 %, cobalt 70 % + Dark Cerulean 30 %, cobalt 85 %), le fond, la grille et la pastille de garden (Royal Pink à 12/22/40 % ; Light Cobalt Blue à 18/32/55 %), le fond et la bande des chroniques (Violet à 35/50 % + noir ; Dark Cerulean #173D7A et cerulean 80 % + cobalt 20 % ; Royal Pink à 30/40 % + noir). Objets, accents, textes et ordre des listes ne changent pas. Avec illustrations-sombres en sombre, les teintes sombres de celui-ci sont conservées et seul le fond de network/garden varie (42 Blue 15 %, Dark Cerulean 45 %, Royal Pink 18 % + noir) ; avec illustrations-attenuees, le filtre s’ajoute aux variantes. Aucun nouveau fichier ni texte visible.",
+ "decisionConcernee": "",
+ "alternativeDe": "",
+ "vues": [
+  {
+   "libelle": "Chroniques, ordinateur clair",
+   "page": "content-preview.html",
+   "route": "journal",
+   "viewport": "ordinateur",
+   "theme": "light",
+   "lang": "fr"
+  },
+  {
+   "libelle": "Projets, ordinateur clair (faire défiler)",
+   "page": "content-preview.html",
+   "route": "projects",
+   "viewport": "ordinateur",
+   "theme": "light",
+   "lang": "fr"
+  },
+  {
+   "libelle": "Chroniques, mobile sombre arabe",
+   "page": "content-preview.html",
+   "route": "journal",
+   "viewport": "mobile",
+   "theme": "dark",
+   "lang": "ar"
+  },
+  {
+   "libelle": "Fiche d’un projet varié",
+   "page": "content-preview.html",
+   "route": "projects/demo-project-across-the-terminals",
+   "viewport": "ordinateur",
+   "theme": "light",
+   "lang": "fr"
+  }
+ ],
+ "verifications": [
+  "Contre-vérification hors navigateur (checks/illustrations-variees/palettes-exhaustif.mjs) : la règle de l’essai, rejouée sur les données du socle, ne laisse aucune paire voisine identique sur les 7 pages de Projets et de Chroniques, en ordre « plus récents » comme « plus anciens », en 1, 2 et 3 colonnes ; la copie actuelle en compte 15 à 26 (sur 71 à 109 paires selon le nombre de colonnes) pour Projets, et toutes pour Chroniques.",
+  "Page 1 de Projets et de Chroniques, grille et liste, clair et sombre, ordinateur FR et mobile 390 px AR (16 états, 12 cartes chacun, rejoués le 14 octobre) : 0 paire de cartes voisines (même rang ou même colonne, repérées par leur position à l’écran, donc aussi en RTL) avec des couleurs peintes identiques, contre 5/17 (grille Projets), 1/11 (liste Projets), 17/17 puis 16/16 sur mobile (grille Chroniques) et 11/11 (liste Chroniques) dans la copie actuelle. Le balisage SVG lui-même n’est pas modifié : la différence tient à l’attribut de palette et aux couleurs qu’il commande.",
+  "Pixels : sur la grille Projets ordinateur clair (17 paires) et la grille Chroniques mobile sombre arabe (16 paires), chaque paire de voisines diffère, avec un écart moyen d’au moins 6,7 niveaux par canal (12,8 sur Chroniques).",
+  "Pages 2 à 7 dans le navigateur (Projets et Chroniques, grille à 3 colonnes sur 1440 px et à 2 colonnes sur 390 px, 28 états) : 0 paire voisine identique.",
+  "En clair, hors des couvertures, la page Projets est identique au pixel près ; seuls changent 0,39 % des pixels, tous sur le verre dépoli du dock, qui floute les couvertures situées derrière lui. Boîtes des 12 cartes identiques.",
+  "Stabilité : même suite de palettes dans des navigateurs indépendants (Projets : network 0, shell, raycast, network 1, garden 0, network 2, garden 1, garden 2, network 0, garden 0, network 1, shell ; Chroniques : 0, 1, 2, 3 répétés) ; ordre des cartes identique à la copie actuelle dans les 16 états.",
+  "Carte = fiche = visionneuse pour 4 contenus (demo-project-across-the-terminals, demo-project-pairing-calendar, demo-journal-small-demo, journal-share-the-unfinished), en ordinateur clair FR et mobile sombre AR : même palette et mêmes couleurs calculées. Grilles de projets des profils d’Arun Suri et de Haru Mizuno : 5 couvertures, dont 4 variées, toutes avec la palette de leur carte.",
+  "Changements sans rechargement : passage au français → arabe puis clair → sombre par le menu du compte ; la liste reconstruite garde les mêmes palettes et aucune paire voisine identique.",
+  "Combinaisons en sombre (grille ordinateur, défilée sur les rangées 2–3) : avec illustrations-sombres, 0 paire voisine identique sur 17 et luminance moyenne des couvertures 0,047 (Projets) et 0,114 (Chroniques) ; avec illustrations-attenuees, 0 paire identique et 0,415 / 0,165 ; seul, 0,682 / 0,270 ; mêmes palettes dans les trois cas (combinaisons.json, captures examinées).",
+  "Aucun débordement horizontal ni erreur de console ; captures examinées (grilles Projets et Chroniques, défilement, liste, mobile arabe clair et sombre, visionneuse, combinaisons)."
+ ],
+ "limites": [
+  "Le choix suit l’ordre par défaut (plus récents d’abord) ; il est vérifié aussi en ordre inverse sur toutes les pages, mais un tri « favoris d’abord » ou un filtre (campus, catégories) peut rapprocher deux contenus de même palette.",
+  "Tous les contenus actuels sont fictifs : deux des sept exemples d’origine reçoivent aussi une variante (network-messages-between-us, sous ft_transcendence dans la grille, et journal-share-the-unfinished, deuxième chronique), sans quoi ils resteraient identiques à leur voisin.",
+  "Les variantes changent le fond et le décor, pas le dessin : deux cartes voisines de même motif restent reconnaissables comme le même type d’illustration.",
+  "En sombre sans illustrations-sombres ni illustrations-attenuees, les variantes de network et garden restent claires, comme les couvertures actuelles.",
+  "Les teintes sont des mélanges calculés des couleurs de la charte (valeurs recalculées et conformes) ; les combinaisons avec illustrations-sombres et illustrations-attenuees ne sont vérifiées qu’en sombre, sur la grille ordinateur."
+ ],
+ "fichiers": [
+  "essais/illustrations-variees/essai.css",
+  "essais/illustrations-variees/essai.mjs",
+  "essais/illustrations-variees/essai.json",
+  "checks/illustrations-variees/check.py",
+  "checks/illustrations-variees/results.json",
+  "checks/illustrations-variees/combinaisons.py",
+  "checks/illustrations-variees/combinaisons.json",
+  "checks/illustrations-variees/combinaison-sombres-projects.png",
+  "checks/illustrations-variees/combinaison-sombres-journal.png",
+  "checks/illustrations-variees/combinaison-attenuees-projects.png",
+  "checks/illustrations-variees/combinaison-attenuees-journal.png",
+  "checks/illustrations-variees/palettes-exhaustif.mjs",
+  "checks/illustrations-variees/palettes-exhaustif.json",
+  "checks/illustrations-variees/contre-verification.py",
+  "checks/illustrations-variees/contre-verification.json"
+ ],
+ "captures": [
+  {
+   "vue": "chroniques-ordinateur",
+   "avant": "checks/illustrations-variees/avant-journal-grid-ordinateur.png",
+   "apres": "checks/illustrations-variees/apres-journal-grid-ordinateur.png"
+  },
+  {
+   "vue": "chroniques-ordinateur-defile",
+   "avant": "checks/illustrations-variees/avant-journal-grid-ordinateur-defile.png",
+   "apres": "checks/illustrations-variees/apres-journal-grid-ordinateur-defile.png"
+  },
+  {
+   "vue": "chroniques-liste-ordinateur",
+   "avant": "checks/illustrations-variees/avant-journal-list-ordinateur.png",
+   "apres": "checks/illustrations-variees/apres-journal-list-ordinateur.png"
+  },
+  {
+   "vue": "projets-ordinateur",
+   "avant": "checks/illustrations-variees/avant-projects-grid-ordinateur.png",
+   "apres": "checks/illustrations-variees/apres-projects-grid-ordinateur.png"
+  },
+  {
+   "vue": "projets-ordinateur-defile",
+   "avant": "checks/illustrations-variees/avant-projects-grid-ordinateur-defile.png",
+   "apres": "checks/illustrations-variees/apres-projects-grid-ordinateur-defile.png"
+  },
+  {
+   "vue": "projets-sombre-ordinateur-defile",
+   "avant": "checks/illustrations-variees/avant-projects-grid-sombre-ordinateur-defile.png",
+   "apres": "checks/illustrations-variees/apres-projects-grid-sombre-ordinateur-defile.png"
+  },
+  {
+   "vue": "chroniques-ar-mobile",
+   "avant": "checks/illustrations-variees/avant-journal-grid-ar-mobile.png",
+   "apres": "checks/illustrations-variees/apres-journal-grid-ar-mobile.png"
+  },
+  {
+   "vue": "chroniques-sombre-ar-mobile-defile",
+   "avant": "checks/illustrations-variees/avant-journal-grid-sombre-ar-mobile-defile.png",
+   "apres": "checks/illustrations-variees/apres-journal-grid-sombre-ar-mobile-defile.png"
+  },
+  {
+   "vue": "projets-liste-sombre-ar-mobile",
+   "avant": "checks/illustrations-variees/avant-projects-list-sombre-ar-mobile.png",
+   "apres": "checks/illustrations-variees/apres-projects-list-sombre-ar-mobile.png"
+  }
+ ]
+}

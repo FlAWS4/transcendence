@@ -1,0 +1,38 @@
+/* Shared full-size media dialog. Native top-layer stacking keeps campus sheets underneath. */
+.media-viewer,.media-viewer *{box-sizing:border-box}
+dialog.media-viewer{inset:16px;width:min(1280px,calc(100% - 32px));height:calc(100svh - 32px);max-width:none;max-height:calc(100svh - 32px);margin:auto;padding:0;border:1px solid var(--warm-line);border-radius:24px;background:var(--h42-color-surface,#fff);color:var(--h42-color-text,#202a30);overflow:hidden;text-align:start;box-shadow:var(--shadow);animation:media-viewer-in .18s ease-out}
+dialog.media-viewer[open]{display:grid;grid-template-rows:auto minmax(0,1fr) auto}
+dialog.media-viewer::backdrop{background:rgb(8 16 22 / .72);backdrop-filter:blur(7px)}
+body:has(dialog.media-viewer[open]){overflow:hidden}
+.media-viewer-header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px;border-bottom:1px solid var(--warm-line)}
+.media-viewer-title{font:inherit;font-size:16px;font-weight:500;line-height:1.4;margin:0}
+.media-viewer :is(.media-viewer-close,.media-viewer-previous,.media-viewer-next){display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;width:44px;height:44px;padding:0;border:1px solid var(--warm-line);border-radius:50%;background:var(--warm-soft,transparent);color:inherit;font:inherit;font-size:28px;line-height:1;cursor:pointer}
+.media-viewer :is(.media-viewer-close,.media-viewer-previous,.media-viewer-next):hover{background:color-mix(in srgb,var(--h42-color-text,#202a30) 10%,transparent)}
+.media-viewer :is(button,video):focus-visible{outline:2px solid var(--h42-color-link,#008f90);outline-offset:3px}
+.media-viewer-stage{position:relative;min-width:0;min-height:0;display:grid;place-items:center;background:var(--warm-soft,#f3f5f4);overflow:hidden}
+.media-viewer-content{display:grid;place-items:center;width:100%;height:100%;min-width:0;min-height:0;padding:12px}
+.media-viewer-image,.media-viewer-video{display:block;width:100%;height:100%;min-width:0;min-height:0;object-fit:contain}
+.media-viewer-video{background:#101519}
+.media-viewer-illustration{width:100%;height:100%;min-width:0;min-height:0;display:grid;place-items:center}
+.media-viewer-illustration>*{position:static!important;inset:auto!important;transform:none!important;width:100%;height:100%;max-width:100%;max-height:100%;pointer-events:none}
+.media-viewer-illustration svg{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}
+/* 17 Oct.: generated illustrations look the same as in the cards (.cp-art > svg): no inherited outline, glyphs left to right in Arabic */
+.media-viewer-illustration svg{stroke:none;direction:ltr}
+.media-viewer-status{position:absolute;inset:50% 16px auto;transform:translateY(-50%);width:fit-content;max-width:calc(100% - 32px);margin:0 auto;padding:10px 16px;border-radius:14px;background:var(--h42-color-surface,#fff);color:var(--h42-color-muted,#59686d);font-size:14px;line-height:1.6;text-align:center;overflow-wrap:anywhere;pointer-events:none}
+.media-viewer-footer{min-width:0;max-height:30svh;overflow:auto;padding:12px 16px 16px;border-top:1px solid var(--warm-line)}
+.media-viewer-caption,.media-viewer-credit{margin:0;line-height:1.5;text-align:center;overflow-wrap:anywhere}
+.media-viewer-caption{font-size:14px}
+.media-viewer-credit{margin-top:4px;font-size:12px;color:var(--h42-color-muted,#59686d)}
+.media-viewer-navigation{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:8px}
+.media-viewer-count{min-width:56px;margin:0;text-align:center;font-size:13px;font-variant-numeric:tabular-nums;unicode-bidi:isolate}
+.media-viewer[dir=rtl] :is(.media-viewer-previous,.media-viewer-next){transform:scaleX(-1)}
+.media-viewer [hidden]{display:none!important}
+@keyframes media-viewer-in{from{opacity:0;translate:0 8px}to{opacity:1;translate:0 0}}
+@media(max-width:700px){dialog.media-viewer{inset:8px;width:calc(100% - 16px);height:calc(100svh - 16px);max-height:calc(100svh - 16px);border-radius:20px}.media-viewer-header{padding:8px 12px}.media-viewer-content{padding:6px}.media-viewer-footer{padding:8px 12px 12px}.media-viewer-caption{font-size:13px}}
+@media(prefers-reduced-motion:reduce){dialog.media-viewer{animation:none}}
+
+/* Preserve the legacy reading cover while making its entire surface operable. */
+button.cp-detail-cover{display:block;width:100%;padding:0;border:0;background:transparent;cursor:zoom-in}
+button.cp-detail-cover:focus-visible{outline:2px solid var(--h42-color-focus);outline-offset:4px}
+@media(max-width:700px){button.cp-detail-cover{width:calc(100% + 48px)}}
+@media(max-width:360px){button.cp-detail-cover{width:calc(100% + 40px)}}

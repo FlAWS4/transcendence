@@ -1,0 +1,544 @@
+{
+  "sourcesBefore": {
+    "account-menu.mjs": "61cb379cee3b7f99260c2a2c815fbb15ba7ea0d66f15e96246d2485b1fffd8b8",
+    "account-menu.css": "446afb45e4c0f2ad873388e7af28c7c970919025b58fae88e1aa5ad47b94b0a1",
+    "welcome.mjs": "084f62a49f97c9d8220747b2939f4214fd44ed4acbe371d1bad0288c03e68e59",
+    "entrance.mjs": "1fb1c7b2aca00f037dff9156cb7187ed5d9487c559bc0859f9b748467b79d699",
+    "entrance.css": "d82cb8c8fef086e187a522720134d4e9877651fef2a85ad4f13d58ee18ee55c3",
+    "index.html": "3e879d18a960653b131625218d56f9c1fd72fc0c68e9e96adbc8790fd0ec101a",
+    "content-preview.html": "eec866cec124c01b7a3286a4b4e586485c1cab3778fca1ba52552c150fc2907e"
+  },
+  "sourcesAfter": {
+    "account-menu.mjs": "61cb379cee3b7f99260c2a2c815fbb15ba7ea0d66f15e96246d2485b1fffd8b8",
+    "account-menu.css": "446afb45e4c0f2ad873388e7af28c7c970919025b58fae88e1aa5ad47b94b0a1",
+    "welcome.mjs": "084f62a49f97c9d8220747b2939f4214fd44ed4acbe371d1bad0288c03e68e59",
+    "entrance.mjs": "1fb1c7b2aca00f037dff9156cb7187ed5d9487c559bc0859f9b748467b79d699",
+    "entrance.css": "d82cb8c8fef086e187a522720134d4e9877651fef2a85ad4f13d58ee18ee55c3",
+    "index.html": "3e879d18a960653b131625218d56f9c1fd72fc0c68e9e96adbc8790fd0ec101a",
+    "content-preview.html": "eec866cec124c01b7a3286a4b4e586485c1cab3778fca1ba52552c150fc2907e"
+  },
+  "cases": [
+    {
+      "case": "entrance-guest",
+      "result": {
+        "lang": "fr",
+        "theme": "light",
+        "preference": "light",
+        "phase": "encrypted",
+        "hash": "#explore",
+        "visible": [
+          "profile"
+        ],
+        "open": false,
+        "text": "",
+        "bounds": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "entrance-guest-panel",
+      "result": {
+        "lang": "fr",
+        "theme": "light",
+        "preference": "light",
+        "phase": "encrypted",
+        "hash": "#explore",
+        "visible": [
+          "profile",
+          "close",
+          "settings",
+          "theme",
+          "language",
+          "signin"
+        ],
+        "open": true,
+        "text": "Menu du compte\nVisiteur\nParamètres\nThème\nClair\nLangue\nFrançais\nSe connecter",
+        "bounds": [
+          948,
+          92,
+          1232,
+          399
+        ],
+        "focus": "close",
+        "overflow": false
+      }
+    },
+    {
+      "case": "guest-dark",
+      "result": {
+        "lang": "fr",
+        "theme": "dark",
+        "preference": "dark",
+        "phase": "encrypted",
+        "hash": "#explore",
+        "visible": [
+          "profile",
+          "back",
+          "close",
+          "light",
+          "dark",
+          "system",
+          "fr",
+          "en",
+          "ar"
+        ],
+        "open": true,
+        "text": "Paramètres\nThème\nClair\nSombre\nSystème\nLangue\nFrançais\nEnglish\nالعربية",
+        "bounds": [
+          948,
+          92,
+          1232,
+          501
+        ],
+        "focus": "dark",
+        "overflow": false
+      }
+    },
+    {
+      "case": "guest-settings-ar320",
+      "result": {
+        "lang": "ar",
+        "theme": "dark",
+        "preference": "dark",
+        "phase": "encrypted",
+        "hash": "#explore",
+        "visible": [
+          "profile",
+          "back",
+          "close",
+          "light",
+          "dark",
+          "system",
+          "fr",
+          "en",
+          "ar"
+        ],
+        "open": true,
+        "text": "الإعدادات\nالمظهر\nفاتح\nداكن\nالنظام\nاللغة\nFrançais\nEnglish\nالعربية",
+        "bounds": [
+          16,
+          70,
+          300,
+          508
+        ],
+        "focus": "ar",
+        "overflow": false
+      }
+    },
+    {
+      "case": "guest-escape",
+      "result": {
+        "lang": "ar",
+        "theme": "dark",
+        "preference": "dark",
+        "phase": "encrypted",
+        "hash": "#explore",
+        "visible": [
+          "profile"
+        ],
+        "open": false,
+        "text": "رجوعالإعداداتإغلاقالمظهرفاتحداكنالنظاماللغةFrançaisEnglishالعربية",
+        "bounds": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "focus": "profile",
+        "overflow": false
+      }
+    },
+    {
+      "case": "guest-system",
+      "result": {
+        "lang": "ar",
+        "theme": "light",
+        "preference": "system",
+        "phase": "encrypted",
+        "hash": "#explore",
+        "visible": [
+          "profile",
+          "back",
+          "close",
+          "light",
+          "dark",
+          "system",
+          "fr",
+          "en",
+          "ar"
+        ],
+        "open": true,
+        "text": "الإعدادات\nالمظهر\nفاتح\nداكن\nالنظام\nاللغة\nFrançais\nEnglish\nالعربية",
+        "bounds": [
+          16,
+          70,
+          300,
+          508
+        ],
+        "focus": "system",
+        "overflow": false
+      }
+    },
+    {
+      "case": "entrance-signin-dialog",
+      "result": {
+        "lang": "fr",
+        "theme": "light",
+        "preference": "system",
+        "phase": "encrypted",
+        "hash": "#explore",
+        "visible": [
+          "profile"
+        ],
+        "open": false,
+        "text": "Menu du compteFermerVisiteurParamètresThèmeSystèmeLangueFrançaisSe connecter",
+        "bounds": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "focus": "close-dialog",
+        "overflow": false
+      }
+    },
+    {
+      "case": "entrance-signin-globe-failed",
+      "result": {
+        "lang": "fr",
+        "theme": "light",
+        "preference": "system",
+        "phase": "error",
+        "hash": "#explore",
+        "visible": [
+          "profile"
+        ],
+        "open": false,
+        "text": "Menu du compteFermerVisiteurParamètresThèmeSystèmeLangueFrançaisSe connecter",
+        "bounds": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "case": "member-entered-without-globe",
+      "result": {
+        "lang": "fr",
+        "theme": "light",
+        "preference": "system",
+        "phase": "welcome",
+        "hash": "#explore",
+        "visible": [
+          "account-messages",
+          "account-notifications",
+          "profile"
+        ],
+        "avatar": "./assets/profile-avatars/leila-mansour.svg",
+        "imageLoaded": 256,
+        "open": false,
+        "text": "Menu du compteFermerVisiteurParamètresThèmeSystèmeLangueFrançaisSe connecter",
+        "bounds": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "focus": "globe",
+        "overflow": false
+      }
+    },
+    {
+      "case": "member-panel",
+      "result": {
+        "lang": "fr",
+        "theme": "light",
+        "preference": "system",
+        "phase": "welcome",
+        "hash": "#explore",
+        "visible": [
+          "account-messages",
+          "account-notifications",
+          "profile",
+          "close",
+          "account",
+          "settings",
+          "theme",
+          "language",
+          "signout"
+        ],
+        "avatar": "./assets/profile-avatars/leila-mansour.svg",
+        "imageLoaded": 256,
+        "open": true,
+        "text": "Menu du compte\nLeïla Mansour\nProfil de démonstration\nCompte\nParamètres\nThème\nSystème\nLangue\nFrançais\nSe déconnecter",
+        "bounds": [
+          948,
+          94,
+          1232,
+          464
+        ],
+        "focus": "close",
+        "overflow": false
+      }
+    },
+    {
+      "case": "member-account",
+      "result": {
+        "lang": "fr",
+        "theme": "light",
+        "preference": "system",
+        "phase": "welcome",
+        "hash": "#people/profile-leila-mansour?country=FRA&campus=paris",
+        "visible": [
+          "account-messages",
+          "account-notifications",
+          "profile"
+        ],
+        "avatar": "./assets/profile-avatars/leila-mansour.svg",
+        "imageLoaded": 256,
+        "open": false,
+        "text": "Menu du compteFermerLeïla MansourProfil de démonstrationCompteParamètresThèmeSystèmeLangueFrançaisSe déconnecter",
+        "bounds": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "focus": "profile-title",
+        "overflow": false
+      }
+    },
+    {
+      "case": "messages",
+      "result": {
+        "lang": "fr",
+        "theme": "light",
+        "preference": "system",
+        "phase": "welcome",
+        "hash": "#people/profile-leila-mansour?country=FRA&campus=paris",
+        "visible": [
+          "account-messages",
+          "account-notifications",
+          "profile",
+          "close",
+          "profiles"
+        ],
+        "avatar": "./assets/profile-avatars/leila-mansour.svg",
+        "imageLoaded": 256,
+        "open": true,
+        "text": "Messagerie\nAucune conversation pour le moment\n\nLa messagerie de cet aperçu n’est pas encore connectée. Découvre les membres dans Profils.\n\nDécouvrir les profils",
+        "bounds": [
+          933,
+          94,
+          1217,
+          400.390625
+        ],
+        "focus": "close",
+        "overflow": false
+      }
+    },
+    {
+      "case": "messages-escape",
+      "result": {
+        "lang": "fr",
+        "theme": "light",
+        "preference": "system",
+        "phase": "welcome",
+        "hash": "#people/profile-leila-mansour?country=FRA&campus=paris",
+        "visible": [
+          "account-messages",
+          "account-notifications",
+          "profile"
+        ],
+        "avatar": "./assets/profile-avatars/leila-mansour.svg",
+        "imageLoaded": 256,
+        "open": false,
+        "text": "MessagerieFermerAucune conversation pour le momentLa messagerie de cet aperçu n’est pas encore connectée. Découvre les membres dans Profils.Découvrir les profils",
+        "bounds": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "focus": "account-messages",
+        "overflow": false
+      }
+    },
+    {
+      "case": "notifications",
+      "result": {
+        "lang": "fr",
+        "theme": "light",
+        "preference": "system",
+        "phase": "welcome",
+        "hash": "#people/profile-leila-mansour?country=FRA&campus=paris",
+        "visible": [
+          "account-messages",
+          "account-notifications",
+          "profile",
+          "close"
+        ],
+        "avatar": "./assets/profile-avatars/leila-mansour.svg",
+        "imageLoaded": 256,
+        "open": true,
+        "text": "Notifications\nAucune notification\n\nLes notifications de cet aperçu ne sont pas encore connectées.",
+        "bounds": [
+          933,
+          94,
+          1217,
+          314.59375
+        ],
+        "focus": "close",
+        "overflow": false
+      }
+    },
+    {
+      "case": "member-panel-ar320",
+      "result": {
+        "lang": "ar",
+        "theme": "dark",
+        "preference": "dark",
+        "phase": "welcome",
+        "hash": "#people/profile-leila-mansour?country=FRA&campus=paris",
+        "visible": [
+          "account-messages",
+          "account-notifications",
+          "profile",
+          "close",
+          "account",
+          "settings",
+          "theme",
+          "language",
+          "signout"
+        ],
+        "avatar": "./assets/profile-avatars/leila-mansour.svg",
+        "imageLoaded": 256,
+        "open": true,
+        "text": "قائمة الحساب\nليلى منصور\nملف تجريبي\nالحساب\nالإعدادات\nالمظهر\nداكن\nاللغة\nالعربية\nتسجيل الخروج",
+        "bounds": [
+          16,
+          72,
+          300,
+          449
+        ],
+        "focus": "close",
+        "overflow": false
+      }
+    },
+    {
+      "case": "signout",
+      "result": {
+        "lang": "ar",
+        "theme": "dark",
+        "preference": "dark",
+        "phase": "welcome",
+        "hash": "#people/profile-leila-mansour?country=FRA&campus=paris",
+        "visible": [
+          "profile"
+        ],
+        "open": false,
+        "text": "قائمة الحسابإغلاقليلى منصورملف تجريبيالحسابالإعداداتالمظهرداكناللغةالعربيةتسجيل الخروج",
+        "bounds": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "focus": "profile",
+        "overflow": false
+      }
+    },
+    {
+      "case": "guest-settings-en",
+      "result": {
+        "lang": "en",
+        "theme": "dark",
+        "preference": "dark",
+        "phase": "welcome",
+        "hash": "#people/profile-leila-mansour?country=FRA&campus=paris",
+        "visible": [
+          "profile",
+          "back",
+          "close",
+          "light",
+          "dark",
+          "system",
+          "fr",
+          "en",
+          "ar"
+        ],
+        "open": true,
+        "text": "Settings\nTheme\nLight\nDark\nSystem\nLanguage\nFrançais\nEnglish\nالعربية",
+        "bounds": [
+          5,
+          70,
+          289,
+          479
+        ],
+        "focus": "en",
+        "overflow": false
+      }
+    },
+    {
+      "case": "preview-member",
+      "result": {
+        "lang": "fr",
+        "theme": "dark",
+        "preference": "dark",
+        "phase": "welcome",
+        "hash": "#projects",
+        "visible": [
+          "account-messages",
+          "account-notifications",
+          "profile"
+        ],
+        "avatar": "./assets/profile-avatars/leila-mansour.svg",
+        "imageLoaded": 256,
+        "open": false,
+        "text": "Menu du compteFermerVisiteurParamètresThèmeSombreLangueFrançaisSe connecter",
+        "bounds": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "focus": "profile",
+        "overflow": false
+      }
+    },
+    {
+      "case": "outside-closes",
+      "result": {
+        "lang": "fr",
+        "theme": "dark",
+        "preference": "dark",
+        "phase": "welcome",
+        "hash": "#projects",
+        "visible": [
+          "account-messages",
+          "account-notifications",
+          "profile"
+        ],
+        "avatar": "./assets/profile-avatars/leila-mansour.svg",
+        "imageLoaded": 256,
+        "open": false,
+        "text": "Menu du compteFermerLeïla MansourProfil de démonstrationCompteParamètresThèmeSombreLangueFrançaisSe déconnecter",
+        "bounds": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "overflow": false
+      }
+    }
+  ]
+}

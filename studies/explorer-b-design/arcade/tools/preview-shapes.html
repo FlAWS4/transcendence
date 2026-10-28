@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Arcade · silhouettes de remplacement</title>
+<style>
+ body{margin:0;padding:16px;font:13px/1.4 system-ui,sans-serif;background:#F7FAFA;color:#1B1B1B}
+ .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+ figure{margin:0;background:#fff;border-radius:12px;padding:8px;text-align:center}
+ svg{width:100%;height:180px;display:block}
+ path{fill:#8FD9D6}
+ circle{fill:#ED3491;stroke:#fff;stroke-width:6}
+</style>
+</head>
+<body>
+<div class="grid" id="grid"></div>
+<script type="module">
+import {SHAPES as STANDIN} from '../standin-shapes.mjs';
+// ?real: site-b's silhouettes with the campus points of ../campus-points.mjs, to check their alignment.
+const real=new URLSearchParams(location.search).has('real');
+let SHAPES=STANDIN;
+if(real){const {SHAPES:B}=await import('../../../../site-b/explorer-shapes.mjs'),{POINTS}=await import('../campus-points.mjs');
+ SHAPES={world:{...B.world,points:POINTS.world},continents:Object.fromEntries(Object.entries(B.continents).map(([k,v])=>[k,{...v,points:POINTS.continents[k]}])),countries:Object.fromEntries(Object.entries(B.countries).map(([k,v])=>[k,{...v,points:POINTS.countries[k]}]))};}
+const grid=document.getElementById('grid');
+const cover=shape=>{const [,,W,H]=shape.viewBox.split(' ').map(Number),k=Math.max(W/640,H/480),w=640*k,h=480*k;return `x="${(W-w)/2}" y="${(H-h)/2}" width="${w}" height="${h}"`;};
+const add=(name,shape,flag)=>{
+ const f=document.createElement('figure');
+ const r=Math.max(...shape.viewBox.split(' ').slice(2).map(Number))/70;
+ const id='c'+name;
+ f.innerHTML=`<svg viewBox="${shape.viewBox}"><defs><clipPath id="${id}"><path d="${shape.d}"/></clipPath></defs>${flag?`<image href="../../../../site-b/assets/flags/${flag}.svg" ${cover(shape)} preserveAspectRatio="none" clip-path="url(#${id})"/><path d="${shape.d}" style="fill:none;stroke:#1B1B1B;stroke-width:${r/3}"/>`:`<path d="${shape.d}"/>`}${Object.values(shape.points).map(([x,y])=>`<circle cx="${x}" cy="${y}" r="${r}" style="stroke-width:${r/2}"/>`).join('')}</svg><figcaption>${name}</figcaption>`;
+ grid.append(f);
+};
+add('world',SHAPES.world);
+for(const [k,v] of Object.entries(SHAPES.continents))add(k,v);
+const iso2={ALB:'al',AGO:'ao',ARM:'am',AUT:'at',BEL:'be',BRA:'br',CAN:'ca',CZE:'cz',FRA:'fr',DEU:'de',ITA:'it',JPN:'jp',JOR:'jo',LBN:'lb',LUX:'lu',MDG:'mg',MYS:'my',MAR:'ma',PSE:'ps',POL:'pl',PRT:'pt',SGP:'sg',KOR:'kr',ESP:'es',CHE:'ch',THA:'th',NLD:'nl',TUR:'tr',ARE:'ae',GBR:'gb'};
+for(const [k,v] of Object.entries(SHAPES.countries))add(k,v,iso2[k]);
+document.documentElement.dataset.ready='true';
+</script>
+</body>
+</html>

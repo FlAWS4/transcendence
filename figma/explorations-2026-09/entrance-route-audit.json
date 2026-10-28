@@ -1,0 +1,543 @@
+{
+  "rows": [
+    {
+      "id": "115:3",
+      "duration": 3.65,
+      "reactions": [],
+      "visibleWrappers": []
+    },
+    {
+      "id": "123:145",
+      "duration": 3.65,
+      "reactions": [],
+      "visibleWrappers": []
+    },
+    {
+      "id": "119:62",
+      "duration": 3.15,
+      "reactions": [
+        {
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 3.1500000953674316
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "119:75",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": true
+            }
+          ]
+        }
+      ],
+      "visibleWrappers": []
+    },
+    {
+      "id": "128:371",
+      "duration": 3.15,
+      "reactions": [
+        {
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 3.1500000953674316
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "128:384",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": true
+            }
+          ]
+        }
+      ],
+      "visibleWrappers": []
+    },
+    {
+      "id": "119:75",
+      "duration": 1.3,
+      "reactions": [
+        {
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 1.2999999523162842
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "119:88",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": true
+            }
+          ]
+        }
+      ],
+      "visibleWrappers": []
+    },
+    {
+      "id": "128:384",
+      "duration": 1.3,
+      "reactions": [
+        {
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 1.2999999523162842
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "128:397",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": true
+            }
+          ]
+        }
+      ],
+      "visibleWrappers": []
+    },
+    {
+      "id": "119:88",
+      "duration": 0.6,
+      "reactions": [
+        {
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 0.6000000238418579
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "142:462",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": true
+            }
+          ]
+        }
+      ],
+      "visibleWrappers": []
+    },
+    {
+      "id": "128:397",
+      "duration": 0.6,
+      "reactions": [
+        {
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 0.6000000238418579
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "142:556",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": true
+            }
+          ]
+        }
+      ],
+      "visibleWrappers": []
+    },
+    {
+      "id": "142:462",
+      "duration": 0.8,
+      "reactions": [
+        {
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 0.800000011920929
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "144:582",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": true
+            }
+          ]
+        }
+      ],
+      "visibleWrappers": []
+    },
+    {
+      "id": "142:556",
+      "duration": 0.8,
+      "reactions": [
+        {
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 0.800000011920929
+          },
+          "actions": [
+            {
+              "type": "NODE",
+              "destinationId": "144:678",
+              "navigation": "NAVIGATE",
+              "transition": null,
+              "resetVideoPosition": true
+            }
+          ]
+        }
+      ],
+      "visibleWrappers": []
+    },
+    {
+      "id": "144:582",
+      "duration": 1.2,
+      "reactions": [
+        {
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 1.2000000476837158
+          },
+          "actions": [
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "NODE",
+                      "destinationId": "125:243",
+                      "navigation": "NAVIGATE",
+                      "transition": null,
+                      "resetVideoPosition": true,
+                      "resetScrollPosition": false
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "type": "VARIABLE_ALIAS",
+                            "id": "VariableID:124:188"
+                          },
+                          "type": "VARIABLE_ALIAS",
+                          "resolvedType": "STRING"
+                        },
+                        {
+                          "value": "ع",
+                          "type": "STRING",
+                          "resolvedType": "STRING"
+                        }
+                      ],
+                      "expressionFunction": "EQUALS"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                },
+                {
+                  "actions": [
+                    {
+                      "type": "NODE",
+                      "destinationId": "115:4",
+                      "navigation": "NAVIGATE",
+                      "transition": null,
+                      "resetVideoPosition": true,
+                      "resetScrollPosition": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "visibleWrappers": [
+        {
+          "id": "306:2715",
+          "name": "n22 · raccord LTR",
+          "visible": true,
+          "bound": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:286:787"
+          }
+        },
+        {
+          "id": "306:3094",
+          "name": "n22 · raccord RTL",
+          "visible": false,
+          "bound": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:286:788"
+          }
+        }
+      ],
+      "originalChildrenVisible": 0
+    },
+    {
+      "id": "144:630",
+      "duration": 1.2,
+      "reactions": [
+        {
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 1.2000000476837158
+          },
+          "actions": [
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "NODE",
+                      "destinationId": "125:296",
+                      "navigation": "NAVIGATE",
+                      "transition": null,
+                      "resetVideoPosition": true,
+                      "resetScrollPosition": false
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "type": "VARIABLE_ALIAS",
+                            "id": "VariableID:124:188"
+                          },
+                          "type": "VARIABLE_ALIAS",
+                          "resolvedType": "STRING"
+                        },
+                        {
+                          "value": "ع",
+                          "type": "STRING",
+                          "resolvedType": "STRING"
+                        }
+                      ],
+                      "expressionFunction": "EQUALS"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                },
+                {
+                  "actions": [
+                    {
+                      "type": "NODE",
+                      "destinationId": "119:178",
+                      "navigation": "NAVIGATE",
+                      "transition": null,
+                      "resetVideoPosition": true,
+                      "resetScrollPosition": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "visibleWrappers": [
+        {
+          "id": "306:3489",
+          "name": "n22 · raccord LTR",
+          "visible": true,
+          "bound": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:286:787"
+          }
+        },
+        {
+          "id": "306:3868",
+          "name": "n22 · raccord RTL",
+          "visible": false,
+          "bound": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:286:788"
+          }
+        }
+      ],
+      "originalChildrenVisible": 0
+    },
+    {
+      "id": "144:678",
+      "duration": 1.2,
+      "reactions": [
+        {
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 1.2000000476837158
+          },
+          "actions": [
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "NODE",
+                      "destinationId": "125:349",
+                      "navigation": "NAVIGATE",
+                      "transition": null,
+                      "resetVideoPosition": true,
+                      "resetScrollPosition": false
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "type": "VARIABLE_ALIAS",
+                            "id": "VariableID:124:188"
+                          },
+                          "type": "VARIABLE_ALIAS",
+                          "resolvedType": "STRING"
+                        },
+                        {
+                          "value": "ع",
+                          "type": "STRING",
+                          "resolvedType": "STRING"
+                        }
+                      ],
+                      "expressionFunction": "EQUALS"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                },
+                {
+                  "actions": [
+                    {
+                      "type": "NODE",
+                      "destinationId": "123:162",
+                      "navigation": "NAVIGATE",
+                      "transition": null,
+                      "resetVideoPosition": true,
+                      "resetScrollPosition": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "visibleWrappers": [
+        {
+          "id": "306:7975",
+          "name": "n22 · raccord LTR",
+          "visible": true,
+          "bound": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:286:787"
+          }
+        },
+        {
+          "id": "306:8335",
+          "name": "n22 · raccord RTL",
+          "visible": false,
+          "bound": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:286:788"
+          }
+        }
+      ],
+      "originalChildrenVisible": 0
+    },
+    {
+      "id": "144:726",
+      "duration": 1.2,
+      "reactions": [
+        {
+          "trigger": {
+            "type": "AFTER_TIMEOUT",
+            "timeout": 1.2000000476837158
+          },
+          "actions": [
+            {
+              "type": "CONDITIONAL",
+              "conditionalBlocks": [
+                {
+                  "actions": [
+                    {
+                      "type": "NODE",
+                      "destinationId": "125:402",
+                      "navigation": "NAVIGATE",
+                      "transition": null,
+                      "resetVideoPosition": true,
+                      "resetScrollPosition": false
+                    }
+                  ],
+                  "condition": {
+                    "value": {
+                      "expressionArguments": [
+                        {
+                          "value": {
+                            "type": "VARIABLE_ALIAS",
+                            "id": "VariableID:124:188"
+                          },
+                          "type": "VARIABLE_ALIAS",
+                          "resolvedType": "STRING"
+                        },
+                        {
+                          "value": "ع",
+                          "type": "STRING",
+                          "resolvedType": "STRING"
+                        }
+                      ],
+                      "expressionFunction": "EQUALS"
+                    },
+                    "type": "EXPRESSION",
+                    "resolvedType": "BOOLEAN"
+                  }
+                },
+                {
+                  "actions": [
+                    {
+                      "type": "NODE",
+                      "destinationId": "125:198",
+                      "navigation": "NAVIGATE",
+                      "transition": null,
+                      "resetVideoPosition": true,
+                      "resetScrollPosition": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "visibleWrappers": [
+        {
+          "id": "306:8711",
+          "name": "n22 · raccord LTR",
+          "visible": true,
+          "bound": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:286:787"
+          }
+        },
+        {
+          "id": "306:9071",
+          "name": "n22 · raccord RTL",
+          "visible": false,
+          "bound": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:286:788"
+          }
+        }
+      ],
+      "originalChildrenVisible": 0
+    }
+  ],
+  "temporary": {
+    "id": "144:678",
+    "previousModes": {}
+  },
+  "mutatedNodeIds": [
+    "144:678"
+  ]
+}

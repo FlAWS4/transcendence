@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-07",
+  "state": "profile-actions-86 / detail-scroll 2 / profile UI12 CSS12",
+  "reason": "État avant demande explicite : seul le menu défile, identité et Retour fixes, flèches conditionnelles. Sources remplacées et références de composition conservées.",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "178e86c26f2d6325d5cbe05bae8d186cf850d7bf8da2a96c1e82fad7edc97982"
+    },
+    {
+      "path": "content-preview.html",
+      "sha256": "25ebb6f38eccdad5eb0a77581475cde8d42d0c358c50718c2268252adae74a7c"
+    },
+    {
+      "path": "content-preview.mjs",
+      "sha256": "137d6d03616cba8cbadf7b34626cd8b44738e795bc376118fd05130633a0f2a8"
+    },
+    {
+      "path": "welcome.mjs",
+      "sha256": "3bb882e0f739ca81b66ad5c4740b0d2b554ad520f4982fbae3713fc84255d21e"
+    },
+    {
+      "path": "detail-scroll.mjs",
+      "sha256": "5633473fe0afd40b80db3509ccb4977425d4e7424d2db0917fa7a53c6cea8cf6"
+    },
+    {
+      "path": "detail-scroll.css",
+      "sha256": "ebd590db2e2d099cd35827e431698fb1934cea355360bbc467b1e4e165165828"
+    },
+    {
+      "path": "content-transitions.mjs",
+      "sha256": "f60f2b1928815bb256d073cdf9a5614e02813ba411aba665544d50e6ecc6d533"
+    },
+    {
+      "path": "profile-ui.mjs",
+      "sha256": "e608656e7f7ad6cac0394cff0de8f1321650e684d88ae6dd24729a8b796a7779"
+    },
+    {
+      "path": "profiles.css",
+      "sha256": "b140b09c9f024b0448e91340bf2babb94eab507402c2a1e7bdf2e9f8f4f8f8ee"
+    },
+    {
+      "path": "project-ui.mjs",
+      "sha256": "aae0d15c3c77e23ef5e94883229fca0ed6766a959fbfc6803c1b51032f22dd6d"
+    },
+    {
+      "path": "projects.css",
+      "sha256": "51ef74b5d8a2414c1bb0a5ab958888dfbc65f7f0b5361dafd52f066c05753bb8"
+    },
+    {
+      "path": "journal-ui.mjs",
+      "sha256": "c7fae413e2817756b4dc057374e240525137a71fbb7e8f42cf2cfd4cdde3591b"
+    },
+    {
+      "path": "journal.css",
+      "sha256": "7c93f3be7197f2418e30444f3636ff5dd677f18e4b0dadccc87b466fd0d99858"
+    },
+    {
+      "path": "tests/detail-scroll.test.mjs",
+      "sha256": "7a6b8785595d1fc813f0065f73562f6ad6c31b47dbc1214f59c189f17f335981"
+    },
+    {
+      "path": "tests/content-transitions.test.mjs",
+      "sha256": "59d5233aa350efda34f524edc15752a7f08bf079d0d0a918c5e5ce1b929b0625"
+    },
+    {
+      "path": "DETAIL_SCROLL_NOTES.md",
+      "sha256": "68be0d1430d6d19c66cf12a460a2ec60e6398590ae4cc82c8151e7cdce695d68"
+    }
+  ]
+}

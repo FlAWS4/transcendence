@@ -1,0 +1,194 @@
+{
+ "script": "d1_146.py",
+ "state": "145",
+ "url": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/archive/pre-audit-fixes-refinement-20261015/baseline/index.html?qa=verif-146-d1",
+ "viewport": [
+  1280,
+  900
+ ],
+ "cases": {
+  "annuler-souris": {
+   "active": "entry-login",
+   "focusVisible": false,
+   "changes": [
+    {
+     "dtMs": 3811,
+     "lang": "ar",
+     "active": "entry-login"
+    },
+    {
+     "dtMs": 7812,
+     "lang": "fr",
+     "active": "entry-login"
+    }
+   ]
+  },
+  "echap-apres-souris": {
+   "active": "entry-login",
+   "focusVisible": true,
+   "changes": []
+  },
+  "touches-rares": [
+   {
+    "key": "NumLock",
+    "active": "entry-login",
+    "focusVisible": true,
+    "changesWithin4700ms": []
+   },
+   {
+    "key": "ScrollLock",
+    "active": "entry-login",
+    "focusVisible": true,
+    "changesWithin4700ms": []
+   },
+   {
+    "key": "PrintScreen",
+    "active": "entry-login",
+    "focusVisible": true,
+    "changesWithin4700ms": []
+   },
+   {
+    "key": "F11",
+    "active": "entry-login",
+    "focusVisible": true,
+    "changesWithin4700ms": []
+   },
+   {
+    "key": "Escape",
+    "active": "entry-login",
+    "focusVisible": true,
+    "changesWithin4700ms": []
+   }
+  ],
+  "modificateurs": [
+   {
+    "key": "Alt",
+    "active": "entry-theme-toggle",
+    "theme": "dark",
+    "changesWithin4700ms": [
+     {
+      "dtMs": 3667,
+      "lang": "ar",
+      "active": "entry-theme-toggle"
+     }
+    ]
+   },
+   {
+    "key": "Shift",
+    "active": "entry-theme-toggle",
+    "theme": "light",
+    "changesWithin4700ms": [
+     {
+      "dtMs": 3660,
+      "lang": "fr",
+      "active": "entry-theme-toggle"
+     }
+    ]
+   },
+   {
+    "key": "ctrl+c",
+    "active": "entry-theme-toggle",
+    "theme": "dark",
+    "changesWithin4700ms": [
+     {
+      "dtMs": 3663,
+      "lang": "en",
+      "active": "entry-theme-toggle"
+     }
+    ]
+   }
+  ],
+  "clavier": {
+   "afterTabTab": {
+    "active": "entry-login",
+    "focusVisible": true,
+    "changes": []
+   },
+   "afterEnterEscape": {
+    "active": "entry-login",
+    "focusVisible": true,
+    "changes": []
+   },
+   "afterBackgroundClick": {
+    "active": "entry-theme-toggle",
+    "theme": "light",
+    "changes": [
+     {
+      "dtMs": 3793,
+      "lang": "en",
+      "active": "entry-theme-toggle"
+     }
+    ]
+   }
+  },
+  "focus-programme": {
+   "active": "entry-login",
+   "focusVisible": true,
+   "changes": [
+    {
+     "dtMs": 3266,
+     "lang": "en",
+     "active": "entry-login"
+    },
+    {
+     "dtMs": 7267,
+     "lang": "ar",
+     "active": "entry-login"
+    }
+   ],
+   "afterBackgroundClick": [
+    {
+     "dtMs": 3792,
+     "lang": "fr",
+     "active": "entry-theme-toggle"
+    }
+   ]
+  },
+  "survol": {
+   "whileHovering": [],
+   "afterLeaving": [
+    {
+     "dtMs": 3950,
+     "lang": "ar",
+     "active": "BODY"
+    }
+   ]
+  }
+ },
+ "console": [
+  {
+   "kind": "log.network.error",
+   "text": "Failed to load resource: the server responded with a status of 404 (File not found)",
+   "resource": "http://127.0.0.1:8765/favicon.ico",
+   "page": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/archive/pre-audit-fixes-refinement-20261015/baseline/index.html?qa=verif-146-d1"
+  },
+  {
+   "kind": "log.javascript.warning",
+   "text": "The resource http://127.0.0.1:8765/work/visualizations/horizon-welcome/archive/pre-audit-fixes-refinement-20261015/baseline/shared/assets/jost-1.ttf was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and ",
+   "resource": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/archive/pre-audit-fixes-refinement-20261015/baseline/index.html?qa=verif-146-d1#explore",
+   "page": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/archive/pre-audit-fixes-refinement-20261015/baseline/index.html?qa=verif-146-d1"
+  },
+  {
+   "kind": "log.javascript.warning",
+   "text": "The resource http://127.0.0.1:8765/work/visualizations/horizon-welcome/archive/pre-audit-fixes-refinement-20261015/baseline/shared/assets/jost-1.ttf was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and ",
+   "resource": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/archive/pre-audit-fixes-refinement-20261015/baseline/index.html?qa=verif-146-d1#explore",
+   "page": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/archive/pre-audit-fixes-refinement-20261015/baseline/index.html?qa=verif-146-d1"
+  },
+  {
+   "kind": "log.javascript.warning",
+   "text": "The resource http://127.0.0.1:8765/work/visualizations/horizon-welcome/archive/pre-audit-fixes-refinement-20261015/baseline/shared/assets/jost-1.ttf was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and ",
+   "resource": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/archive/pre-audit-fixes-refinement-20261015/baseline/index.html?qa=verif-146-d1#explore",
+   "page": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/archive/pre-audit-fixes-refinement-20261015/baseline/index.html?qa=verif-146-d1"
+  },
+  {
+   "kind": "log.javascript.warning",
+   "text": "The resource http://127.0.0.1:8765/work/visualizations/horizon-welcome/archive/pre-audit-fixes-refinement-20261015/baseline/shared/assets/jost-1.ttf was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and ",
+   "resource": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/archive/pre-audit-fixes-refinement-20261015/baseline/index.html?qa=verif-146-d1#explore",
+   "page": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/archive/pre-audit-fixes-refinement-20261015/baseline/index.html?qa=verif-146-d1"
+  }
+ ],
+ "failure": null,
+ "errors": [],
+ "sourcesUnchanged": true,
+ "seconds": 129.9
+}

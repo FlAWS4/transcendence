@@ -1,0 +1,167 @@
+{
+  "date": "2026-10-07",
+  "status": "Prototypes comparatifs locaux, aucune piste choisie",
+  "entry": "index.html",
+  "variants": [
+    {
+      "id": 1,
+      "name": "Accès directs"
+    },
+    {
+      "id": 2,
+      "name": "Volet compagnon"
+    },
+    {
+      "id": 3,
+      "name": "Deux espaces"
+    }
+  ],
+  "preservation": "Conserver ces sources et dépendances lors de toute intégration ultérieure.",
+  "assetOrigins": {
+    "globe.mjs": "Adaptation du moteur SVG des études locales navigation-studies",
+    "assets/world.json": "Copie locale de work/visualizations/map-data/world.json",
+    "assets/d3.min.js": "D3 7.9.0 ; copie de la dépendance locale, en-tête copyright conservé",
+    "assets/topojson.min.js": "topojson-client 3.1.0 ; copie de la dépendance locale, en-tête copyright conservé",
+    "assets/tokens.css": "Instantané local des tokens Figma du projet",
+    "assets/jost.css et jost-*.ttf": "Copies locales de la police Jost utilisée par les études existantes",
+    "assets/logo-42.svg et leila-mansour.svg": "Copies des ressources locales du prototype Horizon"
+  },
+  "files": [
+    {
+      "path": "NOTES.md",
+      "bytes": 15778,
+      "sha256": "c86f1398b82680cfcc432f7c5fdc855e4092c0a46d1cf13aeae57faff2223422"
+    },
+    {
+      "path": "app.mjs",
+      "bytes": 17527,
+      "sha256": "05cb3340596b8f07ff4b19796c5bb46c471ebd7cbcb6b6d09068450951f0ea44"
+    },
+    {
+      "path": "assets/d3.min.js",
+      "bytes": 279706,
+      "sha256": "f2094bbf6141b359722c4fe454eb6c4b0f0e42cc10cc7af921fc158fceb86539"
+    },
+    {
+      "path": "assets/jost-0.ttf",
+      "bytes": 58796,
+      "sha256": "c3143e923ed1ca7bdf27f96c351fbafaebcbd3cf3f4c2d30d03e6c7f98e73d7a"
+    },
+    {
+      "path": "assets/jost-1.ttf",
+      "bytes": 58936,
+      "sha256": "d6ff7726ec21576cf2fdac55080b2d43832780fa981f03f0b66d2723a7c1ea09"
+    },
+    {
+      "path": "assets/jost-2.ttf",
+      "bytes": 58936,
+      "sha256": "a63c8d75600a2d42e0e152e4c4810474a90a0b93206f47530a741dbb78a9e571"
+    },
+    {
+      "path": "assets/jost.css",
+      "bytes": 441,
+      "sha256": "1f67cdf2d8a7eb3d0b6d6ecdae838ac025bffc18b5f2b07ce3bfa26e0fd51dec"
+    },
+    {
+      "path": "assets/leila-mansour.svg",
+      "bytes": 1756,
+      "sha256": "9fd36e21e1ed4d29fd5e975fffa44e75c3dac9c18b724bbadf6e8406e8838f81"
+    },
+    {
+      "path": "assets/logo-42.svg",
+      "bytes": 830,
+      "sha256": "cb27f1e1c89bcdfe58185710ac66f0232a2bb8c9ac0c596275f06f101dbd7efc"
+    },
+    {
+      "path": "assets/tokens.css",
+      "bytes": 7190,
+      "sha256": "bcc71ae119e87b0abe75d4b781e2352becc633491da265298d36dcb0f80fb4cd"
+    },
+    {
+      "path": "assets/topojson.min.js",
+      "bytes": 7169,
+      "sha256": "25cd02ae486cc5063e0215a4e4cfb15de83700c87ac48bac4d57dc6aaf3ebb89"
+    },
+    {
+      "path": "assets/world.json",
+      "bytes": 110736,
+      "sha256": "2cc668368e972284e34d21bdcd3f38b5a4697a8114888076040bdbbe8511ed0d"
+    },
+    {
+      "path": "demo.css",
+      "bytes": 40537,
+      "sha256": "02f06423f341048594f7a863e352c5c18353cc2da60408f4b69d5ff6ff907dd1"
+    },
+    {
+      "path": "demo.html",
+      "bytes": 3829,
+      "sha256": "8bdafced40dc0d261ee02d956071f8f9f093094ae9869861dcd4d6b461f79d09"
+    },
+    {
+      "path": "gallery.css",
+      "bytes": 23765,
+      "sha256": "58fa842efa98cd9fce9b242ee3632496008b6e956064a9a537c4ba44347acb3a"
+    },
+    {
+      "path": "gallery.mjs",
+      "bytes": 1118,
+      "sha256": "c53b71498c34e2d58fce64a9d21acb62f5c4df2944455ea08517cfd974394b00"
+    },
+    {
+      "path": "globe.mjs",
+      "bytes": 9412,
+      "sha256": "5b08959df12d2fb1e0db37f01c38ba20cfc035aeeb8829465b2407ebc14d962c"
+    },
+    {
+      "path": "icons.mjs",
+      "bytes": 2449,
+      "sha256": "b10af7e9e8c211e6f2043bb68da84868bef4db34df1306c2a12a25d575966720"
+    },
+    {
+      "path": "index.html",
+      "bytes": 11162,
+      "sha256": "d1eaed575b3ed15879bab1d1d13cd8446d4efab48abe29bab0209526bc95042f"
+    },
+    {
+      "path": "views.mjs",
+      "bytes": 51000,
+      "sha256": "9282a6c292fe0c806f52b991681bbfb332da42df64fd0c5030cda0309d730d89"
+    }
+  ],
+  "scrolling": {
+    "date": "2026-10-07",
+    "desktopVariants": [
+      1,
+      3
+    ],
+    "reading": "Natural document scrolling; no bounded reading panel",
+    "sidebar": "Return and identity remain fixed; only navigation scrolls, with conditional clickable animated arrows above and below it; logout at menu end on desktop 01/03; mobile and variant 02 unchanged",
+    "mobileAndVariant2": "Existing layouts preserved",
+    "version": 4,
+    "browserVerification": {
+      "date": "2026-10-07",
+      "version": 4,
+      "variant": 3,
+      "checks": [
+        "960×640 sombre : identité et Retour fixes, menu seul défilant, flèches conditionnelles et Déconnexion accessible ; lecture naturelle du document jusqu’à sa fin",
+        "1920×991 : menu entièrement visible, deux flèches masquées",
+        "320×640 : document 305px, sidebar relative, nav overflow visible, flèches non affichées"
+      ],
+      "variant2": "No new browser check; layout unchanged"
+    }
+  },
+  "archives": [
+    {
+      "path": "../connected-experience-studies-bounded-scroll-20261007/index.html",
+      "state": "Previous bounded workspace and separate reading overflow",
+      "originalFiles": 21,
+      "copiedIdenticallyBeforeChanges": true
+    },
+    {
+      "path": "../connected-experience-studies-full-sidebar-scroll-20261007/index.html",
+      "state": "Version 3, entire left sidebar scrolling while the return link remained fixed",
+      "originalFiles": 21,
+      "copiedIdenticallyBeforeChanges": true
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><title>Atlas meta check</title>
+<style>body{margin:0;background:#fffaf6;font:12px sans-serif}h2{font:600 13px sans-serif;margin:8px}.grid{display:flex;flex-wrap:wrap;gap:8px;padding:8px}.c{width:150px;height:170px;display:flex;flex-direction:column;align-items:center}.c svg{width:140px;height:140px;overflow:visible}</style>
+</head><body><h2>site-b/explorer-shapes.mjs + ATLAS_META (pins, label, cut)</h2><div class="grid" id="g"></div><h2>Stand-in (atlas-standin.mjs)</h2><div class="grid" id="s"></div>
+<script type="module">
+import {SHAPES} from '../../../../site-b/explorer-shapes.mjs';
+import {ATLAS_META, ATLAS_GLOBE} from '../atlas-meta.mjs';
+import {ATLAS_STANDIN} from '../atlas-standin.mjs';
+const draw=(host,name,s,m)=>{const [,,w,h]=s.viewBox.split(' ').map(Number),u=Math.max(w,h)/140,d=document.createElement('div');d.className='c';
+ const pins=Object.values(m.pins||{}).map(([x,y])=>`<circle cx="${x}" cy="${y}" r="${2.2*u}" fill="#ED3491" stroke="#fff" stroke-width="${.8*u}"/>`).join('');
+ const cut=m.cut?`<line x1="${m.cut.a[0]}" y1="${m.cut.a[1]}" x2="${m.cut.b[0]}" y2="${m.cut.b[1]}" stroke="#f60" stroke-width="${1.5*u}"/><circle cx="${m.cut.inner[0]}" cy="${m.cut.inner[1]}" r="${2*u}" fill="#f60"/>`:'';
+ d.innerHTML=`<svg viewBox="${s.viewBox}"><path d="${s.d}" fill="#00BABC" fill-opacity=".55" stroke="#0C7677" stroke-width="${.5*u}"/>${cut}${pins}<circle cx="${m.label[0]}" cy="${m.label[1]}" r="${2*u}" fill="#000"/></svg><span>${name}</span>`;host.append(d);};
+for(const [k,v] of Object.entries(SHAPES.continents))draw(document.getElementById('g'),k,v,ATLAS_META.continents[k]);
+for(const [k,v] of Object.entries(SHAPES.countries))draw(document.getElementById('g'),k,v,ATLAS_META.countries[k]);
+for(const [k,v] of Object.entries(ATLAS_STANDIN.continents))draw(document.getElementById('s'),k,v,v);
+for(const [k,v] of Object.entries(ATLAS_STANDIN.countries))draw(document.getElementById('s'),k,v,v);
+document.documentElement.dataset.ready='1';
+</script></body></html>

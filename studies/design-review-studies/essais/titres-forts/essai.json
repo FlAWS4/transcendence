@@ -1,0 +1,135 @@
+{
+  "id": "titres-forts",
+  "groupe": "Typographie, lisibilité et pages",
+  "titre": "Titres plus affirmés",
+  "resume": "Les titres des fiches (projet, chronique, nom du profil), les titres des cartes et les intertitres des fiches (À propos, Technologies et savoir-faire, Équipe, Réseaux et liens…) passent en graisse 700 réelle, droite et sans capitales, à taille inchangée, avec un interlettrage resserré de 0,02 em ; en arabe, la vraie face grasse de Noto Sans Arabic est utilisée.",
+  "probleme": "Audit du 14 octobre : les titres de pages et de sections sont en Jost 500 comme le reste (graisses mesurées : 400 et 500 partout, 700 sur 14 nœuds seulement) ; la hiérarchie ne repose que sur la taille, alors que l’échelle d’interface de la charte (p. 30) prévoit le Heavy pour les titres.",
+  "changement": "Uniquement essai.css (graisse et interlettrage ; en arabe, la liste des familles) ; early.js et essai.mjs ne font rien. 1) Graisse 700 réelle — Jost Bold, fonte partagée essais/_partage (licence OFL), avec font-synthesis-weight: none — sur : le titre des fiches projet et chronique (h1), le nom du profil (h1), les titres des cartes Projets, Profils et Chroniques (h2), les titres des cartes de l’onglet Projets du profil (h3), les intertitres des fiches (À propos du projet, Technologies et savoir-faire, Équipe, intertitres de Réalisation et de l’article, Dépôt du projet ; À propos, À 42, Compétences, Distinctions, Réseaux et liens, Historique des campus du profil) et les titres du Parcours (jalons, récit et ses intertitres). 2) Interlettrage de chacun de ces titres resserré de 0,02 em par rapport au socle, pour compenser le gras, 5 à 6 % plus large que le Medium (mesuré sur les fichiers des polices ; l’excédent tombe à 1 à 2 %) : cartes −0,035 → −0,055 em ; cartes du profil, titres des fiches et récit −0,025 → −0,045 em ; nom du profil −0,035 → −0,055 em ; intertitres −0,015 → −0,035 em ; jalons, intertitres du récit, Dépôt du projet et Historique des campus 0 → −0,02 em ; en arabe, seules les règles des cartes, que le socle applique aussi en arabe, s’appliquent et ne resserrent que les mots latins. 3) En arabe, la famille de ces seuls titres devient « Jost, Noto Sans Arabic, sans-serif » : avec la famille du socle, les lettres arabes viennent du repli système, qui garde la face normale même en 700 (mesuré) ; nommer Noto Sans Arabic, déjà utilisée par la ligne arabe du logotype, applique sa face grasse réelle. Tailles, hauteurs de ligne, couleurs, casse, en-tête, dialogues, fiche campus, menus, états vides et titres de listes et de rubriques retirés le 13 octobre (restés masqués) ne changent pas.",
+  "decisionConcernee": "",
+  "alternativeDe": "",
+  "vues": [
+    {
+      "libelle": "Projets, ordinateur clair",
+      "page": "content-preview.html",
+      "route": "projects",
+      "viewport": "ordinateur",
+      "theme": "light",
+      "lang": "fr"
+    },
+    {
+      "libelle": "Profil (vue d’ensemble), ordinateur clair",
+      "page": "content-preview.html",
+      "route": "people/profile-leila-mansour",
+      "viewport": "ordinateur",
+      "theme": "light",
+      "lang": "fr"
+    },
+    {
+      "libelle": "Fiche projet, mobile arabe clair",
+      "page": "content-preview.html",
+      "route": "projects/ft-transcendence-building-together",
+      "viewport": "mobile",
+      "theme": "light",
+      "lang": "ar"
+    },
+    {
+      "libelle": "Parcours du profil, ordinateur sombre",
+      "page": "content-preview.html",
+      "route": "people/profile-leila-mansour?tab=journey",
+      "viewport": "ordinateur",
+      "theme": "dark",
+      "lang": "fr"
+    }
+  ],
+  "verifications": [
+    "Titres des cartes comptés dans Chrome sur toutes les pages des listes (198 pages, 2 574 titres) : Projets, Profils et Chroniques à 1440, 390 et 320 px en français, anglais et arabe clairs, plus 3 vues sombres et 3 vues en liste. Aucun titre ne perd de ligne ; en français et en anglais, 24 sur 1 716 (1,4 %) gagnent une ligne (aucun parmi les Projets et les Profils en français) ; en arabe, 73 sur 858 (8,5 %). Aucun titre nouvellement coupé par la limite de 3 lignes des cartes Projets et Chroniques (0 avant, 0 après), aucun mot nouvellement coupé, aucun débordement horizontal, aucune erreur de console.",
+    "Fiches : 31 vues (vue d’ensemble et Réalisation du projet, article, vue d’ensemble, Parcours et Projets du profil, Contribution en arabe sombre ; 1440, 1280 × 720, 390 et 320 px ; FR, EN, AR ; clair et sombre), 148 titres : graisse 500 → 700, tailles identiques ; seul changement de ligne : « ft_transcendence · Construire à cinq » à 390 px, 1 → 2 lignes (en-tête de la fiche 109 → 137 px). Densités de detail-scroll inchangées (compacte pour le profil à 1280 × 720 avant comme après).",
+    "Balayage des titres de 12 fiches par rubrique à 1440, 1280 × 720, 390 et 320 px en français et à 390 px en arabe (180 titres) : même seul titre passant de 1 à 2 lignes, aucune densité modifiée, aucun débordement ni erreur.",
+    "Périmètre, en coupant puis rétablissant la feuille de l’essai sur 11 pages (listes, fiches, onglets Tester, Commentaires et Médias, profil, Parcours, article arabe) : seuls les titres visés et leur contenu changent, et seulement en graisse et en interlettrage (famille en plus en arabe uniquement) ; taille, hauteur de ligne, style, casse, couleur et affichage identiques ; titres masqués des listes et des rubriques toujours masqués (1 × 1 px) ; état vide des commentaires et sous-titre « Instructions » du dépôt, non visés, restés à 500 ; « Dépôt du projet » à 700 avec un dépôt fictif ; Historique des campus à 700 sur un élément injecté.",
+    "Faces réellement utilisées (CSS.getPlatformFontsForNode) : titres latins en Jost-Bold (fonte web, non simulée) au lieu de Jost-Medium ; lettres arabes des cartes, du nom et des intertitres en NotoSansArabic-Bold au lieu de NotoSansArabic-Regular ; avec la famille du socle et la graisse 700, les lettres arabes restent en NotoSansArabic-Regular, d’où le nom de famille ajouté.",
+    "Interlettrage mesuré : titres de cartes −1,085 → −1,705 px à 31 px, titre de fiche −0,7 → −1,26 px à 28 px ; en arabe à 18 px, le titre arabe « خلف سطر الأوامر » ne raccourcit que de 2 px tandis que « ft_transcendence » passe de 143 à 128 px et tient dans la colonne de 129 px à 320 px.",
+    "Rendus successifs du socle : la graisse 700 suit la navigation liste → profil, le passage en arabe sombre, la liste des Chroniques puis l’anglais clair ; page d’arrivée index.html identique au pixel près avec l’essai (early.js chargé, aucune erreur) ; en-tête identique au pixel près dans les 15 captures mesurées.",
+    "Combinaison avec lisibilite-textes et titres-marque (Projets à 1440 et 320 px, profil à 1440 px, Profils arabe sombre à 390 px, Chroniques anglais à 390 px, fiche projet à 320 px) : nombres de lignes des titres identiques à l’essai seul, mot-symbole en italique 800, métadonnées à 13 px minimum là où elles s’affichent, aucun débordement ni erreur.",
+    "Contre-vérification indépendante faite à la relecture (méthode différente : lignes comptées sur la plage de texte de chaque titre, sur le même DOM avec la feuille de l’essai coupée puis rétablie) : 23 vues (première page des Projets, Profils et Chroniques à 1440, 390 et 320 px en français et à 390 et 320 px en arabe, Projets anglais sombre 390 px, Profils arabe sombre 1440 px, fiches projet, profil, Parcours et article), 306 titres : aucun ne perd de ligne, 11 en gagnent une (3 sur 177 en latin, dont « ft_transcendence · Construire à cinq » à 390 px ; 8 sur 129 en arabe), 12 cartes plus hautes (jusqu’à +25 px), graisse 500 → 700 partout, tailles identiques, famille Noto Sans Arabic seulement en arabe, aucun débordement, en-tête identique au pixel près dans les 23 vues, aucune erreur ; graisse 700 conservée après passage en arabe sombre par le menu du compte, ouverture d’une fiche et retour en français clair, sans rechargement.",
+    "Combinaison avec echelle-unifiee (feuille de cet essai dans son état du 14 octobre à 19 h 28) sur 6 vues (Projets 1440 et 320 px, Profils arabe sombre 390 px, Chroniques anglais 390 px, fiche projet 390 px, profil 1440 px), 70 titres : tailles données par echelle-unifiee, graisse 700 de cet essai, même nombre de lignes qu’echelle-unifiee seul sauf « ft_transcendence · Construire à cinq » à 390 px (1 → 2 lignes, comme avec cet essai seul), aucun débordement ni erreur.",
+    "Captures examinées à la relecture (planches réduites) : Projets à 1440 px clair et Projets arabe à 390 px (titres des cartes en gras réel, mêmes nombres de lignes), et les combinaisons avec lisibilite-textes et titres-marque, régénérées ce soir, Projets à 1440 px et Profils arabe sombre à 390 px ; les autres paires listées avaient été examinées lors de la première passe et n’ont pas été revues."
+  ],
+  "limites": [
+    "Jost Bold n’est qu’un substitut : la charte prévoit Futura PT Heavy, toujours indisponible ; la graisse 700 demandée reste en deçà d’un Heavy.",
+    "Plus de retours à la ligne, sans débordement ni troncature : en latin surtout dans les Chroniques à 1440 px (8 titres sur 78 en français gagnent une ligne, dont 7 passent de 2 à 3 lignes) ; en arabe, où l’interlettrage n’a presque pas d’effet, jusqu’à 19 titres sur 78 dans les Chroniques à 390 px ; au total, 94 cartes sur 2 574 deviennent plus hautes (jusqu’à +41 px).",
+    "Le gras arabe dépend de la présence de Noto Sans Arabic Bold sur l’appareil (police système de cette machine, non chargée par le site) ; ailleurs, la face normale reste, sans gras simulé. Ni macOS, ni Windows, ni Android n’ont été testés.",
+    "Aucun profil de démonstration n’a d’historique de campus : ce titre n’est vérifié que sur un élément injecté ; « Dépôt du projet » ne l’est qu’avec un dépôt fictif ajouté pour le contrôle.",
+    "Hors périmètre et inchangés : titres des dialogues, de la fiche campus d’Explorer, des menus, des états vides et de la page 42 Awards ; logotype et slogan (essai titres-marque). En fenêtre basse, le titre réduit des fiches (modes compacts, 16 à 20 px) passe aussi en 700 : la densité du profil à 1280 × 720 ne change pas, les autres fenêtres basses n’ont pas été mesurées.",
+    "La combinaison avec echelle-unifiee n’a été vérifiée que sur l’état de sa feuille à 19 h 28 et sur 6 vues : à revérifier si cet essai change."
+  ],
+  "fichiers": [
+    "essais/titres-forts/essai.css",
+    "essais/titres-forts/early.js",
+    "essais/titres-forts/essai.mjs",
+    "essais/_partage/fonts.css",
+    "checks/titres-forts/check.py",
+    "checks/titres-forts/results.json"
+  ],
+  "captures": [
+    {
+      "vue": "ordinateur",
+      "avant": "checks/titres-forts/avant-ordinateur.png",
+      "apres": "checks/titres-forts/apres-ordinateur.png"
+    },
+    {
+      "vue": "sombre-ordinateur",
+      "avant": "checks/titres-forts/avant-sombre-ordinateur.png",
+      "apres": "checks/titres-forts/apres-sombre-ordinateur.png"
+    },
+    {
+      "vue": "petit",
+      "avant": "checks/titres-forts/avant-petit.png",
+      "apres": "checks/titres-forts/apres-petit.png"
+    },
+    {
+      "vue": "ar-mobile",
+      "avant": "checks/titres-forts/avant-ar-mobile.png",
+      "apres": "checks/titres-forts/apres-ar-mobile.png"
+    },
+    {
+      "vue": "mobile",
+      "avant": "checks/titres-forts/avant-mobile.png",
+      "apres": "checks/titres-forts/apres-mobile.png"
+    },
+    {
+      "vue": "fiche-ordinateur",
+      "avant": "checks/titres-forts/avant-fiche-ordinateur.png",
+      "apres": "checks/titres-forts/apres-fiche-ordinateur.png"
+    },
+    {
+      "vue": "fiche-fenetre-basse",
+      "avant": "checks/titres-forts/avant-fiche-fenetre-basse.png",
+      "apres": "checks/titres-forts/apres-fiche-fenetre-basse.png"
+    },
+    {
+      "vue": "profil-ordinateur",
+      "avant": "checks/titres-forts/avant-profil-ordinateur.png",
+      "apres": "checks/titres-forts/apres-profil-ordinateur.png"
+    },
+    {
+      "vue": "parcours-ordinateur",
+      "avant": "checks/titres-forts/avant-parcours-ordinateur.png",
+      "apres": "checks/titres-forts/apres-parcours-ordinateur.png"
+    },
+    {
+      "vue": "fiche-ar-mobile",
+      "avant": "checks/titres-forts/avant-fiche-ar-mobile.png",
+      "apres": "checks/titres-forts/apres-fiche-ar-mobile.png"
+    },
+    {
+      "vue": "combine-ordinateur",
+      "avant": "checks/titres-forts/avant-combine-ordinateur.png",
+      "apres": "checks/titres-forts/apres-combine-ordinateur.png"
+    },
+    {
+      "vue": "combine-ar-sombre-mobile",
+      "avant": "checks/titres-forts/avant-combine-ar-sombre-mobile.png",
+      "apres": "checks/titres-forts/apres-combine-ar-sombre-mobile.png"
+    }
+  ]
+}

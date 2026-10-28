@@ -1,0 +1,12 @@
+before ok 5651 after ok 5654 lost 2 gained 5 new missing 3
+ LOST ('site/entrance.mjs', 'studies/decryption-examples/scanner-return-random.mjs')
+ LOST ('site/entrance.mjs', 'studies/decryption-examples/shared.mjs')
+ NEWMISS ('docs/site-map/checks/20261023-render/published-skeleton.html', ', eBack: ', 'docs/site-map/checks/20261023-render/http:/127.0.0.1:8765/docs/site-map/, eBack: ')
+ NEWMISS ('docs/site-map/checks/20261023-render/published-skeleton.html', ', to: ', 'docs/site-map/checks/20261023-render/http:/127.0.0.1:8765/docs/site-map/, to: ')
+ NEWMISS ('docs/site-map/checks/20261023-render/published-skeleton.html', 'site-map-data.js', 'docs/site-map/checks/20261023-render/http:/127.0.0.1:8765/docs/site-map/site-map-data.js')
+ GAINED ('site/decryption/scanner-return-random.mjs', 'site/decryption/scanner-return-together.mjs')
+ GAINED ('site/decryption/scanner-return-together.mjs', 'site/decryption/horizon-decryption-engine.mjs')
+ GAINED ('site/decryption/shared.mjs', 'site/decryption/horizon-decryption-engine.mjs')
+ GAINED ('site/entrance.mjs', 'site/decryption/scanner-return-random.mjs')
+ GAINED ('site/entrance.mjs', 'site/decryption/shared.mjs')
+Note: the 3 'new missing' references come from docs/site-map/checks/20261023-render/published-skeleton.html, a check output created on 23 October; its <base href> is an absolute http URL that this static crawler does not resolve (the earlier skeletons have the same pattern). They are not broken links.

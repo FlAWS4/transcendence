@@ -1,0 +1,8 @@
+/* Essai police-etiquettes-globe (14 Oct 2026): the globe's marker labels, the
+   selected campus label and its edge-direction label stop inheriting MapLibre's
+   "Helvetica Neue, Arial" stack and take the site's own stack (welcome.css
+   :root), the one every other text uses in FR, EN and AR: Jost for Latin text,
+   with Arabic glyphs falling back exactly as elsewhere on the site. Family only:
+   size, weight, line height and colour keep their current values. The map
+   credit is outside the MapLibre container and already uses this stack. */
+.hg-integrated .hg-marker { font-family: var(--h42-font-family), sans-serif; }

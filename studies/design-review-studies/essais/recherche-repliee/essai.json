@@ -1,0 +1,141 @@
+{
+  "id": "recherche-repliee",
+  "groupe": "Pile flottante, cartes et petits écrans",
+  "titre": "Recherche repliée en loupe",
+  "resume": "Sur les pages de contenu, la capsule « Chercher dans Horizon » se replie en un bouton rond de 44 px à loupe, posé à 8 px du dé : la ligne flottante passe de 252 × 44 à 96 × 44 px. Explorer garde la capsule, et la recherche ouverte reste exactement celle d’aujourd’hui.",
+  "probleme": "Au repos, la capsule (200 × 44 px) et le dé forment une ligne de 252 × 44 px, 13 px au-dessus du dock, qui masque le contenu passant dessous : légende de l’illustration d’une fiche projet, résumés des cartes, phrase « Ouvrez la discussion en partageant votre premier retour » sous « Aucun commentaire pour le moment » dans l’onglet Commentaires sur ordinateur. Selon l’avis, l’en-tête et la pile basse occupent au repos environ 45 % de l’écran à 390 × 844 et plus de 50 % à 320 × 640. Mesuré sur la copie : 2 757 px² de lignes de texte sous la capsule et le dé dans Projets à 390 × 844, 6 227 px² à 320 × 640 et 4 636 px² sur la fiche projet à 1440 × 900.",
+  "changement": "Pages de contenu seulement : Projets, Profils, Chroniques et leurs fiches (42 Awards masque déjà la capsule). Dans essai.css, le bouton existant de la recherche, fermé, passe à 44 × 44 px sans marge intérieure, avec la couleur d’icône, le verre et le survol du dé ; son libellé visible est masqué, son nom accessible et son info-bulle localisés restent ceux du site. essai.mjs ajoute une seule fois dans ce même bouton une loupe, du même dessin que celle du champ ouvert ; aucune seconde recherche n’est créée. La loupe garde le centre de la capsule et le dé se rapproche (décalage de +104 à +26 px, inversé en arabe) : la paire reste centrée au-dessus du dock. Le dé suit la transformation de la capsule en 0,48 s, sans transition sous mouvement réduit. Une fois ouverte, la recherche reprend la transformation et l’apparence actuelles.",
+  "decisionConcernee": "5 octobre 2026 : après quatre modèles de recherche, l’utilisateur choisit explicitement la capsule flottante (« Je choisis la capsule flottante »), intégrée au-dessus du dock sans prendre sa largeur. L’essai la replie en loupe sur les pages de contenu ; Explorer la garde, et la loupe reste hors du dock.",
+  "alternativeDe": "voile-pile-basse",
+  "vues": [
+    {
+      "libelle": "Mobile clair · Projets",
+      "page": "content-preview.html",
+      "route": "projects",
+      "viewport": "mobile",
+      "theme": "light",
+      "lang": "fr"
+    },
+    {
+      "libelle": "Petit mobile · Projets",
+      "page": "content-preview.html",
+      "route": "projects",
+      "viewport": "petit",
+      "theme": "light",
+      "lang": "fr"
+    },
+    {
+      "libelle": "Ordinateur · onglet Commentaires",
+      "page": "content-preview.html",
+      "route": "projects/ft-transcendence-building-together?tab=comments",
+      "viewport": "ordinateur",
+      "theme": "light",
+      "lang": "fr"
+    },
+    {
+      "libelle": "Mobile sombre en arabe · Projets",
+      "page": "content-preview.html",
+      "route": "projects",
+      "viewport": "mobile",
+      "theme": "dark",
+      "lang": "ar"
+    }
+  ],
+  "verifications": [
+    "Ligne flottante (boîte englobant la capsule et le dé) : 11 088 → 4 224 px² (−62 %) à 1440 × 900, 390 × 844 et 320 × 640, comme à 300 × 640 et 667 × 375. Surface réellement couverte par toute la pile basse (capsule, dé et dock) : 48 896 → 42 032 px² à 1440 × 900 (3,8 → 3,2 % de l’écran), 32 216 → 25 352 px² à 390 × 844 (9,8 → 7,7 %), 28 496 → 21 632 px² à 320 × 640 (13,9 → 10,6 %).",
+    "Lignes de texte sous les boutons flottants au repos : Projets 1 316 → 628 px² à 1440 × 900, 2 757 → 624 px² à 390 × 844, 6 227 → 2 012 px² à 320 × 640 ; fiche projet 4 636 → 1 672 px² à 1440 × 900 et 4 914 → 1 672 px² à 390 × 844 ; onglet Commentaires 2 619 → 945 px² à 1440 × 900.",
+    "Recherche : un clic sur la loupe ouvre la recherche, focus dans le champ ; « Paris » donne 8 résultats (premier : 42 Paris) ; Échap la ferme et rend le focus visible à la loupe (contour de 2 px), sur ordinateur, sur mobile et en arabe sur mobile. Au clavier, Maj+Tab depuis le dé atteint la loupe, Entrée ouvre la recherche et Échap la ferme.",
+    "Recherche ouverte identique à celle du site actuel : même surface (678 × 440 px sur ordinateur, 356 × 440 px sur mobile), mêmes résultats dans le même ordre, 0 pixel d’écart à 1440 × 900 et à 390 × 844.",
+    "Loupe de 44 × 44 px, avec le fond, le bord et la couleur du dé en clair et en sombre ; nom accessible et info-bulle « Rechercher dans Horizon », « Search Horizon » et « البحث في أفق » ; en arabe, la loupe passe à droite du dé, comme la capsule actuelle.",
+    "Changement de langue (arabe, puis anglais) et de thème depuis le menu du compte, sans rechargement : une seule loupe, toujours repliée. Passage Explorer → Projets : la capsule se replie de 200 à 44 px en 0,48 s, et l’écart avec le dé reste de 8 px sur les 80 images mesurées. Sous mouvement réduit, aucune transition.",
+    "Libellés du dock inchangés dans ses quatre étapes de largeur (fenêtres de 1440, 390, 320 et 300 px de large, et 667 × 375) : boutons, libellés, opacités et pastille identiques avec et sans l’essai ; aucun débordement horizontal.",
+    "Explorer inchangé : 0 pixel d’écart sans globe (1440 × 900 et 390 × 844) et avec le vrai globe (1440 × 900) ; la loupe insérée y reste masquée. 42 Awards : 0 pixel d’écart, la capsule y étant déjà masquée.",
+    "Aucune erreur dans la console pendant les contrôles.",
+    "Revérifié par un second agent, chaque état rechargé à neuf : ligne flottante 11 088 → 4 224 px² à 1440 × 900, 390 × 844 et 320 × 640 ; loupe identique au dé (couleur, fond, bord, ombre, flou, 44 × 44 px) ; recherche en français sur ordinateur et en arabe sur mobile (8 résultats, Échap rend un focus visible à la loupe) ; arabe sombre puis anglais clair depuis le menu du compte, puis Explorer et Chroniques sans rechargement ; menu latéral fixe des fiches identique avec et sans l’essai à 900, 1024 et 1440 px de large ; Explorer identique au pixel près, sans globe (1440 × 900, 390 × 844) et avec le vrai globe ; aucune erreur dans la console.",
+    "Contre-vérification indépendante (troisième passage, après la coupure de 19 h), chaque état rechargé à neuf : ligne flottante 11 088 → 4 224 px² à 1440 × 900, 390 × 844, 320 × 640 et 300 × 640, avec les libellés, la pastille et les dimensions du dock identiques ; en dehors de la pile (capsule, dé, dock et leurs ombres), 0 pixel d’écart avec le site actuel sur Projets (1440 × 900, 390 × 844, 320 × 640) et sur l’onglet Commentaires ; lignes de texte sous les boutons, par une mesure indépendante : 1 316 → 628, 2 757 → 624 et 6 306 → 2 091 px².",
+    "Contre-vérification de la recherche et des états : ouverture d’un toucher sur mobile et au clavier en arabe sombre sur ordinateur (Maj+Tab depuis le dé, puis Entrée) ; même surface, mêmes 8 résultats que le site actuel, 0 pixel d’écart sur mobile, Échap rend un focus visible à la loupe. Survol identique à celui du dé en clair et en sombre (couleur, fond, bord, ombre). Arabe sombre puis anglais clair sans rechargement, puis Explorer (capsule de 200 px et libellé rétablis), Chroniques et Profils (loupe de nouveau) : une seule loupe. Menu latéral fixe des fiches identique avec et sans l’essai à 841 px (de gauche à droite et en arabe) et à 1100 px (arabe). Explorer, sans globe et avec le vrai globe, et 42 Awards : 0 pixel d’écart. Aucune erreur dans la console."
+  ],
+  "limites": [
+    "Le libellé visible « Chercher dans Horizon » disparaît sur les pages de contenu : seule la loupe signale la recherche. L’info-bulle native n’apparaît qu’au survol de la souris, pas sur écran tactile.",
+    "La hauteur de la pile ne change pas : la ligne des boutons reste haute de 44 px, au même endroit au-dessus du dock ; seule la largeur diminue. Les deux boutons masquent encore un peu de texte, par exemple la phrase de l’onglet Commentaires sur ordinateur.",
+    "Au changement de langue sans rechargement, animations actives, la loupe et le dé échangent leur place en 0,48 s et se croisent (jusqu’à 42 px de chevauchement sur 11 images) ; dans le site actuel, le dé passe déjà sur la capsule pendant ce mouvement (44 px sur 11 images).",
+    "Revient sur le choix du 5 octobre : la capsule n’est conservée que dans Explorer.",
+    "Contrôles faits dans Chrome sans interface, en formats émulés : pas de téléphone physique, de lecteur d’écran réel ni de zone de sécurité de téléphone à encoche."
+  ],
+  "fichiers": [
+    "essais/recherche-repliee/essai.css",
+    "essais/recherche-repliee/essai.mjs",
+    "checks/recherche-repliee/check.py",
+    "checks/recherche-repliee/check-complement.py",
+    "checks/recherche-repliee/check-etapes.py",
+    "checks/recherche-repliee/results.json",
+    "checks/recherche-repliee/results-complement.json",
+    "checks/recherche-repliee/results-etapes.json",
+    "checks/recherche-repliee/check-verification.py",
+    "checks/recherche-repliee/results-verification.json",
+    "checks/recherche-repliee/check-contre-verification.py",
+    "checks/recherche-repliee/results-contre-verification.json"
+  ],
+  "captures": [
+    {
+      "vue": "mobile",
+      "avant": "checks/recherche-repliee/avant-mobile.png",
+      "apres": "checks/recherche-repliee/apres-mobile.png"
+    },
+    {
+      "vue": "petit",
+      "avant": "checks/recherche-repliee/avant-petit.png",
+      "apres": "checks/recherche-repliee/apres-petit.png"
+    },
+    {
+      "vue": "ordinateur",
+      "avant": "checks/recherche-repliee/avant-ordinateur.png",
+      "apres": "checks/recherche-repliee/apres-ordinateur.png"
+    },
+    {
+      "vue": "ar-sombre-mobile",
+      "avant": "checks/recherche-repliee/avant-ar-sombre-mobile.png",
+      "apres": "checks/recherche-repliee/apres-ar-sombre-mobile.png"
+    },
+    {
+      "vue": "fiche-commentaires-ordinateur",
+      "avant": "checks/recherche-repliee/avant-fiche-commentaires-ordinateur.png",
+      "apres": "checks/recherche-repliee/apres-fiche-commentaires-ordinateur.png"
+    },
+    {
+      "vue": "fiche-mobile",
+      "avant": "checks/recherche-repliee/avant-fiche-mobile.png",
+      "apres": "checks/recherche-repliee/apres-fiche-mobile.png"
+    },
+    {
+      "vue": "etroit-300",
+      "avant": "checks/recherche-repliee/avant-etroit-300.png",
+      "apres": "checks/recherche-repliee/apres-etroit-300.png"
+    },
+    {
+      "vue": "paysage",
+      "avant": "checks/recherche-repliee/avant-paysage.png",
+      "apres": "checks/recherche-repliee/apres-paysage.png"
+    },
+    {
+      "vue": "recherche-ouverte-ordinateur",
+      "avant": "checks/recherche-repliee/avant-recherche-ouverte-ordinateur.png",
+      "apres": "checks/recherche-repliee/apres-recherche-ouverte-ordinateur-comparable.png"
+    },
+    {
+      "vue": "recherche-ouverte-mobile",
+      "avant": "checks/recherche-repliee/avant-recherche-ouverte-mobile.png",
+      "apres": "checks/recherche-repliee/apres-recherche-ouverte-mobile-comparable.png"
+    },
+    {
+      "vue": "explorer-globe",
+      "avant": "checks/recherche-repliee/avant-explorer-globe.png",
+      "apres": "checks/recherche-repliee/apres-explorer-globe.png"
+    },
+    {
+      "vue": "awards-mobile",
+      "avant": "checks/recherche-repliee/avant-awards-mobile.png",
+      "apres": "checks/recherche-repliee/apres-awards-mobile.png"
+    }
+  ]
+}

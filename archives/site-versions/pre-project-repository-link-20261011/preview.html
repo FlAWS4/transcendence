@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Archive · Tester le projet</title>
+  <link rel="stylesheet" href="./projects.css">
+  <style>
+    :root{color-scheme:light;--h42-color-bg:#f3f6f3;--h42-color-surface:#fff;--h42-color-text:#192f35;--h42-color-muted:#52696e;--h42-color-soft:#e6eeeb;--h42-color-input-border:#afbfbe;--h42-color-focus:#087c89;--cp-line:#ccd9d6;--cp-accent:#087c89}
+    :root[data-theme=dark]{color-scheme:dark;--h42-color-bg:#111d23;--h42-color-surface:#192a32;--h42-color-text:#e7f1ed;--h42-color-muted:#b3c8c9;--h42-color-soft:#233e47;--h42-color-input-border:#52707a;--h42-color-focus:#65d8ce;--cp-line:#38515c;--cp-accent:#65d8ce}
+    *{box-sizing:border-box}body{margin:0;background:var(--h42-color-bg);color:var(--h42-color-text);font-family:system-ui,sans-serif;line-height:1.6}
+    main{width:min(920px,100%);margin:auto;padding:28px clamp(12px,4vw,32px) 56px}header{margin-bottom:28px}h1{font-size:clamp(26px,5vw,38px);line-height:1.25;margin:8px 0 16px}p{margin:0 0 16px}
+    .archive-label{display:inline-block;padding:4px 12px;border:1px solid var(--cp-line);border-radius:999px;font-size:13px;color:var(--h42-color-muted)}.archive-controls{display:flex;flex-wrap:wrap;gap:12px 24px;margin:20px 0}.archive-controls label{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+    select{max-width:100%;min-height:44px;padding:8px 12px;border:1px solid var(--h42-color-input-border);border-radius:10px;background:var(--h42-color-surface);color:inherit;font:inherit}a{color:var(--cp-accent)}:focus-visible{outline:2px solid var(--h42-color-focus);outline-offset:3px}.archive-notes{font-size:14px;color:var(--h42-color-muted)}
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <span id="archive-label" class="archive-label">Archive · 11 octobre 2026</span>
+      <h1 id="archive-title">Tester le projet — les deux modes</h1>
+      <p id="archive-warning">Ancien essai conservé : démo intégrée et même démo en nouvel onglet. Cet écran est distinct du prototype actif et du vrai projet des auteurs.</p>
+      <div class="archive-controls">
+        <label><span id="language-label">Langue</span><select id="language"><option value="fr">Français</option><option value="en">English</option><option value="ar">العربية</option></select></label>
+        <label><span id="theme-label">Thème</span><select id="theme"><option value="light">Clair</option><option value="dark">Sombre</option></select></label>
+      </div>
+      <p class="archive-notes"><a id="notes-link" href="./README.md">Sources et limites de cet essai</a></p>
+    </header>
+    <div id="trial"></div>
+    <noscript>JavaScript est nécessaire pour rejouer cet essai. / JavaScript is needed to replay this study.</noscript>
+  </main>
+  <script type="module">
+    import {createProjectTrial} from './project-trial.mjs';
+    const copy={
+      fr:{archive:'Archive · 11 octobre 2026',title:'Tester le projet — les deux modes',warning:'Ancien essai conservé : démo intégrée et même démo en nouvel onglet. Cet écran est distinct du prototype actif et du vrai projet des auteurs.',language:'Langue',theme:'Thème',light:'Clair',dark:'Sombre',notes:'Sources et limites de cet essai'},
+      en:{archive:'Archive · 11 October 2026',title:'Try the project — both modes',warning:'Preserved study: an embedded demo and the same demo in a new tab. This screen is separate from the active prototype and the authors’ actual project.',language:'Language',theme:'Theme',light:'Light',dark:'Dark',notes:'Sources and limits of this study'},
+      ar:{archive:'أرشيف · 11 أكتوبر 2026',title:'تجربة المشروع — الطريقتان',warning:'تجربة سابقة محفوظة: عرض مضمّن والعرض نفسه في علامة تبويب جديدة. هذه الشاشة منفصلة عن النموذج الحالي وعن المشروع الفعلي للمؤلفين.',language:'اللغة',theme:'المظهر',light:'فاتح',dark:'داكن',notes:'مصادر هذه التجربة وحدودها'},
+    };
+    const language=document.getElementById('language'),theme=document.getElementById('theme'),trial=document.getElementById('trial');
+    const params=new URLSearchParams(location.search);
+    let locale=Object.hasOwn(copy,params.get('lang'))?params.get('lang'):'fr',controller;
+    language.value=locale;theme.value=params.get('theme')==='dark'?'dark':'light';document.documentElement.dataset.theme=theme.value;
+    const updateURL=()=>{const url=new URL(location.href);url.searchParams.set('lang',locale);url.searchParams.set('theme',theme.value);history.replaceState(null,'',url);};
+    function render(){
+      controller?.abort();controller=new AbortController();
+      const t=copy[locale];document.documentElement.lang=locale;document.documentElement.dir=locale==='ar'?'rtl':'ltr';document.title=t.archive+' · '+t.title;
+      for(const [id,key]of [['archive-label','archive'],['archive-title','title'],['archive-warning','warning'],['language-label','language'],['theme-label','theme'],['notes-link','notes']])document.getElementById(id).textContent=t[key];
+      theme.options[0].textContent=t.light;theme.options[1].textContent=t.dark;
+      trial.replaceChildren(createProjectTrial({doc:document,entry:{id:'ft-transcendence-building-together'},locale,signal:controller.signal}));
+    }
+    language.addEventListener('change',()=>{locale=language.value;render();updateURL();});
+    theme.addEventListener('change',()=>{document.documentElement.dataset.theme=theme.value;updateURL();});
+    window.addEventListener('pagehide',()=>controller?.abort());
+    window.addEventListener('pageshow',event=>{if(event.persisted)render();});
+    render();
+  </script>
+</body>
+</html>

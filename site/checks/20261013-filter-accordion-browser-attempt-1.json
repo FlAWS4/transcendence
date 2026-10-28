@@ -1,0 +1,248 @@
+{
+  "date": "2026-10-13",
+  "scenario": "Final accordion filters in Chrome, including deferred globe readiness",
+  "initial_sha256": {
+    "welcome.mjs": "084f62a49f97c9d8220747b2939f4214fd44ed4acbe371d1bad0288c03e68e59",
+    "project-filter-dialog.mjs": "9908ac8570d61e8964b7b0f73dcfbb18875a85075c1fe376ce13e8ade82bacd0",
+    "project-filter-dialog.css": "d5643f96875855256998462c896cdfbe86d29681196efff635333d57584ac559",
+    "content-controls.mjs": "1c29cfe9f46ded0a0a826685e91089e8e721df3e72ba794d307d44816d9e68b1",
+    "content-filters.mjs": "b494e148b4689c8cd8ccf9800496962f2d32517b092190b1a2ab15ccf571b3f7",
+    "content-preview-data.mjs": "dea7cc9253756ce37d2632eec6125614cb139640b3278a2930b8171d6c4bae52",
+    "profile-data.mjs": "652648c36b77105d32d303adcecd39b6e8852bb64ce2698075b746b5fd2bb378",
+    "demo-content-seed.mjs": "2b25388d3469a55803325b2b17b729ba4eb250d864ffa21c9c8215520771a734"
+  },
+  "results": [
+    {
+      "case": "projects-initially-folded",
+      "result": {
+        "hash": "#projects",
+        "kind": "projects",
+        "open": true,
+        "count": "26 contenus",
+        "filtered": "false",
+        "criteria": "Aucun critère sélectionné",
+        "checked": [],
+        "groups": [
+          {
+            "key": "projects",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "common-core",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "specialization",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "technologies",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "skills",
+            "expanded": "false",
+            "pressed": "false"
+          }
+        ],
+        "bounds": [
+          300,
+          246.40625,
+          980,
+          653.59375
+        ],
+        "footerBottom": 652.59375,
+        "bodyScrollable": false,
+        "overflow": false,
+        "active": "content-category-dialog-title",
+        "errors": []
+      }
+    },
+    {
+      "case": "select-all-technologies-without-expanding",
+      "result": {
+        "hash": "#projects",
+        "kind": "projects",
+        "open": true,
+        "count": "26 contenus",
+        "filtered": "false",
+        "criteria": "6 critères sélectionnés",
+        "checked": [
+          "tech:c",
+          "tech:cpp",
+          "tech:typescript",
+          "tech:css",
+          "tech:posix",
+          "tech:sockets"
+        ],
+        "groups": [
+          {
+            "key": "projects",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "common-core",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "specialization",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "technologies",
+            "expanded": "false",
+            "pressed": "true"
+          },
+          {
+            "key": "skills",
+            "expanded": "false",
+            "pressed": "false"
+          }
+        ],
+        "bounds": [
+          300,
+          246.40625,
+          980,
+          653.59375
+        ],
+        "footerBottom": 652.59375,
+        "bodyScrollable": false,
+        "overflow": false,
+        "active": "content-category-dialog-title",
+        "errors": []
+      }
+    },
+    {
+      "case": "individual-technology-makes-category-mixed",
+      "result": {
+        "hash": "#projects",
+        "kind": "projects",
+        "open": true,
+        "count": "26 contenus",
+        "filtered": "false",
+        "criteria": "5 critères sélectionnés",
+        "checked": [
+          "tech:cpp",
+          "tech:typescript",
+          "tech:css",
+          "tech:posix",
+          "tech:sockets"
+        ],
+        "groups": [
+          {
+            "key": "projects",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "common-core",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "specialization",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "technologies",
+            "expanded": "true",
+            "pressed": "mixed"
+          },
+          {
+            "key": "skills",
+            "expanded": "false",
+            "pressed": "false"
+          }
+        ],
+        "bounds": [
+          300,
+          166.90625,
+          980,
+          733.09375
+        ],
+        "footerBottom": 732.09375,
+        "bodyScrollable": false,
+        "overflow": false,
+        "active": "content-category-dialog-title",
+        "errors": []
+      }
+    },
+    {
+      "case": "failure",
+      "result": {
+        "hash": "#projects",
+        "kind": "projects",
+        "open": true,
+        "count": "26 contenus",
+        "filtered": "false",
+        "criteria": "5 critères sélectionnés",
+        "checked": [
+          "tech:cpp",
+          "tech:typescript",
+          "tech:css",
+          "tech:posix",
+          "tech:sockets"
+        ],
+        "groups": [
+          {
+            "key": "projects",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "common-core",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "specialization",
+            "expanded": "false",
+            "pressed": "false"
+          },
+          {
+            "key": "technologies",
+            "expanded": "true",
+            "pressed": "mixed"
+          },
+          {
+            "key": "skills",
+            "expanded": "false",
+            "pressed": "false"
+          }
+        ],
+        "bounds": [
+          300,
+          166.90625,
+          980,
+          733.09375
+        ],
+        "footerBottom": 732.09375,
+        "bodyScrollable": false,
+        "overflow": false,
+        "active": "content-category-dialog-toggle-4",
+        "errors": []
+      }
+    }
+  ],
+  "passed": false,
+  "error": "AssertionError()",
+  "final_sha256": {
+    "welcome.mjs": "084f62a49f97c9d8220747b2939f4214fd44ed4acbe371d1bad0288c03e68e59",
+    "project-filter-dialog.mjs": "9908ac8570d61e8964b7b0f73dcfbb18875a85075c1fe376ce13e8ade82bacd0",
+    "project-filter-dialog.css": "d5643f96875855256998462c896cdfbe86d29681196efff635333d57584ac559",
+    "content-controls.mjs": "1c29cfe9f46ded0a0a826685e91089e8e721df3e72ba794d307d44816d9e68b1",
+    "content-filters.mjs": "b494e148b4689c8cd8ccf9800496962f2d32517b092190b1a2ab15ccf571b3f7",
+    "content-preview-data.mjs": "dea7cc9253756ce37d2632eec6125614cb139640b3278a2930b8171d6c4bae52",
+    "profile-data.mjs": "652648c36b77105d32d303adcecd39b6e8852bb64ce2698075b746b5fd2bb378",
+    "demo-content-seed.mjs": "2b25388d3469a55803325b2b17b729ba4eb250d864ffa21c9c8215520771a734"
+  },
+  "source_unchanged": true
+}

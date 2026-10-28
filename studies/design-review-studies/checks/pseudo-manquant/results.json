@@ -1,0 +1,4691 @@
+{
+ "essai": "pseudo-manquant",
+ "date": "2026-10-14",
+ "page": "baseline/content-preview.html",
+ "globe": "bloqué",
+ "cases": [
+  {
+   "case": "grille-ordinateur-fr",
+   "mesures": {
+    "avant": {
+     "counts": [
+      18,
+      0,
+      0
+     ],
+     "grid": {
+      "visible": true,
+      "view": "grid",
+      "columns": 5,
+      "rows": [
+       {
+        "y": 272,
+        "cards": 5,
+        "realLogins": 4,
+        "placeholders": 1,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 573,
+        "cards": 5,
+        "realLogins": 1,
+        "placeholders": 4,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 875,
+        "cards": 5,
+        "realLogins": 1,
+        "placeholders": 4,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 1176,
+        "cards": 5,
+        "realLogins": 0,
+        "placeholders": 5,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 1478,
+        "cards": 4,
+        "realLogins": 0,
+        "placeholders": 4,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       }
+      ],
+      "unequalRows": 0,
+      "unlevelRows": 0,
+      "expected": false
+     },
+     "shot": "checks/pseudo-manquant/avant-ordinateur.png",
+     "overflow": false
+    },
+    "apres": {
+     "counts": [
+      0,
+      0,
+      0
+     ],
+     "grid": {
+      "visible": true,
+      "view": "grid",
+      "columns": 5,
+      "rows": [
+       {
+        "y": 272,
+        "cards": 5,
+        "realLogins": 4,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 573,
+        "cards": 5,
+        "realLogins": 1,
+        "placeholders": 4,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 875,
+        "cards": 5,
+        "realLogins": 1,
+        "placeholders": 4,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 1176,
+        "cards": 5,
+        "realLogins": 0,
+        "placeholders": 5,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         244
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1450,
+        "cards": 4,
+        "realLogins": 0,
+        "placeholders": 4,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         244
+        ],
+        "campusTop": [
+         195
+        ]
+       }
+      ],
+      "unequalRows": 0,
+      "unlevelRows": 0,
+      "expected": true
+     },
+     "shot": "checks/pseudo-manquant/apres-ordinateur.png",
+     "overflow": false
+    },
+    "diff": {
+     "sameSize": true,
+     "changed": 2300,
+     "inside": 2300,
+     "outside": 0,
+     "boxes": 18
+    },
+    "zoom": {
+     "box": [
+      610,
+      300,
+      1050,
+      575
+     ],
+     "factor": 2
+    }
+   },
+   "nomsAccessibles": {
+    "avant": {
+     "profile-lucia-roca": "Transcender Lucía Roca Pseudo Intra: Pseudo Intra à renseigner 42 Barcelona Rentrée 2023 Promotion 6",
+     "profile-leila-mansour": "Cadet Leïla Mansour Pseudo Intra: lmansour 42 Paris Rentrée 2024 Promotion 8"
+    },
+    "apres": {
+     "profile-lucia-roca": "Transcender Lucía Roca 42 Barcelona Rentrée 2023 Promotion 6",
+     "profile-leila-mansour": "Cadet Leïla Mansour Pseudo Intra: lmansour 42 Paris Rentrée 2024 Promotion 8",
+     "focusables": 56
+    }
+   },
+   "ordreClavierIdentique": true,
+   "errors": []
+  },
+  {
+   "case": "grille-ordinateur-fr-bas",
+   "mesures": {
+    "avant": {
+     "counts": [
+      18,
+      0,
+      0
+     ],
+     "grid": {
+      "visible": true,
+      "view": "grid",
+      "columns": 5,
+      "rows": [
+       {
+        "y": 272,
+        "cards": 5,
+        "realLogins": 4,
+        "placeholders": 1,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 573,
+        "cards": 5,
+        "realLogins": 1,
+        "placeholders": 4,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 875,
+        "cards": 5,
+        "realLogins": 1,
+        "placeholders": 4,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 1176,
+        "cards": 5,
+        "realLogins": 0,
+        "placeholders": 5,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 1478,
+        "cards": 4,
+        "realLogins": 0,
+        "placeholders": 4,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       }
+      ],
+      "unequalRows": 0,
+      "unlevelRows": 0,
+      "expected": false
+     },
+     "shot": "checks/pseudo-manquant/avant-ordinateur-bas.png",
+     "overflow": false
+    },
+    "apres": {
+     "counts": [
+      0,
+      0,
+      0
+     ],
+     "grid": {
+      "visible": true,
+      "view": "grid",
+      "columns": 5,
+      "rows": [
+       {
+        "y": 272,
+        "cards": 5,
+        "realLogins": 4,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 573,
+        "cards": 5,
+        "realLogins": 1,
+        "placeholders": 4,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 875,
+        "cards": 5,
+        "realLogins": 1,
+        "placeholders": 4,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 1176,
+        "cards": 5,
+        "realLogins": 0,
+        "placeholders": 5,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         244
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1450,
+        "cards": 4,
+        "realLogins": 0,
+        "placeholders": 4,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         244
+        ],
+        "campusTop": [
+         195
+        ]
+       }
+      ],
+      "unequalRows": 0,
+      "unlevelRows": 0,
+      "expected": true
+     },
+     "shot": "checks/pseudo-manquant/apres-ordinateur-bas.png",
+     "overflow": false
+    }
+   },
+   "errors": []
+  },
+  {
+   "case": "fiche-sans-pseudo-ordinateur-fr",
+   "mesures": {
+    "avant": {
+     "counts": [
+      1,
+      0,
+      0
+     ],
+     "detail": {
+      "title": "Lucía Roca",
+      "login": "Pseudo Intra à renseigner",
+      "loginShown": true,
+      "h1": {
+       "top": 362,
+       "bottom": 403,
+       "h": 41
+      },
+      "hero": {
+       "top": 236,
+       "bottom": 533,
+       "h": 297
+      },
+      "nameToActions": 49,
+      "menu": {
+       "top": 561,
+       "bottom": 792,
+       "h": 231
+      },
+      "density": null,
+      "overflow": false
+     },
+     "shot": "checks/pseudo-manquant/avant-fiche-ordinateur.png",
+     "overflow": false
+    },
+    "apres": {
+     "counts": [
+      0,
+      0,
+      0
+     ],
+     "detail": {
+      "title": "Lucía Roca",
+      "login": "Pseudo Intra à renseigner",
+      "loginShown": false,
+      "h1": {
+       "top": 362,
+       "bottom": 403,
+       "h": 41
+      },
+      "hero": {
+       "top": 236,
+       "bottom": 512,
+       "h": 276
+      },
+      "nameToActions": 28,
+      "menu": {
+       "top": 540,
+       "bottom": 771,
+       "h": 231
+      },
+      "density": null,
+      "overflow": false
+     },
+     "shot": "checks/pseudo-manquant/apres-fiche-ordinateur.png",
+     "overflow": false
+    }
+   },
+   "errors": []
+  },
+  {
+   "case": "fiche-sans-pseudo-accessibilite",
+   "avant": {
+    "ligne": {
+     "ignored": false,
+     "role": "paragraph",
+     "name": "Pseudo Intra: Pseudo Intra à renseigner"
+    },
+    "titre": {
+     "ignored": false,
+     "role": "heading",
+     "name": "Lucía Roca"
+    }
+   },
+   "apres": {
+    "ligne": {
+     "ignored": true,
+     "role": "none",
+     "name": null
+    },
+    "titre": {
+     "ignored": false,
+     "role": "heading",
+     "name": "Lucía Roca"
+    }
+   },
+   "errors": []
+  },
+  {
+   "case": "fiche-avec-pseudo-inchangee",
+   "login": "@lmansour",
+   "loginShown": true,
+   "pixelsDifferents": 0.0,
+   "errors": []
+  },
+  {
+   "case": "fiche-sans-pseudo-fenetre-basse-1280x640",
+   "avant": {
+    "title": "Lucía Roca",
+    "login": "Pseudo Intra à renseigner",
+    "loginShown": true,
+    "h1": {
+     "top": 236,
+     "bottom": 265,
+     "h": 29
+    },
+    "hero": {
+     "top": 236,
+     "bottom": 372,
+     "h": 136
+    },
+    "nameToActions": 37,
+    "menu": {
+     "top": 419,
+     "bottom": 504,
+     "h": 85
+    },
+    "density": "compact",
+    "overflow": false
+   },
+   "apres": {
+    "title": "Lucía Roca",
+    "login": "Pseudo Intra à renseigner",
+    "loginShown": false,
+    "h1": {
+     "top": 236,
+     "bottom": 265,
+     "h": 29
+    },
+    "hero": {
+     "top": 236,
+     "bottom": 372,
+     "h": 136
+    },
+    "nameToActions": 37,
+    "menu": {
+     "top": 419,
+     "bottom": 504,
+     "h": 85
+    },
+    "density": "compact",
+    "overflow": false
+   },
+   "errors": []
+  },
+  {
+   "case": "pages-sans-profil-inchangees",
+   "pixelsDifferents": {
+    "projects": 0.0,
+    "journal": 0.0,
+    "explore": 0.0
+   },
+   "errors": []
+  },
+  {
+   "case": "liste-ordinateur-fr",
+   "mesures": {
+    "avant": {
+     "counts": [
+      18,
+      0,
+      0
+     ],
+     "list": {
+      "view": "list",
+      "cards": 24,
+      "heartOverlap": 0,
+      "heights": [
+       137
+      ],
+      "shownPlaceholders": 18,
+      "sample": [
+       {
+        "id": "profile-leila-mansour",
+        "real": true,
+        "placeholder": null,
+        "h": 137,
+        "copyH": 109,
+        "campusTop": 61,
+        "overlap": 0
+       },
+       {
+        "id": "profile-lucia-roca",
+        "real": false,
+        "placeholder": "block",
+        "h": 137,
+        "copyH": 109,
+        "campusTop": 61,
+        "overlap": 0
+       },
+       {
+        "id": "profile-emma-de-smet",
+        "real": false,
+        "placeholder": "block",
+        "h": 137,
+        "copyH": 109,
+        "campusTop": 61,
+        "overlap": 0
+       }
+      ]
+     },
+     "shot": "checks/pseudo-manquant/avant-liste-ordinateur.png",
+     "overflow": false
+    },
+    "apres": {
+     "counts": [
+      0,
+      0,
+      0
+     ],
+     "list": {
+      "view": "list",
+      "cards": 24,
+      "heartOverlap": 0,
+      "heights": [
+       137
+      ],
+      "shownPlaceholders": 0,
+      "sample": [
+       {
+        "id": "profile-leila-mansour",
+        "real": true,
+        "placeholder": null,
+        "h": 137,
+        "copyH": 109,
+        "campusTop": 61,
+        "overlap": 0
+       },
+       {
+        "id": "profile-lucia-roca",
+        "real": false,
+        "placeholder": "none",
+        "h": 137,
+        "copyH": 82,
+        "campusTop": 33,
+        "overlap": 0
+       },
+       {
+        "id": "profile-emma-de-smet",
+        "real": false,
+        "placeholder": "none",
+        "h": 137,
+        "copyH": 82,
+        "campusTop": 33,
+        "overlap": 0
+       }
+      ]
+     },
+     "shot": "checks/pseudo-manquant/apres-liste-ordinateur.png",
+     "overflow": false
+    }
+   },
+   "errors": []
+  },
+  {
+   "case": "liste-mobile-fr",
+   "mesures": {
+    "avant": {
+     "counts": [
+      18,
+      0,
+      0
+     ],
+     "list": {
+      "view": "list",
+      "cards": 24,
+      "heartOverlap": 0,
+      "heights": [
+       113
+      ],
+      "shownPlaceholders": 18,
+      "sample": [
+       {
+        "id": "profile-leila-mansour",
+        "real": true,
+        "placeholder": null,
+        "h": 113,
+        "copyH": 105,
+        "campusTop": 57,
+        "overlap": 0
+       },
+       {
+        "id": "profile-lucia-roca",
+        "real": false,
+        "placeholder": "block",
+        "h": 113,
+        "copyH": 105,
+        "campusTop": 57,
+        "overlap": 0
+       },
+       {
+        "id": "profile-emma-de-smet",
+        "real": false,
+        "placeholder": "block",
+        "h": 113,
+        "copyH": 105,
+        "campusTop": 57,
+        "overlap": 0
+       }
+      ]
+     },
+     "shot": "checks/pseudo-manquant/avant-liste-mobile.png",
+     "overflow": false
+    },
+    "apres": {
+     "counts": [
+      0,
+      0,
+      0
+     ],
+     "list": {
+      "view": "list",
+      "cards": 24,
+      "heartOverlap": 0,
+      "heights": [
+       113
+      ],
+      "shownPlaceholders": 0,
+      "sample": [
+       {
+        "id": "profile-leila-mansour",
+        "real": true,
+        "placeholder": null,
+        "h": 113,
+        "copyH": 105,
+        "campusTop": 57,
+        "overlap": 0
+       },
+       {
+        "id": "profile-lucia-roca",
+        "real": false,
+        "placeholder": "none",
+        "h": 113,
+        "copyH": 78,
+        "campusTop": 29,
+        "overlap": 0
+       },
+       {
+        "id": "profile-emma-de-smet",
+        "real": false,
+        "placeholder": "none",
+        "h": 113,
+        "copyH": 78,
+        "campusTop": 29,
+        "overlap": 0
+       }
+      ]
+     },
+     "shot": "checks/pseudo-manquant/apres-liste-mobile.png",
+     "overflow": false
+    }
+   },
+   "errors": []
+  },
+  {
+   "case": "liste-petit-ecran-ar",
+   "mesures": {
+    "avant": {
+     "counts": [
+      0,
+      0,
+      18
+     ],
+     "list": {
+      "view": "list",
+      "cards": 24,
+      "heartOverlap": 0,
+      "heights": [
+       113,
+       127
+      ],
+      "shownPlaceholders": 18,
+      "sample": [
+       {
+        "id": "profile-leila-mansour",
+        "real": true,
+        "placeholder": null,
+        "h": 113,
+        "copyH": 105,
+        "campusTop": 57,
+        "overlap": 0
+       },
+       {
+        "id": "profile-lucia-roca",
+        "real": false,
+        "placeholder": "block",
+        "h": 127,
+        "copyH": 127,
+        "campusTop": 78,
+        "overlap": 0
+       },
+       {
+        "id": "profile-emma-de-smet",
+        "real": false,
+        "placeholder": "block",
+        "h": 127,
+        "copyH": 127,
+        "campusTop": 78,
+        "overlap": 0
+       }
+      ]
+     },
+     "direction": "rtl",
+     "overflow": false
+    },
+    "apres": {
+     "counts": [
+      0,
+      0,
+      0
+     ],
+     "list": {
+      "view": "list",
+      "cards": 24,
+      "heartOverlap": 0,
+      "heights": [
+       113
+      ],
+      "shownPlaceholders": 0,
+      "sample": [
+       {
+        "id": "profile-leila-mansour",
+        "real": true,
+        "placeholder": null,
+        "h": 113,
+        "copyH": 105,
+        "campusTop": 57,
+        "overlap": 0
+       },
+       {
+        "id": "profile-lucia-roca",
+        "real": false,
+        "placeholder": "none",
+        "h": 113,
+        "copyH": 78,
+        "campusTop": 29,
+        "overlap": 0
+       },
+       {
+        "id": "profile-emma-de-smet",
+        "real": false,
+        "placeholder": "none",
+        "h": 113,
+        "copyH": 78,
+        "campusTop": 29,
+        "overlap": 0
+       }
+      ]
+     },
+     "direction": "rtl",
+     "overflow": false
+    }
+   },
+   "errors": []
+  },
+  {
+   "case": "grille-mobile-ar-sombre",
+   "mesures": {
+    "avant": {
+     "counts": [
+      0,
+      0,
+      18
+     ],
+     "grid": {
+      "visible": true,
+      "view": "grid",
+      "columns": 2,
+      "rows": [
+       {
+        "y": 242,
+        "cards": 2,
+        "realLogins": 2,
+        "placeholders": 0,
+        "states": [],
+        "heights": [
+         243
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 512,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         243
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 781,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         243
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1051,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         243
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1320,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         243
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1589,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         243
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1859,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         243
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 2128,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         243
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 2398,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         243
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 2667,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         243
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 2936,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         243
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 3206,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         243
+        ],
+        "campusTop": [
+         195
+        ]
+       }
+      ],
+      "unequalRows": 0,
+      "unlevelRows": 0,
+      "expected": false
+     },
+     "shot": "checks/pseudo-manquant/avant-sombre-ar-mobile.png",
+     "overflow": false
+    },
+    "apres": {
+     "counts": [
+      0,
+      0,
+      0
+     ],
+     "grid": {
+      "visible": true,
+      "view": "grid",
+      "columns": 2,
+      "rows": [
+       {
+        "y": 242,
+        "cards": 2,
+        "realLogins": 2,
+        "placeholders": 0,
+        "states": [],
+        "heights": [
+         243
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 512,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         243
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 781,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         243
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1051,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         216
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 1292,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         243
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1562,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         216
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 1804,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         243
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 2073,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         216
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 2315,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         216
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 2557,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         216
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 2799,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         216
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 3041,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         216
+        ],
+        "campusTop": [
+         167
+        ]
+       }
+      ],
+      "unequalRows": 0,
+      "unlevelRows": 0,
+      "expected": true
+     },
+     "shot": "checks/pseudo-manquant/apres-sombre-ar-mobile.png",
+     "overflow": false
+    },
+    "diff": {
+     "sameSize": true,
+     "changed": 3200,
+     "inside": 3200,
+     "outside": 0,
+     "boxes": 18
+    }
+   },
+   "errors": []
+  },
+  {
+   "case": "grille-petit-ecran-fr",
+   "mesures": {
+    "avant": {
+     "counts": [
+      18,
+      0,
+      0
+     ],
+     "grid": {
+      "visible": true,
+      "view": "grid",
+      "columns": 2,
+      "rows": [
+       {
+        "y": 228,
+        "cards": 2,
+        "realLogins": 2,
+        "placeholders": 0,
+        "states": [],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 520,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         288
+        ],
+        "campusTop": [
+         195,
+         216
+        ]
+       },
+       {
+        "y": 834,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         288
+        ],
+        "campusTop": [
+         195,
+         216
+        ]
+       },
+       {
+        "y": 1148,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         288
+        ],
+        "campusTop": [
+         216
+        ]
+       },
+       {
+        "y": 1461,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         288
+        ],
+        "campusTop": [
+         195,
+         216
+        ]
+       },
+       {
+        "y": 1775,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         288
+        ],
+        "campusTop": [
+         216
+        ]
+       },
+       {
+        "y": 2089,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         288
+        ],
+        "campusTop": [
+         216,
+         195
+        ]
+       },
+       {
+        "y": 2402,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         288
+        ],
+        "campusTop": [
+         216
+        ]
+       },
+       {
+        "y": 2716,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         288
+        ],
+        "campusTop": [
+         216
+        ]
+       },
+       {
+        "y": 3029,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         288
+        ],
+        "campusTop": [
+         216
+        ]
+       },
+       {
+        "y": 3343,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         288
+        ],
+        "campusTop": [
+         216
+        ]
+       },
+       {
+        "y": 3657,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         288
+        ],
+        "campusTop": [
+         216
+        ]
+       }
+      ],
+      "unequalRows": 0,
+      "unlevelRows": 4,
+      "expected": false
+     },
+     "shot": "checks/pseudo-manquant/avant-petit.png",
+     "overflow": false
+    },
+    "apres": {
+     "counts": [
+      0,
+      0,
+      0
+     ],
+     "grid": {
+      "visible": true,
+      "view": "grid",
+      "columns": 2,
+      "rows": [
+       {
+        "y": 228,
+        "cards": 2,
+        "realLogins": 2,
+        "placeholders": 0,
+        "states": [],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 520,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 812,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1105,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         239
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 1369,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1662,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         239
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 1926,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 2219,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         239
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 2483,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         239
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 2748,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         239
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 3013,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         239
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 3278,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         239
+        ],
+        "campusTop": [
+         167
+        ]
+       }
+      ],
+      "unequalRows": 0,
+      "unlevelRows": 0,
+      "expected": true
+     },
+     "shot": "checks/pseudo-manquant/apres-petit.png",
+     "overflow": false
+    }
+   },
+   "errors": []
+  },
+  {
+   "case": "grille-petit-ecran-en",
+   "mesures": {
+    "avant": {
+     "counts": [
+      0,
+      18,
+      0
+     ],
+     "grid": {
+      "visible": true,
+      "view": "grid",
+      "columns": 2,
+      "rows": [
+       {
+        "y": 228,
+        "cards": 2,
+        "realLogins": 2,
+        "placeholders": 0,
+        "states": [],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 520,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 812,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1105,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1397,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1689,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1981,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 2274,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 2566,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 2858,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 3150,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 3442,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       }
+      ],
+      "unequalRows": 0,
+      "unlevelRows": 0,
+      "expected": false
+     },
+     "overflow": false
+    },
+    "apres": {
+     "counts": [
+      0,
+      0,
+      0
+     ],
+     "grid": {
+      "visible": true,
+      "view": "grid",
+      "columns": 2,
+      "rows": [
+       {
+        "y": 228,
+        "cards": 2,
+        "realLogins": 2,
+        "placeholders": 0,
+        "states": [],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 520,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 812,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1105,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         239
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 1369,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1662,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         239
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 1926,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 2219,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         239
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 2483,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         239
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 2748,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         239
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 3013,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         239
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 3278,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         239
+        ],
+        "campusTop": [
+         167
+        ]
+       }
+      ],
+      "unequalRows": 0,
+      "unlevelRows": 0,
+      "expected": true
+     },
+     "overflow": false
+    }
+   },
+   "errors": []
+  },
+  {
+   "case": "grille-petit-ecran-ar",
+   "mesures": {
+    "avant": {
+     "counts": [
+      0,
+      0,
+      18
+     ],
+     "grid": {
+      "visible": true,
+      "view": "grid",
+      "columns": 2,
+      "rows": [
+       {
+        "y": 228,
+        "cards": 2,
+        "realLogins": 2,
+        "placeholders": 0,
+        "states": [],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 520,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         288
+        ],
+        "campusTop": [
+         195,
+         216
+        ]
+       },
+       {
+        "y": 834,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         288
+        ],
+        "campusTop": [
+         195,
+         216
+        ]
+       },
+       {
+        "y": 1148,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         288
+        ],
+        "campusTop": [
+         216
+        ]
+       },
+       {
+        "y": 1461,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         288
+        ],
+        "campusTop": [
+         195,
+         216
+        ]
+       },
+       {
+        "y": 1775,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         288
+        ],
+        "campusTop": [
+         216
+        ]
+       },
+       {
+        "y": 2089,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         288
+        ],
+        "campusTop": [
+         216,
+         195
+        ]
+       },
+       {
+        "y": 2402,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         288
+        ],
+        "campusTop": [
+         216
+        ]
+       },
+       {
+        "y": 2716,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         288
+        ],
+        "campusTop": [
+         216
+        ]
+       },
+       {
+        "y": 3029,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         288
+        ],
+        "campusTop": [
+         216
+        ]
+       },
+       {
+        "y": 3343,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         288
+        ],
+        "campusTop": [
+         216
+        ]
+       },
+       {
+        "y": 3657,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "visible"
+        ],
+        "heights": [
+         288
+        ],
+        "campusTop": [
+         216
+        ]
+       }
+      ],
+      "unequalRows": 0,
+      "unlevelRows": 4,
+      "expected": false
+     },
+     "overflow": false
+    },
+    "apres": {
+     "counts": [
+      0,
+      0,
+      0
+     ],
+     "grid": {
+      "visible": true,
+      "view": "grid",
+      "columns": 2,
+      "rows": [
+       {
+        "y": 228,
+        "cards": 2,
+        "realLogins": 2,
+        "placeholders": 0,
+        "states": [],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 520,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 812,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1105,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         239
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 1369,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1662,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         239
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 1926,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 2219,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         239
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 2483,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         239
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 2748,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         239
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 3013,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         239
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 3278,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         239
+        ],
+        "campusTop": [
+         167
+        ]
+       }
+      ],
+      "unequalRows": 0,
+      "unlevelRows": 0,
+      "expected": true
+     },
+     "overflow": false
+    }
+   },
+   "errors": []
+  },
+  {
+   "case": "fiche-sans-pseudo-mobile-en",
+   "mesures": {
+    "avant": {
+     "counts": [
+      0,
+      1,
+      0
+     ],
+     "detail": {
+      "title": "Lucía Roca",
+      "login": "Intra login to be added",
+      "loginShown": true,
+      "h1": {
+       "top": 251,
+       "bottom": 283,
+       "h": 32
+      },
+      "hero": {
+       "top": 243,
+       "bottom": 420,
+       "h": 177
+      },
+      "nameToActions": 58,
+      "menu": {
+       "top": 446,
+       "bottom": 514,
+       "h": 68
+      },
+      "density": null,
+      "overflow": false
+     },
+     "shot": "checks/pseudo-manquant/avant-fiche-en-mobile.png",
+     "overflow": false
+    },
+    "apres": {
+     "counts": [
+      0,
+      0,
+      0
+     ],
+     "detail": {
+      "title": "Lucía Roca",
+      "login": "Intra login to be added",
+      "loginShown": false,
+      "h1": {
+       "top": 251,
+       "bottom": 283,
+       "h": 32
+      },
+      "hero": {
+       "top": 243,
+       "bottom": 420,
+       "h": 177
+      },
+      "nameToActions": 58,
+      "menu": {
+       "top": 446,
+       "bottom": 514,
+       "h": 68
+      },
+      "density": null,
+      "overflow": false
+     },
+     "shot": "checks/pseudo-manquant/apres-fiche-en-mobile.png",
+     "overflow": false
+    }
+   },
+   "errors": []
+  },
+  {
+   "case": "fiche-sans-pseudo-petit-ecran-ar",
+   "mesures": {
+    "avant": {
+     "counts": [
+      0,
+      0,
+      1
+     ],
+     "detail": {
+      "title": "لوسيا روكا",
+      "login": "اسم مستخدم Intra غير محدد",
+      "loginShown": true,
+      "h1": {
+       "top": 243,
+       "bottom": 284,
+       "h": 41
+      },
+      "hero": {
+       "top": 235,
+       "bottom": 407,
+       "h": 172
+      },
+      "nameToActions": 41,
+      "menu": {
+       "top": 433,
+       "bottom": 497,
+       "h": 65
+      },
+      "density": null,
+      "overflow": false
+     }
+    },
+    "apres": {
+     "counts": [
+      0,
+      0,
+      0
+     ],
+     "detail": {
+      "title": "لوسيا روكا",
+      "login": "اسم مستخدم Intra غير محدد",
+      "loginShown": false,
+      "h1": {
+       "top": 243,
+       "bottom": 284,
+       "h": 41
+      },
+      "hero": {
+       "top": 235,
+       "bottom": 402,
+       "h": 167
+      },
+      "nameToActions": 36,
+      "menu": {
+       "top": 428,
+       "bottom": 493,
+       "h": 65
+      },
+      "density": null,
+      "overflow": false
+     }
+    }
+   },
+   "errors": []
+  },
+  {
+   "case": "suivi-des-re-rendus",
+   "etapes": [
+    {
+     "etape": "ouverture fr 1440",
+     "counts": [
+      0,
+      0,
+      0
+     ],
+     "grid": {
+      "visible": true,
+      "view": "grid",
+      "columns": 5,
+      "rows": [
+       {
+        "y": 272,
+        "cards": 5,
+        "realLogins": 4,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 573,
+        "cards": 5,
+        "realLogins": 1,
+        "placeholders": 4,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 875,
+        "cards": 5,
+        "realLogins": 1,
+        "placeholders": 4,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 1176,
+        "cards": 5,
+        "realLogins": 0,
+        "placeholders": 5,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         244
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1450,
+        "cards": 4,
+        "realLogins": 0,
+        "placeholders": 4,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         244
+        ],
+        "campusTop": [
+         195
+        ]
+       }
+      ],
+      "unequalRows": 0,
+      "unlevelRows": 0,
+      "expected": true
+     }
+    },
+    {
+     "etape": "langue en sans recharger",
+     "counts": [
+      0,
+      0,
+      0
+     ],
+     "grid": {
+      "visible": true,
+      "view": "grid",
+      "columns": 5,
+      "rows": [
+       {
+        "y": 272,
+        "cards": 5,
+        "realLogins": 4,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 573,
+        "cards": 5,
+        "realLogins": 1,
+        "placeholders": 4,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 875,
+        "cards": 5,
+        "realLogins": 1,
+        "placeholders": 4,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 1176,
+        "cards": 5,
+        "realLogins": 0,
+        "placeholders": 5,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         244
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1450,
+        "cards": 4,
+        "realLogins": 0,
+        "placeholders": 4,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         244
+        ],
+        "campusTop": [
+         195
+        ]
+       }
+      ],
+      "unequalRows": 0,
+      "unlevelRows": 0,
+      "expected": true
+     }
+    },
+    {
+     "etape": "langue ar sans recharger",
+     "counts": [
+      0,
+      0,
+      0
+     ],
+     "grid": {
+      "visible": true,
+      "view": "grid",
+      "columns": 5,
+      "rows": [
+       {
+        "y": 282,
+        "cards": 5,
+        "realLogins": 4,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 583,
+        "cards": 5,
+        "realLogins": 1,
+        "placeholders": 4,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 885,
+        "cards": 5,
+        "realLogins": 1,
+        "placeholders": 4,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 1186,
+        "cards": 5,
+        "realLogins": 0,
+        "placeholders": 5,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         244
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1460,
+        "cards": 4,
+        "realLogins": 0,
+        "placeholders": 4,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         244
+        ],
+        "campusTop": [
+         195
+        ]
+       }
+      ],
+      "unequalRows": 0,
+      "unlevelRows": 0,
+      "expected": true
+     }
+    },
+    {
+     "etape": "langue fr sans recharger",
+     "counts": [
+      0,
+      0,
+      0
+     ],
+     "grid": {
+      "visible": true,
+      "view": "grid",
+      "columns": 5,
+      "rows": [
+       {
+        "y": 272,
+        "cards": 5,
+        "realLogins": 4,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 573,
+        "cards": 5,
+        "realLogins": 1,
+        "placeholders": 4,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 875,
+        "cards": 5,
+        "realLogins": 1,
+        "placeholders": 4,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 1176,
+        "cards": 5,
+        "realLogins": 0,
+        "placeholders": 5,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         244
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1450,
+        "cards": 4,
+        "realLogins": 0,
+        "placeholders": 4,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         244
+        ],
+        "campusTop": [
+         195
+        ]
+       }
+      ],
+      "unequalRows": 0,
+      "unlevelRows": 0,
+      "expected": true
+     }
+    },
+    {
+     "etape": "tri plus anciens",
+     "counts": [
+      0,
+      0,
+      0
+     ],
+     "grid": {
+      "visible": true,
+      "view": "grid",
+      "columns": 5,
+      "rows": [
+       {
+        "y": 272,
+        "cards": 5,
+        "realLogins": 0,
+        "placeholders": 5,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         244
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 546,
+        "cards": 5,
+        "realLogins": 0,
+        "placeholders": 5,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         244
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 820,
+        "cards": 5,
+        "realLogins": 0,
+        "placeholders": 5,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         244
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1094,
+        "cards": 5,
+        "realLogins": 0,
+        "placeholders": 5,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         244
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1368,
+        "cards": 4,
+        "realLogins": 0,
+        "placeholders": 4,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         244
+        ],
+        "campusTop": [
+         195
+        ]
+       }
+      ],
+      "unequalRows": 0,
+      "unlevelRows": 0,
+      "expected": true
+     }
+    },
+    {
+     "etape": "tri plus récents",
+     "counts": [
+      0,
+      0,
+      0
+     ],
+     "grid": {
+      "visible": true,
+      "view": "grid",
+      "columns": 5,
+      "rows": [
+       {
+        "y": 272,
+        "cards": 5,
+        "realLogins": 4,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 573,
+        "cards": 5,
+        "realLogins": 1,
+        "placeholders": 4,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 875,
+        "cards": 5,
+        "realLogins": 1,
+        "placeholders": 4,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 1176,
+        "cards": 5,
+        "realLogins": 0,
+        "placeholders": 5,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         244
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1450,
+        "cards": 4,
+        "realLogins": 0,
+        "placeholders": 4,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         244
+        ],
+        "campusTop": [
+         195
+        ]
+       }
+      ],
+      "unequalRows": 0,
+      "unlevelRows": 0,
+      "expected": true
+     }
+    },
+    {
+     "etape": "largeur 390",
+     "counts": [
+      0,
+      0,
+      0
+     ],
+     "grid": {
+      "visible": true,
+      "view": "grid",
+      "columns": 2,
+      "rows": [
+       {
+        "y": 242,
+        "cards": 2,
+        "realLogins": 2,
+        "placeholders": 0,
+        "states": [],
+        "heights": [
+         243
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 512,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         243
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 781,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         243
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1051,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         216
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 1292,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         243
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1562,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         216
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 1804,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         243
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 2073,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         216
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 2315,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         216
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 2557,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         216
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 2799,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         216
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 3041,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         216
+        ],
+        "campusTop": [
+         167
+        ]
+       }
+      ],
+      "unequalRows": 0,
+      "unlevelRows": 0,
+      "expected": true
+     }
+    },
+    {
+     "etape": "largeur 320",
+     "counts": [
+      0,
+      0,
+      0
+     ],
+     "grid": {
+      "visible": true,
+      "view": "grid",
+      "columns": 2,
+      "rows": [
+       {
+        "y": 228,
+        "cards": 2,
+        "realLogins": 2,
+        "placeholders": 0,
+        "states": [],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 520,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 812,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1105,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         239
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 1369,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1662,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         239
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 1926,
+        "cards": 2,
+        "realLogins": 1,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         266
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 2219,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         239
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 2483,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         239
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 2748,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         239
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 3013,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         239
+        ],
+        "campusTop": [
+         167
+        ]
+       },
+       {
+        "y": 3278,
+        "cards": 2,
+        "realLogins": 0,
+        "placeholders": 2,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         239
+        ],
+        "campusTop": [
+         167
+        ]
+       }
+      ],
+      "unequalRows": 0,
+      "unlevelRows": 0,
+      "expected": true
+     }
+    },
+    {
+     "etape": "largeur 1024",
+     "counts": [
+      0,
+      0,
+      0
+     ],
+     "grid": {
+      "visible": true,
+      "view": "grid",
+      "columns": 4,
+      "rows": [
+       {
+        "y": 256,
+        "cards": 4,
+        "realLogins": 3,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         260
+        ],
+        "campusTop": [
+         212
+        ]
+       },
+       {
+        "y": 546,
+        "cards": 4,
+        "realLogins": 1,
+        "placeholders": 3,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         260
+        ],
+        "campusTop": [
+         212
+        ]
+       },
+       {
+        "y": 836,
+        "cards": 4,
+        "realLogins": 1,
+        "placeholders": 3,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         260
+        ],
+        "campusTop": [
+         212
+        ]
+       },
+       {
+        "y": 1127,
+        "cards": 4,
+        "realLogins": 1,
+        "placeholders": 3,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         260
+        ],
+        "campusTop": [
+         212
+        ]
+       },
+       {
+        "y": 1417,
+        "cards": 4,
+        "realLogins": 0,
+        "placeholders": 4,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         233
+        ],
+        "campusTop": [
+         184
+        ]
+       },
+       {
+        "y": 1680,
+        "cards": 4,
+        "realLogins": 0,
+        "placeholders": 4,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         233
+        ],
+        "campusTop": [
+         184
+        ]
+       }
+      ],
+      "unequalRows": 0,
+      "unlevelRows": 0,
+      "expected": true
+     }
+    },
+    {
+     "etape": "largeur 1440",
+     "counts": [
+      0,
+      0,
+      0
+     ],
+     "grid": {
+      "visible": true,
+      "view": "grid",
+      "columns": 5,
+      "rows": [
+       {
+        "y": 272,
+        "cards": 5,
+        "realLogins": 4,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 573,
+        "cards": 5,
+        "realLogins": 1,
+        "placeholders": 4,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 875,
+        "cards": 5,
+        "realLogins": 1,
+        "placeholders": 4,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 1176,
+        "cards": 5,
+        "realLogins": 0,
+        "placeholders": 5,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         244
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1450,
+        "cards": 4,
+        "realLogins": 0,
+        "placeholders": 4,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         244
+        ],
+        "campusTop": [
+         195
+        ]
+       }
+      ],
+      "unequalRows": 0,
+      "unlevelRows": 0,
+      "expected": true
+     }
+    },
+    {
+     "etape": "clic vers la fiche de Lucía Roca",
+     "detail": {
+      "title": "Lucía Roca",
+      "login": "Pseudo Intra à renseigner",
+      "loginShown": false,
+      "h1": {
+       "top": 362,
+       "bottom": 403,
+       "h": 41
+      },
+      "hero": {
+       "top": 236,
+       "bottom": 512,
+       "h": 276
+      },
+      "nameToActions": 28,
+      "menu": {
+       "top": 540,
+       "bottom": 771,
+       "h": 231
+      },
+      "density": null,
+      "overflow": false,
+      "counts": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "etape": "retour à l’annuaire",
+     "counts": [
+      0,
+      0,
+      0
+     ],
+     "grid": {
+      "visible": true,
+      "view": "grid",
+      "columns": 5,
+      "rows": [
+       {
+        "y": 272,
+        "cards": 5,
+        "realLogins": 4,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 573,
+        "cards": 5,
+        "realLogins": 1,
+        "placeholders": 4,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 875,
+        "cards": 5,
+        "realLogins": 1,
+        "placeholders": 4,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 1176,
+        "cards": 5,
+        "realLogins": 0,
+        "placeholders": 5,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         244
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1450,
+        "cards": 4,
+        "realLogins": 0,
+        "placeholders": 4,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         244
+        ],
+        "campusTop": [
+         195
+        ]
+       }
+      ],
+      "unequalRows": 0,
+      "unlevelRows": 0,
+      "expected": true
+     }
+    },
+    {
+     "etape": "présentation liste",
+     "counts": [
+      0,
+      0,
+      0
+     ],
+     "list": {
+      "view": "list",
+      "cards": 24,
+      "heartOverlap": 0,
+      "heights": [
+       137
+      ],
+      "shownPlaceholders": 0,
+      "sample": [
+       {
+        "id": "profile-leila-mansour",
+        "real": true,
+        "placeholder": null,
+        "h": 137,
+        "copyH": 109,
+        "campusTop": 61,
+        "overlap": 0
+       },
+       {
+        "id": "profile-lucia-roca",
+        "real": false,
+        "placeholder": "none",
+        "h": 137,
+        "copyH": 82,
+        "campusTop": 33,
+        "overlap": 0
+       },
+       {
+        "id": "profile-emma-de-smet",
+        "real": false,
+        "placeholder": "none",
+        "h": 137,
+        "copyH": 82,
+        "campusTop": 33,
+        "overlap": 0
+       }
+      ]
+     }
+    },
+    {
+     "etape": "retour en grille",
+     "counts": [
+      0,
+      0,
+      0
+     ],
+     "grid": {
+      "visible": true,
+      "view": "grid",
+      "columns": 5,
+      "rows": [
+       {
+        "y": 272,
+        "cards": 5,
+        "realLogins": 4,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 573,
+        "cards": 5,
+        "realLogins": 1,
+        "placeholders": 4,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 875,
+        "cards": 5,
+        "realLogins": 1,
+        "placeholders": 4,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 1176,
+        "cards": 5,
+        "realLogins": 0,
+        "placeholders": 5,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         244
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1450,
+        "cards": 4,
+        "realLogins": 0,
+        "placeholders": 4,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         244
+        ],
+        "campusTop": [
+         195
+        ]
+       }
+      ],
+      "unequalRows": 0,
+      "unlevelRows": 0,
+      "expected": true
+     }
+    },
+    {
+     "etape": "thème sombre par le menu du compte",
+     "counts": [
+      0,
+      0,
+      0
+     ],
+     "grid": {
+      "visible": true,
+      "view": "grid",
+      "columns": 5,
+      "rows": [
+       {
+        "y": 272,
+        "cards": 5,
+        "realLogins": 4,
+        "placeholders": 1,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 573,
+        "cards": 5,
+        "realLogins": 1,
+        "placeholders": 4,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 875,
+        "cards": 5,
+        "realLogins": 1,
+        "placeholders": 4,
+        "states": [
+         "reserve"
+        ],
+        "heights": [
+         271
+        ],
+        "campusTop": [
+         223
+        ]
+       },
+       {
+        "y": 1176,
+        "cards": 5,
+        "realLogins": 0,
+        "placeholders": 5,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         244
+        ],
+        "campusTop": [
+         195
+        ]
+       },
+       {
+        "y": 1450,
+        "cards": 4,
+        "realLogins": 0,
+        "placeholders": 4,
+        "states": [
+         "replie"
+        ],
+        "heights": [
+         244
+        ],
+        "campusTop": [
+         195
+        ]
+       }
+      ],
+      "unequalRows": 0,
+      "unlevelRows": 0,
+      "expected": true
+     }
+    }
+   ],
+   "errors": []
+  },
+  {
+   "case": "chargement-tri-par-defaut",
+   "avant-ordinateur": {
+    "somme": 0.0776,
+    "decalages": [
+     {
+      "value": 5.2347902734910835e-06,
+      "time": 69,
+      "sources": [
+       "BUTTON"
+      ],
+      "inGrid": false
+     },
+     {
+      "value": 0.07762662760416666,
+      "time": 188,
+      "sources": [
+       "content-sheet",
+       "utilities"
+      ],
+      "inGrid": false
+     }
+    ],
+    "grille": [
+     {
+      "y": 272,
+      "cards": 5,
+      "realLogins": 4,
+      "placeholders": 1,
+      "states": [
+       "visible"
+      ],
+      "heights": [
+       271
+      ],
+      "campusTop": [
+       223
+      ]
+     },
+     {
+      "y": 573,
+      "cards": 5,
+      "realLogins": 1,
+      "placeholders": 4,
+      "states": [
+       "visible"
+      ],
+      "heights": [
+       271
+      ],
+      "campusTop": [
+       223
+      ]
+     },
+     {
+      "y": 875,
+      "cards": 5,
+      "realLogins": 1,
+      "placeholders": 4,
+      "states": [
+       "visible"
+      ],
+      "heights": [
+       271
+      ],
+      "campusTop": [
+       223
+      ]
+     }
+    ]
+   },
+   "apres-ordinateur": {
+    "somme": 0.0776,
+    "decalages": [
+     {
+      "value": 0.07762662760416666,
+      "time": 72,
+      "sources": [
+       "content-sheet",
+       "utilities"
+      ],
+      "inGrid": false
+     }
+    ],
+    "grille": [
+     {
+      "y": 272,
+      "cards": 5,
+      "realLogins": 4,
+      "placeholders": 1,
+      "states": [
+       "reserve"
+      ],
+      "heights": [
+       271
+      ],
+      "campusTop": [
+       223
+      ]
+     },
+     {
+      "y": 573,
+      "cards": 5,
+      "realLogins": 1,
+      "placeholders": 4,
+      "states": [
+       "reserve"
+      ],
+      "heights": [
+       271
+      ],
+      "campusTop": [
+       223
+      ]
+     },
+     {
+      "y": 875,
+      "cards": 5,
+      "realLogins": 1,
+      "placeholders": 4,
+      "states": [
+       "reserve"
+      ],
+      "heights": [
+       271
+      ],
+      "campusTop": [
+       223
+      ]
+     }
+    ]
+   },
+   "avant-mobile": {
+    "somme": 0.0954,
+    "decalages": [
+     {
+      "value": 0.09540200373246506,
+      "time": 73,
+      "sources": [
+       "content-sheet",
+       "utilities"
+      ],
+      "inGrid": false
+     }
+    ],
+    "grille": [
+     {
+      "y": 242,
+      "cards": 2,
+      "realLogins": 2,
+      "placeholders": 0,
+      "states": [],
+      "heights": [
+       243
+      ],
+      "campusTop": [
+       195
+      ]
+     },
+     {
+      "y": 512,
+      "cards": 2,
+      "realLogins": 1,
+      "placeholders": 1,
+      "states": [
+       "visible"
+      ],
+      "heights": [
+       243
+      ],
+      "campusTop": [
+       195
+      ]
+     },
+     {
+      "y": 781,
+      "cards": 2,
+      "realLogins": 1,
+      "placeholders": 1,
+      "states": [
+       "visible"
+      ],
+      "heights": [
+       243
+      ],
+      "campusTop": [
+       195
+      ]
+     }
+    ]
+   },
+   "apres-mobile": {
+    "somme": 0.0954,
+    "decalages": [
+     {
+      "value": 0.09540200373246506,
+      "time": 81,
+      "sources": [
+       "content-sheet",
+       "utilities"
+      ],
+      "inGrid": false
+     }
+    ],
+    "grille": [
+     {
+      "y": 242,
+      "cards": 2,
+      "realLogins": 2,
+      "placeholders": 0,
+      "states": [],
+      "heights": [
+       243
+      ],
+      "campusTop": [
+       195
+      ]
+     },
+     {
+      "y": 512,
+      "cards": 2,
+      "realLogins": 1,
+      "placeholders": 1,
+      "states": [
+       "reserve"
+      ],
+      "heights": [
+       243
+      ],
+      "campusTop": [
+       195
+      ]
+     },
+     {
+      "y": 781,
+      "cards": 2,
+      "realLogins": 1,
+      "placeholders": 1,
+      "states": [
+       "reserve"
+      ],
+      "heights": [
+       243
+      ],
+      "campusTop": [
+       195
+      ]
+     }
+    ]
+   },
+   "errors": []
+  },
+  {
+   "case": "chargement-tri-plus-anciens",
+   "avant-ordinateur": {
+    "somme": 0.0776,
+    "decalages": [
+     {
+      "value": 0.07762662760416666,
+      "time": 101,
+      "sources": [
+       "content-sheet",
+       "utilities"
+      ],
+      "inGrid": false
+     }
+    ],
+    "grille": [
+     {
+      "y": 272,
+      "cards": 5,
+      "realLogins": 0,
+      "placeholders": 5,
+      "states": [
+       "visible"
+      ],
+      "heights": [
+       271
+      ],
+      "campusTop": [
+       223
+      ]
+     },
+     {
+      "y": 573,
+      "cards": 5,
+      "realLogins": 0,
+      "placeholders": 5,
+      "states": [
+       "visible"
+      ],
+      "heights": [
+       271
+      ],
+      "campusTop": [
+       223
+      ]
+     },
+     {
+      "y": 875,
+      "cards": 5,
+      "realLogins": 0,
+      "placeholders": 5,
+      "states": [
+       "visible"
+      ],
+      "heights": [
+       271
+      ],
+      "campusTop": [
+       223
+      ]
+     }
+    ]
+   },
+   "apres-ordinateur": {
+    "somme": 0.0776,
+    "decalages": [
+     {
+      "value": 0.07762662760416666,
+      "time": 73,
+      "sources": [
+       "content-sheet",
+       "utilities"
+      ],
+      "inGrid": false
+     }
+    ],
+    "grille": [
+     {
+      "y": 272,
+      "cards": 5,
+      "realLogins": 0,
+      "placeholders": 5,
+      "states": [
+       "replie"
+      ],
+      "heights": [
+       244
+      ],
+      "campusTop": [
+       195
+      ]
+     },
+     {
+      "y": 546,
+      "cards": 5,
+      "realLogins": 0,
+      "placeholders": 5,
+      "states": [
+       "replie"
+      ],
+      "heights": [
+       244
+      ],
+      "campusTop": [
+       195
+      ]
+     },
+     {
+      "y": 820,
+      "cards": 5,
+      "realLogins": 0,
+      "placeholders": 5,
+      "states": [
+       "replie"
+      ],
+      "heights": [
+       244
+      ],
+      "campusTop": [
+       195
+      ]
+     }
+    ]
+   },
+   "avant-mobile": {
+    "somme": 0.0954,
+    "decalages": [
+     {
+      "value": 0.09540200373246506,
+      "time": 86,
+      "sources": [
+       "content-sheet",
+       "utilities"
+      ],
+      "inGrid": false
+     }
+    ],
+    "grille": [
+     {
+      "y": 242,
+      "cards": 2,
+      "realLogins": 0,
+      "placeholders": 2,
+      "states": [
+       "visible"
+      ],
+      "heights": [
+       243
+      ],
+      "campusTop": [
+       195
+      ]
+     },
+     {
+      "y": 512,
+      "cards": 2,
+      "realLogins": 0,
+      "placeholders": 2,
+      "states": [
+       "visible"
+      ],
+      "heights": [
+       243
+      ],
+      "campusTop": [
+       195
+      ]
+     },
+     {
+      "y": 781,
+      "cards": 2,
+      "realLogins": 0,
+      "placeholders": 2,
+      "states": [
+       "visible"
+      ],
+      "heights": [
+       243
+      ],
+      "campusTop": [
+       195
+      ]
+     }
+    ]
+   },
+   "apres-mobile": {
+    "somme": 0.0954,
+    "decalages": [
+     {
+      "value": 0.09540200373246506,
+      "time": 91,
+      "sources": [
+       "content-sheet",
+       "utilities"
+      ],
+      "inGrid": false
+     }
+    ],
+    "grille": [
+     {
+      "y": 242,
+      "cards": 2,
+      "realLogins": 0,
+      "placeholders": 2,
+      "states": [
+       "replie"
+      ],
+      "heights": [
+       216
+      ],
+      "campusTop": [
+       167
+      ]
+     },
+     {
+      "y": 484,
+      "cards": 2,
+      "realLogins": 0,
+      "placeholders": 2,
+      "states": [
+       "replie"
+      ],
+      "heights": [
+       216
+      ],
+      "campusTop": [
+       167
+      ]
+     },
+     {
+      "y": 726,
+      "cards": 2,
+      "realLogins": 0,
+      "placeholders": 2,
+      "states": [
+       "replie"
+      ],
+      "heights": [
+       216
+      ],
+      "campusTop": [
+       167
+      ]
+     }
+    ]
+   },
+   "errors": []
+  }
+ ],
+ "acceptation": {
+  "casMesures": 19,
+  "exceptions": [],
+  "placeholdersVisiblesAvant": 165,
+  "texteAbsentFrEnAr": true,
+  "hauteursEgalesParRangee": true,
+  "etatAttenduParRangee": true,
+  "rangeesDesaligneesAvantApres": [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    0
+   ],
+   [
+    4,
+    0
+   ],
+   [
+    0,
+    0
+   ],
+   [
+    4,
+    0
+   ]
+  ],
+  "listeSansChevauchementDuCoeur": true,
+  "fichesSansPseudoAffiche": true,
+  "vraisPseudosConserves": true,
+  "autresPagesInchangees": true,
+  "ordreClavierIdentique": true,
+  "ligneAbsenteDeLArbreAccessible": true,
+  "aucunDecalageDesCartesAuChargement": true,
+  "aucuneErreur": true
+ }
+}

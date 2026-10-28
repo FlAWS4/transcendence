@@ -1,0 +1,82 @@
+/* Keep the map laid out and preparing behind the entrance; never display:none. */
+body:not([data-entry=welcome]) #main{visibility:hidden;pointer-events:none}
+body:not([data-entry=welcome]) .brand,body:not([data-entry=welcome]) #about{visibility:hidden}
+/* Keep map diagnostics out of the arrival. */
+body:not([data-entry=welcome]) #globe-perf-panel{display:none}
+/* Arrival has its own background theme control; the account stays available on
+   the map error screen, where that control is inactive, and returns after entry. */
+body:not([data-entry=welcome]):not([data-entry=error]) .account-switcher{display:none}
+.entrance{position:fixed;inset:0;z-index:8;background:var(--h42-color-bg);overflow:hidden}
+.entrance-veil{position:absolute;inset:0;background:var(--h42-color-bg);pointer-events:none}
+.entrance-veil[hidden]{display:none}
+body[data-entry=revealing] #main{visibility:visible}
+body[data-entry=revealing] #main>:not(#explorer){visibility:hidden}
+.entrance[hidden]{display:none}
+.entrance-scene{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(1100px,calc(100% - 96px));height:320px;direction:ltr}
+.entrance-access{position:absolute;top:calc(50% + 155px);left:50%;transform:translateX(-50%);display:flex;align-items:center;justify-content:center;gap:24px;width:max-content;max-width:calc(100% - 48px)}
+.entrance-access[hidden]{display:none}
+.entrance-action{min-height:52px;padding:14px 28px;border:1px solid var(--h42-color-action-quiet);border-radius:14px;background:var(--h42-color-action-quiet);color:var(--h42-color-bg);font-size:17px;transition:transform .2s,background .2s}
+.entrance-action:hover{transform:translateY(-2px)}
+.entrance-action.secondary{background:transparent;color:var(--h42-color-action-quiet);border-color:transparent}
+.entrance-status{position:absolute;top:calc(50% + 150px);inset-inline:24px;text-align:center;color:var(--h42-color-muted);font-size:15px}
+.entrance-status[hidden]{display:none}
+.entrance-symbol{position:absolute;left:50%;top:50%;width:200px;height:200px;transform:translate(-50%,-50%);display:grid;place-items:center}
+.entrance-symbol[hidden]{display:none}
+.entrance-logo{display:grid;place-items:center}
+.entrance-symbol img{width:128px;height:auto}
+[data-theme=dark] .entrance-symbol img{filter:invert(1)}
+.entrance-ring{position:absolute;inset:0;width:100%;height:100%;color:var(--h42-teal);transform:rotate(-90deg)}
+.entrance-ring circle{fill:none;stroke:currentColor;stroke-width:1;stroke-dasharray:100;stroke-dashoffset:100}
+.entry-diagnostics{position:fixed;bottom:8px;inset-inline-start:8px;z-index:30;max-width:calc(100% - 16px);max-height:140px;overflow:auto;font:10px monospace;white-space:pre-wrap;padding:8px;background:var(--h42-color-surface);color:var(--h42-color-text);border:1px solid var(--warm-line);border-radius:8px}
+body[data-entry=welcome] .entry-diagnostics{display:none}
+@media(max-width:700px){
+ .entrance-scene{width:calc(100% - 48px);height:240px}
+ .entrance-access{top:calc(50% + 130px);width:calc(100% - 48px);flex-direction:column;gap:12px}
+ .entrance-action{width:100%;font-size:16px}
+ .entrance-status{top:calc(50% + 115px)}
+ .entrance-symbol{width:174px;height:174px}.entrance-symbol img{width:112px}
+}
+@media(max-height:600px){.entrance-scene{top:43%;height:200px}.entrance-access{top:calc(43% + 100px);flex-direction:row;gap:10px}.entrance-action{min-height:44px;padding:10px 16px}.entrance-status{top:calc(43% + 95px)}}
+@media(prefers-reduced-motion:reduce){.entrance-action{transition:none}}
+
+/* Match the light welcome surfaces without changing the selected animation. */
+:root[data-theme=light] :is(.entrance,.entrance-veil){background:radial-gradient(ellipse at 74% 46%,#00BABC0B,transparent 48%),radial-gradient(ellipse at 22% 86%,#EC339108,transparent 39%),linear-gradient(145deg,#FFFFFF 8%,#F7FAFA 78%)}
+:root[data-theme=light] .entrance-action{background:var(--h42-ink);border-color:var(--h42-ink);color:#FFFFFF;box-shadow:0 7px 20px #1B1B1B12}
+:root[data-theme=light] .entrance-action:hover{background:#303D3D;border-color:#303D3D}
+:root[data-theme=light] .entrance-action.secondary{background:#FFFFFF;color:var(--h42-ink);border-color:#DCE5E5;box-shadow:0 3px 12px #183D3C06}
+:root[data-theme=light] .entrance-action.secondary:hover{background:#EAF5F4;border-color:#BCDCD9}
+
+/* Colour only the requested sign-in actions and the shared World control. */
+:root{--h42-access-accent:var(--h42-teal)}
+:root[data-theme=dark]{--h42-access-accent:var(--h42-pink)}
+:root :is(#entry-login,[data-account-action=signin],#dialog[data-kind=login] #dialog-content>button:first-of-type){background:var(--h42-access-accent);border-color:var(--h42-access-accent);color:var(--h42-ink)}
+:root :is(#entry-login,[data-account-action=signin],#dialog[data-kind=login] #dialog-content>button:first-of-type):hover{background:var(--h42-access-accent);border-color:var(--h42-access-accent)}
+:root [data-account-action=signin]:focus-visible{outline-color:var(--h42-ink)}
+/* Dark secondary actions mirror the light ones: white text where light uses ink (15 Oct). */
+:root[data-theme=dark] :is(#entry-guest,[data-account-action=signup]){color:var(--h42-white)}
+/* On the account glass, the charter ink behind Create an account mirrors its white light container. */
+:root[data-theme=dark] [data-account-action=signup]{background:var(--h42-ink)}
+
+/* Equal sizes for the entrance pair, preserving its desktop/mobile placement. */
+.entrance-access:has(#entry-login){display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+/* All translations reserve the same intrinsic label box; only visible text moves. */
+.entrance-action-labels{display:grid;place-items:center;line-height:1.25}
+.entrance-action-labels>span{grid-area:1/1;white-space:nowrap}
+.entrance-action-measure{visibility:hidden;pointer-events:none}
+.entrance-action-label-outgoing{pointer-events:none}
+@media(max-width:700px){.entrance-access:has(#entry-login){grid-template-columns:1fr}}
+@media(max-height:600px){.entrance-access:has(#entry-login){grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* The active entrance alone follows the dark theme during both cipher phases. */
+:root[data-theme=dark] .entrance-scene{--h42-color-accent:var(--h42-pink)}
+
+.entrance-theme-toggle{position:absolute;inset:0;z-index:1;width:100%;height:100%;padding:0;border:0;border-radius:0;background:transparent}
+.entrance-theme-toggle:focus-visible{outline:2px solid var(--h42-color-focus);outline-offset:-6px}
+.entrance-scene{z-index:2;pointer-events:none}
+.entrance-access{z-index:3;pointer-events:none}
+.entrance-access button{pointer-events:auto}
+
+/* Failed map loading is a short message followed by three reachable actions. */
+body[data-entry=error] .entrance{display:flex;flex-direction:column;align-items:center;justify-content:safe center;gap:24px;box-sizing:border-box;padding:100px 24px 32px;overflow:auto}
+body[data-entry=error] .entrance-status{position:static;order:0;margin:0;max-width:640px;line-height:1.6}
+body[data-entry=error] .entrance-access{position:static;order:1;transform:none;width:min(760px,100%);max-width:100%;flex-wrap:wrap}

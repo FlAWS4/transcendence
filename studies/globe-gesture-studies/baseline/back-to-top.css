@@ -1,0 +1,26 @@
+/* Mobile document shortcut, above the full dock/search/discovery group. */
+.back-to-top { display: none; }
+@media (max-width: 840px) {
+ .app[data-navigation=dock] > .back-to-top:not([hidden]) {
+  position: fixed; z-index: 19; display: inline-flex; align-items: center; justify-content: center;
+  inset-inline-end: max(16px,env(safe-area-inset-right,0px));
+  bottom: calc(var(--dock-bottom,16px) + var(--dock-height,60px) + 69px);
+  width: 44px; height: 44px; padding: 10px; border: 1px solid var(--control-glass-edge,var(--warm-line)); border-radius: 50%;
+  color: var(--readable-glass-muted,var(--h42-color-muted)); background: var(--control-glass-surface,var(--h42-color-surface));
+  box-shadow: var(--control-glass-shadow,var(--shadow)); -webkit-backdrop-filter: blur(24px) saturate(1.15); backdrop-filter: blur(24px) saturate(1.15);
+  opacity: 1; transition: opacity 350ms ease;
+ }
+ /* Use the dock's own state and keyboard exception; no second idle timer. */
+ .app[data-navigation=dock]:not([data-menu-scroll-study=background]):has(.dock-shell[data-document-scrolling=true]:not([data-search-open=true])):not(:has(.dock-shell :focus-visible)) > .back-to-top:not(:focus-visible) {
+  opacity: 0; pointer-events: none; transition-duration: 220ms;
+ }
+ .app[data-navigation=dock] > .back-to-top:focus-visible,
+ .app[data-navigation=dock]:has(.dock-shell :focus-visible) > .back-to-top { transition: none; }
+ [dir=rtl] .app[data-navigation=dock] > .back-to-top:not([hidden]) { inset-inline-end: max(16px,env(safe-area-inset-left,0px)); }
+ .back-to-top svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+ .back-to-top:hover { color: var(--cp-accent,var(--h42-color-text)); }
+ .back-to-top:focus-visible { outline: 2px solid var(--h42-color-focus); outline-offset: 3px; }
+}
+@media (prefers-reduced-motion: reduce) {
+ .app[data-navigation=dock] > .back-to-top:not([hidden]) { transition: none; }
+}

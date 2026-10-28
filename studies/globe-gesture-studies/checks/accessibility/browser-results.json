@@ -1,0 +1,130 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "ready-1",
+      "result": {
+        "study": {
+          "variant": "1",
+          "open": false,
+          "pinned": false,
+          "available": true,
+          "reason": "",
+          "hold": false
+        },
+        "canvas": 1,
+        "overflow": false
+      }
+    },
+    {
+      "case": "target-dimensions",
+      "result": [
+        {
+          "name": "Revenir au Monde",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "name": "Commandes du globe",
+          "w": 144,
+          "h": 49.1875
+        },
+        {
+          "name": "Fermer les commandes",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "name": "Dézoomer",
+          "w": 54,
+          "h": 48
+        },
+        {
+          "name": "Revenir au monde",
+          "w": 54,
+          "h": 48
+        },
+        {
+          "name": "Zoomer",
+          "w": 54,
+          "h": 48
+        },
+        {
+          "name": "Déplacer la vue vers la gauche",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "name": "Déplacer la vue vers le haut",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "name": "Déplacer la vue vers le bas",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "name": "Déplacer la vue vers la droite",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "name": "Toujours afficher les commandes",
+          "w": 248,
+          "h": 44
+        }
+      ]
+    },
+    {
+      "case": "reduced-motion",
+      "result": true
+    },
+    {
+      "case": "french-320",
+      "result": true
+    },
+    {
+      "case": "account-isolation",
+      "result": true
+    },
+    {
+      "case": "arabic-320",
+      "result": true
+    },
+    {
+      "case": "dark-theme",
+      "result": true
+    },
+    {
+      "case": "landscape-world-visible",
+      "result": true
+    },
+    {
+      "case": "english-labels",
+      "result": true
+    },
+    {
+      "case": "accessibility-tree-names",
+      "result": [
+        "Globe controls",
+        "Close controls",
+        "Move the view left",
+        "Move the view up",
+        "Move the view down",
+        "Move the view right",
+        "Back to World",
+        "World · Choose a country or campus"
+      ]
+    },
+    {
+      "case": "pinned-after-reload",
+      "result": true
+    }
+  ],
+  "sources": {
+    "study.mjs": "62b0681938fada3eb538b3a0311366ae0dab844b2b42453687a2ee3d484983a1",
+    "study.css": "7e0b82cb75831de8e6073dab932c2b58bf7e7c3b896fc6cdc1985d1f84cb85c7",
+    "press-gesture.mjs": "8cd4604022dee043f760d9677f520994d8a7ef20bb296f12b352469c7065044c"
+  }
+}

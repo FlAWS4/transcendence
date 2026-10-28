@@ -1,0 +1,173 @@
+{
+  "id": "lisibilite-textes",
+  "groupe": "Typographie, lisibilité et pages",
+  "titre": "Textes plus lisibles",
+  "resume": "Les petits textes utiles ne descendent plus sous 13 px et les petites actions (Favoris, Signaler, Envoyer un message, Explorer un campus…) passent à 14 px ; les petits textes en couleur d’accent prennent l’accent lisible déjà présent dans le site (#0C7677 en clair, #F485BD en sombre).",
+  "probleme": "Audit du 14 octobre : 41 % des textes visibles entre 11 et 12 px ; Favoris et Signaler à 11 px ; noms de campus et liens #008E90 sur #F7FAFA à 3,80:1, pastilles de statut (Cadet, Alumni, Transcender) #008E90 sur blanc à 3,98:1 ; en sombre, pastilles Royal Pink sur #202026 à 4,24:1 en 11 px (il faut 4,5:1 à ces tailles). Refait ici sur 17 vues : 343 textes sur 811 (42,3 %) sous 13 px et 94 échecs de contraste.",
+  "changement": "Uniquement essai.css (tailles de police et couleur du texte ; ni marge, ni rayon, ni disposition). 1) 13 px minimum pour : métadonnées et dates des cartes et des fiches (.cp-meta, .cp-published, .cp-project-facts, .cp-project-eyebrow), noms de campus, pastilles de statut et étiquettes (.cp-profile-status, tags), « Créé par » / « Rédigé par », rôles et noms compacts des auteurs, +N, Rentrée/Promotion, compteurs (78 contenus, résultats, caractères), légendes, dates du parcours, note « profils fictifs », légendes des commentaires, libellés Filtrer/Affichage/Trier (13 px au lieu de 11,2 px sur mobile), compteur du globe sous 701 px de large (12 px dans la copie ; au-dessus, il garde ses 14 px) et note « Exploration · 42 Horizon », sous-titres et types des résultats de recherche, menu du compte, dialogues (filtre, signalement, message, choix du campus, carte) et petits textes de la fiche campus. 2) 14 px pour les petites actions : Favoris, Signaler, Envoyer un message, Explorer un campus / Explorer 42 Paris, Répondre et actions des commentaires, Emoji, Annuler, boutons des dialogues (Appliquer, Annuler, Réinitialiser, Tout sélectionner, Envoyer…), Copier l’adresse, Itinéraire, photos précédente/suivante. 3) Accent des petits textes : #0C7677 en clair (42 Blue mêlé d’encre, valeur existante de --readable-glass-accent : 5,17:1 sur #F7FAFA, 5,42:1 sur #FFFFFF, 4,87:1 sur #EAF5F4) et #F485BD en sombre (rose clair existant : 6,90:1 sur #202026, 7,33:1 sur #1B1B1B, 6,16:1 sur #29292E, 6,55:1 sur #341E29), appliqué aux noms de campus, métadonnées, pastilles de statut, liens Explorer…, Envoyer un message, dates du parcours, page active de la pagination, mentions et états survolés (les mentions et les survols suivent la même règle mais n’ont pas été capturés). 42 Blue #00BABC, les surfaces (boutons pleins, sélections), les bordures, les grands titres et les autres icônes ne changent pas ; seules les icônes dessinées en currentColor dans les boutons campus et message suivent la couleur de leur libellé. Exclus volontairement : attribution cartographique, étiquettes du globe (essai police-etiquettes-globe), libellés du dock mobile, ligne arabe du logotype, modes compacts des fiches sur les fenêtres basses, et la pastille de statut sous la vignette de la vue Liste des Profils en dessous de 1 200 px de large : elle garde ses 11 px, car à 13 px « Transcender » (83 px) dépassait la vignette de 88 px qui la rognait ; la règle à 13 px s’applique à partir de 1 200 px, où la vignette lui laisse 86 px.",
+  "decisionConcernee": "",
+  "alternativeDe": "",
+  "vues": [
+    {
+      "libelle": "Profils, ordinateur clair",
+      "page": "content-preview.html",
+      "route": "people",
+      "viewport": "ordinateur",
+      "theme": "light",
+      "lang": "fr"
+    },
+    {
+      "libelle": "Fiche projet, ordinateur clair",
+      "page": "content-preview.html",
+      "route": "projects/ft-transcendence-building-together",
+      "viewport": "ordinateur",
+      "theme": "light",
+      "lang": "fr"
+    },
+    {
+      "libelle": "Projets, mobile clair",
+      "page": "content-preview.html",
+      "route": "projects",
+      "viewport": "mobile",
+      "theme": "light",
+      "lang": "fr"
+    },
+    {
+      "libelle": "Profils, mobile sombre arabe",
+      "page": "content-preview.html",
+      "route": "people",
+      "viewport": "mobile",
+      "theme": "dark",
+      "lang": "ar"
+    }
+  ],
+  "verifications": [
+    "Audit des textes rejoué dans Chrome avec la logique AUDIT_JS de l’avis du 14 octobre (premier écran, mêmes seuils WCAG), sur 17 vues : Projets, Profils, Chroniques, fiche projet, commentaires, profil, parcours et article à 1440 px ; Projets, Profils et fiche projet à 390 px ; Projets à 320 px ; Profils en anglais sombre à 320 px ; Profils et profil en sombre à 1440 px ; Profils en arabe sombre à 390 px ; Explorer. Textes sous 13 px (attribution exclue) : 343 sur 811 (42,3 %) avant, 23 sur 810 (2,8 %) après ; les 23 restants sont les libellés du dock mobile (11 px) et la ligne arabe du logotype (أفق, 11,2 px). Hors dock et logotype : 320 → 0.",
+    "Échecs de contraste sur ces 17 vues : 94 avant, 12 après ; les 12 restants sont des glyphes décoratifs dessinés dans les illustrations SVG des Chroniques (texte <text> de 70 et 165 px, même couleur que le fond), déjà présents avant ; hors illustrations : 82 → 0.",
+    "Profils ordinateur clair : 61 textes sous 13 px → 0, 20 échecs de contraste → 0 ; Profils ordinateur sombre : 61 → 0 et 10 → 0 (pastilles roses #ED3491 à 4,24:1 → #F485BD à 6,90:1).",
+    "Surcouches ouvertes avant/après à leur tour : recherche « Paris » à 390 px (26 petits textes utiles → 0) et à 1440 px (16 → 0), dialogue Filtrer à 390 px (37 → 0), menu du compte (18 → 0), fiche du campus 42 Paris avec le vrai globe (9 → 0 ; seule l’attribution de la carte reste à 9 px) ; aucun échec de contraste après.",
+    "Actions mesurées à 1440 px : Favoris 11 → 14 px (79 → 88 px de large), Signaler 11 → 14 px (85 → 96 px), Envoyer un message 12 → 14 px (150 → 167 px), Explorer un campus 12 → 14 px (124 → 140 px) ; hauteurs inchangées pour Favoris, Signaler et Explorer un campus (36 px) et Explorer 42 Paris (42 px), Envoyer un message passant de 36 à 37 px ; mode compact des fiches absent avant comme après à 1440 × 900.",
+    "Aucun débordement horizontal ni erreur de console dans les 17 vues, les 4 surcouches et la fiche campus ; aucun libellé du dock ni de l’en-tête nouvellement tronqué (à 320 px, « Chroniques » et « 42 Awards » sont déjà masqués par le dock avant l’essai).",
+    "Périmètre mesuré sur le même DOM, feuille de l’essai coupée puis rétablie, sur 14 pages (listes, fiches, commentaires, article, profil, Parcours ; 1440, 390 et 320 px ; FR, EN, AR ; clair et sombre) : seules des tailles augmentent (aucune ne baisse, aucune ne dépasse 14 px), les seules couleurs changées sont #008E90 → #0C7677 en clair et #ED3491 → #F485BD en sombre, les boîtes des icônes ne bougent pas, aucun débordement ni erreur.",
+    "Vue Liste des Profils (correction de la relecture) : sous 1 200 px (320, 390, 1024 et 1199 px, FR et AR sombre), la pastille garde 11 px comme le site et n’est plus rognée ; à 1 200 et 1 440 px elle passe à 13 px et tient dans sa vignette (« Transcender » 83,4 px, arabe 84 à 85,4 px ; « خريج / خريجة » sur deux lignes à 1 200 px, sur une à 1 440 px). Vue Grille à 320 et 390 px en FR et AR : pastilles à 13 px, aucune rognée. 24 pastilles par vue, aucun débordement ni erreur.",
+    "Dialogues Signaler (390 px FR, 1440 px AR) et Envoyer un message (390 et 320 px FR) ouverts : petits textes utiles sous 13 px à l’écran (dialogue et page derrière lui) 6 (9 en arabe) → 0, aucun débordement du dialogue ni de la page, aucune erreur ; le seul échec de contraste restant est le bouton plein du dialogue (voir limites).",
+    "Changement de langue et de thème par le menu du compte, puis navigation, sans rechargement (Profils FR clair → AR sombre → fiche projet → EN clair) : pastilles et métadonnées toujours à 13 px en #0C7677 ou #F485BD selon le thème, lien campus à 14 px, Favoris et Signaler à 14 px, aucun débordement ni erreur.",
+    "Densités de detail-scroll inchangées dans 15 fenêtres basses (fiches projet, chronique et profil à 1280 × 720, 1366 × 768, 1024 × 768 et 900 × 600 en FR, et à 1280 × 720 en AR) ; l’identité de la fiche projet grandit de 28 px à 1280 et 1366 px de large, comme à 1440 px où la date passe sous les campus, et de 0 à 12 px dans les autres cas.",
+    "Contrastes calculés : #0C7677 donne 5,17:1 sur #F7FAFA, 5,42:1 sur #FFFFFF, 4,87:1 sur #EAF5F4 et 4,64:1 sur le fond rosé de la page active de la pagination ; #F485BD donne 6,90:1 sur #202026, 7,33:1 sur #1B1B1B, 6,16:1 sur #29292E et 6,83:1 sur le fond rosé sombre (CG Blue #04809F n’atteint que 4,36:1 sur #F7FAFA, d’où un 42 Blue assombri).",
+    "Captures examinées à la relecture : fiche projet à 1440 px (barre latérale), Profils à 1440 px et Profils arabe sombre à 390 px, pastilles de la vue Liste à 1440 et 390 px, dialogue Signaler à 390 px.",
+    "Explorer, à l’intégration de la sélection du 15 octobre : la règle commune ramenait aussi sur ordinateur la ligne d’aide du globe (« 58 campus · 30 pays », « Choisis un campus pour t’en approcher. », « Explore les alentours du campus. ») de 14 à 13 px, contrairement à cette fiche ; corrigé, elle n’est relevée (12 → 13 px) que jusqu’à 700 px de large. Même DOM, feuille coupée puis rétablie : à 1440 × 900 (FR clair, AR sombre), 390 × 844, 667 × 375 et 844 × 390 globe bloqué, puis aux niveaux Monde, Pays (France) et Campus (42 Paris) avec le vrai globe, seules des tailles augmentent (portée et état de la recherche 12 et 11 → 13 px, « Exploration · 42 Horizon » 12 ou 10 → 13 px, ligne d’aide 12 → 13 px sous 701 px), aucune ne baisse ni ne dépasse 14 px, aucune couleur ne change ; ligne d’aide à 14 px sur ordinateur aux trois niveaux."
+  ],
+  "limites": [
+    "Libellés du dock mobile laissés à 11 px : à 390 px, « Chroniques » occuperait environ 64 px d’une case de 67 px en 13 px, et à 320 px le dock masque déjà les libellés inactifs (cases de 48 px) ; les relever demanderait de revoir le dock, hors périmètre.",
+    "Ligne arabe du logotype (أفق, 11 à 14 px selon la largeur) laissée telle quelle : elle fait partie du logotype (voir l’essai titres-marque).",
+    "Dans les modes compacts des fiches (fenêtres basses, choisis par detail-scroll), le surtitre, les faits et les actions gardent leurs tailles réduites (10 à 12 px) ; les densités choisies ne changent pas (mesuré), mais ces modes n’ont été ni audités ni capturés.",
+    "Retours à la ligne naturels plus fréquents, sans débordement : métadonnées des cartes (1 carte sur 12 passe de 1 à 2 lignes à 1440 px, 3 sur 12 à 390 px, 5 sur 12 à 320 px) ; Rentrée et Promotion sur deux lignes dans les cartes Profils à 390 px (cartes un peu plus hautes) ; date sur sa propre ligne sous les campus dans la fiche projet ; « Explorer un campus » sur sa propre ligne dans la fiche mobile ; « Tout sélectionner » sur deux lignes dans sa pastille du dialogue Filtrer à 390 px ; un titre de résultat de recherche de plus sur deux lignes.",
+    "En arabe à 390 px, le compteur « عدد الأعضاء: 78 » passe sur deux lignes à côté des déclencheurs devenus plus grands ; les déclencheurs Filtrer/Affichage/Trier restent à 13 px et non 14 px pour garder la barre sur une rangée.",
+    "Les étiquettes de campus sur le globe (.hg-marker, 12 à 14 px) relèvent de l’essai police-etiquettes-globe et ne sont pas touchées ; la vue Explorer a été mesurée globe bloqué, la fiche campus avec le vrai globe. À l’intégration de la sélection du 15 octobre, Explorer est aussi mesuré avec le vrai globe (niveaux Monde, Pays et Campus).",
+    "Vue Liste des Profils sous 1 200 px : la pastille de statut reste à 11 px (exception à la règle des 13 px) ; la relever demanderait d’agrandir la vignette, hors périmètre.",
+    "Les boutons pleins des dialogues (Enregistrer le signalement, Envoyer) gardent leur fond #008E90 en clair : leur texte clair reste à 3,8:1 ; l’essai ne touche pas aux surfaces, comme demandé.",
+    "Non mesurés : téléphone en paysage, visionneuse des médias (crédit à 13 px), dialogues en thème sombre.",
+    "Avec globe-espace-libre, « Exploration · 42 Horizon » agrandi (et la ligne de statistiques sous 701 px) demande au globe réduit des bandes un peu plus larges, prévues dans cet essai-là : rayon −3 px sur ordinateur et tablette, −7 px à 680 × 560. En paysage bas (667 × 375), où le disque est déjà au zoom minimal, l’air au-dessus de la bille passe en arabe de 16,5 à 15,0 px.",
+    "Dans la grille Projets à 390 px (deux colonnes), un nom d’auteur de plus passe sur deux lignes, à l’espace (« Arun Suri », 12,2 → 13 px) ; la copie en replie déjà quatre à cette largeur (Luiza Costa, Leïla Mansour, Caio Mendes, Tomás Vieira). Aucun mot coupé ni chevauchement ; même rendu avec les neuf essais de la sélection.",
+    "Explorer en portrait (globe-espace-libre inactif) : à 320 × 640, le disque de la copie recouvre déjà le bas de « Exploration · 42 Horizon » (9 px en arabe, 3 px en français) ; à 13 px, le texte plus haut l’est de 16 et 7 px. Il reste lisible sur le bord pâle de l’océan ; même rendu avec les neuf essais de la sélection."
+  ],
+  "fichiers": [
+    "essais/lisibilite-textes/essai.css",
+    "essais/lisibilite-textes/essai.mjs",
+    "checks/lisibilite-textes/check.py",
+    "checks/lisibilite-textes/results.json",
+    "checks/_selection-20261015/integration/perimetre_lisibilite.py",
+    "checks/_selection-20261015/integration/results-perimetre-lisibilite.json",
+    "checks/_selection-20261015/integration/globe_bandes.py",
+    "checks/_selection-20261015/integration/results-globe-apres.json",
+    "checks/_selection-20261015/integration/listes_compte.py",
+    "checks/_selection-20261015/integration/results-listes-compte.json"
+  ],
+  "captures": [
+    {
+      "vue": "ordinateur",
+      "avant": "checks/lisibilite-textes/avant-ordinateur.png",
+      "apres": "checks/lisibilite-textes/apres-ordinateur.png"
+    },
+    {
+      "vue": "profils-ordinateur",
+      "avant": "checks/lisibilite-textes/avant-profils-ordinateur.png",
+      "apres": "checks/lisibilite-textes/apres-profils-ordinateur.png"
+    },
+    {
+      "vue": "fiche-ordinateur",
+      "avant": "checks/lisibilite-textes/avant-fiche-ordinateur.png",
+      "apres": "checks/lisibilite-textes/apres-fiche-ordinateur.png"
+    },
+    {
+      "vue": "profil-ordinateur",
+      "avant": "checks/lisibilite-textes/avant-profil-ordinateur.png",
+      "apres": "checks/lisibilite-textes/apres-profil-ordinateur.png"
+    },
+    {
+      "vue": "sombre-ordinateur",
+      "avant": "checks/lisibilite-textes/avant-sombre-ordinateur.png",
+      "apres": "checks/lisibilite-textes/apres-sombre-ordinateur.png"
+    },
+    {
+      "vue": "mobile",
+      "avant": "checks/lisibilite-textes/avant-mobile.png",
+      "apres": "checks/lisibilite-textes/apres-mobile.png"
+    },
+    {
+      "vue": "profils-mobile",
+      "avant": "checks/lisibilite-textes/avant-profils-mobile.png",
+      "apres": "checks/lisibilite-textes/apres-profils-mobile.png"
+    },
+    {
+      "vue": "fiche-mobile",
+      "avant": "checks/lisibilite-textes/avant-fiche-mobile.png",
+      "apres": "checks/lisibilite-textes/apres-fiche-mobile.png"
+    },
+    {
+      "vue": "petit",
+      "avant": "checks/lisibilite-textes/avant-petit.png",
+      "apres": "checks/lisibilite-textes/apres-petit.png"
+    },
+    {
+      "vue": "ar-sombre-mobile",
+      "avant": "checks/lisibilite-textes/avant-ar-sombre-mobile.png",
+      "apres": "checks/lisibilite-textes/apres-ar-sombre-mobile.png"
+    },
+    {
+      "vue": "recherche-mobile",
+      "avant": "checks/lisibilite-textes/avant-recherche-mobile.png",
+      "apres": "checks/lisibilite-textes/apres-recherche-mobile.png"
+    },
+    {
+      "vue": "recherche-ordinateur",
+      "avant": "checks/lisibilite-textes/avant-recherche-ordinateur.png",
+      "apres": "checks/lisibilite-textes/apres-recherche-ordinateur.png"
+    },
+    {
+      "vue": "filtre-mobile",
+      "avant": "checks/lisibilite-textes/avant-filtre-mobile.png",
+      "apres": "checks/lisibilite-textes/apres-filtre-mobile.png"
+    },
+    {
+      "vue": "compte-ordinateur",
+      "avant": "checks/lisibilite-textes/avant-compte-ordinateur.png",
+      "apres": "checks/lisibilite-textes/apres-compte-ordinateur.png"
+    },
+    {
+      "vue": "fiche-campus-ordinateur",
+      "avant": "checks/lisibilite-textes/avant-fiche-campus-ordinateur.png",
+      "apres": "checks/lisibilite-textes/apres-fiche-campus-ordinateur.png"
+    },
+    {
+      "vue": "liste-puce-ordinateur",
+      "avant": "checks/lisibilite-textes/avant-liste-puce-ordinateur.png",
+      "apres": "checks/lisibilite-textes/apres-liste-puce-ordinateur.png"
+    },
+    {
+      "vue": "signaler-mobile",
+      "avant": "checks/lisibilite-textes/avant-signaler-mobile.png",
+      "apres": "checks/lisibilite-textes/apres-signaler-mobile.png"
+    }
+  ]
+}

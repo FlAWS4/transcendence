@@ -1,0 +1,1535 @@
+{
+ "area": "profiles",
+ "key": "profiles",
+ "page": "04 · Profils",
+ "sections": [
+  {
+   "id": "people",
+   "title": "Liste des profils",
+   "note": "78 profils fictifs, 24 par page (4 pages). Cartes : portrait, statut, nom, pseudo quand il existe, campus. Sur place : Affichage, Trier, cœurs Favoris, filtre Pays / Campus.",
+   "route": "#people",
+   "main": true,
+   "y": 0,
+   "w": 4180,
+   "h": 27732,
+   "rows": [
+    [
+     {
+      "state": "people",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Liste des profils — Ordinateur · Clair",
+      "w": 1440,
+      "h": 2144,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "people",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Liste des profils — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 2144,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "people",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Liste des profils — Mobile · Clair",
+      "w": 390,
+      "h": 4042,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "people",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Liste des profils — Mobile · Sombre",
+      "w": 390,
+      "h": 4042,
+      "x": 3710,
+      "y": 260
+     }
+    ],
+    [
+     {
+      "state": "people",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "light",
+      "name": "Liste des profils — Ordinateur · Clair · English",
+      "w": 1440,
+      "h": 2144,
+      "x": 80,
+      "y": 4462
+     },
+     {
+      "state": "people",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Liste des profils — Ordinateur · Sombre · English",
+      "w": 1440,
+      "h": 2144,
+      "x": 1640,
+      "y": 4462
+     },
+     {
+      "state": "people",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "Liste des profils — Mobile · Clair · English",
+      "w": 390,
+      "h": 4042,
+      "x": 3200,
+      "y": 4462
+     },
+     {
+      "state": "people",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Liste des profils — Mobile · Sombre · English",
+      "w": 390,
+      "h": 4042,
+      "x": 3710,
+      "y": 4462
+     }
+    ],
+    [
+     {
+      "state": "people",
+      "fmt": "desktop",
+      "lang": "ar",
+      "theme": "light",
+      "name": "Liste des profils — Ordinateur · Clair · العربية",
+      "w": 1440,
+      "h": 2155,
+      "x": 80,
+      "y": 8664
+     },
+     {
+      "state": "people",
+      "fmt": "desktop",
+      "lang": "ar",
+      "theme": "dark",
+      "name": "Liste des profils — Ordinateur · Sombre · العربية",
+      "w": 1440,
+      "h": 2155,
+      "x": 1640,
+      "y": 8664
+     },
+     {
+      "state": "people",
+      "fmt": "mobile",
+      "lang": "ar",
+      "theme": "light",
+      "name": "Liste des profils — Mobile · Clair · العربية",
+      "w": 390,
+      "h": 4046,
+      "x": 3200,
+      "y": 8664
+     },
+     {
+      "state": "people",
+      "fmt": "mobile",
+      "lang": "ar",
+      "theme": "dark",
+      "name": "Liste des profils — Mobile · Sombre · العربية",
+      "w": 390,
+      "h": 4046,
+      "x": 3710,
+      "y": 8664
+     }
+    ],
+    [
+     {
+      "state": "people-list",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Liste des profils · vue Liste — Ordinateur · Clair",
+      "w": 1440,
+      "h": 4600,
+      "x": 80,
+      "y": 12870
+     },
+     {
+      "state": "people-list",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Liste des profils · vue Liste — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 4600,
+      "x": 1640,
+      "y": 12870
+     },
+     {
+      "state": "people-list",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Liste des profils · vue Liste — Mobile · Clair",
+      "w": 390,
+      "h": 3921,
+      "x": 3200,
+      "y": 12870
+     },
+     {
+      "state": "people-list",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Liste des profils · vue Liste — Mobile · Sombre",
+      "w": 390,
+      "h": 3921,
+      "x": 3710,
+      "y": 12870
+     }
+    ],
+    [
+     {
+      "state": "people-list",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "light",
+      "name": "Liste des profils · vue Liste — Ordinateur · Clair · English",
+      "w": 1440,
+      "h": 4600,
+      "x": 80,
+      "y": 17630
+     },
+     {
+      "state": "people-list",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Liste des profils · vue Liste — Ordinateur · Sombre · English",
+      "w": 1440,
+      "h": 4600,
+      "x": 1640,
+      "y": 17630
+     },
+     {
+      "state": "people-list",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "Liste des profils · vue Liste — Mobile · Clair · English",
+      "w": 390,
+      "h": 3921,
+      "x": 3200,
+      "y": 17630
+     },
+     {
+      "state": "people-list",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Liste des profils · vue Liste — Mobile · Sombre · English",
+      "w": 390,
+      "h": 3921,
+      "x": 3710,
+      "y": 17630
+     }
+    ],
+    [
+     {
+      "state": "people-sort-open",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Liste des profils · tri ouvert — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 22390
+     },
+     {
+      "state": "people-sort-open",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Liste des profils · tri ouvert — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 22390
+     },
+     {
+      "state": "people-sort-open",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Liste des profils · tri ouvert — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 22390
+     },
+     {
+      "state": "people-sort-open",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Liste des profils · tri ouvert — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 22390
+     }
+    ],
+    [
+     {
+      "state": "people-sort-open",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "light",
+      "name": "Liste des profils · tri ouvert — Ordinateur · Clair · English",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 23510
+     },
+     {
+      "state": "people-sort-open",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Liste des profils · tri ouvert — Ordinateur · Sombre · English",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 23510
+     },
+     {
+      "state": "people-sort-open",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "Liste des profils · tri ouvert — Mobile · Clair · English",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 23510
+     },
+     {
+      "state": "people-sort-open",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Liste des profils · tri ouvert — Mobile · Sombre · English",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 23510
+     }
+    ],
+    [
+     {
+      "state": "people-last-page",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Liste des profils · dernière page — Ordinateur · Clair",
+      "w": 1440,
+      "h": 1227,
+      "x": 80,
+      "y": 24630
+     },
+     {
+      "state": "people-last-page",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Liste des profils · dernière page — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 1227,
+      "x": 1640,
+      "y": 24630
+     },
+     {
+      "state": "people-last-page",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Liste des profils · dernière page — Mobile · Clair",
+      "w": 390,
+      "h": 1431,
+      "x": 3200,
+      "y": 24630
+     },
+     {
+      "state": "people-last-page",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Liste des profils · dernière page — Mobile · Sombre",
+      "w": 390,
+      "h": 1431,
+      "x": 3710,
+      "y": 24630
+     }
+    ],
+    [
+     {
+      "state": "people-last-page",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "light",
+      "name": "Liste des profils · dernière page — Ordinateur · Clair · English",
+      "w": 1440,
+      "h": 1227,
+      "x": 80,
+      "y": 26221
+     },
+     {
+      "state": "people-last-page",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Liste des profils · dernière page — Ordinateur · Sombre · English",
+      "w": 1440,
+      "h": 1227,
+      "x": 1640,
+      "y": 26221
+     },
+     {
+      "state": "people-last-page",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "Liste des profils · dernière page — Mobile · Clair · English",
+      "w": 390,
+      "h": 1431,
+      "x": 3200,
+      "y": 26221
+     },
+     {
+      "state": "people-last-page",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Liste des profils · dernière page — Mobile · Sombre · English",
+      "w": 390,
+      "h": 1431,
+      "x": 3710,
+      "y": 26221
+     }
+    ]
+   ]
+  },
+  {
+   "id": "filter-people",
+   "title": "Filtrer les profils",
+   "note": "Statut (Cadet, Transcender, Alumni) et Rentrée.",
+   "route": "",
+   "main": false,
+   "y": 27932,
+   "w": 4180,
+   "h": 4660,
+   "rows": [
+    [
+     {
+      "state": "filter-people",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Filtrer les profils — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "filter-people",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Filtrer les profils — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "filter-people",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Filtrer les profils — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "filter-people",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Filtrer les profils — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 260
+     }
+    ],
+    [
+     {
+      "state": "filter-people",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "light",
+      "name": "Filtrer les profils — Ordinateur · Clair · English",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 1380
+     },
+     {
+      "state": "filter-people",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Filtrer les profils — Ordinateur · Sombre · English",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 1380
+     },
+     {
+      "state": "filter-people",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "Filtrer les profils — Mobile · Clair · English",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 1380
+     },
+     {
+      "state": "filter-people",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Filtrer les profils — Mobile · Sombre · English",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 1380
+     }
+    ],
+    [
+     {
+      "state": "filter-people-expanded",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Filtrer les profils · déployée — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 2500
+     },
+     {
+      "state": "filter-people-expanded",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Filtrer les profils · déployée — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 2500
+     },
+     {
+      "state": "filter-people-expanded",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Filtrer les profils · déployée — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 2500
+     },
+     {
+      "state": "filter-people-expanded",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Filtrer les profils · déployée — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 2500
+     }
+    ],
+    [
+     {
+      "state": "filter-people-expanded",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "light",
+      "name": "Filtrer les profils · déployée — Ordinateur · Clair · English",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 3620
+     },
+     {
+      "state": "filter-people-expanded",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Filtrer les profils · déployée — Ordinateur · Sombre · English",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 3620
+     },
+     {
+      "state": "filter-people-expanded",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "Filtrer les profils · déployée — Mobile · Clair · English",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 3620
+     },
+     {
+      "state": "filter-people-expanded",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Filtrer les profils · déployée — Mobile · Sombre · English",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 3620
+     }
+    ]
+   ]
+  },
+  {
+   "id": "profile",
+   "title": "Fiche profil",
+   "note": "Barre de gauche : Retour, portrait, Envoyer un message, Favoris, Signaler.",
+   "route": "#people/<id>",
+   "main": true,
+   "y": 32792,
+   "w": 4180,
+   "h": 13897,
+   "rows": [
+    [
+     {
+      "state": "profile",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Fiche profil — Ordinateur · Clair",
+      "w": 1440,
+      "h": 1320,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "profile",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Fiche profil — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 1320,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "profile",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Fiche profil — Mobile · Clair",
+      "w": 390,
+      "h": 1793,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "profile",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Fiche profil — Mobile · Sombre",
+      "w": 390,
+      "h": 1793,
+      "x": 3710,
+      "y": 260
+     }
+    ],
+    [
+     {
+      "state": "profile",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "light",
+      "name": "Fiche profil — Ordinateur · Clair · English",
+      "w": 1440,
+      "h": 1320,
+      "x": 80,
+      "y": 2213
+     },
+     {
+      "state": "profile",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Fiche profil — Ordinateur · Sombre · English",
+      "w": 1440,
+      "h": 1320,
+      "x": 1640,
+      "y": 2213
+     },
+     {
+      "state": "profile",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "Fiche profil — Mobile · Clair · English",
+      "w": 390,
+      "h": 1764,
+      "x": 3200,
+      "y": 2213
+     },
+     {
+      "state": "profile",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Fiche profil — Mobile · Sombre · English",
+      "w": 390,
+      "h": 1764,
+      "x": 3710,
+      "y": 2213
+     }
+    ],
+    [
+     {
+      "state": "profile",
+      "fmt": "desktop",
+      "lang": "ar",
+      "theme": "light",
+      "name": "Fiche profil — Ordinateur · Clair · العربية",
+      "w": 1440,
+      "h": 1298,
+      "x": 80,
+      "y": 4137
+     },
+     {
+      "state": "profile",
+      "fmt": "desktop",
+      "lang": "ar",
+      "theme": "dark",
+      "name": "Fiche profil — Ordinateur · Sombre · العربية",
+      "w": 1440,
+      "h": 1298,
+      "x": 1640,
+      "y": 4137
+     },
+     {
+      "state": "profile",
+      "fmt": "mobile",
+      "lang": "ar",
+      "theme": "light",
+      "name": "Fiche profil — Mobile · Clair · العربية",
+      "w": 390,
+      "h": 1723,
+      "x": 3200,
+      "y": 4137
+     },
+     {
+      "state": "profile",
+      "fmt": "mobile",
+      "lang": "ar",
+      "theme": "dark",
+      "name": "Fiche profil — Mobile · Sombre · العربية",
+      "w": 390,
+      "h": 1723,
+      "x": 3710,
+      "y": 4137
+     }
+    ],
+    [
+     {
+      "state": "profile-alumni",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Fiche profil · statut Alumni — Ordinateur · Clair",
+      "w": 1440,
+      "h": 1320,
+      "x": 80,
+      "y": 6020
+     },
+     {
+      "state": "profile-alumni",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Fiche profil · statut Alumni — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 1320,
+      "x": 1640,
+      "y": 6020
+     }
+    ],
+    [
+     {
+      "state": "profile-alumni",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "light",
+      "name": "Fiche profil · statut Alumni — Ordinateur · Clair · English",
+      "w": 1440,
+      "h": 1320,
+      "x": 80,
+      "y": 7500
+     },
+     {
+      "state": "profile-alumni",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Fiche profil · statut Alumni — Ordinateur · Sombre · English",
+      "w": 1440,
+      "h": 1320,
+      "x": 1640,
+      "y": 7500
+     }
+    ],
+    [
+     {
+      "state": "profile-local-menu",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Fiche profil · sélecteur de rubriques ouvert — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 80,
+      "y": 8980
+     },
+     {
+      "state": "profile-local-menu",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Fiche profil · sélecteur de rubriques ouvert — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 590,
+      "y": 8980
+     }
+    ],
+    [
+     {
+      "state": "profile-local-menu",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "Fiche profil · sélecteur de rubriques ouvert — Mobile · Clair · English",
+      "w": 390,
+      "h": 844,
+      "x": 80,
+      "y": 9984
+     },
+     {
+      "state": "profile-local-menu",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Fiche profil · sélecteur de rubriques ouvert — Mobile · Sombre · English",
+      "w": 390,
+      "h": 844,
+      "x": 590,
+      "y": 9984
+     }
+    ],
+    [
+     {
+      "state": "profile-transcender",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Fiche profil · statut Transcender — Ordinateur · Clair",
+      "w": 1440,
+      "h": 1349,
+      "x": 80,
+      "y": 10988
+     },
+     {
+      "state": "profile-transcender",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Fiche profil · statut Transcender — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 1349,
+      "x": 1640,
+      "y": 10988
+     }
+    ],
+    [
+     {
+      "state": "profile-transcender",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "light",
+      "name": "Fiche profil · statut Transcender — Ordinateur · Clair · English",
+      "w": 1440,
+      "h": 1320,
+      "x": 80,
+      "y": 12497
+     },
+     {
+      "state": "profile-transcender",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Fiche profil · statut Transcender — Ordinateur · Sombre · English",
+      "w": 1440,
+      "h": 1320,
+      "x": 1640,
+      "y": 12497
+     }
+    ]
+   ]
+  },
+  {
+   "id": "profile-projects",
+   "title": "Projets",
+   "note": "Projets de la personne, avec leur propre Filtrer (?project=…).",
+   "route": "#people/<id>?tab=projects",
+   "main": false,
+   "y": 46889,
+   "w": 4180,
+   "h": 5892,
+   "rows": [
+    [
+     {
+      "state": "profile-projects",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Projets — Ordinateur · Clair",
+      "w": 1440,
+      "h": 1048,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "profile-projects",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Projets — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 1048,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "profile-projects",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Projets — Mobile · Clair",
+      "w": 390,
+      "h": 1576,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "profile-projects",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Projets — Mobile · Sombre",
+      "w": 390,
+      "h": 1576,
+      "x": 3710,
+      "y": 260
+     }
+    ],
+    [
+     {
+      "state": "profile-projects",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "light",
+      "name": "Projets — Ordinateur · Clair · English",
+      "w": 1440,
+      "h": 1048,
+      "x": 80,
+      "y": 1996
+     },
+     {
+      "state": "profile-projects",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Projets — Ordinateur · Sombre · English",
+      "w": 1440,
+      "h": 1048,
+      "x": 1640,
+      "y": 1996
+     },
+     {
+      "state": "profile-projects",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "Projets — Mobile · Clair · English",
+      "w": 390,
+      "h": 1576,
+      "x": 3200,
+      "y": 1996
+     },
+     {
+      "state": "profile-projects",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Projets — Mobile · Sombre · English",
+      "w": 390,
+      "h": 1576,
+      "x": 3710,
+      "y": 1996
+     }
+    ],
+    [
+     {
+      "state": "profile-projects-filter",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Projets · filtre local ouvert — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 3732
+     },
+     {
+      "state": "profile-projects-filter",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Projets · filtre local ouvert — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 3732
+     },
+     {
+      "state": "profile-projects-filter",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Projets · filtre local ouvert — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 3732
+     },
+     {
+      "state": "profile-projects-filter",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Projets · filtre local ouvert — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 3732
+     }
+    ],
+    [
+     {
+      "state": "profile-projects-filter",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "light",
+      "name": "Projets · filtre local ouvert — Ordinateur · Clair · English",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 4852
+     },
+     {
+      "state": "profile-projects-filter",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Projets · filtre local ouvert — Ordinateur · Sombre · English",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 4852
+     },
+     {
+      "state": "profile-projects-filter",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "Projets · filtre local ouvert — Mobile · Clair · English",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 4852
+     },
+     {
+      "state": "profile-projects-filter",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Projets · filtre local ouvert — Mobile · Sombre · English",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 4852
+     }
+    ]
+   ]
+  },
+  {
+   "id": "profile-journey",
+   "title": "Parcours",
+   "note": "Étapes du parcours, sans lien sortant.",
+   "route": "#people/<id>?tab=journey",
+   "main": false,
+   "y": 52981,
+   "w": 4180,
+   "h": 4286,
+   "rows": [
+    [
+     {
+      "state": "profile-journey",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Parcours — Ordinateur · Clair",
+      "w": 1440,
+      "h": 1343,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "profile-journey",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Parcours — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 1343,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "profile-journey",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Parcours — Mobile · Clair",
+      "w": 390,
+      "h": 1945,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "profile-journey",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Parcours — Mobile · Sombre",
+      "w": 390,
+      "h": 1945,
+      "x": 3710,
+      "y": 260
+     }
+    ],
+    [
+     {
+      "state": "profile-journey",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "light",
+      "name": "Parcours — Ordinateur · Clair · English",
+      "w": 1440,
+      "h": 1290,
+      "x": 80,
+      "y": 2365
+     },
+     {
+      "state": "profile-journey",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Parcours — Ordinateur · Sombre · English",
+      "w": 1440,
+      "h": 1290,
+      "x": 1640,
+      "y": 2365
+     },
+     {
+      "state": "profile-journey",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "Parcours — Mobile · Clair · English",
+      "w": 390,
+      "h": 1841,
+      "x": 3200,
+      "y": 2365
+     },
+     {
+      "state": "profile-journey",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Parcours — Mobile · Sombre · English",
+      "w": 390,
+      "h": 1841,
+      "x": 3710,
+      "y": 2365
+     }
+    ]
+   ]
+  },
+  {
+   "id": "profile-contribution",
+   "title": "Contribution",
+   "note": "Chroniques écrites par la personne.",
+   "route": "#people/<id>?tab=contribution",
+   "main": false,
+   "y": 57467,
+   "w": 4180,
+   "h": 2596,
+   "rows": [
+    [
+     {
+      "state": "profile-contribution",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Contribution — Ordinateur · Clair",
+      "w": 1440,
+      "h": 1048,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "profile-contribution",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Contribution — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 1048,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "profile-contribution",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Contribution — Mobile · Clair",
+      "w": 390,
+      "h": 857,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "profile-contribution",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Contribution — Mobile · Sombre",
+      "w": 390,
+      "h": 857,
+      "x": 3710,
+      "y": 260
+     }
+    ],
+    [
+     {
+      "state": "profile-contribution",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "light",
+      "name": "Contribution — Ordinateur · Clair · English",
+      "w": 1440,
+      "h": 1048,
+      "x": 80,
+      "y": 1468
+     },
+     {
+      "state": "profile-contribution",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Contribution — Ordinateur · Sombre · English",
+      "w": 1440,
+      "h": 1048,
+      "x": 1640,
+      "y": 1468
+     },
+     {
+      "state": "profile-contribution",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "Contribution — Mobile · Clair · English",
+      "w": 390,
+      "h": 857,
+      "x": 3200,
+      "y": 1468
+     },
+     {
+      "state": "profile-contribution",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Contribution — Mobile · Sombre · English",
+      "w": 390,
+      "h": 857,
+      "x": 3710,
+      "y": 1468
+     }
+    ]
+   ]
+  },
+  {
+   "id": "message-dialog",
+   "title": "Envoyer un message",
+   "note": "Démonstration : Envoyer n’envoie rien.",
+   "route": "",
+   "main": false,
+   "y": 60263,
+   "w": 4180,
+   "h": 2420,
+   "rows": [
+    [
+     {
+      "state": "message-dialog",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Envoyer un message — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "message-dialog",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Envoyer un message — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "message-dialog",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Envoyer un message — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "message-dialog",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Envoyer un message — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 260
+     }
+    ],
+    [
+     {
+      "state": "message-dialog",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "light",
+      "name": "Envoyer un message — Ordinateur · Clair · English",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 1380
+     },
+     {
+      "state": "message-dialog",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Envoyer un message — Ordinateur · Sombre · English",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 1380
+     },
+     {
+      "state": "message-dialog",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "Envoyer un message — Mobile · Clair · English",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 1380
+     },
+     {
+      "state": "message-dialog",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Envoyer un message — Mobile · Sombre · English",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 1380
+     }
+    ]
+   ]
+  },
+  {
+   "id": "report",
+   "title": "Signaler",
+   "note": "Motif obligatoire, précision facultative. Gardé dans l’onglet du navigateur, rien n’est envoyé.",
+   "route": "",
+   "main": false,
+   "y": 62883,
+   "w": 4180,
+   "h": 2420,
+   "rows": [
+    [
+     {
+      "state": "report-profile",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Signaler · depuis un profil — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "report-profile",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Signaler · depuis un profil — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "report-profile",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Signaler · depuis un profil — Mobile · Clair",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "report-profile",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Signaler · depuis un profil — Mobile · Sombre",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 260
+     }
+    ],
+    [
+     {
+      "state": "report-profile",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "light",
+      "name": "Signaler · depuis un profil — Ordinateur · Clair · English",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 1380
+     },
+     {
+      "state": "report-profile",
+      "fmt": "desktop",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Signaler · depuis un profil — Ordinateur · Sombre · English",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 1380
+     },
+     {
+      "state": "report-profile",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "light",
+      "name": "Signaler · depuis un profil — Mobile · Clair · English",
+      "w": 390,
+      "h": 844,
+      "x": 3200,
+      "y": 1380
+     },
+     {
+      "state": "report-profile",
+      "fmt": "mobile",
+      "lang": "en",
+      "theme": "dark",
+      "name": "Signaler · depuis un profil — Mobile · Sombre · English",
+      "w": 390,
+      "h": 844,
+      "x": 3710,
+      "y": 1380
+     }
+    ]
+   ]
+  }
+ ]
+}

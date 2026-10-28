@@ -1,0 +1,226 @@
+{
+  "date": "2026-10-13",
+  "scenario": "Actual26records in each discovery section,12/12/2 pages and new translated details",
+  "initial_sha256": {
+    "demo-content-seed.mjs": "5ea597fb0025d3aa9565e7e662f8b100eeec7e0a88fa84e99d662e463097c163",
+    "content-preview-data.mjs": "dea7cc9253756ce37d2632eec6125614cb139640b3278a2930b8171d6c4bae52",
+    "profile-data.mjs": "652648c36b77105d32d303adcecd39b6e8852bb64ce2698075b746b5fd2bb378",
+    "content-filters.mjs": "b494e148b4689c8cd8ccf9800496962f2d32517b092190b1a2ab15ccf571b3f7",
+    "welcome.mjs": "c6b6ffc3d48514d10c4a0a1e2d1aebaec00ba682b6eebdae31e8b3df8fb7e853"
+  },
+  "results": [
+    {
+      "case": "projects-page-1",
+      "result": {
+        "hash": "#projects",
+        "count": 12,
+        "total": "26 contenus",
+        "summary": "Page 1 sur 3",
+        "hrefs": [
+          "#projects/ft-transcendence-building-together",
+          "#projects/minishell-under-the-prompt",
+          "#projects/raycast-find-the-light",
+          "#projects/network-messages-between-us",
+          "#projects/garden-small-useful-tools",
+          "#projects/demo-project-across-the-terminals",
+          "#projects/demo-project-pairing-calendar",
+          "#projects/demo-project-wayfinding-garden",
+          "#projects/demo-project-permissions-made-clear",
+          "#projects/demo-project-lightweight-reading",
+          "#projects/demo-project-messages-under-pressure",
+          "#projects/demo-project-commands-in-layers"
+        ],
+        "overflow": false,
+        "errors": []
+      }
+    },
+    {
+      "case": "projects-page-2",
+      "result": {
+        "hash": "#projects?page=2",
+        "count": 12,
+        "total": "26 contenus",
+        "summary": "Page 2 sur 3",
+        "hrefs": [
+          "#projects/demo-project-collect-the-lights",
+          "#projects/demo-project-drafts-at-hand",
+          "#projects/demo-project-server-from-scratch",
+          "#projects/demo-project-allocation-notes",
+          "#projects/demo-project-texture-walk",
+          "#projects/demo-project-gentle-forms",
+          "#projects/demo-project-channel-observatory",
+          "#projects/demo-project-small-string-toolbox",
+          "#projects/demo-project-shared-match-board",
+          "#projects/demo-project-courtyard-in-light",
+          "#projects/demo-project-pipes-and-paths",
+          "#projects/demo-project-quiet-chat-room"
+        ],
+        "overflow": false,
+        "errors": []
+      }
+    },
+    {
+      "case": "projects-page-3",
+      "result": {
+        "hash": "#projects?page=3",
+        "count": 2,
+        "total": "26 contenus",
+        "summary": "Page 3 sur 3",
+        "hrefs": [
+          "#projects/demo-project-keyboard-notebook",
+          "#projects/demo-project-bytes-in-order"
+        ],
+        "overflow": false,
+        "errors": []
+      }
+    },
+    {
+      "case": "people-page-1",
+      "result": {
+        "hash": "#people",
+        "count": 12,
+        "total": "26 profils",
+        "summary": "Page 1 sur 3",
+        "hrefs": [
+          "#people/profile-luiza-costa",
+          "#people/profile-ines-morel",
+          "#people/profile-leila-mansour",
+          "#people/profile-lucia-roca",
+          "#people/profile-noe-laurent",
+          "#people/profile-emma-de-smet",
+          "#people/profile-tomas-vieira",
+          "#people/profile-lea-rakoto",
+          "#people/profile-haru-mizuno",
+          "#people/profile-amir-keller",
+          "#people/profile-elena-novak",
+          "#people/profile-arun-suri"
+        ],
+        "overflow": false,
+        "errors": []
+      }
+    },
+    {
+      "case": "people-page-2",
+      "result": {
+        "hash": "#people?page=2",
+        "count": 12,
+        "total": "26 profils",
+        "summary": "Page 2 sur 3",
+        "hrefs": [
+          "#people/profile-mei-tan",
+          "#people/profile-caio-mendes",
+          "#people/profile-deniz-eren",
+          "#people/profile-sora-han",
+          "#people/profile-theo-vermeer",
+          "#people/profile-lina-moreau",
+          "#people/profile-sami-nasser",
+          "#people/profile-aya-haddad",
+          "#people/profile-mateo-soler",
+          "#people/profile-ines-duarte",
+          "#people/profile-jonas-reed",
+          "#people/profile-mara-vogel"
+        ],
+        "overflow": false,
+        "errors": []
+      }
+    },
+    {
+      "case": "people-page-3",
+      "result": {
+        "hash": "#people?page=3",
+        "count": 2,
+        "total": "26 profils",
+        "summary": "Page 3 sur 3",
+        "hrefs": [
+          "#people/profile-youssef-amrani",
+          "#people/profile-nora-bensaid"
+        ],
+        "overflow": false,
+        "errors": []
+      }
+    },
+    {
+      "case": "journal-page-1",
+      "result": {
+        "hash": "#journal",
+        "count": 12,
+        "total": "26 contenus",
+        "summary": "Page 1 sur 3",
+        "hrefs": [
+          "#journal/journal-an-evening-debugging",
+          "#journal/journal-share-the-unfinished",
+          "#journal/demo-journal-closing-notebook",
+          "#journal/demo-journal-small-demo",
+          "#journal/demo-journal-review-with-context",
+          "#journal/demo-journal-time-zones",
+          "#journal/demo-journal-pairing-session",
+          "#journal/demo-journal-colour-cues",
+          "#journal/demo-journal-test-as-question",
+          "#journal/demo-journal-lighter-page",
+          "#journal/demo-journal-message-fragments",
+          "#journal/demo-journal-failed-attempts"
+        ],
+        "overflow": false,
+        "errors": []
+      }
+    },
+    {
+      "case": "journal-page-2",
+      "result": {
+        "hash": "#journal?page=2",
+        "count": 12,
+        "total": "26 contenus",
+        "summary": "Page 2 sur 3",
+        "hrefs": [
+          "#journal/demo-journal-watch-a-player",
+          "#journal/demo-journal-draft-saved",
+          "#journal/demo-journal-install-again",
+          "#journal/demo-journal-memory-trace",
+          "#journal/demo-journal-texture-distance",
+          "#journal/demo-journal-words-in-forms",
+          "#journal/demo-journal-service-states",
+          "#journal/demo-journal-reproducible-case",
+          "#journal/demo-journal-shared-vocabulary",
+          "#journal/demo-journal-first-corridor",
+          "#journal/demo-journal-small-diagram",
+          "#journal/demo-journal-slow-connection"
+        ],
+        "overflow": false,
+        "errors": []
+      }
+    },
+    {
+      "case": "journal-page-3",
+      "result": {
+        "hash": "#journal?page=3",
+        "count": 2,
+        "total": "26 contenus",
+        "summary": "Page 3 sur 3",
+        "hrefs": [
+          "#journal/demo-journal-keyboard-first",
+          "#journal/demo-journal-question-before-code"
+        ],
+        "overflow": false,
+        "errors": []
+      }
+    },
+    {
+      "case": "failure-state",
+      "result": {
+        "hash": "#journal?page=3",
+        "body": "Chroniques\n\n26 contenus\n\nAffichage\nTrier\n“\n&\n\n1337 Ben Guérir\n2 juil. 2026\n\nUne matinée au clavier\n\nRédigé par\n\nYoussef Amrani\n\nParcourir une page sans souris révèle ses obstacles.\n\n“\n&\n\n1337 Khouribga\n1 juil. 2026\n\nLa question avant le code\n\nRédigé par\n\nNora Bensaïd\n\nÉcrire le résultat attendu aide à préciser une question.\n\nPage 3 sur 3\n\nPrécédent\n1\n2\n3\nSuivant\n\nContenus de démonstration",
+        "errors": []
+      }
+    }
+  ],
+  "passed": false,
+  "error": "RuntimeError({'exceptionId': 1, 'text': 'Uncaught', 'lineNumber': 0, 'columnNumber': 14, 'scriptId': '65', 'exception': {'type': 'object', 'subtype': 'error', 'className': 'SyntaxError', 'description': 'SyntaxError: await is only valid in async functions and the top level bodies of modules', 'objectId': '2764074246759861476.2.2'}})",
+  "final_sha256": {
+    "demo-content-seed.mjs": "5ea597fb0025d3aa9565e7e662f8b100eeec7e0a88fa84e99d662e463097c163",
+    "content-preview-data.mjs": "dea7cc9253756ce37d2632eec6125614cb139640b3278a2930b8171d6c4bae52",
+    "profile-data.mjs": "652648c36b77105d32d303adcecd39b6e8852bb64ce2698075b746b5fd2bb378",
+    "content-filters.mjs": "b494e148b4689c8cd8ccf9800496962f2d32517b092190b1a2ab15ccf571b3f7",
+    "welcome.mjs": "c6b6ffc3d48514d10c4a0a1e2d1aebaec00ba682b6eebdae31e8b3df8fb7e853"
+  },
+  "harness_note": "The9pagination cases passed. The remaining checks stopped on a test-harness top-level await syntax error, fixed by an async wrapper; no product failure. Complete rerun is saved separately."
+}

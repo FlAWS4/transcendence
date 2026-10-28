@@ -1,0 +1,785 @@
+{
+ "runs": {
+  "144": {
+   "started": "2026-10-15 15:50:18",
+   "passed": true,
+   "failure": null,
+   "durationSeconds": 11.2,
+   "sourcesUnchanged": true,
+   "errors": [],
+   "skipped": [
+    "error-panel: account not reachable on the error screen"
+   ]
+  },
+  "145": {
+   "started": "2026-10-15 15:49:54",
+   "passed": true,
+   "failure": null,
+   "durationSeconds": 19.6,
+   "sourcesUnchanged": true,
+   "errors": [],
+   "skipped": []
+  }
+ },
+ "pressed": {
+  "dark": {
+   "active144": [
+    true,
+    true
+   ],
+   "active145": [
+    true,
+    true
+   ],
+   "dialog": [
+    "signup",
+    "signup"
+   ],
+   "signupDiffs": {
+    "background-color": [
+     "rgba(0, 0, 0, 0)",
+     "rgb(27, 27, 27)"
+    ]
+   },
+   "signupPropsCompared": 646,
+   "signinWhilePressedDiffs": {},
+   "contrast144": {
+    "computedBackground": "rgba(0, 0, 0, 0)",
+    "computedColor": "rgb(237, 52, 145)",
+    "label": "Créer un compte",
+    "transparentCheck": "rgba(0, 0, 0, 0)",
+    "restoredColor": "rgb(237, 52, 145)",
+    "backgroundPixels": 3224,
+    "backgroundMedian": [
+     41,
+     41,
+     46
+    ],
+    "backgroundDarkest": [
+     40,
+     41,
+     45
+    ],
+    "backgroundLightest": [
+     42,
+     42,
+     47
+    ],
+    "textPixels": 563,
+    "coreTextColour": [
+     237,
+     52,
+     145
+    ],
+    "textPixelsExactlyNominal": 60,
+    "contrastNominalVsMedianBackground": 3.791,
+    "contrastNominalWorstBackgroundPixel": 3.74,
+    "contrastCoreVsMedianBackground": 3.791,
+    "contrastBestTextPixel": 3.802,
+    "buttonInnerDistinctColours": 19,
+    "buttonInnerTopColours": [
+     [
+      [
+       41,
+       41,
+       46
+      ],
+      2318
+     ],
+     [
+      [
+       41,
+       42,
+       47
+      ],
+      1714
+     ]
+    ],
+    "glassLeftOfButton": [
+     40,
+     41,
+     46
+    ],
+    "contrastButtonFillVsGlass": 1.003
+   },
+   "contrast145": {
+    "computedBackground": "rgb(27, 27, 27)",
+    "computedColor": "rgb(237, 52, 145)",
+    "label": "Créer un compte",
+    "transparentCheck": "rgba(0, 0, 0, 0)",
+    "restoredColor": "rgb(237, 52, 145)",
+    "backgroundPixels": 3224,
+    "backgroundMedian": [
+     27,
+     27,
+     27
+    ],
+    "backgroundDarkest": [
+     27,
+     27,
+     27
+    ],
+    "backgroundLightest": [
+     27,
+     27,
+     27
+    ],
+    "textPixels": 566,
+    "coreTextColour": [
+     237,
+     52,
+     145
+    ],
+    "textPixelsExactlyNominal": 60,
+    "contrastNominalVsMedianBackground": 4.512,
+    "contrastNominalWorstBackgroundPixel": 4.512,
+    "contrastCoreVsMedianBackground": 4.512,
+    "contrastBestTextPixel": 4.512,
+    "buttonInnerDistinctColours": 1,
+    "buttonInnerTopColours": [
+     [
+      [
+       27,
+       27,
+       27
+      ],
+      10464
+     ]
+    ],
+    "glassLeftOfButton": [
+     40,
+     41,
+     46
+    ],
+    "contrastButtonFillVsGlass": 1.187
+   }
+  },
+  "light": {
+   "active144": [
+    true,
+    true
+   ],
+   "active145": [
+    true,
+    true
+   ],
+   "dialog": [
+    "signup",
+    "signup"
+   ],
+   "signupDiffs": {},
+   "signupPropsCompared": 646,
+   "signinWhilePressedDiffs": {},
+   "contrast144": {
+    "computedBackground": "rgb(234, 245, 244)",
+    "computedColor": "rgb(27, 27, 27)",
+    "label": "Créer un compte",
+    "transparentCheck": "rgba(0, 0, 0, 0)",
+    "restoredColor": "rgb(27, 27, 27)",
+    "backgroundPixels": 3224,
+    "backgroundMedian": [
+     234,
+     245,
+     244
+    ],
+    "backgroundDarkest": [
+     234,
+     245,
+     244
+    ],
+    "backgroundLightest": [
+     234,
+     245,
+     244
+    ],
+    "textPixels": 579,
+    "coreTextColour": [
+     27,
+     27,
+     27
+    ],
+    "textPixelsExactlyNominal": 60,
+    "contrastNominalVsMedianBackground": 15.474,
+    "contrastNominalWorstBackgroundPixel": 15.474,
+    "contrastCoreVsMedianBackground": 15.474,
+    "contrastBestTextPixel": 15.474,
+    "buttonInnerDistinctColours": 1,
+    "buttonInnerTopColours": [
+     [
+      [
+       234,
+       245,
+       244
+      ],
+      10464
+     ]
+    ],
+    "glassLeftOfButton": [
+     248,
+     249,
+     249
+    ],
+    "contrastButtonFillVsGlass": 1.055
+   },
+   "contrast145": {
+    "computedBackground": "rgb(234, 245, 244)",
+    "computedColor": "rgb(27, 27, 27)",
+    "label": "Créer un compte",
+    "transparentCheck": "rgba(0, 0, 0, 0)",
+    "restoredColor": "rgb(27, 27, 27)",
+    "backgroundPixels": 3224,
+    "backgroundMedian": [
+     234,
+     245,
+     244
+    ],
+    "backgroundDarkest": [
+     234,
+     245,
+     244
+    ],
+    "backgroundLightest": [
+     234,
+     245,
+     244
+    ],
+    "textPixels": 579,
+    "coreTextColour": [
+     27,
+     27,
+     27
+    ],
+    "textPixelsExactlyNominal": 60,
+    "contrastNominalVsMedianBackground": 15.474,
+    "contrastNominalWorstBackgroundPixel": 15.474,
+    "contrastCoreVsMedianBackground": 15.474,
+    "contrastBestTextPixel": 15.474,
+    "buttonInnerDistinctColours": 1,
+    "buttonInnerTopColours": [
+     [
+      [
+       234,
+       245,
+       244
+      ],
+      10464
+     ]
+    ],
+    "glassLeftOfButton": [
+     248,
+     249,
+     249
+    ],
+    "contrastButtonFillVsGlass": 1.055
+   }
+  }
+ },
+ "errorLightSnapshots": {
+  "elements": [
+   398,
+   398
+  ],
+  "onlyIn144": [],
+  "onlyIn145": [],
+  "changedCount": 1,
+  "changed": [
+   {
+    "path": "body[1]>div#app[1]>header[2]>div[1]>div[4]",
+    "diffs": {
+     "display": [
+      "none",
+      "block"
+     ]
+    }
+   }
+  ]
+ },
+ "errorPanel": {
+  "theme": {
+   "start": "light",
+   "afterPanelSwitch": "dark",
+   "entryAfterPanelSwitch": "error",
+   "back": "light",
+   "entryAtEnd": "error"
+  },
+  "vsAfterEntry145": {
+   "light": {},
+   "dark": {},
+   "darkHover": {},
+   "darkFocus": {},
+   "signinLight": {},
+   "signinDark": {}
+  },
+  "vsAfterEntry144": {
+   "light": {},
+   "dark": {
+    "background-color": [
+     "rgba(0, 0, 0, 0)",
+     "rgb(27, 27, 27)"
+    ]
+   },
+   "darkFocus": {
+    "background-color": [
+     "rgba(0, 0, 0, 0)",
+     "rgb(27, 27, 27)"
+    ]
+   }
+  },
+  "lightAgainVsLight": {},
+  "contrast": {
+   "light": {
+    "computedBackground": "rgb(255, 255, 255)",
+    "computedColor": "rgb(27, 27, 27)",
+    "label": "Créer un compte",
+    "transparentCheck": "rgba(0, 0, 0, 0)",
+    "restoredColor": "rgb(27, 27, 27)",
+    "backgroundPixels": 3224,
+    "backgroundMedian": [
+     255,
+     255,
+     255
+    ],
+    "backgroundDarkest": [
+     255,
+     255,
+     255
+    ],
+    "backgroundLightest": [
+     255,
+     255,
+     255
+    ],
+    "textPixels": 579,
+    "coreTextColour": [
+     27,
+     27,
+     27
+    ],
+    "textPixelsExactlyNominal": 60,
+    "contrastNominalVsMedianBackground": 17.224,
+    "contrastNominalWorstBackgroundPixel": 17.224,
+    "contrastCoreVsMedianBackground": 17.224,
+    "contrastBestTextPixel": 17.224,
+    "buttonInnerDistinctColours": 1,
+    "buttonInnerTopColours": [
+     [
+      [
+       255,
+       255,
+       255
+      ],
+      10464
+     ]
+    ],
+    "glassLeftOfButton": [
+     251,
+     253,
+     253
+    ],
+    "contrastButtonFillVsGlass": 1.021
+   },
+   "darkRest": {
+    "computedBackground": "rgb(27, 27, 27)",
+    "computedColor": "rgb(237, 52, 145)",
+    "label": "Créer un compte",
+    "transparentCheck": "rgba(0, 0, 0, 0)",
+    "restoredColor": "rgb(237, 52, 145)",
+    "backgroundPixels": 3224,
+    "backgroundMedian": [
+     27,
+     27,
+     27
+    ],
+    "backgroundDarkest": [
+     27,
+     27,
+     27
+    ],
+    "backgroundLightest": [
+     27,
+     27,
+     27
+    ],
+    "textPixels": 566,
+    "coreTextColour": [
+     237,
+     52,
+     145
+    ],
+    "textPixelsExactlyNominal": 60,
+    "contrastNominalVsMedianBackground": 4.512,
+    "contrastNominalWorstBackgroundPixel": 4.512,
+    "contrastCoreVsMedianBackground": 4.512,
+    "contrastBestTextPixel": 4.512,
+    "buttonInnerDistinctColours": 1,
+    "buttonInnerTopColours": [
+     [
+      [
+       27,
+       27,
+       27
+      ],
+      10464
+     ]
+    ],
+    "glassLeftOfButton": [
+     38,
+     38,
+     42
+    ],
+    "contrastButtonFillVsGlass": 1.143
+   },
+   "darkHover": {
+    "computedBackground": "rgb(27, 27, 27)",
+    "computedColor": "rgb(237, 52, 145)",
+    "label": "Créer un compte",
+    "transparentCheck": "rgba(0, 0, 0, 0)",
+    "restoredColor": "rgb(237, 52, 145)",
+    "backgroundPixels": 3224,
+    "backgroundMedian": [
+     27,
+     27,
+     27
+    ],
+    "backgroundDarkest": [
+     27,
+     27,
+     27
+    ],
+    "backgroundLightest": [
+     27,
+     27,
+     27
+    ],
+    "textPixels": 566,
+    "coreTextColour": [
+     237,
+     52,
+     145
+    ],
+    "textPixelsExactlyNominal": 60,
+    "contrastNominalVsMedianBackground": 4.512,
+    "contrastNominalWorstBackgroundPixel": 4.512,
+    "contrastCoreVsMedianBackground": 4.512,
+    "contrastBestTextPixel": 4.512,
+    "buttonInnerDistinctColours": 1,
+    "buttonInnerTopColours": [
+     [
+      [
+       27,
+       27,
+       27
+      ],
+      10464
+     ]
+    ],
+    "glassLeftOfButton": [
+     38,
+     38,
+     42
+    ],
+    "contrastButtonFillVsGlass": 1.143
+   },
+   "darkFocus": {
+    "computedBackground": "rgb(27, 27, 27)",
+    "computedColor": "rgb(237, 52, 145)",
+    "label": "Créer un compte",
+    "transparentCheck": "rgba(0, 0, 0, 0)",
+    "restoredColor": "rgb(237, 52, 145)",
+    "backgroundPixels": 3224,
+    "backgroundMedian": [
+     27,
+     27,
+     27
+    ],
+    "backgroundDarkest": [
+     27,
+     27,
+     27
+    ],
+    "backgroundLightest": [
+     27,
+     27,
+     27
+    ],
+    "textPixels": 566,
+    "coreTextColour": [
+     237,
+     52,
+     145
+    ],
+    "textPixelsExactlyNominal": 60,
+    "contrastNominalVsMedianBackground": 4.512,
+    "contrastNominalWorstBackgroundPixel": 4.512,
+    "contrastCoreVsMedianBackground": 4.512,
+    "contrastBestTextPixel": 4.512,
+    "buttonInnerDistinctColours": 1,
+    "buttonInnerTopColours": [
+     [
+      [
+       27,
+       27,
+       27
+      ],
+      10464
+     ]
+    ],
+    "glassLeftOfButton": [
+     38,
+     38,
+     42
+    ],
+    "contrastButtonFillVsGlass": 1.143
+   }
+  },
+  "focusRing": {
+   "visible": true,
+   "outlineColor": "rgb(150, 163, 235)",
+   "outlineStyle": "solid",
+   "outlineWidth": "2px",
+   "outlineOffset": "-2px",
+   "ringPixels": [
+    [
+     150,
+     163,
+     235
+    ],
+    [
+     150,
+     163,
+     235
+    ]
+   ],
+   "inside": [
+    27,
+    27,
+    27
+   ],
+   "outside": [
+    38,
+    38,
+    42
+   ],
+   "ringPixelsMatchOutline": true,
+   "contrastOutlineVsInside": 7.165,
+   "contrastOutlineVsOutside": 6.27
+  },
+  "tabsToSignup": 2
+ },
+ "errorPanelSubtree": {
+  "note": "valeurs [content-preview #projects sombre, écran d’erreur sombre], état 145",
+  "elements": [
+   28,
+   28
+  ],
+  "onlyInContentPreview": [],
+  "onlyInError": [],
+  "changedCount": 2,
+  "changed": [
+   {
+    "path": "section#account-menu[1]>div[0]>button[1]",
+    "diffs": {
+     "background-color": [
+      "color(srgb 0.929412 0.203922 0.568627 / 0.22)",
+      "rgba(0, 0, 0, 0)"
+     ],
+     "outline-color": [
+      "rgb(150, 163, 235)",
+      "rgb(255, 255, 255)"
+     ],
+     "outline-style": [
+      "solid",
+      "none"
+     ],
+     "outline-width": [
+      "2px",
+      "3px"
+     ],
+     "outline-offset": [
+      "-2px",
+      "0px"
+     ]
+    }
+   },
+   {
+    "path": "section#account-menu[1]>div[1]>button[1]",
+    "diffs": {
+     "outline-color": [
+      "rgb(237, 52, 145)",
+      "rgb(150, 163, 235)"
+     ],
+     "outline-style": [
+      "none",
+      "solid"
+     ],
+     "outline-width": [
+      "3px",
+      "2px"
+     ],
+     "outline-offset": [
+      "0px",
+      "-2px"
+     ]
+    }
+   }
+  ]
+ },
+ "motion": {
+  "144": {
+   "reducedMotionMatches": false,
+   "transition": "transform 0.2s, background 0.2s",
+   "menuAnimation": "theme-menu-in",
+   "states": {
+    "repos": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "color": "rgb(237, 52, 145)",
+     "transform": "none",
+     "contrast": 3.791,
+     "medianBackground": [
+      41,
+      41,
+      46
+     ],
+     "bestTextPixel": 3.791
+    },
+    "survol": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "color": "rgb(237, 52, 145)",
+     "transform": "matrix(1, 0, 0, 1, 0, -2)",
+     "contrast": 3.791,
+     "medianBackground": [
+      41,
+      41,
+      46
+     ],
+     "bestTextPixel": 3.791
+    },
+    "focus": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "color": "rgb(237, 52, 145)",
+     "transform": "none",
+     "contrast": 3.791,
+     "medianBackground": [
+      41,
+      41,
+      46
+     ],
+     "bestTextPixel": 3.791
+    }
+   },
+   "focusVisible": true,
+   "focusOutline": "rgb(150, 163, 235)"
+  },
+  "145": {
+   "reducedMotionMatches": false,
+   "transition": "transform 0.2s, background 0.2s",
+   "menuAnimation": "theme-menu-in",
+   "states": {
+    "repos": {
+     "bg": "rgb(27, 27, 27)",
+     "color": "rgb(237, 52, 145)",
+     "transform": "none",
+     "contrast": 4.512,
+     "medianBackground": [
+      27,
+      27,
+      27
+     ],
+     "bestTextPixel": 4.512
+    },
+    "survol": {
+     "bg": "rgb(27, 27, 27)",
+     "color": "rgb(237, 52, 145)",
+     "transform": "matrix(1, 0, 0, 1, 0, -2)",
+     "contrast": 4.512,
+     "medianBackground": [
+      27,
+      27,
+      27
+     ],
+     "bestTextPixel": 4.512
+    },
+    "focus": {
+     "bg": "rgb(27, 27, 27)",
+     "color": "rgb(237, 52, 145)",
+     "transform": "none",
+     "contrast": 4.512,
+     "medianBackground": [
+      27,
+      27,
+      27
+     ],
+     "bestTextPixel": 4.512
+    }
+   },
+   "focusVisible": true,
+   "focusOutline": "rgb(150, 163, 235)"
+  }
+ },
+ "summary": {
+  "composite": "/home/le-rif/Bureau/Transcendence/work/visualizations/horizon-welcome/checks/20261015-audit-fixes/contraste/composite-complement-erreur-presse.png",
+  "compositeSize": [
+   984,
+   931
+  ],
+  "inkVsGlass": 1.19
+ },
+ "errorLightButtons": {
+  "144": [
+   [
+    "Réessayer",
+    "rgb(27, 27, 27)",
+    "rgb(255, 255, 255)"
+   ],
+   [
+    "Revenir au message",
+    "rgb(255, 255, 255)",
+    "rgb(27, 27, 27)"
+   ],
+   [
+    "Continuer sans le globe",
+    "rgb(255, 255, 255)",
+    "rgb(27, 27, 27)"
+   ]
+  ],
+  "145": [
+   [
+    "Réessayer",
+    "rgb(27, 27, 27)",
+    "rgb(255, 255, 255)"
+   ],
+   [
+    "Revenir au message",
+    "rgb(255, 255, 255)",
+    "rgb(27, 27, 27)"
+   ],
+   [
+    "Continuer sans le globe",
+    "rgb(255, 255, 255)",
+    "rgb(27, 27, 27)"
+   ]
+  ]
+ },
+ "errorLightAccount": {
+  "144": {
+   "switcherDisplay": "none",
+   "profileRect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0
+   },
+   "hitIsProfile": false
+  },
+  "145": {
+   "switcherDisplay": "block",
+   "profileRect": {
+    "x": 1188,
+    "y": 40,
+    "w": 44,
+    "h": 44
+   },
+   "hitIsProfile": true
+  }
+ }
+}

@@ -1,0 +1,66 @@
+/* The first navigation study's shared content arrangement, with both views. */
+:root .app[data-navigation=dock] .content-sheet:has(#content-index:not([hidden])) {
+  width: min(1100px, calc(100% - var(--horizon-page-gutter) * 2));
+  max-width: 1100px;
+}
+:root .app[data-navigation=dock] #section-title { margin: 0; }
+:root .app[data-navigation=dock] #content-index .cp-toolbar {
+  margin: 0 0 24px;
+  padding: 0;
+  border-top: 0;
+  border-bottom: 0;
+  flex-wrap: nowrap;
+  gap: 16px;
+}
+:root .app[data-navigation=dock] #content-count { text-align: start; max-width: none; }
+.cp-view-controls { display: inline-flex; gap: 4px; flex-shrink: 0; }
+.cp-view-controls button {
+  display: inline-flex; align-items: center; justify-content: center; gap: 7px;
+  min-height: 40px; padding: 8px 12px; border: 1px solid transparent; border-radius: 12px;
+  background: transparent; color: var(--h42-color-muted); font: inherit; font-size: 13px;
+}
+.cp-view-controls button[aria-pressed=true] { background: var(--warm-soft); color: var(--cp-accent); border-color: var(--cp-line); }
+.cp-view-controls button:hover { background: var(--warm-soft); }
+.cp-view-controls svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.6; }
+:root .app[data-navigation=dock] #content-index .cp-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 38px 28px;
+}
+:root .app[data-navigation=dock] #content-index .cp-cover { aspect-ratio: 1.5; }
+:root .app[data-navigation=dock] #content-index .cp-card { display: flex; flex-direction: column; }
+:root .app[data-navigation=dock] #content-index .cp-card-copy {
+  display: flex; flex: 1; flex-direction: column; align-items: flex-start;
+  min-width: 0; padding-top: 20px;
+}
+:root .app[data-navigation=dock] #content-index .cp-card-link { margin-top: auto; padding-top: 16px; }
+:root .app[data-navigation=dock] #content-index[data-view=list] .cp-grid { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+:root .app[data-navigation=dock] #content-index[data-view=list] .cp-card {
+  display: grid; grid-template-columns: minmax(0, 280px) minmax(0, 1fr);
+  align-items: center; gap: 32px;
+}
+:root .app[data-navigation=dock] #content-index[data-view=list] .cp-card-copy { padding: 0; max-width: 700px; }
+:root .app[data-navigation=dock] #content-index[data-view=list] .cp-card-link { margin-top: 0; }
+@media (max-width: 850px) {
+  :root .app[data-navigation=dock] #content-index .cp-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  :root .app[data-navigation=dock] #content-index[data-view=list] .cp-card { grid-template-columns: minmax(0, 220px) minmax(0, 1fr); gap: 24px; }
+}
+@media (max-width: 700px) {
+  :root .app[data-navigation=dock] #content-index .cp-toolbar { margin: 0 0 22px; gap: 10px; }
+  .cp-view-controls { gap: 2px; }
+  .cp-view-controls button { padding-inline: 9px; font-size: 12px; }
+  :root .app[data-navigation=dock] #content-index[data-view=list] .cp-card { grid-template-columns: minmax(0, .3fr) minmax(0, .7fr); align-items: start; gap: 18px; }
+}
+@media (max-width: 600px) {
+  :root .app[data-navigation=dock] #content-index .cp-grid { grid-template-columns: minmax(0, 1fr); gap: 34px; }
+  :root .app[data-navigation=dock] #content-index .cp-cover { aspect-ratio: 1.65; }
+  :root .app[data-navigation=dock] #content-index .cp-card-copy { padding-top: 17px; }
+  :root .app[data-navigation=dock] #content-index[data-view=list] .cp-card-copy { padding-top: 0; }
+}
+@media (max-width: 360px) {
+  .cp-view-controls button { padding-inline: 7px; gap: 5px; }
+}
+
+/* With the map-link row removed, keep the content below its independent context. */
+@media (min-width: 1001px) {
+  :root .app[data-navigation=dock] .content-sheet { padding-top: 80px; }
+}

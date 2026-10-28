@@ -1,0 +1,8325 @@
+{
+ "area": "entrance",
+ "states": [
+  {
+   "name": "arrival-scan-binary--desktop--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/arrival-scan-binary--desktop--fr-light.png",
+   "dom": "dom/entrance/arrival-scan-binary--desktop--fr-light.json.gz",
+   "nodes": 15,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "arrival",
+   "state": "arrival-scan-binary",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "scanning",
+    "phase": "binary",
+    "labels": [
+     "fr",
+     "fr"
+    ]
+   },
+   "canvas": "dom/entrance/arrival-scan-binary--desktop--fr-light.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1408000,
+    "paintedPixels": 8745,
+    "sprites": 13
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 300,
+    "rendererTimeMs": 300,
+    "phase": "binary",
+    "description": "binaire au repos, avant le premier passage (le faisceau entre à 600 ms)",
+    "frameIndexAtShot": 24,
+    "frameIndexAtDump": 24,
+    "rendererPhase": "binary",
+    "renderedText": "",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 1100,
+     "height": 320
+    },
+    "cssBox": {
+     "x": 170,
+     "y": 320,
+     "w": 1100,
+     "h": 320
+    },
+    "devicePixelRatio": 1,
+    "lines": [
+     {
+      "kind": "binary",
+      "baselineY": 454.18,
+      "fontSizePx": 19.78,
+      "text": "0 1 0 1 0 0 0 0 0 0 0 1 0 0 0 1 0 1 0 1 0 0 0 1 0 1",
+      "advanceLeft": 321.28,
+      "advanceRight": 1120.01,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "binary",
+      "baselineY": 474.82,
+      "fontSizePx": 19.78,
+      "text": "1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1",
+      "advanceLeft": 321.28,
+      "advanceRight": 1120.01,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "binary",
+      "baselineY": 495.46,
+      "fontSizePx": 19.78,
+      "text": "0 0 0 1 0 1 0 1 0 0 0 1 1 0 1 0 0 1 0 0 0 1 0 1 0 1",
+      "advanceLeft": 321.28,
+      "advanceRight": 1120.01,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "binary",
+      "baselineY": 516.1,
+      "fontSizePx": 19.78,
+      "text": "1 0 0 1 0 1 0 0 1 1 0 0 0 1 0 0 0 1 1 1 0 0 0 0 0 1",
+      "advanceLeft": 321.28,
+      "advanceRight": 1120.01,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 104,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "arrival-scan-hex--desktop--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/arrival-scan-hex--desktop--fr-light.png",
+   "dom": "dom/entrance/arrival-scan-hex--desktop--fr-light.json.gz",
+   "nodes": 15,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "arrival",
+   "state": "arrival-scan-hex",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "scanning",
+    "phase": "scan-down",
+    "labels": [
+     "fr",
+     "fr"
+    ]
+   },
+   "canvas": "dom/entrance/arrival-scan-hex--desktop--fr-light.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1408000,
+    "paintedPixels": 26098,
+    "sprites": 26
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 1300,
+    "rendererTimeMs": 1300,
+    "phase": "scan-down",
+    "description": "descente : faisceau à mi-hauteur (position 0,5), hexadécimal au-dessus, binaire au-dessous",
+    "frameIndexAtShot": 87,
+    "frameIndexAtDump": 87,
+    "rendererPhase": "scan-down",
+    "renderedText": "",
+    "beamPosition": "0.49999999999999994"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 1100,
+     "height": 320
+    },
+    "cssBox": {
+     "x": 170,
+     "y": 320,
+     "w": 1100,
+     "h": 320
+    },
+    "devicePixelRatio": 1,
+    "lines": [
+     {
+      "kind": "binary",
+      "baselineY": 454.18,
+      "fontSizePx": 19.78,
+      "text": "0 1 0 1 0 0 0 0 0 0 0 1 0 0 0 1 0 1 0 1 0 0 0 1 0 1",
+      "advanceLeft": 321.28,
+      "advanceRight": 1120.01,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": [
+       170.0,
+       480.0,
+       1270.0,
+       640.0
+      ]
+     },
+     {
+      "kind": "binary",
+      "baselineY": 474.82,
+      "fontSizePx": 19.78,
+      "text": "1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1",
+      "advanceLeft": 321.28,
+      "advanceRight": 1120.01,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": [
+       170.0,
+       480.0,
+       1270.0,
+       640.0
+      ]
+     },
+     {
+      "kind": "binary",
+      "baselineY": 495.46,
+      "fontSizePx": 19.78,
+      "text": "0 0 0 1 0 1 0 1 0 0 0 1 1 0 1 0 0 1 0 0 0 1 0 1 0 1",
+      "advanceLeft": 321.28,
+      "advanceRight": 1120.01,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": [
+       170.0,
+       480.0,
+       1270.0,
+       640.0
+      ]
+     },
+     {
+      "kind": "binary",
+      "baselineY": 516.1,
+      "fontSizePx": 19.78,
+      "text": "1 0 0 1 0 1 0 0 1 1 0 0 0 1 0 0 0 1 1 1 0 0 0 0 0 1",
+      "advanceLeft": 321.28,
+      "advanceRight": 1120.01,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": [
+       170.0,
+       480.0,
+       1270.0,
+       640.0
+      ]
+     },
+     {
+      "kind": "hex",
+      "baselineY": 491.75,
+      "fontSizePx": 36.98,
+      "text": "72 75 25 34 33 74 39 78 75 73 34 74 75",
+      "advanceLeft": 314.01,
+      "advanceRight": 1127.28,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": [
+       170.0,
+       320.0,
+       1270.0,
+       480.0
+      ]
+     }
+    ],
+    "beam": {
+     "centreY": 480.0,
+     "left": 288.93,
+     "right": 1151.08,
+     "width": 862.15,
+     "color": "#00BABC",
+     "opacity": 1,
+     "layers": [
+      {
+       "role": "halo (0,30 × corps)",
+       "page": [
+        288.93,
+        467.1,
+        1151.08,
+        492.9
+       ],
+       "height": 25.8,
+       "width": 862.15,
+       "alpha": 0.07
+      },
+      {
+       "role": "cœur 6 px",
+       "page": [
+        288.93,
+        477.0,
+        1151.08,
+        483.0
+       ],
+       "height": 6.0,
+       "width": 862.15,
+       "alpha": 0.16
+      },
+      {
+       "role": "ligne 1,5 px",
+       "page": [
+        288.93,
+        479.25,
+        1151.08,
+        480.75
+       ],
+       "height": 1.5,
+       "width": 862.15,
+       "alpha": 1
+      },
+      {
+       "role": "butée gauche 1,5 × 6",
+       "page": [
+        288.93,
+        477.0,
+        290.43,
+        483.0
+       ],
+       "height": 6.0,
+       "width": 1.5,
+       "alpha": 1
+      },
+      {
+       "role": "butée droite 1,5 × 6",
+       "page": [
+        1149.58,
+        477.0,
+        1151.08,
+        483.0
+       ],
+       "height": 6.0,
+       "width": 1.5,
+       "alpha": 1
+      }
+     ]
+    },
+    "counts": {
+     "glyphs": 117,
+     "drawImage": 26,
+     "fillRect": 5,
+     "commands": 48
+    }
+   }
+  },
+  {
+   "name": "arrival-scan-return--desktop--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/arrival-scan-return--desktop--fr-light.png",
+   "dom": "dom/entrance/arrival-scan-return--desktop--fr-light.json.gz",
+   "nodes": 15,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "arrival",
+   "state": "arrival-scan-return",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "scanning",
+    "phase": "scan-up",
+    "labels": [
+     "fr",
+     "fr"
+    ]
+   },
+   "canvas": "dom/entrance/arrival-scan-return--desktop--fr-light.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1408000,
+    "paintedPixels": 26309,
+    "sprites": 22
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 2700,
+    "rendererTimeMs": 2700,
+    "phase": "scan-up",
+    "description": "remontée : faisceau à mi-hauteur (position 0,5), hexadécimal au-dessus, texte chiffré au-dessous",
+    "frameIndexAtShot": 175,
+    "frameIndexAtDump": 175,
+    "rendererPhase": "scan-up",
+    "renderedText": "",
+    "beamPosition": "0.5000000000000001"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 1100,
+     "height": 320
+    },
+    "cssBox": {
+     "x": 170,
+     "y": 320,
+     "w": 1100,
+     "h": 320
+    },
+    "devicePixelRatio": 1,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 504.55,
+      "fontSizePx": 86.0,
+      "text": "ru%43t9xus4tu",
+      "advanceLeft": 320.32,
+      "advanceRight": 1128.46,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": [
+       170.0,
+       480.0,
+       1270.0,
+       640.0
+      ]
+     },
+     {
+      "kind": "hex",
+      "baselineY": 491.75,
+      "fontSizePx": 36.98,
+      "text": "72 75 25 34 33 74 39 78 75 73 34 74 75",
+      "advanceLeft": 314.01,
+      "advanceRight": 1127.28,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": [
+       170.0,
+       320.0,
+       1270.0,
+       480.0
+      ]
+     }
+    ],
+    "beam": {
+     "centreY": 480.0,
+     "left": 288.93,
+     "right": 1151.08,
+     "width": 862.15,
+     "color": "#00BABC",
+     "opacity": 1,
+     "layers": [
+      {
+       "role": "halo (0,30 × corps)",
+       "page": [
+        288.93,
+        467.1,
+        1151.08,
+        492.9
+       ],
+       "height": 25.8,
+       "width": 862.15,
+       "alpha": 0.07
+      },
+      {
+       "role": "cœur 6 px",
+       "page": [
+        288.93,
+        477.0,
+        1151.08,
+        483.0
+       ],
+       "height": 6.0,
+       "width": 862.15,
+       "alpha": 0.16
+      },
+      {
+       "role": "ligne 1,5 px",
+       "page": [
+        288.93,
+        479.25,
+        1151.08,
+        480.75
+       ],
+       "height": 1.5,
+       "width": 862.15,
+       "alpha": 1
+      },
+      {
+       "role": "butée gauche 1,5 × 6",
+       "page": [
+        288.93,
+        477.0,
+        290.43,
+        483.0
+       ],
+       "height": 6.0,
+       "width": 1.5,
+       "alpha": 1
+      },
+      {
+       "role": "butée droite 1,5 × 6",
+       "page": [
+        1149.58,
+        477.0,
+        1151.08,
+        483.0
+       ],
+       "height": 6.0,
+       "width": 1.5,
+       "alpha": 1
+      }
+     ]
+    },
+    "counts": {
+     "glyphs": 26,
+     "drawImage": 26,
+     "fillRect": 5,
+     "commands": 48
+    }
+   }
+  },
+  {
+   "name": "arrival-encrypted--desktop--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/arrival-encrypted--desktop--fr-light.png",
+   "dom": "dom/entrance/arrival-encrypted--desktop--fr-light.json.gz",
+   "nodes": 15,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "arrival",
+   "state": "arrival-encrypted",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "encrypted",
+    "phase": "cipher",
+    "labels": [
+     "fr",
+     "fr"
+    ]
+   },
+   "canvas": "dom/entrance/arrival-encrypted--desktop--fr-light.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1408000,
+    "paintedPixels": 12626,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "rendererTimeMs": 3649.999,
+    "phase": "cipher",
+    "description": "fin du double scan : message chiffré au repos, Se connecter et Visiter (libellés FR)",
+    "frameIndexAtShot": 235,
+    "frameIndexAtDump": 235,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 1100,
+     "height": 320
+    },
+    "cssBox": {
+     "x": 170,
+     "y": 320,
+     "w": 1100,
+     "h": 320
+    },
+    "devicePixelRatio": 1,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 504.55,
+      "fontSizePx": 86.0,
+      "text": "ru%43t9xus4tu",
+      "advanceLeft": 320.32,
+      "advanceRight": 1128.46,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "arrival-scan-binary--desktop--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/arrival-scan-binary--desktop--fr-dark.png",
+   "dom": "dom/entrance/arrival-scan-binary--desktop--fr-dark.json.gz",
+   "nodes": 15,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "arrival",
+   "state": "arrival-scan-binary",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "scanning",
+    "phase": "binary",
+    "labels": [
+     "fr",
+     "fr"
+    ]
+   },
+   "canvas": "dom/entrance/arrival-scan-binary--desktop--fr-dark.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1408000,
+    "paintedPixels": 8794,
+    "sprites": 13
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 300,
+    "rendererTimeMs": 300,
+    "phase": "binary",
+    "description": "binaire au repos, avant le premier passage (le faisceau entre à 600 ms)",
+    "frameIndexAtShot": 24,
+    "frameIndexAtDump": 24,
+    "rendererPhase": "binary",
+    "renderedText": "",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 1100,
+     "height": 320
+    },
+    "cssBox": {
+     "x": 170,
+     "y": 320,
+     "w": 1100,
+     "h": 320
+    },
+    "devicePixelRatio": 1,
+    "lines": [
+     {
+      "kind": "binary",
+      "baselineY": 454.18,
+      "fontSizePx": 19.78,
+      "text": "0 1 0 1 0 0 0 0 0 0 0 1 0 0 0 1 0 1 0 1 0 0 0 1 0 1",
+      "advanceLeft": 321.28,
+      "advanceRight": 1120.01,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "binary",
+      "baselineY": 474.82,
+      "fontSizePx": 19.78,
+      "text": "1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1",
+      "advanceLeft": 321.28,
+      "advanceRight": 1120.01,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "binary",
+      "baselineY": 495.46,
+      "fontSizePx": 19.78,
+      "text": "0 0 0 1 0 1 0 1 0 0 0 1 1 0 1 0 0 1 0 0 0 1 0 1 0 1",
+      "advanceLeft": 321.28,
+      "advanceRight": 1120.01,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "binary",
+      "baselineY": 516.1,
+      "fontSizePx": 19.78,
+      "text": "1 0 0 1 0 1 0 0 1 1 0 0 0 1 0 0 0 1 1 1 0 0 0 0 0 1",
+      "advanceLeft": 321.28,
+      "advanceRight": 1120.01,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 104,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "arrival-scan-hex--desktop--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/arrival-scan-hex--desktop--fr-dark.png",
+   "dom": "dom/entrance/arrival-scan-hex--desktop--fr-dark.json.gz",
+   "nodes": 15,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "arrival",
+   "state": "arrival-scan-hex",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "scanning",
+    "phase": "scan-down",
+    "labels": [
+     "fr",
+     "fr"
+    ]
+   },
+   "canvas": "dom/entrance/arrival-scan-hex--desktop--fr-dark.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1408000,
+    "paintedPixels": 26114,
+    "sprites": 26
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 1300,
+    "rendererTimeMs": 1300,
+    "phase": "scan-down",
+    "description": "descente : faisceau à mi-hauteur (position 0,5), hexadécimal au-dessus, binaire au-dessous",
+    "frameIndexAtShot": 87,
+    "frameIndexAtDump": 87,
+    "rendererPhase": "scan-down",
+    "renderedText": "",
+    "beamPosition": "0.49999999999999994"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 1100,
+     "height": 320
+    },
+    "cssBox": {
+     "x": 170,
+     "y": 320,
+     "w": 1100,
+     "h": 320
+    },
+    "devicePixelRatio": 1,
+    "lines": [
+     {
+      "kind": "binary",
+      "baselineY": 454.18,
+      "fontSizePx": 19.78,
+      "text": "0 1 0 1 0 0 0 0 0 0 0 1 0 0 0 1 0 1 0 1 0 0 0 1 0 1",
+      "advanceLeft": 321.28,
+      "advanceRight": 1120.01,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": [
+       170.0,
+       480.0,
+       1270.0,
+       640.0
+      ]
+     },
+     {
+      "kind": "binary",
+      "baselineY": 474.82,
+      "fontSizePx": 19.78,
+      "text": "1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1",
+      "advanceLeft": 321.28,
+      "advanceRight": 1120.01,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": [
+       170.0,
+       480.0,
+       1270.0,
+       640.0
+      ]
+     },
+     {
+      "kind": "binary",
+      "baselineY": 495.46,
+      "fontSizePx": 19.78,
+      "text": "0 0 0 1 0 1 0 1 0 0 0 1 1 0 1 0 0 1 0 0 0 1 0 1 0 1",
+      "advanceLeft": 321.28,
+      "advanceRight": 1120.01,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": [
+       170.0,
+       480.0,
+       1270.0,
+       640.0
+      ]
+     },
+     {
+      "kind": "binary",
+      "baselineY": 516.1,
+      "fontSizePx": 19.78,
+      "text": "1 0 0 1 0 1 0 0 1 1 0 0 0 1 0 0 0 1 1 1 0 0 0 0 0 1",
+      "advanceLeft": 321.28,
+      "advanceRight": 1120.01,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": [
+       170.0,
+       480.0,
+       1270.0,
+       640.0
+      ]
+     },
+     {
+      "kind": "hex",
+      "baselineY": 491.75,
+      "fontSizePx": 36.98,
+      "text": "72 75 25 34 33 74 39 78 75 73 34 74 75",
+      "advanceLeft": 314.01,
+      "advanceRight": 1127.28,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": [
+       170.0,
+       320.0,
+       1270.0,
+       480.0
+      ]
+     }
+    ],
+    "beam": {
+     "centreY": 480.0,
+     "left": 288.93,
+     "right": 1151.08,
+     "width": 862.15,
+     "color": "#ED3491",
+     "opacity": 1,
+     "layers": [
+      {
+       "role": "halo (0,30 × corps)",
+       "page": [
+        288.93,
+        467.1,
+        1151.08,
+        492.9
+       ],
+       "height": 25.8,
+       "width": 862.15,
+       "alpha": 0.07
+      },
+      {
+       "role": "cœur 6 px",
+       "page": [
+        288.93,
+        477.0,
+        1151.08,
+        483.0
+       ],
+       "height": 6.0,
+       "width": 862.15,
+       "alpha": 0.16
+      },
+      {
+       "role": "ligne 1,5 px",
+       "page": [
+        288.93,
+        479.25,
+        1151.08,
+        480.75
+       ],
+       "height": 1.5,
+       "width": 862.15,
+       "alpha": 1
+      },
+      {
+       "role": "butée gauche 1,5 × 6",
+       "page": [
+        288.93,
+        477.0,
+        290.43,
+        483.0
+       ],
+       "height": 6.0,
+       "width": 1.5,
+       "alpha": 1
+      },
+      {
+       "role": "butée droite 1,5 × 6",
+       "page": [
+        1149.58,
+        477.0,
+        1151.08,
+        483.0
+       ],
+       "height": 6.0,
+       "width": 1.5,
+       "alpha": 1
+      }
+     ]
+    },
+    "counts": {
+     "glyphs": 117,
+     "drawImage": 26,
+     "fillRect": 5,
+     "commands": 48
+    }
+   }
+  },
+  {
+   "name": "arrival-scan-return--desktop--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/arrival-scan-return--desktop--fr-dark.png",
+   "dom": "dom/entrance/arrival-scan-return--desktop--fr-dark.json.gz",
+   "nodes": 15,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "arrival",
+   "state": "arrival-scan-return",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "scanning",
+    "phase": "scan-up",
+    "labels": [
+     "fr",
+     "fr"
+    ]
+   },
+   "canvas": "dom/entrance/arrival-scan-return--desktop--fr-dark.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1408000,
+    "paintedPixels": 26315,
+    "sprites": 22
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 2700,
+    "rendererTimeMs": 2700,
+    "phase": "scan-up",
+    "description": "remontée : faisceau à mi-hauteur (position 0,5), hexadécimal au-dessus, texte chiffré au-dessous",
+    "frameIndexAtShot": 175,
+    "frameIndexAtDump": 175,
+    "rendererPhase": "scan-up",
+    "renderedText": "",
+    "beamPosition": "0.5000000000000001"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 1100,
+     "height": 320
+    },
+    "cssBox": {
+     "x": 170,
+     "y": 320,
+     "w": 1100,
+     "h": 320
+    },
+    "devicePixelRatio": 1,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 504.55,
+      "fontSizePx": 86.0,
+      "text": "ru%43t9xus4tu",
+      "advanceLeft": 320.32,
+      "advanceRight": 1128.46,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": [
+       170.0,
+       480.0,
+       1270.0,
+       640.0
+      ]
+     },
+     {
+      "kind": "hex",
+      "baselineY": 491.75,
+      "fontSizePx": 36.98,
+      "text": "72 75 25 34 33 74 39 78 75 73 34 74 75",
+      "advanceLeft": 314.01,
+      "advanceRight": 1127.28,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": [
+       170.0,
+       320.0,
+       1270.0,
+       480.0
+      ]
+     }
+    ],
+    "beam": {
+     "centreY": 480.0,
+     "left": 288.93,
+     "right": 1151.08,
+     "width": 862.15,
+     "color": "#ED3491",
+     "opacity": 1,
+     "layers": [
+      {
+       "role": "halo (0,30 × corps)",
+       "page": [
+        288.93,
+        467.1,
+        1151.08,
+        492.9
+       ],
+       "height": 25.8,
+       "width": 862.15,
+       "alpha": 0.07
+      },
+      {
+       "role": "cœur 6 px",
+       "page": [
+        288.93,
+        477.0,
+        1151.08,
+        483.0
+       ],
+       "height": 6.0,
+       "width": 862.15,
+       "alpha": 0.16
+      },
+      {
+       "role": "ligne 1,5 px",
+       "page": [
+        288.93,
+        479.25,
+        1151.08,
+        480.75
+       ],
+       "height": 1.5,
+       "width": 862.15,
+       "alpha": 1
+      },
+      {
+       "role": "butée gauche 1,5 × 6",
+       "page": [
+        288.93,
+        477.0,
+        290.43,
+        483.0
+       ],
+       "height": 6.0,
+       "width": 1.5,
+       "alpha": 1
+      },
+      {
+       "role": "butée droite 1,5 × 6",
+       "page": [
+        1149.58,
+        477.0,
+        1151.08,
+        483.0
+       ],
+       "height": 6.0,
+       "width": 1.5,
+       "alpha": 1
+      }
+     ]
+    },
+    "counts": {
+     "glyphs": 26,
+     "drawImage": 26,
+     "fillRect": 5,
+     "commands": 48
+    }
+   }
+  },
+  {
+   "name": "arrival-encrypted--desktop--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/arrival-encrypted--desktop--fr-dark.png",
+   "dom": "dom/entrance/arrival-encrypted--desktop--fr-dark.json.gz",
+   "nodes": 15,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "arrival",
+   "state": "arrival-encrypted",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "encrypted",
+    "phase": "cipher",
+    "labels": [
+     "fr",
+     "fr"
+    ]
+   },
+   "canvas": "dom/entrance/arrival-encrypted--desktop--fr-dark.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1408000,
+    "paintedPixels": 12654,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "rendererTimeMs": 3649.999,
+    "phase": "cipher",
+    "description": "fin du double scan : message chiffré au repos, Se connecter et Visiter (libellés FR)",
+    "frameIndexAtShot": 235,
+    "frameIndexAtDump": 235,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 1100,
+     "height": 320
+    },
+    "cssBox": {
+     "x": 170,
+     "y": 320,
+     "w": 1100,
+     "h": 320
+    },
+    "devicePixelRatio": 1,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 504.55,
+      "fontSizePx": 86.0,
+      "text": "ru%43t9xus4tu",
+      "advanceLeft": 320.32,
+      "advanceRight": 1128.46,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "arrival-scan-binary--mobile--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/arrival-scan-binary--mobile--fr-light.png",
+   "dom": "dom/entrance/arrival-scan-binary--mobile--fr-light.json.gz",
+   "nodes": 15,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "arrival",
+   "state": "arrival-scan-binary",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "scanning",
+    "phase": "binary",
+    "labels": [
+     "fr",
+     "fr"
+    ]
+   },
+   "canvas": "dom/entrance/arrival-scan-binary--mobile--fr-light.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1313280,
+    "paintedPixels": 10877,
+    "sprites": 13
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 300,
+    "rendererTimeMs": 300,
+    "phase": "binary",
+    "description": "binaire au repos, avant le premier passage (le faisceau entre à 600 ms)",
+    "frameIndexAtShot": 24,
+    "frameIndexAtDump": 24,
+    "rendererPhase": "binary",
+    "renderedText": "",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 684,
+     "height": 480
+    },
+    "cssBox": {
+     "x": 24,
+     "y": 302,
+     "w": 342,
+     "h": 240
+    },
+    "devicePixelRatio": 2,
+    "lines": [
+     {
+      "kind": "binary",
+      "baselineY": 374.47,
+      "fontSizePx": 11.04,
+      "text": "0 1 0 1 0 0 0 0 0 0 0 1",
+      "advanceLeft": 101.22,
+      "advanceRight": 286.38,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "binary",
+      "baselineY": 385.99,
+      "fontSizePx": 11.04,
+      "text": "1 1 1 1 1 0 1 1 1 1 1 1",
+      "advanceLeft": 101.22,
+      "advanceRight": 286.38,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "binary",
+      "baselineY": 397.51,
+      "fontSizePx": 11.04,
+      "text": "0 0 0 1 0 1 0 1 0 0 0 1",
+      "advanceLeft": 101.22,
+      "advanceRight": 286.38,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "binary",
+      "baselineY": 409.03,
+      "fontSizePx": 11.04,
+      "text": "1 0 0 1 0 1 0 0 1 1 0 0",
+      "advanceLeft": 101.22,
+      "advanceRight": 286.38,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "binary",
+      "baselineY": 440.71,
+      "fontSizePx": 11.04,
+      "text": "0 0 0 1 0 1 0 1 0 0 0 1 0 1",
+      "advanceLeft": 78.13,
+      "advanceRight": 310.26,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "binary",
+      "baselineY": 452.23,
+      "fontSizePx": 11.04,
+      "text": "1 1 1 1 1 1 1 1 1 1 1 1 1 1",
+      "advanceLeft": 78.13,
+      "advanceRight": 310.26,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "binary",
+      "baselineY": 463.75,
+      "fontSizePx": 11.04,
+      "text": "1 0 1 0 0 1 0 0 0 1 0 1 0 1",
+      "advanceLeft": 78.13,
+      "advanceRight": 310.26,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "binary",
+      "baselineY": 475.27,
+      "fontSizePx": 11.04,
+      "text": "0 1 0 0 0 1 1 1 0 0 0 0 0 1",
+      "advanceLeft": 78.13,
+      "advanceRight": 310.26,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 104,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "arrival-scan-hex--mobile--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/arrival-scan-hex--mobile--fr-light.png",
+   "dom": "dom/entrance/arrival-scan-hex--mobile--fr-light.json.gz",
+   "nodes": 15,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "arrival",
+   "state": "arrival-scan-hex",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "scanning",
+    "phase": "scan-down",
+    "labels": [
+     "fr",
+     "fr"
+    ]
+   },
+   "canvas": "dom/entrance/arrival-scan-hex--mobile--fr-light.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1313280,
+    "paintedPixels": 25062,
+    "sprites": 26
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 1300,
+    "rendererTimeMs": 1300,
+    "phase": "scan-down",
+    "description": "descente : faisceau à mi-hauteur (position 0,5), hexadécimal au-dessus, binaire au-dessous",
+    "frameIndexAtShot": 87,
+    "frameIndexAtDump": 87,
+    "rendererPhase": "scan-down",
+    "renderedText": "",
+    "beamPosition": "0.49999999999999994"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 684,
+     "height": 480
+    },
+    "cssBox": {
+     "x": 24,
+     "y": 302,
+     "w": 342,
+     "h": 240
+    },
+    "devicePixelRatio": 2,
+    "lines": [
+     {
+      "kind": "binary",
+      "baselineY": 374.47,
+      "fontSizePx": 11.04,
+      "text": "0 1 0 1 0 0 0 0 0 0 0 1",
+      "advanceLeft": 101.22,
+      "advanceRight": 286.38,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": [
+       24.0,
+       422.0,
+       366.0,
+       542.0
+      ]
+     },
+     {
+      "kind": "binary",
+      "baselineY": 385.99,
+      "fontSizePx": 11.04,
+      "text": "1 1 1 1 1 0 1 1 1 1 1 1",
+      "advanceLeft": 101.22,
+      "advanceRight": 286.38,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": [
+       24.0,
+       422.0,
+       366.0,
+       542.0
+      ]
+     },
+     {
+      "kind": "binary",
+      "baselineY": 397.51,
+      "fontSizePx": 11.04,
+      "text": "0 0 0 1 0 1 0 1 0 0 0 1",
+      "advanceLeft": 101.22,
+      "advanceRight": 286.38,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": [
+       24.0,
+       422.0,
+       366.0,
+       542.0
+      ]
+     },
+     {
+      "kind": "binary",
+      "baselineY": 409.03,
+      "fontSizePx": 11.04,
+      "text": "1 0 0 1 0 1 0 0 1 1 0 0",
+      "advanceLeft": 101.22,
+      "advanceRight": 286.38,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": [
+       24.0,
+       422.0,
+       366.0,
+       542.0
+      ]
+     },
+     {
+      "kind": "binary",
+      "baselineY": 440.71,
+      "fontSizePx": 11.04,
+      "text": "0 0 0 1 0 1 0 1 0 0 0 1 0 1",
+      "advanceLeft": 78.13,
+      "advanceRight": 310.26,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": [
+       24.0,
+       422.0,
+       366.0,
+       542.0
+      ]
+     },
+     {
+      "kind": "binary",
+      "baselineY": 452.23,
+      "fontSizePx": 11.04,
+      "text": "1 1 1 1 1 1 1 1 1 1 1 1 1 1",
+      "advanceLeft": 78.13,
+      "advanceRight": 310.26,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": [
+       24.0,
+       422.0,
+       366.0,
+       542.0
+      ]
+     },
+     {
+      "kind": "binary",
+      "baselineY": 463.75,
+      "fontSizePx": 11.04,
+      "text": "1 0 1 0 0 1 0 0 0 1 0 1 0 1",
+      "advanceLeft": 78.13,
+      "advanceRight": 310.26,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": [
+       24.0,
+       422.0,
+       366.0,
+       542.0
+      ]
+     },
+     {
+      "kind": "binary",
+      "baselineY": 475.27,
+      "fontSizePx": 11.04,
+      "text": "0 1 0 0 0 1 1 1 0 0 0 0 0 1",
+      "advanceLeft": 78.13,
+      "advanceRight": 310.26,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": [
+       24.0,
+       422.0,
+       366.0,
+       542.0
+      ]
+     },
+     {
+      "kind": "hex",
+      "baselineY": 395.44,
+      "fontSizePx": 20.64,
+      "text": "72 75 25 34 33 74",
+      "advanceLeft": 97.16,
+      "advanceRight": 290.44,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": [
+       24.0,
+       302.0,
+       366.0,
+       422.0
+      ]
+     },
+     {
+      "kind": "hex",
+      "baselineY": 461.68,
+      "fontSizePx": 20.64,
+      "text": "39 78 75 73 34 74 75",
+      "advanceLeft": 74.46,
+      "advanceRight": 314.32,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": [
+       24.0,
+       302.0,
+       366.0,
+       422.0
+      ]
+     }
+    ],
+    "beam": {
+     "centreY": 422.0,
+     "left": 62.4,
+     "right": 327.6,
+     "width": 265.2,
+     "color": "#00BABC",
+     "opacity": 1,
+     "layers": [
+      {
+       "role": "halo (0,30 × corps)",
+       "page": [
+        62.4,
+        414.8,
+        327.6,
+        429.2
+       ],
+       "height": 14.4,
+       "width": 265.2,
+       "alpha": 0.07
+      },
+      {
+       "role": "cœur 6 px",
+       "page": [
+        62.4,
+        419.0,
+        327.6,
+        425.0
+       ],
+       "height": 6.0,
+       "width": 265.2,
+       "alpha": 0.16
+      },
+      {
+       "role": "ligne 1,5 px",
+       "page": [
+        62.4,
+        421.25,
+        327.6,
+        422.75
+       ],
+       "height": 1.5,
+       "width": 265.2,
+       "alpha": 1
+      },
+      {
+       "role": "butée gauche 1,5 × 6",
+       "page": [
+        62.4,
+        419.0,
+        63.9,
+        425.0
+       ],
+       "height": 6.0,
+       "width": 1.5,
+       "alpha": 1
+      },
+      {
+       "role": "butée droite 1,5 × 6",
+       "page": [
+        326.1,
+        419.0,
+        327.6,
+        425.0
+       ],
+       "height": 6.0,
+       "width": 1.5,
+       "alpha": 1
+      }
+     ]
+    },
+    "counts": {
+     "glyphs": 117,
+     "drawImage": 26,
+     "fillRect": 5,
+     "commands": 48
+    }
+   }
+  },
+  {
+   "name": "arrival-scan-return--mobile--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/arrival-scan-return--mobile--fr-light.png",
+   "dom": "dom/entrance/arrival-scan-return--mobile--fr-light.json.gz",
+   "nodes": 15,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "arrival",
+   "state": "arrival-scan-return",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "scanning",
+    "phase": "scan-up",
+    "labels": [
+     "fr",
+     "fr"
+    ]
+   },
+   "canvas": "dom/entrance/arrival-scan-return--mobile--fr-light.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1313280,
+    "paintedPixels": 27356,
+    "sprites": 22
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 2700,
+    "rendererTimeMs": 2700,
+    "phase": "scan-up",
+    "description": "remontée : faisceau à mi-hauteur (position 0,5), hexadécimal au-dessus, texte chiffré au-dessous",
+    "frameIndexAtShot": 175,
+    "frameIndexAtDump": 175,
+    "rendererPhase": "scan-up",
+    "renderedText": "",
+    "beamPosition": "0.5000000000000001"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 684,
+     "height": 480
+    },
+    "cssBox": {
+     "x": 24,
+     "y": 302,
+     "w": 342,
+     "h": 240
+    },
+    "devicePixelRatio": 2,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 402.58,
+      "fontSizePx": 48.0,
+      "text": "ru%43t",
+      "advanceLeft": 100.68,
+      "advanceRight": 284.52,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": [
+       24.0,
+       422.0,
+       366.0,
+       542.0
+      ]
+     },
+     {
+      "kind": "glyph",
+      "baselineY": 468.82,
+      "fontSizePx": 48.0,
+      "text": "9xus4tu",
+      "advanceLeft": 74.17,
+      "advanceRight": 314.98,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": [
+       24.0,
+       422.0,
+       366.0,
+       542.0
+      ]
+     },
+     {
+      "kind": "hex",
+      "baselineY": 395.44,
+      "fontSizePx": 20.64,
+      "text": "72 75 25 34 33 74",
+      "advanceLeft": 97.16,
+      "advanceRight": 290.44,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": [
+       24.0,
+       302.0,
+       366.0,
+       422.0
+      ]
+     },
+     {
+      "kind": "hex",
+      "baselineY": 461.68,
+      "fontSizePx": 20.64,
+      "text": "39 78 75 73 34 74 75",
+      "advanceLeft": 74.46,
+      "advanceRight": 314.32,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": [
+       24.0,
+       302.0,
+       366.0,
+       422.0
+      ]
+     }
+    ],
+    "beam": {
+     "centreY": 422.0,
+     "left": 62.4,
+     "right": 327.6,
+     "width": 265.2,
+     "color": "#00BABC",
+     "opacity": 1,
+     "layers": [
+      {
+       "role": "halo (0,30 × corps)",
+       "page": [
+        62.4,
+        414.8,
+        327.6,
+        429.2
+       ],
+       "height": 14.4,
+       "width": 265.2,
+       "alpha": 0.07
+      },
+      {
+       "role": "cœur 6 px",
+       "page": [
+        62.4,
+        419.0,
+        327.6,
+        425.0
+       ],
+       "height": 6.0,
+       "width": 265.2,
+       "alpha": 0.16
+      },
+      {
+       "role": "ligne 1,5 px",
+       "page": [
+        62.4,
+        421.25,
+        327.6,
+        422.75
+       ],
+       "height": 1.5,
+       "width": 265.2,
+       "alpha": 1
+      },
+      {
+       "role": "butée gauche 1,5 × 6",
+       "page": [
+        62.4,
+        419.0,
+        63.9,
+        425.0
+       ],
+       "height": 6.0,
+       "width": 1.5,
+       "alpha": 1
+      },
+      {
+       "role": "butée droite 1,5 × 6",
+       "page": [
+        326.1,
+        419.0,
+        327.6,
+        425.0
+       ],
+       "height": 6.0,
+       "width": 1.5,
+       "alpha": 1
+      }
+     ]
+    },
+    "counts": {
+     "glyphs": 26,
+     "drawImage": 26,
+     "fillRect": 5,
+     "commands": 48
+    }
+   }
+  },
+  {
+   "name": "arrival-encrypted--mobile--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/arrival-encrypted--mobile--fr-light.png",
+   "dom": "dom/entrance/arrival-encrypted--mobile--fr-light.json.gz",
+   "nodes": 15,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "arrival",
+   "state": "arrival-encrypted",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "encrypted",
+    "phase": "cipher",
+    "labels": [
+     "fr",
+     "fr"
+    ]
+   },
+   "canvas": "dom/entrance/arrival-encrypted--mobile--fr-light.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1313280,
+    "paintedPixels": 15565,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "rendererTimeMs": 3649.999,
+    "phase": "cipher",
+    "description": "fin du double scan : message chiffré au repos, Se connecter et Visiter (libellés FR)",
+    "frameIndexAtShot": 235,
+    "frameIndexAtDump": 235,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 684,
+     "height": 480
+    },
+    "cssBox": {
+     "x": 24,
+     "y": 302,
+     "w": 342,
+     "h": 240
+    },
+    "devicePixelRatio": 2,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 402.58,
+      "fontSizePx": 48.0,
+      "text": "ru%43t",
+      "advanceLeft": 100.68,
+      "advanceRight": 284.52,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "glyph",
+      "baselineY": 468.82,
+      "fontSizePx": 48.0,
+      "text": "9xus4tu",
+      "advanceLeft": 74.17,
+      "advanceRight": 314.98,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "arrival-scan-binary--mobile--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/arrival-scan-binary--mobile--fr-dark.png",
+   "dom": "dom/entrance/arrival-scan-binary--mobile--fr-dark.json.gz",
+   "nodes": 15,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "arrival",
+   "state": "arrival-scan-binary",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "scanning",
+    "phase": "binary",
+    "labels": [
+     "fr",
+     "fr"
+    ]
+   },
+   "canvas": "dom/entrance/arrival-scan-binary--mobile--fr-dark.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1313280,
+    "paintedPixels": 10924,
+    "sprites": 13
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 300,
+    "rendererTimeMs": 300,
+    "phase": "binary",
+    "description": "binaire au repos, avant le premier passage (le faisceau entre à 600 ms)",
+    "frameIndexAtShot": 24,
+    "frameIndexAtDump": 24,
+    "rendererPhase": "binary",
+    "renderedText": "",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 684,
+     "height": 480
+    },
+    "cssBox": {
+     "x": 24,
+     "y": 302,
+     "w": 342,
+     "h": 240
+    },
+    "devicePixelRatio": 2,
+    "lines": [
+     {
+      "kind": "binary",
+      "baselineY": 374.47,
+      "fontSizePx": 11.04,
+      "text": "0 1 0 1 0 0 0 0 0 0 0 1",
+      "advanceLeft": 101.22,
+      "advanceRight": 286.38,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "binary",
+      "baselineY": 385.99,
+      "fontSizePx": 11.04,
+      "text": "1 1 1 1 1 0 1 1 1 1 1 1",
+      "advanceLeft": 101.22,
+      "advanceRight": 286.38,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "binary",
+      "baselineY": 397.51,
+      "fontSizePx": 11.04,
+      "text": "0 0 0 1 0 1 0 1 0 0 0 1",
+      "advanceLeft": 101.22,
+      "advanceRight": 286.38,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "binary",
+      "baselineY": 409.03,
+      "fontSizePx": 11.04,
+      "text": "1 0 0 1 0 1 0 0 1 1 0 0",
+      "advanceLeft": 101.22,
+      "advanceRight": 286.38,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "binary",
+      "baselineY": 440.71,
+      "fontSizePx": 11.04,
+      "text": "0 0 0 1 0 1 0 1 0 0 0 1 0 1",
+      "advanceLeft": 78.13,
+      "advanceRight": 310.26,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "binary",
+      "baselineY": 452.23,
+      "fontSizePx": 11.04,
+      "text": "1 1 1 1 1 1 1 1 1 1 1 1 1 1",
+      "advanceLeft": 78.13,
+      "advanceRight": 310.26,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "binary",
+      "baselineY": 463.75,
+      "fontSizePx": 11.04,
+      "text": "1 0 1 0 0 1 0 0 0 1 0 1 0 1",
+      "advanceLeft": 78.13,
+      "advanceRight": 310.26,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "binary",
+      "baselineY": 475.27,
+      "fontSizePx": 11.04,
+      "text": "0 1 0 0 0 1 1 1 0 0 0 0 0 1",
+      "advanceLeft": 78.13,
+      "advanceRight": 310.26,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 104,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "arrival-scan-hex--mobile--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/arrival-scan-hex--mobile--fr-dark.png",
+   "dom": "dom/entrance/arrival-scan-hex--mobile--fr-dark.json.gz",
+   "nodes": 15,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "arrival",
+   "state": "arrival-scan-hex",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "scanning",
+    "phase": "scan-down",
+    "labels": [
+     "fr",
+     "fr"
+    ]
+   },
+   "canvas": "dom/entrance/arrival-scan-hex--mobile--fr-dark.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1313280,
+    "paintedPixels": 25092,
+    "sprites": 26
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 1300,
+    "rendererTimeMs": 1300,
+    "phase": "scan-down",
+    "description": "descente : faisceau à mi-hauteur (position 0,5), hexadécimal au-dessus, binaire au-dessous",
+    "frameIndexAtShot": 87,
+    "frameIndexAtDump": 87,
+    "rendererPhase": "scan-down",
+    "renderedText": "",
+    "beamPosition": "0.49999999999999994"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 684,
+     "height": 480
+    },
+    "cssBox": {
+     "x": 24,
+     "y": 302,
+     "w": 342,
+     "h": 240
+    },
+    "devicePixelRatio": 2,
+    "lines": [
+     {
+      "kind": "binary",
+      "baselineY": 374.47,
+      "fontSizePx": 11.04,
+      "text": "0 1 0 1 0 0 0 0 0 0 0 1",
+      "advanceLeft": 101.22,
+      "advanceRight": 286.38,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": [
+       24.0,
+       422.0,
+       366.0,
+       542.0
+      ]
+     },
+     {
+      "kind": "binary",
+      "baselineY": 385.99,
+      "fontSizePx": 11.04,
+      "text": "1 1 1 1 1 0 1 1 1 1 1 1",
+      "advanceLeft": 101.22,
+      "advanceRight": 286.38,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": [
+       24.0,
+       422.0,
+       366.0,
+       542.0
+      ]
+     },
+     {
+      "kind": "binary",
+      "baselineY": 397.51,
+      "fontSizePx": 11.04,
+      "text": "0 0 0 1 0 1 0 1 0 0 0 1",
+      "advanceLeft": 101.22,
+      "advanceRight": 286.38,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": [
+       24.0,
+       422.0,
+       366.0,
+       542.0
+      ]
+     },
+     {
+      "kind": "binary",
+      "baselineY": 409.03,
+      "fontSizePx": 11.04,
+      "text": "1 0 0 1 0 1 0 0 1 1 0 0",
+      "advanceLeft": 101.22,
+      "advanceRight": 286.38,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": [
+       24.0,
+       422.0,
+       366.0,
+       542.0
+      ]
+     },
+     {
+      "kind": "binary",
+      "baselineY": 440.71,
+      "fontSizePx": 11.04,
+      "text": "0 0 0 1 0 1 0 1 0 0 0 1 0 1",
+      "advanceLeft": 78.13,
+      "advanceRight": 310.26,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": [
+       24.0,
+       422.0,
+       366.0,
+       542.0
+      ]
+     },
+     {
+      "kind": "binary",
+      "baselineY": 452.23,
+      "fontSizePx": 11.04,
+      "text": "1 1 1 1 1 1 1 1 1 1 1 1 1 1",
+      "advanceLeft": 78.13,
+      "advanceRight": 310.26,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": [
+       24.0,
+       422.0,
+       366.0,
+       542.0
+      ]
+     },
+     {
+      "kind": "binary",
+      "baselineY": 463.75,
+      "fontSizePx": 11.04,
+      "text": "1 0 1 0 0 1 0 0 0 1 0 1 0 1",
+      "advanceLeft": 78.13,
+      "advanceRight": 310.26,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": [
+       24.0,
+       422.0,
+       366.0,
+       542.0
+      ]
+     },
+     {
+      "kind": "binary",
+      "baselineY": 475.27,
+      "fontSizePx": 11.04,
+      "text": "0 1 0 0 0 1 1 1 0 0 0 0 0 1",
+      "advanceLeft": 78.13,
+      "advanceRight": 310.26,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": [
+       24.0,
+       422.0,
+       366.0,
+       542.0
+      ]
+     },
+     {
+      "kind": "hex",
+      "baselineY": 395.44,
+      "fontSizePx": 20.64,
+      "text": "72 75 25 34 33 74",
+      "advanceLeft": 97.16,
+      "advanceRight": 290.44,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": [
+       24.0,
+       302.0,
+       366.0,
+       422.0
+      ]
+     },
+     {
+      "kind": "hex",
+      "baselineY": 461.68,
+      "fontSizePx": 20.64,
+      "text": "39 78 75 73 34 74 75",
+      "advanceLeft": 74.46,
+      "advanceRight": 314.32,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": [
+       24.0,
+       302.0,
+       366.0,
+       422.0
+      ]
+     }
+    ],
+    "beam": {
+     "centreY": 422.0,
+     "left": 62.4,
+     "right": 327.6,
+     "width": 265.2,
+     "color": "#ED3491",
+     "opacity": 1,
+     "layers": [
+      {
+       "role": "halo (0,30 × corps)",
+       "page": [
+        62.4,
+        414.8,
+        327.6,
+        429.2
+       ],
+       "height": 14.4,
+       "width": 265.2,
+       "alpha": 0.07
+      },
+      {
+       "role": "cœur 6 px",
+       "page": [
+        62.4,
+        419.0,
+        327.6,
+        425.0
+       ],
+       "height": 6.0,
+       "width": 265.2,
+       "alpha": 0.16
+      },
+      {
+       "role": "ligne 1,5 px",
+       "page": [
+        62.4,
+        421.25,
+        327.6,
+        422.75
+       ],
+       "height": 1.5,
+       "width": 265.2,
+       "alpha": 1
+      },
+      {
+       "role": "butée gauche 1,5 × 6",
+       "page": [
+        62.4,
+        419.0,
+        63.9,
+        425.0
+       ],
+       "height": 6.0,
+       "width": 1.5,
+       "alpha": 1
+      },
+      {
+       "role": "butée droite 1,5 × 6",
+       "page": [
+        326.1,
+        419.0,
+        327.6,
+        425.0
+       ],
+       "height": 6.0,
+       "width": 1.5,
+       "alpha": 1
+      }
+     ]
+    },
+    "counts": {
+     "glyphs": 117,
+     "drawImage": 26,
+     "fillRect": 5,
+     "commands": 48
+    }
+   }
+  },
+  {
+   "name": "arrival-scan-return--mobile--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/arrival-scan-return--mobile--fr-dark.png",
+   "dom": "dom/entrance/arrival-scan-return--mobile--fr-dark.json.gz",
+   "nodes": 15,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "arrival",
+   "state": "arrival-scan-return",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "scanning",
+    "phase": "scan-up",
+    "labels": [
+     "fr",
+     "fr"
+    ]
+   },
+   "canvas": "dom/entrance/arrival-scan-return--mobile--fr-dark.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1313280,
+    "paintedPixels": 27377,
+    "sprites": 22
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 2700,
+    "rendererTimeMs": 2700,
+    "phase": "scan-up",
+    "description": "remontée : faisceau à mi-hauteur (position 0,5), hexadécimal au-dessus, texte chiffré au-dessous",
+    "frameIndexAtShot": 175,
+    "frameIndexAtDump": 175,
+    "rendererPhase": "scan-up",
+    "renderedText": "",
+    "beamPosition": "0.5000000000000001"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 684,
+     "height": 480
+    },
+    "cssBox": {
+     "x": 24,
+     "y": 302,
+     "w": 342,
+     "h": 240
+    },
+    "devicePixelRatio": 2,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 402.58,
+      "fontSizePx": 48.0,
+      "text": "ru%43t",
+      "advanceLeft": 100.68,
+      "advanceRight": 284.52,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": [
+       24.0,
+       422.0,
+       366.0,
+       542.0
+      ]
+     },
+     {
+      "kind": "glyph",
+      "baselineY": 468.82,
+      "fontSizePx": 48.0,
+      "text": "9xus4tu",
+      "advanceLeft": 74.17,
+      "advanceRight": 314.98,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": [
+       24.0,
+       422.0,
+       366.0,
+       542.0
+      ]
+     },
+     {
+      "kind": "hex",
+      "baselineY": 395.44,
+      "fontSizePx": 20.64,
+      "text": "72 75 25 34 33 74",
+      "advanceLeft": 97.16,
+      "advanceRight": 290.44,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": [
+       24.0,
+       302.0,
+       366.0,
+       422.0
+      ]
+     },
+     {
+      "kind": "hex",
+      "baselineY": 461.68,
+      "fontSizePx": 20.64,
+      "text": "39 78 75 73 34 74 75",
+      "advanceLeft": 74.46,
+      "advanceRight": 314.32,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": [
+       24.0,
+       302.0,
+       366.0,
+       422.0
+      ]
+     }
+    ],
+    "beam": {
+     "centreY": 422.0,
+     "left": 62.4,
+     "right": 327.6,
+     "width": 265.2,
+     "color": "#ED3491",
+     "opacity": 1,
+     "layers": [
+      {
+       "role": "halo (0,30 × corps)",
+       "page": [
+        62.4,
+        414.8,
+        327.6,
+        429.2
+       ],
+       "height": 14.4,
+       "width": 265.2,
+       "alpha": 0.07
+      },
+      {
+       "role": "cœur 6 px",
+       "page": [
+        62.4,
+        419.0,
+        327.6,
+        425.0
+       ],
+       "height": 6.0,
+       "width": 265.2,
+       "alpha": 0.16
+      },
+      {
+       "role": "ligne 1,5 px",
+       "page": [
+        62.4,
+        421.25,
+        327.6,
+        422.75
+       ],
+       "height": 1.5,
+       "width": 265.2,
+       "alpha": 1
+      },
+      {
+       "role": "butée gauche 1,5 × 6",
+       "page": [
+        62.4,
+        419.0,
+        63.9,
+        425.0
+       ],
+       "height": 6.0,
+       "width": 1.5,
+       "alpha": 1
+      },
+      {
+       "role": "butée droite 1,5 × 6",
+       "page": [
+        326.1,
+        419.0,
+        327.6,
+        425.0
+       ],
+       "height": 6.0,
+       "width": 1.5,
+       "alpha": 1
+      }
+     ]
+    },
+    "counts": {
+     "glyphs": 26,
+     "drawImage": 26,
+     "fillRect": 5,
+     "commands": 48
+    }
+   }
+  },
+  {
+   "name": "arrival-encrypted--mobile--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/arrival-encrypted--mobile--fr-dark.png",
+   "dom": "dom/entrance/arrival-encrypted--mobile--fr-dark.json.gz",
+   "nodes": 15,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "arrival",
+   "state": "arrival-encrypted",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "encrypted",
+    "phase": "cipher",
+    "labels": [
+     "fr",
+     "fr"
+    ]
+   },
+   "canvas": "dom/entrance/arrival-encrypted--mobile--fr-dark.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1313280,
+    "paintedPixels": 15589,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "rendererTimeMs": 3649.999,
+    "phase": "cipher",
+    "description": "fin du double scan : message chiffré au repos, Se connecter et Visiter (libellés FR)",
+    "frameIndexAtShot": 235,
+    "frameIndexAtDump": 235,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 684,
+     "height": 480
+    },
+    "cssBox": {
+     "x": 24,
+     "y": 302,
+     "w": 342,
+     "h": 240
+    },
+    "devicePixelRatio": 2,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 402.58,
+      "fontSizePx": 48.0,
+      "text": "ru%43t",
+      "advanceLeft": 100.68,
+      "advanceRight": 284.52,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "glyph",
+      "baselineY": 468.82,
+      "fontSizePx": 48.0,
+      "text": "9xus4tu",
+      "advanceLeft": 74.17,
+      "advanceRight": 314.98,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "arrival-labels-en--desktop--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/arrival-labels-en--desktop--fr-light.png",
+   "dom": "dom/entrance/arrival-labels-en--desktop--fr-light.json.gz",
+   "nodes": 15,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "arrival",
+   "state": "arrival-labels-en",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "encrypted",
+    "siteLang": "fr",
+    "siteDir": "ltr",
+    "labels": "en",
+    "pair": [
+     {
+      "x": 554.39,
+      "y": 635,
+      "w": 153.61,
+      "h": 52
+     },
+     {
+      "x": 732,
+      "y": 635,
+      "w": 153.61,
+      "h": 52
+     }
+    ]
+   },
+   "canvas": "dom/entrance/arrival-labels-en--desktop--fr-light.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1408000,
+    "paintedPixels": 12626,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "phase": "encrypted",
+    "description": "libellés EN après 1 changement(s) du cycle FR → EN → AR, fondu terminé (> 320 ms)",
+    "frameIndexAtShot": 234,
+    "frameIndexAtDump": 234,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 1100,
+     "height": 320
+    },
+    "cssBox": {
+     "x": 170,
+     "y": 320,
+     "w": 1100,
+     "h": 320
+    },
+    "devicePixelRatio": 1,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 504.55,
+      "fontSizePx": 86.0,
+      "text": "ru%43t9xus4tu",
+      "advanceLeft": 320.32,
+      "advanceRight": 1128.46,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "arrival-labels-ar--desktop--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/arrival-labels-ar--desktop--fr-light.png",
+   "dom": "dom/entrance/arrival-labels-ar--desktop--fr-light.json.gz",
+   "nodes": 15,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "arrival",
+   "state": "arrival-labels-ar",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "encrypted",
+    "siteLang": "fr",
+    "siteDir": "ltr",
+    "labels": "ar",
+    "pair": [
+     {
+      "x": 554.39,
+      "y": 635,
+      "w": 153.61,
+      "h": 52
+     },
+     {
+      "x": 732,
+      "y": 635,
+      "w": 153.61,
+      "h": 52
+     }
+    ]
+   },
+   "canvas": "dom/entrance/arrival-labels-ar--desktop--fr-light.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1408000,
+    "paintedPixels": 12626,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "phase": "encrypted",
+    "description": "libellés AR après 2 changement(s) du cycle FR → EN → AR, fondu terminé (> 320 ms)",
+    "frameIndexAtShot": 234,
+    "frameIndexAtDump": 234,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 1100,
+     "height": 320
+    },
+    "cssBox": {
+     "x": 170,
+     "y": 320,
+     "w": 1100,
+     "h": 320
+    },
+    "devicePixelRatio": 1,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 504.55,
+      "fontSizePx": 86.0,
+      "text": "ru%43t9xus4tu",
+      "advanceLeft": 320.32,
+      "advanceRight": 1128.46,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "arrival-labels-en--desktop--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/arrival-labels-en--desktop--fr-dark.png",
+   "dom": "dom/entrance/arrival-labels-en--desktop--fr-dark.json.gz",
+   "nodes": 15,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "arrival",
+   "state": "arrival-labels-en",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "encrypted",
+    "siteLang": "fr",
+    "siteDir": "ltr",
+    "labels": "en",
+    "pair": [
+     {
+      "x": 554.39,
+      "y": 635,
+      "w": 153.61,
+      "h": 52
+     },
+     {
+      "x": 732,
+      "y": 635,
+      "w": 153.61,
+      "h": 52
+     }
+    ]
+   },
+   "canvas": "dom/entrance/arrival-labels-en--desktop--fr-dark.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1408000,
+    "paintedPixels": 12654,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "phase": "encrypted",
+    "description": "libellés EN après 1 changement(s) du cycle FR → EN → AR, fondu terminé (> 320 ms)",
+    "frameIndexAtShot": 234,
+    "frameIndexAtDump": 234,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 1100,
+     "height": 320
+    },
+    "cssBox": {
+     "x": 170,
+     "y": 320,
+     "w": 1100,
+     "h": 320
+    },
+    "devicePixelRatio": 1,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 504.55,
+      "fontSizePx": 86.0,
+      "text": "ru%43t9xus4tu",
+      "advanceLeft": 320.32,
+      "advanceRight": 1128.46,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "arrival-labels-ar--desktop--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/arrival-labels-ar--desktop--fr-dark.png",
+   "dom": "dom/entrance/arrival-labels-ar--desktop--fr-dark.json.gz",
+   "nodes": 15,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "arrival",
+   "state": "arrival-labels-ar",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "encrypted",
+    "siteLang": "fr",
+    "siteDir": "ltr",
+    "labels": "ar",
+    "pair": [
+     {
+      "x": 554.39,
+      "y": 635,
+      "w": 153.61,
+      "h": 52
+     },
+     {
+      "x": 732,
+      "y": 635,
+      "w": 153.61,
+      "h": 52
+     }
+    ]
+   },
+   "canvas": "dom/entrance/arrival-labels-ar--desktop--fr-dark.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1408000,
+    "paintedPixels": 12654,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "phase": "encrypted",
+    "description": "libellés AR après 2 changement(s) du cycle FR → EN → AR, fondu terminé (> 320 ms)",
+    "frameIndexAtShot": 234,
+    "frameIndexAtDump": 234,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 1100,
+     "height": 320
+    },
+    "cssBox": {
+     "x": 170,
+     "y": 320,
+     "w": 1100,
+     "h": 320
+    },
+    "devicePixelRatio": 1,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 504.55,
+      "fontSizePx": 86.0,
+      "text": "ru%43t9xus4tu",
+      "advanceLeft": 320.32,
+      "advanceRight": 1128.46,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "arrival-labels-en--mobile--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/arrival-labels-en--mobile--fr-light.png",
+   "dom": "dom/entrance/arrival-labels-en--mobile--fr-light.json.gz",
+   "nodes": 15,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "arrival",
+   "state": "arrival-labels-en",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "encrypted",
+    "siteLang": "fr",
+    "siteDir": "ltr",
+    "labels": "en",
+    "pair": [
+     {
+      "x": 24,
+      "y": 552,
+      "w": 342,
+      "h": 52
+     },
+     {
+      "x": 24,
+      "y": 616,
+      "w": 342,
+      "h": 52
+     }
+    ]
+   },
+   "canvas": "dom/entrance/arrival-labels-en--mobile--fr-light.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1313280,
+    "paintedPixels": 15565,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "phase": "encrypted",
+    "description": "libellés EN après 1 changement(s) du cycle FR → EN → AR, fondu terminé (> 320 ms)",
+    "frameIndexAtShot": 234,
+    "frameIndexAtDump": 234,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 684,
+     "height": 480
+    },
+    "cssBox": {
+     "x": 24,
+     "y": 302,
+     "w": 342,
+     "h": 240
+    },
+    "devicePixelRatio": 2,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 402.58,
+      "fontSizePx": 48.0,
+      "text": "ru%43t",
+      "advanceLeft": 100.68,
+      "advanceRight": 284.52,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "glyph",
+      "baselineY": 468.82,
+      "fontSizePx": 48.0,
+      "text": "9xus4tu",
+      "advanceLeft": 74.17,
+      "advanceRight": 314.98,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "arrival-labels-ar--mobile--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/arrival-labels-ar--mobile--fr-light.png",
+   "dom": "dom/entrance/arrival-labels-ar--mobile--fr-light.json.gz",
+   "nodes": 15,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "arrival",
+   "state": "arrival-labels-ar",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "encrypted",
+    "siteLang": "fr",
+    "siteDir": "ltr",
+    "labels": "ar",
+    "pair": [
+     {
+      "x": 24,
+      "y": 552,
+      "w": 342,
+      "h": 52
+     },
+     {
+      "x": 24,
+      "y": 616,
+      "w": 342,
+      "h": 52
+     }
+    ]
+   },
+   "canvas": "dom/entrance/arrival-labels-ar--mobile--fr-light.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1313280,
+    "paintedPixels": 15565,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "phase": "encrypted",
+    "description": "libellés AR après 2 changement(s) du cycle FR → EN → AR, fondu terminé (> 320 ms)",
+    "frameIndexAtShot": 234,
+    "frameIndexAtDump": 234,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 684,
+     "height": 480
+    },
+    "cssBox": {
+     "x": 24,
+     "y": 302,
+     "w": 342,
+     "h": 240
+    },
+    "devicePixelRatio": 2,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 402.58,
+      "fontSizePx": 48.0,
+      "text": "ru%43t",
+      "advanceLeft": 100.68,
+      "advanceRight": 284.52,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "glyph",
+      "baselineY": 468.82,
+      "fontSizePx": 48.0,
+      "text": "9xus4tu",
+      "advanceLeft": 74.17,
+      "advanceRight": 314.98,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "arrival-labels-en--mobile--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/arrival-labels-en--mobile--fr-dark.png",
+   "dom": "dom/entrance/arrival-labels-en--mobile--fr-dark.json.gz",
+   "nodes": 15,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "arrival",
+   "state": "arrival-labels-en",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "encrypted",
+    "siteLang": "fr",
+    "siteDir": "ltr",
+    "labels": "en",
+    "pair": [
+     {
+      "x": 24,
+      "y": 552,
+      "w": 342,
+      "h": 52
+     },
+     {
+      "x": 24,
+      "y": 616,
+      "w": 342,
+      "h": 52
+     }
+    ]
+   },
+   "canvas": "dom/entrance/arrival-labels-en--mobile--fr-dark.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1313280,
+    "paintedPixels": 15589,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "phase": "encrypted",
+    "description": "libellés EN après 1 changement(s) du cycle FR → EN → AR, fondu terminé (> 320 ms)",
+    "frameIndexAtShot": 234,
+    "frameIndexAtDump": 234,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 684,
+     "height": 480
+    },
+    "cssBox": {
+     "x": 24,
+     "y": 302,
+     "w": 342,
+     "h": 240
+    },
+    "devicePixelRatio": 2,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 402.58,
+      "fontSizePx": 48.0,
+      "text": "ru%43t",
+      "advanceLeft": 100.68,
+      "advanceRight": 284.52,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "glyph",
+      "baselineY": 468.82,
+      "fontSizePx": 48.0,
+      "text": "9xus4tu",
+      "advanceLeft": 74.17,
+      "advanceRight": 314.98,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "arrival-labels-ar--mobile--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/arrival-labels-ar--mobile--fr-dark.png",
+   "dom": "dom/entrance/arrival-labels-ar--mobile--fr-dark.json.gz",
+   "nodes": 15,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "arrival",
+   "state": "arrival-labels-ar",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "encrypted",
+    "siteLang": "fr",
+    "siteDir": "ltr",
+    "labels": "ar",
+    "pair": [
+     {
+      "x": 24,
+      "y": 552,
+      "w": 342,
+      "h": 52
+     },
+     {
+      "x": 24,
+      "y": 616,
+      "w": 342,
+      "h": 52
+     }
+    ]
+   },
+   "canvas": "dom/entrance/arrival-labels-ar--mobile--fr-dark.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1313280,
+    "paintedPixels": 15589,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "phase": "encrypted",
+    "description": "libellés AR après 2 changement(s) du cycle FR → EN → AR, fondu terminé (> 320 ms)",
+    "frameIndexAtShot": 234,
+    "frameIndexAtDump": 234,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 684,
+     "height": 480
+    },
+    "cssBox": {
+     "x": 24,
+     "y": 302,
+     "w": 342,
+     "h": 240
+    },
+    "devicePixelRatio": 2,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 402.58,
+      "fontSizePx": 48.0,
+      "text": "ru%43t",
+      "advanceLeft": 100.68,
+      "advanceRight": 284.52,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "glyph",
+      "baselineY": 468.82,
+      "fontSizePx": 48.0,
+      "text": "9xus4tu",
+      "advanceLeft": 74.17,
+      "advanceRight": 314.98,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "entry-signin--desktop--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/entry-signin--desktop--fr-light.png",
+   "dom": "dom/entrance/entry-signin--desktop--fr-light.json.gz",
+   "nodes": 25,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "entry-signin",
+   "state": "entry-signin",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "encrypted",
+    "dialog": {
+     "kind": "login",
+     "title": "Connexion — prototype",
+     "box": {
+      "x": 510,
+      "y": 336.41,
+      "w": 420,
+      "h": 287.19
+     },
+     "text": "Cette maquette simule la connexion. Aucune authentification réelle n’est effectuée.",
+     "buttons": [
+      {
+       "text": "Simuler une connexion réussie",
+       "cls": "entrance-action",
+       "box": {
+        "x": 535,
+        "y": 492.59,
+        "w": 265.05,
+        "h": 53
+       }
+      },
+      {
+       "text": "Annuler",
+       "cls": "entrance-action secondary",
+       "box": {
+        "x": 535,
+        "y": 545.59,
+        "w": 111.17,
+        "h": 53
+       }
+      }
+     ],
+     "close": {
+      "x": 861,
+      "y": 361.41,
+      "w": 44,
+      "h": 44
+     },
+     "backdrop": {
+      "background": "rgba(23, 57, 56, 0.16)",
+      "backdropFilter": "blur(7px)"
+     }
+    }
+   },
+   "canvas": "dom/entrance/entry-signin--desktop--fr-light.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1408000,
+    "paintedPixels": 12626,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "phase": "encrypted",
+    "description": "Se connecter → fenêtre « Connexion — prototype »",
+    "frameIndexAtShot": 234,
+    "frameIndexAtDump": 234,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 1100,
+     "height": 320
+    },
+    "cssBox": {
+     "x": 170,
+     "y": 320,
+     "w": 1100,
+     "h": 320
+    },
+    "devicePixelRatio": 1,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 504.55,
+      "fontSizePx": 86.0,
+      "text": "ru%43t9xus4tu",
+      "advanceLeft": 320.32,
+      "advanceRight": 1128.46,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "entry-signup--desktop--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/entry-signup--desktop--fr-light.png",
+   "dom": "dom/entrance/entry-signup--desktop--fr-light.json.gz",
+   "nodes": 25,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "entry-signup",
+   "state": "entry-signup",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "encrypted",
+    "dialog": {
+     "kind": "signup",
+     "title": "Création de compte simulée",
+     "box": {
+      "x": 510,
+      "y": 336.41,
+      "w": 420,
+      "h": 287.19
+     },
+     "text": "Cet aperçu simule la création de compte avec le profil fictif de Leïla Mansour. Aucun compte réel n’est créé.",
+     "buttons": [
+      {
+       "text": "Simuler la création du compte",
+       "cls": "entrance-action",
+       "box": {
+        "x": 535,
+        "y": 492.59,
+        "w": 261.36,
+        "h": 53
+       }
+      },
+      {
+       "text": "Annuler",
+       "cls": "entrance-action secondary",
+       "box": {
+        "x": 535,
+        "y": 545.59,
+        "w": 111.17,
+        "h": 53
+       }
+      }
+     ],
+     "close": {
+      "x": 861,
+      "y": 361.41,
+      "w": 44,
+      "h": 44
+     },
+     "backdrop": {
+      "background": "rgba(23, 57, 56, 0.16)",
+      "backdropFilter": "blur(7px)"
+     }
+    },
+    "path": "Visiter → écran d’erreur (globe bloqué) → compte → Créer un compte"
+   },
+   "canvas": "dom/entrance/entry-signup--desktop--fr-light.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1408000,
+    "paintedPixels": 12626,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "phase": "encrypted",
+    "description": "création de compte simulée, ouverte depuis le compte de l’écran d’erreur ; l’entrée revient d’abord au message chiffré",
+    "frameIndexAtShot": 239,
+    "frameIndexAtDump": 239,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 1100,
+     "height": 320
+    },
+    "cssBox": {
+     "x": 170,
+     "y": 320,
+     "w": 1100,
+     "h": 320
+    },
+    "devicePixelRatio": 1,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 504.55,
+      "fontSizePx": 86.0,
+      "text": "ru%43t9xus4tu",
+      "advanceLeft": 320.32,
+      "advanceRight": 1128.46,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "entry-signin--desktop--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/entry-signin--desktop--fr-dark.png",
+   "dom": "dom/entrance/entry-signin--desktop--fr-dark.json.gz",
+   "nodes": 25,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "entry-signin",
+   "state": "entry-signin",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "encrypted",
+    "dialog": {
+     "kind": "login",
+     "title": "Connexion — prototype",
+     "box": {
+      "x": 510,
+      "y": 336.41,
+      "w": 420,
+      "h": 287.19
+     },
+     "text": "Cette maquette simule la connexion. Aucune authentification réelle n’est effectuée.",
+     "buttons": [
+      {
+       "text": "Simuler une connexion réussie",
+       "cls": "entrance-action",
+       "box": {
+        "x": 535,
+        "y": 492.59,
+        "w": 265.05,
+        "h": 53
+       }
+      },
+      {
+       "text": "Annuler",
+       "cls": "entrance-action secondary",
+       "box": {
+        "x": 535,
+        "y": 545.59,
+        "w": 111.17,
+        "h": 53
+       }
+      }
+     ],
+     "close": {
+      "x": 861,
+      "y": 361.41,
+      "w": 44,
+      "h": 44
+     },
+     "backdrop": {
+      "background": "color(srgb 0.105882 0.105882 0.105882 / 0.22)",
+      "backdropFilter": "blur(7px)"
+     }
+    }
+   },
+   "canvas": "dom/entrance/entry-signin--desktop--fr-dark.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1408000,
+    "paintedPixels": 12654,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "phase": "encrypted",
+    "description": "Se connecter → fenêtre « Connexion — prototype »",
+    "frameIndexAtShot": 234,
+    "frameIndexAtDump": 234,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 1100,
+     "height": 320
+    },
+    "cssBox": {
+     "x": 170,
+     "y": 320,
+     "w": 1100,
+     "h": 320
+    },
+    "devicePixelRatio": 1,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 504.55,
+      "fontSizePx": 86.0,
+      "text": "ru%43t9xus4tu",
+      "advanceLeft": 320.32,
+      "advanceRight": 1128.46,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "entry-signup--desktop--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/entry-signup--desktop--fr-dark.png",
+   "dom": "dom/entrance/entry-signup--desktop--fr-dark.json.gz",
+   "nodes": 25,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "entry-signup",
+   "state": "entry-signup",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "encrypted",
+    "dialog": {
+     "kind": "signup",
+     "title": "Création de compte simulée",
+     "box": {
+      "x": 510,
+      "y": 336.41,
+      "w": 420,
+      "h": 287.19
+     },
+     "text": "Cet aperçu simule la création de compte avec le profil fictif de Leïla Mansour. Aucun compte réel n’est créé.",
+     "buttons": [
+      {
+       "text": "Simuler la création du compte",
+       "cls": "entrance-action",
+       "box": {
+        "x": 535,
+        "y": 492.59,
+        "w": 261.36,
+        "h": 53
+       }
+      },
+      {
+       "text": "Annuler",
+       "cls": "entrance-action secondary",
+       "box": {
+        "x": 535,
+        "y": 545.59,
+        "w": 111.17,
+        "h": 53
+       }
+      }
+     ],
+     "close": {
+      "x": 861,
+      "y": 361.41,
+      "w": 44,
+      "h": 44
+     },
+     "backdrop": {
+      "background": "color(srgb 0.105882 0.105882 0.105882 / 0.22)",
+      "backdropFilter": "blur(7px)"
+     }
+    },
+    "path": "Visiter → écran d’erreur (globe bloqué) → compte → Créer un compte"
+   },
+   "canvas": "dom/entrance/entry-signup--desktop--fr-dark.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1408000,
+    "paintedPixels": 12654,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "phase": "encrypted",
+    "description": "création de compte simulée, ouverte depuis le compte de l’écran d’erreur ; l’entrée revient d’abord au message chiffré",
+    "frameIndexAtShot": 239,
+    "frameIndexAtDump": 239,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 1100,
+     "height": 320
+    },
+    "cssBox": {
+     "x": 170,
+     "y": 320,
+     "w": 1100,
+     "h": 320
+    },
+    "devicePixelRatio": 1,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 504.55,
+      "fontSizePx": 86.0,
+      "text": "ru%43t9xus4tu",
+      "advanceLeft": 320.32,
+      "advanceRight": 1128.46,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "entry-signin--mobile--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/entry-signin--mobile--fr-light.png",
+   "dom": "dom/entrance/entry-signin--mobile--fr-light.json.gz",
+   "nodes": 25,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "entry-signin",
+   "state": "entry-signin",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "encrypted",
+    "dialog": {
+     "kind": "login",
+     "title": "Connexion — prototype",
+     "box": {
+      "x": 19,
+      "y": 278.41,
+      "w": 352,
+      "h": 287.19
+     },
+     "text": "Cette maquette simule la connexion. Aucune authentification réelle n’est effectuée.",
+     "buttons": [
+      {
+       "text": "Simuler une connexion réussie",
+       "cls": "entrance-action",
+       "box": {
+        "x": 44,
+        "y": 434.59,
+        "w": 302,
+        "h": 53
+       }
+      },
+      {
+       "text": "Annuler",
+       "cls": "entrance-action secondary",
+       "box": {
+        "x": 44,
+        "y": 487.59,
+        "w": 302,
+        "h": 53
+       }
+      }
+     ],
+     "close": {
+      "x": 302,
+      "y": 303.41,
+      "w": 44,
+      "h": 44
+     },
+     "backdrop": {
+      "background": "rgba(23, 57, 56, 0.16)",
+      "backdropFilter": "blur(7px)"
+     }
+    }
+   },
+   "canvas": "dom/entrance/entry-signin--mobile--fr-light.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1313280,
+    "paintedPixels": 15565,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "phase": "encrypted",
+    "description": "Se connecter → fenêtre « Connexion — prototype »",
+    "frameIndexAtShot": 234,
+    "frameIndexAtDump": 234,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 684,
+     "height": 480
+    },
+    "cssBox": {
+     "x": 24,
+     "y": 302,
+     "w": 342,
+     "h": 240
+    },
+    "devicePixelRatio": 2,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 402.58,
+      "fontSizePx": 48.0,
+      "text": "ru%43t",
+      "advanceLeft": 100.68,
+      "advanceRight": 284.52,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "glyph",
+      "baselineY": 468.82,
+      "fontSizePx": 48.0,
+      "text": "9xus4tu",
+      "advanceLeft": 74.17,
+      "advanceRight": 314.98,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "entry-signup--mobile--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/entry-signup--mobile--fr-light.png",
+   "dom": "dom/entrance/entry-signup--mobile--fr-light.json.gz",
+   "nodes": 25,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "entry-signup",
+   "state": "entry-signup",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "encrypted",
+    "dialog": {
+     "kind": "signup",
+     "title": "Création de compte simulée",
+     "box": {
+      "x": 19,
+      "y": 258.61,
+      "w": 352,
+      "h": 326.78
+     },
+     "text": "Cet aperçu simule la création de compte avec le profil fictif de Leïla Mansour. Aucun compte réel n’est créé.",
+     "buttons": [
+      {
+       "text": "Simuler la création du compte",
+       "cls": "entrance-action",
+       "box": {
+        "x": 44,
+        "y": 454.39,
+        "w": 302,
+        "h": 53
+       }
+      },
+      {
+       "text": "Annuler",
+       "cls": "entrance-action secondary",
+       "box": {
+        "x": 44,
+        "y": 507.39,
+        "w": 302,
+        "h": 53
+       }
+      }
+     ],
+     "close": {
+      "x": 302,
+      "y": 290.61,
+      "w": 44,
+      "h": 44
+     },
+     "backdrop": {
+      "background": "rgba(23, 57, 56, 0.16)",
+      "backdropFilter": "blur(7px)"
+     }
+    },
+    "path": "Visiter → écran d’erreur (globe bloqué) → compte → Créer un compte"
+   },
+   "canvas": "dom/entrance/entry-signup--mobile--fr-light.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1313280,
+    "paintedPixels": 15565,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "phase": "encrypted",
+    "description": "création de compte simulée, ouverte depuis le compte de l’écran d’erreur ; l’entrée revient d’abord au message chiffré",
+    "frameIndexAtShot": 239,
+    "frameIndexAtDump": 239,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 684,
+     "height": 480
+    },
+    "cssBox": {
+     "x": 24,
+     "y": 302,
+     "w": 342,
+     "h": 240
+    },
+    "devicePixelRatio": 2,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 402.58,
+      "fontSizePx": 48.0,
+      "text": "ru%43t",
+      "advanceLeft": 100.68,
+      "advanceRight": 284.52,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "glyph",
+      "baselineY": 468.82,
+      "fontSizePx": 48.0,
+      "text": "9xus4tu",
+      "advanceLeft": 74.17,
+      "advanceRight": 314.98,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "entry-signin--mobile--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/entry-signin--mobile--fr-dark.png",
+   "dom": "dom/entrance/entry-signin--mobile--fr-dark.json.gz",
+   "nodes": 25,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "entry-signin",
+   "state": "entry-signin",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "encrypted",
+    "dialog": {
+     "kind": "login",
+     "title": "Connexion — prototype",
+     "box": {
+      "x": 19,
+      "y": 278.41,
+      "w": 352,
+      "h": 287.19
+     },
+     "text": "Cette maquette simule la connexion. Aucune authentification réelle n’est effectuée.",
+     "buttons": [
+      {
+       "text": "Simuler une connexion réussie",
+       "cls": "entrance-action",
+       "box": {
+        "x": 44,
+        "y": 434.59,
+        "w": 302,
+        "h": 53
+       }
+      },
+      {
+       "text": "Annuler",
+       "cls": "entrance-action secondary",
+       "box": {
+        "x": 44,
+        "y": 487.59,
+        "w": 302,
+        "h": 53
+       }
+      }
+     ],
+     "close": {
+      "x": 302,
+      "y": 303.41,
+      "w": 44,
+      "h": 44
+     },
+     "backdrop": {
+      "background": "color(srgb 0.105882 0.105882 0.105882 / 0.22)",
+      "backdropFilter": "blur(7px)"
+     }
+    }
+   },
+   "canvas": "dom/entrance/entry-signin--mobile--fr-dark.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1313280,
+    "paintedPixels": 15589,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "phase": "encrypted",
+    "description": "Se connecter → fenêtre « Connexion — prototype »",
+    "frameIndexAtShot": 234,
+    "frameIndexAtDump": 234,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 684,
+     "height": 480
+    },
+    "cssBox": {
+     "x": 24,
+     "y": 302,
+     "w": 342,
+     "h": 240
+    },
+    "devicePixelRatio": 2,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 402.58,
+      "fontSizePx": 48.0,
+      "text": "ru%43t",
+      "advanceLeft": 100.68,
+      "advanceRight": 284.52,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "glyph",
+      "baselineY": 468.82,
+      "fontSizePx": 48.0,
+      "text": "9xus4tu",
+      "advanceLeft": 74.17,
+      "advanceRight": 314.98,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "entry-signup--mobile--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/entry-signup--mobile--fr-dark.png",
+   "dom": "dom/entrance/entry-signup--mobile--fr-dark.json.gz",
+   "nodes": 25,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "entry-signup",
+   "state": "entry-signup",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "encrypted",
+    "dialog": {
+     "kind": "signup",
+     "title": "Création de compte simulée",
+     "box": {
+      "x": 19,
+      "y": 258.61,
+      "w": 352,
+      "h": 326.78
+     },
+     "text": "Cet aperçu simule la création de compte avec le profil fictif de Leïla Mansour. Aucun compte réel n’est créé.",
+     "buttons": [
+      {
+       "text": "Simuler la création du compte",
+       "cls": "entrance-action",
+       "box": {
+        "x": 44,
+        "y": 454.39,
+        "w": 302,
+        "h": 53
+       }
+      },
+      {
+       "text": "Annuler",
+       "cls": "entrance-action secondary",
+       "box": {
+        "x": 44,
+        "y": 507.39,
+        "w": 302,
+        "h": 53
+       }
+      }
+     ],
+     "close": {
+      "x": 302,
+      "y": 290.61,
+      "w": 44,
+      "h": 44
+     },
+     "backdrop": {
+      "background": "color(srgb 0.105882 0.105882 0.105882 / 0.22)",
+      "backdropFilter": "blur(7px)"
+     }
+    },
+    "path": "Visiter → écran d’erreur (globe bloqué) → compte → Créer un compte"
+   },
+   "canvas": "dom/entrance/entry-signup--mobile--fr-dark.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1313280,
+    "paintedPixels": 15589,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "phase": "encrypted",
+    "description": "création de compte simulée, ouverte depuis le compte de l’écran d’erreur ; l’entrée revient d’abord au message chiffré",
+    "frameIndexAtShot": 239,
+    "frameIndexAtDump": 239,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 684,
+     "height": 480
+    },
+    "cssBox": {
+     "x": 24,
+     "y": 302,
+     "w": 342,
+     "h": 240
+    },
+    "devicePixelRatio": 2,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 402.58,
+      "fontSizePx": 48.0,
+      "text": "ru%43t",
+      "advanceLeft": 100.68,
+      "advanceRight": 284.52,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "glyph",
+      "baselineY": 468.82,
+      "fontSizePx": 48.0,
+      "text": "9xus4tu",
+      "advanceLeft": 74.17,
+      "advanceRight": 314.98,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "entry-error--desktop--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/entry-error--desktop--fr-light.png",
+   "dom": "dom/entrance/entry-error--desktop--fr-light.json.gz",
+   "nodes": 14,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "entry-error",
+   "state": "entry-error",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "error",
+    "status": {
+     "text": "Le monde n’a pas pu se préparer.",
+     "box": {
+      "x": 613.42,
+      "y": 463.5,
+      "w": 213.14,
+      "h": 24
+     }
+    },
+    "buttons": [
+     "Réessayer",
+     "Revenir au message",
+     "Continuer sans le globe"
+    ],
+    "account": {
+     "display": "block",
+     "trigger": {
+      "x": 1348,
+      "y": 40,
+      "w": 44,
+      "h": 44
+     },
+     "label": "Menu du compte",
+     "menuOpen": false
+    }
+   },
+   "instant": {
+    "description": "Visiter → 42 → cercle → échec du module du globe (bloqué par le banc)"
+   }
+  },
+  {
+   "name": "entry-error--desktop--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/entry-error--desktop--fr-dark.png",
+   "dom": "dom/entrance/entry-error--desktop--fr-dark.json.gz",
+   "nodes": 14,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "entry-error",
+   "state": "entry-error",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "error",
+    "status": {
+     "text": "Le monde n’a pas pu se préparer.",
+     "box": {
+      "x": 613.42,
+      "y": 463.5,
+      "w": 213.14,
+      "h": 24
+     }
+    },
+    "buttons": [
+     "Réessayer",
+     "Revenir au message",
+     "Continuer sans le globe"
+    ],
+    "account": {
+     "display": "block",
+     "trigger": {
+      "x": 1348,
+      "y": 40,
+      "w": 44,
+      "h": 44
+     },
+     "label": "Menu du compte",
+     "menuOpen": false
+    }
+   },
+   "instant": {
+    "description": "Visiter → 42 → cercle → échec du module du globe (bloqué par le banc)"
+   }
+  },
+  {
+   "name": "entry-error--mobile--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/entry-error--mobile--fr-light.png",
+   "dom": "dom/entrance/entry-error--mobile--fr-light.json.gz",
+   "nodes": 14,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "entry-error",
+   "state": "entry-error",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "error",
+    "status": {
+     "text": "Le monde n’a pas pu se préparer.",
+     "box": {
+      "x": 88.42,
+      "y": 340.5,
+      "w": 213.14,
+      "h": 24
+     }
+    },
+    "buttons": [
+     "Réessayer",
+     "Revenir au message",
+     "Continuer sans le globe"
+    ],
+    "account": {
+     "display": "block",
+     "trigger": {
+      "x": 324,
+      "y": 24,
+      "w": 44,
+      "h": 44
+     },
+     "label": "Menu du compte",
+     "menuOpen": false
+    }
+   },
+   "instant": {
+    "description": "Visiter → 42 → cercle → échec du module du globe (bloqué par le banc)"
+   }
+  },
+  {
+   "name": "entry-error--mobile--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/entry-error--mobile--fr-dark.png",
+   "dom": "dom/entrance/entry-error--mobile--fr-dark.json.gz",
+   "nodes": 14,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "entry-error",
+   "state": "entry-error",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "error",
+    "status": {
+     "text": "Le monde n’a pas pu se préparer.",
+     "box": {
+      "x": 88.42,
+      "y": 340.5,
+      "w": 213.14,
+      "h": 24
+     }
+    },
+    "buttons": [
+     "Réessayer",
+     "Revenir au message",
+     "Continuer sans le globe"
+    ],
+    "account": {
+     "display": "block",
+     "trigger": {
+      "x": 324,
+      "y": 24,
+      "w": 44,
+      "h": 44
+     },
+     "label": "Menu du compte",
+     "menuOpen": false
+    }
+   },
+   "instant": {
+    "description": "Visiter → 42 → cercle → échec du module du globe (bloqué par le banc)"
+   }
+  },
+  {
+   "name": "entry-error--desktop--en-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/entry-error--desktop--en-light.png",
+   "dom": "dom/entrance/entry-error--desktop--en-light.json.gz",
+   "nodes": 14,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "entry-error",
+   "state": "entry-error",
+   "format": "desktop",
+   "lang": "en",
+   "theme": "light",
+   "facts": {
+    "entry": "error",
+    "dir": "ltr",
+    "status": {
+     "text": "The world could not be prepared.",
+     "box": {
+      "x": 612.89,
+      "y": 463.5,
+      "w": 214.22,
+      "h": 24
+     }
+    },
+    "buttons": [
+     "Try again",
+     "Back to the message",
+     "Continue without the globe"
+    ],
+    "platformFonts": null
+   },
+   "instant": {
+    "description": "écran d’erreur après passage du site en EN par le compte"
+   }
+  },
+  {
+   "name": "arrival-encrypted--desktop--en-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/arrival-encrypted--desktop--en-light.png",
+   "dom": "dom/entrance/arrival-encrypted--desktop--en-light.json.gz",
+   "nodes": 15,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "arrival",
+   "state": "arrival-encrypted",
+   "format": "desktop",
+   "lang": "en",
+   "theme": "light",
+   "facts": {
+    "entry": "encrypted",
+    "dir": "ltr",
+    "labels": [
+     "en",
+     "en"
+    ],
+    "pair": [
+     {
+      "x": 554.39,
+      "y": 635,
+      "w": 153.61,
+      "h": 52
+     },
+     {
+      "x": 732,
+      "y": 635,
+      "w": 153.61,
+      "h": 52
+     }
+    ],
+    "platformFonts": null
+   },
+   "canvas": "dom/entrance/arrival-encrypted--desktop--en-light.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1408000,
+    "paintedPixels": 12626,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "phase": "encrypted",
+    "description": "Revenir au message depuis l’écran d’erreur, site en EN (le scan n’est pas rejoué)",
+    "frameIndexAtShot": 240,
+    "frameIndexAtDump": 240,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 1100,
+     "height": 320
+    },
+    "cssBox": {
+     "x": 170,
+     "y": 320,
+     "w": 1100,
+     "h": 320
+    },
+    "devicePixelRatio": 1,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 504.55,
+      "fontSizePx": 86.0,
+      "text": "ru%43t9xus4tu",
+      "advanceLeft": 320.32,
+      "advanceRight": 1128.46,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "entry-signin--desktop--en-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/entry-signin--desktop--en-light.png",
+   "dom": "dom/entrance/entry-signin--desktop--en-light.json.gz",
+   "nodes": 25,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "entry-signin",
+   "state": "entry-signin",
+   "format": "desktop",
+   "lang": "en",
+   "theme": "light",
+   "facts": {
+    "entry": "encrypted",
+    "dir": "ltr",
+    "dialog": {
+     "kind": "login",
+     "title": "Sign in — prototype",
+     "box": {
+      "x": 510,
+      "y": 362.91,
+      "w": 420,
+      "h": 234.19
+     },
+     "text": "This preview simulates sign-in. No real authentication takes place.",
+     "buttons": [
+      {
+       "text": "Simulate a successful sign-in",
+       "cls": "entrance-action",
+       "box": {
+        "x": 535,
+        "y": 519.09,
+        "w": 249.36,
+        "h": 53
+       }
+      },
+      {
+       "text": "Cancel",
+       "cls": "entrance-action secondary",
+       "box": {
+        "x": 784.36,
+        "y": 519.09,
+        "w": 104.63,
+        "h": 53
+       }
+      }
+     ],
+     "close": {
+      "x": 861,
+      "y": 387.91,
+      "w": 44,
+      "h": 44
+     },
+     "backdrop": {
+      "background": "rgba(23, 57, 56, 0.16)",
+      "backdropFilter": "blur(7px)"
+     }
+    },
+    "platformFonts": null
+   },
+   "canvas": "dom/entrance/entry-signin--desktop--en-light.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1408000,
+    "paintedPixels": 12626,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "phase": "encrypted",
+    "description": "Se connecter, site en EN",
+    "frameIndexAtShot": 240,
+    "frameIndexAtDump": 240,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 1100,
+     "height": 320
+    },
+    "cssBox": {
+     "x": 170,
+     "y": 320,
+     "w": 1100,
+     "h": 320
+    },
+    "devicePixelRatio": 1,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 504.55,
+      "fontSizePx": 86.0,
+      "text": "ru%43t9xus4tu",
+      "advanceLeft": 320.32,
+      "advanceRight": 1128.46,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "entry-error--desktop--ar-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/entry-error--desktop--ar-light.png",
+   "dom": "dom/entrance/entry-error--desktop--ar-light.json.gz",
+   "nodes": 14,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "entry-error",
+   "state": "entry-error",
+   "format": "desktop",
+   "lang": "ar",
+   "theme": "light",
+   "facts": {
+    "entry": "error",
+    "dir": "rtl",
+    "status": {
+     "text": "تعذّر تجهيز العالم.",
+     "box": {
+      "x": 667.78,
+      "y": 458,
+      "w": 104.45,
+      "h": 24
+     }
+    },
+    "buttons": [
+     "إعادة المحاولة",
+     "العودة إلى الرسالة",
+     "المتابعة دون الكرة الأرضية"
+    ],
+    "platformFonts": {
+     "#entrance-status": [
+      {
+       "familyName": "Noto Sans Arabic",
+       "postScriptName": "NotoSansArabic-Regular",
+       "isCustomFont": false,
+       "glyphCount": 16
+      },
+      {
+       "familyName": "Jost",
+       "postScriptName": "Jost-Regular",
+       "isCustomFont": true,
+       "glyphCount": 3
+      }
+     ],
+     "#entrance-access button:first-of-type": [
+      {
+       "familyName": "Noto Sans Arabic",
+       "postScriptName": "NotoSansArabic-Regular",
+       "isCustomFont": false,
+       "glyphCount": 13
+      },
+      {
+       "familyName": "Jost",
+       "postScriptName": "Jost-Regular",
+       "isCustomFont": true,
+       "glyphCount": 1
+      }
+     ]
+    }
+   },
+   "instant": {
+    "description": "écran d’erreur après passage du site en AR par le compte"
+   }
+  },
+  {
+   "name": "arrival-encrypted--desktop--ar-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/arrival-encrypted--desktop--ar-light.png",
+   "dom": "dom/entrance/arrival-encrypted--desktop--ar-light.json.gz",
+   "nodes": 15,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "arrival",
+   "state": "arrival-encrypted",
+   "format": "desktop",
+   "lang": "ar",
+   "theme": "light",
+   "facts": {
+    "entry": "encrypted",
+    "dir": "rtl",
+    "labels": [
+     "ar",
+     "ar"
+    ],
+    "pair": [
+     {
+      "x": 732,
+      "y": 635,
+      "w": 153.61,
+      "h": 52
+     },
+     {
+      "x": 554.39,
+      "y": 635,
+      "w": 153.61,
+      "h": 52
+     }
+    ],
+    "platformFonts": {
+     "#entry-login .entrance-action-label": [
+      {
+       "familyName": "Noto Sans Arabic",
+       "postScriptName": "NotoSansArabic-Regular",
+       "isCustomFont": false,
+       "glyphCount": 11
+      },
+      {
+       "familyName": "Jost",
+       "postScriptName": "Jost-Regular",
+       "isCustomFont": true,
+       "glyphCount": 1
+      }
+     ],
+     "#entry-guest .entrance-action-label": [
+      {
+       "familyName": "Noto Sans Arabic",
+       "postScriptName": "NotoSansArabic-Regular",
+       "isCustomFont": false,
+       "glyphCount": 5
+      }
+     ]
+    }
+   },
+   "canvas": "dom/entrance/arrival-encrypted--desktop--ar-light.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1408000,
+    "paintedPixels": 12626,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "phase": "encrypted",
+    "description": "Revenir au message depuis l’écran d’erreur, site en AR (le scan n’est pas rejoué)",
+    "frameIndexAtShot": 240,
+    "frameIndexAtDump": 240,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 1100,
+     "height": 320
+    },
+    "cssBox": {
+     "x": 170,
+     "y": 320,
+     "w": 1100,
+     "h": 320
+    },
+    "devicePixelRatio": 1,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 504.55,
+      "fontSizePx": 86.0,
+      "text": "ru%43t9xus4tu",
+      "advanceLeft": 320.32,
+      "advanceRight": 1128.46,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "entry-signin--desktop--ar-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/entry-signin--desktop--ar-light.png",
+   "dom": "dom/entrance/entry-signin--desktop--ar-light.json.gz",
+   "nodes": 25,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "entry-signin",
+   "state": "entry-signin",
+   "format": "desktop",
+   "lang": "ar",
+   "theme": "light",
+   "facts": {
+    "entry": "encrypted",
+    "dir": "rtl",
+    "dialog": {
+     "kind": "login",
+     "title": "تسجيل الدخول — نموذج أولي",
+     "box": {
+      "x": 510,
+      "y": 357.41,
+      "w": 420,
+      "h": 245.19
+     },
+     "text": "يحاكي هذا النموذج تسجيل الدخول. لا يتم إجراء مصادقة حقيقية.",
+     "buttons": [
+      {
+       "text": "محاكاة تسجيل دخول ناجح",
+       "cls": "entrance-action",
+       "box": {
+        "x": 680.89,
+        "y": 513.59,
+        "w": 224.11,
+        "h": 64
+       }
+      },
+      {
+       "text": "إلغاء",
+       "cls": "entrance-action secondary",
+       "box": {
+        "x": 595.34,
+        "y": 513.59,
+        "w": 85.55,
+        "h": 64
+       }
+      }
+     ],
+     "close": {
+      "x": 535,
+      "y": 382.41,
+      "w": 44,
+      "h": 44
+     },
+     "backdrop": {
+      "background": "rgba(23, 57, 56, 0.16)",
+      "backdropFilter": "blur(7px)"
+     }
+    },
+    "platformFonts": {
+     "#dialog-title": [
+      {
+       "familyName": "Noto Sans Arabic",
+       "postScriptName": "NotoSansArabic-Regular",
+       "isCustomFont": false,
+       "glyphCount": 20
+      },
+      {
+       "familyName": "Jost Medium",
+       "postScriptName": "Jost-Medium",
+       "isCustomFont": true,
+       "glyphCount": 5
+      }
+     ],
+     "#dialog-content .dialog-text": [
+      {
+       "familyName": "Noto Sans Arabic",
+       "postScriptName": "NotoSansArabic-Regular",
+       "isCustomFont": false,
+       "glyphCount": 47
+      },
+      {
+       "familyName": "Jost",
+       "postScriptName": "Jost-Regular",
+       "isCustomFont": true,
+       "glyphCount": 10
+      }
+     ],
+     "#dialog-content > button:first-of-type": [
+      {
+       "familyName": "Noto Sans Arabic",
+       "postScriptName": "NotoSansArabic-Regular",
+       "isCustomFont": false,
+       "glyphCount": 19
+      },
+      {
+       "familyName": "Jost",
+       "postScriptName": "Jost-Regular",
+       "isCustomFont": true,
+       "glyphCount": 3
+      }
+     ]
+    }
+   },
+   "canvas": "dom/entrance/entry-signin--desktop--ar-light.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1408000,
+    "paintedPixels": 12626,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "phase": "encrypted",
+    "description": "Se connecter, site en AR",
+    "frameIndexAtShot": 240,
+    "frameIndexAtDump": 240,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 1100,
+     "height": 320
+    },
+    "cssBox": {
+     "x": 170,
+     "y": 320,
+     "w": 1100,
+     "h": 320
+    },
+    "devicePixelRatio": 1,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 504.55,
+      "fontSizePx": 86.0,
+      "text": "ru%43t9xus4tu",
+      "advanceLeft": 320.32,
+      "advanceRight": 1128.46,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "entry-error--desktop--ar-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/entry-error--desktop--ar-dark.png",
+   "dom": "dom/entrance/entry-error--desktop--ar-dark.json.gz",
+   "nodes": 14,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "entry-error",
+   "state": "entry-error",
+   "format": "desktop",
+   "lang": "ar",
+   "theme": "dark",
+   "facts": {
+    "entry": "error",
+    "dir": "rtl",
+    "status": {
+     "text": "تعذّر تجهيز العالم.",
+     "box": {
+      "x": 667.78,
+      "y": 458,
+      "w": 104.45,
+      "h": 24
+     }
+    },
+    "buttons": [
+     "إعادة المحاولة",
+     "العودة إلى الرسالة",
+     "المتابعة دون الكرة الأرضية"
+    ],
+    "platformFonts": {
+     "#entrance-status": [
+      {
+       "familyName": "Noto Sans Arabic",
+       "postScriptName": "NotoSansArabic-Regular",
+       "isCustomFont": false,
+       "glyphCount": 16
+      },
+      {
+       "familyName": "Jost",
+       "postScriptName": "Jost-Regular",
+       "isCustomFont": true,
+       "glyphCount": 3
+      }
+     ],
+     "#entrance-access button:first-of-type": [
+      {
+       "familyName": "Noto Sans Arabic",
+       "postScriptName": "NotoSansArabic-Regular",
+       "isCustomFont": false,
+       "glyphCount": 13
+      },
+      {
+       "familyName": "Jost",
+       "postScriptName": "Jost-Regular",
+       "isCustomFont": true,
+       "glyphCount": 1
+      }
+     ]
+    }
+   },
+   "instant": {
+    "description": "écran d’erreur après passage du site en AR par le compte"
+   }
+  },
+  {
+   "name": "arrival-encrypted--desktop--ar-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/arrival-encrypted--desktop--ar-dark.png",
+   "dom": "dom/entrance/arrival-encrypted--desktop--ar-dark.json.gz",
+   "nodes": 15,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "arrival",
+   "state": "arrival-encrypted",
+   "format": "desktop",
+   "lang": "ar",
+   "theme": "dark",
+   "facts": {
+    "entry": "encrypted",
+    "dir": "rtl",
+    "labels": [
+     "ar",
+     "ar"
+    ],
+    "pair": [
+     {
+      "x": 732,
+      "y": 635,
+      "w": 153.61,
+      "h": 52
+     },
+     {
+      "x": 554.39,
+      "y": 635,
+      "w": 153.61,
+      "h": 52
+     }
+    ],
+    "platformFonts": {
+     "#entry-login .entrance-action-label": [
+      {
+       "familyName": "Noto Sans Arabic",
+       "postScriptName": "NotoSansArabic-Regular",
+       "isCustomFont": false,
+       "glyphCount": 11
+      },
+      {
+       "familyName": "Jost",
+       "postScriptName": "Jost-Regular",
+       "isCustomFont": true,
+       "glyphCount": 1
+      }
+     ],
+     "#entry-guest .entrance-action-label": [
+      {
+       "familyName": "Noto Sans Arabic",
+       "postScriptName": "NotoSansArabic-Regular",
+       "isCustomFont": false,
+       "glyphCount": 5
+      }
+     ]
+    }
+   },
+   "canvas": "dom/entrance/arrival-encrypted--desktop--ar-dark.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1408000,
+    "paintedPixels": 12654,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "phase": "encrypted",
+    "description": "Revenir au message depuis l’écran d’erreur, site en AR (le scan n’est pas rejoué)",
+    "frameIndexAtShot": 240,
+    "frameIndexAtDump": 240,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 1100,
+     "height": 320
+    },
+    "cssBox": {
+     "x": 170,
+     "y": 320,
+     "w": 1100,
+     "h": 320
+    },
+    "devicePixelRatio": 1,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 504.55,
+      "fontSizePx": 86.0,
+      "text": "ru%43t9xus4tu",
+      "advanceLeft": 320.32,
+      "advanceRight": 1128.46,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "entry-signin--desktop--ar-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/entry-signin--desktop--ar-dark.png",
+   "dom": "dom/entrance/entry-signin--desktop--ar-dark.json.gz",
+   "nodes": 25,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "entry-signin",
+   "state": "entry-signin",
+   "format": "desktop",
+   "lang": "ar",
+   "theme": "dark",
+   "facts": {
+    "entry": "encrypted",
+    "dir": "rtl",
+    "dialog": {
+     "kind": "login",
+     "title": "تسجيل الدخول — نموذج أولي",
+     "box": {
+      "x": 510,
+      "y": 357.41,
+      "w": 420,
+      "h": 245.19
+     },
+     "text": "يحاكي هذا النموذج تسجيل الدخول. لا يتم إجراء مصادقة حقيقية.",
+     "buttons": [
+      {
+       "text": "محاكاة تسجيل دخول ناجح",
+       "cls": "entrance-action",
+       "box": {
+        "x": 680.89,
+        "y": 513.59,
+        "w": 224.11,
+        "h": 64
+       }
+      },
+      {
+       "text": "إلغاء",
+       "cls": "entrance-action secondary",
+       "box": {
+        "x": 595.34,
+        "y": 513.59,
+        "w": 85.55,
+        "h": 64
+       }
+      }
+     ],
+     "close": {
+      "x": 535,
+      "y": 382.41,
+      "w": 44,
+      "h": 44
+     },
+     "backdrop": {
+      "background": "color(srgb 0.105882 0.105882 0.105882 / 0.22)",
+      "backdropFilter": "blur(7px)"
+     }
+    },
+    "platformFonts": {
+     "#dialog-title": [
+      {
+       "familyName": "Noto Sans Arabic",
+       "postScriptName": "NotoSansArabic-Regular",
+       "isCustomFont": false,
+       "glyphCount": 20
+      },
+      {
+       "familyName": "Jost Medium",
+       "postScriptName": "Jost-Medium",
+       "isCustomFont": true,
+       "glyphCount": 5
+      }
+     ],
+     "#dialog-content .dialog-text": [
+      {
+       "familyName": "Noto Sans Arabic",
+       "postScriptName": "NotoSansArabic-Regular",
+       "isCustomFont": false,
+       "glyphCount": 47
+      },
+      {
+       "familyName": "Jost",
+       "postScriptName": "Jost-Regular",
+       "isCustomFont": true,
+       "glyphCount": 10
+      }
+     ],
+     "#dialog-content > button:first-of-type": [
+      {
+       "familyName": "Noto Sans Arabic",
+       "postScriptName": "NotoSansArabic-Regular",
+       "isCustomFont": false,
+       "glyphCount": 19
+      },
+      {
+       "familyName": "Jost",
+       "postScriptName": "Jost-Regular",
+       "isCustomFont": true,
+       "glyphCount": 3
+      }
+     ]
+    }
+   },
+   "canvas": "dom/entrance/entry-signin--desktop--ar-dark.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1408000,
+    "paintedPixels": 12654,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "phase": "encrypted",
+    "description": "Se connecter, site en AR",
+    "frameIndexAtShot": 240,
+    "frameIndexAtDump": 240,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 1100,
+     "height": 320
+    },
+    "cssBox": {
+     "x": 170,
+     "y": 320,
+     "w": 1100,
+     "h": 320
+    },
+    "devicePixelRatio": 1,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 504.55,
+      "fontSizePx": 86.0,
+      "text": "ru%43t9xus4tu",
+      "advanceLeft": 320.32,
+      "advanceRight": 1128.46,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "entry-error--mobile--en-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/entry-error--mobile--en-light.png",
+   "dom": "dom/entrance/entry-error--mobile--en-light.json.gz",
+   "nodes": 14,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "entry-error",
+   "state": "entry-error",
+   "format": "mobile",
+   "lang": "en",
+   "theme": "light",
+   "facts": {
+    "entry": "error",
+    "dir": "ltr",
+    "status": {
+     "text": "The world could not be prepared.",
+     "box": {
+      "x": 87.89,
+      "y": 340.5,
+      "w": 214.22,
+      "h": 24
+     }
+    },
+    "buttons": [
+     "Try again",
+     "Back to the message",
+     "Continue without the globe"
+    ],
+    "platformFonts": null
+   },
+   "instant": {
+    "description": "écran d’erreur après passage du site en EN par le compte"
+   }
+  },
+  {
+   "name": "arrival-encrypted--mobile--en-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/arrival-encrypted--mobile--en-light.png",
+   "dom": "dom/entrance/arrival-encrypted--mobile--en-light.json.gz",
+   "nodes": 15,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "arrival",
+   "state": "arrival-encrypted",
+   "format": "mobile",
+   "lang": "en",
+   "theme": "light",
+   "facts": {
+    "entry": "encrypted",
+    "dir": "ltr",
+    "labels": [
+     "en",
+     "en"
+    ],
+    "pair": [
+     {
+      "x": 24,
+      "y": 552,
+      "w": 342,
+      "h": 52
+     },
+     {
+      "x": 24,
+      "y": 616,
+      "w": 342,
+      "h": 52
+     }
+    ],
+    "platformFonts": null
+   },
+   "canvas": "dom/entrance/arrival-encrypted--mobile--en-light.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1313280,
+    "paintedPixels": 15565,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "phase": "encrypted",
+    "description": "Revenir au message depuis l’écran d’erreur, site en EN (le scan n’est pas rejoué)",
+    "frameIndexAtShot": 240,
+    "frameIndexAtDump": 240,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 684,
+     "height": 480
+    },
+    "cssBox": {
+     "x": 24,
+     "y": 302,
+     "w": 342,
+     "h": 240
+    },
+    "devicePixelRatio": 2,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 402.58,
+      "fontSizePx": 48.0,
+      "text": "ru%43t",
+      "advanceLeft": 100.68,
+      "advanceRight": 284.52,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "glyph",
+      "baselineY": 468.82,
+      "fontSizePx": 48.0,
+      "text": "9xus4tu",
+      "advanceLeft": 74.17,
+      "advanceRight": 314.98,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "entry-signin--mobile--en-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/entry-signin--mobile--en-light.png",
+   "dom": "dom/entrance/entry-signin--mobile--en-light.json.gz",
+   "nodes": 25,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "entry-signin",
+   "state": "entry-signin",
+   "format": "mobile",
+   "lang": "en",
+   "theme": "light",
+   "facts": {
+    "entry": "encrypted",
+    "dir": "ltr",
+    "dialog": {
+     "kind": "login",
+     "title": "Sign in — prototype",
+     "box": {
+      "x": 19,
+      "y": 278.41,
+      "w": 352,
+      "h": 287.19
+     },
+     "text": "This preview simulates sign-in. No real authentication takes place.",
+     "buttons": [
+      {
+       "text": "Simulate a successful sign-in",
+       "cls": "entrance-action",
+       "box": {
+        "x": 44,
+        "y": 434.59,
+        "w": 302,
+        "h": 53
+       }
+      },
+      {
+       "text": "Cancel",
+       "cls": "entrance-action secondary",
+       "box": {
+        "x": 44,
+        "y": 487.59,
+        "w": 302,
+        "h": 53
+       }
+      }
+     ],
+     "close": {
+      "x": 302,
+      "y": 303.41,
+      "w": 44,
+      "h": 44
+     },
+     "backdrop": {
+      "background": "rgba(23, 57, 56, 0.16)",
+      "backdropFilter": "blur(7px)"
+     }
+    },
+    "platformFonts": null
+   },
+   "canvas": "dom/entrance/entry-signin--mobile--en-light.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1313280,
+    "paintedPixels": 15565,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "phase": "encrypted",
+    "description": "Se connecter, site en EN",
+    "frameIndexAtShot": 240,
+    "frameIndexAtDump": 240,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 684,
+     "height": 480
+    },
+    "cssBox": {
+     "x": 24,
+     "y": 302,
+     "w": 342,
+     "h": 240
+    },
+    "devicePixelRatio": 2,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 402.58,
+      "fontSizePx": 48.0,
+      "text": "ru%43t",
+      "advanceLeft": 100.68,
+      "advanceRight": 284.52,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "glyph",
+      "baselineY": 468.82,
+      "fontSizePx": 48.0,
+      "text": "9xus4tu",
+      "advanceLeft": 74.17,
+      "advanceRight": 314.98,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "entry-error--mobile--ar-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/entry-error--mobile--ar-light.png",
+   "dom": "dom/entrance/entry-error--mobile--ar-light.json.gz",
+   "nodes": 14,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "entry-error",
+   "state": "entry-error",
+   "format": "mobile",
+   "lang": "ar",
+   "theme": "light",
+   "facts": {
+    "entry": "error",
+    "dir": "rtl",
+    "status": {
+     "text": "تعذّر تجهيز العالم.",
+     "box": {
+      "x": 142.78,
+      "y": 324,
+      "w": 104.45,
+      "h": 24
+     }
+    },
+    "buttons": [
+     "إعادة المحاولة",
+     "العودة إلى الرسالة",
+     "المتابعة دون الكرة الأرضية"
+    ],
+    "platformFonts": {
+     "#entrance-status": [
+      {
+       "familyName": "Noto Sans Arabic",
+       "postScriptName": "NotoSansArabic-Regular",
+       "isCustomFont": false,
+       "glyphCount": 16
+      },
+      {
+       "familyName": "Jost",
+       "postScriptName": "Jost-Regular",
+       "isCustomFont": true,
+       "glyphCount": 3
+      }
+     ],
+     "#entrance-access button:first-of-type": [
+      {
+       "familyName": "Noto Sans Arabic",
+       "postScriptName": "NotoSansArabic-Regular",
+       "isCustomFont": false,
+       "glyphCount": 13
+      },
+      {
+       "familyName": "Jost",
+       "postScriptName": "Jost-Regular",
+       "isCustomFont": true,
+       "glyphCount": 1
+      }
+     ]
+    }
+   },
+   "instant": {
+    "description": "écran d’erreur après passage du site en AR par le compte"
+   }
+  },
+  {
+   "name": "arrival-encrypted--mobile--ar-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/arrival-encrypted--mobile--ar-light.png",
+   "dom": "dom/entrance/arrival-encrypted--mobile--ar-light.json.gz",
+   "nodes": 15,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "arrival",
+   "state": "arrival-encrypted",
+   "format": "mobile",
+   "lang": "ar",
+   "theme": "light",
+   "facts": {
+    "entry": "encrypted",
+    "dir": "rtl",
+    "labels": [
+     "ar",
+     "ar"
+    ],
+    "pair": [
+     {
+      "x": 24,
+      "y": 552,
+      "w": 342,
+      "h": 52
+     },
+     {
+      "x": 24,
+      "y": 616,
+      "w": 342,
+      "h": 52
+     }
+    ],
+    "platformFonts": {
+     "#entry-login .entrance-action-label": [
+      {
+       "familyName": "Noto Sans Arabic",
+       "postScriptName": "NotoSansArabic-Regular",
+       "isCustomFont": false,
+       "glyphCount": 11
+      },
+      {
+       "familyName": "Jost",
+       "postScriptName": "Jost-Regular",
+       "isCustomFont": true,
+       "glyphCount": 1
+      }
+     ],
+     "#entry-guest .entrance-action-label": [
+      {
+       "familyName": "Noto Sans Arabic",
+       "postScriptName": "NotoSansArabic-Regular",
+       "isCustomFont": false,
+       "glyphCount": 5
+      }
+     ]
+    }
+   },
+   "canvas": "dom/entrance/arrival-encrypted--mobile--ar-light.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1313280,
+    "paintedPixels": 15565,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "phase": "encrypted",
+    "description": "Revenir au message depuis l’écran d’erreur, site en AR (le scan n’est pas rejoué)",
+    "frameIndexAtShot": 240,
+    "frameIndexAtDump": 240,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 684,
+     "height": 480
+    },
+    "cssBox": {
+     "x": 24,
+     "y": 302,
+     "w": 342,
+     "h": 240
+    },
+    "devicePixelRatio": 2,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 402.58,
+      "fontSizePx": 48.0,
+      "text": "ru%43t",
+      "advanceLeft": 100.68,
+      "advanceRight": 284.52,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "glyph",
+      "baselineY": 468.82,
+      "fontSizePx": 48.0,
+      "text": "9xus4tu",
+      "advanceLeft": 74.17,
+      "advanceRight": 314.98,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "entry-signin--mobile--ar-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/entry-signin--mobile--ar-light.png",
+   "dom": "dom/entrance/entry-signin--mobile--ar-light.json.gz",
+   "nodes": 25,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "entry-signin",
+   "state": "entry-signin",
+   "format": "mobile",
+   "lang": "ar",
+   "theme": "light",
+   "facts": {
+    "entry": "encrypted",
+    "dir": "rtl",
+    "dialog": {
+     "kind": "login",
+     "title": "تسجيل الدخول — نموذج أولي",
+     "box": {
+      "x": 19,
+      "y": 267.41,
+      "w": 352,
+      "h": 309.19
+     },
+     "text": "يحاكي هذا النموذج تسجيل الدخول. لا يتم إجراء مصادقة حقيقية.",
+     "buttons": [
+      {
+       "text": "محاكاة تسجيل دخول ناجح",
+       "cls": "entrance-action",
+       "box": {
+        "x": 44,
+        "y": 423.59,
+        "w": 302,
+        "h": 64
+       }
+      },
+      {
+       "text": "إلغاء",
+       "cls": "entrance-action secondary",
+       "box": {
+        "x": 44,
+        "y": 487.59,
+        "w": 302,
+        "h": 64
+       }
+      }
+     ],
+     "close": {
+      "x": 44,
+      "y": 292.41,
+      "w": 44,
+      "h": 44
+     },
+     "backdrop": {
+      "background": "rgba(23, 57, 56, 0.16)",
+      "backdropFilter": "blur(7px)"
+     }
+    },
+    "platformFonts": {
+     "#dialog-title": [
+      {
+       "familyName": "Noto Sans Arabic",
+       "postScriptName": "NotoSansArabic-Regular",
+       "isCustomFont": false,
+       "glyphCount": 20
+      },
+      {
+       "familyName": "Jost Medium",
+       "postScriptName": "Jost-Medium",
+       "isCustomFont": true,
+       "glyphCount": 5
+      }
+     ],
+     "#dialog-content .dialog-text": [
+      {
+       "familyName": "Noto Sans Arabic",
+       "postScriptName": "NotoSansArabic-Regular",
+       "isCustomFont": false,
+       "glyphCount": 47
+      },
+      {
+       "familyName": "Jost",
+       "postScriptName": "Jost-Regular",
+       "isCustomFont": true,
+       "glyphCount": 10
+      }
+     ],
+     "#dialog-content > button:first-of-type": [
+      {
+       "familyName": "Noto Sans Arabic",
+       "postScriptName": "NotoSansArabic-Regular",
+       "isCustomFont": false,
+       "glyphCount": 19
+      },
+      {
+       "familyName": "Jost",
+       "postScriptName": "Jost-Regular",
+       "isCustomFont": true,
+       "glyphCount": 3
+      }
+     ]
+    }
+   },
+   "canvas": "dom/entrance/entry-signin--mobile--ar-light.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1313280,
+    "paintedPixels": 15565,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "phase": "encrypted",
+    "description": "Se connecter, site en AR",
+    "frameIndexAtShot": 240,
+    "frameIndexAtDump": 240,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 684,
+     "height": 480
+    },
+    "cssBox": {
+     "x": 24,
+     "y": 302,
+     "w": 342,
+     "h": 240
+    },
+    "devicePixelRatio": 2,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 402.58,
+      "fontSizePx": 48.0,
+      "text": "ru%43t",
+      "advanceLeft": 100.68,
+      "advanceRight": 284.52,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "glyph",
+      "baselineY": 468.82,
+      "fontSizePx": 48.0,
+      "text": "9xus4tu",
+      "advanceLeft": 74.17,
+      "advanceRight": 314.98,
+      "colors": [
+       "#1B1B1B"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "entry-error--mobile--ar-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/entry-error--mobile--ar-dark.png",
+   "dom": "dom/entrance/entry-error--mobile--ar-dark.json.gz",
+   "nodes": 14,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "entry-error",
+   "state": "entry-error",
+   "format": "mobile",
+   "lang": "ar",
+   "theme": "dark",
+   "facts": {
+    "entry": "error",
+    "dir": "rtl",
+    "status": {
+     "text": "تعذّر تجهيز العالم.",
+     "box": {
+      "x": 142.78,
+      "y": 324,
+      "w": 104.45,
+      "h": 24
+     }
+    },
+    "buttons": [
+     "إعادة المحاولة",
+     "العودة إلى الرسالة",
+     "المتابعة دون الكرة الأرضية"
+    ],
+    "platformFonts": {
+     "#entrance-status": [
+      {
+       "familyName": "Noto Sans Arabic",
+       "postScriptName": "NotoSansArabic-Regular",
+       "isCustomFont": false,
+       "glyphCount": 16
+      },
+      {
+       "familyName": "Jost",
+       "postScriptName": "Jost-Regular",
+       "isCustomFont": true,
+       "glyphCount": 3
+      }
+     ],
+     "#entrance-access button:first-of-type": [
+      {
+       "familyName": "Noto Sans Arabic",
+       "postScriptName": "NotoSansArabic-Regular",
+       "isCustomFont": false,
+       "glyphCount": 13
+      },
+      {
+       "familyName": "Jost",
+       "postScriptName": "Jost-Regular",
+       "isCustomFont": true,
+       "glyphCount": 1
+      }
+     ]
+    }
+   },
+   "instant": {
+    "description": "écran d’erreur après passage du site en AR par le compte"
+   }
+  },
+  {
+   "name": "arrival-encrypted--mobile--ar-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/arrival-encrypted--mobile--ar-dark.png",
+   "dom": "dom/entrance/arrival-encrypted--mobile--ar-dark.json.gz",
+   "nodes": 15,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "arrival",
+   "state": "arrival-encrypted",
+   "format": "mobile",
+   "lang": "ar",
+   "theme": "dark",
+   "facts": {
+    "entry": "encrypted",
+    "dir": "rtl",
+    "labels": [
+     "ar",
+     "ar"
+    ],
+    "pair": [
+     {
+      "x": 24,
+      "y": 552,
+      "w": 342,
+      "h": 52
+     },
+     {
+      "x": 24,
+      "y": 616,
+      "w": 342,
+      "h": 52
+     }
+    ],
+    "platformFonts": {
+     "#entry-login .entrance-action-label": [
+      {
+       "familyName": "Noto Sans Arabic",
+       "postScriptName": "NotoSansArabic-Regular",
+       "isCustomFont": false,
+       "glyphCount": 11
+      },
+      {
+       "familyName": "Jost",
+       "postScriptName": "Jost-Regular",
+       "isCustomFont": true,
+       "glyphCount": 1
+      }
+     ],
+     "#entry-guest .entrance-action-label": [
+      {
+       "familyName": "Noto Sans Arabic",
+       "postScriptName": "NotoSansArabic-Regular",
+       "isCustomFont": false,
+       "glyphCount": 5
+      }
+     ]
+    }
+   },
+   "canvas": "dom/entrance/arrival-encrypted--mobile--ar-dark.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1313280,
+    "paintedPixels": 15589,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "phase": "encrypted",
+    "description": "Revenir au message depuis l’écran d’erreur, site en AR (le scan n’est pas rejoué)",
+    "frameIndexAtShot": 240,
+    "frameIndexAtDump": 240,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 684,
+     "height": 480
+    },
+    "cssBox": {
+     "x": 24,
+     "y": 302,
+     "w": 342,
+     "h": 240
+    },
+    "devicePixelRatio": 2,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 402.58,
+      "fontSizePx": 48.0,
+      "text": "ru%43t",
+      "advanceLeft": 100.68,
+      "advanceRight": 284.52,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "glyph",
+      "baselineY": 468.82,
+      "fontSizePx": 48.0,
+      "text": "9xus4tu",
+      "advanceLeft": 74.17,
+      "advanceRight": 314.98,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "entry-signin--mobile--ar-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/entry-signin--mobile--ar-dark.png",
+   "dom": "dom/entrance/entry-signin--mobile--ar-dark.json.gz",
+   "nodes": 25,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "entry-signin",
+   "state": "entry-signin",
+   "format": "mobile",
+   "lang": "ar",
+   "theme": "dark",
+   "facts": {
+    "entry": "encrypted",
+    "dir": "rtl",
+    "dialog": {
+     "kind": "login",
+     "title": "تسجيل الدخول — نموذج أولي",
+     "box": {
+      "x": 19,
+      "y": 267.41,
+      "w": 352,
+      "h": 309.19
+     },
+     "text": "يحاكي هذا النموذج تسجيل الدخول. لا يتم إجراء مصادقة حقيقية.",
+     "buttons": [
+      {
+       "text": "محاكاة تسجيل دخول ناجح",
+       "cls": "entrance-action",
+       "box": {
+        "x": 44,
+        "y": 423.59,
+        "w": 302,
+        "h": 64
+       }
+      },
+      {
+       "text": "إلغاء",
+       "cls": "entrance-action secondary",
+       "box": {
+        "x": 44,
+        "y": 487.59,
+        "w": 302,
+        "h": 64
+       }
+      }
+     ],
+     "close": {
+      "x": 44,
+      "y": 292.41,
+      "w": 44,
+      "h": 44
+     },
+     "backdrop": {
+      "background": "color(srgb 0.105882 0.105882 0.105882 / 0.22)",
+      "backdropFilter": "blur(7px)"
+     }
+    },
+    "platformFonts": {
+     "#dialog-title": [
+      {
+       "familyName": "Noto Sans Arabic",
+       "postScriptName": "NotoSansArabic-Regular",
+       "isCustomFont": false,
+       "glyphCount": 20
+      },
+      {
+       "familyName": "Jost Medium",
+       "postScriptName": "Jost-Medium",
+       "isCustomFont": true,
+       "glyphCount": 5
+      }
+     ],
+     "#dialog-content .dialog-text": [
+      {
+       "familyName": "Noto Sans Arabic",
+       "postScriptName": "NotoSansArabic-Regular",
+       "isCustomFont": false,
+       "glyphCount": 47
+      },
+      {
+       "familyName": "Jost",
+       "postScriptName": "Jost-Regular",
+       "isCustomFont": true,
+       "glyphCount": 10
+      }
+     ],
+     "#dialog-content > button:first-of-type": [
+      {
+       "familyName": "Noto Sans Arabic",
+       "postScriptName": "NotoSansArabic-Regular",
+       "isCustomFont": false,
+       "glyphCount": 19
+      },
+      {
+       "familyName": "Jost",
+       "postScriptName": "Jost-Regular",
+       "isCustomFont": true,
+       "glyphCount": 3
+      }
+     ]
+    }
+   },
+   "canvas": "dom/entrance/entry-signin--mobile--ar-dark.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1313280,
+    "paintedPixels": 15589,
+    "sprites": 9
+   },
+   "canvasStable": true,
+   "instant": {
+    "entranceClockMs": 3650,
+    "phase": "encrypted",
+    "description": "Se connecter, site en AR",
+    "frameIndexAtShot": 240,
+    "frameIndexAtDump": 240,
+    "rendererPhase": "cipher",
+    "renderedText": "ru%43t 9xu s4tu",
+    "beamPosition": "0"
+   },
+   "canvasSummary": {
+    "size": {
+     "width": 684,
+     "height": 480
+    },
+    "cssBox": {
+     "x": 24,
+     "y": 302,
+     "w": 342,
+     "h": 240
+    },
+    "devicePixelRatio": 2,
+    "lines": [
+     {
+      "kind": "glyph",
+      "baselineY": 402.58,
+      "fontSizePx": 48.0,
+      "text": "ru%43t",
+      "advanceLeft": 100.68,
+      "advanceRight": 284.52,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     },
+     {
+      "kind": "glyph",
+      "baselineY": 468.82,
+      "fontSizePx": 48.0,
+      "text": "9xus4tu",
+      "advanceLeft": 74.17,
+      "advanceRight": 314.98,
+      "colors": [
+       "#FFFFFF"
+      ],
+      "clip": null
+     }
+    ],
+    "beam": null,
+    "counts": {
+     "glyphs": 13,
+     "drawImage": 13,
+     "fillRect": 0,
+     "commands": 14
+    }
+   }
+  },
+  {
+   "name": "reveal-mid--desktop--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/reveal-mid--desktop--fr-light.png",
+   "dom": "dom/entrance/reveal-mid--desktop--fr-light.json.gz",
+   "nodes": 69,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "reveal",
+   "state": "reveal-mid",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "revealing",
+    "t": 0.5,
+    "progress": 0.50013,
+    "globeRadius": 267.012,
+    "globe": {
+     "transform": "translate(0px, 0px) scale(0.679848)",
+     "clipPath": "circle(267.012px at 720px 480px)",
+     "opacity": "1",
+     "origin": "720px 480px",
+     "box": {
+      "x": 230.50973510742188,
+      "y": 153.67315673828125,
+      "w": 978.98046875,
+      "h": 652.6536865234375
+     },
+     "canvas": {
+      "x": 230.50973510742188,
+      "y": 153.67315673828125,
+      "w": 978.98046875,
+      "h": 652.6536865234375
+     },
+     "canvasSize": [
+      1440,
+      960
+     ]
+    },
+    "veil": {
+     "hidden": false,
+     "mask": "radial-gradient(circle at 720px 480px, transparent 180.527px, rgb(0, 0, 0) 182.527px)",
+     "background": "radial-gradient(at 74% 46%, rgba(0, 186, 188, 0.043), rgba(0, 0, 0, 0) 48%), radial-gradient(at 22% 86%, rgba(236, 51, 145, 0.03), rgba(0, 0, 0, 0) 39%), linear-gradient(145deg, rgb(255, 255, 255) 8%, rgb(247, 250, 250) 78%)"
+    },
+    "logoOpacity": "0",
+    "ringOpacity": "1"
+   },
+   "instant": {
+    "revealT": 0.5,
+    "revealProgress": 0.50013,
+    "description": "t = 0.5 du révélé de 1,2 s (smoothstep)"
+   }
+  },
+  {
+   "name": "reveal-end--desktop--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/reveal-end--desktop--fr-light.png",
+   "dom": "dom/entrance/reveal-end--desktop--fr-light.json.gz",
+   "nodes": 69,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "reveal",
+   "state": "reveal-end",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "revealing",
+    "t": 0.99,
+    "progress": 0.99971,
+    "globeRadius": 267.012,
+    "globe": {
+     "transform": "translate(0px, 0px) scale(0.999812)",
+     "clipPath": "circle(267.012px at 720px 480px)",
+     "opacity": "1",
+     "origin": "720px 480px",
+     "box": {
+      "x": 0.1351318359375,
+      "y": 0.090087890625,
+      "w": 1439.729736328125,
+      "h": 959.81982421875
+     },
+     "canvas": {
+      "x": 0.1351318359375,
+      "y": 0.090087890625,
+      "w": 1439.729736328125,
+      "h": 959.81982421875
+     },
+     "canvasSize": [
+      1440,
+      960
+     ]
+    },
+    "veil": {
+     "hidden": false,
+     "mask": "radial-gradient(circle at 720px 480px, transparent 265.961px, rgb(0, 0, 0) 267.961px)",
+     "background": "radial-gradient(at 74% 46%, rgba(0, 186, 188, 0.043), rgba(0, 0, 0, 0) 48%), radial-gradient(at 22% 86%, rgba(236, 51, 145, 0.03), rgba(0, 0, 0, 0) 39%), linear-gradient(145deg, rgb(255, 255, 255) 8%, rgb(247, 250, 250) 78%)"
+    },
+    "logoOpacity": "0",
+    "ringOpacity": "0.000837344"
+   },
+   "instant": {
+    "revealT": 0.99,
+    "revealProgress": 0.99971,
+    "description": "t = 0.99 du révélé de 1,2 s (smoothstep)"
+   }
+  },
+  {
+   "name": "reveal-mid--desktop--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/reveal-mid--desktop--fr-dark.png",
+   "dom": "dom/entrance/reveal-mid--desktop--fr-dark.json.gz",
+   "nodes": 69,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "reveal",
+   "state": "reveal-mid",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "revealing",
+    "t": 0.5,
+    "progress": 0.50013,
+    "globeRadius": 267.012,
+    "globe": {
+     "transform": "translate(0px, 0px) scale(0.679848)",
+     "clipPath": "circle(267.012px at 720px 480px)",
+     "opacity": "1",
+     "origin": "720px 480px",
+     "box": {
+      "x": 230.50973510742188,
+      "y": 153.67315673828125,
+      "w": 978.98046875,
+      "h": 652.6536865234375
+     },
+     "canvas": {
+      "x": 230.50973510742188,
+      "y": 153.67315673828125,
+      "w": 978.98046875,
+      "h": 652.6536865234375
+     },
+     "canvasSize": [
+      1440,
+      960
+     ]
+    },
+    "veil": {
+     "hidden": false,
+     "mask": "radial-gradient(circle at 720px 480px, transparent 180.527px, rgb(0, 0, 0) 182.527px)",
+     "background": "rgb(27, 27, 27)"
+    },
+    "logoOpacity": "0",
+    "ringOpacity": "1"
+   },
+   "instant": {
+    "revealT": 0.5,
+    "revealProgress": 0.50013,
+    "description": "t = 0.5 du révélé de 1,2 s (smoothstep)"
+   }
+  },
+  {
+   "name": "reveal-end--desktop--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/reveal-end--desktop--fr-dark.png",
+   "dom": "dom/entrance/reveal-end--desktop--fr-dark.json.gz",
+   "nodes": 69,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "reveal",
+   "state": "reveal-end",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "revealing",
+    "t": 0.99,
+    "progress": 0.99971,
+    "globeRadius": 267.012,
+    "globe": {
+     "transform": "translate(0px, 0px) scale(0.999812)",
+     "clipPath": "circle(267.012px at 720px 480px)",
+     "opacity": "1",
+     "origin": "720px 480px",
+     "box": {
+      "x": 0.1351318359375,
+      "y": 0.090087890625,
+      "w": 1439.729736328125,
+      "h": 959.81982421875
+     },
+     "canvas": {
+      "x": 0.1351318359375,
+      "y": 0.090087890625,
+      "w": 1439.729736328125,
+      "h": 959.81982421875
+     },
+     "canvasSize": [
+      1440,
+      960
+     ]
+    },
+    "veil": {
+     "hidden": false,
+     "mask": "radial-gradient(circle at 720px 480px, transparent 265.961px, rgb(0, 0, 0) 267.961px)",
+     "background": "rgb(27, 27, 27)"
+    },
+    "logoOpacity": "0",
+    "ringOpacity": "0.000837344"
+   },
+   "instant": {
+    "revealT": 0.99,
+    "revealProgress": 0.99971,
+    "description": "t = 0.99 du révélé de 1,2 s (smoothstep)"
+   }
+  },
+  {
+   "name": "reveal-mid--mobile--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/reveal-mid--mobile--fr-light.png",
+   "dom": "dom/entrance/reveal-mid--mobile--fr-light.json.gz",
+   "nodes": 66,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "reveal",
+   "state": "reveal-mid",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "revealing",
+    "t": 0.5,
+    "progress": 0.5,
+    "globeRadius": 190.921,
+    "globe": {
+     "transform": "translate(0px, 0px) scale(0.718729)",
+     "clipPath": "circle(190.921px at 195px 422px)",
+     "opacity": "1",
+     "origin": "195px 422px",
+     "box": {
+      "x": 54.847808837890625,
+      "y": 118.6962890625,
+      "w": 280.30438232421875,
+      "h": 606.607421875
+     },
+     "canvas": {
+      "x": 54.847808837890625,
+      "y": 118.6962890625,
+      "w": 280.30438232421875,
+      "h": 606.607421875
+     },
+     "canvasSize": [
+      585,
+      1266
+     ]
+    },
+    "veil": {
+     "hidden": false,
+     "mask": "radial-gradient(circle at 195px 422px, transparent 136.221px, rgb(0, 0, 0) 138.221px)",
+     "background": "radial-gradient(at 74% 46%, rgba(0, 186, 188, 0.043), rgba(0, 0, 0, 0) 48%), radial-gradient(at 22% 86%, rgba(236, 51, 145, 0.03), rgba(0, 0, 0, 0) 39%), linear-gradient(145deg, rgb(255, 255, 255) 8%, rgb(247, 250, 250) 78%)"
+    },
+    "logoOpacity": "0",
+    "ringOpacity": "1"
+   },
+   "instant": {
+    "revealT": 0.5,
+    "revealProgress": 0.5,
+    "description": "t = 0.5 du révélé de 1,2 s (smoothstep)"
+   }
+  },
+  {
+   "name": "reveal-end--mobile--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/reveal-end--mobile--fr-light.png",
+   "dom": "dom/entrance/reveal-end--mobile--fr-light.json.gz",
+   "nodes": 66,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "reveal",
+   "state": "reveal-end",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "revealing",
+    "t": 0.99,
+    "progress": 0.9997,
+    "globeRadius": 190.921,
+    "globe": {
+     "transform": "translate(0px, 0px) scale(0.999832)",
+     "clipPath": "circle(190.921px at 195px 422px)",
+     "opacity": "1",
+     "origin": "195px 422px",
+     "box": {
+      "x": 0.032684326171875,
+      "y": 0.07073974609375,
+      "w": 389.93463134765625,
+      "h": 843.8585205078125
+     },
+     "canvas": {
+      "x": 0.032684326171875,
+      "y": 0.07073974609375,
+      "w": 389.93463134765625,
+      "h": 843.8585205078125
+     },
+     "canvasSize": [
+      585,
+      1266
+     ]
+    },
+    "veil": {
+     "hidden": false,
+     "mask": "radial-gradient(circle at 195px 422px, transparent 189.889px, rgb(0, 0, 0) 191.889px)",
+     "background": "radial-gradient(at 74% 46%, rgba(0, 186, 188, 0.043), rgba(0, 0, 0, 0) 48%), radial-gradient(at 22% 86%, rgba(236, 51, 145, 0.03), rgba(0, 0, 0, 0) 39%), linear-gradient(145deg, rgb(255, 255, 255) 8%, rgb(247, 250, 250) 78%)"
+    },
+    "logoOpacity": "0",
+    "ringOpacity": "0.000851429"
+   },
+   "instant": {
+    "revealT": 0.99,
+    "revealProgress": 0.9997,
+    "description": "t = 0.99 du révélé de 1,2 s (smoothstep)"
+   }
+  },
+  {
+   "name": "reveal-mid--mobile--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/reveal-mid--mobile--fr-dark.png",
+   "dom": "dom/entrance/reveal-mid--mobile--fr-dark.json.gz",
+   "nodes": 66,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "reveal",
+   "state": "reveal-mid",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "revealing",
+    "t": 0.5,
+    "progress": 0.5,
+    "globeRadius": 190.921,
+    "globe": {
+     "transform": "translate(0px, 0px) scale(0.718729)",
+     "clipPath": "circle(190.921px at 195px 422px)",
+     "opacity": "1",
+     "origin": "195px 422px",
+     "box": {
+      "x": 54.847808837890625,
+      "y": 118.6962890625,
+      "w": 280.30438232421875,
+      "h": 606.607421875
+     },
+     "canvas": {
+      "x": 54.847808837890625,
+      "y": 118.6962890625,
+      "w": 280.30438232421875,
+      "h": 606.607421875
+     },
+     "canvasSize": [
+      585,
+      1266
+     ]
+    },
+    "veil": {
+     "hidden": false,
+     "mask": "radial-gradient(circle at 195px 422px, transparent 136.221px, rgb(0, 0, 0) 138.221px)",
+     "background": "rgb(27, 27, 27)"
+    },
+    "logoOpacity": "0",
+    "ringOpacity": "1"
+   },
+   "instant": {
+    "revealT": 0.5,
+    "revealProgress": 0.5,
+    "description": "t = 0.5 du révélé de 1,2 s (smoothstep)"
+   }
+  },
+  {
+   "name": "reveal-end--mobile--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/reveal-end--mobile--fr-dark.png",
+   "dom": "dom/entrance/reveal-end--mobile--fr-dark.json.gz",
+   "nodes": 66,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "reveal",
+   "state": "reveal-end",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "revealing",
+    "t": 0.99,
+    "progress": 0.9997,
+    "globeRadius": 190.921,
+    "globe": {
+     "transform": "translate(0px, 0px) scale(0.999832)",
+     "clipPath": "circle(190.921px at 195px 422px)",
+     "opacity": "1",
+     "origin": "195px 422px",
+     "box": {
+      "x": 0.032684326171875,
+      "y": 0.07073974609375,
+      "w": 389.93463134765625,
+      "h": 843.8585205078125
+     },
+     "canvas": {
+      "x": 0.032684326171875,
+      "y": 0.07073974609375,
+      "w": 389.93463134765625,
+      "h": 843.8585205078125
+     },
+     "canvasSize": [
+      585,
+      1266
+     ]
+    },
+    "veil": {
+     "hidden": false,
+     "mask": "radial-gradient(circle at 195px 422px, transparent 189.889px, rgb(0, 0, 0) 191.889px)",
+     "background": "rgb(27, 27, 27)"
+    },
+    "logoOpacity": "0",
+    "ringOpacity": "0.000851429"
+   },
+   "instant": {
+    "revealT": 0.99,
+    "revealProgress": 0.9997,
+    "description": "t = 0.99 du révélé de 1,2 s (smoothstep)"
+   }
+  },
+  {
+   "name": "visitor-transition--desktop--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/visitor-transition--desktop--fr-light.png",
+   "dom": "dom/entrance/visitor-transition--desktop--fr-light.json.gz",
+   "nodes": 9,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "opening",
+   "state": "visitor-transition",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "opening",
+    "path": "visitor",
+    "logo": {
+     "logoOpacity": "0.501875",
+     "logoFilter": "blur(3.985px)",
+     "logoTransform": "matrix(0.930263, 0, 0, 0.930263, 0, 4.98125)",
+     "logoClip": "inset(0px 0px 49.8125%)"
+    },
+    "dashoffset": "100px"
+   },
+   "instant": {
+    "logoMs": 79,
+    "description": "Visiter : le 42 apparaît (600 ms, cubic-bezier(.22,1,.36,1)) ; à 79 ms la progression vaut 0,50"
+   }
+  },
+  {
+   "name": "opening-logo--desktop--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/opening-logo--desktop--fr-light.png",
+   "dom": "dom/entrance/opening-logo--desktop--fr-light.json.gz",
+   "nodes": 9,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "opening",
+   "state": "opening-logo",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "opening",
+    "path": "visitor",
+    "logo": {
+     "logoOpacity": "1",
+     "logoFilter": "none",
+     "logoTransform": "none",
+     "logoClip": "none"
+    },
+    "dashoffset": "100px"
+   },
+   "instant": {
+    "logoMs": 600,
+    "description": "fin de l’apparition du 42, cercle pas encore tracé"
+   }
+  },
+  {
+   "name": "opening-ring-drawing--desktop--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/opening-ring-drawing--desktop--fr-light.png",
+   "dom": "dom/entrance/opening-ring-drawing--desktop--fr-light.json.gz",
+   "nodes": 9,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "opening",
+   "state": "opening-ring-drawing",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "ring",
+    "path": "visitor",
+    "dashoffset": "49.9363px"
+   },
+   "instant": {
+    "ringMs": 105,
+    "description": "cercle en cours de tracé : 105 ms sur 800 (cubic-bezier(.22,1,.36,1)), dashoffset ≈ 49,9 soit la moitié du cercle"
+   }
+  },
+  {
+   "name": "opening-ring--desktop--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/opening-ring--desktop--fr-light.png",
+   "dom": "dom/entrance/opening-ring--desktop--fr-light.json.gz",
+   "nodes": 9,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "opening",
+   "state": "opening-ring",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "ring",
+    "path": "visitor",
+    "dashoffset": "0px"
+   },
+   "instant": {
+    "ringMs": 800,
+    "description": "cercle complet (dashoffset 0)"
+   }
+  },
+  {
+   "name": "visitor-transition--desktop--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/visitor-transition--desktop--fr-dark.png",
+   "dom": "dom/entrance/visitor-transition--desktop--fr-dark.json.gz",
+   "nodes": 9,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "opening",
+   "state": "visitor-transition",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "opening",
+    "path": "visitor",
+    "logo": {
+     "logoOpacity": "0.501875",
+     "logoFilter": "blur(3.985px)",
+     "logoTransform": "matrix(0.930263, 0, 0, 0.930263, 0, 4.98125)",
+     "logoClip": "inset(0px 0px 49.8125%)"
+    },
+    "dashoffset": "100px"
+   },
+   "instant": {
+    "logoMs": 79,
+    "description": "Visiter : le 42 apparaît (600 ms, cubic-bezier(.22,1,.36,1)) ; à 79 ms la progression vaut 0,50"
+   }
+  },
+  {
+   "name": "opening-logo--desktop--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/opening-logo--desktop--fr-dark.png",
+   "dom": "dom/entrance/opening-logo--desktop--fr-dark.json.gz",
+   "nodes": 9,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "opening",
+   "state": "opening-logo",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "opening",
+    "path": "visitor",
+    "logo": {
+     "logoOpacity": "1",
+     "logoFilter": "none",
+     "logoTransform": "none",
+     "logoClip": "none"
+    },
+    "dashoffset": "100px"
+   },
+   "instant": {
+    "logoMs": 600,
+    "description": "fin de l’apparition du 42, cercle pas encore tracé"
+   }
+  },
+  {
+   "name": "opening-ring-drawing--desktop--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/opening-ring-drawing--desktop--fr-dark.png",
+   "dom": "dom/entrance/opening-ring-drawing--desktop--fr-dark.json.gz",
+   "nodes": 9,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "opening",
+   "state": "opening-ring-drawing",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "ring",
+    "path": "visitor",
+    "dashoffset": "49.9363px"
+   },
+   "instant": {
+    "ringMs": 105,
+    "description": "cercle en cours de tracé : 105 ms sur 800 (cubic-bezier(.22,1,.36,1)), dashoffset ≈ 49,9 soit la moitié du cercle"
+   }
+  },
+  {
+   "name": "opening-ring--desktop--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/opening-ring--desktop--fr-dark.png",
+   "dom": "dom/entrance/opening-ring--desktop--fr-dark.json.gz",
+   "nodes": 9,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "opening",
+   "state": "opening-ring",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "ring",
+    "path": "visitor",
+    "dashoffset": "0px"
+   },
+   "instant": {
+    "ringMs": 800,
+    "description": "cercle complet (dashoffset 0)"
+   }
+  },
+  {
+   "name": "visitor-transition--mobile--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/visitor-transition--mobile--fr-light.png",
+   "dom": "dom/entrance/visitor-transition--mobile--fr-light.json.gz",
+   "nodes": 9,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "opening",
+   "state": "visitor-transition",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "opening",
+    "path": "visitor",
+    "logo": {
+     "logoOpacity": "0.501875",
+     "logoFilter": "blur(3.985px)",
+     "logoTransform": "matrix(0.930263, 0, 0, 0.930263, 0, 4.98125)",
+     "logoClip": "inset(0px 0px 49.8125%)"
+    },
+    "dashoffset": "100px"
+   },
+   "instant": {
+    "logoMs": 79,
+    "description": "Visiter : le 42 apparaît (600 ms, cubic-bezier(.22,1,.36,1)) ; à 79 ms la progression vaut 0,50"
+   }
+  },
+  {
+   "name": "opening-logo--mobile--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/opening-logo--mobile--fr-light.png",
+   "dom": "dom/entrance/opening-logo--mobile--fr-light.json.gz",
+   "nodes": 9,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "opening",
+   "state": "opening-logo",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "opening",
+    "path": "visitor",
+    "logo": {
+     "logoOpacity": "1",
+     "logoFilter": "none",
+     "logoTransform": "none",
+     "logoClip": "none"
+    },
+    "dashoffset": "100px"
+   },
+   "instant": {
+    "logoMs": 600,
+    "description": "fin de l’apparition du 42, cercle pas encore tracé"
+   }
+  },
+  {
+   "name": "opening-ring-drawing--mobile--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/opening-ring-drawing--mobile--fr-light.png",
+   "dom": "dom/entrance/opening-ring-drawing--mobile--fr-light.json.gz",
+   "nodes": 9,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "opening",
+   "state": "opening-ring-drawing",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "ring",
+    "path": "visitor",
+    "dashoffset": "49.9363px"
+   },
+   "instant": {
+    "ringMs": 105,
+    "description": "cercle en cours de tracé : 105 ms sur 800 (cubic-bezier(.22,1,.36,1)), dashoffset ≈ 49,9 soit la moitié du cercle"
+   }
+  },
+  {
+   "name": "opening-ring--mobile--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/opening-ring--mobile--fr-light.png",
+   "dom": "dom/entrance/opening-ring--mobile--fr-light.json.gz",
+   "nodes": 9,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "opening",
+   "state": "opening-ring",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "ring",
+    "path": "visitor",
+    "dashoffset": "0px"
+   },
+   "instant": {
+    "ringMs": 800,
+    "description": "cercle complet (dashoffset 0)"
+   }
+  },
+  {
+   "name": "visitor-transition--mobile--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/visitor-transition--mobile--fr-dark.png",
+   "dom": "dom/entrance/visitor-transition--mobile--fr-dark.json.gz",
+   "nodes": 9,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "opening",
+   "state": "visitor-transition",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "opening",
+    "path": "visitor",
+    "logo": {
+     "logoOpacity": "0.501875",
+     "logoFilter": "blur(3.985px)",
+     "logoTransform": "matrix(0.930263, 0, 0, 0.930263, 0, 4.98125)",
+     "logoClip": "inset(0px 0px 49.8125%)"
+    },
+    "dashoffset": "100px"
+   },
+   "instant": {
+    "logoMs": 79,
+    "description": "Visiter : le 42 apparaît (600 ms, cubic-bezier(.22,1,.36,1)) ; à 79 ms la progression vaut 0,50"
+   }
+  },
+  {
+   "name": "opening-logo--mobile--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/opening-logo--mobile--fr-dark.png",
+   "dom": "dom/entrance/opening-logo--mobile--fr-dark.json.gz",
+   "nodes": 9,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "opening",
+   "state": "opening-logo",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "opening",
+    "path": "visitor",
+    "logo": {
+     "logoOpacity": "1",
+     "logoFilter": "none",
+     "logoTransform": "none",
+     "logoClip": "none"
+    },
+    "dashoffset": "100px"
+   },
+   "instant": {
+    "logoMs": 600,
+    "description": "fin de l’apparition du 42, cercle pas encore tracé"
+   }
+  },
+  {
+   "name": "opening-ring-drawing--mobile--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/opening-ring-drawing--mobile--fr-dark.png",
+   "dom": "dom/entrance/opening-ring-drawing--mobile--fr-dark.json.gz",
+   "nodes": 9,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "opening",
+   "state": "opening-ring-drawing",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "ring",
+    "path": "visitor",
+    "dashoffset": "49.9363px"
+   },
+   "instant": {
+    "ringMs": 105,
+    "description": "cercle en cours de tracé : 105 ms sur 800 (cubic-bezier(.22,1,.36,1)), dashoffset ≈ 49,9 soit la moitié du cercle"
+   }
+  },
+  {
+   "name": "opening-ring--mobile--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/opening-ring--mobile--fr-dark.png",
+   "dom": "dom/entrance/opening-ring--mobile--fr-dark.json.gz",
+   "nodes": 9,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "opening",
+   "state": "opening-ring",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "ring",
+    "path": "visitor",
+    "dashoffset": "0px"
+   },
+   "instant": {
+    "ringMs": 800,
+    "description": "cercle complet (dashoffset 0)"
+   }
+  },
+  {
+   "name": "world-wait--desktop--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/world-wait--desktop--fr-light.png",
+   "dom": "dom/entrance/world-wait--desktop--fr-light.json.gz",
+   "nodes": 10,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "world-wait",
+   "state": "world-wait",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "waiting",
+    "status": {
+     "text": "Le monde se prépare…",
+     "box": {
+      "x": 24,
+      "y": 645,
+      "w": 1392,
+      "h": 22
+     }
+    }
+   },
+   "instant": {
+    "description": "après le cercle complet, globe pas encore prêt (module retenu par le banc)"
+   }
+  },
+  {
+   "name": "world-wait--desktop--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/world-wait--desktop--fr-dark.png",
+   "dom": "dom/entrance/world-wait--desktop--fr-dark.json.gz",
+   "nodes": 10,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "world-wait",
+   "state": "world-wait",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "waiting",
+    "status": {
+     "text": "Le monde se prépare…",
+     "box": {
+      "x": 24,
+      "y": 645,
+      "w": 1392,
+      "h": 22
+     }
+    }
+   },
+   "instant": {
+    "description": "après le cercle complet, globe pas encore prêt (module retenu par le banc)"
+   }
+  },
+  {
+   "name": "world-wait--mobile--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/world-wait--mobile--fr-light.png",
+   "dom": "dom/entrance/world-wait--mobile--fr-light.json.gz",
+   "nodes": 10,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "world-wait",
+   "state": "world-wait",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "waiting",
+    "status": {
+     "text": "Le monde se prépare…",
+     "box": {
+      "x": 24,
+      "y": 552,
+      "w": 342,
+      "h": 22
+     }
+    }
+   },
+   "instant": {
+    "description": "après le cercle complet, globe pas encore prêt (module retenu par le banc)"
+   }
+  },
+  {
+   "name": "world-wait--mobile--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/world-wait--mobile--fr-dark.png",
+   "dom": "dom/entrance/world-wait--mobile--fr-dark.json.gz",
+   "nodes": 10,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "world-wait",
+   "state": "world-wait",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "waiting",
+    "status": {
+     "text": "Le monde se prépare…",
+     "box": {
+      "x": 24,
+      "y": 552,
+      "w": 342,
+      "h": 22
+     }
+    }
+   },
+   "instant": {
+    "description": "après le cercle complet, globe pas encore prêt (module retenu par le banc)"
+   }
+  },
+  {
+   "name": "decrypt-mid--desktop--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/decrypt-mid--desktop--fr-light.png",
+   "dom": "dom/entrance/decrypt-mid--desktop--fr-light.json.gz",
+   "nodes": 7,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "decrypt",
+   "state": "decrypt-mid",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "decrypting",
+    "phase": "decrypting",
+    "renderedText": "WZshdV mcY TfXW"
+   },
+   "canvas": "dom/entrance/decrypt-mid--desktop--fr-light.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1408000,
+    "paintedPixels": 14685,
+    "sprites": 12
+   },
+   "canvasStable": true
+  },
+  {
+   "name": "decrypt-final--desktop--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/decrypt-final--desktop--fr-light.png",
+   "dom": "dom/entrance/decrypt-final--desktop--fr-light.json.gz",
+   "nodes": 7,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "decrypt",
+   "state": "decrypt-final",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "slogan",
+    "renderedText": "BEYOND THE CODE"
+   },
+   "canvas": "dom/entrance/decrypt-final--desktop--fr-light.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1408000,
+    "paintedPixels": 20105,
+    "sprites": 9
+   },
+   "canvasStable": true
+  },
+  {
+   "name": "member-transition--desktop--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/member-transition--desktop--fr-light.png",
+   "dom": "dom/entrance/member-transition--desktop--fr-light.json.gz",
+   "nodes": 11,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "opening",
+   "state": "member-transition",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "opening",
+    "path": "member",
+    "complement": true,
+    "scene": {
+     "opacity": "0.684643",
+     "transform": "matrix(0.981079, 0, 0, 0.981079, -550, -160)",
+     "filter": "blur(1.26143px)"
+    },
+    "logo": {
+     "logoOpacity": "0.900728",
+     "logoFilter": "blur(0.794176px)",
+     "logoTransform": "matrix(0.986102, 0, 0, 0.986102, 0, 0.992719)",
+     "logoClip": "inset(0px 0px 9.92719%)"
+    }
+   },
+   "canvas": "dom/entrance/member-transition--desktop--fr-light.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1408000,
+    "paintedPixels": 20105,
+    "sprites": 9
+   },
+   "canvasStable": true
+  },
+  {
+   "name": "decrypt-mid--desktop--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/decrypt-mid--desktop--fr-dark.png",
+   "dom": "dom/entrance/decrypt-mid--desktop--fr-dark.json.gz",
+   "nodes": 7,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "decrypt",
+   "state": "decrypt-mid",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "decrypting",
+    "phase": "decrypting",
+    "renderedText": "WZshdV mcY TfXW"
+   },
+   "canvas": "dom/entrance/decrypt-mid--desktop--fr-dark.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1408000,
+    "paintedPixels": 14682,
+    "sprites": 12
+   },
+   "canvasStable": true
+  },
+  {
+   "name": "decrypt-final--desktop--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/decrypt-final--desktop--fr-dark.png",
+   "dom": "dom/entrance/decrypt-final--desktop--fr-dark.json.gz",
+   "nodes": 7,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "decrypt",
+   "state": "decrypt-final",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "slogan",
+    "renderedText": "BEYOND THE CODE"
+   },
+   "canvas": "dom/entrance/decrypt-final--desktop--fr-dark.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1408000,
+    "paintedPixels": 20118,
+    "sprites": 9
+   },
+   "canvasStable": true
+  },
+  {
+   "name": "member-transition--desktop--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/member-transition--desktop--fr-dark.png",
+   "dom": "dom/entrance/member-transition--desktop--fr-dark.json.gz",
+   "nodes": 11,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "opening",
+   "state": "member-transition",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "opening",
+    "path": "member",
+    "complement": true,
+    "scene": {
+     "opacity": "0.684643",
+     "transform": "matrix(0.981079, 0, 0, 0.981079, -550, -160)",
+     "filter": "blur(1.26143px)"
+    },
+    "logo": {
+     "logoOpacity": "0.900728",
+     "logoFilter": "blur(0.794176px)",
+     "logoTransform": "matrix(0.986102, 0, 0, 0.986102, 0, 0.992719)",
+     "logoClip": "inset(0px 0px 9.92719%)"
+    }
+   },
+   "canvas": "dom/entrance/member-transition--desktop--fr-dark.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1408000,
+    "paintedPixels": 20118,
+    "sprites": 9
+   },
+   "canvasStable": true
+  },
+  {
+   "name": "decrypt-mid--mobile--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/decrypt-mid--mobile--fr-light.png",
+   "dom": "dom/entrance/decrypt-mid--mobile--fr-light.json.gz",
+   "nodes": 7,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "decrypt",
+   "state": "decrypt-mid",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "decrypting",
+    "phase": "decrypting",
+    "renderedText": "WZshdV mcY TfXW"
+   },
+   "canvas": "dom/entrance/decrypt-mid--mobile--fr-light.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1313280,
+    "paintedPixels": 17988,
+    "sprites": 12
+   },
+   "canvasStable": true
+  },
+  {
+   "name": "decrypt-final--mobile--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/decrypt-final--mobile--fr-light.png",
+   "dom": "dom/entrance/decrypt-final--mobile--fr-light.json.gz",
+   "nodes": 7,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "decrypt",
+   "state": "decrypt-final",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "slogan",
+    "renderedText": "BEYOND THE CODE"
+   },
+   "canvas": "dom/entrance/decrypt-final--mobile--fr-light.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1313280,
+    "paintedPixels": 24672,
+    "sprites": 9
+   },
+   "canvasStable": true
+  },
+  {
+   "name": "member-transition--mobile--fr-light",
+   "area": "entrance",
+   "viewport": "reference/entrance/member-transition--mobile--fr-light.png",
+   "dom": "dom/entrance/member-transition--mobile--fr-light.json.gz",
+   "nodes": 11,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "opening",
+   "state": "member-transition",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "light",
+   "facts": {
+    "entry": "opening",
+    "path": "member",
+    "complement": true,
+    "scene": {
+     "opacity": "0.684643",
+     "transform": "matrix(0.981079, 0, 0, 0.981079, -171, -120)",
+     "filter": "blur(1.26143px)"
+    },
+    "logo": {
+     "logoOpacity": "0.900728",
+     "logoFilter": "blur(0.794176px)",
+     "logoTransform": "matrix(0.986102, 0, 0, 0.986102, 0, 0.992719)",
+     "logoClip": "inset(0px 0px 9.92719%)"
+    }
+   },
+   "canvas": "dom/entrance/member-transition--mobile--fr-light.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1313280,
+    "paintedPixels": 24672,
+    "sprites": 9
+   },
+   "canvasStable": true
+  },
+  {
+   "name": "decrypt-mid--mobile--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/decrypt-mid--mobile--fr-dark.png",
+   "dom": "dom/entrance/decrypt-mid--mobile--fr-dark.json.gz",
+   "nodes": 7,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "decrypt",
+   "state": "decrypt-mid",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "decrypting",
+    "phase": "decrypting",
+    "renderedText": "WZshdV mcY TfXW"
+   },
+   "canvas": "dom/entrance/decrypt-mid--mobile--fr-dark.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1313280,
+    "paintedPixels": 17984,
+    "sprites": 12
+   },
+   "canvasStable": true
+  },
+  {
+   "name": "decrypt-final--mobile--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/decrypt-final--mobile--fr-dark.png",
+   "dom": "dom/entrance/decrypt-final--mobile--fr-dark.json.gz",
+   "nodes": 7,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "decrypt",
+   "state": "decrypt-final",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "slogan",
+    "renderedText": "BEYOND THE CODE"
+   },
+   "canvas": "dom/entrance/decrypt-final--mobile--fr-dark.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1313280,
+    "paintedPixels": 24696,
+    "sprites": 9
+   },
+   "canvasStable": true
+  },
+  {
+   "name": "member-transition--mobile--fr-dark",
+   "area": "entrance",
+   "viewport": "reference/entrance/member-transition--mobile--fr-dark.png",
+   "dom": "dom/entrance/member-transition--mobile--fr-dark.json.gz",
+   "nodes": 11,
+   "doc": [
+    390,
+    844
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 welcome.mjs?v=audit-fixes-146 design-review-selection.mjs?v=1",
+   "siteMapNode": "opening",
+   "state": "member-transition",
+   "format": "mobile",
+   "lang": "fr",
+   "theme": "dark",
+   "facts": {
+    "entry": "opening",
+    "path": "member",
+    "complement": true,
+    "scene": {
+     "opacity": "0.684643",
+     "transform": "matrix(0.981079, 0, 0, 0.981079, -171, -120)",
+     "filter": "blur(1.26143px)"
+    },
+    "logo": {
+     "logoOpacity": "0.900728",
+     "logoFilter": "blur(0.794176px)",
+     "logoTransform": "matrix(0.986102, 0, 0, 0.986102, 0, 0.992719)",
+     "logoClip": "inset(0px 0px 9.92719%)"
+    }
+   },
+   "canvas": "dom/entrance/member-transition--mobile--fr-dark.canvas.json",
+   "canvasReplay": {
+    "identical": true,
+    "differingBytes": 0,
+    "maxDelta": 0,
+    "bytes": 1313280,
+    "paintedPixels": 24696,
+    "sprites": 9
+   },
+   "canvasStable": true
+  }
+ ],
+ "sources": {
+  "index.html": "bde78916a2b9",
+  "welcome.mjs": "58f5b152e47f",
+  "entrance.mjs": "d2426b872e48",
+  "entrance.css": "c9a83315deea",
+  "welcome.css": "5b009f8a7198",
+  "design-review-selection.css": "68c9986bf451",
+  "design-review-selection.mjs": "0200f2ff8468",
+  "account-menu.mjs": "b839d5c2c1c4",
+  "account-menu.css": "8f6da743782f",
+  "theme-bootstrap.js": "7b1220ff7349",
+  "../decryption-examples/scanner-return-random.mjs": "8dd977e7cafd",
+  "../decryption-examples/scanner-return-together.mjs": "1d0253503d37",
+  "../decryption-examples/shared.mjs": "e07633623475",
+  "../horizon-decryption-engine.mjs": "18f2983119bd",
+  "../../figma/tokens.css": "bcc71ae119e8",
+  "../../figma/logo-42.svg": "cb27f1e1c89b",
+  "../assets/jost.css": "1f67cdf2d8a7",
+  "../assets/jost-1.ttf": "d6ff7726ec21"
+ },
+ "lastLot": "decrypt",
+ "files": {
+  "png": "reference/entrance/<état>--<desktop|mobile>--<fr|en|ar>-<light|dark>.png",
+  "dom": "dom/entrance/<même nom>.json.gz (relevé DOM capture_lib.EXTRACT_JS ; non versionné)",
+  "canvas": "dom/entrance/<même nom>.canvas.json (dernière image du canvas, sprites, liste de redessin ; non versionné)"
+ }
+}

@@ -1,0 +1,118 @@
+{
+  "passed": false,
+  "cases": [
+    {
+      "case": "gallery-responsive",
+      "result": true
+    },
+    {
+      "case": "ready-1",
+      "result": {
+        "study": {
+          "variant": "1",
+          "open": false,
+          "pinned": false,
+          "available": true,
+          "reason": "",
+          "hold": false
+        },
+        "canvas": 1,
+        "overflow": false
+      }
+    },
+    {
+      "case": "single-click-zoom",
+      "result": {
+        "before": 2.464962500721156,
+        "after": 3.1088186904958808
+      }
+    },
+    {
+      "case": "single-click-pan",
+      "result": {
+        "before": [
+          6,
+          18
+        ],
+        "after": [
+          11.729009192607691,
+          18.084488859955627
+        ]
+      }
+    },
+    {
+      "case": "escape-focus",
+      "result": true
+    },
+    {
+      "case": "keyboard-open-focus",
+      "result": true
+    },
+    {
+      "case": "pinned-stays-open",
+      "result": true
+    },
+    {
+      "case": "medallion-world",
+      "result": "world"
+    },
+    {
+      "case": "guide-escape-focus",
+      "result": true
+    },
+    {
+      "case": "section-isolation",
+      "result": true
+    },
+    {
+      "case": "ready-2",
+      "result": {
+        "study": {
+          "variant": "2",
+          "open": false,
+          "pinned": false,
+          "available": true,
+          "reason": "",
+          "hold": false
+        },
+        "canvas": 1,
+        "overflow": false
+      }
+    },
+    {
+      "case": "halo-tap-persists",
+      "result": true
+    },
+    {
+      "case": "halo-bounds",
+      "result": {
+        "left": 116,
+        "right": 364,
+        "top": 236.640625,
+        "bottom": 608.640625,
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "case": "failure-dom",
+      "result": {
+        "errors": [],
+        "state": {
+          "variant": "2",
+          "open": false,
+          "pinned": false,
+          "available": true,
+          "reason": "hover",
+          "hold": false
+        },
+        "body": "H\nO\nR\nI\nZ\nO\nN\nExplorer\nProjets\nProfils\nChroniques\n42 Awards\nChercher dans Horizon\nMonde\nAngola\nItalie\nMadagascar\nMaroc\nPalestine\nPays-Bas\nTurquie\n\n58 campus · 30 pays\n\nNatural Earth\n·\nOpenFreeMap\n· ©\nOpenMapTiles\n·\nOpenStreetMap\n\nExplorer · Le monde\n\n⋮\nCommandes du globe\n\nEntrée ouvre les commandes du globe. Les gestes ont des alternatives par simple clic.\n\nEssai 2 · Mode d’emploi"
+      }
+    }
+  ],
+  "sources": {
+    "study.mjs": "9dcb63c08da5748e9249f57021493f6e8449ec84e1002f56d92c10810bcd1abf",
+    "study.css": "6386d8003160e26ead8d964c8e290b4969b6f29b614ffab4e4af17209386ed36",
+    "press-gesture.mjs": "5f3014317ac97f2d17c8d81a2cc6e75638b760acb60b105332e58681aa4b52d1"
+  }
+}

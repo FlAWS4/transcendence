@@ -1,0 +1,404 @@
+{
+ "explore-campus--desktop--fr-light": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 960
+  },
+  "selector": "#globe canvas.maplibregl-canvas",
+  "actions": [
+   "ouvrir content-preview.html#explore?country=FRA&campus=paris (1440x960, vrai globe), stockage vidé",
+   "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+   "attendre les rues autour du campus (paris) : indication « Explore les alentours du campus. » stable 2,5 s"
+  ],
+  "capturedAt": "2026-10-16 22:09:00"
+ },
+ "explore-campus--desktop--fr-dark": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 960
+  },
+  "selector": "#globe canvas.maplibregl-canvas",
+  "actions": [
+   "ouvrir content-preview.html#explore?country=FRA&campus=paris (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+   "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+   "attendre les rues autour du campus (paris) : indication « Explore les alentours du campus. » stable 2,5 s"
+  ],
+  "capturedAt": "2026-10-16 22:09:22"
+ },
+ "explore-campus--desktop--ar-light": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 960
+  },
+  "selector": "#globe canvas.maplibregl-canvas",
+  "actions": [
+   "ouvrir content-preview.html#explore?country=FRA&campus=paris (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+   "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+   "attendre les rues autour du campus (paris) : indication « استكشف محيط الفرع. » stable 2,5 s"
+  ],
+  "capturedAt": "2026-10-16 22:15:00"
+ },
+ "explore-campus--desktop--ar-dark": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 960
+  },
+  "selector": "#globe canvas.maplibregl-canvas",
+  "actions": [
+   "ouvrir content-preview.html#explore?country=FRA&campus=paris (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue ar, thème dark",
+   "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+   "attendre les rues autour du campus (paris) : indication « استكشف محيط الفرع. » stable 2,5 s"
+  ],
+  "capturedAt": "2026-10-16 22:10:05"
+ },
+ "explore-campus--mobile--fr-light": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 844
+  },
+  "selector": "#globe canvas.maplibregl-canvas",
+  "actions": [
+   "ouvrir content-preview.html#explore?country=FRA&campus=paris (390x844 DPR2, vrai globe), stockage vidé",
+   "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+   "attendre les rues autour du campus (paris) : indication « Explore les alentours du campus. » stable 2,5 s"
+  ],
+  "capturedAt": "2026-10-16 22:10:21"
+ },
+ "explore-campus--mobile--fr-dark": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 844
+  },
+  "selector": "#globe canvas.maplibregl-canvas",
+  "actions": [
+   "ouvrir content-preview.html#explore?country=FRA&campus=paris (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+   "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+   "attendre les rues autour du campus (paris) : indication « Explore les alentours du campus. » stable 2,5 s"
+  ],
+  "capturedAt": "2026-10-16 22:10:37"
+ },
+ "explore-campus--mobile--ar-light": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 844
+  },
+  "selector": "#globe canvas.maplibregl-canvas",
+  "actions": [
+   "ouvrir content-preview.html#explore?country=FRA&campus=paris (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue ar, thème light",
+   "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+   "attendre les rues autour du campus (paris) : indication « استكشف محيط الفرع. » stable 2,5 s"
+  ],
+  "capturedAt": "2026-10-16 22:10:54"
+ },
+ "explore-campus--mobile--ar-dark": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 844
+  },
+  "selector": "#globe canvas.maplibregl-canvas",
+  "actions": [
+   "ouvrir content-preview.html#explore?country=FRA&campus=paris (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue ar, thème dark",
+   "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+   "attendre les rues autour du campus (paris) : indication « استكشف محيط الفرع. » stable 2,5 s"
+  ],
+  "capturedAt": "2026-10-16 22:11:11"
+ },
+ "campus-sheet--desktop--fr-light": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 960
+  },
+  "selector": "#globe canvas.maplibregl-canvas",
+  "actions": [
+   "ouvrir content-preview.html#explore?country=FRA&campus=paris (1440x960, vrai globe), stockage vidé",
+   "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+   "attendre les rues autour du campus (paris) : indication « Explore les alentours du campus. » stable 2,5 s",
+   "cliquer le repère du campus (viseur) : la fiche s’ouvre ; attendre le logo et la première photo"
+  ],
+  "capturedAt": "2026-10-16 22:11:42"
+ },
+ "campus-sheet--desktop--fr-dark": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 960
+  },
+  "selector": "#globe canvas.maplibregl-canvas",
+  "actions": [
+   "ouvrir content-preview.html#explore?country=FRA&campus=paris (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+   "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+   "attendre les rues autour du campus (paris) : indication « Explore les alentours du campus. » stable 2,5 s",
+   "cliquer le repère du campus (viseur) : la fiche s’ouvre ; attendre le logo et la première photo"
+  ],
+  "capturedAt": "2026-10-16 22:12:08"
+ },
+ "campus-sheet--mobile--fr-light": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 844
+  },
+  "selector": "#globe canvas.maplibregl-canvas",
+  "actions": [
+   "ouvrir content-preview.html#explore?country=FRA&campus=paris (390x844 DPR2, vrai globe), stockage vidé",
+   "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+   "attendre les rues autour du campus (paris) : indication « Explore les alentours du campus. » stable 2,5 s",
+   "cliquer le repère du campus (viseur) : la fiche s’ouvre ; attendre le logo et la première photo"
+  ],
+  "capturedAt": "2026-10-16 22:12:25"
+ },
+ "campus-sheet-expanded--mobile--fr-light": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 844
+  },
+  "selector": "#globe canvas.maplibregl-canvas",
+  "actions": [
+   "ouvrir content-preview.html#explore?country=FRA&campus=paris (390x844 DPR2, vrai globe), stockage vidé",
+   "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+   "attendre les rues autour du campus (paris) : indication « Explore les alentours du campus. » stable 2,5 s",
+   "cliquer le repère du campus (viseur) : la fiche s’ouvre ; attendre le logo et la première photo",
+   "molette de 600 px vers le bas sur la feuille : elle se déploie"
+  ],
+  "capturedAt": "2026-10-16 22:12:28"
+ },
+ "campus-sheet--mobile--fr-dark": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 844
+  },
+  "selector": "#globe canvas.maplibregl-canvas",
+  "actions": [
+   "ouvrir content-preview.html#explore?country=FRA&campus=paris (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+   "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+   "attendre les rues autour du campus (paris) : indication « Explore les alentours du campus. » stable 2,5 s",
+   "cliquer le repère du campus (viseur) : la fiche s’ouvre ; attendre le logo et la première photo"
+  ],
+  "capturedAt": "2026-10-16 22:12:48"
+ },
+ "campus-sheet-expanded--mobile--fr-dark": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 844
+  },
+  "selector": "#globe canvas.maplibregl-canvas",
+  "actions": [
+   "ouvrir content-preview.html#explore?country=FRA&campus=paris (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+   "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+   "attendre les rues autour du campus (paris) : indication « Explore les alentours du campus. » stable 2,5 s",
+   "cliquer le repère du campus (viseur) : la fiche s’ouvre ; attendre le logo et la première photo",
+   "molette de 600 px vers le bas sur la feuille : elle se déploie"
+  ],
+  "capturedAt": "2026-10-16 22:12:50"
+ },
+ "campus-sheet-mulhouse--desktop--fr-light": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 960
+  },
+  "selector": "#globe canvas.maplibregl-canvas",
+  "actions": [
+   "ouvrir content-preview.html#explore?country=FRA&campus=mulhouse (1440x960, vrai globe), stockage vidé",
+   "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+   "attendre les rues autour du campus (mulhouse) : indication « Explore les alentours du campus. » stable 2,5 s",
+   "cliquer le repère du campus (viseur) : la fiche s’ouvre ; attendre le logo et la première photo"
+  ],
+  "capturedAt": "2026-10-16 22:13:09"
+ },
+ "campus-sheet-mulhouse--desktop--fr-dark": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 960
+  },
+  "selector": "#globe canvas.maplibregl-canvas",
+  "actions": [
+   "ouvrir content-preview.html#explore?country=FRA&campus=mulhouse (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+   "attendre le globe prêt (canvas affiché, « Le monde se prépare… » masqué) et les repères visibles",
+   "attendre les rues autour du campus (mulhouse) : indication « Explore les alentours du campus. » stable 2,5 s",
+   "cliquer le repère du campus (viseur) : la fiche s’ouvre ; attendre le logo et la première photo"
+  ],
+  "capturedAt": "2026-10-16 22:13:25"
+ },
+ "campus-window--desktop--fr-light": {
+  "box": {
+   "x": 181,
+   "y": 189,
+   "w": 1078,
+   "h": 576
+  },
+  "selector": "#campus-map-viewport canvas",
+  "actions": [
+   "ouvrir content-preview.html#projects/minishell-under-the-prompt (1440x960, vrai globe), stockage vidé",
+   "attendre le globe prêt, cliquer « Explorer 42 Paris » dans la barre de la fiche ; attendre les alentours chargés"
+  ],
+  "capturedAt": "2026-10-16 22:15:16"
+ },
+ "campus-window--desktop--fr-dark": {
+  "box": {
+   "x": 181,
+   "y": 189,
+   "w": 1078,
+   "h": 576
+  },
+  "selector": "#campus-map-viewport canvas",
+  "actions": [
+   "ouvrir content-preview.html#projects/minishell-under-the-prompt (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+   "attendre le globe prêt, cliquer « Explorer 42 Paris » dans la barre de la fiche ; attendre les alentours chargés"
+  ],
+  "capturedAt": "2026-10-16 22:13:47"
+ },
+ "campus-window--mobile--fr-light": {
+  "box": {
+   "x": 13,
+   "y": 102,
+   "w": 364,
+   "h": 599
+  },
+  "selector": "#campus-map-viewport canvas",
+  "actions": [
+   "ouvrir content-preview.html#projects/minishell-under-the-prompt (390x844 DPR2, vrai globe), stockage vidé",
+   "attendre le globe prêt, cliquer « Explorer 42 Paris » dans la barre de la fiche ; attendre les alentours chargés"
+  ],
+  "capturedAt": "2026-10-16 22:13:59"
+ },
+ "campus-window--mobile--fr-dark": {
+  "box": {
+   "x": 13,
+   "y": 102,
+   "w": 364,
+   "h": 599
+  },
+  "selector": "#campus-map-viewport canvas",
+  "actions": [
+   "ouvrir content-preview.html#projects/minishell-under-the-prompt (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue fr, thème dark",
+   "attendre le globe prêt, cliquer « Explorer 42 Paris » dans la barre de la fiche ; attendre les alentours chargés"
+  ],
+  "capturedAt": "2026-10-16 22:14:10"
+ },
+ "member-account--desktop--fr-light": {
+  "box": {
+   "x": 614.6301879882812,
+   "y": 46.22222137451172,
+   "w": 53.33331298828125,
+   "h": 35.55555725097656
+  },
+  "selector": "#globe canvas.maplibregl-canvas",
+  "actions": [
+   "ouvrir content-preview.html#projects (1440x960, vrai globe), stockage vidé",
+   "attendre la liste des projets, le menu du bas et le compte",
+   "icône du compte, « Se connecter », « Continuer avec le profil » : membre simulé (Leïla Mansour)",
+   "aller à #projects dans l’application (identité de membre conservée)",
+   "aller à #projects/ft-transcendence-building-together dans l’application (identité de membre conservée)",
+   "aller à #people dans l’application (identité de membre conservée)",
+   "aller à #people/profile-leila-mansour dans l’application (identité de membre conservée)",
+   "aller à #journal dans l’application (identité de membre conservée)",
+   "aller à #journal/journal-share-the-unfinished dans l’application (identité de membre conservée)",
+   "aller à #awards dans l’application (identité de membre conservée)",
+   "aller à #explore dans l’application (globe, identité de membre conservée)",
+   "avatar puis « Compte » : profil de Leïla Mansour, 42 Paris (identité de membre conservée)"
+  ],
+  "capturedAt": "2026-10-19 09:46:30"
+ },
+ "member-account--desktop--en-light": {
+  "box": {
+   "x": 614.6301879882812,
+   "y": 46.22222137451172,
+   "w": 53.33331298828125,
+   "h": 35.55555725097656
+  },
+  "selector": "#globe canvas.maplibregl-canvas",
+  "actions": [
+   "ouvrir content-preview.html#projects (1440x960, vrai globe), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+   "attendre la liste des projets, le menu du bas et le compte",
+   "icône du compte, « Se connecter », « Continuer avec le profil » : membre simulé (Leïla Mansour)",
+   "aller à #projects dans l’application (identité de membre conservée)",
+   "aller à #projects/ft-transcendence-building-together dans l’application (identité de membre conservée)",
+   "aller à #people dans l’application (identité de membre conservée)",
+   "aller à #people/profile-leila-mansour dans l’application (identité de membre conservée)",
+   "aller à #journal dans l’application (identité de membre conservée)",
+   "aller à #journal/journal-share-the-unfinished dans l’application (identité de membre conservée)",
+   "aller à #awards dans l’application (identité de membre conservée)",
+   "aller à #explore dans l’application (globe, identité de membre conservée)",
+   "avatar puis « Compte » : profil de Leïla Mansour, 42 Paris (identité de membre conservée)"
+  ],
+  "capturedAt": "2026-10-19 09:46:56"
+ },
+ "member-account--mobile--fr-light": {
+  "box": {
+   "x": 111.12065887451172,
+   "y": 68.52706909179688,
+   "w": 35.55554962158203,
+   "h": 76.94586181640625
+  },
+  "selector": "#globe canvas.maplibregl-canvas",
+  "actions": [
+   "ouvrir content-preview.html#projects (390x844 DPR2, vrai globe), stockage vidé",
+   "attendre la liste des projets, le menu du bas et le compte",
+   "icône du compte, « Se connecter », « Continuer avec le profil » : membre simulé (Leïla Mansour)",
+   "aller à #projects dans l’application (identité de membre conservée)",
+   "aller à #projects/ft-transcendence-building-together dans l’application (identité de membre conservée)",
+   "aller à #people dans l’application (identité de membre conservée)",
+   "aller à #people/profile-leila-mansour dans l’application (identité de membre conservée)",
+   "aller à #journal dans l’application (identité de membre conservée)",
+   "aller à #journal/journal-share-the-unfinished dans l’application (identité de membre conservée)",
+   "aller à #awards dans l’application (identité de membre conservée)",
+   "aller à #explore dans l’application (globe, identité de membre conservée)",
+   "avatar puis « Compte » : profil de Leïla Mansour, 42 Paris (identité de membre conservée)"
+  ],
+  "capturedAt": "2026-10-19 09:47:21"
+ },
+ "member-account--mobile--en-light": {
+  "box": {
+   "x": 111.12065887451172,
+   "y": 68.52706909179688,
+   "w": 35.55554962158203,
+   "h": 76.94586181640625
+  },
+  "selector": "#globe canvas.maplibregl-canvas",
+  "actions": [
+   "ouvrir content-preview.html#projects (390x844 DPR2, vrai globe), stockage vidé, puis Compte > Paramètres : langue en, thème light",
+   "attendre la liste des projets, le menu du bas et le compte",
+   "icône du compte, « Se connecter », « Continuer avec le profil » : membre simulé (Leïla Mansour)",
+   "aller à #projects dans l’application (identité de membre conservée)",
+   "aller à #projects/ft-transcendence-building-together dans l’application (identité de membre conservée)",
+   "aller à #people dans l’application (identité de membre conservée)",
+   "aller à #people/profile-leila-mansour dans l’application (identité de membre conservée)",
+   "aller à #journal dans l’application (identité de membre conservée)",
+   "aller à #journal/journal-share-the-unfinished dans l’application (identité de membre conservée)",
+   "aller à #awards dans l’application (identité de membre conservée)",
+   "aller à #explore dans l’application (globe, identité de membre conservée)",
+   "avatar puis « Compte » : profil de Leïla Mansour, 42 Paris (identité de membre conservée)"
+  ],
+  "capturedAt": "2026-10-19 09:47:47"
+ }
+}

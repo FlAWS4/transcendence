@@ -1,0 +1,344 @@
+{
+  "date": "2026-10-13",
+  "scenario": "Actual26records in each discovery section,12/12/2 pages and new translated details",
+  "initial_sha256": {
+    "demo-content-seed.mjs": "5ea597fb0025d3aa9565e7e662f8b100eeec7e0a88fa84e99d662e463097c163",
+    "content-preview-data.mjs": "dea7cc9253756ce37d2632eec6125614cb139640b3278a2930b8171d6c4bae52",
+    "profile-data.mjs": "652648c36b77105d32d303adcecd39b6e8852bb64ce2698075b746b5fd2bb378",
+    "content-filters.mjs": "b494e148b4689c8cd8ccf9800496962f2d32517b092190b1a2ab15ccf571b3f7",
+    "welcome.mjs": "c6b6ffc3d48514d10c4a0a1e2d1aebaec00ba682b6eebdae31e8b3df8fb7e853"
+  },
+  "results": [
+    {
+      "case": "projects-page-1",
+      "result": {
+        "hash": "#projects",
+        "count": 12,
+        "total": "26 contenus",
+        "summary": "Page 1 sur 3",
+        "hrefs": [
+          "#projects/ft-transcendence-building-together",
+          "#projects/minishell-under-the-prompt",
+          "#projects/raycast-find-the-light",
+          "#projects/network-messages-between-us",
+          "#projects/garden-small-useful-tools",
+          "#projects/demo-project-across-the-terminals",
+          "#projects/demo-project-pairing-calendar",
+          "#projects/demo-project-wayfinding-garden",
+          "#projects/demo-project-permissions-made-clear",
+          "#projects/demo-project-lightweight-reading",
+          "#projects/demo-project-messages-under-pressure",
+          "#projects/demo-project-commands-in-layers"
+        ],
+        "overflow": false,
+        "errors": []
+      }
+    },
+    {
+      "case": "projects-page-2",
+      "result": {
+        "hash": "#projects?page=2",
+        "count": 12,
+        "total": "26 contenus",
+        "summary": "Page 2 sur 3",
+        "hrefs": [
+          "#projects/demo-project-collect-the-lights",
+          "#projects/demo-project-drafts-at-hand",
+          "#projects/demo-project-server-from-scratch",
+          "#projects/demo-project-allocation-notes",
+          "#projects/demo-project-texture-walk",
+          "#projects/demo-project-gentle-forms",
+          "#projects/demo-project-channel-observatory",
+          "#projects/demo-project-small-string-toolbox",
+          "#projects/demo-project-shared-match-board",
+          "#projects/demo-project-courtyard-in-light",
+          "#projects/demo-project-pipes-and-paths",
+          "#projects/demo-project-quiet-chat-room"
+        ],
+        "overflow": false,
+        "errors": []
+      }
+    },
+    {
+      "case": "projects-page-3",
+      "result": {
+        "hash": "#projects?page=3",
+        "count": 2,
+        "total": "26 contenus",
+        "summary": "Page 3 sur 3",
+        "hrefs": [
+          "#projects/demo-project-keyboard-notebook",
+          "#projects/demo-project-bytes-in-order"
+        ],
+        "overflow": false,
+        "errors": []
+      }
+    },
+    {
+      "case": "people-page-1",
+      "result": {
+        "hash": "#people",
+        "count": 12,
+        "total": "26 profils",
+        "summary": "Page 1 sur 3",
+        "hrefs": [
+          "#people/profile-luiza-costa",
+          "#people/profile-ines-morel",
+          "#people/profile-leila-mansour",
+          "#people/profile-lucia-roca",
+          "#people/profile-noe-laurent",
+          "#people/profile-emma-de-smet",
+          "#people/profile-tomas-vieira",
+          "#people/profile-lea-rakoto",
+          "#people/profile-haru-mizuno",
+          "#people/profile-amir-keller",
+          "#people/profile-elena-novak",
+          "#people/profile-arun-suri"
+        ],
+        "overflow": false,
+        "errors": []
+      }
+    },
+    {
+      "case": "people-page-2",
+      "result": {
+        "hash": "#people?page=2",
+        "count": 12,
+        "total": "26 profils",
+        "summary": "Page 2 sur 3",
+        "hrefs": [
+          "#people/profile-mei-tan",
+          "#people/profile-caio-mendes",
+          "#people/profile-deniz-eren",
+          "#people/profile-sora-han",
+          "#people/profile-theo-vermeer",
+          "#people/profile-lina-moreau",
+          "#people/profile-sami-nasser",
+          "#people/profile-aya-haddad",
+          "#people/profile-mateo-soler",
+          "#people/profile-ines-duarte",
+          "#people/profile-jonas-reed",
+          "#people/profile-mara-vogel"
+        ],
+        "overflow": false,
+        "errors": []
+      }
+    },
+    {
+      "case": "people-page-3",
+      "result": {
+        "hash": "#people?page=3",
+        "count": 2,
+        "total": "26 profils",
+        "summary": "Page 3 sur 3",
+        "hrefs": [
+          "#people/profile-youssef-amrani",
+          "#people/profile-nora-bensaid"
+        ],
+        "overflow": false,
+        "errors": []
+      }
+    },
+    {
+      "case": "journal-page-1",
+      "result": {
+        "hash": "#journal",
+        "count": 12,
+        "total": "26 contenus",
+        "summary": "Page 1 sur 3",
+        "hrefs": [
+          "#journal/journal-an-evening-debugging",
+          "#journal/journal-share-the-unfinished",
+          "#journal/demo-journal-closing-notebook",
+          "#journal/demo-journal-small-demo",
+          "#journal/demo-journal-review-with-context",
+          "#journal/demo-journal-time-zones",
+          "#journal/demo-journal-pairing-session",
+          "#journal/demo-journal-colour-cues",
+          "#journal/demo-journal-test-as-question",
+          "#journal/demo-journal-lighter-page",
+          "#journal/demo-journal-message-fragments",
+          "#journal/demo-journal-failed-attempts"
+        ],
+        "overflow": false,
+        "errors": []
+      }
+    },
+    {
+      "case": "journal-page-2",
+      "result": {
+        "hash": "#journal?page=2",
+        "count": 12,
+        "total": "26 contenus",
+        "summary": "Page 2 sur 3",
+        "hrefs": [
+          "#journal/demo-journal-watch-a-player",
+          "#journal/demo-journal-draft-saved",
+          "#journal/demo-journal-install-again",
+          "#journal/demo-journal-memory-trace",
+          "#journal/demo-journal-texture-distance",
+          "#journal/demo-journal-words-in-forms",
+          "#journal/demo-journal-service-states",
+          "#journal/demo-journal-reproducible-case",
+          "#journal/demo-journal-shared-vocabulary",
+          "#journal/demo-journal-first-corridor",
+          "#journal/demo-journal-small-diagram",
+          "#journal/demo-journal-slow-connection"
+        ],
+        "overflow": false,
+        "errors": []
+      }
+    },
+    {
+      "case": "journal-page-3",
+      "result": {
+        "hash": "#journal?page=3",
+        "count": 2,
+        "total": "26 contenus",
+        "summary": "Page 3 sur 3",
+        "hrefs": [
+          "#journal/demo-journal-keyboard-first",
+          "#journal/demo-journal-question-before-code"
+        ],
+        "overflow": false,
+        "errors": []
+      }
+    },
+    {
+      "case": "detail-projects-fr",
+      "result": {
+        "hash": "#projects/demo-project-bytes-in-order",
+        "title": "Des octets bien rangés",
+        "translatedBodyPresent": true,
+        "overflow": false,
+        "errors": []
+      }
+    },
+    {
+      "case": "detail-people-fr",
+      "result": {
+        "hash": "#people/profile-nora-bensaid",
+        "title": "Nora Bensaïd",
+        "translatedBodyPresent": true,
+        "overflow": false,
+        "errors": []
+      }
+    },
+    {
+      "case": "detail-journal-fr",
+      "result": {
+        "hash": "#journal/demo-journal-question-before-code",
+        "title": "La question avant le code",
+        "translatedBodyPresent": true,
+        "overflow": false,
+        "errors": []
+      }
+    },
+    {
+      "case": "detail-projects-en",
+      "result": {
+        "hash": "#projects/demo-project-bytes-in-order",
+        "title": "Bytes in order",
+        "translatedBodyPresent": true,
+        "overflow": false,
+        "errors": []
+      }
+    },
+    {
+      "case": "detail-people-en",
+      "result": {
+        "hash": "#people/profile-nora-bensaid",
+        "title": "Nora Bensaïd",
+        "translatedBodyPresent": true,
+        "overflow": false,
+        "errors": []
+      }
+    },
+    {
+      "case": "detail-journal-en",
+      "result": {
+        "hash": "#journal/demo-journal-question-before-code",
+        "title": "The question before the code",
+        "translatedBodyPresent": true,
+        "overflow": false,
+        "errors": []
+      }
+    },
+    {
+      "case": "detail-projects-ar",
+      "result": {
+        "hash": "#projects/demo-project-bytes-in-order",
+        "title": "بايتات مرتبة",
+        "translatedBodyPresent": true,
+        "overflow": false,
+        "errors": []
+      }
+    },
+    {
+      "case": "detail-people-ar",
+      "result": {
+        "hash": "#people/profile-nora-bensaid",
+        "title": "نورا بنسعيد",
+        "translatedBodyPresent": true,
+        "overflow": false,
+        "errors": []
+      }
+    },
+    {
+      "case": "detail-journal-ar",
+      "result": {
+        "hash": "#journal/demo-journal-question-before-code",
+        "title": "السؤال قبل الشيفرة",
+        "translatedBodyPresent": true,
+        "overflow": false,
+        "errors": []
+      }
+    },
+    {
+      "case": "project-author-profile",
+      "result": {
+        "hash": "#people/profile-nora-bensaid",
+        "name": "Nora Bensaïd"
+      }
+    },
+    {
+      "case": "profile-reverse-projects",
+      "result": [
+        {
+          "href": "#projects/demo-project-bytes-in-order",
+          "text": "$ ./minishell\n\n1337 Khouribga\n·\n1337 Ben Guérir\n\nDes octets bien rangés\n\nUne bibliothèque de fonctions expliquées par de petits exemples."
+        },
+        {
+          "href": "#projects/demo-project-across-the-terminals",
+          "text": "1337 Khouribga\n·\n42 Abu Dhabi\n·\n42 Bangkok\n\nD’un terminal à l’autre\n\nRelier trois équipes autour d’un tableau de jeu et de ses retours en direct."
+        }
+      ]
+    },
+    {
+      "case": "new-multicampus-dialog",
+      "result": [
+        "1337-khouribga",
+        "abu-dhabi",
+        "bangkok"
+      ]
+    },
+    {
+      "case": "new-campus-scope",
+      "result": {
+        "hash": "#projects?country=MAR&campus=1337-khouribga",
+        "count": 2,
+        "total": "2 contenus",
+        "errors": []
+      }
+    }
+  ],
+  "passed": true,
+  "final_sha256": {
+    "demo-content-seed.mjs": "5ea597fb0025d3aa9565e7e662f8b100eeec7e0a88fa84e99d662e463097c163",
+    "content-preview-data.mjs": "dea7cc9253756ce37d2632eec6125614cb139640b3278a2930b8171d6c4bae52",
+    "profile-data.mjs": "652648c36b77105d32d303adcecd39b6e8852bb64ce2698075b746b5fd2bb378",
+    "content-filters.mjs": "b494e148b4689c8cd8ccf9800496962f2d32517b092190b1a2ab15ccf571b3f7",
+    "welcome.mjs": "c6b6ffc3d48514d10c4a0a1e2d1aebaec00ba682b6eebdae31e8b3df8fb7e853"
+  },
+  "subsequent_change": "Only the Libft recipe artwork changed from shell (with a minishell label) to the generic network illustration after this run. Final artwork and unobscured pagination verified in20261013-demo-content-final-browser.json; data, routes and text unchanged."
+}

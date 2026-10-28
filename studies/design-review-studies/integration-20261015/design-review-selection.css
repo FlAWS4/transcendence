@@ -1,0 +1,315 @@
+/* Design-review selection (15 Oct 2026): the nine trials of the design-review study chosen by the user,
+   merged in the canonical order of the study loader; the last stylesheet of index.html and content-preview.html. */
+
+/* == 1/9 globe-espace-libre: the resting globe shrinks to fit the free band between the filter stats and the status line. */
+/* Essai globe-espace-libre (14 Oct 2026): the resting world globe fits between
+   the stats line under the filter and the first text below it (status line, or
+   the search capsule when the status is hidden), at least 16 px clear of both.
+   The centre stays at 50 %/50 %; portrait phones keep the baseline radius.
+   integrated-globe.mjs reads --hg-radius with parseFloat at creation and on
+   every resize of the stage, so the fitted value must compute to a plain
+   number: a registered <number> provides it. It only ever shrinks the radius. */
+@property --globe-fit-radius { syntax: '<number>'; inherits: true; initial-value: .425; }
+
+/* Bands measured on the frozen baseline, worst case of FR, EN and AR (Arabic
+   lines are taller): bottom of the stats line from the top of the viewport,
+   and top of the status text (or search capsule) from its bottom. These
+   layouts place both at fixed pixel offsets. */
+@media (min-width: 701px) and (min-height: 521px) {
+  :root .app[data-navigation=dock] #main > .globe-stage { --globe-fit-top: 168.3px; --globe-fit-bottom: 193px; }
+}
+/* Short windows hide the status text: the search capsule bounds the disc. */
+@media (min-width: 701px) and (max-height: 520px) {
+  :root .app[data-navigation=dock] #main > .globe-stage { --globe-fit-top: 159.3px; --globe-fit-bottom: 126px; }
+}
+/* Landscape phones use the mobile filter seat. */
+@media (max-width: 700px) and (orientation: landscape) and (min-height: 521px) {
+  :root .app[data-navigation=dock] #main > .globe-stage { --globe-fit-top: 154.4px; --globe-fit-bottom: 174px; }
+}
+@media (max-width: 700px) and (orientation: landscape) and (max-height: 520px) {
+  :root .app[data-navigation=dock] #main > .globe-stage { --globe-fit-top: 150.4px; --globe-fit-bottom: 126px; }
+}
+/* :root:root below stands for the former trial condition :root[data-essais~=lisibilite-textes]: same
+   specificity, applied unconditionally because lisibilite-textes is part of this selection. */
+/* With lisibilite-textes, its 13 px floors move two bands (worst case Arabic, measured on the copy with both
+   trials): "Exploration · 42 Horizon" (12 px on desktop, 10 px below 701 px) starts 3 px higher on desktop
+   and tablet and 7 px higher in narrow landscape; below 701 px the stats line (12 px) ends 1.45 px lower,
+   which matters in short windows, where the top band binds. Without lisibilite-textes nothing changes. */
+@media (min-width: 701px) and (min-height: 521px) {
+  :root:root .app[data-navigation=dock] #main > .globe-stage { --globe-fit-bottom: 196px; }
+}
+@media (max-width: 700px) and (orientation: landscape) and (min-height: 521px) {
+  :root:root .app[data-navigation=dock] #main > .globe-stage { --globe-fit-bottom: 181px; }
+}
+@media (max-width: 700px) and (orientation: landscape) and (max-height: 520px) {
+  :root:root .app[data-navigation=dock] #main > .globe-stage { --globe-fit-top: 151.9px; }
+}
+
+@media (min-width: 701px), (orientation: landscape) {
+  :root .app[data-navigation=dock] #main > .globe-stage {
+    /* Wanted screen radius of the disc: 16 px of air plus 1 px for rounding,
+       never below the 16 px medallion seat. */
+    --globe-fit-disc: max(16px, min(50svh - var(--globe-fit-top), 50svh - var(--globe-fit-bottom)) - 17px);
+    /* MapLibre draws a sphere of radius R = 1.23668 × min(w, h) × --hg-radius
+       (worldZoom formula, globe scale at the 18° resting latitude), seen from
+       f = 1.5 × height (36.87° field of view): its disc is d = R / √(1 + 2R/f).
+       Inverted: R = d × (q + √(q² + 1)) with q = d/f. tan(atan2(a, b)) turns
+       the ratio of two lengths into a number. */
+    --globe-fit-q: tan(atan2(var(--globe-fit-disc), 150svh));
+    --globe-fit-radius: min(var(--horizon-globe-radius), tan(atan2(var(--globe-fit-disc), min(100vw, 100svh))) * (var(--globe-fit-q) + sqrt(var(--globe-fit-q) * var(--globe-fit-q) + 1)) / 1.23668);
+    --hg-radius: var(--globe-fit-radius);
+  }
+}
+
+/* == 2/9 police-etiquettes-globe: the globe marker labels take the site font stack (Jost) instead of MapLibre's. */
+/* Essai police-etiquettes-globe (14 Oct 2026): the globe's marker labels, the
+   selected campus label and its edge-direction label stop inheriting MapLibre's
+   "Helvetica Neue, Arial" stack and take the site's own stack (welcome.css
+   :root), the one every other text uses in FR, EN and AR: Jost for Latin text,
+   with Arabic glyphs falling back exactly as elsewhere on the site. Family only:
+   size, weight, line height and colour keep their current values. The map
+   credit is outside the MapLibre container and already uses this stack. */
+.hg-integrated .hg-marker { font-family: var(--h42-font-family), sans-serif; }
+
+/* == 3/9 une-colonne-320: one Projects or Chronicles card per row at 360 px wide or less. */
+/* Essai une-colonne-320 (14 Oct 2026). At 360 px wide or less, the Projects and
+   Chronicles grids show one card per row instead of two. Card internals, the List
+   view, the Profiles grid and every wider screen keep the baseline rules. */
+@media (max-width:360px) {
+ :root .app[data-navigation=dock] #content-index:is([data-section=projects],[data-section=journal])[data-view=grid] .cp-grid {
+  grid-template-columns:minmax(0,1fr);
+ }
+}
+
+/* == 4/9 roles-couleur: one colour rule for actions, the sign-in accent on primary actions, neutral secondaries. */
+/* Essai roles-couleur (14 Oct 2026): one colour rule for actions, colours only.
+   Primary actions take the treatment already chosen for sign-in
+   (--h42-access-accent: 42 Blue #00BABC in light, Royal Pink #ED3491 in dark,
+   ink #1B1B1B text; 7.2:1 and 4.5:1) and keep it on hover. Secondary actions
+   that still carried an accent become neutral: text colour and a neutral line.
+   Secondary actions that are already neutral, selected states (dock, local
+   menus, filter choices), links, sizes, radii and layout are not changed. */
+
+/* Primary: filter Appliquer, comment Ajouter/Répondre/Enregistrer, report Envoyer,
+   message Envoyer, repository Enregistrer, and the sign-up confirmation (arrival and
+   account dialogs; the sign-in confirmation already has this treatment). */
+:root :is(.cp-project-filter-actions .cp-project-filter-apply,.cp-comments-form .cp-comments-submit,.cp-report-footer .cp-report-submit,.cp-profile-message-controls .cp-profile-message-send,.cp-project-repository-actions button[type=submit],#dialog[data-kind=signup] #dialog-content>button:first-of-type),
+:root :is(.cp-project-filter-actions .cp-project-filter-apply,.cp-comments-form .cp-comments-submit,.cp-report-footer .cp-report-submit,.cp-profile-message-controls .cp-profile-message-send,.cp-project-repository-actions button[type=submit],#dialog[data-kind=signup] #dialog-content>button:first-of-type):hover{background:var(--h42-access-accent);border-color:var(--h42-access-accent);color:var(--h42-ink)}
+
+/* Secondary in the sign-in/sign-up dialogs, dark only (light ones are already neutral).
+   Arrival dialog: the turquoise text becomes the text colour with a neutral line. */
+:root[data-theme=dark] :is(#dialog[data-kind=login],#dialog[data-kind=signup]) #dialog-content>.entrance-action.secondary{color:var(--h42-color-text);border-color:var(--cp-line)}
+/* Account dialog: the pink-tinted surface becomes the neutral soft surface; the line is
+   inset so the borderless option keeps its size. */
+:root[data-theme=dark] :is(#dialog[data-kind=login],#dialog[data-kind=signup]) #dialog-content>.dialog-option:last-of-type{background:var(--h42-color-soft);color:var(--h42-color-text);box-shadow:inset 0 0 0 1px var(--cp-line)}
+
+/* == 5/9 visiter-contour-sombre: a visible dark-theme outline on "Visiter" and "Créer un compte". */
+/* Essai visiter-contour-sombre (14 Oct 2026): dark theme only.
+   "Visiter" on the arrival (#entry-guest) and "Créer un compte" in the account
+   menu keep their Royal Pink text but get a visible 1 px boundary, the dark
+   counterpart of the outlined light container. The border already exists
+   (transparent), so dimensions do not change. Colour: Cadet Gray #95B0B0 70 % +
+   noir #1B1B1B 30 % = #708383, 4.3:1 on the #1B1B1B arrival (WCAG 1.4.11 asks 3:1).
+   Light theme, labels, focus ring and the other secondary actions are untouched. */
+:root[data-theme=dark] :is(#entry-guest,[data-account-action=signup]){border-color:#708383}
+
+/* == 6/9 lisibilite-textes: 13 px floor for small text, 14 px for small actions, readable small accent text. */
+/* Trial lisibilite-textes (14 Oct 2026): readable small text, without layout redesign.
+   1. Size floors: 13 px for useful small text (metadata, campus names, chips, counters,
+      captions, "Créé par"), 14 px for small action buttons. Excluded on purpose: map
+      attribution (.map-credit), globe labels (.hg-marker), dock labels (no room at 320 px),
+      the compact sidebar densities chosen by detail-scroll for short windows, and the status
+      chip of the Profiles list view below 1200 px (its 88-96 px thumbnail clips it at 13 px).
+   2. Small accent text uses the site's existing readable accent (--readable-glass-accent
+      values): #0C7677 in light (5.17:1 on #F7FAFA, 5.42:1 on #FFFFFF, 4.87:1 on #EAF5F4)
+      and #F485BD in dark (6.90:1 on #202026, 7.33:1 on #1B1B1B, 6.16:1 on #29292E).
+      Surfaces, borders and large text keep their colours; the icons drawn in currentColor
+      inside the campus and message buttons follow their label. */
+:root{--readable-text-accent:#0C7677}
+:root[data-theme=dark]{--readable-text-accent:#F485BD}
+
+/* 13 px: metadata, campus names, dates, chips, tags, counters and captions in content pages.
+   Two ids outrank the baseline's #content-index grid rules; :not() keeps short-window densities. */
+:root #app #content-sheet :is(.cp-meta,.cp-eyebrow,.cp-published,.cp-authors-label,.cp-author-role,.cp-author-more,.cp-profile-status:not([data-view=list] .cp-profile-portrait>*),.cp-profile-tags li,.cp-project-tags li,.cp-profile-cohort,.cp-profile-feature-copy small,.cp-profile-feature-copy strong,.cp-profile-heading-note,.cp-profile-milestone-date,.cp-profile-campus-stop>time,.cp-profile-campus-step,.cp-profile-project-count,.cp-project-switch-caption,.cp-profile-switch-caption,.cp-control-note,.cp-filter-group-count,.cp-comments-hint,.cp-comments-count,.cp-comments-status,.cp-comment-own,.cp-comment-identity time,.cp-comment-edited,.cp-comment-draft,.cp-reply-context),
+:root #app #content-sheet :is(.cp-project-eyebrow,.cp-project-facts):not([data-detail-density] *),
+:root #app #content-count,:root #app #content-sheet>.sample-note{font-size:13px}
+:root #app #content-sheet .cp-authors[data-compact=true] .cp-author-name>strong{font-size:13px}
+/* Profiles list view: "Transcender" needs 83 px at 13 px; the clipping thumbnail
+   (clamp(88px, 72px + 2vw, 104px), 10 px padding) leaves 86 px from 1200 px wide. */
+@media (min-width:1200px){:root #app #content-sheet [data-view=list] .cp-profile-portrait>.cp-profile-status{font-size:13px}}
+/* Favorite, report, message and campus actions: 14 px, outside the compact densities. */
+:root #app #content-sheet :is(.cp-favorite:not(.cp-favorite-compact),.cp-report-trigger,.cp-profile-message,.cp-project-campus,.cp-profile-campus):not([data-detail-density] *),
+:root #app #content-sheet :is(.cp-comment-actions button,.cp-comments-cancel,.cp-comments-emoji-toggle){font-size:14px}
+/* View, filter and sort triggers grow with the viewport; they never go below 13 px. */
+:root #app .cp-content-controls .cp-control-trigger{font-size:max(13px,calc(.6875rem + 2 * var(--cp-control-fluid)))}
+
+/* Explorer and dock search: counters, captions and result labels (attribution excluded). The globe stats
+   line is 14 px above 700 px wide in the baseline: only its 12 px phone size is raised. */
+:root #app[data-navigation=dock] .prototype-note{font-size:13px}
+@media(max-width:700px){:root #app[data-navigation=dock] .globe-status p{font-size:13px}}
+:root #app .main-nav :is(.dock-search-scope,.dock-search-status,.dock-search-result-subtitle,.dock-search-result-type){font-size:13px}
+
+/* Dialogs appended to the body: filter, report, message, campus choice and campus map. */
+:root dialog :is(.cp-project-filter-header p,.cp-project-filter-section-count,.cp-project-filter-count,.cp-project-filter-status,.cp-report-intro,.cp-report-count,.cp-profile-message-hint,.cp-profile-message-recipient>bdi+bdi,.cp-profile-message-preview h3,.cp-project-campus-country,.campus-map-header p),:root #campus-map-dialog #campus-map-hint{font-size:13px}
+:root dialog :is(.cp-project-filter-footer button,.cp-project-filter-all,.cp-report-footer button,.cp-profile-message-controls button,.cp-project-campus-dismiss,.campus-map-retry){font-size:14px}
+/* Campus sheet in Explorer and media viewer credit. */
+:root #dialog .campus-details :is(.campus-details-facts dt,.campus-details-copy-status,.campus-details-link-note,.campus-details-photos>h4,.campus-details-photo-caption,.campus-details-photo-status,.campus-details-contact-label,.campus-details-source,.campus-details-stat dt,.campus-details-stat-date,.campus-details-stats>.campus-details-empty,.campus-details-piscine-state,.campus-details-piscine-note,.campus-details-verified,.campus-details-stat-note){font-size:13px}
+:root #dialog .campus-details :is(.campus-details-copy,.campus-details-directions,.campus-details-photo-controls button){font-size:14px}
+:root .media-viewer .media-viewer-credit{font-size:13px}
+/* Account menu captions. */
+:root :is(.account-option small,.account-identity small,.account-choice-group legend){font-size:13px}
+
+/* Accent text below the large-text size takes the readable accent; hover states included. */
+:root #app #content-sheet :is(.cp-meta,.cp-eyebrow,.cp-profile-status,.cp-project-campus,.cp-profile-campus,.cp-profile-message,.cp-card-link,.cp-related-link,.cp-profile-milestone-date,.cp-comment-mention,.cp-back:hover,.cp-author-more:hover,.cp-author-link:hover .cp-author-name>strong,.cp-view-controls button[aria-pressed=true]),
+:root #app #content-sheet .cp-pagination-link:is([aria-current=page],:hover:not(:disabled)),
+:root dialog .cp-profile-message-status{color:var(--readable-text-accent)}
+
+/* == 7/9 echelle-unifiee: one short type scale, three radii and two elevations on the main components. */
+/* Trial echelle-unifiee (14 Oct 2026): one short type scale, three radii and two elevations,
+   mapped onto the main components on top of the baseline. A demonstrator only: the real
+   consolidation (tokens as the single source, fewer stylesheets, no overrides) is structural.
+   Type: 12 caption · 14 label · 16 body · 20 / 28 / 35 titles (the charter's UI title sizes).
+   The ramps of titles, toolbar triggers and card images (6 Oct: progressive sizes) are kept but
+   run between two steps, from 390 px to 1024 px (most baseline ramps also reach their maximum
+   between 800 and 1150 px); project and article titles keep their own ramp, 22 -> 28 px, which
+   already lies between two steps. Smaller ramps take one step: excerpts, logins, scope name,
+   small labels and the names of Profiles cards.
+   Radii: 12 controls · 20 surfaces · 999 pills. Elevations: 1 = the glass control shadow
+   (unchanged), 2 = surfaces opened above the page (menus, panels, dialogs).
+   Untouched on purpose: colours, layout, font weights and letter spacing, the brand wordmark,
+   dock labels, the globe, its labels and the campus sheet, detail-scroll compact densities,
+   checkboxes, focus rings and emoji glyphs. */
+:root{
+ --eu-caption:12px;--eu-action:12px;--eu-label:14px;--eu-body:16px;--eu-title-3:20px;--eu-title-2:28px;--eu-title-1:35px;
+ --eu-ramp:calc((100vw - 390px) / 634);
+ --eu-radius-control:12px;--eu-radius-surface:20px;--eu-radius-pill:999px;
+ --eu-shadow-2:0 22px 64px #183D3C12,0 3px 12px #183D3C06;
+ --eu-glass-edge:inset 0 1px 0 #ffffffb3,inset 0 -1px 0 #183D3C0B;
+}
+:root[data-theme=dark]{--eu-shadow-2:0 16px 48px #0003;--eu-glass-edge:inset 0 1px 0 #ffffff30,inset 0 -1px 0 #0002}
+/* :root:root below stands for the former trial condition :root[data-essais~=lisibilite-textes]: same
+   specificity, applied unconditionally because lisibilite-textes is part of this selection. */
+/* With lisibilite-textes, its floors replace the two small steps: 13 px text, 14 px actions.
+   Below 1200 px it leaves the Profiles list status chip unfloored (its thumbnail crops it at 13 px):
+   that chip keeps this trial's 12 px there (rule after the caption rule below). */
+:root:root{--eu-caption:13px;--eu-action:14px}
+
+/* ---- Type ------------------------------------------------------------------------------ */
+/* 12 caption: metadata, dates, campus names, tags, statuses, counters, notes, captions. */
+:root #app #content-sheet :is(.cp-meta,.cp-content-campuses,.cp-published,.cp-authors-label,.cp-author-role,.cp-author-more,.cp-profile-status,.cp-profile-tags li,.cp-project-tags li,.cp-profile-heading-note,.cp-project-switch-caption,.cp-profile-switch-caption,.cp-control-note,.cp-filter-group-count,.cp-profile-milestone-date,.cp-profile-campus-stop>time,.cp-profile-campus-step,.cp-profile-project-count,.cp-profile-feature-copy :is(small,strong),.cp-project-media figcaption,.cp-project-repository-note,.cp-project-repository-error,.cp-comments-hint,.cp-comments-count,.cp-comments-status,.cp-comment-own,.cp-comment-identity time,.cp-comment-edited,.cp-comment-draft,.cp-reply-context),
+:root #app #content-sheet :is(.cp-eyebrow,.cp-project-eyebrow,.cp-project-facts,.cp-profile-cohort,.cp-profile-cohort dt):not([data-detail-density] *),
+:root #app #content-sheet .cp-card .cp-profile-cohort dd,
+:root #app #content-index #content-count,:root #app #content-sheet>.sample-note,
+:root #app #main-nav :is(.dock-search-scope,.dock-search-status,.dock-search-result-subtitle,.dock-search-result-type),
+:root #app #account-menu :is(.account-option small,.account-identity small,.account-choice-group legend),
+:root dialog :is(.cp-project-filter-header p,.cp-project-filter-section-count,.cp-project-filter-count,.cp-project-filter-status,.cp-report-intro,.cp-report-count,.cp-profile-message-hint,.cp-profile-message-recipient>bdi+bdi,.cp-profile-message-status,.cp-profile-message-preview h3,.cp-project-campus-country,.media-viewer-credit,.media-viewer-count){font-size:var(--eu-caption)}
+@media(max-width:1199.98px){:root:root #app #content-sheet [data-view=list] .cp-profile-portrait>.cp-profile-status{font-size:12px}}
+/* 12 compact actions (14 with lisibilite-textes): sidebar pills, dialog footers, comment actions. */
+:root #app #content-sheet :is(.cp-favorite:not(.cp-favorite-compact),.cp-report-trigger,.cp-profile-message,.cp-project-campus,.cp-profile-campus):not([data-detail-density] *),
+:root #app #content-sheet :is(.cp-comment-actions button,.cp-comments-cancel,.cp-comments-emoji-toggle),
+:root dialog :is(.cp-project-filter-all,.cp-project-filter-footer button,.cp-report-footer button,.cp-profile-message-controls button,.cp-project-campus-dismiss){font-size:var(--eu-action)}
+/* 14 label: menus, navigation, pagination, search, pseudonyms and secondary text. */
+:root #app #content-sheet :is(.cp-summary,.cp-profile-login,.cp-card-link,.cp-related-link,.cp-control-panel button,.cp-pagination-link,.cp-pagination-summary,.cp-pagination-ellipsis,.cp-project-section-trigger,.cp-profile-section-trigger,.cp-profile-social-hint,.cp-profile-social-link,.cp-profile-related-summary,.cp-profile-milestone p,.cp-profile-award-empty p,.cp-profile-empty,.cp-comments-sort-label,.cp-comments-sort):not([data-detail-density] *),
+:root #app #content-sheet :is(.cp-project-sidebar-nav,.cp-profile-sidebar-nav,.cp-project-switch-panel,.cp-profile-switch-panel) a:not([data-detail-density] *),
+:root #app #main .dock-shell>.dock-search-toggle,:root #app #main-nav .dock-search-more,:root #app #scope-bar :is(#scope-picker,#scope-name),
+:root #app #account-menu :is(.account-identity .account-username,.account-empty p),
+:root dialog :is(.cp-project-filter-section-label,.cp-project-filter-choice,.cp-project-filter-empty,.cp-report-fields label,.cp-report-saved-reason,.media-viewer-caption){font-size:var(--eu-label)}
+/* Pseudonyms in Profiles cards are card metadata (12 px, 13 with lisibilite-textes): at 14 px the
+   pending-login placeholder wrapped from about 350 to 395 px wide and unlevelled four grid rows. */
+:root #app #content-sheet .cp-profile-card .cp-card-copy>.cp-profile-login{font-size:var(--eu-caption)}
+/* Toolbar triggers, view switch and author names in cards keep their ramp, now 12 -> 14 px. */
+:root #app #content-sheet :is(.cp-control-trigger,.cp-view-controls button),
+:root #app #content-sheet .cp-card .cp-author-name>strong{font-size:clamp(var(--eu-caption),calc(12px + 2 * var(--eu-ramp)),var(--eu-label))}
+/* 16 body: reading text, values, award titles, the arrival and account buttons. The empty state and
+   hint of the profile's social links stay secondary text (14 px), as in the label rule. */
+:root #app #content-sheet :is(.cp-project-block>p,.cp-project-section-intro,.cp-profile-overview-block>p:not(.cp-profile-social-empty,.cp-profile-social-hint),.cp-profile-story>p:not(.cp-meta),.cp-comment-text,.cp-profile-award-title,.cp-project-trial h4),
+:root :is(#app,#dialog) .entrance-action,:root #app #account-menu :is(.account-identity strong,.account-empty strong),
+:root dialog .cp-report-result{font-size:var(--eu-body)}
+/* 20 title 3: section blocks, profile names in cards, dialog titles, empty states. */
+:root #app #content-sheet :is(.cp-project-block h3,.cp-profile-overview-block h3,.cp-profile-campus-history>h3,.cp-project-trial h3,.cp-comments-empty h3,.cp-profile-milestone h3,.cp-profile-story>h4,.cp-profile-card h2),
+:root dialog :is(.cp-project-filter-header h2,.cp-report-header h2,.cp-profile-message-top h2,.cp-project-campus-dialog-header h2),
+:root dialog:not([data-kind=campus]) .dialog-top h2{font-size:var(--eu-title-3)}
+/* Card titles of projects and articles: ramp 20 -> 28 px. Below 390 px the grid keeps the
+   baseline's 18-19 px: at 20 px "ft_transcendence" no longer fits its 129 px column at 320 px. */
+:root #app #content-sheet #content-index[data-view=list] .cp-card:not(.cp-profile-card) :is(h2,.cp-card-title-link),
+:root #app #content-sheet :is(.cp-profile-related-copy h3,.cp-profile-story>h3){font-size:clamp(var(--eu-title-3),calc(20px + 8 * var(--eu-ramp)),var(--eu-title-2))}
+@media(min-width:390px){:root #app #content-sheet .cp-card:not(.cp-profile-card) :is(h2,.cp-card-title-link){font-size:clamp(var(--eu-title-3),calc(20px + 8 * var(--eu-ramp)),var(--eu-title-2))}}
+/* Detail titles: projects and articles keep the baseline ramp (22 -> 28 px), already between
+   title 3 and title 2 (a fixed 28 px put them on two lines on phones); profile names ramp
+   28 -> 35 px. Compact densities keep their own sizes. */
+:root #app #content-sheet #profile-detail .cp-profile-heading>h1:not([data-detail-density] *){font-size:clamp(var(--eu-title-2),calc(28px + 7 * var(--eu-ramp)),var(--eu-title-1))}
+
+/* ---- Radii ----------------------------------------------------------------------------- */
+/* 12 controls: buttons that are not pills, fields, list rows, small thumbnails. */
+:root #app #content-sheet :is(.cp-pagination-link,.cp-control-panel button,.cp-view-controls button,.cp-profile-feature-art,.cp-comments-form textarea,.cp-comment-owner-menu button,.cp-profile-social-link,.cp-project-repository-input,.cp-project-repository-textarea),
+:root #app #content-sheet :is(.cp-project-sidebar-nav,.cp-profile-sidebar-nav,.cp-project-switch-panel,.cp-profile-switch-panel) a,
+:root #app #content-sheet .cp-project-thumbnail:not([data-detail-density] *),
+:root #app #main-nav :is(.dock-search-result,.dock-search-more),
+:root #app #account-menu :is(.account-option,.account-choice),:root :is(#app,#dialog) .entrance-action,
+:root :is(.theme-option,.language-option,.dialog-option),:root #scope-popover .scope-field select,
+:root dialog :is(.cp-project-filter-toggle,.cp-project-filter-all,.cp-project-filter-choice,.cp-report-fields select,.cp-report-fields textarea,.cp-profile-message-label textarea,.cp-profile-message-preview,.cp-project-campus-choice,.cp-project-campus-dismiss,.media-viewer-status){border-radius:var(--eu-radius-control)}
+/* The sort menu's last option keeps its square top corners (it sits under a divider). */
+:root #app #content-sheet .cp-control-menu[data-control=sort] .cp-control-panel [role=menuitemcheckbox]{border-start-start-radius:0;border-start-end-radius:0}
+/* 20 surfaces: cards, large images, panels, menus and dialogs; the two-line mobile section pickers
+   (21 px, 67 px tall) stay rounded rectangles. */
+:root #app #content-sheet :is(.cp-project-section-trigger,.cp-profile-section-trigger,.cp-card,.cp-project-media-art,.cp-profile-story,.cp-profile-related-link,.cp-project-trial-mode,.cp-project-trial-empty,.cp-project-repository-form,.cp-project-active-section .cp-author-link,.cp-control-panel,.cp-comment-owner-menu,.cp-comments-emoji-palette,.cp-project-switch-panel,.cp-profile-switch-panel),
+:root #app #content-sheet .cp-profile-hero-portrait:not([data-detail-density] *),
+:root #app #main .dock-shell[data-search-open=true]>.dock-search-toggle,
+:root #app #account-menu,:root :is(.theme-menu,.language-menu,#scope-popover),
+:root dialog:not([data-kind=campus]):not(#campus-map-dialog){border-radius:var(--eu-radius-surface)}
+/* Card images keep the baseline's progressive radius of project and article covers (12 px on phones
+   -> 20 px); Profiles portraits (18 px grid, 16 px list) take it too. Profiles list portraits stay
+   rounded rectangles on phones: the baseline's 50 % rule there is overridden by its 16 px one
+   (a 50 % radius would turn them into ovals cropping the status chip). */
+:root #app #content-sheet .cp-card :is(.cp-card-cover-link,.cp-cover),
+:root #app #content-index[data-view=grid] .cp-profile-card .cp-profile-portrait,
+:root #app #content-index[data-view=list] .cp-profile-card .cp-profile-portrait{border-radius:clamp(var(--eu-radius-control),2vw,var(--eu-radius-surface))}
+/* 999 pills: tags, statuses, badges, round buttons and sidebar actions. */
+:root #app #content-sheet :is(.cp-profile-tags li,.cp-project-tags li,.cp-profile-message,.cp-related-link),
+:root #app #main-nav .dock-search-result-type,
+:root dialog :is(.cp-project-filter-section-count,.cp-profile-message-controls button){border-radius:var(--eu-radius-pill)}
+
+/* ---- Elevations ------------------------------------------------------------------------ */
+/* Level 1 stays the glass control shadow of buttons, pills, the dock and the closed search.
+   Level 2 for surfaces that open above the page; glass surfaces keep their inner edge highlights. */
+:root #app #content-sheet .cp-comments-emoji-palette,
+:root dialog:not([data-kind=campus]):not(#campus-map-dialog){box-shadow:var(--eu-shadow-2)}
+:root #app #account-menu,:root #app #content-sheet :is(.cp-control-panel,.cp-comment-owner-menu,.cp-project-switch-panel,.cp-profile-switch-panel),
+:root #app #main .dock-shell[data-search-open=true]>.dock-search-toggle,:root[data-theme] :is(.theme-menu,.language-menu,#scope-popover),
+:root dialog.cp-project-filter-dialog:not(#campus-map-dialog){box-shadow:var(--eu-shadow-2),var(--eu-glass-edge)}
+/* Level 1 for the light-theme arrival, sign-in dialog and account buttons (the glass control shadow). */
+:root[data-theme=light] :is(#app,#dialog) .entrance-action{box-shadow:0 9px 22px #183D3C12}
+
+/* == 8/9 pseudo-manquant: profiles without an Intra login no longer show the pending placeholder line. */
+/* Essai pseudo-manquant: profiles without an Intra login no longer show the pending placeholder.
+   Baseline intraLogin() gives every real login dir="ltr"; the placeholder line has none, so real
+   logins stay untouched and re-rendered cards, languages and themes keep the rule.
+   List rows and the profile page have nothing to line up with: the line collapses. */
+:root .app :is(#content-index .cp-profile-card .cp-card-copy,#profile-detail .cp-profile-heading) > .cp-profile-login:not([dir]) { display:none; }
+/* Directory grid: the line keeps the height of one real login, unseen, while a card of the same
+   row shows one, so names, campuses and cohorts stay level (no wrapped two-line gap at 320 px);
+   design-review-selection.mjs marks the lines of the other rows "collapsed". */
+:root .app #content-index[data-view=grid] .cp-profile-card .cp-card-copy > .cp-profile-login:not([dir]):not([data-pending-login=collapsed]) { display:block; visibility:hidden; white-space:nowrap; overflow:hidden; }
+
+/* == 9/9 awards-a-venir: a discreet, centred "coming soon" note on the otherwise empty 42 Awards page. */
+/* Trial awards-a-venir: one discreet, centred "coming soon" note on the otherwise empty 42 Awards page.
+   Hidden in every other section and during the arrival. Pointer-free, below the header fade (z 6),
+   header (10) and dock (20); equal block padding from the baseline's own fade and dock metrics keeps
+   it at the viewport centre, clear of both while the window is at least about 350 px tall. */
+.awards-coming-soon{display:none}
+body[data-entry=welcome] .app[data-navigation=dock][data-section=awards] .awards-coming-soon{
+ position:fixed;inset:0;z-index:1;display:grid;place-content:center;justify-items:center;gap:12px;
+ padding:max(var(--header-fade-end,188px),calc(var(--dock-bottom,32px) + var(--dock-height,60px) + 16px)) 24px;
+ pointer-events:none;text-align:center;
+}
+/* Same trophy symbol as the dock button; muted like the profile's empty Distinctions block. */
+.awards-coming-soon svg{width:28px;height:28px;color:var(--h42-color-muted)}
+.awards-coming-soon p{
+ margin:0;max-width:100%;color:var(--h42-color-text);font-size:var(--h42-type-H3-size,20px);font-weight:500;
+ line-height:var(--h42-type-H3-line,28px);letter-spacing:-.01em;text-wrap:balance;
+}
+.awards-coming-soon p:lang(ar){line-height:1.6;letter-spacing:0}
+@media (prefers-reduced-motion:no-preference){
+ body[data-entry=welcome] .app[data-navigation=dock][data-section=awards] .awards-coming-soon{animation:awards-coming-soon-in .45s var(--ease) both}
+}
+@keyframes awards-coming-soon-in{from{opacity:0}to{opacity:1}}

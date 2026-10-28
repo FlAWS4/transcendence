@@ -1,0 +1,20 @@
+const page = await figma.getNodeByIdAsync('1:12');
+await figma.setCurrentPageAsync(page);
+await Promise.all([{family:'Jost',style:'Medium'},{family:'Jost',style:'Regular'}].map(f => figma.loadFontAsync(f)));
+const V = {}; for (const v of await figma.variables.getLocalVariablesAsync()) V[v.name] = v;
+const paint = n => figma.variables.setBoundVariableForPaint({ type: 'SOLID', color: { r: 0, g: 0, b: 0 } }, 'color', V[n]);
+const L = [{"id": "journal", "name": "Liste des chroniques · journal", "title": "Liste des chroniques", "desc": "78 chroniques fictives, 12 par page (7 pages). Pas de bouton Filtrer. Sur place : Affichage, Trier, cœurs Favoris, filtre Pays / Campus.\nÉcran du plan du site : journal · adresse #journal. Relevé du prototype actif (audit-fixes-146 + sélection du 15 octobre 2026). Le mode sombre est le mode « Sombre » de 42 · Couleurs ; chaque état relevé en anglais a sa rangée « English » (décision du 18 octobre), les textes étant liés aux variables FR/EN/AR de 42 · Textes.", "y": 0, "w": 4180, "h": 8701}, {"id": "article", "name": "Chronique · article", "title": "Chronique", "desc": "Barre de gauche : Retour, Favoris, Signaler, Explorer le campus.\nÉcran du plan du site : article · adresse #journal/<id>. Relevé du prototype actif (audit-fixes-146 + sélection du 15 octobre 2026). Le mode sombre est le mode « Sombre » de 42 · Couleurs ; chaque état relevé en anglais a sa rangée « English » (décision du 18 octobre), les textes étant liés aux variables FR/EN/AR de 42 · Textes.", "y": 8901, "w": 4180, "h": 5897}, {"id": "article-media", "name": "Médias · article-media", "title": "Médias", "desc": "Écran du plan du site : article-media · adresse #journal/<id>?tab=media. Relevé du prototype actif (audit-fixes-146 + sélection du 15 octobre 2026). Le mode sombre est le mode « Sombre » de 42 · Couleurs ; chaque état relevé en anglais a sa rangée « English » (décision du 18 octobre), les textes étant liés aux variables FR/EN/AR de 42 · Textes.", "y": 14998, "w": 4180, "h": 2467}, {"id": "article-authors", "name": "Auteurs · article-authors", "title": "Auteurs", "desc": "Écran du plan du site : article-authors · adresse #journal/<id>?tab=authors. Relevé du prototype actif (audit-fixes-146 + sélection du 15 octobre 2026). Le mode sombre est le mode « Sombre » de 42 · Couleurs ; chaque état relevé en anglais a sa rangée « English » (décision du 18 octobre), les textes étant liés aux variables FR/EN/AR de 42 · Textes.", "y": 17665, "w": 4180, "h": 2931}, {"id": "article-comments", "name": "Commentaires · article-comments", "title": "Commentaires", "desc": "Mêmes commentaires de démonstration que les projets.\nÉcran du plan du site : article-comments · adresse #journal/<id>?tab=comments. Relevé du prototype actif (audit-fixes-146 + sélection du 15 octobre 2026). Le mode sombre est le mode « Sombre » de 42 · Couleurs ; chaque état relevé en anglais a sa rangée « English » (décision du 18 octobre), les textes étant liés aux variables FR/EN/AR de 42 · Textes.", "y": 20796, "w": 4180, "h": 6728}];
+const out = {};
+for (const s of L) {
+  let sec = page.children.find(n => n.type === 'SECTION' && n.name === s.name);
+  if (!sec) { sec = figma.createSection(); page.appendChild(sec); sec.name = s.name; }
+  sec.x = 0; sec.y = s.y; sec.resizeWithoutConstraints(s.w, s.h);
+  for (const old of sec.children.filter(n => n.type === 'TEXT' && n.name.startsWith('Note · '))) old.remove();
+  const t = figma.createText(); sec.appendChild(t); t.name = 'Note · titre';
+  t.fontName = { family: 'Jost', style: 'Medium' }; t.fontSize = 40; t.characters = s.title; t.fills = [paint('Rôles/text')]; t.x = 80; t.y = 64;
+  const d = figma.createText(); sec.appendChild(d); d.name = 'Note · description';
+  d.fontName = { family: 'Jost', style: 'Regular' }; d.fontSize = 18; d.lineHeight = { value: 28, unit: 'PIXELS' };
+  d.characters = s.desc; d.fills = [paint('Rôles/muted')]; d.textAutoResize = 'HEIGHT'; d.resize(Math.min(1400, s.w - 160), d.height); d.x = 80; d.y = 124;
+  out[s.id] = sec.id;
+}
+return { sections: out };

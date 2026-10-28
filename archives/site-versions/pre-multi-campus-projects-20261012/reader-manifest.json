@@ -1,0 +1,962 @@
+{
+  "date": "2026-10-12",
+  "state": "Before multi-campus projects and independent left-menu/main-menu navigation.",
+  "entry": "preview.html",
+  "originalController": "project-repository-124",
+  "originalContentPreviewEntry": "91",
+  "exactOriginalFiles": 196,
+  "runtimeModules": 51,
+  "runtimeStylesheets": 33,
+  "runtimeJSON": 5,
+  "isolatedStorageKeys": [
+    "horizon-archive-pre-multi-campus-20261012-preferences-v2",
+    "horizon-archive-pre-multi-campus-20261012-preferences-v1",
+    "horizon-archive-pre-multi-campus-20261012-view",
+    "horizon-archive-pre-multi-campus-20261012-theme-v1",
+    "horizon-archive-pre-multi-campus-20261012-comments-v1:",
+    "horizon-archive-pre-multi-campus-20261012-reports-v1",
+    "horizon-archive-pre-multi-campus-20261012-repository-v1:"
+  ],
+  "adaptations": [
+    {
+      "path": "runtime/author-preview-fit.mjs",
+      "source": "author-preview-fit.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/awards.css",
+      "source": "awards.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/brand-wordmark.css",
+      "source": "brand-wordmark.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/brand-wordmark.mjs",
+      "source": "brand-wordmark.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/campus-details.css",
+      "source": "campus-details.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/campus-details.mjs",
+      "source": "campus-details.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/campus-direction.css",
+      "source": "campus-direction.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/campus-direction.mjs",
+      "source": "campus-direction.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/campus-location-overrides.json",
+      "source": "campus-location-overrides.json",
+      "adapted": false
+    },
+    {
+      "path": "runtime/campus-map-dialog.css",
+      "source": "campus-map-dialog.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/campus-map-dialog.mjs",
+      "source": "campus-map-dialog.mjs",
+      "adapted": true
+    },
+    {
+      "path": "runtime/campus-outbound.mjs",
+      "source": "campus-outbound.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/campus-preload.mjs",
+      "source": "campus-preload.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/campus-profiles.json",
+      "source": "campus-profiles.json",
+      "adapted": false
+    },
+    {
+      "path": "runtime/campus-sheet.mjs",
+      "source": "campus-sheet.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/campus-website-locales.json",
+      "source": "campus-website-locales.json",
+      "adapted": false
+    },
+    {
+      "path": "runtime/campus-website.mjs",
+      "source": "campus-website.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/campus-websites.json",
+      "source": "campus-websites.json",
+      "adapted": false
+    },
+    {
+      "path": "runtime/campuses.json",
+      "source": "campuses.json",
+      "adapted": false
+    },
+    {
+      "path": "runtime/comment-mention-picker.css",
+      "source": "comment-mention-picker.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/comment-mention-picker.mjs",
+      "source": "comment-mention-picker.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/comment-mentions.mjs",
+      "source": "comment-mentions.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/comments.css",
+      "source": "comments.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/comments.mjs",
+      "source": "comments.mjs",
+      "adapted": true
+    },
+    {
+      "path": "runtime/content-controls.css",
+      "source": "content-controls.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/content-controls.mjs",
+      "source": "content-controls.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/content-filters.mjs",
+      "source": "content-filters.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/content-layout.css",
+      "source": "content-layout.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/content-preferences.mjs",
+      "source": "content-preferences.mjs",
+      "adapted": true
+    },
+    {
+      "path": "runtime/content-preview-art.mjs",
+      "source": "content-preview-art.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/content-preview-data.mjs",
+      "source": "content-preview-data.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/content-preview.css",
+      "source": "content-preview.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/content-report.css",
+      "source": "content-report.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/content-report.mjs",
+      "source": "content-report.mjs",
+      "adapted": true
+    },
+    {
+      "path": "runtime/content-transitions.mjs",
+      "source": "content-transitions.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/contextual-discovery.css",
+      "source": "contextual-discovery.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/control-glass.css",
+      "source": "control-glass.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/detail-gate.mjs",
+      "source": "detail-gate.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/detail-scroll.css",
+      "source": "detail-scroll.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/detail-scroll.mjs",
+      "source": "detail-scroll.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/dock-navigation.css",
+      "source": "dock-navigation.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/dock-navigation.mjs",
+      "source": "dock-navigation.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/dock-search-data.mjs",
+      "source": "dock-search-data.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/dock-search.css",
+      "source": "dock-search.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/dock-search.mjs",
+      "source": "dock-search.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/entrance.css",
+      "source": "entrance.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/entrance.mjs",
+      "source": "entrance.mjs",
+      "adapted": true
+    },
+    {
+      "path": "runtime/floating-search.css",
+      "source": "floating-search.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/geography-loader.mjs",
+      "source": "geography-loader.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/geography-worker.mjs",
+      "source": "geography-worker.mjs",
+      "adapted": true
+    },
+    {
+      "path": "runtime/globe-framing.css",
+      "source": "globe-framing.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/globe-layout.mjs",
+      "source": "globe-layout.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/globe-style.mjs",
+      "source": "globe-style.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/integrated-globe.css",
+      "source": "integrated-globe.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/integrated-globe.mjs",
+      "source": "integrated-globe.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/journal-ui.mjs",
+      "source": "journal-ui.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/journal.css",
+      "source": "journal.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/media-viewer.css",
+      "source": "media-viewer.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/media-viewer.mjs",
+      "source": "media-viewer.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/navigation-policy.mjs",
+      "source": "navigation-policy.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/perf-diagnostics.mjs",
+      "source": "perf-diagnostics.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/polar-cap-layer.mjs",
+      "source": "polar-cap-layer.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/polar-geometry.mjs",
+      "source": "polar-geometry.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/profile-data.mjs",
+      "source": "profile-data.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/profile-sections.mjs",
+      "source": "profile-sections.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/profile-ui.mjs",
+      "source": "profile-ui.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/profiles.css",
+      "source": "profiles.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/project-filter-dialog.css",
+      "source": "project-filter-dialog.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/project-filter-dialog.mjs",
+      "source": "project-filter-dialog.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/project-trial.mjs",
+      "source": "project-trial.mjs",
+      "adapted": true
+    },
+    {
+      "path": "runtime/project-ui.mjs",
+      "source": "project-ui.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/projects.css",
+      "source": "projects.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/random-campus.mjs",
+      "source": "random-campus.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/random-discovery.mjs",
+      "source": "random-discovery.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/readable-glass.css",
+      "source": "readable-glass.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/reading-scope.mjs",
+      "source": "reading-scope.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/responsive-content.css",
+      "source": "responsive-content.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/responsive-dock.css",
+      "source": "responsive-dock.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/scope-popover.css",
+      "source": "scope-popover.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/scope-popover.mjs",
+      "source": "scope-popover.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/scope-selectors.mjs",
+      "source": "scope-selectors.mjs",
+      "adapted": false
+    },
+    {
+      "path": "runtime/scrollbars.css",
+      "source": "scrollbars.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/sticky-header.css",
+      "source": "sticky-header.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/theme-bootstrap.js",
+      "source": "theme-bootstrap.js",
+      "adapted": true
+    },
+    {
+      "path": "runtime/theme-menu.css",
+      "source": "theme-menu.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/theme-menu.mjs",
+      "source": "theme-menu.mjs",
+      "adapted": true
+    },
+    {
+      "path": "runtime/theme-preferences.mjs",
+      "source": "theme-preferences.mjs",
+      "adapted": true
+    },
+    {
+      "path": "runtime/welcome.css",
+      "source": "welcome.css",
+      "adapted": false
+    },
+    {
+      "path": "runtime/world-render-preparation.mjs",
+      "source": "world-render-preparation.mjs",
+      "adapted": false
+    }
+  ],
+  "sharedRepositoryDependencies": [
+    "../../assets/",
+    "../../vendor/",
+    "../../geography/",
+    "../../../assets/",
+    "../../../map-data/",
+    "../../../decryption-examples/",
+    "../../../../figma/"
+  ],
+  "verification": {
+    "exactOriginalFiles": 196,
+    "syntaxModules": 53,
+    "localReferences": 166,
+    "missingLocalReferences": 0,
+    "browser": "Chrome headless at 960x640 on 2026-10-12: archived single-campus data, preserved routes/query, reproduced old dock fade; six static SVG icons measured and final overview screenshot inspected. Comparative active/archived replay: 17 passing scenarios.",
+    "routeCases": 5,
+    "singleCampusProject": "ft-transcendence-building-together remains campus=paris; original single-campus filters preserved.",
+    "browserResults": "../../checks/20261012-independent-menu-results.json",
+    "staticIconCases": 6
+  },
+  "files": [
+    {
+      "path": "source-manifest.json",
+      "bytes": 30904,
+      "sha256": "819977b84e8904077b6161c9d3ea498e8f44a6a031c47782d579cfc66dbe68ce"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6458,
+      "sha256": "d9709ab65f289ae69d634eb286691a8eb0c492cd894f04ee101757083a16803f"
+    },
+    {
+      "path": "preview.html",
+      "bytes": 18832,
+      "sha256": "1db14221777c84e0d5431b79787b1a90dc4f774caeab6c0732857f37d23b445b"
+    },
+    {
+      "path": "viewer-entry.mjs",
+      "bytes": 1173,
+      "sha256": "5360f3ccc52c9be091ad75e56b5628c586116c57dcfc43beb8223c3f58659892"
+    },
+    {
+      "path": "viewer-welcome.mjs",
+      "bytes": 69406,
+      "sha256": "81a892227a26328267afeda5fe20fef08081080e50021fa8aa2ebbadedce1378"
+    },
+    {
+      "path": "runtime/author-preview-fit.mjs",
+      "bytes": 6467,
+      "sha256": "286dce97676bfef0a0c1042e5d8447b4aa90d89ae5690e3a53b522ad270fee33"
+    },
+    {
+      "path": "runtime/awards.css",
+      "bytes": 1857,
+      "sha256": "2c0156f4d833c22e309ff32d7c77da54a898bffb846d3ce1a8446b498b2d877d"
+    },
+    {
+      "path": "runtime/brand-wordmark.css",
+      "bytes": 498,
+      "sha256": "a4891ff9e4a945f6d9c6f80f9bf85b94ab383b2fea320b3c95642550be61fdb8"
+    },
+    {
+      "path": "runtime/brand-wordmark.mjs",
+      "bytes": 6404,
+      "sha256": "3a8c66dcc24435792f0f765297734618957bf08d7f6b86bb2019829e450a6292"
+    },
+    {
+      "path": "runtime/campus-details.css",
+      "bytes": 11061,
+      "sha256": "2070e64788f9e0a05ad1e143bc0b68914438548600195faa54e8a8c56c74e459"
+    },
+    {
+      "path": "runtime/campus-details.mjs",
+      "bytes": 18756,
+      "sha256": "d80d30ac49b0644dbfdc4da0b8207f846353cfa793d552b385b4edbdf90742eb"
+    },
+    {
+      "path": "runtime/campus-direction.css",
+      "bytes": 1856,
+      "sha256": "ce0d7a21eca296c5f8220ad7aa4efca5192411848fd9937cd5895b31a2b924ef"
+    },
+    {
+      "path": "runtime/campus-direction.mjs",
+      "bytes": 5574,
+      "sha256": "383b1ca089924dc5d66f340b0dc167635b1c7b2157594481e071754a3ebbc3c3"
+    },
+    {
+      "path": "runtime/campus-location-overrides.json",
+      "bytes": 8045,
+      "sha256": "13d3e1afac34bc0c5fe0ca7eafc21f917b4af8f0c524a642d525bf3e303f2b76"
+    },
+    {
+      "path": "runtime/campus-map-dialog.css",
+      "bytes": 2484,
+      "sha256": "6198f760ddffdaa6ccd2d1bfba38f52261aa17db985c532f9496e6f01b412c12"
+    },
+    {
+      "path": "runtime/campus-map-dialog.mjs",
+      "bytes": 6943,
+      "sha256": "ef68639fd6af7f876df3152053a5692a6e3e5215e60c0817c11298ef9e74e8c0"
+    },
+    {
+      "path": "runtime/campus-outbound.mjs",
+      "bytes": 3319,
+      "sha256": "e452bb28cb34784de25c3eb1807b947fba906d8aeee4134ece96951c576ea840"
+    },
+    {
+      "path": "runtime/campus-preload.mjs",
+      "bytes": 21077,
+      "sha256": "1184a4329cb2119cd804e07a14e77ad96d141da96f2011d22c823699d3bae4cc"
+    },
+    {
+      "path": "runtime/campus-profiles.json",
+      "bytes": 8942,
+      "sha256": "bf7994d97cb2ad8310af013809aab5d2ffcc4b3dfc4bc580d36380bbd8c32b17"
+    },
+    {
+      "path": "runtime/campus-sheet.mjs",
+      "bytes": 9077,
+      "sha256": "9b89a2a336dad3ac75fcf1dcf927da110dd290129f8084e71eeb17d3ca35e911"
+    },
+    {
+      "path": "runtime/campus-website-locales.json",
+      "bytes": 56887,
+      "sha256": "2f3079b16cd05291a8387023ef2ed80855219ac0f61cbf7919ec6311c9572159"
+    },
+    {
+      "path": "runtime/campus-website.mjs",
+      "bytes": 1658,
+      "sha256": "79edb1a8461605b471b8e307a50c65ca4251a9dc8666d503ceedcaca8f374e04"
+    },
+    {
+      "path": "runtime/campus-websites.json",
+      "bytes": 12253,
+      "sha256": "cbb2f7193fe404b7b57e5c5b7dadee7163e54cb90743583b4c2347f4882aa512"
+    },
+    {
+      "path": "runtime/campuses.json",
+      "bytes": 21911,
+      "sha256": "0e6a49a0867443efd80ab1f0831e56c3a061beb136d6dc8642a462db6e41c850"
+    },
+    {
+      "path": "runtime/comment-mention-picker.css",
+      "bytes": 1569,
+      "sha256": "836f172c2e5ea05d6872a973a979585ff867da098f54d9047b378b97acd91cea"
+    },
+    {
+      "path": "runtime/comment-mention-picker.mjs",
+      "bytes": 6438,
+      "sha256": "b6c8cf68a2b9f8db175f72029fe56538f0e944c71d1ede72579ba20ea8b17947"
+    },
+    {
+      "path": "runtime/comment-mentions.mjs",
+      "bytes": 10496,
+      "sha256": "67a95df40374ea05dd24d5632dbe6b70a2eca1e37bbecda018eda16a17097440"
+    },
+    {
+      "path": "runtime/comments.css",
+      "bytes": 9171,
+      "sha256": "868407e64436a7a8e63363af7b6c669b765860f0905697bdbbeaa8f59d33ef60"
+    },
+    {
+      "path": "runtime/comments.mjs",
+      "bytes": 36964,
+      "sha256": "711b295d1601609354378f07eb5942f1d239e30f28835199c3860d63b982d39b"
+    },
+    {
+      "path": "runtime/content-controls.css",
+      "bytes": 10306,
+      "sha256": "cc14237d5d978a625c8481701d82a6c49300cbde33fedcd8a9fa99d52f8b03e0"
+    },
+    {
+      "path": "runtime/content-controls.mjs",
+      "bytes": 23975,
+      "sha256": "18c7d57b7e5bb90b828dbc2690fe864a7ffb4f217d9dbfe05cdb811fe13f0bb9"
+    },
+    {
+      "path": "runtime/content-filters.mjs",
+      "bytes": 8664,
+      "sha256": "0b8ef39b02478a77ac9d5942fc0b010ff9df0406e43988eb5cb84ba2157fa6e1"
+    },
+    {
+      "path": "runtime/content-layout.css",
+      "bytes": 3802,
+      "sha256": "a96bf6a639bbe0ec2e58372999f68ff96d35d34bf19989b721918bfe8846807d"
+    },
+    {
+      "path": "runtime/content-preferences.mjs",
+      "bytes": 5116,
+      "sha256": "462fb23dada8877f2aeb8bd8a43a45a8ee8679b611965ca5c26c348d34f7ad48"
+    },
+    {
+      "path": "runtime/content-preview-art.mjs",
+      "bytes": 8619,
+      "sha256": "6c62c48e772bf24496f57de9220f710ba91828c7ae708e65fa1851a1c03e40f1"
+    },
+    {
+      "path": "runtime/content-preview-data.mjs",
+      "bytes": 27173,
+      "sha256": "26dc9ed142453aeceb5750ad8813ba1c86cbf9fa9f524356118f00901c31732d"
+    },
+    {
+      "path": "runtime/content-preview.css",
+      "bytes": 23197,
+      "sha256": "6df3c25b15bb9a2c017885ac88da8c17adc6256daef8f895ea1fd5bc2fd05d07"
+    },
+    {
+      "path": "runtime/content-report.css",
+      "bytes": 3937,
+      "sha256": "98ced8e773ef4d80fbf2a4b7364a923812dcb3b4ab130951873c16329ea14500"
+    },
+    {
+      "path": "runtime/content-report.mjs",
+      "bytes": 11560,
+      "sha256": "0049248663055f066651aba068547f4f06d8373d02554ebdb99d47a47e20ed30"
+    },
+    {
+      "path": "runtime/content-transitions.mjs",
+      "bytes": 2202,
+      "sha256": "f60f2b1928815bb256d073cdf9a5614e02813ba411aba665544d50e6ecc6d533"
+    },
+    {
+      "path": "runtime/contextual-discovery.css",
+      "bytes": 6215,
+      "sha256": "859cc23c2ff1504b5c5b61684a5bcd7868f3ac91c025a95741607eca74e3f607"
+    },
+    {
+      "path": "runtime/control-glass.css",
+      "bytes": 4402,
+      "sha256": "042bb6e05f163cfd198d5cfc98f3576877a1bf1ddb6093fda64c456bc7eda50d"
+    },
+    {
+      "path": "runtime/detail-gate.mjs",
+      "bytes": 7243,
+      "sha256": "3ea851da71d99cc26a1cdd43a47f2af7363c27b409829ae5ef36a2749dba2d74"
+    },
+    {
+      "path": "runtime/detail-scroll.css",
+      "bytes": 5227,
+      "sha256": "9aa6d69e112e1fae3973a613ebd404cd8e83d52b0188a42a986cb6300bd70e0c"
+    },
+    {
+      "path": "runtime/detail-scroll.mjs",
+      "bytes": 10856,
+      "sha256": "6d34289d73a5ca9a1141e1311fd85ceb5b3650e47f95a6502abcb0083c2de72c"
+    },
+    {
+      "path": "runtime/dock-navigation.css",
+      "bytes": 2405,
+      "sha256": "a650cdea446b15c3ec47fb8ca4fe145d27dadb43286e48f31450d6fee972dbfe"
+    },
+    {
+      "path": "runtime/dock-navigation.mjs",
+      "bytes": 2239,
+      "sha256": "76d27ce114a554a64f33f1ee47b7af0b565d1eff27677afeb0a14181e60ce97e"
+    },
+    {
+      "path": "runtime/dock-search-data.mjs",
+      "bytes": 6389,
+      "sha256": "24048cb690e33da039c33698de7adaf25e4b8b1558ecc9fe9c8c8d83299bbef7"
+    },
+    {
+      "path": "runtime/dock-search.css",
+      "bytes": 24134,
+      "sha256": "2ac9c079d5142898615a98955fe1881af016f719e06c879727bc72ea583962fc"
+    },
+    {
+      "path": "runtime/dock-search.mjs",
+      "bytes": 22326,
+      "sha256": "5821dd234328abe5f56b761bae71c4e6534bbebff34e21e041788a67ee421b28"
+    },
+    {
+      "path": "runtime/entrance.css",
+      "bytes": 4056,
+      "sha256": "ccfc3492d7dcf1d4ec4b0d0b45c7dfd0535e2ffd2f80bf381a9921b5740a944e"
+    },
+    {
+      "path": "runtime/entrance.mjs",
+      "bytes": 13196,
+      "sha256": "e9bceab9a3e483955172d98e66a167c1febdd9a4bc6c0cbdce6e2c26f2830509"
+    },
+    {
+      "path": "runtime/floating-search.css",
+      "bytes": 5018,
+      "sha256": "223a0592f6c1ae63c5bd0a2988efdd8392ab8745d1430c8424a3929106c1122b"
+    },
+    {
+      "path": "runtime/geography-loader.mjs",
+      "bytes": 1207,
+      "sha256": "16b6c4205c9bfc45ae7649411146fc7164f44c293ea2eefd70111c3852fb35b0"
+    },
+    {
+      "path": "runtime/geography-worker.mjs",
+      "bytes": 1292,
+      "sha256": "9659d0c6c3b6ce2f8df54337cf84d4dfa407aac9273e1a093b4c3a43bbb91116"
+    },
+    {
+      "path": "runtime/globe-framing.css",
+      "bytes": 5447,
+      "sha256": "b900b965dd49e68fc865b2022450aa7e1b8a361021595bf64756a72872a830d5"
+    },
+    {
+      "path": "runtime/globe-layout.mjs",
+      "bytes": 777,
+      "sha256": "77cb50797dccdffbbe7d171f204142199149bd1f179f797064553c3e1604cd68"
+    },
+    {
+      "path": "runtime/globe-style.mjs",
+      "bytes": 21951,
+      "sha256": "5833157316df2fd12b68d0ff1f63bcc14002e613fe5c49a473f12c8b71f1c313"
+    },
+    {
+      "path": "runtime/integrated-globe.css",
+      "bytes": 3852,
+      "sha256": "63f1ecc932b9fc0f9b4f037a93d08ccf53b48ae647f1ef5a7bf6917ed81faf27"
+    },
+    {
+      "path": "runtime/integrated-globe.mjs",
+      "bytes": 40430,
+      "sha256": "bf4dc9fdf7bd398e95389202ea0742e1cb9187cb066bc354d8b4aa7867ecc158"
+    },
+    {
+      "path": "runtime/journal-ui.mjs",
+      "bytes": 2184,
+      "sha256": "1ac46ac56cbf3f6c9af7ee089dabc238b82e355c1d4f574d7de187f1908dbd55"
+    },
+    {
+      "path": "runtime/journal.css",
+      "bytes": 725,
+      "sha256": "7c93f3be7197f2418e30444f3636ff5dd677f18e4b0dadccc87b466fd0d99858"
+    },
+    {
+      "path": "runtime/media-viewer.css",
+      "bytes": 4463,
+      "sha256": "4890ab241379ea3bcf6336260634d8a6890d272d85e5aa09bff838db624f24a3"
+    },
+    {
+      "path": "runtime/media-viewer.mjs",
+      "bytes": 9021,
+      "sha256": "3ca844c67266cb6084abd476a06ff1e39d73fbda900978f03e4bb6f849d3a3ab"
+    },
+    {
+      "path": "runtime/navigation-policy.mjs",
+      "bytes": 5322,
+      "sha256": "4db9e09e09038370ed0f5a1ee2d8eee992fb6103b2987cbf3d9eec75dedf1524"
+    },
+    {
+      "path": "runtime/perf-diagnostics.mjs",
+      "bytes": 28635,
+      "sha256": "4016591e20323f7c65fedbc43c80357625eb17f63557fc4a88402e647c9df1a3"
+    },
+    {
+      "path": "runtime/polar-cap-layer.mjs",
+      "bytes": 7581,
+      "sha256": "c42cfcb4f41641cf71b633ced5fc608aa1a7f8f1013d0928178f401507613899"
+    },
+    {
+      "path": "runtime/polar-geometry.mjs",
+      "bytes": 2734,
+      "sha256": "783b6ed5d1ac98b1a51ae73d30c4c4497c79ccb0029df258274c1b60a5788ee1"
+    },
+    {
+      "path": "runtime/profile-data.mjs",
+      "bytes": 25887,
+      "sha256": "d57756d01f5fba20dea308b3e3103fdcca7ce1d4db83caa2b8386042ab3258bf"
+    },
+    {
+      "path": "runtime/profile-sections.mjs",
+      "bytes": 992,
+      "sha256": "a339932705f4ea306f29d0c6a4ca2e67137207b2e0d0168eee15b916134b3a9e"
+    },
+    {
+      "path": "runtime/profile-ui.mjs",
+      "bytes": 34881,
+      "sha256": "fb667a5c476ba3d8843ac77f3dbdaaec80819662e32a284011bcba08fdc8ef91"
+    },
+    {
+      "path": "runtime/profiles.css",
+      "bytes": 39430,
+      "sha256": "f4346993852c241205032081cac3e2f4db8a2231f9e1e8455e0092dc470f6c22"
+    },
+    {
+      "path": "runtime/project-filter-dialog.css",
+      "bytes": 5449,
+      "sha256": "2227fcbcf8527c68dbee2dd31dc4d59b6b61578236abbfe3b318adb0e8148543"
+    },
+    {
+      "path": "runtime/project-filter-dialog.mjs",
+      "bytes": 9094,
+      "sha256": "47c0c3bfd6b6b3dd7a03eb3efea7709ffc550f5634eea8827b3d6fdea4b8d865"
+    },
+    {
+      "path": "runtime/project-trial.mjs",
+      "bytes": 9395,
+      "sha256": "be4e2ad1e4ef9ede5829cbb83a7fb879b5bce333fe75034aa1763061f3304e81"
+    },
+    {
+      "path": "runtime/project-ui.mjs",
+      "bytes": 17450,
+      "sha256": "883cd1f0461df82a8ae2d675f84a5d6511290f070a595f49e1244b5d9c0013de"
+    },
+    {
+      "path": "runtime/projects.css",
+      "bytes": 13794,
+      "sha256": "b148c6be283f6fc8a73609608359c2dafa0b26feb0149b306f5781dac32d4f74"
+    },
+    {
+      "path": "runtime/random-campus.mjs",
+      "bytes": 1464,
+      "sha256": "649a4ce5da9271f9edcc7b028005ae6b7bf0a969087ba9eed585f234b17ce744"
+    },
+    {
+      "path": "runtime/random-discovery.mjs",
+      "bytes": 3430,
+      "sha256": "104005642da690db2551d3a0a1a22bef55a2ace1f232b4f850522335d5aa893e"
+    },
+    {
+      "path": "runtime/readable-glass.css",
+      "bytes": 3721,
+      "sha256": "922f0c523f48bb5f066c6d440df92734df7afff6bce332ada5b2c96e02a87687"
+    },
+    {
+      "path": "runtime/reading-scope.mjs",
+      "bytes": 1564,
+      "sha256": "cabd899895487c7f7c69ca879cfb83db59d2f507bcda2863577ecf7cc5238ca4"
+    },
+    {
+      "path": "runtime/responsive-content.css",
+      "bytes": 13036,
+      "sha256": "4babdc406a578228339eebbd2b8aebbd584941d36dabb3983d2e2d1f0fadc077"
+    },
+    {
+      "path": "runtime/responsive-dock.css",
+      "bytes": 4523,
+      "sha256": "af8e39eb97d425dd7eaf4a3e0a73e6f4055d03ab4ba9781f5b83fad0e758528c"
+    },
+    {
+      "path": "runtime/scope-popover.css",
+      "bytes": 858,
+      "sha256": "832b7cbf482dd63200ef1d2e550f4b3eeb18e971a914bb86325a6c413502b991"
+    },
+    {
+      "path": "runtime/scope-popover.mjs",
+      "bytes": 3694,
+      "sha256": "af6c72a4bd8d0d9277ebc4ef9189b6248d883b906b1a495951b25354fe36fc4a"
+    },
+    {
+      "path": "runtime/scope-selectors.mjs",
+      "bytes": 3433,
+      "sha256": "37bd969fef32bc03b95ef471fe57ca544786e916b2d1c8890244467134eeb1bd"
+    },
+    {
+      "path": "runtime/scrollbars.css",
+      "bytes": 2237,
+      "sha256": "5e4b6edbf78abd360fa7f777f55c5b2032ff78fffaee53744532de066ee8f1d0"
+    },
+    {
+      "path": "runtime/sticky-header.css",
+      "bytes": 3893,
+      "sha256": "26410015e1d9fa5aa2d837e66a3231bdabdf27c72d54d55f938e83e96b7c3298"
+    },
+    {
+      "path": "runtime/theme-bootstrap.js",
+      "bytes": 611,
+      "sha256": "998da8ecf0ad06a52e768aa89fd5712f00fc17e4df7ca3ea58a267bdfbc942da"
+    },
+    {
+      "path": "runtime/theme-menu.css",
+      "bytes": 1861,
+      "sha256": "c25ef151d17e4bb56ced25956317da0b19791069a8e799c053300a8d71ae134d"
+    },
+    {
+      "path": "runtime/theme-menu.mjs",
+      "bytes": 3865,
+      "sha256": "d016ce88c86b199f33c0c0a85cf7aefebf01ee7f19cc94f9391ec3d14a3e83e0"
+    },
+    {
+      "path": "runtime/theme-preferences.mjs",
+      "bytes": 2569,
+      "sha256": "c0b5da663d740e449020b999c5cf898ef76400e25b20e30806f2e46384d5772f"
+    },
+    {
+      "path": "runtime/welcome.css",
+      "bytes": 22533,
+      "sha256": "5b009f8a719890faa460f36d87b09863e44ffd5e7529c1c30d912220e3a9b1d9"
+    },
+    {
+      "path": "runtime/world-render-preparation.mjs",
+      "bytes": 3784,
+      "sha256": "5a8e50649b4e281524c69af6c3c481483e39a662114a2dddc357f4121059ca08"
+    }
+  ],
+  "entryAdaptations": [
+    "Exact current document URL applied to static route/icon fragments before application mount, retaining any outer query string."
+  ]
+}

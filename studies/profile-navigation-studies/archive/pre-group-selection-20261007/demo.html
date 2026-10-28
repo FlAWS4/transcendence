@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="Quatre études interactives de navigation dans les profils de 42 Horizon.">
+  <title>42 Horizon — Navigation des profils</title>
+  <link rel="stylesheet" href="assets/tokens.css">
+  <link rel="stylesheet" href="assets/jost.css">
+  <link rel="stylesheet" href="assets/control-glass.css">
+  <link rel="stylesheet" href="assets/readable-glass.css">
+  <link rel="stylesheet" href="content-controls.css?v=6">
+  <link rel="stylesheet" href="demo.css?v=6">
+  <script type="module" src="demo.mjs?v=7"></script>
+</head>
+<body class="profile-study" data-variant="1" data-profile-open="false">
+  <a class="skip-link" href="#study-content">Aller au contenu</a>
+  <header class="lab-header" aria-label="Commandes de l’étude">
+    <div class="lab-name"><a href="index.html" class="lab-back">← Les quatre pistes</a><span id="study-title">01 · Repères permanents</span></div>
+    <div class="lab-controls"><nav id="study-variants" aria-label="Choisir une piste"></nav><button id="study-theme" class="lab-button" type="button" aria-label="Activer le thème sombre">Mode sombre</button></div>
+  </header>
+  <div class="product-shell">
+    <header class="product-header"><a href="#explore" class="brand" aria-label="Horizon · Explorer"><img src="assets/logo-42.svg" alt="42" width="46" height="33"><span>HORIZON</span></a><span class="product-context">La communauté, au-delà du code</span></header>
+    <main id="study-content" tabindex="-1"></main>
+    <footer class="lab-footer">Étude du 7 octobre 2026 · Profils, projets et parcours fictifs. Pseudos de démonstration.<br>Les quatre pistes partagent les mêmes contenus. Aucun changement sur le site principal.</footer>
+  </div>
+  <div id="navigation-area" class="navigation-area"></div>
+  <dialog id="horizon-menu" class="horizon-menu glass" aria-labelledby="horizon-menu-title">
+    <div class="dialog-heading"><h2 id="horizon-menu-title">Menu Horizon</h2><button class="quiet-button" id="close-menu" type="button" aria-label="Fermer le menu Horizon">×</button></div>
+    <p>Les grandes rubriques du site</p><nav id="horizon-menu-links" aria-label="Navigation générale Horizon"></nav>
+  </dialog>
+  <div id="route-status" class="sr-only" role="status" aria-live="polite"></div>
+</body>
+</html>

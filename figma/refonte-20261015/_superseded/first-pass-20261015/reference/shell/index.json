@@ -1,0 +1,837 @@
+{
+ "area": "shell",
+ "states": [
+  {
+   "name": "g-dock-projects--desktop--fr-light",
+   "area": "shell",
+   "viewport": "reference/shell/g-dock-projects--desktop--fr-light.png",
+   "dom": "dom/shell/g-dock-projects--desktop--fr-light.json.gz",
+   "nodes": 449,
+   "doc": [
+    1440,
+    2566
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "g-dock",
+   "description": "Projets actif ; en-tête 42 HORIZON, filtre Monde, capsule de recherche, dé actif, compte visiteur",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "viewportSize": [
+    1440,
+    960
+   ],
+   "route": "#projects",
+   "facts": {
+    "theme": "light",
+    "themePreference": "light",
+    "lang": "fr",
+    "dir": "ltr",
+    "viewport": [
+     1440,
+     960
+    ],
+    "scrollY": 0,
+    "route": "#projects",
+    "section": "projects",
+    "reading": "false",
+    "compactScope": "false",
+    "scope": {
+     "name": "Monde",
+     "level": "world",
+     "country": null
+    },
+    "die": {
+     "title": "Découvrir un projet",
+     "label": "Découvrir un projet",
+     "disabled": false,
+     "visible": true
+    },
+    "search": {
+     "open": "false",
+     "capsule": "Chercher dans Horizon",
+     "count": 0,
+     "status": "",
+     "helper": null,
+     "more": false,
+     "selected": null
+    },
+    "account": {
+     "open": false,
+     "title": null,
+     "avatar": false,
+     "trigger": "Menu du compte",
+     "extras": []
+    },
+    "dialog": {
+     "open": false,
+     "kind": null,
+     "title": null
+    },
+    "backTop": {
+     "visible": false,
+     "opacity": "1",
+     "label": "Remonter en haut"
+    },
+    "dockScrolling": null,
+    "wordmark": "HORIZON",
+    "arabicBrand": false,
+    "dockLabelHeights": [
+     17.5,
+     17.5,
+     17.5,
+     17.5,
+     17.5
+    ],
+    "dockCurrent": "projects",
+    "awardsNote": null,
+    "loading": null,
+    "focus": "BODY"
+   },
+   "keptFocus": false,
+   "capturedAt": "2026-10-15 21:15:03"
+  },
+  {
+   "name": "g-dock-projects--desktop--fr-dark",
+   "area": "shell",
+   "viewport": "reference/shell/g-dock-projects--desktop--fr-dark.png",
+   "dom": "dom/shell/g-dock-projects--desktop--fr-dark.json.gz",
+   "nodes": 449,
+   "doc": [
+    1440,
+    2566
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "g-dock",
+   "description": "Projets actif, thème sombre",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "viewportSize": [
+    1440,
+    960
+   ],
+   "route": "#projects",
+   "facts": {
+    "theme": "dark",
+    "themePreference": "dark",
+    "lang": "fr",
+    "dir": "ltr",
+    "viewport": [
+     1440,
+     960
+    ],
+    "scrollY": 0,
+    "route": "#projects",
+    "section": "projects",
+    "reading": "false",
+    "compactScope": "false",
+    "scope": {
+     "name": "Monde",
+     "level": "world",
+     "country": null
+    },
+    "die": {
+     "title": "Découvrir un projet",
+     "label": "Découvrir un projet",
+     "disabled": false,
+     "visible": true
+    },
+    "search": {
+     "open": "false",
+     "capsule": "Chercher dans Horizon",
+     "count": 0,
+     "status": "",
+     "helper": null,
+     "more": false,
+     "selected": null
+    },
+    "account": {
+     "open": false,
+     "title": "Menu du compte",
+     "avatar": false,
+     "trigger": "Menu du compte",
+     "extras": []
+    },
+    "dialog": {
+     "open": false,
+     "kind": null,
+     "title": null
+    },
+    "backTop": {
+     "visible": false,
+     "opacity": "1",
+     "label": "Remonter en haut"
+    },
+    "dockScrolling": null,
+    "wordmark": "HORIZON",
+    "arabicBrand": false,
+    "dockLabelHeights": [
+     17.5,
+     17.5,
+     17.5,
+     17.5,
+     17.5
+    ],
+    "dockCurrent": "projects",
+    "awardsNote": null,
+    "loading": null,
+    "focus": "BODY"
+   },
+   "keptFocus": false,
+   "capturedAt": "2026-10-15 21:15:15"
+  },
+  {
+   "name": "g-dock-people--desktop--fr-light",
+   "area": "shell",
+   "viewport": "reference/shell/g-dock-people--desktop--fr-light.png",
+   "dom": "dom/shell/g-dock-people--desktop--fr-light.json.gz",
+   "nodes": 530,
+   "doc": [
+    1440,
+    2144
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "g-dock",
+   "description": "Profils actif",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "viewportSize": [
+    1440,
+    960
+   ],
+   "route": "#people",
+   "facts": {
+    "theme": "light",
+    "themePreference": "light",
+    "lang": "fr",
+    "dir": "ltr",
+    "viewport": [
+     1440,
+     960
+    ],
+    "scrollY": 0,
+    "route": "#people",
+    "section": "people",
+    "reading": "false",
+    "compactScope": "false",
+    "scope": {
+     "name": "Monde",
+     "level": "world",
+     "country": null
+    },
+    "die": {
+     "title": "Découvrir un profil",
+     "label": "Découvrir un profil",
+     "disabled": false,
+     "visible": true
+    },
+    "search": {
+     "open": "false",
+     "capsule": "Chercher dans Horizon",
+     "count": 0,
+     "status": "",
+     "helper": null,
+     "more": false,
+     "selected": null
+    },
+    "account": {
+     "open": false,
+     "title": "Menu du compte",
+     "avatar": false,
+     "trigger": "Menu du compte",
+     "extras": []
+    },
+    "dialog": {
+     "open": false,
+     "kind": null,
+     "title": null
+    },
+    "backTop": {
+     "visible": false,
+     "opacity": "1",
+     "label": "Remonter en haut"
+    },
+    "dockScrolling": null,
+    "wordmark": "HORIZON",
+    "arabicBrand": false,
+    "dockLabelHeights": [
+     17.5,
+     17.5,
+     17.5,
+     17.5,
+     17.5
+    ],
+    "dockCurrent": "people",
+    "awardsNote": null,
+    "loading": null,
+    "focus": "BODY"
+   },
+   "keptFocus": false,
+   "capturedAt": "2026-10-15 21:15:30"
+  },
+  {
+   "name": "g-dock-people--desktop--fr-dark",
+   "area": "shell",
+   "viewport": "reference/shell/g-dock-people--desktop--fr-dark.png",
+   "dom": "dom/shell/g-dock-people--desktop--fr-dark.json.gz",
+   "nodes": 530,
+   "doc": [
+    1440,
+    2144
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "g-dock",
+   "description": "Profils actif, thème sombre",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "dark",
+   "viewportSize": [
+    1440,
+    960
+   ],
+   "route": "#people",
+   "facts": {
+    "theme": "dark",
+    "themePreference": "dark",
+    "lang": "fr",
+    "dir": "ltr",
+    "viewport": [
+     1440,
+     960
+    ],
+    "scrollY": 0,
+    "route": "#people",
+    "section": "people",
+    "reading": "false",
+    "compactScope": "false",
+    "scope": {
+     "name": "Monde",
+     "level": "world",
+     "country": null
+    },
+    "die": {
+     "title": "Découvrir un profil",
+     "label": "Découvrir un profil",
+     "disabled": false,
+     "visible": true
+    },
+    "search": {
+     "open": "false",
+     "capsule": "Chercher dans Horizon",
+     "count": 0,
+     "status": "",
+     "helper": null,
+     "more": false,
+     "selected": null
+    },
+    "account": {
+     "open": false,
+     "title": "Menu du compte",
+     "avatar": false,
+     "trigger": "Menu du compte",
+     "extras": []
+    },
+    "dialog": {
+     "open": false,
+     "kind": null,
+     "title": null
+    },
+    "backTop": {
+     "visible": false,
+     "opacity": "1",
+     "label": "Remonter en haut"
+    },
+    "dockScrolling": null,
+    "wordmark": "HORIZON",
+    "arabicBrand": false,
+    "dockLabelHeights": [
+     17.5,
+     17.5,
+     17.5,
+     17.5,
+     17.5
+    ],
+    "dockCurrent": "people",
+    "awardsNote": null,
+    "loading": null,
+    "focus": "BODY"
+   },
+   "keptFocus": false,
+   "capturedAt": "2026-10-15 21:15:33"
+  },
+  {
+   "name": "g-dock-journal--desktop--fr-light",
+   "area": "shell",
+   "viewport": "reference/shell/g-dock-journal--desktop--fr-light.png",
+   "dom": "dom/shell/g-dock-journal--desktop--fr-light.json.gz",
+   "nodes": 434,
+   "doc": [
+    1440,
+    2589
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "g-dock",
+   "description": "Chroniques actif",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "viewportSize": [
+    1440,
+    960
+   ],
+   "route": "#journal",
+   "facts": {
+    "theme": "light",
+    "themePreference": "light",
+    "lang": "fr",
+    "dir": "ltr",
+    "viewport": [
+     1440,
+     960
+    ],
+    "scrollY": 0,
+    "route": "#journal",
+    "section": "journal",
+    "reading": "false",
+    "compactScope": "false",
+    "scope": {
+     "name": "Monde",
+     "level": "world",
+     "country": null
+    },
+    "die": {
+     "title": "Découvrir un article",
+     "label": "Découvrir un article",
+     "disabled": false,
+     "visible": true
+    },
+    "search": {
+     "open": "false",
+     "capsule": "Chercher dans Horizon",
+     "count": 0,
+     "status": "",
+     "helper": null,
+     "more": false,
+     "selected": null
+    },
+    "account": {
+     "open": false,
+     "title": "Menu du compte",
+     "avatar": false,
+     "trigger": "Menu du compte",
+     "extras": []
+    },
+    "dialog": {
+     "open": false,
+     "kind": null,
+     "title": null
+    },
+    "backTop": {
+     "visible": false,
+     "opacity": "1",
+     "label": "Remonter en haut"
+    },
+    "dockScrolling": null,
+    "wordmark": "HORIZON",
+    "arabicBrand": false,
+    "dockLabelHeights": [
+     17.5,
+     17.5,
+     17.5,
+     17.5,
+     17.5
+    ],
+    "dockCurrent": "journal",
+    "awardsNote": null,
+    "loading": null,
+    "focus": "BODY"
+   },
+   "keptFocus": false,
+   "capturedAt": "2026-10-15 21:15:38"
+  },
+  {
+   "name": "awards--desktop--fr-light",
+   "area": "shell",
+   "viewport": "reference/shell/awards--desktop--fr-light.png",
+   "dom": "dom/shell/awards--desktop--fr-light.json.gz",
+   "nodes": 45,
+   "doc": [
+    1440,
+    960
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "awards",
+   "description": "Page 42 Awards : AWARDS dans l’en-tête, message « à venir », menu 42 Awards actif",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "viewportSize": [
+    1440,
+    960
+   ],
+   "route": "#awards",
+   "facts": {
+    "theme": "light",
+    "themePreference": "light",
+    "lang": "fr",
+    "dir": "ltr",
+    "viewport": [
+     1440,
+     960
+    ],
+    "scrollY": 0,
+    "route": "#awards",
+    "section": "awards",
+    "reading": "false",
+    "compactScope": "false",
+    "scope": {
+     "name": "Monde",
+     "level": "world",
+     "country": null
+    },
+    "die": {
+     "title": "Visiter un campus",
+     "label": "Visiter un campus",
+     "disabled": true,
+     "visible": false
+    },
+    "search": {
+     "open": "false",
+     "capsule": "Chercher dans Horizon",
+     "count": 0,
+     "status": "",
+     "helper": null,
+     "more": false,
+     "selected": null
+    },
+    "account": {
+     "open": false,
+     "title": null,
+     "avatar": false,
+     "trigger": "Menu du compte",
+     "extras": []
+    },
+    "dialog": {
+     "open": false,
+     "kind": null,
+     "title": null
+    },
+    "backTop": {
+     "visible": false,
+     "opacity": "1",
+     "label": "Remonter en haut"
+    },
+    "dockScrolling": null,
+    "wordmark": "AWARDS",
+    "arabicBrand": false,
+    "dockLabelHeights": [
+     17.5,
+     17.5,
+     17.5,
+     17.5,
+     17.5
+    ],
+    "dockCurrent": "awards",
+    "awardsNote": "Les 42 Awards arrivent bientôt.",
+    "loading": null,
+    "focus": "BODY"
+   },
+   "keptFocus": false,
+   "capturedAt": "2026-10-15 21:15:41"
+  },
+  {
+   "name": "g-header-reading-project--desktop--fr-light",
+   "area": "shell",
+   "viewport": "reference/shell/g-header-reading-project--desktop--fr-light.png",
+   "dom": "dom/shell/g-header-reading-project--desktop--fr-light.json.gz",
+   "nodes": 137,
+   "doc": [
+    1440,
+    1467
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "project-overview",
+   "description": "Fiche projet : filtre remonté dans l’en-tête (lecture), dock Projets",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "viewportSize": [
+    1440,
+    960
+   ],
+   "route": "#projects/minishell-under-the-prompt",
+   "facts": {
+    "theme": "light",
+    "themePreference": "light",
+    "lang": "fr",
+    "dir": "ltr",
+    "viewport": [
+     1440,
+     960
+    ],
+    "scrollY": 0,
+    "route": "#projects/minishell-under-the-prompt",
+    "section": "projects",
+    "reading": "true",
+    "compactScope": "false",
+    "scope": {
+     "name": "Monde",
+     "level": "world",
+     "country": null
+    },
+    "die": {
+     "title": "Découvrir un projet",
+     "label": "Découvrir un projet",
+     "disabled": false,
+     "visible": true
+    },
+    "search": {
+     "open": "false",
+     "capsule": "Chercher dans Horizon",
+     "count": 0,
+     "status": "",
+     "helper": null,
+     "more": false,
+     "selected": null
+    },
+    "account": {
+     "open": false,
+     "title": null,
+     "avatar": false,
+     "trigger": "Menu du compte",
+     "extras": []
+    },
+    "dialog": {
+     "open": false,
+     "kind": null,
+     "title": null
+    },
+    "backTop": {
+     "visible": false,
+     "opacity": "1",
+     "label": "Remonter en haut"
+    },
+    "dockScrolling": null,
+    "wordmark": "HORIZON",
+    "arabicBrand": false,
+    "dockLabelHeights": [
+     17.5,
+     17.5,
+     17.5,
+     17.5,
+     17.5
+    ],
+    "dockCurrent": "projects",
+    "awardsNote": null,
+    "loading": null,
+    "focus": "BODY"
+   },
+   "keptFocus": false,
+   "capturedAt": "2026-10-15 21:15:44"
+  },
+  {
+   "name": "g-header-reading-profile--desktop--fr-light",
+   "area": "shell",
+   "viewport": "reference/shell/g-header-reading-profile--desktop--fr-light.png",
+   "dom": "dom/shell/g-header-reading-profile--desktop--fr-light.json.gz",
+   "nodes": 140,
+   "doc": [
+    1440,
+    1320
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "profile-overview",
+   "description": "Fiche profil : en-tête de lecture",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "viewportSize": [
+    1440,
+    960
+   ],
+   "route": "#people/profile-ines-morel",
+   "facts": {
+    "theme": "light",
+    "themePreference": "light",
+    "lang": "fr",
+    "dir": "ltr",
+    "viewport": [
+     1440,
+     960
+    ],
+    "scrollY": 0,
+    "route": "#people/profile-ines-morel",
+    "section": "people",
+    "reading": "true",
+    "compactScope": "false",
+    "scope": {
+     "name": "Monde",
+     "level": "world",
+     "country": null
+    },
+    "die": {
+     "title": "Découvrir un profil",
+     "label": "Découvrir un profil",
+     "disabled": false,
+     "visible": true
+    },
+    "search": {
+     "open": "false",
+     "capsule": "Chercher dans Horizon",
+     "count": 0,
+     "status": "",
+     "helper": null,
+     "more": false,
+     "selected": null
+    },
+    "account": {
+     "open": false,
+     "title": null,
+     "avatar": false,
+     "trigger": "Menu du compte",
+     "extras": []
+    },
+    "dialog": {
+     "open": false,
+     "kind": null,
+     "title": null
+    },
+    "backTop": {
+     "visible": false,
+     "opacity": "1",
+     "label": "Remonter en haut"
+    },
+    "dockScrolling": null,
+    "wordmark": "HORIZON",
+    "arabicBrand": false,
+    "dockLabelHeights": [
+     17.5,
+     17.5,
+     17.5,
+     17.5,
+     17.5
+    ],
+    "dockCurrent": "people",
+    "awardsNote": null,
+    "loading": null,
+    "focus": "BODY"
+   },
+   "keptFocus": false,
+   "capturedAt": "2026-10-15 21:15:47"
+  },
+  {
+   "name": "g-header-reading-article--desktop--fr-light",
+   "area": "shell",
+   "viewport": "reference/shell/g-header-reading-article--desktop--fr-light.png",
+   "dom": "dom/shell/g-header-reading-article--desktop--fr-light.json.gz",
+   "nodes": 117,
+   "doc": [
+    1440,
+    1597
+   ],
+   "overflow": false,
+   "errors": [],
+   "version": "design-review-selection.css?v=1 content-preview.mjs?v=113 design-review-selection.mjs?v=1",
+   "screen": "article-article",
+   "description": "Chronique : en-tête de lecture",
+   "format": "desktop",
+   "lang": "fr",
+   "theme": "light",
+   "viewportSize": [
+    1440,
+    960
+   ],
+   "route": "#journal/journal-share-the-unfinished",
+   "facts": {
+    "theme": "light",
+    "themePreference": "light",
+    "lang": "fr",
+    "dir": "ltr",
+    "viewport": [
+     1440,
+     960
+    ],
+    "scrollY": 0,
+    "route": "#journal/journal-share-the-unfinished",
+    "section": "journal",
+    "reading": "true",
+    "compactScope": "false",
+    "scope": {
+     "name": "Monde",
+     "level": "world",
+     "country": null
+    },
+    "die": {
+     "title": "Découvrir un article",
+     "label": "Découvrir un article",
+     "disabled": false,
+     "visible": true
+    },
+    "search": {
+     "open": "false",
+     "capsule": "Chercher dans Horizon",
+     "count": 0,
+     "status": "",
+     "helper": null,
+     "more": false,
+     "selected": null
+    },
+    "account": {
+     "open": false,
+     "title": null,
+     "avatar": false,
+     "trigger": "Menu du compte",
+     "extras": []
+    },
+    "dialog": {
+     "open": false,
+     "kind": null,
+     "title": null
+    },
+    "backTop": {
+     "visible": false,
+     "opacity": "1",
+     "label": "Remonter en haut"
+    },
+    "dockScrolling": null,
+    "wordmark": "HORIZON",
+    "arabicBrand": false,
+    "dockLabelHeights": [
+     17.5,
+     17.5,
+     17.5,
+     17.5,
+     17.5
+    ],
+    "dockCurrent": "journal",
+    "awardsNote": null,
+    "loading": null,
+    "focus": "BODY"
+   },
+   "keptFocus": false,
+   "capturedAt": "2026-10-15 21:15:55"
+  }
+ ],
+ "zone": "Éléments communs, jetons, compte",
+ "script": "scripts/capture_shell.py",
+ "prototype": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/content-preview.html (accès direct, même contrôleur que index.html)",
+ "failures": []
+}

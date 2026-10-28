@@ -1,0 +1,206 @@
+/* Campus sheet of the version B Explorer « Halo » (SPEC-B-HALO §5.2–5.6, 25 Oct 2026): halo's three-column sheet,
+ * laid directly on the page inside #explorer's band (no panel, no veil). Every rule is scoped under .explorer-sheet
+ * (or the section.explorer-campus[data-density] prefix), keyed only on the sheet's data-layout / data-fit and on the
+ * section's data-density: no width media query, so the cascade of explorer-campus.mjs and this file always agree
+ * (§5.6). Colours come from the --hx- tokens of explorer-art.css (and A's --control-glass-* for the photo pager).
+ * Paragraphs are spaced with padding, never margins, so a margin reset of the frame can never move them (same layout:
+ * none of them has a background or a border). */
+
+/* ---- Sheet: halo's three columns (wide), centred in the band when it fits ---------------------------------------- */
+.explorer-sheet{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,340px) minmax(0,1fr);grid-template-areas:"start heart end";column-gap:clamp(28px,4vw,64px);align-items:center;max-inline-size:1240px;min-block-size:100%;margin-inline:auto;padding:10px clamp(16px,4vw,64px) 18px;color:var(--hx-ink);line-height:normal;text-align:start}
+.explorer-sheet:lang(ar){font-family:'Noto Sans Arabic',Jost,sans-serif}
+.explorer-sheet :where(p,h2,h3,dl,dt,dd,ul,figure,figcaption,address){margin:0}
+.explorer-sheet :where(ul){padding:0;list-style:none}
+.explorer-sheet :where(button){padding:0;border:0;background:none;color:inherit;font:inherit;cursor:pointer}
+.explorer-sheet [hidden]{display:none}
+
+/* ---- Heart: the logo on its lantern (no glow, 25 Oct 2026), the name, the country, the facts, the website -------- */
+.explorer-sheet .explorer-sheet-heart{grid-area:heart;display:flex;flex-direction:column;align-items:center;min-inline-size:0;text-align:center}
+.explorer-sheet .explorer-sheet-lantern{--d:clamp(124px,calc(var(--explorer-band,520px) * .3),172px);position:relative;flex:none;display:grid;place-items:center;inline-size:var(--d);block-size:var(--d);margin-block-end:14px;border-radius:50%}
+.explorer-sheet .explorer-sheet-title{font-size:35px;font-weight:500;line-height:1.15;letter-spacing:-.025em;overflow-wrap:break-word}
+.explorer-sheet .explorer-sheet-title:focus{outline:none}
+.explorer-sheet:lang(ar) .explorer-sheet-title{line-height:1.4}
+.explorer-sheet .explorer-sheet-country{display:inline-flex;align-items:center;gap:8px;padding-block-start:6px;font-size:16px;color:var(--hx-muted)}
+.explorer-sheet .explorer-sheet-flag{flex:none;display:block;inline-size:20px;block-size:15px;border-radius:3px;box-shadow:0 0 0 1px var(--hx-hair);object-fit:cover}
+.explorer-sheet .explorer-sheet-facts{display:flex;justify-content:center;align-items:flex-start;gap:30px;margin-block-start:16px}
+.explorer-sheet .explorer-sheet-fact{display:flex;flex-direction:column-reverse;align-items:center}
+.explorer-sheet .explorer-sheet-fact dd{font-size:28px;font-weight:500;line-height:1.1;letter-spacing:-.02em;font-variant-numeric:tabular-nums;white-space:nowrap;unicode-bidi:isolate}
+.explorer-sheet .explorer-sheet-fact dt{margin-block-start:4px;font-size:13px;line-height:1.4;color:var(--hx-muted)}
+.explorer-sheet a.explorer-sheet-source{display:inline-block;min-block-size:24px;color:var(--hx-muted);font-size:13px;text-decoration:underline;text-underline-offset:3px}
+.explorer-sheet .explorer-sheet-cta{display:inline-flex;align-items:center;gap:10px;min-block-size:44px;margin-block-start:18px;padding:0 20px;border-radius:999px;background:var(--hx-go-bg);color:var(--hx-go-ink);font-size:15px;font-weight:500;text-decoration:none;box-shadow:0 10px 24px color-mix(in srgb,var(--hx-go-bg) 30%,transparent)}
+.explorer-sheet .explorer-sheet-cta .hx-icon{width:18px;height:18px;stroke-width:1.8}
+.explorer-sheet .explorer-sheet-heart > .explorer-sheet-note{padding-block-start:8px}
+.explorer-sheet .explorer-sheet-verified{padding-block-start:12px;font-size:13px;line-height:1.5;color:var(--hx-muted)}
+
+/* ---- Wings ---------------------------------------------------------------------------------------------------------- */
+.explorer-sheet .explorer-sheet-wing{display:grid;gap:24px;align-content:center;min-inline-size:0}
+.explorer-sheet .explorer-sheet-wing[data-wing=start]{grid-area:start;justify-items:end}
+.explorer-sheet .explorer-sheet-wing[data-wing=start] > *{inline-size:min(100%,380px)}
+.explorer-sheet .explorer-sheet-wing[data-wing=end]{grid-area:end;justify-items:start}
+.explorer-sheet .explorer-sheet-wing[data-wing=end] > *{inline-size:min(100%,360px)}
+.explorer-sheet .explorer-sheet-section > h3{display:flex;align-items:center;gap:8px;margin-block-end:10px;font-size:13px;font-weight:500;line-height:1.4;letter-spacing:.06em;text-transform:uppercase;color:var(--hx-accent)}
+.explorer-sheet .explorer-sheet-section > h3::before{content:'';flex:none;inline-size:6px;block-size:6px;border-radius:50%;background:var(--hx-pink);box-shadow:0 0 0 3px color-mix(in srgb,var(--hx-pink) 15%,transparent)}
+.explorer-sheet:lang(ar) .explorer-sheet-section > h3{font-size:14px;letter-spacing:0;text-transform:none}
+.explorer-sheet .explorer-sheet-note{font-size:13px;line-height:1.5;color:var(--hx-muted)}
+.explorer-sheet .explorer-sheet-link{display:inline-flex;align-items:center;gap:6px;min-block-size:24px;color:var(--hx-accent);font-size:15px;text-decoration:none;text-underline-offset:3px}
+.explorer-sheet .explorer-sheet-link:hover{text-decoration:underline}
+.explorer-sheet .explorer-sheet-link .hx-icon{width:15px;height:15px}
+
+/* ---- Photos: a stack of prints, the pager and the credit of the front one ------------------------------------------ */
+.explorer-sheet .explorer-sheet-stack{position:relative;aspect-ratio:16/10;inline-size:calc(100% - 14px);margin-block-start:6px}
+.explorer-sheet .explorer-sheet-photo{position:absolute;inset:0;z-index:10;margin:0;padding:5px;border-radius:20px;background:var(--hx-frame);box-shadow:var(--hx-photo-shadow);transition:transform .5s var(--ease),opacity .4s}
+.explorer-sheet .explorer-sheet-photo[data-depth="1"]{z-index:9;transform:rotate(4deg) translate(14px,-6px) scale(.94)}
+.explorer-sheet[dir=rtl] .explorer-sheet-photo[data-depth="1"]{transform:rotate(-4deg) translate(-14px,-6px) scale(.94)}
+.explorer-sheet .explorer-sheet-photo[data-depth="2"]{z-index:8;transform:rotate(-3deg) translate(-10px,-2px) scale(.92)}
+.explorer-sheet .explorer-sheet-photo:not([data-depth="0"]) .explorer-sheet-photo-image{filter:saturate(.75) brightness(1.04)}
+.explorer-sheet .explorer-sheet-photo-open{position:relative;display:block;inline-size:100%;block-size:100%;border-radius:15px}
+.explorer-sheet .explorer-sheet-photo-open:focus-visible{outline-offset:3px}
+.explorer-sheet .explorer-sheet-photo-image{display:block;inline-size:100%;block-size:100%;border-radius:15px;object-fit:cover}
+.explorer-sheet .explorer-sheet-expand{position:absolute;inset-inline-end:12px;top:12px;display:grid;place-items:center;inline-size:36px;block-size:36px;border-radius:50%;background:var(--hx-expand-bg);color:var(--hx-expand-ink);opacity:0;transition:opacity .2s}
+.explorer-sheet .explorer-sheet-expand .hx-icon{width:18px;height:18px;stroke-width:1.8}
+.explorer-sheet .explorer-sheet-photo-open:is(:hover,:focus-visible) .explorer-sheet-expand{opacity:1}
+/* The bar paints above the prints (z-index 10 at most), so their shadow never dims the count or the credit (item 9). */
+.explorer-sheet .explorer-sheet-photo-bar{position:relative;z-index:11;display:flex;align-items:center;justify-content:flex-end;gap:10px;margin-block-start:12px}
+.explorer-sheet .explorer-sheet-photo-next{margin-inline-end:auto}
+.explorer-sheet .explorer-sheet-photo-nav{flex:none;display:grid;place-items:center;inline-size:44px;block-size:44px;border:1px solid var(--control-glass-edge);border-radius:50%;background:var(--control-glass-surface);box-shadow:var(--control-glass-shadow);-webkit-backdrop-filter:blur(26px) saturate(1.15);backdrop-filter:blur(26px) saturate(1.15);color:var(--hx-ink)}
+.explorer-sheet .explorer-sheet-photo-nav:hover{border-color:var(--control-glass-selection-edge)}
+.explorer-sheet .explorer-sheet-photo-nav .hx-icon{width:20px;height:20px;stroke-width:1.8}
+.explorer-sheet .explorer-sheet-photo-count{min-inline-size:3em;font-size:13px;color:var(--hx-muted);font-variant-numeric:tabular-nums;text-align:center;unicode-bidi:isolate}
+.explorer-sheet .explorer-sheet-credit{font-size:13px;color:var(--hx-muted)}
+.explorer-sheet .explorer-sheet-credit a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.explorer-sheet .explorer-sheet-credit-tail{white-space:nowrap}
+
+/* ---- Locator: the campus's place in its country, when there is no photo --------------------------------------------- */
+.explorer-sheet .explorer-sheet-locator{display:grid;justify-items:center;gap:10px}
+.explorer-sheet .explorer-sheet-locator-art{--h:clamp(130px,calc(var(--explorer-band,520px) * .42),220px);display:block;inline-size:min(100%,calc(var(--h) * var(--ratio,1)));aspect-ratio:var(--ratio,1)}
+.explorer-sheet .explorer-sheet-locator > figcaption{font-size:14px;color:var(--hx-muted);text-align:center}
+
+/* ---- Contacts ------------------------------------------------------------------------------------------------------- */
+.explorer-sheet .explorer-sheet-contact-list > li{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:0 14px;padding:7px 0;border-block-start:1px solid var(--hx-hair)}
+.explorer-sheet .explorer-sheet-contact-list > li:first-child{padding-block-start:0;border-block-start:0}
+.explorer-sheet .explorer-sheet-contact-label{font-size:13px;line-height:1.4;color:var(--hx-muted)}
+.explorer-sheet .explorer-sheet-contact-value{overflow-wrap:anywhere}
+.explorer-sheet p.explorer-sheet-source{padding-block-start:8px;font-size:13px;color:var(--hx-muted)}
+.explorer-sheet p.explorer-sheet-source > a{display:inline-block;min-block-size:24px;color:inherit;text-decoration:underline;text-underline-offset:3px}
+
+/* ---- Address -------------------------------------------------------------------------------------------------------- */
+.explorer-sheet .explorer-sheet-address address{font-size:16px;font-style:normal;line-height:1.55;white-space:pre-line}
+.explorer-sheet[dir=rtl] .explorer-sheet-address address{text-align:right}
+.explorer-sheet .explorer-sheet-actions{display:flex;flex-wrap:wrap;gap:8px;margin-block-start:12px}
+.explorer-sheet .explorer-sheet-pill{display:inline-flex;align-items:center;gap:8px;min-block-size:44px;padding-block:0;padding-inline:13px 16px;border:1px solid var(--hx-pill-edge);border-radius:999px;background:var(--hx-pill-surface);color:var(--hx-ink);font-size:14px;text-decoration:none}
+.explorer-sheet .explorer-sheet-pill:hover{border-color:color-mix(in srgb,var(--hx-teal) 45%,transparent)}
+.explorer-sheet .explorer-sheet-pill .hx-icon{width:18px;height:18px;color:var(--hx-accent)}
+.explorer-sheet .explorer-sheet-status{font-size:13px;color:var(--hx-muted)}
+.explorer-sheet .explorer-sheet-status:not(:empty){padding-block-start:8px}
+
+/* ---- Piscines: a timeline of pink dots ---------------------------------------------------------------------------- */
+.explorer-sheet .explorer-sheet-timeline > li{position:relative;display:grid;gap:2px;padding-inline-start:22px;padding-block-end:12px}
+.explorer-sheet .explorer-sheet-timeline > li::before{content:'';position:absolute;inset-inline-start:4px;top:8px;inline-size:8px;block-size:8px;border-radius:50%;background:var(--hx-pink)}
+.explorer-sheet .explorer-sheet-timeline > li:first-child::before{box-shadow:0 0 0 4px color-mix(in srgb,var(--hx-pink) 18%,transparent)}
+.explorer-sheet .explorer-sheet-timeline > li + li::after{content:'';position:absolute;inset-inline-start:7.5px;top:-12px;inline-size:1px;block-size:18px;background:var(--hx-hair-strong)}
+.explorer-sheet .explorer-sheet-timeline > li > a.explorer-sheet-source{justify-self:start}
+.explorer-sheet .explorer-sheet-piscine-name{font-size:16px;font-weight:500;line-height:1.4}
+.explorer-sheet .explorer-sheet-piscine-dates{font-size:14px;color:var(--hx-muted)}
+.explorer-sheet .explorer-sheet-chip{display:inline-block;margin-inline-start:8px;padding:1px 8px;border-radius:999px;background:color-mix(in srgb,var(--hx-pink) 11%,transparent);color:var(--hx-chip-text);font-size:13px;font-weight:500;vertical-align:2px}
+.explorer-sheet .explorer-sheet-dates{padding-block-start:6px}
+
+/* ---- The one honest line about what is missing ---------------------------------------------------------------------- */
+.explorer-sheet .explorer-sheet-missing{display:flex;align-items:flex-start;gap:10px;font-size:14px;line-height:1.5;color:var(--hx-muted)}
+.explorer-sheet .explorer-sheet-missing .hx-icon{flex:none;width:18px;height:18px;margin-block-start:2px;color:var(--hx-pink)}
+
+/* ---- Arabic: 14 px floor, no caps, no tracking (§2.3) ---------------------------------------------------------------- */
+.explorer-sheet:lang(ar) :is(.explorer-sheet-fact dt,a.explorer-sheet-source,p.explorer-sheet-source,.explorer-sheet-contact-label,.explorer-sheet-credit,.explorer-sheet-photo-count,.explorer-sheet-verified,.explorer-sheet-note,.explorer-sheet-status,.explorer-sheet-chip){font-size:14px}
+.explorer-sheet:lang(ar) :is(.explorer-sheet-title,.explorer-sheet-fact dd){letter-spacing:0}
+
+/* ---- RTL: chevrons and external arrows are mirrored; silhouettes and logos never are (§2.8) ------------------------ */
+.explorer-sheet[dir=rtl] :is(.explorer-sheet-cta,.explorer-sheet-dates-link,.explorer-sheet-photo-nav) .hx-icon{transform:scaleX(-1)}
+
+/* ---- Fit cascade, wide layout of a normal band (§5.6): each step adds to the previous one ------------------------ */
+.explorer-sheet:is([data-fit=snug],[data-fit=tight],[data-fit=tighter]) .explorer-sheet-wing{gap:16px}
+.explorer-sheet:is([data-fit=snug],[data-fit=tight],[data-fit=tighter]) .explorer-sheet-section > h3{margin-block-end:8px}
+.explorer-sheet:is([data-fit=snug],[data-fit=tight],[data-fit=tighter]) .explorer-sheet-contact-list > li{padding-block-end:5px}
+.explorer-sheet:is([data-fit=snug],[data-fit=tight],[data-fit=tighter]) .explorer-sheet-contact-list > li + li{padding-block-start:5px}
+.explorer-sheet:is([data-fit=snug],[data-fit=tight],[data-fit=tighter]) .explorer-sheet-photo-bar{margin-block-start:8px}
+.explorer-sheet:is([data-fit=snug],[data-fit=tight],[data-fit=tighter]) .explorer-sheet-timeline > li{padding-block-end:8px}
+.explorer-sheet:is([data-fit=snug],[data-fit=tight],[data-fit=tighter]) .explorer-sheet-timeline > li + li::after{top:-8px;block-size:14px}
+.explorer-sheet:is([data-fit=tight],[data-fit=tighter]) .explorer-sheet-stack{inline-size:min(calc(100% - 14px),256px)}
+.explorer-sheet[data-fit=tighter] .explorer-sheet-stack{inline-size:min(calc(100% - 14px),240px)}
+.explorer-sheet[data-fit=tighter] .explorer-sheet-lantern{--d:clamp(112px,calc(var(--explorer-band,520px) * .24),136px);margin-block-end:10px}
+.explorer-sheet[data-fit=tighter] .explorer-sheet-facts{margin-block-start:12px}
+.explorer-sheet[data-fit=tighter] .explorer-sheet-cta{margin-block-start:14px}
+.explorer-sheet[data-fit=tighter] .explorer-sheet-heart > .explorer-sheet-note{padding-block-start:6px}
+.explorer-sheet[data-fit=tighter] .explorer-sheet-verified{padding-block-start:8px}
+.explorer-sheet[data-fit=scroll]{align-items:start}
+.explorer-sheet[data-fit=scroll] .explorer-sheet-wing{align-content:start}
+
+/* ---- Wide, short band: the three columns stay, the heart gets smaller --------------------------------------------- */
+section.explorer-campus[data-density=short] .explorer-sheet[data-layout=wide]{align-items:start}
+section.explorer-campus[data-density=short] .explorer-sheet[data-layout=wide] .explorer-sheet-wing{align-content:start}
+/* Tightened from halo's 96 / 6 / 8 / 12 with a 21 px country line and, under Arabic, halo's 1.15 line on a Latin name, so
+ * the Arabic website pill clears the bottom fade at 1280×720 (item 11). */
+section.explorer-campus[data-density=short] .explorer-sheet[data-layout=wide] .explorer-sheet-lantern{--d:88px;margin-block-end:4px}
+section.explorer-campus[data-density=short] .explorer-sheet[data-layout=wide] .explorer-sheet-title{font-size:28px}
+section.explorer-campus[data-density=short] .explorer-sheet[data-layout=wide]:lang(ar) .explorer-sheet-title[data-script=latin]{line-height:1.15}
+section.explorer-campus[data-density=short] .explorer-sheet[data-layout=wide] .explorer-sheet-country{padding-block-start:2px;font-size:15px;line-height:1.4}
+section.explorer-campus[data-density=short] .explorer-sheet[data-layout=wide] .explorer-sheet-facts{margin-block-start:6px}
+section.explorer-campus[data-density=short] .explorer-sheet[data-layout=wide] .explorer-sheet-fact dd{font-size:22px}
+section.explorer-campus[data-density=short] .explorer-sheet[data-layout=wide] .explorer-sheet-cta{margin-block-start:10px}
+section.explorer-campus[data-density=short] .explorer-sheet[data-layout=wide] .explorer-sheet-verified{padding-block-start:6px}
+
+/* ---- Stacked (700–1099 px): the heart above the two wings ------------------------------------------------------------ */
+.explorer-sheet[data-layout=stacked]{grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-areas:"heart heart" "start end";row-gap:28px}
+.explorer-sheet:is([data-layout=stacked],[data-layout=single]){align-items:start}
+.explorer-sheet:is([data-layout=stacked],[data-layout=single]) .explorer-sheet-wing{align-content:start}
+.explorer-sheet[data-layout=stacked] .explorer-sheet-wing[data-wing=start]{justify-items:stretch}
+
+/* ---- Single (< 700 px or tiny band): one column -------------------------------------------------------------------- */
+.explorer-sheet[data-layout=single]{grid-template-columns:minmax(0,1fr);grid-template-areas:"heart" "start" "end";row-gap:30px;padding-block-start:6px}
+.explorer-sheet[data-layout=single] .explorer-sheet-wing[data-wing]{justify-items:stretch}
+.explorer-sheet[data-layout=single] .explorer-sheet-wing[data-wing] > *{inline-size:100%}
+.explorer-sheet[data-layout=single] .explorer-sheet-lantern{--d:118px;margin-block-end:8px}
+.explorer-sheet[data-layout=single] .explorer-sheet-title{font-size:28px}
+.explorer-sheet[data-layout=single] .explorer-sheet-facts{gap:24px}
+.explorer-sheet[data-layout=single] .explorer-sheet-fact dd{font-size:24px}
+.explorer-sheet[data-layout=single] .explorer-sheet-cta{margin-block-start:14px}
+
+/* ---- Short bands below 1100 px: the heart becomes one row, the logo beside the name ------------------------------- */
+section.explorer-campus:is([data-density=short],[data-density=tiny]) .explorer-sheet:is([data-layout=stacked],[data-layout=single]){row-gap:22px}
+section.explorer-campus:is([data-density=short],[data-density=tiny]) .explorer-sheet:is([data-layout=stacked],[data-layout=single]) .explorer-sheet-heart{display:grid;grid-template-columns:auto minmax(0,max-content);column-gap:22px;justify-content:center;align-items:center;text-align:start}
+section.explorer-campus:is([data-density=short],[data-density=tiny]) .explorer-sheet:is([data-layout=stacked],[data-layout=single]) .explorer-sheet-heart:not(:has(> .explorer-sheet-lantern)){column-gap:0}
+section.explorer-campus:is([data-density=short],[data-density=tiny]) .explorer-sheet:is([data-layout=stacked],[data-layout=single]) .explorer-sheet-heart > *{grid-column:2;justify-self:start}
+section.explorer-campus:is([data-density=short],[data-density=tiny]) .explorer-sheet:is([data-layout=stacked],[data-layout=single]) .explorer-sheet-heart > .explorer-sheet-lantern{--d:104px;grid-column:1;grid-row:1 / span 7;margin:0}
+section.explorer-campus:is([data-density=short],[data-density=tiny]) .explorer-sheet:is([data-layout=stacked],[data-layout=single]) .explorer-sheet-title{font-size:28px}
+section.explorer-campus:is([data-density=short],[data-density=tiny]) .explorer-sheet:is([data-layout=stacked],[data-layout=single]) .explorer-sheet-country{padding-block-start:0;font-size:15px}
+section.explorer-campus:is([data-density=short],[data-density=tiny]) .explorer-sheet:is([data-layout=stacked],[data-layout=single]) .explorer-sheet-facts{margin-block-start:6px;gap:22px}
+section.explorer-campus:is([data-density=short],[data-density=tiny]) .explorer-sheet:is([data-layout=stacked],[data-layout=single]) .explorer-sheet-fact{align-items:flex-start}
+section.explorer-campus:is([data-density=short],[data-density=tiny]) .explorer-sheet:is([data-layout=stacked],[data-layout=single]) .explorer-sheet-fact dd{font-size:20px}
+section.explorer-campus:is([data-density=short],[data-density=tiny]) .explorer-sheet:is([data-layout=stacked],[data-layout=single]) .explorer-sheet-cta{margin-block-start:10px}
+section.explorer-campus:is([data-density=short],[data-density=tiny]) .explorer-sheet:is([data-layout=stacked],[data-layout=single]) .explorer-sheet-verified{padding-block-start:4px}
+/* Below 700 px the logo sits beside the name and the country only; the facts, the website and the date go below. */
+section.explorer-campus:is([data-density=short],[data-density=tiny]) .explorer-sheet[data-layout=single] .explorer-sheet-heart{grid-template-columns:auto minmax(0,1fr);justify-content:stretch;column-gap:14px}
+section.explorer-campus:is([data-density=short],[data-density=tiny]) .explorer-sheet[data-layout=single] .explorer-sheet-heart > .explorer-sheet-lantern{--d:76px;grid-row:1 / span 2}
+section.explorer-campus:is([data-density=short],[data-density=tiny]) .explorer-sheet[data-layout=single] .explorer-sheet-heart > :not(.explorer-sheet-lantern,.explorer-sheet-title,.explorer-sheet-country){grid-column:1 / -1}
+section.explorer-campus:is([data-density=short],[data-density=tiny]) .explorer-sheet[data-layout=single] .explorer-sheet-title{font-size:24px;align-self:end}
+section.explorer-campus:is([data-density=short],[data-density=tiny]) .explorer-sheet[data-layout=single] .explorer-sheet-country{align-self:start}
+section.explorer-campus:is([data-density=short],[data-density=tiny]) .explorer-sheet[data-layout=single] .explorer-sheet-facts{margin-block-start:10px}
+
+/* ---- Tiny band (landscape phones): a mini heart beside the logo, facts inline, no country line; the body scrolls with
+ * the strip on top (§5.1) --------------------------------------------------------------------------------------------- */
+section.explorer-campus[data-density=tiny] .explorer-sheet[data-layout=single] .explorer-sheet-heart > .explorer-sheet-lantern{--d:64px;grid-row:1 / span 7}
+section.explorer-campus[data-density=tiny] .explorer-sheet[data-layout=single] .explorer-sheet-heart > :not(.explorer-sheet-lantern){grid-column:2}
+section.explorer-campus[data-density=tiny] .explorer-sheet[data-layout=single] .explorer-sheet-country{display:none}
+section.explorer-campus[data-density=tiny] .explorer-sheet[data-layout=single] .explorer-sheet-facts{margin-block-start:2px;gap:14px}
+section.explorer-campus[data-density=tiny] .explorer-sheet[data-layout=single] .explorer-sheet-fact{flex-direction:row-reverse;align-items:baseline;gap:6px}
+section.explorer-campus[data-density=tiny] .explorer-sheet[data-layout=single] .explorer-sheet-fact dd{font-size:16px}
+section.explorer-campus[data-density=tiny] .explorer-sheet[data-layout=single] .explorer-sheet-fact dt{margin:0}
+section.explorer-campus[data-density=tiny] .explorer-sheet[data-layout=single] .explorer-sheet-cta{min-block-size:44px;margin-block-start:6px}
+/* Prints capped at 160 px wide (100 px high) so the photos take less of the short scroller (item 10). */
+section.explorer-campus[data-density=tiny] .explorer-sheet[data-layout=single] .explorer-sheet-stack{inline-size:min(calc(100% - 14px),160px)}
+
+/* ---- Reduced motion and forced colours (§2.6, §2.7) --------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce){
+ .explorer-sheet :is(.explorer-sheet-photo,.explorer-sheet-expand){transition:none}
+}
+@media (forced-colors: active){
+ .explorer-sheet :is(.explorer-sheet-cta,.explorer-sheet-pill,.explorer-sheet-photo-nav,.explorer-sheet-chip){border:1px solid ButtonText}
+}

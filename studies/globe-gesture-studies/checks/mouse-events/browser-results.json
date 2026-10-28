@@ -1,0 +1,499 @@
+{
+  "passed": false,
+  "cases": [
+    {
+      "case": "ready-3",
+      "result": {
+        "study": {
+          "variant": "3",
+          "open": false,
+          "pinned": false,
+          "available": true,
+          "reason": "",
+          "hold": false
+        },
+        "canvas": 1,
+        "overflow": false
+      }
+    },
+    {
+      "case": "longpress-opens-without-action",
+      "result": true
+    },
+    {
+      "case": "before-second-hold",
+      "result": {
+        "state": {
+          "level": "world",
+          "country": null,
+          "campus": null,
+          "countryName": null,
+          "campusName": null,
+          "worldRender": {
+            "phase": "ready",
+            "zoom": 1.3726826431730412
+          },
+          "inFlight": false,
+          "flightStage": null,
+          "center": [
+            6,
+            18
+          ],
+          "zoom": 1.3726826431730412,
+          "minZoom": 1.3726826431730412,
+          "maxZoom": 3.172682643173041,
+          "campusDistanceKm": null,
+          "detailVisible": false,
+          "detail": {
+            "phase": "local",
+            "opacityTarget": 0
+          },
+          "campusRender": {
+            "mode": "progressive",
+            "phase": "local",
+            "fullyPrepared": false
+          },
+          "campusPreload": {
+            "phase": "idle",
+            "campusId": null,
+            "radiusKm": 3,
+            "total": 0,
+            "completed": 0,
+            "available": 0,
+            "failed": 0,
+            "ready": false,
+            "cacheBytes": 1155909,
+            "cacheLimitBytes": 50331648,
+            "cacheTiles": 8,
+            "networkTiles": 8,
+            "networkBytes": 1155909,
+            "rendererRequests": 0,
+            "rendererCacheHits": 0,
+            "sharedRequests": 0
+          },
+          "randomCampus": {
+            "phase": "loading",
+            "campusId": "prague",
+            "radiusKm": 4.75,
+            "total": 42,
+            "completed": 8,
+            "available": 8,
+            "failed": 0,
+            "ready": false,
+            "zoom": 14,
+            "cacheBytes": 1155909,
+            "cacheLimitBytes": 50331648,
+            "cacheTiles": 8,
+            "networkTiles": 8,
+            "networkBytes": 1155909,
+            "rendererRequests": 0,
+            "rendererCacheHits": 0,
+            "sharedRequests": 0,
+            "nextCampusId": "prague"
+          },
+          "flightDuration": null,
+          "detailOpacity": 0,
+          "renderedDetail": {
+            "paints": {
+              "h42-land": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-water": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-road-major": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-building-relief": {
+                "opacity": null,
+                "hidden": true
+              }
+            },
+            "evaluatedZoom": 1.3726826431730412,
+            "covered": false,
+            "canvasVisibility": "visible"
+          }
+        },
+        "target": "<canvas class=\"maplibregl-canvas\" tabindex=\"-1\" aria-label=\"Map\" role=\"region\" width=\"390\" height=\"844\" style=\"width: 390px; height: 844px;\" aria-hidden=\"true\"></canvas>"
+      }
+    },
+    {
+      "case": "events-second-hold",
+      "result": {
+        "events": [
+          {
+            "type": "pointerdown",
+            "id": 1,
+            "button": 0,
+            "buttons": 1,
+            "target": "maplibregl-canvas",
+            "x": 100,
+            "y": 410,
+            "time": 6957
+          },
+          {
+            "type": "mousedown",
+            "button": 0,
+            "buttons": 1,
+            "target": "maplibregl-canvas",
+            "x": 100,
+            "y": 410,
+            "time": 6958
+          },
+          {
+            "type": "focus",
+            "target": "maplibregl-canvas",
+            "time": 6960
+          },
+          {
+            "type": "gotpointercapture",
+            "id": 1,
+            "button": -1,
+            "buttons": 1,
+            "target": "globe",
+            "x": 100,
+            "y": 410,
+            "time": 7512
+          },
+          {
+            "type": "pointerup",
+            "id": 1,
+            "button": 0,
+            "buttons": 0,
+            "target": "globe",
+            "x": 100,
+            "y": 410,
+            "time": 7924
+          },
+          {
+            "type": "mouseup",
+            "button": 0,
+            "buttons": 0,
+            "target": "globe",
+            "x": 100,
+            "y": 410,
+            "time": 7924
+          },
+          {
+            "type": "lostpointercapture",
+            "id": 1,
+            "button": 0,
+            "buttons": 0,
+            "target": "globe",
+            "x": 100,
+            "y": 410,
+            "time": 7925
+          },
+          {
+            "type": "click",
+            "id": 1,
+            "button": 0,
+            "buttons": 0,
+            "target": "globe",
+            "x": 100,
+            "y": 410,
+            "time": 7925
+          },
+          {
+            "type": "keydown",
+            "target": "maplibregl-canvas",
+            "time": 8128
+          },
+          {
+            "type": "blur",
+            "target": "maplibregl-canvas",
+            "time": 8130
+          },
+          {
+            "type": "focus",
+            "target": "study-trigger",
+            "time": 8131
+          },
+          {
+            "type": "keyup",
+            "target": "study-trigger",
+            "time": 8132
+          },
+          {
+            "type": "pointerdown",
+            "id": 1,
+            "button": 0,
+            "buttons": 1,
+            "target": "maplibregl-canvas",
+            "x": 100,
+            "y": 410,
+            "time": 8786
+          },
+          {
+            "type": "mousedown",
+            "button": 0,
+            "buttons": 1,
+            "target": "maplibregl-canvas",
+            "x": 100,
+            "y": 410,
+            "time": 8786
+          },
+          {
+            "type": "blur",
+            "target": "study-trigger",
+            "time": 8787
+          },
+          {
+            "type": "focus",
+            "target": "maplibregl-canvas",
+            "time": 8788
+          }
+        ],
+        "study": {
+          "variant": "3",
+          "open": false,
+          "pinned": false,
+          "available": true,
+          "reason": "manual",
+          "hold": false
+        },
+        "map": {
+          "level": "world",
+          "country": null,
+          "campus": null,
+          "countryName": null,
+          "campusName": null,
+          "worldRender": {
+            "phase": "ready",
+            "zoom": 1.3726826431730412
+          },
+          "inFlight": false,
+          "flightStage": null,
+          "center": [
+            6,
+            18
+          ],
+          "zoom": 1.3726826431730412,
+          "minZoom": 1.3726826431730412,
+          "maxZoom": 3.172682643173041,
+          "campusDistanceKm": null,
+          "detailVisible": false,
+          "detail": {
+            "phase": "local",
+            "opacityTarget": 0
+          },
+          "campusRender": {
+            "mode": "progressive",
+            "phase": "local",
+            "fullyPrepared": false
+          },
+          "campusPreload": {
+            "phase": "idle",
+            "campusId": null,
+            "radiusKm": 3,
+            "total": 0,
+            "completed": 0,
+            "available": 0,
+            "failed": 0,
+            "ready": false,
+            "cacheBytes": 1675182,
+            "cacheLimitBytes": 50331648,
+            "cacheTiles": 11,
+            "networkTiles": 11,
+            "networkBytes": 1675182,
+            "rendererRequests": 0,
+            "rendererCacheHits": 0,
+            "sharedRequests": 0
+          },
+          "randomCampus": {
+            "phase": "loading",
+            "campusId": "prague",
+            "radiusKm": 4.75,
+            "total": 42,
+            "completed": 11,
+            "available": 11,
+            "failed": 0,
+            "ready": false,
+            "zoom": 14,
+            "cacheBytes": 1675182,
+            "cacheLimitBytes": 50331648,
+            "cacheTiles": 11,
+            "networkTiles": 11,
+            "networkBytes": 1675182,
+            "rendererRequests": 0,
+            "rendererCacheHits": 0,
+            "sharedRequests": 0,
+            "nextCampusId": "prague"
+          },
+          "flightDuration": null,
+          "detailOpacity": 0,
+          "renderedDetail": {
+            "paints": {
+              "h42-land": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-water": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-road-major": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-building-relief": {
+                "opacity": null,
+                "hidden": true
+              }
+            },
+            "evaluatedZoom": 1.3726826431730412,
+            "covered": false,
+            "canvasVisibility": "visible"
+          }
+        }
+      }
+    },
+    {
+      "case": "failure-dom",
+      "result": {
+        "errors": [],
+        "events": [
+          {
+            "type": "pointerdown",
+            "id": 1,
+            "button": 0,
+            "buttons": 1,
+            "target": "maplibregl-canvas",
+            "x": 100,
+            "y": 410,
+            "time": 6957
+          },
+          {
+            "type": "mousedown",
+            "button": 0,
+            "buttons": 1,
+            "target": "maplibregl-canvas",
+            "x": 100,
+            "y": 410,
+            "time": 6958
+          },
+          {
+            "type": "focus",
+            "target": "maplibregl-canvas",
+            "time": 6960
+          },
+          {
+            "type": "gotpointercapture",
+            "id": 1,
+            "button": -1,
+            "buttons": 1,
+            "target": "globe",
+            "x": 100,
+            "y": 410,
+            "time": 7512
+          },
+          {
+            "type": "pointerup",
+            "id": 1,
+            "button": 0,
+            "buttons": 0,
+            "target": "globe",
+            "x": 100,
+            "y": 410,
+            "time": 7924
+          },
+          {
+            "type": "mouseup",
+            "button": 0,
+            "buttons": 0,
+            "target": "globe",
+            "x": 100,
+            "y": 410,
+            "time": 7924
+          },
+          {
+            "type": "lostpointercapture",
+            "id": 1,
+            "button": 0,
+            "buttons": 0,
+            "target": "globe",
+            "x": 100,
+            "y": 410,
+            "time": 7925
+          },
+          {
+            "type": "click",
+            "id": 1,
+            "button": 0,
+            "buttons": 0,
+            "target": "globe",
+            "x": 100,
+            "y": 410,
+            "time": 7925
+          },
+          {
+            "type": "keydown",
+            "target": "maplibregl-canvas",
+            "time": 8128
+          },
+          {
+            "type": "blur",
+            "target": "maplibregl-canvas",
+            "time": 8130
+          },
+          {
+            "type": "focus",
+            "target": "study-trigger",
+            "time": 8131
+          },
+          {
+            "type": "keyup",
+            "target": "study-trigger",
+            "time": 8132
+          },
+          {
+            "type": "pointerdown",
+            "id": 1,
+            "button": 0,
+            "buttons": 1,
+            "target": "maplibregl-canvas",
+            "x": 100,
+            "y": 410,
+            "time": 8786
+          },
+          {
+            "type": "mousedown",
+            "button": 0,
+            "buttons": 1,
+            "target": "maplibregl-canvas",
+            "x": 100,
+            "y": 410,
+            "time": 8786
+          },
+          {
+            "type": "blur",
+            "target": "study-trigger",
+            "time": 8787
+          },
+          {
+            "type": "focus",
+            "target": "maplibregl-canvas",
+            "time": 8788
+          }
+        ],
+        "state": {
+          "variant": "3",
+          "open": false,
+          "pinned": false,
+          "available": true,
+          "reason": "manual",
+          "hold": false
+        },
+        "body": "H\nO\nR\nI\nZ\nO\nN\nExplorer\nProjets\nProfils\nChroniques\n42 Awards\nChercher dans Horizon\nMonde\nAngola\nLuxembourg\nMaroc\nPalestine\n\n58 campus · 30 pays\n\nNatural Earth\n·\nOpenFreeMap\n· ©\nOpenMapTiles\n·\nOpenStreetMap\n\nExplorer · Le monde\n\n⋮\nCommandes du globe\n\nAppui prolongé facultatif. Entrée ou le bouton Commandes ouvre aussi les commandes.\n\nEssai 3 · Mode d’emploi"
+      }
+    }
+  ],
+  "sources": {
+    "study.mjs": "da86f7cb63bb063098f1f6b517b3e164fcedce014f8b4465716f358b65d7226f",
+    "study.css": "6386d8003160e26ead8d964c8e290b4969b6f29b614ffab4e4af17209386ed36",
+    "press-gesture.mjs": "5f3014317ac97f2d17c8d81a2cc6e75638b760acb60b105332e58681aa4b52d1"
+  }
+}

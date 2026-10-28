@@ -1,0 +1,58 @@
+/* The filter's surface is cut out around the globe seat. The same map stays
+   beneath the filter in both directions, including the compact resting state. */
+:root .app[data-navigation=dock] .scope-path{
+ position:relative;isolation:isolate;display:flex;align-items:center;min-width:0;
+ --scope-seat-x:22px;--scope-fill:var(--h42-color-surface);
+ background:transparent;
+}
+:root .app[data-navigation=dock] .scope-path::before{
+ content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;
+ border-radius:inherit;background:var(--scope-fill);
+ -webkit-mask-image:radial-gradient(circle at var(--scope-seat-x) 50%,transparent 15.5px,#000 16px);
+ mask-image:radial-gradient(circle at var(--scope-seat-x) 50%,transparent 15.5px,#000 16px);
+}
+.app[data-navigation=dock] .scope-medallion{
+ display:block;width:32px;height:32px;flex:0 0 32px;margin-inline-start:6px;
+ border:1px solid var(--warm-line);border-radius:50%;
+}
+[dir=rtl] .app[data-navigation=dock] .scope-path{--scope-seat-x:calc(100% - 22px)}
+@media(max-width:700px){
+ :root .app[data-navigation=dock] .scope-path{--scope-fill:color-mix(in srgb,var(--h42-color-surface) 90%,transparent)}
+}
+:root[data-theme=light] .app[data-navigation=dock] .scope-path{--scope-fill:#fff}
+.app[data-navigation=dock] #main>.globe-stage{
+ z-index:4;
+ transform-origin:var(--dock-origin-x,50%) var(--dock-origin-y,50%);
+ transform:translate(0,0) scale(1);
+ clip-path:circle(var(--dock-full-radius,200vmax) at var(--dock-origin-x,50%) var(--dock-origin-y,50%));
+ transition:transform .7s var(--ease),clip-path .7s var(--ease);
+ opacity:1;visibility:inherit;
+}
+.app[data-navigation=dock][data-globe-docked=true] #main>.globe-stage{
+ pointer-events:none;
+ transform:translate(var(--dock-translate-x,0px),var(--dock-translate-y,0px)) scale(var(--dock-scale,1));
+ clip-path:circle(var(--dock-clip-radius,45vmin) at var(--dock-origin-x,50%) var(--dock-origin-y,50%));
+}
+@media(prefers-reduced-motion:reduce){.app[data-navigation=dock] #main>.globe-stage{transition:none}}
+
+/* Retain the outgoing page at its visible scroll position until the fade ends. */
+:root .app[data-navigation=dock][data-section=explore][data-content-exiting=true] .content-sheet{
+ display:block;position:fixed;inset:auto;
+ left:var(--cp-exit-left);top:var(--cp-exit-top);width:var(--cp-exit-width);
+ max-width:none;margin:0;opacity:1;visibility:visible;pointer-events:none;transition:none;
+}
+
+/* The world command shares the permanent 32px docking seat. Its separate
+   44px hit area never changes the measured anchor or hides the miniature. */
+:root .app[data-navigation=dock] .scope-medallion { margin-inline-end:6px; }
+:root .app[data-navigation=dock] .scope-world-return {
+ position:absolute;inset-inline-start:0;top:50%;transform:translateY(-50%);
+ display:grid;place-items:center;width:44px;height:44px;min-width:44px;
+ padding:0;border:0;border-radius:50%;background:transparent;
+ color:var(--h42-color-text);box-shadow:none;
+}
+:root .app[data-navigation=dock] .scope-world-return svg { width:20px;height:20px; }
+:root .app[data-navigation=dock] .scope-world-return:hover { background:var(--control-glass-selection); }
+:root .app[data-navigation=dock] .scope-world-return:focus-visible { outline:2px solid var(--readable-glass-accent);outline-offset:-2px; }
+:root .app[data-navigation=dock] .scope-world-return[hidden],
+:root .app[data-navigation=dock]:not([data-section=explore]) .scope-world-return { display:none; }

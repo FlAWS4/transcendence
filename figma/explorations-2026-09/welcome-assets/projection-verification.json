@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-27",
+  "method": "Compare projected source-coordinate metadata with the actual local MapLibre5.24 CPU vertical-perspective transform. In-memory export injection only; vendor source on disk unchanged.",
+  "results": [
+    {
+      "level": "world",
+      "format": "desktop",
+      "markersCompared": 30,
+      "maxMarkerProjectionErrorPixels": 0.0006444608899334405
+    },
+    {
+      "level": "world",
+      "format": "mobile",
+      "markersCompared": 30,
+      "maxMarkerProjectionErrorPixels": 0.0006281174358872477
+    },
+    {
+      "level": "France",
+      "format": "desktop",
+      "markersCompared": 8,
+      "maxMarkerProjectionErrorPixels": 0.0005956266511265129
+    },
+    {
+      "level": "France",
+      "format": "desktop-rtl",
+      "markersCompared": 8,
+      "maxMarkerProjectionErrorPixels": 0.000595626651190364
+    },
+    {
+      "level": "France",
+      "format": "mobile",
+      "markersCompared": 8,
+      "maxMarkerProjectionErrorPixels": 0.0005439289021620136
+    }
+  ],
+  "limit": "Checks analytic projection coordinates, not GPU raster antialiasing or Figma SVG import fidelity."
+}

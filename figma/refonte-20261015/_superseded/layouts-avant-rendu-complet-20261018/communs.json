@@ -1,0 +1,161 @@
+{
+ "area": "shell",
+ "key": "communs",
+ "page": "08 · Éléments communs",
+ "sections": [
+  {
+   "id": "g-search",
+   "title": "Recherche",
+   "note": "Cherche dans tout Horizon : campus, projets, profils, chroniques, 8 résultats à la fois puis Voir plus. Masquée sur 42 Awards.",
+   "route": "",
+   "main": false,
+   "y": 0,
+   "w": 4180,
+   "h": 3166,
+   "rows": [
+    [
+     {
+      "state": "search-open",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Recherche · ouverte — Ordinateur · Clair",
+      "w": 1440,
+      "h": 2566,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "search-open",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Recherche · ouverte — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 2566,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "search-open",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Recherche · ouverte — Mobile · Clair",
+      "w": 390,
+      "h": 2826,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "search-open",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Recherche · ouverte — Mobile · Sombre",
+      "w": 390,
+      "h": 2826,
+      "x": 3710,
+      "y": 260
+     }
+    ]
+   ]
+  },
+  {
+   "id": "g-dock",
+   "title": "Menu du bas",
+   "note": "Présent sur chaque page, fiches et 42 Awards compris. Ouvre toujours la liste de la rubrique, page 1, en gardant le filtre Pays / Campus. Le bouton de la rubrique en cours ne fait rien, même depuis une fiche : on en sort par Retour.",
+   "route": "",
+   "main": false,
+   "y": 3366,
+   "w": 1600,
+   "h": 10879,
+   "rows": [
+    [
+     {
+      "state": "dock-300",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Menu du bas · fenêtre de 300 px — Mobile · Clair",
+      "w": 300,
+      "h": 5138,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "dock-300",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Menu du bas · fenêtre de 300 px — Mobile · Sombre",
+      "w": 300,
+      "h": 5138,
+      "x": 500,
+      "y": 260
+     }
+    ],
+    [
+     {
+      "state": "dock-320",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Menu du bas · téléphone de 320 px — Mobile · Clair",
+      "w": 320,
+      "h": 5241,
+      "x": 80,
+      "y": 5558
+     },
+     {
+      "state": "dock-320",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Menu du bas · téléphone de 320 px — Mobile · Sombre",
+      "w": 320,
+      "h": 5241,
+      "x": 520,
+      "y": 5558
+     }
+    ]
+   ]
+  },
+  {
+   "id": "g-back-top",
+   "title": "Remonter en haut",
+   "note": "Remonte en haut de la même page : aucun changement d’écran.",
+   "route": "",
+   "main": false,
+   "y": 14445,
+   "w": 1600,
+   "h": 3166,
+   "rows": [
+    [
+     {
+      "state": "back-to-top",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Remonter en haut — Mobile · Clair",
+      "w": 390,
+      "h": 2826,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "back-to-top",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Remonter en haut — Mobile · Sombre",
+      "w": 390,
+      "h": 2826,
+      "x": 590,
+      "y": 260
+     }
+    ]
+   ]
+  }
+ ]
+}

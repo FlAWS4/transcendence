@@ -1,0 +1,29 @@
+.cp-report-trigger{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px;padding:8px 11px;border:1px solid var(--cp-line);border-radius:999px;background:transparent;color:var(--h42-color-muted);font:inherit;font-size:12px;line-height:1.4;cursor:pointer}
+.cp-report-trigger svg{width:17px;height:17px;flex:none;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.cp-report-trigger:hover{background:var(--h42-color-soft);color:var(--h42-color-text)}
+.cp-report-trigger:focus-visible,.cp-report-dialog :is(button,select,textarea):focus-visible{outline:2px solid var(--h42-color-focus);outline-offset:3px}
+dialog.cp-report-dialog{box-sizing:border-box;inset:12px;width:min(510px,calc(100% - 24px));max-width:none;max-height:calc(100dvh - 24px);margin:auto;padding:0;border:1px solid var(--cp-line);border-radius:22px;color:var(--h42-color-text);background:var(--h42-color-surface);box-shadow:var(--shadow);overflow:auto;text-align:start;overscroll-behavior:contain}
+.cp-report-dialog::backdrop{background:rgb(8 16 22 / .5);backdrop-filter:blur(5px)}
+body:has(dialog.cp-report-dialog[open]){overflow:hidden}
+.cp-report-form{margin:0;min-width:0}
+.cp-report-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:20px 22px 0}
+.cp-report-header h2{margin:6px 0 0;font-size:23px;font-weight:500;line-height:1.3;overflow-wrap:anywhere}
+.cp-report-close{display:grid;place-items:center;width:44px;height:44px;flex:none;padding:10px;border:1px solid var(--cp-line);border-radius:50%;background:var(--h42-color-soft);color:inherit;cursor:pointer}
+.cp-report-close svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round}
+.cp-report-body{padding:12px 22px 20px}
+.cp-report-intro{margin:0 0 14px;font-size:12px;line-height:1.6;color:var(--h42-color-muted)}
+.cp-report-target{margin:0 0 20px;padding-inline-start:12px;border-inline-start:2px solid var(--cp-line);font-size:14px;line-height:1.5;overflow-wrap:anywhere;white-space:pre-wrap;max-height:7.5em;overflow:auto}
+.cp-report-fields{display:grid;gap:8px;min-width:0}
+.cp-report-fields label{font-size:13px;font-weight:500;line-height:1.5}
+.cp-report-fields select,.cp-report-fields textarea{box-sizing:border-box;display:block;width:100%;min-width:0;max-width:100%;min-height:44px;padding:10px 12px;border:1px solid var(--cp-line);border-radius:12px;font:inherit;font-size:14px;line-height:1.5;color:inherit;background:var(--h42-color-bg)}
+.cp-report-fields textarea{resize:vertical;min-height:115px;max-height:45dvh}
+.cp-report-fields select+label{margin-top:12px}
+.cp-report-count{margin:0;text-align:end;font-size:11px;color:var(--h42-color-muted)}
+.cp-report-footer{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:9px;padding:16px 22px;border-top:1px solid var(--cp-line)}
+.cp-report-footer button{min-height:44px;max-width:100%;padding:10px 16px;border:1px solid var(--cp-line);border-radius:999px;font:inherit;font-size:13px;line-height:1.4;cursor:pointer;overflow-wrap:anywhere}
+.cp-report-cancel{background:transparent;color:inherit}
+.cp-report-footer .cp-report-submit{background:var(--cp-accent);border-color:var(--cp-accent);color:var(--h42-color-bg);font-weight:500}
+.cp-report-result{margin:8px 0;font-size:17px;line-height:1.5;font-weight:500}
+.cp-report-saved-reason{margin:0;font-size:13px;line-height:1.5;color:var(--h42-color-muted)}
+.cp-report-header h2:focus,.cp-report-result:focus{outline:none}
+@media(max-width:380px){.cp-report-header{padding:16px 16px 0}.cp-report-header h2{font-size:20px}.cp-report-body{padding:10px 16px 16px}.cp-report-footer{padding:14px 16px}.cp-report-footer button{flex:1 1 auto}}

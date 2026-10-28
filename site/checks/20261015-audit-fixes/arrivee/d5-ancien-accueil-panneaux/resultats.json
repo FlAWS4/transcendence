@@ -1,0 +1,602 @@
+{
+ "script": "d5_ancien_accueil_panneaux.py",
+ "viewport": [
+  1280,
+  900
+ ],
+ "panels": {
+  "t0": {
+   "entry": "scanning",
+   "site": "fr",
+   "dir": "ltr",
+   "theme": "light",
+   "login": {
+    "lang": "fr",
+    "text": "Se connecter",
+    "buttonLang": "fr",
+    "ariaDescription": null,
+    "slots": 0,
+    "spans": 0,
+    "rect": [
+     476.015625,
+     605,
+     151.984375,
+     54
+    ],
+    "hover": false
+   },
+   "guest": {
+    "lang": "fr",
+    "text": "Visiter",
+    "buttonLang": "fr",
+    "ariaDescription": null,
+    "slots": 0,
+    "spans": 0,
+    "rect": [
+     652,
+     605,
+     151.984375,
+     54
+    ],
+    "hover": false
+   },
+   "active": "BODY",
+   "focusVisible": false,
+   "dialogOpen": false,
+   "accessHover": false,
+   "toggleHidden": null,
+   "account": null,
+   "errors": [],
+   "now": 715.8000000119209
+  },
+  "t4_7": {
+   "entry": "encrypted",
+   "site": "fr",
+   "dir": "ltr",
+   "theme": "light",
+   "login": {
+    "lang": "fr",
+    "text": "Se connecter",
+    "buttonLang": "fr",
+    "ariaDescription": null,
+    "slots": 0,
+    "spans": 0,
+    "rect": [
+     476.015625,
+     605,
+     151.984375,
+     54
+    ],
+    "hover": false
+   },
+   "guest": {
+    "lang": "fr",
+    "text": "Visiter",
+    "buttonLang": "fr",
+    "ariaDescription": null,
+    "slots": 0,
+    "spans": 0,
+    "rect": [
+     652,
+     605,
+     151.984375,
+     54
+    ],
+    "hover": false
+   },
+   "active": "BODY",
+   "focusVisible": false,
+   "dialogOpen": false,
+   "accessHover": false,
+   "toggleHidden": null,
+   "account": null,
+   "errors": [],
+   "now": 5482.9000000059605
+  },
+  "t9_6": {
+   "entry": "encrypted",
+   "site": "fr",
+   "dir": "ltr",
+   "theme": "light",
+   "login": {
+    "lang": "fr",
+    "text": "Se connecter",
+    "buttonLang": "fr",
+    "ariaDescription": null,
+    "slots": 0,
+    "spans": 0,
+    "rect": [
+     476.015625,
+     605,
+     151.984375,
+     54
+    ],
+    "hover": false
+   },
+   "guest": {
+    "lang": "fr",
+    "text": "Visiter",
+    "buttonLang": "fr",
+    "ariaDescription": null,
+    "slots": 0,
+    "spans": 0,
+    "rect": [
+     652,
+     605,
+     151.984375,
+     54
+    ],
+    "hover": false
+   },
+   "active": "BODY",
+   "focusVisible": false,
+   "dialogOpen": false,
+   "accessHover": false,
+   "toggleHidden": null,
+   "account": null,
+   "errors": [],
+   "now": 10385.100000023842
+  },
+  "observedMs": 9680,
+  "labelLog": [
+   {
+    "t": 699.4000000059605,
+    "lang": "fr",
+    "active": "BODY",
+    "why": "start"
+   }
+  ],
+  "mutations": [
+   {
+    "t": 3875,
+    "type": "childList",
+    "attr": null,
+    "target": "entry-login",
+    "text": [
+     "Se connecter",
+     "Visiter"
+    ]
+   },
+   {
+    "t": 3875,
+    "type": "attributes",
+    "attr": "lang",
+    "target": "entry-login",
+    "text": [
+     "Se connecter",
+     "Visiter"
+    ]
+   },
+   {
+    "t": 3875,
+    "type": "childList",
+    "attr": null,
+    "target": "entry-guest",
+    "text": [
+     "Se connecter",
+     "Visiter"
+    ]
+   },
+   {
+    "t": 3875,
+    "type": "attributes",
+    "attr": "lang",
+    "target": "entry-guest",
+    "text": [
+     "Se connecter",
+     "Visiter"
+    ]
+   }
+  ],
+  "languageControl": {
+   "rect": [
+    1072,
+    40,
+    44,
+    44
+   ],
+   "visible": "visible",
+   "hit": true,
+   "text": "FR"
+  },
+  "languageSwitches": [
+   {
+    "locale": "en",
+    "state": {
+     "entry": "encrypted",
+     "site": "en",
+     "dir": "ltr",
+     "theme": "light",
+     "login": {
+      "lang": "en",
+      "text": "Sign in",
+      "buttonLang": "en",
+      "ariaDescription": null,
+      "slots": 0,
+      "spans": 0,
+      "rect": [
+       519.203125,
+       605,
+       108.796875,
+       54
+      ],
+      "hover": false
+     },
+     "guest": {
+      "lang": "en",
+      "text": "Visit",
+      "buttonLang": "en",
+      "ariaDescription": null,
+      "slots": 0,
+      "spans": 0,
+      "rect": [
+       652,
+       605,
+       108.796875,
+       54
+      ],
+      "hover": false
+     },
+     "active": "language",
+     "focusVisible": false,
+     "dialogOpen": false,
+     "accessHover": false,
+     "toggleHidden": null,
+     "account": null,
+     "errors": [],
+     "now": 11535.5
+    },
+    "after4_7s": {
+     "login": {
+      "lang": "en",
+      "text": "Sign in",
+      "buttonLang": "en",
+      "ariaDescription": null,
+      "slots": 0,
+      "spans": 0,
+      "rect": [
+       519.203125,
+       605,
+       108.796875,
+       54
+      ],
+      "hover": false
+     },
+     "guest": {
+      "lang": "en",
+      "text": "Visit",
+      "buttonLang": "en",
+      "ariaDescription": null,
+      "slots": 0,
+      "spans": 0,
+      "rect": [
+       652,
+       605,
+       108.796875,
+       54
+      ],
+      "hover": false
+     },
+     "site": "en"
+    },
+    "labelChanges": []
+   },
+   {
+    "locale": "ar",
+    "state": {
+     "entry": "encrypted",
+     "site": "ar",
+     "dir": "rtl",
+     "theme": "light",
+     "login": {
+      "lang": "ar",
+      "text": "تسجيل الدخول",
+      "buttonLang": "ar",
+      "ariaDescription": null,
+      "slots": 0,
+      "spans": 0,
+      "rect": [
+       652,
+       605,
+       159.578125,
+       66
+      ],
+      "hover": false
+     },
+     "guest": {
+      "lang": "ar",
+      "text": "زيارة",
+      "buttonLang": "ar",
+      "ariaDescription": null,
+      "slots": 0,
+      "spans": 0,
+      "rect": [
+       468.421875,
+       605,
+       159.578125,
+       66
+      ],
+      "hover": false
+     },
+     "active": "language",
+     "focusVisible": false,
+     "dialogOpen": false,
+     "accessHover": false,
+     "toggleHidden": null,
+     "account": null,
+     "errors": [],
+     "now": 17274.600000023842
+    },
+    "after4_7s": {
+     "login": {
+      "lang": "ar",
+      "text": "تسجيل الدخول",
+      "buttonLang": "ar",
+      "ariaDescription": null,
+      "slots": 0,
+      "spans": 0,
+      "rect": [
+       652,
+       605,
+       159.578125,
+       66
+      ],
+      "hover": false
+     },
+     "guest": {
+      "lang": "ar",
+      "text": "زيارة",
+      "buttonLang": "ar",
+      "ariaDescription": null,
+      "slots": 0,
+      "spans": 0,
+      "rect": [
+       468.421875,
+       605,
+       159.578125,
+       66
+      ],
+      "hover": false
+     },
+     "site": "ar"
+    },
+    "labelChanges": []
+   },
+   {
+    "locale": "fr",
+    "state": {
+     "entry": "encrypted",
+     "site": "fr",
+     "dir": "ltr",
+     "theme": "light",
+     "login": {
+      "lang": "fr",
+      "text": "Se connecter",
+      "buttonLang": "fr",
+      "ariaDescription": null,
+      "slots": 0,
+      "spans": 0,
+      "rect": [
+       476.015625,
+       605,
+       151.984375,
+       54
+      ],
+      "hover": false
+     },
+     "guest": {
+      "lang": "fr",
+      "text": "Visiter",
+      "buttonLang": "fr",
+      "ariaDescription": null,
+      "slots": 0,
+      "spans": 0,
+      "rect": [
+       652,
+       605,
+       151.984375,
+       54
+      ],
+      "hover": false
+     },
+     "active": "language",
+     "focusVisible": false,
+     "dialogOpen": false,
+     "accessHover": false,
+     "toggleHidden": null,
+     "account": null,
+     "errors": [],
+     "now": 22975
+    },
+    "after4_7s": {
+     "login": {
+      "lang": "fr",
+      "text": "Se connecter",
+      "buttonLang": "fr",
+      "ariaDescription": null,
+      "slots": 0,
+      "spans": 0,
+      "rect": [
+       476.015625,
+       605,
+       151.984375,
+       54
+      ],
+      "hover": false
+     },
+     "guest": {
+      "lang": "fr",
+      "text": "Visiter",
+      "buttonLang": "fr",
+      "ariaDescription": null,
+      "slots": 0,
+      "spans": 0,
+      "rect": [
+       652,
+       605,
+       151.984375,
+       54
+      ],
+      "hover": false
+     },
+     "site": "fr"
+    },
+    "labelChanges": []
+   }
+  ],
+  "error": {
+   "entry": "error",
+   "status": "Le monde n’a pas pu se préparer.",
+   "buttons": [
+    "Réessayer",
+    "Revenir au message",
+    "Continuer sans le globe"
+   ]
+  },
+  "welcome": {
+   "entry": "welcome",
+   "lang": "fr",
+   "errors": []
+  },
+  "errors": []
+ },
+ "index": {
+  "t0": {
+   "entry": "scanning",
+   "site": "fr",
+   "dir": "ltr",
+   "theme": "light",
+   "login": {
+    "lang": "fr",
+    "text": "Se connecter",
+    "buttonLang": "fr",
+    "ariaDescription": "Les langues alternent automatiquement. Le survol ou le focus des boutons suspend le changement.",
+    "slots": 1,
+    "spans": 5,
+    "rect": [
+     468.421875,
+     605,
+     159.578125,
+     52
+    ],
+    "hover": false
+   },
+   "guest": {
+    "lang": "fr",
+    "text": "Visiter",
+    "buttonLang": "fr",
+    "ariaDescription": "Les langues alternent automatiquement. Le survol ou le focus des boutons suspend le changement.",
+    "slots": 1,
+    "spans": 5,
+    "rect": [
+     652,
+     605,
+     159.578125,
+     52
+    ],
+    "hover": false
+   },
+   "active": "BODY",
+   "focusVisible": false,
+   "dialogOpen": false,
+   "accessHover": false,
+   "toggleHidden": false,
+   "account": "none",
+   "errors": [],
+   "now": 723.9000000059605
+  },
+  "changes": [
+   {
+    "dtMs": 3374,
+    "lang": "en",
+    "active": "BODY"
+   },
+   {
+    "dtMs": 7375,
+    "lang": "ar",
+    "active": "BODY"
+   }
+  ],
+  "t9": {
+   "entry": "encrypted",
+   "site": "fr",
+   "dir": "ltr",
+   "theme": "light",
+   "login": {
+    "lang": "ar",
+    "text": "تسجيل الدخول",
+    "buttonLang": "ar",
+    "ariaDescription": "تتبدل اللغات تلقائياً. يتوقف التبديل عند تمرير المؤشر على الأزرار أو التركيز عليها.",
+    "slots": 1,
+    "spans": 5,
+    "rect": [
+     468.421875,
+     605,
+     159.578125,
+     52
+    ],
+    "hover": false
+   },
+   "guest": {
+    "lang": "ar",
+    "text": "زيارة",
+    "buttonLang": "ar",
+    "ariaDescription": "تتبدل اللغات تلقائياً. يتوقف التبديل عند تمرير المؤشر على الأزرار أو التركيز عليها.",
+    "slots": 1,
+    "spans": 5,
+    "rect": [
+     652,
+     605,
+     159.578125,
+     52
+    ],
+    "hover": false
+   },
+   "active": "BODY",
+   "focusVisible": false,
+   "dialogOpen": false,
+   "accessHover": false,
+   "toggleHidden": false,
+   "account": "none",
+   "errors": [],
+   "now": 9927.299999982119
+  }
+ },
+ "passed": true,
+ "verdicts": {
+  "panelsPlainLabels": true,
+  "panelsTextsStable": true,
+  "panelsNoRotation9s": true,
+  "panelsSiteFr": true,
+  "panelsLanguageSwitch": true,
+  "panelsNoErrors": true,
+  "indexRotates": true
+ },
+ "console": [
+  {
+   "kind": "log.network.error",
+   "text": "Failed to load resource: the server responded with a status of 404 (File not found)",
+   "resource": "http://127.0.0.1:8765/favicon.ico",
+   "page": "http://127.0.0.1:8765/work/visualizations/horizon-welcome/welcome-panels.html?qa=verif-d5"
+  }
+ ],
+ "before144FromAudit": "/tmp/claude-1000/-home-le-rif-Bureau-Transcendence/18d0b8f6-9491-4e02-9948-0bc4168cb89e/scratchpad/codex-audit/contre-perimetre-strict/chrome/p1-results.json (welcomePanels)",
+ "sourcesUnchanged": true,
+ "sources": {
+  "index.html": "1c917ec3cf69e72818ae48e408d28563ed2fb6dc6bf48c6aac7a1ad1052753c6",
+  "content-preview.html": "8817305bef2eb91cd3c36c76aedb961bd757d398746bfb3c50817ebdc2c3666f",
+  "welcome.mjs": "e1b31b75b8aa4e9b24bb9b3f646f59467a32b72dbaa016d80f6b1ff738aa9e60",
+  "content-preview.mjs": "efba6b21f19d03c587cfc6023972f32d5f14dd792b8191d0e79fb815c4817819",
+  "entrance.mjs": "d9940372d745df7de1bc0a347548b744fadab9a5eb46dcf467c2def1734fe2d4",
+  "entrance.css": "e5f9b6205d7a5fd0cba85e666eee48539fcbaf74944f94f4f25637cc369bd312",
+  "account-menu.mjs": "b839d5c2c1c44e19d75d6d84fc89ff9cb5b91909b53cb093f7bbea338e9ef105",
+  "account-menu.css": "8f6da743782fb50abad856317bcb3292d8babcd96b51e8b6a13c7ff28d266540",
+  "welcome-panels.html": "8ea7fed7eb308dbd12e8c8222f8359536905c549bda63e98f1e89fc4856a1f0e",
+  "welcome-panels.mjs": "325263f40009464e8ef3e950a6e81ec124412c3d5b4f5c5e7f9e0787bb602074",
+  "archive/pre-codex-audit-fixes-20261015/baseline/index.html": "387cfb9cb300fd29fa1f2f58997f9f1f4fa83c16de8d33650a2b3a95edc27d42",
+  "archive/pre-codex-audit-fixes-20261015/baseline/welcome.mjs": "fa65d17e822b1f1f5587c6af43cea7e713eb12efe48c9e9bb210363477b2ae0a",
+  "archive/pre-codex-audit-fixes-20261015/baseline/entrance.mjs": "1ae3cb3b4407290cefaf998c523726a4ad6b9ac5aaedfb99ee02cb9428205b4d",
+  "archive/pre-codex-audit-fixes-20261015/baseline/entrance.css": "1adda0abf677d2eceea4fbb74619ee5b0416867e65891635ac8f19d873d409ad"
+ },
+ "durationS": 40.5
+}

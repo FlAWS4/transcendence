@@ -1,0 +1,975 @@
+{
+  "passed": false,
+  "input": "Chrome CDP trusted touch, mobile 390×844 emulation, reduced motion",
+  "cases": [
+    {
+      "case": "ready-touch-mobile",
+      "result": {
+        "controls": {
+          "variant": "3",
+          "open": false,
+          "pinned": false,
+          "available": true,
+          "reason": "",
+          "hold": false
+        },
+        "map": {
+          "level": "world",
+          "country": null,
+          "campus": null,
+          "countryName": null,
+          "campusName": null,
+          "worldRender": {
+            "phase": "ready",
+            "zoom": 1.3726826431730412
+          },
+          "inFlight": false,
+          "flightStage": null,
+          "center": [
+            6,
+            18
+          ],
+          "zoom": 1.3726826431730412,
+          "minZoom": 1.3726826431730412,
+          "maxZoom": 3.172682643173041,
+          "campusDistanceKm": null,
+          "detailVisible": false,
+          "detail": {
+            "phase": "local",
+            "opacityTarget": 0
+          },
+          "campusRender": {
+            "mode": "progressive",
+            "phase": "local",
+            "fullyPrepared": false
+          },
+          "campusPreload": {
+            "phase": "idle",
+            "campusId": null,
+            "radiusKm": 3,
+            "total": 0,
+            "completed": 0,
+            "available": 0,
+            "failed": 0,
+            "ready": false,
+            "cacheBytes": 0,
+            "cacheLimitBytes": 50331648,
+            "cacheTiles": 0,
+            "networkTiles": 0,
+            "networkBytes": 0,
+            "rendererRequests": 0,
+            "rendererCacheHits": 0,
+            "sharedRequests": 0
+          },
+          "randomCampus": {
+            "phase": "loading",
+            "campusId": "prague",
+            "radiusKm": 4.75,
+            "total": 42,
+            "completed": 0,
+            "available": 0,
+            "failed": 0,
+            "ready": false,
+            "zoom": 14,
+            "cacheBytes": 0,
+            "cacheLimitBytes": 50331648,
+            "cacheTiles": 0,
+            "networkTiles": 0,
+            "networkBytes": 0,
+            "rendererRequests": 0,
+            "rendererCacheHits": 0,
+            "sharedRequests": 0,
+            "nextCampusId": "prague"
+          },
+          "flightDuration": null,
+          "detailOpacity": 0,
+          "renderedDetail": {
+            "paints": {
+              "h42-land": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-water": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-road-major": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-building-relief": {
+                "opacity": null,
+                "hidden": true
+              }
+            },
+            "evaluatedZoom": 1.3726826431730412,
+            "covered": false,
+            "canvasVisibility": "visible"
+          }
+        },
+        "active": ""
+      }
+    },
+    {
+      "case": "held-touch-observation",
+      "result": {
+        "controls": {
+          "variant": "3",
+          "open": true,
+          "pinned": false,
+          "available": true,
+          "reason": "hold",
+          "hold": true
+        },
+        "map": {
+          "level": "world",
+          "country": null,
+          "campus": null,
+          "countryName": null,
+          "campusName": null,
+          "worldRender": {
+            "phase": "ready",
+            "zoom": 1.3726826431730412
+          },
+          "inFlight": false,
+          "flightStage": null,
+          "center": [
+            6,
+            18
+          ],
+          "zoom": 1.3726826431730412,
+          "minZoom": 1.3726826431730412,
+          "maxZoom": 3.172682643173041,
+          "campusDistanceKm": null,
+          "detailVisible": false,
+          "detail": {
+            "phase": "local",
+            "opacityTarget": 0
+          },
+          "campusRender": {
+            "mode": "progressive",
+            "phase": "local",
+            "fullyPrepared": false
+          },
+          "campusPreload": {
+            "phase": "idle",
+            "campusId": null,
+            "radiusKm": 3,
+            "total": 0,
+            "completed": 0,
+            "available": 0,
+            "failed": 0,
+            "ready": false,
+            "cacheBytes": 618732,
+            "cacheLimitBytes": 50331648,
+            "cacheTiles": 5,
+            "networkTiles": 5,
+            "networkBytes": 618732,
+            "rendererRequests": 0,
+            "rendererCacheHits": 0,
+            "sharedRequests": 0
+          },
+          "randomCampus": {
+            "phase": "loading",
+            "campusId": "prague",
+            "radiusKm": 4.75,
+            "total": 42,
+            "completed": 5,
+            "available": 5,
+            "failed": 0,
+            "ready": false,
+            "zoom": 14,
+            "cacheBytes": 618732,
+            "cacheLimitBytes": 50331648,
+            "cacheTiles": 5,
+            "networkTiles": 5,
+            "networkBytes": 618732,
+            "rendererRequests": 0,
+            "rendererCacheHits": 0,
+            "sharedRequests": 0,
+            "nextCampusId": "prague"
+          },
+          "flightDuration": null,
+          "detailOpacity": 0,
+          "renderedDetail": {
+            "paints": {
+              "h42-land": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-water": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-road-major": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-building-relief": {
+                "opacity": null,
+                "hidden": true
+              }
+            },
+            "evaluatedZoom": 1.3726826431730412,
+            "covered": false,
+            "canvasVisibility": "visible"
+          }
+        },
+        "active": ""
+      }
+    },
+    {
+      "case": "touch-release-without-action",
+      "result": {
+        "controls": {
+          "variant": "3",
+          "open": true,
+          "pinned": false,
+          "available": true,
+          "reason": "manual",
+          "hold": false
+        },
+        "map": {
+          "level": "world",
+          "country": null,
+          "campus": null,
+          "countryName": null,
+          "campusName": null,
+          "worldRender": {
+            "phase": "ready",
+            "zoom": 1.3726826431730412
+          },
+          "inFlight": false,
+          "flightStage": null,
+          "center": [
+            6,
+            18
+          ],
+          "zoom": 1.3726826431730412,
+          "minZoom": 1.3726826431730412,
+          "maxZoom": 3.172682643173041,
+          "campusDistanceKm": null,
+          "detailVisible": false,
+          "detail": {
+            "phase": "local",
+            "opacityTarget": 0
+          },
+          "campusRender": {
+            "mode": "progressive",
+            "phase": "local",
+            "fullyPrepared": false
+          },
+          "campusPreload": {
+            "phase": "idle",
+            "campusId": null,
+            "radiusKm": 3,
+            "total": 0,
+            "completed": 0,
+            "available": 0,
+            "failed": 0,
+            "ready": false,
+            "cacheBytes": 618732,
+            "cacheLimitBytes": 50331648,
+            "cacheTiles": 5,
+            "networkTiles": 5,
+            "networkBytes": 618732,
+            "rendererRequests": 0,
+            "rendererCacheHits": 0,
+            "sharedRequests": 0
+          },
+          "randomCampus": {
+            "phase": "loading",
+            "campusId": "prague",
+            "radiusKm": 4.75,
+            "total": 42,
+            "completed": 5,
+            "available": 5,
+            "failed": 0,
+            "ready": false,
+            "zoom": 14,
+            "cacheBytes": 618732,
+            "cacheLimitBytes": 50331648,
+            "cacheTiles": 5,
+            "networkTiles": 5,
+            "networkBytes": 618732,
+            "rendererRequests": 0,
+            "rendererCacheHits": 0,
+            "sharedRequests": 0,
+            "nextCampusId": "prague"
+          },
+          "flightDuration": null,
+          "detailOpacity": 0,
+          "renderedDetail": {
+            "paints": {
+              "h42-land": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-water": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-road-major": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-building-relief": {
+                "opacity": null,
+                "hidden": true
+              }
+            },
+            "evaluatedZoom": 1.3726826431730412,
+            "covered": false,
+            "canvasVisibility": "visible"
+          }
+        },
+        "active": ""
+      }
+    },
+    {
+      "case": "repeated-hold-observation",
+      "result": {
+        "controls": {
+          "variant": "3",
+          "open": true,
+          "pinned": false,
+          "available": true,
+          "reason": "hold",
+          "hold": true
+        },
+        "map": {
+          "level": "world",
+          "country": null,
+          "campus": null,
+          "countryName": null,
+          "campusName": null,
+          "worldRender": {
+            "phase": "ready",
+            "zoom": 1.3726826431730412
+          },
+          "inFlight": false,
+          "flightStage": null,
+          "center": [
+            6,
+            18
+          ],
+          "zoom": 1.3726826431730412,
+          "minZoom": 1.3726826431730412,
+          "maxZoom": 3.172682643173041,
+          "campusDistanceKm": null,
+          "detailVisible": false,
+          "detail": {
+            "phase": "local",
+            "opacityTarget": 0
+          },
+          "campusRender": {
+            "mode": "progressive",
+            "phase": "local",
+            "fullyPrepared": false
+          },
+          "campusPreload": {
+            "phase": "idle",
+            "campusId": null,
+            "radiusKm": 3,
+            "total": 0,
+            "completed": 0,
+            "available": 0,
+            "failed": 0,
+            "ready": false,
+            "cacheBytes": 1675182,
+            "cacheLimitBytes": 50331648,
+            "cacheTiles": 11,
+            "networkTiles": 11,
+            "networkBytes": 1675182,
+            "rendererRequests": 0,
+            "rendererCacheHits": 0,
+            "sharedRequests": 0
+          },
+          "randomCampus": {
+            "phase": "loading",
+            "campusId": "prague",
+            "radiusKm": 4.75,
+            "total": 42,
+            "completed": 11,
+            "available": 11,
+            "failed": 0,
+            "ready": false,
+            "zoom": 14,
+            "cacheBytes": 1675182,
+            "cacheLimitBytes": 50331648,
+            "cacheTiles": 11,
+            "networkTiles": 11,
+            "networkBytes": 1675182,
+            "rendererRequests": 0,
+            "rendererCacheHits": 0,
+            "sharedRequests": 0,
+            "nextCampusId": "prague"
+          },
+          "flightDuration": null,
+          "detailOpacity": 0,
+          "renderedDetail": {
+            "paints": {
+              "h42-land": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-water": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-road-major": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-building-relief": {
+                "opacity": null,
+                "hidden": true
+              }
+            },
+            "evaluatedZoom": 1.3726826431730412,
+            "covered": false,
+            "canvasVisibility": "visible"
+          }
+        },
+        "active": "study-trigger"
+      }
+    },
+    {
+      "case": "repeated-touch-hold",
+      "result": true
+    },
+    {
+      "case": "ordinary-touch-drag-rotates",
+      "result": {
+        "before": [
+          6,
+          18
+        ],
+        "after": [
+          -15.722203434166886,
+          18
+        ]
+      }
+    },
+    {
+      "case": "second-touch-before-threshold-cancels",
+      "result": {
+        "controls": {
+          "variant": "3",
+          "open": false,
+          "pinned": false,
+          "available": true,
+          "reason": "manual",
+          "hold": false
+        },
+        "map": {
+          "level": "world",
+          "country": null,
+          "campus": null,
+          "countryName": null,
+          "campusName": null,
+          "worldRender": {
+            "phase": "ready",
+            "zoom": 1.3726826431730412
+          },
+          "inFlight": false,
+          "flightStage": null,
+          "center": [
+            -15.722203434166886,
+            18
+          ],
+          "zoom": 1.3726826431730412,
+          "minZoom": 1.3726826431730412,
+          "maxZoom": 3.172682643173041,
+          "campusDistanceKm": null,
+          "detailVisible": false,
+          "detail": {
+            "phase": "local",
+            "opacityTarget": 0
+          },
+          "campusRender": {
+            "mode": "progressive",
+            "phase": "local",
+            "fullyPrepared": false
+          },
+          "campusPreload": {
+            "phase": "idle",
+            "campusId": null,
+            "radiusKm": 3,
+            "total": 0,
+            "completed": 0,
+            "available": 0,
+            "failed": 0,
+            "ready": false,
+            "cacheBytes": 2863983,
+            "cacheLimitBytes": 50331648,
+            "cacheTiles": 19,
+            "networkTiles": 19,
+            "networkBytes": 2863983,
+            "rendererRequests": 0,
+            "rendererCacheHits": 0,
+            "sharedRequests": 0
+          },
+          "randomCampus": {
+            "phase": "loading",
+            "campusId": "prague",
+            "radiusKm": 4.75,
+            "total": 42,
+            "completed": 19,
+            "available": 19,
+            "failed": 0,
+            "ready": false,
+            "zoom": 14,
+            "cacheBytes": 2863983,
+            "cacheLimitBytes": 50331648,
+            "cacheTiles": 19,
+            "networkTiles": 19,
+            "networkBytes": 2863983,
+            "rendererRequests": 0,
+            "rendererCacheHits": 0,
+            "sharedRequests": 0,
+            "nextCampusId": "prague"
+          },
+          "flightDuration": null,
+          "detailOpacity": 0,
+          "renderedDetail": {
+            "paints": {
+              "h42-land": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-water": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-road-major": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-building-relief": {
+                "opacity": null,
+                "hidden": true
+              }
+            },
+            "evaluatedZoom": 1.3726826431730412,
+            "covered": false,
+            "canvasVisibility": "visible"
+          }
+        },
+        "active": "study-trigger"
+      }
+    },
+    {
+      "case": "failure",
+      "result": {
+        "errors": [],
+        "input": [
+          {
+            "type": "pointerdown",
+            "pointerType": "touch",
+            "id": 2,
+            "x": 100,
+            "y": 410,
+            "target": "maplibregl-canvas",
+            "trusted": true,
+            "time": 5956
+          },
+          {
+            "type": "gotpointercapture",
+            "pointerType": "touch",
+            "id": 2,
+            "x": 100,
+            "y": 410,
+            "target": "globe",
+            "trusted": true,
+            "time": 6794
+          },
+          {
+            "type": "pointerup",
+            "pointerType": "touch",
+            "id": 2,
+            "x": 100,
+            "y": 410,
+            "target": "globe",
+            "trusted": true,
+            "time": 6794
+          },
+          {
+            "type": "lostpointercapture",
+            "pointerType": "touch",
+            "id": 2,
+            "x": 100,
+            "y": 410,
+            "target": "globe",
+            "trusted": true,
+            "time": 6795
+          },
+          {
+            "type": "click",
+            "pointerType": "touch",
+            "id": 2,
+            "x": 100,
+            "y": 410,
+            "target": "globe-controls study-zoom",
+            "trusted": true,
+            "time": 6799
+          },
+          {
+            "type": "pointerdown",
+            "pointerType": "touch",
+            "id": 3,
+            "x": 100,
+            "y": 410,
+            "target": "maplibregl-canvas",
+            "trusted": true,
+            "time": 7451
+          },
+          {
+            "type": "gotpointercapture",
+            "pointerType": "touch",
+            "id": 3,
+            "x": 100,
+            "y": 410,
+            "target": "globe",
+            "trusted": true,
+            "time": 8206
+          },
+          {
+            "type": "pointerup",
+            "pointerType": "touch",
+            "id": 3,
+            "x": 100,
+            "y": 410,
+            "target": "globe",
+            "trusted": true,
+            "time": 8206
+          },
+          {
+            "type": "lostpointercapture",
+            "pointerType": "touch",
+            "id": 3,
+            "x": 100,
+            "y": 410,
+            "target": "globe",
+            "trusted": true,
+            "time": 8206
+          },
+          {
+            "type": "click",
+            "pointerType": "touch",
+            "id": 3,
+            "x": 100,
+            "y": 410,
+            "target": "globe-controls study-zoom",
+            "trusted": true,
+            "time": 8211
+          },
+          {
+            "type": "pointerdown",
+            "pointerType": "touch",
+            "id": 4,
+            "x": 100,
+            "y": 410,
+            "target": "maplibregl-canvas",
+            "trusted": true,
+            "time": 8921
+          },
+          {
+            "type": "gotpointercapture",
+            "pointerType": "touch",
+            "id": 4,
+            "x": 112,
+            "y": 410,
+            "target": "maplibregl-canvas",
+            "trusted": true,
+            "time": 8939
+          },
+          {
+            "type": "pointermove",
+            "pointerType": "touch",
+            "id": 4,
+            "x": 112,
+            "y": 410,
+            "target": "maplibregl-canvas",
+            "trusted": true,
+            "time": 8939
+          },
+          {
+            "type": "pointermove",
+            "pointerType": "touch",
+            "id": 4,
+            "x": 132,
+            "y": 410,
+            "target": "maplibregl-canvas",
+            "trusted": true,
+            "time": 9006
+          },
+          {
+            "type": "pointermove",
+            "pointerType": "touch",
+            "id": 4,
+            "x": 155,
+            "y": 410,
+            "target": "maplibregl-canvas",
+            "trusted": true,
+            "time": 9938
+          },
+          {
+            "type": "pointermove",
+            "pointerType": "touch",
+            "id": 4,
+            "x": 180,
+            "y": 410,
+            "target": "maplibregl-canvas",
+            "trusted": true,
+            "time": 11369
+          },
+          {
+            "type": "pointerup",
+            "pointerType": "touch",
+            "id": 4,
+            "x": 180,
+            "y": 410,
+            "target": "maplibregl-canvas",
+            "trusted": true,
+            "time": 12403
+          },
+          {
+            "type": "lostpointercapture",
+            "pointerType": "touch",
+            "id": 4,
+            "x": 180,
+            "y": 410,
+            "target": "maplibregl-canvas",
+            "trusted": true,
+            "time": 12403
+          },
+          {
+            "type": "pointerdown",
+            "pointerType": "touch",
+            "id": 5,
+            "x": 100,
+            "y": 410,
+            "target": "maplibregl-canvas",
+            "trusted": true,
+            "time": 13479
+          },
+          {
+            "type": "pointerdown",
+            "pointerType": "touch",
+            "id": 6,
+            "x": 220,
+            "y": 410,
+            "target": "maplibregl-canvas",
+            "trusted": true,
+            "time": 13632
+          },
+          {
+            "type": "gotpointercapture",
+            "pointerType": "touch",
+            "id": 6,
+            "x": 230,
+            "y": 410,
+            "target": "maplibregl-canvas",
+            "trusted": true,
+            "time": 14339
+          },
+          {
+            "type": "pointermove",
+            "pointerType": "touch",
+            "id": 6,
+            "x": 230,
+            "y": 410,
+            "target": "maplibregl-canvas",
+            "trusted": true,
+            "time": 14339
+          },
+          {
+            "type": "gotpointercapture",
+            "pointerType": "touch",
+            "id": 5,
+            "x": 90,
+            "y": 410,
+            "target": "maplibregl-canvas",
+            "trusted": true,
+            "time": 14339
+          },
+          {
+            "type": "pointermove",
+            "pointerType": "touch",
+            "id": 5,
+            "x": 90,
+            "y": 410,
+            "target": "maplibregl-canvas",
+            "trusted": true,
+            "time": 14339
+          },
+          {
+            "type": "pointerup",
+            "pointerType": "touch",
+            "id": 5,
+            "x": 90,
+            "y": 410,
+            "target": "maplibregl-canvas",
+            "trusted": true,
+            "time": 15339
+          },
+          {
+            "type": "lostpointercapture",
+            "pointerType": "touch",
+            "id": 5,
+            "x": 90,
+            "y": 410,
+            "target": "maplibregl-canvas",
+            "trusted": true,
+            "time": 15339
+          },
+          {
+            "type": "pointerup",
+            "pointerType": "touch",
+            "id": 6,
+            "x": 230,
+            "y": 410,
+            "target": "maplibregl-canvas",
+            "trusted": true,
+            "time": 15339
+          },
+          {
+            "type": "lostpointercapture",
+            "pointerType": "touch",
+            "id": 6,
+            "x": 230,
+            "y": 410,
+            "target": "maplibregl-canvas",
+            "trusted": true,
+            "time": 15339
+          },
+          {
+            "type": "pointerdown",
+            "pointerType": "touch",
+            "id": 7,
+            "x": 100,
+            "y": 410,
+            "target": "maplibregl-canvas",
+            "trusted": true,
+            "time": 17055
+          }
+        ],
+        "lifecycle": [
+          {
+            "type": "pageshow",
+            "persisted": false
+          }
+        ],
+        "study": {
+          "variant": "3",
+          "open": true,
+          "pinned": false,
+          "available": true,
+          "reason": "hold",
+          "hold": true
+        },
+        "map": {
+          "level": "world",
+          "country": null,
+          "campus": null,
+          "countryName": null,
+          "campusName": null,
+          "worldRender": {
+            "phase": "ready",
+            "zoom": 1.3726826431730412
+          },
+          "inFlight": false,
+          "flightStage": null,
+          "center": [
+            -16.618130325709217,
+            16.684624113933058
+          ],
+          "zoom": 1.6054184046945574,
+          "minZoom": 1.3830259833581093,
+          "maxZoom": 3.1830259833581094,
+          "campusDistanceKm": null,
+          "detailVisible": false,
+          "detail": {
+            "phase": "local",
+            "opacityTarget": 0
+          },
+          "campusRender": {
+            "mode": "progressive",
+            "phase": "local",
+            "fullyPrepared": false
+          },
+          "campusPreload": {
+            "phase": "idle",
+            "campusId": null,
+            "radiusKm": 3,
+            "total": 0,
+            "completed": 0,
+            "available": 0,
+            "failed": 0,
+            "ready": false,
+            "cacheBytes": 3204133,
+            "cacheLimitBytes": 50331648,
+            "cacheTiles": 21,
+            "networkTiles": 21,
+            "networkBytes": 3204133,
+            "rendererRequests": 0,
+            "rendererCacheHits": 0,
+            "sharedRequests": 0
+          },
+          "randomCampus": {
+            "phase": "loading",
+            "campusId": "prague",
+            "radiusKm": 4.75,
+            "total": 42,
+            "completed": 21,
+            "available": 21,
+            "failed": 0,
+            "ready": false,
+            "zoom": 14,
+            "cacheBytes": 3204133,
+            "cacheLimitBytes": 50331648,
+            "cacheTiles": 21,
+            "networkTiles": 21,
+            "networkBytes": 3204133,
+            "rendererRequests": 0,
+            "rendererCacheHits": 0,
+            "sharedRequests": 0,
+            "nextCampusId": "prague"
+          },
+          "flightDuration": null,
+          "detailOpacity": 0,
+          "renderedDetail": {
+            "paints": {
+              "h42-land": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-water": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-road-major": {
+                "opacity": null,
+                "hidden": true
+              },
+              "h42-building-relief": {
+                "opacity": null,
+                "hidden": true
+              }
+            },
+            "evaluatedZoom": 1.6054184046945574,
+            "covered": false,
+            "canvasVisibility": "visible"
+          }
+        },
+        "target": "<div class=\"globe-controls study-zoom\" role=\"group\" aria-label=\"Commandes du globe\"><button class=\"icon-button\" id=\"zoom-out\" aria-label=\"Dézoomer\" data-study-action=\"out\" title=\"Dézoomer\"><svg><use href=\"#i-minus\"></use></svg></button><button class=\"icon-button world-control\" id=\"reset\" aria-label=\"Revenir au monde\" data-study-action=\"world\" title=\"Revenir au monde\"><svg><use href=\"#i-globe\"></use></svg></button><button class=\"icon-button\" id=\"zoom-in\" aria-label=\"Zoomer\" data-study-action=\"in\" title=\"Zoomer\"><svg><use href=\"#i-plus\"></use></svg></button></div>"
+      }
+    }
+  ],
+  "sources": {
+    "study.mjs": "62b0681938fada3eb538b3a0311366ae0dab844b2b42453687a2ee3d484983a1",
+    "study.css": "7e0b82cb75831de8e6073dab932c2b58bf7e7c3b896fc6cdc1985d1f84cb85c7",
+    "press-gesture.mjs": "8cd4604022dee043f760d9677f520994d8a7ef20bb296f12b352469c7065044c"
+  }
+}

@@ -1,0 +1,70 @@
+/* Essai voile-pile-basse (14 Oct 2026). Content pages get a bottom veil behind the
+   floating capsule, the die and the dock: the mirror of the header fade (.app::after,
+   sticky-header.css), with the same paint-only layer, colour token and visibility rules.
+   Solid from the screen edge to the capsule's top, then a short ramp above it. */
+:root .app[data-navigation=dock] {
+ /* Capsule top above the screen edge: dock offset + dock + 13 px gap + 44 px capsule. */
+ --essai-voile-plein:calc(var(--dock-bottom) + var(--dock-height) + 57px);
+ --essai-voile-fondu:24px;
+ --essai-voile-opacite:0;
+ --essai-voile-visibilite:hidden;
+ --essai-voile-transition:opacity .25s ease,visibility 0s .25s;
+}
+@media (max-height:520px) {
+ /* The results surface, and so the capsule, sits 5 px lower on short screens. */
+ :root .app[data-navigation=dock] { --essai-voile-plein:calc(var(--dock-bottom) + var(--dock-height) + 52px); }
+}
+/* Same pages as the header fade; Awards has no capsule, die or scrolling content. */
+body[data-entry=welcome] .app[data-navigation=dock]:not([data-section=explore]):not([data-section=awards]),
+body[data-entry=welcome] .app[data-navigation=dock][data-content-exiting=true] {
+ --essai-voile-opacite:1;
+ --essai-voile-visibilite:visible;
+ --essai-voile-transition:opacity .35s ease,visibility 0s;
+}
+/* The veil leaves with the dock surfaces while the document scrolls, and stays when
+   keyboard focus keeps the dock revealed (the conditions of back-to-top.css). */
+body[data-entry=welcome] .app[data-navigation=dock]:not([data-menu-scroll-study=background]):not([data-section=explore]):has(.dock-shell[data-document-scrolling=true]:not([data-search-open=true])):not(:has(.dock-shell :focus-visible)) {
+ --essai-voile-opacite:0;
+ --essai-voile-transition:opacity .22s ease,visibility 0s;
+}
+/* Page menus stop 8-12 px above the capsule (content-controls.mjs, comments.mjs, section
+   selectors), inside the ramp: while one is open the veil steps aside in the same way. */
+body[data-entry=welcome] .app[data-navigation=dock]:has(#content-sheet [role=menu]:not([hidden]):not([hidden] *),#content-sheet details[open]:is(.cp-project-section-switch,.cp-profile-section-switch)) {
+ --essai-voile-opacite:0;
+ --essai-voile-transition:opacity .22s ease,visibility 0s;
+}
+/* Keyboard focus (or a field being typed in) can rest inside the solid band and vanish:
+   the veil steps aside the same way while it lasts. The pinned sidebar stays above it. */
+body[data-entry=welcome] .app[data-navigation=dock]:has(#content-sheet :focus-visible:not([data-detail-scroll=sidebar] *)) {
+ --essai-voile-opacite:0;
+ --essai-voile-transition:opacity .22s ease,visibility 0s;
+}
+:root .app[data-navigation=dock]::before,
+:root .app[data-navigation=dock] #content-sheet::after {
+ content:'';
+ position:fixed;
+ inset:auto 0 0;
+ z-index:6;
+ height:calc(var(--essai-voile-plein) + var(--essai-voile-fondu));
+ pointer-events:none;
+ background:linear-gradient(to top,
+  var(--h42-color-bg) 0,
+  var(--h42-color-bg) var(--essai-voile-plein),
+  color-mix(in srgb, var(--h42-color-bg) 82%, transparent) calc(var(--essai-voile-plein) + var(--essai-voile-fondu) * .35),
+  transparent 100%);
+ opacity:var(--essai-voile-opacite);
+ visibility:var(--essai-voile-visibilite);
+ transition:var(--essai-voile-transition);
+}
+/* Desktop detail pages pin their sidebar inside the sheet (detail-scroll.css, >= 841 px).
+   There the veil is drawn in the sheet's own layer, just under that sidebar, which never
+   scrolls behind the stack. The baseline does not transform the sheet in this state
+   (content-transitions.mjs), so the fixed veil keeps the viewport as its reference. */
+:root .app[data-navigation=dock] #content-sheet::after { display:none; z-index:1; }
+:root .app[data-navigation=dock]:has(:is(#profile-detail,#project-detail,#journal-detail):not([hidden]) [data-detail-scroll=sidebar])::before { display:none; }
+:root .app[data-navigation=dock]:has(:is(#profile-detail,#project-detail,#journal-detail):not([hidden]) [data-detail-scroll=sidebar]) #content-sheet::after { display:block; }
+:root .app[data-navigation=dock] :is(#profile-detail,#project-detail,#journal-detail):not([hidden]) [data-detail-scroll=sidebar] { z-index:2; }
+@media (prefers-reduced-motion:reduce) {
+ :root .app[data-navigation=dock]::before,
+ :root .app[data-navigation=dock] #content-sheet::after { transition:none !important; }
+}

@@ -1,0 +1,113 @@
+/* Version B Explorer « Halo »: the colour and width tokens (SPEC-B-HALO §2.1) and the rules of the art drawn by
+   explorer-art.mjs: silhouettes, campus dots, the sheet's locator and the printed campus logos (§4.1, §4.3–4.7, §4.10,
+   §2.7). Load before explorer-selector.css and explorer-campus.css. The --hx- names are halo's own (mock-up halo.css), so
+   the mock-up and B compare line by line; values are halo's, written as references to A's charter tokens where one
+   exists, and only the H2 fixes (marked « fix ») and the width tokens differ. Every colour of the selector, the sheet
+   and the art module comes from this block (a warmer light mode is a change of this block only); this file never names
+   an .explorer-* class. */
+:root{
+ --hx-ink:var(--h42-ink);                         /* #1B1B1B */
+ --hx-muted:#536163;                              /* = A's light --h42-color-muted, 6.1:1 on #F7FAFA */
+ --hx-accent:var(--readable-glass-accent);        /* #0C7677, 5.2:1 */
+ --hx-pink:var(--h42-pink);                       /* Royal Pink #ED3491, decoration only */
+ --hx-pink-text:#C92177;                          /* = A's light .item-sign colour; check icon of the current campus pill */
+ --hx-chip-text:#A3155F;                          /* « Prochaine » text, 6.1:1 on its chip */
+ --hx-teal:var(--h42-teal);                       /* 42 Blue #00BABC */
+ --hx-focus:var(--h42-color-focus);               /* #008E90 */
+ --hx-land-a:#3FC2BE;--hx-land-b:#A9E2DB;--hx-land-c:#F4D3E3;   /* 27 Sept welcome land */
+ --hx-sea-a:#FFFFFF;--hx-sea-b:#DCF0EF;
+ --hx-rim:rgb(255 255 255 / .9);                  /* light rim of land shapes */
+ --hx-flag-rim:rgb(24 61 60 / .3);--hx-flag-rim-width:1.2px;    /* fix H2b: was white .75 */
+ --hx-sheen-hi:rgb(255 255 255 / .55);--hx-sheen-lo:rgb(0 0 0 / .18);
+ --hx-text-halo:#FFFFFF;--hx-text-glow:rgb(255 255 255 / .85);
+ /* no glow tokens: the items and the sheet's heart logo have no halo (25 Oct 2026) */
+ --hx-pool:radial-gradient(closest-side,rgb(255 255 255 / .95),color-mix(in srgb,var(--hx-teal) 28%,transparent) 46%,color-mix(in srgb,var(--hx-teal) 8%,transparent) 78%,transparent 100%);
+ --hx-logo-ink:#1B1B1B;
+ --hx-dot:#ED3491;--hx-dot-ring:#FFFFFF;
+ --hx-go-bg:var(--h42-teal);--hx-go-ink:#1B1B1B;  /* = --h42-access-accent light, ink 7.2:1 */
+ --hx-go-shadow:0 8px 20px color-mix(in srgb,var(--hx-go-bg) 30%,transparent);
+ --hx-hair:rgb(24 61 60 / .12);--hx-hair-strong:rgb(24 61 60 / .22);
+ --hx-frame:#FFFFFF;--hx-photo-shadow:0 22px 44px rgb(24 61 60 / .16),0 3px 10px rgb(24 61 60 / .08);
+ --hx-pill-surface:rgb(255 255 255 / .78);--hx-pill-solid:#FFFFFF;--hx-pill-edge:rgb(24 61 60 / .12);
+ --hx-shape-shadow:drop-shadow(0 10px 18px rgb(24 61 60 / .14));
+ --hx-sib-current:radial-gradient(closest-side,color-mix(in srgb,var(--hx-teal) 16%,transparent),transparent);
+ --hx-sticker-bg:#FFFFFF;--hx-sticker-shadow:0 6px 18px rgb(0 0 0 / .12);
+ --hx-expand-bg:rgb(255 255 255 / .82);--hx-expand-ink:#1B1B1B;
+ /* widths, on screen (D2, D3, D4); not colours */
+ --hx-rim-width:1.2px;--hx-sea-rim-width:1.2px;--hx-dot-ring-width:1.3px;--hx-outline-width:1.5px;
+ --hx-name-stroke:4px;--hx-name-core:2px;          /* fix H2a/H2g: was .28em stroke and .5em/1.1em glows */
+ --hx-focus-ring-width:2px;--hx-focus-ring-offset:3px;   /* focus cue, user decision A (§4.13) */
+}
+:root[data-theme=dark]{
+ --hx-ink:var(--h42-white);
+ --hx-muted:#A9C0C0;                              /* cadet 80 % + white, 9.0:1 on #1B1B1B */
+ --hx-accent:var(--readable-glass-accent);        /* #F485BD, 7.3:1 */
+ --hx-pink-text:#F485BD;--hx-chip-text:#F7A3CC;
+ --hx-focus:var(--h42-color-focus);               /* #96A3EB */
+ --hx-land-a:#2C8C88;--hx-land-b:#255F5E;--hx-land-c:#6A2C51;
+ --hx-sea-a:#34333B;--hx-sea-b:#222127;
+ --hx-rim:rgb(255 255 255 / .28);
+ --hx-flag-rim:rgb(255 255 255 / .35);--hx-flag-rim-width:1.4px;
+ --hx-text-halo:#1B1B1B;--hx-text-glow:rgb(27 27 27 / .8);
+ --hx-pool:radial-gradient(closest-side,color-mix(in srgb,var(--hx-pink) 34%,transparent),color-mix(in srgb,var(--hx-teal) 14%,transparent) 62%,transparent 100%);
+ --hx-logo-ink:#F4F7F7;
+ --hx-dot:#F485BD;--hx-dot-ring:#1B1B1B;
+ --hx-go-bg:color-mix(in srgb,var(--h42-pink) 75%,var(--h42-white));   /* fix H2g: #F267AC, ink 6.0:1 (was #ED3491, 4.51:1) */
+ --hx-hair:rgb(255 255 255 / .12);--hx-hair-strong:rgb(255 255 255 / .24);
+ --hx-frame:#2E2E34;--hx-photo-shadow:0 22px 48px rgb(0 0 0 / .45),0 3px 10px rgb(0 0 0 / .3);
+ --hx-pill-surface:rgb(41 41 46 / .78);--hx-pill-solid:#29292E;--hx-pill-edge:rgb(255 255 255 / .16);
+ --hx-shape-shadow:drop-shadow(0 10px 22px rgb(0 0 0 / .45));
+ --hx-sib-current:radial-gradient(closest-side,color-mix(in srgb,var(--hx-pink) 22%,transparent),transparent);
+}
+
+/* Art reset (§4.1): the site's icon rule (svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.6}) does
+   not apply to silhouettes and dots; they are decorative and never take a pointer event (§4.21). */
+svg.hx-art,svg.hx-dots{display:block;width:100%;height:100%;fill:initial;stroke:none;stroke-width:0;overflow:visible;pointer-events:none}
+
+/* Silhouette paints (§4.3, §4.6). The gradients live in the shared #hx-defs (ensureArtDefs), their stops read the tokens,
+   so a theme switch never re-renders. Every stroke is a direct <path>/<circle> with a non-scaling stroke whose width is
+   the on-screen token divided by the item's CSS scale --s (D2, R27): halo's widths at every rank. */
+.hx-land{fill:url(#hx-land-grad)}
+.hx-land-soft{fill:url(#hx-land-soft-grad)}
+.hx-sheen{fill:url(#hx-sheen-grad);mix-blend-mode:soft-light}
+.hx-sea{fill:url(#hx-sea-grad)}
+.hx-sphere-sheen{fill:url(#hx-sheen-grad);opacity:.5;mix-blend-mode:soft-light}
+.hx-rim{fill:none;stroke:var(--hx-rim);stroke-width:calc(var(--hx-rim-width) / var(--s, 1));vector-effect:non-scaling-stroke;stroke-linejoin:round}
+.hx-flag-rim{fill:none;stroke:var(--hx-flag-rim);stroke-width:calc(var(--hx-flag-rim-width) / var(--s, 1));vector-effect:non-scaling-stroke;stroke-linejoin:round}
+.hx-sea-rim{fill:none;stroke:color-mix(in srgb,var(--hx-pink) 22%,transparent);stroke-width:calc(var(--hx-sea-rim-width) / var(--s, 1));vector-effect:non-scaling-stroke;stroke-linejoin:round}
+.hx-outline{display:none}
+
+/* Campus dots (§4.7), drawn by createDots in their own layer above the name (H2a). */
+.hx-dot{fill:var(--hx-dot);stroke:var(--hx-dot-ring);stroke-width:calc(var(--hx-dot-ring-width) / var(--s, 1));vector-effect:non-scaling-stroke}
+
+/* The sheet's locator (§5.2): the campus as a pink dot in its country, with a ping (not under reduced motion). The sheet
+   is never scaled, so its strokes are fixed px. */
+.hx-locator-dot{fill:var(--hx-pink);stroke:var(--hx-dot-ring);stroke-width:2px;vector-effect:non-scaling-stroke}
+.hx-locator-ring{fill:none;stroke:var(--hx-pink);stroke-width:1.4px;vector-effect:non-scaling-stroke;opacity:.5}
+@media (prefers-reduced-motion:no-preference){
+ .hx-locator-ring{animation:hx-ping 2.4s var(--ease) infinite;transform-box:fill-box;transform-origin:center}
+}
+@keyframes hx-ping{from{transform:scale(.6);opacity:.7}to{transform:scale(2.2);opacity:0}}
+
+/* Printed campus logos (§4.10, §6.3): a mask print is painted in the theme's ink through the print as a CSS mask, with no
+   disc and no plate (longhands only: the mask shorthand would reset the image); Codam's colour logo keeps its colours on
+   a small plate. Sizes come from the module (fitLogo), inline. */
+.hx-logo{display:block;flex:none;pointer-events:none}
+.hx-logo[data-print=mask]{background-color:var(--hx-logo-ink);-webkit-mask-size:contain;mask-size:contain;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat}
+.hx-logo[data-print=sticker]{padding:6px 10px;border-radius:10px;background:var(--hx-sticker-bg);box-shadow:var(--hx-sticker-shadow);object-fit:contain}
+
+/* Forced colours (§2.7, D1, D16): every silhouette keeps a CanvasText outline (the globe's sphere too, and along the Urals
+   cut, since the outline lies outside every mask); flags, sheens and rims give way and land is Canvas, so no name ever
+   sits on an unforced image. */
+@media (forced-colors:active){
+ svg.hx-art{forced-color-adjust:none}
+ svg.hx-art :is(.hx-sheen,.hx-rim,.hx-flag-rim,.hx-sea-rim,.hx-sphere-sheen,.hx-flag){display:none}
+ svg.hx-art :is(.hx-land,.hx-sea){fill:Canvas}
+ svg.hx-art .hx-outline{display:inline;fill:none;stroke:CanvasText;stroke-width:calc(var(--hx-outline-width) / var(--s, 1));stroke-linejoin:round;vector-effect:non-scaling-stroke}
+ svg.hx-art .hx-locator-dot{fill:Highlight;stroke:Canvas}
+ svg.hx-art .hx-locator-ring{stroke:Highlight}
+ svg.hx-dots{forced-color-adjust:none}
+ svg.hx-dots .hx-dot{fill:CanvasText;stroke:Canvas}
+ .hx-logo[data-print=mask]{forced-color-adjust:none;background-color:CanvasText}
+ .hx-logo[data-print=sticker]{border:1px solid CanvasText}
+}

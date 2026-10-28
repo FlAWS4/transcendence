@@ -1,0 +1,11 @@
+# Thème Système — 11 octobre 2026
+
+À la demande explicite de l’utilisateur, le bouton de couleur ouvre désormais un menu **Clair / Sombre / Système** dans l’entrée principale et l’aperçu direct. Système suit `prefers-color-scheme`, y compris ses changements pendant la page ; les deux choix explicites restent indépendants du réglage de l’appareil. Français, anglais et arabe ; l’icône écran indique le choix Système, soleil/lune les choix fixes.
+
+La préférence est conservée dans `localStorage`, clé `horizon-theme-preference-v1`, et synchronisée entre onglets. Sans choix enregistré ou avec une valeur invalide, le défaut clair existant reste conservé. Un stockage refusé laisse le choix utilisable pendant la page. Un petit amorçage exécuté avant les styles applique la préférence mémorisée ; le contrôleur actualise aussi le globe et l’entrée animée. Les études indépendantes et les anciens lecteurs gardent leur propre comportement.
+
+Le menu est ancré au bouton, avec choix radio, focus sur le choix actif, flèches/Début/Fin, Échap et retour au bouton ; Tab continue la navigation. Ouvrir le menu ferme les autres sélecteurs de l’en-tête concernés. La palette du site, les pouces bleu/rouge et les favoris rouges ne changent pas.
+
+Sources : [préférences](../theme-preferences.mjs), [menu](../theme-menu.mjs), [styles](../theme-menu.css), [amorçage](../theme-bootstrap.js), raccord dans [welcome.mjs](../welcome.mjs). Les [sources précédentes](../../archives/site-versions/pre-system-theme-20261011/README.md) restent conservées avec empreintes. Caches de ces quatre nouveaux fichiers : 1.
+
+**Vérifications :** 13 cas passent dans [theme-preferences.test.mjs](../tests/theme-preferences.test.mjs) et [theme-menu.test.mjs](../tests/theme-menu.test.mjs), couvrant persistance, changements système, choix explicites, stockage indisponible, autre onglet, amorçage avant les styles, clavier/focus et trois langues. Revue source indépendante ; aucun nouveau contrôle visuel navigateur, l’outil étant indisponible le 11 octobre. Les événements système sont simulés dans les tests ; un changement réel du thème de l’appareil et le rendu mobile/RTL restent à examiner. Prototype local, version 0.0.1 pré-alpha inchangée, sans Figma ni publication.

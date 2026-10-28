@@ -1,0 +1,110 @@
+--- scripts/dom2fig.py
++++ scripts/dom2fig.py (proposition v5, non appliquée)
+@@ -672,7 +672,7 @@
+ RLM = '\u200f'
+ 
+ 
+-def text_nodes(n, dn, strings, origin, rtl, parent=None, k=1.0):
++def text_nodes(n, dn, strings, origin, rtl, parent=None, k=1.0, bdir=None):
+     """One TEXT layer per text run of the element, positioned from its measured line boxes (k: transform scale)."""
+     s = n.get('s', {})
+     f = parse_font(s.get('font'))
+@@ -757,7 +757,7 @@
+             x0 = lo if t['al'] in ('LEFT', 'JUSTIFIED') else min(cl, lo)
+             x1 = hi if t['al'] == 'RIGHT' else max(cr, hi)
+             t['x'] = r2(x0 - origin[0]); width = x1 - x0
+-            t['w'] = r2(width + 0.4)
++            t['w'] = r2(width + 0.4 + max(0.0, -t.get('ls', 0.0)))
+             t['ar'] = 'H'
+             if clamped:
+                 # 17 Oct.: the visible text is written out (same cut in the three languages, each measured in its font)
+@@ -766,7 +766,7 @@
+                     t['tx'] = vis
+                     if sv and sv.get('en') and sv.get('ar'):
+                         en, ar_ = clamp_text(sv['en'], cr - cl, clamped, f, lsv), clamp_text(sv['ar'], cr - cl, clamped, f, lsv)
+-                        sv = {'n': sv['n'].split('/', 1)[0] + '/' + var_name('', vis).split('/', 1)[1], 'fr': vis, 'en': en, 'ar': ar_}
++                        sv = {'n': sv['n'].split('/', 1)[0] + '/' + var_name('', vis).split('/', 1)[1], 'fr': vis, 'en': en, 'ar': ar_, 'dar': sv.get('dar')}
+                     else:
+                         sv = None
+                 t['ml'] = clamped
+@@ -801,9 +801,12 @@
+         if s.get('dir') == 'rtl' and ar:
+             t['tx'] = rlm(t['tx'])
+         if sv and sv.get('ar'):
+-            sv['ar'] = rlm(sv['ar'])
++            if sv.get('dar', 'rtl') == 'rtl':
++                sv['ar'] = rlm(sv['ar'])
++            elif rlm(sv['ar']) != sv['ar']:
++                sv = {**sv, 'n': sv['n'] + ' · LTR'}
+         if sv:
+-            t['sv'] = sv
++            t['sv'] = {k_: v_ for k_, v_ in sv.items() if k_ != 'dar'}
+         return t
+ 
+     def with_symbols(txt, line, sv):
+@@ -853,7 +856,7 @@
+             continue
+         if len(lines) > 1 and not clamped:
+             first, rest = lines[0], lines[1:]
+-            if s.get('dir') == 'rtl':
++            if (bdir or s.get('dir')) == 'rtl':
+                 mid = first[0] + first[2] < max(l[0] + l[2] for l in rest) - 1.5
+             else:
+                 mid = first[0] > min(l[0] for l in rest) + 1.5
+@@ -949,6 +952,7 @@
+         if not runs:
+             continue
+         vals = {}
++        dar = None
+         for lang, d in others.items():
+             if d is None:
+                 continue
+@@ -956,6 +960,8 @@
+             if not on or not on.get('runs') or len(on['runs']) != len(runs) or on.get('cls') != n.get('cls'):
+                 continue
+             vals[lang] = [r['t'] for r in on['runs']]
++            if lang == 'ar':
++                dar = (on.get('s') or {}).get('dir')
+         for ri, run in enumerate(runs):
+             entry = {lang: vals[lang][ri] for lang in vals}
+             if len(entry) < 3:
+@@ -963,6 +969,8 @@
+             if entry['fr'] == entry['en'] == entry['ar']:
+                 continue  # numbers, names: identical in every language, no variable needed
+             entry['n'] = var_name(area, entry['fr'])
++            if 'ar' in vals:
++                entry['dar'] = dar
+             out[(n['k'], ri)] = entry
+     return out
+ 
+@@ -1385,6 +1393,12 @@
+             node['tf'] = tf
+         return node
+ 
++    def line_dir(n):
++        a = n
++        while a is not None and (a.get('s', {}).get('display') or 'inline') in ('inline', 'contents'):
++            a = byI.get(a['p'])
++        return (a or n).get('s', {}).get('dir', 'ltr')
++
+     def build(n, origin, depth, sh=0.0):
+         """build_one(), plus what the computed style adds around an element (16 Oct.): the ::backdrop veil of an open
+         modal dialog, a clip-path inset, the circular hole and clip of the entrance's reveal."""
+@@ -1593,7 +1607,7 @@
+                 svgs_used['globe:globe-medaillon'] = {'file': 'globe:globe-medaillon', 'kind': 'Globe', 'name': 'Globe/Médaillon des rubriques', 'w': 32, 'h': 32, 'ctx': []}
+                 ch.append({'t': 'S', 'n': 'Globe · médaillon', 'ref': 'globe:globe-medaillon', 'x': 0, 'y': 0, 'w': n['w'], 'h': n['h']})
+                 stats['svgs'] += 1
+-            for t in text_nodes(n, dn, strings, (x0, y0 - shift), rtl, byI.get(n['p']), SCALE.get(n['i'], 1.0)):
++            for t in text_nodes(n, dn, strings, (x0, y0 - shift), rtl, byI.get(n['p']), SCALE.get(n['i'], 1.0), line_dir(n)):
+                 t['y'] = r2(t['y'] + 0)
+                 ch.append(t); stats['texts'] += 1; stats['strings'] += 1 if t.get('sv') else 0
+             if n.get('_select'):
+@@ -1621,7 +1635,7 @@
+             return [frame]
+         # transparent wrapper: flatten, but keep its own texts
+         out = []
+-        for t in text_nodes(n, dn, strings, (origin[0], origin[1] - shift), rtl, byI.get(n['p']), SCALE.get(n['i'], 1.0)):
++        for t in text_nodes(n, dn, strings, (origin[0], origin[1] - shift), rtl, byI.get(n['p']), SCALE.get(n['i'], 1.0), line_dir(n)):
+             out.append(t); stats['texts'] += 1; stats['strings'] += 1 if t.get('sv') else 0
+         for c in order(children):
+             out.extend(build(c, origin, depth + 1, shift))

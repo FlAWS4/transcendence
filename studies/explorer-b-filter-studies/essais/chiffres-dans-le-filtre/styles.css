@@ -1,0 +1,31 @@
+/* Trial « Les chiffres dans le filtre » (version B filter study, 26 Oct 2026; README.md of this folder). Loaded after
+   every stylesheet of the copy (essais/styles.js); the ids match the specificity of the copy's own id rules
+   (design-review-selection.css). The pill's label, its width and the text's place come from this folder's
+   scope-pill.mjs. */
+
+/* The line under the filter is gone, its counts being in the pill: hidden, not emptied, so the Explorer's band
+   (explorer-band.mjs: the first visible of the line and the bar) starts under the pill and gains the line's height. */
+:root #app[data-navigation=dock] #scope-bar > #globe-status { display:none; }
+
+/* No place stands before the name any more: a campus's country follows it (« 42 Paris · France »). Classes, not ids,
+   so that the measuring copies of scope-pill.mjs, which have no ids, follow the same rule. */
+:root #app #scope-bar .scope-trail > .scope-ancestor { display:none; }
+
+/* The picker takes the whole room after the globe's seat, so that the place popover, anchored at its start
+   (scope-popover.mjs), never moves; laid out at their natural width, the measuring copies are not changed by this.
+   In the live pill only (ids), the text moves from the picker's start by the shift scope-pill.mjs computes, which puts
+   it in the middle of the whole pill, or leaves it right after the seat when it is too long for that. */
+:root #app #scope-bar .scope-trail { flex:1 1 auto; }
+:root #app #scope-bar .scope-current { flex:1 1 auto; }
+:root #app #scope-bar .scope-picker { flex:1 1 auto; }
+:root #app #scope-path #scope-picker > .essai-scope-label { margin-inline-start:var(--essai-text-shift,0px); }
+
+/* The counts keep the line's look, its regular weight and the muted colour (here the glass controls' own,
+   readable-glass.css), at the name's size: the line's 13 px on phones would make an Arabic pill 1 px lower at the
+   campus level, where only the counts (the country) are in Arabic, than at the others. */
+:root #app #scope-bar .essai-scope-counts { color:var(--h42-color-muted);font-weight:400; }
+
+/* The pill on the page's axis at every level: a room as wide as the ← (measured by scope-pill.mjs) mirrors it on the
+   pill's other side, so that the bar, centred on the axis, has the pill in its middle. Reading drops the ← and this room. */
+:root #app[data-navigation=dock] #scope-bar::after { content:'';flex:0 0 auto;width:var(--essai-back-room,44px); }
+:root #app[data-navigation=dock][data-reading=true] #scope-bar::after { display:none; }

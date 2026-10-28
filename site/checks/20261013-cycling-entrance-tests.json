@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-13",
+  "passed": true,
+  "tests": 44,
+  "pass": 44,
+  "fail": 0,
+  "files": 3,
+  "results": [
+    {
+      "file": "entrance.test.mjs",
+      "exitCode": 0,
+      "tests": 27,
+      "pass": 27,
+      "fail": 0,
+      "sha256": "cb0cebc2d86dfd1c02e0608139674391f92ba02a24868027de5f7d8f469673da"
+    },
+    {
+      "file": "tests/account-menu.test.mjs",
+      "exitCode": 0,
+      "tests": 9,
+      "pass": 9,
+      "fail": 0,
+      "sha256": "a0452c2824c68fb6b57ec7eb31c81ec2095288d648eb60a4e676cbc6766534a5"
+    },
+    {
+      "file": "tests/theme-preferences.test.mjs",
+      "exitCode": 0,
+      "tests": 8,
+      "pass": 8,
+      "fail": 0,
+      "sha256": "e427b2efb9b0bf25f09dd69ffafbdd879e4b618953795e2cd5880907fa5c974c"
+    }
+  ],
+  "sources": {
+    "entrance.mjs": "8b28594b995b906c17be4e578a7f701c6fa7e97ac0074867fe264d7347a037b6",
+    "welcome.mjs": "25d3f8bac7e223ac264251e4eb13757cd881cd974d6df7f800a761a4342c9efe"
+  },
+  "sourceChangedDuringChecks": [],
+  "scope": "Existing entrance regression suite plus8 behavioral cases for rotating languages/background theme. Account and persisted theme regressions unchanged."
+}

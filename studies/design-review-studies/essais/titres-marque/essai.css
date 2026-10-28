@@ -1,0 +1,9 @@
+@import url(../_partage/fonts.css);
+/* Trial titres-marque (14 Oct 2026): the brand moments take Jost 800 italic, a stand-in
+   for the charter's Futura PT Heavy Oblique (not installed). Only the HORIZON <-> AWARDS
+   wordmark changes here; its size, spacing and colour stay inherited from .brand-names.
+   brand-wordmark.mjs measures the letters from this computed font (refresh on fonts.ready).
+   The "BEYOND THE CODE" slogan of the arrival is a canvas: see early.js. */
+:root .header .brand #brand-wordmark{font-style:italic;font-weight:800}
+/* The Arabic line has no italic: same family, a real bold face only (never synthesised). */
+:root .header .brand .arabic-brand{font-weight:700;font-synthesis-weight:none}

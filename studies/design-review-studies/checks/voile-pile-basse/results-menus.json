@@ -1,0 +1,208 @@
+{
+ "id": "voile-pile-basse",
+ "what": "page menus next to the stack",
+ "cases": [
+  {
+   "vue": "paysage",
+   "route": "projects",
+   "menu": "layout",
+   "open": {
+    "veilTop": 225,
+    "veilOpacity": "0",
+    "capsuleTop": 249,
+    "dialog": false,
+    "panel": {
+     "cls": "cp-control-panel",
+     "top": 199,
+     "bottom": 241,
+     "h": 42,
+     "scrolls": true
+    },
+    "gapToCapsule": 8,
+    "inVeilZone": 16,
+    "alphaAtPanelBottom": 0,
+    "alphaAtLastItemText": 0,
+    "alphaAtPanelBottomIfVeilShown": 0.788,
+    "alphaAtLastItemTextIfVeilShown": 0.421
+   },
+   "closed": {
+    "veilOpacity": "1",
+    "panel": null
+   },
+   "errors": []
+  },
+  {
+   "vue": "paysage",
+   "route": "projects",
+   "menu": "sort",
+   "open": {
+    "veilTop": 225,
+    "veilOpacity": "0",
+    "capsuleTop": 249,
+    "dialog": false,
+    "panel": {
+     "cls": "cp-control-panel",
+     "top": 199,
+     "bottom": 241,
+     "h": 42,
+     "scrolls": true
+    },
+    "gapToCapsule": 8,
+    "inVeilZone": 16,
+    "alphaAtPanelBottom": 0,
+    "alphaAtLastItemText": 0,
+    "alphaAtPanelBottomIfVeilShown": 0.788,
+    "alphaAtLastItemTextIfVeilShown": 0.421
+   },
+   "closed": {
+    "veilOpacity": "1",
+    "panel": null
+   },
+   "errors": []
+  },
+  {
+   "vue": "mobile",
+   "route": "projects",
+   "menu": "layout",
+   "open": {
+    "veilTop": 686,
+    "veilOpacity": "0",
+    "capsuleTop": 710,
+    "dialog": false,
+    "panel": {
+     "cls": "cp-control-panel",
+     "top": 229,
+     "bottom": 327,
+     "h": 98,
+     "scrolls": false
+    },
+    "gapToCapsule": 383,
+    "inVeilZone": 0,
+    "alphaAtPanelBottom": 0,
+    "alphaAtLastItemText": 0,
+    "alphaAtPanelBottomIfVeilShown": 0,
+    "alphaAtLastItemTextIfVeilShown": 0
+   },
+   "closed": {
+    "veilOpacity": "1",
+    "panel": null
+   },
+   "errors": []
+  },
+  {
+   "vue": "mobile",
+   "route": "projects",
+   "menu": "sort",
+   "open": {
+    "veilTop": 686,
+    "veilOpacity": "0",
+    "capsuleTop": 710,
+    "dialog": false,
+    "panel": {
+     "cls": "cp-control-panel",
+     "top": 229,
+     "bottom": 483.5,
+     "h": 254.5,
+     "scrolls": false
+    },
+    "gapToCapsule": 226.5,
+    "inVeilZone": 0,
+    "alphaAtPanelBottom": 0,
+    "alphaAtLastItemText": 0,
+    "alphaAtPanelBottomIfVeilShown": 0,
+    "alphaAtLastItemTextIfVeilShown": 0
+   },
+   "closed": {
+    "veilOpacity": "1",
+    "panel": null
+   },
+   "errors": []
+  },
+  {
+   "vue": "mobile",
+   "route": "projects/ft-transcendence-building-together?tab=comments",
+   "menu": "comment-sort",
+   "scrollY": 318,
+   "open": {
+    "veilTop": 686,
+    "veilOpacity": "0",
+    "capsuleTop": 710,
+    "dialog": false,
+    "panel": {
+     "cls": "cp-control-panel",
+     "top": 624.7,
+     "bottom": 702,
+     "h": 77.3,
+     "scrolls": true
+    },
+    "gapToCapsule": 8,
+    "inVeilZone": 16,
+    "alphaAtPanelBottom": 0,
+    "alphaAtLastItemText": 0,
+    "alphaAtPanelBottomIfVeilShown": 0.788,
+    "alphaAtLastItemTextIfVeilShown": 0.421
+   },
+   "closed": {
+    "veilOpacity": "1",
+    "panel": null
+   },
+   "errors": []
+  },
+  {
+   "vue": "mobile",
+   "route": "projects/ft-transcendence-building-together?tab=overview",
+   "menu": "section-selector",
+   "open": {
+    "veilTop": 686,
+    "veilOpacity": "0",
+    "capsuleTop": 710,
+    "dialog": false,
+    "panel": {
+     "cls": "cp-project-switch-panel",
+     "top": 454.4,
+     "bottom": 697.4,
+     "h": 243,
+     "scrolls": true
+    },
+    "gapToCapsule": 12.6,
+    "inVeilZone": 11.4,
+    "alphaAtPanelBottom": 0,
+    "alphaAtLastItemText": 0,
+    "alphaAtPanelBottomIfVeilShown": 0.545,
+    "alphaAtLastItemTextIfVeilShown": 0.177
+   },
+   "closed": {
+    "veilOpacity": "1",
+    "panel": null
+   },
+   "errors": []
+  }
+ ],
+ "captures": {
+  "avant": "avant-menu-paysage.png",
+  "apres": "apres-menu-paysage.png",
+  "sansAjustement": "mesure-menu-sans-ajustement-paysage.png",
+  "pixelShareAvantApres": 0.0
+ },
+ "errors": [],
+ "baselineLandscapeSort": {
+  "veilTop": 375,
+  "veilOpacity": "1",
+  "capsuleTop": 249,
+  "dialog": false,
+  "panel": {
+   "cls": "cp-control-panel",
+   "top": 199,
+   "bottom": 241,
+   "h": 42,
+   "scrolls": true
+  },
+  "gapToCapsule": 8,
+  "inVeilZone": 0,
+  "alphaAtPanelBottom": 0,
+  "alphaAtLastItemText": 0,
+  "alphaAtPanelBottomIfVeilShown": 0,
+  "alphaAtLastItemTextIfVeilShown": 0
+ },
+ "passed": true
+}

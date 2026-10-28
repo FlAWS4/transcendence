@@ -1,0 +1,325 @@
+{
+  "rerun": "15 October 2026, active state audit-fixes-145 (welcome.mjs?v=audit-fixes-145, entrance.mjs?v=audit-fixes-14, entrance.css?v=audit-fixes-24)",
+  "passed": true,
+  "failure": null,
+  "cases": [
+    {
+      "case": "arrival-account-hidden-french-site",
+      "result": {
+        "site": "fr",
+        "label": "fr",
+        "text": [
+          "Se connecter",
+          "Visiter"
+        ]
+      }
+    },
+    {
+      "case": "private-label-cycle-desktop",
+      "result": {
+        "order": [
+          "fr",
+          "en",
+          "ar",
+          "fr"
+        ],
+        "intervalsMs": [
+          3150,
+          4000,
+          4000
+        ],
+        "site": "fr",
+        "dir": "ltr",
+        "pair": {
+          "w": 159.578125,
+          "h": 52
+        },
+        "texts": [
+          [
+            "Se connecter",
+            "Visiter"
+          ],
+          [
+            "Sign in",
+            "Visit"
+          ],
+          [
+            "تسجيل الدخول",
+            "زيارة"
+          ],
+          [
+            "Se connecter",
+            "Visiter"
+          ]
+        ]
+      }
+    },
+    {
+      "case": "transition-settles",
+      "result": {
+        "outgoing": 0,
+        "animating": 0
+      }
+    },
+    {
+      "case": "hover-pauses-labels",
+      "result": "fr"
+    },
+    {
+      "case": "keyboard-focus-pauses-labels",
+      "result": "fr"
+    },
+    {
+      "case": "dialog-pauses-labels-and-stays-french",
+      "result": {
+        "label": "fr",
+        "dialogTitle": "Connexion — prototype"
+      }
+    },
+    {
+      "case": "hidden-tab-pauses-then-resumes",
+      "result": {
+        "during": "fr",
+        "after": "en"
+      }
+    },
+    {
+      "case": "background-click-theme",
+      "result": "light"
+    },
+    {
+      "case": "gap-click-theme",
+      "result": "dark"
+    },
+    {
+      "case": "keyboard-background-theme",
+      "result": {
+        "theme": "light",
+        "focusVisible": true
+      }
+    },
+    {
+      "case": "desktop-light-english-label",
+      "result": {
+        "site": "fr",
+        "label": "en",
+        "text": [
+          "Sign in",
+          "Visit"
+        ]
+      }
+    },
+    {
+      "case": "reduced-motion-changes-without-transition",
+      "result": {
+        "label": "ar",
+        "outgoing": 0,
+        "animating": 0
+      }
+    },
+    {
+      "case": "visit-during-arabic-keeps-french-site",
+      "result": {
+        "site": "fr",
+        "dir": "ltr",
+        "account": "block",
+        "dock": [
+          "Explorer",
+          "Projets",
+          "Profils",
+          "Chroniques",
+          "42 Awards"
+        ],
+        "errors": []
+      }
+    },
+    {
+      "case": "signin-during-english-is-french-dark",
+      "result": {
+        "site": "fr",
+        "text": "Connexion — prototype\n    Cette maquette simule la connexion",
+        "bg": "rgb(237, 52, 145)"
+      }
+    },
+    {
+      "case": "private-label-cycle-mobile-390-dark",
+      "result": {
+        "order": [
+          "fr",
+          "en",
+          "ar",
+          "fr"
+        ],
+        "intervalsMs": [
+          3250,
+          4000,
+          4010
+        ],
+        "site": "fr",
+        "dir": "ltr",
+        "pair": {
+          "w": 342,
+          "h": 52
+        },
+        "texts": [
+          [
+            "Se connecter",
+            "Visiter"
+          ],
+          [
+            "Sign in",
+            "Visit"
+          ],
+          [
+            "تسجيل الدخول",
+            "زيارة"
+          ],
+          [
+            "Se connecter",
+            "Visiter"
+          ]
+        ]
+      }
+    },
+    {
+      "case": "private-label-cycle-mobile-320-dark",
+      "result": {
+        "order": [
+          "fr",
+          "en",
+          "ar",
+          "fr"
+        ],
+        "intervalsMs": [
+          3326,
+          4000,
+          4000
+        ],
+        "site": "fr",
+        "dir": "ltr",
+        "pair": {
+          "w": 272,
+          "h": 52
+        },
+        "texts": [
+          [
+            "Se connecter",
+            "Visiter"
+          ],
+          [
+            "Sign in",
+            "Visit"
+          ],
+          [
+            "تسجيل الدخول",
+            "زيارة"
+          ],
+          [
+            "Se connecter",
+            "Visiter"
+          ]
+        ]
+      }
+    },
+    {
+      "case": "settled-arabic-label-mobile-320-dark",
+      "result": {
+        "text": [
+          "تسجيل الدخول",
+          "زيارة"
+        ],
+        "pair": {
+          "x": 24,
+          "y": 450,
+          "w": 272,
+          "h": 52
+        }
+      }
+    },
+    {
+      "case": "private-label-cycle-landscape-667",
+      "result": {
+        "order": [
+          "fr",
+          "en",
+          "ar",
+          "fr"
+        ],
+        "intervalsMs": [
+          3650,
+          4000,
+          4000
+        ],
+        "site": "fr",
+        "dir": "ltr",
+        "pair": {
+          "w": 304.5,
+          "h": 44
+        },
+        "texts": [
+          [
+            "Se connecter",
+            "Visiter"
+          ],
+          [
+            "Sign in",
+            "Visit"
+          ],
+          [
+            "تسجيل الدخول",
+            "زيارة"
+          ],
+          [
+            "Se connecter",
+            "Visiter"
+          ]
+        ]
+      }
+    },
+    {
+      "case": "settled-arabic-label-landscape-667",
+      "result": {
+        "text": [
+          "تسجيل الدخول",
+          "زيارة"
+        ],
+        "pair": {
+          "x": 24,
+          "y": 261.25,
+          "w": 304.5,
+          "h": 44
+        }
+      }
+    },
+    {
+      "case": "arabic-site-not-persisted-at-arrival",
+      "result": {
+        "site": "fr",
+        "note": "the account language choice does not persist across page loads; Arabic-site arrival cycle not observed"
+      }
+    }
+  ],
+  "sourcesBefore": {
+    "index.html": "1c917ec3cf69e72818ae48e408d28563ed2fb6dc6bf48c6aac7a1ad1052753c6",
+    "content-preview.html": "8817305bef2eb91cd3c36c76aedb961bd757d398746bfb3c50817ebdc2c3666f",
+    "welcome.mjs": "e1b31b75b8aa4e9b24bb9b3f646f59467a32b72dbaa016d80f6b1ff738aa9e60",
+    "content-preview.mjs": "efba6b21f19d03c587cfc6023972f32d5f14dd792b8191d0e79fb815c4817819",
+    "entrance.mjs": "d9940372d745df7de1bc0a347548b744fadab9a5eb46dcf467c2def1734fe2d4",
+    "entrance.css": "e5f9b6205d7a5fd0cba85e666eee48539fcbaf74944f94f4f25637cc369bd312",
+    "dock-navigation.css": "174ea265d6a863f906a945747e8b3056e071056a0f84832f4f695711547b998c",
+    "globe-framing.css": "a544a2e08a7697a44aa3c0cd5334a976a04fd9797934d27bb13c4d3ec7177ae6",
+    "account-menu.mjs": "b839d5c2c1c44e19d75d6d84fc89ff9cb5b91909b53cb093f7bbea338e9ef105"
+  },
+  "sourcesAfter": {
+    "index.html": "1c917ec3cf69e72818ae48e408d28563ed2fb6dc6bf48c6aac7a1ad1052753c6",
+    "content-preview.html": "8817305bef2eb91cd3c36c76aedb961bd757d398746bfb3c50817ebdc2c3666f",
+    "welcome.mjs": "e1b31b75b8aa4e9b24bb9b3f646f59467a32b72dbaa016d80f6b1ff738aa9e60",
+    "content-preview.mjs": "efba6b21f19d03c587cfc6023972f32d5f14dd792b8191d0e79fb815c4817819",
+    "entrance.mjs": "d9940372d745df7de1bc0a347548b744fadab9a5eb46dcf467c2def1734fe2d4",
+    "entrance.css": "e5f9b6205d7a5fd0cba85e666eee48539fcbaf74944f94f4f25637cc369bd312",
+    "dock-navigation.css": "174ea265d6a863f906a945747e8b3056e071056a0f84832f4f695711547b998c",
+    "globe-framing.css": "a544a2e08a7697a44aa3c0cd5334a976a04fd9797934d27bb13c4d3ec7177ae6",
+    "account-menu.mjs": "b839d5c2c1c44e19d75d6d84fc89ff9cb5b91909b53cb093f7bbea338e9ef105"
+  },
+  "limits": "Isolated headless Chrome, real 4-second timers, keyboard/mouse events, emulated viewports and dark theme via the background control. The hidden-tab pause is simulated by overriding document.hidden and dispatching visibilitychange. The integrated globe import is blocked so the arrival reaches the error path; the real globe is covered by the separate recentering checks. No physical phone or screen reader."
+}

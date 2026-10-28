@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="fr" data-theme="light">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Horizon — Interfaces connectées</title>
+<link rel="stylesheet" href="assets/tokens.css"><link rel="stylesheet" href="assets/jost.css"><link rel="stylesheet" href="demo.css?v=4">
+<script defer src="assets/d3.min.js"></script><script defer src="assets/topojson.min.js"></script><script type="module" src="app.mjs?v=4"></script>
+</head>
+<body>
+<a class="skip-link" href="#view">Aller au contenu</a>
+<div class="lab-bar"><a href="index.html">← Les trois pistes</a><span id="variant-title"></span><nav aria-label="Choisir une interface" id="variants"></nav><details class="lab-info"><summary>À propos de l’essai</summary><p>Compte et contenus fictifs. Les actions restent dans cet onglet : aucun message, vote ou contenu n’est envoyé. Globe simplifié, français uniquement.</p><button id="reset-demo" type="button">Réinitialiser cet essai</button></details></div>
+<header class="site-header"><a class="brand" href="#explore" aria-label="42 Horizon · Explorer"><img src="assets/logo-42.svg" width="45" height="32" alt="42"><span>HORIZON</span></a><div id="mode-switch" class="mode-switch" aria-label="Choisir un espace"></div><div class="utilities" id="utilities"></div></header>
+<div class="explorer-stage" id="explorer-stage"><div class="scope-wrap"><label class="scope-pill"><span id="scope-icon"></span><select id="scope" aria-label="Périmètre géographique du globe"><option value="world">Monde</option><option value="france">France</option><option value="paris">France › 42 Paris</option></select></label></div><div id="globe" class="globe-host"></div><p class="network-count">58 campus <span>·</span> 30 pays</p><p class="globe-caption">Un monde de parcours à découvrir.</p></div>
+<main id="workspace" class="workspace" hidden><div class="workspace-top"><span class="workspace-return-placeholder" aria-hidden="true"></span><a href="#explore" class="workspace-return"></a><span class="workspace-label">MON ESPACE</span></div><aside class="workspace-sidebar" id="personal-sidebar"></aside><div class="view-container"><div id="view" tabindex="-1"></div><p class="screen-footer">Prototype · Données fictives · Actions locales à cet onglet</p></div></main>
+<div class="explore-hint" id="explore-hint"><span class="hint-line"></span><span id="entry-hint"></span></div>
+<nav class="global-dock glass" id="global-dock" aria-label="Navigation Horizon"></nav>
+<div class="account-popover glass" id="account-popover" hidden></div>
+<dialog id="auth-dialog" class="auth-dialog"><div class="dialog-heading"><h2 id="auth-title">Retrouver Horizon</h2><button type="button" class="icon-button" id="close-auth" aria-label="Fermer"></button></div><p class="muted">Un aperçu du parcours de compte. Aucune connexion réelle.</p><div class="tabs"><button type="button" data-auth-mode="login">Se connecter</button><button type="button" data-auth-mode="signup">Créer un compte</button></div><form id="auth-form"><label class="field" id="signup-name" hidden>Nom affiché<input name="displayName" autocomplete="off" placeholder="Un nom pour essayer"></label><label class="field">Adresse de démonstration<input name="email" type="email" value="demo@example.test" required autocomplete="off"></label><p class="notice">Utilise uniquement des informations fictives. Aucun mot de passe n’est demandé dans cet essai.</p><button class="button primary" type="submit" id="auth-submit">Entrer dans la démonstration</button><button class="button quiet" type="button" id="recovery">Récupérer un accès</button></form><p id="auth-status" role="status"></p></dialog>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+</body></html>

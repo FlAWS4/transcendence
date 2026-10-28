@@ -1,0 +1,386 @@
+{
+  "passed": true,
+  "sourcesBefore": {
+    "account-menu.mjs": "0706f7bd3b652f55cc0f0c8a95351f33962748ffabcc2b2230fde012e37e623f",
+    "account-menu.css": "446afb45e4c0f2ad873388e7af28c7c970919025b58fae88e1aa5ad47b94b0a1",
+    "welcome.mjs": "ce2825d490a6f8f13ea21f7627948203d7aa92ffb9eff40f3a6e0c2a97ef88e8",
+    "index.html": "887f7f82ce622de3ee348837bbf25b7fa1465f44a1e4c153263ff95801974d85",
+    "content-preview.html": "29fa29810eb38030fd7153e2d67c9ca7252cabfcb0abbe0ab3c8b03a0cefcd49"
+  },
+  "sourcesAfter": {
+    "account-menu.mjs": "0706f7bd3b652f55cc0f0c8a95351f33962748ffabcc2b2230fde012e37e623f",
+    "account-menu.css": "446afb45e4c0f2ad873388e7af28c7c970919025b58fae88e1aa5ad47b94b0a1",
+    "welcome.mjs": "ce2825d490a6f8f13ea21f7627948203d7aa92ffb9eff40f3a6e0c2a97ef88e8",
+    "index.html": "887f7f82ce622de3ee348837bbf25b7fa1465f44a1e4c153263ff95801974d85",
+    "content-preview.html": "29fa29810eb38030fd7153e2d67c9ca7252cabfcb0abbe0ab3c8b03a0cefcd49"
+  },
+  "cases": [
+    {
+      "case": "entry-visitor-theme",
+      "result": {
+        "lang": "fr",
+        "theme": "light",
+        "preference": "light",
+        "phase": "encrypted",
+        "title": "Thème",
+        "themeCount": 3,
+        "localeCount": 0,
+        "visibleExtras": [],
+        "avatar": false,
+        "open": true,
+        "bounds": [
+          948,
+          92,
+          1232,
+          325
+        ],
+        "focus": "light",
+        "overflow": false,
+        "width": 1280
+      }
+    },
+    {
+      "case": "entry-visitor-dark",
+      "result": {
+        "lang": "fr",
+        "theme": "dark",
+        "preference": "dark",
+        "phase": "encrypted",
+        "title": "Thème",
+        "themeCount": 3,
+        "localeCount": 0,
+        "visibleExtras": [],
+        "avatar": false,
+        "open": true,
+        "bounds": [
+          948,
+          92,
+          1232,
+          325
+        ],
+        "focus": "dark",
+        "overflow": false,
+        "width": 1280
+      }
+    },
+    {
+      "case": "back-to-theme",
+      "result": {
+        "lang": "fr",
+        "theme": "dark",
+        "preference": "dark",
+        "phase": "encrypted",
+        "title": "Menu du compte",
+        "themeCount": 0,
+        "localeCount": 0,
+        "visibleExtras": [],
+        "avatar": false,
+        "open": true,
+        "bounds": [
+          948,
+          92,
+          1232,
+          399
+        ],
+        "focus": "theme",
+        "overflow": false,
+        "width": 1280
+      }
+    },
+    {
+      "case": "entry-visitor-language",
+      "result": {
+        "lang": "fr",
+        "theme": "dark",
+        "preference": "dark",
+        "phase": "encrypted",
+        "title": "Langue",
+        "themeCount": 0,
+        "localeCount": 3,
+        "visibleExtras": [],
+        "avatar": false,
+        "open": true,
+        "bounds": [
+          948,
+          92,
+          1232,
+          330
+        ],
+        "focus": "fr",
+        "overflow": false,
+        "width": 1280
+      }
+    },
+    {
+      "case": "entry-visitor-english",
+      "result": {
+        "lang": "en",
+        "theme": "dark",
+        "preference": "dark",
+        "phase": "encrypted",
+        "title": "Language",
+        "themeCount": 0,
+        "localeCount": 3,
+        "visibleExtras": [],
+        "avatar": false,
+        "open": true,
+        "bounds": [
+          948,
+          92,
+          1232,
+          330
+        ],
+        "focus": "en",
+        "overflow": false,
+        "width": 1280
+      }
+    },
+    {
+      "case": "entry-visitor-ar320",
+      "result": {
+        "lang": "ar",
+        "theme": "dark",
+        "preference": "dark",
+        "phase": "encrypted",
+        "title": "اللغة",
+        "themeCount": 0,
+        "localeCount": 3,
+        "visibleExtras": [],
+        "avatar": false,
+        "open": true,
+        "bounds": [
+          16,
+          70,
+          300,
+          315
+        ],
+        "focus": "ar",
+        "overflow": false,
+        "width": 320
+      }
+    },
+    {
+      "case": "escape-restores-trigger",
+      "result": {
+        "lang": "ar",
+        "theme": "dark",
+        "preference": "dark",
+        "phase": "encrypted",
+        "title": "اللغة",
+        "themeCount": 0,
+        "localeCount": 3,
+        "visibleExtras": [],
+        "avatar": false,
+        "open": false,
+        "bounds": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "focus": "profile",
+        "overflow": false,
+        "width": 320
+      }
+    },
+    {
+      "case": "theme-persists-after-navigation",
+      "result": {
+        "lang": "fr",
+        "theme": "dark",
+        "preference": "dark",
+        "phase": "welcome",
+        "title": "Thème",
+        "themeCount": 3,
+        "localeCount": 0,
+        "visibleExtras": [],
+        "avatar": false,
+        "open": true,
+        "bounds": [
+          5,
+          70,
+          289,
+          303
+        ],
+        "focus": "light",
+        "overflow": false,
+        "width": 320
+      }
+    },
+    {
+      "case": "system-mode",
+      "result": {
+        "lang": "fr",
+        "theme": "light",
+        "preference": "system",
+        "phase": "welcome",
+        "title": "Thème",
+        "themeCount": 3,
+        "localeCount": 0,
+        "visibleExtras": [],
+        "avatar": false,
+        "open": true,
+        "bounds": [
+          5,
+          70,
+          289,
+          303
+        ],
+        "focus": "system",
+        "overflow": false,
+        "width": 320
+      }
+    },
+    {
+      "case": "back-to-language",
+      "result": {
+        "lang": "fr",
+        "theme": "light",
+        "preference": "light",
+        "phase": "welcome",
+        "title": "Menu du compte",
+        "themeCount": 0,
+        "localeCount": 0,
+        "visibleExtras": [],
+        "avatar": false,
+        "open": true,
+        "bounds": [
+          5,
+          70,
+          289,
+          377
+        ],
+        "focus": "language",
+        "overflow": false,
+        "width": 320
+      }
+    },
+    {
+      "case": "mobile-member-theme",
+      "result": {
+        "lang": "fr",
+        "theme": "light",
+        "preference": "light",
+        "phase": "welcome",
+        "title": "Thème",
+        "themeCount": 3,
+        "localeCount": 0,
+        "visibleExtras": [
+          "account-messages",
+          "account-notifications"
+        ],
+        "avatar": true,
+        "open": true,
+        "bounds": [
+          5,
+          72,
+          289,
+          305
+        ],
+        "focus": "light",
+        "overflow": false,
+        "width": 320
+      }
+    },
+    {
+      "case": "mobile-member-language",
+      "result": {
+        "lang": "ar",
+        "theme": "light",
+        "preference": "light",
+        "phase": "welcome",
+        "title": "اللغة",
+        "themeCount": 0,
+        "localeCount": 3,
+        "visibleExtras": [
+          "account-messages",
+          "account-notifications"
+        ],
+        "avatar": true,
+        "open": true,
+        "bounds": [
+          16,
+          72,
+          300,
+          317
+        ],
+        "focus": "ar",
+        "overflow": false,
+        "width": 320
+      }
+    },
+    {
+      "case": "settings-keeps-both",
+      "result": {
+        "lang": "ar",
+        "theme": "light",
+        "preference": "light",
+        "phase": "welcome",
+        "title": "الإعدادات",
+        "themeCount": 3,
+        "localeCount": 3,
+        "visibleExtras": [
+          "account-messages",
+          "account-notifications"
+        ],
+        "avatar": true,
+        "open": true,
+        "bounds": [
+          16,
+          72,
+          300,
+          510
+        ],
+        "focus": "back",
+        "overflow": false,
+        "width": 320
+      }
+    },
+    {
+      "case": "signout",
+      "result": {
+        "lang": "ar",
+        "theme": "light",
+        "preference": "light",
+        "phase": "welcome",
+        "title": "قائمة الحساب",
+        "themeCount": 0,
+        "localeCount": 0,
+        "visibleExtras": [],
+        "avatar": false,
+        "open": false,
+        "bounds": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "focus": "profile",
+        "overflow": false,
+        "width": 320
+      }
+    },
+    {
+      "case": "archived-theme-still-combined",
+      "result": {
+        "lang": "fr",
+        "theme": "light",
+        "title": "Paramètres",
+        "themeCount": 3,
+        "localeCount": 3,
+        "visibleExtras": [],
+        "avatar": false,
+        "open": true,
+        "bounds": [
+          980,
+          76,
+          1264,
+          485
+        ],
+        "focus": "light",
+        "overflow": false,
+        "width": 1280
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-07",
+  "reason": "Avant sélection collective des types de projet et Projets personnels en choix direct, après intégration des profils à volets.",
+  "files": [
+    {
+      "path": "content-controls.mjs",
+      "sha256": "4376c611f31f1c233336b91443a566c7d844e35b4d3ee8f3874c3da4dd2db927"
+    },
+    {
+      "path": "content-controls.css",
+      "sha256": "b44e7a4948c371ee09e12d80c9af394c2d110df88863e2937fe910289c97cdb3"
+    },
+    {
+      "path": "content-filters.mjs",
+      "sha256": "b619721226cde43ef80e0a2ba8fbb3b1e2a3d7a912b47e18388b3baea5b3d251"
+    },
+    {
+      "path": "profile-sections.mjs",
+      "sha256": "553b7a05c8b4b8d97114ea7deb376b00dfe53d3a96e8d1a086499f46bc01d3dd"
+    },
+    {
+      "path": "profile-ui.mjs",
+      "sha256": "be3908f4b009406b0671f33a707dee39bf6e1359329b5a3e86f3333fb0f53449"
+    },
+    {
+      "path": "welcome.mjs",
+      "sha256": "51e505482cee3604db4d376e6b1984f346c0d5339b490d53742193e534379e1d"
+    },
+    {
+      "path": "index.html",
+      "sha256": "955c6ae21ea5bdb54259fe7d6d034f9961666ce1891ad9eadcc838f704e1cb22"
+    },
+    {
+      "path": "content-preview.html",
+      "sha256": "f39dbeb2656cedce6c877ca284ac043d12e388f922383c4cf1561e9f4ad1aaf2"
+    },
+    {
+      "path": "content-preview.mjs",
+      "sha256": "b101a3c145b9235eb22c160b2103efc2ed4bb76a7f7fd51b6c2661b4c4f05f3f"
+    },
+    {
+      "path": "tests/content-filters.test.mjs",
+      "sha256": "08872cc1feece1739b12e9079e7f65310984978f6bea00c79e71bcbb42ba051b"
+    },
+    {
+      "path": "profiles.css",
+      "sha256": "8bd10dc203e1c72aabecfec6c13a622f901752b68d55d56fcb142fcb53fae5a0",
+      "provenance": "État CSS6 reconstitué par retrait du seul bloc additif Full-width profile actions ajouté ensuite."
+    }
+  ],
+  "dependencies": "Autres dépendances conservées dans le dossier horizon-welcome."
+}

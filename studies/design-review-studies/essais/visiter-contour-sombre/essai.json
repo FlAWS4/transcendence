@@ -1,0 +1,108 @@
+{
+ "id": "visiter-contour-sombre",
+ "groupe": "Couleurs, thème sombre et illustrations",
+ "titre": "Contour de « Visiter » en sombre",
+ "resume": "En sombre seulement, « Visiter » à l’arrivée et « Créer un compte » dans le menu du compte gardent leur texte Royal Pink et reçoivent un contour fin visible, équivalent sombre du conteneur clair, pour ne plus se lire comme un lien.",
+ "probleme": "Sur l’arrivée sombre, « Visiter » n’a ni fond ni contour (bordure transparente, contraste 1,0:1 avec le fond #1B1B1B) à côté de « Se connecter » rempli de rose, alors qu’en clair il a un conteneur blanc bordé ; « Créer un compte » a le même traitement texte seul dans le menu sombre.",
+ "changement": "essai.css : :root[data-theme=dark] :is(#entry-guest, [data-account-action=signup]) { border-color: #708383 } (Cadet Gray #95B0B0 à 70 % + noir #1B1B1B). La bordure de 1 px existait déjà en transparent : dimensions, texte rose, alternance des libellés, survol et anneau de focus sont inchangés. Pas de surface ajoutée. Aucun changement en clair ni sur les autres boutons secondaires (Retour, Continuer de l’écran d’erreur).",
+ "decisionConcernee": "13 octobre 2026 : l’utilisateur a demandé le texte Royal Pink pour Visiter et Créer un compte en sombre, et des dimensions de Visiter égales à celles de Se connecter. Les deux sont conservés ; seul un contour est ajouté.",
+ "alternativeDe": "",
+ "vues": [
+  {
+   "libelle": "Arrivée, ordinateur sombre",
+   "page": "index.html",
+   "route": "",
+   "viewport": "ordinateur",
+   "theme": "dark",
+   "lang": "fr"
+  },
+  {
+   "libelle": "Arrivée, mobile sombre",
+   "page": "index.html",
+   "route": "",
+   "viewport": "mobile",
+   "theme": "dark",
+   "lang": "fr"
+  },
+  {
+   "libelle": "Menu du compte, ordinateur sombre (ouvrir le compte)",
+   "page": "content-preview.html",
+   "route": "projects",
+   "viewport": "ordinateur",
+   "theme": "dark",
+   "lang": "fr"
+  }
+ ],
+ "verifications": [
+  "Contour mesuré sur l’arrivée sombre (contrôle rejoué le 14 octobre) : pixel du bord #708383 contre le fond #1B1B1B, contraste 4,32:1 sur ordinateur (1440 × 900) et sur mobile 390 px (WCAG 1.4.11 : 3:1) ; avant : 1,0:1 (bordure transparente).",
+  "Petits formats sombres : même contour peint à 4,32:1 (1,0:1 avant) sur 320 × 640 et en paysage 667 × 375 ; boîtes de Visiter et Se connecter identiques avant/après à 0,5 px près ; aucun débordement horizontal.",
+  "Menu du compte sombre : contour de « Créer un compte » à 3,68:1 sur le verre du menu (ordinateur, FR) et 3,58:1 (mobile 390 px, AR), contre 1,0:1 avant.",
+  "Boîtes identiques au pixel près : Visiter 159,58 × 52 px sur ordinateur et 342 × 52 px sur mobile, Se connecter inchangé, Créer un compte 246 × 54 px (FR) et 246 × 64 px (AR), avant comme après.",
+  "Texte toujours Royal Pink rgb(237, 52, 145) ; les libellés continuent d’alterner (Visiter → Visit, attribut lang fr → en) sans changer la taille du bouton.",
+  "Focus clavier (Tab) : :focus-visible actif, anneau 2 px rgb(150, 163, 235) à 5 px, 7,16:1 sur le fond, visible autour du nouveau contour (capture examinée) ; dans le menu, contour de focus intérieur inchangé.",
+  "Thème clair identique : 0 pixel différent sur l’arrivée ordinateur (page entière, canevas compris), sur l’arrivée mobile (hors canevas du chiffrement, exclu par précaution) et sur le menu du compte ouvert ; aucune erreur de console.",
+  "Changements sans rechargement : la bascule de thème de l’arrivée (clic sur le fond) donne #708383 → #DCE5E5, la bordure claire d’origine, → #708383 ; après le passage du français à l’arabe par le menu du compte, « إنشاء حساب » garde le contour #708383 et son texte rose.",
+  "Arrivée arabe sur mobile sombre : boîte de Visiter identique avant/après et pendant l’alternance des libellés (زيارة → Visiter), contour peint ≥ 3:1. Combiné avec roles-couleur, le contour reste #708383 et le dialogue de connexion s’ouvre."
+ ],
+ "limites": [
+  "Mesuré mais hors périmètre : en sombre, le texte rose de « Créer un compte » n’atteint que 3,85:1 (FR) et 3,74:1 (AR) sur le verre du menu, sous le seuil de 4,5:1 pour un texte de taille normale (Visiter atteint 4,51:1 sur le fond #1B1B1B de l’arrivée) ; l’essai ne change pas cette couleur choisie par l’utilisateur.",
+  "Pour comparaison, le contour clair existant (#DCE5E5) n’est qu’à 1,1–1,2:1 de son fond ; il est laissé tel quel.",
+  "Sur mobile clair, la comparaison au pixel près exclut le canevas du chiffrement ; pas d’écran physique ni de lecteur d’écran."
+ ],
+ "fichiers": [
+  "essais/visiter-contour-sombre/essai.css",
+  "essais/visiter-contour-sombre/essai.mjs",
+  "essais/visiter-contour-sombre/essai.json",
+  "checks/visiter-contour-sombre/check.py",
+  "checks/visiter-contour-sombre/results.json",
+  "checks/visiter-contour-sombre/contre-verification.py",
+  "checks/visiter-contour-sombre/contre-verification.json"
+ ],
+ "captures": [
+  {
+   "vue": "sombre-ordinateur",
+   "avant": "checks/visiter-contour-sombre/avant-sombre-ordinateur.png",
+   "apres": "checks/visiter-contour-sombre/apres-sombre-ordinateur.png"
+  },
+  {
+   "vue": "sombre-mobile",
+   "avant": "checks/visiter-contour-sombre/avant-sombre-mobile.png",
+   "apres": "checks/visiter-contour-sombre/apres-sombre-mobile.png"
+  },
+  {
+   "vue": "paysage-sombre",
+   "avant": "checks/visiter-contour-sombre/avant-paysage-sombre.png",
+   "apres": "checks/visiter-contour-sombre/apres-paysage-sombre.png"
+  },
+  {
+   "vue": "petit-sombre",
+   "avant": "checks/visiter-contour-sombre/avant-petit-sombre.png",
+   "apres": "checks/visiter-contour-sombre/apres-petit-sombre.png"
+  },
+  {
+   "vue": "focus-sombre-ordinateur",
+   "avant": "checks/visiter-contour-sombre/avant-focus-sombre-ordinateur.png",
+   "apres": "checks/visiter-contour-sombre/apres-focus-sombre-ordinateur.png"
+  },
+  {
+   "vue": "menu-sombre-ordinateur",
+   "avant": "checks/visiter-contour-sombre/avant-menu-sombre-ordinateur.png",
+   "apres": "checks/visiter-contour-sombre/apres-menu-sombre-ordinateur.png"
+  },
+  {
+   "vue": "menu-sombre-ar-mobile",
+   "avant": "checks/visiter-contour-sombre/avant-menu-sombre-ar-mobile.png",
+   "apres": "checks/visiter-contour-sombre/apres-menu-sombre-ar-mobile.png"
+  },
+  {
+   "vue": "ordinateur",
+   "avant": "checks/visiter-contour-sombre/avant-ordinateur.png",
+   "apres": "checks/visiter-contour-sombre/apres-ordinateur.png"
+  },
+  {
+   "vue": "menu-ordinateur",
+   "avant": "checks/visiter-contour-sombre/avant-menu-ordinateur.png",
+   "apres": "checks/visiter-contour-sombre/apres-menu-ordinateur.png"
+  }
+ ]
+}

@@ -1,0 +1,753 @@
+{
+ "code": {
+  "dom2fig.py": "2026-10-18 06:00:51 UTC",
+  "render.js": "2026-10-18 05:51:15 UTC",
+  "render.inline.js": "2026-10-18 05:51:22 UTC",
+  "capture_lib.py": "2026-10-18 05:51:15 UTC",
+  "make_call.py": "2026-10-17 12:25:18 UTC"
+ },
+ "checks": {
+  "scope_bar_and_atmosphere": [
+   {
+    "state": "projects--mobile--fr",
+    "H": 2826,
+    "order": [
+     [
+      "Fond",
+      0.0,
+      2826
+     ],
+     [
+      "Contenu",
+      92.0,
+      2733.95
+     ],
+     [
+      "Après · Application",
+      0.0,
+      166.0
+     ],
+     [
+      "Barre de périmètre",
+      84.0,
+      46
+     ],
+     [
+      "En-tête",
+      0.0,
+      92
+     ],
+     [
+      "Menu du bas",
+      2749.0,
+      60
+     ]
+    ]
+   },
+   {
+    "state": "projects--desktop--ar",
+    "H": 2511,
+    "order": [
+     [
+      "Fond",
+      0.0,
+      2511
+     ],
+     [
+      "Contenu",
+      129.75,
+      2381.64
+     ],
+     [
+      "Après · Application",
+      0.0,
+      188.0
+     ],
+     [
+      "Barre de périmètre",
+      84.0,
+      51
+     ],
+     [
+      "En-tête",
+      0.0,
+      129.75
+     ],
+     [
+      "Menu du bas",
+      2419.0,
+      60
+     ]
+    ]
+   },
+   {
+    "state": "project--desktop--fr",
+    "H": 1631,
+    "order": [
+     [
+      "Fond",
+      0.0,
+      1631
+     ],
+     [
+      "Contenu",
+      124.0,
+      1507.2
+     ],
+     [
+      "Après · Application",
+      0.0,
+      124.0
+     ],
+     [
+      "Barre de périmètre",
+      40.0,
+      48
+     ],
+     [
+      "En-tête",
+      0.0,
+      124
+     ],
+     [
+      "Menu du bas",
+      1539.0,
+      60
+     ]
+    ]
+   },
+   {
+    "state": "project--mobile--ar",
+    "H": 2015,
+    "order": [
+     [
+      "Fond",
+      0.0,
+      2015
+     ],
+     [
+      "Contenu",
+      92.0,
+      1923.28
+     ],
+     [
+      "Après · Application",
+      0.0,
+      158.0
+     ],
+     [
+      "Barre de périmètre",
+      84.0,
+      41
+     ],
+     [
+      "En-tête",
+      0.0,
+      92
+     ],
+     [
+      "Menu du bas",
+      1938.0,
+      60
+     ]
+    ]
+   },
+   {
+    "state": "project-comments--mobile--fr",
+    "H": 1293,
+    "order": [
+     [
+      "Fond",
+      0.0,
+      1293
+     ],
+     [
+      "Contenu",
+      92.0,
+      1201.11
+     ],
+     [
+      "Après · Application",
+      0.0,
+      158.0
+     ],
+     [
+      "Barre de périmètre",
+      84.0,
+      38
+     ],
+     [
+      "En-tête",
+      0.0,
+      92
+     ],
+     [
+      "Menu du bas",
+      1216.0,
+      60
+     ]
+    ]
+   },
+   {
+    "state": "report--desktop--fr",
+    "H": 1631,
+    "order": [
+     [
+      "Fond",
+      0.0,
+      1631
+     ],
+     [
+      "Contenu",
+      124.0,
+      1507.2
+     ],
+     [
+      "Après · Application",
+      0.0,
+      124.0
+     ],
+     [
+      "Barre de périmètre",
+      40.0,
+      48
+     ],
+     [
+      "En-tête",
+      0.0,
+      124
+     ],
+     [
+      "Menu du bas",
+      1539.0,
+      60
+     ]
+    ]
+   },
+   {
+    "state": "comment-menu--mobile--fr",
+    "H": 1638,
+    "order": [
+     [
+      "Fond",
+      0.0,
+      1638
+     ],
+     [
+      "Contenu",
+      92.0,
+      1546.3
+     ],
+     [
+      "Après · Application",
+      0.0,
+      158.0
+     ],
+     [
+      "Barre de périmètre",
+      84.0,
+      38
+     ],
+     [
+      "En-tête",
+      0.0,
+      92
+     ],
+     [
+      "Remonter en haut",
+      1448.0,
+      44
+     ],
+     [
+      "Menu du bas",
+      1561.0,
+      60
+     ]
+    ]
+   },
+   {
+    "state": "projects-sort-open--desktop--fr",
+    "H": 2566,
+    "order": [
+     [
+      "Fond",
+      0.0,
+      2566
+     ],
+     [
+      "Contenu",
+      124.0,
+      2441.7
+     ],
+     [
+      "Après · Application",
+      0.0,
+      188.0
+     ],
+     [
+      "Barre de périmètre",
+      84.0,
+      48
+     ],
+     [
+      "En-tête",
+      0.0,
+      124
+     ],
+     [
+      "Menu du bas",
+      2474.0,
+      60
+     ]
+    ]
+   }
+  ],
+  "sort_menu_desktop_last_children": [
+   "Carte",
+   "Pagination · Pagination des contenus",
+   "#content-sort-menu"
+  ],
+  "list_view_titles": [
+   {
+    "fmt": "desktop",
+    "tx": "ft_transcendence · Construire à cinq",
+    "w": 411.68,
+    "ml": 3,
+    "ls": -0.98,
+    "nl": null,
+    "chrome_one_line": 411.31,
+    "figma_one_line": 412.29,
+    "fits_in_figma": false
+   },
+   {
+    "fmt": "desktop",
+    "tx": "Derrière une ligne de commande",
+    "w": 380.93,
+    "ml": 3,
+    "ls": -0.98,
+    "nl": null,
+    "chrome_one_line": 380.54,
+    "figma_one_line": 381.52,
+    "fits_in_figma": false
+   },
+   {
+    "fmt": "desktop",
+    "tx": "Une porte vers la troisième dimension",
+    "w": 431.1,
+    "ml": 3,
+    "ls": -0.98,
+    "nl": null,
+    "chrome_one_line": 430.74,
+    "figma_one_line": 431.72,
+    "fits_in_figma": false
+   },
+   {
+    "fmt": "desktop",
+    "tx": "Ce qui relie nos messages",
+    "w": 299.23,
+    "ml": 3,
+    "ls": -0.98,
+    "nl": null,
+    "chrome_one_line": 298.84,
+    "figma_one_line": 299.82,
+    "fits_in_figma": false
+   },
+   {
+    "fmt": "desktop",
+    "tx": "Un jardin de petites idées",
+    "w": 291.95,
+    "ml": 3,
+    "ls": -0.98,
+    "nl": null,
+    "chrome_one_line": 291.55,
+    "figma_one_line": 292.53,
+    "fits_in_figma": false
+   },
+   {
+    "fmt": "desktop",
+    "tx": "D’un terminal à l’autre",
+    "w": 247.96,
+    "ml": 3,
+    "ls": -0.98,
+    "nl": null,
+    "chrome_one_line": 247.59,
+    "figma_one_line": 248.56,
+    "fits_in_figma": false
+   },
+   {
+    "fmt": "desktop",
+    "tx": "Un agenda pour s’entraider",
+    "w": 313.03,
+    "ml": 3,
+    "ls": -0.98,
+    "nl": null,
+    "chrome_one_line": 312.64,
+    "figma_one_line": 313.62,
+    "fits_in_figma": false
+   },
+   {
+    "fmt": "desktop",
+    "tx": "Les repères du jardin",
+    "w": 241.78,
+    "ml": 3,
+    "ls": -0.98,
+    "nl": null,
+    "chrome_one_line": 241.37,
+    "figma_one_line": 242.35,
+    "fits_in_figma": false
+   },
+   {
+    "fmt": "desktop",
+    "tx": "Les permissions au clair",
+    "w": 270.2,
+    "ml": 3,
+    "ls": -0.98,
+    "nl": null,
+    "chrome_one_line": 269.79,
+    "figma_one_line": 270.77,
+    "fits_in_figma": false
+   },
+   {
+    "fmt": "desktop",
+    "tx": "Une bibliothèque légère",
+    "w": 277.28,
+    "ml": 3,
+    "ls": -0.98,
+    "nl": null,
+    "chrome_one_line": 276.88,
+    "figma_one_line": 277.86,
+    "fits_in_figma": false
+   },
+   {
+    "fmt": "desktop",
+    "tx": "Les messages à l’épreuve",
+    "w": 289.09,
+    "ml": 3,
+    "ls": -0.98,
+    "nl": null,
+    "chrome_one_line": 288.7,
+    "figma_one_line": 289.68,
+    "fits_in_figma": false
+   },
+   {
+    "fmt": "desktop",
+    "tx": "Les commandes par couches",
+    "w": 329.6,
+    "ml": 3,
+    "ls": -0.98,
+    "nl": null,
+    "chrome_one_line": 329.2,
+    "figma_one_line": 330.18,
+    "fits_in_figma": false
+   },
+   {
+    "fmt": "mobile",
+    "tx": "ft_transcendence · Construire à cinq",
+    "w": 249.34,
+    "ml": 3,
+    "ls": -0.7,
+    "nl": null,
+    "chrome_one_line": 293.88,
+    "figma_one_line": 294.58,
+    "fits_in_figma": false
+   },
+   {
+    "fmt": "mobile",
+    "tx": "Derrière une ligne de commande",
+    "w": 249.34,
+    "ml": 3,
+    "ls": -0.7,
+    "nl": null,
+    "chrome_one_line": 271.86,
+    "figma_one_line": 272.56,
+    "fits_in_figma": false
+   },
+   {
+    "fmt": "mobile",
+    "tx": "Une porte vers la troisième dimension",
+    "w": 249.34,
+    "ml": 3,
+    "ls": -0.7,
+    "nl": null,
+    "chrome_one_line": 307.73,
+    "figma_one_line": 308.43,
+    "fits_in_figma": false
+   },
+   {
+    "fmt": "mobile",
+    "tx": "Ce qui relie nos messages",
+    "w": 213.85,
+    "ml": 3,
+    "ls": -0.7,
+    "nl": null,
+    "chrome_one_line": 213.48,
+    "figma_one_line": 214.18,
+    "fits_in_figma": false
+   },
+   {
+    "fmt": "mobile",
+    "tx": "Un jardin de petites idées",
+    "w": 208.65,
+    "ml": 3,
+    "ls": -0.7,
+    "nl": null,
+    "chrome_one_line": 208.3,
+    "figma_one_line": 209.0,
+    "fits_in_figma": false
+   },
+   {
+    "fmt": "mobile",
+    "tx": "D’un terminal à l’autre",
+    "w": 177.23,
+    "ml": 3,
+    "ls": -0.7,
+    "nl": null,
+    "chrome_one_line": 176.85,
+    "figma_one_line": 177.55,
+    "fits_in_figma": false
+   },
+   {
+    "fmt": "mobile",
+    "tx": "Un agenda pour s’entraider",
+    "w": 223.71,
+    "ml": 3,
+    "ls": -0.7,
+    "nl": null,
+    "chrome_one_line": 223.35,
+    "figma_one_line": 224.05,
+    "fits_in_figma": false
+   },
+   {
+    "fmt": "mobile",
+    "tx": "Les repères du jardin",
+    "w": 172.81,
+    "ml": 3,
+    "ls": -0.7,
+    "nl": null,
+    "chrome_one_line": 172.46,
+    "figma_one_line": 173.16,
+    "fits_in_figma": false
+   },
+   {
+    "fmt": "mobile",
+    "tx": "Les permissions au clair",
+    "w": 193.1,
+    "ml": 3,
+    "ls": -0.7,
+    "nl": null,
+    "chrome_one_line": 192.76,
+    "figma_one_line": 193.46,
+    "fits_in_figma": false
+   },
+   {
+    "fmt": "mobile",
+    "tx": "Une bibliothèque légère",
+    "w": 198.17,
+    "ml": 3,
+    "ls": -0.7,
+    "nl": null,
+    "chrome_one_line": 197.81,
+    "figma_one_line": 198.51,
+    "fits_in_figma": false
+   },
+   {
+    "fmt": "mobile",
+    "tx": "Les messages à l’épreuve",
+    "w": 206.6,
+    "ml": 3,
+    "ls": -0.7,
+    "nl": null,
+    "chrome_one_line": 206.25,
+    "figma_one_line": 206.95,
+    "fits_in_figma": false
+   },
+   {
+    "fmt": "mobile",
+    "tx": "Les commandes par couches",
+    "w": 235.54,
+    "ml": 3,
+    "ls": -0.7,
+    "nl": null,
+    "chrome_one_line": 235.2,
+    "figma_one_line": 235.9,
+    "fits_in_figma": false
+   }
+  ],
+  "campus_ar_mobile": [
+   {
+    "tx": "42 Tokyo",
+    "x": 28.98,
+    "y": 111.15,
+    "w": 42.48,
+    "nl": 2,
+    "al": "LEFT"
+   },
+   {
+    "tx": "42 Tokyo",
+    "x": 109.56,
+    "y": 112.98,
+    "w": null,
+    "nl": null,
+    "al": "LEFT"
+   },
+   {
+    "tx": "42 Abu Dhabi",
+    "x": 14.8,
+    "y": 111.14,
+    "w": 62.53,
+    "nl": 2,
+    "al": "LEFT"
+   },
+   {
+    "tx": "42 Luanda",
+    "x": 101.14,
+    "y": 111.14,
+    "w": null,
+    "nl": null,
+    "al": "LEFT"
+   },
+   {
+    "tx": "42 Luanda",
+    "x": 39.19,
+    "y": 111.14,
+    "w": 50.88,
+    "nl": 2,
+    "al": "LEFT"
+   }
+  ],
+  "h1_ar": [
+   {
+    "fmt": "desktop",
+    "tx_has_rlm": false,
+    "sv_n": "Projets/ft_transcendence · Construire à cinq",
+    "sv_ar_has_rlm": true,
+    "al": "LEFT"
+   },
+   {
+    "fmt": "mobile",
+    "tx_has_rlm": false,
+    "sv_n": "Projets/ft_transcendence · Construire à cinq",
+    "sv_ar_has_rlm": true,
+    "al": "LEFT"
+   }
+  ],
+  "focus_ring": {
+   "light": [
+    {
+     "h": "#008E90"
+    }
+   ],
+   "dark": [
+    {
+     "h": "#96A3EB"
+    }
+   ]
+  },
+  "report_field": [
+   {
+    "fmt": "desktop",
+    "tx": "Expliquez ce qui pose problème…",
+    "col": {
+     "v": "Rôles/muted"
+    },
+    "spaces": [
+     "0x20",
+     "0x20",
+     "0x20",
+     "0x20"
+    ]
+   },
+   {
+    "fmt": "desktop",
+    "tx": "0 / 1 000",
+    "col": {
+     "v": "Rôles/muted"
+    },
+    "spaces": [
+     "0x20",
+     "0x20",
+     "0x20"
+    ]
+   },
+   {
+    "fmt": "mobile",
+    "tx": "Expliquez ce qui pose problème…",
+    "col": {
+     "v": "Rôles/muted"
+    },
+    "spaces": [
+     "0x20",
+     "0x20",
+     "0x20",
+     "0x20"
+    ]
+   },
+   {
+    "fmt": "mobile",
+    "tx": "0 / 1 000",
+    "col": {
+     "v": "Rôles/muted"
+    },
+    "spaces": [
+     "0x20",
+     "0x20",
+     "0x20"
+    ]
+   }
+  ],
+  "underline": [
+   {
+    "state": "filter-projects",
+    "fmt": "desktop",
+    "td": "UNDERLINE",
+    "tdc": {
+     "v": "Contenus/line"
+    },
+    "tdo": 4.0
+   },
+   {
+    "state": "filter-projects",
+    "fmt": "mobile",
+    "td": "UNDERLINE",
+    "tdc": {
+     "v": "Contenus/line"
+    },
+    "tdo": 4.0
+   },
+   {
+    "state": "filter-projects-expanded",
+    "fmt": "desktop",
+    "td": "UNDERLINE",
+    "tdc": {
+     "v": "Contenus/line"
+    },
+    "tdo": 4.0
+   },
+   {
+    "state": "filter-projects-expanded",
+    "fmt": "mobile",
+    "td": "UNDERLINE",
+    "tdc": {
+     "v": "Contenus/line"
+    },
+    "tdo": 4.0
+   }
+  ],
+  "viewer_mobile": [
+   {
+    "t": "S",
+    "n": "Derrière une ligne de commande",
+    "ref": "rqcd84-1681",
+    "x": 6.0,
+    "y": 6.0,
+    "w": 360,
+    "h": 638,
+    "fit": "contain"
+   }
+  ],
+  "viewer_svg_overflow": [
+   "<circle cx=\"690\" cy=\"66\" r=\"190\" fill=\"#BBDDD6\">",
+   "<circle cx=\"110\" cy=\"457\" r=\"147\" fill=\"#F2D6E3\">"
+  ]
+ }
+}

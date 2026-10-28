@@ -1,0 +1,854 @@
+{
+  "retrievedAt": "2026-09-27",
+  "sourceUrl": "https://www.42network.org/wp-content/uploads/campus/campus.json",
+  "countries": [
+    {
+      "id": "ALB",
+      "iso2": "AL",
+      "name": "Albania"
+    },
+    {
+      "id": "AGO",
+      "iso2": "AO",
+      "name": "Angola"
+    },
+    {
+      "id": "ARM",
+      "iso2": "AM",
+      "name": "Armenia"
+    },
+    {
+      "id": "AUT",
+      "iso2": "AT",
+      "name": "Austria"
+    },
+    {
+      "id": "BEL",
+      "iso2": "BE",
+      "name": "Belgium"
+    },
+    {
+      "id": "BRA",
+      "iso2": "BR",
+      "name": "Brazil"
+    },
+    {
+      "id": "CAN",
+      "iso2": "CA",
+      "name": "Canada"
+    },
+    {
+      "id": "CZE",
+      "iso2": "CZ",
+      "name": "Czech Republic"
+    },
+    {
+      "id": "FRA",
+      "iso2": "FR",
+      "name": "France"
+    },
+    {
+      "id": "DEU",
+      "iso2": "DE",
+      "name": "Germany"
+    },
+    {
+      "id": "ITA",
+      "iso2": "IT",
+      "name": "Italy"
+    },
+    {
+      "id": "JPN",
+      "iso2": "JP",
+      "name": "Japan"
+    },
+    {
+      "id": "JOR",
+      "iso2": "JO",
+      "name": "Jordan"
+    },
+    {
+      "id": "LBN",
+      "iso2": "LB",
+      "name": "Lebanon"
+    },
+    {
+      "id": "LUX",
+      "iso2": "LU",
+      "name": "Luxembourg"
+    },
+    {
+      "id": "MDG",
+      "iso2": "MG",
+      "name": "Madagascar"
+    },
+    {
+      "id": "MYS",
+      "iso2": "MY",
+      "name": "Malaysia"
+    },
+    {
+      "id": "MAR",
+      "iso2": "MA",
+      "name": "Morocco"
+    },
+    {
+      "id": "PSE",
+      "iso2": "PS",
+      "name": "Palestine"
+    },
+    {
+      "id": "POL",
+      "iso2": "PL",
+      "name": "Poland"
+    },
+    {
+      "id": "PRT",
+      "iso2": "PT",
+      "name": "Portugal"
+    },
+    {
+      "id": "SGP",
+      "iso2": "SG",
+      "name": "Singapore"
+    },
+    {
+      "id": "KOR",
+      "iso2": "KR",
+      "name": "South Korea"
+    },
+    {
+      "id": "ESP",
+      "iso2": "ES",
+      "name": "Spain"
+    },
+    {
+      "id": "CHE",
+      "iso2": "CH",
+      "name": "Switzerland"
+    },
+    {
+      "id": "THA",
+      "iso2": "TH",
+      "name": "Thailand"
+    },
+    {
+      "id": "NLD",
+      "iso2": "NL",
+      "name": "The Netherlands"
+    },
+    {
+      "id": "TUR",
+      "iso2": "TR",
+      "name": "Turkey"
+    },
+    {
+      "id": "ARE",
+      "iso2": "AE",
+      "name": "United Arab Emirates"
+    },
+    {
+      "id": "GBR",
+      "iso2": "GB",
+      "name": "United Kingdom"
+    }
+  ],
+  "campuses": [
+    {
+      "id": "luanda",
+      "name": "42 Luanda",
+      "country": "AGO",
+      "coordinates": [
+        13.184199,
+        -8.924652
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-luanda/",
+      "officialId": 1841,
+      "address": "ISPTEC\nEdifício dos Laboratórios Profissionalizantes, Piso 2\nLuanda - 0 -\nAngola"
+    },
+    {
+      "id": "tirana",
+      "name": "42 Tirana",
+      "country": "ALB",
+      "coordinates": [
+        19.821455001831055,
+        41.323001861572266
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-tirana/",
+      "officialId": 3841,
+      "address": "Pyramid of Tirana, Level -1\nBulevardi Dëshmorët e Kombit 5\n1001 Tirana, Albania"
+    },
+    {
+      "id": "abu-dhabi",
+      "name": "42 Abu Dhabi",
+      "country": "ARE",
+      "coordinates": [
+        54.368035,
+        24.520285
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-abu-dhabi/",
+      "officialId": 1793,
+      "address": "Mina Zayed warehouses district\nAbu Dhabi\nUAE"
+    },
+    {
+      "id": "yerevan",
+      "name": "42 Yerevan",
+      "country": "ARM",
+      "coordinates": [
+        44.479984,
+        40.196518
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-yerevan/",
+      "officialId": 1818,
+      "address": "16 Halabyan St\nYerevan 0038\nArmenia"
+    },
+    {
+      "id": "vienna",
+      "name": "42 Vienna",
+      "country": "AUT",
+      "coordinates": [
+        16.3738189,
+        48.2081743
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-vienna/",
+      "officialId": 1828,
+      "address": "42 Vienna GMBH\nMuthgasse 26/1st floor\n1190 Wien\nAustria"
+    },
+    {
+      "id": "wels",
+      "name": "42 Wels",
+      "country": "AUT",
+      "coordinates": [
+        14.0102873,
+        48.1511453
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-wels/",
+      "officialId": 4604,
+      "address": "Bauernstraße 11a\n4600 Wels\nAustria"
+    },
+    {
+      "id": "antwerp",
+      "name": "42 Antwerp",
+      "country": "BEL",
+      "coordinates": [
+        4.4218121,
+        51.2129396
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-antwerp/",
+      "officialId": 1837,
+      "address": "Mediaplein 1\n2018 Antwerp\nBelgium"
+    },
+    {
+      "id": "brussels",
+      "name": "42 Brussels",
+      "country": "BEL",
+      "coordinates": [
+        4.357563018798828,
+        50.84537887573242
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-brussels/",
+      "officialId": 1795,
+      "address": "Cantersteen 12\n1000 Brussels\nBelgium"
+    },
+    {
+      "id": "belo-horizonte",
+      "name": "42 Belo Horizonte",
+      "country": "BRA",
+      "coordinates": [
+        -43.9344931,
+        -19.9166813
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-belo-horizonte/",
+      "officialId": 1836,
+      "address": "R. Rio de Janeiro\n471 - Centro, Belo Horizonte\nMG, 30160-041"
+    },
+    {
+      "id": "rio",
+      "name": "42 Rio",
+      "country": "BRA",
+      "coordinates": [
+        -43.19806318899948,
+        -22.909956498767578
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-rio/",
+      "officialId": 1809,
+      "address": "Rua Marquês de Sapucaí, 200, 12º andar\nSanto Cristo - Rio de Janeiro - RJ\n20210-072\nBrazil"
+    },
+    {
+      "id": "sao",
+      "name": "42 São Paulo",
+      "country": "BRA",
+      "coordinates": [
+        -46.689493,
+        -23.557359
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-sao-paulo/",
+      "officialId": 1813,
+      "address": "Rua Aspicuelta, 422\nVila Madalena\n8 andar\nSão Paulo 05416-011\nBrazil"
+    },
+    {
+      "id": "quebec",
+      "name": "42 Québec",
+      "country": "CAN",
+      "coordinates": [
+        -71.22382024496463,
+        46.81218664042808
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-quebec/",
+      "officialId": 1808,
+      "address": "330 Rue Saint-Vallier E\nQuébec, QC\nCanada G1K 9C5"
+    },
+    {
+      "id": "lausanne",
+      "name": "42 Lausanne",
+      "country": "CHE",
+      "coordinates": [
+        6.603866,
+        46.517628
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-lausanne/",
+      "officialId": 1803,
+      "address": "Rue de Lausanne 64\n1020 Renens\nSwitzerland"
+    },
+    {
+      "id": "zurich",
+      "name": "42 Zürich",
+      "country": "CHE",
+      "coordinates": [
+        8.559128761291504,
+        47.41770935058594
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-zurich/",
+      "officialId": 5141,
+      "address": "SPACES Z.One\nLeutschenbachstrasse 95\n8052 Zürich"
+    },
+    {
+      "id": "prague",
+      "name": "42 Prague",
+      "country": "CZE",
+      "coordinates": [
+        14.518224868107842,
+        50.11119312075461
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-prague/",
+      "officialId": 1831,
+      "address": "AFI CITY TOWER\nKolbenova 1021/9\nPrague 9\nCzech Republic"
+    },
+    {
+      "id": "berlin",
+      "name": "42 Berlin",
+      "country": "DEU",
+      "coordinates": [
+        13.404954,
+        52.520007
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-berlin/",
+      "officialId": 1826,
+      "address": "HarzerStraße, 42\nNeukölln\nBerlin"
+    },
+    {
+      "id": "heilbronn",
+      "name": "42 Heilbronn",
+      "country": "DEU",
+      "coordinates": [
+        9.202188,
+        49.140611
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-heilbronn-42-network/",
+      "officialId": 1801,
+      "address": "Weipertstraße 8-10\n74076 Heilbronn\nGermany"
+    },
+    {
+      "id": "wolfsburg",
+      "name": "42 Wolfsburg",
+      "country": "DEU",
+      "coordinates": [
+        10.789543291562392,
+        52.42683056483372
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-wolfsburg/",
+      "officialId": 1825,
+      "address": "Porschestraße 2c\nD-38440 Wolfsburg\nGermany"
+    },
+    {
+      "id": "barcelona",
+      "name": "42 Barcelona",
+      "country": "ESP",
+      "coordinates": [
+        2.1703619943206243,
+        41.439213161783535
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-barcelona/",
+      "officialId": 1799,
+      "address": "Parc Tecnològic de Barcelona Activa\nCarrer Albert Einstein 8-14\n08042 Barcelona\nSpain"
+    },
+    {
+      "id": "madrid",
+      "name": "42 Madrid",
+      "country": "ESP",
+      "coordinates": [
+        -3.664176423907283,
+        40.51629809848375
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-madrid/",
+      "officialId": 1806,
+      "address": "Distrito Telefónica - Edificio Norte 3\nRonda de la Comunicación, s/n\n28050 Madrid\nSpain"
+    },
+    {
+      "id": "malaga",
+      "name": "42 Málaga",
+      "country": "ESP",
+      "coordinates": [
+        -4.439711332633282,
+        36.69948099191123
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-malaga/",
+      "officialId": 1822,
+      "address": "Avenida Sor Teresa Prat, 15\nComplejo Tabacalera, Edificio E3\n29003 Málaga\nSpain"
+    },
+    {
+      "id": "urduliz",
+      "name": "42 Urduliz",
+      "country": "ESP",
+      "coordinates": [
+        -2.9602571976300367,
+        43.37999240414109
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-urduliz/",
+      "officialId": 1800,
+      "address": "Torre Urduliz\nAita Gotzon, 37\n48610 Urduliz (Bizkaia)\nSpain"
+    },
+    {
+      "id": "angouleme",
+      "name": "42 Angoulême",
+      "country": "FRA",
+      "coordinates": [
+        0.158948,
+        45.655191
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-angouleme/",
+      "officialId": 1816,
+      "address": "49-51 boulevard Besson-Bey\n16000 Angoulême\nFrance"
+    },
+    {
+      "id": "le-havre",
+      "name": "42 Le Havre",
+      "country": "FRA",
+      "coordinates": [
+        0.1257042,
+        49.4923977
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-le-havre/",
+      "officialId": 1835,
+      "address": "Cité Numérique\n20 Quai Frissard\n76600 Le Havre\nFrance"
+    },
+    {
+      "id": "lyon",
+      "name": "42 Lyon",
+      "country": "FRA",
+      "coordinates": [
+        4.7482783,
+        45.7804034
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-lyon/",
+      "officialId": 1805,
+      "address": "Campus Région du Numérique\n78, route de Paris\n69260 Charbonnières-les-Bains\nFrance"
+    },
+    {
+      "id": "marseille",
+      "name": "42 Marseille",
+      "country": "FRA",
+      "coordinates": [
+        5.3740692138671875,
+        43.297889709472656
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-marseille/",
+      "officialId": 4224,
+      "address": "19 rue Henri Barbusse\n13001 Marseille\nFrance"
+    },
+    {
+      "id": "mulhouse",
+      "name": "42 Mulhouse",
+      "country": "FRA",
+      "coordinates": [
+        7.329914,
+        47.750077
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-mulhouse/",
+      "officialId": 1817,
+      "address": "KMØ\n30 rue François Spoerry\n68100 Mulhouse"
+    },
+    {
+      "id": "nice",
+      "name": "42 Nice",
+      "country": "FRA",
+      "coordinates": [
+        7.200040340423584,
+        43.69113540649414
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-nice/",
+      "officialId": 1807,
+      "address": "Bâtiment PREMIUM - 4ème Etage\n61 Avenue Simone Veil\n06200 Nice\nFrance"
+    },
+    {
+      "id": "paris",
+      "name": "42 Paris",
+      "country": "FRA",
+      "coordinates": [
+        2.3192,
+        48.89704
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-paris/",
+      "officialId": 1819,
+      "address": "96, boulevard Bessières\n75017 PARIS\nFrance"
+    },
+    {
+      "id": "perpignan",
+      "name": "42 Perpignan",
+      "country": "FRA",
+      "coordinates": [
+        2.8948332,
+        42.6886591
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-perpignan/",
+      "officialId": 1834,
+      "address": "Les Dames de France\nRue Pierre Curie\n66000 Perpignan\nFrance"
+    },
+    {
+      "id": "london",
+      "name": "42 London",
+      "country": "GBR",
+      "coordinates": [
+        -0.0673864,
+        51.5168674
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-london/",
+      "officialId": 1832,
+      "address": "20-30 Whitechapel Road\nE1 1EW\nLondon, UK"
+    },
+    {
+      "id": "firenze",
+      "name": "42 Firenze",
+      "country": "ITA",
+      "coordinates": [
+        11.25,
+        43.7667
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-firenze/",
+      "officialId": 1830,
+      "address": "Via del Tiratoio 1\n50124 Florence\nItaly"
+    },
+    {
+      "id": "milano",
+      "name": "42 Milano",
+      "country": "ITA",
+      "coordinates": [
+        9.1896346,
+        45.4641943
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-milano/",
+      "officialId": 1845,
+      "address": "V. Ambrogio Bergognone da Fossano, 34, 20144 Milano MI"
+    },
+    {
+      "id": "roma",
+      "name": "42 Roma",
+      "country": "ITA",
+      "coordinates": [
+        12.496366,
+        41.902784
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-roma/",
+      "officialId": 1810,
+      "address": "Via Sandro Sandri, 81\n00159 Rome\nItaly"
+    },
+    {
+      "id": "amman",
+      "name": "42 Amman",
+      "country": "JOR",
+      "coordinates": [
+        35.8874267689284,
+        31.954064917842697
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-amman/",
+      "officialId": 1824,
+      "address": "Abdun neighborhood\nAmman\nJordan"
+    },
+    {
+      "id": "irbid",
+      "name": "42 Irbid",
+      "country": "JOR",
+      "coordinates": [
+        35.8493023,
+        32.5556091
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-irbid/",
+      "officialId": 4136,
+      "address": "Irbid, Jordan"
+    },
+    {
+      "id": "tokyo",
+      "name": "42 Tokyo",
+      "country": "JPN",
+      "coordinates": [
+        139.68813187116757,
+        35.69044841395869
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-tokyo/",
+      "officialId": 1815,
+      "address": "2 Chome-11-2 Nishishinjuku\nShinjuku City\nTokyo 160-0023\nJapan"
+    },
+    {
+      "id": "gyeongsan",
+      "name": "42 Gyeongsan",
+      "country": "KOR",
+      "coordinates": [
+        128.847131,
+        35.90267
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-gyeongsan/",
+      "officialId": 1842,
+      "address": "201 Daegudae-ro, Jillyang-eup,\nGyeongsan-si, Gyeongsangbuk-do,\nRepublic of Korea"
+    },
+    {
+      "id": "seoul",
+      "name": "42 Seoul",
+      "country": "KOR",
+      "coordinates": [
+        127.065101,
+        37.488203
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-seoul/",
+      "officialId": 1814,
+      "address": "416, Gaepo-ro\nGangnam-gu\nSeoul\nThe republic of Korea"
+    },
+    {
+      "id": "beirut",
+      "name": "42 Beirut",
+      "country": "LBN",
+      "coordinates": [
+        35.5025585,
+        33.8892265
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-beirut/",
+      "officialId": 1844,
+      "address": "Beirut Digital District 1499\nNassif El Yazaji St\nLebanon"
+    },
+    {
+      "id": "luxembourg",
+      "name": "42 Luxembourg",
+      "country": "LUX",
+      "coordinates": [
+        6.130505561828613,
+        49.610008239746094
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-luxembourg/",
+      "officialId": 1833,
+      "address": "14, porte de France,\nL-4360 Esch-sur-Alzette"
+    },
+    {
+      "id": "1337-ben-guerir",
+      "name": "1337 Ben Guérir",
+      "country": "MAR",
+      "coordinates": [
+        -7.939922,
+        32.21987
+      ],
+      "sourceUrl": "https://www.42network.org/campus/1337-ben-guerir/",
+      "officialId": 1821,
+      "address": "Lot 660, Hay Moulay Rachid\n43150 Ben Guérir\nMorocco"
+    },
+    {
+      "id": "1337-khouribga",
+      "name": "1337 Khouribga",
+      "country": "MAR",
+      "coordinates": [
+        -6.897858,
+        32.882134
+      ],
+      "sourceUrl": "https://www.42network.org/campus/1337-khouribga/",
+      "officialId": 1820,
+      "address": "Mail central, Bâtiment B\n25000 Khouribga\nMorocco"
+    },
+    {
+      "id": "1337-med",
+      "name": "1337 Med",
+      "country": "MAR",
+      "coordinates": [
+        -5.3625516,
+        35.5888995
+      ],
+      "sourceUrl": "https://www.42network.org/campus/1337-med/",
+      "officialId": 1827,
+      "address": "Parc TetouanShore commune de Martil\nTetouan 93150"
+    },
+    {
+      "id": "1337-rabat",
+      "name": "1337 – Rabat",
+      "country": "MAR",
+      "coordinates": [
+        -6.8408929,
+        34.0218454
+      ],
+      "sourceUrl": "https://www.42network.org/campus/1337-rabat/",
+      "officialId": 4095,
+      "address": "Rabat, Morocco"
+    },
+    {
+      "id": "antananarivo",
+      "name": "42 Antananarivo",
+      "country": "MDG",
+      "coordinates": [
+        47.516667,
+        -18.933333
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-antananarivo/",
+      "officialId": 1839,
+      "address": "42 Campus Antananarivo\nBuilding Titan VI Zone Galaxy\nAndraharo 101 Antananarivo\nMadagascar"
+    },
+    {
+      "id": "iskandar-puteri",
+      "name": "42 Iskandar Puteri",
+      "country": "MYS",
+      "coordinates": [
+        103.6144729,
+        1.4522711
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-iskandar-puteri/",
+      "officialId": 1846,
+      "address": "Iskandar Puteri, Johor Bahru, Malaysia"
+    },
+    {
+      "id": "kuala-lumpur",
+      "name": "42 Kuala Lumpur",
+      "country": "MYS",
+      "coordinates": [
+        101.686855,
+        3.139003
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-kuala-lumpur/",
+      "officialId": 1802,
+      "address": "Sunway FutureX\nDuplex, Jalan PJS 11/26, Bandar Sunway\n47500 Subang Jaya, Selangor\nMalaysia"
+    },
+    {
+      "id": "penang",
+      "name": "42 Penang",
+      "country": "MYS",
+      "coordinates": [
+        100.2559077,
+        5.4065013
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-penang/",
+      "officialId": 2329,
+      "address": "Penang, Malaysia"
+    },
+    {
+      "id": "codam",
+      "name": "Codam",
+      "country": "NLD",
+      "coordinates": [
+        4.91561,
+        52.374485
+      ],
+      "sourceUrl": "https://www.42network.org/campus/codam/",
+      "officialId": 1792,
+      "address": "Kattenburgerstraat 7\nBuilding 039\n1018 JA Amsterdam\nThe Netherlands"
+    },
+    {
+      "id": "warsaw",
+      "name": "42 Warsaw",
+      "country": "POL",
+      "coordinates": [
+        20.978907,
+        52.2358891
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-warsaw/",
+      "officialId": 1840,
+      "address": "SPARK\nAl. Solidarności 171 B\n00-877 Warsaw\nPoland"
+    },
+    {
+      "id": "lisboa",
+      "name": "42 Lisboa",
+      "country": "PRT",
+      "coordinates": [
+        -9.4309078,
+        38.6968433
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-lisboa/",
+      "officialId": 1804,
+      "address": "Av. Infante Dom Henrique 143, 1º\n1950-406 Lisboa\nPortugal"
+    },
+    {
+      "id": "porto",
+      "name": "42 Porto",
+      "country": "PRT",
+      "coordinates": [
+        -8.6129889,
+        41.148894
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-porto/",
+      "officialId": 1829,
+      "address": "Rua da Picaria 5\n4050-478 Porto\nPortugal"
+    },
+    {
+      "id": "nablus",
+      "name": "42 Nablus",
+      "country": "PSE",
+      "coordinates": [
+        35.2569374,
+        32.2205316
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-nablus/",
+      "officialId": 1843,
+      "address": "Nablus, Palestine."
+    },
+    {
+      "id": "singapore",
+      "name": "42 Singapore",
+      "country": "SGP",
+      "coordinates": [
+        103.808053,
+        1.351616
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-singapore/",
+      "officialId": 1838,
+      "address": "42 Singapore\nSingapore University of Technology and Design\nBlock 1, Level 4 (Library)\n8 Somapah Road, Singapore 487372"
+    },
+    {
+      "id": "bangkok",
+      "name": "42 Bangkok",
+      "country": "THA",
+      "coordinates": [
+        100.501765,
+        13.756331
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-bangkok/",
+      "officialId": 1798,
+      "address": "KMITL Lifelong Learning Center (4th floor)\nKing Mongkut’s Institute of Technology Ladkrabang (KMITL)\n1 Soi Chalongkrung 1, Ladkrabang\nBangkok 10520\nThailand"
+    },
+    {
+      "id": "istanbul",
+      "name": "42 Istanbul",
+      "country": "TUR",
+      "coordinates": [
+        28.984801724834792,
+        41.10347413799488
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-istanbul/",
+      "officialId": 1811,
+      "address": "Ayazaga Mahallesi\nCendere Caddesi 109C 2B Blok Kat 3 Sarıyer\nİstanbul\nTürkiye"
+    },
+    {
+      "id": "kocaeli",
+      "name": "42 Kocaeli",
+      "country": "TUR",
+      "coordinates": [
+        29.918359,
+        40.762167
+      ],
+      "sourceUrl": "https://www.42network.org/campus/42-kocaeli/",
+      "officialId": 1812,
+      "address": "Muallimköy Mahallesi\nDeniz Cd. No:143-5\n41400 Gebze\nKocaeli\nTürkiye"
+    }
+  ]
+}

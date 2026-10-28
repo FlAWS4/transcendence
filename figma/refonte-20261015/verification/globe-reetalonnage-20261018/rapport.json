@@ -1,0 +1,314 @@
+{
+ "recalibration": {
+  "siteChange": "Côté globe net, la composition GPU ne change presque rien. Elle change en revanche le flou du bord, qui est hors de la zone de mesure. Comparaison faite avec les mêmes définitions reconstituées sur les captures du 16 octobre (archivées dans _superseded/captures-avant-passe-complete-20261018) et sur celles du 18 octobre en GPU (clair, fr).\n\nMonde ordinateur :\n- îlots visibles 745 → 745 (valeur rapportée le 16 oct. : 744) ;\n- |Δt| entre les deux captures : 0,00016 ; hors flou, pixels identiques (|Δt| = 0) ;\n- perte due aux frontières 1 017,3 → 1 014,0, soit −0,3 % (rapportée : 1 020) ;\n- frange arctique (somme de t au nord de 66,56° N) 2 367,5 → 2 369,4, soit +0,1 % ;\n- capture Figma des anciens SVG contre le site : |Δt| 0,01634 → 0,01640 (rapporté : 0,0163) ; îlots 513/745.\n\nMonde mobile :\n- îlots 420 → 418, deux îlots au seuil (rapporté : 418) ;\n- |Δt| 0,00066, dont 0,00034 hors flou ;\n- perte 394,6 → 398,6, soit +1,0 % (rapportée : 397) ;\n- frange 1 268,3 → 1 264,9, soit −0,3 % ;\n- Figma contre le site : |Δt| 0,01736 → 0,01711 (rapporté : 0,0171).\n\nPays France, zone nette (rho < 0,52) :\n- ordinateur : pixels identiques hors ombres des repères ; îlots 6 → 6 ; perte −0,8 % ;\n- mobile : |Δt| 0,00033 ; îlots 15 → 15 ; perte +0,5 %.\n\nThème sombre :\n- |Δt| ancien → nouveau 0,0011 / 0,0026 / 0,0007 / 0,0017 ; écarts de perte de −2,5 à −16 % ;\n- ces écarts viennent des ombres des repères, rendues autrement en GPU. Avec des marges de 40 px autour des repères, |Δt| tombe à 0,0003 / 0,0016 / 0,0000 / 0,0004 et les pertes sont égales à 2 % près ;\n- îlots sombres inchangés : 763 et 433.\n\nCe qui change vraiment, le flou du bord (.hg-map::after) :\n- |Δt| ancien → nouveau de 0,0025 à 0,0070 dans la zone floutée ;\n- le GPU floute plus fort. Sur Pays France ordinateur, l'encre des frontières y tombe à 0,60–0,86 de l'ancienne en clair et à 0,28–0,51 en sombre, même là où le poids du masque est sous 4 % ;\n- cela concerne l'étape 8 (bord flou), pas les SVG.",
+  "views": [
+   {
+    "view": "monde--desktop",
+    "theme": "light",
+    "meanAbsDt": 0.00689,
+    "pxOver05": 17,
+    "modelIslands": 742,
+    "siteIslands": 745,
+    "borderLossModel": 1021,
+    "borderLossSite": 1014,
+    "svgChars": 278172,
+    "notes": "Réglages actuels contre les captures GPU.\n- Îlots : 3 manquants, 11 pâles en trop.\n- Les 3 manquants :\n  - un anneau réduit à un demi-pixel et supprimé par build_svg (collapsedRings) ;\n  - un îlot des Caraïbes au bord du disque, décalé d'1 px ;\n  - un anneau sous le seuil de geojson-vt près d'Aldabra (pic 0,119 contre 0,325 au site).\n- Perte +0,7 %, frange ×1,04.\n- Contre les captures du 16 oct. : 742/745, |Δt| 0,00685.\n- Variante « points » : 744/745, |Δt| 0,00692.\n- 47 appels de données + 1 mise à jour. 284 035 caractères avec les repères."
+   },
+   {
+    "view": "monde--desktop",
+    "theme": "dark",
+    "meanAbsDt": 0.01463,
+    "pxOver05": 880,
+    "modelIslands": 758,
+    "siteIslands": 763,
+    "borderLossModel": 1018.7,
+    "borderLossSite": 1018.8,
+    "svgChars": 278172,
+    "notes": "Même SVG ; le sombre passe par les variables.\n- |Δt| et px > 0,5 ne se comparent pas au clair : la couleur des frontières a t = 2,69, ce qui amplifie ×1,85 les écarts de trait. Seuls 38 des 880 px > 0,5 sont dans les terres : ce sont surtout des traits de côte décalés de moins de 0,5 px.\n- Les 5 îlots manquants sont des traits de côte clairs d'îlots sous le seuil, perdus à l'arrondi.\n- Perte −0,0 %, frange ×0,99.\n- Variante « points » : 760/763."
+   },
+   {
+    "view": "monde--mobile",
+    "theme": "light",
+    "meanAbsDt": 0.00786,
+    "pxOver05": 0,
+    "modelIslands": 417,
+    "siteIslands": 418,
+    "borderLossModel": 397.8,
+    "borderLossSite": 398.6,
+    "svgChars": 238759,
+    "notes": "Cible 417/418 tenue : 1 manquant (anneau arctique), 12 pâles en trop.\n- Perte −0,2 %, frange ×1,05.\n- Environ 0,0014 du |Δt| vient du canevas du site, rendu à pixelRatio 1,5 puis agrandi en DPR 2 : simulé, il donne 0,00648. Figma ne peut pas le reproduire.\n- Zone : poids du flou CSS ≤ 4 % (rho ≤ 0,56).\n- Variante « points » : 241 480 caractères, 41 appels.\n- 40 appels + 1. 243 899 caractères avec les repères."
+   },
+   {
+    "view": "monde--mobile",
+    "theme": "dark",
+    "meanAbsDt": 0.01624,
+    "pxOver05": 168,
+    "modelIslands": 431,
+    "siteIslands": 433,
+    "borderLossModel": 396.7,
+    "borderLossSite": 400.4,
+    "svgChars": 238759,
+    "notes": "- Perte −0,9 %, frange ×0,96.\n- 2 manquants : anneaux arctiques.\n- Variante « points » : 432/433."
+   },
+   {
+    "view": "pays-france--desktop",
+    "theme": "light",
+    "meanAbsDt": 0.00242,
+    "pxOver05": 3,
+    "modelIslands": 6,
+    "siteIslands": 6,
+    "borderLossModel": 742.7,
+    "borderLossSite": 701,
+    "svgChars": 107022,
+    "notes": "Aucune cible fixée.\n- Zone hors flou (rho < 0,52) : 6 îlots seulement.\n- Perte +6,0 % (+4,5 % hors ombres des repères) : le modèle de trait de border_classes surestime l'encre d'environ 5 % sur toute la vue au zoom 4,95.\n- 18 appels + 1. 109 675 caractères avec les repères."
+   },
+   {
+    "view": "pays-france--desktop",
+    "theme": "dark",
+    "meanAbsDt": 0.00564,
+    "pxOver05": 560,
+    "modelIslands": 6,
+    "siteIslands": 6,
+    "borderLossModel": 740.4,
+    "borderLossSite": 712.8,
+    "svgChars": 107022,
+    "notes": "- Perte +3,9 %.\n- px > 0,5 : traits de côte clairs décalés de moins de 0,5 px (effet du sombre)."
+   },
+   {
+    "view": "pays-france--mobile",
+    "theme": "light",
+    "meanAbsDt": 0.00407,
+    "pxOver05": 0,
+    "modelIslands": 15,
+    "siteIslands": 15,
+    "borderLossModel": 121.3,
+    "borderLossSite": 119.3,
+    "svgChars": 127384,
+    "notes": "- 15/15 îlots, 1 pâle en trop.\n- Perte +1,7 %.\n- Rééchantillonnage 1,5 → 2 simulé : |Δt| 0,00322.\n- 22 appels + 1. 129 797 caractères avec les repères."
+   },
+   {
+    "view": "pays-france--mobile",
+    "theme": "dark",
+    "meanAbsDt": 0.01005,
+    "pxOver05": 60,
+    "modelIslands": 16,
+    "siteIslands": 16,
+    "borderLossModel": 121.5,
+    "borderLossSite": 120.6,
+    "svgChars": 127384,
+    "notes": "- Perte +0,7 %.\n- 16/16 îlots."
+   }
+  ],
+  "constants": {
+   "GEOJSON_TOLERANCE": 0.2,
+   "MAP_PIXEL_RATIO": {
+    "desktop": 1,
+    "mobile": 1.5
+   },
+   "LAND_OUTLINE": {
+    "desktop": 0.3,
+    "mobile": 0.1
+   },
+   "FIGMA_STROKE_GAIN": 0.2,
+   "INK_WIDTH": 0.5,
+   "INK_STEP": 0.05,
+   "BORDER_WIDTH": "inchangé (site : zoom 0 .4, 5 .75, 10 1.1)",
+   "BORDER_OPACITY": "inchangé (site : zoom 0 .72, 7 .75, 11 .25, 14 0)",
+   "recommandation": "aucun réglage à changer ; option de code « points » (anneaux réduits gardés en points de 0,5 px), à décider par la session principale"
+  },
+  "meetsTargets": true,
+  "method": "Tout le travail est dans /tmp/claude-1000/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/scratchpad/globe-reetalonnage/etalonnage/. Aucun outil Figma ni Chrome n'a été lancé. Rien n'a été écrit dans le projet : globe_svg.py et globe_assets.py ont la même empreinte md5, et aucun bytecode globe_svg n'a été créé.\n\n1) SVG des 4 vues\n- Copie de globe_svg.py (md5 a03c1524…) dans lib/globe_svg.py ; seuls HERE et OUT sont redirigés.\n- `python3 -B lib/globe_svg.py` écrit dans out/assets-globe/ les SVG tels que le projet les produit.\n- Le clair et le sombre sans repères sont dans out/svg-actuel/ (et out/svg-points/ pour la variante), avec la version envoyée à Figma (*--envoye.svg, même traitement que globe_assets.cleaned).\n- La longueur envoyée est identique à celle tirée des fichiers du script du projet.\n\n2) Grandeurs reconstituées\ncompare.py et verify_patch.py sont perdus ; lib/etal.py repart de common.py, inventory.py, measure.py et variants.py.\n- t est projeté sur l'axe océan → terres du thème.\n- Zone de mesure :\n  - disque − 2 px (vue Monde) ou hors fondu (vue Pays) ;\n  - repères retirés (boîte +12 px sur les côtés, +10 px en haut, +18 px en bas), d'après les relevés fr-light et fr-dark, anciens et nouveaux ;\n  - interface retirée (+6 px) ;\n  - flou CSS : poids ≤ 4 % en vue Monde (tout le disque ordinateur, rho ≤ 0,56 sur mobile), poids nul en vue Pays (rho < 0,52, comme measure.py).\n- Îlot : anneau fermé de la topologie pleine résolution, fenêtre = sa boîte + 1 px, visible si le pic de t dépasse 0,15.\n- |Δt| : moyenne sur la zone ; px > 0,5 compté sur la même zone.\n- Perte due aux frontières : somme de 1 − t sur l'intérieur des terres (couverture ≥ 0,99, érodée d'1 px en 8-voisinage puis d'1 px en 4-voisinage). En sombre : encre des frontières ramenée aux unités du clair.\n- Frange arctique : somme de t au nord de 66,56° N.\n- Étalonnage de ces définitions sur les captures du 16 oct. : 745 / 0,01634 / 1 017 (ordinateur) et 420 / 0,01736 / 395 (mobile), contre 744 / 0,0163 / 1 020 et 418 / 0,0171 / 397 rapportés.\n\n3) Modèle de Figma de l'audit\n- build_svg(…, gain = FIGMA_STROKE_GAIN, clip_disc = True), sans repères, rendu par Inkscape 1.4.3 à 1x.\n- Le site mobile 2x est ramené à 1x par moyenne 2×2.\n\n4) Contrôles et balayages\n- Contrôle du gain (scripts/s_gain.py) : anciens SVG rendus avec +g contre les captures Figma.\n- Balayage parallèle (scripts/s4_sweep.py) : grille1, grille2, dots1, dots2, soit 390 + 420 + 2 × 32 réglages.\n- Contrôle de validité (scripts/s5_transfer.py) : courbe pic Inkscape → Figma mesurée sur les anciens composants.\n- Planche : out/planches/site-vs-modele-actuel.png.",
+  "residuals": "Les cibles sont tenues au sens littéral par les réglages actuels sur les références GPU :\n- Monde ordinateur : 742 îlots visibles, |Δt| 0,00689 ≤ 0,007, perte +0,7 % ;\n- Monde mobile : 417/418.\n\nLes marges sont minces, avec quatre réserves.\n\n1) Îlots, Monde ordinateur\n- Ma reconstitution compte 745 îlots au site, contre 744. Il en manque donc 3, un de plus que les 2 admis si on lit la cible en relatif. L'îlot des Caraïbes, au pic de 0,169 au site, est probablement le 745e.\n- Deux des manquants ne dépendent d'aucun réglage :\n  - un anneau gardé par geojson-vt mais réduit à un demi-pixel, que build_svg supprime (107 cas en ordinateur, 173 en mobile) ;\n  - un décalage d'1 px au bord du disque.\n- Le troisième demande LAND_OUTLINE ordinateur ≥ 0,4.\n- Seule combinaison de réglages tenant aussi la lecture relative : LAND_OUTLINE 0,4, INK_WIDTH 0,33, INK_STEP 0,033. Elle donne 743/745, |Δt| 0,00698, pertes à ± 3 % sur les 4 vues. Je l'écarte comme surajustée :\n  - elle répare un anneau qui est sous le seuil de geojson-vt ;\n  - les côtes de la vue Monde grossissent (biais +0,034 au lieu de +0,020) ;\n  - la frange passe à +6 % et px > 0,5 à 25 ;\n  - elle coûte 141 appels au lieu de 131 ;\n  - elle ramène Pays France ordinateur dans ± 3 % seulement par le plafonnement de l'opacité.\n- Solution propre, mais c'est du code et non un réglage, à décider par la session principale. La variante « points » garde ces anneaux comme des points de 0,5 px dessinés par le contour (lib/variant_dots.py). Résultat : 744/745, |Δt| 0,00692, perte inchangée. Coût : +1 718 caractères en ordinateur (toujours 47 appels) et +2 721 en mobile (41 appels au lieu de 40).\n\n2) Validité du modèle\n- FIGMA_STROKE_GAIN = 0,2 est confirmé : sur les 4 composants, |Δt| est minimal à 0,2, et la perte est égale à g ≈ 0,19–0,20 pour des traits de 0,5 px.\n- Les traits plus larges des anciennes vues Pays (0,65–0,75 px) donnent g ≈ 0,28. Cela ne touche pas les nouveaux SVG, dont tous les traits font 0,5 px.\n- Mais Figma rend les faibles couvertures plus pâles qu'Inkscape. Un pic de 0,15–0,30 sort à environ ×0,73, un pic sous 0,15 à environ ×0,5.\n- Avec la courbe mesurée, Monde ordinateur pourrait donner 737–738 îlots dans Figma au lieu de 742–744 : 5 à 6 îlots ont un pic modèle entre 0,15 et 0,23. Le mobile n'est pas touché.\n- À vérifier sur la capture de 33:19 après mise à jour (étape 15).\n\n3) Autres écarts\n- Monde mobile : |Δt| 0,00786, sans cible. Environ 0,0014 vient du rééchantillonnage du canevas du site, rendu en 1,5 puis agrandi en 2.\n- Ombres des repères : elles pèsent environ 0,0009 dans le |Δt| de Monde ordinateur (0,00603 avec des marges de 40 px).\n- Côtes de la vue Monde plus grasses que sur le site (+0,020 ordinateur, +0,039 mobile), alors que les vues Pays sont équilibrées. Un LAND_OUTLINE unique ne peut pas satisfaire à la fois les côtes et les petits îlots.\n- Pays France ordinateur : perte +6 % (+4,5 % hors ombres). Le modèle de trait surestime l'encre au zoom 4,95 ; aucun réglage permis ne le corrige proprement.\n- Îlots pâles en trop : 11 en ordinateur, 12 en mobile. Les pics au site sont de 0,10 à 0,146 ; l'île Gough n'est pas dessinée par le site.\n- Sombre : les écarts de trait sont amplifiés ×1,85 en t. Il manque de petits traits de côte clairs, perdus à l'arrondi à 0,5 px.\n\n4) Coût des envois\n- Taille envoyée par vue : 278 172 + 238 759 + 107 022 + 127 384 caractères.\n- Soit 127 appels de données + 4 mises à jour = 131 appels, sans changement.\n- INK_STEP 0,1 économiserait 18 appels, mais la perte monte de +2 à +12 % : non retenu.",
+  "files": [
+   "/tmp/claude-1000/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/scratchpad/globe-reetalonnage/etalonnage/out/resume.json",
+   "/tmp/claude-1000/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/scratchpad/globe-reetalonnage/etalonnage/out/s1_site.json",
+   "/tmp/claude-1000/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/scratchpad/globe-reetalonnage/etalonnage/out/s23_actuel.json",
+   "/tmp/claude-1000/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/scratchpad/globe-reetalonnage/etalonnage/out/s23_points.json",
+   "/tmp/claude-1000/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/scratchpad/globe-reetalonnage/etalonnage/out/s4_grille1.jsonl",
+   "/tmp/claude-1000/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/scratchpad/globe-reetalonnage/etalonnage/out/s4_grille2.jsonl",
+   "/tmp/claude-1000/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/scratchpad/globe-reetalonnage/etalonnage/out/s4_dots1.jsonl",
+   "/tmp/claude-1000/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/scratchpad/globe-reetalonnage/etalonnage/out/s_gain.json",
+   "/tmp/claude-1000/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/scratchpad/globe-reetalonnage/etalonnage/out/s5_peak_transfer.json",
+   "/tmp/claude-1000/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/scratchpad/globe-reetalonnage/etalonnage/out/s5_transfer.json",
+   "/tmp/claude-1000/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/scratchpad/globe-reetalonnage/etalonnage/out/assets-globe/globe-params.json",
+   "/tmp/claude-1000/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/scratchpad/globe-reetalonnage/etalonnage/out/svg-actuel",
+   "/tmp/claude-1000/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/scratchpad/globe-reetalonnage/etalonnage/out/svg-points",
+   "/tmp/claude-1000/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/scratchpad/globe-reetalonnage/etalonnage/out/planches/site-vs-modele-actuel.png",
+   "/tmp/claude-1000/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/scratchpad/globe-reetalonnage/etalonnage/lib/etal.py",
+   "/tmp/claude-1000/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/scratchpad/globe-reetalonnage/etalonnage/lib/globe_svg.py",
+   "/tmp/claude-1000/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/scratchpad/globe-reetalonnage/etalonnage/lib/variant_dots.py",
+   "/tmp/claude-1000/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/scratchpad/globe-reetalonnage/etalonnage/scripts/s1_site.py",
+   "/tmp/claude-1000/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/scratchpad/globe-reetalonnage/etalonnage/scripts/s23_model.py",
+   "/tmp/claude-1000/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/scratchpad/globe-reetalonnage/etalonnage/scripts/s4_sweep.py",
+   "/tmp/claude-1000/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/scratchpad/globe-reetalonnage/etalonnage/scripts/s_gain.py",
+   "/tmp/claude-1000/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/scratchpad/globe-reetalonnage/etalonnage/scripts/s5_transfer.py"
+  ]
+ },
+ "verification": {
+  "confirmed": false,
+  "remeasured": [
+   {
+    "view": "monde--desktop",
+    "theme": "light",
+    "metric": "îlots visibles, modèle / site",
+    "found": "742/745 (3 manquants, 11 en trop)",
+    "claimed": "742/745 (3 manquants, 11 en trop)"
+   },
+   {
+    "view": "monde--desktop",
+    "theme": "light",
+    "metric": "|Δt| / px > 0,5",
+    "found": "0,00689 / 17",
+    "claimed": "0,00689 / 17"
+   },
+   {
+    "view": "monde--desktop",
+    "theme": "light",
+    "metric": "perte due aux frontières, modèle / site",
+    "found": "1 020,7 / 1 013,7 (+0,69 %) ; frange ×1,043",
+    "claimed": "1 021 / 1 014 (+0,7 %) ; frange ×1,04"
+   },
+   {
+    "view": "monde--desktop",
+    "theme": "light",
+    "metric": "caractères envoyés / appels",
+    "found": "278 172 / 47 + 1 (131 appels pour les 4 vues)",
+    "claimed": "278 172 / 47 + 1 (131)"
+   },
+   {
+    "view": "monde--desktop",
+    "theme": "dark",
+    "metric": "îlots / |Δt| / px > 0,5 / perte modèle-site",
+    "found": "758/763 / 0,01463 / 880 / 1 018,4-1 018,5",
+    "claimed": "758/763 / 0,01463 / 880 / 1 018,7-1 018,8"
+   },
+   {
+    "view": "monde--mobile",
+    "theme": "light",
+    "metric": "îlots / |Δt| / px > 0,5 / perte modèle-site",
+    "found": "417/418 (1 manquant, 12 en trop) / 0,00786 / 0 / 397,8-398,6 (−0,2 %)",
+    "claimed": "417/418 / 0,00786 / 0 / 397,8-398,6"
+   },
+   {
+    "view": "monde--mobile",
+    "theme": "dark",
+    "metric": "îlots / |Δt| / px > 0,5 / perte modèle-site",
+    "found": "431/433 / 0,01624 / 168 / 396,7-400,4 (−0,9 %)",
+    "claimed": "431/433 / 0,01624 / 168 / 396,7-400,4"
+   },
+   {
+    "view": "pays-france--desktop",
+    "theme": "light",
+    "metric": "îlots / |Δt| / px > 0,5 / perte modèle-site",
+    "found": "6/6 / 0,00242 / 3 / 742,7-701,0 (+5,95 %)",
+    "claimed": "6/6 / 0,00242 / 3 / 742,7-701 (+6,0 %)"
+   },
+   {
+    "view": "pays-france--desktop",
+    "theme": "dark",
+    "metric": "îlots / |Δt| / px > 0,5 / perte modèle-site",
+    "found": "6/6 / 0,00564 / 560 / 740,4-712,8 (+3,9 %)",
+    "claimed": "6/6 / 0,00564 / 560 / +3,9 %"
+   },
+   {
+    "view": "pays-france--mobile",
+    "theme": "light",
+    "metric": "îlots / |Δt| / px > 0,5 / perte modèle-site",
+    "found": "15/15 (1 en trop) / 0,00407 / 0 / 121,3-119,3 (+1,7 %)",
+    "claimed": "15/15 / 0,00407 / 0 / +1,7 %"
+   },
+   {
+    "view": "pays-france--mobile",
+    "theme": "dark",
+    "metric": "îlots / |Δt| / px > 0,5 / perte modèle-site",
+    "found": "16/16 / 0,01005 / 60 / 121,5-120,6 (+0,7 %)",
+    "claimed": "16/16 / 0,01005 / 60 / +0,7 %"
+   },
+   {
+    "view": "monde--desktop",
+    "theme": "light",
+    "metric": "site, captures du 16 → 18 oct.",
+    "found": "îlots 745 → 745 ; |Δt| 0,00016 ; perte 1 017,0 → 1 013,7 (−0,3 %) ; frange 2 367,5 → 2 369,4 ; zone nette hors repères : 0 pixel différent",
+    "claimed": "745 → 745 ; 0,00016 ; −0,3 % ; 2 367,5 → 2 369,4 ; pixels identiques hors flou"
+   },
+   {
+    "view": "monde--mobile",
+    "theme": "light",
+    "metric": "site, captures du 16 → 18 oct.",
+    "found": "îlots 420 → 418 ; |Δt| 0,00066 ; perte 394,6 → 398,6 (+1,0 %)",
+    "claimed": "420 → 418 ; 0,00066 ; +1,0 %"
+   },
+   {
+    "view": "monde--desktop / monde--mobile",
+    "theme": "light",
+    "metric": "capture Figma des anciens SVG contre le site (16 → 18 oct.)",
+    "found": "|Δt| 0,01634 → 0,01640, 513/745 ; 0,01736 → 0,01711, 339/418",
+    "claimed": "0,01634 → 0,01640, 513/745 ; 0,01736 → 0,01711"
+   },
+   {
+    "view": "monde--desktop / monde--mobile",
+    "theme": "dark",
+    "metric": "ancien → nouveau, perte, marges de l'audit puis 24-40 px",
+    "found": "−2,4 % et −5,9 % ; puis +0,1 % et −1,9 % (|Δt| 0,0003 et 0,0016 à 40 px)",
+    "claimed": "−2,5 à −16 % ; à 40 px : 0,0003 / 0,0016, pertes à 2 % près"
+   },
+   {
+    "view": "monde--desktop",
+    "theme": "light",
+    "metric": "îlots selon la fenêtre (boîte + 0,5 / 1 / 1,5 / 2 px)",
+    "found": "749/752, 742/745, 735/736, 715/717 ; audit : 744 site, 540 Figma, 2 manquants",
+    "claimed": "742/745 (définition boîte + 1 px)"
+   },
+   {
+    "view": "monde--desktop / monde--mobile",
+    "theme": "light",
+    "metric": "îlots, seuls anneaux dessinés par le site (aire Mercator ≥ 0,04)",
+    "found": "608/609 et 381/382 ; 136 et 36 « îlots visibles » sont des anneaux que le site écarte, vus par débord de voisins"
+   },
+   {
+    "view": "monde--desktop",
+    "theme": "light",
+    "metric": "îlots selon le gain du liseré dans Figma (+0,2 / +0,15 / proportionnel +0,114 / +0,1 / 0 / sans aire nulle)",
+    "found": "742 / 738 / 738 / 738 / 732 / 719 (sur 745)",
+    "claimed": "742 (gain +0,2 supposé)"
+   },
+   {
+    "view": "monde--mobile",
+    "theme": "light",
+    "metric": "îlots selon le gain du liseré dans Figma (+0,2 / +0,1 / +0,06 / proportionnel +0,038 / 0 / sans aire nulle)",
+    "found": "417 / 417 / 414 / 414 / 414 / 414 (sur 418)",
+    "claimed": "417 ; « le mobile n'est pas touché »"
+   },
+   {
+    "view": "monde--desktop / monde--mobile",
+    "theme": "light",
+    "metric": "îlots prévus dans Figma avec le transfert des petites formes mesuré sur les anciens composants",
+    "found": "≈ 736/745 et ≈ 416/418",
+    "claimed": "737-738 en ordinateur ; mobile non touché"
+   },
+   {
+    "view": "4 anciens composants",
+    "theme": "light",
+    "metric": "gain qui égale l'encre des frontières de Figma",
+    "found": "0,190 (trait 0,496 px), 0,205 (0,533), 0,276 (0,655), 0,273 (0,746) : ≈ +38 % de la largeur ; recalage Figma/Inkscape au mieux à (0, 0)",
+    "claimed": "0,19-0,20 à 0,5 px, ≈ 0,28 à 0,65-0,75 px ; « tous les traits [nouveaux] font 0,5 px »"
+   },
+   {
+    "view": "monde--desktop",
+    "theme": "light",
+    "metric": "|Δt| selon les marges des repères (8/6/12, 12/10/18, 16/14/24, 40 px)",
+    "found": "0,00736 / 0,00689 / 0,00663 / 0,00602",
+    "claimed": "0,00603 avec 40 px"
+   },
+   {
+    "view": "monde--desktop / monde--mobile",
+    "theme": "light",
+    "metric": "variante « points »",
+    "found": "744/745, |Δt| 0,00692, 279 890 car., 47 appels ; 417/418, 0,00790, 241 480 car., 41 appels",
+    "claimed": "744/745, 0,00692, +1 718 car., 47 appels ; 241 480 car., 41 appels"
+   }
+  ],
+  "problems": "Ma chaîne réécrite (/tmp/claude-1000/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/scratchpad/globe-reetalonnage/verification/lib/vlib.py) retrouve tous les chiffres du rapport :\n- mêmes zones (164 929, 46 494, 240 214 et 40 041 px) ;\n- mêmes îlots, |Δt| et px > 0,5 ;\n- pertes à 0,3 près ;\n- mêmes longueurs envoyées et 131 appels.\n\nCe qui ne tient pas :\n\n1) Le modèle de Figma n'est pas validé pour les îlots. C'est la réfutation principale.\n- Le rapport affirme que « tous les traits [des nouveaux SVG] font 0,5 px ». C'est faux pour le liseré des terres, envoyé à 0,3 px sur ordinateur et à 0,1 px sur mobile. Seules les frontières font 0,5 px.\n- Ce liseré fait les petits îlots : 496 et 553 sous-chemins d'aire nulle ne sont dessinés que par lui.\n- Le modèle lui ajoute +0,2 px. Ce gain n'a été mesuré que sur des traits de 0,50 à 0,75 px.\n- Sur les 4 anciens composants, le gain qui égale l'encre de Figma croît avec la largeur : 0,190 à 0,496 px, 0,205 à 0,533, 0,276 à 0,655, 0,273 à 0,746. Cela fait environ +38 % de la largeur, avec un écart de 5 % contre 17 % pour un gain constant.\n- Avec un gain proportionnel : 738/745 et 414/418. Avec +0,1 : 738 et 417. Sans gain : 732 et 414. Sans les sous-chemins d'aire nulle : 719 et 414.\n- Indépendamment de cela, Figma rend moins d'encre qu'Inkscape sur les petites formes (anciens composants, recalage vérifié à 0 px) : les îlots dont le pic Inkscape est entre 0,15 et 0,25 ne gardent que 35 à 70 % de leur encre, et des pointes fines disparaissent. Transposé au modèle actuel, cela donne environ 736/745 et 416/418.\n- Les cibles ne sont donc tenues que dans le modèle, avec le gain supposé, et sans marge : 4 à 6 îlots par 0,1 px de liseré effectif.\n\n2) Le comptage des îlots est fragile.\n- La reconstitution ne retrouve pas l'audit (744 au site, 540 dans Figma, 2 manquants, 5 à 8 en trop) :\n  - boîte + 1 px : 745 / 513 / 3 / 11 ;\n  - boîte + 1,5 px : 736 / 546 / 1 / 6 ;\n  - boîte + 2 px : 717 / 550 / 2 / 4.\n- « 742 sur 744 » n'est tenu qu'au sens absolu : il manque 3 îlots sur 745.\n- 108 emplacements sont à ±0,02 du seuil.\n- 136 des 745 « îlots visibles » sont des anneaux que le site écarte (aire Mercator < 0,04). Ils ne sont vus que par débord de terres voisines.\n- 2 des 3 manquants sont de ce type : l'anneau 1413 des Caraïbes, à 8,8 px du bord et non « au bord du disque », et l'anneau 3463 d'Aldabra.\n- Sur les seuls anneaux dessinés par le site : 608/609 et 381/382. La seule vraie perte est l'anneau 839 (réduit à un demi-pixel) sur ordinateur, et l'anneau 836 (0,13 px de haut) sur mobile.\n\n3) Les ombres des repères débordent des masques.\n- Ce qui est correct :\n  - repères pris dans les relevés, identiques le 16 et le 18 ;\n  - aucune boîte d'interface dans les zones (vérifié) ;\n  - masque du flou centré (relevé : closest-side, sans décalage).\n- En clair, les ombres dépassent les marges 12/10/18 et pèsent environ 0,0009 dans le |Δt|. Avec des marges 8/6/12, |Δt| vaut 0,00736 et dépasse 0,007.\n- En sombre, l'ombre rose (0 8px 26px) fausse la perte. Écart ancien → nouveau : −2,4 et −5,9 % avec les marges de l'audit, +0,1 et −1,9 % avec des marges de 24 à 40 px.\n\n4) Captures : ce sont bien celles du 18 octobre (09:45 à 09:58, avec leurs relevés).\n- Les écarts au 16 octobre se limitent à ce qui dépend de la composition : flou du bord (4 niveaux au plus), rééchantillonnage du mobile, ombres. La zone nette sur ordinateur est identique au pixel.\n- « L'encre tombe à 0,60–0,86 même sous 4 % de poids » n'est pas confirmé : entre rho 0,52 et 0,56, aucun pixel ne diffère de plus d'1 niveau, et le détail fin baisse de 3 % en clair et de 9 % en sombre.\n\n5) Surajustement.\n- LAND_OUTLINE est réglé à 0,3 sur ordinateur et 0,1 sur mobile, soit un rapport de 3, alors que le liseré de MapLibre ne varie que de 1 à 0,67 px CSS. Chaque valeur est au seuil exact de la cible de sa vue.\n- Avec les mêmes réglages, Pays France ordinateur perd 6,0 % de plus que le site (pas de cible pour cette vue).\n\n6) Thème sombre : les chiffres sont retrouvés. Son |Δt| ne se compare pas à celui du clair, car t des frontières vaut 2,69.",
+  "advice": "Pas de réglage à changer à cause du GPU : sur la zone mesurée, les captures du 18 octobre ne changent rien. Le modèle donne les mêmes résultats que le 16 octobre, à 0,0001 près sur |Δt|.\n\nL'étape 13 ne peut pas être déclarée tenue. Avant les 131 appels, la session principale doit mesurer dans Figma le rendu du liseré fin. Moi, je ne peux pas appeler Figma.\n- Option 1 : envoyer d'abord 33:19 seul (47 appels de données + 1 mise à jour), le capturer à l'échelle 1, puis compter les îlots avec la même définition.\n  - S'il y en a moins de 742, élargir le liseré envoyé, pas le modèle. Par exemple LAND_OUTLINE ≈ 0,36 sur ordinateur et 0,22 sur mobile si le gain est proportionnel.\n  - Remesurer avant d'envoyer 45:20, 45:44 et 45:32.\n- Option 2, plus économique : à l'étape 14, un nœud d'essai avec des traits de 0,1, 0,3 et 0,5 px, dont des sous-chemins d'aire nulle, exporté à 1×.\n\nFixer aussi par écrit la définition des îlots. Sinon, ne compter que les anneaux que le site dessine.\n\nLa variante « points », que j'ai vérifiée, corrige la seule vraie perte sur ordinateur :\n- ordinateur : 744/745, |Δt| 0,00692, 279 890 caractères, 47 appels ;\n- mobile : 417/418, |Δt| 0,00790, 241 480 caractères, 41 appels.\n\nPour les marges des repères :\n- garder celles de l'audit pour |Δt| ;\n- en sombre, prendre 24 à 40 px.\n\nFichiers : /tmp/claude-1000/-home-le-rif-Bureau-Transcendence/eb359fdc-c73d-4374-8394-7adda3e187b8/scratchpad/globe-reetalonnage/verification/scripts/v1_main.py à v7_outline.py, et les résultats dans …/verification/out/*.json. Le projet n'a pas été modifié : empreintes md5 de globe_svg.py et globe_assets.py inchangées."
+ }
+}

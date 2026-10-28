@@ -1,0 +1,232 @@
+{
+  "date": "2026-10-13",
+  "scenario": "Actual78per section;seven pages12x6+6;new details and preserved26archive",
+  "initial_sha256": {
+    "demo-content-seed.mjs": "2b25388d3469a55803325b2b17b729ba4eb250d864ffa21c9c8215520771a734",
+    "demo-content-expanded.mjs": "71a1f8490817f2fee80f3025310ec4ac047af6e210263514805f07b01cb599cd",
+    "content-preview-data.mjs": "028f26181224f2cfba2ebf3999b4b701aee8c538375302ab1751b919bb0cf014",
+    "profile-data.mjs": "de16da2ab6b512303dafc69d94d745325a11d50af48aa7ec2c4e7035ed1fa125",
+    "content-filters.mjs": "b494e148b4689c8cd8ccf9800496962f2d32517b092190b1a2ab15ccf571b3f7",
+    "welcome.mjs": "0ab26e2bb3a1911b790cd3b779c885015bde50978182514c9d690306d7fdb9b6"
+  },
+  "results": [
+    {
+      "case": "projects-all-pages",
+      "result": {
+        "counts": [
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          6
+        ],
+        "total": 78,
+        "unique": 78,
+        "last": [
+          "#projects/demo-expanded-project-idris-madi",
+          "#projects/demo-expanded-project-sara-el-amr",
+          "#projects/demo-expanded-project-rayan-idrissi",
+          "#projects/demo-expanded-project-salma-aziz",
+          "#projects/demo-expanded-project-adam-karim",
+          "#projects/demo-expanded-project-nadia-selim"
+        ]
+      }
+    },
+    {
+      "case": "projects-previous-jump-detail-return",
+      "result": {
+        "detail": "#projects/demo-expanded-project-idris-madi",
+        "return": "#projects?page=7",
+        "itemsPreserved": true
+      }
+    },
+    {
+      "case": "people-all-pages",
+      "result": {
+        "counts": [
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          6
+        ],
+        "total": 78,
+        "unique": 78,
+        "last": [
+          "#people/profile-idris-madi",
+          "#people/profile-sara-el-amr",
+          "#people/profile-rayan-idrissi",
+          "#people/profile-salma-aziz",
+          "#people/profile-adam-karim",
+          "#people/profile-nadia-selim"
+        ]
+      }
+    },
+    {
+      "case": "people-previous-jump-detail-return",
+      "result": {
+        "detail": "#people/profile-idris-madi",
+        "return": "#people?page=7",
+        "itemsPreserved": true
+      }
+    },
+    {
+      "case": "journal-all-pages",
+      "result": {
+        "counts": [
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          6
+        ],
+        "total": 78,
+        "unique": 78,
+        "last": [
+          "#journal/demo-expanded-journal-idris-madi",
+          "#journal/demo-expanded-journal-sara-el-amr",
+          "#journal/demo-expanded-journal-rayan-idrissi",
+          "#journal/demo-expanded-journal-salma-aziz",
+          "#journal/demo-expanded-journal-adam-karim",
+          "#journal/demo-expanded-journal-nadia-selim"
+        ]
+      }
+    },
+    {
+      "case": "journal-previous-jump-detail-return",
+      "result": {
+        "detail": "#journal/demo-expanded-journal-idris-madi",
+        "return": "#journal?page=7",
+        "itemsPreserved": true
+      }
+    },
+    {
+      "case": "new-detail-projects-fr",
+      "result": {
+        "hash": "#projects/demo-expanded-project-nadia-selim",
+        "title": "Chaînes et mémoire · Le premier essai",
+        "bodyLocalized": true,
+        "overflow": false
+      }
+    },
+    {
+      "case": "new-detail-people-fr",
+      "result": {
+        "hash": "#people/profile-nadia-selim",
+        "title": "Nadia Selim",
+        "bodyLocalized": true,
+        "overflow": false
+      }
+    },
+    {
+      "case": "new-detail-journal-fr",
+      "result": {
+        "hash": "#journal/demo-expanded-journal-nadia-selim",
+        "title": "Décrire un blocage · Les premières notes",
+        "bodyLocalized": true,
+        "overflow": false
+      }
+    },
+    {
+      "case": "new-detail-projects-en",
+      "result": {
+        "hash": "#projects/demo-expanded-project-nadia-selim",
+        "title": "Strings and memory · The first experiment",
+        "bodyLocalized": true,
+        "overflow": false
+      }
+    },
+    {
+      "case": "new-detail-people-en",
+      "result": {
+        "hash": "#people/profile-nadia-selim",
+        "title": "Nadia Selim",
+        "bodyLocalized": true,
+        "overflow": false
+      }
+    },
+    {
+      "case": "new-detail-journal-en",
+      "result": {
+        "hash": "#journal/demo-expanded-journal-nadia-selim",
+        "title": "Describing a roadblock · First notes",
+        "bodyLocalized": true,
+        "overflow": false
+      }
+    },
+    {
+      "case": "new-detail-projects-ar",
+      "result": {
+        "hash": "#projects/demo-expanded-project-nadia-selim",
+        "title": "نصوص وذاكرة · التجربة الأولى",
+        "bodyLocalized": true,
+        "overflow": false
+      }
+    },
+    {
+      "case": "new-detail-people-ar",
+      "result": {
+        "hash": "#people/profile-nadia-selim",
+        "title": "نادية سليم",
+        "bodyLocalized": true,
+        "overflow": false
+      }
+    },
+    {
+      "case": "new-detail-journal-ar",
+      "result": {
+        "hash": "#journal/demo-expanded-journal-nadia-selim",
+        "title": "وصف عقبة · الملاحظات الأولى",
+        "bodyLocalized": true,
+        "overflow": false
+      }
+    },
+    {
+      "case": "new-profile-reverse-projects",
+      "result": [
+        "#projects/demo-expanded-project-nadia-selim",
+        "#projects/demo-expanded-project-karim-abbas"
+      ]
+    },
+    {
+      "case": "new-project-campus-choice",
+      "result": [
+        "tirana",
+        "zurich"
+      ]
+    },
+    {
+      "case": "albania-tirana-filter-without-globe",
+      "result": {
+        "count": 2,
+        "ids": [
+          "#projects/demo-expanded-project-karim-abbas?country=ALB&campus=tirana",
+          "#projects/demo-expanded-project-nadia-selim?country=ALB&campus=tirana"
+        ]
+      }
+    },
+    {
+      "case": "preserved-three-page-reader",
+      "result": {
+        "count": 2,
+        "total": "26 contenus",
+        "summary": "Page 3 sur 3"
+      }
+    }
+  ],
+  "passed": true,
+  "final_sha256": {
+    "demo-content-seed.mjs": "2b25388d3469a55803325b2b17b729ba4eb250d864ffa21c9c8215520771a734",
+    "demo-content-expanded.mjs": "71a1f8490817f2fee80f3025310ec4ac047af6e210263514805f07b01cb599cd",
+    "content-preview-data.mjs": "028f26181224f2cfba2ebf3999b4b701aee8c538375302ab1751b919bb0cf014",
+    "profile-data.mjs": "de16da2ab6b512303dafc69d94d745325a11d50af48aa7ec2c4e7035ed1fa125",
+    "content-filters.mjs": "b494e148b4689c8cd8ccf9800496962f2d32517b092190b1a2ab15ccf571b3f7",
+    "welcome.mjs": "0ab26e2bb3a1911b790cd3b779c885015bde50978182514c9d690306d7fdb9b6"
+  }
+}

@@ -1,0 +1,435 @@
+{
+ "area": "journal",
+ "key": "journal",
+ "page": "05 · Chroniques",
+ "sections": [
+  {
+   "id": "journal",
+   "title": "Liste des chroniques",
+   "note": "78 chroniques fictives, 12 par page (7 pages). Pas de bouton Filtrer. Sur place : Affichage, Trier, cœurs Favoris, filtre Pays / Campus.",
+   "route": "#journal",
+   "main": true,
+   "y": 0,
+   "w": 4180,
+   "h": 5856,
+   "rows": [
+    [
+     {
+      "state": "journal",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Liste des chroniques — Ordinateur · Clair",
+      "w": 1440,
+      "h": 2589,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "journal",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Liste des chroniques — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 2589,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "journal",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Liste des chroniques — Mobile · Clair",
+      "w": 390,
+      "h": 2712,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "journal",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Liste des chroniques — Mobile · Sombre",
+      "w": 390,
+      "h": 2712,
+      "x": 3710,
+      "y": 260
+     }
+    ],
+    [
+     {
+      "state": "journal",
+      "fmt": "desktop",
+      "lang": "ar",
+      "theme": "light",
+      "name": "Liste des chroniques — Ordinateur · Clair · العربية",
+      "w": 1440,
+      "h": 2448,
+      "x": 80,
+      "y": 3132
+     },
+     {
+      "state": "journal",
+      "fmt": "desktop",
+      "lang": "ar",
+      "theme": "dark",
+      "name": "Liste des chroniques — Ordinateur · Sombre · العربية",
+      "w": 1440,
+      "h": 2448,
+      "x": 1640,
+      "y": 3132
+     },
+     {
+      "state": "journal",
+      "fmt": "mobile",
+      "lang": "ar",
+      "theme": "light",
+      "name": "Liste des chroniques — Mobile · Clair · العربية",
+      "w": 390,
+      "h": 2644,
+      "x": 3200,
+      "y": 3132
+     },
+     {
+      "state": "journal",
+      "fmt": "mobile",
+      "lang": "ar",
+      "theme": "dark",
+      "name": "Liste des chroniques — Mobile · Sombre · العربية",
+      "w": 390,
+      "h": 2644,
+      "x": 3710,
+      "y": 3132
+     }
+    ]
+   ]
+  },
+  {
+   "id": "article",
+   "title": "Chronique",
+   "note": "Barre de gauche : Retour, Favoris, Signaler, Explorer le campus.",
+   "route": "#journal/<id>",
+   "main": true,
+   "y": 6056,
+   "w": 4180,
+   "h": 3948,
+   "rows": [
+    [
+     {
+      "state": "article",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Chronique — Ordinateur · Clair",
+      "w": 1440,
+      "h": 1597,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "article",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Chronique — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 1597,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "article",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Chronique — Mobile · Clair",
+      "w": 390,
+      "h": 1746,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "article",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Chronique — Mobile · Sombre",
+      "w": 390,
+      "h": 1746,
+      "x": 3710,
+      "y": 260
+     }
+    ],
+    [
+     {
+      "state": "article",
+      "fmt": "desktop",
+      "lang": "ar",
+      "theme": "light",
+      "name": "Chronique — Ordinateur · Clair · العربية",
+      "w": 1440,
+      "h": 1553,
+      "x": 80,
+      "y": 2166
+     },
+     {
+      "state": "article",
+      "fmt": "desktop",
+      "lang": "ar",
+      "theme": "dark",
+      "name": "Chronique — Ordinateur · Sombre · العربية",
+      "w": 1440,
+      "h": 1553,
+      "x": 1640,
+      "y": 2166
+     },
+     {
+      "state": "article",
+      "fmt": "mobile",
+      "lang": "ar",
+      "theme": "light",
+      "name": "Chronique — Mobile · Clair · العربية",
+      "w": 390,
+      "h": 1702,
+      "x": 3200,
+      "y": 2166
+     },
+     {
+      "state": "article",
+      "fmt": "mobile",
+      "lang": "ar",
+      "theme": "dark",
+      "name": "Chronique — Mobile · Sombre · العربية",
+      "w": 390,
+      "h": 1702,
+      "x": 3710,
+      "y": 2166
+     }
+    ]
+   ]
+  },
+  {
+   "id": "article-media",
+   "title": "Médias",
+   "note": "",
+   "route": "#journal/<id>?tab=media",
+   "main": false,
+   "y": 10204,
+   "w": 4180,
+   "h": 1317,
+   "rows": [
+    [
+     {
+      "state": "article-media",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Médias — Ordinateur · Clair",
+      "w": 1440,
+      "h": 977,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "article-media",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Médias — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 977,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "article-media",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Médias — Mobile · Clair",
+      "w": 390,
+      "h": 947,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "article-media",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Médias — Mobile · Sombre",
+      "w": 390,
+      "h": 947,
+      "x": 3710,
+      "y": 260
+     }
+    ]
+   ]
+  },
+  {
+   "id": "article-authors",
+   "title": "Auteurs",
+   "note": "",
+   "route": "#journal/<id>?tab=authors",
+   "main": false,
+   "y": 11721,
+   "w": 4180,
+   "h": 1534,
+   "rows": [
+    [
+     {
+      "state": "article-authors",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Auteurs — Ordinateur · Clair",
+      "w": 1440,
+      "h": 960,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "article-authors",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Auteurs — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 960,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "article-authors",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Auteurs — Mobile · Clair",
+      "w": 390,
+      "h": 1194,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "article-authors",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Auteurs — Mobile · Sombre",
+      "w": 390,
+      "h": 1194,
+      "x": 3710,
+      "y": 260
+     }
+    ]
+   ]
+  },
+  {
+   "id": "article-comments",
+   "title": "Commentaires",
+   "note": "Mêmes commentaires de démonstration que les projets.",
+   "route": "#journal/<id>?tab=comments",
+   "main": false,
+   "y": 13455,
+   "w": 4180,
+   "h": 3460,
+   "rows": [
+    [
+     {
+      "state": "article-comments",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Commentaires — Ordinateur · Clair",
+      "w": 1440,
+      "h": 1005,
+      "x": 80,
+      "y": 260
+     },
+     {
+      "state": "article-comments",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Commentaires — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 1005,
+      "x": 1640,
+      "y": 260
+     },
+     {
+      "state": "article-comments",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Commentaires — Mobile · Clair",
+      "w": 390,
+      "h": 1293,
+      "x": 3200,
+      "y": 260
+     },
+     {
+      "state": "article-comments",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Commentaires — Mobile · Sombre",
+      "w": 390,
+      "h": 1293,
+      "x": 3710,
+      "y": 260
+     }
+    ],
+    [
+     {
+      "state": "article-comments-thread",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Commentaires · avec un fil — Ordinateur · Clair",
+      "w": 1440,
+      "h": 1321,
+      "x": 80,
+      "y": 1713
+     },
+     {
+      "state": "article-comments-thread",
+      "fmt": "desktop",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Commentaires · avec un fil — Ordinateur · Sombre",
+      "w": 1440,
+      "h": 1321,
+      "x": 1640,
+      "y": 1713
+     },
+     {
+      "state": "article-comments-thread",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "light",
+      "name": "Commentaires · avec un fil — Mobile · Clair",
+      "w": 390,
+      "h": 1667,
+      "x": 3200,
+      "y": 1713
+     },
+     {
+      "state": "article-comments-thread",
+      "fmt": "mobile",
+      "lang": "fr",
+      "theme": "dark",
+      "name": "Commentaires · avec un fil — Mobile · Sombre",
+      "w": 390,
+      "h": 1667,
+      "x": 3710,
+      "y": 1713
+     }
+    ]
+   ]
+  }
+ ]
+}

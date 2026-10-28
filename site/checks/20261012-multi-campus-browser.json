@@ -1,0 +1,249 @@
+[
+  {
+    "case": "projects",
+    "result": {
+      "count": 5,
+      "titles": [
+        "ft_transcendence · Construire à cinq",
+        "Derrière une ligne de commande",
+        "Une porte vers la troisième dimension",
+        "Ce qui relie nos messages",
+        "Un jardin de petites idées"
+      ],
+      "campuses": [
+        "42 Paris · 42 Lyon · 42 Tokyo · 42 Rio",
+        "42 Paris",
+        "42 Lyon",
+        "42 Tokyo",
+        "42 Rio · 42 São Paulo"
+      ]
+    }
+  },
+  {
+    "case": "projects?country=FRA",
+    "result": {
+      "count": 3,
+      "titles": [
+        "ft_transcendence · Construire à cinq",
+        "Derrière une ligne de commande",
+        "Une porte vers la troisième dimension"
+      ],
+      "campuses": [
+        "42 Paris · 42 Lyon · 42 Tokyo · 42 Rio",
+        "42 Paris",
+        "42 Lyon"
+      ]
+    }
+  },
+  {
+    "case": "projects?country=BRA",
+    "result": {
+      "count": 2,
+      "titles": [
+        "ft_transcendence · Construire à cinq",
+        "Un jardin de petites idées"
+      ],
+      "campuses": [
+        "42 Paris · 42 Lyon · 42 Tokyo · 42 Rio",
+        "42 Rio · 42 São Paulo"
+      ]
+    }
+  },
+  {
+    "case": "projects?country=JPN&campus=tokyo",
+    "result": {
+      "count": 2,
+      "titles": [
+        "ft_transcendence · Construire à cinq",
+        "Ce qui relie nos messages"
+      ],
+      "campuses": [
+        "42 Paris · 42 Lyon · 42 Tokyo · 42 Rio",
+        "42 Tokyo"
+      ]
+    }
+  },
+  {
+    "case": "projects?country=FRA&campus=lyon",
+    "result": {
+      "count": 2,
+      "titles": [
+        "ft_transcendence · Construire à cinq",
+        "Une porte vers la troisième dimension"
+      ],
+      "campuses": [
+        "42 Paris · 42 Lyon · 42 Tokyo · 42 Rio",
+        "42 Lyon"
+      ]
+    }
+  },
+  {
+    "case": "projects?country=BRA&campus=sao",
+    "result": {
+      "count": 1,
+      "titles": [
+        "Un jardin de petites idées"
+      ],
+      "campuses": [
+        "42 Rio · 42 São Paulo"
+      ]
+    }
+  },
+  {
+    "case": "dialog-fr",
+    "result": {
+      "text": "Choisir un campus\nFermer\n42 Paris\nFrance\n42 Lyon\nFrance\n42 Tokyo\nJapon\n42 Rio\nBrésil",
+      "ids": [
+        "paris",
+        "lyon",
+        "tokyo",
+        "rio"
+      ],
+      "dir": "ltr",
+      "x": 430,
+      "right": 850,
+      "viewport": 1280,
+      "overflow": false
+    }
+  },
+  {
+    "case": "escape-fr",
+    "result": {
+      "active": "<button class=\"cp-project-campus\" type=\"button\" aria-haspopup=\"dialog\" aria-expanded=\"false\">Explorer un campus<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" class=\"cp-project-icon\"><path d=\"M5 12h14m-6-6 6 6-6 6\"></path></svg></button>",
+      "dialog": false
+    }
+  },
+  {
+    "case": "dialog-en",
+    "result": {
+      "text": "Choose a campus\nClose\n42 Paris\nFrance\n42 Lyon\nFrance\n42 Tokyo\nJapan\n42 Rio\nBrazil",
+      "ids": [
+        "paris",
+        "lyon",
+        "tokyo",
+        "rio"
+      ],
+      "dir": "ltr",
+      "x": 270,
+      "right": 690,
+      "viewport": 960,
+      "overflow": false
+    }
+  },
+  {
+    "case": "escape-en",
+    "result": {
+      "active": "<button class=\"cp-project-campus\" type=\"button\" aria-haspopup=\"dialog\" aria-expanded=\"false\">Explore a campus<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" class=\"cp-project-icon\"><path d=\"M5 12h14m-6-6 6 6-6 6\"></path></svg></button>",
+      "dialog": false
+    }
+  },
+  {
+    "case": "dialog-ar",
+    "result": {
+      "text": "اختر فرعًا\nإغلاق\n42 Paris\nفرنسا\n42 Lyon\nفرنسا\n42 Tokyo\nاليابان\n42 Rio\nالبرازيل",
+      "ids": [
+        "paris",
+        "lyon",
+        "tokyo",
+        "rio"
+      ],
+      "dir": "rtl",
+      "x": 12,
+      "right": 308,
+      "viewport": 320,
+      "overflow": false
+    }
+  },
+  {
+    "case": "escape-ar",
+    "result": {
+      "active": "<button class=\"cp-project-campus\" type=\"button\" aria-haspopup=\"dialog\" aria-expanded=\"false\">استكشف أحد الفروع<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" class=\"cp-project-icon\"><path d=\"M5 12h14m-6-6 6 6-6 6\"></path></svg></button>",
+      "dialog": false
+    }
+  },
+  {
+    "case": "map-choice",
+    "result": {
+      "open": true,
+      "name": "42 Lyon",
+      "hash": "#projects/ft-transcendence-building-together?country=JPN&campus=tokyo",
+      "choices": 0
+    }
+  },
+  {
+    "case": "shared-state",
+    "result": {
+      "comments": [
+        "Essai multicampus partagé"
+      ],
+      "text": "Une question, une idée ou un retour à partager ?\n\nVotre commentaire\n\nPour cet essai, vous utilisez le profil fictif Leïla Mansour. Tapez @ pour mentionner un profil. Démonstration : commentaires, réponses et réactions restent dans cet onglet. Les compteurs 0 ou 1 reflètent uniquement votre choix local.\n\n0 / 2 000 caractères\n☺ Emoji\nAjouter (démo)\nTrier les commentaires\nDu plus récent au plus ancien\nDu plus ancien au plus récent\nLes plus populaires\nLeïla Mansour (vous)\n12 oct. 2026, 10:00\n\nEssai multicampus partagé\n\n0\n0\nRépondre",
+      "favorite": "true",
+      "hash": "#projects/ft-transcendence-building-together?country=BRA&campus=rio&tab=comments"
+    }
+  },
+  {
+    "case": "search-Tokyo",
+    "result": {
+      "results": [
+        {
+          "text": "42 Tokyo\nJapon\nCampus",
+          "index": "0"
+        },
+        {
+          "text": "Ce qui relie nos messages\n42 Tokyo\nProjet",
+          "index": "1"
+        },
+        {
+          "text": "ft_transcendence · Construire à cinq\n42 Paris · 42 Lyon · 42 Tokyo · 42 Rio\nProjet",
+          "index": "2"
+        },
+        {
+          "text": "Montrer ce qui n’est pas encore fini\n42 Tokyo\nChroniques",
+          "index": "3"
+        },
+        {
+          "text": "Haru Mizuno\n42 Tokyo · Cadet · Réseau\nProfil",
+          "index": "4"
+        }
+      ],
+      "destination": "#projects/ft-transcendence-building-together?country=JPN&campus=tokyo"
+    }
+  },
+  {
+    "case": "search-Construire à cinq",
+    "result": {
+      "results": [
+        {
+          "text": "ft_transcendence · Construire à cinq\n42 Paris · 42 Lyon · 42 Tokyo · 42 Rio\nProjet",
+          "index": "0"
+        }
+      ],
+      "destination": "#projects/ft-transcendence-building-together"
+    }
+  },
+  {
+    "case": "mobile-fr",
+    "result": true
+  },
+  {
+    "case": "mobile-ar",
+    "result": true
+  },
+  {
+    "case": "entrance-controls",
+    "result": [
+      {
+        "id": "entry-login",
+        "text": "Se connecter"
+      },
+      {
+        "id": "entry-guest",
+        "text": "Explorer en visiteur"
+      },
+      {
+        "id": "language",
+        "text": "FR"
+      }
+    ]
+  }
+]

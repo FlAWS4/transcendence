@@ -1,0 +1,27 @@
+{
+  "sourceUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.1/geojson/ne_10m_admin_0_countries.geojson",
+  "sourceSha256": "239eec57ac17f100a11e2536cffc56752c318b50ae765b0918ff7aab4ce8f255",
+  "sourceBytes": 13287234,
+  "mapshaper": "0.6.113",
+  "simplification": {
+    "algorithm": "spherical Ramer-Douglas-Peucker",
+    "thresholdMeters": 10,
+    "keepShapes": true
+  },
+  "topologyQuantization": 10000000,
+  "geojsonPrecisionDegrees": 0.00001,
+  "files": {
+    "world-countries.topo.json": {
+      "bytes": 5392533,
+      "sha256": "c6d54f03aba7ea7d63e58053ac27ebea23ef520421a90effcf0201c6cd7945cc",
+      "gzipBytes": 2006643,
+      "gzipSha256": "13640abdfe1ae1b7109dd921a79cd7a051d1829be510cac8e41b29f14af1b5f0"
+    },
+    "world-countries.geojson": {
+      "bytes": 11149320,
+      "sha256": "9f5036876cd1318a7fe605ff1b261f77a0b1340b59b28e52079d93b919f47c78",
+      "gzipBytes": 3803949,
+      "gzipSha256": "d6f6cfa92c69954b4b1649208ab51f793a854f171add920d2a61101a759dc5e7"
+    }
+  }
+}

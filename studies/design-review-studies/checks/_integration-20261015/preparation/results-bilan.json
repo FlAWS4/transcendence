@@ -1,0 +1,584 @@
+{
+ "package": {
+  "design-review-selection.css": {
+   "bytes": 30433,
+   "sha256": "68c9986bf451fc95eea0a50b1863db42661c6ee0c9adcdbbe966acaf87b83dff"
+  },
+  "design-review-selection.mjs": {
+   "bytes": 4226,
+   "sha256": "0200f2ff846812a1bfaf869571e3acf264923bcd5772a257e622798b1038d351"
+  }
+ },
+ "sourceChecks": {
+  "passed": true,
+  "rulesEqualAfterUndo": true,
+  "conditions": 5,
+  "conditionSpecificitySame": true,
+  "renamedSelectors": 7,
+  "renamedSpecificitySame": true,
+  "moduleCopyIdentical": true,
+  "canonicalOrder": [
+   "globe-espace-libre",
+   "police-etiquettes-globe",
+   "une-colonne-320",
+   "roles-couleur",
+   "visiter-contour-sombre",
+   "lisibilite-textes",
+   "echelle-unifiee",
+   "pseudo-manquant",
+   "awards-a-venir"
+  ]
+ },
+ "equivalence": {
+  "views": 27,
+  "states": 36,
+  "identicalViews": 26,
+  "residual": [
+   {
+    "view": "explorer-1366x768-clair-ar",
+    "steps": [
+     {
+      "step": "initial",
+      "pixels": 26,
+      "dom": 0,
+      "styles": 0,
+      "extras": true,
+      "errors": 0,
+      "elements": 484
+     }
+    ]
+   }
+  ],
+  "allDomStylesExtrasEqual": true,
+  "negativeControls": [
+   {
+    "view": "controle-socle-awards-1440x900-clair-fr",
+    "identical": false,
+    "steps": [
+     {
+      "step": "initial",
+      "pixels": 2086,
+      "dom": 48,
+      "styles": 90,
+      "extras": false,
+      "errors": 0,
+      "elements": 350
+     }
+    ]
+   },
+   {
+    "view": "controle-socle-profils-grille-340x640-clair-fr",
+    "identical": false,
+    "steps": [
+     {
+      "step": "initial",
+      "pixels": 134309,
+      "dom": 62,
+      "styles": 502,
+      "extras": false,
+      "errors": 0,
+      "elements": 868
+     }
+    ]
+   }
+  ],
+  "noiseControls": [
+   {
+    "view": "bruit-essais-deux-fois-explorer-1366x768-clair-ar",
+    "identical": false,
+    "steps": [
+     {
+      "step": "initial",
+      "pixels": 29,
+      "dom": 0,
+      "styles": 0,
+      "extras": true,
+      "errors": 0,
+      "elements": 484
+     }
+    ]
+   },
+   {
+    "view": "bruit-paquet-deux-fois-explorer-1366x768-clair-ar",
+    "identical": true,
+    "steps": [
+     {
+      "step": "initial",
+      "pixels": 0,
+      "dom": 0,
+      "styles": 0,
+      "extras": true,
+      "errors": 0,
+      "elements": 484
+     }
+    ]
+   },
+   {
+    "view": "reprise-explorer-1366x768-clair-ar",
+    "identical": true,
+    "steps": [
+     {
+      "step": "initial",
+      "pixels": 0,
+      "dom": 0,
+      "styles": 0,
+      "extras": true,
+      "errors": 0,
+      "elements": 484
+     }
+    ]
+   },
+   {
+    "view": "bruit-essais-deux-fois-menu-ferme-1440x900-sombre-fr",
+    "identical": false,
+    "steps": [
+     {
+      "step": "initial",
+      "pixels": 1,
+      "dom": 0,
+      "styles": 0,
+      "extras": true,
+      "errors": 0,
+      "elements": 1131
+     }
+    ]
+   },
+   {
+    "view": "bruit-paquet-deux-fois-menu-ferme-1440x900-sombre-fr",
+    "identical": false,
+    "steps": [
+     {
+      "step": "initial",
+      "pixels": 1,
+      "dom": 0,
+      "styles": 0,
+      "extras": true,
+      "errors": 0,
+      "elements": 1131
+     }
+    ]
+   },
+   {
+    "view": "reprise-menu-ferme-1440x900-sombre-fr",
+    "identical": false,
+    "steps": [
+     {
+      "step": "initial",
+      "pixels": 1,
+      "dom": 0,
+      "styles": 0,
+      "extras": true,
+      "errors": 0,
+      "elements": 1131
+     }
+    ]
+   },
+   {
+    "view": "bruit-essais-deux-fois-menu-compte-1440x900-sombre-fr",
+    "identical": false,
+    "steps": [
+     {
+      "step": "initial",
+      "pixels": 1,
+      "dom": 0,
+      "styles": 0,
+      "extras": true,
+      "errors": 0,
+      "elements": 1131
+     }
+    ]
+   }
+  ],
+  "firstPassClosedMenu": [
+   {
+    "view": "menu-ferme-apres-clic-1440x900-sombre-fr",
+    "identical": false,
+    "steps": [
+     {
+      "step": "initial",
+      "pixels": 1,
+      "dom": 0,
+      "styles": 0,
+      "extras": true,
+      "errors": 0,
+      "elements": 1131
+     }
+    ]
+   },
+   {
+    "view": "menu-ferme-apres-clic-390x844-sombre-ar",
+    "identical": true,
+    "steps": [
+     {
+      "step": "initial",
+      "pixels": 0,
+      "dom": 0,
+      "styles": 0,
+      "extras": true,
+      "errors": 0,
+      "elements": 1131
+     }
+    ]
+   }
+  ]
+ },
+ "currentOriginal": {
+  "menu-compte-1440x900-sombre": {
+   "state": "audit-fixes-146",
+   "preview": "113",
+   "unchanged": true,
+   "paquetVsEssais": {
+    "pixelsDiffer": 12301,
+    "domMismatches": 0,
+    "styleMismatches": 1,
+    "firstStyle": [
+     [
+      139,
+      "button.account-auth-action.entrance-action.secondary"
+     ]
+    ]
+   },
+   "paquetVsOriginal": {
+    "pixelsDiffer": 200150,
+    "styleMismatches": 324
+   },
+   "contrasts": {
+    "copie-essais": {
+     "fillPixel": [
+      40,
+      40,
+      45
+     ],
+     "glassOutside": [
+      41,
+      41,
+      46
+     ],
+     "text": 3.84,
+     "outlineVsFill": 3.68,
+     "outlineVsGlass": 3.63,
+     "fillVsGlass": 1.01
+    },
+    "original": {
+     "fillPixel": [
+      27,
+      27,
+      27
+     ],
+     "glassOutside": [
+      41,
+      42,
+      46
+     ],
+     "text": 4.51,
+     "fillVsGlass": 1.2
+    },
+    "original-paquet": {
+     "fillPixel": [
+      27,
+      27,
+      27
+     ],
+     "glassOutside": [
+      41,
+      41,
+      46
+     ],
+     "text": 4.51,
+     "outlineVsFill": 4.32,
+     "outlineVsGlass": 3.63,
+     "fillVsGlass": 1.19
+    }
+   },
+   "errors": [
+    0,
+    0,
+    0
+   ]
+  },
+  "menu-compte-390x844-sombre": {
+   "state": "audit-fixes-146",
+   "preview": "113",
+   "unchanged": true,
+   "paquetVsEssais": {
+    "pixelsDiffer": 48633,
+    "domMismatches": 0,
+    "styleMismatches": 1,
+    "firstStyle": [
+     [
+      139,
+      "button.account-auth-action.entrance-action.secondary"
+     ]
+    ]
+   },
+   "paquetVsOriginal": {
+    "pixelsDiffer": 476210,
+    "styleMismatches": 445
+   },
+   "contrasts": {
+    "copie-essais": {
+     "fillPixel": [
+      44,
+      45,
+      49
+     ],
+     "glassOutside": [
+      47,
+      46,
+      50
+     ],
+     "text": 3.6,
+     "outlineVsFill": 3.45,
+     "outlineVsGlass": 3.38,
+     "fillVsGlass": 1.02
+    },
+    "original": {
+     "fillPixel": [
+      27,
+      27,
+      27
+     ],
+     "glassOutside": [
+      46,
+      46,
+      50
+     ],
+     "text": 4.51,
+     "fillVsGlass": 1.27
+    },
+    "original-paquet": {
+     "fillPixel": [
+      27,
+      27,
+      27
+     ],
+     "glassOutside": [
+      47,
+      46,
+      50
+     ],
+     "text": 4.51,
+     "outlineVsFill": 4.32,
+     "outlineVsGlass": 3.38,
+     "fillVsGlass": 1.28
+    }
+   },
+   "errors": [
+    0,
+    0,
+    0
+   ]
+  },
+  "menu-compte-1440x900-clair": {
+   "state": "audit-fixes-146",
+   "preview": "113",
+   "unchanged": true,
+   "paquetVsEssais": {
+    "pixelsDiffer": 0,
+    "domMismatches": 0,
+    "styleMismatches": 0,
+    "firstStyle": []
+   },
+   "paquetVsOriginal": {
+    "pixelsDiffer": 213751,
+    "styleMismatches": 324
+   },
+   "contrasts": {
+    "copie-essais": {
+     "fillPixel": [
+      255,
+      255,
+      255
+     ],
+     "glassOutside": [
+      245,
+      247,
+      247
+     ],
+     "text": 17.22,
+     "outlineVsFill": 1.28,
+     "outlineVsGlass": 1.19,
+     "fillVsGlass": 1.08
+    },
+    "original": {
+     "fillPixel": [
+      255,
+      255,
+      255
+     ],
+     "glassOutside": [
+      249,
+      250,
+      250
+     ],
+     "text": 17.22,
+     "outlineVsFill": 1.28,
+     "outlineVsGlass": 1.23,
+     "fillVsGlass": 1.05
+    },
+    "original-paquet": {
+     "fillPixel": [
+      255,
+      255,
+      255
+     ],
+     "glassOutside": [
+      245,
+      247,
+      247
+     ],
+     "text": 17.22,
+     "outlineVsFill": 1.28,
+     "outlineVsGlass": 1.19,
+     "fillVsGlass": 1.08
+    }
+   },
+   "errors": [
+    0,
+    0,
+    0
+   ]
+  },
+  "arrivee-1440x900-sombre": {
+   "state": "audit-fixes-146",
+   "preview": "113",
+   "unchanged": true,
+   "paquetVsEssais": {
+    "pixelsDiffer": 0,
+    "domMismatches": 0,
+    "styleMismatches": 0,
+    "firstStyle": []
+   },
+   "paquetVsOriginal": {
+    "pixelsDiffer": 2057,
+    "styleMismatches": 106
+   },
+   "contrasts": {
+    "copie-essais": null,
+    "original": null,
+    "original-paquet": null
+   },
+   "errors": [
+    0,
+    0,
+    0
+   ]
+  },
+  "ecran-erreur-compte-1440x900-sombre": {
+   "state": "audit-fixes-146",
+   "preview": "113",
+   "unchanged": true,
+   "paquetVsEssais": {
+    "pixelsDiffer": 148771,
+    "domMismatches": 238,
+    "styleMismatches": 17,
+    "firstStyle": [
+     [
+      70,
+      "header.header"
+     ],
+     [
+      83,
+      "div.utilities"
+     ],
+     [
+      129,
+      "div.account-switcher"
+     ],
+     [
+      130,
+      "button#profile.profile.utility"
+     ],
+     [
+      131,
+      "svg"
+     ],
+     [
+      132,
+      "circle"
+     ],
+     [
+      133,
+      "path"
+     ],
+     [
+      134,
+      "section#account-menu.account-menu"
+     ]
+    ]
+   },
+   "paquetVsOriginal": {
+    "pixelsDiffer": 54038,
+    "styleMismatches": 107
+   },
+   "contrasts": {
+    "copie-essais": null,
+    "original": {
+     "fillPixel": [
+      27,
+      27,
+      27
+     ],
+     "glassOutside": [
+      38,
+      38,
+      42
+     ],
+     "text": 4.51,
+     "fillVsGlass": 1.14
+    },
+    "original-paquet": {
+     "fillPixel": [
+      27,
+      27,
+      27
+     ],
+     "glassOutside": [
+      38,
+      38,
+      42
+     ],
+     "text": 4.51,
+     "outlineVsFill": 4.32,
+     "outlineVsGlass": 3.78,
+     "fillVsGlass": 1.14
+    }
+   },
+   "errors": [
+    0,
+    0,
+    0
+   ]
+  },
+  "tri-commentaires-bas-390x844-clair": {
+   "state": "audit-fixes-146",
+   "preview": "113",
+   "unchanged": true,
+   "paquetVsEssais": {
+    "pixelsDiffer": 359966,
+    "domMismatches": 0,
+    "styleMismatches": 1,
+    "firstStyle": [
+     [
+      431,
+      "div#project-comment-sort-menu.cp-control-panel"
+     ]
+    ]
+   },
+   "paquetVsOriginal": {
+    "pixelsDiffer": 529117,
+    "styleMismatches": 341
+   },
+   "contrasts": {
+    "copie-essais": null,
+    "original": null,
+    "original-paquet": null
+   },
+   "errors": [
+    0,
+    0,
+    0
+   ]
+  }
+ }
+}

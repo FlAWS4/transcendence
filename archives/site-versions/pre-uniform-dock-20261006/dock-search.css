@@ -1,0 +1,498 @@
+/* First navigation study: horizontal desktop labels, compact mobile dock.
+   Search colours inherit the active Horizon theme. */
+:root .app[data-navigation=dock]:has(.main-nav.has-dock-search) {
+  --dock-height: 60px;
+  --dock-bottom: calc(32px + env(safe-area-inset-bottom, 0px));
+}
+:root .app[data-navigation=dock] .dock-shell {
+  position: fixed;
+  inset-inline: auto;
+  left: 50%;
+  right: auto;
+  top: auto;
+  bottom: calc(var(--dock-bottom) + var(--dock-keyboard-offset, 0px));
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: min(574px, calc(100% - 32px));
+  height: var(--dock-height);
+  z-index: 20;
+  isolation: isolate;
+  --dock-toggle-drift: -14px;
+  --dock-glass-opacity: 32%;
+  --dock-glass-duration: 350ms;
+  transition: width .48s var(--ease), gap .48s var(--ease);
+}
+[dir=rtl] .app[data-navigation=dock] .dock-shell { --dock-toggle-drift: 14px; }
+:root .app[data-navigation=dock] .dock-shell[data-document-scrolling=true] {
+  --dock-glass-opacity: 32%;
+  --dock-glass-duration: 220ms;
+}
+:root .app[data-navigation=dock] .dock-shell[data-search-open=true] {
+  width: min(680px, calc(100% - 32px));
+  gap: 0;
+}
+:root .app[data-navigation=dock] .main-nav.has-dock-search,
+:root .app[data-navigation=dock] .main-nav.has-dock-search[data-search-open=true] {
+  position: relative;
+  inset: auto;
+  transform: none;
+  flex: 1 1 0;
+  min-width: 0;
+  width: auto;
+  max-width: none;
+  height: var(--dock-height);
+  min-height: var(--dock-height);
+  margin: 0;
+  gap: 4px;
+  padding: 5px;
+  border-radius: 999px;
+  overflow: visible;
+  transition: border-radius .4s var(--ease), background-color var(--dock-glass-duration) ease;
+}
+:root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section] {
+  flex: 1 1 0;
+  flex-direction: row;
+  gap: 9px;
+  min-width: 0;
+  height: 48px;
+  min-height: 48px;
+  padding: 0 10px;
+  border-radius: 999px;
+  font-size: 14px;
+  line-height: 1.25;
+  font-weight: 400;
+  white-space: nowrap;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity .2s ease, transform .36s var(--ease), color .25s;
+  transition-delay: calc(150ms + var(--dock-menu-order, 0) * 24ms), calc(150ms + var(--dock-menu-order, 0) * 24ms), 0s;
+}
+:root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section][aria-current] { font-weight: 500; }
+:root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section] svg {
+  width: 21px;
+  height: 21px;
+  transform: none;
+}
+:root .app[data-navigation=dock] .main-nav.has-dock-search .nav-indicator {
+  width: calc((100% - 24px) / 4);
+  height: 48px;
+  border-radius: 999px;
+  opacity: 1;
+  transition: transform .45s var(--ease), width .45s var(--ease), opacity .22s ease;
+}
+:root .app[data-navigation=dock] .main-nav.has-dock-search[data-search-open=true] > button[data-section] {
+  opacity: 0;
+  transform: translateY(9px);
+  pointer-events: none;
+  transition-delay: calc(var(--dock-menu-order, 0) * 24ms), calc(var(--dock-menu-order, 0) * 24ms), 0s;
+}
+:root .app[data-navigation=dock] .main-nav.has-dock-search[data-search-open=true] .nav-indicator { opacity: 0; }
+:root .app[data-navigation=dock] .dock-shell > .dock-search-toggle,
+:root .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-close {
+  flex: 0 0 52px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  width: 52px;
+  height: 60px;
+  min-height: 60px;
+  min-width: 0;
+  padding: 0;
+  border-radius: 19px;
+  color: var(--h42-color-muted);
+  background: transparent;
+  transition: background .2s, color .2s, opacity .2s, transform .4s var(--ease);
+}
+:root .app[data-navigation=dock] .dock-shell > .dock-search-toggle {
+  flex-basis: 52px;
+  width: 52px;
+  height: 52px;
+  min-height: 52px;
+  border: 1px solid var(--warm-line);
+  border-radius: 50%;
+  background: var(--dock-glass-surface);
+  box-shadow: 0 12px 36px color-mix(in srgb, var(--h42-pink) 12%, transparent), 0 3px 8px color-mix(in srgb, var(--h42-ink) 3%, transparent);
+  transition: flex-basis .48s var(--ease), width .48s var(--ease), border-width .3s, opacity .22s, transform .48s var(--ease), background-color var(--dock-glass-duration) ease, color .2s;
+}
+:root[data-theme=light] .app[data-navigation=dock] .dock-shell > .dock-search-toggle {
+  background: var(--dock-glass-surface);
+  border-color: #FFFFFF;
+  box-shadow: 0 14px 34px #183D3C1A, 0 3px 8px #183D3C07;
+}
+:root .app[data-navigation=dock] .dock-shell > .dock-search-toggle:hover,
+:root .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-close:hover {
+  background: var(--warm-soft);
+  color: var(--h42-color-text);
+}
+:root .app[data-navigation=dock] .dock-shell > .dock-search-toggle svg,
+:root .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-close svg {
+  width: 21px;
+  height: 21px;
+  transform: none;
+  transition: transform .4s var(--ease);
+}
+:root .app[data-navigation=dock] .dock-shell > .dock-search-toggle:hover svg { transform: rotate(-12deg); }
+:root .app[data-navigation=dock] .dock-shell[data-search-open=true] > .dock-search-toggle {
+  flex-basis: 0;
+  width: 0;
+  border-width: 0;
+  opacity: 0;
+  transform: translateX(var(--dock-toggle-drift)) rotate(36deg) scale(.7);
+  pointer-events: none;
+}
+:root .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-form {
+  position: absolute;
+  inset: 5px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  margin: 0;
+  padding-inline: 14px 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-8px);
+  transition: opacity .16s ease, transform .26s var(--ease), visibility 0s .2s;
+}
+:root .app[data-navigation=dock] .main-nav.has-dock-search[data-search-open=true] .dock-search-form {
+  opacity: 1;
+  visibility: inherit;
+  pointer-events: auto;
+  transform: translateY(0);
+  transition-delay: .18s, .18s, 0s;
+}
+:root .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-form-icon {
+  flex: 0 0 22px;
+  display: grid;
+  place-items: center;
+  color: var(--cp-accent, var(--h42-pink));
+  transform: rotate(-35deg) scale(.7);
+  transition: transform .48s var(--ease);
+}
+:root .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-form-icon svg { width: 22px; height: 22px; }
+:root .app[data-navigation=dock] .main-nav.has-dock-search[data-search-open=true] .dock-search-form-icon {
+  transform: rotate(0) scale(1);
+  transition-delay: .18s;
+}
+:root .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-input {
+  flex: 1 1 0;
+  width: 100%;
+  min-width: 0;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--h42-color-text);
+  font: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: start;
+}
+:root .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-input::placeholder { color: var(--h42-color-muted); opacity: 1; }
+:root .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-input:focus-visible {
+  outline: 2px solid var(--h42-color-focus);
+  outline-offset: 2px;
+  border-radius: 999px;
+}
+:root .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-close {
+  flex-basis: 44px;
+  width: 44px;
+  height: 44px;
+  min-height: 44px;
+  border-radius: 50%;
+}
+:root .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-panel {
+  position: absolute;
+  inset-inline: 0;
+  bottom: calc(100% + 14px);
+  z-index: 3;
+  max-height: min(440px, calc(var(--dock-search-viewport-height, 100dvh) - var(--dock-height) - var(--dock-bottom) - 36px));
+  overflow: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  padding: 12px;
+  border: 1px solid var(--warm-line);
+  border-radius: 24px;
+  background: var(--h42-color-surface);
+  box-shadow: var(--shadow);
+  color: var(--h42-color-text);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(10px) scale(.985);
+  transform-origin: 50% 100%;
+  transition: opacity .18s ease, transform .36s var(--ease), visibility 0s .22s;
+}
+:root .app[data-navigation=dock] .main-nav.has-dock-search[data-search-open=true] .dock-search-panel {
+  opacity: 1;
+  visibility: inherit;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+  transition-delay: .16s, .16s, 0s;
+}
+:root .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-panel-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 18px;
+  margin: 0;
+  padding: 5px 10px 12px;
+}
+:root .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-scope { margin: 0; font-size: 12px; font-weight: 500; line-height: 1.5; }
+:root .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-status { margin: 0; color: var(--h42-color-muted); font-size: 11px; line-height: 1.5; }
+:root .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-helper { margin: 0; padding: 13px 10px 17px; color: var(--h42-color-muted); font-size: 14px; line-height: 1.65; }
+:root .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-results { display: grid; gap: 3px; }
+:root .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-result {
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  width: 100%;
+  min-width: 0;
+  min-height: 64px;
+  height: auto;
+  padding: 12px 11px;
+  border-radius: 14px;
+  background: transparent;
+  color: var(--h42-color-text);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: start;
+  transition: background .15s;
+}
+:root .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-result:hover,
+:root .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-result[aria-selected=true] { background: var(--warm-soft); }
+:root .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-result-copy { display: grid; gap: 4px; min-width: 0; }
+:root .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-result-title { font-size: 14px; font-weight: 500; line-height: 1.4; overflow-wrap: anywhere; }
+:root .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-result-subtitle { color: var(--h42-color-muted); font-size: 12px; line-height: 1.5; overflow-wrap: anywhere; }
+:root .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-result-type { flex: 0 0 auto; padding: 4px 8px; border-radius: 20px; background: var(--warm-soft); color: var(--h42-color-muted); font-size: 10px; font-weight: 400; line-height: 1.5; }
+@media (max-width: 700px) {
+  :root .app[data-navigation=dock]:has(.main-nav.has-dock-search) {
+    --dock-height: 64px;
+    --dock-bottom: calc(17px + env(safe-area-inset-bottom, 0px));
+  }
+  :root .app[data-navigation=dock] .dock-shell { gap: 10px; }
+  :root .app[data-navigation=dock] .dock-shell[data-search-open=true] { gap: 0; }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search,
+  :root .app[data-navigation=dock] .main-nav.has-dock-search[data-search-open=true] { gap: 2px; padding: 6px; border-radius: 999px; }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search > button[data-section] {
+    flex-direction: column;
+    height: 50px;
+    min-height: 50px;
+    padding: 0 3px;
+    gap: 5px;
+    font-size: 11px;
+    border-radius: 999px;
+  }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search .nav-indicator { width: calc((100% - 20px) / 4); height: 50px; }
+  :root .app[data-navigation=dock] .dock-shell > .dock-search-toggle { flex-basis: 46px; width: 46px; height: 46px; min-height: 46px; }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-form { inset: 6px; gap: 9px; padding-inline-start: 10px; }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-panel { border-radius: 22px; padding: 9px; }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-result { padding: 11px 9px; gap: 10px; }
+}
+@media (max-width: 360px) {
+  :root .app[data-navigation=dock] .dock-shell,
+  :root .app[data-navigation=dock] .dock-shell[data-search-open=true] { width: calc(100% - 24px); }
+  :root .app[data-navigation=dock] .dock-shell { gap: 8px; }
+  :root .app[data-navigation=dock] .dock-shell[data-search-open=true] { gap: 0; }
+}
+@media (max-height: 520px) {
+  :root .app[data-navigation=dock]:has(.main-nav.has-dock-search) { --dock-bottom: calc(14px + env(safe-area-inset-bottom, 0px)); }
+  :root .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-panel { bottom: calc(100% + 9px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  :root .app[data-navigation=dock] .dock-shell,
+  :root .app[data-navigation=dock] .dock-shell *,
+  :root .app[data-navigation=dock] .dock-shell *::before,
+  :root .app[data-navigation=dock] .dock-shell *::after { transition: none !important; animation: none !important; }
+}
+
+/* Raised dark dock: keep the existing graphite palette, separate it from the page. */
+:root[data-theme=dark] .app[data-navigation=dock] .dock-shell,
+:root[data-theme=dark] .app[data-navigation=dock] .globe-controls {
+  --dock-panel-surface: color-mix(in srgb, var(--h42-graphite) 95%, transparent);
+  --dock-glass-surface: color-mix(in srgb, var(--h42-graphite) var(--dock-glass-opacity), transparent);
+  --dock-edge: color-mix(in srgb, var(--h42-white) 14%, var(--h42-graphite));
+  --dock-shadow: 0 14px 36px #0005, 0 3px 10px #0003;
+  --dock-glass-edge: color-mix(in srgb, var(--h42-white) 25%, transparent);
+  --dock-glass-shadow: 0 12px 26px #0003, inset 0 1px 0 #ffffff30, inset 0 -1px 0 #0002;
+  --dock-glass-selection: color-mix(in srgb, var(--h42-pink) 22%, transparent);
+  --dock-glass-selection-edge: color-mix(in srgb, var(--h42-pink) 32%, transparent);
+}
+:root[data-theme=dark] .app[data-navigation=dock] .main-nav.has-dock-search,
+:root[data-theme=dark] .app[data-navigation=dock] .dock-shell > .dock-search-toggle,
+:root[data-theme=dark] .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-panel {
+  border-color: var(--dock-edge);
+  box-shadow: var(--dock-shadow);
+}
+:root[data-theme=dark] .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-panel {
+  background: var(--dock-panel-surface);
+}
+
+:root .app[data-navigation=dock] .globe-controls { --dock-glass-opacity:32%; }
+
+/* Selected frosted study: shared by dock, floating capsule, open search,
+   results panel and globe zoom controls. The nav is not a backdrop root: its
+   separate background lets the child results panel sample the page itself. */
+:root[data-theme=light] .app[data-navigation=dock] .dock-shell,
+:root[data-theme=light] .app[data-navigation=dock] .globe-controls {
+  --dock-glass-surface: color-mix(in srgb, var(--h42-white) var(--dock-glass-opacity), transparent);
+  --dock-glass-edge: color-mix(in srgb, var(--h42-white) 72%, transparent);
+  --dock-glass-shadow: 0 9px 22px #183D3C12, inset 0 1px 0 #ffffffb3, inset 0 -1px 0 #183D3C0B;
+  --dock-glass-selection: color-mix(in srgb, var(--h42-teal) 19%, transparent);
+  --dock-glass-selection-edge: color-mix(in srgb, var(--h42-teal) 32%, transparent);
+}
+:root[data-theme] .app[data-navigation=dock] .main-nav.has-dock-search {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+:root[data-theme] .app[data-navigation=dock] .main-nav.has-dock-search::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  z-index: -1;
+  pointer-events: none;
+  border: 1px solid var(--dock-glass-edge);
+  border-radius: inherit;
+  transition: background-color var(--dock-glass-duration) ease, border-color var(--dock-glass-duration) ease, box-shadow var(--dock-glass-duration) ease, -webkit-backdrop-filter var(--dock-glass-duration) ease, backdrop-filter var(--dock-glass-duration) ease, opacity var(--dock-glass-duration) ease;
+}
+:root[data-theme] .app[data-navigation=dock] .main-nav.has-dock-search::before,
+:root[data-theme] .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-panel,
+:root[data-theme] .app[data-navigation=dock] .dock-shell > .dock-search-toggle,
+:root[data-theme] .app[data-navigation=dock] .dock-shell > .dock-search-toggle:hover,
+:root[data-theme] .app[data-navigation=dock] .globe-controls {
+  background: var(--dock-glass-surface);
+  border-color: var(--dock-glass-edge);
+  box-shadow: var(--dock-glass-shadow);
+  -webkit-backdrop-filter: blur(26px) saturate(1.15);
+  backdrop-filter: blur(26px) saturate(1.15);
+}
+:root[data-theme] .app[data-navigation=dock] .main-nav.has-dock-search .nav-indicator {
+  background: var(--dock-glass-selection);
+  border-color: var(--dock-glass-selection-edge);
+  box-shadow: none;
+}
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  :root[data-theme] .app[data-navigation=dock] .main-nav.has-dock-search::before,
+  :root[data-theme] .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-panel,
+  :root[data-theme] .app[data-navigation=dock] .dock-shell > .dock-search-toggle,
+  :root[data-theme] .app[data-navigation=dock] .dock-shell > .dock-search-toggle:hover,
+  :root[data-theme] .app[data-navigation=dock] .globe-controls {
+    background: color-mix(in srgb, var(--h42-color-surface) 88%, transparent);
+  }
+}
+
+/* Pagination keeps every matching result reachable inside the same panel. */
+:root .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-more {
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  min-height: 44px;
+  margin: 9px 0 0;
+  padding: 10px 14px;
+  border-radius: 14px;
+  background: var(--warm-soft);
+  color: var(--cp-accent, var(--h42-pink));
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+}
+:root .app[data-navigation=dock] .main-nav.has-dock-search .dock-search-more:hover { color: var(--h42-color-text); }
+
+/* The first study remains available as a separate preview. */
+:root .app[data-navigation=dock][data-menu-scroll-study=background] .main-nav.has-dock-search::before {
+  transition: border-radius .4s var(--ease), background-color var(--dock-glass-duration) ease, border-color var(--dock-glass-duration) ease, box-shadow var(--dock-glass-duration) ease, -webkit-backdrop-filter var(--dock-glass-duration) ease, backdrop-filter var(--dock-glass-duration) ease;
+}
+:root .app[data-navigation=dock][data-menu-scroll-study=background] .dock-shell > .dock-search-toggle {
+  transition: flex-basis .48s var(--ease), width .48s var(--ease), border-width .3s, opacity .22s, transform .48s var(--ease), background-color var(--dock-glass-duration) ease, color .2s, border-color var(--dock-glass-duration) ease, box-shadow var(--dock-glass-duration) ease, -webkit-backdrop-filter var(--dock-glass-duration) ease, backdrop-filter var(--dock-glass-duration) ease;
+}
+:root .app[data-navigation=dock][data-menu-scroll-study=background] .main-nav.has-dock-search .nav-indicator {
+  transition: transform .45s var(--ease), width .45s var(--ease), opacity var(--dock-glass-duration) ease;
+}
+:root .app[data-navigation=dock][data-menu-scroll-study=background] .dock-shell[data-document-scrolling=true]:not([data-search-open=true]) {
+  --dock-glass-opacity: 0%;
+}
+:root .app[data-navigation=dock][data-menu-scroll-study=background] .dock-shell[data-document-scrolling=true]:not([data-search-open=true]) > .main-nav.has-dock-search::before,
+:root .app[data-navigation=dock][data-menu-scroll-study=background] .dock-shell[data-document-scrolling=true]:not([data-search-open=true]) > .dock-search-toggle {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  -webkit-backdrop-filter: blur(0px);
+  backdrop-filter: blur(0px);
+}
+:root .app[data-navigation=dock][data-menu-scroll-study=background] .dock-shell[data-document-scrolling=true]:not([data-search-open=true]) .nav-indicator {
+  opacity: 0;
+}
+
+/* Keep both ancestors opaque and free from backdrop filters. The nav backdrop,
+   buttons and indicator fade individually; the capsule is its own glass surface.
+   This preserves the page blur both while scrolling and while search opens/closes. */
+:root .app[data-navigation=dock]:not([data-menu-scroll-study=background]) .dock-shell {
+  --dock-glass-opacity: 32%;
+  opacity: 1;
+  transition: width .48s var(--ease), gap .48s var(--ease);
+}
+:root .app[data-navigation=dock]:not([data-menu-scroll-study=background]) .dock-shell > .main-nav.has-dock-search {
+  opacity: 1;
+  transition: border-radius .4s var(--ease);
+}
+:root .app[data-navigation=dock]:not([data-menu-scroll-study=background]) .dock-shell > .main-nav.has-dock-search::before {
+  opacity: 1;
+}
+:root .app[data-navigation=dock]:not([data-menu-scroll-study=background]) .dock-shell:not([data-search-open=true]) > .main-nav.has-dock-search > button[data-section] {
+  opacity: 1;
+  transition: opacity var(--dock-glass-duration) ease, transform .36s var(--ease), color .25s, flex-grow .35s var(--ease);
+}
+:root .app[data-navigation=dock]:not([data-menu-scroll-study=background]) .dock-shell:not([data-search-open=true]) > .main-nav.has-dock-search .nav-indicator {
+  opacity: 1;
+  transition: transform .45s var(--ease), left .35s var(--ease), width .35s var(--ease), opacity var(--dock-glass-duration) ease;
+}
+/* Closed-state specificity keeps the later floating-search.css from replacing
+   the scroll duration. Its open-state morph and opacity:0 remain untouched. */
+:root .app[data-navigation=dock]:not([data-menu-scroll-study=background]) .dock-shell:not([data-search-open=true]) > .dock-search-toggle {
+  opacity: 1;
+  transition: transform .55s var(--ease), width .55s var(--ease), opacity var(--dock-glass-duration) ease, background-color var(--dock-glass-duration) ease, color .2s;
+}
+:root .app[data-navigation=dock]:not([data-menu-scroll-study=background]) .dock-shell[data-document-scrolling=true]:not([data-search-open=true]):not(:has(:focus-visible)) > .main-nav.has-dock-search::before,
+:root .app[data-navigation=dock]:not([data-menu-scroll-study=background]) .dock-shell[data-document-scrolling=true]:not([data-search-open=true]):not(:has(:focus-visible)) > .main-nav.has-dock-search > button[data-section],
+:root .app[data-navigation=dock]:not([data-menu-scroll-study=background]) .dock-shell[data-document-scrolling=true]:not([data-search-open=true]):not(:has(:focus-visible)) > .main-nav.has-dock-search .nav-indicator,
+:root .app[data-navigation=dock]:not([data-menu-scroll-study=background]) .dock-shell[data-document-scrolling=true]:not([data-search-open=true]):not(:has(:focus-visible)) > .dock-search-toggle {
+  opacity: 0;
+}
+:root .app[data-navigation=dock]:not([data-menu-scroll-study=background]) .dock-shell[data-document-scrolling=true]:not([data-search-open=true]):not(:has(:focus-visible)),
+:root .app[data-navigation=dock]:not([data-menu-scroll-study=background]) .dock-shell[data-document-scrolling=true]:not([data-search-open=true]):not(:has(:focus-visible)) * {
+  pointer-events: none;
+}
+/* Keyboard focus reveals its destination immediately, even during scrolling. */
+:root .app[data-navigation=dock]:not([data-menu-scroll-study=background]) .dock-shell:has(:focus-visible) > .main-nav.has-dock-search::before {
+  transition: none;
+}
+:root .app[data-navigation=dock]:not([data-menu-scroll-study=background]) .dock-shell:not([data-search-open=true]):has(:focus-visible) > .main-nav.has-dock-search > button[data-section] {
+  transition: transform .36s var(--ease), color .25s, flex-grow .35s var(--ease);
+}
+:root .app[data-navigation=dock]:not([data-menu-scroll-study=background]) .dock-shell:not([data-search-open=true]):has(:focus-visible) > .main-nav.has-dock-search .nav-indicator {
+  transition: transform .45s var(--ease), left .35s var(--ease), width .35s var(--ease);
+}
+:root .app[data-navigation=dock]:not([data-menu-scroll-study=background]) .dock-shell:not([data-search-open=true]):has(:focus-visible) > .dock-search-toggle {
+  transition: transform .55s var(--ease), width .55s var(--ease), background-color var(--dock-glass-duration) ease, color .2s;
+}

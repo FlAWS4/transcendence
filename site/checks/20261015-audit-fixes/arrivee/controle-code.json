@@ -1,0 +1,104 @@
+{
+ "manifestSources": 137,
+ "missingActiveSources": [],
+ "changedSources144to145": [
+  "work/visualizations/horizon-welcome/comments.mjs",
+  "work/visualizations/horizon-welcome/content-preview.html",
+  "work/visualizations/horizon-welcome/content-preview.mjs",
+  "work/visualizations/horizon-welcome/entrance.css",
+  "work/visualizations/horizon-welcome/entrance.mjs",
+  "work/visualizations/horizon-welcome/index.html",
+  "work/visualizations/horizon-welcome/journal-ui.mjs",
+  "work/visualizations/horizon-welcome/project-ui.mjs",
+  "work/visualizations/horizon-welcome/welcome.mjs"
+ ],
+ "givenDiffFiles": [
+  "comments.mjs",
+  "content-preview.html",
+  "content-preview.mjs",
+  "entrance.css",
+  "entrance.mjs",
+  "index.html",
+  "journal-ui.mjs",
+  "project-ui.mjs",
+  "welcome.mjs"
+ ],
+ "changedEqualsDiffFiles": true,
+ "perFile": {
+  "comments.mjs": {
+   "matchesGivenDiff": true,
+   "added": 4,
+   "removed": 2,
+   "original": "archive/pre-codex-audit-fixes-20261015/originals/comments.mjs"
+  },
+  "content-preview.html": {
+   "matchesGivenDiff": true,
+   "added": 2,
+   "removed": 2,
+   "original": "archive/pre-codex-audit-fixes-20261015/originals/content-preview.html"
+  },
+  "content-preview.mjs": {
+   "matchesGivenDiff": true,
+   "added": 1,
+   "removed": 1,
+   "original": "archive/pre-codex-audit-fixes-20261015/baseline/content-preview.mjs"
+  },
+  "entrance.css": {
+   "matchesGivenDiff": true,
+   "added": 5,
+   "removed": 2,
+   "original": "archive/pre-codex-audit-fixes-20261015/baseline/entrance.css"
+  },
+  "entrance.mjs": {
+   "matchesGivenDiff": true,
+   "added": 20,
+   "removed": 7,
+   "original": "archive/pre-codex-audit-fixes-20261015/originals/entrance.mjs"
+  },
+  "index.html": {
+   "matchesGivenDiff": true,
+   "added": 2,
+   "removed": 2,
+   "original": "archive/pre-codex-audit-fixes-20261015/originals/index.html"
+  },
+  "journal-ui.mjs": {
+   "matchesGivenDiff": true,
+   "added": 1,
+   "removed": 1,
+   "original": "archive/pre-codex-audit-fixes-20261015/baseline/journal-ui.mjs"
+  },
+  "project-ui.mjs": {
+   "matchesGivenDiff": true,
+   "added": 1,
+   "removed": 1,
+   "original": "archive/pre-codex-audit-fixes-20261015/baseline/project-ui.mjs"
+  },
+  "welcome.mjs": {
+   "matchesGivenDiff": true,
+   "added": 4,
+   "removed": 4,
+   "original": "archive/pre-codex-audit-fixes-20261015/originals/welcome.mjs"
+  }
+ },
+ "welcomePanels": {
+  "gitStatus": "inchangé (aucune modification par rapport à HEAD)",
+  "lastCommit": "1172c00 2026-10-07 feat(prototype): share Horizon explorations and project context",
+  "sha256": {
+   "welcome-panels.html": "8ea7fed7eb308dbd12e8c8222f8359536905c549bda63e98f1e89fc4856a1f0e",
+   "welcome-panels.mjs": "325263f40009464e8ef3e950a6e81ec124412c3d5b4f5c5e7f9e0787bb602074"
+  },
+  "inGivenDiff": false,
+  "entranceImportAndCall": [
+   "import {mountEntrance} from './entrance.mjs?v=visible-scan-5';",
+   "entrance=mountEntrance({getLocale:()=>locale,openDialog,closeDialog,prepare:prepareGlobe,getGlobeGeometry:()=>globe?.getWorldScreenGeometry?.(),"
+  ]
+ },
+ "welcomeMjsCycleLabelsCalls": [
+  "entrance=mountEntrance({getLocale:()=>locale,cycleLabels:true,getTheme:()=>themePreferences.snapshot().theme,onToggleTheme:()=>themePreferences.setPreference(da"
+ ],
+ "otherCallersOfMountEntrance": [
+  "entrance.test.mjs",
+  "welcome-panels.mjs",
+  "welcome.mjs"
+ ]
+}

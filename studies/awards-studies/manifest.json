@@ -1,0 +1,152 @@
+{
+  "date": "2026-10-08",
+  "status": "Trois prototypes locaux à comparer ; aucune piste sélectionnée ou intégrée à l’aperçu Horizon.",
+  "entry": "index.html",
+  "notes": "NOTES.md",
+  "variants": [
+    {
+      "id": 1,
+      "name": "Vue d’ensemble",
+      "entry": "demo.html?variant=1#overview"
+    },
+    {
+      "id": 2,
+      "name": "Sommaire latéral",
+      "entry": "demo.html?variant=2#overview"
+    },
+    {
+      "id": 3,
+      "name": "Éditions à explorer",
+      "entry": "demo.html?variant=3#overview"
+    }
+  ],
+  "language": "fr",
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "themeStorage": {
+    "type": "localStorage",
+    "key": "horizon-awards-studies-theme"
+  },
+  "stateStorage": {
+    "type": "sessionStorage",
+    "keys": [
+      "horizon-awards-study-1-v1",
+      "horizon-awards-study-2-v1",
+      "horizon-awards-study-3-v1"
+    ],
+    "independentVariants": true,
+    "remoteStorage": false
+  },
+  "scenarios": [
+    {
+      "id": "candidatures",
+      "now": "2026-10-08T12:00:00Z"
+    },
+    {
+      "id": "votes",
+      "now": "2026-10-22T12:00:00Z"
+    },
+    {
+      "id": "attente",
+      "now": "2026-11-02T12:00:00Z"
+    },
+    {
+      "id": "results",
+      "now": "2026-11-08T12:00:00Z"
+    }
+  ],
+  "preservation": "Conserver les trois essais, sources, dépendances et accès, même après le choix ou l’intégration d’une piste.",
+  "limitations": [
+    "Données, personnes, candidatures, dates et résultats fictifs.",
+    "Aucune authentification, candidature, permission serveur, vote ou notification réels.",
+    "Modalités de démonstration non adoptées ; règlement final à définir.",
+    "Français uniquement ; anglais, arabe et RTL non implémentés dans cette collection.",
+    "Palmarès préparés dans les données, indépendants des votes de démonstration.",
+    "Aucun report Figma ni publication."
+  ],
+  "externalLocalLinks": [
+    "../research-archive/index.html",
+    "../horizon-welcome/content-preview.html"
+  ],
+  "dataProvenance": {
+    "campusNames": "../horizon-welcome/campuses.json",
+    "runtimeData": "data.mjs : instantané embarqué des noms et jeu fictif"
+  },
+  "assetOrigins": {
+    "assets/logo-42.svg": "Identique à work/figma/logo-42.svg et à la copie connected-experience-studies/assets.",
+    "assets/jost.css et assets/jost-*.ttf": "Identiques aux copies work/visualizations/assets et connected-experience-studies/assets.",
+    "assets/leila-mansour.svg": "Portrait fictif identique à connected-experience-studies/assets/leila-mansour.svg."
+  },
+  "integrityPolicy": "SHA-256 et taille uniquement pour les assets stables. Les sources applicatives sont inventoriées sans empreinte volatile pendant leur vérification initiale. Le manifeste est listé sans sa propre empreinte.",
+  "verificationNotes": "NOTES.md : 10 tests modèle passés, syntaxe/imports/liens/inventaire/assets contrôlés, parcours et rendus Chrome ordinateur et mobile320px examinés, limites consignées.",
+  "files": [
+    {
+      "path": "NOTES.md"
+    },
+    {
+      "path": "app.mjs"
+    },
+    {
+      "path": "assets/jost-0.ttf",
+      "bytes": 58796,
+      "sha256": "c3143e923ed1ca7bdf27f96c351fbafaebcbd3cf3f4c2d30d03e6c7f98e73d7a"
+    },
+    {
+      "path": "assets/jost-1.ttf",
+      "bytes": 58936,
+      "sha256": "d6ff7726ec21576cf2fdac55080b2d43832780fa981f03f0b66d2723a7c1ea09"
+    },
+    {
+      "path": "assets/jost-2.ttf",
+      "bytes": 58936,
+      "sha256": "a63c8d75600a2d42e0e152e4c4810474a90a0b93206f47530a741dbb78a9e571"
+    },
+    {
+      "path": "assets/jost.css",
+      "bytes": 441,
+      "sha256": "1f67cdf2d8a7eb3d0b6d6ecdae838ac025bffc18b5f2b07ce3bfa26e0fd51dec"
+    },
+    {
+      "path": "assets/leila-mansour.svg",
+      "bytes": 1756,
+      "sha256": "9fd36e21e1ed4d29fd5e975fffa44e75c3dac9c18b724bbadf6e8406e8838f81"
+    },
+    {
+      "path": "assets/logo-42.svg",
+      "bytes": 830,
+      "sha256": "cb27f1e1c89bcdfe58185710ac66f0232a2bb8c9ac0c596275f06f101dbd7efc"
+    },
+    {
+      "path": "data.mjs"
+    },
+    {
+      "path": "demo.css"
+    },
+    {
+      "path": "demo.html"
+    },
+    {
+      "path": "gallery.css"
+    },
+    {
+      "path": "gallery.mjs"
+    },
+    {
+      "path": "icons.mjs"
+    },
+    {
+      "path": "index.html"
+    },
+    {
+      "path": "manifest.json"
+    },
+    {
+      "path": "model.mjs"
+    },
+    {
+      "path": "model.test.mjs"
+    }
+  ]
+}

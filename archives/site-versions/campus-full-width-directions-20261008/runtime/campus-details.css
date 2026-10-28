@@ -1,0 +1,102 @@
+/* Campus drawer — logo space, photos, address, contacts and campus facts. */
+dialog[data-kind=campus][open], [dir=rtl] dialog[data-kind=campus][open]{width:min(480px,calc(100% - 48px));max-width:none;height:calc(100svh - 48px);max-height:calc(100svh - 48px);inset:24px 24px 24px auto;margin:0;padding:24px;transform:none;overflow:auto;overscroll-behavior:contain;border-radius:28px;animation:campus-drawer-in .38s cubic-bezier(.22,1,.36,1)}
+[dir=rtl] dialog[data-kind=campus][open]{inset:24px auto 24px 24px}
+dialog[data-kind=campus] .dialog-top{position:sticky;top:-24px;z-index:2;padding:6px 0;margin:-12px 0 10px;justify-content:flex-end;background:var(--h42-color-surface)}
+dialog[data-kind=campus] .dialog-top h2{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.campus-sheet-handle{display:none}
+dialog[data-kind=campus]::backdrop{backdrop-filter:blur(2px);background:color-mix(in srgb,var(--h42-ink) 12%,transparent)}
+.campus-details{text-align:start;min-width:0}
+.campus-details-hero{display:grid;gap:10px;text-align:center}
+.campus-details-logo-slot{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:12px;min-height:138px;padding:24px;border-radius:20px;background:var(--warm-soft)}
+.campus-details-logo-image{display:block;max-width:100%;width:100%;height:90px;object-fit:contain}
+.campus-details-logo-slot [hidden]{display:none}
+.campus-details-logo-slot[data-logo-surface=light]{background:#fff}
+.campus-details-logo-slot[data-logo-surface=dark]{background:#1d1d1f}
+.campus-details-identity{min-width:0}
+.campus-details-country{margin:0;font-size:13px;line-height:1.5;color:var(--h42-color-muted)}
+.campus-details-name{margin:0;font-size:32px;line-height:1.16;font-weight:500;letter-spacing:-.025em;overflow-wrap:anywhere}
+.campus-details-mark{flex:0 0 72px;width:72px;height:72px;color:var(--h42-teal)}
+.campus-details-mark svg{display:block;width:100%;height:100%}
+[data-theme=dark] .campus-details-mark{color:var(--h42-pink)}
+.campus-details-intro{font-size:15px;line-height:1.7;margin:20px 2px 24px;color:var(--h42-color-muted)}
+.campus-details-facts{display:grid;gap:18px;margin:0 0 24px;padding:0 2px}
+.campus-details-facts>div{display:grid;gap:5px}
+.campus-details-facts dt{font-size:12px;font-weight:500;color:var(--h42-color-muted)}
+.campus-details-facts dd{margin:0;font-size:15px;line-height:1.6;color:var(--h42-color-text);overflow-wrap:anywhere}
+.campus-details-facts address{font-style:normal;white-space:pre-line}
+.campus-details-copy{display:inline-flex;align-items:center;gap:7px;min-height:36px;margin-top:8px;padding:6px 10px;border:1px solid var(--warm-line);border-radius:12px;background:transparent;color:var(--h42-color-text);font:inherit;font-size:12px;cursor:pointer}
+.campus-details-copy svg{width:15px;height:15px}
+.campus-details-copy-status{font-size:12px;margin:4px 0 0;color:var(--h42-color-muted)}
+.campus-details-copy-status:empty{display:none}
+.campus-details-link{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:50px;padding:13px 16px;border:1px solid color-mix(in srgb,var(--h42-teal) 30%,transparent);border-radius:16px;color:#007F81;background:color-mix(in srgb,var(--h42-teal) 9%,var(--h42-color-surface));text-decoration:none;font-size:15px;font-weight:500;line-height:1.4;transition:background .2s,border-color .2s}
+.campus-details-link:hover{background:color-mix(in srgb,var(--h42-teal) 15%,var(--h42-color-surface));border-color:var(--h42-teal)}
+.campus-details-link svg{width:20px;height:20px;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.campus-details-link-note{margin:9px 2px 0;font-size:12px;line-height:1.5;color:var(--h42-color-muted)}
+[data-theme=dark] .campus-details-link{color:var(--h42-pink);border-color:color-mix(in srgb,var(--h42-pink) 30%,transparent);background:color-mix(in srgb,var(--h42-pink) 9%,var(--h42-color-surface))}
+[data-theme=dark] .campus-details-link:hover{border-color:var(--h42-pink);background:color-mix(in srgb,var(--h42-pink) 15%,var(--h42-color-surface))}
+.campus-details :is(a,button):focus-visible{outline:2px solid var(--h42-color-focus);outline-offset:4px}
+.campus-details[dir=rtl] .campus-details-name{letter-spacing:0;line-height:1.5}
+@keyframes campus-drawer-in{from{opacity:0;translate:0 14px}to{opacity:1;translate:0 0}}
+@media(max-width:700px){
+ dialog[data-kind=campus][open],[dir=rtl] dialog[data-kind=campus][open]{inset:auto 10px 10px;width:calc(100% - 20px);height:var(--campus-sheet-drag-height,74svh);min-height:min(74svh,calc(100svh - 20px));max-height:calc(100svh - 20px);padding:20px;border-radius:26px;transition:height .36s cubic-bezier(.22,1,.36,1)}
+ dialog[data-kind=campus][open][data-expanded=true]{height:var(--campus-sheet-drag-height,calc(100svh - 20px))}
+ dialog[data-kind=campus][data-dragging=true]{transition:none;user-select:none}
+ dialog[data-kind=campus] .campus-sheet-handle{display:flex;align-items:center;justify-content:center;position:absolute;inset-inline-start:calc(50% - 28px);top:0;width:56px;height:44px;touch-action:none}
+ dialog[data-kind=campus] .campus-sheet-handle::after{content:"";width:40px;height:4px;border-radius:4px;background:var(--warm-line)}
+ dialog[data-kind=campus] .dialog-top{top:-20px;margin-bottom:12px;padding:10px 0}
+ .campus-details-logo-slot{min-height:116px;padding:18px;gap:10px}
+ .campus-details-name{font-size:28px}
+ .campus-details-mark{flex-basis:56px;width:56px;height:56px}
+}
+@media(prefers-reduced-motion:reduce){dialog[data-kind=campus][open]{animation:none;transition:none}.campus-details :is(a,button){transition:none}}
+
+.campus-details-mark svg{stroke:currentColor;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
+.campus-details-cover .cp-art{width:100%;height:100%;aspect-ratio:auto}
+
+.campus-details-cover{position:relative}
+.campus-details-cover .cp-art{position:static;inset:auto;transform:none}
+
+/* Practical campus profile, following the user's explicit field list. */
+
+.campus-details-section{margin-top:26px;padding-top:24px;border-top:1px solid var(--warm-line)}
+.campus-details-section>h4{margin:0 0 16px;font-size:19px;line-height:1.4;font-weight:500}
+.campus-details-photos{border-top:0;padding-top:0;margin-top:22px}
+.campus-details-photos>h4{font-size:13px;color:var(--h42-color-muted);margin-bottom:10px}
+.campus-details-photo{margin:0}
+.campus-details-photo img{display:block;width:100%;aspect-ratio:1.65;object-fit:cover;border-radius:18px;background:var(--warm-soft)}
+.campus-details-photo-caption{display:flex;justify-content:space-between;gap:8px;font-size:11px;line-height:1.5;color:var(--h42-color-muted);margin:8px 2px 0}
+.campus-details-photo-caption a,.campus-details-source{color:var(--h42-color-muted);text-underline-offset:3px}
+.campus-details-photo-controls{display:flex;justify-content:flex-end;align-items:center;gap:10px;margin-top:8px}
+.campus-details-photo-controls button{display:inline-flex;align-items:center;justify-content:center;min-width:36px;min-height:36px;padding:7px 12px;border:1px solid var(--warm-line);border-radius:18px;background:var(--warm-soft);color:var(--h42-color-text);font:inherit;font-size:12px;cursor:pointer}
+.campus-details-photo-status{font-size:12px;color:var(--h42-color-muted);margin:0}
+.campus-details-facts{margin-top:24px}
+.campus-details-empty{margin:0;padding:16px;border:1px dashed var(--warm-line);border-radius:14px;color:var(--h42-color-muted);font-size:14px;line-height:1.6}
+.campus-details-contact-list,.campus-details-piscine-list{list-style:none;margin:0;padding:0;display:grid;gap:17px}
+.campus-details-contact-list li{display:grid;gap:5px}
+.campus-details-contact-label{font-size:12px;color:var(--h42-color-muted)}
+.campus-details-contact-value{color:var(--h42-color-text);font-size:15px;line-height:1.5;overflow-wrap:anywhere;text-decoration:none;text-underline-offset:4px}
+a.campus-details-contact-value:hover{text-decoration:underline}
+.campus-details-actions{display:grid;gap:10px;margin-top:24px}
+.campus-details-actions .campus-details-link-note{margin:0 2px}
+.campus-details-directions{margin-top:14px;display:flex;align-items:center;justify-content:center;gap:10px;min-height:46px;padding:11px 16px;border:1px solid var(--warm-line);border-radius:16px;color:var(--h42-color-text);background:transparent;text-decoration:none;font-size:14px;line-height:1.5}
+.campus-details-directions:hover{background:var(--warm-soft)}
+.campus-details-directions svg{width:18px;height:18px;fill:none;stroke:currentColor}
+.campus-details-opening-date{font-size:27px;font-weight:500;margin:0 0 9px;font-variant-numeric:tabular-nums}
+.campus-details-source{display:inline-block;font-size:11px;line-height:1.5;margin-top:7px}
+.campus-details-stat-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:0}
+.campus-details-stat{display:flex;flex-direction:column;gap:8px;min-width:0;padding:16px 10px;border:1px solid var(--warm-line);border-radius:16px;background:var(--warm-soft)}
+.campus-details-stat dt{font-size:12px;line-height:1.5;color:var(--h42-color-muted);overflow-wrap:anywhere}
+.campus-details-stat-value{order:-1;font-size:28px;line-height:1.1;font-weight:500;font-variant-numeric:tabular-nums;margin:0}
+.campus-details-stat-date{font-size:10px;line-height:1.4;color:var(--h42-color-muted);margin:0}
+.campus-details-stats>.campus-details-empty{border:0;padding:0;margin-top:12px;font-size:12px}
+.campus-details-piscine-list li{padding:15px 16px;border:1px solid var(--warm-line);border-radius:16px;background:var(--warm-soft)}
+.campus-details-piscine-label{font-size:15px;font-weight:500;margin:0 0 7px}
+.campus-details-piscine-dates{font-size:14px;line-height:1.6;font-variant-numeric:tabular-nums;margin:0}
+.campus-details-piscine-state{font-size:12px;color:var(--h42-color-muted);margin:7px 0 0}
+.campus-details-piscine-note{font-size:12px;line-height:1.65;color:var(--h42-color-muted);margin:14px 0 0}
+.campus-details-verified{font-size:11px;line-height:1.5;color:var(--h42-color-muted);margin:25px 0 0;padding-top:15px;border-top:1px solid var(--warm-line)}
+@media(max-width:700px){.campus-details-photo img{aspect-ratio:1.55}.campus-details-stat{padding:14px 8px}.campus-details-stat dt{font-size:11px}}
+
+.campus-details-stat-note{font-size:12px;line-height:1.6;color:var(--h42-color-muted);margin:12px 0 0}
+
+.campus-details-photo-status{direction:ltr;unicode-bidi:isolate}
