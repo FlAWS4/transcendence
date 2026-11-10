@@ -15,7 +15,10 @@ export default function App() {
       </header>
 
       <section className="globe-panel" aria-label="42 Network globe">
-        <Globe onCampusSelect={setSelectedCampus} />
+        <Globe
+          selectedCampus={selectedCampus}
+          onCampusSelect={setSelectedCampus}
+        />
 
         <aside className="campus-card" aria-live="polite">
           {selectedCampus ? (
