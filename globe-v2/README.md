@@ -86,6 +86,7 @@ Right now the clean spike contains:
 - zoom;
 - campus click detection;
 - a selected campus card;
+- smooth camera flight to a selected campus;
 - capped device pixel ratio;
 - rendering when the view changes instead of running forever.
 
@@ -104,7 +105,7 @@ Things that are **not finished yet**:
 - country borders;
 - final Earth design;
 - atmosphere;
-- camera flights;
+- final camera-flight tuning;
 - labels;
 - country selection;
 - real globe API;
