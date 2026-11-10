@@ -4,8 +4,14 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import { campuses } from "./campuses.js";
 import { latLngToVector3 } from "./geo.js";
 
-export default function Globe({ onCampusSelect }) {
+function easeInOutCubic(t) {
+  if (t < 0.5) return 4 * t * t * t;
+  return 1 - Math.pow(-2 * t + 2, 3) / 2;
+}
+
+export default function Globe({ selectedCampus, onCampusSelect }) {
   const hostRef = useRef(null);
+  const focusCampusRef = useRef(null);
 
   useEffect(() => {
     const host = hostRef.current;
@@ -22,6 +28,10 @@ export default function Globe({ onCampusSelect }) {
     });
 
     const mobile = window.matchMedia("(max-width: 700px)").matches;
+    const reduceMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+
     renderer.setPixelRatio(
       Math.min(window.devicePixelRatio || 1, mobile ? 1.5 : 2)
     );
@@ -73,9 +83,93 @@ export default function Globe({ onCampusSelect }) {
     controls.minDistance = 2.1;
     controls.maxDistance = 4.4;
 
+    let flightFrame = null;
+
     function render() {
       renderer.render(scene, camera);
     }
+
+    function stopFlight() {
+      if (flightFrame !== null) {
+        cancelAnimationFrame(flightFrame);
+        flightFrame = null;
+      }
+    }
+
+    function focusCampus(campus) {
+      if (!campus) return;
+
+      stopFlight();
+
+      const [longitude, latitude] = campus.coordinates;
+
+      const startDirection = camera.position.clone().normalize();
+      const endDirection = latLngToVector3(
+        longitude,
+        latitude,
+        1
+      ).normalize();
+
+      const startDistance = camera.position.length();
+      const endDistance = 2.55;
+
+      if (reduceMotion) {
+        camera.position.copy(endDirection).multiplyScalar(endDistance);
+        camera.lookAt(controls.target);
+        controls.update();
+        render();
+        return;
+      }
+
+      const fullRotation = new THREE.Quaternion().setFromUnitVectors(
+        startDirection,
+        endDirection
+      );
+      const identityRotation = new THREE.Quaternion();
+      const currentRotation = new THREE.Quaternion();
+      const currentDirection = new THREE.Vector3();
+
+      const startTime = performance.now();
+      const duration = 900;
+
+      function animateFlight(now) {
+        const progress = Math.min(1, (now - startTime) / duration);
+        const eased = easeInOutCubic(progress);
+
+        currentRotation.slerpQuaternions(
+          identityRotation,
+          fullRotation,
+          eased
+        );
+
+        currentDirection
+          .copy(startDirection)
+          .applyQuaternion(currentRotation)
+          .normalize();
+
+        const distance = THREE.MathUtils.lerp(
+          startDistance,
+          endDistance,
+          eased
+        );
+
+        camera.position.copy(currentDirection).multiplyScalar(distance);
+        camera.lookAt(controls.target);
+        render();
+
+        if (progress < 1) {
+          flightFrame = requestAnimationFrame(animateFlight);
+        } else {
+          flightFrame = null;
+          controls.update();
+          render();
+        }
+      }
+
+      flightFrame = requestAnimationFrame(animateFlight);
+    }
+
+    focusCampusRef.current = focusCampus;
 
     function resize() {
       const width = Math.max(1, host.clientWidth);
@@ -107,13 +201,17 @@ export default function Globe({ onCampusSelect }) {
     const resizeObserver = new ResizeObserver(resize);
     resizeObserver.observe(host);
 
+    controls.addEventListener("start", stopFlight);
     controls.addEventListener("change", render);
     renderer.domElement.addEventListener("click", selectCampus);
 
     resize();
 
     return () => {
+      stopFlight();
+      focusCampusRef.current = null;
       resizeObserver.disconnect();
+      controls.removeEventListener("start", stopFlight);
       controls.removeEventListener("change", render);
       renderer.domElement.removeEventListener("click", selectCampus);
       controls.dispose();
@@ -125,6 +223,10 @@ export default function Globe({ onCampusSelect }) {
       renderer.domElement.remove();
     };
   }, [onCampusSelect]);
+
+  useEffect(() => {
+    focusCampusRef.current?.(selectedCampus);
+  }, [selectedCampus]);
 
   return <div ref={hostRef} className="globe-host" />;
 }
