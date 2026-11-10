@@ -155,6 +155,7 @@ export default function Globe({ selectedCampus, onCampusSelect }) {
 
         camera.position.copy(currentDirection).multiplyScalar(distance);
         camera.lookAt(controls.target);
+        controls.update();
         render();
 
         if (progress < 1) {
